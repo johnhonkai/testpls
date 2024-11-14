@@ -1,6 +1,6 @@
 import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 
 
 const config = {
@@ -14,12 +14,9 @@ const config = {
 		})
 	],
 
-kit: {
-    adapter: adapter(),
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/testpls' : ''
-    }
-  }
+	kit: {
+		adapter: adapter(),
+	  }
 };
 
 export default config;
