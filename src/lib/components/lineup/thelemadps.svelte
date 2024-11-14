@@ -1,0 +1,80 @@
+<script lang="ts">
+    import Charred from '$lib/components/charpctred.svelte';
+
+    // Define the data for main characters
+    const mainCharacters = [
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+        { name: 'Senadina', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '99%', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%', speed: 'Slow' },
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '91%', speed: '' },
+
+    ];
+
+    const asopchar = [
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '94%', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '87%', speed: 'Slow' }
+    ];
+
+    // Pass the index or name of the first character to the reusable component
+    export let firstCharIndex: number = 0; // default to the first character
+    export let maindps: boolean = false;
+
+    // Extract the first character from the mainCharacters array
+    let firstCharred = mainCharacters[firstCharIndex];
+
+    // Remove firstCharred from mainCharacters so it doesn’t repeat
+    let filteredMainCharacters = mainCharacters.filter((char, index) => index !== firstCharIndex);
+</script>
+
+<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-blue-950 to-blue-900   shadow-lg shadow-base-100 overflow-hidden  ">
+    <h3 class="text-xl  font-semibold mb-2 text-center text-zinc-900 bg-slate-100">Mad Pleasure DPS</h3>
+
+    <div class="flex flex-wrap px-2 pt-2  gap-2 gap-y-6 mb-4 justify-center">
+
+
+        <!-- Leader Image -->
+        <div class="relative w-20 h-20 sm:w-28 sm:h-28">
+            <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Sena" class="w-full h-full object-cover">
+            <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
+        </div>
+
+        <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+
+        <!-- First Charred component (can be swapped) -->
+        <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
+        
+        <!-- Main Characters Loop (without the first character) -->
+        {#each filteredMainCharacters as char}
+            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+        {/each}
+
+        <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+
+        <!-- Support Characters Loop -->
+        {#each asopchar as char}
+            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+        {/each}
+    </div>
+
+
+    <details class="group rounded-md my-2 overflow-hidden">
+        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-gradient-to-r from-sky-500/0 to-sky-500/0 via-slate-900 	 hover:transition-colors hover:duration-200">
+            Details
+        </summary>
+        <div class="py-3 px-4">
+        <p class="text-sm sm:text-base">
+            <li class="text-sm sm:text-base">Currently, there is no live abyss data for Thelema DPS with Vita support. Vita's percentage is purely based on simple dmg test.</li>
+        </p>
+                       
+        </div>
+    </details> 
+</div>

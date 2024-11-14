@@ -1,0 +1,64 @@
+---
+title: Impair and Physical Breach
+category: 'Game mechanics'
+sortOrder: 3
+customSlug: "impair"
+
+---
+
+## What is Impair?
+Enemies have DEF stat, which affects their resistance to Physical DMG. **Impair** reduces the DEF stat by a percentage.
+
+In Part 1, only a few valkyries / equipment can provide impair. These were very valuable supports for Physical teams.
+- Herrscher of Rebirth, Herrscher of Sentience, Celestial Hymn ( DEF -75% )
+- Terminal Aide ( DEF -70%, 5 seconds only )
+- Divine Prayer ( DEF -80%, random target )
+- Briareus EX, Twins of Eden ( DEF -65% ) and more
+
+---
+
+Some valkyries have their own impair
+- Bright Knight with Dante stigma (DEF -60%)
+- Jovial Deception with Leaf's Vision stigma (DEF -55%)
+
+---
+
+## Two impairs do not stack
+
+Impairs do not stack. The latest impair will override the previous impair. However, Herrscher of Rebirth (HoRb) and Herrscher of Sentience (HoS) impair are like an aura, they are constantly reapplied every second on all enemies on the field.
+For example, if you use Celestial Hymn (CH) impair during HoS impair duration, CH impair will only apply for a split second before HoS impair is reapplied.
+
+---
+
+
+## What is Physical Breach?
+Physical Breach is basically impair, but Physical Breach can stack with impair!
+
+Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode, Physical Breach is added as an alternative to impair for Physical valks.
+
+In version 7.6, Serapem AstralOp has Physical Breach for her assist skill.
+
+In version 7.8, Vita [Lone Planetfarer] is officially the first valkyrie that can provide Physical Breach for other characters. (Physical Breach +37% (S) / 45% (S1))
+
+---
+
+## Impair + Phy Breach Calculation
+I am not gonna lie, the source for DEF and impair calculation is a very old CN post, and I am not sure if it's still true today. So here is something from a recent post that has a very simple calculation for Impair + Breach
+
+Basically, Impair stacks with Phy Breach **multiplicatively**.
+
+- Jovial Deception's impair: DEF -55% => 1-0.55 = 0.45
+- Vita's Phy Breach (S-rank): +37% (which is equal to DEF -37%) => 1-0.37 = 0.63
+- Impair = 1 - ( 0.45 x 0.63 ) = 0.7165 <br/>
+
+
+  <p class="text-lg font-bold text-orange-300">
+    Final Impair = 71.65%
+  </p>
+
+---
+
+## Does Physical Breach stack with other Physical Breach
+1. Physical Breach stacks with other Physical Breach multiplicatively.
+2. Multiple Physical Breach states do not stack. You can only have one Physical Breach state. The latest Physical Breach state overrides the previous Physical Breach state. The only exception is with Vita Lone Planetfarer - 
+Vita does not override the previous Physical Breach state, and converts her own Breach state into Physical DMG buff at a certain rate.

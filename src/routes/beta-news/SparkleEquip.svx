@@ -1,0 +1,89 @@
+---
+title: Sparkle Equipment v3
+date: '2021-12-14'
+version: '7.9'
+image: "/images/sporkle.png"
+category: "ar"
+
+---
+By Akie
+- Patch Note: https://rentry.co/79log
+- Valk: https://rentry.co/sporkle
+- Equipment: https://rentry.co/sporklegun
+- ER https://rentry.co/79er
+
+---
+
+### DRIVE CORE WEAPON
+ATK: 441  CRT: 19
+
+**ACTIVE [SP: 0] [CD: 0s]**<br/>
+The weapon active's CD, max charges and effects are based on wielder type. If the wielder has [Domain Resonance] attribute, Fire DMG +35%. 
+Sparkle equip bonus: 
+- Upon casting [I am Elation], triggers timestop for 1.5s.
+- Ultimate applies an additional Quantum Collapse.
+---
+**PASSIVE 1**<br/>
+During AR Charging: Enemies on the field take **+15% (v2) >12% (v3)** more Fire DMG.
+Sparkle equip bonus: Enemies on the field take +20% more Elemental DMG and Physical DMG from the team.
+
+---
+
+**PASSIVE 2**<br/>
+During AR Charging: Self Basic ATK (including Combo and Charged ATK) gain Total DMG **+20% (v2) > 12% (v3)**
+Sparkle equip bonus: Team’s [Resonance Skill] Elemental DMG +10%, self [Resonance Skill] Fire DMG +25%.
+
+---
+
+**SYNERGY I/II/III**<br/>
+Enemies take +2/4/6% more Total DMG from characters on field (independent multiplier) (cannot be stacked), and +2/4/6% more Fire DMG from the wielder (independent multiplier) (cannot be stacked).
+
+---
+
+### STIGMA
+
+**TOP:** 
+Self Fire DMG +40%.
+Sparkle equip bonus: Total DMG +20% for characters with [Life’s a Stage] effect.
+
+---
+
+**MID:**
+Self Total DMG Resistance +20%. 
+Sparkle equip bonus: Elemental DMG **+35% (v2) > 30% (v3)** for characters with [Life’s a Stage] effect.
+
+---
+
+**BOT:**
+Self Total DMG +30%. 
+Sparkle equip bonus: Enemies on the field take +18% more Elemental DMG and Physical DMG from characters with [Life’s a Stage] effect.
+
+---
+
+**2 SET: **
+Self Total DMG +35%. 
+Sparkle equip bonus: 
+- Enemies take +35% more Total DMG.
+- When Astral Ring is activated: Enemies take **+30% (v2) > 18% (v3)** more Total DMG from characters with [Life’s a Stage] effect.
+
+---
+
+**3 SET:**
+Self Combo ATK Fire DMG +40%. 
+Sparkle equip bonus: 
+- Enemies take +40% more Fire DMG.
+- Team gain [Life’s a Stage] effect. 
+
+When Astral Ring is not activated: 
+- Enemies on the field take +65% more Ignite DMG **from team members with [Spotlight] status** 
+- Team members with [Spotlight] status gain Fire DMG **+15% (v2) > 20% (v3)**
+
+When [World Star] is activated:
+- During AR Charging: 
+    - ~~**Enemies take +15% more Elemental DMG and Physical DMG.**~~
+
+
+- During Stellar Outburst:
+    - ~~Team Total DMG +20%,~~ Enemies take +10% more Total DMG, **take further 28% more Total DMG from weapon skills.(v3)**
+    - When not set as team leader, teammates‘ Elemental DMG and Total DMG **+15%(v2) > 30% (v3)**, teammates’ Weapon Active gain additional Elemental DMG and Total DMG **+30%(v2) > 15% (v3)**
+

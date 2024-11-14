@@ -1,0 +1,33 @@
+---
+title: Time Stop
+category: 'Game mechanics'
+sortOrder: 5
+customSlug: "timestop"
+
+---
+
+## What is Time Stop?
+Time Stop, or officially called as Time Frozen Domain (no one actually uses this term) is a feature that some valkyries have. One or more of their abilities can **pause stage timer and buff timer** during its animation OR for a certain duration. Only S-rank valkyries have this feature.
+
+
+- The first valkyrie to have Time Stop is Herrscher of Sentience in version 4.6. Her Ultimate animation has Time Stop.
+- The first valkyrie to have two Ultimates with Time Stop is Herrscher of Thunder with her Divine Key - Seven Thunders of Retribution.
+- The first valkyrie to have a skill with Time Stop that is not an Ultimate is Bright Knight with Divine Key - Abyss Flower.
+
+## Why is it so good?
+
+### Score
+Exalted Abyss is the most important end-game mode in Honkai Impact. Abyss uses a timer score system. Time stop = higher score. This also applies to other modes like Elysian Realm and Memorial Arena.
+
+### Buff Duration
+Makes you not lose support buff duration while the valk is doing her super cool animation for 10 seconds.
+
+## Fun Fact
+The reason why no one uses Time Frozen Domain term is because time stop existed since v4.6, but the official term was only added in 6.4 (Herrscher of Finality patch) (I might be wrong on the exact patch) but it came really late and everyone was already used to calling it time stop.
+
+More trivia on Time Stop:
+- The first valkyrie to have Time Stop is Herrscher of Sentience in version 4.6. Her Ultimate animation has Time Stop.
+- The first valkyrie to have two Ultimates with Time Stop is Herrscher of Thunder with her Divine Key - Seven Thunders of Retribution.
+- The first valkyrie to have a skill with Time Stop that is not an Ultimate is Bright Knight with Divine Key - Abyss Flower.
+- The first valkyrie to have a timestop duration that allows you to attack freely is Herrscher of Finality.
+- The first valkyries to have buffs / skills activation that require timestop are Herrscher of Origin and Finality.

@@ -1,0 +1,64 @@
+---
+title: v7.9 Elysian Realm v3
+date: '2021-12-14'
+version: '7.9'
+image: "/images/sporkle.png"
+category: "ar"
+
+---
+
+### BUFF
+
+#### STAGE BUFF 1
+- Elite floor is replaced with Trashcan Trial. Passing the trial will give you Trashcan Blessing. Enemies take 6% less Total DMG, after each floor, the effect is increased by 1.8%, max 33% (independent multiplier)
+- Enemies take 30% less Total DMG (independent multiplier). After valk deals 500 points of Lightning or Fire DMG at once, disable this effect for 3s, can be refreshed. 
+- After melee atk or ult atk hits an enemy, the enemy takes 4% more Total DMG, max 5 stacks, can be refreshed.
+- Support skill is fully recharged on elite floor. After using support skill, summons a Flawless Trashcan to fight alongside you. During this time, valk Total DMG +20%
+- Gold and Helix +2
+
+---
+
+#### LOAD BUFF 1
+- 0: F17 boss replaced with Andrius with weak elemental-vulnerable shield
+- 5: Valk max sp +30
+- 5: Valk Total DMG +15%. After taking dmg, disable this effect for 5s, can be refreshed
+- 10: After casting weapon skill, valk Physical DMG +12% for 12s, can be refreshed
+- 10: After triggering evasion skill, valk Physical and Elemental DMG +15% for 8s, an be refreshed
+- 15: When there is a summoned unit on the field, or when the enemy takes dmg from weapon skill, valk Total DMG +30% for 5s, can be refreshed
+- 15: Valk with chainblade, trick staff, drive core, dual pistol, and fists gain Physical Breach +40%, and Elemental Breach +20%
+
+### SPARKLE
+
+**PASSIVE**<br/>
+- Activates AR World Star
+- Max sp +50
+- At the start of battle, restore 100 sp and full AR
+- Total DMG +50%
+- [I am Elation] recover 800 HP
+- Ult will auto-cast on Sparkle herself, and sp cost changed to 75
+
+---
+
+**SIGNET 1**<br/>
+During Stellar Outburst: Resonance ATK deal additional 150% ATK of Fire DMG. After casting I am Elation, restore additional 35 sp and resets Ult CD. After using Ult, exits Stellar Outburst, and restore full AR and full Combo ATK meter. After casting Ult for the first time, SO cd reduced to 2 seconds.
+
+
+---
+
+**SIGNET 2**<br/>
+During Stellar Outburst: Ult deals additional 2000% ATK of Fire DMG and summons goldfish to continuously gather enemies, deal 200% ATK of Fire DMG every 1.6 seconds, counts as Ult DMG and lasts for 8s, can be refreshed.
+
+---
+
+**SIGNET 3**<br/>
+Weapon skill has no cd. After using weapon skill, you wont auto-switch forms anymore. When Combo ATK meter is full, press weapon to use Combo ATK and switch forms, dmg counts as weapon dmg. During AR Charging: Weapon skill recover 100 combo atk meter. Upon casting Combo ATK, deal additional 1250% ATK of Fire DMG, and gathers enemies, and Total DMG +60% for 15s, can be refreshed.
+
+---
+
+**SIGNET 4**<br/>
+Ult skill will use the [cast on teammate] version. Upon casting, support skill can be force-triggered. During AR Charging: After using Ult, deal additional 1200% ATK of Fire DMG, counts as Ult and QTE dmg. After using weapon skill, ult cd -5s. After using Ult, enemies take 30% more Total DMG for 15s, can be refreshed.
+
+---
+
+**SIGNET 5**<br/>
+When weapon skill or Ult hits, enemies take 40% more Total DMG for 15s, can be refreshed.

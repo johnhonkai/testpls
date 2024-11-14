@@ -1,0 +1,116 @@
+---
+title: Damage Calculation
+category: 'Game mechanics'
+sortOrder: 2
+customSlug: "dmgcalc"
+
+---
+
+
+
+
+
+
+
+## Damage Multiplier
+Valkyries, weapon, stigma, etc provide **buffs**, also known as **damage multipliers**:
+- Total DMG (TDM)
+- TDM Taken 
+- Lightning DMG
+- Lightning DMG Taken
+- Ice DMG
+- Ice DMG Taken
+- Fire DMG
+- Fire DMG Taken
+- Physical DMG
+- Physical DMG Taken
+- Crit DMG
+- Bleed DMG
+- Bleed DMG Taken
+- Ignite DMG
+- Ignite DMG Taken
+
+There's another one called **Independent DMG Multiplier**, but I'll show the basic dmg multipliers first, and save the 'indepent multiplier' for the end.
+
+---
+
+## Damage Type and Multipliers Relationship
+
+
+As we have learnt in damage type lesson, a valk deals one of the four dmg types.
+- Physical DMG, Lightning DMG, Ice DMG, Fire DMG
+- +Special (Bleed DMG, Ignite DMG)
+
+
+Each dmg type can be affected by the following dmg multipliers:
+
+| Lightning / Ice / Fire DMG | Physical DMG | Bleed / Ignite DMG
+|--|--|--|
+| Lightning / Ice / Fire DMG buff | Physical DMG buff | Bleed / Ignite DMG buff
+| Elemental DMG buff | Total DMG buff | Total DMG buff
+| Total DMG buff | Crit DMG buff
+
+---
+
+## Damage Calculation
+
+### Base DMG
+
+Let's take Herrscher of Finality's (HoFi) Ultimate skill as an example.<br/>
+HoFi's ult deals 3300% ATK of Fire DMG, and let's say HoFi has 1435 ATK stat. <br/>
+The base dmg of HoFi's ult before dmg calculation is 3300% x 1435 = **47,355 Fire DMG.**
+
+### Addition and multiplication of dmg multipliers
+- Same damage multipliers are added up.
+- Different damage multiplier are multiplied.
+
+Let's say Support Valk gives:
+
+| Total DMG | TDM Taken | Fire DMG | Fire DMG Taken |
+|--|--|--|--|
+| +20% | +40% | +10% | +35% |
+
+
+Then the support's equipment gives: 
+
+| Total DMG | TDM Taken | Fire DMG | Fire DMG Taken |
+|--|--|--|--|
+| +10% | +25% | +105% | +31% |
+
+Firstly, we **add up** the same buff types
+- Total DMG = 20% + 10% = 30% (convert to decimal => 1.3)
+- TDM Taken = 40% + 25% = 65% (convert to decimal => 1.65)
+- Fire DMG = 10% + 105% = 115% (convert to decimal => 2.15)
+- Fire DMG Taken = 35% + 31% = 66% (convert to decimal => 1.66)
+
+Next, we **multiply** the different dmg buffs to get the final dmg multiplier provided by the support<br/>
+= 1.3 x 1.65 x 2.15 x 1.66 <br/>
+= 7.66x DMG multiplier
+
+### Final DMG
+In real situations, there are other buffs and stats like Elemental Breach, weather effect, enemy's DEF, resistance, etc, but for this lesson, let's say there is no other buff,
+ and the boss has no resistance. The final damage of HoFi's Ult will be:
+
+= Base DMG x DMG Multiplier <br/>
+= 47,355 x 7.66
+  <p class="text-lg font-bold text-orange-300">
+    = 362, 739.3 Fire DMG
+  </p>
+
+
+---
+
+## Independent DMG Multipliers
+
+Some effects provide normal buffs like Total DMG, Physical DMG, etc but during dmg calculation, they **are multiplied** instead of added up with dmg multipliers with the same name. 
+These buffs are called **independent damage multipliers.** These are usually very strong dmg buffs since they are multiplicative.
+
+1. In valkyrie and equipment skill descriptions, if an effect has **(independent)** text, that is an independent dmg multiplier. A valk usually has at least one 'independent' clause in her kit, signature weapon and signature stigma.
+
+2. Part 2 weapon synergy always have one independent dmg multiplier that affects the team and the valk herself.
+
+3. Abyss weather effect is an independent dmg multiplier. This is why a lineup that matches / activates the weather effect is better than the ones that don't.
+
+4. A skill that includes **takes more dmg from the host / wielder** is an independent dmg multiplier.This was tested with Thales M stigma.  It was such a long time ago, I am not sure if this is still true now.
+
+But it doesn't really matter. These numbers are just gibberish for most players. Nowadays, every valk has all dmg buffs, but have more restricted activation requirement. And valks just use their signature weapon and stigma, and stigma is farmable now. 

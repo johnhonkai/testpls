@@ -1,0 +1,85 @@
+---
+title: Game Server
+category: 'Getting Started'
+sortOrder: 2
+customSlug: "server"
+
+---
+
+<div class="flex items-center justify-center text-orange-300 h-10">
+  <img src="https://i.imgur.com/EIVLSjZ.png" alt="Icon" class="w-10 h-10 mr-2" />
+  <p class="text-lg font-bold">
+    The battle starts before you even install the game.
+  </p>
+</div>
+
+## Introduction to HI3 Servers and Clients
+In Honkai Star Rail and Genshin Impact, there is only one game client, and you can change server within that client. This is not the case with Honkai Impact 3rd. In HI3, each server uses a seperate client.
+
+
+---
+
+## List of Servers
+In Hoyoplay Launcher, there are six servers that you can choose: Europe (EU), North America (NA), South-East Asia (SEA), Japan (JP), Korea (KR), and Traditional Chinese Server (equivalent to TW, HK, MO servers in Genshin/StarRail).
+- These six servers are officially known as **Regional Servers**, indicating that these servers are different from the mainland China server - **CN Server.**
+- EU and NA share a client. They are commonly referred to as Global (GLB) server.
+- Only **SEA, EU and NA servers use English language.** 
+- For iOS and Android, the default server is based on your region. You can get apk files of other server clients from 3rd-party app stores.
+- Steam client uses EU / NA server, but it uses Steam ID and cannot connect to your Hoyoverse account.
+
+![List of available HI3 servers in Hoyoplay](https://i.imgur.com/PEyX4D0.png)
+
+---
+
+## Server Differences for SEA, NA, EU
+
+### Voice, UI Language and Reset Time
+| Server | Voice Over | UI Language | Reset Time |
+|  --------  |  :-----:  |  --------  |  -------  |
+| SEA | JP, CN | English , CN, Viet, Indo, Thai | UTC +8 |
+| Europe  | JP, CN  | English, CN, French, German | UTC +1 |
+| Americas | JP, CN  | English, CN, French, German| UTC -5 |
+
+### Anniversary Date
+Originally, the regional servers had different anniversary date. But starting from Part 2 (v7.3), our anniversaries are synced to around Feb/March (7.3 date is Feb 29, 2024)
+
+
+### Server Population
+SEA server has significantly more players. It is unclear who has more players for NA and EU.
+
+**Online matchmaking:** HI3 has multiplayer events from time to time like Fall Guys, Chibi Lobby. Plus,  in 7.9, there will be a card game multiplayer in HI3 x HSR collab event. Matchmaking is faster in SEA server. 
+I once tried EU server, and took a long time to get a match in Fall Guys event.
+
+**Competitive:** HI3's hardest mode is EX Abyss - it has ranking system and extra crystals and emblems for reaching Top 100 in every round.
+- Since there are more players, it's harder to get Top 50 in SEA server.
+- Top 100 score breakpoint is also much higher in SEA than NA / EU.
+- But, Nirvana group retention is easier than NA / EU because more players = more brackets = less chance to be in the same room with T100 players.
+
+
+
+### Physical Merch Limitation
+Every year, we have a free Art Collection event. The reward only ships to certain areas tied to the server geographically. Below is an example of Art Collection Vol 2 shipping areas for SEA server.
+
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/x5GhDxz.png" alt="Icon" class="max-w-[750px] h-auto rounded-lg" />
+</div>
+
+
+
+---
+
+## So, which server should you play?
+By default, it's best to play the default server for your region.
+- For an easier chance at reaching Top 100, then consider EU or NA server.
+- If you're looking for faster matchmaking and more populated in-game lobbies, then play SEA server.
+- If getting physical merch matters to you, choose the default server for your region.
+
+---
+
+## Other Servers
+
+- **Traditional Chinese**: Not to be confused with the actual CN server. Traditional Chinese has the same update time as EN servers. This server is equivalent to TW, HK, MO servers in Genshin/StarRail.
+- **CN server:** CN server is ahead by around 4 weeks. This is why we EN players can plan ahead with our pulls. There are multiple CN servers (PC, iOS, Android, Oppo, Taptap, Bilibili and more)
+- **JP server** has higher drop rate, but does not have guarantee in supplies. I don't know if this is still the case after Part 2 update.
+

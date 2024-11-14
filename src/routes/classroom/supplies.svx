@@ -1,0 +1,36 @@
+---
+title: Gacha in HI3
+category: 'Shop'
+sortOrder: 2
+customSlug: "gacha"
+
+---
+
+
+## Introduction to Supplies (Gacha)
+There are A LOT of different types of supplies in Honkai Impact 3. This is mostly because the game is constantly adding new types of valkyries and weapons, like SP battlesuit, and Divine Keys. But in Part 2, the gachas have been improved and simplified, now all the new content are in these three supplies:
+- Battlesuit Supply
+- Equipment Supply
+- AstralOp Supply
+
+## Battlesuit Supply
+This is where you pull the characters
+- Content: One featured S-rank, one featured A-rank, three other A-ranks
+- Cost per pull: 280 crystal, or one Battlesuit Supply Card
+- Featured S-rank is guaranteed within 90 pulls / 25,200 crystals
+- Every 10 pulls guarantee an A-rank or S-rank valk
+
+## Equipment Supply
+This is where you pull the equipments
+- Content: One featured weapon + stigma set (Top, Mid, Bottom)
+- Cost per pull: 280 crystal, or one Equipment Supply Card
+- Featured weapon is guaranteed within 60 pulls / 16,800 crystals
+- Every 10 pulls guarantee weapon or one of the stigma pieces
+
+## AstralOp Supply
+This is where you pull AstralOp. What is AstralOp? Well it's basically like Bangboo, but what if the Bangboo is broken like Robin? Yeah, something like that.
+- Content: A featured S-rank AstralOp
+- Cost per pull: 280 crystal, or one Equipment Supply Card
+- Featured weapon is guaranteed within 60 pulls / 16,800 crystals
+- Every 10 pulls guarantee AstralOp or some upgrade materials
+

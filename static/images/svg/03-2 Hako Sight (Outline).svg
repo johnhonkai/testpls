@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1291.0625"
+   height="1291.0605"
+   viewBox="0 0 341.59362 341.59311"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="03-2 Hako Sight (Putline).svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="1335.4625"
+     inkscape:cy="1125.0075"
+     inkscape:document-units="pt"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-97.883139,140.0702)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.29166698;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 125.94706,-140.0702 -28.063921,28.06444 62.460791,62.46182 28.06547,-28.065471 z m 285.46527,0 -62.46234,62.460789 28.06547,28.065471 62.4608,-62.46182 z m -285.46527,7.48326 54.97907,54.977529 -20.5822,20.582205 -54.97701,-54.978554 z m 285.46527,0 20.58014,20.58118 -54.97701,54.978554 -20.5822,-20.582205 z m -218.8869,17.93534 39.68801,39.688022 h 72.93302 l 39.68802,-39.688022 z m 12.77493,5.29167 h 126.75919 l -29.1052,29.104685 h -68.54879 z m -81.99913,63.930983 V 106.88166 L 162.98976,67.192606 V -5.7404112 Z m 290.75693,0 -39.68853,39.6885358 V 67.192606 l 39.68853,39.689054 z M 128.59289,-32.654016 157.6981,-3.5482985 V 65.00049 l -29.10521,29.106237 z m 280.1736,0 V 94.106727 L 379.6613,65.00049 V -3.5482985 Z m -248.42256,143.650666 -62.460791,62.46234 28.063921,28.06393 62.46182,-62.46027 z m 216.67153,0 -28.06495,28.066 62.46235,62.46027 28.0639,-28.06393 z m -216.67153,7.48327 20.58117,20.58273 -54.97804,54.97648 -20.58014,-20.58014 z m 216.67153,0 54.97754,54.97907 -20.58014,20.58014 -54.97857,-54.97648 z m -144.80305,17.9369 -39.68802,39.688 H 344.835 l -39.6875,-39.688 z m 2.1916,5.29166 h 68.55137 l 29.10469,29.10467 H 205.29932 Z"
+       id="rect812"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

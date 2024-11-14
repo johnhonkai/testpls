@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="968.91986"
+   height="968.91992"
+   viewBox="0 0 256.36005 256.36007"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="07-2 Hako Slash Line 50px (Outline).svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.15177874"
+     inkscape:cx="972.61889"
+     inkscape:cy="557.73289"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(478.28582,97.453168)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m -478.28582,-97.453168 v 65.965482 l 65.96599,-65.965482 z m 77.19218,0 -77.19218,77.192186 v 50.366435 l 127.55861,-127.558621 z m 61.59418,0 -138.78636,138.785841 v 50.366951 l 189.15229,-189.152792 z m 61.59312,0 -200.37948,200.380018 v 50.36643 l 250.74644,-250.746448 z m -195.08782,5.291666 h 47.8994 l -47.8994,47.898886 z m 74.09212,0 h 35.3999 L -472.99416,17.33052 v -35.399387 z m 61.59418,0 h 35.39937 L -472.99416,78.924694 V 43.524789 Z m 61.59312,0 h 35.40043 L -472.99416,140.51835 v -35.39939 z m 53.78897,0.320911 -250.74697,250.747481 h 50.36696 l 200.38001,-200.380015 z m -5.29167,12.774931 v 35.400423 L -424.49788,153.61522 h -35.39993 z m 5.29167,48.819242 -189.15329,189.153308 h 50.36746 L -221.92577,20.120533 Z m -5.29167,12.77493 V 17.928418 L -362.90373,153.61522 h -35.4004 z m 5.29167,48.818726 -127.55964,127.559652 h 50.36695 l 77.19269,-77.193218 z m -5.29167,12.774929 v 35.39939 l -74.09314,74.093663 h -35.3999 z m 5.29167,48.818726 -65.96546,65.965997 h 65.96546 z m -5.29167,12.774927 v 47.8994 h -47.89886 z"
+       id="rect812"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

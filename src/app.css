@@ -1,0 +1,213 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+@font-face {
+    font-family: 'wf';
+    src: url('/fonts/WFMedium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-from-right {
+	from {
+		transform: translateX(30px);
+	}
+}
+
+@keyframes slide-to-left {
+	to {
+		transform: translateX(-30px);
+	}
+}
+
+:root::view-transition-old(root) {
+	animation:
+		90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+:root::view-transition-new(root) {
+	animation:
+		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+
+
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.custombg::before {
+  background-image: url('/images/pls.svg'); /* Set the path to your image */
+  background-size: cover;       /* Cover the entire container */
+  background-position: top;  /* Center the image */
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  position:absolute;
+}
+
+.bg-custom-gradient {
+  background-image: linear-gradient(
+    -45deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.5) 25%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 50%,
+    transparent 75%,
+    rgba(255, 255, 255, 0.5) 75%,
+    rgba(255, 255, 255, 0.5)
+  );
+  top: 0;
+  left: 0;
+  position:absolute;
+}
+
+.wave-animation img {
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+/* Define transition effects */
+.wave-animation img.view-transition-name {
+  filter: hue-rotate(180deg); /* Changes the hue by 180 degrees */
+  opacity: 0.8;               /* Adjusts opacity */
+}
+
+@keyframes slide-in {
+  0% {
+
+    transform: translateY(-100%); /* Start off-screen to the right */
+  }
+  100% {
+
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes gentle-wobble {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);  
+  }
+  25% {
+    transform: rotate(1.5deg) translateY(5%);
+  }
+  50% {
+    transform: rotate(-1.5deg) translateY(-5%);
+  }
+  75% {
+    transform: rotate(1.5deg) translateY(5%);
+  }
+  
+}
+
+@keyframes gentle-wobble2 {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);  
+  }
+  25% {
+    transform: rotate(2deg) translateY(8%);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-8%);
+  }
+  75% {
+    transform: rotate(-2deg) translateY(8%);
+  }
+  
+}
+
+.slide-in-animation {
+  animation: slide-in 0.8s, gentle-wobble 8s ease-in-out infinite;
+  animation-delay: 0s, 1s;
+}
+
+.slide-in-pls {
+  animation: slide-in 0.8s ease-in-out;
+}
+
+
+.slide-in-animation2 {
+  animation: slide-in 0.8s, gentle-wobble2 8s ease-in-out infinite;
+  animation-delay: 0s, 1s;
+}
+.custom-font {
+    font-family: 'wf', sans-serif; /* Apply custom font */
+}
+
+
+.cooltext::before {
+    content: '';
+    height: 1.25rem; /* Tailwind `h-5` equivalent */
+    width: 0.25rem;  /* Tailwind `w-1` equivalent */
+    background-color: #3b82f6; /* Tailwind `bg-blue-500` */
+    left: 0;
+    top: 2.3px; /* Tailwind `top-1` equivalent */
+    clear: both;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5rem;
+
+  }
+
+
+  .collapse-title, :where(.collapse > input[type="checkbox"]), :where(.collapse > input[type="radio"]) {
+    padding-inline-end: 1rem;
+    text-align: center;
+}
+
+  .accordion-item {
+    background-color: #1f2937; 
+    color: #e5e7eb; 
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+
+  .accordion-title:hover {
+    background-color: #194a8f;
+  }
+
+  .accordion-content {
+    background-color: #25436d; 
+    padding: 0 1rem;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease, max-height 0.4s ease-out;
+    overflow: hidden;
+  }
+
+  .accordion-content p{
+    padding: 0.5rem 0;
+  }
+
+  .accordion-content.open {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+  }
+  

@@ -1,0 +1,115 @@
+---
+title: v7.9 Patch Note v3
+date: '26-Oct-2024'
+version: '7.9'
+image: "/images/sporkle.png"
+category: "valk"
+---
+
+- Patch Note: https://rentry.co/79log
+- Valk: https://rentry.co/sporkle
+- Equipment: https://rentry.co/sporklegun
+- ER https://rentry.co/79er
+
+---
+
+### V3
+Sparkle changes will not be mentioned here because patch note doesn't state the full list anymore. Check Sparkle rentry for that.
+- Fixed an issue where ignite trauma applied by ult effects aren't working properly
+
+#### VALK CHANGES 
+- Lone Planetfarer: Fixed an issue where, in planet quaker form, enhanced Seq 3 still gives meter even when the attack is interrupted.
+- Fixed an issue where, in planet quaker form, enhanced seq 3 may fail to be casted.
+- Fixed an issue where, on low-end devices, the first transformation animation is abnormal
+- Starry Impression: Fixed voiceline when changing outfit
+- Optimized the logic of overlapping impair by certain characters
+- HoFi with Waxing Moon: Fixed an issue where Quantum Mech Energy display is incorrect
+
+#### EX ABYSS
+- SD weather Meteoroid ??? - Fixed an issue where the boss is immune to thunder lock and ice cell effect
+- Paralyze Sushang - Fixed abnormal targeting
+
+#### MEMORIAL ARENA
+- Vita: Adjusted overall mechanic
+- Valralhal: Fixed abnormal blocking
+
+
+---
+### V2
+#### NEW VALK
+- Sparkle | S-rank Qua Fire World Star
+- Resonance Support, Future AR Support, Part 1 Fire Support
+
+#### 7.9 MATRIX EVENT
+- 3 chapters, 4 maps
+- Has PVP event
+
+#### FUN CLUB EVENT
+
+#### CHAPTER 6
+- New chapter + event 
+- New area Ruimu
+
+#### DUAL CORE
+
+#### EX ABYSS
+- Resonance weather Vita (? Type)
+- Fire Kosma (QUA)
+- Starless Husk Mysticism (IMG)
+
+#### ARENA 
+- Added SSS Vita (? Type)
+
+#### ELYSIAN REALM
+- Added Sparkle
+- Default F17 boss is Beast of Sacrifice
+- Updated stage and load
+
+#### TOP UP EVENT
+- Topup around 100 usd to get up to 3 Dreamweaver stamps / 3 HoFi stamps / 240 AL + other mats such as weapon upgrade coupon, battlesuit supply card, equipment supply card and 2 Source Prism
+
+#### BATTLE PASS
+- Twirling Glaze, Aladdin
+
+#### SHOP
+- Exchange Shop: KoOblivion, Columbus, Shattered Swords. Free reset per week set to 999.
+- Witch Corridor: Added HoOrigin stamps
+- War Treasury: Added HoSentience card and stamps, Wafer Stabilizer and Wafer Dataflow
+- ER Shop: Added Aponia stamps
+- Universal Mirage: Removed Time Structure exchange
+- Asterite Shop: Added Torus and Normal Crystal Core (60% off)
+- After 7.9 update, all Time Structure will convert to Time Swirl Pass at a certain ratio
+- Forge: Added G4 Ragna, G4 Bianka Theater and Sparkle Stigma
+
+
+#### SYSTEM
+- Added second confirmation when you click p2 open world icon on topleft
+- Added LITE for Realms of Battle
+- For KBM, added option to select dialog using number keys. For controller, added a new function to select dialog using left analog, and LB to select.
+- Added main chapter early access: You can now directly play a chapter without having to complete the preceding chapter.
+- Adjusted the display of previous story summary in 7.9 attack menu
+- Fixed an issue for Sim Battle Lite: In poor network condition, using LITE might fail.
+
+---
+
+#### VALK CHANGES
+- Vita: Fixed facial lightning display in some stages
+- Jovial Deception: Fixed an issue where her QTE can be triggered after Stellar Outburst is over
+- HoFi with Waxing Moon: 
+	- Fixed an issue where Combo ATK can be abnormally triggered 
+	- Fixed an issue where you may be missing dmg
+	- Fixed an issue where the weapon may make the enemy airborne a lot more frequent
+	- Fixed an issue in low network connection, AR may not be activated
+- Fixed an issue where valk model may have abnormal visual when you zoom in
+- Added heal tag for some characters, including JD, HoRB, Kira, Coralie, AE
+
+#### WEAPON CHANGES
+- Torch of Eons: Mark detonation dmg may be missing dmg in certain situations
+- Waxing Moon: Fixed skill description. This is only text change, actual effect remains the same
+
+#### BOSS CHANGES
+- SSS Aponia: Fixed an issue where some attacks are not considered to be melee, thus cannot parry aponia summon's attacks
+
+#### PART 2 
+- Optimized Hyperion 11 when interacting with Mei or Bronya 
+- A reminder has been added. When you progress in a mission, this alert will tell you that the progress has been saved.
