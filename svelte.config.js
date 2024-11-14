@@ -1,8 +1,10 @@
-import adapter from '@sveltejs/adapter-auto';
 import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-static';
+
 
 const config = {
+
 	extensions: ['.svelte', '.svx'], // Enable .svx for markdown
 
 	preprocess: [
@@ -12,9 +14,12 @@ const config = {
 		})
 	],
 
-	kit: {
-		adapter: adapter()
-	}
+kit: {
+    adapter: adapter(),
+    paths: {
+      base: process.env.NODE_ENV === 'production' ? '/testpls' : ''
+    }
+  }
 };
 
 export default config;
