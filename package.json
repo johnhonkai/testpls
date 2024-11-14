@@ -1,4 +1,5 @@
 {
+	
 	"name": "my-app",
 	"version": "0.0.1",
 	"type": "module",
@@ -48,5 +49,9 @@
 		"rehype-autolink-headings": "^7.1.0",
 		"rehype-slug": "^6.0.0",
 		"svelte-toc": "^0.5.9"
-	}
+	},
+	"engines": {
+		"node": ">=18.18.0"
+	  }
+	
 }
