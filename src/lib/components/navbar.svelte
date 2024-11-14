@@ -6,14 +6,14 @@
   let lastScrollY = 0;
 
   let navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Valkyrie', href: '/valk' },
-    { name: 'Account Planner', href: '/planner' },
-    { name: 'AstralOp', href: '/asop' },
-    { name: 'Boss', href: '/boss' },
-    { name: 'Timeline', href: '/calendar79' },
-    { name: 'Classroom', href: '/classroom' },
-    { name: 'Beta News', href: '/beta-news' },
+    { name: 'Home', href: '/testpls' },
+    { name: 'Valkyrie', href: '/testpls/valk' },
+    { name: 'Account Planner', href: '/testpls/planner' },
+    { name: 'AstralOp', href: '/testpls/asop' },
+    { name: 'Boss', href: '/testpls/boss' },
+    { name: 'Timeline', href: '/testpls/calendar79' },
+    { name: 'Classroom', href: '/testpls/classroom' },
+    { name: 'Beta News', href: '/testpls/beta-news' },
   ];
 
   function toggleMenu() {
