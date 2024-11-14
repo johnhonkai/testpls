@@ -1,32 +1,23 @@
-// src/routes/beta-news/+page.server.js
-
-// @ts-ignore
-import fs from 'fs';
-// @ts-ignore
-import path from 'path';
-
 export async function load() {
-  const postsDir = path.resolve('src/routes/classroom');
-  const files = fs.readdirSync(postsDir).filter(file => file.endsWith('.svx'));
+  // Use `import.meta.glob` to dynamically import all `.svx` files in the `classroom` folder
+  const modules = import.meta.glob('./*.svx', { eager: true });
+  
+  // Map the imported modules to posts data
+  const posts = Object.entries(modules).map(([filePath, module]) => {
+    const slug = filePath.split('/').pop().replace('.svx', ''); // Get slug from filename
+    const { title, version, image } = module.metadata;
 
-  // Map each file to its metadata and slug
-  const posts = await Promise.all(files.map(async (file) => {
-    const post = await import(`./${file}`);
-    const filePath = path.join(postsDir, file);
-    const stats = fs.statSync(filePath); // Get file system stats
-    const creationDate = stats.birthtime; // Creation time
-    const lastModifiedDate = stats.mtime; // Last modified time
     return {
-      slug: file.replace('.svx', ''),
-      title: post.metadata.title,
-      version: post.metadata.version,
-      image: post.metadata.image,
-      creationDate, // Include creation date
-      lastModifiedDate, // Include last modified date
+      slug,
+      title,
+      version: parseFloat(version), // Convert version to a number for sorting
+      image,
+      // We can't get `creationDate` and `lastModifiedDate` without `fs`, so we'll omit them
     };
-  }));
+  });
 
-  posts.sort((a, b) => parseFloat(b.version) - parseFloat(a.version));
+  // Sort posts by version in descending order
+  posts.sort((a, b) => b.version - a.version);
 
   return { posts };
 }
