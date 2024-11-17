@@ -9,11 +9,6 @@ customSlug: "timestop"
 ## What is Time Stop?
 Time Stop, or officially called as Time Frozen Domain (no one actually uses this term) is a feature that some valkyries have. One or more of their abilities can **pause stage timer and buff timer** during its animation OR for a certain duration. Only S-rank valkyries have this feature.
 
-
-- The first valkyrie to have Time Stop is Herrscher of Sentience in version 4.6. Her Ultimate animation has Time Stop.
-- The first valkyrie to have two Ultimates with Time Stop is Herrscher of Thunder with her Divine Key - Seven Thunders of Retribution.
-- The first valkyrie to have a skill with Time Stop that is not an Ultimate is Bright Knight with Divine Key - Abyss Flower.
-
 ## Why is it so good?
 
 ### Score
@@ -23,7 +18,7 @@ Exalted Abyss is the most important end-game mode in Honkai Impact. Abyss uses a
 Makes you not lose support buff duration while the valk is doing her super cool animation for 10 seconds.
 
 ## Fun Fact
-The reason why no one uses Time Frozen Domain term is because time stop existed since v4.6, but the official term was only added in 6.4 (Herrscher of Finality patch) (I might be wrong on the exact patch) but it came really late and everyone was already used to calling it time stop.
+The reason why no one uses Time Frozen Domain term is because time stop existed since v4.6 (2021), but the Time Frozen Domain term was only added in 6.4 (2023), I might be wrong on the exact patch but it came really late and everyone was already used to calling it time stop.
 
 More trivia on Time Stop:
 - The first valkyrie to have Time Stop is Herrscher of Sentience in version 4.6. Her Ultimate animation has Time Stop.

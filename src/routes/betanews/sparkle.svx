@@ -1,5 +1,5 @@
 ---
-title: Sparkle Skill v3
+title: Sparkle Skill v3C
 date: '26-Oct-2024'
 version: '7.9'
 image: "/images/sporkle.png"
@@ -28,7 +28,7 @@ When Sparkle is the leader:
 - On entry, initial SP +40
 - Enemies take 9.2% (S) / 12% (SS) more Fire DMG and Total DMG from Sparkle
 - Combo ATK deal additional 800% ATK of Fire DMG. [I am Elation] deal additional 800% (S) / 1000% (SS) ATK of Fire DMG, and Ult (target self version) deal additional 1600% (S) / 2000% (SS) ATK of Fire DMG
-- 0.5 second after enemy is ignited, deal 600% ATK of Fire DMG, and remove ignite
+- 0.5 second after enemy is ignited, deal **600%(v2) > 100% (v3c)** ATK of Fire DMG, and remove ignite
 
 ---
 
@@ -51,7 +51,7 @@ Upon entering Stellar Outburst, deal 400% ATK of Fire DMG.
 
 ---
 **AR 1**<br/>
-When Sparkle is the leader, Dream Fish will consume all teammate resonance marks. Trigger 3 resonance atk, does not count for Dream Fish mark's trigger limit. Each hit deal 204% (S) / 240% (S1) ATK of Fire DMG, cd 0.5s. If the mark trigger count from mark consumption is more than 7, each mark trigger deals **1020% (S) / 1200% (S1) [v2] > 1550% (S) / 2000% (S1) [v3]** ATK of Fire DMG. During each Stellar Outburst, each teammate can only trigger Dream Fish resonance atk up to 3 times.
+When Sparkle is the leader, Dream Fish will consume all teammate resonance marks. Trigger 3 resonance atk, does not count for Dream Fish mark's trigger limit. Each hit deal **204% (S) / 240% (S1) [v2] > 255% (S) / 300% (S1) [v3c]** ATK of Fire DMG, cd 0.5s. If the mark trigger count from mark consumption is more than 7, each mark trigger deals **1020% (S) / 1200% (S1) [v2] > 1550% (S) / 2000% (S1) [v3] > 1084% (S) / 1420% (S1) [v3c]** ATK of Fire DMG. During each Stellar Outburst, each teammate can only trigger Dream Fish resonance atk up to 3 times.
 
 ---
 **AR 2**<br/>
@@ -70,7 +70,7 @@ Cannot use weapon button during this time
 
 ---
 **AR 4**<br/>
-When Resonance mark is triggered and deal dmg, the subsequent dmg multiplier increases by **51% (S) / 60% (SS1) [v2] > 53% (S) / 65% (SS1) [v3]**, after dealing dmg 13 times, the dmg multiplier increases by an additional 85% (S) / 100% (SS1)
+When Resonance mark is triggered and deal dmg, the subsequent dmg multiplier increases by **51% (S) / 60% (SS1) [v2] > 53% (S) / 65% (SS1) [v3] > 60.5% (S) / 65% (SS1) [v3c]**, after dealing dmg 13 times, the dmg multiplier increases by an additional **85% (S) / 100% (SS1) [v2] > 102% (S) / 120% (SS1) [v3c]**
 
 ---
 **AR 5**<br/>
@@ -96,7 +96,7 @@ When Sparkle is off field, if SP is below 100, recover **5 (v2) > 5.5 (v3)**  sp
 ---
 
 ### WEAPON SKILL
-Press weapon to kick, deal 100%+50%x4 ATK of Fire DMG, switch mask form, cd 4s
+Press weapon to kick, deal **100%+50%x4(v2) > 10%+10%x4(v3c)** ATK of Fire DMG, switch mask form, cd 4s
 
 ---
 ### BASIC ATK
@@ -120,8 +120,8 @@ QTE will restore 2 Odd Play stack, cd 8s.
 4 sequence, deal Fire DMG
 
 When meter is full, hold ATK to consume meter and use Combo ATK
-- Monologue: Gathers enemies, deal 900% ATK of Fire DMG, and switch to Dream Fish
-- Dream Fish: Deal 900% ATK of Fire DMG, and switch to Monologue
+- Monologue: Gathers enemies, deal  **+900%(v2) > 600%(v3c)** ATK of Fire DMG, and switch to Dream Fish
+- Dream Fish: Deal **+900%(v2) > 1100%(v3c)** ATK of Fire DMG, and switch to Monologue
 Each time you use Combo ATK, you gain one stack of Odd Play. When you have two stacks of Odd Play, tap weapon to cast [I am Elation], deal 1600% ATK of Fire DMG, clear all Odd Play stack.
 
 ---

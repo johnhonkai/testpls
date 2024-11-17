@@ -71,7 +71,7 @@ export const asopbuffs = [
     {
         rank: "S",
         available_by_default: "yes",
-        description: "When the team leader is a Physical DMG dealer, Bunny's Physical DMG +40% more Physical DMG.",
+        description: "When the team leader is a Physical DMG dealer, Bunny's Physical DMG +40%.",
     },
     {
         rank: "SS",

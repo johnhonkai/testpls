@@ -26,13 +26,32 @@ Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. O
 
 
 ## Bleed and Ignite DMG
-In 2023, two new damage elements have been introduced. Only a few characters have these. The characters will have one of the four base elements + this special element.
-- Bleed DMG (Lunar Vow, Cosmic Expression, Valkyrie Quicksand)
-- Ignite DMG (Miracle Magical Girl)
+In 2023, Bleed DMG and Ignite DMG are introduced. These are not new damage elements, rather, they are secondary damage types that exists alongside with one of the four main damage elements.
+Characters with Bleed / Ignite DMG benefit from both their primary element and Bleed / Ignite DMG buffs.
 
-These are different from Bleed and Ignite status damage-over-time (DoT), but the mechanics are related. For example:
-- If a stigma buffs Bleed DMG, it affects both the valk Bleed DMG and the bleed status DoT.
-- Miracle Magical Girl's Ultimate dmg increases for each Ignite DoT stack that the enemy has.
+---
+
+### Bleed DMG
+- Lunar Vow: Deals Lightning DMG, and most of her attacks also count as Bleed DMG.
+- Valkyrie Quicksand: Deals Physical DMG, and most of her attacks also count as Bleed DMG.
+- Cosmic Expression: Deals Physical DMG, and most of her attacks also count as Bleed DMG.
+
+---
+
+### Ignite DMG
+- Miracle Magical Girl: Deals Fire DMG, and her attacks also count as Ignite DMG.
+
+---
+
+### Bleed / Ignite DMG vs Bleed / Ignite Status DoT
+Although they are not entirely the same, Bleed and Ignite DMG do inherit some properties from Bleed and Ignite status damage-over-time (DoT). For example:
+- Bleed DoT do not crit. Valkyrie Quicksand and Cosmic Expression attacks that deal Bleed DMG also cannot crit.
+- Bleed / Ignite DMG also do not count as Melee / Ranged DMG.
+- If a stigma buffs Bleed DMG, it affects both the valk's Bleed DMG and the bleed status DoT.
+
+
+In addition, some of the Bleed / Ignite valk mechanics are related to the Bleed / Ignite status DoT. For example:
+- Miracle Magical Girl's Ultimate count as Ignite DMG, and its damage increases for each Ignite DoT stack that the enemy has.
 
 ---
 

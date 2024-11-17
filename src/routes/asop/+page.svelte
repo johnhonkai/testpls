@@ -616,7 +616,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           x{ 
             parseFloat( 
             (
-              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.resotdm) / 100)) *
               (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
               (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
               (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) *
@@ -628,11 +628,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 - x{ 
   parseFloat( 
   (
-    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
-    (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) *
-    (1+((cumulativeBuffs.resotdm) / 100))
+    (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
   )
 }
@@ -650,10 +649,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
-              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
               (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
-              (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) *
-              (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+              (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) 
               ).toFixed(3)
             )
             }
@@ -662,10 +660,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
-    (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) *
-    (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+    (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) 
     ).toFixed(3)
   )
 }
@@ -759,11 +756,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           x{ 
             parseFloat( 
             (
-              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.resotdm) / 100)) *
           (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
           (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) *
-              (1+((cumulativeBuffs.resotdm) / 100))
+          (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
               ).toFixed(3)
             )
             }
@@ -771,11 +767,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 - x{ 
   parseFloat( 
   (
-    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
     (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning) / 100)) *
-    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken) / 100)) *
-    (1+((cumulativeBuffs.resotdm) / 100))
+    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken) / 100)) 
     ).toFixed(3)
   )
 }
@@ -795,10 +790,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
-          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
           (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) *
-              (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+          (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
+
               ).toFixed(3)
             )
             }
@@ -807,10 +802,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
     (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning) / 100)) *
-    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken) / 100)) *
-    (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken) / 100))
     ).toFixed(3)
   )
 }
@@ -885,11 +879,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           x{ 
             parseFloat( 
             (
-              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.resotdm) / 100)) *
           (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
           (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) *
-              (1+((cumulativeBuffs.resotdm) / 100))
+          (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
               ).toFixed(3)
             )
             }
@@ -897,12 +890,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 - x{ 
   parseFloat( 
   (
-    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
     (1+((cumulativeBuffs.ice + cumulativeBuffs.soice) / 100)) *
-    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) *
-    (1+((cumulativeBuffs.resotdm) / 100))
-
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) 
     ).toFixed(3)
   )
 }
@@ -919,10 +910,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
-          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
           (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))*
-              (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+          (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
               ).toFixed(3)
             )
             }
@@ -932,10 +922,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
     (1+((cumulativeBuffs.ice + cumulativeBuffs.soice) / 100)) *
-    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) *
-    (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1012,11 +1001,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           x{ 
             parseFloat( 
             (
-              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.resotdm) / 100)) *
           (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
           (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))*
-              (1+((cumulativeBuffs.resotdm) / 100))
+          (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
               ).toFixed(3)
             )
             }
@@ -1025,11 +1013,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 - x{ 
   parseFloat( 
   (
-    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
     (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire) / 100)) *
-    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) *
-    (1+((cumulativeBuffs.resotdm) / 100))
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1048,10 +1035,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm) / 100)) *
-          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
           (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
-          (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))*
-              (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+          (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
               ).toFixed(3)
             )
             }
@@ -1060,10 +1046,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
     (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire) / 100)) *
-    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) *
-    (1+((cumulativeBuffs.shadowtdmtaken) / 100))
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1331,531 +1316,518 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <h3 class="text-lg font-semibold text-cyan-400 mb-4">Valkyrie Buffs (Simplified)</h3>
 
 
-        <div class="flex mt-4 gap-4 flex-col sm:flex-row">
+      <div class="flex mt-4 gap-4 flex-col sm:flex-row">
 
-          <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
-            <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
-            <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
-        
-            x{ 
+        <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
+          <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
+          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+
+          x{ 
+          parseFloat( 
+          (
+            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
+            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
+            (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
+            (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100))
+            ).toFixed(3)
+          )
+          }
+
+          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+          - x{ 
             parseFloat( 
             (
-              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
               (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
               (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100))
               ).toFixed(3)
             )
+          }
+
+          {/if}
+        </div>
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+
+          x{ 
+        parseFloat( 
+        (
+          (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+          (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
+          ).toFixed(3)
+        )
+        }
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+    (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {#if slots.leader.astralRing == "World Star"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.resotdm) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+              (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) *
+              (1+((compareCumulativeBuffs.resotdm) / 100))
+              ).toFixed(3)
+            )
             }
-        
-            {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-            - x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-                (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-                (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
-                (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100))
-                ).toFixed(3)
-              )
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+    (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
+
+        {#if slots.leader.astralRing == "Wheel of Destiny"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+              (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) 
+              ).toFixed(3)
+            )
             }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
+    (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) 
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
         
-            {/if}
-          </div>
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
-        
-            x{ 
+
+{#if compareCumulativeBuffs.critdmg > 0}
+<div class="px-2 ml-1 text-white text-left rounded w-fit" id="critdmg">
+      Crit DMG + {(compareCumulativeBuffs.critdmg)}%
+</div>
+{/if}
+
+{#if compareCumulativeBuffs.crate > 0}
+<div class="px-2 m-1 mb-3 text-white text-left rounded w-fit" id="critrate">
+      Crit Rate + {(compareCumulativeBuffs.crate)}%
+</div>
+{/if}
+
+
+      </div>
+
+      <div class="  text-white rounded-lg text-left border border-white  z-2 " id="totallightning">
+        <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
+
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+          x{ 
           parseFloat( 
           (
-            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-            (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
+            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
+            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
+            (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+            (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
           )
           }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+
+        </div>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+
+          x{ 
         parseFloat( 
         (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-        (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
-        ).toFixed(3)
+          (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
+          ).toFixed(3)
         )
         }
-        
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+
+        {#if slots.leader.astralRing == "World Star"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.resotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100)) 
+    ).toFixed(3)
+  )
+}
+
+{/if}
+
+
+        </div>
         {/if}
-          </div>
-          {#if slots.leader.astralRing == "World Star"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-                (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-                (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-                (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) *
-                (1+((compareCumulativeBuffs.resotdm) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
+
+        {#if slots.leader.astralRing == "Wheel of Destiny"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
+
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
+      </div>
+
+      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
+        <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+
+          x{ 
+          parseFloat( 
+          (
+            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
+            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
+            (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+            (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+            ).toFixed(3)
+          )
+          }
+          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+          - x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice) / 100)) *
+              (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken) / 100))
+              ).toFixed(3)
+            )
+          }
+          {/if}
+        </div>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+
+          x{ 
         parseFloat( 
         (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-        (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) *
-        (1+((compareCumulativeBuffs.resotdm) / 100))
-        ).toFixed(3)
+          (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
+          ).toFixed(3)
         )
         }
-        
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
+    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100))
+    ).toFixed(3)
+  )
+}
+{/if}
+        </div>
+
+        {#if slots.leader.astralRing == "World Star"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.resotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
+    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100)) 
+    ).toFixed(3)
+  )
+}
+{/if}
+        </div>
         {/if}
-          </div>
-          {/if}
-        
-          {#if slots.leader.astralRing == "Wheel of Destiny"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-                (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-                (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-                (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) *
-                (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
-        (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100)) *
-        (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        
+
+        {#if slots.leader.astralRing == "Wheel of Destiny"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
+              ).toFixed(3)
+            )
+            }
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
+    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100)) 
+
+    ).toFixed(3)
+  )
+}
+{/if}
+
+        </div>
         {/if}
-          </div>
-          {/if}
-          {#if compareCumulativeBuffs.critdmg > 0}
-          <div class="px-2 ml-1 text-white text-left rounded " id="comparecritdmg">
-                Crit DMG + {(compareCumulativeBuffs.critdmg)}%
-          </div>
-          {/if}
+      </div>
+
+      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
+        <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+
+    
+          x{ 
+          parseFloat( 
+          (
+            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
+            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
+            (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+            (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+            ).toFixed(3)
+          )
+          }
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken) / 100))
+    ).toFixed(3)
+  )
+}
+{/if}
+        </div>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
           
-          {#if compareCumulativeBuffs.crate > 0}
-          <div class="px-2 m-1 mb-3 text-white text-left rounded " id="comparecritrate">
-                Crit Rate + {(compareCumulativeBuffs.crate)}%
-          </div>
-          {/if}
+          x{ 
+        parseFloat( 
+        (
+          (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
+          ).toFixed(3)
+        )
+        }
+
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100))
+    ).toFixed(3)
+  )
+}
+{/if}
         </div>
-        
-        <div class="  text-white rounded-lg text-left border border-white  z-2 " id="totallightning">
-          <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
-        
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-              <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
-            x{ 
+
+        {#if slots.leader.astralRing == "World Star"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+
+          x{ 
             parseFloat( 
             (
-              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
-              (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
-              (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.resotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
               ).toFixed(3)
             )
             }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning) / 100)) *
-        (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        
-        {/if}
-        
-          </div>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
-        
-            x{ 
-          parseFloat( 
-          (
-            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
-            ).toFixed(3)
-          )
-          }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
-        (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        
-        {/if}
-          </div>
-        
-          {#if slots.leader.astralRing == "World Star"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) *
-                (1+((compareCumulativeBuffs.resotdm) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
-        (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100)) *
-        (1+((compareCumulativeBuffs.resotdm) / 100))
-        ).toFixed(3)
-        )
-        }
-        
-        {/if}
-        
-        
-          </div>
-          {/if}
-        
-          {#if slots.leader.astralRing == "Wheel of Destiny"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) *
-                (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
-        (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100)) *
-        (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        
-        {/if}
-          </div>
-          {/if}
 
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) 
+
+    ).toFixed(3)
+  )
+}
+{/if}
 
         </div>
-        
-        <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
-          <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
-        
-            x{ 
+        {/if}
+
+        {#if slots.leader.astralRing == "Wheel of Destiny"}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
+          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+
+          x{ 
             parseFloat( 
             (
-              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
-              (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
-              (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
+          (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+          (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+          (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
               ).toFixed(3)
             )
             }
-            {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-            - x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-                (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-                (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice) / 100)) *
-                (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken) / 100))
-                ).toFixed(3)
-              )
-            }
-            {/if}
-          </div>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
-        
-            x{ 
-          parseFloat( 
-          (
-            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
-            ).toFixed(3)
-          )
-          }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
-        (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        {/if}
-          </div>
-        
-          {#if slots.leader.astralRing == "World Star"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) *
-                (1+((compareCumulativeBuffs.resotdm) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
-        (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100)) *
-        (1+((compareCumulativeBuffs.resotdm) / 100))
-        
-        ).toFixed(3)
-        )
-        }
-        {/if}
-          </div>
-          {/if}
-        
-          {#if slots.leader.astralRing == "Wheel of Destiny"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))*
-                (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-                ).toFixed(3)
-              )
-              }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
-        (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100)) *
-        (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-        
-        ).toFixed(3)
-        )
-        }
-        {/if}
-        
-          </div>
-          {/if}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) 
+
+    ).toFixed(3)
+  )
+}
+{/if}
         </div>
-        
-        <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
-          <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
-        
-        
-            x{ 
-            parseFloat( 
-            (
-              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken) / 100)) *
-              (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
-              (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
-              ).toFixed(3)
-            )
-            }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire) / 100)) *
-        (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken) / 100))
-        ).toFixed(3)
-        )
-        }
         {/if}
-          </div>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
-            
-            x{ 
-          parseFloat( 
-          (
-            (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
-            ).toFixed(3)
-          )
-          }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
-        (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100))
-        ).toFixed(3)
-        )
-        }
-        {/if}
-          </div>
-        
-          {#if slots.leader.astralRing == "World Star"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))*
-                (1+((compareCumulativeBuffs.resotdm) / 100))
-                ).toFixed(3)
-              )
-              }
-        
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
-        (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) *
-        (1+((compareCumulativeBuffs.resotdm) / 100))
-        
-        ).toFixed(3)
-        )
-        }
-        {/if}
-        
-          </div>
-          {/if}
-        
-          {#if slots.leader.astralRing == "Wheel of Destiny"}
-        
-          <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-            <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
-        
-            x{ 
-              parseFloat( 
-              (
-                (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm) / 100)) *
-            (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken) / 100)) *
-            (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
-            (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))*
-                (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-                ).toFixed(3)
-              )
-              }
-        {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
-        - x{ 
-        parseFloat( 
-        (
-        (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-        (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-        (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
-        (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) *
-        (1+((compareCumulativeBuffs.shadowtdmtaken) / 100))
-        
-        ).toFixed(3)
-        )
-        }
-        {/if}
-          </div>
-          {/if}
-        </div>
-        
-        </div>
+      </div>
+
+    </div>
 
         <details class="my-details bg-base-200 rounded-md mt-4  p-2 shadow-md">
           <summary class="my-summary cursor-pointer text-base text-slate-300 hover:bg-cyan-900 hover:text-white px-2 rounded-md">

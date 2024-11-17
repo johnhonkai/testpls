@@ -7,7 +7,9 @@
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '95%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '95%', speed: 'Slow' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '93%', speed: '' }
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '93%', speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: 'TBA%', speed: '' },
+
     ];
 
     const asopchar = [

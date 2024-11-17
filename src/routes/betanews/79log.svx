@@ -1,15 +1,52 @@
 ---
-title: v7.9 Patch Note v3
+title: v7.9 Patch Note v3D
 date: '26-Oct-2024'
 version: '7.9'
 image: "/images/sporkle.png"
 category: "valk"
 ---
 
-- Patch Note: https://rentry.co/79log
-- Valk: https://rentry.co/sporkle
-- Equipment: https://rentry.co/sporklegun
-- ER https://rentry.co/79er
+### V3D
+
+#### ELYSIAN REALM
+- Adjusted stage effects description. Actual effects remain the same
+- Adjusted Sparkle signet description. Actual effects remain the same
+- Fixed an issue where Sena support skill deals abnormally more dmg
+- Fixed an issue where signet portal may not open normally
+- Adjusted a bunch of Sparkle signets
+- Removed  the restriction that Sparkle's ult additional dmg and extra collapse are only available during AR Charging state.
+
+---
+
+### V3C
+
+#### SPARKLE
+- Weapon skill deal 100%+50%x4 > 10%+10%x4 ATK of Fire DMG
+- Dream Fish: Combo ATK Fire DMG +900% > 1100%
+- Fireworks: Combo ATK Fire DMG +900% > 600%
+- When fish consumes reso mark, 204% (S) / 240% (S1) > 255% (S) / 300% (S1) ATK Fire DMG. If reso trigger > 7 times, 1550% (S) / 2000% (S1) > 1084% (S) / 1420% (S1) ATK of Fire DMG.
+- When Resonance mark is triggered and deal dmg, the subsequent dmg multiplier increases by 53% (S) / 65% (SS1) > 60.5% (S) / (65% (SS1) , after dealing dmg 13 times, the dmg multiplier increases by an additional 85% (S) / 100% (SS1) > 102% (S) / 120% (SS1)
+- Lead skill: 0.5s after enemy is ignited, remove ignite and explode, deal 600% > 100% ATK of Fire DMG.
+
+#### STIGMA
+When not set as team leader, teammates‘ Elemental DMG and Total DMG +30% > 20%, teammates’ Weapon Active gain additional Elemental DMG and Total DMG +15% > 20%.
+
+#### WEAPON
+~~During AR Charging:~~ **During Stellar Outburst:** Enemies on the field take +12% more Fire DMG from the wielder.
+Changed condition from AR Charging to Stellar Outburst.
+
+#### EX ABYSS
+- Fire Kosma: Adjusted HP
+- Resonance Vita: Fixed missing warning at the start.
+
+#### ELYSIAN REALM
+Adjusted Kosma boss hp display. Actual value remains the same.
+
+---
+
+### V3B
+- Lone Planetfarer: Added toggle for weapon sub-skill 2 (Trigger time fracture)
+- HoFi with Waxing Moon: Fixed an issue where Combo ATK dmg may be missing in certain cases
 
 ---
 

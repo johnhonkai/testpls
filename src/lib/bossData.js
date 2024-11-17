@@ -47,7 +47,7 @@ export const weatherList = {
     {id: 'ignitehov', name: 'Herrscher of the Void'}
   ],
   Resonance: [
-    {id: 'resovita', name: 'Vita - The Abyss of the Sea'}
+    {id: 'resovita', name: "Vita - Sea's Depths"}
   ],
   Melee: [
     {id: 'meleehoc', name: 'Herrscher of Corruption'}
@@ -156,7 +156,7 @@ export const bossData = {
   },
   starandrius:{
     name: 'Dominator of Wolves', 
-      mechanics: 'Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield.', 
+      mechanics: 'When AR is not activated, Total DMG +20%. Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield.', 
       weakness: 'Immune to Ice DMG', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Dominator of Wolves.webp", 
@@ -204,9 +204,9 @@ export const bossData = {
     weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
   },
   resovita: {
-    name: 'Vita - The Abyss of the Sea', 
+    name: "Vita - Sea's Depths", 
     mechanics: "Has three Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp.", 
-    weakness: '', 
+    weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Vita.png", 
     weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +5%. When AR World Star is activated, team Total DMG +30%.", 
@@ -217,13 +217,27 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Herrscher of Corruption.webp", 
-    weather: "Scrappy: Enemies take 50% more DMG from Melee ATK, and take 50% less DMG from Ranged ATK", 
+    weather: "Scrappy: Enemies take 50% more Total DMG from Melee ATK, and take 50% less Total DMG from Ranged ATK", 
   },
 };
 
 export const teamData = {
   lightningsprout: {
     teamDataSets: [
+      {
+        tabname: "v7.9",
+        teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+        entries: [
+        {
+          type: 'lineup',
+          toptext: '',
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_songque.png"],
+          rank: '',
+          pct: '100%',
+          bottext: '',
+        },
+      ] },
+
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
@@ -236,7 +250,11 @@ export const teamData = {
         pct: '100%',
         bottext: '',
       },
-    ] },],
+    ] },
+
+
+  
+  ],
 
     videos: [
         { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
@@ -421,7 +439,7 @@ export const teamData = {
   bloodsdmob: {
     teamDataSets: [
       {
-        tabname: "v7.8 CN",
+        tabname: "v7.9 CN",
         teamInfoText: "Data is from v7.8 CN PC Server Top 100 Myriad ???D.",
         entries: [
           {
@@ -693,7 +711,7 @@ export const teamData = {
     teamDataSets: [
     {
       tabname: "v7.8",
-      teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
         type: 'lineup',
@@ -741,6 +759,36 @@ export const teamData = {
         lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
         rank: '65',
         pct: '11%',
+      },
+    ]},]
+  },
+  meleehoc: {
+    teamDataSets: [
+    {
+      tabname: "v7.8",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/sparkle.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '1-3',
+        pct: '23%',
+        bottext: "Highest Score: SS 791, SS+ 820 "
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_songque.png"],
+        rank: '4-5',
+        pct: '30%',
+        bottext: "Highest Score: SS+ 814"
+      },
+
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '23',
+        pct: '47%',
+        bottext: "Highest Score: S3 786, SS+ 803 "
       },
     ]},]
   }

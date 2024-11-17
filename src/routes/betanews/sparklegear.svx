@@ -1,18 +1,12 @@
 ---
-title: Sparkle Equipment v3
+title: Sparkle Equipment v3c
 date: '2021-12-14'
 version: '7.9'
 image: "/images/sporkle.png"
 category: "ar"
 
 ---
-By Akie
-- Patch Note: https://rentry.co/79log
-- Valk: https://rentry.co/sporkle
-- Equipment: https://rentry.co/sporklegun
-- ER https://rentry.co/79er
 
----
 
 ### DRIVE CORE WEAPON
 ATK: 441  CRT: 19
@@ -84,6 +78,5 @@ When [World Star] is activated:
 
 
 - During Stellar Outburst:
-    - ~~Team Total DMG +20%,~~ Enemies take +10% more Total DMG, **take further 28% more Total DMG from weapon skills.(v3)**
-    - When not set as team leader, teammates‘ Elemental DMG and Total DMG **+15%(v2) > 30% (v3)**, teammates’ Weapon Active gain additional Elemental DMG and Total DMG **+30%(v2) > 15% (v3)**
-
+- ~~Team Total DMG +20%,~~ Enemies take +10% more Total DMG, **take further 28% more Total DMG from weapon skills.(v3)**
+- When not set as team leader, teammates‘ Elemental DMG and Total DMG ~~+15%(v2)~~ **30% (v3) > 20% (v3c)**, teammates’ Weapon Active gain additional Elemental DMG and Total DMG ~~+30%(v2) >~~ **15% (v3) > 20%(v3c)**

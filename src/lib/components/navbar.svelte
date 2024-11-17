@@ -1,19 +1,20 @@
 <script>
   import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
   let isOpen = false;
   let isNavbarVisible = true;
   let lastScrollY = 0;
 
   let navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Valkyrie', href: '/valk' },
-    { name: 'Account Planner', href: '/planner' },
-    { name: 'AstralOp', href: '/asop' },
-    { name: 'Boss', href: '/boss' },
-    { name: 'Timeline', href: '/calendar79' },
-    { name: 'Classroom', href: '/classroom' },
-    { name: 'Beta News', href: '/beta-news' },
+    { name: 'Home', href: '/', img: "" },
+    { name: 'Valkyrie', href: '/valk' , img: ""},
+    { name: 'Account Planner', href: '/planner', img: "" },
+    { name: 'AstralOp', href: '/asop', img: "/images/navbar/astralop.webp" },
+    { name: 'Boss', href: '/boss', img: "" },
+    { name: 'Timeline', href: '/calendar79', img: "" },
+    { name: 'Classroom', href: '/classroom', img: "" },
+    { name: 'Beta News', href: '/betanews' , img: ""},
   ];
 
   function toggleMenu() {
@@ -33,47 +34,158 @@
   });
 </script>
 
+<div class="sm:flex justify-center relative z-30 hidden">
+<header>
+	<div class="corner">
+		<a href="https://kit.svelte.dev">
+		</a>
+	</div>
 
-<nav class="navbar bg-gray-800/75 text-white p-4 w-full z-40 backdrop-blur-md {isNavbarVisible ? '' : 'navbar-hidden'}">
-  
-  <div class="flex justify-between items-center w-full">
-      <!-- Left Section: Hamburger Menu and Logo -->
-      <div class="flex items-center space-x-4">
-          <button
-              class="block lg:hidden focus:outline-none"
-              on:click={toggleMenu}
-              aria-label="Toggle menu"
-          >
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-          </button>
-          <a href="/" class="text-2xl font-bold flex items-center">
-              My Site
-              <span class="text-sm ml-2 text-gray-400">v1.1</span> <!-- Version Text -->
-          </a>
-      </div>
-      <ul class="hidden lg:flex space-x-4">
-          {#each navLinks as link}
-              <li><a href="{link.href}" class="">{link.name}</a></li>
-          {/each}
-      </ul>
-  </div>
+	<nav>
+		<svg viewBox="0 0 2 3" aria-hidden="true">
+			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
+		</svg>
+		<ul class="text-slate-800">
+			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/" class="custom-font">Home</a>
+			</li>
+      <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : undefined}>
+				<a href="/valk" class="custom-font">Valkyrie</a>
+			</li>
+      <li aria-current={$page.url.pathname === '/planner' ? 'page' : undefined}>
+				<a href="/planner" class="custom-font">Planner</a>
+			</li>
+      <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
+				<a href="/asop" class="custom-font">AstralOp</a>
+			</li>
 
-    <!-- Mobile Navigation Menu (hidden by default) -->
-    <div class={`lg:hidden ${isOpen ? 'block' : 'hidden'} mt-4`}>
-      <ul class="flex flex-col space-y-2">
-        {#each navLinks as link}
-          <li><a href="{link.href}" class="block p-2 hover:underline">{link.name}</a></li>
-        {/each}
-      </ul>
-    </div>
-</nav>
+			<li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
+				<a href="/boss" class="custom-font">Boss</a>
+			</li>
+			
+			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
+				<a href="/calendar79" class="custom-font">Timeline</a>
+			</li>
+
+
+			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
+				<a href="/classroom/Home" class="custom-font">Classroom</a>
+			</li>
+      <li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
+				<a href="/betanews" class="custom-font">Beta News</a>
+			</li>
+		</ul>
+		<svg viewBox="0 0 2 3" aria-hidden="true">
+			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+		</svg>
+	</nav>
+
+	<div class="corner">
+		<a href="https://github.com/sveltejs/kit">
+		</a>
+	</div>
+</header>
+</div>
+
 
 <style>
   .navbar {
 	display: flex;
+  position: absolute;
 	justify-content: space-between;
 	view-transition-name: header;
+	
 }
+
+li {
+		position: relative;
+		height: 100%;
+	}
+
+	li[aria-current='page']::before {
+		--size: 8px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+    border-top: var(--size) solid var(--color-theme-1, #fa7335); /* Adjust to your theme color */
+		view-transition-name: active-page;
+	}
+
+  header {
+		display: flex;
+		justify-content: space-between;
+    position: absolute;
+		view-transition-name: header;
+	}
+
+	.corner {
+		width: 3em;
+		height: 3em;
+	}
+
+	.corner a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.corner img {
+		width: 2em;
+		height: 2em;
+		object-fit: contain;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		--background: rgb(255, 255, 255);
+	}
+
+	svg {
+		width: 2em;
+		height: 3em;
+		display: block;
+	}
+
+	path {
+		fill: var(--background);
+	}
+
+	ul {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		background: var(--background);
+		background-size: contain;
+	}
+
+
+	nav a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 0.5rem;
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+	a:hover {
+		color: var(--color-theme-1, #00aaff);
+	}
+
 </style>

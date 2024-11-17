@@ -110,7 +110,7 @@ export const valkbuffs = [
         rank: "SS",
         available_by_default: "no",
 
-        description: "Enemies take {value1}% more Elemental DMG, and {value2}% more Physical DMG ",
+        description: "For every team member with Harmonized Shadow Star tag, enemies take 5.5% more Elemental DMG, and 2.5% more Physical DMG. (Current Buff: Ele Taken +{value1}% and Phy Taken +{value2}%)",
         condition: { tag: "Harmonized Shadow Star"},
         maxStack: 3,
         value1_1: "5.5", value1_2: "11", value1_3: "16.5",
@@ -145,7 +145,7 @@ export const asopbuffs = [
         rank: "S", 
         available_by_default: "yes",
 
-        description: "Assist ATK deal {value}% ATK of Physical DMG.",
+        description: "Synergy ATK deal {value}% ATK of Physical DMG. Resets switch cd and trigger QTE.",
         condition: { valk: "Jovial Deception: Shadowdimmer" },
         maxStack: 1,
         basevalue: "1500",

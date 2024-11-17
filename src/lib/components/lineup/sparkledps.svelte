@@ -3,20 +3,21 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '100%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: 'TBA%', speed: '' },
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: 'TBA%', speed: '' },
-        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '88%', speed: 'Slow' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '85%', speed: '' }
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '98%', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '97%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '95%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '88%', speed: '' },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '81%', speed: 'Slow' },
+        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '74%', speed: 'Slow' },
     ];
 
     const asopchar = [
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '100%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '93%', speed: '' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '93%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '88%', speed: 'Slow' }
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '98%', speed: 'Slow' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '92%', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '90%', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
@@ -75,9 +76,11 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Currently in 7.8, Vita + HoFi are the best supports for SIMP DPS. (Based on Qua Valralhal)</li>
-                <li class="text-sm sm:text-base">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
-                <li class="text-sm sm:text-base">During Stellar Outburst, Homu mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
+                <li class="text-sm sm:text-base">Sparkle DPS's strongest and fastest team is Vita + HoFi. (Data based on 7.9 Resonance Vita) </li>
+                <li class="text-sm sm:text-base">Vita provides Breach and big buffs, HoFi provides buffs and triggers resonance marks very fast.</li>
+                <li class="text-sm sm:text-base">Lantern is very close in strength and rotation speed, and can counter Fire Kosma's hitcount shield.</li>
+                <li class="text-sm sm:text-base">Similar to Schicksal's Imperative, during Stellar Outburst, Sparkle's resonance mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
+
             </p>
         </div>
     </details>

@@ -5,7 +5,7 @@
     const mainCharacters = [
         { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', teampct: '100%', speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
-        { name: 'CN', image: '/images/valkportrait/Chrono Navi.png', teampct: 'TBA%', speed: '' }
+        { name: 'CN', image: '/images/valkportrait/Chrono Navi.png', teampct: '88%', speed: '' }
     ];
 
     const asopchar = [
@@ -68,10 +68,15 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
-                <li class="text-sm sm:text-base">Sparkle provides tons of buffs. One of buffs require the valk to be in Elemental Breach state, which is provided by Herrscher of Truth.</li>
-                <li class="text-sm sm:text-base">Chrono Navi provides huge buffs, ignite, sp regen and more.</li>
+                <li class="text-sm sm:text-base mb-3">Sparkle provides tons of buffs, and allows FoV to use <b>TWO ULTIMATES IN ONE ROTATION.</b> At S0 Syn1, Sparkle provides around 13% damage improvement for FoV (which is significant in HI3). For comparison, this is similar to Cosmic Expression replacing Eden for Lunar Vow team.
+                Also Sparkle provides ~2s faster rotation than Chrono Navi. </li>
+                    <li class="text-sm sm:text-base mb-3">Herrscher of Truth is mandatory for Sparkle support because: All Sparkle's big buffs are triggered by Ultimate skill, and it has a long cd. By default, you can only use this once every two rotations. Sparkle only gains ult cd reduction if she casts her Ult while having Elemental Breach state. In Fire teams, Ele Breach state can only be provided by Herrscher of Truth. (Or Azure Empyrea but she's outdated.)</li> 
+
+                <li class="text-sm sm:text-base mb-3">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
+                <li class="text-sm sm:text-base mb-3">Chrono Navi provides buffs, ignite, sp regen and more.</li>
             </p>
         </div>
     </details>
+
+  
 </div>

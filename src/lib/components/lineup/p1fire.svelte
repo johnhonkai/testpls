@@ -3,13 +3,13 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', teampct: '100%', speed: '' },
+        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png',  speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
-        { name: 'CN', image: '/images/valkportrait/Chrono Navi.png', teampct: 'TBA%', speed: '' }
+        { name: 'CN', image: '/images/valkportrait/Chrono Navi.png', teampct: '88%', speed: '' }
     ];
 
     const asopchar = [
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '100%', speed: '' }
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png',  speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component
@@ -68,9 +68,16 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
-                <li class="text-sm sm:text-base">Sparkle provides tons of buffs. One of buffs require the valk to be in Elemental Breach state, which is provided by Herrscher of Truth.</li>
-                <li class="text-sm sm:text-base">Chrono Navi provides huge buffs, ignite, sp regen and more.</li>
+                <li class="text-sm sm:text-base mb-3">Sparkle provides around 7-10% DMG-per-second increase (depends on the valk) and faster rotation than Chrono Navi.   </li>
+                <li class="text-sm sm:text-base mb-3">Dea Anchora: DA can now use G4 Little Joys with no sp issue. This is around 15% more damage than her signature stigma G3 Shakespeare Adrift.</li>
+                <li class="text-sm sm:text-base mb-3">Herrscher of Flamescion: If you rotate too fast after using two Ults in one rotation, HoFs Ult will still be on cooldown the next time she switches in.</li>
+                <li class="text-sm sm:text-base mb-3">Spina Astera: You can't use double Ult, because you will have no meter after you use Charged ATK.</li>
+                <li class="text-sm sm:text-base mb-3">Vill-V: You can't use double Ult, because your Ult ends Burst Mode.  </li>
+
+                    <li class="text-sm sm:text-base mb-3">Herrscher of Truth is mandatory for Sparkle support because: All Sparkle's big buffs are triggered by Ultimate skill, and it has a long cd. By default, you can only use this once every two rotations. Sparkle only gains ult cd reduction if she casts her Ult while having Elemental Breach state. In Fire teams, Ele Breach state can only be provided by Herrscher of Truth. (Or Azure Empyrea but she's outdated.)</li> 
+
+                <li class="text-sm sm:text-base mb-3">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
+                <li class="text-sm sm:text-base mb-3">Chrono Navi provides buffs, ignite, sp regen and more.</li>
             </p>
         </div>
     </details>

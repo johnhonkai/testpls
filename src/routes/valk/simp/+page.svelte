@@ -9,6 +9,10 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
+	import Lvdpsdual from '$lib/components/lineup/lvdpsdual.svelte';
+	import P1lightningdps from '$lib/components/lineup/p1lightningdps.svelte';
+	import Lvdpsnormal from '$lib/components/lineup/lvdpsnormal.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -357,11 +361,15 @@ function selectTabMobile(event) {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <SimpDPS firstCharIndex={0} maindps={true}/>
+      <SimpDPS maindps={true}/>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
       
       <SenaDPS firstCharName="Simp" />
+
+      <div class="divider divider-neutral"></div>
+
+      <Sparkledps firstCharName="Simp"></Sparkledps>
       {/if}
 
       {#if currentPage === 2}
@@ -381,6 +389,16 @@ function selectTabMobile(event) {
 
       {#if currentPage === 3}
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Part 1 Lightning Support </div>
+
+      <Lvdpsdual></Lvdpsdual>
+
+      <div class="divider divider-neutral"></div>
+
+      <Lvdpsnormal></Lvdpsnormal>
+
+      <div class="divider divider-neutral"></div>
+
+      <P1lightningdps></P1lightningdps>
 
       {/if}
 

@@ -11,9 +11,7 @@
 </script>
 
 <div class="form-control w-full max-w-xs text-white mx-auto">
-  <label class="label">
     <span class="label-text">Select Weather</span>
-  </label>
   <select 
     class="select select-bordered max-h-10 overflow-y-auto"
     on:change={selectWeather}

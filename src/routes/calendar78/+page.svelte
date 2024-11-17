@@ -524,8 +524,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Oct 18" weather="Type" bosspage="/boss?Typecounter&typeandrius"/>
-                <BossCard image="images/Bosses/Husk - Existentialism.webp" date="Oct 21" weather="IMG" bosspage="/boss?IMG&imghusk"/>
+                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Oct 18" weather="Type" bosspage="/boss?TypeCounter&typeandrius"/>
+                <BossCard image="images/Bosses/Husk - Existentialism.webp" date="Oct 21" weather="IMG" bosspage="/boss?Imaginary&imgflower"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -543,7 +543,7 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
                 <BossCard image="images/Bosses/Sprout_of_Wishing_SSS.webp" date="Oct 25" weather="Lightning" bosspage="/boss?Lightning&lightningsprout"/>
-                <BossCard image="images/Bosses/Yae Kasumi.webp" date="Oct 28" weather="Type" bosspage="/boss?Typecounter&typekasumi"/>
+                <BossCard image="images/Bosses/Yae Kasumi.webp" date="Oct 28" weather="Type" bosspage="/boss?TypeCounter&typekasumi"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">

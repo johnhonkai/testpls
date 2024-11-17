@@ -3,12 +3,16 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '100%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: 'TBA%', speed: '' },
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: 'TBA%', speed: '' },
-        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '88%', speed: 'Slow' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '85%', speed: '' }
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '98%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '98%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '88%', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '82%', speed: '' },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '76%', speed: 'Slow' },
+        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '76%', speed: 'Slow' },
+
+
     ];
 
     const asopchar = [
@@ -74,8 +78,9 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Currently in 7.8, Vita + HoFi are the best supports for SIMP DPS. (Based on Qua Valralhal)</li>
-                <li class="text-sm sm:text-base">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
+                <li class="text-sm sm:text-base mb-3">Sparkle provides extra buff for QUA teammates and debuff for QUA enemies. Her ult cd reduction also allows SIMP to use her Ult one more time during Stellar Outburst. For these reasons, Sparkle has become one of the best teammates against Qua enemies like Valralhal and Resonance Vita.</li>
+                <li class="text-sm sm:text-base mb-3">The pairings used in Top 100 are Sparkle + Thelema, and Vita + HoFi (Data based on Resonance Vita). Other pairings are still very good for Red Lotus and Nirvana retention.</li>
+                <li class="text-sm sm:text-base mb-3">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
                 <li class="text-sm sm:text-base">During Stellar Outburst, Homu mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
             </p>
         </div>

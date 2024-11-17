@@ -10,6 +10,9 @@ import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
 	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
+	import Fovdps from '$lib/components/lineup/fovdps.svelte';
+	import P1fire from '$lib/components/lineup/p1fire.svelte';
+	import Sirindps from '$lib/components/lineup/sirindps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -155,8 +158,8 @@ function selectTabMobile(event) {
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
-<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
-  <img src="/images/bg/wave_sparkle.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden"  /> 
+<div class="absolute   top-[-3.5rem] w-full h-[90vh] z-[-10] opacity-85 ">    
+  <img src="/images/bg/wave_sparkle2.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden "  /> 
 </div>
 
 
@@ -276,41 +279,47 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong> Average DPS.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">DPS:</strong> Very underwhelming DPS.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1 Fire Support:</strong> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle provides increased ignite trauma, ult cd reduction, ult sp cost reduction, and more.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Part 1 Fire Support:</strong> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle allows DPS to  <b>USE ULTIMATE TWICE PER ROTATION</b>, provides HUGE Ignite DMG, extra ignite stacks, and more. 
           </p>
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">World Star Support:</strong> Just a normal buffer and resonance mark triggerer.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">Future ??? AR Support:</strong> Sparkle will be a support for one AR team in the future.
         </p>
+
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400">Quantum Counter:</strong> Sparkle can insta-kill QUA enemies below 10% HP. Sparkle can be used by any team that requires quantum collapse. Sparkle ult provides two QUA collapses. If she uses her ult on a teammate, the teammate's Ult gains two QUA collapses.
+      </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players:</strong> Recommended to pull Vita for her flexible support capability. As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.
-          </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P:</strong> Vita is not a top priority, since you already have Senadina to support World Star and WoDestiny teams. The only thing Sena cannot do is support the ??? AR team and the other 9 AR teams.
-          </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Recommended, Vita's value is insane.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">New Players:</strong> It is NOT highly recommended to pull Sparkle. Vita [Lone Planetfarer] is available in v7.9 and she is much more valuable for new players. BUT, if you do decide to pull Sparkle, she will have her uses:
+            </p>
+              <ul class="list-disc ml-6 text-sm sm:text-base mt-3"></ul>
+              <li class="mt-2">Sparkle will cover Quantum content, but she won't be a very good dps anywhere else.</li>  
+              <li class="mt-2">You have a support for World Star teams. <span class="text-gray-400">(Also covered by Vita) </span></li>
+              <li class="mt-2">You have a support for the future ??? AR teams.  <span class="text-gray-400">(Also covered by Vita) </span></li>
+
+          <p class="mt-5 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive:</strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>For World Star team, currently Vita is undeniably the best support.</li>
-              <li>For WoDestiny team, S0-Vita loses to S0-Sena (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-              <li>For the future ??? AR team, Vita is the uncontested best support, at least until we get another S-rank support for that AR.</li>
+              <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
+              <li class="mt-2">As DPS, Sparkle loses to Schicksal's Imperative against Resonance Vita. S-rank Sparkle is not even in T100 leaderboard (CN PC server data). It seems like Sparkle only top scores Fire Kosma for now. (no live data)</li>
+
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
@@ -324,13 +333,13 @@ function selectTabMobile(event) {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: 
+              Check out the full guide on YouTube: (Coming Soon)
           </p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -356,26 +365,26 @@ function selectTabMobile(event) {
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
       
-      <SimpDPS firstCharIndex={0} />
+      <SimpDPS firstCharName="Sparkle" />
 
       <div class="divider divider-neutral"></div>
 
-      <SenaDPS firstCharIndex={0} />
+      <SenaDPS firstCharName="Sparkle"  />
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Part 1 Fire Support </div>
 
-      <JDDPS firstCharIndex={0} />
-
-      <div class="divider divider-neutral"></div>
-
-      <LanternDPS firstCharIndex={0} />
-
+      <Fovdps></Fovdps>
 
       <div class="divider divider-neutral"></div>
 
-      <ThelDPS firstCharIndex={0} />
+      <Sirindps></Sirindps>
+
+
+      <div class="divider divider-neutral"></div>
+
+      <P1fire></P1fire>
 
       {/if}
 
@@ -427,16 +436,27 @@ function selectTabMobile(event) {
                   </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white">Weapon + Stigma</h4>
+              <h4 class="text-base sm:text-base text-white">Volatile Sparkler + Sparkle: Thousand-Faced Maestro Stigma</h4>
               </div>
 
-              <div class="p-2 mt-2 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
-              <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base"><b>Skyveil Feathers:</b> All buffs, with one utility - first Stellar Drain consumption grants 15 more AR.</li>
-                  <li class="text-sm sm:text-base"><b>Vita: Lone Planetfarer: </b> Tons of self buffs and support buffs. </li>
-                  <li class="text-sm sm:text-base"><b>Affix: </b> Full ATK.</li>
-              </p>
+              <div class="p-4 mt-4 bg-gradient-to-r from-rose-950/75 to-rose-900/75 rounded">
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Volatile Sparkler</b><br/> Adds 1.5s timestop to [I am Elation] skill. This is <b>VERY IMPORTANT</b>.
+                   It is such a small change to your mechanic, but without this weapon: 
+                   <br/>- In Part 1 Fire team, Sirin / FoV's second Ult will miss or barely fit into Herrscher of Truth's breach duration window.
+                   <br/>- As Sparkle DPS, in Sparkle Vita HoFi team, you won't be able to perform second Combo ATK and cast [I am Elation] skill before Stellar Outburst ends. <br/>
+                  Also adds one more Quantum Collapse to Ult skills (self and teammate).
+                </p>
+              
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Sparkle Stigma: </b> Tons of self buffs and support buffs.
+                </p>
+              
+                <p class="text-sm sm:text-base text-left">
+                  <b>Affix:</b> Full ATK.
+                </p>
               </div>
+              
 
               <div class="divider divider-neutral"></div>
 
@@ -467,8 +487,26 @@ function selectTabMobile(event) {
                   </div>  
                   <p class="text-sm sm:text-base text-white">Red Star Thunderbolt</p>
                 </div>
-              </div>
 
+                <div class="flex flex-col justify-center items-center">
+                
+                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
+  
+                      <div class="w-20 h-20 sm:w-28 sm:h-28">
+                          <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/15/73749426/e4a04240fc1beb3486b1edf52fc8e686_1933481799434645907.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      </div>
+  
+                  </div>  
+                  <p class="text-sm sm:text-base text-white">Life of Pi</p>
+                </div>
+                
+              </div>
+              <div class="p-4 mt-4 bg-gradient-to-r from-gray-800/75 to-gray-700/75 rounded">
+                <p class="text-sm sm:text-base text-left ">
+                  For Sparkle, these weapons are around equal performance - equally horrible. As mentioned above, signature weapon Volatile Sparkler gives timestop to  [I am Elation] skill, which prevents you from missing out on important dmg buff duration, and as dps, allows Sparkle to do her full attack sequence before Stellar Outburst ends.
+                </p>
+
+              </div>
 
               </div>
       {/if}
@@ -476,14 +514,75 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Lone Planetfarer buffs:
-        <li> Stellar Drain: Combo ATK consumes Stellar Drain. For every Enhanced Basic ATK Seq 4, Stellar Drain will recover additional 5 (S) / 10 (SS) AR meter, max 2 stacks.</li>
-        <li> Ultimate: Activate Omniscient Skyveil buffs (Breach and some dmg taken buffs)</li>
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Sparkle buffs:</p>
+        
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">1</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Stellar Drain:</p>
+            <p><i>I am Elation</i> consumes Stellar Drain and restores 20 AR.</p>
+          </div>
+        </div>
+      
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">2</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Ultimate (Part 1 Team):</p>
+            <p>
+              Ult has all the major buffs, including Ignite DMG +25%, 30% more Ignite Trauma, 
+              enemies take 65% more Ignite DMG, and more.
+            </p>
+          </div>
+        </div>
+      
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">3</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Ultimate (World Star Team):</p>
+            <p>
+              Ult only provides ult cooldown -5s, 30 SP, and higher anti-interrupt. If used on a Fire DMG 
+              dealer, the SP consumption of their next Ultimate is reduced by 50%.
+            </p>
+          </div>
+        </div>
+      
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">4</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Quantum Collapse:</p>
+            <p>
+              When Sparkle casts her Ult on a teammate, that teammate's Ult will apply two Quantum Collapses.
+            </p>
+          </div>
+        </div>
+      
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">5</span>
+          <div>
+            <p class="font-semibold text-cyan-300">I am Elation:</p>
+            <p>Recovers 8 (S) / 20 (S2) SP for teammates.</p>
+          </div>
+        </div>
+      
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">6</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Any weapon skill:</p>
+            <p>Insta-kill QUA enemies below 10% HP.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-cyan-300 font-bold text-lg">7</span>
+          <div>
+            <p class="font-semibold text-cyan-300">Passive Buffs:</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+        </div>
       </div>
+      
+      
 
       <div class="flex flex-wrap gap-4">
         <!-- Example image list for support buffs; add your own image sources -->
@@ -514,19 +613,19 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Stellar Outburst
+            STELLAR OUTBURST
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            AR Charging
+            AR CHARGING
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
             Mecha smashes all
         </p>
@@ -549,8 +648,8 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Abyssal Aid ➔ Deep Love</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Lonesome Feathers</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Deceit ➔ Dream Scale</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Opulence</p>
             </div>
           </div>
           
@@ -725,8 +824,8 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Cosmos + Lovely Wishes</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Lonesome Feathers</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Radiant Flames ➔ Thousand Faces</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Opulence </p>
             </div>
           </div>
         </div>
@@ -890,10 +989,7 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S2: 37% ➔ 40% independent multiplier</li>
-              <li>SS: Combo ATK Lightning DMG +14% ➔ 20%, EleBreach +5.5% ➔ 8%</li>
-              <li>SS2: EleBreach +5 ➔ 6%</li>
-              <li>Self DPS upgrades stop at SS3 rank</li>
+              <li>Every rank up has a DPS upgrade.</li>
             </ul>
           </div>
       
@@ -901,11 +997,9 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S1: Ele Breach +11.5% ➔ 14%, Phy Breach +37% ➔ 45%</li>
-              <li>S3: Enemies take 12% ➔ 15% more Ele DMG and 9% ➔ 11% more Physical DMG</li>
-              <li>SS: WoD team consumes two more Stellar Drain</li>
-              <li>SS: Restore 5-10 more AR meter</li>
-              <li>SSS: Start the battle with a stronger version of Omniscient Skyveil</li>
+              <li>S2 and SS: Improves P1 support buffs</li>
+              <li>SS: I am Elation restores 18 sp for Sparkle. In Part 1 team, this enables Sparkle to get Ult without using Combo ATK, improving score.</li>
+              <li>SS2: Improves buffs when supporting Schicksal's Imperative against QUA enemies.</li>
             </ul>
           </div>
         </div>
@@ -929,80 +1023,73 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                  - Elemental Breach +11.5% ➔ 14%<br/>
-                  - Physical Breach +37% ➔ 45%<br/>
-                  2. The locked AR subskill has S1 upgrade.
+                  1. During Stellar Outburst: Total DMG +30% ➔ 35% and Fire DMG +36% ➔ 43% <br/>
+                  2. Reso DMG from consumed reso mark - Each hit deal 255% ➔ 300% ATK of Fire DMG, cd 0.5s. If the mark trigger count from mark consumption is more than 7, each mark trigger deals 1084% ➔ 1420% ATK of Fire DMG. 
                 </td>
-                <td class="p-3">Recommended!<br>1. WoDestiny Support<br>2. World Star Support<br/>3. Future AR Support</td>
+                <td class="p-3">DPS</td>
               </tr>
               <!-- Sample Row 2 -->
               <tr>
                 <td>S2</td>
                 <td>
-
-                    1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70% <br/>
-                    2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+                    1. UNLOCK: Upon casting Combo ATK, trigger 3s time fracture, cd 8s <br/>
+                    2. Teammates with Spotlight: Attack against type advantage enemy gain Total DMG +10.2% ➔ 12.6%. Her Ult further gain Ignite DMG +49% ➔ 62%.  <br/>
+                    3. When the final hit of I am Elation hits, recover extra 8 ➔ 20 sp for teammates.
 
                 </td>
-                <td>DPS, Time Fracture</td>
+                <td>Support <br/> DPS</td>
               </tr>
               <tr>
                 <td>S3</td>
                 <td>
-                  1. Leader Skill:<br/>
-                    Team Total DMG +8% ➔ 10%<br/>
-                   Team Elemental DMG +8% ➔ 10%<br/>
-                    Enemies take +4% ➔ 5% more Total DMG<br/>
+                  Leader Skill:<br/>
+                  - During AR Charging, team Elemental DMG +17.2% ➔ 21.1% <br/>
+                  - Sparkle resonance atk gain Total DMG +21 ➔ 25.5%.<br/>
+                  - Enemies take +17.5% ➔ 21.25% more Fire DMG from Sparkle's Resonance DMG (independent multiplier)
 
-                2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
                 </td>
-                <td>DPS, Any AR Support</td>
+                <td>DPS</td>
               </tr>
               <tr>
                 <td>SS</td>
                 <td>
-                  1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-                  2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-                  3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.<br/>
+                  1. UNLOCK: [I am Elation] restore 18 sp for Sparkle.<br/>
+                  2. Enemies take 9.2% ➔ 12% more Fire DMG and Total DMG from Sparkle. [I am Elation] deal additional 800% ➔ 1000% ATK of Fire DMG, and Ult deal additional 1600% ➔ 2000% ATK of Fire DMG<br/>
+                  3. Teammates with Spotlight: Attack against type advantage enemy gain Total DMG +12.6% ➔ 15%. Her Ult further gain Ignite DMG +62% ➔ 75%. <br/>
                 </td>
-                <td>1. DPS<br/>
-                  2. WoDestiny support<br/>
-                  3. Any AR Support</td>
+                <td>Support<br/>
+                  DPS<br/>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP
+                  When Resonance mark is triggered and deal dmg, the subsequent dmg multiplier increases by 60.5% ➔ 65% , after dealing dmg 13 times, the dmg multiplier increases by an additional 102% ➔ 120%.
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SS2</td>
                 <td>
-                  When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.
+                  QUA enemies take 28.5% ➔ 30% more Total DMG from Sparkle, and all QUA teammates gain Total DMG +8.5% ➔ 10% against QUA enemies.
                 </td>
-                <td>DPS
+                <td>DPS<br/>SIMP Support
               </tr>
               <tr>
                 <td>SS3</td>
                 <td>
-                  Leader Skill:
-                  - Team Total DMG +10% ➔ 12%
-                  - Team Elemental DMG +10% ➔ 12%
-                  - Enemies take +5% ➔ 6% more Total DMG                  
+                  Leader Skill:<br/>
+                  - During AR Charging, team Elemental DMG +21.1% ➔ 25% <br/>
+                  - Sparkle resonance atk gain Total DMG +25 ➔ 30%.<br/>
+                  - Enemies take +21.25% ➔ 25% more Fire DMG from Sparkle's Resonance DMG (independent multiplier)               
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-                  - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-                  - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-                  - When you gain Omniscient Skyveil, Sprouting Wish is disabled.
+                  During Stellar Outburst: Total DMG +35% ➔ 40% and Fire DMG +43% ➔ 50%
                 </td>
-                <td>Any AR Support
+                <td>DPS
               </tr>
             </tbody>
           </table>
@@ -1215,29 +1302,10 @@ function selectTabMobile(event) {
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-      <div class="my-6">
-        <div class="chat chat-start ">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/meibald.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-primary text-base ">Is Vita melee or ranged?</div>
-        </div>
-
-        <div class="chat chat-end">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/ds.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-neutral text-base">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
-        </div>
-      </div>
+  <div class="text-center my-4">
+    <p class="text-center text-sm sm:text-base">No popular question
+    </p>
+  </div>
   {/if}
 
   {#if selectedTab === 'Overview Card'}

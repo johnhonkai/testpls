@@ -22,6 +22,7 @@
         "Vita": {
             title: "Battlesuit Supply B: Lone Planetfarer",
             description: '<li>Duration: 2 weeks.</li><li>A-rank: Valkyrie Blastmetal (UP), Sundenjager, Valkyrie Bladestrike, Valkyrie Gloria </li>',
+            image: 'https://i.imgur.com/8a0N5jC.png'
 
         },
         "Equip": {
@@ -284,7 +285,7 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">HI3 x HSR Collab Event</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">HI3 x HSR Collab Event<br/>Honkai: A Fool's Hand</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
                         <img src="https://i.imgur.com/S7FM984.png" alt="Lone Planetfarer" class="w-full h-full object-cover " />
@@ -372,7 +373,7 @@
                 <div></div><div></div>
                 <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Ai Fun Club<br/>Starts on Monday at 10 AM</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Snazzy Cards Club<br/>Starts on Monday at 10 AM</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
                         <img src="https://i.imgur.com/XdlGcBX.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
@@ -395,7 +396,7 @@
 
 <div class="p-4 flex justify-center">
     <div class="overflow-x-auto overflow-y-clip">
-        <div class="w-[940px] rounded-lg bg-gray-900 text-white">
+        <div class="w-[940px] rounded-lg bg-gray-900 text-white" >
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
@@ -405,15 +406,15 @@
             </div>
 
             <!-- Week 1 Row -->
-            <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2">
+            <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->
                 <div class="flex items-center justify-center font-bold text-lg rounded-l-lg p-2 text-black">
                     1
                 </div>
 
-                <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="/images/Bosses/Herrscher%20of%20the%20Void.webp" date="Nov 29" weather="Ignite" bosspage="/boss?Ignite&ignitehov"/>
-                <BossCard image="/images/Bosses/Alien Guard.webp" date="Dec 2" weather="Blood" bosspage="/boss?Bloodthirst&bloodsdmob"/>
+                <div class="flex col-span-2 justify-center gap-1 mr-2" >
+                <BossCard image="/images/Bosses/Herrscher%20of%20the%20Void.webp" date="Nov 29" weather="Ignite" bosspage="/boss?Ignite&ignitehov" />
+                <BossCard image="/images/Bosses/Alien Guard.webp" date="Dec 2" weather="Blood" bosspage="/boss?Bloodthirsty&bloodsdmob"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -448,7 +449,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="" date="TBA" weather="TBA" />
+                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 13" weather="Lightning" bosspage="/boss?Lightning&lightningsprout"/>
                     <BossCard image="" date="TBA" weather="TBA" />
                     </div>
                      

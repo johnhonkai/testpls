@@ -51,7 +51,7 @@ export const valkbuffs = [
 
     {
         rank: "SSS",
-        description: "Typeless enemies take 5% more Total DMG from character's attacks.",
+        description: "Typeless enemies take 5% more Total DMG.",
         available_by_default: "yes",
         condtdmtaken:5,
     },

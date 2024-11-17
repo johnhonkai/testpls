@@ -2,7 +2,8 @@
 <slot /> <!-- This will render the content of each page -->
 
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import Member from '$lib/components/member.svelte';
+import { onMount } from 'svelte';
 
   let isClicked = false;
   let imageSrc = '/images/test2.webp';
@@ -62,11 +63,11 @@
 
 <section class="relative flex m-0 justify-center ">
 
-  <div class="relative max-w-screen-lg">
+  <div class="relative max-w-screen-lg right-[-1rem]">
   <div>
-    <img src="/images/test1.webp" alt="Banner" class="w-full h-full object-cover">
+    <img src="/images/test1.webp" alt="Banner" class="w-full h-full  object-cover">
   </div>
-  <div class="absolute right-0 bottom-0 z-20 cursor-pointer" on:click={handleClick}>
+  <div class="absolute bottom-0 z-20 cursor-pointer" on:click={handleClick}>
     <img 
       src={imageSrc} 
       alt="Banner" 
@@ -76,7 +77,6 @@
 
 </div>
 </section>
-
 
 <style>
   /* Define the wobble animation */

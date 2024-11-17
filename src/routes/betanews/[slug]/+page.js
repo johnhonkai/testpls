@@ -17,5 +17,7 @@ export async function load({ params }) {
 		date,
 		version,
     	image,
+		creationDate,
+		lastModifiedDate 
 	};
 }
