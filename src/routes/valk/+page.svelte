@@ -136,7 +136,7 @@
 
  <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6 ">
   {#each filteredValkyries as valkyrie}
-    <a href={valkyrie.url} class=" flex flex-col items-center text-center  rounded " data-sveltekit-preload-data="eager">
+    <a href={valkyrie.url} class=" flex flex-col items-center text-center  rounded " data-sveltekit-preload-data>
       <!-- Valkyrie Image with Relative Wrapper -->
       <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group ">
         <!-- Badge for New or Updated -->
