@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+  import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
 
     // Filter options
     const types = [
@@ -134,33 +135,9 @@
   
  <!-- Valkyrie Grid -->
 
- <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6 ">
-  {#each filteredValkyries as valkyrie}
-    <a href={valkyrie.url} class=" flex flex-col items-center text-center  rounded " data-sveltekit-preload-data>
-      <!-- Valkyrie Image with Relative Wrapper -->
-      <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group ">
-        <!-- Badge for New or Updated -->
-        {#if valkyrie.badge}
-          <span class="absolute top-1 left-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10 " 
-                class:badge-ghost={valkyrie.badge === 'Beta'}
-                class:badge-secondary={valkyrie.badge === 'New'}
-                class:badge-accent={valkyrie.badge === 'Updated'}>
-            {valkyrie.badge}
-          </span>
-        {/if}
-
-        <img src={valkyrie.image} alt={valkyrie.name} 
-        class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 rounded-md transition-transform duration-300 transform group-hover:scale-110" 
-        style ="view-transition-name: valkyrie-image-{valkyrie.id};"
-
-        />
-
-      </div>
-      <!-- Valkyrie Name -->
-      <div class="text-xs sm:text-sm md:text-base font-medium mb-2 sm:leading-5 mt-1 ">{valkyrie.name}</div>
-
-    </a>
-
+ <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
+  {#each valkyries as valkyrie}
+    <ValkyrieLink valkyrie={valkyrie} />
   {/each}
 </div>
 
