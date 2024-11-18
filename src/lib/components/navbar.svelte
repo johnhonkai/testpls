@@ -36,10 +36,7 @@
 
 <div class="sm:flex justify-center relative z-30 hidden">
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-		</a>
-	</div>
+
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -80,10 +77,7 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-		</a>
-	</div>
+
 </header>
 </div>
 
