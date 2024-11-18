@@ -1,55 +1,56 @@
 
 export const weatherList = {
-  Lightning: [
+  lightning: [
     {id: 'lightningsprout',name: 'Sprout of Wishing'}
   ],
-  Fire: [
-    {id: 'firemobius', name: 'Mobius'}
+  fire: [
+    {id: 'firemobius', name: 'Mobius'},
+    {id: 'firekosma', name: 'Kosma'},
   ],
-  TypeCounter: [
+  typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
     {id: 'typeandrius', name:'Andrius'}, 
   ],
-  Oblivion: [
+  oblivion: [
     {id: 'obvhomu', name: 'Homu'}
   ],
-  Bloodthirsty:[
+  blood:[
     {id: 'bloodsdmob', name: 'SD-Mech Swarm'}
   ],
-  Imaginary: [
+ imaginary: [
     {id: 'imgflower', name: 'Husk: Existentialism'}
   ],
-  Quantum: [
+  quantum: [
     {id: 'quavalralhal', name: 'Valralhal'}
   ],
-  Ranged: [
+  ranged: [
     {id: 'rangedkalpas', name: 'Kalpas'},
     {id: 'rangedhepa', name: 'Hephaestus'}
   ],
-  Stun:[
+  stun:[
     {id: 'stunfish', name: 'Flying Fish'}
   ],
-  Stardust:[
+  stardust:[
     {id: 'sdepernay', name: 'Meteroid: Epernay'}
   ],
-  Stellar: [
+  stellar: [
     {id: 'stellarassaka', name: 'Assaka'}
   ],
-  Starless: [
+  starless: [
     {id: 'starbenares', name: 'Benares: Ice'},
     {id: 'starrimestar', name: 'Herrscher of Rimestar'},
     {id: 'starandrius', name: 'Dominator of Wolves'}
   ],
-  Bleed: [
+  bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'}
   ],
-  Ignite: [
+  ignite: [
     {id: 'ignitehov', name: 'Herrscher of the Void'}
   ],
-  Resonance: [
+  resonance: [
     {id: 'resovita', name: "Vita - Sea's Depths"}
   ],
-  Melee: [
+  melee: [
     {id: 'meleehoc', name: 'Herrscher of Corruption'}
   ],
 }
@@ -177,6 +178,14 @@ export const bossData = {
       weakness: 'Lightning (L)', 
       typeicon: "images/type/IconMECH.png", 
       bosspic: "images/Bosses/MOBIUS2.png", 
+      weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },
+  firekosma: {
+    name: 'Kosma', 
+      mechanics: "Defeat the mob with a Qua valk to gain 2 sp/s for 30s. Transition phase has 100 hit hp, each hit grants a debuff stack, makes Kosma take more damage.", 
+      weakness: 'None', 
+      typeicon: "images/type/IconQUA.png", 
+      bosspic: "images/Bosses/Flame-Chaser - Kosma.webp", 
       weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
   imgflower: {

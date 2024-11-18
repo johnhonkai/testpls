@@ -524,8 +524,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Oct 18" weather="Type" bosspage="/boss?TypeCounter&typeandrius"/>
-                <BossCard image="images/Bosses/Husk - Existentialism.webp" date="Oct 21" weather="IMG" bosspage="/boss?Imaginary&imgflower"/>
+                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Oct 18" weather="Type" bosspage="/boss?typeandrius"/>
+                <BossCard image="images/Bosses/Husk - Existentialism.webp" date="Oct 21" weather="IMG" bosspage="/boss?imgflower"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -542,8 +542,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Sprout_of_Wishing_SSS.webp" date="Oct 25" weather="Lightning" bosspage="/boss?Lightning&lightningsprout"/>
-                <BossCard image="images/Bosses/Yae Kasumi.webp" date="Oct 28" weather="Type" bosspage="/boss?TypeCounter&typekasumi"/>
+                <BossCard image="images/Bosses/Sprout_of_Wishing_SSS.webp" date="Oct 25" weather="Lightning" bosspage="/boss?lightningsprout"/>
+                <BossCard image="images/Bosses/Yae Kasumi.webp" date="Oct 28" weather="Type" bosspage="/boss?typekasumi"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -560,8 +560,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/HOMU Emperor.webp" date="Nov 1" weather="Oblivion" bosspage="/boss?Oblivion&obvhomu"/>
-                <BossCard image="images/Bosses/epernay.png" date="Nov 4" weather="Stardust" bosspage="/boss?Stardust&sdepernay" />
+                <BossCard image="images/Bosses/HOMU Emperor.webp" date="Nov 1" weather="Oblivion" bosspage="/boss?obvhomu"/>
+                <BossCard image="images/Bosses/epernay.png" date="Nov 4" weather="Stardust" bosspage="/boss?sdepernay" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -579,8 +579,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Saha Assaka.webp" date="Nov 8" weather="Stellar" bosspage="/boss?Stellar&stellarassaka"/>
-                <BossCard image="images/Bosses/Herrscher of Rimestar.png" date="Nov 11" weather="Starless" bosspage="/boss?Starless&starrimestar"/>
+                <BossCard image="images/Bosses/Saha Assaka.webp" date="Nov 8" weather="Stellar" bosspage="/boss?stellarassaka"/>
+                <BossCard image="images/Bosses/Herrscher of Rimestar.png" date="Nov 11" weather="Starless" bosspage="/boss?starrimestar"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -598,8 +598,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Nov 15" weather="Starless" bosspage="/boss?Starless&starandrius"/>
-                <BossCard image="images/Bosses/Herrscher of Sentience.webp" date="Nov 18" weather="Bleed" bosspage="/boss?Bleed&bleedhos"/>
+                <BossCard image="images/Bosses/Dominator of Wolves.webp" date="Nov 15" weather="Starless" bosspage="/boss?starandrius"/>
+                <BossCard image="images/Bosses/Herrscher of Sentience.webp" date="Nov 18" weather="Bleed" bosspage="/boss?bleedhos"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -617,8 +617,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                <BossCard image="images/Bosses/Hephaestus SSS.webp" date="Nov 22" weather="Ranged" bosspage="/boss?Ranged&rangedhepa"/>
-                <BossCard image="images/Bosses/Varaha.png" date="Nov 25" weather="Quantum" bosspage="/boss?Quantum&quavalralhal"/>
+                <BossCard image="images/Bosses/Hephaestus SSS.webp" date="Nov 22" weather="Ranged" bosspage="/boss?rangedhepa"/>
+                <BossCard image="images/Bosses/Varaha.png" date="Nov 25" weather="Quantum" bosspage="/boss?quavalralhal"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">

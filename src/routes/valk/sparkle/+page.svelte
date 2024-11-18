@@ -530,8 +530,8 @@ function selectTabMobile(event) {
           <div>
             <p class="font-semibold text-cyan-300">Ultimate (Part 1 Team):</p>
             <p>
-              Ult has all the major buffs, including Ignite DMG +25%, 30% more Ignite Trauma, 
-              enemies take 65% more Ignite DMG, and more.
+              Ult has all the major buffs: Ignite DMG +25%, 30% more Ignite Trauma, 
+              enemies take 65% more Ignite DMG, 30 sp, ult cd -5s, ult sp cost reduction, and more.
             </p>
           </div>
         </div>
@@ -800,9 +800,9 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR CHARGING PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Astral Ring Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Strong playstyle with lots of suspended animation and timestop.
+          Alternating Weapon + Combo ATK Spam
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -841,7 +841,7 @@ function selectTabMobile(event) {
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
           

@@ -28,24 +28,13 @@ export const extraregen = [
 export const valkbuffs = [
     {
     rank: "S",
-    description: "During Stellar Outburst, team Elemental DMG +10%",
+    description: "During Stellar Outburst, team Elemental DMG +10%, Fire and Lightning DMG +12%, and enemies take 12% more Total DMG",
     available_by_default: "yes",
     soele:10,
-    },
-
-    {
-    rank: "S",
-    description: "During Stellar Outburst, Fire and Lightning DMG +12%",
-    available_by_default: "yes",
     sofire:12,
     solightning:12,
-    },
-
-    {
-    rank: "S",
-    description: "During Stellar Outburst, enemies take 12% more Total DMG",
-    available_by_default: "yes",
     sotdmtaken:12,
+
     },
 
     {
@@ -66,9 +55,10 @@ export const valkbuffs = [
 
     {
         rank: "SSS",
-        available_by_default: "yes",
+        available_by_default: "no",
         description: "When the team has members of different elements, team Total DMG +8%",
         tdm: 8,
+        condition: { element: "different" },  
 
     },
 
@@ -100,8 +90,9 @@ export const asopbuffs = [
     },
     {
         rank: "SSS",
-        available_by_default: "yes",
+        available_by_default: "no",
         description: "When the team has members of different elements, AstralOp Total DMG +8%",
+        condition: { element: "different" },  
 
 
     },

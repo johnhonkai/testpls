@@ -49,7 +49,7 @@ export const valkbuffs = [
 
     {
         rank: "S",
-        description: "During Stellar Outburst, enemies take 18% more Physical DMG, and take 12% more Elemental DMG.",
+        description: "During Stellar Outburst, enemies take 18% more Physical DMG 12% more Elemental DMG.",
         available_by_default: "yes",
 
         sophytaken: 18,

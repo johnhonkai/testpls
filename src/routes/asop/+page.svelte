@@ -1,20 +1,28 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
+  import { persistentStore } from '$lib/data/persistentStore';
 
   import { valkyries } from '$lib/data/valkyries.js';
   import { astralop } from '$lib/data/astralop.js';
 
-  let initialar, postsoar, valkbuffs, asopbuffs; // Declare data placeholders
-  let compareinitialar, comparesoar, comparevalkbuffs, compareasopbuffs; // Declare data placeholders
-
-  let slots = {
+    // Persistent store for slots
+    const slotsStore = persistentStore('astralop-slots', {
     leader: null,
     valkyrie1: null,
     valkyrie2: null,
     astralOp: null,
-    compareAstralOp: null // New comparison slot
-  };
+    compareAstralOp: null
+  });
+
+
+  let initialar, postsoar, valkbuffs, asopbuffs; // Declare data placeholders
+  let compareinitialar, comparesoar, comparevalkbuffs, compareasopbuffs; // Declare data placeholders
+
+  let slots;
+
+  $: slots = $slotsStore;
+
 
   const slotNames = {
     leader: "Select Leader",
@@ -81,7 +89,7 @@ async function loadAstralOpData(astralOpName, type) {
 
   function selectCharacter(character) {
     if (Object.values(slots).includes(character)) return;
-    slots[selectedSlot] = character;
+    $slotsStore[selectedSlot] = character;
     showModal = false;
 
     if (selectedSlot === 'compareAstralOp') {
@@ -92,7 +100,7 @@ async function loadAstralOpData(astralOpName, type) {
   }
 
   function removeCharacter(slot) {
-    slots[slot] = null;
+    $slotsStore[slot] = null;
     if (slot === 'compareAstralOp') {
       updateCompareValues();
     } else {
@@ -169,6 +177,25 @@ function calculatePostSoAr(data, rank) {
     if (eleMatch) count += 1;
   });
 }
+
+
+  // Check if there are at least two different elements in the team
+  if (condition.element === "different") {
+    const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
+    const elements = new Set();
+
+    relevantSlots.forEach(slotName => {
+      const character = slots[slotName];
+      if (character && character.element) {
+        elements.add(character.element);
+      }
+    });
+
+    // Count the condition as met if there are at least two distinct elements
+    if (elements.size >= 2) {
+      count += 1;
+    }
+  }
 
     if (condition.valk) {
       const teamSlots = ['leader', 'valkyrie1', 'valkyrie2', 'astralOp'];
@@ -448,7 +475,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <div class="relative w-24 h-24 cursor-pointer" on:click={() => openModal(slot)}>
       {#if character}
         <img src={character.image} alt={character.name} class="object-cover rounded-md w-full h-full" />
-        <button class="absolute btn btn-square btn-sm top-1 right-1 text-white bg-red-600  p-1" on:click|stopPropagation={() => removeCharacter(slot)}>✕</button>
+        <button 
+          class="absolute btn btn-square btn-sm top-1 right-1 text-white bg-red-600  p-1" 
+          on:click|stopPropagation={() => removeCharacter(slot)}
+        >
+          ✕
+        </button>
       {:else}
         <div class="bg-gray-700 w-full h-full flex items-center justify-center text-gray-400 rounded-md text-center">
           {slotNames[slot] || "Select"}
@@ -460,7 +492,17 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 <!-- Astral Ring Text -->
 <div class="text-center mt-4 text-gray-300">
-  {astralRingText}
+  <span class="mr-2"> {astralRingText} </span>
+  
+  <button class="btn btn-neutral btn-sm" on:click={() => $slotsStore = {
+    leader: null,
+    valkyrie1: null,
+    valkyrie2: null,
+    astralOp: null,
+    compareAstralOp: null
+  }}>
+    Reset
+  </button>
 </div>
 
 

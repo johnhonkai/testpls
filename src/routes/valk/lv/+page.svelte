@@ -429,14 +429,14 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Chainsaw Maam
+            CHAINSAW MAAM
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Weapon Slasher
+            WEAPON SLASHER
           </button>
         </div>
       
@@ -659,7 +659,7 @@ function selectTabMobile(event) {
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
               <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Chase</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Divine Pact Pact ➔ Hermit</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Divine Pact ➔ Hermit</p>
             </div>
           </div>
         </div>

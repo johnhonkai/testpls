@@ -20,8 +20,8 @@ In Honkai Star Rail and Genshin Impact, there is only one game client, and you c
 ---
 
 ## List of Servers
-In Hoyoplay Launcher, there are six servers that you can choose: Europe (EU), North America (NA), South-East Asia (SEA), Japan (JP), Korea (KR), and Traditional Chinese Server (equivalent to TW, HK, MO servers in Genshin/StarRail).
-- These six servers are officially known as **Regional Servers**, indicating that these servers are different from the mainland China server - **CN Server.**
+In Hoyoplay Launcher, there are six servers that you can choose: Europe (EU), Americas (NA), South-East Asia (SEA), Japan (JP), Korea (KR), and Traditional Chinese Server (equivalent to TW, HK, MO servers in Genshin/StarRail).
+- These six servers are officially known as **Regional Servers**, indicating that these servers are different from the mainland China server - **CN Server.** CN server is ahead by around 4 weeks. This is why we EN players can plan ahead with our pulls. 
 - EU and NA share a client. They are commonly referred to as Global (GLB) server.
 - Only **SEA, EU and NA servers use English language.** 
 - For iOS and Android, the default server is based on your region. You can get apk files of other server clients from 3rd-party app stores.

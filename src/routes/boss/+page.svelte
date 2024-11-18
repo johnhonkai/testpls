@@ -1,4 +1,3 @@
-
 <script>
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
@@ -8,33 +7,39 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  // Initialize with default selections
-  let selectedWeather = "Resonance";
-  let selectedBoss = "resovita";
+  let selectedWeather = "resonance"; // Default weather
+  let selectedBoss = "resovita"; // Default boss
 
-
-  // Access URL query parameters using SvelteKit's `page` store
   $: currentPage = $page.url.searchParams;
 
-  // Set the weather and boss from query parameters on component mount
-  onMount(() => {
-    const queryParams = [...currentPage.keys()];
-    const weatherParam = queryParams[0];
-    const bossParam = queryParams[1];
-    
-    if (weatherParam && weatherList[weatherParam]) {
-      selectedWeather = weatherParam;
+  // Function to find the weather for a given boss ID
+  function findWeatherByBossId(bossId) {
+    for (const weather in weatherList) {
+      if (weatherList[weather].some(boss => boss.id === bossId)) {
+        return weather;
+      }
     }
-    
+    return null; // Return null if the boss ID is not found
+  }
+
+  // Set the weather and boss based on the URL query parameter
+  onMount(() => {
+    const queryParams = [...currentPage.keys()]; // Get all query keys
+    const bossParam = queryParams[0]; // Assume the first key is the boss ID
+
     if (bossParam && bossData[bossParam]) {
       selectedBoss = bossParam;
+      const detectedWeather = findWeatherByBossId(bossParam);
+      if (detectedWeather) {
+        selectedWeather = detectedWeather;
+      }
     }
   });
 
   function handleSelectWeather(event) {
     selectedWeather = event.detail.weather;
-   // selectedBoss = null; // Reset selected boss when weather changes
-
+    // selectedBoss = null; Reset the selected boss when the weather changes
+    updateURL();
   }
 
   function handleSelectBoss(event) {
@@ -42,16 +47,16 @@
     updateURL();
   }
 
-// Update the URL to include only selected weather and boss
-function updateURL() {
+  // Update the URL to include only the boss ID
+  function updateURL() {
     const url = new URL(window.location.href);
-    url.search = `?${selectedWeather}${selectedBoss ? `&${selectedBoss}` : ''}`;
+    url.search = selectedBoss ? `?${selectedBoss}` : '';
     history.replaceState({}, '', url);
   }
 </script>
-<div class="relative  mx-auto pt-3  pb-0 rounded-lg  text-center ">
 
-  <h2 class="text-2xl  font-semibold mb-2 text-amber-400 ">Abyss Boss Database</h2>
+<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center">
+  <h2 class="text-2xl font-semibold mb-2 text-amber-400">Abyss Boss Database</h2>
   <p class="text-xs sm:text-sm">
     This page contains Abyss boss info, top teams, and gameplay showcase.
   </p>
@@ -59,7 +64,6 @@ function updateURL() {
 
 <div class="page-container mx-auto p-2">
   <!-- Weather List Component -->
-
   <WeatherList 
     weathers={weatherList} 
     selectedWeather={selectedWeather} 
@@ -84,7 +88,6 @@ function updateURL() {
 
 <style>
   .page-container {
-
     max-width: 1200px;
     margin: 0 auto;
     color: #333;

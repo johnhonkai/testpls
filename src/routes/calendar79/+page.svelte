@@ -413,8 +413,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Herrscher%20of%20the%20Void.webp" date="Nov 29" weather="Ignite" bosspage="/boss?Ignite&ignitehov" />
-                <BossCard image="/images/Bosses/Alien Guard.webp" date="Dec 2" weather="Blood" bosspage="/boss?Bloodthirsty&bloodsdmob"/>
+                <BossCard image="/images/Bosses/Herrscher%20of%20the%20Void.webp" date="Nov 29" weather="Ignite" bosspage="/boss?ignitehov" />
+                <BossCard image="/images/Bosses/Alien Guard.webp" date="Dec 2" weather="Blood" bosspage="/boss?bloodsdmob"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -431,8 +431,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="/images/Bosses/Vita.png" date="Dec 6" weather="Resonance" bosspage="/boss?Resonance&resovita"/>
-                    <BossCard image="/images/Bosses/Herrscher of Corruption.webp" date="Dec 9" weather="Melee" bosspage="/boss?Melee&meleehoc"/>
+                    <BossCard image="/images/Bosses/Vita.png" date="Dec 6" weather="Resonance" bosspage="/boss?resovita"/>
+                    <BossCard image="/images/Bosses/Herrscher of Corruption.webp" date="Dec 9" weather="Melee" bosspage="/boss?meleehoc"/>
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -449,8 +449,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 13" weather="Lightning" bosspage="/boss?Lightning&lightningsprout"/>
-                    <BossCard image="" date="TBA" weather="TBA" />
+                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 13" weather="Lightning" bosspage="/boss?lightningsprout"/>
+                    <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" date="Dec 16" weather="Fire" bosspage="/boss?firekosma"/>
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">

@@ -35,8 +35,9 @@ export const valkbuffs = [
     {
             rank: "S",
             description: "When there is an Ice DMG dealer in the team, Team Ice DMG +10%",
-            available_by_default: "yes",
+            available_by_default: "no",
             ice:10,
+            condition: { element: "Ice" },  
     },
     {
             rank: "SS",
