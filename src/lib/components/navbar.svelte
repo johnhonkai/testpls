@@ -47,32 +47,32 @@
 		</svg>
 		<ul class="text-slate-800">
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" class="custom-font">Home</a>
+				<a href="/" class="custom-font" data-sveltekit-preload-data="hover">Home</a>
 			</li>
       <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : undefined}>
-				<a href="/valk" class="custom-font">Valkyrie</a>
+				<a href="/valk" class="custom-font" data-sveltekit-preload-data="hover">Valkyrie</a>
 			</li>
       <li aria-current={$page.url.pathname === '/planner' ? 'page' : undefined}>
-				<a href="/planner" class="custom-font">Planner</a>
+				<a href="/planner" class="custom-font" data-sveltekit-preload-data="hover">Planner</a>
 			</li>
       <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
-				<a href="/asop" class="custom-font">AstralOp</a>
+				<a href="/asop" class="custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
 			</li>
 
 			<li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
-				<a href="/boss" class="custom-font">Boss</a>
+				<a href="/boss" class="custom-font" data-sveltekit-preload-data="hover">Boss</a>
 			</li>
 			
 			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
-				<a href="/calendar79" class="custom-font">Timeline</a>
+				<a href="/calendar79" class="custom-font" data-sveltekit-preload-data="hover">Timeline</a>
 			</li>
 
 
 			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
-				<a href="/classroom/Home" class="custom-font">Classroom</a>
+				<a href="/classroom/Home" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
 			</li>
       <li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
-				<a href="/betanews" class="custom-font">Beta News</a>
+				<a href="/betanews" class="custom-font" data-sveltekit-preload-data="hover">Beta News</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
