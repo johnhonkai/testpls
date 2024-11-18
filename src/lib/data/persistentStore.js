@@ -1,14 +1,29 @@
 import { writable } from 'svelte/store';
 
-export function persistentStore(key, initialValue) {
-  const storedValue = localStorage.getItem(key);
-  const data = storedValue ? JSON.parse(storedValue) : initialValue;
+function persistentStore(key, initialValue) {
+  // Check if running in the browser
+  const isBrowser = typeof window !== 'undefined';
 
-  const store = writable(data);
+  // Initialize the store
+  const store = writable(initialValue, () => {
+    if (isBrowser) {
+      const json = localStorage.getItem(key);
+      if (json) {
+        store.set(JSON.parse(json));
+      }
+    }
 
-  store.subscribe((value) => {
-    localStorage.setItem(key, JSON.stringify(value));
+    // Subscribe to changes and save them to localStorage
+    const unsubscribe = store.subscribe((value) => {
+      if (isBrowser) {
+        localStorage.setItem(key, JSON.stringify(value));
+      }
+    });
+
+    return unsubscribe;
   });
 
   return store;
 }
+
+export { persistentStore };
