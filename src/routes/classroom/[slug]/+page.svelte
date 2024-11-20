@@ -57,8 +57,8 @@
 								<li>
 									<a
 										href={`/classroom/${article.slug}`}
-										class={`menu-item hover:text-emerald-300 ${
-											article.slug === data.slug ? 'text-emerald-400' : ''
+										class={`menu-item  hover:text-emerald-300 ${
+											article.slug === data.slug ? 'text-emerald-400 ' : ''
 										}`}
 									>
 										{article.title}

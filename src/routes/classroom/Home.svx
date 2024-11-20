@@ -3,7 +3,6 @@ title: Home
 date: '26-Oct-2024'
 version: '7.9'
 image: "/images/sporkle.png"
-category: 'Astral Ring'
 sortOrder: 1
 customSlug: "home"
 

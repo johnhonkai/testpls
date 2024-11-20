@@ -95,7 +95,7 @@
   </div>
 {/if}
 <section class="relative pt-4">
-  <div class="absolute top-0 w-full h-[90vh] z-[-10]">
+  <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
   </div>
   <div class="relative max-w-5xl mx-auto">
