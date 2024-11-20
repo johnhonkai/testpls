@@ -8,7 +8,7 @@
     };
   </script>
   
-  <a href={valkyrie.url} class="flex flex-col items-center text-center rounded" data-sveltekit-preload-data="hover">
+  <a href={valkyrie.url} class="flex flex-col items-center text-center rounded" data-sveltekit-preload-data="hover" >
     <!-- Valkyrie Image with Badge -->
     <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
       {#if valkyrie.badge}

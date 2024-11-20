@@ -9,39 +9,48 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+
+import { isLoading2 } from '$lib/stores/loading'; // Import shared store
+
+function checkElementsLoaded() {
+  const bgwavebox = document.getElementById('bgwavebox');
+  const avabox = document.getElementById('avabox');
+  const typebox = document.getElementById('typebox');
+  const arbox = document.getElementById('arbox');
+
+  const images = [bgwavebox, avabox, typebox, arbox]
+    .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
+
+  return images.every(img => img.complete && img.naturalWidth > 0);
+}
+
+onMount(() => {
+  const intervalId = setInterval(() => {
+    if (checkElementsLoaded()) {
+      isLoading2.set(false); // Hide loading indicator
+      clearInterval(intervalId);
+    }
+  }, 100);
+
+  return () => clearInterval(intervalId); // Cleanup
+});
+
+  onMount(() => {
+    const intervalId = setInterval(() => {
+      if (checkElementsLoaded()) {
+        isLoading2.set(false); // Hide loading indicator
+        clearInterval(intervalId);
+      }
+    }, 100);
+
+    return () => clearInterval(intervalId); // Cleanup
+  });
+
+
 let showLightbox = false;
 let selectedImage = '';
 
-let isLoading = true; // Track loading state
-function allElementsLoaded() {
-    const bgwavebox = document.getElementById('bgwavebox');
-    const avabox = document.getElementById('avabox');
-    const typebox = document.getElementById('typebox');
-    const arbox = document.getElementById('arbox');
 
-    // Ensure all elements exist
-    if (!bgwavebox || !avabox || !typebox || !arbox) return false;
-
-    // Check if all images within these elements are loaded
-    const images = [bgwavebox, avabox, typebox, arbox]
-      .flatMap(el => Array.from(el.getElementsByTagName('img')));
-
-    return images.every(img => img.complete && img.naturalWidth > 0);
-  }
-
-  onMount(() => {
-    const checkElements = () => {
-      if (allElementsLoaded()) {
-        isLoading = false; // Hide loader
-        clearInterval(intervalId); // Stop checking
-      }
-    };
-
-    // Check periodically if all elements are loaded
-    const intervalId = setInterval(checkElements, 100);
-
-    return () => clearInterval(intervalId); // Cleanup interval on unmount
-  });
 function openLightbox(image) {
   selectedImage = image;
   showLightbox = true;
@@ -181,34 +190,7 @@ function selectTabMobile(event) {
     align-items: center;
     gap: 8px;
 }
-
-.loading-indicator {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    font-size: 1.5rem;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .loading-indicator.hidden {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    pointer-events: none;
-  }
 </style>
-
-<!-- Loader -->
-<div class="loading-indicator {isLoading ? '' : 'hidden'}">
-  Loading...
-</div>
-
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    

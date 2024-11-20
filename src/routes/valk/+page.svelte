@@ -1,6 +1,11 @@
 <script lang="ts">
   import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
   import { onMount } from 'svelte';
+  import { isLoading2 } from '$lib/stores/loading';
+
+  function navigateToCharacter(event) {
+    isLoading2.set(true); // Show loading indicator
+  }
 
   let isLoading = true; // Track if the page is still loading
 
@@ -94,6 +99,13 @@
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
+
+{#if $isLoading2}
+  <div class="loading-indicator">
+    Loading...
+  </div>
+{/if}
+
 <section class="relative pt-4">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
@@ -153,7 +165,7 @@
     <!-- Valkyrie Grid -->
     <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
       {#each filteredValkyries as valkyrie}
-        <ValkyrieLink valkyrie={valkyrie} />
+        <ValkyrieLink valkyrie={valkyrie} on:click={navigateToCharacter}/>
       {/each}
     </div>
   </div>
@@ -185,5 +197,24 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
   }
 </style>
