@@ -13,53 +13,6 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Lvdpsdual from '$lib/components/lineup/lvdpsdual.svelte';
 	import P1lightningdps from '$lib/components/lineup/p1lightningdps.svelte';
 	import Lvdpsnormal from '$lib/components/lineup/lvdpsnormal.svelte';
-
-  import { isLoading2 } from '$lib/stores/loading'; // Import shared store
-
-function checkElementsLoaded() {
-    const bgwavebox = document.getElementById('bgwavebox');
-    const avabox = document.getElementById('avabox');
-    const typebox = document.getElementById('typebox');
-    const arbox = document.getElementById('arbox');
-
-    // Collect images from these elements
-    const images = [bgwavebox, avabox, typebox, arbox]
-      .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
-
-    // Check if all images are loaded
-    return images.every(img => img.complete && img.naturalWidth > 0);
-  }
-
-  onMount(() => {
-    let hasStartedLoading = false;
-    let showLoadingTimeout: NodeJS.Timeout;
-    let checkInterval: NodeJS.Timeout;
-    isLoading2.set(true); // Show loading indicator initially
-
-    // Set a delay before showing the loading indicator
-    showLoadingTimeout = setTimeout(() => {
-      isLoading2.set(true); // Show loading indicator after 0.5 seconds
-      hasStartedLoading = true;
-    }, 1000);
-
-    // Check periodically for elements to load
-    checkInterval = setInterval(() => {
-      if (checkElementsLoaded()) {
-        clearTimeout(showLoadingTimeout); // Cancel loading delay if rendering completes early
-        clearInterval(checkInterval); // Stop checking for loaded elements
-        if (hasStartedLoading) {
-          isLoading2.set(false); // Hide loading indicator if it was shown
-        }
-      }
-    }, 100);
-
-    // Cleanup on unmount
-    return () => {
-      clearTimeout(showLoadingTimeout);
-      clearInterval(checkInterval);
-    };
-  });
-
 let showLightbox = false;
 let selectedImage = '';
 
@@ -201,17 +154,6 @@ function selectTabMobile(event) {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-.loading-indicator {
-  opacity: 0;
-  animation: fadeIn 0.3s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
 </style>
 

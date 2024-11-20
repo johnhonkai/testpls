@@ -1,44 +1,8 @@
 <script lang="ts">
   import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
   import { onMount } from 'svelte';
-  import { isLoading2 } from '$lib/stores/loading'; // Shared loading state store
 
-  let isLoading = true; // Local loading state for the Valkyrie page
-  let loadingTimer: NodeJS.Timeout; // Fallback timer
-
-  // Check if all images are loaded
-  function checkElementsLoaded() {
-    const images = Array.from(document.getElementsByTagName('img'));
-    return images.every(img => img.complete && img.naturalWidth > 0);
-  }
-
-  // Handle page mounting
-  onMount(() => {
-    // Reset global loading state when returning to the Valkyrie page
-    isLoading2.set(false);
-
-    // Start a fallback to hide the local loading after 3 seconds
-    loadingTimer = setTimeout(() => {
-      isLoading = false; // Fallback in case images take too long to load
-    }, 3000);
-
-    let checkInterval: NodeJS.Timeout;
-
-    // Periodically check for images to load
-    checkInterval = setInterval(() => {
-      if (checkElementsLoaded()) {
-        clearInterval(checkInterval);
-        clearTimeout(loadingTimer); // Clear fallback timer
-        isLoading = false; // Hide local loading
-      }
-    }, 100);
-
-    // Cleanup timers when unmounting
-    return () => {
-      clearInterval(checkInterval);
-      clearTimeout(loadingTimer);
-    };
-  });
+  let isLoading = true; // Track if the page is still loading
 
   // Filter options
   const types = [
@@ -67,8 +31,8 @@
     'Part 1'
   ];
 
-  // Valkyrie data
-  const valkyries = [
+ // Valkyrie character data with type, element, and astral ring properties
+ const valkyries = [
   { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , badge: 'Beta', id:14},
   { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , badge: 'New', id:13},
   { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/simp', id:12 },
@@ -87,12 +51,12 @@
 
 ];
 
-  // Default filters
+  // Default selected filters
   let selectedType = 'All';
   let selectedElement = 'All';
   let selectedAstralRing = 'All';
 
-  // Filter Valkyries based on the selected filters
+  // Filter the valkyries based on the selected filters
   $: filteredValkyries = valkyries.filter(valk => {
     const typeMatch = selectedType === 'All' || valk.type === selectedType;
     const elementMatch = selectedElement === 'All' || valk.element === selectedElement;
@@ -105,39 +69,121 @@
     if (type === 'element') selectedElement = value;
     if (type === 'astralRing') selectedAstralRing = value;
   }
+
+   // Wait for all images in the ValkyrieLink components to load
+   onMount(() => {
+    const imagePromises = valkyries.map((valkyrie) => {
+      return new Promise<void>((resolve) => {
+        const img = new Image();
+        img.src = valkyrie.image;
+        img.onload = () => resolve();
+        img.onerror = () => resolve(); // Resolve even if the image fails to load
+      });
+    });
+
+    Promise.all(imagePromises).then(() => {
+      isLoading = false; // Hide the loading screen
+    });
+  });
 </script>
 
-<!-- Loading Screen for Local Images -->
+<!-- Loading Screen -->
 {#if isLoading}
   <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
     <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
-
-<!-- Shared Loading Indicator -->
-{#if $isLoading2}
-  <div class="loading-screen fixed inset-0 bg-opacity-75 flex items-center justify-center z-50">
-    <span class="loading loading-spinner loading-lg text-secondary"></span>
-    <p class="text-white mt-4">Loading...</p>
-  </div>
-{/if}
-
 <section class="relative pt-4">
-  <!-- Valkyrie content -->
-  <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4">
-    {#each filteredValkyries as valkyrie}
-      <ValkyrieLink valkyrie={valkyrie} />
-    {/each}
+  <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
+    <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
+  </div>
+  <div class="relative max-w-5xl mx-auto">
+    <h1 class="text-xl md:text-3xl font-bold text-center mb-3">Select a Valkyrie</h1>
+
+    <!-- Filter Containers -->
+    <div class="flex flex-col md:flex-row justify-between gap-4 mb-4">
+      <!-- Filter by Type -->
+      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
+        <div class="flex justify-center flex-wrap gap-0.5 md:gap-1">
+          {#each types as type}
+            <button
+              type="button"
+              class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
+              class:bg-gray-300={selectedType === type.name}
+              on:click={() => selectFilter('type', type.name)}>
+              <img src={type.image} alt={type.name} class="w-6 h-6 object-cover mb-1" />
+            </button>
+          {/each}
+        </div>
+      </div>
+
+      <!-- Filter by Element -->
+      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
+        <div class="flex justify-center flex-wrap gap-1">
+          {#each elements as element}
+            <button
+              type="button"
+              class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
+              class:bg-gray-300={selectedElement === element.name}
+              on:click={() => selectFilter('element', element.name)}>
+              <img src={element.image} alt={element.name} class="w-6 h-6 object-cover mb-1" />
+            </button>
+          {/each}
+        </div>
+      </div>
+    </div>
+
+    <!-- Astral Ring Filter -->
+    <div class="rounded-lg mb-8">
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-2">
+        {#each astralRings as astralRing}
+          <button
+            type="button"
+            class="btn btnar text-center rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-colors w-full whitespace-nowrap"
+            class:bg-gray-300={selectedAstralRing === astralRing}
+            class:text-black={selectedAstralRing === astralRing}
+            on:click={() => selectFilter('astralRing', astralRing)}>
+            <span class="text-xs sm:text-sm md:text-base font-medium">{astralRing}</span>
+          </button>
+        {/each}
+      </div>
+    </div>
+
+    <!-- Valkyrie Grid -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
+      {#each filteredValkyries as valkyrie}
+        <ValkyrieLink valkyrie={valkyrie} />
+      {/each}
+    </div>
   </div>
 </section>
 
 <style>
   .loading-screen {
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 9999;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 </style>

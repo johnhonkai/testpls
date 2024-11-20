@@ -9,55 +9,8 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
-
-import { isLoading2 } from '$lib/stores/loading'; // Import shared store
-
-function checkElementsLoaded() {
-    const bgwavebox = document.getElementById('bgwavebox');
-    const avabox = document.getElementById('avabox');
-    const typebox = document.getElementById('typebox');
-    const arbox = document.getElementById('arbox');
-
-    const images = [bgwavebox, avabox, typebox, arbox]
-      .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
-
-    return images.every(img => img.complete && img.naturalWidth > 0);
-  }
-
-
-  onMount(() => {
-    let hasStartedLoading = false;
-    let showLoadingTimeout: NodeJS.Timeout;
-    let checkInterval: NodeJS.Timeout;
-    isLoading2.set(true); // Show loading indicator initially
-
-    // Set a delay before showing the loading indicator
-    showLoadingTimeout = setTimeout(() => {
-      isLoading2.set(true); // Show loading indicator after 0.5 seconds
-      hasStartedLoading = true;
-    }, 1000);
-
-    // Check periodically for elements to load
-    checkInterval = setInterval(() => {
-      if (checkElementsLoaded()) {
-        clearTimeout(showLoadingTimeout); // Cancel loading delay if rendering completes early
-        clearInterval(checkInterval); // Stop checking for loaded elements
-        if (hasStartedLoading) {
-          isLoading2.set(false); // Hide loading indicator if it was shown
-        }
-      }
-    }, 100);
-
-    // Cleanup on unmount
-    return () => {
-      clearTimeout(showLoadingTimeout);
-      clearInterval(checkInterval);
-    };
-  });
-
 let showLightbox = false;
 let selectedImage = '';
-
 
 function openLightbox(image) {
   selectedImage = image;
@@ -198,33 +151,22 @@ function selectTabMobile(event) {
     align-items: center;
     gap: 8px;
 }
-
-.loading-indicator {
-  opacity: 0;
-  animation: fadeIn 0.3s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
-<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
-  <img src="/images/bg/wave_thelema.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" id="bgwavebox" /> 
+<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
+  <img src="/images/bg/wave_thelema.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 
-<div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block ">    
-  <img src="/images/bg/ava_thelema.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls"  id="avabox"/> 
+<div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
+  <img src="/images/bg/ava_thelema.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center ">
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/thelema.png" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-9;"  id="valkpicbox"/> 
+  <img src="/images/valkfull/thelema.png" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-9;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button on:click={increaseLike} class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">
