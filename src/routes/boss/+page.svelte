@@ -95,14 +95,14 @@
   </div>
 {/if}
 
-<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center" class:invisible={isFirstLoad && isLoading}>
+<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center " class:invisible={isFirstLoad && isLoading}>
   <h2 class="text-2xl font-semibold mb-2 text-amber-400">Abyss Boss Database</h2>
   <p class="text-xs sm:text-sm">
     This page contains Abyss boss info, top teams, and gameplay showcase.
   </p>
 </div>
 
-<div class="page-container mx-auto p-2" class:invisible={isFirstLoad && isLoading}>
+<div class="page-container mx-auto p-2 max-w-2xl" class:invisible={isFirstLoad && isLoading}>
   <!-- Weather List Component -->
   <WeatherList 
     weathers={weatherList} 
@@ -160,5 +160,11 @@
 
   .invisible {
     visibility: hidden;
+  }
+
+    .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
   }
 </style>
