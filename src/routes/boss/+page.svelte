@@ -10,6 +10,7 @@
   let selectedWeather = "resonance"; // Default weather
   let selectedBoss = "resovita"; // Default boss
   let isLoading = true;
+  let isFirstLoad = true; // Flag to distinguish initial load
 
   $: currentPage = $page.url.searchParams;
 
@@ -24,7 +25,6 @@
     checkImagesLoaded();
   });
 
-  // Wait for images in BossDetails and TeamDisplay to load
   async function checkImagesLoaded() {
     isLoading = true;
     await tick(); // Wait for the DOM to render updated components
@@ -37,18 +37,25 @@
     );
 
     const imagePromises = [...bossDetailsImages, ...teamDetailsImages].map((img) => {
-      return new Promise((resolve) => {
-        if (img.complete) {
-          resolve();
-        } else {
-          img.addEventListener('load', resolve);
-          img.addEventListener('error', resolve); // Resolve even on error
-        }
-      });
-    });
+  return new Promise((resolve) => {
+    if (img instanceof HTMLImageElement) {
+      if (img.complete) {
+        resolve();
+      } else {
+        img.addEventListener('load', resolve);
+        img.addEventListener('error', resolve); // Resolve even on error
+      }
+    } else {
+      // If it's not an image element, resolve immediately
+      resolve();
+    }
+  });
+});
+
 
     await Promise.all(imagePromises);
-    isLoading = false; // Hide the loading screen
+    isLoading = false;
+    isFirstLoad = false; // Mark initial load as complete
   }
 
   // Find the weather for a given boss ID
@@ -69,7 +76,7 @@
   function handleSelectBoss(event) {
     selectedBoss = event.detail.boss.id;
     updateURL();
-    checkImagesLoaded(); // Trigger loading for new boss selection
+    checkImagesLoaded(); // Trigger image loading for new boss selection
   }
 
   // Update the URL to include the selected boss ID
@@ -81,21 +88,21 @@
 </script>
 
 <!-- Loading Screen -->
-{#if isLoading}
+{#if isFirstLoad && isLoading}
   <div class="loading-screen">
     <div class="spinner"></div>
-    <p>Loading new data...</p>
+    <p>Loading data...</p>
   </div>
 {/if}
 
-<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center" class:invisible={isLoading}>
+<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center" class:invisible={isFirstLoad && isLoading}>
   <h2 class="text-2xl font-semibold mb-2 text-amber-400">Abyss Boss Database</h2>
   <p class="text-xs sm:text-sm">
     This page contains Abyss boss info, top teams, and gameplay showcase.
   </p>
 </div>
 
-<div class="page-container mx-auto p-2" class:invisible={isLoading}>
+<div class="page-container mx-auto p-2" class:invisible={isFirstLoad && isLoading}>
   <!-- Weather List Component -->
   <WeatherList 
     weathers={weatherList} 
