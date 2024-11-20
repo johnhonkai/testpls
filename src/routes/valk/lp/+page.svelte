@@ -326,6 +326,7 @@ function selectTabMobile(event) {
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
                 <iframe
                     class="absolute top-0 left-0 w-full h-full"
+                    loading="lazy" 
                     src="https://www.youtube.com/embed/8AwMiPw-4Hs"
                     title="YouTube video player"
                     frameborder="0"
@@ -1126,6 +1127,8 @@ function selectTabMobile(event) {
 
               <div class="relative overflow-hidden" style="padding-top: 56.25%;">
                 <iframe
+                loading="lazy" 
+
                     class="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/8AwMiPw-4Hs"
                     title="YouTube video player"
@@ -1147,6 +1150,7 @@ function selectTabMobile(event) {
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
+              loading="lazy" 
                   class="absolute top-0 left-0 w-full h-full"
                   src="https://www.youtube.com/embed/8AwMiPw-4Hs"
                   title="YouTube video player"
@@ -1168,6 +1172,8 @@ function selectTabMobile(event) {
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
                 <iframe 
                     src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                    loading="lazy" 
+
                     title="YouTube video player" 
                     frameborder="0" 
                     class="w-full h-64 rounded-md"
@@ -1180,6 +1186,8 @@ function selectTabMobile(event) {
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
                 <iframe 
                     src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                    loading="lazy" 
+
                     title="YouTube video player" 
                     frameborder="0" 
                     class="w-full h-64 rounded-md"
