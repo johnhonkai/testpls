@@ -45,7 +45,7 @@
 
     // Wait for all images to load or timeout
     Promise.race([Promise.all(promises), timeout]).then(() => {
-      isLoading = false; // Hide the loading screen
+      isLoading = false; // Hide the loading state
     });
   });
 
@@ -101,14 +101,14 @@
 
 <!-- Loading Screen -->
 {#if isLoading}
-  <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
+  <div class="loading-screen fixed inset-0 flex items-center justify-center z-50">
     <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
 
 
-
+<div class="page-content {isLoading ? 'hidden' : 'visible'}">
 <section class="relative flex m-0 justify-center z-[-10]" id="bgwave">
 
   <img src="/images/bg/wave_sparkle.svg" alt="Banner" class="absolute top-0 w-full  h-auto z-[-7]">
@@ -134,57 +134,7 @@
 </div>
 </section>
 
-<style>
-  /* Define the wobble animation */
-  @keyframes wobble {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    50% { transform: rotate(-2deg); }
-    75% { transform: rotate(2deg); }
-  }
 
-  /* Add the wobble class */
-  .wobble {
-    animation: wobble 1s ease infinite;
-  }
-
-  @keyframes stretch {
-    0%, 100% { transform: scaleY(1); }
-    50% { transform: scaleY(1.1); } /* Stretch slightly up and down */
-  }
-
-  .stretch {
-    animation: stretch 0.5s ease-in-out infinite; /* Adjust duration and easing as needed */
-    transform-origin: bottom; /* Keep the bottom fixed */
-  }
-
-  .loading-screen {
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 9999;
-  }
-
-  .spinner {
-    width: 50px;
-    height: 50px;
-    border: 6px solid rgba(255, 255, 255, 0.3);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-</style>
 
 <section class="py-6 z-10">
   <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
@@ -293,3 +243,78 @@
   </div>
 </section>
 
+</div>
+
+<style>
+  /* Define the wobble animation */
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+  }
+
+  /* Add the wobble class */
+  .wobble {
+    animation: wobble 1s ease infinite;
+  }
+
+  @keyframes stretch {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.1); } /* Stretch slightly up and down */
+  }
+
+  .stretch {
+    animation: stretch 0.5s ease-in-out infinite; /* Adjust duration and easing as needed */
+    transform-origin: bottom; /* Keep the bottom fixed */
+  }
+
+  .loading-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-spinner {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  /* Page content hidden state */
+  .page-content.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
+  /* Page content visible state */
+  .page-content.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+</style>
