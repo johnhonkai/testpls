@@ -10,10 +10,14 @@ export const initialar = [
     
     {
         rank: "SS",
+        description: "For every team member with Harmonized Shadow Star Tag, initial AR +8. ( Current: Initial AR +{value1} )",
+
         condition: { tag: "Harmonized Shadow Star"},
 
         ar: 8,
         maxStack: 3,
+
+        value1_1: "8", value1_2: "16", value1_3: "24",
     },
 
 ];
@@ -23,6 +27,8 @@ export const postsoar = [
 
     {
         rank: "S",
+        description: "When Wheel of Destiny is activated, Shadow Star ATK recover 14 AR, up to two times (Total 28).",
+
         condition: { astralRing: "Wheel of Destiny"},
         ar: 28,
         maxStack:1,
@@ -31,6 +37,8 @@ export const postsoar = [
     
     {
         rank: "S",
+        description: "When World Star is activated, Resonance ATK recover 4.5 AR, up to five times (Total 22.5).",
+
         condition: { astralRing: "World Star"},
         ar: 22.5,
         maxStack:1,
@@ -49,7 +57,7 @@ export const valkbuffs = [
 
     {
         rank: "S",
-        description: "During Stellar Outburst, enemies take 18% more Physical DMG 12% more Elemental DMG.",
+        description: "During Stellar Outburst, enemies take 18% more Physical DMG and 12% more Elemental DMG.",
         available_by_default: "yes",
 
         sophytaken: 18,
@@ -61,8 +69,8 @@ export const valkbuffs = [
 
     {
         rank: "S",
-        description: "Team Crit DMG +{value}%",
-        available_by_default: "no",
+        description: "Team Crit DMG +18%. If AR Wheel of Destiny is activated, Team Crit DMG + 8% more. ( Current buff: Crit DMG +{value}% )",
+        available_by_default: "yes",
         condition: { astralRing: "Wheel of Destiny"},
         basevalue: "18", 
         maxvalue: "26",
@@ -74,7 +82,7 @@ export const valkbuffs = [
         rank: "S",
         available_by_default: "no",
 
-        description: "Team Total DMG +8%",
+        description: "When AR Wheel of Destiny is activated, Team Total DMG +8%",
         condition: { astralRing: "Wheel of Destiny"},
 
         tdm:8
@@ -110,7 +118,7 @@ export const valkbuffs = [
         rank: "SS",
         available_by_default: "no",
 
-        description: "For every team member with Harmonized Shadow Star tag, enemies take 5.5% more Elemental DMG, and 2.5% more Physical DMG. (Current Buff: Ele Taken +{value1}% and Phy Taken +{value2}%)",
+        description: "For every team member with Harmonized Shadow Star tag, enemies take 5.5% more Elemental DMG, and 2.5% more Physical DMG. ( Current Buff: Ele Taken +{value1}% and Phy Taken +{value2}% )",
         condition: { tag: "Harmonized Shadow Star"},
         maxStack: 3,
         value1_1: "5.5", value1_2: "11", value1_3: "16.5",
@@ -163,7 +171,7 @@ export const asopbuffs = [
             rank: "SS",
             available_by_default: "no",
 
-            description: "Sera's Total DMG +{value1}%, Physical Breach +{value2}%.",
+            description: "For every character with Harmonized Shadow Star tag, Sera's Total DMG +33%, Physical Breach +16%. ( Current Buff: TDM +{value1}%, Phy Breach +{value2}%. )",
             condition: { tag: "Harmonized Shadow Star"},
             maxStack: 3,
             value1_1: "33", value1_2: "66", value1_3: "99",

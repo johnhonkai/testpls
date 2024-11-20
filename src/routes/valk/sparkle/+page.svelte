@@ -336,16 +336,6 @@ function selectTabMobile(event) {
               Check out the full guide on YouTube: (Coming Soon)
           </p>
 
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
       </div>
   {/if}
   
@@ -627,7 +617,7 @@ function selectTabMobile(event) {
         {#if activePlaystyle === '1'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-            Mecha smashes all
+            Stellar Outburst
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -672,37 +662,36 @@ function selectTabMobile(event) {
               </div>
           
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">7.8</div>
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-              
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+              
+
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
+                <p class="text-lg font-semibold">1</p>
               </div>
 
           </div>
 
           <div class="p-2 mt-3 rounded" >
             <p class="text-sm sm:text-base text-left">
-                <li class="text-sm sm:text-base"> Start with Vicissitude: 7.8 Phase 1 has Vic +2, getting Vic 2 early on gives more dmg than Gold 1.</li>
-                <li class="text-sm sm:text-base"> Discipline 2: Take the Elemental Breach enhancement </li>
+                <li class="text-sm sm:text-base"> Deliverance 1: Only pick this nexus if you have signature weapon. Otherwise, you will miss some buff duration.</li>
+                <li class="text-sm sm:text-base"> Deliverance 1: Duration extension is optional. If you're fast enough, you can fit I am Elation within Deliverance buff duration.</li>
+                <li class="text-sm sm:text-base"> Vicissitude 2: Vic 2 is easier to build and takes less signets than Infinity 1.</li>
+                <li class="text-sm sm:text-base"> Infinity 1: Honestly I am just suggesting this because Sparkle doesn't synergize with other Nexus that well. She can re-trigger Mind Sync since this playstyle spams Stellar Outburst activation. </li>
+
             </p>
             </div>
 
@@ -713,7 +702,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">START</p>
@@ -721,7 +710,7 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -752,15 +741,15 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Memory.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
-                <p class="text-base sm:text-lg font-semibold">START (Vicissitude)</p>
+                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
             </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Heavy_as_a_Million_Lives.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                     <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -773,13 +762,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Start with ultimate / weapon to trigger Opulence signet buff.</li>
           <li>Activate Stellar Outburst.</li>
-          <li>Whenever you enter Intelligence Unleashed mode, press ATK until the mode ends.</li>
-          <li>Press weapon ➔ Spam Basic ATK to fill meter.</li>
-          <li>When meter is full, hold ATK to enter Intelligence Unleashed mode.</li>
-          <li>Repeat.</li>
-          <li>Can use weapon skill before activating Stellar Outburst to trigger buffs from Helix or Stars.</li>
-          <li>Don't have to use Ult, it deals pathetic damage. Can use it to trigger buffs.</li>
+          <li>Spam Basic ATK until you cast I am Elation.</li>
+          <li>Use Ultimate.</li>
+          <li>Use Combo ATK.</li>
+          <li>Activate Stellar Outburst, repeat.</li>
+          <li>Use weapon skill once in a while to activate buffs triggered by weapon skill (Helix, Stars).</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -789,7 +778,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/Vt8VnkbGzlI/"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -832,7 +821,7 @@ function selectTabMobile(event) {
         <div class="p-2 mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
               <li class="text-sm sm:text-base"> ER Lite: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal: This build feels a bit weak with just one Ego signet. Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal: Sparkle DPS in general is a bit weak, try to get all signets. Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
           </p>
           </div>
           <div class="divider divider-neutral"></div>
@@ -840,43 +829,38 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-          
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
+        
+          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
+            
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1 or 2</p>
-              </div>
-              
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
 
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
 
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
 
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
-              </div>
 
           </div>
 
           <div class="p-2 mt-3 rounded" >
             <p class="text-sm sm:text-base text-left ">
 
-                <li class="text-sm sm:text-base"> Decimation 1: Not recommended for new players, since you can easily die.</li>
-                <li class="text-sm sm:text-base"> Deliverance 2: The additional Lightning DMG from Cosmos and Lovely Wishes count as Ult DMG, and can increase Deliverance 2 stack. It takes around 3 Basic ATK cycles to get max stack. </li>
+                <li class="text-sm sm:text-base"> Sparkle can use a lot of signets since she uses almost everything: combo atk, weapon skill, evasion skill, and Ult</li>
 
             </p>
             </div>
@@ -919,7 +903,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">START (ER Lite)</p>
@@ -927,16 +911,16 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">START (Normal)</p>
             </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">FINAL</p>
             </div>
@@ -948,10 +932,10 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press Ult to enter Planet Quaker form.</li>
-          <li>Press weapon ➔ spam Basic ATK until meter is full.</li>
-          <li>When meter is full, use Combo ATK.</li>
-          <li>When ult is available, use Ult.</li>
+          <li>Use Ult.</li>
+          <li>Press weapon ➔ Combo ATK.</li>
+          <li>Press weapon ➔ Combo ATK.</li>
+          <li>Press weapon to cast I am Elation.</li>
           <li>Repeat.</li>
         </ol>
 
@@ -962,7 +946,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/ZQcnuXezGCE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

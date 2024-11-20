@@ -1,0 +1,27 @@
+---
+title: Read This First
+category: 'Getting Started'
+sortOrder: 1
+customSlug: "readthisfirst"
+
+---
+
+<div class="flex items-center justify-center text-orange-300 h-10">
+  <img src="https://i.imgur.com/EIVLSjZ.png" alt="Icon" class="w-10 h-10 mr-2" />
+  <p class="text-lg font-bold">
+    I ain't reading all that.
+  </p>
+</div>
+
+## Introduction 
+I don't expect you to read all the articles here. So here are important points to prevent you from wasting important resources.
+
+---
+
+## Supplies
+DO NOT PULL 
+
+---
+
+## Materials
+You will get a lot of valkyries from starter event, Dorm Supplies, shops, etc. DO NOT SPEND ALL YOUR RESOURCES ON THEM. A lot of these valkyries are outdated. 

@@ -4,12 +4,25 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import daisyui from 'daisyui'; // Import DaisyUI
 import type { Config } from 'tailwindcss';
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts,svx,md}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			typography: (theme) => ({
+			  DEFAULT: {
+				css: {
+				  color: theme('colors.gray.300'), // Set the default prose text color
+				  h1: { color: theme('colors.gray.100') }, // Headings brighter
+				  h2: { color: theme('colors.gray.100') },
+				  h3: { color: theme('colors.gray.200') },
+				  a: { color: theme('colors.blue.400'), textDecoration: 'underline' },
+				},
+			  },
+			}),
+		}
 	},
 
 	plugins: [typography, containerQueries, aspectRatio, daisyui],
@@ -27,5 +40,8 @@ export default {
 			}
 		]
 	},
+
+	
 	
 } as Config;
+

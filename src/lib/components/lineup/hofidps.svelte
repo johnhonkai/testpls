@@ -3,8 +3,8 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HoO', image: '/images/valkportrait/Mei Herrscher of Origin.png', teampct: '100%', speed: '' },
-        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', teampct: '100%', speed: '' },
+        { name: 'HoO', image: '/images/valkportrait/Mei Herrscher of Origin.png',  speed: '' },
+        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', speed: '' },
     ];
 
     const asopchar = [

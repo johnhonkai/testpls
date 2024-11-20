@@ -454,9 +454,9 @@
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="" date="TBA"/>
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 17"/>
+                        <BossCard image="/images/Bosses/Mega_Creeper.webp"/>
+                        <BossCard image="/images/Bosses/Doom.webp"/>
                     </div>
 
             </div>

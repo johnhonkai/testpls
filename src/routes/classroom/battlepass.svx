@@ -43,29 +43,37 @@ A BP Season lasts for four patches. (Actual in-game term is BP Theme)
 ### Crystallum
 Crystallum is the currency used to purchase items in BP Works shop. Each season uses a different crystallum.
 
-
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/VQfUyw2.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
 </div>
 
-#### Crystallum Income
+#### Crystallum Income Per Patch
 - Vanguard: 5
 - Knight: 14
 - Paladin: 16
 
 ### Featured Valkyrie
-During a BP season, there are two featured valkyries for the BP Level rewards and BP Works shop. For the shop, refer to the infograph below to see an example on how it works:
+During a BP season, there are two featured valkyries for the BP Level rewards and BP Shop. 
+
+#### BP Level
+- The first valk is available for the first and second patch.
+- The second valk is available for the third and fourth patch.
+
+#### BP Shop
+- The first valk card/stamps are added on the first and second patch. They remain in the shop until BP season ends.
+- The second valk card/stamps are added on the third and fourth patch. They remain in the shop until BP season ends.
 
 <div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/EPpk8Fm.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+  <img src="https://i.imgur.com/K2l1PVa.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
 
-### Equipment
-A new set of equipment will be added to BP Works shop every patch, until the end of the BP season.
 
-### BP Works Vintage
-When BP season ends, **THE EQUIPMENT WILL REMAIN FOR ONE MORE PATCH** in a separate shop called **BP Works Vintage**. This is your last chance to purchase the equipment.
+### Equipment
+A new set of equipment is added BP Works shop every patch. The equipment remain in the shop until BP season ends + one more patch.
+
+#### BP Works Vintage
+After the BP season ends, **THE EQUIPMENT WILL REMAIN FOR ONE MORE PATCH** in a separate shop called **BP Works Vintage**. This is your last chance to purchase the equipment.
 - In Vintage shop, you can convert the new crystallum to the previous crystallum, in case you are short a few crystallum to get an equipment.
 - "What? You can use old crystallum to get the new crystallum?!" NO! 😠 New convert to old! Not old convert to new! 😠 
 

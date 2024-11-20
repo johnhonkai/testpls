@@ -67,7 +67,8 @@ export const valkbuffs = [
     {
         rank: "SS",
         description: "When you deal Resonance DMG, gain 2 sp, CD: 3s",
-        available_by_default: "yes",
+        available_by_default: "no",
+        condition: { astralRing: "World Star" },
 
     },
 

@@ -62,4 +62,14 @@
 
   }
 
+  :global(aside.toc.mobile > nav ){
+	background: var(--toc-mobile-bg, rgb(33, 48, 75))
+  }
+
+  :global(aside.toc > button  ){
+	font-size: var(--toc-font-size, 30px);
+	background: var(--toc-mobile-bg, rgb(10, 79, 206))
+
+
+}
 </style>

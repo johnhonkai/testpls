@@ -62,7 +62,7 @@ Every year, we have a free Art Collection event. The reward only ships to certai
 
 
 <div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/x5GhDxz.png" alt="Icon" class="max-w-[750px] h-auto rounded-lg" />
+  <img src="https://i.imgur.com/x5GhDxz.png" alt="Icon" class=" h-80 w-auto rounded-lg" />
 </div>
 
 

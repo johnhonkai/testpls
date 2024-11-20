@@ -88,16 +88,27 @@ async function loadAstralOpData(astralOpName, type) {
   }
 
   function selectCharacter(character) {
-    if (Object.values(slots).includes(character)) return;
-    $slotsStore[selectedSlot] = character;
-    showModal = false;
-
-    if (selectedSlot === 'compareAstralOp') {
-      updateCompareValues();
-    } else {
-      updateValues();
-    }
+  // Check if the selected character is already in the selected slot
+  if ($slotsStore[selectedSlot]?.name === character.name) {
+    showModal = false; // Close the modal without making changes
+    return;
   }
+
+  // Assign the character to the selected slot
+  $slotsStore[selectedSlot] = character;
+
+  // Close the modal
+  showModal = false;
+
+  // Update values based on the selected slot
+  if (selectedSlot === 'compareAstralOp') {
+    updateCompareValues();
+  } else {
+    updateValues();
+  }
+}
+
+
 
   function removeCharacter(slot) {
     $slotsStore[slot] = null;
@@ -526,14 +537,15 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           (selectedSlot === 'astralOp' || selectedSlot === 'compareAstralOp' 
             ? astralop 
             : valkyries) as character}
-          <button
+            <button
             class="p-2 bg-gray-700 rounded-lg flex flex-col items-center hover:bg-gray-600"
             on:click={() => selectCharacter(character)}
-            disabled={Object.values(slots).includes(character)}
+            disabled={Object.values($slotsStore).some(slot => slot?.name === character.name)}
           >
             <img src={character.image} alt={character.name} class="w-16 h-16 object-cover rounded-md mb-1" />
             <span class="text-xs text-gray-300">{character.name}</span>
           </button>
+          
         {/each}
       </div>
 

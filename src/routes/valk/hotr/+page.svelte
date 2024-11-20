@@ -1096,29 +1096,31 @@ function selectTabMobile(event) {
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-      <div class="my-6">
-        <div class="chat chat-start ">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/meibald.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-primary text-base ">Is Vita melee or ranged?</div>
-        </div>
-
-        <div class="chat chat-end">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/ds.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-neutral text-slate-100">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
+  <div class="my-10">
+    <div class="chat chat-start ">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/meibald.webp" />
         </div>
       </div>
+      <div class="chat-bubble chat-bubble-primary text-slate-100 "> Which Herrscher of Truth stigma should I get first from Battle Pass? </div>
+    </div>
+
+    <div class="chat chat-end">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/ds.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-neutral text-slate-100 py-5"> Bottom > Top > Mid. Bottom piece activates Inceptive Authority effect, used in Top, 2PC and 3PC. Try to get at least Top and Bottom.
+
+      </div>
+    </div>
+  </div>
   {/if}
 
   {#if selectedTab === 'Overview Card'}

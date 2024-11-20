@@ -8,29 +8,80 @@ customSlug: "gacha"
 
 
 ## Introduction to Supplies (Gacha)
-There are A LOT of different types of supplies in Honkai Impact 3. This is mostly because the game is constantly adding new types of valkyries and weapons, like SP battlesuit, and Divine Keys. But in Part 2, the gachas have been improved and simplified, now all the new content are in these three supplies:
+There are A LOT of supplies in Honkai Impact 3. This is mostly because the game is constantly adding new types of valkyries and weapons, like SP battlesuit, and Divine Keys. But in Part 2, the gachas have been improved and simplified, now all the new content are in these three supplies:
 - Battlesuit Supply
 - Equipment Supply
 - AstralOp Supply
 
-## Battlesuit Supply
+Part 1 Supplies are still available, but they are slowly starting to disappear.
+
+## Part 2 Supplies
+
+### Battlesuit Supply
 This is where you pull the characters
 - Content: One featured S-rank, one featured A-rank, three other A-ranks
 - Cost per pull: 280 crystal, or one Battlesuit Supply Card
 - Featured S-rank is guaranteed within 90 pulls / 25,200 crystals
 - Every 10 pulls guarantee an A-rank or S-rank valk
 
-## Equipment Supply
+### Equipment Supply
 This is where you pull the equipments
 - Content: One featured weapon + stigma set (Top, Mid, Bottom)
 - Cost per pull: 280 crystal, or one Equipment Supply Card
 - Featured weapon is guaranteed within 60 pulls / 16,800 crystals
 - Every 10 pulls guarantee weapon or one of the stigma pieces
 
-## AstralOp Supply
+### AstralOp Supply
 This is where you pull AstralOp. What is AstralOp? Well it's basically like Bangboo, but what if the Bangboo is broken like Robin? Yeah, something like that.
-- Content: A featured S-rank AstralOp
+- Content: One featured S-rank AstralOp
 - Cost per pull: 280 crystal, or one Equipment Supply Card
 - Featured weapon is guaranteed within 60 pulls / 16,800 crystals
 - Every 10 pulls guarantee AstralOp or some upgrade materials
 
+## Part 1 Supplies
+Just some info on old supplies (Incomplete)
+
+### Expansion Supply
+Before v7.3, Battlesuit Supply is known as Expansion Supply, and has some differences:
+- Featured S-rank is guaranteed within 100 pulls / 28,000 crystals
+- Featured A-rank drop rate is lower
+
+### ADV Supply
+A valkyrie supply that allows you to immediately get SS-rank if you hit 100 pulls milestone. This is only available for valkyries that are over 8 patches old.
+- Every 10 pulls give you a stamp (10 fragments). S-rank card is guaranteed within 100 pulls.
+- S-rank drop rate is much lower than normal battlesuit supply.
+- A-rank offrates include all A-ranks in the game.
+
+
+### Focused Supply
+- Content: One featured weapon + stigma set (Top, Mid, Bottom), and a few off-rate weapon and stigma
+- A new featured weapon / stigma is guaranteed within 50 pulls, max 200 pulls / 56,000 crystals for full set.
+- Usually you don't hit the max pity. Around 120-150 pulls average for full set.
+- Stigma drop rate is higher than weapon. In Focused Supply, you get more weapons than stigma. In Equipment Supply, you get more stigma than weapon.
+
+### SP Battlesuit Supply (Removed)
+
+### SP Focused Supply (Removed)
+This supply is only available on the debut patch of an SP valkyrie (A-rank valk). 
+- Content: One featured weapon + stigma set (Top, Mid, Bottom) of the new SP valkyrie, and a few off-rate weapon and stigma
+- Cost per pull: 280 crystal, or one Equipment Supply Card
+- A new featured weapon / stigma is guaranteed within 30 pulls, max 90 pulls / 25,200 crystals for full set. Usually you don't hit the max pity. 
+- Stigma drop rate is higher than weapon. In Focused Supply, you get more weapons than stigma. In Equipment Supply, you get more stigma than weapon.
+
+### EXPA SELECT (Removed)
+Event version of Expansion Supply that appears during spending event.
+- Content: There are three featured S-ranks. They share S-rank 100 pull guarantee. 
+- You can choose the featured S-rank, and you can switch the featured S-rank at any time (there is a limit).
+- Usually we have three EXPA Select sets (9 S-ranks) that are alternating every 3-4 days for two weeks.
+
+### FOCA SELECT (Removed)
+Event version of Focused Supply that appears during spending event.
+- Content: There are five featured weapons and stigma sets. They share weapon 60 pull guarantee.
+- You can choose the featured weapon and stigma set. The other four sets become the off-rates. You can switch the featured set at any time (there is a limit). 
+- Usually we have three FOCA Select sets (15 equipment set) that are alternating every 3-4 days for two weeks.
+
+### Divine Key Supply (Removed)
+
+### Schicksal Arsenal
+
+### Firepower Supply

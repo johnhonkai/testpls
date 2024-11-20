@@ -49,9 +49,7 @@
       <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : undefined}>
 				<a href="/valk" class="custom-font" data-sveltekit-preload-data="hover">Valkyrie</a>
 			</li>
-      <li aria-current={$page.url.pathname === '/planner' ? 'page' : undefined}>
-				<a href="/planner" class="custom-font" data-sveltekit-preload-data="hover">Planner</a>
-			</li>
+
       <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
 				<a href="/asop" class="custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
 			</li>
@@ -66,10 +64,14 @@
 
 
 			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
-				<a href="/classroom/Home" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
+				<a href="/classroom/home" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
 			</li>
       <li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
 				<a href="/betanews" class="custom-font" data-sveltekit-preload-data="hover">Beta News</a>
+			</li>
+
+			<li aria-current={$page.url.pathname === '/hi3awards' ? 'page' : undefined}>
+				<a href="/hi3awards" class="custom-font" data-sveltekit-preload-data="hover">HI3 Awards</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
