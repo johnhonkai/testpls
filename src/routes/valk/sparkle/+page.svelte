@@ -762,7 +762,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Start with ult / weapon to trigger Opulence signet buff.</li>
+          <li>Start with ultimate / weapon to trigger Opulence signet buff.</li>
           <li>Activate Stellar Outburst.</li>
           <li>Spam Basic ATK until you cast I am Elation.</li>
           <li>Use Ultimate.</li>
