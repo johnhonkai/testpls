@@ -201,6 +201,17 @@ function selectTabMobile(event) {
     align-items: center;
     gap: 8px;
 }
+
+.loading-indicator {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
