@@ -31,7 +31,7 @@
 	<div class="block xl:w-1/6"></div>
 
 	<!-- Main Content centered on larger screens -->
-	<article class="prose grow  mx-auto max-w-[960px] p-6 bg-base-200 rounded-lg shadow-md space-y-5 prose-ul:leading-6 prose-h3:bg-gradient-to-r from-cyan-500 to-blue-500 prose-h3:text-black prose-h3:pl-2 prose-h3:rounded ">
+	<article class="prose grow  mx-auto max-w-[960px] p-6 bg-base-200 rounded-lg shadow-md space-y-5 prose-ul:leading-6 prose-h3:bg-gradient-to-r from-cyan-500 to-blue-500 prose-h3:text-black prose-h3:pl-2 prose-h3:rounded prose-h1:custom-font ">
 		<h1>{data.title}</h1>
 		<p>Published: {data.date}</p>
 

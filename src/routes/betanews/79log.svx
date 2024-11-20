@@ -2,6 +2,7 @@
 title: v7.9 Patch Note v3D
 date: '26-Oct-2024'
 version: '7.9'
+sortOrder: '1'
 image: "/images/sporkle.png"
 category: "valk"
 ---

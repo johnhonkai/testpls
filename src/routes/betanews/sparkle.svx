@@ -2,6 +2,7 @@
 title: Sparkle Skill v3C
 date: '26-Oct-2024'
 version: '7.9'
+sortOrder: '2'
 image: "/images/sporkle.png"
 category: "new"
 
