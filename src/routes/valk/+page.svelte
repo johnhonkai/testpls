@@ -100,9 +100,11 @@
   </div>
 {/if}
 
+<!-- Loading Indicator -->
 {#if $isLoading2}
-  <div class="loading-indicator">
-    Loading...
+  <div class="loading-screen fixed inset-0  bg-opacity-75 flex items-center justify-center z-50">
+    <span class="loading loading-spinner loading-lg text-secondary"></span>
+    <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
 

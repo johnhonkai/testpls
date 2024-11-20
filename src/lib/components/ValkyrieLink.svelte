@@ -1,4 +1,10 @@
 <script lang="ts">
+    import { isLoading2 } from '$lib/stores/loading'; // Import the shared loading store
+
+    function handleClick(event) {
+    isLoading2.set(true); // Show loading indicator when clicked
+  }
+
     export let valkyrie: {
       url: string;
       image: string;
@@ -8,7 +14,11 @@
     };
   </script>
   
-  <a href={valkyrie.url} class="flex flex-col items-center text-center rounded" data-sveltekit-preload-data="hover" >
+  <a href={valkyrie.url} 
+  class="flex flex-col items-center text-center rounded" 
+  data-sveltekit-preload-data="hover"   
+  on:click={handleClick}
+>
     <!-- Valkyrie Image with Badge -->
     <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
       {#if valkyrie.badge}

@@ -13,37 +13,26 @@ import Lightbox from '$lib/components/lightbox.svelte';
 import { isLoading2 } from '$lib/stores/loading'; // Import shared store
 
 function checkElementsLoaded() {
-  const bgwavebox = document.getElementById('bgwavebox');
-  const avabox = document.getElementById('avabox');
-  const typebox = document.getElementById('typebox');
-  const arbox = document.getElementById('arbox');
+    const bgwavebox = document.getElementById('bgwavebox');
+    const avabox = document.getElementById('avabox');
+    const typebox = document.getElementById('typebox');
+    const arbox = document.getElementById('arbox');
 
-  const images = [bgwavebox, avabox, typebox, arbox]
-    .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
+    const images = [bgwavebox, avabox, typebox, arbox]
+      .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
 
-  return images.every(img => img.complete && img.naturalWidth > 0);
-}
-
-onMount(() => {
-  const intervalId = setInterval(() => {
-    if (checkElementsLoaded()) {
-      isLoading2.set(false); // Hide loading indicator
-      clearInterval(intervalId);
-    }
-  }, 100);
-
-  return () => clearInterval(intervalId); // Cleanup
-});
+    return images.every(img => img.complete && img.naturalWidth > 0);
+  }
 
   onMount(() => {
     const intervalId = setInterval(() => {
       if (checkElementsLoaded()) {
-        isLoading2.set(false); // Hide loading indicator
+        isLoading2.set(false); // Hide the loading indicator
         clearInterval(intervalId);
       }
     }, 100);
 
-    return () => clearInterval(intervalId); // Cleanup
+    return () => clearInterval(intervalId); // Cleanup on unmount
   });
 
 
