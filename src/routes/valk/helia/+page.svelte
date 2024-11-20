@@ -155,18 +155,18 @@ function selectTabMobile(event) {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
-  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/wave_helia.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  <img src="/images/bg/wave_helia.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block ">    
-  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/ava_helia.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
+  <img src="/images/bg/ava_helia.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->
 <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center ">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/Helia.png" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-7;"/> 
+  <img src="/images/valkfull/Helia.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-7;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button on:click={increaseLike} class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">
