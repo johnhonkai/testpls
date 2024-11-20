@@ -1,5 +1,8 @@
 <script lang="ts">
   import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
+  import { onMount } from 'svelte';
+
+  let isLoading = true; // Track if the page is still loading
 
   // Filter options
   const types = [
@@ -66,8 +69,31 @@
     if (type === 'element') selectedElement = value;
     if (type === 'astralRing') selectedAstralRing = value;
   }
+
+   // Wait for all images in the ValkyrieLink components to load
+   onMount(() => {
+    const imagePromises = valkyries.map((valkyrie) => {
+      return new Promise<void>((resolve) => {
+        const img = new Image();
+        img.src = valkyrie.image;
+        img.onload = () => resolve();
+        img.onerror = () => resolve(); // Resolve even if the image fails to load
+      });
+    });
+
+    Promise.all(imagePromises).then(() => {
+      isLoading = false; // Hide the loading screen
+    });
+  });
 </script>
 
+<!-- Loading Screen -->
+{#if isLoading}
+  <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
+    <span class="loading loading-spinner loading-lg text-secondary"></span>
+    <p class="text-white mt-4">Loading...</p>
+  </div>
+{/if}
 <section class="relative pt-4">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]">
     <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
@@ -132,3 +158,32 @@
     </div>
   </div>
 </section>
+
+<style>
+  .loading-screen {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>

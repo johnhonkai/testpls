@@ -102,7 +102,7 @@
 <!-- Loading Screen -->
 {#if isLoading}
   <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
-    <div class="spinner"></div>
+    <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
