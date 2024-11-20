@@ -155,12 +155,12 @@ function selectTabMobile(event) {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
-  <img src="/images/bg/wave_coralie.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/wave_coralie.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block ">    
-  <img src="/images/bg/ava_coralie.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
+  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/ava_coralie.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->

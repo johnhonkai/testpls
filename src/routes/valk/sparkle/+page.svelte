@@ -286,27 +286,27 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong> Very underwhelming DPS.
+              <strong class="text-amber-400">Fire Qua Resonance DPS</strong> <br/> Sparkle is very underwhelming as a DPS, BUT she has her top scores: Fire Kosma (Best), and Resonance Vita (Second best after SIMP). Just like other Part 2 valks, Sparkle will probably get more top score bosses in future patches.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1 Fire Support:</strong> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle allows DPS to  <b>USE ULTIMATE TWICE PER ROTATION</b>, provides HUGE Ignite DMG, extra ignite stacks, and more. 
+              <strong class="text-amber-400">Part 1 Fire Support</strong> <br/> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle allows Fenghuang of Vicissitude and Miracle Magical Girl to  <b>USE ULTIMATE TWICE PER ROTATION</b>. Sparkle also provides sp regen, huge Ignite DMG, and extra ignite stacks. 
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> Just a normal buffer and resonance mark triggerer.
+              <strong class="text-amber-400">World Star Support</strong> <br/>Just a normal buffer and resonance mark triggerer.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Future ??? AR Support:</strong> Sparkle will be a support for one AR team in the future.
+            <strong class="text-amber-400">Future ??? AR Support</strong> <br/> Sparkle will be a support for one AR team in the future.
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Quantum Counter:</strong> Sparkle can insta-kill QUA enemies below 10% HP. Sparkle can be used by any team that requires quantum collapse. Sparkle ult provides two QUA collapses. If she uses her ult on a teammate, the teammate's Ult gains two QUA collapses.
+          <strong class="text-amber-400">Quantum Counter</strong> <br/> Sparkle can insta-kill QUA enemies below 10% HP. Sparkle can be used by any team that requires quantum collapse. Sparkle ult provides two QUA collapses. If she uses her ult on a teammate, the teammate's Ult gains two QUA collapses.
       </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players:</strong> It is NOT highly recommended to pull Sparkle. Vita [Lone Planetfarer] is available in v7.9 and she is much more valuable for new players. BUT, if you do decide to pull Sparkle, she will have her uses:
+              <strong class="text-amber-400">New Players</strong> <br/> It is NOT highly recommended to pull Sparkle. Vita [Lone Planetfarer] is available in v7.9 and she is much more valuable for new players. BUT, if you do decide to pull Sparkle, she will have her uses:
             </p>
               <ul class="list-disc ml-6 text-sm sm:text-base mt-3"></ul>
               <li class="mt-2">Sparkle will cover Quantum content, but she won't be a very good dps anywhere else.</li>  
@@ -314,11 +314,11 @@ function selectTabMobile(event) {
               <li class="mt-2">You have a support for the future ??? AR teams.  <span class="text-gray-400">(Also covered by Vita) </span></li>
 
           <p class="mt-5 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> 
+              <strong class="text-amber-400">Competitive</strong> <br/>
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
               <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
-              <li class="mt-2">As DPS, Sparkle loses to Schicksal's Imperative against Resonance Vita. S-rank Sparkle is not even in T100 leaderboard (CN PC server data). It seems like Sparkle only top scores Fire Kosma for now. (no live data)</li>
+              <li class="mt-2">As DPS, Sparkle currently only top scores Fire Kosma, and is the second best top scorer for Resonance Vita. However, Sparkle will probably get more top score bosses in future patches, like most Part 2 valks. </li>
 
           </ul>
           <div class="divider divider-neutral"></div>

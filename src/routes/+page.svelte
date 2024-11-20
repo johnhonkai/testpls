@@ -56,11 +56,11 @@
   // Function to handle image click
   function handleClick() {
     isClicked = true;
-    imageSrc = '/images/test3.webp';
+    imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test3.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDMud2VicCIsImlhdCI6MTczMjEyMzExNSwiZXhwIjoyMDQ3NDgzMTE1fQ.Y2bD4a-Rshlrbwkl6L0qkLG3bqDBtEL_frS1go-R5BI';
 
     // Revert to the original image after a few seconds
     setTimeout(() => {
-      imageSrc = '/images/test2.webp';
+      imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDIud2VicCIsImlhdCI6MTczMjEyMzA5OSwiZXhwIjoyMDQ3NDgzMDk5fQ.FxxZlHfPDVJ2qJLimaU6hOVs5jGJVeKFoN-tf8DNrCw';
       isClicked = false;
     }, 3000); // Adjust time as needed
   }
@@ -101,8 +101,8 @@
 
 <!-- Loading Screen -->
 {#if isLoading}
-  <div class="loading-screen fixed inset-0 flex items-center justify-center z-50">
-    <span class="loading loading-spinner loading-lg text-secondary"></span>
+<div class="loading-screen fixed inset-0  flex items-center justify-center z-50">
+  <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
@@ -121,7 +121,7 @@
 
   <div class="relative max-w-screen-lg right-[-1rem]">
   <div>
-    <img src="/images/test1.webp" alt="Banner" class="w-full h-full  object-cover">
+    <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test1.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDEud2VicCIsImlhdCI6MTczMjEyMzA1NCwiZXhwIjoyMDQ3NDgzMDU0fQ.7XeoccXhKwhr0-j_PGRBlBz-wlJw3AWSjg-_NakZMrA" alt="Banner" class="w-full h-full  object-cover">
   </div>
   <div class="absolute bottom-0 z-20 cursor-pointer" on:click={handleClick}>
     <img 
@@ -277,6 +277,7 @@
     z-index: 9999;
   }
 
+
   .spinner {
     width: 50px;
     height: 50px;
@@ -293,15 +294,6 @@
     to {
       transform: rotate(360deg);
     }
-  }
-
-  .loading-spinner {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 50;
   }
 
   /* Page content hidden state */
