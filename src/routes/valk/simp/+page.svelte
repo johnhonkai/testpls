@@ -34,12 +34,13 @@ function checkElementsLoaded() {
     let hasStartedLoading = false;
     let showLoadingTimeout: NodeJS.Timeout;
     let checkInterval: NodeJS.Timeout;
+    isLoading2.set(true); // Show loading indicator initially
 
     // Set a delay before showing the loading indicator
     showLoadingTimeout = setTimeout(() => {
       isLoading2.set(true); // Show loading indicator after 0.5 seconds
       hasStartedLoading = true;
-    }, 500);
+    }, 1000);
 
     // Check periodically for elements to load
     checkInterval = setInterval(() => {

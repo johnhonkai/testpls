@@ -18,24 +18,24 @@ function checkElementsLoaded() {
     const typebox = document.getElementById('typebox');
     const arbox = document.getElementById('arbox');
 
-    // Collect images from these elements
     const images = [bgwavebox, avabox, typebox, arbox]
       .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
 
-    // Check if all images are loaded
     return images.every(img => img.complete && img.naturalWidth > 0);
   }
+
 
   onMount(() => {
     let hasStartedLoading = false;
     let showLoadingTimeout: NodeJS.Timeout;
     let checkInterval: NodeJS.Timeout;
+    isLoading2.set(true); // Show loading indicator initially
 
     // Set a delay before showing the loading indicator
     showLoadingTimeout = setTimeout(() => {
       isLoading2.set(true); // Show loading indicator after 0.5 seconds
       hasStartedLoading = true;
-    }, 500);
+    }, 1000);
 
     // Check periodically for elements to load
     checkInterval = setInterval(() => {

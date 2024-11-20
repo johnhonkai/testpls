@@ -3,12 +3,32 @@
   import { onMount } from 'svelte';
   import { isLoading2 } from '$lib/stores/loading';
 
-  function navigateToCharacter(event) {
-    isLoading2.set(true); // Show loading indicator
-  }
 
   let isLoading = true; // Track if the page is still loading
 
+  function checkElementsLoaded() {
+    const images = Array.from(document.getElementsByTagName('img'));
+    return images.every(img => img.complete && img.naturalWidth > 0);
+  }
+
+  onMount(() => {
+    isLoading2.set(false); // Immediately reset loading state when returning to this page
+    let checkInterval: NodeJS.Timeout;
+
+    // Check periodically for images to load
+    checkInterval = setInterval(() => {
+      if (checkElementsLoaded()) {
+        clearInterval(checkInterval);
+        isLoading = false; // Hide local loading indicator
+      }
+    }, 100);
+
+    // Cleanup on unmount
+    return () => {
+      clearInterval(checkInterval);
+    };
+  });
+  
   // Filter options
   const types = [
     { name: 'All', image: '/images/type/IconNULL.png' },
