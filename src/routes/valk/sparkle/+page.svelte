@@ -647,7 +647,7 @@ function selectTabMobile(event) {
         <div class="p-2 mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Abyssal Aid), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: Sparkle DPS in general is a bit weak, try to get all signets. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
           </p>
           </div>
 
@@ -860,7 +860,7 @@ function selectTabMobile(event) {
           <div class="p-2 mt-3 rounded" >
             <p class="text-sm sm:text-base text-left ">
 
-                <li class="text-sm sm:text-base"> Sparkle can use a lot of signets since she uses almost everything: combo atk, weapon skill, evasion skill, and Ult</li>
+                <li class="text-sm sm:text-base"> Sparkle can use a lot of signets since she casts almost all skills: combo atk, weapon skill, evasion skill, and Ult</li>
 
             </p>
             </div>

@@ -2,9 +2,54 @@
 <slot /> <!-- This will render the content of each page -->
 
 <script lang="ts">
-  import Member from '$lib/components/member.svelte';
-import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
+  // IDs of images to wait for
+  const imageIds = ['bgwave', 'bannerpic', 'news1', 'news2', 'news3'];
+
+  let isLoading = true;
+
+  onMount(() => {
+    const promises = imageIds.map((id) => {
+      return new Promise<void>((resolve) => {
+        const container = document.getElementById(id);
+        if (!container) {
+          console.warn(`Element with ID ${id} not found`);
+          resolve(); // Resolve immediately if the element is missing
+          return;
+        }
+
+        const img = container.querySelector('img');
+        if (img?.complete) {
+          resolve(); // Image already loaded
+        } else if (img) {
+          img.addEventListener('load', () => resolve(), { once: true });
+          img.addEventListener('error', () => {
+            console.error(`Error loading image for ID ${id}`);
+            resolve(); // Resolve even if the image fails to load
+          }, { once: true });
+        } else {
+          console.warn(`No image found inside element with ID ${id}`);
+          resolve(); // Resolve immediately if no <img> is found
+        }
+      });
+    });
+
+    // Add a fallback timeout
+    const timeout = new Promise<void>((resolve) => {
+      setTimeout(() => {
+        console.warn('Timeout reached, proceeding to show page');
+        resolve();
+      }, 10000); // Adjust timeout as needed (10 seconds here)
+    });
+
+    // Wait for all images to load or timeout
+    Promise.race([Promise.all(promises), timeout]).then(() => {
+      isLoading = false; // Hide the loading screen
+    });
+  });
+
+  
   let isClicked = false;
   let imageSrc = '/images/test2.webp';
 
@@ -53,7 +98,18 @@ import { onMount } from 'svelte';
 }
 </script>
 
-<section class="relative flex m-0 justify-center z-[-10] ">
+
+<!-- Loading Screen -->
+{#if isLoading}
+  <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
+    <div class="spinner"></div>
+    <p class="text-white mt-4">Loading...</p>
+  </div>
+{/if}
+
+
+
+<section class="relative flex m-0 justify-center z-[-10]" id="bgwave">
 
   <img src="/images/bg/wave_sparkle.svg" alt="Banner" class="absolute top-0 w-full  h-auto z-[-7]">
 
@@ -61,7 +117,7 @@ import { onMount } from 'svelte';
 
 </section>
 
-<section class="relative flex m-0 justify-center ">
+<section class="relative flex m-0 justify-center " id="bannerpic">
 
   <div class="relative max-w-screen-lg right-[-1rem]">
   <div>
@@ -100,6 +156,33 @@ import { onMount } from 'svelte';
   .stretch {
     animation: stretch 0.5s ease-in-out infinite; /* Adjust duration and easing as needed */
     transform-origin: bottom; /* Keep the bottom fixed */
+  }
+
+  .loading-screen {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 </style>
 
@@ -179,14 +262,14 @@ import { onMount } from 'svelte';
       <a href="/valk/lp" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out">
 
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="/images/newstab/news1.webp" alt="First Article Image" class="w-full h-48 object-cover">
+        <img src="/images/newstab/news1.webp" alt="First Article Image" class="w-full h-48 object-cover" id="news1">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">New Battlesuit</h3>
           <p class="text-slate-300 text-base">Vita - Lone Planetfarer</p>
         </div>
       </a>
 
-      <a href="/beta-news/79log" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out">
+      <a href="/beta-news/79log" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src="/images/newstab/news2.png" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
@@ -195,7 +278,7 @@ import { onMount } from 'svelte';
         </div>
       </a>
 
-      <a href="/news/third-article" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out">
+      <a href="/news/third-article" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src="/images/newstab/news3.png" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
