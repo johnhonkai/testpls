@@ -18,23 +18,42 @@ function checkElementsLoaded() {
     const typebox = document.getElementById('typebox');
     const arbox = document.getElementById('arbox');
 
+    // Collect images from these elements
     const images = [bgwavebox, avabox, typebox, arbox]
       .flatMap(el => (el ? Array.from(el.getElementsByTagName('img')) : []));
 
+    // Check if all images are loaded
     return images.every(img => img.complete && img.naturalWidth > 0);
   }
 
   onMount(() => {
-    const intervalId = setInterval(() => {
+    let hasStartedLoading = false;
+    let showLoadingTimeout: NodeJS.Timeout;
+    let checkInterval: NodeJS.Timeout;
+
+    // Set a delay before showing the loading indicator
+    showLoadingTimeout = setTimeout(() => {
+      isLoading2.set(true); // Show loading indicator after 0.5 seconds
+      hasStartedLoading = true;
+    }, 500);
+
+    // Check periodically for elements to load
+    checkInterval = setInterval(() => {
       if (checkElementsLoaded()) {
-        isLoading2.set(false); // Hide the loading indicator
-        clearInterval(intervalId);
+        clearTimeout(showLoadingTimeout); // Cancel loading delay if rendering completes early
+        clearInterval(checkInterval); // Stop checking for loaded elements
+        if (hasStartedLoading) {
+          isLoading2.set(false); // Hide loading indicator if it was shown
+        }
       }
     }, 100);
 
-    return () => clearInterval(intervalId); // Cleanup on unmount
+    // Cleanup on unmount
+    return () => {
+      clearTimeout(showLoadingTimeout);
+      clearInterval(checkInterval);
+    };
   });
-
 
 let showLightbox = false;
 let selectedImage = '';
