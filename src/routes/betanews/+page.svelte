@@ -1,4 +1,4 @@
-<!-- src/routes/beta-news/+page.svelte -->
+<!-- src/routes/betanews/+page.svelte -->
 
 <script>
   export let data;
@@ -36,7 +36,7 @@
 
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
     {#each filteredPosts as post} <!-- Use filteredPosts here -->
-      <a href={`/betanews/${post.slug}`} class="block p-6 bg-base-200 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl will-change-transform">
+      <a href={`/betanews/${post.slug}`} class="block p-6 bg-base-200 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl will-change-transform ">
         
         <!-- Flex container for image and post content -->
         <div class="flex items-center space-x-4">
@@ -47,14 +47,8 @@
           <!-- Right side post details -->
           <div>
             <h2 class="text-2xl font-semibold text-secondary mb-1">{post.title}</h2>
-            <p class="text-sm text-gray-500">Version {post.version}</p>
-            <p class="text-gray-400 text-sm">
-              Created: {new Date(post.creationDate).toLocaleDateString('en-GB', {
-                day: '2-digit',
-                month: 'short',
-                year: 'numeric'
-              })}
-            </p>
+            <p class=" text-slate-300">Version {post.version}</p>
+
           </div>
           
         </div>

@@ -17,16 +17,16 @@
 
 	// Cards data
 	let cards = [
-		{ title: 'Deepspace Anchor', description: '', imgSrc: '/images/valkfull/Senadina.png', votes: 0 },
-		{ title: 'Valkyrie Boltstorm', description: '', imgSrc: '/images/valkfull/Helia.png', votes: 0 },
-		{ title: 'Valkyrie Blastmetal', description: '', imgSrc: '/images/valkfull/Coralie.png', votes: 0 },
-		{ title: 'Mad Pleasure', description: '', imgSrc: '/images/valkfull/thelema.png', votes: 0 },
-		{ title: 'Lone Destruction', description: '', imgSrc: '/images/valkfull/lantern.png', votes: 0 },
-		{ title: 'Jovial Deception', description: '', imgSrc: '/images/valkfull/jd.png', votes: 0 },
-		{ title: "Schicksal's Imperative", description: '', imgSrc: '/images/valkfull/teri_simp.png', votes: 0 },
-		{ title: 'Lone Planetfarer', description: '', imgSrc: '/images/valkfull/vita.png', votes: 0 },
-		{ title: 'Sparkle', description: '', imgSrc: '/images/valkfull/sparkle.png', votes: 0 },
-		{ title: 'Durandal', description: '', imgSrc: '/images/valkfull/dudu.webp', votes: 0 },
+		{ title: 'Deepspace Anchor', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/Senadina.webp', votes: 0 },
+		{ title: 'Valkyrie Boltstorm', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/Helia.webp', votes: 0 },
+		{ title: 'Valkyrie Blastmetal', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/Coralie.webp', votes: 0 },
+		{ title: 'Mad Pleasure', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/thelema.webp', votes: 0 },
+		{ title: 'Lone Destruction', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/lantern.webp', votes: 0 },
+		{ title: 'Jovial Deception', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/jd.webp', votes: 0 },
+		{ title: "Schicksal's Imperative", description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/teri_simp.webp', votes: 0 },
+		{ title: 'Lone Planetfarer', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/vita.webp', votes: 0 },
+		{ title: 'Sparkle', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/sparkle.webp', votes: 0 },
+		{ title: 'Durandal', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/dudu.webp', votes: 0 },
 
 	];
 

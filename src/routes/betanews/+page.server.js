@@ -1,3 +1,6 @@
+// src/routes/betanews/+page.js
+
+
 export async function load() {
   const modules = import.meta.glob('./*.svx', { eager: true });
   
