@@ -34,7 +34,7 @@
   });
 </script>
 
-<div class="sm:flex justify-center relative z-[100] hidden">
+<div class="lg:flex justify-center relative z-[100] hidden">
 <header>
 
 
@@ -54,21 +54,24 @@
 				<a href="/asop" class="custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
 			</li>
 
-			<li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
-				<a href="/boss" class="custom-font" data-sveltekit-preload-data="hover">Boss</a>
-			</li>
+
 			
 			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
 				<a href="/calendar79" class="custom-font" data-sveltekit-preload-data="hover">Timeline</a>
 			</li>
 
-
-			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
-				<a href="/classroom/home" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
+			<li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
+				<a href="/boss" class="custom-font" data-sveltekit-preload-data="hover">Boss</a>
 			</li>
-      <li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
+
+			<li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
 				<a href="/betanews" class="custom-font" data-sveltekit-preload-data="hover">Beta News</a>
 			</li>
+
+			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
+				<a href="/classroom/welcome" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
+			</li>
+
 
 			<li aria-current={$page.url.pathname === '/hi3awards' ? 'page' : undefined}>
 				<a href="/hi3awards" class="custom-font" data-sveltekit-preload-data="hover">HI3 Awards</a>

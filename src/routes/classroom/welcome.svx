@@ -1,0 +1,13 @@
+---
+title: Welcome
+sortOrder: 1
+customSlug: "welcome"
+
+
+---
+
+<div class="text-center text-2xl">Learn the basics of Honkai Impact 3</div>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/Classroom%20copy.webp" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>

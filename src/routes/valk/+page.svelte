@@ -25,6 +25,7 @@
 
   const astralRings = [
     'All',
+    'Reason of Promotion',
     'World Star',
     'Wheel of Destiny',
     'Rite of Oblivion',
@@ -33,8 +34,9 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
-  { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , badge: 'Beta', id:14},
-  { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , badge: 'New', id:13},
+  { name: 'Durandal', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Reason of Promotion'] , url: '/valk/durandal' , badge: 'Beta', id:16},
+  { name: 'Thousand-Faced Maestro: Cameo!', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , badge: 'New', id:14},
+  { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , id:13},
   { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/simp', id:12 },
   { name: 'Jovial Deception: Shadowdimmer', image: '/images/valkportrait/Songque Jovial Deception.png', type: 'SD', element: 'Physical', astralRing: ['Wheel of Destiny'] , url: '/valk/jd', id:11},
   { name: 'Lone Destruction: Shadowchaser', image: '/images/valkportrait/Lantern Lone Destruction.png', type: 'Psy', element: 'Fire', astralRing: ['Wheel of Destiny'] , url: '/valk/lantern', id:10},
@@ -45,7 +47,7 @@
   { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/fov', id:5},
   { name: 'Cosmic Expression', image: '/images/valkportrait/Griseo Cosmic Expression.png', type: 'SD', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ce', id:15},
   { name: 'Lunar Vow', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/lv', id:4},
-  { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing: ['Part 1', 'Rite of Oblivion'] , url: '/valk/hofi' ,  badge: 'Updated', id:3 },
+  { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing: ['Part 1', 'Rite of Oblivion'] , url: '/valk/hofi' , id:3 },
   { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hoo', id:2 } ,
   { name: 'Herrscher of Truth', image: '/images/valkportrait/Bronya Herrscher of Truth.png', type: 'Img', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hotr', id:1 } ,
 
@@ -85,6 +87,8 @@
       isLoading = false; // Hide the loading screen
     });
   });
+
+  
 </script>
 
 <!-- Loading Screen -->
@@ -96,13 +100,16 @@
 {/if}
 <section class="relative pt-4">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
-    <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
+    <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
   </div>
-  <div class="relative max-w-5xl mx-auto">
-    <h1 class="text-xl md:text-3xl font-bold text-center mb-3">Select a Valkyrie</h1>
-
+  <div class="relative max-w-5xl mx-auto mt-5">
+    <h1
+    class="text-xl md:text-3xl font-bold text-center bg-gradient-to-b from-white to-neutral-300 text-transparent bg-clip-text mb-3"
+  >
+  Select a Valkyrie
+  </h1>
     <!-- Filter Containers -->
-    <div class="flex flex-col md:flex-row justify-between gap-4 mb-4">
+    <div class="flex flex-col md:flex-row justify-between gap-4 mb-4 mx-4">
       <!-- Filter by Type -->
       <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
         <div class="flex justify-center flex-wrap gap-0.5 md:gap-1">
@@ -119,7 +126,7 @@
       </div>
 
       <!-- Filter by Element -->
-      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
+      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg ">
         <div class="flex justify-center flex-wrap gap-1">
           {#each elements as element}
             <button
@@ -136,11 +143,11 @@
 
     <!-- Astral Ring Filter -->
     <div class="rounded-lg mb-8">
-      <div class="grid grid-cols-3 sm:grid-cols-5 gap-2">
+      <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 gap-2 mx-4">
         {#each astralRings as astralRing}
           <button
             type="button"
-            class="btn btnar text-center rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-colors w-full whitespace-nowrap"
+            class="btn btnar text-center rounded-lg hover:bg-gray-200 hover:text-black active:bg-gray-300 transition-colors w-full lg:whitespace-nowrap"
             class:bg-gray-300={selectedAstralRing === astralRing}
             class:text-black={selectedAstralRing === astralRing}
             on:click={() => selectFilter('astralRing', astralRing)}>

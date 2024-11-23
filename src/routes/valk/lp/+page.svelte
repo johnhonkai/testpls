@@ -9,6 +9,7 @@
   import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
   import Lightbox from '$lib/components/lightbox.svelte';
+	import Dududps from '$lib/components/lineup/dududps.svelte';
   let showLightbox = false;
   let selectedImage = '';
 
@@ -379,6 +380,7 @@ function selectTabMobile(event) {
         {#if currentPage === 3}
         <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
 
+        <Dududps />
         {/if}
 
         <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
@@ -495,19 +497,19 @@ function selectTabMobile(event) {
               on:click={() => setPlaystyle('1')}
               class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
             >
-              Stellar Outburst
+              STELLAR OUTBURST
             </button>
           
             <button
               on:click={() => setPlaystyle('2')}
               class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
             >
-              AR Charging
+              AR CHARGING
             </button>
           </div>
         
           {#if activePlaystyle === '1'}
-          <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+          <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
           <p class="text-sm sm:text-base text-center sm:text-left">
               Mecha smashes all
           </p>
@@ -682,7 +684,7 @@ function selectTabMobile(event) {
           {/if}
 
           {#if activePlaystyle === '2'}
-          <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR CHARGING PLAYSTYLE</h2> 
+          <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
           <p class="text-sm sm:text-base text-center sm:text-left">
             Strong playstyle with lots of suspended animation and timestop.
           </p>

@@ -62,7 +62,7 @@
 </script>
 
 <div class="flex relative">
-	<div class="navbar bg-base-100 absolute z-40 lg:z-20 top-[-10px]" style="view-transition-name: daisyuinav;">
+	<div class="navbar py-0 bg-base-300 absolute z-40 lg:z-20 " style="view-transition-name: daisyuinav;">
 		<div class="navbar-start">
 			<div class="dropdown">
 				<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -70,29 +70,29 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
 					</svg>
 				</div>
-				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-					<li><a>Item 1</a></li>
-					<li>
-						<a>Parent</a>
-						<ul class="p-2">
-							<li><a>Submenu 1</a></li> 
-							<li><a>Submenu 2</a></li>
-						</ul>
-					</li>
-					<li><a>Item 3</a></li>
+				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+					<li><a href="/valk">Valkyrie</a></li>
+					<li><a href="/asop">Astral Op</a></li>
+
+					<li><a href="/boss">Boss</a></li>
+					<li><a href="/calendar79">Timeline</a></li>
+					<li><a href="/classroom/welcome">Classroom</a></li>
+					<li><a href="/betanews">Beta News</a></li>
+					<li><a href="/hi3awards">HI3 Awards</a></li>
+
 				</ul>
 			</div>
-			<a class="btn btn-ghost text-xl">Mars Impact</a>
+			<a class="btn btn-ghost text-lg">Mars Impact</a>
 		</div>
 
 		<div class="navbar-end">
 			<div class="dropdown dropdown-end">
-				<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar top-1">
+				<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
 					<div class="w-10 rounded-full">
 						<img alt="Avatar" src={avatarImage} />
 					</div>
 				</div>
-				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow">
 					<li>
 						<a class="justify-between" on:click={openProfileModal} >
 							Profile

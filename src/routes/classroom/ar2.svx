@@ -1,0 +1,43 @@
+---
+title: Part 2 Teambuilding
+category: 'Astral Ring'
+sortOrder: 2
+customSlug: "ar2"
+
+---
+
+
+
+## Part 1 Teambuilding
+1. In Part 1, teams are built based on <span class="text-sky-300">elements</span>. 
+2. Valkyries, equipment and ELFs usually provide buffs for <span class="text-sky-300">one specific element</span> + some Total DMG buff.
+3. Most valks are <span class="text-sky-300">either a DPS or a Support</span>. Some supports can also be a dps, but not the best dps, just decent. There's an exception to this - In Part 1.5, we got 
+ Lunar Vow and Herrscher of Rebirth, who are actually good at both DPS and support.
+4. A valkyrie usually <span class="text-sky-300">only has ONE best team lineup</span>, consisting of DPS + S-rank Support + SP Support.
+
+5. For equipment, most of the time equipment are gacha-only. There are farmable options (G3 or G4 Stigma from Foundry), but these take a few months to forge.
+
+## Part 2 Teambuilding
+
+1. In Part 2, teams are built based on <span class="text-emerald-400">ASTRAL RING Specializations</span>.
+2. Valkyries, equipment and Astral Ops provide buffs for ALL elements, but most of the <span class="text-emerald-400">buffs are restricted to specific AR types.</span>
+3. <span class="text-emerald-400">All S-ranks can be a DPS and a support</span>, based on the position in the lineup. Example:
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/cnbM5gV.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
+
+
+4. There are <span class="text-emerald-400">MULTIPLE OPTIMAL TEAM LINEUPS</span>. You are not just restricted to only two specific supports now. Every support has her own unique abilities. For example:
+- For Wheel of Destiny teams, <span class="text-orange-400">Senadina</span> can stay off-field the entire battle and still provide Elemental Breach.
+- For Wheel of Destiny teams, <span class="text-sky-300">Thelema</span> provides shieldbreak, evasion spam ar regen, and provides dmg herself.
+- For World Star teams, <span class="text-fuchsia-300">Herrscher of Finality</span> provides super quick resonance trigger.
+
+
+
+But of course, Honkai Impact is complex. Not all Astral Ring teams have multiple lineups. There are some teams that still only have one best lineup.
+- Herrscher of Finality DPS: Needs Herrscher of Truth and Herrscher of Origin.
+- Vita Lone Planetfarer DPS: Needs team members with Astral Ring: Rite of Oblivion (RoO) to activates buffs like Elemental Breach, buffs and stronger Ult. Right now, there are only two RoO valks besides Vita - Herrscher of Finality and Coralie.
+
+5. For equipment, you only need to gacha for weapon, 60 pulls guarantee max. Stigma is forgeable, you also get a lot of stigma if you pull weapon from gacha. 
+In addition, when a new valkyrie debuts, you will get one stigma selector box.

@@ -19,10 +19,14 @@ export default {
 				  h2: { color: theme('colors.gray.100') },
 				  h3: { color: theme('colors.gray.200') },
 				  a: { color: theme('colors.blue.400'), textDecoration: 'underline' },
+				  strong: { color: theme('colors.gray.300') }, // Set bold text color
+
 				},
 			  },
 			}),
-		}
+			
+		},
+		
 	},
 
 	plugins: [typography, containerQueries, aspectRatio, daisyui],

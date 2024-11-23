@@ -1,5 +1,5 @@
 ---
-title: Sparkle Equipment v3c
+title: Sparkle Gear v3C
 date: '2021-12-14'
 version: '7.9'
 sortOrder: '3'
@@ -8,6 +8,12 @@ category: "ar"
 
 ---
 
+### LINKS
+
+- [7.9 Patch Note](/betanews/79log)
+- [Sparkle Translation](/betanews/sparkle)
+- [Sparkle Equipment](/betanews/sparklegear)
+- [Elysian Realm](/betanews/sparkleer)
 
 ### DRIVE CORE WEAPON
 ATK: 441  CRT: 19

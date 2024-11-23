@@ -10,9 +10,11 @@ export async function load({ params }) {
         const metadata = module.metadata;
         const slug = path.split('/').pop().replace('.svx', '');
         
-        // Exclude 'home.svx' from the articles list
-        if (slug !== 'home') {
+        // Exclude 'welcome.svx' from the articles list
+        if (slug !== 'welcome') {
             articles.push({ ...metadata, slug });
+        } else {
+            console.log(`Excluding file: ${slug}`);
         }
     }
 

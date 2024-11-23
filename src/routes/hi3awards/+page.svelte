@@ -26,23 +26,34 @@
 		{ title: "Schicksal's Imperative", description: '', imgSrc: '/images/valkfull/teri_simp.png', votes: 0 },
 		{ title: 'Lone Planetfarer', description: '', imgSrc: '/images/valkfull/vita.png', votes: 0 },
 		{ title: 'Sparkle', description: '', imgSrc: '/images/valkfull/sparkle.png', votes: 0 },
-		
+		{ title: 'Durandal', description: '', imgSrc: '/images/valkfull/dudu.webp', votes: 0 },
+
 	];
 
 	let chaptercards = [
-		{ title: 'Chapter 1', description: '', imgSrc: '/images/hi3award24/ch1.webp', votes: 0 },
-		{ title: 'Chapter 2', description: '', imgSrc: '/images/hi3award24/ch2.webp', votes: 0 },
-		{ title: 'Chapter 3', description: '', imgSrc: '/images/hi3award24/ch3.webp', votes: 0 },
-		{ title: 'Chapter 3-EX', description: '', imgSrc: '/images/hi3award24/ch3ex.webp', votes: 0 },
-		{ title: 'Chapter 4', description: '', imgSrc: '/images/hi3award24/ch4.webp', votes: 0 },
-		{ title: 'Chapter 5', description: '', imgSrc: '/images/hi3award24/ch5.webp', votes: 0 },
-		{ title: "Chapter 6", description: '', imgSrc: '/images/hi3award24/ch6.webp', votes: 0 },
+		{ title: 'Chapter 1', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch1.webp', votes: 0 },
+		{ title: 'Chapter 2', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch2.webp', votes: 0 },
+		{ title: 'Chapter 3', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch3.webp', votes: 0 },
+		{ title: 'Chapter 3-EX', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch3ex.webp', votes: 0 },
+		{ title: 'Chapter 4', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch4.webp', votes: 0 },
+		{ title: 'Chapter 5', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch5.webp', votes: 0 },
+		{ title: "Chapter 6", description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch6.webp', votes: 0 },
 	];
 
 	let bosscards = [
-		{ title: 'Duonigue', description: '', imgSrc: '/images/hi3award24/duonigue.webp', votes: 0 },
-		{ title: 'Lantern', description: '', imgSrc: '/images/hi3award24/lanternboss.webp', votes: 0 },
-		{ title: 'Perception', description: '', imgSrc: '/images/hi3award24/ch3.webp', votes: 0 },
+		{ title: 'Duonigue', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/duonigue.webp', votes: 0 },
+		{ title: 'Lantern', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/lanternboss.webp', votes: 0 },
+		{ title: 'Perception', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch3.webp', votes: 0 },
+		{ title: 'Sampo', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/sampo.webp', votes: 0 },
+
+	];
+
+	let songquecards = [
+		{ title: 'Sussy Moment 1', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/sussy1.webp', votes: 0 },
+		{ title: 'Feet', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/sussy2.webp', votes: 0 },
+		{ title: 'Suskibidi Moemnt 3', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/sussy3.webp', votes: 0 },
+		{ title: 'Beach', description: '', imgSrc: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/sussy4.webp', votes: 0 },
+
 	];
 
 	const fetchVoteCounts = async (category) => {
@@ -74,6 +85,11 @@
     }));
 } else if (category === "Best Boss") {
     bosscards = bosscards.map((card) => ({
+        ...card,
+        votes: voteCounts[card.title] || 0,
+    }));
+} else if (category === "Sussiest Songque Moment") {
+    songquecards = songquecards.map((card) => ({
         ...card,
         votes: voteCounts[card.title] || 0,
     }));
@@ -179,16 +195,16 @@
 
 </script>
 
-<div class="flex flex-col items-center px-4 py-6 mb-60">
+<div class="flex flex-col items-center px-4 py-6 mb-60 ">
 	<h1 class="text-3xl font-bold text-center text-emerald-500 mb-2">Honkai Impact 3rd Awards 2024</h1>
 	<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Voting ends in: {countdown}</p>
 
-	<p class="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4">BEST VALKYRIE</p>
+	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-xl w-full">
 		{#each cards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('/images/hi3award24/bgvalk.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[280px] max-h-80 rounded-xl p-6 border">
+				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bgvalk.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[280px] max-h-80 rounded-xl p-6 border">
 					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
 						{card.title}
 					</CardItem>
@@ -215,12 +231,12 @@
 		{/each}
 	</div>
 
-	<p class="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20">BEST CHAPTER</p>
+	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST CHAPTER</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
 		{#each chaptercards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('/images/hi3award24/bg.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
+				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bg.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
 					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
 						{card.title}
 					</CardItem>
@@ -247,7 +263,8 @@
 		{/each}
 	</div>
 
-	<p class="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20">BEST BOSS</p>
+	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
+		BEST BOSS </p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
 		{#each bosscards as card (card.title)}
@@ -278,6 +295,42 @@
 			</CardContainer>
 		{/each}
 	</div>
+
+	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
+		SUSSIEST SONGQUE MOMENT</p>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
+		{#each songquecards as card (card.title)}
+			<CardContainer bind:isMouseEntered className="inter-var">
+				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-cyan-800 dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
+					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+						{card.title}
+					</CardItem>
+
+					<CardItem {isMouseEntered} translateZ="100" className="w-full mt-4">
+						<img
+							src={card.imgSrc}
+							class="h-40 w-full rounded-xl object-cover object-top group-hover/card:shadow-xl"
+							alt="{card.title} thumbnail"
+						/>
+					</CardItem>
+					<div class="mt-5 flex items-center justify-between">
+						<CardItem {isMouseEntered} translateZ="50" className="text-sm text-gray-500 dark:text-gray-300">
+							Votes: {card.votes}
+						</CardItem>
+						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold cursor-pointer">
+							<button on:click={() => openVoteModal(card.title, "Sussiest Songque Moment")}>
+								VOTE
+							</button>
+						</CardItem>
+					</div>
+				</CardBody>
+			</CardContainer>
+		{/each}
+	</div>
+
+	<div class="text-center mt-10 text-3xl">Thank You For Voting</div>
+
 </div>
 
 <!-- Modal -->

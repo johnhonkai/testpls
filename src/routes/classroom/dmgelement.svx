@@ -53,19 +53,18 @@ Although they are not entirely the same, Bleed and Ignite DMG do inherit some pr
 In addition, some of the Bleed / Ignite valk mechanics are related to the Bleed / Ignite status DoT. For example:
 - Miracle Magical Girl's Ultimate count as Ignite DMG, and its damage increases for each Ignite DoT stack that the enemy has.
 
----
+
+
 
 ## Total DMG
 This is not exactly a damage type, but it is very common in skill descriptions that it has to be mentioned here. Characters, equipment, etc provide buffs for the elements mentioned above (Fire DMG buff, Lightning DMG buff, etc). But they can also provide a universal dmg buff known as **Total DMG** buff. Total DMG buff will benefit all damage types.
 
----
 
 ## HP Loss DMG
 HP Loss DMG is a special dmg that only a few valkyries have. It deals a fixed damage and the damage value is equal to a percentage of another damage.
 - For example: Herrscher of Finality - During Stellar Outburst, each Basic ATK deals additional HP Loss DMG. The HP Loss DMG value is equal to 120% of the Basic ATK's damage.
 - Certain enemies require HP Loss DMG to counter their mechanics (For example, Twin Wardens)
 
----
 
 ## Stardust DMG
 This is a special dmg that can only be done against Stardust (SD) enemies. The more SD remnant stacks you have, the more damage you deal to the enemy's Max HP.

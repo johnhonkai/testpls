@@ -90,8 +90,8 @@
     }
 </script>
 
-<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center">
-    <h2 class="text-2xl font-semibold mb-2 text-teal-400 ">Event Timeline</h2>
+<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center mb-5">
+    <h2 class="text-2xl font-semibold mb-2 text-teal-400 ">Supply and Event Timeline</h2>
     <p class="text-xs sm:text-sm">
         The data is based on CN server. Schedule might be different for SEA / KR / GLB servers.
     </p>

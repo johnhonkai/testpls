@@ -105,15 +105,15 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Flame-Chaser - Kalpas.webp", 
-      weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and take 50% less DMG from Melee ATK", 
+      weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
   },
   rangedhepa: {
     name: 'Hephaestus', 
     mechanics: 'Has huge freeze trauma.', 
-    weakness: 'Fire', 
+    weakness: 'Fire Immunity, Lightning (M), Physical (M)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/Hephaestus SSS.webp", 
-    weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and take 50% less DMG from Melee AT", 
+    weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
   },
   stunfish:{
     name: 'Flying Fish: Patrol Force', 
@@ -693,9 +693,6 @@ export const teamData = {
       }
     ]},]
   },
-  bleedhos: {
-
-  },
   quavalralhal: {
     teamDataSets: [
     {
@@ -719,7 +716,7 @@ export const teamData = {
   ignitehov: {
     teamDataSets: [
     {
-      tabname: "v7.8",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
@@ -774,7 +771,7 @@ export const teamData = {
   meleehoc: {
     teamDataSets: [
     {
-      tabname: "v7.8",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
@@ -800,5 +797,71 @@ export const teamData = {
         bottext: "Highest Score: S3 786, SS+ 803 "
       },
     ]},]
-  }
+  },
+  firekosma: {
+    teamDataSets: [
+    {
+      tabname: "v7.9",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+        rank: '1, 4-10',
+        pct: '46%',
+        bottext: "Highest Score: S 792, S2 810, SS+ 881 "
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_songque.png"],
+        rank: '2, 3',
+        pct: '3%',
+        bottext: "Highest Score: SS+ 878"
+      },
+
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_songque.png"],
+        rank: '11',
+        pct: '32%',
+        bottext: "Highest Score: S2 831, SS 863"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_songque.png"],
+        rank: '40',
+        pct: '17%',
+        bottext: "Highest Score: S 799, S2 811, SS 836"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/elf_kiana.png"],
+        rank: '87',
+        pct: '2%',
+        bottext: "Highest Score: S2 801"
+      },
+    ]},]
+  },
+  bleedhos: {
+    teamDataSets: [
+    {
+      tabname: "v7.8 SEA",
+      teamInfoText: "Data is from v7.8 SEA Server Top 100 Myriad 533 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Theresa Lunar Vow.png", "images/valkportrait/asop_songque.png"],
+        rank: '1-15',
+        pct: '49%',
+        bottext: "Highest Score: S 710, S2 817, SS+ 823 "
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Susannah Valkyrie Quicksand.png", "images/valkportrait/Griseo Cosmic Expression.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_bunny.png"],
+        rank: '16',
+        pct: '51%',
+        bottext: "Highest Score: 756"
+      },
+    ]},]
+  },
 }

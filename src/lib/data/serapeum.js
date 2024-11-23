@@ -93,7 +93,7 @@ export const valkbuffs = [
         rank: "S",
         available_by_default: "no",
 
-        description: "Valk enters Crit DMG Overflow state: When an attack's Crit Rate <100%, 2.5% of Crit DMG is converted to 1% Crit Rate, until it reaches 100%, convert up to 75% Crit DMG.",
+        description: "When AR Wheel of Destiny is activated, enter Crit DMG Overflow state: When an attack's Crit Rate <100%, 2.5% of Crit DMG is converted to 1% Crit Rate, until it reaches 100%, convert up to 75% Crit DMG.",
         condition: { astralRing: "Wheel of Destiny"},
 
         crate: 30,

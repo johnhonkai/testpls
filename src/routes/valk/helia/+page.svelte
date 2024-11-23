@@ -9,6 +9,7 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -343,6 +344,9 @@ function selectTabMobile(event) {
 
       <SenaDPS firstCharName='Helia'  />
 
+      <div class="divider divider-neutral"></div>
+
+    <Sparkledps firstCharName='Helia'></Sparkledps>
 
 </section>
 
@@ -1076,13 +1080,13 @@ function selectTabMobile(event) {
 
         <div class="chat chat-end">
           <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
+            <div class="w-10 sm:w-12 rounded-full ">
               <img
-                alt="Tailwind CSS chat bubble component"
+                alt="Tailwind CSS chat bubble component "
                 src="/images/ds.webp" />
             </div>
           </div>
-          <div class="chat-bubble chat-bubble-neutral text-slate-100">Although Helia does not rely on Electrifying Arc to function, this weapon contributes around 20% of team dmg, which is big. Electrifying Arc is also FREE from Part 2 Chapter 5. Go get it~</div>
+          <div class="chat-bubble chat-bubble-neutral text-slate-100 py-5">Although Helia does not rely on Electrifying Arc to function, this weapon contributes around 20% of team dmg, which is big. Electrifying Arc is FREE from Part 2 Chapter 5. Go get it~</div>
         </div>
       </div>
   {/if}

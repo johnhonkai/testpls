@@ -13,6 +13,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Fovdps from '$lib/components/lineup/fovdps.svelte';
 	import P1fire from '$lib/components/lineup/p1fire.svelte';
 	import Sirindps from '$lib/components/lineup/sirindps.svelte';
+	import Dududps from '$lib/components/lineup/dududps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -286,13 +287,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Fire Qua Resonance DPS</strong> <br/> Sparkle is very underwhelming as a DPS, BUT she has her top scores: Fire Kosma (Best), and Resonance Vita (Second best after SIMP). Just like other Part 2 valks, Sparkle will probably get more top score bosses in future patches.
+              <strong class="text-amber-400">DPS</strong> <br/> Sparkle is very underwhelming as a DPS, BUT she has her top scores: Fire Kosma (Best), and Resonance Vita (Second best after SIMP). Just like other Part 2 valks, Sparkle will probably get more top score bosses in future patches.
           </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Part 1 Fire Support</strong> <br/> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle allows Fenghuang of Vicissitude and Miracle Magical Girl to  <b>USE ULTIMATE TWICE PER ROTATION</b>. Sparkle also provides sp regen, huge Ignite DMG, and extra ignite stacks. 
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Just a normal buffer and resonance mark triggerer.
+              <strong class="text-amber-400">World Star Support</strong> <br/> New best teammate for Schicksal's Imperative against Quantum enemies. Just another buffer for Senadina.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -317,8 +318,8 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">Competitive</strong> <br/>
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">As DPS, Sparkle currently only top scores Fire Kosma, and is the second best top scorer for Resonance Vita. Sparkle will probably get more top score bosses in future patches, like most Part 2 valks. </li>
               <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
-              <li class="mt-2">As DPS, Sparkle currently only top scores Fire Kosma, and is the second best top scorer for Resonance Vita. However, Sparkle will probably get more top score bosses in future patches, like most Part 2 valks. </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -363,7 +364,7 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Part 1 Fire Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Part 1 Fire Support </div>
 
       <Fovdps></Fovdps>
 
@@ -379,8 +380,9 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 3}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Future AR ??? Support </div>
 
+      <Dududps firstCharName ='Sparkle'></Dududps>
       {/if}
 
       <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
@@ -498,11 +500,38 @@ function selectTabMobile(event) {
 
               </div>
 
-              </div>
+              <div class="divider divider-neutral"></div>
+
+
+              <div class="flex items-center justify-center text-orange-300 ">
+              <img src="https://i.imgur.com/khNqVAN.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+            </div>
+
+            <div class="flex items-center justify-center text-orange-300 ">
+              <img src="https://i.imgur.com/GPRAylq.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+            </div>
+
+            <div class="flex items-center justify-center text-orange-300 ">
+              <img src="https://i.imgur.com/4VQbfyd.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+            </div>
+      
+      
+            </div>
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="/images/valkbuff/buff_sparkle.webp"
+          alt="Buff 1"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('/images/valkbuff/buff_sparkle.webp')}
+        />
+        <!-- Add more images as needed -->
+      </div>
 
       <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
         <p class="mb-4 font-semibold">How to activate Sparkle buffs:</p>
@@ -551,7 +580,7 @@ function selectTabMobile(event) {
           <span class="text-cyan-300 font-bold text-lg">5</span>
           <div>
             <p class="font-semibold text-cyan-300">I am Elation:</p>
-            <p>Recovers 8 (S) / 20 (S2) SP for teammates.</p>
+            <p>Recovers 12 (S) / 24 (S2) SP for teammates.</p>
           </div>
         </div>
       
@@ -574,22 +603,7 @@ function selectTabMobile(event) {
       
       
 
-      <div class="flex flex-wrap gap-4">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="/images/valkbuff/buffs_vita1.png"
-          alt="Buff 1"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('/images/valkbuff/buffs_vita1.png')}
-        />
-        <img
-          src="/images/valkbuff/buffs_vita2.png"
-          alt="Buff 2"
-          class="object-cover cursor-pointer"
-          on:click={() => openLightbox('/images/valkbuff/buffs_vita2.png')}
-        />
-        <!-- Add more images as needed -->
-      </div>
+
       
       <!-- Lightbox Component -->
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
@@ -689,8 +703,8 @@ function selectTabMobile(event) {
             <p class="text-sm sm:text-base text-left">
                 <li class="text-sm sm:text-base"> Deliverance 1: Only pick this nexus if you have signature weapon. Otherwise, you will miss some buff duration.</li>
                 <li class="text-sm sm:text-base"> Deliverance 1: Duration extension is optional. If you're fast enough, you can fit I am Elation within Deliverance buff duration.</li>
-                <li class="text-sm sm:text-base"> Vicissitude 2: Vic 2 is easier to build and takes less signets than Infinity 1.</li>
-                <li class="text-sm sm:text-base"> Infinity 1: Honestly I am just suggesting this because Sparkle doesn't synergize with other Nexus that well. She can re-trigger Mind Sync since this playstyle spams Stellar Outburst activation. </li>
+                <li class="text-sm sm:text-base"> Infinity 1: Sparkle can re-trigger Mind Sync since this playstyle spams Stellar Outburst activation. Honestly I am just suggesting this because Sparkle doesn't synergize with other Nexus that well. </li>
+                <li class="text-sm sm:text-base"> Vicissitude 2: Vic is good since it gives unconditional dmg buff. Vic 2 is easier to build and takes less signets than Infinity 1.</li>
 
             </p>
             </div>
@@ -762,13 +776,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Start with ultimate / weapon to trigger Opulence signet buff.</li>
+          <li>Start with ultimate to trigger Opulence signet buff.</li>
           <li>Activate Stellar Outburst.</li>
           <li>Spam Basic ATK until you cast I am Elation.</li>
           <li>Use Ultimate.</li>
           <li>Use Combo ATK.</li>
           <li>Activate Stellar Outburst, repeat.</li>
-          <li>Use weapon skill once in a while to activate buffs triggered by weapon skill (Helix, Stars).</li>
+          <li>If you have signet buffs triggered by weapon skill (Helix, Stars), use weapon skill once in a while to trigger the buffs.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -932,11 +946,14 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use Ult.</li>
+          <li>Use Ultimate.</li>
           <li>Press weapon ➔ Combo ATK.</li>
           <li>Press weapon ➔ Combo ATK.</li>
           <li>Press weapon to cast I am Elation.</li>
-          <li>Repeat.</li>
+          <li>Press weapon ➔ Combo ATK.</li>
+          <li>Press weapon ➔ Combo ATK.</li>
+          <li>Press weapon to cast I am Elation.</li>
+          <li>Go back to step 1, repeat.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -1211,30 +1228,32 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle DPS </h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle DPS rotation with Vita and HoFi support.</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/8vgWi3yzXn0"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
+                  allowfullscreen
+                  loading="lazy"
+                  >
               </iframe>
           </div>
         </div>
 
       </div>
 
-      <div class=" gap-6 mt-4">
+      <div class=" gap-6 my-10">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle Support (World Star)</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example with Schicksal's Imperative and HoFi.</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
@@ -1243,7 +1262,9 @@ function selectTabMobile(event) {
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+                loading="lazy"
+                >
             </iframe>
         </div>
       </div>

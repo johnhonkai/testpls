@@ -1,0 +1,50 @@
+---
+title: Asterite Shop
+category: 'Shop'
+sortOrder: 4
+customSlug: "asterite"
+
+---
+
+
+Asterite Shop is where you can purchase A-rank fragments and higher-tier upgrade materials using Asterite currency.
+
+
+## Part 2 valkyries
+
+![Coralie and Helia](https://i.imgur.com/k61cYbh.jpeg)
+
+
+- [Coralie](/valk/coralie) can be used in any Astral Ring team until you get a proper S-rank.
+- [Helia](/valk/helia) can be a f2p support for World Star team. Her buffs are centered around weapon skill, so she's more effective for Senadina and Schicksal's Imperative, less effective for Sparkle.
+- Their synergy weapon upgrade materials are very expensive. You should finish ranking up Coralie and Helia first (and whatever other character that you want), then you can purchase the material later.
+
+
+
+
+## Part 1 valkyries
+
+Part 1 characters are slowly being pushed out from all teams. Some of them are still useful for new players, but there's no urgency to farm them, as their impact on your account late game is not that big once you have your first proper Part 2 team.
+
+### Elysian Realm
+These characters are available in Elysian Realm mode. You can get <span class="text-blue-300">620 crystals</span> from first-clear mission, PER VALK. 
+You only need to unlock them at A-rank for Elysian Realm. Unlocking and ranking them up also improves your Dorm Level EXP.
+
+
+![Characters in Elysian Realm](https://i.imgur.com/RdlOVa8.jpeg)
+
+## Asterite Currency
+
+You can get Asterite currency naturally by doing dailies, weeklies, events, Dorm Shop, Battle Pass, supplies and more (Just click the currency icon, then press GET, it will show you all the source for Asterite).
+
+There is one feature to get Asterite that might be easily missed / forgotten by new players.
+
+As you complete missions, you gain Energy. And you can use energy to convert excess materials into Asterites. Check this once a week.
+
+![ast 1](https://i.imgur.com/H04wmVA.jpeg)
+
+![ast 2](https://i.imgur.com/kW8RNO1.jpeg)
+
+![ast 3](https://i.imgur.com/BHGSQRN.jpeg)
+
+![ast 4](https://i.imgur.com/OUPA0A1.jpeg)

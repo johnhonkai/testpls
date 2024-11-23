@@ -4,11 +4,12 @@
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '95%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '100%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
-        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '95%', speed: 'Slow' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '93%', speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: 'TBA%', speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '94%', speed: '' },
+        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '94%', speed: 'Slow' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '90%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '88%', speed: 'Slow' },
 
     ];
 

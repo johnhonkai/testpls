@@ -8,6 +8,13 @@ category: "ar"
 
 ---
 
+### LINKS
+
+- [7.9 Patch Note](/betanews/79log)
+- [Sparkle Translation](/betanews/sparkle)
+- [Sparkle Equipment](/betanews/sparklegear)
+- [Elysian Realm](/betanews/sparkleer)
+
 ### BUFF
 
 #### STAGE BUFF 1

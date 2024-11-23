@@ -9,6 +9,7 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Dududps from '$lib/components/lineup/dududps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -343,21 +344,21 @@ function selectTabMobile(event) {
 
 
 
-      <JDDPS firstCharIndex={0} maindps={true}/>
+      <JDDPS maindps={true}/>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
 
-      <LanternDPS firstCharIndex={3} />
+      <LanternDPS firstCharName='JD' />
 
 
       <div class="divider divider-neutral"></div>
 
-      <ThelDPS firstCharIndex={4} />
+      <ThelDPS firstCharName='JD'/>
 
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
 
-
+      <Dududps firstCharName='JD'></Dududps>
 </section>
 
   {/if}
@@ -1121,7 +1122,7 @@ function selectTabMobile(event) {
   {/if}
   
   {#if selectedTab === 'Popular Question'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTIONS</h2>
 
       <div class="my-10">
         <div class="chat chat-start ">

@@ -439,7 +439,7 @@ function selectTabMobile(event) {
         <div class="p-2 mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Expungement), but having more Ego signets is a big improvement, especially if you are not using full gear HoO. You can get more Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: HoO is not the strongest DPS in general, try to get all Ego signets on Floor 7 with Because of You sigil.</li>
           </p>
           </div>
 
@@ -476,7 +476,12 @@ function selectTabMobile(event) {
               </div>
 
           </div>
-
+          <div class="p-2 mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                <li class="text-sm sm:text-base"> <b>Decimation 1: </b> Not recommended for new players since this will put you at a very low HP, and you can easily die.</li>
+                <li class="text-sm sm:text-base"> <b>Vicissitude 2: </b> If you need more survivability, get Vicissitude 2 early.</li>
+            </p>
+            </div>
 
             <div class="divider divider-neutral"></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -560,7 +565,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/fLyf4vW2DMA"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -574,7 +579,7 @@ function selectTabMobile(event) {
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Ultimate Playstyle
         </h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Ult turns into Metal Gear Rising Revengeance blade mode
+          Ult turns into Metal Gear Rising Revengeance blade mode. Although it's called Ultimate build, you can't spam Ultimate, so you also rely on HoO normal sequence to deal damage. Basically it's like the hybrid of Basic ATK Playstyle with occasional Ult.
 
 
         </p>
@@ -599,7 +604,7 @@ function selectTabMobile(event) {
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
               <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Ultra + Inscription</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Nature</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Expungement</p>
             </div>
           </div>
         </div>
@@ -620,7 +625,6 @@ function selectTabMobile(event) {
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
                 <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
@@ -687,21 +691,21 @@ function selectTabMobile(event) {
                 <img src="/images/sigils/Memory.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
-                <p class="text-lg font-semibold">START (ER Lite - Vic)</p>
+                <p class="text-lg font-semibold">START (ER Lite)</p>
             </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Memory.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Hometown.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
-              <p class="text-lg font-semibold">START (ER Lite - Dec)</p>
+              <p class="text-lg font-semibold">START (Normal)</p>
           </div>
 
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Heavy_as_a_Million_Lives.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                     <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">FINAL</p>
@@ -714,7 +718,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use Ultimate when available.</li>
+          <li>Use Ultimate when available. For first ult, I recommend using Ult after one attack sequence, or else some buffs are still not activated and your Ult dmg is a bit squishy.</li>
           <li>When evasion skill is available, evade to gain meter.</li>
           <li>When weapon button flashes, use weapon skill to gain meter. </li>
           <li>When evasion, weapon skill, and purple lightning icon are on cd, just attack normally to gain meter.</li>

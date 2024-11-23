@@ -20,15 +20,16 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharIndex: number = 0; // default to the first character
-
-    // Extract the first character from the mainCharacters array
-    let firstCharred = mainCharacters[firstCharIndex];
-
+    export let firstCharName: string = 'Vita'; // default to 'Vita'
     export let maindps: boolean = false;
+    
+    // Find the character with the matching name and use it as firstCharred
+    let firstCharred = mainCharacters.find(char => char.name === firstCharName);
 
-    // Remove firstCharred from mainCharacters so it doesn’t repeat
-    let filteredMainCharacters = mainCharacters.filter((char, index) => index !== firstCharIndex);
+    // Remove firstCharred from mainCharacters to avoid repetition
+    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+
+
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-cyan-900 to-amber-900   shadow-lg shadow-base-100 overflow-hidden  ">

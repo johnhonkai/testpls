@@ -475,19 +475,19 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Jump and Smash
+            JUMP AND SMASH
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Stellar Outburst
+            STELLAR OUTBURST
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">JUMP AND SMASH PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Jump and Smash Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Dang bro they made a f2p valk this strong in ER???
         </p>
@@ -618,8 +618,8 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Faraway_Ship.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">FINAL</p>
             </div>
@@ -655,9 +655,9 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Pros: Strong. Cons: Have to sit through Stellar Outburst animation.
+          Pros: Strong. Cons: Have to sit through Stellar Outburst and Ult animations.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -687,7 +687,7 @@ function selectTabMobile(event) {
         <div class="p-2 mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Bolt), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: You want both Bolt and Readiness to make sure that Ult and Stellar Outburst are always up. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
           </p>
           </div>
           <div class="divider divider-neutral"></div>
@@ -798,9 +798,8 @@ function selectTabMobile(event) {
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst</li>
-          <li>Spam weapon skill to spin</li>
-          <li>When meter is full, use Combo ATK</li>
-          <li>When Stellar Outburst is over, use Ultimate</li>
+          <li>Spam weapon button to spin until your meter runs out and Coralie does that final hammer blast</li>
+          <li>Wse Ultimate, this will reset Stellar Outburst cd</li>
           <li>Repeat</li>
         </ol>
 
@@ -811,7 +810,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/WdFk6zsA2Zg"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -4,7 +4,7 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'Senadina', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '99%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
@@ -21,14 +21,17 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharIndex: number = 0; // default to the first character
+    export let firstCharName: string = 'Vita'; // default to 'Vita'
     export let maindps: boolean = false;
+    
+    // Find the character with the matching name and use it as firstCharred
+    let firstCharred = mainCharacters.find(char => char.name === firstCharName);
 
-    // Extract the first character from the mainCharacters array
-    let firstCharred = mainCharacters[firstCharIndex];
+    // Remove firstCharred from mainCharacters to avoid repetition
+    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
 
-    // Remove firstCharred from mainCharacters so it doesn’t repeat
-    let filteredMainCharacters = mainCharacters.filter((char, index) => index !== firstCharIndex);
+
+
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-blue-950 to-blue-900   shadow-lg shadow-base-100 overflow-hidden  ">
@@ -45,14 +48,18 @@
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
 
-        <!-- First Charred component (can be swapped) -->
-        <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
 
+        <!-- First Charred component (can be swapped) -->
+        {#if firstCharred}
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+        {/if}
+
+        <!-- Plus Icon shown only if maindps is true -->
         {#if !maindps}
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
         {/if}
-        
-        <!-- Main Characters Loop (without the first character) -->
+
+        <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
             <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
         {/each}

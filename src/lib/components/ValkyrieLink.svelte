@@ -24,7 +24,7 @@
       {#if valkyrie.badge}
         <span class="absolute top-1 left-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10" 
               class:badge-ghost={valkyrie.badge === 'Beta'}
-              class:badge-secondary={valkyrie.badge === 'New'}
+              class:badge-primary={valkyrie.badge === 'New'}
               class:badge-accent={valkyrie.badge === 'Updated'}>
           {valkyrie.badge}
         </span>

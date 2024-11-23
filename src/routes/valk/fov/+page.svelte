@@ -260,25 +260,26 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4  text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Swift and Powerful Fire DPS:</strong> Peak form of Fu Hua. Kicks, punches, divebombs, blasts fireballs and one-punch-nukes enemies. Abilities reduce and recover HP to gain buffs.
+              <strong class="text-amber-400">Swift and Powerful Fire DPS</strong> <br/>
+              Peak form of Fu Hua. Kicks, punches, divebombs, blasts fireballs and one-punch-nukes enemies. Abilities reduce and recover HP to gain buffs.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If FoV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400 ">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If FoV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> FoV bosses still appear every patch. However, getting FoV should not be prioritized over Part 2 characters. SS-rank has a big upgrade that completely changes rotation.
+          <p class="mt-2 text-sm sm:text-base mt-4">
+              <strong class="text-amber-400">Competitive</strong> <br/> FoV bosses still appear every patch. However, getting FoV should not be prioritized over Part 2 characters. SS-rank has a big upgrade that completely changes rotation.
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -353,17 +354,34 @@ function selectTabMobile(event) {
               <h4 class="text-base sm:text-base text-white"> Torch of Eons + Fu Hua: Ordinary Days Set</h4>
               </div>
 
-              <div class="p-2 mt-2 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
-              <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base"><b>Torch of Eons:</b> Has buffs, sp recovery and extra nuke.</li>
-                  <li class="text-sm sm:text-base"><b>Fu Hua Ordinary Days: </b>  You want full set, each piece is strong, 3pc is just busted. Missing one piece is around 20% damage loss, which is a lot for a Part 1 valk. </li>
-                  <li class="text-sm sm:text-base"><b>VS G4 Little Joys: </b> TB or MB 2PC Ordinary Days is still stronger than G4 Little Joys.</li>
-                  <li class="text-sm sm:text-base"><b>Affix: </b> Full ATK.</li>
-              </p>
-              </div>
 
 
            </div>
+
+           <div>
+
+
+
+            <div class="p-4 mt-4 bg-gradient-to-r from-rose-950/75 to-rose-900/75 rounded">
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>Torch of Eons</b><br/> Has buffs, sp recovery and extra nuke.
+              </p>
+            
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>Fu Hua Ordinary Days </b><br/> You want full set, each piece is strong, 3pc is just busted. Missing one piece is around 20% damage loss, which is a lot for a Part 1 valk.
+              </p>
+
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>VS G4 Little Joys</b><br/> Ordinary Days TB or MB 2PC is still stronger than G4 Little Joys.
+              </p>
+            
+              <p class="text-sm sm:text-base text-left">
+                <b>Affix:</b> Full ATK.
+              </p>
+            </div>
+
+
+            </div>
       {/if}
 
 
@@ -1005,29 +1023,7 @@ function selectTabMobile(event) {
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-      <div class="my-6">
-        <div class="chat chat-start ">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/meibald.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-primary text-base ">Is Vita melee or ranged?</div>
-        </div>
 
-        <div class="chat chat-end">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/ds.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-neutral text-base">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
-        </div>
-      </div>
   {/if}
 
   {#if selectedTab === 'Overview Card'}

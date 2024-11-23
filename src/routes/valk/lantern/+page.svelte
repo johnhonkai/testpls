@@ -9,6 +9,7 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -361,11 +362,19 @@ function selectTabMobile(event) {
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
       
-      <SimpDPS firstCharIndex={5} />
+<Sparkledps  firstCharName='Lantern' ></Sparkledps>
 
       <div class="divider divider-neutral"></div>
 
-      <SenaDPS firstCharIndex={5} />
+      <SimpDPS firstCharName='Lantern' />
+
+      <div class="divider divider-neutral"></div>
+
+      <SenaDPS firstCharName='Lantern' />
+
+
+
+  
       {/if}
 
 
@@ -479,19 +488,19 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Stellar Outburst
+            STELLAR OUTBURST
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            AR Charging
+            AR CHARGING
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Stronger playstyle.
         </p>
@@ -644,7 +653,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/_YzN4ayJaCQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -655,7 +664,7 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR CHARGING PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Weaker playstyle. Hold evasion to spin and win~
 
@@ -806,7 +815,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
+                src="https://www.youtube.com/embed/_YzN4ayJaCQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -833,10 +842,9 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S2: 37% ➔ 40% independent multiplier</li>
-              <li>SS: Combo ATK Lightning DMG +14% ➔ 20%, EleBreach +5.5% ➔ 8%</li>
-              <li>SS2: EleBreach +5 ➔ 6%</li>
-              <li>Self DPS upgrades stop at SS3 rank</li>
+              <li>S2: Combo ATK deals more dmg and more hits</li>
+              <li>SSS: Regular evasion triggers evasion skill</li>
+              <li>All ranks have DPS upgrades</li>
             </ul>
           </div>
       
@@ -844,11 +852,9 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S1: Ele Breach +11.5% ➔ 14%, Phy Breach +37% ➔ 45%</li>
-              <li>S3: Enemies take 12% ➔ 15% more Ele DMG and 9% ➔ 11% more Physical DMG</li>
-              <li>SS: WoD team consumes two more Stellar Drain</li>
-              <li>SS: Restore 5-10 more AR meter</li>
-              <li>SSS: Start the battle with a stronger version of Omniscient Skyveil</li>
+              <li>S1: When AR: World Star is active, enemies take 3.5% > 5% more Elemental DMG</li>
+              <li>SS: Teammates Total DMG +10%</li>
+              <li>SS1: WoD valks gain Total DMG +8% > 10% [AC] / +15% > 18% [SO]</li>
             </ul>
           </div>
         </div>
@@ -872,80 +878,70 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                  - Elemental Breach +11.5% ➔ 14%<br/>
-                  - Physical Breach +37% ➔ 45%<br/>
-                  2. The locked AR subskill has S1 upgrade.
+                  Self Fire DMG +9% ➔ 16%. When AR: World Star is active, enemies take 3.5% ➔ 5% more Elemental DMG.
                 </td>
-                <td class="p-3">Recommended!<br>1. WoDestiny Support<br>2. World Star Support<br/>3. Future AR Support</td>
+                <td class="p-3">1. DPS<br>2. World Star Support</td>
               </tr>
               <!-- Sample Row 2 -->
               <tr>
                 <td>S2</td>
                 <td>
-
-                    1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70% <br/>
-                    2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+                  UNLOCK: During Combo ATK, rocket launcher fires cluster bombs, deal additional 8x75% ATK of Fire DMG, counts as Combo ATK.
 
                 </td>
-                <td>DPS, Time Fracture</td>
+                <td>1. DPS<br/>2. Hitcount</td>
               </tr>
               <tr>
                 <td>S3</td>
                 <td>
-                  1. Leader Skill:<br/>
-                    Team Total DMG +8% ➔ 10%<br/>
-                   Team Elemental DMG +8% ➔ 10%<br/>
-                    Enemies take +4% ➔ 5% more Total DMG<br/>
+                  Leader Skill:<br/>
+                  Team Shadow Star ATK gain Total DMG +18% ➔ 22%<br/>
+                  During AR Charging: Valk on the field gain Fire DMG +16% ➔ 20%<br/>
+                  During Stellar Outburst, enemies take 12% ➔ 15% more Fire DMG from valks on the field (independent multiplier)
 
-                2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
                 </td>
-                <td>DPS, Any AR Support</td>
+                <td>DPS</td>
               </tr>
               <tr>
                 <td>SS</td>
                 <td>
-                  1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-                  2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-                  3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.<br/>
+                  UNLOCK: Self Combo ATK +20%. When you have Fire Shower buff, other teammates gain Total DMG +10%
                 </td>
-                <td>1. DPS<br/>
-                  2. WoDestiny support<br/>
-                  3. Any AR Support</td>
+                <td>1. DPS <br/>2. Support</td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP
+                  During AR Charging: Valks with AR Wheel of Destiny gain Total DMG +8% ➔ 10%<br/>
+                  During Stellar Outburst: Valks with AR Wheel of Destiny gain Total DMG +15% ➔ 18%
+
                 </td>
-                <td>DPS
+                <td>1. DPS <br/>2. WoD Support</td>
               </tr>
               <tr>
                 <td>SS2</td>
                 <td>
-                  When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.
+                  When you have Cracked Shot buff, self Total DMG +18% ➔ 24%	                
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SS3</td>
                 <td>
-                  Leader Skill:
-                  - Team Total DMG +10% ➔ 12%
-                  - Team Elemental DMG +10% ➔ 12%
-                  - Enemies take +5% ➔ 6% more Total DMG                  
+                  Leader Skill:<br/>
+                  Team Shadow Star ATK gain Total DMG +22% ➔ 26%<br/>
+                  During AR Charging: Valk on the field gain Fire DMG +20% ➔ 24%<br/>
+                  During Stellar Outburst, enemies take 15% ➔ 18% more Fire DMG from valks on the field (independent multiplier)               
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-                  - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-                  - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-                  - When you gain Omniscient Skyveil, Sprouting Wish is disabled.
+                  1. UNLOCK: Non-ultimate evasion on the ground also triggers evasion skill. CD: 1<br/>
+                  2. When you use QTE or Firepower Rotation Attack, gain No Bullet Wasted buff, Self Fire DMG +26% ➔ 35%
                 </td>
-                <td>Any AR Support
+                <td>DPS
               </tr>
             </tbody>
           </table>
@@ -1158,29 +1154,6 @@ function selectTabMobile(event) {
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-      <div class="my-6">
-        <div class="chat chat-start ">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/meibald.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-primary text-base ">Is Vita melee or ranged?</div>
-        </div>
-
-        <div class="chat chat-end">
-          <div class="chat-image avatar">
-            <div class="w-10 sm:w-12 rounded-full">
-              <img
-                alt="Tailwind CSS chat bubble component"
-                src="/images/ds.webp" />
-            </div>
-          </div>
-          <div class="chat-bubble chat-bubble-neutral text-base">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
-        </div>
-      </div>
   {/if}
 
   {#if selectedTab === 'Overview Card'}

@@ -13,15 +13,36 @@ customSlug: "readthisfirst"
   </p>
 </div>
 
-## Introduction 
-I don't expect you to read all the articles here. So here are important points to prevent you from wasting important resources.
+I don't expect you to read all the articles here. So here are some quick important tips to prevent you from wasting important resources.
 
----
 
-## Supplies
-DO NOT PULL 
+## DO NOT PULL STARTER SUPPLY
 
----
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/EhtIP0O.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
 
-## Materials
-You will get a lot of valkyries from starter event, Dorm Supplies, shops, etc. DO NOT SPEND ALL YOUR RESOURCES ON THEM. A lot of these valkyries are outdated. 
+Starter Supply is bad for a number of reasons:
+1. Part 2 valkyries use a new Astral Ring system. The valkyries in Starter Supply Herrscher of Rebirth and Lunar Vow are Part 1 valkyries. 
+2. Starter supply is a worse version of a regular supply:
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/sSx2rhW.png" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
+
+
+## DON'T UPGRADE EVERYTHING
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/lgqzwbX.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
+
+Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of valkyries and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single valk or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on latest valkyries (Part 2 Valkyries). 
+
+## DO DAILIES AND EVENTS
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/j2MK187.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
+
+This is where your dailies / weeklies / limited-time event missions are. 

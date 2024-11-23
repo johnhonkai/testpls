@@ -8,6 +8,13 @@ category: "new"
 
 ---
 
+### LINKS
+
+- [7.9 Patch Note](/betanews/79log)
+- [Sparkle Translation](/betanews/sparkle)
+- [Sparkle Equipment](/betanews/sparklegear)
+- [Elysian Realm](/betanews/sparkleer)
+
 ### INTRO
 - S-rank Qua Fire. AR World Star DPS
 - Can support World Star team, one future AR team, and P1 Fire Team

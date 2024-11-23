@@ -23,24 +23,17 @@
 		const { categorizedArticles, sortedCategories } = data;
 	
 	</script>
-	
-	
-	<div class="max-w-5xl mx-auto p-4 mb-4 rounded-lg text-center">
-		<p class="text-2xl font-semibold mb-2 text-emerald-400">Classroom</p>
-		<p class="text-sm sm:text-base">
-			Info for both new and old players
-		</p>
-	  </div>
+
 	  
-	  <div class="container mx-auto py-10 flex flex-row gap-4">
+	  <div class="container mx-auto py-10 flex flex-row gap-4 mb-20">
 		<!-- Left Sidebar with Article List by Category (Sticky Sidebar) -->
 		<aside class="hidden xl:block xl:w-1/6 bg-base-200 text-base-content rounded-lg space-y-4 sticky top-16 self-start">
-			<!-- Home Button/Image -->
+			<!-- Welcome Button/Image -->
 			<div class="p-4 bg-base-300 shadow-md rounded-lg mb-4 text-center">
-				<a href="/classroom/home" class="block">
+				<a href="/classroom/welcome" class="block">
 					<img 
 						src="/path-to-your-home-icon.png" 
-						alt="Home" 
+						alt="welcome" 
 						class="w-12 h-12 mx-auto rounded-full mb-2 hover:scale-110 transition-transform"
 					/>
 				</a>
@@ -78,7 +71,7 @@
 		  
 	  
 		<!-- Main Content and Table of Contents -->
-		<article class="prose grow mx-auto max-w-[960px] p-6 bg-base-100 rounded-lg  prose-h2:bg-gradient-to-r from-teal-600 to-teal-400 prose-h2:text-black  prose-h2:rounded   prose-h3:text-amber-300 prose-h2:w-fit prose-h2:px-2 ">
+		<article class="prose grow mx-auto max-w-[960px] p-6 bg-base-100 rounded-lg  prose-h2:bg-gradient-to-r from-teal-600 to-teal-400 prose-h2:text-black  prose-h2:rounded   prose-h3:text-amber-300 prose-h2:w-fit prose-h2:px-2">
 	
 		  <h1>{data.title}</h1>
 		  <svelte:component this={data.content} />

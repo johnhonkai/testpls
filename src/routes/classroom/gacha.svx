@@ -1,0 +1,52 @@
+---
+title: Gacha in HI3
+category: 'Getting Started'
+sortOrder: 4
+customSlug: "gacha"
+
+---
+
+
+There are A LOT of supplies in Honkai Impact 3. This is mostly because the game is constantly adding new types of valkyries and weapons, like SP battlesuit, and Divine Keys. But in Part 2, the gachas have been improved and simplified. Now, all the new content are in these three supplies:
+- Battlesuit Supply
+- Equipment Supply
+- AstralOp Supply
+
+Part 1 Supplies are still available, but they are slowly starting to disappear.
+
+## Part 2 Supplies
+
+### Battlesuit Supply
+This is where you pull the characters
+- Content: One featured S-rank, one featured A-rank, three other A-ranks
+- Cost per pull: 280 crystal, or one Battlesuit Supply Card
+- Featured S-rank is guaranteed within 90 pulls / 25,200 crystals
+- Every 10 pulls guarantee an A-rank or S-rank valk
+
+---
+
+### Equipment Supply
+This is where you pull the equipments
+- Content: One featured weapon + stigma set (Top, Mid, Bottom)
+- Cost per pull: 280 crystal, or one Equipment Supply Card
+- Featured weapon is guaranteed within 60 pulls / 16,800 crystals
+- Every 10 pulls guarantee weapon or one of the stigma pieces
+
+---
+
+### AstralOp Supply
+This is where you pull AstralOp. What is AstralOp? Well it's basically like Bangboo, but what if the Bangboo is broken like Robin? Yeah, something like that.
+- Content: One featured S-rank AstralOp
+- Cost per pull: 280 crystal, or one Equipment Supply Card
+- Featured weapon is guaranteed within 60 pulls / 16,800 crystals
+- Every 10 pulls guarantee AstralOp or some upgrade materials
+
+## Pull Valk + Weapon
+
+In Honkai Impact, weapon is very important. Most of the time, signature weapon has a very important utility that completes the valkyrie.
+
+Imagine if Imbibitor Lunae only has maximum 1 Lotus stack by default, and only gets 3 max Lotus stack if he has signature Light Cone.
+
+Well, that's basically what happens to Jovial Deception. She only has 3 meter stack by default, and only gets 6 meter stack with signature weapon.
+
+![6 stack vs 3 stack](https://i.imgur.com/nITEGhN.png)

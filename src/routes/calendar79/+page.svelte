@@ -50,6 +50,7 @@
         "OutfitBox": {
             title: "OUTFIT SUPPLY BOX",
             description: '<li>Duration: 1 week</li><li>7680 crystal max to get outfit box + all rewards.</li><li>Choose one outfit: Herrscher of the Void Frigid Empress, Celestial Hymn Empyrean Psalms, Argent Knight Bride, or ADV Outfit Tickets x100</li>',
+            image: 'https://i.imgur.com/DSr04fZ.jpeg'
         },
         "Crane": {
             title: "Outfit Supply: Crane of Taixuan for Fenghuang of Vicissitude",
@@ -81,8 +82,9 @@
     }
 </script>
 
-<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center">
-    <h2 class="text-2xl font-semibold mb-2 text-rose-400 ">Event Timeline</h2>
+<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center mb-5">
+
+    <h2 class="text-2xl font-semibold mb-2 text-rose-400 ">Supply and Event Timeline</h2>
     <p class="text-xs sm:text-sm">
         The data is based on CN server. Schedule might be different for SEA / KR / GLB servers.
     </p>
@@ -267,7 +269,7 @@
 
 </div>
 
-<div class="p-4 container-screen-2xl flex justify-center items-center">
+<div class="p-4 container-screen-2xl flex justify-center items-center mb-20">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
         <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
@@ -394,7 +396,7 @@
 
 {:else if activeTab === "Boss"}
 
-<div class="p-4 flex justify-center">
+<div class="p-4 flex justify-center mb-20">
     <div class="overflow-x-auto overflow-y-clip">
         <div class="w-[940px] rounded-lg bg-gray-900 text-white" >
             

@@ -1,0 +1,94 @@
+---
+title: Planning Your Pulls for F2P / Monthly Pass Players
+category: 'Astral Ring'
+sortOrder: 3
+customSlug: "pullplan"
+
+---
+
+
+## Part 1 Gacha
+
+In Part 1, patches alternate between S-rank and A-rank / SP valk patch. Sometimes we do get back-to-back S-rank patches.
+There are many types of S-ranks: 
+- Gacha-only S-rank
+- Farmable S-rank in War Treasury
+- Gacha S-rank, but free on debut (Spina Astera, Herrscher of Origin)
+- Gacha S-rank, but on debut, if you reach a certain no of pulls, you get weapon + stigma box
+
+As mentioned in Astral Ring Teambuilding article, a team only has one optimal lineup.
+
+## Part 2 Gacha
+
+In Part 2, so far we have a new S-rank every patch. If you read some of the 'loud' comments online, they dislike this change from Part 1. 
+
+In my opinion, this is a little short-sighted and they are still stuck with Part 1 teambuilding.
+
+
+As mentioned in Astral Ring Teambuilding article, Part 2 teams are no longer restricted to only two supports. There are multiple options for an optimal team.
+
+What does this mean?
+
+<h3 class="text-3xl font-bold text-center">You don't have to pull every S-rank.</h3>
+
+<p class="text-2xl font-bold text-center text-fuchsia-300"> Pull a valk that you like, then build a team that synergizes with her. </p>
+
+## Planning Your Pulls
+
+Everyone's account is different. You have to plan your pulls.
+
+Here's an example. Let's say Captain Derci started playing in version 7.3. Fast forward to 7.8 spending event, this is his current Part 2 S-rank.
+
+
+
+![](https://i.imgur.com/CtCAljg.jpeg)
+
+Let's say he has around 50,000 crystals + 20 cards from 7.8 freebies. What are Captain Derci's options, and which one is the best option?
+
+---
+
+<div class="flex justify-center text-2xl font-bold">Option 1</div>
+<div class="flex justify-center">Pull Vita and Herrscher of Finality Divine Key</div>
+
+
+![](https://i.imgur.com/ED99tfc.jpeg)
+
+
+
+
+---
+
+<div class="flex justify-center text-2xl font-bold">Option 2</div>
+<div class="flex justify-center">Pull Jovial Deception and S-rank AstralOp</div>
+
+![](https://i.imgur.com/IBUhgcv.jpeg)
+
+
+---
+
+<div class="flex justify-center text-2xl font-bold">Which One is Better?</div>
+
+Personally, I say <span class="text-emerald-400">option 2 is better.</span> 
+- Jovial Deception: Physical / shieldbreak weather is one of the toughest weathers to clear without a proper Physical team.
+- Serapeum: Although Dreamseeker is perfectly fine for RedLotus abyss and below, having that initial AR and AR after Stellar Outburst feels really good. And your Jovial Deception is guaranteed to crit.
+
+
+As for Vita's signature enemies like Lightning Sprout of Wishing (BIO), Oblivion Homu (Typeless) or perhaps Type Counter Andrius (BIO), not having Vita is not as severe in comparison to not having Physical team for Physical / Shieldbreak weather. Senadina can still do decently against these enemies in Red Lotus Abyss and below.
+
+But,  <span class="text-emerald-400">going for Option 1 is also not wrong.</span> Option 1 has its advantages too. (I'm not gonna repeat here, read it up there in the picture). 
+
+However, **YOUR CRYSTALS ARE LIMITED**, so you have to choose which path to take.... Unless you are a mega whale, then go for all lol.
+
+---
+
+Bonus: Here is an example of a bad option
+
+<div class="flex justify-center text-2xl font-bold">Bad Ending</div>
+
+![](https://i.imgur.com/bUx363t.jpeg)
+
+
+- You could have gotten the best Vita DPS team ... but you didn't.
+- You could have gotten the Jovial Deception with 6 meter stacks... but you got the one with 3 meter stacks and less damage.
+
+But if you prefer collecting valkyries than caring about valk performance, I guess this good for you?

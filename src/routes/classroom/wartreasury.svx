@@ -1,0 +1,36 @@
+---
+title: War Treasury Shop
+category: 'Shop'
+sortOrder: 5
+customSlug: "wartreasury"
+
+---
+
+
+War Treasury is one of the earliest shops in Honkai Impact. Back then, it was the best shop in the game, because you can get characters like Knight Moonbeam and Lightning Empress, which actually improves your account. Heck, you could even get a gacha weapon back then.
+
+Now, well, it's mostly a retirement home for Part 1 valks.
+
+## Ancient Willpower (AW) and Ancient Legacy (AL) Currency
+
+The main source of AW and AL are from Memorial Arena mode. But you can get them from other sources such as Battle Pass and events.
+
+You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena mode.
+
+## Still Somewhat Relevant Valkyries
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/NZKgs6U.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+- Miracle Magical Girl: MECH Fire / Ignite DPS.
+- Jade Knight: Part 1 Ice support.
+- Reminder, these characters need ranks and equipment to be decent.
+
+
+## Elysian Realm
+
+These characters are available in Elysian Realm mode. You can get <span class="text-blue-300">620 crystals</span> from first-clear mission, PER VALK. 
+Unlocking and ranking them up also improves your Dorm Level EXP.
+
+![wt er valks](https://i.imgur.com/C0RpUOj.jpeg)

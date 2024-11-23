@@ -1,14 +1,15 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Charred from '$lib/components/charpctred.svelte';
   import SimpDPS from '$lib/components/lineup/simpdps.svelte';
   import SenaDPS from '$lib/components/lineup/senadps.svelte';
-  import JDDPS from '$lib/components/lineup/jddps.svelte';
-  import LanternDPS from '$lib/components/lineup/lanterndps.svelte';
-import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
-import VitaDPS from '$lib/components/lineup/vitadps.svelte';
+
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import { limit } from 'firebase/firestore';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -60,7 +61,7 @@ let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
 
 // Calculate total pages based on the number of items
-$: totalItems = 3; // Total categories or groups in the lineup section
+$: totalItems = 2; // Total categories or groups in the lineup section
 $: totalPages = Math.ceil(totalItems / itemsPerPage);
 
 // Function to change pages
@@ -276,33 +277,33 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong>  Good Lightning SD DPS. Excels against SD mobs thanks to dmg link mechanic. Does not beat Jovial Deception vs solo SD boss, or Lunar Vow vs lightning boss, BUT can still handle them well enough for the average player.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">DPS</strong> <br/> Good Lightning SD DPS. Excels against SD mobs thanks to dmg link mechanic. Does not beat Jovial Deception vs solo SD boss, or Lunar Vow vs lightning boss, BUT can still handle them well enough for the average player.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support:</strong> Provides Elemental Breach and strong buffs. Has zero on-field time.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/> Provides Elemental Breach and strong buffs. Has zero on-field time.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> As WS Support, Sena generates resonance mark and only triggers reso mark once. Sena is Tier 2 support for both Sparkle and SIMP DPS.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/> Sena is Tier 2 support for Sparkle and Schicksal's Imperative. Sena generates a resonance mark that can be consumed by Sparkle / SIMP to trigger resonance dmg 3 times.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Songque Synergy:</strong> When Sena is paired with Songque AstralOp, activates the passive skill [Initial AR +25].
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Songque Synergy</strong> <br/> When Sena is paired with Songque AstralOp, activates the passive skill [Initial AR +25].
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">All Players:</strong> As a support, in most teams, Sena's role overlaps with Vita. If you are wondering who to pull between Vita or Sena, here's a general overview of their performance:
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">All Players</strong> <br/> As a support, in most teams, Sena's role overlaps with Vita. If you are wondering who to pull between Vita or Sena, here's a general overview of their performance:
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>For Wheel of Destiny team: At S-rank, Sena beats Vita. At SS+ ranks, Vita starts beating Sena's scores.</li>
+              <li>For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores.</li>
               <li>For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
               <li>Future ??? AR team: One of the main reasons to prioritize pulling Vita over Sena is her ability to support future AR teams (Best support for one AR, less effective for the other 9 AR teams).</li>
           </ul>
@@ -322,19 +323,10 @@ function selectTabMobile(event) {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: 
+              Check out the full guide on YouTube (Soon)
           </p>
 
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
+
       </div>
   {/if}
   
@@ -352,34 +344,30 @@ function selectTabMobile(event) {
 
       <SenaDPS maindps={true} />
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300  my-10"> World Star Support </div>
       
       <SimpDPS firstCharName="Sena" />
 
       <div class="divider divider-neutral"></div>
 
+      <Sparkledps firstCharName="Sena"></Sparkledps>
+
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Wheel of Destiny Support </div>
 
-      <JDDPS firstCharIndex={0} />
-
-      <div class="divider divider-neutral"></div>
-
-      <LanternDPS firstCharIndex={0} />
-
+<Jddps firstCharName='Sena'></Jddps>
 
       <div class="divider divider-neutral"></div>
 
-      <ThelDPS firstCharIndex={0} />
+<Lanterndps firstCharName='Sena'></Lanterndps>
 
+      <div class="divider divider-neutral"></div>
+
+<Thelemadps firstCharName='Sena'></Thelemadps>
       {/if}
 
-      {#if currentPage === 3}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
-
-      {/if}
 
       <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
         {#each Array(totalPages).fill(0) as _, index}
@@ -458,17 +446,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Senadina buffs:
-        <li> <b>Stellar Drain: </b> Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume Sena's Stellar Drain.</li>
-        <li> <b>Off-field SP Consumption: </b> Perfect Morning MID and 3PC have WoDestiny support buffs that require Sena to consume 30 sp on standby (off field). The sp consumption is triggered when battle starts, when SO activates, and when SO ends. If Sena is on the field when enemy spawns (battle starts), Sena does consume sp but SHE IS NOT ON STANDBY, so the stigma buffs will not activate.</li>
-        <li> <b>Without Perfect Morning: </b> When supporting WoDestiny team, if Sena switches in, some of the buffs from Prismatic Stars buff will be disabled permanently. However, if Sena equips Perfect Morning 3PC, Sena can switch in without losing any buff.</li>
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buffs_sena.png"
@@ -478,6 +456,40 @@ function selectTabMobile(event) {
         />
 
         <!-- Add more images as needed -->
+      </div>
+
+
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Senadina support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume Sena's Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Buffs for Wheel of Destiny</p>
+            <li> Elemental Breach and buffs for Wheel of Destiny require Sena to consume 30 sp on standby (off field). 30 SP is automatically consumed when battle starts, when SO activates, and when SO ends. </li>
+            <li> Perfect Morning MID and 3PC buffs require Sena to consume 30 sp <b>on standby (off field).</b> If Sena is on the field when the enemy spawns (battle starts), Sena does consume sp but SHE IS NOT ON STANDBY, so the stigma buffs will not activate.</li>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Without Perfect Morning 3PC</p>
+            <p>When supporting WoDestiny team, if Sena switches in, some of the buffs from Prismatic Stars buff will be disabled permanently. However, if Sena equips Perfect Morning 3PC, Sena can switch in without losing any buff.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Elemental Breach for World Star</p>
+            Use Thunder in Clear Skies or Lightning Anchor (yoyo attack last hit) to make all teammates with AR World Star gain Ele Breach +12% and Ele DMG +25% for 25s.
+          </div>
+
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
       </div>
       
       <!-- Lightbox Component -->
@@ -492,21 +504,29 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Stellar Outburst
+           ONE EGO
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            AR Charging
+            AR CHARGING
           </button>
+
+          <button
+          on:click={() => setPlaystyle('3')}
+          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+          STELLAR OUTBURST
+        </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">One Ego Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-            Mecha smashes all
+          A playstyle centered around clearing a floor within one rotation of AR Charging and Stellar Outburst modes.
+
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -527,18 +547,13 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Abyssal Aid ➔ Deep Love</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Lonesome Feathers</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Effortlessness</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Any other Ego signet</p>
             </div>
           </div>
           
         </div>
-        <div class="p-2 mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
-              <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Abyssal Aid), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
-          </div>
+
 
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -546,42 +561,43 @@ function selectTabMobile(event) {
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-          
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">7.8</div>
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-              
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
               </div>
 
               <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
                 <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
               </div>
+
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+          
 
           </div>
 
           <div class="p-2 mt-3 rounded" >
             <p class="text-sm sm:text-base text-left">
-                <li class="text-sm sm:text-base"> Start with Vicissitude: 7.8 Phase 1 has Vic +2, getting Vic 2 early on gives more dmg than Gold 1.</li>
-                <li class="text-sm sm:text-base"> Discipline 2: Take the Elemental Breach enhancement </li>
+                <li class="text-sm sm:text-base"> Senadina can use a lot of signets.</li>
+                <li class="text-sm sm:text-base"> Decimation 1: Your HP is very low, and bosses can one-shot you. Not recommended for new players, , but you can get Vicissitude 2 for survivability. </li>
             </p>
             </div>
 
@@ -623,24 +639,16 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
-                <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+                <p class="text-base sm:text-lg font-semibold">START </p>
             </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Memory.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START (Vicissitude)</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Heavy_as_a_Million_Lives.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">FINAL</p>
             </div>
@@ -651,37 +659,36 @@ function selectTabMobile(event) {
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
+          AR CHARGING
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Activate Stellar Outburst.</li>
-          <li>Whenever you enter Intelligence Unleashed mode, press ATK until the mode ends.</li>
-          <li>Press weapon ➔ Spam Basic ATK to fill meter.</li>
-          <li>When meter is full, hold ATK to enter Intelligence Unleashed mode.</li>
-          <li>Repeat.</li>
-          <li>Can use weapon skill before activating Stellar Outburst to trigger buffs from Helix or Stars.</li>
-          <li>Don't have to use Ult, it deals pathetic damage. Can use it to trigger buffs.</li>
+          <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
+          <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies).</li>
+        </ol>
+
+        STELLAR OUTBURST
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Activate Stellar Outburst. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Lightning Flash Anchor).</li>
+          <li>Weapon skill will flash. Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>If weapon button doesn't flash: Evade > Basic ATK x2 > Weapon x2.</li>
+          <li>Use Ultimate whenever available..</li>
+        </ol>
+        
+        NOTE
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>AR meter carries over from floor to floor. If the battle ends during Stellar Outburst, Stellar Outburst will also end early and you keep the remaining AR meter.</li>
+          <li>Be careful not to activate Stellar Outburst after the battle is over. This will reset your AR meter to zero.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
         </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR CHARGING PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Strong playstyle with lots of suspended animation and timestop.
+          A playstyle where Sena can keep consuming evasion charge to extend Thunderous Blazar state. Technically you can use this playstyle during Stellar Outburst, but there are better signets for Stellar Outburst.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -703,15 +710,15 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Cosmos + Lovely Wishes</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Lonesome Feathers</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b>  Initial Dawning</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Effortlessness ➔ Stellar Drive </p>
             </div>
           </div>
         </div>
         <div class="p-2 mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-              <li class="text-sm sm:text-base"> ER Lite: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-              <li class="text-sm sm:text-base"> Normal: This build feels a bit weak with just one Ego signet. Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
           </p>
           </div>
           <div class="divider divider-neutral"></div>
@@ -719,43 +726,44 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-          
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1 or 2</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
+
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1 or 2</p>
-              </div>
-              
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
 
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
 
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1 or 2</p>
+            </div>
 
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
-              </div>
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1 or 2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
 
           </div>
 
           <div class="p-2 mt-3 rounded" >
             <p class="text-sm sm:text-base text-left ">
 
-                <li class="text-sm sm:text-base"> Decimation 1: Not recommended for new players, since you can easily die.</li>
-                <li class="text-sm sm:text-base"> Deliverance 2: The additional Lightning DMG from Cosmos and Lovely Wishes count as Ult DMG, and can increase Deliverance 2 stack. It takes around 3 Basic ATK cycles to get max stack. </li>
+                <li class="text-sm sm:text-base"> Senadina can use a lot of signets. </li>
+                <li class="text-sm sm:text-base"> Decimation 1: Your HP is very low, and bosses can one-shot you. Not recommended for new players, , but you can get Vicissitude 2 for survivability.</li>
 
             </p>
             </div>
@@ -797,28 +805,28 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-lg font-semibold">START (ER Lite)</p>
-            </div>
+              <div class="flex flex-row rounded">
+              <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">START (ER Lite) </p>
+          </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
-                <p class="text-lg font-semibold">START (Normal)</p>
+                <p class="text-base sm:text-lg font-semibold">START (Normal) </p>
             </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-lg font-semibold">FINAL</p>
-            </div>
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">FINAL</p>
+          </div>
 
           </div>
 
@@ -827,11 +835,180 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press Ult to enter Planet Quaker form.</li>
-          <li>Press weapon ➔ spam Basic ATK until meter is full.</li>
-          <li>When meter is full, use Combo ATK.</li>
-          <li>When ult is available, use Ult.</li>
-          <li>Repeat.</li>
+          <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
+          <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies)</li>
+          <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies). Repeat.</li>
+        </ol>
+
+        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+        {/if}
+
+        {#if activePlaystyle === '3'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          <li>A playstyle centered around buffing Domain Resonance damage.</li>
+          <li>Sena has a weird issue compared to other Part 2 valks: SHE DOES NOT START THE FLOOR WITH FULL AR METER and NONE OF HER SIGNET GIVE AR METER AFTER STELLAR OUTBURST ENDS. Instead, AR meter carries over from floor to floor. This means you are forced to play regular Senadina while waiting for AR meter to fill up.</li>
+        </p>
+
+        <div class="divider divider-neutral"></div>
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Sudden Thunderbolt -> Increment</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Initial Dawning (Extend Blazar duration) OR Effortlessness (More DMG) </p>
+            </div>
+          </div>
+          
+        </div>
+
+
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+          
+
+          </div>
+
+          <div class="p-2 mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                <li class="text-sm sm:text-base"> Senadina can use a lot of signets.</li>
+                <li class="text-sm sm:text-base"> Decimation 1: Your HP is very low, and bosses can one-shot you. Not recommended for new players, , but you can get Vicissitude 2 for survivability. </li>
+            </p>
+            </div>
+
+            <div class="divider divider-neutral"></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+              <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">START (ER Lite) </p>
+          </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (Normal) </p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+          AR CHARGING
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
+          <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies).</li>
+        </ol>
+
+        STELLAR OUTBURST
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Activate Stellar Outburst. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Lightning Flash Anchor).</li>
+          <li>Weapon skill will flash. Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>If weapon button doesn't flash: Evade > Basic ATK x2 > Weapon x2.</li>
+          <li>Use Ultimate whenever available.</li>
+        </ol>
+        
+        NOTE
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>AR meter carries over from floor to floor. If the battle ends during Stellar Outburst, Stellar Outburst will also end early and you keep the remaining AR meter.</li>
+          <li>Be careful not to activate Stellar Outburst after the battle is over. This will reset your AR meter to zero.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -839,16 +1016,16 @@ function selectTabMobile(event) {
         </p>
 
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/8jw88F1yufQ/"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+          </iframe>
+      </div>
         {/if}
 
       {/if}

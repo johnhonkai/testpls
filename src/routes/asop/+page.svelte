@@ -476,8 +476,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 
 <div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg text-center">
-  <h2 class="text-2xl font-semibold mb-2 text-teal-400">AstralOp Checker </h2>
-  <p class="text-xs sm:text-sm">AstralOp checker for each team.</p>
+  <h2 class="text-2xl font-semibold mb-2 text-teal-400">Astral Op Calculator</h2>
+  <p class="text-xs sm:text-sm">Calculate and compare AstralOp buffs.</p>
 </div>
 
 <!-- Character Slots -->
@@ -728,13 +728,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 {#if cumulativeBuffs.critdmg > 0}
 <div class="px-2 ml-1 text-white text-left rounded w-fit" id="critdmg">
-      Crit DMG + {(cumulativeBuffs.critdmg)}%
+      Crit DMG +{(cumulativeBuffs.critdmg)}%
 </div>
 {/if}
 
 {#if cumulativeBuffs.crate > 0}
 <div class="px-2 m-1 mb-3 text-white text-left rounded w-fit" id="critrate">
-      Crit Rate + {(cumulativeBuffs.crate)}%
+      Crit Rate +{(cumulativeBuffs.crate)}%
 </div>
 {/if}
 
@@ -1497,13 +1497,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 {#if compareCumulativeBuffs.critdmg > 0}
 <div class="px-2 ml-1 text-white text-left rounded w-fit" id="critdmg">
-      Crit DMG + {(compareCumulativeBuffs.critdmg)}%
+      Crit DMG +{(compareCumulativeBuffs.critdmg)}%
 </div>
 {/if}
 
 {#if compareCumulativeBuffs.crate > 0}
 <div class="px-2 m-1 mb-3 text-white text-left rounded w-fit" id="critrate">
-      Crit Rate + {(compareCumulativeBuffs.crate)}%
+      Crit Rate +{(compareCumulativeBuffs.crate)}%
 </div>
 {/if}
 
