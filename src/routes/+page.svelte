@@ -51,16 +51,16 @@
 
   
   let isClicked = false;
-  let imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test2.webp';
+  let imageSrc = '/images/test2.webp';
 
   // Function to handle image click
   function handleClick() {
     isClicked = true;
-    imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test3.webp';
+    imageSrc = '/images/test3.webpp';
 
     // Revert to the original image after a few seconds
     setTimeout(() => {
-      imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test2.webp';
+      imageSrc = '/images/test2.webp';
       isClicked = false;
     }, 3000); // Adjust time as needed
   }

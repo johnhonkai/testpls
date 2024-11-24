@@ -113,7 +113,7 @@
 </div>
 {#if activeTab === "Supply"}
 
-<div class="p-4 container-screen-2xl flex justify-center items-center ">
+<div class="p-4 container-screen-2xl flex justify-center items-center mt-4">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
             <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
@@ -269,7 +269,7 @@
 
 </div>
 
-<div class="p-4 container-screen-2xl flex justify-center items-center mb-20">
+<div class="p-4 container-screen-2xl flex justify-center items-center mb-20 mt-4">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
         <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
@@ -457,7 +457,7 @@
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
                         <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 17"/>
-                        <BossCard image="/images/Bosses/Mega_Creeper.webp"/>
+                        <BossCard image="/images/Bosses/Pishacha.webp"/>
                         <BossCard image="/images/Bosses/Doom.webp"/>
                     </div>
 

@@ -36,3 +36,12 @@
 </main>
 
 </div>
+
+<svelte:head>
+    <meta property="og:title" content="Marisa Impact" />
+    <meta property="og:description" content="Honkai Impact 3rd Guides and Resources" />
+    <meta property="og:image" content="https://i.imgur.com/SPBNehH.png" />
+    <meta property="og:url" content="https://marisaimpact.com" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical"  />
+</svelte:head>

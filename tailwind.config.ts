@@ -14,16 +14,30 @@ export default {
 			typography: (theme) => ({
 			  DEFAULT: {
 				css: {
-				  color: theme('colors.gray.300'), // Set the default prose text color
-				  h1: { color: theme('colors.gray.100') }, // Headings brighter
-				  h2: { color: theme('colors.gray.100') },
-				  h3: { color: theme('colors.gray.200') },
+				  color: theme('colors.slate.300'), // Set the default prose text color
+				  h1: { color: theme('colors.gray.200') }, // Headings brighter
+				  h2: { color: theme('colors.gray.200') },
+				  h3: { color: theme('colors.gray.300') },
 				  a: { color: theme('colors.blue.400'), textDecoration: 'underline' },
-				  strong: { color: theme('colors.gray.300') }, // Set bold text color
+				  //strong: { color: theme('colors.gray.300') }, // Set bold text color
 
 				},
 			  },
 			}),
+			animation: {
+				shimmer: "shimmer 8s infinite",
+			  },
+			  keyframes: {
+				shimmer: {
+				  "0%, 90%, 100%": {
+					"background-position": "calc(-100% - var(--shimmer-width)) 0",
+				  },
+				  "30%, 60%": {
+					"background-position": "calc(100% + var(--shimmer-width)) 0",
+				  },
+				},
+			  },
+			
 			
 		},
 		

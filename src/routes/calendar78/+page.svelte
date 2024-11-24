@@ -121,7 +121,7 @@
 
 {#if activeTab === "Supply"}
 
-<div class="p-4 container-screen-2xl flex justify-center items-center ">
+<div class="p-4 mt-4 container-screen-2xl flex justify-center items-center ">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
             <div class="w-[940px] rounded-lg bg-gradient-to-b from-cyan-500 to-teal-100 ">
@@ -505,7 +505,7 @@
 
 {:else if activeTab === "Boss"}
 
-<div class="p-4 flex justify-center">
+<div class="p-4 mt-4 flex justify-center">
     <div class="overflow-x-auto overflow-y-clip">
         <div class="w-[940px] rounded-lg bg-gray-900 text-white">
             
@@ -604,7 +604,7 @@
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
                 <BossCard image="images/Bosses/Husk Mysticism.webp" date="Nov 12" />
-                <BossCard image="images/Bosses/Mega_Creeper.webp"/>
+                <BossCard image="images/Bosses/Pishacha.webp"/>
                 <BossCard image="images/Bosses/Shadow Knight (SK).webp" />
                 </div>
 
