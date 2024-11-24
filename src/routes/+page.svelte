@@ -262,7 +262,7 @@
 
       <a href="https://arustats.herokuapp.com/" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
+        <img src="/images/newstab/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Arustat Site</h3>
           <p class="text-slate-300 text-base">Check out Arustat site for HI3 teambuilder and more data</p>

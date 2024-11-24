@@ -148,7 +148,7 @@
 {#if showPrivacyModal}
 	<div class="modal modal-open">
 		<div class="modal-box max-w-3xl overflow-y-auto">
-			<h2 class="text-xl font-bold mb-4">Privacy Policy</h2>
+			<p class="text-xl font-bold mb-4">Privacy Policy</p>
 			<p class="text leading-relaxed">
 				This website collects anonymous data for voting (HI3 Awards Page), view count (Articles) and analytics purposes.
 				Your data will not be shared with third parties. 
@@ -169,7 +169,7 @@
 {#if showAboutModal}
 	<div class="modal modal-open">
 		<div class="modal-box max-w-3xl overflow-y-auto">
-			<h2 class="text-xl font-bold mb-4">About</h2>
+			<p class="text-xl font-bold mb-4">About</p>
 			<p class="text leading-relaxed mb-6">
 				This is a fan-created website of the game Honkai Impact 3rd by content creator 
 				<span class="text-blue-400"><a href="https://www.youtube.com/@MarisaHonkai" target="_blank">Marisa Honkai</a></span>.
@@ -185,6 +185,25 @@
 				<li> <span class="text-blue-400 underline"><a href="https://www.youtube.com/watch?v=H6RBW8dzVwY" target="_blank">Promoted from Agony with just White Comet</a></span></li>
 
 			</ul>
+
+			<div class="divider divider-neutral my-5"></div>
+
+
+			<p class="text-xl font-bold mb-4">Objective of the Site</p>
+			<p class="text leading-relaxed mb-6">
+				Every game needs a proper, resourceful, guide website. The English side of Honkai Impact never really had a proper one like the new CN wiki site. I've always wanted to make one but lacked the knowledge.<br/>
+				 Alpaca reached out to me, we discussed on what features would be helpful, and Arustat site was born. He did an amazing website with timeline and boss database. <br/> 
+				 There are some features that I really want like individual valk guide, but that will be very hard for Alpaca to maintain every 6 weeks. Heck, I dont event update them for a while already. <br/>
+				</p>
+				 <p class="text leading-relaxed mb-6">
+					Then Part 2 came. I thought, with Part 2, maybe we will get an official guide/tool site on Hoyolab. But it has been almost a year, and no - it's not here.
+				</p>
+	
+			<p class="text leading-relaxed mb-6">
+				So I decided to do it myself. 🔥🔥🥵 
+			</p>
+
+
 			<div class="divider divider-neutral my-5"></div>
 
 
@@ -194,7 +213,7 @@
 				<div class="flex items-start space-x-4">
 					<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/songquexd%20copy.webp" alt="Support Icon" class=" rounded h-20 w-20">
 					<div>
-						<h3 class="text-lg font-semibold mb-2">SUPPORT ME</h3>
+						<p class="text-lg font-semibold mb-2">SUPPORT ME</p>
 						<div class="flex space-x-4">
 							<a href="https://www.youtube.com/marisahonkai/join" target="_blank" class="btn btn-square btn-outline">
 								<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
@@ -212,7 +231,7 @@
 
 				<!-- Socials Section -->
 				<div>
-					<h3 class="text-lg font-semibold mb-2">SOCIAL</h3>
+					<p class="text-lg font-semibold mb-2">SOCIAL</p>
 					<div class="flex space-x-4">
 						<a href="https://www.youtube.com/@MarisaHonkai" target="_blank" class="btn btn-square btn-outline">
 							<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->

@@ -27,13 +27,13 @@ Ele Breach is very common in S-rank Valkyries. But only a few S-rank can give El
   Provides Elemental Breach state only for Lightning valkyries.
 
 5. Senadina <br/>
-  Provides Elemental Breach state only when Wheel of Destiny is activated.
+  Provides Elemental Breach state for World Star and Wheel of Destiny characters.
 
 6. Schicksal's Imperative <br/>
-  Provides Elemental Breach state only for Theresa characters.
+  Provides Elemental Breach state only for Theresa characters when AR is not activated.
 
 7. Vita Lone Planetfarer<br/>
-    Provides Elemental Breach state for everyone  if Astral Ring is activated.
+    Provides Elemental Breach state for everyone if Astral Ring is activated.
 
 ---
 

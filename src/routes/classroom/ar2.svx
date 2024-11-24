@@ -17,6 +17,8 @@ customSlug: "ar2"
 
 5. For equipment, most of the time equipment are gacha-only. There are farmable options (G3 or G4 Stigma from Foundry), but these take a few months to forge.
 
+6. There's usually only one rotation (finish this later)
+
 ## Part 2 Teambuilding
 
 1. In Part 2, teams are built based on <span class="text-emerald-400">ASTRAL RING Specializations</span>.

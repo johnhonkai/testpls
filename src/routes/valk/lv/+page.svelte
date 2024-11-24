@@ -272,27 +272,27 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Lighting Bleed DPS:</strong> One of the strongest Part 1 valks when fully geared. Luna's attacks count as Bleed DMG, so she can benefit from both Bleed and Lightning buffs.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">P1 Lightning Support:</strong> As a Part 1 Lightning support, Luna provides Elemental Breach, sp regen and contributes team dmg herself.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">F2P Players:</strong> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If LV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive:</strong> Her scores are now even higher with the new Schicksal's Imperative support. However, getting LV should not be prioritized over Part 2 characters.
           </p>
 
@@ -1061,14 +1061,14 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lunar Vow DPS and Support</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 7:00 timestamp</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/V5E91hNPYMk"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1078,59 +1078,78 @@ function selectTabMobile(event) {
         </div>
 
       </div>
-
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
-
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
-
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-      </div>
-
-    </div>
   {/if}
   
   
       {#if selectedTab === 'Gameplay Examples'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+
+    <div class=" gap-6 my-10">
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lunar Vow x SIMP Double DPS</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Starless Benares</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/fh0J4KpRQLc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+  </div>
+
+  <div class=" gap-6 mt-5 mb-10">
+
+    <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+      <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lunar Vow Bleed DPS</h2>
+
+      <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Bleed Cruising Tribunal Boss</p>
+
+      <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+        <iframe
+        loading="lazy" 
+
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/ekFVwuQYphc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+  </div>
+</div>
+
+    <div class=" gap-6 my-10">
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lunar Vow Support (Part 1)</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">LV Supporting Part 1 Lightning DPS Mobius</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/QNbnmaqrXHQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+  </div>
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}

@@ -1276,33 +1276,7 @@ function selectTabMobile(event) {
   
       {#if selectedTab === 'Gameplay Examples'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-      </div>
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}
