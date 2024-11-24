@@ -42,7 +42,8 @@ export const weatherList = {
     {id: 'starandrius', name: 'Dominator of Wolves'}
   ],
   bleed: [
-    {id: 'bleedhos', name: 'Herrscher of Sentience'}
+    {id: 'bleedhos', name: 'Herrscher of Sentience'},
+    {id: 'pishacha', name: 'Pischacha'},
   ],
   ignite: [
     {id: 'ignitehov', name: 'Herrscher of the Void'}
@@ -169,6 +170,15 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Herrscher\ of\ Sentience.webp", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+     
+  },
+  pishacha: {
+    name: 'Pishacha', 
+      mechanics: 'Bleed is required', 
+      weakness: 'None', 
+      typeicon: "images/type/IconNULL.png", 
+      bosspic: "images/Bosses/Pishacha.webp", 
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },

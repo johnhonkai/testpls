@@ -2,9 +2,11 @@
 	import MemberList from './member.svelte';
 	import { onMount } from 'svelte';
 
-	let showProfileModal = false; // Profile modal visibility
-	let showPrivacyModal = false; // Privacy Policy modal visibility
-	let showAboutModal = false; // Privacy Policy modal visibility
+	let showProfileModal = false; 
+	let showPrivacyModal = false; 
+	let showAboutModal = false; 
+	let showLogoutModal = false; 
+
 	let avatarImage; // Randomly selected avatar image
 
 	// Dynamically load all images in /static/images/bg/memberpic
@@ -51,10 +53,17 @@
 		showAboutModal = true;
 	}
 
+	// Open the Privacy Policy modal
+	function openLogoutModal() {
+		showLogoutModal = true;
+	}
+
 	// Close the modal
 	function closeModal() {
 		showProfileModal = false;
 		showPrivacyModal = false;
+		showLogoutModal = false;
+
 		showAboutModal = false;
 	}
 
@@ -62,7 +71,7 @@
 	onMount(() => {
 		function handleClickOutside(event) {
 			const modalBox = document.querySelector('.modal-box');
-			if (showPrivacyModal || showAboutModal && modalBox && !modalBox.contains(event.target)) {
+			if (showPrivacyModal || showAboutModal || showLogoutModal && modalBox && !modalBox.contains(event.target)) {
 				closeModal();
 			}
 		}
@@ -87,16 +96,17 @@
 				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow">
 					<li><a href="/valk">Valkyrie</a></li>
 					<li><a href="/asop">Astral Op</a></li>
+					<li><a href="/calendar79">Timeline</a></li>
 
 					<li><a href="/boss">Boss</a></li>
-					<li><a href="/calendar79">Timeline</a></li>
-					<li><a href="/classroom/welcome">Classroom</a></li>
 					<li><a href="/betanews">Beta News</a></li>
+					<li><a href="/classroom/welcome">Classroom</a></li>
+
 					<li><a href="/hi3awards">HI3 Awards</a></li>
 
 				</ul>
 			</div>
-			<a class="btn btn-ghost">Marisa Impact BETA</a>
+			<a href="/" class="btn btn-ghost">Marisa Impact BETA</a>
 		</div>
 
 		<div class="navbar-end">
@@ -123,7 +133,11 @@
 							Privacy Policy
 						</a>
 					</li>					
-					<li><a>Logout</a></li>
+					<li>
+						<a on:click={openLogoutModal}>
+							Logout
+						</a>
+					</li>	
 				</ul>
 			</div>
 		</div>
@@ -166,6 +180,8 @@
 {/if}
 
 
+
+
 {#if showAboutModal}
 	<div class="modal modal-open">
 		<div class="modal-box max-w-3xl overflow-y-auto">
@@ -179,10 +195,10 @@
 				Marisa Honkai F2P has been playing Honkai Impact for a few years. Some of his in-game achievements include: 
 			</p>
 			<ul class="list-disc ml-6 text-sm sm:text-base px-2">
-				<li> <span class="text-blue-400 underline"><a href="https://www.youtube.com/watch?v=MoZSgbbXuE8" target="_blank">Top 1 Darkbolt Jonin Myriad in hardest server SEA</a></span></li>
+				<li> <span class="underline"><a href="https://www.youtube.com/watch?v=MoZSgbbXuE8" target="_blank">Top 1 Darkbolt Jonin Myriad in hardest server SEA</a></span></li>
 				<li> Top 15 Lantern Myriad in hardest server SEA I forgot was it tank or kasumi</li>
 				<li> uh what else, i guess occasional top 50 or 100 i should stay in nirv and upload nirvana run more often </li>
-				<li> <span class="text-blue-400 underline"><a href="https://www.youtube.com/watch?v=H6RBW8dzVwY" target="_blank">Promoted from Agony with just White Comet</a></span></li>
+				<li> <span class="underline"><a href="https://www.youtube.com/watch?v=H6RBW8dzVwY" target="_blank">Promoted from Agony with just White Comet</a></span></li>
 
 			</ul>
 
@@ -254,6 +270,24 @@
 				</div>
 			</div>
 
+			<div class="modal-action">
+				<button class="btn btn-secondary" on:click={closeModal}>Close</button>
+			</div>
+		</div>
+	</div>
+{/if}
+
+
+{#if showLogoutModal}
+	<div class="modal modal-open">
+		<div class="modal-box max-w-3xl overflow-y-auto">
+			<p class="text-xl font-bold mb-4 text-center">Where Are You Going</p>
+			<p class="text leading-relaxed text-center">
+				You gonna go play Star Rail?
+			</p>
+			<div class="flex justify-center p-4">
+				<img src="https://i.imgur.com/QAchf3b.gif" alt="Support Icon" class=" rounded h-60 w-auto"/>
+			</div>
 			<div class="modal-action">
 				<button class="btn btn-secondary" on:click={closeModal}>Close</button>
 			</div>

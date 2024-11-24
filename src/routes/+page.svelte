@@ -228,7 +228,7 @@
         </div>
       </a>
 
-      <a href="/hi3award" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
+      <a href="/hi3awards" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
