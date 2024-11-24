@@ -19,6 +19,7 @@ category: "new"
 - S-rank Qua Fire. AR World Star DPS
 - Can support World Star team, one future AR team, and P1 Fire Team
 - Gameplay: https://youtu.be/G4RUTNJbIgs
+test
 ---
 ### LEADER 
 When set as leader, activate AR World Star. SO cost: 150, Duration: 25s, CD: 25s
