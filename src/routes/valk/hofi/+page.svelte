@@ -275,52 +275,52 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl mt-4 font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong> Powerful Fire-IMG DPS, the culmination of 6 years of journey. HoFi's full potential is only unlocked in Herrscher Trio team with Herrscher of Origin and Herrscher of Truth.
+              <strong class="text-amber-400">DPS</strong><br/> Powerful Fire-IMG DPS, the culmination of 6 years of journey. HoFi's full potential is only unlocked in Herrscher Trio team with Herrscher of Origin and Herrscher of Truth.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Rite of Oblivion DPS: </strong> When HoFi equips the new Divine Key Waxing Moon, she unlocks Astral Ring: Rite of Oblivion. HoFi's role also expands into a support for the following teams:
-          </p>
-
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Vita Support:</strong>  In 7.8, HoFi+DLC is an important support for the new valk Vita [Lone Planetfarer]. Without HoFi, Vita loses around 50% DMG, which is massive, and at this point, even Vita support performs better than Vita DPS. This will remain true until we get a new Rite-of-Oblivion character.
+              <strong class="text-amber-400">Rite of Oblivion DPS</strong><br/>When HoFi equips the new Divine Key Waxing Moon, she unlocks Astral Ring: Rite of Oblivion. HoFi's role also expands into a support for the following teams:
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">World Star Support:</strong> One of the best supports for World Star team. Can trigger Domain Resonance marks 6 times. However, for subsequent rotations, getting Descent stacks to consume Stellar Drain is slow.
+              <strong class="text-amber-400">Vita Support</strong><br/>  In 7.8, HoFi+DLC is an important support for the new valk Vita [Lone Planetfarer]. Without HoFi, Vita loses around 50% DMG, which is massive, and at this point, even Vita support performs better than Vita DPS. This will remain true until we get a new Rite-of-Oblivion character.
+          </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">World Star Support</strong><br/> One of the best supports for World Star team. Can trigger Domain Resonance very fast.
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Herrscher of Origin Support:</strong>  Iskandar stigma has buffs for HoOrigin DPS. However, so far, HoOrigin top score Abyss bosses have not appeared in live version.
+          <strong class="text-amber-400">Herrscher of Origin Support</strong><br/>  Iskandar stigma has buffs for HoOrigin DPS. However, so far, HoOrigin top score Abyss bosses have not appeared in live version.
       </p>
 
       <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400">General AR Support:</strong>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as Coralie.
+        <strong class="text-amber-400">General AR Support</strong><br/>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as Coralie.
     </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players:</strong> Not recommended. 
+              <strong class="text-amber-400">New / F2P Players</strong><br/> Not recommended, you can't even get her and Divine Key right now if you wanted to.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive Players on DLC Gears:</strong> Recommended to get, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS should be more useful for 2-3 patches, since her bosses should return more often now that she gets a DLC.
+              <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> Recommended to get, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS should be more useful for 2-3 patches, since her bosses should return more often now that she gets a DLC.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">For Super Whales:</strong> Waxing Moon pistol synergy (duplicates) gives global ATK (Syn1 +10 ATK, Syn2 +5 ATK, Syn3 +5 ATK).
+            <strong class="text-amber-400">For Super Whales</strong><br/> Waxing Moon pistol synergy (duplicates) gives global ATK (Syn1 +10 ATK, Syn2 +5 ATK, Syn3 +5 ATK).
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Original Gears:</strong> No reason to get them now.
+          <strong class="text-amber-400">Original Gears</strong><br/> No reason to get them now.
       </p>
 
           <div class="divider divider-neutral"></div>
@@ -500,17 +500,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Herrscher of Finality buffs:
-        <li> <b>Stellar Drain:</b> Combo ATK consumes Stellar Drain.</li>
-        <li> <b>Weapon Skill - Cast </b> Activates Iskandar stigma effect [Moonrising] for 25s. This is also activated / refreshed during Stellar Outburst. </li>
-        <li> <b>Weapon Skill - On Hit </b> When weapon skill hits, team Total DMG +10% for 25s. This is also activated / refreshed during Stellar Outburst. </li>
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buff_hofi.png"
@@ -528,6 +518,34 @@ function selectTabMobile(event) {
 
       </div>
       
+
+
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Herrscher of Finality support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Combo ATK consumes Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Weapon Skill - Cast</p>
+            <p>Activates Iskandar stigma effect [Moonrising] for 25s. This is also activated / refreshed during Stellar Outburst. </p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Weapon Skill - On Hit</p>
+            <p>When weapon skill hits, team Total DMG +10% for 25s. This is also activated / refreshed during Stellar Outburst. </p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
+      </div>
+
       <!-- Lightbox Component -->
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
       {/if}
@@ -696,20 +714,9 @@ function selectTabMobile(event) {
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
+            Check out this showcase (Soon)
         </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
         {/if}
 
         {#if activePlaystyle === '2'}
@@ -806,20 +813,10 @@ function selectTabMobile(event) {
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
+          Check out this showcase (Soon)
+      </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+
         {/if}
 
       {/if}
@@ -1074,14 +1071,14 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoFi DPS</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoFi DPS Rotation in Trio Team. Starts at 1:18</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/XSTXBo_loCM"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1095,14 +1092,14 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
       <div class=" gap-6 mt-4">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoFi World Star Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">This shows HoFi in Sparkle rotation.</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/8vgWi3yzXn0"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1118,32 +1115,60 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
       {#if selectedTab === 'Gameplay Examples'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/tKkwXiFwRUI" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">HoFi Trio team vs Stellar Assaka 492 D</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoFi DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Stellar Assaka</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/tKkwXiFwRUI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
       </div>
+
+      
+      
+
+    </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoFi Supporting Senadina Team</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base"> VS Stellar Assaka</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/tKkwXiFwRUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}
@@ -1237,7 +1262,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
       <div class="text-center my-4 rounded bg-cyan-700">
         <p class="text-left text-sm sm:text-base px-2 py-3 text-slate-100">
           <b>Clarification:</b><br/>
-          When the text says 'all team members', it actually refers to 'all teammates'. It does not include HoFi herself.
+          When the text says 'all team members', some skills might be referring to 'teammates' (not including HoFi). This is not the translation team's fault, the original text also uses teammates, but the problem is, in most other equipment, 'teammate' usually means 'excluding the host', and 'team gain...' means it buffs the entire team.
         </p>
       </div>
 

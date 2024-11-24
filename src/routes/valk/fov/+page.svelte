@@ -948,14 +948,14 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 4:27</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/xBoYcLBsnZ0"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -966,17 +966,25 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">FoV DPS vs Parvati in Nirvana</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/lonrVng7W5g"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -986,38 +994,8 @@ function selectTabMobile(event) {
       </div>
 
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-      </div>
+
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}

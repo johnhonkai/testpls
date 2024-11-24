@@ -49,7 +49,7 @@
                 <li class="text-sm sm:text-base mb-2">When Herrscher of Finality, Origin and Truth are in the same team, a powerful new playstyle is enabled.</li>
                 <li class="text-sm sm:text-base mb-2"><b>Leader: </b> With Domain of Genesis weapon equipped, HoFi lead is better in Abyss for more dmg, HoO lead is better in Arena for initial sp.</li>
                 <li class="text-sm sm:text-base mb-2"><b>Leader: </b> With Waxing Moon weapon equipped, HoFi lead activates AR Rite of Oblivion. In Arena, also gives initial sp.</li>
-                <li class="text-sm sm:text-base mb-2"><b>AstralOp: </b> AR regen from asop doesn't matter too much for Trio team since you always need one full rotation for the first Stellar Outburst, and two full rotations to get subsequent Stellar Outburst. But for min-maxing cases, Songque gives 50 initial AR, Kiana gives 40 (2-star) / 45 (4-star) initial AR, and SS-Songque gives 10 AR after SO ends, so you can activate SO slightly earlier. </li>
+                <li class="text-sm sm:text-base mb-2"><b>AstralOp: </b> AR regen from asop doesn't matter too much for Trio team since you always need one full rotation for the first Stellar Outburst, and two full rotations to get subsequent Stellar Outburst. But for min-maxing cases, SS-rank Songque gives 10 AR after SO ends, so you can activate SO slightly earlier. </li>
 
             </p>
         </div>

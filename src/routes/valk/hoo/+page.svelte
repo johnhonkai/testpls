@@ -313,7 +313,7 @@ function selectTabMobile(event) {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/XSTXBo_loCM"
+                  src="https://www.youtube.com/embed/bbK084OrajQ"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -726,20 +726,9 @@ function selectTabMobile(event) {
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
+            Check out this showcase (Soon)
         </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
         {/if}
 
       {/if}
@@ -988,38 +977,31 @@ function selectTabMobile(event) {
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
   
-      <div class=" gap-6 mt-4">
-          <!-- Video 1 with title and description -->
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
-
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
-
-            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
-        </div>
-
+      <div class="text-center my-4">
+        <p class="text-center text-sm sm:text-base">To Be Added
+        </p>
       </div>
-
-      <div class=" gap-6 mt-4">
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
         <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoOrigin DPS (Trio Team)</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Starless Rimestar</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/mcT04_hHXJs"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1028,39 +1010,37 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoOrigin DPS (Not Trio)</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoO DPS with HoFi + Eden VS Starless Andrius</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/HAj-liAKGUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}
@@ -1103,59 +1083,11 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'Translation Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
-      <div class="flex flex-col justify-center items-center">
-          
-          <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/09/06/50494840/9b7903168970d5776986761551f4eb0b_1448098610288260173.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-              </div>
-
-          </div>  
-          <p class="text-sm sm:text-base text-white">Waxing Moon</p>
-
-      </div>
-
-      <div class="text-center my-4 rounded bg-gray-700">
-        <p class="text-left text-sm sm:text-base px-2 py-3">
-          <b>In-Game Text:</b><br/>
-          All team members...
+      
+      <div class="text-center my-4">
+        <p class="text-center text-sm sm:text-base">No known translation error
         </p>
       </div>
-
-      <div class="text-center my-4 rounded bg-cyan-700">
-        <p class="text-left text-sm sm:text-base px-2 py-3">
-          <b>Clarification:</b><br/>
-          When the text says 'team members', it means 'teammates'. It does not include HoFi herself.
-        </p>
-      </div>
-
-      <div class="flex flex-col justify-center items-center">
-          
-        <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="/images/valkportrait/Kiana Herrscher of Finality.png" alt="Vita" class="w-full h-full object-cover">
-            </div>
-
-        </div>  
-        <p class="text-sm sm:text-base text-white">HoFi AR Subskill 2: Judgment of Flame</p>
-
-    </div>
-
-    <div class="text-center my-4 rounded bg-gray-700">
-      <p class="text-left text-sm sm:text-base px-2 py-3">
-        <b>In-Game Text:</b><br/>
-        All team members deal 20% more Elemental DMG
-      </p>
-    </div>
-
-    <div class="text-center my-4 rounded bg-cyan-700">
-      <p class="text-left text-sm sm:text-base px-2 py-3">
-        <b>Correct Translation:</b><br/>
-        All team members' weapon skill deal 20% more Elemental DMG
-      </p>
-    </div>
       {/if}
 
 

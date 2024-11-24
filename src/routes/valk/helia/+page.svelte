@@ -314,19 +314,11 @@ function selectTabMobile(event) {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: 
+            Check out the full guide on YouTube (Soon)
+
           </p>
 
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
+          
       </div>
   {/if}
   
@@ -399,7 +391,16 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
-
+      <div class="flex flex-wrap gap-4 my-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="/images/valkbuff/buff_helia.png"
+          alt="Buff 1"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('/images/valkbuff/buff_helia.png')}
+        />
+        <!-- Add more images as needed -->
+      </div>
       <div class="my-5 text-sm sm:text-base">
       <p class=" text-slate-100">
         How to activate Helia buffs:
@@ -412,16 +413,7 @@ function selectTabMobile(event) {
       </p>
       </div>
 
-      <div class="flex flex-wrap gap-4">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="/images/valkbuff/buff_helia.png"
-          alt="Buff 1"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('/images/valkbuff/buff_helia.png')}
-        />
-        <!-- Add more images as needed -->
-      </div>
+
       
       <!-- Lightbox Component -->
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
@@ -435,19 +427,19 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Stellar Outburst
+            STELLAR OUTBURST
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            Infinite Rapid Shot
+            INFINITE RAPID SHOT
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">STELLAR OUTBURST PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Pros: Strong. Cons: Have to sit through Stellar Outburst animation.
         </p>
@@ -638,7 +630,7 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">INFINITE RAPIDSHOT PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Infinite Rapid Shot Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Weaker playstyle, but don't have to sit through Stellar Outburst animation. Sometimes against huge / mobs, you have to look real hard for the reload drop.
         </p>
@@ -988,38 +980,31 @@ function selectTabMobile(event) {
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
   
-      <div class=" gap-6 mt-4">
-          <!-- Video 1 with title and description -->
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
-
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
-
-            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
-        </div>
-
+      <div class="text-center my-4">
+        <p class="text-center text-sm sm:text-base">To Be Added
+        </p>
       </div>
-
-      <div class=" gap-6 mt-4">
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
         <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Helia Supporting Schicksal's Imperative</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Resonance weather Whale</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/Xz1Smyh3BaU"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1028,39 +1013,36 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Helia in early Sena team</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sena Team vs Stellar Abyss</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/_As-HtW5IXs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}

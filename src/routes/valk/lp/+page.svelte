@@ -277,37 +277,37 @@ function selectTabMobile(event) {
 
     <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
         {#if selectedTab === 'Overview'}
-        <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+        <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
         <div>
             <!-- Roles Section -->
             <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
             
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">DPS:</strong> Good DPS, but only performs exceptionally well in favorable matchups.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by Coralie support.
             </p>
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, ??? Supports:</strong> Vita is a powerful support for World Star, WoDestiny, and one future AR team. Vita provides Ele/Phy Breach, buffs, and higher AR regen.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">WS, WoD, ??? Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one future AR team. Vita provides Ele/Phy Breach, buffs, and higher AR regen.
             </p>
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">The other 9 AR Supports:</strong> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute tag that will be required to activate the AR's special mechanic and buffs.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">The other 9 AR Supports</strong> <br/> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
             </p>
             <div class="divider divider-neutral"></div>
             <!-- Pull Recommendation Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">New Players / Have not played since 7.3:</strong> Recommended to pull Vita for her flexible support capability. As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New Players / Have not played since 7.3</strong> <br/> Recommended to pull Vita for her flexible support capability. As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.
             </p>
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">F2P, already have Senadina:</strong> Vita is not a top priority, since you already have Senadina to support World Star and WoDestiny teams. The only thing Sena cannot do is support the ??? AR team and the other 9 AR teams.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">F2P, already have Senadina</strong> <br/> Vita is not a top priority, since you already have Senadina to support World Star and WoDestiny teams. The only thing Sena cannot do is support the ??? AR team and the other 9 AR teams.
             </p>
-            <p class="mt-2 text-sm sm:text-base">
-                <strong class="text-amber-400">Competitive:</strong> Recommended, Vita's value is insane.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Competitive</strong> <br/> Recommended, Vita's value is insane.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>For World Star team, currently Vita is undeniably the best support.</li>
                 <li>For WoDestiny team, S0-Vita loses to S0-Sena (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-                <li>For the future ??? AR team, Vita is the uncontested best support, at least until we get another S-rank support for that AR.</li>
+                <li>For the future ??? AR team, Vita is currently one of the three best supports for that AR.</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- How to Get Section -->
@@ -459,16 +459,7 @@ function selectTabMobile(event) {
         {#if selectedTab === 'Support Buffs'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-        <div class="my-5 text-sm sm:text-base">
-        <p class=" text-slate-100">
-          How to activate Lone Planetfarer buffs:
-          <li> Stellar Drain: Combo ATK consumes Stellar Drain. For every Enhanced Basic ATK Seq 4, Stellar Drain will recover additional 5 (S) / 10 (SS) AR meter, max 2 stacks.</li>
-          <li> Ultimate: Activate Omniscient Skyveil buffs (Breach and some dmg taken buffs)</li>
-          <li> The rest of her buffs are activated passively.</li>
-        </p>
-        </div>
-
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-4 mt-8">
           <!-- Example image list for support buffs; add your own image sources -->
           <img
             src="/images/valkbuff/buffs_vita1.png"
@@ -484,7 +475,29 @@ function selectTabMobile(event) {
           />
           <!-- Add more images as needed -->
         </div>
-        
+
+
+        <div class="mt-8 mb-3 text-sm sm:text-base text-slate-100 space-y-4">
+          <p class="mb-4 font-semibold">How to activate Vita support buffs:</p>
+          
+            <div>
+              <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+              <p>Combo ATK consumes Stellar Drain. For every Enhanced Basic ATK Seq 4, Stellar Drain will recover additional 5 (S) / 10 (SS) AR meter, max 2 stacks.</p>
+            </div>
+  
+            <div>
+              <p class="font-semibold text-orange-300 mt-6">Ultimate</p>
+              <p>Activates Omniscient Skyveil buffs (Breach and some dmg taken buffs). Also triggered during Stellar Outburst</p>
+            </div>
+  
+            <div>
+              <p class="font-semibold text-orange-300  mt-6">Passive</p>
+              <p>The rest of her buffs are activated passively.</p>
+            </div>
+  
+  
+        </div>
+
         <!-- Lightbox Component -->
         <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
         {/if}
@@ -1141,6 +1154,8 @@ function selectTabMobile(event) {
             </div>
           </div>
 
+          
+
         </div>
 
         <div class=" gap-6 mt-4">
@@ -1170,36 +1185,86 @@ function selectTabMobile(event) {
         {#if selectedTab === 'Gameplay Examples'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
     
-        <div class="grid gap-6 md:grid-cols-2 my-6">
-            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                    loading="lazy" 
+        <div class=" gap-6 my-10">
+          <!-- Video 1 with title and description -->
 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    class="w-full h-64 rounded-md"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <p class="text-gray-200 mt-2">Test</p>
-            </div>
-    
-            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                    loading="lazy" 
+        
+          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    class="w-full h-64 rounded-md"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <p class="text-gray-200 mt-2">Test</p>
-            </div>
-    
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS vs Sprout of Wishing boss</p>
+
+            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+              loading="lazy" 
+
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/RMhi643_rTI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
         </div>
+
+        
+
+      </div>
+
+      <div class=" gap-6 my-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS - Bleed weather</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS in Bleed weather where she can use Lunar Vow support</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/1SdxUh7s0kk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita supporting Senadina</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/tKkwXiFwRUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+    
+
+  </div>
     {/if}
     
     {#if selectedTab === 'Popular Question'}
@@ -1225,7 +1290,7 @@ function selectTabMobile(event) {
                   src="/images/ds.webp" />
               </div>
             </div>
-            <div class="chat-bubble chat-bubble-neutral text-slate-100">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
+            <div class="chat-bubble chat-bubble-neutral text-slate-100 py-6">Attacks in base form are melee. Mecha punch attacks are melee. Planet Quaker form attacks are ranged.</div>
           </div>
         </div>
 
@@ -1241,7 +1306,7 @@ function selectTabMobile(event) {
             <div class="chat-bubble chat-bubble-primary text-slate-100 ">Is Vita good without HoFi with Waxing Moon?</div>
           </div>
 
-          <div class="chat chat-end">
+          <div class="chat chat-end ">
             <div class="chat-image avatar">
               <div class="w-10 sm:w-12 rounded-full">
                 <img
@@ -1249,7 +1314,7 @@ function selectTabMobile(event) {
                   src="/images/ds.webp" />
               </div>
             </div>
-            <div class="chat-bubble chat-bubble-neutral text-slate-100">Currently, Vita DPS needs HoFi with Waxing Moon, otherwise damage is garbage.<br/> <br/> Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, the only RoO valks beside Vita are Coralie and HoFi with Waxing Moon.
+            <div class="chat-bubble chat-bubble-neutral text-slate-100 py-6">Currently, Vita DPS needs HoFi with Waxing Moon, otherwise damage is garbage.<br/> <br/> Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, the only RoO valks beside Vita are Coralie and HoFi with Waxing Moon.
               <br/> <br/>See lineup section for other terrible options. When we get more Rite of Oblivion characters, then you will have other good options than just HoFi.</div>
           </div>
         </div>

@@ -277,34 +277,34 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong> Powerful ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">DPS</strong> <br/>Powerful ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">VS Senadina:</strong> Against SD enemies, JD is better against solo boss. Against swarm enemies like Bloodthirsty SD-Mech mobs, it depends on ranks- or you can use JD and Sena on the same team.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">VS Senadina</strong> <br/>Against SD enemies, JD is better against solo boss. Against swarm enemies like Bloodthirsty SD-Mech mobs, it depends on ranks- or you can use JD and Sena on the same team.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support:</strong> Currently not the best support for any WoD team. Getting Stellar Drain is also slow.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Currently not the best support for any WoD team. Getting Stellar Drain is also slow.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Future ??? AR Support:</strong> Jovial Deception will be a support for one AR team in the future.
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Future ??? AR Support</strong> <br/>Jovial Deception will be a support for one AR team in the future.
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong> JD is NOT A PRIORITY, but recommended to get since she can cover the annoying Physical and PhyShield weather. She will also be a support for a future AR team.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">F2P Players</strong><br/> JD is not a priority, but recommended to get since she can cover the annoying Physical and PhyShield weather. She will also be a support for a future AR team.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> The instant SD explosion is huge, and JD is also not bad as a Physical / Ranged valk, and topscores Ranged Kalpas. In addition, she will also be the uncontested best support for a future AR team, at least until another S-rank support is added for that AR.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong><br/> The instant SD explosion is huge, and JD is also not bad as a Physical / Ranged valk, and topscores Ranged Kalpas. In addition, she will also be the uncontested best support for a future AR team, at least until another S-rank support is added for that AR.
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -413,16 +413,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Jovial Deception buffs
-        <li> <b>Stellar Drain:</b> Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume JD's Stellar Drain.</li>
-        <li> <b>QTE / Combo ATK:</b> Activates an important stigma effect [Another Possibility] for 25s. This is also activated / refreshed during Stellar Outburst.</li>
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buffs_jd.png"
@@ -431,6 +422,31 @@ function selectTabMobile(event) {
           on:click={() => openLightbox('/images/valkbuff/buffs_jd.png')}
         />
       </div>
+
+
+
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate JD support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume JD's Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">QTE / Combo ATK</p>
+           <p>Activates an important stigma effect [Another Possibility] for 25s. This is also activated / refreshed during Stellar Outburst.</p>
+          </div>
+
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
+      </div>
+
       
       <!-- Lightbox Component -->
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
@@ -1046,17 +1062,17 @@ function selectTabMobile(event) {
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
   
-      <div class=" gap-6 mt-4">
+      <div class=" gap-6 mt-5">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">JD DPS</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">JD DPS Rotation. For Support, you just QTE in and switch out.</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/dJLfOgJ3Srk"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1067,17 +1083,27 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">JD DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">JD DPS vs Stellar Assaka</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/tKkwXiFwRUI"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1086,39 +1112,37 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/tKkwXiFwRUI" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">JD vs Stellar Assaka 495 D</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">ADVANCED SONGQUE TECH That Makes You Score like SSS-rank</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">🔥🔥🔥 It's too fire hoyo had to patch it out  🔥🔥🔥</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/nwufbo3tdTE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}

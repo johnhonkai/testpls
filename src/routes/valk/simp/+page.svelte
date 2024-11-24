@@ -280,29 +280,30 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong>               </p>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">DPS</strong>               
+            </p>
               <ul class="list-disc ml-6 text-sm sm:text-base ">
                 <li>As a Quantum DPS, SIMP has multiple ways to apply quantum collapse.</li>
                 <li>As a Resonance DPS, Homu's domain resonance marks can be triggered 18 times. SIMP can also consumes teammate's marks.</li> 
                 <li>As a Part 1 DPS, SIMP can create a double dps team SIMP x Lunar Vow. It has been used against Paralyze Sushang and Starless Benares.</li>
               </ul>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> One of the best supports for World Star teams. 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/>One of the best supports for World Star teams. 
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support:</strong> Good support, can just ult and stay in the back like Senadina. However, SIMP does not offer any improvement on existing WoDestiny teams.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Good support, can just ult and stay in the back like Senadina. However, SIMP does not offer any improvement on existing WoDestiny teams.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Part 1 Support:</strong> 
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Part 1 Support</strong> 
         </p>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
           <li>Lunar Vow Support: Gives Elemental Breach (replaces HoTr), huge paralyze trauma (replaces Eden) and faster rotation (just ult and sleep).</li>
@@ -312,12 +313,12 @@ function selectTabMobile(event) {
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players:</strong>  Not highly recommended. If you do decide to pull SIMP, then she will cover Quantum and Lightning content.
+          <h2 class="text-xl font-semibold mb-4 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">New / F2P Players</strong> <br/> Not highly recommended. If you do decide to pull SIMP, then she will cover Quantum and Lightning content.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> SIMP topscores quite a number of bosses qua boss Valrahal, and resonance Opaque Shadow. With Lunar Vow double dps, SIMP also topscores Paralyze Sushang, and Starless Benares. 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/> SIMP topscores quite a number of bosses qua boss Valrahal, and resonance Opaque Shadow. With Lunar Vow double dps, SIMP also topscores Paralyze Sushang, and Starless Benares. 
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -588,18 +589,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Schicksal's Imperative buffs:
-        <li>Stellar Drain: Combo ATK consumes Stellar Drain.</li>
-        <li>Ultimate: Applies quantum collapse and inflict huge paralyze trauma.</li>
-        <li>Ultimate Finisher: When AR is inactive, teammates gain Total DMG +34% (S) / 40% (S2) for 18s. If the teammate is a Theresa character, the buff changes to Elemental Breach state,  EleBreach +14% (S) / 17% (S2). </li>
-        <li>Combo ATK - DayAfterDay3PC: When AR is inactive, teammate Total DMG +36% for 16s, inflict paralyze trauma, restore 12 sp for the team, extra 10 sp for yourself.</li>
-        <li>The rest of the buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buffs_simp.png"
@@ -609,6 +599,39 @@ function selectTabMobile(event) {
         />
 
         <!-- Add more images as needed -->
+      </div>
+
+ 
+
+      <div class="mt-8 mb-3 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate SIMP support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume SIMP's Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Ultimate (Finisher / Stellar Outburst)</p>
+            <p>Applies quantum collapse and inflict huge paralyze trauma.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Ultimate Finisher</p>
+            <p>When AR is not activated, teammates gain Total DMG +34% (S) / 40% (S2) for 18s. If the teammate is a Theresa character, the buff changes to Elemental Breach state,  EleBreach +14% (S) / 17% (S2).</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Combo ATK</p>
+            <p>With DayAfterDay 3PC stigma: When AR is inactive, teammate Total DMG +36% for 16s, inflict paralyze trauma, restore 12 sp for the team, extra 10 sp for yourself.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
       </div>
       
       <!-- Lightbox Component -->
@@ -1394,17 +1417,17 @@ function selectTabMobile(event) {
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
   
-      <div class=" gap-6 mt-4">
+      <div class=" gap-6 mt-5 mb-10">
           <!-- Video 1 with title and description -->
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Simp DPS - AR World Star</h2>
+          <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Simp DPS and Support</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Starts at around 7:13</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/F71RFZGpWu8"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1417,17 +1440,28 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">SIMP Support - Astral Ring</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">SIMP DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">SIMP DPS vs Quantum Valralhal</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/lbXFzVOJxPE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1436,39 +1470,11 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-      </div>
+
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}

@@ -23,7 +23,7 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
+  //{ name: 'Support Buffs', short: 'support' },
   { name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },

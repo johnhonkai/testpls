@@ -12,7 +12,7 @@ export async function load() {
     return {
       slug,
       title,
-      version: parseFloat(version), // Convert version to number for sorting
+      version: version, // Convert version to number for sorting
       image,
       sortOrder: sortOrder || 0 // Default sortOrder to 0 if not defined
     };

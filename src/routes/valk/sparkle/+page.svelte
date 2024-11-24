@@ -1230,7 +1230,7 @@ function selectTabMobile(event) {
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
             <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle DPS </h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle DPS rotation with Vita and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle DPS rotation with Vita and HoFi support</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
@@ -1253,23 +1253,24 @@ function selectTabMobile(event) {
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
           <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle Support (World Star)</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example with Schicksal's Imperative and HoFi.</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example with Schicksal's Imperative</p>
 
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-                >
-            </iframe>
-        </div>
+          
       </div>
 
     </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle Support (Part 1)</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example</p>
+
+        
+    </div>
+
+  </div>
   {/if}
   
   

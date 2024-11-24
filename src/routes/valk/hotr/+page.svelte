@@ -6,6 +6,9 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import P1fire from '$lib/components/lineup/p1fire.svelte';
 	import P1lightningdps from '$lib/components/lineup/p1lightningdps.svelte';
 	import Hotrdps from '$lib/components/lineup/hotrdps.svelte';
+	import Fovdps from '$lib/components/lineup/fovdps.svelte';
+	import Sirindps from '$lib/components/lineup/sirindps.svelte';
+	import Lvdpsnormal from '$lib/components/lineup/lvdpsnormal.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -23,7 +26,7 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
+  //{ name: 'Support Buffs', short: 'support' },
   { name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
@@ -274,30 +277,34 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Part 1 Fire and Lightning Support:</strong> HoTr provides Elemental Breach (directly reduces enemy's elemental resistance), huge buffs, sp regen and other utilities such as time stop, IMG core instakill, high hitcount and more. As Part 1 Lightning support, Lunar Vow is currently better than HoTr.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Herrscher Trio Support:</strong> Enables Herrscher Trio team with HoOrigin and HoFinality
           </p>
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">DPS: </strong> Can also be an average DPS.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong>  Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If HoTR and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">F2P Players:</strong>  Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. 
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Light Spenders:</strong>  HoTR and her gears are available in Battle Pass, you can consider getting them that way.
+        </p>
+
+          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive:</strong> HoTr is still used in HoFinality trio team and Part 1 Fire teams. Part 1 Lightning teams use Lunar Vow support now. Lunar Vow uses Schicksal's Imperative support.
           </p>
 
@@ -319,7 +326,7 @@ function selectTabMobile(event) {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/"
+                  src="https://www.youtube.com/embed/ioC4WaQvEqI"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -338,11 +345,19 @@ function selectTabMobile(event) {
 
 
     <Hofidps/>
+    <div class="divider divider-neutral"></div>
 
+    <Fovdps></Fovdps>
+    <div class="divider divider-neutral"></div>
+
+    <Sirindps></Sirindps>
     <div class="divider divider-neutral"></div>
 
     <P1fire />
 
+    <div class="divider divider-neutral"></div>
+
+    <Lvdpsnormal></Lvdpsnormal>
     <div class="divider divider-neutral"></div>
 
     <P1lightningdps/>
@@ -1017,39 +1032,31 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
-  
-      <div class=" gap-6 mt-4">
-          <!-- Video 1 with title and description -->
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
-
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
-
-            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
-        </div>
-
+      <div class="text-center my-4">
+        <p class="text-center text-sm sm:text-base">To Be Added
+        </p>
       </div>
-
-      <div class=" gap-6 mt-4">
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
         <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoTruth Supporting HoFi</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Stellar Assaka</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/tKkwXiFwRUI"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1058,39 +1065,37 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoTruth Supporting HoOrigin DPS</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base"> VS Starless Rimestar</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/mcT04_hHXJs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}
@@ -1159,7 +1164,7 @@ function selectTabMobile(event) {
       <div class="text-center my-4 rounded bg-cyan-700">
         <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
           <b>Correct Translation:</b><br/>
-          After casting Ultimate, all Fire and Lightning DMG dealers on the team gain Elemental Breach state for 16s: Elemental Breach +17%.
+          After casting Ultimate, all Fire and Lightning DMG dealers on the team gain <b>Elemental Breach state</b> , where all their attacks gain Elemental Breach +17%, lasts for 16s.
         </p>
       </div>
       {/if}

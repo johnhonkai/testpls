@@ -30,7 +30,8 @@ Valkyries, weapon, stigma, etc provide **buffs**, also known as **damage multipl
 - Ignite DMG
 - Ignite DMG Taken
 
-There's another one called **Independent DMG Multiplier**, but I'll show the basic dmg multipliers first, and save the 'indepent multiplier' for the end.
+
+
 
 ---
 
@@ -44,11 +45,69 @@ As we have learnt in damage type lesson, a valk deals one of the four dmg types.
 
 Each dmg type can be affected by the following dmg multipliers:
 
-| Lightning / Ice / Fire DMG | Physical DMG | Bleed / Ignite DMG
-|--|--|--|
-| Lightning / Ice / Fire DMG buff | Physical DMG buff | Bleed / Ignite DMG buff
-| Elemental DMG buff | Total DMG buff | Total DMG buff
-| Total DMG buff | Crit DMG buff
+<style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #969696;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #969696;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #969696;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <thead>
+        <tr>
+            <th>Lightning / Ice / Fire DMG</th>
+            <th>Physical DMG</th>
+            <th>Bleed / Ignite DMG</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lightning / Ice / Fire DMG buff</td>
+            <td>Physical DMG buff</td>
+            <td>Bleed / Ignite DMG Buff</td>
+        </tr>
+        <tr>
+            <td>Elemental DMG buff</td>
+            <td>Total DMG buff</td>
+            <td>Total DMG buff</td>
+        </tr>
+        <tr>
+            <td>Total DMG buff</td>
+            <td>Crit DMG</td>
+            <td><br></td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
 ---
 

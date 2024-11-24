@@ -29,19 +29,18 @@
 		<!-- Left Sidebar with Article List by Category (Sticky Sidebar) -->
 		<aside class="hidden xl:block xl:w-1/6 bg-base-200 text-base-content rounded-lg space-y-4 sticky top-16 self-start">
 			<!-- Welcome Button/Image -->
-			<div class="p-4 bg-base-300 shadow-md rounded-lg mb-4 text-center">
+			<div class="pt-4 bg-base-300 shadow-md rounded-lg mb-4 text-center">
 				<a href="/classroom/welcome" class="block">
 					<img 
-						src="/path-to-your-home-icon.png" 
+						src="/images/aichanread.webp" 
 						alt="welcome" 
-						class="w-12 h-12 mx-auto rounded-full mb-2 hover:scale-110 transition-transform"
+						class="w-12 h-12 mx-auto mb-2 hover:scale-110 transition-transform"
 					/>
 				</a>
 			</div>
 		
 			<!-- Categories and Articles -->
 			<div class="menu bg-base-300 shadow-md rounded-lg">
-				<p class="menu-title text-base-content">Articles by Category</p>
 				{#each sortedCategories as category}
 					<div class="mb-2">
 						<p class="menu-title  text-slate-100 bg-emerald-700/50 rounded">{category}</p>

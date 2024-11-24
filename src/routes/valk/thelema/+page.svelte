@@ -276,45 +276,38 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:</strong> Powerful Ice DPS with shieldbreak and huge freeze trauma.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">DPS</strong> <br/> Powerful Ice DPS with shieldbreak and huge freeze trauma.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Wheel of Destiny Support:</strong> One of the best supports for WoD teams. Provide strong buffs with important utilities: Shieldbreak, freeze trauma, AR regen and timestop.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/>One of the best supports for WoD teams. Provide strong buffs with important utilities: Shieldbreak, freeze trauma, AR regen and timestop.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> Still one of the best supports for WS teams, but arguably on equal terms with HoFi and SIMP.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/>Still one of the best supports for World Star teams, but some teams seem to do better with Vita + HoFi combo.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">AR Regen:</strong> Has a unique aerial evasion spam tech. When paired with signature weapon (grants 2 AR regen upon ultimate evasion), Thelema can provide the team a lot of AR regen in a short time.
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">AR Regen</strong> <br/>Has a unique aerial evasion spam tech. When paired with signature weapon (grants 2 AR regen upon ultimate evasion), Thelema can provide the team a lot of AR regen in a short time.
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">F2P:</strong> Thelema is good, but not mandatory for the average player.
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">F2P Players</strong> <br/>Thelema is very good, but not mandatory for the average player.
         </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Highly recommended. If you can afford it, get S2-rank for a major upgrade in rotation and damage.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/>Highly recommended. If you can afford it, get S2-rank for a major upgrade in rotation and damage.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players:</strong> I don't think Thelema should be the first character you pull. Whatever patch you are starting in, it's probably the best to pull for the latest character first. Then, evaluate Thelema's value with these questions:          </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li> <strong>Synergy: </strong> Can Thelema support that character? If YES, then pulling Thelema will have an immediate value for your account.</li>
-              <li> <strong>Synergy: </strong> Can that character support Thelema DPS? If YES, that's a bonus - Thelema is not a new valk, her bosses may appear less often now.</li>
-              <li><strong>Coverage:</strong> Do they have the same type and/or element? As a new player, you want to try to cover as many weather + boss combinations as soon as possible. </li>
 
-          </ul>
             
 
           <div class="divider divider-neutral"></div>
@@ -336,7 +329,7 @@ function selectTabMobile(event) {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/O-gIiHYQtMI"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -463,19 +456,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Thelema buffs:
-        <li> <b>Stellar Drain:</b> Moment of Indulgence consumes Stellar Drain. In WoDestiny team, teammates can consume Thelema's Stellar Drain.</li>
-        <li> <b>Deal damage:</b> Activates stigma effect Share A Glass for 25s. When AR WoDestiny is activated, the buff is also activated / refreshed when a team member with AR Wheel of Destiny tag deals dmg.</li>
-        <li> <b>Moment of Indulgence:</b> When AR World Star is activated, for every team member with AR World Star tag, team gain Total DMG +6% (max 12%) and enemies take 8% more Total DMG (max 16%) for 25s. This is also activated / refreshed during Stellar Outburst.</li>
-        <li> <b>Ultimate:</b> With signature weapon equipped, shatter dmg when timestop ends makes enemies take 18% more Total DMG for 25s. This is also activated / refreshed during Stellar Outburst. When AR WoDestiny is activated, the buff is also activated / refreshed when a team member with AR Wheel of Destiny tag deals Ultimate HITS.</li>
-
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buffs_thelema.png"
@@ -483,6 +464,39 @@ function selectTabMobile(event) {
           class=" object-cover cursor-pointer"
           on:click={() => openLightbox('/images/valkbuff/buffs_thelema.png')}
         />
+
+      </div>
+
+
+
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Thelema support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Moment of Indulgence consumes Stellar Drain. In WoDestiny team, teammates can consume Thelema's Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Deal Damage</p>
+           <p>Activates stigma effect Share A Glass for 25s. When AR WoDestiny is activated, the buff is also activated / refreshed when a team member with AR Wheel of Destiny tag deals dmg.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Moment of Indulgence</p>
+           <p>When AR World Star is activated, for every team member with AR World Star tag, team gain Total DMG +6% (max 12%) and enemies take 8% more Total DMG (max 16%) for 25s. This is also activated / refreshed during Stellar Outburst.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Ultimate</p>
+           <p>With signature weapon equipped, shatter dmg when timestop ends makes enemies take 18% more Total DMG for 25s. This is also activated / refreshed during Stellar Outburst. When AR WoDestiny is activated, the buff is also activated / refreshed when a team member with AR Wheel of Destiny tag's Ultimate hits a target.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
 
       </div>
       
@@ -668,20 +682,10 @@ function selectTabMobile(event) {
 
 
         <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
+            Check out this showcase from Marisa Honkai (Soon)
         </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+
         {/if}
 
         {#if activePlaystyle === '2'}
@@ -840,21 +844,9 @@ function selectTabMobile(event) {
           <li>Repeat.</li>
         </ol>
 
-        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+        <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+          Check out this showcase from Marisa Honkai (Soon)
+      </p>
         {/if}
 
       {/if}
@@ -1119,14 +1111,14 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Thelema DPS and Support</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 8:44</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/O-gIiHYQtMI"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1137,17 +1129,28 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Thelema DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Ice Raven</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                src="https://www.youtube.com/embed/No11TBnKoO8"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1156,39 +1159,37 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+      
+
     </div>
-  {/if}
-  
-  
-      {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Thelema Support (Wheel of Destiny)</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Thelema supporting Jovial Deception</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/tKkwXiFwRUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
+    </div>
+
+    
+
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}

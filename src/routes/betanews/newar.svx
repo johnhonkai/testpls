@@ -1,0 +1,12 @@
+---
+title: New Astral Ring
+version: '8.0'
+sortOrder: '2'
+image: "/images/valkportrait/dudu.png"
+
+---
+
+![](https://i.imgur.com/gkymCfa.png)
+
+
+![](https://i.imgur.com/Pm56By6.png)

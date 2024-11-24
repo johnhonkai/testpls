@@ -277,31 +277,31 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Gunslinger Fire DPS:</strong> Switches between three firearms to attack. Has hight hitcount. No ignite.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Gunslinger Fire DPS</strong> <br/>Switches between three firearms to attack. Has hight hitcount. No ignite.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> Lantern
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/>Lantern is good, but not the best support generally for World Star teams. But, Lantern is used against Fire Kosma to break his high hitcount hp fast.
           </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support:</strong> One of the best supports for all WoDestiny DPS so far. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>One of the best supports for all WoDestiny DPS so far. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong> Although Lantern is a great unit, so is every other Part 2 S-rank. Not highly recommended to get Lantern due to Lantern having less value than other Part 2 S-ranks.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">F2P Players</strong> <br/>Although Lantern is a great unit, so is every other Part 2 S-rank. Not highly recommended to get Lantern due to Lantern having less value than other Part 2 S-ranks.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Recommended to pull as DPS, and as support for Thelema and Jovial Deception.Recommended to pull as DPS, and as support for Thelema and Jovial Deception.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/>Recommended to pull as DPS, and as support for Thelema and Jovial Deception.
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -454,17 +454,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
 
-      <div class="my-5 text-sm sm:text-base">
-      <p class=" text-slate-100">
-        How to activate Lone Destruction buffs:
-        <li> <b>Stellar Drain:</b> Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume Lantern's Stellar Drain.</li>
-        <li> <b>Ultimate / Combo ATK: </b> Activates Fire Shower buff for 25s. This is also activated / refreshed during Stellar Outburst.</li>
-        <li> <b>Deal damage: </b> Activates stigma effect Hanging Flame for 25s. This is also activated / refreshed during Stellar Outburst.</li>
-        <li> The rest of her buffs are activated passively.</li>
-      </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
           src="/images/valkbuff/buffs_lantern.png"
@@ -474,6 +464,33 @@ function selectTabMobile(event) {
         />
 
         <!-- Add more images as needed -->
+      </div>
+
+
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Lantern support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
+            <p>Combo ATK consumes Stellar Drain. In WoDestiny team, teammates can consume Lantern's Stellar Drain.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Ultimate / Combo ATK</p>
+            <p>Activates Fire Shower buff for 25s. This is also activated / refreshed during Stellar Outburst.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Deal damage</p>
+            <p>Activates stigma effect Hanging Flame for 25s. This is also activated / refreshed during Stellar Outburst.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
       </div>
       
       <!-- Lightbox Component -->
@@ -1123,32 +1140,61 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Gameplay Examples'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
-      <div class="grid gap-6 md:grid-cols-2 my-6">
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
-          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-              <iframe 
-                  src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  class="w-full h-64 rounded-md"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-              <p class="text-gray-200 mt-2">Test</p>
-          </div>
-  
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lantern DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">S0 Lantern DPS in Nirvana vs Type Counter Kasumi</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/-4YALc-iFy0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
       </div>
+
+      
+      
+
+    </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lantern Supporting JD</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Lantern Support JD vs Stellar Assaka</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/tKkwXiFwRUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+    
+
+  </div>
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}
