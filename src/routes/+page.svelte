@@ -5,7 +5,7 @@
   import { onMount } from 'svelte';
 
   // IDs of images to wait for
-  const imageIds = ['bgwave', 'bannerpic', 'news1', 'news2', 'news3'];
+  const imageIds = ['bgwave', 'bannerpic', 'news1', 'news2', 'news3', 'content1' , 'content2'];
 
   let isLoading = true;
 
@@ -51,16 +51,16 @@
 
   
   let isClicked = false;
-  let imageSrc = '/images/test2.webp';
+  let imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test2.webp';
 
   // Function to handle image click
   function handleClick() {
     isClicked = true;
-    imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test3.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDMud2VicCIsImlhdCI6MTczMjEyMzExNSwiZXhwIjoyMDQ3NDgzMTE1fQ.Y2bD4a-Rshlrbwkl6L0qkLG3bqDBtEL_frS1go-R5BI';
+    imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test3.webp';
 
     // Revert to the original image after a few seconds
     setTimeout(() => {
-      imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDIud2VicCIsImlhdCI6MTczMjEyMzA5OSwiZXhwIjoyMDQ3NDgzMDk5fQ.FxxZlHfPDVJ2qJLimaU6hOVs5jGJVeKFoN-tf8DNrCw';
+      imageSrc = 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/test2.webp';
       isClicked = false;
     }, 3000); // Adjust time as needed
   }
@@ -202,38 +202,38 @@
     </div>
   </div>
 </section>
-<section class="pb-10 pt-5  text-white z-10">
+<section class="pb-10 pt-5  text-white z-10 ">
   <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
     <h2 class="text-3xl font-bold mb-6 text-center">New Content</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
       <!-- News Item Template -->
-      <a href="/valk/lp" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out">
+      <a href="/valk/sparkle" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news1">
 
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="/images/newstab/news1.webp" alt="First Article Image" class="w-full h-48 object-cover" id="news1">
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/news1.webp" alt="First Article Image" class="w-full h-48 object-cover" >
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">New Battlesuit</h3>
-          <p class="text-slate-300 text-base">Vita - Lone Planetfarer</p>
+          <p class="text-slate-300 text-base">Sparkle - Thousand-Faced Maestro: Cameo!</p>
         </div>
       </a>
 
-      <a href="/beta-news/79log" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=xxulmAvnKY4" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="/images/newstab/news2.png" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/news2%20(1).webp" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">7.9 Beta News</h3>
-          <p class="text-slate-300 text-base">Sparkle is coming in v7.9!</p>
+          <h3 class="text-xl font-semibold mb-2">8.0 Beta News</h3>
+          <p class="text-slate-300 text-base">Durandal swings in with a new Astral Ring!</p>
         </div>
       </a>
 
-      <a href="/news/third-article" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
+      <a href="/hi3award" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="/images/newstab/news3.png" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
-          <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>
+          <h3 class="text-xl font-semibold mb-2">HI3 Awards 2024</h3>
+          <p class="text-slate-300 text-base">Vote now for your favorite HI3 content in 2024</p>
         </div>
       </a>
 
@@ -243,7 +243,45 @@
   </div>
 </section>
 
+<section class="pb-10 pt-5  text-white z-10 mb-40">
+  <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Affiliations</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+
+      <a href="https://www.youtube.com/watch?v=1SdxUh7s0kk" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+        <!-- svelte-ignore a11y_img_redundant_alt -->
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/news3.webp" alt="Third Article Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
+          <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>
+        </div>
+      </a>
+
+      <a href="https://arustats.herokuapp.com/" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content2">
+        <!-- svelte-ignore a11y_img_redundant_alt -->
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Arustat Site</h3>
+          <p class="text-slate-300 text-base">Check out Arustat site for HI3 teambuilder and more data</p>
+        </div>
+      </a>
+
+      <!-- Add more news items as needed -->
+      
+    </div>
+  </div>
+</section>
+<footer class="footer footer-center bg-base-300 text-base-content p-4">
+  <aside>
+    <p>This website is not associated with miHoYo/Hoyoverse. Honkai Impact 3rd game content and materials are trademarks and copyrights of miHoYo/Hoyoverse.</p>
+  </aside>
+</footer>
+
 </div>
+
 
 <style>
   /* Define the wobble animation */

@@ -169,6 +169,7 @@
     fetchVoteCounts("Best Valkyrie");
     fetchVoteCounts("Best Chapter");
     fetchVoteCounts("Best Boss");
+    fetchVoteCounts("Sussiest Songque Moment");
 
     const deadline = new Date("2024-12-12T16:00:00.000Z");
     const updateCountdown = () => {
@@ -195,6 +196,16 @@
 
 </script>
 
+<style>
+	.bg-valk {
+  background-image: url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bgvalk.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1a1a1a; /* Replace with a similar dark tone */
+
+}
+</style>
+
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
 	<h1 class="text-3xl font-bold text-center text-emerald-500 mb-2">Honkai Impact 3rd Awards 2024</h1>
 	<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Voting ends in: {countdown}</p>
@@ -204,7 +215,7 @@
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-xl w-full">
 		{#each cards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bgvalk.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[280px] max-h-80 rounded-xl p-6 border">
+				<CardBody className="bg-slate-700 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-valk dark:border-white/[0.2] border-black/[0.1] max-w-[280px] max-h-80 rounded-xl p-6 border">
 					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
 						{card.title}
 					</CardItem>

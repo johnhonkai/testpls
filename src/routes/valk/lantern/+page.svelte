@@ -1096,14 +1096,14 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Lantern DPS and Support</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS rotation with Coralie and HoFi support.</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 8:58</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8AwMiPw-4Hs"
+                  src="https://www.youtube.com/embed/hJ3oOfaBKx8"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1114,26 +1114,6 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita Support</h2>
-
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita's rotation as a support in World Star and Wheel of Destiny teams.</p>
-
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/8AwMiPw-4Hs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-      </div>
-
-    </div>
   {/if}
   
   
@@ -1199,6 +1179,33 @@ function selectTabMobile(event) {
   
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
+
+
+  <div class="my-10">
+    <div class="chat chat-start ">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/meibald.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-primary text-slate-100 ">I was following your rotation, why can't I switch my character as fast as your rotation?</div>
+    </div>
+
+    <div class="chat chat-end">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/ds.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-neutral text-slate-100 py-5">Turn off the support's QTE. Using QTE makes your switch cd longer.
+
+      </div>
+    </div>
+  </div>
 
   {/if}
 
