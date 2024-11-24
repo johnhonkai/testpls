@@ -39,9 +39,15 @@
 
 <svelte:head>
     <meta property="og:title" content="Marisa Impact" />
-    <meta property="og:description" content="Honkai Impact 3rd Guides and Resources" />
+    <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
     <meta property="og:image" content="https://i.imgur.com/SPBNehH.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Marisa Impact" />
+    <meta name="twitter:image" content="https://i.imgur.com/SPBNehH.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="canonical"  />
 </svelte:head>
