@@ -121,6 +121,8 @@ goto(url.pathname + url.search, { replaceState: true });
 </script>
 
 <svelte:head>
+    <title>v7.8 Calendar and Boss Schedule</title> 
+
     <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
     <meta property="og:description" content="Version 7.8" />
     <meta property="og:image" content={data.ogImage} />
@@ -129,7 +131,7 @@ goto(url.pathname + url.search, { replaceState: true });
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical"  />
+    <link rel="canonical" href="https://marisaimpact.com/valk/calendar78" />
 </svelte:head>
 
 <div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center mb-5">

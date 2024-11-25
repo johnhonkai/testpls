@@ -1,3 +1,17 @@
+
+<svelte:head>
+	<title>Honkai Impact Classroom</title> 
+    <meta property="og:title" content="Honkai Impact Classroom"/>
+    <meta property="og:description" content="Learn the basics of Honkai Impact 3rd" />
+    <meta property="og:image" content="https://i.imgur.com/7CwpwmA.png" />
+    <meta property="og:url" content="https://marisaimpact.com/classroom" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://marisaimpact.com/classroom" />
+</svelte:head>
+
 <script>
     import { onMount } from 'svelte';
     import Toc from 'svelte-toc'; // Import the TOC component

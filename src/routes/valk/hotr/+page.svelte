@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Bronya - Herrscher of Truth</title> 
+
     <meta property="og:title" content="Bronya - Herrscher of Truth" />
     <meta property="og:description" content="JD Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/QpTTFCz.png" />

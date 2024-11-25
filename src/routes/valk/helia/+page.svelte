@@ -1,5 +1,7 @@
 
 <svelte:head>
+  <title>Helia - Valkyrie Boltstorm</title> 
+
     <meta property="og:title" content="Helia - Valkyrie Boltstorm" />
     <meta property="og:description" content="Helia Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/OoD4DU6.png" />

@@ -1,5 +1,7 @@
 <svelte:head>
-    <meta property="og:title" content="Lone Destruction: Shadowchaser" />
+  <title>Lantern - Lone Destruction: Shadowchaser</title> 
+
+    <meta property="og:title" content="Lantern - Lone Destruction: Shadowchaser" />
     <meta property="og:description" content="Lantern Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/8Fly1Xl.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/lantern" />

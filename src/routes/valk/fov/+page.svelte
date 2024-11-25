@@ -1,5 +1,7 @@
 
 <svelte:head>
+  <title>Fu Hua - Fenghuang of Vicissitude</title> 
+
     <meta property="og:title" content="Fu Hua - Fenghuang of Vicissitude" />
     <meta property="og:description" content="FoV Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/i65fHp1.png" />

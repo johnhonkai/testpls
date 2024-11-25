@@ -75,4 +75,6 @@ You will see these terms a lot in Part 2 buffs (character, equipment, AstralOp, 
 - **Stellar Outburst**: When AR is activated, and you are in Stellar Outburst mode.
 
 ### Stellar Drain
-All Part 2 characters have Stellar Drain. 
+All Part 2 characters have Stellar Drain. Basically, you do Combo ATK / certain skill, you gain a good amount of AR Intensity (usually 20). 
+- Can only trigger once per AR Charging state
+- Stellar Drain refreshes after a Stellar Outburst ends

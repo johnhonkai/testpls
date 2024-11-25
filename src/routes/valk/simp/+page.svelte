@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Theresa - Schicksal's Imperative</title> 
+
     <meta property="og:title" content="Theresa - Schicksal's Imperative" />
     <meta property="og:description" content="SIMP Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/jlNgHbU.png" />

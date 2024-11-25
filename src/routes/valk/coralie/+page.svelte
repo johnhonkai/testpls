@@ -1,5 +1,7 @@
 
 <svelte:head>
+  <title>Coralie - Valkyrie Blastmetal</title> 
+
     <meta property="og:title" content="Coralie - Valkyrie Blastmetal"/>
     <meta property="og:description" content="Coralie Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/kcQ44d7.png" />

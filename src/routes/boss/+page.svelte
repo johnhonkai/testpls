@@ -1,17 +1,16 @@
 
 <svelte:head>
+  <title>Abyss Boss Data</title> 
+
     <meta property="og:title" content="Honkai Impact 3rd Abyss Boss Data"/>
     <meta property="og:description" content="Comprehensive Boss Data" />
     <meta property="og:image" content="https://i.imgur.com/TW0FaIh.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/boss" />
+    <meta property="og:url" content="https://marisaimpact.com/boss" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Honkai Impact 3rd Abyss Boss Data" />
-    <meta name="twitter:image" content="https://i.imgur.com/TW0FaIh.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical"  />
+    <link rel="canonical" href="https://marisaimpact.com/boss" />
 </svelte:head>
 
 <script>

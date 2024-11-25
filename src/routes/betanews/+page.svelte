@@ -1,4 +1,17 @@
 <!-- src/routes/betanews/+page.svelte -->
+<svelte:head>
+  <title>HI3 Beta News</title> 
+
+    <meta property="og:title" content="Honkai Impact 3rd Beta News"/>
+    <meta property="og:description" content="Honkai Impact 3rd Beta News" />
+    <meta property="og:image" content="https://i.imgur.com/APjjbN5.png" />
+    <meta property="og:url" content="https://marisaimpact.com/betanews" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://marisaimpact.com/betanews" />
+</svelte:head>
 
 <script>
   export let data;

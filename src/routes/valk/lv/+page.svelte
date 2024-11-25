@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Lunar Vow: Crimson Love</title> 
+
     <meta property="og:title" content="Lunar Vow: Crimson Love" />
     <meta property="og:description" content="Lunar Vow Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/p2NSx8E.png" />

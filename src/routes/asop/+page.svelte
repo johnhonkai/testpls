@@ -1,13 +1,13 @@
 
 <svelte:head>
+  <title>AstralOp Calculator</title> 
+
     <meta property="og:title" content="AstralOp Calculator"/>
     <meta property="og:description" content="Calculate and compare AstralOp buffs." />
     <meta property="og:image" content="https://i.imgur.com/ULCqc90.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/asop" />
+    <meta property="og:url" content="https://marisaimpact.com/asop" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="AstralOp Calculator" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="canonical"  />

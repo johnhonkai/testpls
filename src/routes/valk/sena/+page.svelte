@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Senadina - Deepspace Anchor: First Light</title> 
+
     <meta property="og:title" content="Senadina - Deepspace Anchor: First Light" />
     <meta property="og:description" content="Sena Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/9RaYzHw.png" />

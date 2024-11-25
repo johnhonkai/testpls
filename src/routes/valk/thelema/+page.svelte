@@ -1,5 +1,7 @@
 <svelte:head>
-    <meta property="og:title" content="Thelema - Thousand-Faced Maestro: Cameo!" />
+  <title>Thelema - Mad Pleasure: Shadowbringer</title> 
+
+    <meta property="og:title" content="Thelema - Mad Pleasure: Shadowbringer" />
     <meta property="og:description" content="Thelema Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/PP0siCM.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/thelema" />
@@ -7,7 +9,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical"  />
+    <link rel="canonical" href="https://marisaimpact.com/valk/thelema" />
 </svelte:head>
 
 

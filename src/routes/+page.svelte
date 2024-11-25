@@ -2,6 +2,7 @@
 <slot /> <!-- This will render the content of each page -->
 
 <svelte:head>
+  <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
     <meta property="og:image" content="https://i.imgur.com/SPBNehH.png" />
@@ -10,7 +11,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical"  />
+    <link rel="canonical" href="https://marisaimpact.com" />
 </svelte:head>
 
 <script lang="ts">

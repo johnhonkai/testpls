@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Vita - Lone Planetfarer</title> 
+
     <meta property="og:title" content="Vita - Lone Planetfarer" />
     <meta property="og:description" content="Lone Planetfarer Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/ajDMeVg.png" />

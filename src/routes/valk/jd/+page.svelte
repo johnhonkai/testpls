@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Songque - Jovial Deception: Shadowdimmer</title> 
+
     <meta property="og:title" content="Songque - Jovial Deception: Shadowdimmer" />
     <meta property="og:description" content="JD Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/slA0lI3.png" />

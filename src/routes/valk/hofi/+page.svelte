@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Kiana - Herrscher of Finality</title> 
+
     <meta property="og:title" content="Kiana - Herrscher of Finality" />
     <meta property="og:description" content="HoFinality Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/IfnW1pa.png" />

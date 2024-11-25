@@ -1,3 +1,17 @@
+<svelte:head>
+  <title>Valkyrie Select</title> 
+    <meta property="og:title" content="Valkyrie Select" />
+    <meta property="og:description" content="Select a Character" />
+    <meta property="og:image" content="https://i.imgur.com/iymSWy5.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://marisaimpact.com/valk" />
+</svelte:head>
+
+
 <script lang="ts">
   import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
   import { onMount } from 'svelte';

@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Sparkle - Thousand-Faced Maestro: Cameo!</title> 
+
     <meta property="og:title" content="Sparkle - Thousand-Faced Maestro: Cameo!" />
     <meta property="og:description" content="Sparkle Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/tWNhY33.png" />

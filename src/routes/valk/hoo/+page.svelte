@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>Mei - Herrscher of Origin</title> 
+
     <meta property="og:title" content="Mei - Herrscher of Origin" />
     <meta property="og:description" content="HoOrigin Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/bGOctIZ.png" />

@@ -1,5 +1,7 @@
 
 <svelte:head>
+  <title>Durandal - 天光驰彻</title> 
+
     <meta property="og:title" content="Durandal - 天光驰彻" />
     <meta property="og:description" content="天光驰彻 Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/l806vIQ.png" />
