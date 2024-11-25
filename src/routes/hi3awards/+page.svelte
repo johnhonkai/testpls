@@ -132,34 +132,46 @@
     showModal = true;
 };
 
+const retry = async (fn, retries = 3, delay = 500) => {
+    try {
+        return await fn();
+    } catch (err) {
+        if (retries === 0) throw err;
+        await new Promise((res) => setTimeout(res, delay));
+        return retry(fn, retries - 1, delay * 2);
+    }
+};
 
-	// Function to confirm the vote
-	const confirmVote = async () => {
+const confirmVote = async () => {
     try {
         const category = selectedCard.category; // Determine the category
         const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
         localStorage.setItem("voterId", voterId);
 
         // Query Firestore for existing vote
-        const q = query(
-            collection(db, "votes"),
-            where("voterId", "==", voterId),
-            where("category", "==", category),
-            where("vote", "==", selectedCard.title)
-        );
+        const existingVote = await retry(async () => {
+            const q = query(
+                collection(db, "votes"),
+                where("voterId", "==", voterId),
+                where("category", "==", category),
+                where("vote", "==", selectedCard.title)
+            );
+            return await getDocs(q);
+        });
 
-        const existingVote = await getDocs(q);
         if (!existingVote.empty) {
             alert("You have already voted for this category and choice.");
             return;
         }
 
         // Save the vote to Firestore
-        await addDoc(collection(db, "votes"), {
-            voterId,
-            vote: selectedCard.title,
-            category,
-            timestamp: new Date(),
+        await retry(async () => {
+            await addDoc(collection(db, "votes"), {
+                voterId,
+                vote: selectedCard.title,
+                category,
+                timestamp: new Date(),
+            });
         });
 
         // Mark as voted locally
