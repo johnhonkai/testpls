@@ -2,7 +2,7 @@
 <svelte:head>
     <meta property="og:title" content="Honkai Impact 3rd Awards 2024"/>
     <meta property="og:description" content="Vote for Your Favourite HI3 Content" />
-    <meta property="og:image" content="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" />
+    <meta property="og:image" content="https://i.imgur.com/vIxSuxg.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/valk/hi3awards" />
     <meta property="og:type" content="website" />
 
