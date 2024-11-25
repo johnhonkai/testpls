@@ -1,20 +1,9 @@
 
-<svelte:head>
-    <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
-    <meta property="og:description" content="Version 7.9" />
-    <meta property="og:image" content="https://i.imgur.com/ljDgtEy.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/calendar79" />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:title" content="HI3 Calendar and Boss Schedule" />
-    <meta name="twitter:image:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="canonical"  />
-</svelte:head>
 
 
 <script>
+    export let data; // This will include `ogImage` from the load function
+
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
     import BossCard from '$lib/components/calendarbosspic.svelte'
@@ -24,9 +13,50 @@
     // Tabs
     let activeTab = "Supply"; // Default tab
 
+        // Detect URL query parameters
+        onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('boss')) {
+            activeTab = "Boss";
+        }
+    });
+
     // Variables for modal
     let selectedSupply = null;
     let showModal = false;
+
+        // Function to open modal with selected supply data
+        function openModal(supplyName) {
+        selectedSupply = supplies[supplyName];
+        showModal = true;
+    }
+
+    // Function to close modal
+    function closeModal() {
+        showModal = false;
+    }
+
+    // Switch tab function
+    function switchTab(tabName) {
+        activeTab = tabName;
+        updateURL(tabName);
+    }
+
+    // Function to update the URL based on active tab
+    function updateURL(tabName) {
+    const url = new URL(window.location.href);
+
+    if (tabName === "Boss") {
+        // Set 'boss' without an '='
+        url.search = '?boss';
+    } else {
+        // Remove 'boss' query parameter
+        url.searchParams.delete('boss');
+    }
+
+    // Use `goto` to change the URL without reloading
+    goto(url.pathname + url.search, { replaceState: true });
+}
 
     // Sample data for supplies
     const supplies = {
@@ -81,22 +111,21 @@
         },
     };
 
-    // Function to open modal with selected supply data
-    function openModal(supplyName) {
-        selectedSupply = supplies[supplyName];
-        showModal = true;
-    }
 
-    // Function to close modal
-    function closeModal() {
-        showModal = false;
-    }
-
-    // Switch tab function
-    function switchTab(tabName) {
-        activeTab = tabName;
-    }
 </script>
+
+
+<svelte:head>
+    <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
+    <meta property="og:description" content="Version 7.9" />
+    <meta property="og:image" content={data.ogImage} />
+    <meta property="og:url" content="https://marisaimpact.com/valk/calendar79" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
 
 <div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center mb-5">
 
@@ -285,7 +314,7 @@
 
 </div>
 
-<div class="p-4 container-screen-2xl flex justify-center items-center mb-20 mt-4">
+<div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
         <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
@@ -412,7 +441,7 @@
 
 {:else if activeTab === "Boss"}
 
-<div class="p-4 flex justify-center mb-20">
+<div class="p-4 flex justify-center mb-20 mt-4">
     <div class="overflow-x-auto overflow-y-clip">
         <div class="w-[940px] rounded-lg bg-gray-900 text-white" >
             
