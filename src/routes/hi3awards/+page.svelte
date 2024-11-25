@@ -213,15 +213,15 @@
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
 	<h1 class="text-3xl font-bold text-center text-emerald-500 mb-2">Honkai Impact 3rd Awards 2024</h1>
-	<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Voting ends in: {countdown}</p>
+	<p class="text-sm text-center text-gray-400 mb-6">Voting ends in: {countdown}</p>
 
-	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
+	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-xl w-full">
 		{#each cards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-rose-900 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-rose-900 dark:border-white/[0.2] border-black/[0.1] max-w-[280px] max-h-80 rounded-xl p-6 border">
-					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+				<CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-rose-900   border-white/[0.2] max-w-[280px] max-h-80 rounded-xl p-6 border">
+					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-white">
 						{card.title}
 					</CardItem>
 
@@ -233,10 +233,10 @@
 						/>
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
-						<CardItem {isMouseEntered} translateZ="50" className="text-sm text-gray-500 dark:text-gray-300">
+						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
 							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold cursor-pointer">
+						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Valkyrie")}>
 								VOTE
 							</button>
@@ -247,13 +247,13 @@
 		{/each}
 	</div>
 
-	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST CHAPTER</p>
+	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST CHAPTER</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
 		{#each chaptercards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bg.svg')] dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
-					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+				<CardBody className="  relative group/card  hover:shadow-2xl  hover:shadow-emerald-500/[0.1]  bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bg.svg')]   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">
+					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-white">
 						{card.title}
 					</CardItem>
 
@@ -265,10 +265,10 @@
 						/>
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
-						<CardItem {isMouseEntered} translateZ="50" className="text-sm text-gray-500 dark:text-gray-300">
+						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
 							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold cursor-pointer">
+						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Chapter")}>
 								VOTE
 							</button>
@@ -279,14 +279,14 @@
 		{/each}
 	</div>
 
-	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
+	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
 		BEST BOSS </p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
 		{#each bosscards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
-					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+				<CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">
+					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-white">
 						{card.title}
 					</CardItem>
 
@@ -298,10 +298,10 @@
 						/>
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
-						<CardItem {isMouseEntered} translateZ="50" className="text-sm text-gray-500 dark:text-gray-300">
+						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
 							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold cursor-pointer">
+						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Boss")}>
 								VOTE
 							</button>
@@ -312,14 +312,14 @@
 		{/each}
 	</div>
 
-	<p class="cursor-default text-xl font-semibold text-gray-600 dark:text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
+	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
 		SUSSIEST SONGQUE MOMENT</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
 		{#each songquecards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card glassdark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-cyan-800 dark:border-white/[0.2] border-black/[0.1] max-w-[400px] max-h-80 rounded-xl p-6 border">
-					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+				<CardBody className="relative group/card  hover:shadow-2xl  hover:shadow-emerald-500/[0.1]  bg-cyan-800   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">
+					<CardItem {isMouseEntered} translateZ="50" className="text-xl font-bold text-white">
 						{card.title}
 					</CardItem>
 
@@ -331,10 +331,10 @@
 						/>
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
-						<CardItem {isMouseEntered} translateZ="50" className="text-sm text-gray-500 dark:text-gray-300">
+						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
 							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold cursor-pointer">
+						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Sussiest Songque Moment")}>
 								VOTE
 							</button>
@@ -356,7 +356,7 @@
 			<h2 class="font-bold text-lg">Confirm Your Vote</h2>
 			<p>Are you sure you want to vote for <strong>{selectedCard.title}</strong> in the <strong>{selectedCard.category}</strong> category? This cannot be undone.</p>
 			<div class="modal-action">
-				<button class="btn btn-primary" on:click={confirmVote}>Yes</button>
+				<button class="btn btn-primary" on:click={confirmVote} disabled={hasVoted}>Yes</button>
 				<button class="btn btn-secondary" on:click={cancelVote}>No</button>
 			</div>
 		</div>

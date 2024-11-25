@@ -19,7 +19,7 @@ export default {
 				  h2: { color: theme('colors.gray.200') },
 				  h3: { color: theme('colors.gray.300') },
 				  a: { color: theme('colors.blue.400'), textDecoration: 'underline' },
-				  //strong: { color: theme('colors.gray.300') }, // Set bold text color
+				  strong: { color: theme('colors.slate.300') }, // Set bold text color
 
 				},
 			  },
