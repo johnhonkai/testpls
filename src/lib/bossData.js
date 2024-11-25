@@ -718,7 +718,7 @@ export const teamData = {
       {
         type: 'lineup',
         lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
-        pct: '10%',
+        pct: '20%',
         bottext: 'Highest Score: S0 786, S2 801'
       }
     ]},]
