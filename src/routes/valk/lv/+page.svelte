@@ -321,24 +321,24 @@ function selectTabMobile(event) {
 
       <div>
           <!-- Roles Section -->
-          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Lighting Bleed DPS:</strong> One of the strongest Part 1 valks when fully geared. Luna's attacks count as Bleed DMG, so she can benefit from both Bleed and Lightning buffs.
+              <strong class="text-amber-400">Lighting Bleed DPS </strong><br/> One of the strongest Part 1 valks when fully geared. Luna's attacks count as Bleed DMG, so she can benefit from both Bleed and Lightning buffs.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">P1 Lightning Support:</strong> As a Part 1 Lightning support, Luna provides Elemental Breach, sp regen and contributes team dmg herself.
+              <strong class="text-amber-400">P1 Lightning Support </strong><br/> As a Part 1 Lightning support, Luna provides Elemental Breach, sp regen and contributes team dmg herself.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If LV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+              <strong class="text-amber-400">F2P Players </strong><br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If LV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Her scores are now even higher with the new Schicksal's Imperative support. However, getting LV should not be prioritized over Part 2 characters.
+              <strong class="text-amber-400">Competitive </strong><br/> Her scores are now even higher with the new Schicksal's Imperative support. However, getting LV should not be prioritized over Part 2 characters.
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -426,14 +426,30 @@ function selectTabMobile(event) {
               <h4 class="text-base sm:text-base text-white">Bloodied Casket + Sweet Dreams</h4>
               </div>
 
-              <div class="p-2 mt-2 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
+              <div class="p-4 mt-4 mb-8 bg-gradient-to-r from-rose-950/75 to-rose-900/75 rounded" >
               <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base"><b>Bloodied Casket :</b> Pure damage for Lunar Vow. Inflict Bleed trauma per second. In Elysian Realm, weapon active also allows you to benefit from Infinity signet</li>
-                  <li class="text-sm sm:text-base"><b>Sweet Dreams: </b> Has dps and support buffs. 3PC has sp regen, which may make or break a run. </li>
-                  <li class="text-sm sm:text-base"><b>Affix: </b> Full ATK.</li>
-              </p>
+                  <p class="text-sm sm:text-base"><b>Bloodied Casket</b><br/> Pure damage for Lunar Vow. Inflict Bleed trauma per second. In Elysian Realm, weapon active also allows you to benefit from Infinity signet</p>
+                  <p class="text-sm mt-4 sm:text-base"><b>Sweet Dreams </b> <br/>Has dps and support buffs. 3PC has sp regen, which may make or break a run. </p>
+                  <p class="text-sm mt-4 sm:text-base"><b>Affix </b><br/> LV uses Lightning DMG affix. The reasons are:<br/>
+                    - ATK% multipliers are low, as low as 10%, 15%, so higher ATK does not give as big of an increase like other valks who have high ATK% multiplier.<br/>
+                    - Lightning ATK affix ADDS up with Luna's own Lightning attacks BEFORE the final damage calculation. <br/>
+                    This results in damage output with Lightning affix surpassing damage output with ATK affix.<br/>
+                    - More details with demonstration in the video below.
+                  </p>
+          
               </div>
-
+              <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/NvEYO8asYV0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+    
            </div>
       {/if}
 
@@ -884,7 +900,7 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-1">Support Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>SS1 and SS: More Elemental Breach
+              <li>S1 and SS: More Elemental Breach
               </li>
               <li>S2: Team Lightning DMG +30%
               </li>
@@ -989,12 +1005,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>Casting Ultimate grants Lightning teammates Elemental Breach +11% ➔ 14% for 16s	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> Support. Recommended!</p>
             </div>
           </div>
 
@@ -1004,10 +1017,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>UNLOCK: Upon entering Frenzy mode, team Lightning DMG +30% for 16s	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS, Support. Recommended!</p>
             </div>
           </div>
 
@@ -1019,13 +1031,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill: Team Lightning DMG +25% ➔ 26%, and Bleed DMG +39% ➔ 40%	
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -1035,11 +1043,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>1. UNLOCK: Ultimate Lightning DMG +100%<br/>
+              2. Casting Ultimate grants Lightning teammates Elemental Breach +14% ➔ 17% for 16s
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
           </div>
         </div>
 
@@ -1049,8 +1056,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>When LV deals Bleed DMG while on standby, LV recover 1 ➔ 1.2 sp, CD 0.5s	</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
           </div>
         </div>
 
@@ -1060,8 +1067,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>	When there are 3 team members of different types: When entering Frenzy mode, teammates gain Total DMG +10% ➔ 30% for 20s.</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
           </div>
         </div>
 
@@ -1071,10 +1078,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
+            <p>Leader Skill: Team Lightning DMG +26% ➔ 27%, and Bleed DMG +40% ➔ 41%	</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1085,11 +1089,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	1. UNLOCK: Combo ATK Lightning DMG +50% <br/>
+              2. UNLOCK: Start the battle with 40sp
+            <p class="mt-2"><strong>Good for:</strong> DPS, Memorial Arena
             </p>
           </div>
         </div>
