@@ -1,3 +1,20 @@
+<svelte:head>
+    <meta property="og:title" content="Theresa - Schicksal's Imperative" />
+    <meta property="og:description" content="SIMP Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/jlNgHbU.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/simp" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Theresa - Schicksal's Imperative" />
+    <meta name="twitter:image" content="https://i.imgur.com/jlNgHbU.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
+
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import Charred from '$lib/components/charpctred.svelte';

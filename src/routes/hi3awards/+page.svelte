@@ -1,3 +1,19 @@
+
+<svelte:head>
+    <meta property="og:title" content="Honkai Impact 3rd Awards 2024"/>
+    <meta property="og:description" content="Vote for Your Favourite HI3 Content" />
+    <meta property="og:image" content="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/hi3awards" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Honkai Impact 3rd Awards 2024" />
+    <meta name="twitter:image" content="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
 	import CardBody from '$lib/components/ui/ThreeDCardEffect/CardBody.svelte';
 	import CardContainer from '$lib/components/ui/ThreeDCardEffect/CardContainer.svelte';

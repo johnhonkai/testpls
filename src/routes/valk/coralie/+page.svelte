@@ -1,3 +1,19 @@
+
+<svelte:head>
+    <meta property="og:title" content="Coralie - Valkyrie Blastmetal"/>
+    <meta property="og:description" content="Coralie Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/kcQ44d7.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/coralie" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Coralie - Valkyrie Blastmetal" />
+    <meta name="twitter:image" content="https://i.imgur.com/l806vIQ.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import Charred from '$lib/components/charpctred.svelte';

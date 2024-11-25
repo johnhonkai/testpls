@@ -1,3 +1,20 @@
+
+<svelte:head>
+    <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
+    <meta property="og:description" content="Version 7.9" />
+    <meta property="og:image" content="https://i.imgur.com/ljDgtEy.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/calendar79" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="HI3 Calendar and Boss Schedule" />
+    <meta name="twitter:image" content="https://i.imgur.com/ljDgtEy.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
+
 <script>
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';

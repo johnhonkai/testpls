@@ -1,3 +1,18 @@
+<svelte:head>
+    <meta property="og:title" content="Lunar Vow: Crimson Love" />
+    <meta property="og:description" content="Lunar Vow Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/p2NSx8E.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/lv" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Lunar Vow: Crimson Love" />
+    <meta name="twitter:image" content="https://i.imgur.com/p2NSx8E.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import LVDPS from '$lib/components/lineup/lvdpsdual.svelte';

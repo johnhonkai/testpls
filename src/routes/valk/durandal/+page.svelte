@@ -1,18 +1,22 @@
+
+<svelte:head>
+    <meta property="og:title" content="Durandal - 天光驰彻" />
+    <meta property="og:description" content="天光驰彻 Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/l806vIQ.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/durandal" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Durandal - 天光驰彻e" />
+    <meta name="twitter:image" content="https://i.imgur.com/l806vIQ.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
+
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Charred from '$lib/components/charpctred.svelte';
-  import SimpDPS from '$lib/components/lineup/simpdps.svelte';
-  import SenaDPS from '$lib/components/lineup/senadps.svelte';
-  import JDDPS from '$lib/components/lineup/jddps.svelte';
-  import LanternDPS from '$lib/components/lineup/lanterndps.svelte';
-import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
-import VitaDPS from '$lib/components/lineup/vitadps.svelte';
-
-import Lightbox from '$lib/components/lightbox.svelte';
-	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
-	import Fovdps from '$lib/components/lineup/fovdps.svelte';
-	import P1fire from '$lib/components/lineup/p1fire.svelte';
-	import Sirindps from '$lib/components/lineup/sirindps.svelte';
 	import Dududps from '$lib/components/lineup/dududps.svelte';
 let showLightbox = false;
 let selectedImage = '';

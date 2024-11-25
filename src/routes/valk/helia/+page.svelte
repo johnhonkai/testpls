@@ -1,3 +1,19 @@
+
+<svelte:head>
+    <meta property="og:title" content="Helia - Valkyrie Boltstorm" />
+    <meta property="og:description" content="Helia Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/OoD4DU6.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/helia" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Helia - Valkyrie Boltstorm" />
+    <meta name="twitter:image" content="https://i.imgur.com/OoD4DU6.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import Charred from '$lib/components/charpctred.svelte';

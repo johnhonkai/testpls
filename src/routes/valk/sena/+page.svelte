@@ -1,3 +1,18 @@
+<svelte:head>
+    <meta property="og:title" content="Senadina - Deepspace Anchor: First Light" />
+    <meta property="og:description" content="Sena Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/9RaYzHw.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/sena" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Senadina - Deepspace Anchor: First Light" />
+    <meta name="twitter:image" content="https://i.imgur.com/9RaYzHw.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import SimpDPS from '$lib/components/lineup/simpdps.svelte';

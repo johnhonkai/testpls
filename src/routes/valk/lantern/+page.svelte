@@ -1,3 +1,18 @@
+<svelte:head>
+    <meta property="og:title" content="Lone Destruction: Shadowchaser" />
+    <meta property="og:description" content="Lantern Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/8Fly1Xl.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/lantern" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Lone Destruction: Shadowchaser" />
+    <meta name="twitter:image" content="https://i.imgur.com/8Fly1Xl.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import Charred from '$lib/components/charpctred.svelte';

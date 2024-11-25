@@ -1,3 +1,18 @@
+<svelte:head>
+    <meta property="og:title" content="Mei - Herrscher of Origin" />
+    <meta property="og:description" content="HoOrigin Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/bGOctIZ.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/hoo" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Mei - Herrscher of Origin" />
+    <meta name="twitter:image" content="https://i.imgur.com/bGOctIZ.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
 import Lightbox from '$lib/components/lightbox.svelte';

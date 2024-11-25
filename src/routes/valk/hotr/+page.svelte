@@ -1,3 +1,18 @@
+<svelte:head>
+    <meta property="og:title" content="Bronya - Herrscher of Truth" />
+    <meta property="og:description" content="JD Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/QpTTFCz.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/hotr" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Bronya - Herrscher of Truth" />
+    <meta name="twitter:image" content="https://i.imgur.com/QpTTFCz.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
 <script lang="ts">
   import { onMount } from 'svelte';
 

@@ -1,3 +1,20 @@
+
+<svelte:head>
+    <meta property="og:title" content="Fu Hua - Fenghuang of Vicissitude" />
+    <meta property="og:description" content="FoV Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/i65fHp1.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/fov" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Fu Hua - Fenghuang of Vicissitude" />
+    <meta name="twitter:image" content="https://i.imgur.com/i65fHp1.png" />
+    <meta name="twitter:image:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical"  />
+</svelte:head>
+
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import FoVDPS from '$lib/components/lineup/fovdps.svelte';
