@@ -13,6 +13,9 @@
 </svelte:head>
 
 <script lang="ts">
+
+import voteSummary from '$lib/data/voteSummary.json'; // Adjust path as needed
+
 	import CardBody from '$lib/components/ui/ThreeDCardEffect/CardBody.svelte';
 	import CardContainer from '$lib/components/ui/ThreeDCardEffect/CardContainer.svelte';
 	import CardItem from '$lib/components/ui/ThreeDCardEffect/CardItem.svelte';
@@ -70,54 +73,88 @@
 
 	];
 
-	const fetchVoteCounts = async (category) => {
-    try {
-        const q = query(
-            collection(db, "votes"),
-            where("category", "==", category)
-        );
-        const querySnapshot = await getDocs(q);
-        const voteCounts = {};
 
-        querySnapshot.forEach((doc) => {
-            const { vote } = doc.data();
-            if (vote) {
-                voteCounts[vote] = (voteCounts[vote] || 0) + 1;
-            }
-        });
-
-        // Update vote counts for the corresponding category
-		if (category === "Best Valkyrie") {
-    cards = cards.map((card) => ({
-        ...card,
-        votes: voteCounts[card.title] || 0,
-    }));
-} else if (category === "Best Chapter") {
-    chaptercards = chaptercards.map((card) => ({
-        ...card,
-        votes: voteCounts[card.title] || 0,
-    }));
-} else if (category === "Best Boss") {
-    bosscards = bosscards.map((card) => ({
-        ...card,
-        votes: voteCounts[card.title] || 0,
-    }));
-} else if (category === "Sussiest Songque Moment") {
-    songquecards = songquecards.map((card) => ({
-        ...card,
-        votes: voteCounts[card.title] || 0,
-    }));
-}
-    } catch (err) {
-        console.error("Error fetching vote counts:", err);
+const updateCardsWithVoteCounts = (category, voteCounts) => {
+    if (category === "Best Valkyrie") {
+        cards = cards.map((card) => ({
+            ...card,
+            votes: voteCounts[card.title] || 0,
+        }));
+    } else if (category === "Best Chapter") {
+        chaptercards = chaptercards.map((card) => ({
+            ...card,
+            votes: voteCounts[card.title] || 0,
+        }));
+    } else if (category === "Best Boss") {
+        bosscards = bosscards.map((card) => ({
+            ...card,
+            votes: voteCounts[card.title] || 0,
+        }));
+    } else if (category === "Sussiest Songque Moment") {
+        songquecards = songquecards.map((card) => ({
+            ...card,
+            votes: voteCounts[card.title] || 0,
+        }));
     }
 };
 
 
 
+const updateVoteCounts = (category) => {
+    const counts = voteSummary[category] || {};
 
+    if (category === "Best Valkyrie") {
+        cards = cards.map((card) => ({
+            ...card,
+            votes: counts[card.title] || 0,
+        }));
+    } else if (category === "Best Chapter") {
+        chaptercards = chaptercards.map((card) => ({
+            ...card,
+            votes: counts[card.title] || 0,
+        }));
+    } else if (category === "Best Boss") {
+        bosscards = bosscards.map((card) => ({
+            ...card,
+            votes: counts[card.title] || 0,
+        }));
+    } else if (category === "Sussiest Songque Moment") {
+        songquecards = songquecards.map((card) => ({
+            ...card,
+            votes: counts[card.title] || 0,
+        }));
+    }
+};
 
+// Countdown timer and vote count initialization
+onMount(() => {
+  updateVoteCounts('Best Valkyrie');
+  updateVoteCounts('Best Chapter');
+  updateVoteCounts('Best Boss');
+  updateVoteCounts('Sussiest Songque Moment');
 
+  const deadline = new Date('2024-12-12T16:00:00.000Z');
+  const updateCountdown = () => {
+    const now = new Date();
+    const diff = deadline.getTime() - now.getTime();
+
+    if (diff <= 0) {
+      countdown = 'Voting has ended.';
+      clearInterval(interval);
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    countdown = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  };
+
+  const interval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+});
 	// Function to open the vote modal
 	const openVoteModal = (cardTitle, category) => {
     const voteKey = `votedFor_${category.replace(" ", "")}`;
@@ -143,53 +180,23 @@ const retry = async (fn, retries = 3, delay = 500) => {
 };
 
 const confirmVote = async () => {
-    try {
-        const category = selectedCard.category; // Determine the category
-        const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
-        localStorage.setItem("voterId", voterId);
+  try {
+    const category = selectedCard.category;
+    const voterId = localStorage.getItem('voterId') || crypto.randomUUID();
+    localStorage.setItem('voterId', voterId);
 
-        // Query Firestore for existing vote
-        const existingVote = await retry(async () => {
-            const q = query(
-                collection(db, "votes"),
-                where("voterId", "==", voterId),
-                where("category", "==", category),
-                where("vote", "==", selectedCard.title)
-            );
-            return await getDocs(q);
-        });
+    const voteKey = `votedFor_${category.replace(' ', '')}`;
+    localStorage.setItem(voteKey, selectedCard.title);
 
-        if (!existingVote.empty) {
-            alert("You have already voted for this category and choice.");
-            return;
-        }
+    hasVoted = true;
+    showModal = false;
 
-        // Save the vote to Firestore
-        await retry(async () => {
-            await addDoc(collection(db, "votes"), {
-                voterId,
-                vote: selectedCard.title,
-                category,
-                timestamp: new Date(),
-            });
-        });
-
-        // Mark as voted locally
-        const voteKey = `votedFor_${category.replace(" ", "")}`;
-        localStorage.setItem(voteKey, selectedCard.title);
-        hasVoted = true;
-        showModal = false;
-
-        alert(`Thank you for voting for "${selectedCard.title}" in the "${category}" category!`);
-
-        // Refresh vote counts
-        await fetchVoteCounts(category);
-    } catch (err) {
-        console.error("Error confirming vote:", err);
-        alert("An error occurred. Please try again later.");
-    }
+    alert(`Thank you for voting for "${selectedCard.title}" in the "${category}" category!`);
+  } catch (err) {
+    console.error('Error confirming vote:', err);
+    alert('Herrscher of Corruption error. Try voting here: https://forms.gle/2q6DUrqrA1xaqSr9A');
+  }
 };
-
 
 
 
@@ -199,34 +206,7 @@ const confirmVote = async () => {
 		showModal = false;
 	};
 
-	onMount(() => {
-    fetchVoteCounts("Best Valkyrie");
-    fetchVoteCounts("Best Chapter");
-    fetchVoteCounts("Best Boss");
-    fetchVoteCounts("Sussiest Songque Moment");
 
-    const deadline = new Date("2024-12-12T16:00:00.000Z");
-    const updateCountdown = () => {
-        const now = new Date();
-        const diff = deadline.getTime() - now.getTime();
-
-        if (diff <= 0) {
-            countdown = "Voting has ended.";
-            clearInterval(interval);
-            return;
-        }
-
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / (1000 * 60)) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-
-        countdown = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-    };
-
-    const interval = setInterval(updateCountdown, 1000);
-    updateCountdown();
-});
 const hasVotedInCategory = (category) => {
     const voteKey = `votedFor_${category.replace(" ", "")}`;
     return !!localStorage.getItem(voteKey); // Returns true if the user has already voted in this category

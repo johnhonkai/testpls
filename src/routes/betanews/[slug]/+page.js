@@ -1,11 +1,12 @@
-//import { incrementViewCount } from '$lib/firebasecounter'; // Adjust the path
+import viewsData from '$lib/data/views.json'; // Adjust the path as needed
 
 export async function load({ params }) {
-    const post = await import(`../${params.slug}.svx`);
-    const { title, date, version, image, lastModifiedDate } = post.metadata;
+  const post = await import(`../${params.slug}.svx`);
+  const { title, date, version, image, lastModifiedDate, creationDate } = post.metadata;
   const content = post.default;
 
-
+  // Retrieve views from local JSON
+  const views = viewsData[params.slug]?.views || 0;
 
   return {
     content,
@@ -13,6 +14,8 @@ export async function load({ params }) {
     date,
     version,
     image,
+    creationDate: new Date(creationDate),
     lastModifiedDate: new Date(lastModifiedDate),
+    views
   };
 }
