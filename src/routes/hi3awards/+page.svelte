@@ -140,11 +140,17 @@
         const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
         localStorage.setItem("voterId", voterId);
 
-        const voteKey = `votedFor_${category.replace(" ", "")}`;
-        const alreadyVoted = localStorage.getItem(voteKey);
+        // Query Firestore for existing vote
+        const q = query(
+            collection(db, "votes"),
+            where("voterId", "==", voterId),
+            where("category", "==", category),
+            where("vote", "==", selectedCard.title)
+        );
 
-        if (alreadyVoted) {
-            alert(`You have already voted for the "${category}" category.`);
+        const existingVote = await getDocs(q);
+        if (!existingVote.empty) {
+            alert("You have already voted for this category and choice.");
             return;
         }
 
@@ -157,6 +163,7 @@
         });
 
         // Mark as voted locally
+        const voteKey = `votedFor_${category.replace(" ", "")}`;
         localStorage.setItem(voteKey, selectedCard.title);
         hasVoted = true;
         showModal = false;
@@ -170,6 +177,7 @@
         alert("An error occurred. Please try again later.");
     }
 };
+
 
 
 
