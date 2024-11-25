@@ -87,7 +87,7 @@
 
     <!-- Gameplay Videos Section (only one set of videos) -->
     <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext mt-9">GAMEPLAY EXAMPLES</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 mb-20">
       {#each bossData.videos as video, index}
         <div class="bg-gray-100 p-4 rounded-lg">
           <iframe src={video.url} title="Gameplay Video {index + 1}" allowfullscreen class="w-full h-44 rounded-sm"></iframe>

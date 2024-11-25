@@ -200,7 +200,7 @@ function selectTabMobile(event) {
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button on:click={increaseLike} class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">
-      🩷 <span class="text-white font-semibold">{senalikes}</span>
+      🩷 <span class="text-white font-semibold">{coralielikes}</span>
     </button>
     
   </div>

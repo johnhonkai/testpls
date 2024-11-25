@@ -45,7 +45,15 @@ Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You 
   <img src="https://i.imgur.com/j2MK187.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-This is where your dailies / weeklies / limited-time event missions are. 
+This is where your dailies / weeklies / limited-time event missions are.
+
+
+## THE BEST STARTER TEAM
+
+None. All those free characters are missing weapon or stigma.
+
+The best starter team is the first Part 2 S-rank + weapon that you pull. It will be MILES better than whatever you get from those starter event.
+
 
 ## THERE IS NO BROKEN CHARACTER
 
@@ -60,3 +68,11 @@ There is no Acheron or Firefly broken-tier characters in Honkai Impact.
 ### So, what do I pull with my crystal?
 
 For v7.9, check out [Sparkle](/valk/sparkle) and [Lone Planetfarer](valk/lp)
+
+
+## THE REAL GAME STARTS AT LV 80+
+
+Once you get to Level 80, you can breakthrough, increasing your max level, and unlocking an entirely new difficulty tier called **Exalted Tier** and a new end-game mode **Superstring Dimension**. 
+
+Yes, it is harder, but manageable, also gives significantly more crystal income per week. 
+And it only takes around a month for a new account to get to Lv80.
