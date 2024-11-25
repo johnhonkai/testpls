@@ -8,6 +8,7 @@
     let showSearchModal = false; // Controls modal visibility
     let searchQuery = ''; // Stores the search query
     let searchResults = []; // Stores search results
+    let searchInput; // Reference to the search input element
 
     const { categorizedArticles, sortedCategories, allArticles } = data;
 
@@ -64,6 +65,13 @@
         searchArticles(searchQuery);
     }
 
+
+    // Automatically focus the search input when the modal opens
+    $: if (showSearchModal) {
+        setTimeout(() => searchInput?.focus(), 0);
+    }
+
+
     function closeSearchModal() {
         showSearchModal = false;
         searchQuery = '';
@@ -75,8 +83,28 @@
 </script>
 
 
+  <!-- Dropdown Button -->
+<div class="flex justify-center xl:hidden ">
+  <div class=" my-4 p-4 max-w-[600px]">
+    <select
+        class="select select-bordered w-full"
+        on:change={(event) => (window.location.href = event.target.value)}
+    >
+        <option disabled selected>-- Select an Article --</option>
+        {#each sortedCategories as category}
+            <optgroup label={category}>
+                {#each categorizedArticles[category] as article}
+                    <option value={`/classroom/${article.slug}`}>
+                        {article.title}
+                    </option>
+                {/each}
+            </optgroup>
+        {/each}
+    </select>
+</div>
+</div>
 
-<div class="z-10 sm:flex  items-center justify-center mt-10 ">
+<div class="z-10 hidden lg:flex  items-center justify-center xl:mt-10 ">
 	<button on:click={() => (showSearchModal = true)}
 		>
 	<div
@@ -88,7 +116,7 @@
 		class=" inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"
 
 		>
-		<span class="text-base sm:text-lg">✨ Search Articles</span>
+		<span class="text-base lg:text-lg">✨ Search Articles</span>
   
 		<svg
 		  xmlns="http://www.w3.org/2000/svg"
@@ -108,16 +136,30 @@
 </button>
   </div>
 
+
+
 <!-- Search Modal -->
 {#if showSearchModal}
-    <div class="modal modal-open">
-        <div class="modal-box max-w-xl">
+    <div
+        class="modal modal-open  items-start top-10"
+        on:click={(event) => {
+            // Close modal if the click target is the backdrop
+            if (event.target.classList.contains('modal')) {
+                closeSearchModal();
+            }
+        }}
+    >
+        <div
+            class="modal-box max-w-xl"
+            on:click={(event) => event.stopPropagation()}
+        >
             <p class="text-xl font-bold mb-4">Search Articles</p>
             <input
                 type="text"
                 placeholder="Search for articles or keywords..."
                 class="input input-bordered w-full mb-4"
                 bind:value={searchQuery}
+                bind:this={searchInput} 
                 on:input={handleSearchChange}
             />
 
@@ -128,7 +170,7 @@
                             <a href={`/classroom/${result.slug}`} class="block p-4 bg-base-200 rounded-lg shadow hover:bg-base-300">
                                 <p class="font-semibold">{result.title}</p>
                                 <p class="text-sm text-gray-500">
-<span>...{@html result.excerpt}...</span>
+                                    <span>...{@html result.excerpt}...</span>
                                 </p>
                             </a>
                         </li>
@@ -146,7 +188,8 @@
 {/if}
 
 
-<div class="container mx-auto py-10 flex flex-row gap-4 mb-20">
+
+<div class="container mx-auto  flex flex-row gap-4 mb-20">
 	<!-- Left Sidebar -->
 	<aside class="hidden xl:block xl:w-1/6 bg-base-200 text-base-content rounded-lg space-y-4 sticky top-16 self-start">
 		<!-- Welcome Button/Image -->
@@ -178,7 +221,7 @@
 	</aside>
 
 	<!-- Main Content -->
-	<article class="prose grow mx-auto max-w-[960px] p-6 bg-base-100 rounded-lg  prose-h2:bg-gradient-to-r from-teal-600 to-teal-400 prose-h2:text-black  prose-h2:rounded   prose-h3:text-amber-300 prose-h2:w-fit prose-h2:px-2">		
+	<article class="prose grow mx-auto md:max-w-[960px] p-6 bg-base-100 rounded-lg  prose-h2:bg-gradient-to-r from-teal-600 to-teal-400 prose-h2:text-black  prose-h2:rounded   prose-h3:text-amber-300 prose-h2:w-fit prose-h2:px-2">		
 		{#if data.title !== 'Welcome'}
 		<h1>{data.title}</h1>
 		{/if}
@@ -187,7 +230,7 @@
 
 	<!-- Table of Contents -->
 	{#if tocActive}
-		<aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg shadow-md block">
+		<aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg shadow-md hidden 2xl:block">
 			<Toc class="toc p-4 rounded-lg shadow-lg" breakpoint={1500} />
 		</aside>
 	{/if}
