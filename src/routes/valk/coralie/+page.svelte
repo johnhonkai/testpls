@@ -6,10 +6,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/coralie" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Coralie - Valkyrie Blastmetal" />
-    <meta name="twitter:image" content="https://i.imgur.com/l806vIQ.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

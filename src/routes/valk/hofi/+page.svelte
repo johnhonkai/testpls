@@ -5,10 +5,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/hofi" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Kiana - Herrscher of Finality" />
-    <meta name="twitter:image" content="https://i.imgur.com/IfnW1pa.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

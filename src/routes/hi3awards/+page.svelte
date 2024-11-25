@@ -7,7 +7,6 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:title" content="Honkai Impact 3rd Awards 2024" />
-    <meta name="twitter:image" content="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" />
     <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 

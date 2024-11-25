@@ -7,7 +7,6 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:title" content="HI3 Calendar and Boss Schedule" />
-    <meta name="twitter:image" content="https://i.imgur.com/ljDgtEy.png" />
     <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 

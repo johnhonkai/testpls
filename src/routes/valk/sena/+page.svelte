@@ -5,10 +5,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/sena" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Senadina - Deepspace Anchor: First Light" />
-    <meta name="twitter:image" content="https://i.imgur.com/9RaYzHw.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

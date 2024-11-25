@@ -7,7 +7,6 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:title" content="AstralOp Calculator" />
-    <meta name="twitter:image" content="https://i.imgur.com/ULCqc90.png" />
     <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 

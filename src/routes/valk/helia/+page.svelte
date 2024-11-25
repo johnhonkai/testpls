@@ -6,10 +6,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/helia" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Helia - Valkyrie Boltstorm" />
-    <meta name="twitter:image" content="https://i.imgur.com/OoD4DU6.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

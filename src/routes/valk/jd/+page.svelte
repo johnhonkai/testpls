@@ -5,10 +5,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/jd" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Songque - Jovial Deception: Shadowdimmer" />
-    <meta name="twitter:image" content="https://i.imgur.com/slA0lI3.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

@@ -5,10 +5,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/lv" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Lunar Vow: Crimson Love" />
-    <meta name="twitter:image" content="https://i.imgur.com/p2NSx8E.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

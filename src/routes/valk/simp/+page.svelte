@@ -5,10 +5,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/simp" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Theresa - Schicksal's Imperative" />
-    <meta name="twitter:image" content="https://i.imgur.com/jlNgHbU.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

@@ -6,10 +6,8 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/fov" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Fu Hua - Fenghuang of Vicissitude" />
-    <meta name="twitter:image" content="https://i.imgur.com/i65fHp1.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>

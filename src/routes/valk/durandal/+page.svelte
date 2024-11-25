@@ -6,9 +6,6 @@
     <meta property="og:url" content="https://marisaimpact.com/valk/durandal" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:title" content="Durandal - 天光驰彻e" />
-    <meta name="twitter:image" content="https://i.imgur.com/l806vIQ.png" />
-    <meta name="twitter:image:type" content="website" />
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="canonical"  />
