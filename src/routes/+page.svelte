@@ -245,7 +245,7 @@
 
 <section class="pb-10 pt-5  text-white z-10 mb-40">
   <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">Affiliations</h2>
+    <h2 class="text-3xl font-bold mb-6 text-center">Featured</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 

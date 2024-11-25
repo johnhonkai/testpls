@@ -174,7 +174,7 @@ function selectTabMobile(event) {
 
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block ">    
-  <img src="/images/bg/ava_lantern.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
+  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/ava_fov.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->
