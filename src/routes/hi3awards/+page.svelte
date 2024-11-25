@@ -355,7 +355,7 @@
 			<h2 class="font-bold text-lg">Confirm Your Vote</h2>
 			<p>Are you sure you want to vote for <strong>{selectedCard.title}</strong> in the <strong>{selectedCard.category}</strong> category? This cannot be undone.</p>
 			<div class="modal-action">
-				<button class="btn btn-primary" on:click={confirmVote} disabled={hasVoted}>Yes</button>
+				<button class="btn btn-primary" on:click={confirmVote}>Yes</button>
 				<button class="btn btn-secondary" on:click={cancelVote}>No</button>
 			</div>
 		</div>
