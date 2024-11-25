@@ -73,7 +73,7 @@
 
 	<!-- Table of Contents on the right (conditionally rendered) -->
 	{#if tocActive}
-		<aside class="xl:mx-auto xl:w-1/6sticky top-16 h-[calc(100vh-4rem)]" class:hidden={!showToc && !tocActive}>
+		<aside class="xl:mx-auto xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)]" class:hidden={!showToc && !tocActive}>
 			<Toc 
 			class="toc p-4 rounded-lg shadow-lg" 
 			breakpoint={1280}
