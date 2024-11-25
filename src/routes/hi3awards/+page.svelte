@@ -235,7 +235,11 @@ const hasVotedInCategory = (category) => {
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
 	<h1 class="text-3xl font-bold text-center text-emerald-500 mb-2">Honkai Impact 3rd Awards 2024</h1>
-	<p class="text-sm text-center text-gray-400 mb-6">Voting ends in: {countdown}</p>
+	<p class="text-center text-sm text-gray-400 mb-2">Voting ends in: {countdown}</p>
+
+	
+		<p class="text-center my-6">If you can't vote, that means we reached daily database limit ( I am not paying for that ), <span><a class="underline text-blue-400" href="https://forms.gle/2q6DUrqrA1xaqSr9A">so use this form to vote </a></span> and I'll update the total count manually</p>
+	
 
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
 
