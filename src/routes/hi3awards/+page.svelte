@@ -215,7 +215,10 @@
     const interval = setInterval(updateCountdown, 1000);
     updateCountdown();
 });
-
+const hasVotedInCategory = (category) => {
+    const voteKey = `votedFor_${category.replace(" ", "")}`;
+    return !!localStorage.getItem(voteKey); // Returns true if the user has already voted in this category
+};
 </script>
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
@@ -358,14 +361,32 @@
 
 <!-- Modal -->
 {#if showModal}
-	<div class="modal modal-open">
-		<div class="modal-box">
-			<h2 class="font-bold text-lg">Confirm Your Vote</h2>
-			<p>Are you sure you want to vote for <strong>{selectedCard.title}</strong> in the <strong>{selectedCard.category}</strong> category? This cannot be undone.</p>
-			<div class="modal-action">
-				<button class="btn btn-primary" on:click={confirmVote}>Yes</button>
-				<button class="btn btn-secondary" on:click={cancelVote}>No</button>
-			</div>
-		</div>
-	</div>
+
+<div class="modal modal-open">
+    <div class="modal-box">
+        <h2 class="font-bold text-lg">Confirm Your Vote</h2>
+        <p>
+            Are you sure you want to vote for <strong>{selectedCard.title}</strong>
+            in the <strong>{selectedCard.category}</strong> category? This cannot
+            be undone.
+        </p>
+        <div class="modal-action">
+            <button
+                class="btn btn-primary"
+                on:click={confirmVote}
+                disabled={hasVotedInCategory(selectedCard.category)}
+            >
+                Yes
+            </button>
+            <button class="btn btn-secondary" on:click={cancelVote}>No</button>
+        </div>
+        <!-- Display message if the user has already voted -->
+        {#if hasVotedInCategory(selectedCard.category)}
+            <p class="text-red-500 text-sm mt-2">You have already voted in this category.</p>
+        {/if}
+    </div>
+</div>
+
+
 {/if}
+
