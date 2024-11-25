@@ -49,7 +49,7 @@
 
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
     {#each filteredPosts as post} <!-- Use filteredPosts here -->
-      <a href={`/betanews/${post.slug}`} class="block p-6 bg-base-200 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl will-change-transform ">
+      <a href={`/betanews/${post.slug}`} data-sveltekit-preload-data="off" class="block p-6 bg-base-200 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl will-change-transform ">
         
         <!-- Flex container for image and post content -->
         <div class="flex items-center space-x-4">

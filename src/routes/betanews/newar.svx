@@ -1,6 +1,7 @@
 ---
 title: New Astral Ring
 lastModifiedDate: "2024-11-24T12:00:00Z"
+date: "2024-11-25"
 
 version: '8.0'
 sortOrder: '2'
