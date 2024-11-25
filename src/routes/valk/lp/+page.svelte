@@ -16,7 +16,7 @@
 
 <script lang="ts">
     import { goto } from '$app/navigation';
-    import { likeWithVoterId, hasUserLiked , getLikesFromFirestore  } from "$lib/firebaseLikes"; // Adjust path to your helper file
+    import likesData from '$lib/data/likes.json'; // Import local JSON data
 
     import { onMount } from 'svelte';
     import Charred from '$lib/components/charpctred.svelte';
@@ -146,29 +146,34 @@ function toggleTabs() {
 function selectTabMobile(event) {
         selectedTab = event.target.value;
     }
-    let lplikes = 0; // Default likes
+    let lplikes = likesData["lp"] || 0; // Get initial likes from JSON
   const charName = "lp"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
   // Generate or fetch the voterId on component mount
-  onMount(async () => {
+  onMount(() => {
     voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
     localStorage.setItem("voterId", voterId); // Save voterId in localStorage
 
-    hasLiked = await hasUserLiked(charName, voterId); // Check if the user has already liked
-    lplikes = await (await import("$lib/firebaseLikes")).getLikesFromFirestore(charName); // Fetch current likes
+    // Check if the user has already liked this character
+    hasLiked = !!localStorage.getItem(`liked_${charName}`);
   });
 
-  // Increment likes in Firestore
+  // Increment likes in local storage and JSON
   async function increaseLike() {
     if (hasLiked) return; // Prevent multiple likes
 
-    lplikes = await likeWithVoterId(charName, voterId); // Like with voter ID tracking
-    hasLiked = true; // Update the state
+    // Increment local counter
+    lplikes++;
+
+    // Mark as liked in localStorage
+    localStorage.setItem(`liked_${charName}`, "true"); 
+    hasLiked = true;
+
+    // Update the likes.json file (this would be done during a manual update process)
+    console.log(`Character "${charName}" liked! New count: ${lplikes}`);
   }
-  
-    
     
 </script>
 

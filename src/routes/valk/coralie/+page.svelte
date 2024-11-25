@@ -18,15 +18,8 @@
   import { onMount } from 'svelte';
 
   import { goto } from '$app/navigation';
-  import { likeWithVoterId, hasUserLiked , getLikesFromFirestore  } from "$lib/firebaseLikes"; // Adjust path to your helper file
+  import likesData from '$lib/data/likes.json'; // Import local JSON data
 
-
-  import Charred from '$lib/components/charpctred.svelte';
-  import SimpDPS from '$lib/components/lineup/simpdps.svelte';
-  import SenaDPS from '$lib/components/lineup/senadps.svelte';
-  import JDDPS from '$lib/components/lineup/jddps.svelte';
-  import LanternDPS from '$lib/components/lineup/lanterndps.svelte';
-import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
@@ -147,26 +140,33 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let coralielikes = 0; // Default likes
+  let coralielikes = likesData["coralie"] || 0; // Get initial likes from JSON
   const charName = "coralie"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
   // Generate or fetch the voterId on component mount
-  onMount(async () => {
+  onMount(() => {
     voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
     localStorage.setItem("voterId", voterId); // Save voterId in localStorage
 
-    hasLiked = await hasUserLiked(charName, voterId); // Check if the user has already liked
-    coralielikes = await (await import("$lib/firebaseLikes")).getLikesFromFirestore(charName); // Fetch current likes
+    // Check if the user has already liked this character
+    hasLiked = !!localStorage.getItem(`liked_${charName}`);
   });
 
-  // Increment likes in Firestore
+  // Increment likes in local storage and JSON
   async function increaseLike() {
     if (hasLiked) return; // Prevent multiple likes
 
-    coralielikes = await likeWithVoterId(charName, voterId); // Like with voter ID tracking
-    hasLiked = true; // Update the state
+    // Increment local counter
+    coralielikes++;
+
+    // Mark as liked in localStorage
+    localStorage.setItem(`liked_${charName}`, "true"); 
+    hasLiked = true;
+
+    // Update the likes.json file (this would be done during a manual update process)
+    console.log(`Character "${charName}" liked! New count: ${coralielikes}`);
   }
   
   
