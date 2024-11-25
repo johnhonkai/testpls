@@ -55,7 +55,7 @@
 			hour: '2-digit',
 			minute: '2-digit',
 			timeZoneName: 'short' // Include the timezone
-		  }).format(new Date(data.lastModifiedDate))}
+		  }).format(new Date(data.creationDate))}
 		</p>
 		<p>
 		  Last Modified:
@@ -73,9 +73,9 @@
 
 	<!-- Table of Contents on the right (conditionally rendered) -->
 	{#if tocActive}
-		<aside class="xl:mx-auto xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)]" class:hidden={!showToc && !tocActive}>
+		<aside class="xl:mx-auto xl:w-1/6sticky top-16 h-[calc(100vh-4rem)]" class:hidden={!showToc && !tocActive}>
 			<Toc 
-			class="toc p-4 rounded-lg shadow-lg " 
+			class="toc p-4 rounded-lg shadow-lg" 
 			breakpoint={1280}
 			reactToKeys={ [`ArrowDown`, `ArrowUp`, ` `, `Enter`]}
 			/>

@@ -206,17 +206,18 @@
 
 
 			<p class="text-xl font-bold mb-4">Objective of the Site</p>
-			<p class="text leading-relaxed mb-6">
+			<p class="text leading-relaxed mb-6 text-sm sm:text-base">
 				Every game needs a proper, resourceful, guide website. The English side of Honkai Impact never really had a proper one like the new CN wiki site. I've always wanted to make one but lacked the knowledge.<br/>
 				 Alpaca reached out to me, we discussed on what features would be helpful, and Arustat site was born. He did an amazing website with timeline and boss database. <br/> 
 				 There are some features that I really want like individual valk guide, but that will be very hard for Alpaca to maintain every 6 weeks. Heck, I dont event update them for a while already. <br/>
 				</p>
-				 <p class="text leading-relaxed mb-6">
+				 <p class="text leading-relaxed mb-6 text-sm sm:text-base" >
 					Then Part 2 came. I thought, with Part 2, maybe we will get an official guide/tool site on Hoyolab. But it has been almost a year, and no - it's not here.
 				</p>
 	
-			<p class="text leading-relaxed mb-6">
-				So I decided to do it myself. 🔥🔥🥵 
+			<p class="text leading-relaxed mb-6 text-sm sm:text-base">
+				So I decided to do it myself. 🔥🔥🥵  <br/>
+				Right now the site looks fine, but I'm pretty sure stuff will break once I add more stuff. This is worse than Couatl.
 			</p>
 
 

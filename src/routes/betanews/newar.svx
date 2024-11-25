@@ -1,5 +1,7 @@
 ---
 title: New Astral Ring
+lastModifiedDate: "2024-11-24T12:00:00Z"
+
 version: '8.0'
 sortOrder: '2'
 image: "/images/valkportrait/dudu.png"

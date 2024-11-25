@@ -1,5 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
+  import { likeWithVoterId, hasUserLiked , getLikesFromFirestore  } from "$lib/firebaseLikes"; // Adjust path to your helper file
+
   import LVDPS from '$lib/components/lineup/lvdpsdual.svelte';
   import LVDPSNormal from '$lib/components/lineup/lvdpsnormal.svelte';
   import P1DPS from '$lib/components/lineup/p1lightningdps.svelte';
@@ -33,25 +36,35 @@ function closeLightbox() {
   { name: 'Translation Error', short: 'translation' },
 ];  
 
+// Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
+
+  // Get the short form for the selected tab
+  const shortTab = tabs.find(t => t.name === tab)?.short;
+
+  // Update the URL query parameter (or remove it for 'Overview')
+  if (shortTab && shortTab !== 'overview') {
+    const newUrl = `${window.location.pathname}?${shortTab}`;
+    goto(newUrl, { replaceState: true });
+  } else {
+    // Remove the query parameter for the 'Overview' tab
+    goto(window.location.pathname, { replaceState: true });
+  }
 }
 
-
-  // onMount to check for URL parameters
-  onMount(() => {
+// onMount to check for URL parameters
+onMount(() => {
   // Get the current URL query parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  const tabParam = urlParams.get('tab');
+  const currentPath = window.location.search.substring(1); // Removes '?'
 
-  // If a short URL parameter exists, find the corresponding full tab name
-  if (tabParam) {
-      const fullTab = tabs.find(tab => tab.short === tabParam)?.name;
-      if (fullTab) {
-          selectedTab = fullTab;
-      }
+  // Match the current path with the short tab names
+  const matchingTab = tabs.find(tab => tab.short === currentPath);
+  if (matchingTab) {
+    selectedTab = matchingTab.name;
   }
 });
+
   // Track pagination
 let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
@@ -113,29 +126,28 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let lanternlikes = 0;
-  let lanternhasLiked = false;
+  let celikes = 0; // Default likes
+  const charName = "ce"; // Route name for this character
+  let hasLiked = false; // Track if the user has liked
+  let voterId = ""; // User's unique voter ID
 
-  // Check local storage to see if the user has already liked
-  onMount(() => {
-    lanternhasLiked = JSON.parse(localStorage.getItem('lanternhasLiked')) || false;
-      // Load the initial likes count from the server or storage
-      lanternlikes = parseInt(localStorage.getItem('lanternlikes')) || 0;
+  // Generate or fetch the voterId on component mount
+  onMount(async () => {
+    voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
+    localStorage.setItem("voterId", voterId); // Save voterId in localStorage
+
+    hasLiked = await hasUserLiked(charName, voterId); // Check if the user has already liked
+    celikes = await (await import("$lib/firebaseLikes")).getLikesFromFirestore(charName); // Fetch current likes
   });
 
-  function increaseLike() {
-      // Prevent spamming: only allow if the user hasn't liked yet
-      if (!lanternhasLiked) {
-        lanternlikes += 1;
-        lanternhasLiked = true;
+  // Increment likes in Firestore
+  async function increaseLike() {
+    if (hasLiked) return; // Prevent multiple likes
 
-          // Store the new like count and flag in local storage
-          localStorage.setItem('lanternlikes', lanternlikes);
-          localStorage.setItem('lanternhasLiked', JSON.stringify(lanternhasLiked));
-      } else {
-          alert("You've already liked this page!");
-      }
+    celikes = await likeWithVoterId(charName, voterId); // Like with voter ID tracking
+    hasLiked = true; // Update the state
   }
+  
   
   
 </script>
@@ -217,21 +229,21 @@ function selectTabMobile(event) {
 <div class="flex max-w-screen-xl justify-center mx-auto "> 
 
 
-<aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
+  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
 
-<ul class="space-y-2">
-  {#each tabs as tab}
-    <li>
-      <button
-        on:click={() => (selectedTab = tab.name)}
-        class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-               {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
-        {tab.name}
-      </button>
-    </li>
-  {/each}
-</ul>
-</aside>
+    <ul class="space-y-2">
+      {#each tabs as tab}
+        <li>
+          <button
+            on:click={() => selectTab(tab.name)}
+            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
+                   {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
+            {tab.name}
+          </button>
+        </li>
+      {/each}
+    </ul>
+    </aside>
 
 <style>
 .dropdown.dropdown-center.dropdown-right .dropdown-content,
@@ -255,15 +267,17 @@ function selectTabMobile(event) {
 
 <!-- Mobile View Tab Selector -->
 <div class="flex justify-center sm:hidden my-4">
-<select class="select select-bordered w-full max-w-xs" on:change={selectTabMobile}>
-
+  <select
+    class="select select-bordered w-full max-w-xs"
+    bind:value={selectedTab} 
+    on:change={() => selectTab(selectedTab)} 
+    >
     {#each tabs as tab}
-        <option 
-            value={tab.name} selected={selectedTab === tab.name}>
-            {tab.name}
-        </option>
+      <option value={tab.name}>
+        {tab.name}
+      </option>
     {/each}
-</select>
+  </select>
 </div>
 
 <!-- Wrapper for the tabs and content -->

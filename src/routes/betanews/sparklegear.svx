@@ -1,6 +1,8 @@
 ---
 title: Sparkle Gear v3C
 date: '2021-12-14'
+lastModifiedDate: "2024-11-24T12:00:00Z"
+
 version: '7.9'
 sortOrder: '3'
 image: "/images/sporkle.png"

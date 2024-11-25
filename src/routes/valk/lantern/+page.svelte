@@ -12,6 +12,9 @@
 </svelte:head>
 
 <script lang="ts">
+    import { goto } from '$app/navigation';
+    import { likeWithVoterId, hasUserLiked , getLikesFromFirestore  } from "$lib/firebaseLikes"; // Adjust path to your helper file
+
   import { onMount } from 'svelte';
   import Charred from '$lib/components/charpctred.svelte';
   import SimpDPS from '$lib/components/lineup/simpdps.svelte';
@@ -50,25 +53,35 @@ function closeLightbox() {
   { name: 'Translation Error', short: 'translation' },
 ];  
 
+// Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
+
+  // Get the short form for the selected tab
+  const shortTab = tabs.find(t => t.name === tab)?.short;
+
+  // Update the URL query parameter (or remove it for 'Overview')
+  if (shortTab && shortTab !== 'overview') {
+    const newUrl = `${window.location.pathname}?${shortTab}`;
+    goto(newUrl, { replaceState: true });
+  } else {
+    // Remove the query parameter for the 'Overview' tab
+    goto(window.location.pathname, { replaceState: true });
+  }
 }
 
-
-  // onMount to check for URL parameters
-  onMount(() => {
+// onMount to check for URL parameters
+onMount(() => {
   // Get the current URL query parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  const tabParam = urlParams.get('tab');
+  const currentPath = window.location.search.substring(1); // Removes '?'
 
-  // If a short URL parameter exists, find the corresponding full tab name
-  if (tabParam) {
-      const fullTab = tabs.find(tab => tab.short === tabParam)?.name;
-      if (fullTab) {
-          selectedTab = fullTab;
-      }
+  // Match the current path with the short tab names
+  const matchingTab = tabs.find(tab => tab.short === currentPath);
+  if (matchingTab) {
+    selectedTab = matchingTab.name;
   }
 });
+
   // Track pagination
 let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
@@ -130,29 +143,28 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let lanternlikes = 0;
-  let lanternhasLiked = false;
+  let lanternlikes = 0; // Default likes
+  const charName = "lantern"; // Route name for this character
+  let hasLiked = false; // Track if the user has liked
+  let voterId = ""; // User's unique voter ID
 
-  // Check local storage to see if the user has already liked
-  onMount(() => {
-    lanternhasLiked = JSON.parse(localStorage.getItem('lanternhasLiked')) || false;
-      // Load the initial likes count from the server or storage
-      lanternlikes = parseInt(localStorage.getItem('lanternlikes')) || 0;
+  // Generate or fetch the voterId on component mount
+  onMount(async () => {
+    voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
+    localStorage.setItem("voterId", voterId); // Save voterId in localStorage
+
+    hasLiked = await hasUserLiked(charName, voterId); // Check if the user has already liked
+    lanternlikes = await (await import("$lib/firebaseLikes")).getLikesFromFirestore(charName); // Fetch current likes
   });
 
-  function increaseLike() {
-      // Prevent spamming: only allow if the user hasn't liked yet
-      if (!lanternhasLiked) {
-        lanternlikes += 1;
-        lanternhasLiked = true;
+  // Increment likes in Firestore
+  async function increaseLike() {
+    if (hasLiked) return; // Prevent multiple likes
 
-          // Store the new like count and flag in local storage
-          localStorage.setItem('lanternlikes', lanternlikes);
-          localStorage.setItem('lanternhasLiked', JSON.stringify(lanternhasLiked));
-      } else {
-          alert("You've already liked this page!");
-      }
+    lanternlikes = await likeWithVoterId(charName, voterId); // Like with voter ID tracking
+    hasLiked = true; // Update the state
   }
+  
   
   
 </script>
@@ -183,10 +195,22 @@ function selectTabMobile(event) {
   <img src="/images/valkfull/lantern.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-10;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-    <button on:click={increaseLike} class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">
-      🩷 <span class="text-white font-semibold">{lanternlikes}</span>
+    <button
+      on:click={increaseLike}
+      class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
+             {hasLiked ? '' : 'hover:bg-blue-700'}">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-5 h-5"
+      >
+        <path
+          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        />
+      </svg>
+      <span class="text-white font-semibold">{lanternlikes}</span>
     </button>
-    
   </div>
 
 </div>
@@ -235,21 +259,21 @@ function selectTabMobile(event) {
 <div class="flex max-w-screen-xl justify-center mx-auto "> 
 
 
-<aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
+  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
 
-<ul class="space-y-2">
-  {#each tabs as tab}
-    <li>
-      <button
-        on:click={() => (selectedTab = tab.name)}
-        class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-               {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
-        {tab.name}
-      </button>
-    </li>
-  {/each}
-</ul>
-</aside>
+    <ul class="space-y-2">
+      {#each tabs as tab}
+        <li>
+          <button
+            on:click={() => selectTab(tab.name)}
+            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
+                   {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
+            {tab.name}
+          </button>
+        </li>
+      {/each}
+    </ul>
+    </aside>
 
 <style>
 .dropdown.dropdown-center.dropdown-right .dropdown-content,
@@ -273,15 +297,17 @@ function selectTabMobile(event) {
 
 <!-- Mobile View Tab Selector -->
 <div class="flex justify-center sm:hidden my-4">
-<select class="select select-bordered w-full max-w-xs" on:change={selectTabMobile}>
-
+  <select
+    class="select select-bordered w-full max-w-xs"
+    bind:value={selectedTab} 
+    on:change={() => selectTab(selectedTab)} 
+    >
     {#each tabs as tab}
-        <option 
-            value={tab.name} selected={selectedTab === tab.name}>
-            {tab.name}
-        </option>
+      <option value={tab.name}>
+        {tab.name}
+      </option>
     {/each}
-</select>
+  </select>
 </div>
 
 <!-- Wrapper for the tabs and content -->
@@ -310,7 +336,7 @@ function selectTabMobile(event) {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players</strong> <br/>Although Lantern is a great unit, so is every other Part 2 S-rank. Not highly recommended to get Lantern due to Lantern having less value than other Part 2 S-ranks.
+              <strong class="text-amber-400">F2P Players</strong> <br/>Lantern is good, but so is every other Part 2 S-rank. Not highly recommended to get Lantern due to Lantern having less value than other Part 2 S-ranks. If you still plan to get her, at least make sure she can synergize with your existing characters.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">

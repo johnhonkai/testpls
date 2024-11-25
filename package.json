@@ -149,6 +149,9 @@
 	"rehype-slug": "^6.0.0",
 	
 		
+	"simple-git": "^3.27.0",
+	
+		
 	"svelte-motion": "^0.12.2",
 	
 		

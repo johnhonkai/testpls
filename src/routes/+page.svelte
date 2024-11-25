@@ -68,7 +68,7 @@
   // Function to handle image click
   function handleClick() {
     isClicked = true;
-    imageSrc = '/images/test3.webpp';
+    imageSrc = '/images/test3.webp';
 
     // Revert to the original image after a few seconds
     setTimeout(() => {

@@ -1,6 +1,7 @@
 ---
 title: Sparkle Skill v3C
-date: '26-Oct-2024'
+lastModifiedDate: "2024-11-24T12:00:00Z"
+
 version: '7.9'
 sortOrder: '2'
 image: "/images/sporkle.png"
