@@ -41,34 +41,7 @@
 		
 	</article>
 
-	<!-- Metadata Section -->
-	<div class=" p-4 text-slate-400">
-		<p>
-		 Views: {data.views}
-		</p>
-		<p>
-		  Created:
-		  {new Intl.DateTimeFormat('en-GB', {
-			day: '2-digit',
-			month: 'short',
-			year: 'numeric',
-			hour: '2-digit',
-			minute: '2-digit',
-			timeZoneName: 'short' // Include the timezone
-		  }).format(new Date(data.creationDate))}
-		</p>
-		<p>
-		  Last Modified:
-		  {new Intl.DateTimeFormat('en-GB', {
-			day: '2-digit',
-			month: 'short',
-			year: 'numeric',
-			hour: '2-digit',
-			minute: '2-digit',
-			timeZoneName: 'short' // Include the timezone
-		  }).format(new Date(data.lastModifiedDate))}
-		</p>
-	  </div>
+
 </div>
 
 	<!-- Table of Contents on the right (conditionally rendered) -->
