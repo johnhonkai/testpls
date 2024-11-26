@@ -11,13 +11,10 @@ export async function incrementViewCount(slug) {
   if (!docSnapshot.exists()) {
     await setDoc(docRef, {
       views: 1,
-      creationDate: serverTimestamp(), // Firestore Timestamp
-      lastModifiedDate: serverTimestamp(),
     });
   } else {
     await setDoc(docRef, {
       views: increment(1),
-      lastModifiedDate: serverTimestamp(), // Update only lastModifiedDate
     }, { merge: true });
   }
 
