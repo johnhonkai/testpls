@@ -77,9 +77,11 @@
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
                 <li class="text-sm sm:text-base">Vita provides Elemental Breach (reduces enemy's Ele Resistance) and big buffs. HoFi triggers resonance marks very fast and provides good amount of buffs. Lantern provides high hit count, and good amount of buffs.</li>
-                <li class="text-sm sm:text-base">Sparkle DPS's strongest and fastest team is Vita + HoFi. (Data based on 7.9 Resonance Vita) </li>
-                <li class="text-sm sm:text-base">Lantern high-hitcount attacks can counter Fire Kosma. Lantern + Vita / HoFi / Sena are in CN Top 100 (Data based on 7.9 Fire Kosma)</li>
-                <li class="text-sm sm:text-base">Similar to Schicksal's Imperative, during Stellar Outburst, Sparkle's resonance mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
+                <li class="text-sm  sm:text-base mt-4">Sparkle DPS's strongest and fastest team is Vita + HoFi. (Data based on 7.9 Resonance Vita) , but in Red Lotus where enemies die faster, other supports like Senadina and Thelema are close.</li>
+                <li class="text-sm sm:text-base mt-4">Lantern high-hitcount attacks can counter Fire Kosma. Lantern + Vita / HoFi / Sena are in CN Top 100 (Data based on 7.9 Fire Kosma)</li>
+                <li class="text-sm sm:text-base mt-4">Similar to Schicksal's Imperative, during Stellar Outburst, Sparkle's resonance mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
+                <li class="text-sm sm:text-base mt-4">Senadina: Reminder that Senadina also provides Breach, and when paired with Songque AstralOp, you gain +25 more initial AR. </li>
+
 
             </p>
         </div>
