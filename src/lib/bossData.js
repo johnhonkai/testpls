@@ -224,7 +224,7 @@ export const bossData = {
   },
   resovita: {
     name: "Vita - Sea's Depths", 
-    mechanics: "Has three Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp.", 
+    mechanics: "Has three Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp. Also gain dmg buff.", 
     weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Vita.png", 

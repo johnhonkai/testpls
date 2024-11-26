@@ -21,14 +21,15 @@ import voteSummary from '$lib/data/voteSummary.json'; // Adjust path as needed
 	import CardItem from '$lib/components/ui/ThreeDCardEffect/CardItem.svelte';
 
 	import { onMount } from 'svelte';
-	import { getFirestore, collection, addDoc, query, where, getDocs } from "firebase/firestore";
+	import { getFirestore, collection, addDoc, query, where, getDocs, doc, getDoc, updateDoc, arrayUnion, increment } from "firebase/firestore";
 	import { app } from "$lib/firebaseConfig";
 
 	let isMouseEntered = false;
 	let countdown = '';
 	let selectedCard = null;
 	let showModal = false;
-	let hasVoted = false;
+	let votedCategories = {}; // Object to store voting status for each category
+	let hasVotedFlag = false; // Flag to determine if the user has voted
 
 	const db = getFirestore(app);
 
@@ -133,13 +134,13 @@ onMount(() => {
   updateVoteCounts('Best Boss');
   updateVoteCounts('Sussiest Songque Moment');
 
-  const deadline = new Date('2024-12-12T16:00:00.000Z');
+  const deadline = new Date('2024-12-11T16:00:00.000Z'); // 11 December 2024, 4 PM UTC
   const updateCountdown = () => {
     const now = new Date();
     const diff = deadline.getTime() - now.getTime();
 
     if (diff <= 0) {
-      countdown = 'Voting has ended.';
+      countdown = 'Voting has ended. Results will be announced soon.';
       clearInterval(interval);
       return;
     }
@@ -157,14 +158,6 @@ onMount(() => {
 });
 	// Function to open the vote modal
 	const openVoteModal = (cardTitle, category) => {
-    const voteKey = `votedFor_${category.replace(" ", "")}`;
-    const alreadyVoted = localStorage.getItem(voteKey);
-
-    if (alreadyVoted) {
-        alert(`You have already voted for the "${category}" category.`);
-        return;
-    }
-
     selectedCard = { title: cardTitle, category }; // Store the category and title
     showModal = true;
 };
@@ -181,41 +174,48 @@ const retry = async (fn, retries = 3, delay = 500) => {
 
 const confirmVote = async () => {
   try {
-    const category = selectedCard.category;
-    const voterId = localStorage.getItem('voterId') || crypto.randomUUID(); // Ensure voterId exists
-    localStorage.setItem('voterId', voterId);
-
-    // Check if the user has already voted for this category
-    const q = query(
-      collection(db, "votes"),
-      where("voterId", "==", voterId),
-      where("category", "==", category)
-    );
-    const existingVotes = await getDocs(q);
-
-    if (!existingVotes.empty) {
-      alert("You have already voted for this category.");
+    if (!selectedCard) {
+      alert("Error: No card selected. Please try again.");
       return;
     }
 
-    // Save the vote to Firestore
-    await addDoc(collection(db, "votes"), {
-      voterId,
-      category,
-      vote: selectedCard.title,
-      timestamp: new Date()
+    const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
+    localStorage.setItem("voterId", voterId); // Store voterId in local storage
+
+    const { category, title: selectedOption } = selectedCard;
+
+    // Firestore document for the category
+    const categoryDocRef = doc(db, "newvote", category);
+    const categoryDocSnap = await getDoc(categoryDocRef);
+
+    if (!categoryDocSnap.exists()) {
+      alert("Error: Category not found in the database.");
+      return;
+    }
+
+    const categoryData = categoryDocSnap.data();
+
+    // Check if voterId already exists in voterIds
+    if (categoryData.voterIds?.includes(voterId)) {
+      alert("You have already voted in this category.");
+      return;
+    }
+
+    // Increment vote count for the selected option and add voterId to voterIds
+    await updateDoc(categoryDocRef, {
+      [selectedOption]: increment(1),
+      voterIds: arrayUnion(voterId),
     });
 
     // Mark as voted locally
-    const voteKey = `votedFor_${category.replace(' ', '')}`;
-    localStorage.setItem(voteKey, selectedCard.title);
-    hasVoted = true;
-    showModal = false;
+    votedCategories[category] = true;
+    localStorage.setItem(`voted_${category}`, selectedOption);
 
-    alert(`Thank you for voting for "${selectedCard.title}" in the "${category}" category!`);
-  } catch (err) {
-    console.error('Error confirming vote:', err);
-    alert('Herrscher of Corruption error. Try voting here: https://forms.gle/2q6DUrqrA1xaqSr9A');
+    alert(`Thank you for voting for "${selectedOption}" in the "${category}" category!`);
+    showModal = false; // Close modal
+  } catch (error) {
+    console.error("Error confirming vote:", error);
+    alert("An error occurred. Please try again later.");
   }
 };
 
@@ -229,10 +229,41 @@ const confirmVote = async () => {
 	};
 
 
-const hasVotedInCategory = (category) => {
-    const voteKey = `votedFor_${category.replace(" ", "")}`;
-    return !!localStorage.getItem(voteKey); // Returns true if the user has already voted in this category
+	const hasVotedInCategory = async (category: string): Promise<boolean> => {
+  const voterId = localStorage.getItem("voterId");
+  if (!voterId) return false;
+
+  const categoryDocRef = doc(db, "newvote", category);
+  const categoryDocSnap = await getDoc(categoryDocRef);
+
+  if (!categoryDocSnap.exists()) return false;
+
+  const categoryData = categoryDocSnap.data();
+  return categoryData.voterIds?.includes(voterId) || false;
 };
+
+
+const checkVotedStatus = async () => {
+  const categories = ["Best Valkyrie", "Best Chapter", "Best Boss", "Sussiest Songque Moment"];
+  const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
+  localStorage.setItem("voterId", voterId); // Save voterId in localStorage
+
+  for (const category of categories) {
+    votedCategories[category] = await hasVotedInCategory(category);
+  }
+};
+
+
+  // Run on component mount
+  onMount(() => {
+    checkVotedStatus();
+  });
+
+  $: if (selectedCard) {
+    hasVotedInCategory(selectedCard.category).then((voted) => {
+      hasVotedFlag = voted;
+    });
+  }
 </script>
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
@@ -266,6 +297,7 @@ const hasVotedInCategory = (category) => {
 						</CardItem>
 						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Valkyrie")}>
+
 								VOTE
 							</button>
 						</CardItem>
@@ -392,14 +424,14 @@ const hasVotedInCategory = (category) => {
             <button
                 class="btn btn-primary"
                 on:click={confirmVote}
-                disabled={hasVotedInCategory(selectedCard.category)}
-            >
+				disabled={!selectedCard || hasVotedFlag}
+				>
                 Yes
             </button>
             <button class="btn btn-secondary" on:click={cancelVote}>No</button>
         </div>
         <!-- Display message if the user has already voted -->
-        {#if hasVotedInCategory(selectedCard.category)}
+        {#if hasVotedFlag}
             <p class="text-red-500 text-sm mt-2">You have already voted in this category.</p>
         {/if}
     </div>
