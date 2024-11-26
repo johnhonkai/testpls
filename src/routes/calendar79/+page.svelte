@@ -536,12 +536,12 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="" date="TBA" weather="TBA" />
-                    <BossCard image="" date="TBA" weather="TBA" />
+                    <BossCard image="/images/Bosses/Pishacha.web" date="Dec 20" weather="Bleed" />
+                    <BossCard image="/images/Bosses/RPC-6626.web" date="Dec 23" weather="Stellar" />
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="" date="TBA"/>
+                        <BossCard image="" date="Dec 24"/>
                         <BossCard />
                         <BossCard />
                     </div>
