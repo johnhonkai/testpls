@@ -153,6 +153,8 @@ async function loadAstralOpData(astralOpName, type) {
   
   // Calculate total AR for Initial AR based on conditions
   function calculateInitialAr(data, rank) {
+
+    
   return data.reduce((total, entry) => {
     // Exclude AR entries that exceed the selected rank
     if (rankOrder[entry.rank] > rankOrder[rank]) return total;
@@ -535,8 +537,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 <!-- Character Selection Modal -->
 {#if showModal}
-  <div class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center">
-    <div class="bg-gray-800 p-6 rounded-lg max-w-xl w-full">
+  <div class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center overflow-y-auto">
+    <div class="bg-gray-800 p-6 rounded-lg max-w-xl w-full max-h-[80vh] overflow-y-auto">
       <h3 class="text-lg font-semibold text-white mb-4">
         {#if selectedSlot === 'astralOp'}
           Select an AstralOp
@@ -560,7 +562,6 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             <img src={character.image} alt={character.name} class="w-16 h-16 object-cover rounded-md mb-1" />
             <span class="text-xs text-gray-300">{character.name}</span>
           </button>
-          
         {/each}
       </div>
 
@@ -568,6 +569,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     </div>
   </div>
 {/if}
+
 
 
 {#if slots.astralOp && slots.leader && slots.leader.astralRing}
