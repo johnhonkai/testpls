@@ -938,7 +938,7 @@ function selectTabMobile(event) {
                 <td>
                   Leader Skill:<br/>
                     - Team Shadow Star ATK gain Total DMG +22% ➔ 24%<br/>
-                    - During AR Charging: Valk on the field gain Physical DMG +22% ➔ 251%
+                    - During AR Charging: Valk on the field gain Physical DMG +22% ➔ 25%
                     <br/>
                     - Enemies take 26% ➔ 27% more Physical DMG from Jovial Deception (independent multiplier).<br/>
 
@@ -1008,12 +1008,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>For every Shadow Frame recalled / Odd Thought consumed, weapon skill Crit Rate +5.5% ➔ 6%
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -1023,10 +1020,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>UNLOCK: During Stellar Outburst, Combo ATK is enhanced, deal additional 9x10% + 50% ATK of Physical DMG.
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -1038,13 +1034,12 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill:<br/>
+              - Team Shadow Star ATK gain Total DMG +22% ➔ 24%<br/>
+              - During AR Charging: Valk on the field gain Physical DMG +22% ➔ 25%<br/>
+              - Enemies take 26% ➔ 27% more Physical DMG from Jovial Deception (independent multiplier).
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -1054,11 +1049,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>1. UNLOCK: When entering SO, deal 200% ATK of Physical DMG to all enemies in front of you. When AR Wheel of Destiny is active, deal additional 200% ATK of Physical DMG.<br/>
+              2. UNLOCK: Weapon skill will restore 3.5 sp for every Shadow Frame recalled or Odd Thought consumed. For every Shadow Frame recalled, trigger 0.5s of time fracture, max 3s of time fracture can be triggered.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture</p>
           </div>
         </div>
 
@@ -1068,8 +1062,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>When AR is not activated: Crit DMG +21% ➔ 26%, Physical DMG +21% ➔ 26%, and enemies take +21% ➔ 26% more Physical DMG from Jovial Deception (independent multiplier).</p>
+            <p class="mt-2"><strong>Good for:</strong> Part 1 DPS</p>
           </div>
         </div>
 
@@ -1079,8 +1073,14 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>
+              When AR Wheel of Destiny is active:<br/>
+              - During SO: Self Physical and TDM +5.5% ➔ 7%<br/>
+- During SO: Enemies take 5.5% ➔ 7% more Elemental and Physical DMG from valks with WoDestiny trait.<br/>
+- During AR Charging: Self Total DMG +7.5% ➔ 10% 
+
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, WoD Support</p>
           </div>
         </div>
 
@@ -1091,9 +1091,9 @@ function selectTabMobile(event) {
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
             <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
+              - Team Shadow Star ATK gain Total DMG +24% ➔ 26%<br/>
+              - During AR Charging: Valk on the field gain Physical DMG +25% ➔ 28%<br/>
+              - Enemies take 27% ➔ 28% more Physical DMG from Jovial Deception (independent multiplier).</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1104,11 +1104,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	1. Max limit of Ult's additional Physical DMG is increased to 1300% (max 153 sp for max dmg).<br/>
+              2. Team QTE gain Total DMG +18%. <br/>
+              3. When WoD is active: After using Ult, you gain AR meter equal to 5% of sp consumed by Ult. When Jovial Deception is the leader, restore additional 3% of AR meter. Max 12 points of AR meter can be recovered from one Ult. In SO: Ult CD -3 seconds.
+            <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
         </div>

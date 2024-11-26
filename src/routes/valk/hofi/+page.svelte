@@ -1020,12 +1020,9 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>Enemies take 17% ➔ 20% more Fire DMG from HoFi (independent multiplier)	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -1035,10 +1032,10 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>1. Time Flint: When Combo ATK hits, enemies take 30% ➔ 35% more Fire DMG for 15s. Moon Blade: When Combo ATK hits, recover 12 ➔ 16 sp.<br/>
+                2. Gaining Descent stack grants Elemental Breach +1.65% ➔ +1.95% for 20s, max 8 stacks (+13.2% ➔ +15.6%).
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS, SP Regen</p>
             </div>
           </div>
 
@@ -1050,13 +1047,9 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill: Team Elemental DMG +35% ➔ 40%. When Mei is on the team, the Mei valk and HoFi gain extra Elemental DMG +35% ➔ 40%.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS            </p>
           </div>
         </div>
 
@@ -1066,11 +1059,10 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>	1. UNLOCK: Basic ATK and Combo ATK gain Total DMG +20%. <br/>
+              2. Fire DMG +32.5% ➔ 40%. During Absolute Time Fracture, Fire DMG +32.5% ➔ 40%.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -1080,8 +1072,12 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>- When HoFi's entry via HoTr's Joint Bursting hits, enemies take 6.9% ➔ 8% more Total DMG for 15s. <br/>
+              - When HoFi's entry via HoO's Joint Bursting hits, HoFi recovers 13 ➔ 16 sp. <br/>
+              - After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
+
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, HoO Support, SP Regen</p>
           </div>
         </div>
 
@@ -1091,7 +1087,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
+            <p>	Gaining Descent stack grants Elemental Breach +1.95% ➔ +2.25% for 20s, max 8 stacks (+15.6% ➔ +17.76%).</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1102,10 +1098,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
+            <p>Leader Skill:Team Elemental DMG +40% ➔ 45%. When Mei is on the team, the Mei valk and HoFi gain extra Elemental DMG +40% ➔ 45%.</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1116,11 +1109,8 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	Total DMG +10%. Enemies take 5.20% more Total DMG from Mei valks and HoFi.	</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, HoO Support
             </p>
           </div>
         </div>

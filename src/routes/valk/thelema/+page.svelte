@@ -976,7 +976,7 @@ function selectTabMobile(event) {
 <br/>- During Stellar Outburst: WoDestiny valks gain Elemental and Physical DMG +27% ➔ 30%
 
                 </td>
-                <td class="p-3">Recommended!<br>1. WoDestiny Support<br>2. World Star Support<br/>3. Future AR Support</td>
+                <td class="p-3">DPS<br>WoDestiny Support</td>
               </tr>
               <!-- Sample Row 2 -->
               <tr>
@@ -1060,12 +1060,12 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>When AR Wheel of Destiny is activated:<br/>
+                - Enemies take +7.5% ➔ 10% more Physical and Elemental DMG from WoDestiny valks<br/>
+                - During AR Charging: WoDestiny valks gain Elemental and Physical DMG +7.5% ➔ 10%<br/>
+                - During Stellar Outburst: WoDestiny valks gain Elemental and Physical DMG +27% ➔ 30%
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny Support</p>
             </div>
           </div>
 
@@ -1075,10 +1075,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>After casting Ult, restore full Banquet. For every Banquet restored, the next Moment of Indulgence deals 100% ATK of Ice DMG.
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> Big upgrade to rotation and dmg for dps and support roles.</p>
             </div>
           </div>
 
@@ -1090,13 +1089,12 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill:<br/>
+              - Team Shadow Star ATK Total DMG +18% ➔ 22%<br/>
+              - During AR Charging: Valks on the field gain Ice DMG +16% ➔ 20%<br/>
+              - During Stellar Outburst: Enemies take 12% ➔ 15% more Ice DMG from valks on the field (independent multiplier)
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -1106,11 +1104,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>1. UNLOCK: Total DMG +6%. Hold-Weapon skill inflicts 6 additional points of freeze trauma.<br/>
+              2. UNLOCK: When Astral Ring is active, if Thelema is on field, off-field Valkyries gain Total DMG +10%. If Thelema is off-field, Valkyries on the field gain Total DMG +10%.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support, Bigger freeze trauma</p>
           </div>
         </div>
 
@@ -1120,8 +1117,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>WSelf Shield DMG +15% ➔ 20%. When AR Wheel of Destiny is active: Team Shield DMG +65% ➔ 80%. During Stellar Outburst: Self Total DMG +7.5% ➔ 10%.</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny Support</p>
           </div>
         </div>
 
@@ -1131,8 +1128,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>When AR is inactive, Thelema gain Ice DMG and Total DMG +30% ➔ 33% , gain +12% ➔ 16% more against BIO enemies, and enemies take 27% ➔ 30% more Ice DMG from Thelema (independent multiplier).</p>
+            <p class="mt-2"><strong>Good for:</strong> Part 1 DPS</p>
           </div>
         </div>
 
@@ -1143,9 +1140,9 @@ function selectTabMobile(event) {
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
             <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
+              - Team Shadow Star ATK Total DMG +22% ➔ 26%<br/>
+              - During AR Charging: Valks on the field gain Ice DMG +20% ➔ 24%<br/>
+              - During Stellar Outburst: Enemies take 15% ➔ 18% more Ice DMG from valks on the field (independent multiplier)</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1156,11 +1153,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	Ice DMG +12%. After casting Moment of Indulgence, the next 6 attacks that restore Banquet gain Ice DMG +30%. </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
         </div>

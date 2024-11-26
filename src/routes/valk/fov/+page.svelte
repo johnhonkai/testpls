@@ -27,10 +27,6 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
   import likesData from '$lib/data/likes.json'; // Import local JSON data
 
   import FoVDPS from '$lib/components/lineup/fovdps.svelte';
-  import SenaDPS from '$lib/components/lineup/senadps.svelte';
-  import JDDPS from '$lib/components/lineup/jddps.svelte';
-  import LanternDPS from '$lib/components/lineup/lanterndps.svelte';
-import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
 let showLightbox = false;
@@ -899,12 +895,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>Elemental Breach +13.8% ➔ +18%	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -914,10 +907,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>Enemies take 17 ➔ 21.2% more Fire DMG from FoV (independent multiplier)
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -929,13 +921,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill: Team Fire DMG +18% ➔ 19%, Total DMG +10% ➔ 11%. Team Basic, Combo and Charged ATK gain Total DMG +32% ➔ 33.5%
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -945,11 +933,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>	1. UNLOCK: Basic ATK SEQ 4 and 5 gain Fire DMG +12%. Parry ATK can connect into Basic SEQ 4 and 5<br/>
+              2. UNLOCK: Parry ATK gain Fire DMG +25%. Switching stances resets evasion CD (has 10s CD).
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Completely changes your rotation. Recommended!</p>
           </div>
         </div>
 
@@ -959,7 +946,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
+            <p>Combo, Joint and Enhanced Joint ATK gain Fire DMG +11% ➔ 20%	</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -970,7 +957,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
+            <p>Entering the field or switching stance grants Fire DMG +12.8% ➔ 20% for 12s	</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -981,10 +968,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
+            <p>Leader Skill: Team Fire DMG +19% ➔ 20%, Total DMG +11% ➔ 12%. Team Basic, Combo and Charged ATK gain Total DMG +33.5% ➔ 35%</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -995,11 +979,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	Enemies take 21.2% ➔ 24% more Fire DMG from FoV (independent multiplier) </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
         </div>

@@ -932,12 +932,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>1. When AR World Star / WoDestiny is activated, Omniscient Skyveil grants Breach for valks with World Star / WoDestiny trait:<br/>
-                - Elemental Breach +11.5% ➔ 14%<br/>
-                - Physical Breach +37% ➔ 45%<br/>
-                2. The locked AR subskill has S1 upgrade.
+              <p>After QTE Or Basic ATK SEQ 4 hits, enemies take 17% ➔ 20% more Lightning DMG from HoO (independent multiplier)
               </p>
-              <p class="mt-2"><strong>Good for:</strong> WoDestiny Support, World Star Support, Future AR Support. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -947,10 +944,10 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>1. Enemies take 37% ➔ 40% more Lightning DMG from LP (independent multiplier). If there are 2/3 team members with AR Rite of Oblivion, LP gain Total DMG and Lightning DMG +18.5/64.9% ➔ 20/70%<br/>
-                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds.
+              <p>1. UNLOCK: Reduce evasion CD by 2.5s. Evasion deals additional 200% ATK of Lightning DMG. Casting Malice Expunged 2 times grants 1 stack of Origin's Shadow, and the next evasion skill consumes 1 stack of Origin's Shadow to reduce evasion cd by another 5s. Gain 1 stack of Origin's Shadow on entry. <br/>
+                2. UNLOCK: Weapon skill trigger 3 second time fracture, trigger interval 2 seconds. 2. Enemies take 29% ➔ 33% more Lightning DMG from HoO
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time Fracture. Recommended!</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS. Recommended!</p>
             </div>
           </div>
 
@@ -962,13 +959,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>1. Leader Skill:<br/>
-              - Team Total DMG +8% ➔ 10%<br/>
-              - Team Elemental DMG +8% ➔ 10%<br/>
-              - Enemies take +4% ➔ 5% more Total DMG<br/>
-              2. Enemies take 12% ➔ 15% more Elemental DMG and 9% ➔ 11% more Physical DMG from valks with Omniscient Skyveil
+            <p>Leader Skill: Team Elemental DMG +24% ➔ 27%. Initial sp +35 ➔ 40. When Kiana is on the team, the Kiana valk and HoO gain additional initial sp +35 ➔ 40.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support, Arena</p>
           </div>
         </div>
 
@@ -978,11 +971,10 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
+            <p>1. UNLOCK: Ult Lightning DMG +80%. Final slash deals additional 200% ATK of Lightning DMG. <br/>
+              2. Joint Bursting makes enemies take 8.3% ➔ 10% more Total DMG for 10s. Casting Malice Expunged grants team Total DMG +8.3% ➔ 10% for 10s.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
           </div>
         </div>
 
@@ -992,7 +984,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
+            <p>Lightning DMG +35% ➔ 40%. Combo and Ult gain Lightning DMG +50% ➔ 60%	</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1003,7 +995,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
+            <p>On hit, Malice Expunged restore 4 ➔ 5 sp for HoO, HoO gain Total DMG +30% ➔ 35%, and take 25% ➔ 30% less Total DMG.</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1014,11 +1006,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>Leader Skill: Team Elemental DMG +27% ➔ 30%. Initial sp +40 ➔ 45. When Kiana is on the team, the Kiana valk and HoO gain additional initial sp +40 ➔ 45.
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support, Arena</p>
           </div>
         </div>
 
@@ -1028,11 +1018,8 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
+            <p>	Total DMG +10%. Enemies take 5.20% more Total DMG from Kiana valks and HoO.	</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support
             </p>
           </div>
         </div>
