@@ -1,5 +1,5 @@
 import viewsData from '$lib/data/views.json'; // Adjust the path as needed
-import { incrementViewCount } from '$lib/firebaseCounter'; // Increment function
+import { incrementViewCount } from '$lib/firebasecounter'; // Increment function
 
 export async function load({ params }) {
   const post = await import(`../${params.slug}.svx`);
