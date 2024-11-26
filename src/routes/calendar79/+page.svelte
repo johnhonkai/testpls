@@ -536,14 +536,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="/images/Bosses/Pishacha.web" date="Dec 20" weather="Bleed" />
-                    <BossCard image="/images/Bosses/RPC-6626.web" date="Dec 23" weather="Stellar" />
+                    <BossCard image="/images/Bosses/Pishacha.webp" date="Dec 20" weather="Bleed" bosspage="/boss?pishacha"/>
+                    <BossCard image="/images/Bosses/RPC-6626.webp" date="Dec 23" weather="Stellar" bosspage="/boss?stellarrpc"/>
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="" date="Dec 24"/>
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/Vita.png" date="Dec 24"/>
+                        <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp"/>
+                        <BossCard image="/images/Bosses/Alien Guard.webp"/>
                     </div>
             </div>
 

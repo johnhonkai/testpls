@@ -34,7 +34,9 @@ export const weatherList = {
     {id: 'sdepernay', name: 'Meteroid: Epernay'}
   ],
   stellar: [
-    {id: 'stellarassaka', name: 'Assaka'}
+    {id: 'stellarassaka', name: 'Assaka'},
+    {id: 'stellarrpc', name: 'RPC-6626'},
+
   ],
   starless: [
     {id: 'starbenares', name: 'Benares: Ice'},
@@ -43,7 +45,7 @@ export const weatherList = {
   ],
   bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
-    {id: 'pishacha', name: 'Pischacha'},
+    {id: 'pishacha', name: 'Pishacha'},
   ],
   ignite: [
     {id: 'ignitehov', name: 'Herrscher of the Void'}
@@ -78,7 +80,7 @@ export const bossData = {
   typeandrius: {
     name: 'Dominator of Wolves',
     mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
-    weakness: 'Immune to Ice DMG.',
+    weakness: 'Ice (Immune)',
     typeicon: "images/type/IconBIO.png",
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Counter: Type counter effect is 20% stronger."
@@ -111,7 +113,7 @@ export const bossData = {
   rangedhepa: {
     name: 'Hephaestus', 
     mechanics: 'Has huge freeze trauma.', 
-    weakness: 'Fire Immunity, Lightning (M), Physical (M)', 
+    weakness: 'Fire (Immune), Lightning (M), Physical (M)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/Hephaestus SSS.webp", 
     weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
@@ -140,6 +142,14 @@ export const bossData = {
     bosspic: "images/Bosses/Saha Assaka.webp", 
     weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +10%.", 
   },
+  stellarrpc: {
+    name: 'RPC-6626', 
+    mechanics: 'First wave has 3 Mech mobs. Transition phase has 30 hitcount hp.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/RPC-6626.webp", 
+    weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +10%.", 
+  },
   starbenares:{
     name: 'Benares: Ice', 
       mechanics: 'First wave has creepers with paralyze trauma. When Astral Ring is not activated, Total DMG +20%', 
@@ -159,7 +169,7 @@ export const bossData = {
   starandrius:{
     name: 'Dominator of Wolves', 
       mechanics: 'When AR is not activated, Total DMG +20%. Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield.', 
-      weakness: 'Immune to Ice DMG', 
+      weakness: 'Ice (Immune)', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Dominator of Wolves.webp", 
       weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
@@ -871,6 +881,27 @@ export const teamData = {
         rank: '16',
         pct: '51%',
         bottext: "Highest Score: 756"
+      },
+    ]},]
+  },
+  pishacha: {
+    teamDataSets: [
+    {
+      tabname: "v7.9 CN",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Susannah Valkyrie Quicksand.png", "images/valkportrait/Griseo Cosmic Expression.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_bunny.png"],
+        pct: '98%',
+        bottext: "Highest Score: 805 "
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Susannah Valkyrie Quicksand.png", "images/valkportrait/Griseo Cosmic Expression.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_dudu.png"],
+        rank: '55',
+        pct: '2%',
+        bottext: "Highest Score: 766"
       },
     ]},]
   },

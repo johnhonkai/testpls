@@ -47,7 +47,7 @@
     </select>
   </div>
 
-  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="grid gap-4 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
     {#each filteredPosts as post} <!-- Use filteredPosts here -->
       <a href={`/betanews/${post.slug}`} data-sveltekit-preload-data="off" class="block p-6 bg-base-200 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl will-change-transform ">
         
@@ -55,11 +55,11 @@
         <div class="flex items-center space-x-4">
           
           <!-- Left side image -->
-          <img src={post.image} alt={`Preview of ${post.title}`} class="w-20 h-20 rounded-lg object-cover">
+          <img src={post.image} alt={`Preview of ${post.title}`} class="w-14 h-14 sm:w-20 sm:h-20 rounded-lg object-cover">
           
           <!-- Right side post details -->
           <div>
-            <h2 class="text-2xl font-semibold text-secondary mb-1">{post.title}</h2>
+            <h2 class="text-lg sm:text-2xl font-semibold text-secondary mb-1">{post.title}</h2>
             <p class=" text-slate-300">Version {post.version}</p>
 
           </div>
