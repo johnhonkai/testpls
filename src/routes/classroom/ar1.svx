@@ -10,7 +10,7 @@ customSlug: "ar1"
 All valkyries from version 7.3 onwards are called Part 2 valkyries. They use a new Astral Ring (AR) system. This completely changes the valk mechanics, buffs, equipment, teambuilding and gacha.
 
 ## Astral Ring Specializations
-A Part 2 valkyrie will have ONE Astral Ring Specializations. There are 12 different AR Specializations in total. Each Specialization has its own unique gameplay mechanic. Here's a summary of each one:
+A Part 2 valkyrie will have ONE Astral Ring Specialization. There are 12 different AR Specializations in total. Each Specialization has its own unique gameplay mechanic. Here's a summary of each one:
 
 
 <div class="flex items-center justify-center text-orange-300 ">
