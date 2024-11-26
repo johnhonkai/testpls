@@ -1,18 +1,12 @@
 {
-    "durandal": 0,
-    "sparkle": 0,
-    "lp": 0,
-    "jd": 0,
-    "lantern": 0,
-    "thelema": 0,
-    "sena": 0,
-    "helia": 0,
-    "coralie": 0,
-    "fov": 0,
-    "lv": 0,
-    "hofi": 0,
-    "hoo": 0,
-    "hotr": 0
-
-  }
-  
+  "coralie": 1,
+  "durandal": 3,
+  "fov": 2,
+  "hotr": 1,
+  "jd": 1,
+  "lp": 5,
+  "lv": 1,
+  "sena": 1,
+  "sparkle": 6,
+  "thelema": 1
+}

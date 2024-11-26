@@ -879,7 +879,7 @@ function selectTabMobile(event) {
 
           <div class="accordion-item">
             <div class="accordion-title" on:click={() => toggleItem(2)}>
-              <span>S2</span>
+              <span>SS</span>
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
@@ -893,7 +893,7 @@ function selectTabMobile(event) {
 
         <div class="accordion-item">
           <div class="accordion-title" on:click={() => toggleItem(3)}>
-            <span>S3</span>
+            <span>SSS</span>
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
@@ -901,71 +901,6 @@ function selectTabMobile(event) {
               2. Debuff improved: Total DMG Taken +11.5% ➔ 15%
             </p>
             <p class="mt-2"><strong>Good for:</strong> Support, Elysian Realm</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-title" on:click={() => toggleItem(4)}>
-            <span>SS</span>
-            <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
-          </div>
-          <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>1. When using Celestial Rupture, consume all Abyssal Ingestion stacks when consuming Stellar Drain. Each stack restores an additional 5 ➔ 10 AR meter.<br/>
-              2. Combo ATK Lightning DMG +14% ➔ 20% , and Elemental Breach +5.5% ➔ 8%<br/>
-              3. UNLOCK: When WoD is activated, when battle starts, the first Celestial Rupture used can consume Stellar Drain two more times. This effect lasts until you enter Stellar Outburst.
-            </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, WoDestiny support, Any AR Support</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-title" on:click={() => toggleItem(5)}>
-            <span>SS1</span>
-            <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
-          </div>
-          <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>When Celestial Rupture hits, deal additional dmg equal to ATK x105 ➔ x140 (HP Loss DMG). Restore 300 ➔ 400 HP</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-title" on:click={() => toggleItem(6)}>
-            <span>SS2</span>
-            <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
-          </div>
-          <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When LP is the leader, when there are 3 team members with AR Rite of Oblivion trait, LP's attacks gain Elemental Breach +5% ➔ 6%, and her Ult deals additional 800% ➔ 900% ATK of Lightning DMG.</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-title" on:click={() => toggleItem(7)}>
-            <span>SS3</span>
-            <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
-          </div>
-          <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill:<br/>
-              - Team Total DMG +10% ➔ 12%<br/>
-              - Team Elemental DMG +10% ➔ 12%<br/>
-              - Enemies take +5% ➔ 6% more Total DMG</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-title" on:click={() => toggleItem(8)}>
-            <span>SSS</span>
-            <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
-          </div>
-          <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	When AR is activated, at the start of battle, LP provides Sprouting Wish for the team for 25s. Sprouting Wish provides these effects:<br/>
-              - Total DMG +10%, Elemental DMG +83%, Physical DMG +64%<br/>
-              - Enemies take 15% more EleDMG and 11% more PhyDMG from valks with Sprouting Wish.<br/>
-              - When you gain Omniscient Skyveil, Sprouting Wish is disabled.<br/>
-            <p class="mt-2"><strong>Good for:</strong> Any AR Support
-            </p>
           </div>
         </div>
 
