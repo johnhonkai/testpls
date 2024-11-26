@@ -69,19 +69,20 @@
 
 	// Close modal on clicking outside
 	onMount(() => {
-		function handleClickOutside(event) {
-			const modalBox = document.querySelector('.modal-box');
-			if (showPrivacyModal || showAboutModal || showLogoutModal && modalBox && !modalBox.contains(event.target)) {
-				closeModal();
-			}
-		}
+    function handleClickOutside(event) {
+        const modalBox = document.querySelector('.modal-box');
+        if (modalBox && modalBox.contains(event.target)) {
+            return; // Click inside modal
+        }
+        closeModal(); // Click outside modal
+    }
 
-		document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
-	});
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+});
 </script>
 
 <div class="flex relative">
