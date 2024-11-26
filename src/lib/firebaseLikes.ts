@@ -9,6 +9,8 @@ const db = getFirestore(app);
  * @param {string} voterId - The user's unique voter ID.
  * @returns {Promise<boolean>} - Whether the user has already liked.
  */
+
+
 export async function hasUserLiked(charName, voterId) {
   const docRef = doc(db, "charlikes", charName);
   const docSnapshot = await getDoc(docRef);
@@ -59,3 +61,5 @@ export async function likeWithVoterId(charName, voterId) {
     return updatedDoc.data().likes;
   }
 }
+
+

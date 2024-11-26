@@ -15,11 +15,19 @@
 
 
 <script lang="ts">
+import { onMount } from "svelte";
+import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
+import { getFirestore } from "firebase/firestore";
+import { app } from "$lib/firebaseConfig";
+
+const db = getFirestore(app); // Ensure this is used for Firebase operations
+
+
+
+
     import likesData from '$lib/data/likes.json'; // Import local JSON data
 
-  import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
-  import { likeWithVoterId, hasUserLiked , getLikesFromFirestore  } from "$lib/firebaseLikes"; // Adjust path to your helper file
 
 	import Dududps from '$lib/components/lineup/dududps.svelte';
 let showLightbox = false;
@@ -145,28 +153,41 @@ function selectTabMobile(event) {
   let voterId = ""; // User's unique voter ID
 
   // Generate or fetch the voterId on component mount
-  onMount(() => {
-    voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
-    localStorage.setItem("voterId", voterId); // Save voterId in localStorage
+  onMount(async () => {
+  voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a voter ID if not present
+  localStorage.setItem("voterId", voterId); // Save voter ID in localStorage
 
-    // Check if the user has already liked this character
-    hasLiked = !!localStorage.getItem(`liked_${charName}`);
-  });
+  // Check Firebase if the user has already liked this character
+  const userHasLiked = await hasUserLiked(charName, voterId);
 
-  // Increment likes in local storage and JSON
-  async function increaseLike() {
-    if (hasLiked) return; // Prevent multiple likes
-
-    // Increment local counter
-    durandallikes++;
-
-    // Mark as liked in localStorage
-    localStorage.setItem(`liked_${charName}`, "true"); 
-    hasLiked = true;
-
-    // Update the likes.json file (this would be done during a manual update process)
-    console.log(`Character "${charName}" liked! New count: ${durandallikes}`);
+  if (userHasLiked) {
+    hasLiked = true; // Update state to disable the button
+    localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
   }
+});
+// Handle Like Button Click
+async function increaseLike() {
+  try {
+    if (hasLiked) {
+      console.log("User has already liked this character.");
+      return;
+    }
+
+    durandallikes++; // Increment the local counter for display purposes
+
+    // Call likeWithVoterId to send the like to Firebase
+    await likeWithVoterId(charName, voterId);
+
+    // Update local state to prevent multiple likes
+    hasLiked = true;
+    localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
+    console.log(`Successfully liked "${charName}".`);
+  } catch (error) {
+    
+    durandallikes--; // Revert the local counter in case of an error
+    console.error("Error liking the character:", error);
+  }
+}
 </script>
 
 
@@ -191,22 +212,22 @@ function selectTabMobile(event) {
   <img src="/images/valkfull/dudu.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-16;"/> 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button
-      on:click={increaseLike}
-      class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-             {hasLiked ? '' : 'hover:bg-blue-700'}">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-5 h-5"
-      >
-        <path
-          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-        />
-      </svg>
-      <span class="text-white font-semibold">{durandallikes}</span>
+        on:click={increaseLike}
+        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
+               {hasLiked ? '' : 'hover:bg-blue-700'}">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-5 h-5"
+        >
+            <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            />
+        </svg>
+        <span class="text-white font-semibold">{durandallikes}</span>
     </button>
-  </div>
+</div>
 
 </div>
 

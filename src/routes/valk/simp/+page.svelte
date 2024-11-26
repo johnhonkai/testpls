@@ -19,7 +19,12 @@
     import { goto } from '$app/navigation';
     import likesData from '$lib/data/likes.json'; // Import local JSON data
 
-  import { onMount } from 'svelte';
+    import { onMount } from "svelte";
+import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
+import { getFirestore } from "firebase/firestore";
+import { app } from "$lib/firebaseConfig";
+
+const db = getFirestore(app); // Ensure this is used for Firebase operations
   import Charred from '$lib/components/charpctred.svelte';
   import SimpDPS from '$lib/components/lineup/simpdps.svelte';
   import SenaDPS from '$lib/components/lineup/senadps.svelte';
@@ -156,29 +161,40 @@ function selectTabMobile(event) {
   let voterId = ""; // User's unique voter ID
 
   // Generate or fetch the voterId on component mount
-  onMount(() => {
-    voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a new voterId if not already stored
-    localStorage.setItem("voterId", voterId); // Save voterId in localStorage
+  onMount(async () => {
+  voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a voter ID if not present
+  localStorage.setItem("voterId", voterId); // Store voter ID locally
 
-    // Check if the user has already liked this character
-    hasLiked = !!localStorage.getItem(`liked_${charName}`);
-  });
+  // Check Firebase if the user has already liked this character
+  const userHasLiked = await hasUserLiked(charName, voterId);
 
-  // Increment likes in local storage and JSON
+
+  if (userHasLiked) {
+    hasLiked = true; // Update state to disable the button
+    localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
+  }
+});
   async function increaseLike() {
-    if (hasLiked) return; // Prevent multiple likes
+  try {
+    if (hasLiked) {
+      console.log("User has already liked this character.");
+      return;
+    }
 
-    // Increment local counter
     simplikes++;
 
-    // Mark as liked in localStorage
-    localStorage.setItem(`liked_${charName}`, "true"); 
-    hasLiked = true;
+    // Call likeWithVoterId to send the like to Firebase
+    await likeWithVoterId(charName, voterId);
 
-    // Update the likes.json file (this would be done during a manual update process)
-    console.log(`Character "${charName}" liked! New count: ${simplikes}`);
+    // Update local state to prevent multiple likes
+    hasLiked = true;
+    localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
+
+    console.log(`Successfully liked "${charName}".`);
+  } catch (error) {
+    console.error("Error liking the character:", error);
   }
-  
+}
   
 </script>
 
