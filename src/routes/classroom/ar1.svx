@@ -28,7 +28,7 @@ A Part 2 valkyrie will have ONE Astral Ring Specialization. There are 12 differe
 When a Part 2 valkyrie is set as leader, it will activate the AR Specialization.
 
 ## Astral Ring Attribute
-Each Astral Ring Specialization has a connected **Astral Ring Attributes** (also called AR tags). You can see this in valk filter menu, or by clicking the AR icons in valk menu.
+Each Astral Ring Specialization has a connected **Astral Ring Attribute** (also called AR tag). You can see this in valk filter menu, or by clicking the AR icons in valk menu.
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/Tmyke4u.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
@@ -54,7 +54,7 @@ AR tags determine two things:
 The only exception to these rules is Rite of Oblivion (RoO). 
 1. RoO characters have buffs that do not require specific AR activation, so they can support any AR.
 2. However, **without the matching AR tag,** they can't activate the AR unique mechanic and certain buffs.
-3. Leader skills require three members with specific AR tags to activate buffs. Rite of Oblivion characters count as a valid member **even without the required AR tag.**
+3. Other AR specializations' leader skills require three members with specific AR tags to activate buffs. Rite of Oblivion characters count as a valid member **even without the required AR tag.**
 
 Here is an example with Coralie. Coralie is a RoO character with Domain Resonance tag.
 <div class="flex items-center justify-center text-orange-300 ">
