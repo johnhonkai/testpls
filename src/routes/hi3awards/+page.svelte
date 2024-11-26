@@ -182,12 +182,33 @@ const retry = async (fn, retries = 3, delay = 500) => {
 const confirmVote = async () => {
   try {
     const category = selectedCard.category;
-    const voterId = localStorage.getItem('voterId') || crypto.randomUUID();
+    const voterId = localStorage.getItem('voterId') || crypto.randomUUID(); // Ensure voterId exists
     localStorage.setItem('voterId', voterId);
 
+    // Check if the user has already voted for this category
+    const q = query(
+      collection(db, "votes"),
+      where("voterId", "==", voterId),
+      where("category", "==", category)
+    );
+    const existingVotes = await getDocs(q);
+
+    if (!existingVotes.empty) {
+      alert("You have already voted for this category.");
+      return;
+    }
+
+    // Save the vote to Firestore
+    await addDoc(collection(db, "votes"), {
+      voterId,
+      category,
+      vote: selectedCard.title,
+      timestamp: new Date()
+    });
+
+    // Mark as voted locally
     const voteKey = `votedFor_${category.replace(' ', '')}`;
     localStorage.setItem(voteKey, selectedCard.title);
-
     hasVoted = true;
     showModal = false;
 
@@ -197,6 +218,7 @@ const confirmVote = async () => {
     alert('Herrscher of Corruption error. Try voting here: https://forms.gle/2q6DUrqrA1xaqSr9A');
   }
 };
+
 
 
 
