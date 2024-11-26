@@ -200,10 +200,10 @@
 				Marisa Honkai F2P has been playing Honkai Impact for a few years. Some of his in-game achievements include: 
 			</p>
 			<ul class="list-disc ml-6 text-sm sm:text-base px-2">
-				<li> <span class="underline"><a href="https://www.youtube.com/watch?v=MoZSgbbXuE8" target="_blank">Top 1 Darkbolt Jonin Myriad in hardest server SEA</a></span></li>
-				<li> Top 15 Lantern Myriad in hardest server SEA I forgot was it tank or kasumi</li>
-				<li> uh what else, i guess occasional top 50 or 100 i should stay in nirv and upload nirvana run more often </li>
-				<li> <span class="underline"><a href="https://www.youtube.com/watch?v=H6RBW8dzVwY" target="_blank">Promoted from Agony with just White Comet</a></span></li>
+				<li class="text-sm sm:text-base"> <span class="underline"><a href="https://www.youtube.com/watch?v=MoZSgbbXuE8" target="_blank">Top 1 Darkbolt Jonin Myriad in hardest server SEA</a></span></li>
+				<li class="text-sm sm:text-base"> Top 15 Lantern Myriad in hardest server SEA I forgot was it tank or kasumi</li>
+				<li class="text-sm sm:text-base"> uh what else, i guess occasional top 50 or 100 i should stay in nirv and upload nirvana run more often </li>
+				<li class="text-sm sm:text-base"> <span class="underline"><a href="https://www.youtube.com/watch?v=H6RBW8dzVwY" target="_blank">Promoted from Agony with just White Comet</a></span></li>
 
 			</ul>
 
@@ -221,7 +221,7 @@
 				</p>
 	
 			<p class="text leading-relaxed mb-6 text-sm sm:text-base">
-				So I decided to do it myself. 🔥🔥🥵  <br/>
+				So I decided to do it myself. 🔥🔥🥵  <br/> <br/>
 				Right now the site looks fine, but I'm pretty sure stuff will break once I add more stuff. This is worse than Couatl.
 			</p>
 
