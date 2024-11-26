@@ -182,8 +182,8 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sparkle<br/>First ten pulls are 50% off</span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto h-full">
-                            <img src="https://i.imgur.com/K5HkEO7.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                            <img src="https://i.imgur.com/K5HkEO7.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
                     </div>                 
                 </div>
@@ -197,7 +197,7 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Sparkle Equipment</span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto h-full">
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
                             <img src="https://i.imgur.com/6FkUYcQ.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>                 
@@ -337,7 +337,7 @@
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">HI3 x HSR Collab Event<br/>Honkai: A Fool's Hand</span>
                     <!-- Image positioned on the right side -->
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/S7FM984.png" alt="Lone Planetfarer" class="w-full h-full object-cover " />
                     </div>
                 </div>
@@ -354,7 +354,7 @@
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free Herrscher of Human: Ego</span>
                     <!-- Image positioned on the right side -->
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/gc31Qus.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -371,7 +371,7 @@
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Freebies: 5 Battlesuit Cards, 5 Equipment Cards + Sparkle Fumo,<br/>Sparkle Stigma Box, Crystal, Asterite, AE Imaginon</span>
                     <!-- Image positioned on the right side -->
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/oNbUWsd.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Topup Event: Topup ~100 usd to get up to 3 Dreamweaver stamps /<br/> 3 HoFi stamps / 240 AL + other mats</span>
                     <!-- Image positioned on the right side -->
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-42 h-full">
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/XsChDpd.png" alt="Lone Planetfarer" class="w-full h-full object-cover " />
                     </div>
                 </div>
