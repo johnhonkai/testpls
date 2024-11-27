@@ -261,7 +261,7 @@ function selectTabMobile(event) {
       <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-violet-500 outline-1 bg-violet-950/75 rounded-lg p-2 backdrop-blur-sm">
         <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
         <img src="/images/type/IconQUA.png" alt="Mech" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+        <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
         <img src="/images/artype/ar world star.png" alt="ar" class="w-auto h-8 md:h-10" />
       </div>
     </div>
