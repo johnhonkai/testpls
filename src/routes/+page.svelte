@@ -15,6 +15,42 @@
 </svelte:head>
 
 <script lang="ts">
+  const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
+  if (!apiKey) {
+  console.error("YouTube API Key is missing!");
+}
+
+const channelId = 'UC0S7OwBRuCYyeZrM6dq9Ykg';
+
+let videoLink = "https://www.youtube.com/@MarisaHonkai"; // Default fallback link
+  let thumbnailSrc = "https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/news3.webp"; // Default fallback image
+  let title = "Latest Video From Earth"; // Default fallback title
+
+  async function fetchLatestVideo() {
+    try {
+      const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&order=date&maxResults=1`;
+
+      const response = await fetch(apiUrl);
+      if (!response.ok) throw new Error("Failed to fetch YouTube data");
+
+      const data = await response.json();
+
+      // Get the first video from the response
+      const video = data.items[0];
+      if (video) {
+        const videoId = video.id.videoId;
+        videoLink = `https://www.youtube.com/watch?v=${videoId}`;
+        thumbnailSrc = video.snippet.thumbnails.high.url;
+        title = video.snippet.title;
+      }
+    } catch (error) {
+      console.error("Error fetching YouTube data:", error);
+    }
+  }
+
+  // Fetch the latest video on component mount
+  fetchLatestVideo();
+
   import { onMount } from 'svelte';
 
   // IDs of images to wait for
@@ -264,9 +300,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=1SdxUh7s0kk" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href={videoLink} target="_blank" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/news3.webp" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src={thumbnailSrc} alt="Latest Video Thumbnail" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

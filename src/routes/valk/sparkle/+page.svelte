@@ -489,7 +489,7 @@ function selectTabMobile(event) {
                   </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white">Volatile Sparkler + Sparkle: Thousand-Faced Maestro Stigma</h4>
+              <h4 class="text-base sm:text-base text-white text-center">Volatile Sparkler + Sparkle: Thousand-Faced Maestro Stigma</h4>
               </div>
 
               <div class="p-4 mt-4 bg-gradient-to-r from-rose-950/75 to-rose-900/75 rounded">
@@ -520,12 +520,12 @@ function selectTabMobile(event) {
                 
                   <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
   
-                      <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
                           <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/09/06/50494840/2841a5bbda40fdb327b1d584d4472561_6166052678851258594.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                       </div>
   
                   </div>  
-                  <p class="text-sm sm:text-base text-white">Skyveil Feathers</p>
+                  <p class="text-sm sm:text-base text-white text-center">Skyveil Feathers</p>
                   </div>
 
 
@@ -533,30 +533,30 @@ function selectTabMobile(event) {
                 
                   <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
   
-                      <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
                           <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/15/73749426/7f0ca6d81d2e7ff8405e13c5a7206a83_4150025281676061990.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                       </div>
   
                   </div>  
-                  <p class="text-sm sm:text-base text-white">Red Star Thunderbolt</p>
+                  <p class="text-sm sm:text-base text-white text-center">Red Star Thunderbolt</p>
                 </div>
 
                 <div class="flex flex-col justify-center items-center">
                 
                   <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
   
-                      <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
                           <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/15/73749426/e4a04240fc1beb3486b1edf52fc8e686_1933481799434645907.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                       </div>
   
                   </div>  
-                  <p class="text-sm sm:text-base text-white">Life of Pi</p>
+                  <p class="text-sm sm:text-base text-white text-center">Life of Pi</p>
                 </div>
                 
               </div>
               <div class="p-4 mt-4 bg-gradient-to-r from-gray-800/75 to-gray-700/75 rounded">
                 <p class="text-sm sm:text-base text-left ">
-                  For Sparkle, these weapons are around equal performance - equally horrible. As mentioned above, signature weapon Volatile Sparkler gives timestop to  [I am Elation] skill, which prevents you from missing out on important dmg buff duration, and as dps, allows Sparkle to do her full attack sequence before Stellar Outburst ends.
+                  For Sparkle, these weapons are around equal performance - equally average. As mentioned above, signature weapon Volatile Sparkler gives timestop to  [I am Elation] skill, which prevents you from missing out on important dmg buff duration, and as dps, allows Sparkle to do her full attack sequence before Stellar Outburst ends.
                 </p>
 
               </div>
