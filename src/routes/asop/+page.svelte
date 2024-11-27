@@ -510,7 +510,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           ✕
         </button>
       {:else}
-        <div class="bg-gray-700 w-full h-full flex items-center justify-center text-gray-400 rounded-md text-center">
+        <div class="bg-gray-700 w-full h-full flex items-center justify-center text-gray-400 rounded-md text-center text-sm sm:text-base">
           {slotNames[slot] || "Select"}
         </div>
       {/if}
