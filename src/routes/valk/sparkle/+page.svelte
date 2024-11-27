@@ -908,21 +908,23 @@ function selectTabMobile(event) {
               <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
+
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
         
           <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
               <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
             
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">2</p>
             </div>
+            
 
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -932,13 +934,7 @@ function selectTabMobile(event) {
 
           </div>
 
-          <div class="p-2 mt-3 rounded" >
-            <p class="text-sm sm:text-base text-left ">
 
-                <li class="text-sm sm:text-base"> Sparkle can use a lot of signets since she casts almost all skills: combo atk, weapon skill, evasion skill, and Ult</li>
-
-            </p>
-            </div>
 
             <div class="divider divider-neutral"></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
