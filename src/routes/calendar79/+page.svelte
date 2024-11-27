@@ -109,6 +109,12 @@
             image: 'https://i.imgur.com/2u8A8ol.png'
 
         },
+        "Rebate": {
+            title: "REBATE FOCUSED SUPPLY",
+            description: "<li>Duration: 2 weeks</li><li>UP: Bloodied Casket, Sweet Dreams</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon and Stigma off rates not announced yet</li>",
+
+
+        },
     };
 
 
@@ -271,6 +277,40 @@
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ADV SUPPLY</span>
+                    </div>    
+                    <div class="col-span-4"></div>                
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Lunar Vow ADV</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
+                        </div>
+                    </div>      
+                    
+
+                </div>
+
+                
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">REBATE FOCUSED SUPPLY</span>
+                    </div>      
+                    <div class="col-span-4"></div>                
+                    <div on:click={() => openModal("Rebate")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Bloodied Casket<br/>Sweet Dreams</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
+                        </div>
+                    </div>                  
+               
+                </div>
+
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">OUTFIT</span>
                     </div>    
                     <div></div>                
@@ -285,6 +325,14 @@
                     <div on:click={() => openModal("OutfitBox")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Outfit Box</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
+                        </div>
+                    </div>  
+                    
+                    <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Till Death Do Us Part<br/>1980 B-chips</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
                         </div>
