@@ -191,7 +191,13 @@
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
                             <img src="https://i.imgur.com/K5HkEO7.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
-                    </div>                 
+                    </div>    
+                    
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Jovial Deception</span>
+
+                    </div>     
                 </div>
 
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
@@ -206,6 +212,11 @@
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
                             <img src="https://i.imgur.com/6FkUYcQ.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
+                    </div>     
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">JD Equipment</span>
+
                     </div>                 
                 </div>
 
