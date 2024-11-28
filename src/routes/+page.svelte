@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/SPBNehH.png" />
+    <meta property="og:image" content="https://i.imgur.com/B4jWOnN.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -163,7 +163,7 @@
         <p class="text-sm sm:text-base text-slate-100 px-2">
             <strong class="text-amber-400">REGIONAL SERVERS</strong><br>
             - {regionalServerInfo}<br>
-            - v7.9 is on Nov 28
+            - v8.0 is on Jan 9
         </p>
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
