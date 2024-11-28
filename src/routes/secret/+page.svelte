@@ -203,7 +203,7 @@
               class="h-12 w-12 rounded-full mr-4"
             />
             <div>
-              <p class="text-white  text-base">Ground Basic ATK x2 ➔ Evade ➔ Ground Basic ATK x3 ➔ Weapon ➔ Combo ATK</p>
+              <p class="text-white  text-base">Ground Basic ATK x2 ➔ Evade ➔ Ground Basic ATK x2 ➔ Evade ➔ Ground Basic ATK ➔ Weapon ➔ Combo ATK</p>
             </div>
           </div>
 

@@ -87,13 +87,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2024-10-17'); // Start date for v7.8 in Regional Servers
+      const regionalStartDate = new Date('2024-11-28'); // Start date for v7.9 in Regional Servers
       const cnStartDate = new Date('2024-10-31');       // Start date for v7.9 in CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v7.8 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v7.9 Week ${currentWeekCN}`;
   }
 
