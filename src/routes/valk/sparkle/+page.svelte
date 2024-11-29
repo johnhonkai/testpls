@@ -1323,7 +1323,7 @@ function selectTabMobile(event) {
       <div class="bg-gray-800 p-4 rounded-lg shadow-md">
         <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle Support (Part 1)</h2>
 
-        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example</p>
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle Support for Part 1 Team example with Sirin</p>
 
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
           <iframe
