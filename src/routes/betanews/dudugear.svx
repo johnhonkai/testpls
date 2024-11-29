@@ -14,7 +14,9 @@ image: "/images/valkportrait/dudu.png"
 ### LINKS
 
 - [8.0 Patch Note](/betanews/80log)
+- [New Dudu Skills](/betanews/durandal)
 - [New Dudu Equipment](/betanews/dudugear)
+- [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
 
 ### DURANDAL JAVELIN
 
@@ -58,22 +60,22 @@ New Dudu equip bonus: When Star Shift attack hits an IMG enemy, the dmg received
 ![dudu stigma](https://i.imgur.com/Izdt5eu.png)
 
 **TOP:** 
-Crit DMG +15%. New Dudu equip bonus:
-- Crit DMG +15%
+Crit DMG +22%. New Dudu equip bonus:
+- Crit DMG +22%
 - [Unstoppable] Total DMG +16%
 
 ---
 
 **MID:**
-Total DMG +8%. New Dudu equip bonus:
-- Total DMG +8%
+Total DMG +10%. New Dudu equip bonus:
+- Total DMG +10%
 - [Unstoppable] Physical DMG +22%, Elemental DMG +20%
 
 ---
 
 **BOT:**
-Crit Rate +20%. New Dudu equip bonus:
-- Crit Rate +20%.
+Crit Rate +22%. New Dudu equip bonus:
+- Crit Rate +22%.
 - When New Dudu has [Unstoppable], enemies take 15% more Physical DMG and 20% more Elemental DMG
 
 ---
@@ -81,7 +83,7 @@ Crit Rate +20%. New Dudu equip bonus:
 **2 SET: **
 Take 20% less dmg. New Dudu equip bonus:
 - Enemies take 10% more Physical DMG
-- [Unstoppable] Crit DMG +6% and Elemental DMG +6%
+- [Unstoppable] Crit DMG +16% and Elemental DMG +16%
 
 ---
 
@@ -89,7 +91,7 @@ Take 20% less dmg. New Dudu equip bonus:
 Ult Crit Rate +30% and Crit DMG +30%.
 
 New Dudu equip bonus:
-- When Charged ATK or QTE hits, or when Stellar Outburst is activated, team gain [Unstoppable] for 25s, can be refreshed. Valks with [Unstoppable] gain Total DMG +25%.
+- When Charged ATK or QTE hits, or when Stellar Outburst is activated, team gain [Unstoppable] for 25s, can be refreshed. Valks with [Unstoppable] gain Total DMG +10%.
 
 - When AR is inactivated:
     - Teammates gain Crit Rate +12%, Crit DMG +25%, Total DMG +15%, and enemies take 12% more Total DMG from teammates

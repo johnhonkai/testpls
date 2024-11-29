@@ -12,8 +12,9 @@ image: "/images/valkportrait/dudu.png"
 ### LINKS
 
 - [8.0 Patch Note](/betanews/80log)
+- [New Dudu Skills](/betanews/durandal)
 - [New Dudu Equipment](/betanews/dudugear)
-
+- [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
 ---
 
 ## NEW VALK

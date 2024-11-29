@@ -1,0 +1,78 @@
+---
+creationDate: "2024-11-29T14:32:56.426Z"
+title: Vita, Sparkle and JD New Skills
+lastModifiedDate: "2024-11-29T14:32:56.426Z"
+
+version: '8.0'
+sortOrder: '4'
+image: "/images/valkportrait/dudu.png"
+
+---
+
+### LINKS
+
+- [8.0 Patch Note](/betanews/80log)
+- [New Dudu Skills](/betanews/durandal)
+- [New Dudu Equipment](/betanews/dudugear)
+- [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
+
+
+---
+### LONE PLANETFARER
+
+When AR Reason of Promotion is activated:
+
+- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+
+- When you are not the leader:
+	- When base or planet quaker form's enhanced basic seq 4 hits: Reset the leader's switch cd and trigger her QTE 
+	- When entering via QTE, restore 15 AR, and trigger captain's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+
+- When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
+
+- Star Shift: Deals 200%x30 + 1000% ATK of Lightning DMG. Trigger the leader's stellar drain and the leader's Link ATK twice, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
+
+- When you activate Star Shift, gain a stack of Abyssal Energy.
+
+- Omniscient Feather provides the following buffs to RoPromotion valks:
+	- Valks with Ice/Fire/Lightning tag gain Elemental Breach + 14%
+	- Valks with Phy tag gain Physical Breach +45%
+
+
+### SPARKLE
+
+When AR Reason of Promotion is activated:
+
+- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+
+- Stellar Drain restore 10 more AR meter.
+
+- When you are not the leader:
+	- When Combo ATK or I am Elation hits: Reset the leader's switch cd and trigger her QTE 
+	- When entering via QTE, restore 15 AR, and trigger captain's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+
+- When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
+
+- Star Shift: Deals 1100% ATK of Fire DMG, restore full meter, and trigger 3s time fracture, which can be connected to I am Elation! The two attacks can trigger the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
+
+- Deals 200%x30 + 1000% ATK of Lightning DMG. Trigger the leader's stellar drain and the leader's Link ATK twice, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
+
+
+### JOVIAL DECEPTION
+
+When AR Reason of Promotion is activated:
+
+- When QTE hits, meter is fully restored, and gain 3 weapon stack.
+
+- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+
+- Stellar Drain restore 15 AR meter, and Golden Form Combo ATK can consume Stellar Drain.
+
+- When you are not the leader:
+	- When Combo ATK hits: Reset the leader's switch cd and trigger her QTE 
+	- When entering via QTE, restore 10 AR, and trigger captain's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+
+- When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
+
+- Star Shift: Deals 700% ATK of Physical DMG, triggers 2s time fracture, gain full meter on hit, this attack and the next Combo ATK will trigger the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
+

@@ -1,0 +1,241 @@
+---
+creationDate: "2024-11-29T14:32:56.426Z"
+title: Durandal Skill
+lastModifiedDate: "2024-11-29T14:32:56.426Z"
+
+version: '8.0'
+sortOrder: '2'
+image: "/images/valkportrait/dudu.png"
+
+---
+
+### LINKS
+
+- [8.0 Patch Note](/betanews/80log)
+- [New Dudu Skills](/betanews/durandal)
+- [New Dudu Equipment](/betanews/dudugear)
+- [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
+
+### INTRO
+- S-rank Img Physical
+- Astral Ring: Reason of Promotion
+- Can support WoDestiny Team, RoPromotion team, P1 Physical team, provides stun and shieldbreak
+- Gameplay: 
+- Durandal is not unlocked yet in beta. Skill values shown are at max rank, and may change tomorrow when she is unlocked.
+
+---
+### LEADER 
+When set as leader, activate AR Reason of Promotion. SO cost: 200, Duration: 1s, CD: 40s
+
+When you have 1 team member with Equinox Promotion attribute: New Dudu Physical DMG +19% / ?? / 28%
+
+When you have 2 team members with Equinox Promotion attribute: Teammates with Equinox Promotion tag can trigger New Dudu's Joint Bursting ATK. New Dudu also restore 10 more AR when consuming Stellar Drain.
+
+When you have 3 team members with Equinox Promotion attribute: Enemies take 25%  / ?? / 28% more Physical DMG from New Dudu (independent multiplier). Initial AR +20
+
+---
+
+### ASTRAL RING
+
+Dudu is protected by AR Reason of Promotion. When Stellar Outburst is activated, deal 400% ATK of Physical DMG.
+
+(Sorry there are a bunch of new terms and mechanics, I dont really understand them.)
+
+When AR Reason of Promotion is activated:
+
+- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+
+- Dudu's Star Shift skill changes to Radiant Void. She surfs through the enemies, deal 470%x2 ATK of Physical DMG. Then, she enters an enhanced state. During this period, you can click QTE button, up to 4 times, at full charge, unleash final attack, deal 540% ATK of Physical DMG. Each charge makes the final hit deals an additional 150% ATK of Physical DMG.
+
+- When activating Star Shift, enter enhanced state for 14s. Once it ends, you enter Void Shift state, allowing you to switch teammates. During enhanced state, Dudu's Charged attacks are improved, it will continuously cast fast Charged ATK, no follow-up attack will be triggered during this period.
+
+- When Dudu is the leader, and you enter via QTE, the Charged ATK third stage and follow up attack are improved during enhanced state, deals additional 300% ATK of Physical DMG. Lasts during the entire enhanced state, or until you exit.
+
+- When Dudu is not the leader, you will trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+
+When WoDestiny is activated:
+- During Stellar Outburst, a WoDestiny valk can trigger Dudu's Shadow Star ATK, deal 1200% ATK of Adaptive DMG (counts as Shadow Star ATK DMG). Valk enters Rondo-in-the-Shadows state for 11s.
+
+
+---
+**AR 1**<br/>
+When WoDestiny is activated:
+- WoD valks gain Total DMG +10%
+- Team Physical DMG +28%, Elemental DMG +14%
+
+---
+**AR 2**<br/>
+When AR is not activated:
+- Team Shieldbreak +100%
+- If a shield-broken enemy is hit by Charged ATK third stage, or if the shield is broken within 10s upon being hit, the shield regen is frozen for 5s. The shield regen cannot be applied again before the shield recovers.
+- When Charged ATK third stage hits, apply 10 stun trauma, and recover 5 sp for the team.
+- When QTE hits, the following effects are applied, lasts for 6s, CD: 16s :
+	- Shieldbreak +600%, Total DMG +36%, Physical DMG +36%
+	- The enemy is impaired, DEF -70%
+
+---
+**AR 3**<br/>
+When Stellar Outburst ends, gain Stellar Drain. During AR Charging, when Charged ATK hits, consume Stellar Drain, restore 10 AR.
+- When WoD is activated, restore 10 more AR
+- When RoPromotion is activated, restore 10 more AR
+- Gain Stellar Drain on entry
+
+
+---
+**AR 4**<br/>
+When RoPromotion is activated:
+- Team Shield DMG +60%, self Shield DMG +40%
+- RoPromotion valk Total DMG +10%
+- Team Physical DMG +15%, Elemental DMG +20%
+- Dudu's Star Shift ATK gain Crit Rate +30%
+
+---
+**AR 5**<br/>
+Related to a future AR
+
+---
+
+### PASSIVE
+
+New Dudu has a Dawn meter. Consuming the meter speeds up the charging speed of Charged ATK.
+
+Max 300 points of Dawn meter. Meter will be cleared on exit. At max meter, releasing Charged ATK will consume all Dawn to speed up Charged ATK. Wild and Surf form Basic Seq 1/2/3 restore 50/100/300 points of Dawn.
+
+When New Dudu enters Surf Form, she gain three Sky Lights. When casting Charged ATK third stage, consume one Sky Light. When all Sky Lights are consumed, exit Surf form early.
+
+After Surf form ends, weapon skill enter 60-second cooldown. Reduce cd by 20s for each remaining Sky Light. When Charged ATK stage 1/2/3 hits a target, weapon cd -5/10/30 seconds.
+
+---
+**PASSIVE 1**<br/>
+When you have Fearless, enemies take 12% more Physical DMG from New Dudu, and team Total DMG +15%.
+
+---
+**PASSIVE 2**<br/>
+[S2] Upon casting a quick Charged ATK, deal additional 100% ATK of Physical DMG.
+
+---
+**PASSIVE 3**<br/>
+In surf form, press evasion to accelerate, and gain 100 Dawn per second.
+
+---
+**PASSIVE 4**<br/>
+When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +23%, Total DMG +20%.
+
+---
+**PASSIVE 5**<br/>
+When New Dudu is off-field, if sp is less than 90, gain 4 sp per second. Initial sp +80.
+
+---
+
+### EVASION
+Wild Form: Evades twice on the ground, evades once in the air, jumps once. Jumping in the air resets aerial evasion counter.
+
+Surf Form: Can evade twice in a row. Jump cannot be used continuously. Press and hold evade button to accelerate.
+
+Evasion skill: Restore 1000 HP, CD 10s.
+
+---
+**Evasion 1**<br/>
+Gain one more evasion charge 
+
+---
+**Evasion 2**<br/>
+In wild form, surfboard becomes a shield. In addition to Charged ATK and Basic ATK seq 3, when you take damage, shield consumes evasion skill once, resist the damage, gain 0.5s of invincibility, and deals 50% ATK of Physical DMG to the enemy.
+
+
+---
+
+### WEAPON SKILL
+Airborne:
+Wild Form: Tap weapon to jump above the target, transform the shield into the surfboard, then steps on the enemy, deal 115%x3 ATK of Physical DMG, restore 300 Dawn, CD: 60s (not affected by cd-reduction effects other than her own sub-skill). In surf form, pressing weapon button casts this skill too.
+
+Ground:
+In surf form, press and hold weapon to cast, or automatically triggered by passive skill. Dudu kicks away the surfboard, deal 105%x4 ATK of Physical DMG, and ends surf form. Dudu will also exit surf form when entering the field through non-flying form QTE.
+
+---
+**Weapon 1**<br/>
+When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 50% imaginary penetration (???)
+
+---
+### BASIC ATK
+4 sequence, deal Physical DMG
+
+Wild Form
+120%x2 > 83%x4 > 330%. During seq 3, press atk to release a ground attack, can be connected to Wild Form Charged ATK.
+Plunge ATK 130%, press atk to connect to seq 2.
+
+Surf Form
+173% > 83%x3 > 285%, can be connected to Surf Form Charged ATK.
+
+---
+**Basic 1 - QTE**<br/>
+Trigger: Time slow, teammate cast weapon skill, enemy hit by Combo / Charged ATK.
+Trigger 2s time fracture.
+
+Ground QTE: Deal 200%x2 + 200% ATK of Physical DMG, can be followed up with basic seq 2.
+
+Airborne QTE: Deal 390% ATK of Physical DMG, can be followed up with Charged ATK.
+
+---
+**Basic 2**<br/>
+When AR is inactivated: When you enter via QTE, the switch cd of preceding valk is reduced by 4 seconds.
+
+When AR is activated: When you enter via QTE, gain full Dawn meter.
+
+---
+**Basic 3**<br/>
+Take 30% less Total DMG
+
+---
+### CHARGED ATK
+
+Wild Form
+- Stage 1: 285%, 3 stun
+- Stage 2: 435%, 6 stun
+- Stage 3: 585%, 9 stun. Gathers enemies.
+
+Surf Form
+- Stage 1: 285%, 3 stun
+- Stage 2: 435%, 6 stun
+- Stage 3: 585%, 9 stun
+
+During Surf Form, you can move around the target.
+During Surf Form, after casting Charged ATK third stage, attack button will flash. Press it to unleash a powerful follow-up attack, deal 465% ATK of Physical DMG.
+
+
+---
+**Charged ATK 1**<br/>
+When charging power is maxed out, Charged ATK is automatically casted.
+
+---
+**Charged ATK 2**<br/>
+Charged ATK and followup attack gain Crit Rate +30%. Each charging stage grants Shieldbreak +30% to Charged ATK.
+
+---
+**Charged ATK 2**<br/>
+Charged ATK third stage triggers 2s time fracture.
+
+
+---
+### ULTIMATE
+
+(SP: 100, CD: 20s)
+Throws a spear that pierces the heaven and earth. Deal 1260% ATK of Physical DMG. Has time stop.
+
+---
+**ULT 1**<br/>
+When AR is inactived: 
+Upon casting Ultimate, enemies take 20% more Physical DMG for 20s, can be refreshed.
+
+---
+**ULT 2**<br/>
+Ult has 150% img penetration (????)
+
+---
+**ULT 3**<br/>
+[SSS] Ult deals additional 240% ATK of Physical DMG
+
+---
+### RANK UP
+
+Unknown for now
