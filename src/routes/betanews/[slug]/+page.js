@@ -7,7 +7,7 @@ export async function load({ params }) {
   const content = post.default;
 
   // Retrieve views from local JSON
-  const views = viewsData[params.slug]?.views || 0;
+  const views = viewsData[params.slug] || 0; // Use params.slug to match the key in your JSON
 
   try {
     await incrementViewCount(params.slug);
