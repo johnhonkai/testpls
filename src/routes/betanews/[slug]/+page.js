@@ -1,5 +1,4 @@
 import viewsData from '$lib/data/views.json'; // Adjust the path as needed
-import { incrementViewCount } from '$lib/firebasecounter'; // Increment function
 
 export async function load({ params }) {
   const post = await import(`../${params.slug}.svx`);
@@ -8,12 +7,6 @@ export async function load({ params }) {
 
   // Retrieve views from local JSON
   const views = viewsData[params.slug] || 0; // Use params.slug to match the key in your JSON
-
-  try {
-    await incrementViewCount(params.slug);
-  } catch (error) {
-    console.error('Error incrementing view count on Firebase:', error);
-  }
 
 
 
