@@ -104,9 +104,9 @@ New Dudu equip bonus:
     - During AR Charging: Enemies take 26% more Elemental DMG, and 19% more Physical DMG
     - During Stellar Outburst: Enemies take 26% more Elemental DMG, and 19% more Physical DMG
 
-When Wheel of Destiny is activated:
-- For every valk with Shadow Star tag, other team members gain Total DMG +4%.
-- When New Dudu has [Unstoppable]:
-	- Enemies take 22% more Total DMG (cannot stack)
-	- During AR Charging: Enemies take 21% more Elemental DMG, and 19% more Physical DMG
-	- During Stellar Outburst: Enemies take 21% more Elemental DMG, and 19% more Physical DMG
+- When Wheel of Destiny is activated:
+    - For every valk with Shadow Star tag, other team members gain Total DMG +4%.
+    - When New Dudu has [Unstoppable]:
+	    - Enemies take 22% more Total DMG (cannot stack)
+	    - During AR Charging: Enemies take 21% more Elemental DMG, and 19% more Physical DMG
+	    - During Stellar Outburst: Enemies take 21% more Elemental DMG, and 19% more Physical DMG
