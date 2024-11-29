@@ -376,11 +376,15 @@ function selectTabMobile(event) {
               <li class="mt-2">You have a support for the future ??? AR teams.  <span class="text-gray-400">(Also covered by Vita) </span></li>
 
           <p class="mt-5 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>
+              <strong class="text-amber-400">Existing Players / Competitive</strong> <br/>
           </p>
+          Sparkle's value varies. Everyone's account is different.
+
           <ul class="list-disc ml-6 text-sm sm:text-base">
             <li class="mt-2">As DPS, Sparkle currently only top scores Fire Kosma, and is the second best top scorer for Resonance Vita. Sparkle will probably get more top score bosses in future patches, like most Part 2 valks. </li>
               <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
+              <li class="mt-2">If you don't have FoV or Sirin, then Sparkle's value for your account diminishes.</li>
+              <li class="mt-2">In my opinion, a major deciding factor to pull Sparkle - is what she provides for the new AR. It's better to wait 8.0 Beta info on the new Astral Ring before you pull Sparkle.</li>
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -395,9 +399,19 @@ function selectTabMobile(event) {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: (Coming Soon)
+              Check out the full guide on YouTube:
           </p>
 
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/zig1RAylxV4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
       </div>
   {/if}
   
@@ -1289,7 +1303,7 @@ function selectTabMobile(event) {
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/8vgWi3yzXn0"
+                  src="https://www.youtube.com/embed/LMvnp-sKAIs"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1302,17 +1316,7 @@ function selectTabMobile(event) {
 
       </div>
 
-      <div class=" gap-6 my-10">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sparkle Support (World Star)</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example with Schicksal's Imperative</p>
-
-          
-      </div>
-
-    </div>
 
     <div class=" gap-6 my-10">
       <!-- Video 1 with title and description -->
@@ -1321,7 +1325,18 @@ function selectTabMobile(event) {
 
         <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sparkle World Star Support rotation example</p>
 
-        
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/UTk1dCEbap0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+              >
+          </iframe>
+      </div>
     </div>
 
   </div>
