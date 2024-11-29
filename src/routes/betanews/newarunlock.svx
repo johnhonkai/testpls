@@ -35,8 +35,8 @@ When AR Reason of Promotion is activated:
 - When you activate Star Shift, gain a stack of Abyssal Energy.
 
 - Omniscient Feather provides the following buffs to RoPromotion valks:
-	- Valks with Ice/Fire/Lightning tag gain Elemental Breach + 14%
-	- Valks with Phy tag gain Physical Breach +45%
+	- Valks with Ice/Fire/Lightning tag gain Elemental Breach +11.5% (S) / 14% (S1)
+	- Valks with Phy tag gain Physical Breach +37% (S) / 45% (S1)
 
 
 ### SPARKLE
