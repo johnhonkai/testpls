@@ -50,6 +50,7 @@ Rewards Senadina outfit
 ## EX ABYSS
 - Physical - Deliverance Kevin
 - Fire - Tonatiuh
+- New weather for new AR: For every team member with Equinox Promotion tag, team gain Total DMG +10%. When AR Reason of Promotion is activated, team Total DMG +40%.
 - New weather - Meteoroid and Ice Emperor
 
 ---
