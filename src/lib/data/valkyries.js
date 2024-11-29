@@ -1,4 +1,16 @@
 export const valkyries = [
+
+    { name: 'Durandal (BETA)', 
+        image: '/images/valkportrait/dudu.png', 
+        type: 'Img', 
+        element: 'Physical', 
+        astralRing:'New AR', 
+        artag: ['New ARTag' , 'Harmonized Shadow Star' ] , 
+        url: '/valk/durandal',
+        cost: 200,
+    },
+
+
     { name: 'Thousand-Faced Maestro: Cameo!', 
         image: '/images/valkportrait/sparkle.png', 
         type: 'Qua', 

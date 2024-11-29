@@ -65,17 +65,19 @@ export const valkbuffs = [
 
     },
 
-
+    {
+        rank: "S",
+        description: "Team Crit DMG +18%.",
+        available_by_default: "yes",
+        critdmg: 18, 
+    },
 
     {
         rank: "S",
-        description: "Team Crit DMG +18%. If AR Wheel of Destiny is activated, Team Crit DMG + 8% more. ( Current buff: Crit DMG +{value}% )",
-        available_by_default: "yes",
+        description: "If AR Wheel of Destiny is activated, Team Crit DMG +8%",
+        available_by_default: "no",
         condition: { astralRing: "Wheel of Destiny"},
-        basevalue: "18", 
-        maxvalue: "26",
-
-        bufftype: "critdmg",
+        critdmg: 8
     },
 
     {

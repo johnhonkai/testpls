@@ -242,6 +242,105 @@
     </div>
   </div>
 
+  <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
+    <div class="text-center">
+        <h2 class="text-xl font-semibold mb-4 text-amber-400">First Rotation</h2>
+      </div>
+        <!-- Row 2 -->
+        <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+            <img
+            src="images/valkportrait/Bronya Herrscher of Truth.png"
+            alt="Avatar"
+              class="h-12 w-12 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-white  text-base">Weapon ➔ Basic ATK ➔ Ult (Salvo Transformation) ➔ Ultimate</p>
+            </div>
+          </div>
+
+    <!-- Row 1 -->
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/sparkle.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white text-base">
+            QTE ➔ Weapon (I am Elation) ➔ Ultimate ➔ Cast on DPS
+          </p>
+  
+        </div>
+      </div>
+
+  
+    <!-- Row 4 -->
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+      <img
+      src="images/valkportrait/Sirin Miracle Magical Girl.png"
+      alt="Avatar"
+        class="h-12 w-12 rounded-full mr-4"
+      />
+      <div>
+        <p class="text-white text-base">
+          QTE ➔ Ultimate ➔ Weapon x 2 ➔ Basic ATK until full meter ➔ Charged ATK ➔ Weapon ➔ Ultimate
+        </p>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
+    <div class="text-center">
+        <h2 class="text-xl font-semibold mb-4 text-amber-400">Subsequent Rotation</h2>
+      </div>
+        <!-- Row 2 -->
+        <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+            <img
+            src="images/valkportrait/Bronya Herrscher of Truth.png"
+            alt="Avatar"
+              class="h-12 w-12 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-white  text-base">Weapon ➔ Basic ATK ➔ Ult (Reverse Brake Transformation) ➔ Combo ATK ➔ Ultimate (If enough sp)</p>
+            </div>
+          </div>
+
+    <!-- Row 1 -->
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/sparkle.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white text-base">
+            QTE ➔ Weapon (I am Elation) ➔ Combo ATK ➔ Ultimate ➔ Cast on DPS
+          </p>
+          <p class="text-gray-300 text-sm">If you have enough sp to ult, can skip Combo ATK</p>
+
+        </div>
+      </div>
+
+  
+    <!-- Row 4 -->
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+      <img
+      src="images/valkportrait/Sirin Miracle Magical Girl.png"
+      alt="Avatar"
+        class="h-12 w-12 rounded-full mr-4"
+      />
+      <div>
+        <p class="text-white text-base">
+          QTE ➔ Ultimate ➔ Weapon x 2 ➔ Basic ATK until full meter ➔ Charged ATK ➔ Weapon ➔ Ultimate
+        </p>
+
+        
+      </div>
+    </div>
+  </div>
+
 
   <div class="max-w-lg mx-auto bg-black p-4 rounded-lg space-y-2 my-10">
     <!-- Row 1 -->
