@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/B4jWOnN.png" />
+    <meta property="og:image" content="https://i.imgur.com/0sXVKJs.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -150,8 +150,8 @@
 
 
 <section class="py-6 z-10">
-  <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="xl:max-w-screen-2xl lg:max-w-screen-lg mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
       
       <!-- Patch Time Section -->
       <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
@@ -211,6 +211,28 @@
         </a>
       </div>
       </div>
+
+            <!-- Active Codes -->
+            <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
+              <div class="flex items-center mb-2 bg-white rounded-t-lg">
+                <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
+                <h2 class="text-xl font-bold text-blue-600">ACTIVE CODES</h2>
+              </div>
+      
+              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
+                <span class="font-bold">Sparkleimpact3rd</span><br/>
+                Sparkle Trial Card
+              </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
+                <span class="font-bold">HonkaixHonkai</span><br/>
+                60 crystals
+              </p>
+      
+              <div class="flex justify-center mt-5">
+
+            </div>
+            </div>
 
     </div>
   </div>
