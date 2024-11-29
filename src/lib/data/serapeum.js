@@ -74,19 +74,11 @@ export const valkbuffs = [
 
     {
         rank: "S",
-        description: "If AR Wheel of Destiny is activated, Team Crit DMG +8%",
-        available_by_default: "no",
-        condition: { astralRing: "Wheel of Destiny"},
-        critdmg: 8
-    },
-
-    {
-        rank: "S",
         available_by_default: "no",
 
-        description: "When AR Wheel of Destiny is activated, Team Total DMG +8%",
+        description: "When AR Wheel of Destiny is activated, Team Crit DMG +8% and Team Total DMG +8%",
         condition: { astralRing: "Wheel of Destiny"},
-
+        critdmg: 8,
         tdm:8
 
     },
