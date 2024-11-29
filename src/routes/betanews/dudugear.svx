@@ -1,0 +1,105 @@
+---
+creationDate: "2024-11-29T13:43:19.234Z"
+
+
+title: New Dudu Weapon
+
+lastModifiedDate: "2024-11-29T13:43:19.234Z"
+version: '8.0'
+sortOrder: '3'
+image: "/images/valkportrait/dudu.png"
+
+---
+
+### LINKS
+
+- [8.0 Patch Note](/betanews/80log)
+- [New Dudu Equipment](/betanews/dudugear)
+
+### DURANDAL JAVELIN
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/hnP3QhH.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+ATK: 416 ,  CRT: 37
+
+**ACTIVE [SP: 0] [CD: 0s]**<br/>
+The weapon active's CD, max charges and effects are based on wielder type. If the wielder has Equinox Promotion tag, Physical DMG +32%
+
+New Dudu equip bonus:
+- During [Surf Mode], an additional javelin will be generated each time the QTE button is charged up, max 4. Release ATK to throw all javelins at the same time, deal 150% ATK of Physical DMG each (counts as weapon skill dmg)
+- When AR is inactivated, when [Wild Form] Charged ATK third stage hits, grants the team Physical DMG +36%.
+
+---
+
+**PASSIVE 1**<br/>
+Self Total DMG +20%. New Dudu equip bonus:
+- When [Wild Form] Charged ATK third stage hits, reduce weapon cd by an additional 30 seconds.
+- When AR is inactivated:
+	- Self Physical DMG +22%. Team Total DMG +12%.
+
+
+---
+
+**PASSIVE 2**<br/>
+Enemies take 15% more Physical DMG from the wielder.
+New Dudu equip bonus: Team Crit DMG +25% and Elemental DMG +25%
+
+---
+
+**SYNERGY**<br/>
+Enemies take 2 / 4 / 6 % more Total DMG from valks on the field (independent multiplier) (cannot stack).
+New Dudu equip bonus: When Star Shift attack hits an IMG enemy, the dmg received by Shell is transferred to Seed at 40% / 45% / 50% rate (counts as HP Loss DMG)
+
+---
+
+### STIGMA
+![dudu stigma](https://i.imgur.com/Izdt5eu.png)
+
+**TOP:** 
+Crit DMG +15%. New Dudu equip bonus:
+- Crit DMG +15%
+- [Unstoppable] Total DMG +16%
+
+---
+
+**MID:**
+Total DMG +8%. New Dudu equip bonus:
+- Total DMG +8%
+- [Unstoppable] Physical DMG +22%, Elemental DMG +20%
+
+---
+
+**BOT:**
+Crit Rate +20%. New Dudu equip bonus:
+- Crit Rate +20%.
+- When New Dudu has [Unstoppable], enemies take 15% more Physical DMG and 20% more Elemental DMG
+
+---
+
+**2 SET: **
+Take 20% less dmg. New Dudu equip bonus:
+- Enemies take 10% more Physical DMG
+- [Unstoppable] Crit DMG +6% and Elemental DMG +6%
+
+---
+
+**3 SET:**
+Ult Crit Rate +30% and Crit DMG +30%.
+
+New Dudu equip bonus:
+- When Charged ATK or QTE hits, or when Stellar Outburst is activated, team gain [Unstoppable] for 25s, can be refreshed. Valks with [Unstoppable] gain Total DMG +25%.
+
+- When AR is inactivated:
+    - Teammates gain Crit Rate +12%, Crit DMG +25%, Total DMG +15%, and enemies take 12% more Total DMG from teammates
+    - When New Dudu has [Unstoppable], the enemy's Total DMG taken increased to 20% (not sure to or by 20%) (cannot stack)
+    - Team Shieldbreak +60%
+
+- When AR Reason of Promotion is activated:
+    - For every valk in the team with Equinox Promotion tag, other team members gain Total DMG +4%
+    - When New Dudu has [Unstoppable]:
+ 	    - Enemies take 22% more Total DMG (cannot stack)
+	    - When New Dudu is the leader, enemies DEF -55%
+    - During AR Charging: Enemies take 26% more Elemental DMG, and 19% more Physical DMG
+    - During Stellar Outburst: Enemies take 26% more Elemental DMG, and 19% more Physical DMG

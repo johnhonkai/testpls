@@ -9,6 +9,13 @@ sortOrder: '2'
 image: "/images/valkportrait/dudu.png"
 ---
 
+### LINKS
+
+- [8.0 Patch Note](/betanews/80log)
+- [New Dudu Equipment](/betanews/dudugear)
+
+---
+
 ## NEW VALK
 S-rank Durandal, Img-type, Physical DMG
 
