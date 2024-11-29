@@ -26,7 +26,7 @@ When AR Reason of Promotion is activated:
 
 - When you are not the leader:
 	- When base or planet quaker form's enhanced basic seq 4 hits: Reset the leader's switch cd and trigger her QTE 
-	- When entering via QTE, restore 15 AR, and trigger 's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+	- When entering via QTE, restore 15 AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
 
 - When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
@@ -49,7 +49,7 @@ When AR Reason of Promotion is activated:
 
 - When you are not the leader:
 	- When Combo ATK or I am Elation hits: Reset the leader's switch cd and trigger her QTE 
-	- When entering via QTE, restore 15 AR, and trigger 's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+	- When entering via QTE, restore 15 AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
 
 - When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
@@ -70,7 +70,7 @@ When AR Reason of Promotion is activated:
 
 - When you are not the leader:
 	- When Combo ATK hits: Reset the leader's switch cd and trigger her QTE 
-	- When entering via QTE, restore 10 AR, and trigger 's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+	- When entering via QTE, restore 10 AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
 
 - When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
