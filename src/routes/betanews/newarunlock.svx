@@ -55,7 +55,6 @@ When AR Reason of Promotion is activated:
 
 - Star Shift: Deals 1100% ATK of Fire DMG, restore full meter, and trigger 3s time fracture, which can be connected to I am Elation! The two attacks can trigger the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
 
-- Deals 200%x30 + 1000% ATK of Lightning DMG. Trigger the leader's stellar drain and the leader's Link ATK twice, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
 
 
 ### JOVIAL DECEPTION
