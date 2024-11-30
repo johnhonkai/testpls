@@ -22,7 +22,7 @@ image: "/images/valkportrait/dudu.png"
 
 When AR Reason of Promotion is activated:
 
-- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
 - When you are not the leader:
 	- When base or planet quaker form's enhanced basic seq 4 hits: Reset the leader's switch cd and trigger her QTE 
@@ -43,7 +43,7 @@ When AR Reason of Promotion is activated:
 
 When AR Reason of Promotion is activated:
 
-- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
 - Stellar Drain restore 10 more AR meter.
 
@@ -63,7 +63,7 @@ When AR Reason of Promotion is activated:
 
 - When QTE hits, meter is fully restored, and gain 3 weapon stack.
 
-- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
 - Stellar Drain restore 15 AR meter, and Golden Form Combo ATK can consume Stellar Drain.
 
