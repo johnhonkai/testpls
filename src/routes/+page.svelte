@@ -228,6 +228,11 @@
                 <span class="font-bold">HonkaixHonkai</span><br/>
                 60 crystals
               </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
+                <span class="font-bold">T9WPKNWDJD</span><br/>
+                50 crystals, 500 Asterite, 1 ADV skill mat
+              </p>
       
               <div class="flex justify-center mt-5">
 
