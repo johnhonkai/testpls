@@ -259,12 +259,12 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=xxulmAvnKY4" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=KUcYGq-4Gp" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/news2%20(1).webp" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/KUcYGq-4Gpc/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">8.0 Beta News</h3>
-          <p class="text-slate-300 text-base">Durandal swings in with a new Astral Ring!</p>
+          <p class="text-slate-300 text-base">New Durandal Gameplay</p>
         </div>
       </a>
 
@@ -291,9 +291,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=_cfYygEWX10" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=jIpc1CW0oHM" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/_cfYygEWX10/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/jIpc1CW0oHM/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>
