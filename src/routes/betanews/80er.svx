@@ -1,0 +1,64 @@
+---
+creationDate: "2024-11-25T16:52:12.764Z"
+title: v8.0 Elysian Realm
+lastModifiedDate: "2024-11-25T16:52:12.764Z"
+date: "2024-11-25"
+
+version: '8.0'
+sortOrder: '5'
+image: "/images/valkportrait/dudu.png"
+
+---
+
+### LINKS
+
+- [8.0 Patch Note](/betanews/80log)
+- [New Dudu Skills](/betanews/durandal)
+- [New Dudu Equipment](/betanews/dudugear)
+- [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
+- [Elysian Realm](/betanews/80er)
+
+### PHASE 1
+
+**STAGE BUFF**
+- On every stage, a painting monster will be summoned. When valk is in the aoe, Total DMG +30%, trigger an explosion, applies all Star-signet dyes that have been unlocked. Enemies take 6% less Total DMG, and after every level, the effect is increased by 1.8%, up to 33% (independent multiplier)
+- Enemies take 30% less Total DMG (independent multiplier). Effect is disabled when valk deals 500 Lightning DMG, Fire DMG or Physical DMG at once, lasts for 3s, can be refreshed.
+- Everytime you deal Combo or Charged ATK DMG, the enemies are stained with silver dye. When an enemy with silver dye dies, it will drop 5 Silver Coins, lasts for 8 seconds.
+- When AR is activated, valk Total DMG +30%
+- Helix and Discipline +2
+
+---
+
+**LOAD BUFF**
+- 0: F17 boss is changed to HoDomination
+- 5: Max sp +30
+- 5: Valk Total DMG +15%. Effect is disabled when you take dmg, lasts for 5s, can be refreshed.
+- 10: When you cast weapon skill, Elemental DMG +12% for 12s, can be refreshed.
+- 10: When you trigger evasions skill, valk Phy and Ele DMG +15% for 8s, can be refreshed.
+- 15: Valk Total DMG +18%.  For each Flamechaser nexus unlocked, Physical DMG +4%, max 12%
+- 15: If valk weapon is Trick Staff, Drive Core, Javelin, Lance, or Scythe, gain Phy Breach +40%, and Ele Breach +20%
+
+### NEW DURANDAL
+
+**PASSIVE**
+- Activates AR Reason of Promotion
+- On entry, gain 200 AR
+- AR Regen +100%
+- AR CD -80%
+- When you activate Stellar Outburst, gain 500 HP
+- You can accelerate by pressing or holding evasion while moving
+
+**Signet 1**<br/>
+In surf form, generate 4 javelins per second to attack surrounding enemies when moving around, deal 800% ATK of Physical DMG (counts as Charged ATK), increase hit count by 5 points, and gain 5 AR per second.
+
+**Signet 2**<br/>
+When moving around in surf form, gain one dmg stack every 0.5 second, max 20 stacks. Each stack will buff the dmg multiplier of the next airborne attack by 1000%, and then the stacks are cleared.
+
+**Signet 3**<br/>
+When using Star Shift ATK, Total DMG +60% for 50s, can be refreshed.
+
+**Signet 4**<br/>
+Charged ATK follow-up will gather enemies. When using ??? or Charged ATK followup, consume one Sky Light to reset weapon cooldown. In surf form, Charged ATK third stage, followup, or ground attack, deal additional 3500% ATK of Physical DMG.
+
+**Signet 5**<br/>
+After activating surf form, casting Charged ATK third stage, followup, and ground attack gain Physical DMG +80% for 15s, can be refreshed.

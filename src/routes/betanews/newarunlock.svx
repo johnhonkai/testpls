@@ -15,6 +15,7 @@ image: "/images/valkportrait/dudu.png"
 - [New Dudu Skills](/betanews/durandal)
 - [New Dudu Equipment](/betanews/dudugear)
 - [Vita, Sparkle and JD New Skills](/betanews/newarunlock)
+- [Elysian Realm](/betanews/80er)
 
 
 ---
