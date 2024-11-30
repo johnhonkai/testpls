@@ -39,8 +39,7 @@ New Dudu equip bonus:
 Self Total DMG +20%. New Dudu equip bonus:
 - When [Wild Form] Charged ATK third stage hits, reduce weapon cd by an additional 30 seconds.
 - When AR is inactivated:
-	- Self Physical DMG +22%. Team Total DMG +12%.
-
+	- Self Physical DMG +38%. Team Total DMG +12%.
 
 ---
 
@@ -52,7 +51,7 @@ New Dudu equip bonus: Team Crit DMG +25% and Elemental DMG +25%
 
 **SYNERGY**<br/>
 Enemies take 2 / 4 / 6 % more Total DMG from valks on the field (independent multiplier) (cannot stack).
-New Dudu equip bonus: When Star Shift attack hits an IMG enemy, the dmg received by Shell is transferred to Seed at 40% / 45% / 50% rate (counts as HP Loss DMG)
+New Dudu equip bonus: When Star Shift ATK hits an IMG enemy, the dmg received by Shell is transferred to Seed at 40% / 45% / 50% rate (counts as HP Loss DMG)
 
 ---
 
@@ -93,7 +92,7 @@ Ult Crit Rate +30% and Crit DMG +30%.
 New Dudu equip bonus:
 - When Charged ATK or QTE hits, or when Stellar Outburst is activated, team gain [Unstoppable] for 25s, can be refreshed. Valks with [Unstoppable] gain Total DMG +10%.
 
-- When AR is inactivated:
+- When AR is not activated:
     - Teammates gain Crit Rate +12%, Crit DMG +25%, Total DMG +15%, and enemies take 12% more Total DMG from teammates
     - When New Dudu has [Unstoppable], the enemy's Total DMG taken increased to 20% (not sure to or by 20%) (cannot stack)
     - Team Shieldbreak +60%

@@ -27,11 +27,11 @@ image: "/images/valkportrait/dudu.png"
 ### LEADER 
 When set as leader, activate AR Reason of Promotion. SO cost: 200, Duration: 1s, CD: 40s
 
-When you have 1 team member with Equinox Promotion attribute: New Dudu Physical DMG +19% / ?? / 28%
+When you have 1 team member with Equinox Promotion attribute: New Dudu Physical DMG +22% / 25% / 28%
 
-When you have 2 team members with Equinox Promotion attribute: Teammates with Equinox Promotion tag can trigger New Dudu's Joint Bursting ATK. New Dudu also restore 10 more AR when consuming Stellar Drain.
+When you have 2 team members with Equinox Promotion attribute: Teammates with Equinox Promotion tag can trigger New Dudu's Link ATK. New Dudu also restore 10 more AR when consuming Stellar Drain.
 
-When you have 3 team members with Equinox Promotion attribute: Enemies take 25%  / ?? / 28% more Physical DMG from New Dudu (independent multiplier). Initial AR +20
+When you have 3 team members with Equinox Promotion attribute: Enemies take 26%  / 27% / 28% more Physical DMG from New Dudu (independent multiplier). Initial AR +10
 
 ---
 
@@ -39,23 +39,21 @@ When you have 3 team members with Equinox Promotion attribute: Enemies take 25% 
 
 Dudu is protected by AR Reason of Promotion. When Stellar Outburst is activated, deal 400% ATK of Physical DMG.
 
-(Sorry there are a bunch of new terms and mechanics, I dont really understand them.)
-
 When AR Reason of Promotion is activated:
 
-- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters on the field can trigger your Star Shift skill.
+
+- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
 - Dudu's Star Shift skill changes to Radiant Void. She surfs through the enemies, deal 470%x2 ATK of Physical DMG. Then, she enters an enhanced state. During this period, you can click QTE button, up to 4 times, at full charge, unleash final attack, deal 540% ATK of Physical DMG. Each charge makes the final hit deals an additional 150% ATK of Physical DMG.
 
-- When activating Star Shift, enter enhanced state for 14s. Once it ends, you enter Void Shift state, allowing you to switch teammates. During enhanced state, Dudu's Charged attacks are improved, it will continuously cast fast Charged ATK, no follow-up attack will be triggered during this period.
+- When activating Star Shift, enter enhanced state for 14s. The enhanced state ends when you exit Surf form or you switch out. During enhanced state, Dudu's Charged ATK is improved, it will continuously cast fast Charged ATK, no follow-up attack will be triggered during this period.
 
-- When Dudu is the leader, and you enter via QTE, the Charged ATK third stage and follow up attack are improved during enhanced state, deals additional 300% ATK of Physical DMG. Lasts during the entire enhanced state, or until you exit.
+- When Dudu is the leader, and you enter via QTE and Star Shift, you gain three buff stacks, the Charged ATK third stage and follow up attack can consume this buff, deals additional 300% ATK of Physical DMG. Stacks are cleared on exit. After all the stacks are consumed, teammates' switch CD are reset, and their QTE can be triggered.
 
-- When Dudu is not the leader, you will trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+- When Dudu is not the leader, Radiant Void will trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG (dmg source is considered to be from the leader, counts as Star Shift ATK).
 
 When WoDestiny is activated:
 - During Stellar Outburst, a WoDestiny valk can trigger Dudu's Shadow Star ATK, deal 1200% ATK of Adaptive DMG (counts as Shadow Star ATK DMG). Valk enters Rondo-in-the-Shadows state for 11s.
-
 
 ---
 **AR 1**<br/>
@@ -66,11 +64,11 @@ When WoDestiny is activated:
 ---
 **AR 2**<br/>
 When AR is not activated:
-- Team Shieldbreak +100%
+- Team Shieldbreak +75% (S) ➔ 100% (SS1)
 - If a shield-broken enemy is hit by Charged ATK third stage, or if the shield is broken within 10s upon being hit, the shield regen is frozen for 5s. The shield regen cannot be applied again before the shield recovers.
 - When Charged ATK third stage hits, apply 10 stun trauma, and recover 5 sp for the team.
 - When QTE hits, the following effects are applied, lasts for 6s, CD: 16s :
-	- Shieldbreak +600%, Total DMG +36%, Physical DMG +36%
+	- Shieldbreak +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
 	- The enemy is impaired, DEF -70%
 
 ---
@@ -84,8 +82,8 @@ When Stellar Outburst ends, gain Stellar Drain. During AR Charging, when Charged
 ---
 **AR 4**<br/>
 When RoPromotion is activated:
-- Team Shield DMG +60%, self Shield DMG +40%
-- RoPromotion valk Total DMG +10%
+- Team Shield DMG +45% (S) ➔ 60% (SS2), self Shield DMG +30% (S) ➔ +40% (SS2)
+- RoPromotion valk Total DMG +7.5% (S) ➔ +10% (SS2)
 - Team Physical DMG +15%, Elemental DMG +20%
 - Dudu's Star Shift ATK gain Crit Rate +30%
 
@@ -107,7 +105,7 @@ After Surf form ends, weapon skill enter 60-second cooldown. Reduce cd by 20s fo
 
 ---
 **PASSIVE 1**<br/>
-When you have Fearless, enemies take 12% more Physical DMG from New Dudu, and team Total DMG +15%.
+When you have Fearless, enemies take 7% (S) ➔ 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) ➔ 11% (S1)
 
 ---
 **PASSIVE 2**<br/>
@@ -119,7 +117,7 @@ In surf form, press evasion to accelerate, and gain 100 Dawn per second.
 
 ---
 **PASSIVE 4**<br/>
-When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +23%, Total DMG +20%.
+When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) ➔ 23% (SS), Total DMG +15% (S) ➔20% (SS).
 
 ---
 **PASSIVE 5**<br/>
@@ -154,7 +152,7 @@ In surf form, press and hold weapon to cast, or automatically triggered by passi
 
 ---
 **Weapon 1**<br/>
-When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 50% imaginary penetration (???)
+When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
 
 ---
 ### BASIC ATK
@@ -238,4 +236,29 @@ Ult has 150% img penetration (????)
 ---
 ### RANK UP
 
-Unknown for now
+**S1** <br/>
+When you have Fearless, enemies take 7% (S) ➔ 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) ➔ 11% (S1)
+
+**S2** <br/>
+UNLOCK: Upon casting a quick Charged ATK, deal additional 100% ATK of Physical DMG.
+
+**S3** <br/>
+Lead Skill
+
+**SS** <br/>
+- When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) ➔ 23% (SS), Total DMG +15% (S) ➔20% (SS).
+- When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
+
+**SS1** <br/>
+- Team Shieldbreak +75% (S) ➔ 100% (SS1)
+- Shieldbreak +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
+
+**SS2** <br/>
+- Team Shield DMG +45% (S) ➔ 60% (SS2), self Shield DMG +30% (S) ➔ +40% (SS2)
+- RoPromotion valk Total DMG +7.5% (S) ➔ +10% (SS2)
+
+**SS3** <br/>
+Lead Skill
+
+**SSS** <br/>
+UNLOCK: Ult deals additional 240% ATK of Physical DMG
