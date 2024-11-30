@@ -19,9 +19,8 @@ image: "/images/valkportrait/dudu.png"
 ### INTRO
 - S-rank Img Physical
 - Astral Ring: Reason of Promotion
-- Can support WoDestiny Team, RoPromotion team, P1 Physical team, provides stun and shieldbreak
-- Gameplay: 
-- Durandal is not unlocked yet in beta. Skill values shown are at max rank, and may change tomorrow when she is unlocked.
+- Is a DPS, can support WoDestiny Team, RoPromotion team, one future ??? AR team, and replaces Prometheus in P1 Physical team, provides stun and shieldbreak
+- Gameplay:  https://www.youtube.com/watch?v=KUcYGq-4Gpc
 
 ---
 ### LEADER 
