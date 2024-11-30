@@ -22,28 +22,29 @@ const db = admin.firestore();
 
 async function fetchVoteSummary() {
     try {
-        const votesCollection = db.collection("votes");
-        const snapshot = await votesCollection.get();
+        const newVoteCollection = db.collection("newvote");
+        const snapshot = await newVoteCollection.get();
 
         if (snapshot.empty) {
-            console.error("No votes found!");
+            console.error("No documents found in 'newvote' collection!");
             return;
         }
 
         const voteSummary = {};
 
         snapshot.forEach((doc) => {
-            const { category, vote } = doc.data();
+            const data = doc.data();
+            const category = doc.id; // Use document ID as the category name
 
-            if (!voteSummary[category]) {
-                voteSummary[category] = {};
+            voteSummary[category] = {};
+
+            // Loop through each field in the document
+            for (const [key, value] of Object.entries(data)) {
+                if (key === "voterIds") {
+                    continue; // Skip the voterIds field
+                }
+                voteSummary[category][key] = value; // Add vote counts to summary
             }
-
-            if (!voteSummary[category][vote]) {
-                voteSummary[category][vote] = 0;
-            }
-
-            voteSummary[category][vote] += 1; // Increment the count
         });
 
         // Save the vote summary to the local JSON file
