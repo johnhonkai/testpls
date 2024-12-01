@@ -23,6 +23,7 @@
     starless: "Starless",
     stellar: "Stellar",
     stun: "Stun",
+    physical: "Physical",
     // Add other weather mappings as needed
   };
 

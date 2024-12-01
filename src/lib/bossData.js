@@ -56,6 +56,9 @@ export const weatherList = {
   melee: [
     {id: 'meleehoc', name: 'Herrscher of Corruption'}
   ],
+  physical: [
+    {id: 'phyalien', name: 'Alien Guard'}
+  ],
 }
 
 export const bossData = {
@@ -247,6 +250,14 @@ export const bossData = {
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Herrscher of Corruption.webp", 
     weather: "Scrappy: Enemies take 50% more Total DMG from Melee ATK, and take 50% less Total DMG from Ranged ATK", 
+  },
+  phyalien: {
+    name: 'Alien Guard', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Alien Guard.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },
 };
 
@@ -902,6 +913,35 @@ export const teamData = {
         rank: '55',
         pct: '2%',
         bottext: "Highest Score: 766"
+      },
+    ]},]
+  },
+  phyalien: {
+    teamDataSets: [
+    {
+      tabname: "v7.9 CN",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+        rank: '1-2, 4',
+        pct: '52%',
+        bottext: "Highest Score: S 789, S2 798, SS 810, 9S 842"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+        rank: '3, 5-16',
+        pct: '46%',
+        bottext: "Highest Score: S 791, S2 801, SS 818, 9S 834"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '29',
+        pct: '2%',
+        bottext: "Highest Score: SS 803"
       },
     ]},]
   },
