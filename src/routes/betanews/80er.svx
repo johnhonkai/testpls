@@ -61,4 +61,4 @@ When using Star Shift ATK, Total DMG +60% for 50s, can be refreshed.
 Charged ATK follow-up will gather enemies. When using ??? or Charged ATK followup, consume one Sky Light to reset weapon cooldown. In surf form, Charged ATK third stage, followup, or ground attack, deal additional 3500% ATK of Physical DMG.
 
 **Signet 5**<br/>
-After activating surf form, casting Charged ATK third stage, followup, and ground attack gain Physical DMG +80% for 15s, can be refreshed.
+After activating surf form, Charged ATK third stage, followup, and ground attack gain Physical DMG +80% for 15s, can be refreshed.
