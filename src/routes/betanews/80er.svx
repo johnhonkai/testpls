@@ -44,7 +44,7 @@ image: "/images/valkportrait/dudu.png"
 - Activates AR Reason of Promotion
 - On entry, gain 200 AR
 - AR Regen +100%
-- AR CD -80%
+- Stellar Outburst CD -80%
 - When you activate Stellar Outburst, gain 500 HP
 - You can accelerate by pressing or holding evasion while moving
 
