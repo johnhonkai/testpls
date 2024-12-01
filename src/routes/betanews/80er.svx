@@ -52,7 +52,7 @@ image: "/images/valkportrait/dudu.png"
 In surf form, generate 4 javelins per second to attack surrounding enemies when moving around, deal 800% ATK of Physical DMG (counts as Charged ATK), increase hit count by 5 points, and gain 5 AR per second.
 
 **Signet 2**<br/>
-When moving around in surf form, gain one dmg stack every 0.5 second, max 20 stacks. Each stack will buff the dmg multiplier of the next airborne attack by 1000%, and then the stacks are cleared.
+When moving around in surf form, gain one dmg stack every 0.5 second, max 20 stacks. Each stack will buff the dmg multiplier of the next Star Shift ATK by 1000%, and then the stacks are cleared.
 
 **Signet 3**<br/>
 When using Star Shift ATK, Total DMG +60% for 50s, can be refreshed.
