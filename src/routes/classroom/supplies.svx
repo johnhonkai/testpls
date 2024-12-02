@@ -28,7 +28,7 @@ Equipment Supply for Part 1
 - Content: One featured weapon + stigma set (Top, Mid, Bottom), and a few off-rate weapon and stigma
 - A new featured weapon / stigma is guaranteed within 50 pulls, max 200 pulls / 56,000 crystals for full set.
 - Usually you don't hit the max pity. Around 120-150 pulls average for full set.
-- Stigma drop rate is higher than weapon. In Focused Supply, you get more weapons than stigma. In Equipment Supply, you get more stigma than weapon.
+- In Part 1 Focused Supply, you get more weapons than stigma. In Part 2 Equipment Supply, you get more stigma than weapon.
 
 ---
 
@@ -42,7 +42,7 @@ This supply is only available on the debut patch of an SP valkyrie.
 - Content: One featured weapon + stigma set (Top, Mid, Bottom) of the new SP valkyrie, and a few off-rate weapon and stigma
 - Cost per pull: 280 crystal, or one Equipment Supply Card
 - A new featured weapon / stigma is guaranteed within 30 pulls, max 90 pulls / 25,200 crystals for full set. Usually you don't hit the max pity. 
-- Stigma drop rate is higher than weapon. In Focused Supply, you get more weapons than stigma. In Equipment Supply, you get more stigma than weapon.
+- In Part 1 Focused Supply, you get more weapons than stigma. In Part 2 Equipment Supply, you get more stigma than weapon.
 
 ---
 
@@ -70,12 +70,12 @@ This is where you can pull Divine Key weapons. Divine Keys are a special type of
 
 ---
 
-### Schicksal Arsenal
+### Schicksal Arsenal (Very Likely Removed)
 Schicksal Arsenal is a type of Focused Supply with boosted 4-star equipment drop rate. There are two featured weapons and 1 featured stigma. Usually one of the featured weapon is a divine key, and the featured weapon + stigma set is for an SP valkyrie.
 
 ---
 
-### Firepower Supply
+### Firepower Supply (Very Likely Removed)
 There will be a list of equipment. You can select a number of weapons + stigma sets to become the content of Firepower Supply.
 - You can only do one ten-pull.
 - You are guaranteed to get an equipment that you have not unlocked yet.
