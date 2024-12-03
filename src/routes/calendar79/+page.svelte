@@ -541,7 +541,7 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Herrscher%20of%20the%20Void.webp" date="Nov 29" weather="Ignite" bosspage="/boss?ignitehov" />
-                <BossCard image="/images/Bosses/Alien Guard.webp" date="Dec 2" weather="Blood" bosspage="/boss?bloodsdmob"/>
+                <BossCard image="/images/Bosses/Swarm.webp" date="Dec 2" weather="Blood" bosspage="/boss?bloodsdmob"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">

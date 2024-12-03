@@ -103,7 +103,7 @@ export const bossData = {
       mechanics: 'Enemies appear in waves. Stage is complete once you defeat 36 enemies.', 
       typeicon: "images/type/IconSDMECH.png", 
       weakness: 'None', 
-      bosspic: "images/Bosses/Alien Guard.webp", 
+      bosspic: "images/Bosses/Swarm.webp", 
       weather: "Bloodthirsty: After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.", 
   },
   rangedkalpas:{
