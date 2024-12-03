@@ -32,11 +32,6 @@ export async function load({ params }) {
         return acc;
     }, {});
 
-    for (const category in categorizedArticles) {
-        categorizedArticles[category].sort(
-            (a, b) => a.sortOrder - b.sortOrder || new Date(b.date) - new Date(a.date)
-        );
-    }
 
     const sortedCategories = sortCategories(Object.keys(categorizedArticles));
 

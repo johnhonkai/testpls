@@ -130,7 +130,7 @@
 					</li>
 					<li>
 						<a on:click={openAboutModal}>
-							About
+							 Support Me~
 						</a>
 					</li>
 					<li>
@@ -191,6 +191,57 @@
 	<div class="modal modal-open">
 		<div class="modal-box max-w-3xl overflow-y-auto">
 			<p class="text-xl font-bold mb-4">About</p>
+
+						<!-- Support and Socials Section -->
+						<div class="flex flex-col sm:flex-row justify-between items-start space-y-6 sm:space-y-0">
+							<!-- Support Me Section -->
+							<div class="flex items-start space-x-4">
+								<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/songquexd%20copy.webp" alt="Support Icon" class=" rounded h-20 w-20">
+								<div>
+									<p class="text-lg font-semibold mb-2">SUPPORT ME</p>
+									<div class="flex space-x-4">
+										<a href="https://www.youtube.com/marisahonkai/join" target="_blank" class="btn btn-square btn-outline">
+											<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
+										</a>
+										<a href="https://ko-fi.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
+											<i class="fas fa-mug-hot text-xl"></i> <!-- Font Awesome Ko-fi -->
+										</a>
+										<a href="https://paypal.me/marisahonkai" target="_blank" class="btn btn-square btn-outline">
+											<i class="fab fa-paypal text-xl"></i> <!-- Font Awesome PayPal -->
+										</a>
+									</div>
+									<p class="text-gray-400 text-sm mt-2">Join YouTube membership, or donate</p>
+								</div>
+							</div>
+			
+							<!-- Socials Section -->
+							<div>
+								<p class="text-lg font-semibold mb-2">SOCIAL</p>
+								<div class="flex space-x-4">
+									<a href="https://www.youtube.com/@MarisaHonkai" target="_blank" class="btn btn-square btn-outline">
+										<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
+									</a>
+									<a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank" class="btn btn-square btn-outline">
+										<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/hoyolab%20copy.webp" alt="HoYoLab" class="h-6 w-8 opacity-70">
+									</a>
+									<a href="https://discord.gg/marisahonkai" target="_blank" class="btn btn-square btn-outline">
+										<i class="fab fa-discord text-xl"></i> <!-- Font Awesome Discord -->
+									</a>
+									<a href="https://twitter.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
+										<i class="fab fa-twitter text-xl"></i> <!-- Font Awesome Twitter -->
+									</a>
+									<a href="https://www.instagram.com/morisohonkai/" target="_blank" class="btn btn-square btn-outline">
+										<i class="fab fa-instagram text-xl"></i> <!-- Font Awesome Instagram -->
+									</a>
+			
+								</div>
+								<p class="text-gray-400 text-sm mt-2">For the latest HI3 news, guides, and memes</p>
+							</div>
+						</div>
+
+						<div class="divider divider-neutral my-5"></div>
+
+						
 			<p class="text leading-relaxed mb-6">
 				This is a fan-created website of the game Honkai Impact 3rd by content creator 
 				<span class="text-blue-400"><a href="https://www.youtube.com/@MarisaHonkai" target="_blank">Marisa Honkai</a></span>.
@@ -226,55 +277,8 @@
 			</p>
 
 
-			<div class="divider divider-neutral my-5"></div>
 
 
-			<!-- Support and Socials Section -->
-			<div class="flex flex-col sm:flex-row justify-between items-start space-y-6 sm:space-y-0">
-				<!-- Support Me Section -->
-				<div class="flex items-start space-x-4">
-					<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/songquexd%20copy.webp" alt="Support Icon" class=" rounded h-20 w-20">
-					<div>
-						<p class="text-lg font-semibold mb-2">SUPPORT ME</p>
-						<div class="flex space-x-4">
-							<a href="https://www.youtube.com/marisahonkai/join" target="_blank" class="btn btn-square btn-outline">
-								<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
-							</a>
-							<a href="https://ko-fi.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-								<i class="fas fa-mug-hot text-xl"></i> <!-- Font Awesome Ko-fi -->
-							</a>
-							<a href="https://paypal.me/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-								<i class="fab fa-paypal text-xl"></i> <!-- Font Awesome PayPal -->
-							</a>
-						</div>
-						<p class="text-gray-400 text-sm mt-2">Join YouTube membership, or donate</p>
-					</div>
-				</div>
-
-				<!-- Socials Section -->
-				<div>
-					<p class="text-lg font-semibold mb-2">SOCIAL</p>
-					<div class="flex space-x-4">
-						<a href="https://www.youtube.com/@MarisaHonkai" target="_blank" class="btn btn-square btn-outline">
-							<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
-						</a>
-						<a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank" class="btn btn-square btn-outline">
-							<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/hoyolab%20copy.webp" alt="HoYoLab" class="h-6 w-8 opacity-70">
-						</a>
-						<a href="https://discord.gg/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-							<i class="fab fa-discord text-xl"></i> <!-- Font Awesome Discord -->
-						</a>
-						<a href="https://twitter.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-							<i class="fab fa-twitter text-xl"></i> <!-- Font Awesome Twitter -->
-						</a>
-						<a href="https://www.instagram.com/morisohonkai/" target="_blank" class="btn btn-square btn-outline">
-							<i class="fab fa-instagram text-xl"></i> <!-- Font Awesome Instagram -->
-						</a>
-
-					</div>
-					<p class="text-gray-400 text-sm mt-2">For the latest HI3 news, guides, and memes</p>
-				</div>
-			</div>
 
 			<div class="modal-action">
 				<button class="btn btn-secondary" on:click={closeModal}>Close</button>

@@ -1,10 +1,10 @@
 
 <svelte:head>
-	<title>Honkai Impact Classroom</title> 
-    <meta property="og:title" content="Honkai Impact Classroom"/>
+	<title>{data.title}</title> 
+    <meta property="og:title" content={data.title} />
     <meta property="og:description" content="Learn the basics of Honkai Impact 3rd" />
     <meta property="og:image" content="https://i.imgur.com/7CwpwmA.png" />
-    <meta property="og:url" content="https://marisaimpact.com/classroom" />
+    <meta property="og:url" content={`https://marisaimpact.com/classroom/${data.slug}`} />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">

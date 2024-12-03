@@ -15,23 +15,3 @@ Prism Stigma are stigma used by Part 2 Valkyries. All Part 2 stigma are forgeabl
 
 ![](https://i.imgur.com/6qQIVW9.png)
 
-
-## G3 Stigma
-
-    
-
-
-<div class="flex h-fit p-2 py-0 space-x-2 items-center">
-  <img
-    src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120"
-    alt="dmg color"
-    class="h-auto"
-  />
-  <img
-    src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120"
-    alt="dmg color"
-    class="h-auto"
-  />
-</div>
-
-Turgenev
