@@ -16,6 +16,8 @@ customSlug: "dmgcalc"
 Valkyries, weapon, stigma, etc provide **buffs**, also known as **damage multipliers**:
 - Total DMG (TDM)
 - TDM Taken 
+- Elemental DMG
+- Elemental DMG Taken
 - Lightning DMG
 - Lightning DMG Taken
 - Ice DMG
@@ -35,10 +37,10 @@ Valkyries, weapon, stigma, etc provide **buffs**, also known as **damage multipl
 
 ---
 
-## Damage Type and Multipliers Relationship
+## Damage Element and Multipliers Relationship
 
 
-As we have learnt in damage type lesson, a valk deals one of the four dmg types.
+As we have learnt in damage type lesson, most damage in the game belongs to one of these damage elements:
 - Physical DMG, Lightning DMG, Ice DMG, Fire DMG
 - +Special (Bleed DMG, Ignite DMG)
 

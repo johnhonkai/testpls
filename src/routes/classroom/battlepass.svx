@@ -52,12 +52,22 @@ Crystallum is the currency used to purchase items in BP Works shop. Each season 
 - Knight: 14
 - Paladin: 16
 
+---
+
 ### Featured Valkyrie
 During a BP season, there are two featured valkyries for the BP Level rewards and BP Shop. 
+
+
 
 #### BP Level
 - The first valk is available for the first and second patch.
 - The second valk is available for the third and fourth patch.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/zKtqNGl.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+</div>
+
+
 
 #### BP Shop
 - The first valk card/stamps are added on the first and second patch. They remain in the shop until BP season ends.
@@ -67,12 +77,16 @@ During a BP season, there are two featured valkyries for the BP Level rewards an
   <img src="https://i.imgur.com/K2l1PVa.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-
+---
 
 ### Equipment
+
+#### BP Works Shop
 A new set of equipment is added BP Works shop every patch. The equipment remain in the shop until BP season ends + one more patch.
 
-#### BP Works Vintage
+![BP Equipment](https://i.imgur.com/zWuLuV0.jpeg)
+
+#### BP Works Vintage Shop
 After the BP season ends, **THE EQUIPMENT WILL REMAIN FOR ONE MORE PATCH** in a separate shop called **BP Works Vintage**. This is your last chance to purchase the equipment.
 - In Vintage shop, you can convert the new crystallum to the previous crystallum, in case you are short a few crystallum to get an equipment.
 - "What? You can use old crystallum to get the new crystallum?!" NO! 😠 New convert to old! Not old convert to new! 😠 
@@ -81,6 +95,8 @@ Image below shows the vintage shop in v7.8. These are equipment from v7.4-7.7 Ba
 
 
 ![BP Vintage](https://i.imgur.com/LR6rRlp.jpeg)
+
+---
 
 ### BP Arsenal
 This shop resets every patch and uses a material called Honor Chips, which also resets every patch (specifically, on Monday of the patch week). Remember to use these before they expire!
