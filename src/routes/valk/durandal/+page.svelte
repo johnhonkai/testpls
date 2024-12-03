@@ -247,8 +247,8 @@ async function increaseLike() {
     <div class="flex flex-col items-center" id="typebox">
       <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-cyan-500 outline-1 bg-cyan-950/75 rounded-lg p-2 backdrop-blur-sm">
         <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconIMG.png" alt="Mech" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+        <img src="/images/type/IconIMG.png" alt="IMG" class="w-auto h-8 md:h-10" />
+        <img src="/images/element/Core_Physical.png" alt="Physical" class="w-auto h-8 md:h-10" />
         <img src="/images/artype/ar future.png" alt="ar" class="w-auto h-8 md:h-10" />
       </div>
     </div>
@@ -261,7 +261,11 @@ async function increaseLike() {
           <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
         </div >
         <div class="flex flex-row gap-2 flex-wrap justify-center">
+          <img src="/images/artype/ar future.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
           <img src="/images/artype/ar future.png" alt="Support 3" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/p1physical.png" alt="Support 4" class="w-auto h-8 md:h-10" />
+
         </div>
       </div>
     </div>
@@ -408,18 +412,42 @@ async function increaseLike() {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            STELLAR OUTBURST
+            SURF N NUKE
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            AR CHARGING
+            CHARGED ATK
           </button>
         </div>
       
- 
+        <div class="relative overflow-hidden my-10" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/jIpc1CW0oHM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+          </iframe>
+      </div>
+
+      <div class="relative overflow-hidden my-10" style="padding-top: 56.25%;">
+        <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/gGLgroupPgw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </div>
+
+
 
       {/if}
 
@@ -445,6 +473,57 @@ async function increaseLike() {
       {#if selectedTab === 'Gameplay Examples'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
 
+      <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
+
+      
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Durandal DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Durandal DPS vs Deliverance Kevin</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/ykOI7V8liL8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+
+      
+      
+
+    </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Durandal Part 1 Support</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base"> Durandal Supporting Herrscher of Rebirth DPS </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/BxukhzXIKgY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+  </div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}

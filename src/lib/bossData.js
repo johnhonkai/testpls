@@ -41,7 +41,8 @@ export const weatherList = {
   starless: [
     {id: 'starbenares', name: 'Benares: Ice'},
     {id: 'starrimestar', name: 'Herrscher of Rimestar'},
-    {id: 'starandrius', name: 'Dominator of Wolves'}
+    {id: 'starandrius', name: 'Dominator of Wolves'},
+    {id: 'starbull', name: 'Husk: Mysticism'},
   ],
   bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
@@ -177,6 +178,14 @@ export const bossData = {
       bosspic: "images/Bosses/Dominator of Wolves.webp", 
       weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
   },
+  starbull:{
+    name: 'Husk: Mysticism', 
+      mechanics: '', 
+      weakness: '', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk Mysticism.webp", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+  },
   bleedhos: {
     name: 'Herrscher of Sentience', 
       mechanics: 'Transition has high hitcount hp', 
@@ -296,11 +305,7 @@ export const teamData = {
   
   ],
 
-    videos: [
-        { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-        { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-        { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-      ], 
+
 
   },
 
@@ -542,10 +547,9 @@ export const teamData = {
     ],
   
     videos: [
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-    ]
+      { url: 'https://www.youtube.com/embed/Sqbvxea8Tc4', abyss: 'RedLotus 499D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/nQZ3EhOOmqE', abyss: 'Nirvana 526D', uploader: 'phylynxbelt' },
+    ], 
   },
   
   stunfish: {
