@@ -25,7 +25,8 @@ Some valkyries have their own impair
 
 ## Two impairs do not stack
 
-Impairs do not stack. The latest impair will override the previous impair. However, Herrscher of Rebirth (HoRb) and Herrscher of Sentience (HoS) impair are like an aura, they are constantly reapplied every second on all enemies on the field.
+Impairs do not stack. The latest impair will override the previous impair. However, Herrscher of Rebirth (HoRb) and Herrscher of Sentience (HoS) impair is like an aura, they are constantly reapplied every second on all enemies on the field.
+
 For example, if you use Celestial Hymn (CH) impair during HoS impair duration, CH impair will only apply for a split second before HoS impair is reapplied.
 
 ---

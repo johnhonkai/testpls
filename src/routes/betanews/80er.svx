@@ -1,6 +1,6 @@
 ---
+title: v8.0 Elysian Realm v2
 creationDate: "2024-11-25T16:52:12.764Z"
-title: v8.0 Elysian Realm
 lastModifiedDate: "2024-11-25T16:52:12.764Z"
 date: "2024-11-25"
 
@@ -36,6 +36,26 @@ image: "/images/valkportrait/dudu.png"
 - 10: When you cast weapon skill, Elemental DMG +12% for 12s, can be refreshed.
 - 10: When you trigger evasions skill, valk Phy and Ele DMG +15% for 8s, can be refreshed.
 - 15: Valk Total DMG +18%.  For each Flamechaser nexus unlocked, Physical DMG +4%, max 12%
+- 15: If valk weapon is Trick Staff, Drive Core, Javelin, Lance, or Scythe, gain Phy Breach +40%, and Ele Breach +20%
+
+### PHASE 2
+
+**STAGE BUFF**
+- On every stage, a painting monster will be summoned. When valk is in the aoe, Total DMG +30%, trigger an explosion, applies all Star-signet dyes that have been unlocked. Enemies take 6% less Total DMG, and after every level, the effect is increased by 1.8%, up to 33% (independent multiplier)
+- Enemies take 30% less Total DMG (independent multiplier). Effect is disabled when valk deals 500 Lightning DMG, Fire DMG or Physical DMG at once, lasts for 3s, can be refreshed.
+- Everytime you deal Combo or Charged ATK DMG, the enemies are stained with black dye, they take 30% more Total DMG, lasts for 8 seconds.
+- When you trigger evasion skill or deal melee ATK DMG, gain Total DMG +30% for 10s, can be refreshed.
+- Vicissitude and Decimation +2
+
+---
+
+**LOAD BUFF**
+- 0: F17 boss is changed to HoDomination
+- 5: Max sp +30
+- 5: When there is a valk with different type on the field, Total DMG +3%
+- 10: When you cast weapon skill, Elemental DMG +12% for 12s, can be refreshed.
+- 10: Weapon skill and Combo ATK Physical DMG +20%
+- 15: Upon casting weapon skill or deal Charged ATK DMG, valk Total DMG +30% for 8s, can be refreshed.
 - 15: If valk weapon is Trick Staff, Drive Core, Javelin, Lance, or Scythe, gain Phy Breach +40%, and Ele Breach +20%
 
 ### NEW DURANDAL

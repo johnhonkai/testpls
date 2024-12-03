@@ -362,7 +362,7 @@ function selectTabMobile(event) {
           </p>
           
           <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Helia is still a great support, but loses to other S-rank supports due to slower rotation and lack of timestop and self damage. 
+              <strong class="text-amber-400">Competitive:</strong> Helia is still usable, but loses to other S-rank supports due to slower rotation and lack of timestop and self damage. 
               For characters like SIMP and Sparkle, they have 18 resonance trigger limit - It's better to pair them with a character with 6 mark trigger count (like Vita, Thelema, HoFi) instead of Helia.
           </p>
 

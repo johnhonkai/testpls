@@ -291,9 +291,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=jIpc1CW0oHM" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=C3qwGALYccg" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/jIpc1CW0oHM/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/C3qwGALYccg/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

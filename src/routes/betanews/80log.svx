@@ -19,8 +19,12 @@ image: "/images/valkportrait/dudu.png"
 
 ---
 
+### V2
+
 ## NEW VALK
 S-rank Durandal, Img-type, Physical DMG
+
+---
 
 ## NEW OUTFIT
 Senadina Outfit
@@ -122,7 +126,7 @@ Adjusted the values of some weathers, including:
 
 - Stellar: During SO, team TDM +10% > 20%
 
-- Starless: When AR is inactivated, team TDM +30% > 50%
+- Starless: When AR is not activated, team TDM +30% > 50%
 
 - Shadow Star: When Shadow Star ATK hits, valk on the field TDM +30% > 50%
 

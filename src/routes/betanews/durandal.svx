@@ -1,6 +1,6 @@
 ---
 creationDate: "2024-11-29T14:32:56.426Z"
-title: Durandal Skill
+title: Durandal Skill v2
 lastModifiedDate: "2024-11-29T14:32:56.426Z"
 
 version: '8.0'
@@ -64,11 +64,11 @@ When WoDestiny is activated:
 ---
 **AR 2**<br/>
 When AR is not activated:
-- Team Shieldbreak +75% (S) ➔ 100% (SS1)
+- Team Shield DMG +75% (S) / 100% (SS1)
 - If a shield-broken enemy is hit by Charged ATK third stage, or if the shield is broken within 10s upon being hit, the shield regen is frozen for 5s. The shield regen cannot be applied again before the shield recovers.
 - When Charged ATK third stage hits, apply 10 stun trauma, and recover 5 sp for the team.
 - When QTE hits, the following effects are applied, lasts for 6s, CD: 16s :
-	- Shieldbreak +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
+	- Shield DMG +450% (S) / 600% (SS1), Total DMG +27% (S) / +36% (SS1) , Physical DMG +27% (S) / +36% (SS1)
 	- The enemy is impaired, DEF -70%
 
 ---
@@ -82,8 +82,8 @@ When Stellar Outburst ends, gain Stellar Drain. During AR Charging, when Charged
 ---
 **AR 4**<br/>
 When RoPromotion is activated:
-- Team Shield DMG +45% (S) ➔ 60% (SS2), self Shield DMG +30% (S) ➔ +40% (SS2)
-- RoPromotion valk Total DMG +7.5% (S) ➔ +10% (SS2)
+- Team Shield DMG +45% (S) / 60% (SS2), self Shield DMG +30% (S) / +40% (SS2)
+- RoPromotion valk Total DMG +7.5% (S) / +10% (SS2)
 - Team Physical DMG +15%, Elemental DMG +20%
 - Dudu's Star Shift ATK gain Crit Rate +30%
 
@@ -105,7 +105,7 @@ After Surf form ends, weapon skill enter 60-second cooldown. Reduce cd by 20s fo
 
 ---
 **PASSIVE 1**<br/>
-When you have Fearless, enemies take 7% (S) ➔ 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) ➔ 11% (S1)
+When you have Fearless, enemies take 7% (S) / 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) / 11% (S1)
 
 ---
 **PASSIVE 2**<br/>
@@ -117,7 +117,7 @@ In surf form, press evasion to accelerate, and gain 100 Dawn per second.
 
 ---
 **PASSIVE 4**<br/>
-When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) ➔ 23% (SS), Total DMG +15% (S) ➔20% (SS).
+When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) / 23% (SS), Total DMG +15% (S) / 20% (SS).
 
 ---
 **PASSIVE 5**<br/>
@@ -152,7 +152,7 @@ In surf form, press and hold weapon to cast, or automatically triggered by passi
 
 ---
 **Weapon 1**<br/>
-When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
+When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) / 50% (SS) imaginary penetration (dmg transfer to seed)
 
 ---
 ### BASIC ATK
@@ -176,7 +176,7 @@ Airborne QTE: Deal 390% ATK of Physical DMG, can be followed up with Charged ATK
 
 ---
 **Basic 2**<br/>
-When AR is inactivated: When you enter via QTE, the switch cd of preceding valk is reduced by 4 seconds.
+When AR is not activated: When you enter via QTE, the switch cd of preceding valk is reduced by 4 seconds.
 
 When AR is activated: When you enter via QTE, gain full Dawn meter.
 
@@ -207,7 +207,7 @@ When charging power is maxed out, Charged ATK is automatically casted.
 
 ---
 **Charged ATK 2**<br/>
-Charged ATK and followup attack gain Crit Rate +30%. Each charging stage grants Shieldbreak +30% to Charged ATK.
+Charged ATK and followup attack gain Crit Rate +30%. Each charging stage grants Shield DMG +30% to Charged ATK.
 
 ---
 **Charged ATK 2**<br/>
@@ -222,12 +222,12 @@ Throws a spear that pierces the heaven and earth. Deal 1260% ATK of Physical DMG
 
 ---
 **ULT 1**<br/>
-When AR is inactived: 
+When AR is not activated: 
 Upon casting Ultimate, enemies take 20% more Physical DMG for 20s, can be refreshed.
 
 ---
 **ULT 2**<br/>
-Ult has 150% img penetration (????)
+Ult has 150% img penetration 
 
 ---
 **ULT 3**<br/>
@@ -250,8 +250,8 @@ Lead Skill
 - When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
 
 **SS1** <br/>
-- Team Shieldbreak +75% (S) ➔ 100% (SS1)
-- Shieldbreak +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
+- Team Shield DMG +75% (S) ➔ 100% (SS1)
+- Shield DMG +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
 
 **SS2** <br/>
 - Team Shield DMG +45% (S) ➔ 60% (SS2), self Shield DMG +30% (S) ➔ +40% (SS2)

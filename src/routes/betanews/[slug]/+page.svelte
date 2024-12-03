@@ -1,5 +1,19 @@
 <!-- src/routes/blog/[slug]/+page.svelte -->
 
+<svelte:head>
+	<title>{data.title}</title> 
+    <meta property="og:title" content={data.title} />
+    <meta property="og:description" content="Learn the basics of Honkai Impact 3rd" />
+    <meta property="og:image" content="https://i.imgur.com/APjjbN5.png" />
+    <meta property="og:url" content={`https://marisaimpact.com/betanews/${data.slug}`} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://marisaimpact.com/classroom" />
+</svelte:head>
+
+
 <script>
 // @ts-nocheck
 

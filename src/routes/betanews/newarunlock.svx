@@ -1,6 +1,6 @@
 ---
 creationDate: "2024-11-29T14:32:56.426Z"
-title: Vita, Sparkle and JD New Skills
+title: Vita, Sparkle and JD New Skills v2
 lastModifiedDate: "2024-11-29T14:32:56.426Z"
 
 version: '8.0'

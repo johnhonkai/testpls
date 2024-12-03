@@ -2,7 +2,7 @@
 creationDate: "2024-11-29T13:43:19.234Z"
 
 
-title: New Dudu Weapon
+title: New Dudu Gear v2
 
 lastModifiedDate: "2024-11-29T13:43:19.234Z"
 version: '8.0'
@@ -32,14 +32,14 @@ The weapon active's CD, max charges and effects are based on wielder type. If th
 
 New Dudu equip bonus:
 - During [Surf Mode], an additional javelin will be generated each time the QTE button is charged up, max 4. Release ATK to throw all javelins at the same time, deal 150% ATK of Physical DMG each (counts as weapon skill dmg)
-- When AR is inactivated, when [Wild Form] Charged ATK third stage hits, grants the team Physical DMG +36%.
+- When AR is not activated, when [Wild Form] Charged ATK third stage hits, grants the team Physical DMG +36%.
 
 ---
 
 **PASSIVE 1**<br/>
 Self Total DMG +20%. New Dudu equip bonus:
 - When [Wild Form] Charged ATK third stage hits, reduce weapon cd by an additional 30 seconds.
-- When AR is inactivated:
+- When AR is not activated:
 	- Self Physical DMG +38%. Team Total DMG +12%.
 
 ---

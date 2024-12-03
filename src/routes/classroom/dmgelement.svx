@@ -7,15 +7,20 @@ customSlug: "dmgelement"
 ---
 
 ## The Original Four
-All characters in Honkai Impact deal one of the following damage elements:
+Most damage in Honkai Impact belong to one of following damage elements:
 - Physical DMG
 - Lightning DMG
 - Ice DMG
 - Fire DMG
 
+---
 
-Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG.<br/>
-Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. Only Physical DMG can crit.
+1. Most valkyries only deal one dmg element, but some of them can deal multiple dmg elements , or adaptive dmg element. 
+    - For example, [Herrscher of Finality](/valk/hofi)'s ultimate deals Fire, Lightning and Ice DMG.
+2. Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG.
+3. Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. Only Physical DMG can crit.
+
+---
 
 <p class="text-center">Each damage has its own colour:</p>
 <p align="center">
@@ -26,22 +31,17 @@ Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. O
 
 
 ## Bleed and Ignite DMG
-In 2023, Bleed DMG and Ignite DMG are introduced. These are not new damage elements, rather, they are secondary damage types that exists alongside with one of the four main damage elements.
+In 2023, Bleed DMG and Ignite DMG are introduced. These are not new damage elements, rather, they are secondary damage types that exist alongside with one of the four main damage elements.
 Characters with Bleed / Ignite DMG benefit from both their primary element and Bleed / Ignite DMG buffs.
-
----
 
 ### Bleed DMG
 - Lunar Vow: Deals Lightning DMG, and most of her attacks also count as Bleed DMG.
 - Valkyrie Quicksand: Deals Physical DMG, and most of her attacks also count as Bleed DMG.
 - Cosmic Expression: Deals Physical DMG, and most of her attacks also count as Bleed DMG.
 
----
 
 ### Ignite DMG
 - Miracle Magical Girl: Deals Fire DMG, and her attacks also count as Ignite DMG.
-
----
 
 ### Bleed / Ignite DMG vs Bleed / Ignite Status DoT
 Although they are not entirely the same, Bleed and Ignite DMG do inherit some properties from Bleed and Ignite status damage-over-time (DoT). For example:
@@ -54,17 +54,20 @@ In addition, some of the Bleed / Ignite valk mechanics are related to the Bleed 
 - Miracle Magical Girl's Ultimate count as Ignite DMG, and its damage increases for each Ignite DoT stack that the enemy has.
 
 
+---
 
 
 ## Total DMG
 This is not exactly a damage type, but it is very common in skill descriptions that it has to be mentioned here. Characters, equipment, etc provide buffs for the elements mentioned above (Fire DMG buff, Lightning DMG buff, etc). But they can also provide a universal dmg buff known as **Total DMG** buff. Total DMG buff will benefit all damage types.
 
+---
 
 ## HP Loss DMG
 HP Loss DMG is a special dmg that only a few valkyries have. It deals a fixed damage and the damage value is equal to a percentage of another damage.
 - For example: Herrscher of Finality - During Stellar Outburst, each Basic ATK deals additional HP Loss DMG. The HP Loss DMG value is equal to 120% of the Basic ATK's damage.
 - Certain enemies require HP Loss DMG to counter their mechanics (For example, Twin Wardens)
 
+---
 
 ## Stardust DMG
 This is a special dmg that can only be done against Stardust (SD) enemies. The more SD remnant stacks you have, the more damage you deal to the enemy's Max HP.

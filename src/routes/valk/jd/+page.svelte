@@ -373,8 +373,8 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>JD:</strong> Battlesuit Supply</li>
               <li><strong>JD's Weapon:</strong> Equipment Supply</li>
-              <li><strong>JD's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 7.9</li>
-              <li>Not available in 7.9. Last known supply is v7.8.</li>
+              <li><strong>JD's Stigma:</strong> Equipment Supply, Forgeable</li>
+              <li>Available in 7.9.</li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->

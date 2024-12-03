@@ -62,6 +62,8 @@ export const weatherList = {
   ],
 }
 
+
+
 export const bossData = {
   lightningsprout: {
     name: 'Sprout of Wishing', 
@@ -93,7 +95,7 @@ export const bossData = {
   obvhomu: {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 
-      weakness: 'None', 
+      weakness: 'Phy / Lightning / Ice / Fire (M)', 
       typeicon: "images/type/IconNULL.png", 
       bosspic: "images/Bosses/HOMU Emperor.webp", 
       weather: "Stellar Crown: For every character in the team with Omniscient Star tag, team Total DMG +8%. When AR Rite of Oblivion is activated, team Total DMG +30%.", 
@@ -164,15 +166,15 @@ export const bossData = {
   },
   starrimestar:{
     name: 'Herrscher of the Rimestar', 
-      mechanics: '', 
-      weakness: '', 
+      mechanics: 'When AR is not activated, Total DMG +20%. Transition phase: Use melee atk to knock the two lanterns. After that, deal as much dmg as you can to the ice star to start phase 2 and gain dmg buff, max 8 stacks.', 
+      weakness: 'Ice (Immune), Lightning (S)', 
       typeicon: "images/type/IconPSI.png", 
       bosspic: "images/Bosses/Herrscher of Rimestar.png", 
       weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
   },
   starandrius:{
     name: 'Dominator of Wolves', 
-      mechanics: 'When AR is not activated, Total DMG +20%. Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield.', 
+      mechanics: 'When AR is not activated, Total DMG +20%. Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield. ', 
       weakness: 'Ice (Immune)', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Dominator of Wolves.webp", 
@@ -180,8 +182,8 @@ export const bossData = {
   },
   starbull:{
     name: 'Husk: Mysticism', 
-      mechanics: '', 
-      weakness: '', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a number of balls, destroy them to start Phase 2. ', 
+      weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
       weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
@@ -246,7 +248,7 @@ export const bossData = {
   },
   resovita: {
     name: "Vita - Sea's Depths", 
-    mechanics: "Has three Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp. Also gain dmg buff.", 
+    mechanics: "Phase 1 has three Qua shields, phase 2 has two Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp, and gain dmg buff.", 
     weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Vita.png", 
@@ -262,7 +264,7 @@ export const bossData = {
   },
   phyalien: {
     name: 'Alien Guard', 
-    mechanics: '', 
+    mechanics: 'Transition phase: Stand on the glowing platform, the boss attack will drop SD remnants. Deal enough damage to begin Phase 2. Use a SD-type DPS or Support to quickly gather SD remnants. ', 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Alien Guard.webp", 
@@ -801,7 +803,11 @@ export const teamData = {
         rank: '65',
         pct: '11%',
       },
-    ]},]
+
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/_cfYygEWX10', abyss: 'RedLotus 482D', uploader: 'Marisa Honkai' },
+    ] 
   },
   meleehoc: {
     teamDataSets: [

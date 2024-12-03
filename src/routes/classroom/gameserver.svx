@@ -18,7 +18,7 @@ In Honkai Star Rail and Genshin Impact, there is only one game client, and you c
 
 
 ## List of Servers
-In Hoyoplay Launcher, there are six servers that you can choose: 
+In Hoyoplay Launcher (PC), there are six servers that you can choose. For mobile, only the default app for your region is displayed on Google Play and iOS App Store.
 - Europe (EU) & Americas (NA) (They share one client)
 - Japan (JP)
 - Korea (KR)
@@ -26,6 +26,8 @@ In Hoyoplay Launcher, there are six servers that you can choose:
 - Traditional Chinese Server (equivalent to TW, HK, MO servers in Genshin/StarRail). 
 
 Only SEA, EU and NA servers use <span class="text-emerald-400">English language</span>.
+
+For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span>. EU / NA app name is <span class="text-emerald-400">Honkai Impact 3rd</span>.
 
 ![List of available HI3 servers in Hoyoplay](https://i.imgur.com/PEyX4D0.png)
 
@@ -61,7 +63,7 @@ I once tried EU server, and took a long time to get a match in Fall Guys event.
 ---
 
 ### Physical Merch Limitation
-Every year, we have a free Art Collection event. The reward only ships to certain areas tied to the server geographically. Below is an example of Art Collection Vol 2 shipping areas for SEA server.
+From time to time, there are physical merch giveaways like Art Collection and raffle event. Physical merch is only shipped to certain countries tied to the server geographically. Below is an example of Art Collection Vol 2 shipping areas for SEA server.
 
 
 <div class="flex items-center justify-center text-orange-300 ">

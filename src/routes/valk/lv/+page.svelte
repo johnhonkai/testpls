@@ -365,7 +365,7 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Lunar Vow:</strong> Battlesuit Supply, Starter Supply</li>
               <li><strong>Lunar Vow's Weapon and Stigma:</strong> Focused Supply, Starter Supply</li>
-              <li>Regular supply not available in v7.9. Last known supply is v7.7. </li>
+              <li>ADV Supply and Rebate Focused Supply available in v7.9. </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
