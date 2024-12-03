@@ -111,7 +111,7 @@
         },
         "Rebate": {
             title: "REBATE FOCUSED SUPPLY",
-            description: "<li>Duration: 2 weeks</li><li>UP: Bloodied Casket, Sweet Dreams</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon and Stigma off rates not announced yet</li>",
+            description: "<li>Duration: 2 weeks</li><li>UP: Bloodied Casket, Sweet Dreams</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Bloodied Casket (UP), Key of Ascension, Anchor of the Voyage, Torch of Eons, Life Harvester, Lost Conviction</li><li>Stigma: Sweet Dreams (UP), Aladdin, Alexandra, Dr Mei, Little Joys</li>",
 
 
         },
