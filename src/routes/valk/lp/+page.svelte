@@ -369,7 +369,7 @@ function selectTabMobile(event) {
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>For World Star team, currently Vita is undeniably the best support.</li>
-                <li>For WoDestiny team, S0-Vita loses to S0-Sena (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
+                <li>For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
                 <li>For the future ??? AR team, Vita is currently one of the three best supports for that AR.</li>
             </ul>
             <div class="divider divider-neutral"></div>
@@ -378,7 +378,7 @@ function selectTabMobile(event) {
             <ul class="list-disc ml-6 text-sm sm:text-base ">
                 <li ><strong>Vita:</strong> Battlesuit Supply</li>
                 <li><strong>Vita's Weapon:</strong> Equipment Supply</li>
-                <li><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 7.8</li>
+                <li><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- Full Guide Section -->
