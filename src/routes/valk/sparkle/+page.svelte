@@ -625,7 +625,7 @@ function selectTabMobile(event) {
             <p class="font-semibold text-cyan-300">Ultimate (Part 1 Team):</p>
             <p>
               Ult has all the major buffs: Ignite DMG +25%, 30% more Ignite Trauma, 
-              enemies take 65% more Ignite DMG, 30 sp, ult cd -5s, ult sp cost reduction, and more.
+              enemies take 65% more Ignite DMG, 30 sp, ult cooldown -5s, next ult cd -6s, ult sp cost reduction, and more.
             </p>
           </div>
         </div>
@@ -635,7 +635,7 @@ function selectTabMobile(event) {
           <div>
             <p class="font-semibold text-cyan-300">Ultimate (World Star Team):</p>
             <p>
-              Ult only provides ult cooldown -5s, 30 SP, and higher anti-interrupt. If used on a Fire DMG 
+              Provides current ult cooldown -5s, next ult cd -6s, 30 SP, and higher anti-interrupt. If used on a Fire DMG 
               dealer, the SP consumption of their next Ultimate is reduced by 50%.
             </p>
           </div>
