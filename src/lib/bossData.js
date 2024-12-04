@@ -955,4 +955,69 @@ export const teamData = {
       },
     ]},]
   },
+  starbull: {
+    teamDataSets: [
+    {
+      tabname: "v7.9 CN",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Theresa Lunar Vow.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '1',
+        pct: '1%',
+        bottext: "Gear: DoUnity, Benares TM Cezanne B. Highest Score: 829"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '2-8',
+        pct: '23%',
+        bottext: "Gear: 7Thunder, Zhenyi TB Schro M. Highest Score: 827"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '9',
+        pct: '17%',
+        bottext: "Gear: DoUnity, Zhenyi TB Schro M. Highest Score: 824"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Mei Herrscher of Origin.png",  "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '10-11',
+        pct: '27%',
+        bottext: "Gear: DoUnity, Zhenyi TB Schro M. Highest Score: 824"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Mei Herrscher of Origin.png",  "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '40',
+        pct: '28%',
+        bottext: "Gear: 7Thunder, Zhenyi TB Schro M. Highest Score: 820"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '70',
+        pct: '2%',
+        bottext: "Gear: DoUnity, Raiden TM Cezanne B. Highest Score: 816"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Mei Herrscher of Origin.png",  "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+        rank: '85',
+        pct: '1%',
+        bottext: "Gear: 7Thunder, Raiden TM Cezanne B. Highest Score: 814"
+      },
+
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Eden Golden Diva.png", "images/valkportrait/Mei Herrscher of Origin.png",  "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_klein.png"],
+        rank: '99',
+        pct: '1%',
+        bottext: "Gear: DoUnity, Zhenyi TB Schro M. Highest Score: 813"
+      },
+    ]},]
+  },
 }
