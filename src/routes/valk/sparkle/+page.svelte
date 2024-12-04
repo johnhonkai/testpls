@@ -615,7 +615,7 @@ function selectTabMobile(event) {
           <span class="text-cyan-300 font-bold text-lg">1</span>
           <div>
             <p class="font-semibold text-cyan-300">Stellar Drain:</p>
-            <p><i>I am Elation</i> consumes Stellar Drain and restores 20 AR.</p>
+            Combo ATK / <p><i>I am Elation</i> consumes Stellar Drain and restores 20 AR.</p>
           </div>
         </div>
       
@@ -662,7 +662,7 @@ function selectTabMobile(event) {
         <div class="flex items-start gap-4">
           <span class="text-cyan-300 font-bold text-lg">6</span>
           <div>
-            <p class="font-semibold text-cyan-300">Any weapon skill:</p>
+            <p class="font-semibold text-cyan-300">Any weapon skill / I am Elation:</p>
             <p>Insta-kill QUA enemies below 10% HP.</p>
           </div>
         </div>
