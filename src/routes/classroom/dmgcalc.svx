@@ -40,12 +40,12 @@ Valkyries, weapon, stigma, etc provide **buffs**, also known as **damage multipl
 ## Damage Element and Multipliers Relationship
 
 
-As we have learnt in damage type lesson, most damage in the game belongs to one of these damage elements:
+As we have learnt in damage type lesson, most damage in the game belong to one of these damage elements:
 - Physical DMG, Lightning DMG, Ice DMG, Fire DMG
 - +Special (Bleed DMG, Ignite DMG)
 
 
-Each dmg type can be affected by the following dmg multipliers:
+Each dmg element can be affected by the following dmg multipliers:
 
 <style>
 .table_component {

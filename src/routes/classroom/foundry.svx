@@ -9,9 +9,210 @@ customSlug: "foundry"
 
 This is where you forge equipment and stigma. A lot of the equipment here are very old and outdated Part 1 equipment. So I will only talk about some notable ones.
 
+## Note on Resources
+
+After starter event ends, you will only get limited forge resources per week. It will take weeks, and months to forge a stigma. So don't waste them forging everything.
+
+
+
 ## Prism Stigma
 
 Prism Stigma are stigma used by Part 2 Valkyries. All Part 2 stigma are forgeable.
 
 ![](https://i.imgur.com/6qQIVW9.png)
+
+
+
+
+## G3 Stigma
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Turgenev TB
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/f2e785b423273338556e66771a543a69_5615190248057583714.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>Turgenev is a universal Elemental support stigma that can be used by any support. It is actually still one of the best stigma for Golden Diva in certain cases, and in Memorial Arena mode.</p>
+      <p class="mt-2">If you have Tsiolkovsky stigma (Coralie's stigma), you can also use that for any support instead of forging Turgenev.</p>
+    </div>
+  </div>
+</div>
+
+
+## G4 Stigma
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Little Joys Set
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
+         <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>Best For: Miracle Magical Girl </p>
+      <p class="mt-2">Best For: Dea Anchora if Sparkle support is in the team, or for Elysian Realm</p>
+      <p class="mt-2">Best farmable option for Part 1 Fire DPS</p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300 mt-8">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Handel Set
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/69197917c070e877ad922d21a3536325_2748643889039309262.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/a6ecf711857945fdcbfb02ccace6075d_8482437261998817983.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
+         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/b1c357b7a1d6d5e39fae925f7c90e724_8580284000724519020.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>Best For: Golden Diva, but sometimes she uses Turgenev TB </p>
+      <p class="mt-2">Best For: Herrscher of Thunder</p>
+    <p class="mt-2">Great farmable option for Part 1 Lightning DPS</p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300 mt-8">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Willows Set
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/4ebb3b5717d38d2145588b85b706c800_6470234861718683631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/08774ee8871f24d2a2f9bfca84818a55_2070324058174202393.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
+         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/2839f23b32369fd802b918ed1caac92d_783370248046786155.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>Best For: Herrscher of Reason </p>
+    <p class="mt-2">Best farmable option for Herrscher of Human and Silverwing N-EX</p>
+    <p class="mt-2">Best For: Other Part 1 Ice DPS</p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300 mt-8">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Paganini M
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/01/50494840/06170cbecb3347bac481adaaa3a47288_8566959529439830130.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2 ">
+      <p>Gives Shield DMG buff, can be used by any support against enemies with tanky shields.</p>
+    </div>
+  </div>
+</div>
+
+
+## Divine Keys
+These weapons can be tuned in Divine Key Concierge to grant global buffs.
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Pledge of Sakura
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/e63ebeab40d84fa225cf2b05550bab40_876464344486042367.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>Unlocking and upgrading Pledge of Sakura grants global ATK and CRT boost, and unlocks the Lightning DMG and sp regen gene limit. </p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300 mt-8">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Abyss
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/30/11528057/d69598245f77ea97a791df21845e1838_3532128283685716122.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>If you have Abyss Flower Divine Key, you can tune both Abyss and Abyss Flower to gain +10 ATK </p>
+      <p class="mt-2">Without Abyss Flower, tuning Abyss only grants global HP +20</p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto border border-gray-300 rounded-lg p-4 bg-gray-800 text-slate-300 mt-8">
+  <!-- Top Row: Merged Columns for Name -->
+  <div class="text-center text-2xl font-bold border-b border-gray-600 pb-2 mb-1">
+    Fenghuang Pinions
+  </div>
+
+  <!-- Bottom Row: Two Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+    <!-- Left Column: Pictures -->
+    <div class="flex justify-center space-x-2">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/10/75940953/ab171f1610b4f50c3a7200745ada1dc9_1143250954414845702.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+
+    </div>
+
+    <!-- Right Column: Description -->
+    <div class="text-sm md:text-base leading-6 md:col-span-2">
+      <p>If you have Fenghuang Down or Brick Divine Key, you can tune the weapons to gain +10 ATK </p>
+      <p class="mt-2">Without Fenghuang Down or Brick, tuning Fenghuang Pinions only grants global HP +20</p>
+    </div>
+  </div>
+</div>
 

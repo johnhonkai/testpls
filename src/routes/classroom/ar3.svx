@@ -6,18 +6,6 @@ customSlug: "pullplan"
 
 ---
 
-
-## Part 1 Gacha
-
-In Part 1, patches alternate between S-rank and A-rank / SP valk patch. Sometimes we do get back-to-back S-rank patches.
-There are many types of S-ranks: 
-- Gacha-only S-rank
-- Farmable S-rank in War Treasury
-- Gacha S-rank, but free on debut (Spina Astera, Herrscher of Origin)
-- Gacha S-rank, but on debut, if you reach a certain no of pulls, you get weapon + stigma box
-
-As mentioned in Astral Ring Teambuilding article, a team only has one optimal lineup.
-
 ## Part 2 Gacha
 
 In Part 2, so far we have a new S-rank every patch. If you read some of the 'loud' comments online, they dislike this change from Part 1. 

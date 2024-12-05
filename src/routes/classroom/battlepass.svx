@@ -22,6 +22,7 @@ HI3 Battle Pass rewards are very different from Honkai Star Rail and Genshin Imp
 </ol>
 </div>
 
+---
 
 ## BP Tiers
 There are three tiers - Vanguard (Free), Knight (Paid), and Paladin (More Expensive). 
@@ -36,6 +37,7 @@ Some notable rewards for the paid tier:
 - Knight / Paladin BP unlocks the ability to purchase S-rank character and ELF card / fragments.
 - Paladin BP gives 15 more fragments for the featured S-rank, and a lot of Wafer Stabilizer, used to fine-tune your stigma affix stats (this is useful for competitive players).
 
+---
 
 ## BP Season
 A BP Season lasts for four patches. (Actual in-game term is BP Theme)
@@ -54,12 +56,12 @@ Crystallum is the currency used to purchase items in BP Works shop. Each season 
 
 ---
 
-### Featured Valkyrie
+## Featured Valkyrie
 During a BP season, there are two featured valkyries for the BP Level rewards and BP Shop. 
 
 
 
-#### BP Level
+### BP Level
 - The first valk is available for the first and second patch.
 - The second valk is available for the third and fourth patch.
 
@@ -69,7 +71,7 @@ During a BP season, there are two featured valkyries for the BP Level rewards an
 
 
 
-#### BP Shop
+### BP Shop
 - The first valk card/stamps are added on the first and second patch. They remain in the shop until BP season ends.
 - The second valk card/stamps are added on the third and fourth patch. They remain in the shop until BP season ends.
 
@@ -79,26 +81,28 @@ During a BP season, there are two featured valkyries for the BP Level rewards an
 
 ---
 
-### Equipment
+## Equipment
 
-#### BP Works Shop
+### BP Works Shop
 A new set of equipment is added BP Works shop every patch. The equipment remain in the shop until BP season ends + one more patch.
 
 ![BP Equipment](https://i.imgur.com/zWuLuV0.jpeg)
 
-#### BP Works Vintage Shop
-After the BP season ends, **THE EQUIPMENT WILL REMAIN FOR ONE MORE PATCH** in a separate shop called **BP Works Vintage**. This is your last chance to purchase the equipment.
-- In Vintage shop, you can convert the new crystallum to the previous crystallum, in case you are short a few crystallum to get an equipment.
-- "What? You can use old crystallum to get the new crystallum?!" NO! 😠 New convert to old! Not old convert to new! 😠 
+---
 
-Image below shows the vintage shop in v7.8. These are equipment from v7.4-7.7 Battle Pass. When 7.8 ends, the old Crystallum will expire to 15 Torus each.
+### Vintage Shop
+After the BP season ends, the equipment will remain for one more patch in a separate shop called BP Works Vintage. This is your last chance to purchase the equipment.
+- In Vintage shop, you can convert the new crystallum to the previous crystallum, in case you are short a few crystallum to get an equipment.
+- "What? You can use old crystallum to get the new crystallum?!" NO! 😠 <span class="text-emerald-400">New convert to old!</span> Not old convert to new! 😠 
+
+Image below shows the vintage shop in v7.8. These are equipment from v7.4-7.7 Battle Pass. When 7.8 Battle Pass ends, the old Crystallum will expire to 15 Torus each.
 
 
 ![BP Vintage](https://i.imgur.com/LR6rRlp.jpeg)
 
 ---
 
-### BP Arsenal
+## BP Arsenal
 This shop resets every patch and uses a material called Honor Chips, which also resets every patch (specifically, on Monday of the patch week). Remember to use these before they expire!
 
 ![BP Vintage](https://i.imgur.com/yAaEllX.png)

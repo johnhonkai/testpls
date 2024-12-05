@@ -615,7 +615,7 @@ function selectTabMobile(event) {
           <span class="text-cyan-300 font-bold text-lg">1</span>
           <div>
             <p class="font-semibold text-cyan-300">Stellar Drain:</p>
-            Combo ATK / <p><i>I am Elation</i> consumes Stellar Drain and restores 20 AR.</p>
+            <p> Combo ATK / I am Elation consumes Stellar Drain and restores 20 AR.</p>
           </div>
         </div>
       

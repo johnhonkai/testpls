@@ -20,12 +20,13 @@ You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena mode.
 ## Still Somewhat Relevant Valkyries
 
 <div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/NZKgs6U.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+  <img src="https://i.imgur.com/L6y9GDQ.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
 </div>
 
-- Miracle Magical Girl: MECH Fire / Ignite DPS.
-- Jade Knight: Part 1 Ice support.
-- Reminder, these characters need ranks and equipment to be decent.
+- Herrscher of Sentience: Part 1 Physical Support
+- Miracle Magical Girl: Fire / Ignite DPS
+- Jade Knight: Part 1 Ice support
+- Reminder, these characters need ranks and equipment to be decent
 
 
 ## Elysian Realm

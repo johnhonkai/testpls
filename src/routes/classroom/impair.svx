@@ -9,6 +9,7 @@ customSlug: "impair"
 ## What is Impair?
 Enemies have DEF stat, which affects their resistance to Physical DMG. **Impair** reduces the DEF stat by a percentage.
 
+### Part 1
 In Part 1, only a few valkyries / equipment can provide impair. These were very valuable supports for Physical teams.
 - Herrscher of Rebirth, Herrscher of Sentience, Celestial Hymn ( DEF -75% )
 - Terminal Aide ( DEF -70%, 5 seconds only )
@@ -17,8 +18,9 @@ In Part 1, only a few valkyries / equipment can provide impair. These were very 
 
 ---
 
-Some valkyries have their own impair
-- Bright Knight with Dante stigma (DEF -60%)
+### Part 2
+In Part 2, currently we only have two Physical DPS, and they have their own impair.
+- New Durandal with her signature stigma (DEF -55%)
 - Jovial Deception with Leaf's Vision stigma (DEF -55%)
 
 ---
@@ -35,11 +37,11 @@ For example, if you use Celestial Hymn (CH) impair during HoS impair duration, C
 ## What is Physical Breach?
 Physical Breach is basically impair, but Physical Breach can stack with impair!
 
-Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode, Physical Breach is added as an alternative to impair for Physical valks.
+Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode and most Part 1 Physical DPS cannot apply impair, Physical Breach is added as an alternative to impair.
 
-In version 7.6, Serapem AstralOp has Physical Breach for her assist skill.
+In version 7.6, Serapeum AstralOp has Physical Breach for her assist skill.
 
-In version 7.8, Vita [Lone Planetfarer] is officially the first valkyrie that can provide Physical Breach for other characters. (Physical Breach +37% (S) / 45% (S1))
+In version 7.8, Vita [Lone Planetfarer](/valk/lp) is officially the first valkyrie that can provide Physical Breach for other characters. (Physical Breach +37% (S) / 45% (S1))
 
 ---
 

@@ -73,7 +73,7 @@
         },
         "Equip": {
             title: "Equipment Supply",
-            description: '<li>Equipment Supply only has one featured weapon and stigma sets.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls or less.</li>',
+            description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls or less.</li>',
         },
         "Returnee": {
             title: "Returnee Supply",
@@ -327,8 +327,11 @@
                     <div></div>                
                     <div on:click={() => openModal("Crane")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10">Crane of Taixuan</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 outline-white outline-4">Crane of Taixuan</span>
                         <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-14 h-full">
+                            <img src="https://i.imgur.com/uUfIwRQ.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
                         </div>
                     </div>      
@@ -345,6 +348,9 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Till Death Do Us Part<br/>1980 B-chips</span>
                         <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-full">
+                            <img src="https://i.imgur.com/CGOrnC4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
                         </div>
                     </div>     
