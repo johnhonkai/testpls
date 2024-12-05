@@ -3,13 +3,13 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', teampct: '100%', speed: '' },
+        { name: 'HoTr', image: '/images/valkportrait/Bronya Herrscher of Truth.png', speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
         { name: 'CN', image: '/images/valkportrait/Chrono Navi.png', teampct: '88%', speed: '' }
     ];
 
     const asopchar = [
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '100%', speed: '' }
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component
