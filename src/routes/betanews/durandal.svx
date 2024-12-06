@@ -1,6 +1,6 @@
 ---
 creationDate: "2024-11-29T14:32:56.426Z"
-title: Durandal Skill v2
+title: Durandal Skill v3
 lastModifiedDate: "2024-11-29T14:32:56.426Z"
 
 version: '8.0'
@@ -44,13 +44,18 @@ When AR Reason of Promotion is activated:
 
 - After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
-- Dudu's Star Shift skill changes to Radiant Void. She surfs through the enemies, deal 470%x2 ATK of Physical DMG. Then, she enters an enhanced state. During this period, you can click QTE button, up to 4 times, at full charge, unleash final attack, deal 540% ATK of Physical DMG. Each charge makes the final hit deals an additional 150% ATK of Physical DMG.
+- Dudu's Star Shift skill changes to Radiant Surf. She surfs through the enemies, deal 470%x2 ATK of Physical DMG. Then, she enters an enhanced state. During this period, you can click QTE button, up to 4 times, at full charge, unleash final attack, deal 540% ATK of Physical DMG. Each charge makes the final hit deals an additional 150% ATK of Physical DMG. After casting Star Shift ATK, you enter Surf form.
 
-- When activating Star Shift, enter enhanced state for 14s. The enhanced state ends when you exit Surf form or you switch out. During enhanced state, Dudu's Charged ATK is improved, it will continuously cast fast Charged ATK, no follow-up attack will be triggered during this period.
+- When activating Star Shift, enter enhanced state for **14s (v2) > 5s (v3)**. The enhanced state ends when you exit Surf form or you switch out. ~~During enhanced state, Dudu's Charged ATK is improved, it will continuously cast fast Charged ATK, no follow-up attack will be triggered during this period.~~
 
-- When Dudu is the leader, and you enter via QTE and Star Shift, you gain three buff stacks, the Charged ATK third stage and follow up attack can consume this buff, deals additional 300% ATK of Physical DMG. Stacks are cleared on exit. After all the stacks are consumed, teammates' switch CD are reset, and their QTE can be triggered.
+- When Dudu is the leader:
+	- When you enter via QTE or Star Shift, you gain three buff stacks, the Charged ATK third stage and follow up attack can consume this buff, deals additional 300% ATK of Physical DMG. Stacks are cleared on exit. After all the stacks are consumed, teammates' switch CD are reset, and their QTE can be triggered.
+	- **(v3) Upon casting Star Shift ATK, restore full Light stack, and the enhanced state duration is increased to 10 seconds. During this time, hold ATK button to continuously launch quick Charged ATK, and no follow-up attack can be triggered.**
+	- **(v3) Can trigger QTE skill of Surf form**
 
-- When Dudu is not the leader, Radiant Void will trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG (dmg source is considered to be from the leader, counts as Star Shift ATK).
+- When Dudu is not the leader: ~~Radiant Surf will trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG (dmg source is considered to be from the leader, counts as Star Shift ATK).~~
+	- When QTE or Star Shift ATK hits, reset the leader's switch CD and trigger her QTE.
+	- When QTE hits, restore 15 AR and trigger the leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader's damage type.
 
 When WoDestiny is activated:
 - During Stellar Outburst, a WoDestiny valk can trigger Dudu's Shadow Star ATK, deal 1200% ATK of Adaptive DMG (counts as Shadow Star ATK DMG). Valk enters Rondo-in-the-Shadows state for 11s.
@@ -64,12 +69,21 @@ When WoDestiny is activated:
 ---
 **AR 2**<br/>
 When AR is not activated:
-- Team Shield DMG +75% (S) / 100% (SS1)
-- If a shield-broken enemy is hit by Charged ATK third stage, or if the shield is broken within 10s upon being hit, the shield regen is frozen for 5s. The shield regen cannot be applied again before the shield recovers.
+- **Team gain higher anti-interrupt (v3)**
+- Team Shield DMG ~~+75% (S) / 100% (SS1) [v2]~~ > **+100% [v3]**
+- If a shield-broken enemy is hit by ground Charged ATK third stage, or if the shield is broken within 10s upon being hit, the shield regen is frozen for 5s. The shield regen cannot be applied again before the shield recovers.
 - When Charged ATK third stage hits, apply 10 stun trauma, and recover 5 sp for the team.
-- When QTE hits, the following effects are applied, lasts for 6s, CD: 16s :
-	- Shield DMG +450% (S) / 600% (SS1), Total DMG +27% (S) / +36% (SS1) , Physical DMG +27% (S) / +36% (SS1)
-	- The enemy is impaired, DEF -70%
+
+~~v2 (REMOVED)~~
+- ~~When QTE hits, the following effects are applied, lasts for 6s, CD: 16s :~~
+	- ~~Shield DMG +450% (S) / 600% (SS1), Total DMG +27% (S) / +36% (SS1) , Physical DMG +27% (S) / +36% (SS1)~~
+	- ~~The enemy is impaired, DEF -70%~~
+
+**V3:**
+- When QTE hits, gain Flying Light, can be obtained once every 16s. When Charged ATK third stage hits, Flying Light will be consumed, and trigger these effects:
+	- Charged ATK deal 600% ATK of Physical DMG.
+	- Enemies take **10% (S) / 18% (SS1)** more Total DMG for 20s.
+	- Shield DMG +480%, Total DMG +56%, Physical DMG +56%, enemies are impaired, DEF -70% for 3s, removed on exit.
 
 ---
 **AR 3**<br/>
@@ -82,8 +96,8 @@ When Stellar Outburst ends, gain Stellar Drain. During AR Charging, when Charged
 ---
 **AR 4**<br/>
 When RoPromotion is activated:
-- Team Shield DMG +45% (S) / 60% (SS2), self Shield DMG +30% (S) / +40% (SS2)
-- RoPromotion valk Total DMG +7.5% (S) / +10% (SS2)
+- Team Shield DMG ~~+45% (S) / 60% (SS2) [V2] > ~~ **+65% (S) / 80% (SS2) [v3]**, self Shield DMG ~~+30% (S) / +40% (SS2) [v2] >~~ **+40% (S) / 50% (SS2) [v3]**
+- RoPromotion valk Total DMG ~~+7.5% (S) / +10% (SS2) [v2] >~~ **+7% (S) / 10% (SS2) [v3]**
 - Team Physical DMG +15%, Elemental DMG +20%
 - Dudu's Star Shift ATK gain Crit Rate +30%
 
@@ -105,7 +119,7 @@ After Surf form ends, weapon skill enter 60-second cooldown. Reduce cd by 20s fo
 
 ---
 **PASSIVE 1**<br/>
-When you have Fearless, enemies take 7% (S) / 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) / 11% (S1)
+When you have Fearless, enemies take ~~7% (S) / 12% (S1) [v2] >~~ **9% (S) / 12% (S1) [v3]** more Physical DMG from New Dudu, and team Total DMG +6% (S) / 11% (S1)
 
 ---
 **PASSIVE 2**<br/>
@@ -117,7 +131,7 @@ In surf form, press evasion to accelerate, and gain 100 Dawn per second.
 
 ---
 **PASSIVE 4**<br/>
-When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) / 23% (SS), Total DMG +15% (S) / 20% (SS).
+When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG ~~+17.5% (S) / 23% (SS) [v2] >~~ **+16% (S) / 20% (SS) [v3]**, Total DMG ~~+15% (S) / 20% (SS) [v2] >~~ **+11% (S) > 15% (SS) [v3]**.
 
 ---
 **PASSIVE 5**<br/>
@@ -152,7 +166,7 @@ In surf form, press and hold weapon to cast, or automatically triggered by passi
 
 ---
 **Weapon 1**<br/>
-When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) / 50% (SS) imaginary penetration (dmg transfer to seed)
+When you are the leader, after QTE, the Charged ATK third stage and followup atk add additional 35% (S) / 50% (SS) imaginary penetration (dmg transfer to seed)
 
 ---
 ### BASIC ATK
@@ -211,33 +225,33 @@ Charged ATK and followup attack gain Crit Rate +30%. Each charging stage grants 
 
 ---
 **Charged ATK 2**<br/>
-Charged ATK third stage triggers 2s time fracture.
+Wild Form Charged ATK third stage triggers 2s time fracture.
 
 
 ---
 ### ULTIMATE
 
 (SP: 100, CD: 20s)
-Throws a spear that pierces the heaven and earth. Deal 1260% ATK of Physical DMG. Has time stop.
+Throws a spear that pierces the heaven and earth. Deal **1260% (v2) > 1300% (v3)** ATK of Physical DMG. Has time stop.
 
 ---
 **ULT 1**<br/>
 When AR is not activated: 
-Upon casting Ultimate, enemies take 20% more Physical DMG for 20s, can be refreshed.
+Upon casting Ultimate, enemies take **20% (v2) > 15% (v3)** more Physical DMG from teammates for 20s, can be refreshed.
 
 ---
 **ULT 2**<br/>
-Ult has 150% img penetration 
+Ult has **150% (v2) > 200% (v3)** IMG penetration 
 
 ---
 **ULT 3**<br/>
-[SSS] Ult deals additional 240% ATK of Physical DMG
+[SSS] Ult deals additional **240% (v2) > 200% (v3)** ATK of Physical DMG
 
 ---
 ### RANK UP
 
 **S1** <br/>
-When you have Fearless, enemies take 7% (S) ➔ 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) ➔ 11% (S1)
+When you have Fearless, enemies take 9% (S) ➔ 12% (S1) more Physical DMG from New Dudu, and team Total DMG +6% (S) ➔ 11% (S1)
 
 **S2** <br/>
 UNLOCK: Upon casting a quick Charged ATK, deal additional 100% ATK of Physical DMG.
@@ -246,19 +260,18 @@ UNLOCK: Upon casting a quick Charged ATK, deal additional 100% ATK of Physical D
 Lead Skill
 
 **SS** <br/>
-- When QTE or Charged ATK hits an enemy, or upon activating Stellar Outburst, gain Fearless for 25s, can be refreshed. Fearless: Physical DMG +17.5% (S) ➔ 23% (SS), Total DMG +15% (S) ➔20% (SS).
-- When you are the leader, the followup attack of Charged ATK third stage and QTE add an additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
+- Fearless: Physical DMG +16% (S) ➔ 20% (SS), Total DMG +11% (S) ➔15% (SS).
+- When you are the leader, after QTE, the Charged ATK third stage and followup atk add additional 35% (S) ➔ 50% (SS) imaginary penetration (dmg transfer to seed)
 
 **SS1** <br/>
-- Team Shield DMG +75% (S) ➔ 100% (SS1)
-- Shield DMG +450% (S) ➔ 600% (SS1), Total DMG +27% (S) ➔ +36% (SS1) , Physical DMG +27% (S) ➔ +36% (SS1)
+- Enemies take 10% (S) ➔ 18% (SS1) more Total DMG
 
 **SS2** <br/>
-- Team Shield DMG +45% (S) ➔ 60% (SS2), self Shield DMG +30% (S) ➔ +40% (SS2)
-- RoPromotion valk Total DMG +7.5% (S) ➔ +10% (SS2)
+- Team Shield DMG +65% (S) ➔ 80% (SS2), self Shield DMG +40% (S) ➔ +50% (SS2)
+- RoPromotion valk Total DMG +7% (S) ➔ +10% (SS2)
 
 **SS3** <br/>
 Lead Skill
 
 **SSS** <br/>
-UNLOCK: Ult deals additional 240% ATK of Physical DMG
+UNLOCK: Ult deals additional 200% ATK of Physical DMG

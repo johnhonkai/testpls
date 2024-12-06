@@ -1,7 +1,7 @@
 ---
 creationDate: "2024-11-29T11:48:02.537Z"
 
-title: v8.0 Patch Note v2
+title: v8.0 Patch Note v3
 
 lastModifiedDate: "2024-11-29T11:48:02.537Z"
 version: '8.0'
@@ -21,7 +21,7 @@ image: "/images/valkportrait/dudu.png"
 
 ### V3
 
-- Durandal: Adjusted mechanics and stats. Patch note no longer includes stat changes, and I am still downloading the game, so it will be a while before the data gets updated.
+- Durandal: Adjusted mechanics and stats. Patch note no longer includes stat changes, please go to valk and gear page for the changes.
 - Sparkle: Fixed skirt visuals when wearing outfit
 - Sparkle: Fixed an issue where meter display might be abnormal
 - HoFi: Fixed an issue where she might not be able to jump in some cases

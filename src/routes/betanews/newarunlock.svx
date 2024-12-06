@@ -1,6 +1,6 @@
 ---
 creationDate: "2024-11-29T14:32:56.426Z"
-title: Vita, Sparkle and JD New Skills v2
+title: Vita, Sparkle and JD New Skills v3
 lastModifiedDate: "2024-11-29T14:32:56.426Z"
 
 version: '8.0'
@@ -31,9 +31,9 @@ When AR Reason of Promotion is activated:
 
 - When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
-- Star Shift: Deals 200%x30 + 1000% ATK of Lightning DMG. Trigger the leader's stellar drain and the leader's Link ATK twice, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
+- Star Shift: Deals 200%x30 + 1000% ATK of Lightning DMG. **When the second attack hits, trigger 2s time fracture and consume her own Stellar Drain. During enhanced state, each attack triggers** ~~the leader's stellar drain and~~ the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
 
-- When you activate Star Shift, gain a stack of Abyssal Energy.
+- When you activate Star Shift, gain a stack of Abyssal Energy, **and the second attack of Star Shift can consume Abyssal Energy**. Note: These are all already applied in v2, only the description is new.
 
 - Omniscient Feather provides the following buffs to RoPromotion valks:
 	- Valks with Ice/Fire/Lightning tag gain Elemental Breach +11.5% (S) / 14% (S1)
@@ -52,7 +52,7 @@ When AR Reason of Promotion is activated:
 	- When Combo ATK or I am Elation hits: Reset the leader's switch cd and trigger her QTE 
 	- When entering via QTE, restore 15 AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
 
-- When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
+- When activating Star Shift, enter enhanced state for **7s (v2) > 6s (v3)**. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
 - Star Shift: Deals 1100% ATK of Fire DMG, restore full meter, and trigger 3s time fracture, which can be connected to I am Elation! The two attacks can trigger the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
 
@@ -66,13 +66,13 @@ When AR Reason of Promotion is activated:
 
 - After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
 
-- Stellar Drain restore 15 AR meter, and Golden Form Combo ATK can consume Stellar Drain.
+- Stellar Drain restore **15(v2) > 10(v3)** more AR meter, and Golden Form Combo ATK can consume Stellar Drain.
 
 - When you are not the leader:
 	- When Combo ATK hits: Reset the leader's switch cd and trigger her QTE 
-	- When entering via QTE, restore 10 AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
+	- When entering via QTE, restore **10(v2) > 15(v3)** AR, and trigger leader's Link ATK, deal 440% ATK of Physical DMG or 880% ATK of Elemental DMG (dmg source is considered to be from the leader) according to the leader's dmg type, CD: 16s.
 
-- When activating Star Shift, enter enhanced state for 7s. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
+- When activating Star Shift, enter enhanced state for **7s(v2) > 6s(v3)**. During this time, you are considered to be in Stellar Outburst state. Ends when you exit.
 
 - Star Shift: Deals 700% ATK of Physical DMG, triggers 2s time fracture, gain full meter on hit, this attack and the next Combo ATK will trigger the leader's Link ATK, each hit deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG (dmg source is considered to be from the leader, and counts as Star Shift ATK.)
 
