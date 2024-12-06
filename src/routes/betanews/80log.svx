@@ -19,6 +19,51 @@ image: "/images/valkportrait/dudu.png"
 
 ---
 
+### V3
+
+- Durandal: Adjusted mechanics and stats. Patch note no longer includes stat changes, and I am still downloading the game, so it will be a while before the data gets updated.
+- Sparkle: Fixed skirt visuals when wearing outfit
+- Sparkle: Fixed an issue where meter display might be abnormal
+- HoFi: Fixed an issue where she might not be able to jump in some cases
+- HoFi: Fixed abnormal face expression when Waxing Moon is equipped
+- Sena: Fixed abnormal movement in open world
+
+---
+
+Equipment
+- Waxing Moon: Improved description, this is only text change.
+
+---
+
+Year-End Raffle
+- Adjusted the reward
+
+---
+
+EX Abyss
+- Adjusted HP of Physical weather Otto and the IMG mobs
+- Adjusted stats of Physical weather Deliverance Kevin
+- Adjusted stats of Fire weather Tonatiuh EX
+- Adjusted stats of new weather Meteoroid Mockery and Ice Emperor
+
+---
+
+Memorial Arena
+- Adjusted mechanics and stats of Kevin
+- SSS Vita: Fixed an issue where the wheel thrown by Vita cannot be knocked back when using Kiana ELF
+- C-SS Vita: Fixed an issue where Susannah's Ult can be abnormally interrupted 
+
+---
+
+Elysian Realm
+- Adjusted Durandal signets
+
+---
+
+System
+- Fixed an issue where AstralOp interaction doesn't trigger on the bridge
+- Fixed an issue where abnormal red dot appears in Vita dice game menu
+
 ### V2
 
 ## NEW VALK
