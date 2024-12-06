@@ -16,51 +16,7 @@
 
 
 <script lang="ts">
-    import { onMount } from "svelte";
-
-    import { afterNavigate } from '$app/navigation';
-
-  let isLoading = true; // To track loading state
-
- // Function to wait for all images in the page to load
- async function waitForImagesToLoad(imageSelectors: string[]) {
-    const promises = imageSelectors.map(selector => {
-      const img = document.querySelector(selector) as HTMLImageElement;
-      if (img) {
-        return new Promise<void>(resolve => {
-          if (img.complete) {
-            resolve(); // Image already loaded
-          } else {
-            img.onload = () => resolve(); // Resolve when loaded
-            img.onerror = () => resolve(); // Resolve even if it fails
-          }
-        });
-      }
-      return Promise.resolve(); // Resolve immediately if no image found
-    });
-
-    await Promise.all(promises); // Wait for all images
-  }
-
-  // Trigger image loading on page mount
-  onMount(async () => {
-    const imageSelectors = [
-      '#bgwavebox img',
-      '#avabox img',
-      '#valkpicbox img'
-    ];
-
-    await waitForImagesToLoad(imageSelectors);
-    isLoading = false; // Hide loading screen and show content
-  });
-
-  // Handle navigation
-  afterNavigate(() => {
-    isLoading = true; // Reset loading state on navigation
-  });
-
-
-
+import { onMount } from "svelte";
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
 import { getFirestore } from "firebase/firestore";
 import { app } from "$lib/firebaseConfig";
@@ -241,49 +197,14 @@ function selectTabMobile(event) {
 </script>
 
 
+
 <style>
-  .like-container {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-  }
-  
-  .loading-screen {
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      z-index: 9999;
-    }
-  
-    .loading-spinner {
-      width: 50px;
-      height: 50px;
-      border: 6px solid rgba(255, 255, 255, 0.3);
-      border-top: 6px solid white;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-  
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  
-  </style>
-  
-  <!-- Loading Screen -->
-  {#if isLoading}
-    <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
-      <span class="loading loading-spinner loading-lg text-secondary"></span>
-      <p class="text-white mt-4">Loading...</p>
-    </div>
-  {/if}
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+</style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
 <div class="absolute   top-[-3.5rem] w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    

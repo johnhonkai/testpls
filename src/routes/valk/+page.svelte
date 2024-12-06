@@ -18,18 +18,6 @@
 
   let isLoading = true; // Track if the page is still loading
 
-  import { isLoading2 } from '$lib/stores/loading';
-
-  let isLoadingNext = false;
-
-  // Subscribe to the loading store
-  $: isLoadingNext = $isLoading2;
-
-    // Reset isLoading2 when the page is mounted
-    onMount(() => {
-    isLoading2.set(false); // Ensure the store is reset when returning to this page
-  });
-
   // Filter options
   const types = [
     { name: 'All', image: '/images/type/IconNULL.png' },
@@ -118,13 +106,12 @@
 </script>
 
 <!-- Loading Screen -->
-{#if isLoading || isLoadingNext}
-  <div class="loading-screen fixed inset-0 flex items-center justify-center z-50">
+{#if isLoading}
+  <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
     <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
-
 <section class="relative pt-4">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
@@ -195,6 +182,7 @@
 
 <style>
   .loading-screen {
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
