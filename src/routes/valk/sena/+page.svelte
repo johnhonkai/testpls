@@ -18,6 +18,39 @@
     import likesData from '$lib/data/likes.json'; // Import local JSON data
 
     import { onMount } from "svelte";
+
+  let isLoading = true; // To track loading state
+
+async function waitForImagesToLoad(imageSelectors: string[]) {
+  const promises = imageSelectors.map(selector => {
+    const element = document.querySelector(selector);
+    if (element instanceof HTMLElement) {
+      const img = element.querySelector('img') as HTMLImageElement | null;
+      if (img) {
+        return new Promise<void>(resolve => {
+          img.onload = () => resolve(); // Resolve when the image loads
+          img.onerror = () => resolve(); // Resolve even if the image fails to load
+        });
+      }
+    }
+    return Promise.resolve(); // Resolve immediately if no image is found
+  });
+
+  // Return the promise when all image promises resolve
+  return Promise.all(promises);
+}
+
+onMount(async () => {
+  const imageSelectors = ['#bgwavebox img', '#avabox img', '#valkpicbox img'];
+  try {
+    await waitForImagesToLoad(imageSelectors);
+  } catch (error) {
+    console.error('Error loading images:', error);
+  }
+  isLoading = false; // Hide the loading screen
+});
+
+
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
 import { getFirestore } from "firebase/firestore";
 import { app } from "$lib/firebaseConfig";
@@ -196,14 +229,49 @@ function selectTabMobile(event) {
 </script>
 
 
-
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-</style>
+  .like-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+  
+  .loading-screen {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 9999;
+    }
+  
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top: 6px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+  </style>
+  
+  <!-- Loading Screen -->
+  {#if isLoading}
+    <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
+      <span class="loading loading-spinner loading-lg text-secondary"></span>
+      <p class="text-white mt-4">Loading...</p>
+    </div>
+  {/if}
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
