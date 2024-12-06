@@ -21,36 +21,47 @@
 
     import { onMount } from "svelte";
 
+    import { afterNavigate } from '$app/navigation';
+
   let isLoading = true; // To track loading state
 
-async function waitForImagesToLoad(imageSelectors: string[]) {
-  const promises = imageSelectors.map(selector => {
-    const element = document.querySelector(selector);
-    if (element instanceof HTMLElement) {
-      const img = element.querySelector('img') as HTMLImageElement | null;
+ // Function to wait for all images in the page to load
+ async function waitForImagesToLoad(imageSelectors: string[]) {
+    const promises = imageSelectors.map(selector => {
+      const img = document.querySelector(selector) as HTMLImageElement;
       if (img) {
         return new Promise<void>(resolve => {
-          img.onload = () => resolve(); // Resolve when the image loads
-          img.onerror = () => resolve(); // Resolve even if the image fails to load
+          if (img.complete) {
+            resolve(); // Image already loaded
+          } else {
+            img.onload = () => resolve(); // Resolve when loaded
+            img.onerror = () => resolve(); // Resolve even if it fails
+          }
         });
       }
-    }
-    return Promise.resolve(); // Resolve immediately if no image is found
+      return Promise.resolve(); // Resolve immediately if no image found
+    });
+
+    await Promise.all(promises); // Wait for all images
+  }
+
+  // Trigger image loading on page mount
+  onMount(async () => {
+    const imageSelectors = [
+      '#bgwavebox img',
+      '#avabox img',
+      '#valkpicbox img'
+    ];
+
+    await waitForImagesToLoad(imageSelectors);
+    isLoading = false; // Hide loading screen and show content
   });
 
-  // Return the promise when all image promises resolve
-  return Promise.all(promises);
-}
+  // Handle navigation
+  afterNavigate(() => {
+    isLoading = true; // Reset loading state on navigation
+  });
 
-onMount(async () => {
-  const imageSelectors = ['#bgwavebox img', '#avabox img', '#valkpicbox img'];
-  try {
-    await waitForImagesToLoad(imageSelectors);
-  } catch (error) {
-    console.error('Error loading images:', error);
-  }
-  isLoading = false; // Hide the loading screen
-});
 
 
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions

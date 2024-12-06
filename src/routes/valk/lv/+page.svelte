@@ -16,36 +16,46 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-let isLoading = true; // To track loading state
+    import { afterNavigate } from '$app/navigation';
 
-async function waitForImagesToLoad(imageSelectors: string[]) {
-const promises = imageSelectors.map(selector => {
-  const element = document.querySelector(selector);
-  if (element instanceof HTMLElement) {
-    const img = element.querySelector('img') as HTMLImageElement | null;
-    if (img) {
-      return new Promise<void>(resolve => {
-        img.onload = () => resolve(); // Resolve when the image loads
-        img.onerror = () => resolve(); // Resolve even if the image fails to load
-      });
-    }
+  let isLoading = true; // To track loading state
+
+ // Function to wait for all images in the page to load
+ async function waitForImagesToLoad(imageSelectors: string[]) {
+    const promises = imageSelectors.map(selector => {
+      const img = document.querySelector(selector) as HTMLImageElement;
+      if (img) {
+        return new Promise<void>(resolve => {
+          if (img.complete) {
+            resolve(); // Image already loaded
+          } else {
+            img.onload = () => resolve(); // Resolve when loaded
+            img.onerror = () => resolve(); // Resolve even if it fails
+          }
+        });
+      }
+      return Promise.resolve(); // Resolve immediately if no image found
+    });
+
+    await Promise.all(promises); // Wait for all images
   }
-  return Promise.resolve(); // Resolve immediately if no image is found
-});
 
-// Return the promise when all image promises resolve
-return Promise.all(promises);
-}
+  // Trigger image loading on page mount
+  onMount(async () => {
+    const imageSelectors = [
+      '#bgwavebox img',
+      '#avabox img',
+      '#valkpicbox img'
+    ];
 
-onMount(async () => {
-  const imageSelectors = ['#bgwavebox img', '#avabox img', '#valkpicbox img'];
-  try {
     await waitForImagesToLoad(imageSelectors);
-  } catch (error) {
-    console.error('Error loading images:', error);
-  }
-  isLoading = false; // Hide the loading screen
-});
+    isLoading = false; // Hide loading screen and show content
+  });
+
+  // Handle navigation
+  afterNavigate(() => {
+    isLoading = true; // Reset loading state on navigation
+  });
 
 
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
