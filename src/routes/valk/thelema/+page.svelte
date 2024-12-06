@@ -15,46 +15,51 @@
 
 <script lang="ts">
     import { onMount } from "svelte";
+
     import { afterNavigate } from '$app/navigation';
 
-  let isLoading = true; // To track loading state
+    let isNavigating = false;
 
- // Function to wait for all images in the page to load
- async function waitForImagesToLoad(imageSelectors: string[]) {
-    const promises = imageSelectors.map(selector => {
-      const img = document.querySelector(selector) as HTMLImageElement;
-      if (img) {
-        return new Promise<void>(resolve => {
-          if (img.complete) {
-            resolve(); // Image already loaded
-          } else {
-            img.onload = () => resolve(); // Resolve when loaded
-            img.onerror = () => resolve(); // Resolve even if it fails
-          }
-        });
-      }
-      return Promise.resolve(); // Resolve immediately if no image found
+async function loadAndNavigate(url: string, imageSelectors: string[]) {
+  isNavigating = true;
+
+  // Create a temporary hidden container to preload images
+  const preloadContainer = document.createElement('div');
+  preloadContainer.style.display = 'none';
+  document.body.appendChild(preloadContainer);
+
+  const imagePromises = imageSelectors.map(src => {
+    return new Promise<void>(resolve => {
+      const img = new Image();
+      img.src = src;
+      preloadContainer.appendChild(img);
+      img.onload = () => resolve();
+      img.onerror = () => resolve(); // Resolve even on error
     });
-
-    await Promise.all(promises); // Wait for all images
-  }
-
-  // Trigger image loading on page mount
-  onMount(async () => {
-    const imageSelectors = [
-      '#bgwavebox img',
-      '#avabox img',
-      '#valkpicbox img'
-    ];
-
-    await waitForImagesToLoad(imageSelectors);
-    isLoading = false; // Hide loading screen and show content
   });
 
-  // Handle navigation
-  afterNavigate(() => {
-    isLoading = true; // Reset loading state on navigation
-  });
+  // Wait for all images to load
+  await Promise.all(imagePromises);
+
+  // Remove the temporary container
+  document.body.removeChild(preloadContainer);
+
+  // Navigate to the target page
+  goto(url);
+
+  isNavigating = false;
+}
+
+function selectCharacter(url: string) {
+  // Specify images to preload based on the character's page
+  const imagesToLoad = [
+    '/images/bg/wave_thelema.svg',
+    '/images/bg/ava_thelema.webp',
+    '/images/valkfull/thelema.webp'
+  ];
+
+  loadAndNavigate(url, imagesToLoad);
+}
 
 import likesData from '$lib/data/likes.json'; // Import local JSON data
 
@@ -274,14 +279,13 @@ function selectTabMobile(event) {
 </style>
 
 <!-- Loading Screen -->
-{#if isLoading}
+{#if isNavigating}
   <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
     <span class="loading loading-spinner loading-lg text-secondary"></span>
     <p class="text-white mt-4">Loading...</p>
   </div>
-{:else}
+{/if}
 
-<section>
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="/images/bg/wave_thelema.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
@@ -1367,6 +1371,4 @@ function selectTabMobile(event) {
 
 </div>
 
-</section>
 
-{/if}
