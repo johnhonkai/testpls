@@ -206,17 +206,17 @@ function selectTabMobile(event) {
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
-<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 ">    
+<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox" >    
   <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 
-<div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block ">    
+<div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block  " id="avabox">    
   <img src="/images/bg/ava_lantern.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center ">
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/lantern.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-10;"/> 
 
