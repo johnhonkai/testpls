@@ -94,6 +94,8 @@
 
 	import { cn } from "$lib/utils/cn";
 	import AnimatedShinyText from "$lib/components/ui/AnimatedShinyText.svelte";
+
+
 </script>
 
 

@@ -317,7 +317,8 @@ export const ytmember = [
       "Total time on level (months)": 33.1344,
       "Total time as member (months)": 35.1344,
       "Last update": "Re-joined",
-      "Last update timestamp": "2023-03-10T21:06:29.419-08:00"
+      "Last update timestamp": "2023-03-10T21:06:29.419-08:00",
+      Image: "/images/memberpic/sirin.png",
     },
     {
       "Member": "Ikaros",

@@ -1,35 +1,35 @@
 {
   "Best Boss": {
-    "Sampo": 145,
     "Duonigue": 65,
-    "Lantern": 225,
-    "Perception": 1090
+    "Sampo": 148,
+    "Lantern": 229,
+    "Perception": 1113
   },
   "Best Chapter": {
-    "Chapter 6": 60,
-    "Chapter 3-EX": 111,
-    "Chapter 1": 60,
-    "Chapter 2": 82,
-    "Chapter 4": 168,
-    "Chapter 5": 441,
-    "Chapter 3": 604
+    "Chapter 1": 61,
+    "Chapter 4": 170,
+    "Chapter 3-EX": 112,
+    "Chapter 6": 61,
+    "Chapter 2": 84,
+    "Chapter 5": 450,
+    "Chapter 3": 621
   },
   "Best Valkyrie": {
     "Valkyrie Boltstorm": 27,
-    "Durandal": 107,
-    "Lone Destruction": 96,
-    "Sparkle": 103,
-    "Valkyrie Blastmetal": 61,
-    "Jovial Deception": 206,
-    "Schicksal's Imperative": 76,
-    "Mad Pleasure": 362,
-    "Deepspace Anchor": 129,
-    "Lone Planetfarer": 980
+    "Jovial Deception": 214,
+    "Lone Destruction": 101,
+    "Valkyrie Blastmetal": 63,
+    "Schicksal's Imperative": 79,
+    "Durandal": 113,
+    "Sparkle": 110,
+    "Deepspace Anchor": 132,
+    "Lone Planetfarer": 1011,
+    "Mad Pleasure": 380
   },
   "Sussiest Songque Moment": {
     "Beach": 65,
-    "Feet": 442,
-    "Sussy Moment 1": 726,
-    "Suskibidi Moemnt 3": 334
+    "Suskibidi Moemnt 3": 337,
+    "Feet": 452,
+    "Sussy Moment 1": 745
   }
 }

@@ -1,9 +1,9 @@
 
 <svelte:head>
-  <title>Durandal - 天光驰彻</title> 
+  <title>Durandal - Reign Solaris</title> 
 
-    <meta property="og:title" content="Durandal - 天光驰彻" />
-    <meta property="og:description" content="天光驰彻 Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Durandal - Reign Solaris" />
+    <meta property="og:description" content="Reign Solaris Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/l806vIQ.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/durandal" />
     <meta property="og:type" content="website" />
@@ -206,8 +206,9 @@ async function increaseLike() {
   </div>
 
 
+
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/dudu.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-16;"/> 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
@@ -236,7 +237,7 @@ async function increaseLike() {
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">天光驰彻</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0 mt-4">Reign Solaris</h1>
 
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font my-2 text-center tracking-wider md:block hidden  text-slate-100">Bianka 'Durandal' Ataegina<br/>Release Date: v8.0 (9 Jan 2024)</p>
@@ -271,6 +272,8 @@ async function increaseLike() {
     </div>
   </div> <!-- End common wrapper -->
 </div>
+
+
 </section>
 
 <div class="flex max-w-screen-xl justify-center mx-auto "> 

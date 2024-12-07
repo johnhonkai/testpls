@@ -2,7 +2,7 @@
 creationDate: "2024-11-29T13:43:19.234Z"
 
 
-title: New Dudu Gear v3
+title: Reign Solaris Gear v3
 
 lastModifiedDate: "2024-11-29T13:43:19.234Z"
 version: '8.0'

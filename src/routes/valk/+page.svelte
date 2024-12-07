@@ -13,11 +13,39 @@
 
 
 <script lang="ts">
-  import ValkyrieLink from '$lib/components/ValkyrieLink.svelte';
   import { onMount } from 'svelte';
 
   let isLoading = true; // Track if the page is still loading
 
+  const imageIds = ["bgwavebox", "avabox", "valkpicbox"]; // IDs of divs containing images
+
+  // Preload images dynamically by fetching their src attributes
+  async function preloadImages(valkyrieUrl: string) {
+    try {
+      // Fetch the Valkyrie page content (simulate or fetch required details)
+      const response = await fetch(valkyrieUrl);
+      const pageContent = await response.text();
+
+      // Create a temporary DOM parser to extract the image sources
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(pageContent, "text/html");
+
+      // Iterate over the IDs and preload their respective images
+      for (const id of imageIds) {
+        const imgElement = doc.querySelector(`#${id} img`);
+        if (imgElement) {
+          const imgSrc = imgElement.getAttribute("src");
+          if (imgSrc) {
+            const preloadImg = new Image();
+            preloadImg.src = imgSrc;
+            console.log(`Preloading image for ${id}: ${imgSrc}`); // Debug output
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Failed to preload images:", error);
+    }
+  }
   // Filter options
   const types = [
     { name: 'All', image: '/images/type/IconNULL.png' },
@@ -48,7 +76,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
-  { name: 'Durandal', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Reason of Promotion'] , url: '/valk/durandal' , badge: 'Beta', id:16},
+  { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Reason of Promotion'] , url: '/valk/durandal' , badge: 'Beta', id:16},
   { name: 'Thousand-Faced Maestro: Cameo!', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , badge: 'New', id:14},
   { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , id:13},
   { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/simp', id:12 },
@@ -112,6 +140,8 @@
     <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
+
+
 <section class="relative pt-4">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
@@ -171,12 +201,40 @@
       </div>
     </div>
 
-    <!-- Valkyrie Grid -->
-    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
-      {#each filteredValkyries as valkyrie}
-        <ValkyrieLink valkyrie={valkyrie} />
-      {/each}
-    </div>
+<!-- Valkyrie Grid -->
+<div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
+  {#each filteredValkyries as valkyrie}
+    <a 
+      href={valkyrie.url} 
+      class="flex flex-col items-center text-center rounded" 
+      on:mouseenter={() => preloadImages(valkyrie.url)} 
+    >
+      <!-- Valkyrie Image with Badge -->
+      <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
+        {#if valkyrie.badge}
+          <span 
+            class="absolute top-1 left-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
+            class:badge-ghost={valkyrie.badge === 'Beta'}
+            class:badge-primary={valkyrie.badge === 'New'}
+            class:badge-accent={valkyrie.badge === 'Updated'}
+          >
+            {valkyrie.badge}
+          </span>
+        {/if}
+        <img 
+          src={valkyrie.image} 
+          alt={valkyrie.name}
+          class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 rounded-md transition-transform duration-300 transform group-hover:scale-110"
+          style="view-transition-name: valkyrie-image-{valkyrie.id};"
+        />
+      </div>
+  
+      <!-- Valkyrie Name -->
+      <div class="text-xs sm:text-sm md:text-base font-medium mb-2 sm:leading-5 mt-1">{valkyrie.name}</div>
+    </a>
+  {/each}
+</div>
+
   </div>
 </section>
 
