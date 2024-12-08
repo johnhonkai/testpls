@@ -292,7 +292,7 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: {card.votes}
+							Votes: Hidden
 						</CardItem>
 						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Valkyrie")}>
@@ -325,7 +325,7 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: {card.votes}
+							Votes: Hidden
 						</CardItem>
 						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Chapter")}>
@@ -358,7 +358,7 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: {card.votes}
+							Votes: Hidden
 						</CardItem>
 						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Best Boss")}>
@@ -391,7 +391,7 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: {card.votes}
+							Votes: Hidden
 						</CardItem>
 						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
 							<button on:click={() => openVoteModal(card.title, "Sussiest Songque Moment")}>
