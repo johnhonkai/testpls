@@ -807,6 +807,8 @@ export const teamData = {
     ]},],
     videos: [
       { url: 'https://www.youtube.com/embed/_cfYygEWX10', abyss: 'RedLotus 482D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/k_f42gTOs-M', abyss: 'RedLotus 538D', uploader: 'iChronos' },
+
     ] 
   },
   meleehoc: {

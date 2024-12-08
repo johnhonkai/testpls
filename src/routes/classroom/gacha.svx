@@ -43,7 +43,7 @@ This is where you pull AstralOp. What is AstralOp? Well it's basically like Bang
 
 ## Pull Valk + Weapon
 
-In Honkai Impact, weapon is very important. Most of the time, signature weapon has a very important utility that completes the valkyrie.
+In Honkai Impact, weapon is very important. Most of the time, signature weapon has a very important utility that completes the valkyrie. There's no good farmable alternative for weapon like in Star Rail or Genshin Impact.
 
 Imagine if Imbibitor Lunae only has maximum 1 Lotus stack by default, and only gets 3 max Lotus stack if he has signature Light Cone.
 
