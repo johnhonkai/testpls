@@ -27,7 +27,7 @@
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">天光驰彻 DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Reign Solaris DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 

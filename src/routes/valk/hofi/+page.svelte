@@ -1318,7 +1318,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
       <div class="text-center my-4 rounded bg-cyan-700">
         <p class="text-left text-sm sm:text-base px-2 py-3 text-slate-100">
           <b>Clarification:</b><br/>
-          When the text says 'all team members', some skills might be referring to 'teammates' (not including HoFi). This is not the translation team's fault, the original text also uses teammates, but the problem is, in most other equipment, 'teammate' usually means 'excluding the host', and 'team gain...' means it buffs the entire team.
+          When the text says 'all team members', some skills might be referring to 'teammates' (not including HoFi). This is not the translation team's fault, the original text also uses team members, but the problem is, in most other equipment, 'team members' usually means 'excluding the host', and 'team gain...' means it buffs the entire team.
         </p>
       </div>
 
