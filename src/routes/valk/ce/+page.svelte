@@ -354,7 +354,7 @@ onMount(async () => {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">New Players</strong>
-              <br/> - Farm Coralie Valkyrie Blastmetal first from Asterite Shop and Open World since she can fit in any Astral Ring team.
+              <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team.
               <br/> - Once you breakthrough Lv80+, you will encounter SD enemies in Abyss.  For new players, CE is the only farmable SD-type valkyrie. If you don't have any SD valkyrie, you can farm CE to counter SD enemies and gather SD shards.
           </p>
 

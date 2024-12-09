@@ -2,8 +2,8 @@
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
 
-    let versions = ["7.9", "7.8"];
-    export let currentVersion = "7.9"; // Set current version
+    let versions = ["8.0" , "7.9", "7.8"];
+    export let currentVersion = "8.0"; // Set current version
 
     function changeVersion(event) {
         const newVersion = event.target.value;

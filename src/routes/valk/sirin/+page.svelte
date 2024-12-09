@@ -29,6 +29,7 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
   import FoVDPS from '$lib/components/lineup/fovdps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Sirindps from "$lib/components/lineup/sirindps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -145,8 +146,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["fov"] || 0; // Get initial likes from JSON
-  const charName = "fov"; // Route name for this character
+  let fovlikes = likesData["sirin"] || 0; // Get initial likes from JSON
+  const charName = "sirin"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -202,18 +203,15 @@ function selectTabMobile(event) {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-  <img src="/images/bg/wave_fov.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  <img src="/images/bg/wave_hoo.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 
-<div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
-  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/ava_fov.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
-</div>
 
 <!-- Left: Character Image -->
 <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/fov.webp" alt="FoV" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-5;"/> 
+  <img src="/images/valkfull/sirin.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-18;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button
@@ -243,19 +241,21 @@ function selectTabMobile(event) {
   <!-- Battlesuit Name -->
 
   <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Fenghuang of Vicissitude</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Miracle ☆ Magical Girl</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Fu Hua | Release Date: v7.2 (18 Jan 2024)  </p>
+  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Sirin | Release Date: v6.9 (14 Sept 2023)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">
     <!-- Container with 4 pictures (Centered) -->
     <div class="flex flex-col items-center">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-rose-500 outline-1 bg-rose-950/75 rounded-lg p-2 backdrop-blur-sm">
+      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-purple-500 outline-1 bg-purple-950/75 rounded-lg p-2 backdrop-blur-sm">
         <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconBIO.png" alt="Mech" class="w-auto h-8 md:h-10" />
+        <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
         <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+        <img src="/images/element/ignite.png" alt="Icon 4" class="w-auto h-8 md:h-10" />
+
       </div>
     </div>
 
@@ -331,47 +331,45 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Swift and Powerful Fire DPS</strong> <br/>
-              Peak form of Fu Hua. Kicks, punches, divebombs, blasts fireballs and one-punch-nukes enemies. Abilities reduce and recover HP to gain buffs.
+              <strong class="text-amber-400">Ignite DPS</strong> <br/>
+              Sirin is a farmable Fire + Ignite DPS. She specializes against Ignite bosses. Her attacks are considered as Ignite DMG, which means they do not count as Melee or Ranged DMG.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400 ">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If FoV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+              <strong class="text-amber-400 ">New Players</strong>
           </p>
 
-          <p class="mt-2 text-sm sm:text-base mt-4">
-              <strong class="text-amber-400">Competitive</strong> <br/> FoV bosses still appear every patch. However, getting FoV should not be prioritized over Part 2 characters. SS-rank has a big upgrade that completely changes rotation.
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so yes, go ahead and farm Sirin. However, Sirin will only start to shine with ranks and equipment.</li>
+              <li class="mt-2"> G4 Little Joys stigma is farmable, but will take a couple of months.</li>
+              <li class="mt-2">Her signature weapon Dream Cutter can only be obtained from gacha. Not recommended to use your crystal to get it. If Dream Cutter is available through other means, such as spending event or Battle Pass, you can consider getting them that way.</li>
+
+          </ul>
+
+          <p class="text-sm sm:text-base mt-4">
+              <strong class="text-amber-400">Competitive</strong> <br/> Sirin still top scores Ignite weather bosses (HoIce, HoV) and they still appear from time to time. Sirin is a little weak below SS-rank, so just keep farming.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>FoV:</strong> Battlesuit Supply</li>
-              <li><strong>FoV's Weapon and Stigma:</strong> Focused Supply</li>
-              <li>Not available in v7.9. Last known supply is v7.6. </li>
+              <li ><strong>Sirin:</strong> War Treasury</li>
+              <li ><strong>G4 Little Joys:</strong> Foundry, Focused Supply</li>
+              <li><strong>Dream Cutter:</strong> Focused Supply</li>
+              <li>Not available in v7.9. </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: 
+              I didn't make a guide on her
           </p>
 
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/xBoYcLBsnZ0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
       </div>
   {/if}
   
@@ -380,7 +378,7 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-screen-lg mx-auto ">
-    <FoVDPS/>
+    <Sirindps/>
 
 </section>
 
@@ -399,23 +397,23 @@ function selectTabMobile(event) {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                   <div class="w-20 h-20 sm:w-28 sm:h-28">
-                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/12/19/50494840/0dcfff6c3e2ede3ea219db5241c14814_2846011900242113098.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/04/282941837/568bca1288a8cb9d65e32bd92f80e629_2490490247980793734.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                   </div>
 
                   <div class="w-20 h-20 sm:w-28 sm:h-28">
-                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/12/17/282941837/896ec7c4c0af4df38e4d163f136631cd_2081842516331964301.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                   </div>
 
                   <div class="w-20 h-20 sm:w-28 sm:h-28">
-                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/12/17/282941837/1f567e93f4238841c8bb167ef0f2c151_2030557497291653396.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                   </div>
 
                   <div class="w-20 h-20 sm:w-28 sm:h-28">
-                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/12/17/282941837/e2dd1c12b9d86638e9d325a1813f6954_8709267830500043460.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                   </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Torch of Eons + Fu Hua: Ordinary Days Set</h4>
+              <h4 class="text-base sm:text-base text-white"> Dream Cutter + G4 Little Joys set</h4>
               </div>
 
 
@@ -428,15 +426,11 @@ function selectTabMobile(event) {
 
             <div class="p-4 mt-4 bg-gradient-to-r from-rose-950/75 to-rose-900/75 rounded">
               <p class="text-sm sm:text-base text-left mb-4">
-                <b>Torch of Eons</b><br/> Has buffs, sp recovery and extra nuke.
+                <b>Dream Cutter</b><br/> Huge buffs, big extra damage, and sp regen.
               </p>
             
               <p class="text-sm sm:text-base text-left mb-4">
-                <b>Fu Hua Ordinary Days </b><br/> You want full set, each piece is strong, 3pc is just busted. Missing one piece is around 20% damage loss, which is a lot for a Part 1 valk.
-              </p>
-
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>VS G4 Little Joys</b><br/> Ordinary Days TB or MB 2PC is still stronger than G4 Little Joys.
+                <b>G4 Little Joys </b><br/> Just big buffs. Mid piece increases ignite trauma rate by 25%.
               </p>
             
               <p class="text-sm sm:text-base text-left">

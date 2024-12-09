@@ -47,7 +47,6 @@ export const postsoar = [
 
 export const extraregen = [
 
-    
 ];
 
 
@@ -97,7 +96,7 @@ export const valkbuffs = [
         rank: "S",
         available_by_default: "no",
 
-        description: "During AR Charging, when AR meter is full, the current Stellar Outburst cd will be reduced by 2.5 seconds, only takes effect once for every AR Charging state.",
+        description: "When Wheel of Destiny is activated, during AR Charging, when AR meter is full, the current Stellar Outburst cd will be reduced by 2.5 seconds, only takes effect once for every AR Charging state.",
         condition: { astralRing: "Wheel of Destiny"},
     },
 

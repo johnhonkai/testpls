@@ -7,6 +7,9 @@ export const weatherList = {
     {id: 'firemobius', name: 'Mobius'},
     {id: 'firekosma', name: 'Kosma'},
   ],
+  ice: [
+    {id: 'raven', name: 'Raven'},
+  ],
   typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
     {id: 'typeandrius', name:'Andrius'}, 
@@ -47,6 +50,8 @@ export const weatherList = {
   bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
     {id: 'pishacha', name: 'Pishacha'},
+    {id: 'villv', name: 'Vill-V'},
+
   ],
   ignite: [
     {id: 'ignitehov', name: 'Herrscher of the Void'}
@@ -206,6 +211,15 @@ export const bossData = {
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },
+  villv: {
+    name: 'Vill-V', 
+      mechanics: 'When HP reaches the final bar, Vill-V will become invincible and gain a huge bleed trauma meter. Fill the trauma to insta-kill her. Otherwise, you have to wait until the phase ends, then continue fighting her.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconNULL.png", 
+      bosspic: "images/Bosses/Flame-Chaser - Vill-V.webp", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+     
+  },
   firemobius: {
     name: 'Mobius', 
       mechanics: 'Green bar = shield. After green bar is destroyed, spawn a snake with hitcount hp. After snake is destroyed, get red bar. Red bar = take more damage. ', 
@@ -260,7 +274,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Herrscher of Corruption.webp", 
-    weather: "Scrappy: Enemies take 50% more Total DMG from Melee ATK, and take 50% less Total DMG from Ranged ATK", 
+    weather: "Scrappy: Enemies take 50% more Melee DMG, and take 50% less Ranged DMG", 
   },
   phyalien: {
     name: 'Alien Guard', 
@@ -269,6 +283,14 @@ export const bossData = {
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Alien Guard.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },
+  raven: {
+    name: 'Raven', 
+    mechanics: 'Transition phase: Counter with melee attacks to gain Feather stack. At the end of the phase, if you have 6 stacks, counter Raven attack to gain sp and AR pack.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Raven.png", 
+    weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
   },
 };
 
@@ -807,7 +829,7 @@ export const teamData = {
     ]},],
     videos: [
       { url: 'https://www.youtube.com/embed/_cfYygEWX10', abyss: 'RedLotus 482D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/k_f42gTOs-M', abyss: 'RedLotus 538D', uploader: 'iChronos' },
+      { url: 'https://www.youtube.com/embed/k_f42gTOs-M', abyss: 'Nirvana 538D', uploader: 'iChronos' },
 
     ] 
   },
@@ -839,7 +861,11 @@ export const teamData = {
         pct: '47%',
         bottext: "Highest Score: S3 786, SS+ 803 "
       },
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/gStp5LF95Hg', abyss: 'RedLotus 501D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/aS_H4XU_td4', abyss: 'Nirvana 539D', uploader: 'Amadeus' },
+    ] 
   },
   firekosma: {
     teamDataSets: [
@@ -1020,6 +1046,21 @@ export const teamData = {
         pct: '1%',
         bottext: "Gear: DoUnity, Zhenyi TB Schro M. Highest Score: 813"
       },
+    ]},]
+  },
+  villv: {
+    teamDataSets: [
+    {
+      tabname: "v7.9 CN",
+      teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Theresa Lunar Vow.png", "images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Griseo Cosmic Expression.png", "images/valkportrait/elf_kiana.png"],
+        pct: '100%',
+        bottext: "Some SIMP use SignatureTB TeslaBand M. Highest Score: S2 760, SS 772, SSS 783"
+      },
+      
     ]},]
   },
 }

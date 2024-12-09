@@ -638,14 +638,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
-                    <BossCard image="" date="TBA" weather="TBA" />
-                    <BossCard image="" date="TBA" weather="TBA" />
+                    <BossCard image="/images/Bosses/Flame-Chaser - Vill-V.webp" date="Jan 3" weather="Bleed" bosspage="/boss?villv"/>
+                    <BossCard image="/images/Bosses/Raven.png" date="Jan 6" weather="Ice" bosspage="/boss?raven"/>
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="" date="TBA"/>
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Jan 7"/>
+                        <BossCard image="/images/Bosses/Aesir Heimdall_SSS.webp"/>
+                        <BossCard image="/images/Bosses/Hephaestus.webp"/>
                     </div>
 
             </div>

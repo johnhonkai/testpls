@@ -77,7 +77,7 @@
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
                 <li class="text-sm sm:text-base">In this lineup, you are mostly relying on LV's own Lightning/Bleed DMG, like a normal Part 1 team.</li>
-                <li class="text-sm sm:text-base">Should be better (than Luna x SIMP double dps) on bosses like Bleed Tribunal, but currently no live data.</li>
+                <li class="text-sm sm:text-base">This is better (than Luna x SIMP double dps) on bosses like Bleed Tribunal and Bleed Vill-V.</li>
             </p>
         </div>
     </details>

@@ -9,7 +9,7 @@
     ];
 
     const asopchar = [
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png', teampct: '100%', speed: '' }
+        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png',  speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component
