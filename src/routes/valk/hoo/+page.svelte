@@ -359,7 +359,7 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> HoO is still used in Trio team. As DPS, high-rank HoO is much better with the new HoFi Divine Key, BUT so far there is no live data on HoO DPS getting top score on anything.
+              <strong class="text-amber-400">Competitive:</strong> HoO is still used in Trio team. As DPS, she has one top score, vs Starless weather Husk: Mysticism.
           </p>
 
           <div class="divider divider-neutral"></div>
@@ -367,7 +367,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>HoOrigin:</strong> Battlesuit Supply.</li>
-              <li ><strong>HoOrigin Stamps:</strong> Elysian Realm Shop.</li>
+              <li ><strong>HoOrigin Stamps:</strong> Elysian Realm Shop, Witch Orb Shop.</li>
               <li><strong>Domain of Unity and Raiden Mei stigma: </strong> Focused Supply.</li>
               <li>Not available in v7.9. Last known supply is v7.2. HoO has been given for free two times.</li>
 

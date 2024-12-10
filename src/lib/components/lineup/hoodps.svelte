@@ -69,7 +69,7 @@
                 <li class="text-sm sm:text-base mb-2"><b>Requirement:</b> This lineup requires Herrscher of Finality with the new Divine Key and Iskandar Stigma. No, you cannot put Iskandar on another valk. No, this lineup does not work if HoFi only has Iskandar but not the new Divine Key.</li>
                 <li class="text-sm sm:text-base mb-2"> <b>HoTr Support:</b> In this lineup, HoFi also contributes dmg, and Trio Joint Bursting mechanic is still being utilized.</li>
                 <li class="text-sm sm:text-base mb-2"> <b>Other Supports:</b>  This lineup relies mostly on HoOrigin's own damage, and HoOrigin's default ult is used.</li>
-                <li class="text-sm sm:text-base mb-2" > <b>Which One Is Better:</b>   Based on the data we have so far - In Abyss, Trio team is better. In Arena, any support works.</li>
+                <li class="text-sm sm:text-base mb-2" > <b>Which One Is Better:</b>   Based on the data we have so far - For most Abyss bosses, Trio team is better. For Husk Mysticism, HoO uses HoFi + Golden Diva support. In Arena, any support works.</li>
 
             </p>
         </div>

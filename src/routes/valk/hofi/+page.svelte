@@ -32,6 +32,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Hoodps from '$lib/components/lineup/hoodps.svelte';
 	import Simpdps from '$lib/components/lineup/simpdps.svelte';
 	import Senadps from '$lib/components/lineup/senadps.svelte';
+	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -441,6 +442,10 @@ function selectTabMobile(event) {
     {#if currentPage === 2}
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
 
+    <Sparkledps firstCharName="Kiana"/>
+
+    <div class="divider divider-neutral"></div>
+
     <Simpdps firstCharName="Kiana"/>
 
     <div class="divider divider-neutral"></div>
@@ -470,7 +475,7 @@ function selectTabMobile(event) {
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST FOR DPS AND SUPPORT</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400 mt-4">BEST FOR DPS AND SUPPORT</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
@@ -496,7 +501,7 @@ function selectTabMobile(event) {
               <h4 class="text-base sm:text-base text-white"> Waxing Moon + Iskandar Set</h4>
               </div>
 
-              <div class="p-2 mt-2 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
+              <div class="p-4 mt-4 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
               <p class="text-sm sm:text-base text-left"></p>
                   <b>Waxing Moon: </b>  A must-have for HoFi: Huge dmg buff with important utilties:
                   <div class="mx-2 mb-3 text-sm sm:text-base">
@@ -506,7 +511,7 @@ function selectTabMobile(event) {
 4. Synergy (duplicates) gives global ATK (Syn1 +10 ATK, Syn2 +5 ATK, Syn3 +5 ATK).
 </div>
 
-<p class="text-sm sm:text-base text-left"></p>
+<p class="text-sm sm:text-base text-left mt-8"></p>
 <b>Iskandar: </b>   Has DPS and support buffs. Requires Waxing Moon to activate most of the effects.
 <div class="mx-2 mb-3 text-sm sm:text-base">
 

@@ -74,7 +74,7 @@
     const supplies = {
         "Valk1": {
             title: "Battlesuit Supply A: Reign Solaris",
-            description: '<li>Duration: 4 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Boltstorm (UP), Ritual Imayoh, Gyakushin Miko, Kriegsmesser</li>',
+            description: '<li>Duration: 4 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Divine Prayer (UP), Phantom Iron, Flame Sakitama, Wolf Dawn</li>',
         },
         "Equip": {
             title: "Equipment Supply",
@@ -204,9 +204,22 @@
             
                 </div>
 
-
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ASTRAL OP SUPPLY</span>
+                    </div>                    
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Serapeum</span>
+
+                    </div>     
+            
+                </div>
+
+
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">RETURNEE SUPPLY</span>
                     </div>                  
@@ -249,10 +262,10 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">To Be Announced</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 7</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="" alt="Event 1" class="w-full h-full object-cover " />
+                        <img src="https://i.imgur.com/Kkq9gtN.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
@@ -266,10 +279,10 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">To Be Announced</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login Event<br/>Free RS Stigma box, 120 crystal and asterite</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="" alt="Event 2" class="w-full h-full object-cover" />
+                        <img src="https://i.imgur.com/CC5s3FB.png" alt="Event 2" class="w-full h-full object-cover" />
                     </div>
                 </div>
 
@@ -283,10 +296,28 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">To Be Announced</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Raffle Event: A chance to win 400 - 18,000 crystals, <br/> S-rank valkyries and more <br/></span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="" alt="Event 3" class="w-full h-full object-cover" />
+                        <img src="https://i.imgur.com/1lFxsPV.png" alt="Event 3" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 4</span>
+                </div> 
+                
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-5 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Countdown: To Sweet Dreams!</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/xMdDFiG.png" alt="Event 4" class="w-full h-full object-cover" />
                     </div>
                 </div>
 

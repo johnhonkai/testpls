@@ -13,9 +13,9 @@ Now, well, it's mostly a retirement home for Part 1 valks.
 
 ## Ancient Willpower (AW) and Ancient Legacy (AL) Currency
 
-The main source of AW and AL are from Memorial Arena mode. But you can get them from other sources such as Battle Pass and events.
+The main source of AW and AL are from Memorial Arena mode. AL can also be obtained from Abyss mode. You can get them from other sources such as Battle Pass and events.
 
-You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena mode.
+You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena and Abyss mode.
 
 ## Still Somewhat Relevant Valkyries
 
@@ -35,3 +35,6 @@ These characters are available in Elysian Realm mode. You can get <span class="t
 Unlocking and ranking them up also improves your Dorm Level EXP.
 
 ![wt er valks](https://i.imgur.com/C0RpUOj.jpeg)
+
+## Witch Orb Farm
+

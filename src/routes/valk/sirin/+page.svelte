@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Fu Hua - Fenghuang of Vicissitude</title> 
+  <title>Sirin - Miracle ☆ Magical Girl</title> 
 
-    <meta property="og:title" content="Fu Hua - Fenghuang of Vicissitude" />
-    <meta property="og:description" content="FoV Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Sirin - Miracle ☆ Magical Girl" />
+    <meta property="og:description" content="Miracle ☆ Magical Girl Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/i65fHp1.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/fov" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/sirin" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -26,7 +26,6 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
   import { goto } from '$app/navigation';
   import likesData from '$lib/data/likes.json'; // Import local JSON data
 
-  import FoVDPS from '$lib/components/lineup/fovdps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
 	import Sirindps from "$lib/components/lineup/sirindps.svelte";
@@ -360,7 +359,7 @@ function selectTabMobile(event) {
               <li ><strong>Sirin:</strong> War Treasury</li>
               <li ><strong>G4 Little Joys:</strong> Foundry, Focused Supply</li>
               <li><strong>Dream Cutter:</strong> Focused Supply</li>
-              <li>Not available in v7.9. </li>
+              <li>Not available in v7.9 </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -451,21 +450,21 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            BASIC ATK
+            CHARGED ATK
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            COMBO ATK
+            SNIP SNIP
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Basic ATK Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Charged ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Press A
+          Standard Charged ATK Playstyle
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -486,16 +485,17 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Attainment + Arcane Traces</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Observation</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Resplendence + Inner Blaze</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Stellar Breach</p>
             </div>
           </div>
           
         </div>
         <div class="mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-              FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
-          </p>
+            <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+            <li class="text-sm sm:text-base"> Normal mode: Sirin is generally a bit weak, especially at lower ranks and without signature equipment, so try to get both Ego signets. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+        </p>
           </div>
 
           <div class="divider divider-neutral"></div>
@@ -505,13 +505,9 @@ function selectTabMobile(event) {
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
               <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
+              <p class="text-lg font-semibold ">1 or 2</p>
               </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-              </div>
           
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -519,7 +515,17 @@ function selectTabMobile(event) {
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+              
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">1</p>
               </div>
 
@@ -568,6 +574,13 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
 
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+          </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
@@ -604,7 +617,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/MWD316kj2rI"
+                src="https://www.youtube.com/embed/"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -615,9 +628,9 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Combo ATK Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Basic ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Hold A button
+          Basic ATK Playstyle
 
         </p>
 
@@ -640,16 +653,16 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Vermillion Fire + Unbroken Rampant</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Observation</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Tailor + Dreamstitch</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Stellar Breach</p>
             </div>
           </div>
         </div>
         <div class="mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-            FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
-
-          </p>
+            <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+            <li class="text-sm sm:text-base"> Normal mode: Sirin is generally a bit weak, especially at lower ranks and without signature equipment, so try to get both Ego signets. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+        </p>
           </div>
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -657,23 +670,23 @@ function selectTabMobile(event) {
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
               </div>
           
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
+                <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
               </div>
               
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
               </div>
 
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
 
@@ -721,7 +734,13 @@ function selectTabMobile(event) {
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
-
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+          </div>
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
@@ -775,7 +794,7 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">RANK UP</h2>
 
       <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
+        <p class="text-center text-sm sm:text-base"> Miracle ☆ Magical Girl is a farmable valkyrie from debut patch. This type of S-rank character is meant to be very weak at S0-rank. She will only start to be decent from SS-rank onwards.
         </p>
       </div>
       <h2 class="text-xl font-semibold my-4 cooltext text-white">NOTABLE RANK-UP</h2>
@@ -786,8 +805,9 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S1:  Elemental Breach +13.8% ➔ +18%</li>
-              <li>SS: Big improvement to FoV's rotation and damage</li>
+              <li>S1:  Ult can now be buffed by Ignite DMG buffs, bigger damage.</li>
+              <li>SS: 5% more independent dmg multiplier.</li>
+              <li>SS2: Ult cd is faster, improves rotation.</li>
             </ul>
           </div>
 
@@ -812,15 +832,16 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  Elemental Breach +13.8% ➔ +18%	
+                  UNLOCK: Fire DMG caused by Ultimate will be considered as Fire DMG.
                 </td>
-                <td class="p-3">DPS</td>
+                <td class="p-3">Ult DMG is significantly stronger</td>
               </tr>
               <!-- Sample Row 2 -->
               <tr>
                 <td>S2</td>
                 <td>
-                  Enemies take 17 ➔ 21.2% more Fire DMG from FoV (independent multiplier)
+                  1. Initial SP +40 <br/>
+                  2. UNLOCK: Charged ATK deal up to additional 12 x 9999 HP Loss DMG
 
                 </td>
                 <td>DPS</td>
@@ -828,8 +849,7 @@ function selectTabMobile(event) {
               <tr>
                 <td>S3</td>
                 <td>
-                  Leader Skill: Team Fire DMG +18% ➔ 19%, Total DMG +10% ➔ 11%. Team Basic, Combo and Charged ATK gain Total DMG +32% ➔ 33.5%
-
+                  Leader Skill: Team Ignite DMG +21% ➔ 22%. Team Fire DMG +28% ➔ 29%
                 </td>
                 <td>DPS</td>
               </tr>
@@ -837,36 +857,36 @@ function selectTabMobile(event) {
                 <td>SS</td>
                 <td>
                   	
-                  1. UNLOCK: Basic ATK SEQ 4 and 5 gain Fire DMG +12%. Parry ATK can connect into Basic SEQ 4 and 5<br/>
-                  2. UNLOCK: Parry ATK gain Fire DMG +25%. Switching stances resets evasion CD (has 10s CD).
+                  Enemies take 15% ➔ 20% more Fire DMG from Miracle Magical Girl (independent multiplier)
                 </td>
-                <td>DPS<br/>
-                  Completely changes your rotation<br/>
-                  Recommended!</td>
+                <td>DPS</td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  Combo, Joint and Enhanced Joint ATK gain Fire DMG +11% ➔ 20%	                </td>
+                  On entry, or after you use Cut or Join, Fire DMG +35% ➔ 60%
+                	                </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SS2</td>
                 <td>
-                  Entering the field or switching stance grants Fire DMG +12.8% ➔ 20% for 12s	                </td>
-                <td>DPS
+                  Ultimate CD -10% ➔ -25%
+                </td>
+                <td>Improves rotation
               </tr>
               <tr>
                 <td>SS3</td>
                 <td>
-                  Leader Skill: Team Fire DMG +19% ➔ 20%, Total DMG +11% ➔ 12%. Team Basic, Combo and Charged ATK gain Total DMG +33.5% ➔ 35%         
+                  Leader Skill: Team Ignite DMG +22% ➔ 23%. Team Fire DMG +29% ➔ 30%
+
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  Enemies take 21.2% ➔ 24% more Fire DMG from FoV (independent multiplier)	
+                  UNLOCK: Charged ATK Fate-slashing Circle deals 500% ATK of additional Fire DMG to ignited enemies. Charged ATK gain Total DMG +45% against ignited enemies.
                 </td>
                 <td>DPS
               </tr>
@@ -889,9 +909,9 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>Elemental Breach +13.8% ➔ +18%	
+              <p>UNLOCK: Fire DMG caused by Ultimate will be considered as Fire DMG.	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS</p>
+              <p class="mt-2"><strong>Good for:</strong> 	Ult DMG is significantly stronger</p>
             </div>
           </div>
 
@@ -901,7 +921,8 @@ function selectTabMobile(event) {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>Enemies take 17 ➔ 21.2% more Fire DMG from FoV (independent multiplier)
+              <p>1. Initial SP +40 <br/>
+                2. UNLOCK: Charged ATK deal up to additional 12 x 9999 HP Loss DMG
               </p>
               <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
@@ -915,7 +936,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
-            <p>Leader Skill: Team Fire DMG +18% ➔ 19%, Total DMG +10% ➔ 11%. Team Basic, Combo and Charged ATK gain Total DMG +32% ➔ 33.5%
+            <p>Leader Skill: Team Ignite DMG +21% ➔ 22%. Team Fire DMG +28% ➔ 29%	
             </p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
@@ -927,10 +948,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>	1. UNLOCK: Basic ATK SEQ 4 and 5 gain Fire DMG +12%. Parry ATK can connect into Basic SEQ 4 and 5<br/>
-              2. UNLOCK: Parry ATK gain Fire DMG +25%. Switching stances resets evasion CD (has 10s CD).
+            <p>	Enemies take 15% ➔ 20% more Fire DMG from Miracle Magical Girl (independent multiplier)
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Completely changes your rotation. Recommended!</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -940,7 +960,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>Combo, Joint and Enhanced Joint ATK gain Fire DMG +11% ➔ 20%	</p>
+            <p>On entry, or after you use Cut or Join, Fire DMG +35% ➔ 60%		</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -951,8 +971,9 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>Entering the field or switching stance grants Fire DMG +12.8% ➔ 20% for 12s	</p>
-            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            <p>Ultimate CD -10% ➔ -25%		</p>
+            <p class="mt-2"><strong>Good for:</strong> Improves rotation
+            </p>
           </div>
         </div>
 
@@ -962,7 +983,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
-            <p>Leader Skill: Team Fire DMG +19% ➔ 20%, Total DMG +11% ➔ 12%. Team Basic, Combo and Charged ATK gain Total DMG +33.5% ➔ 35%</p>
+            <p>Leader Skill: Team Ignite DMG +22% ➔ 23%. Team Fire DMG +29% ➔ 30%	</p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -973,7 +994,7 @@ function selectTabMobile(event) {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	Enemies take 21.2% ➔ 24% more Fire DMG from FoV (independent multiplier) </p>
+            <p>	UNLOCK: Charged ATK Fate-slashing Circle deals 500% ATK of additional Fire DMG to ignited enemies. Charged ATK gain Total DMG +45% against ignited enemies. </p>
             <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
