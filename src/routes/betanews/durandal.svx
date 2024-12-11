@@ -1,6 +1,6 @@
 ---
 creationDate: "2024-11-29T14:32:56.426Z"
-title: Reign Solaris Skill v3
+title: Reign Solaris Skill v3D
 lastModifiedDate: "2024-11-29T14:32:56.426Z"
 
 version: '8.0'

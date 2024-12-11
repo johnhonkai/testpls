@@ -2,7 +2,7 @@
 creationDate: "2024-11-29T13:43:19.234Z"
 
 
-title: Reign Solaris Gear v3
+title: Reign Solaris Gear v3D
 
 lastModifiedDate: "2024-11-29T13:43:19.234Z"
 version: '8.0'
@@ -107,6 +107,7 @@ New Dudu equip bonus:
 	    - When New Dudu is the leader, enemies DEF -55%
     - During AR Charging: Enemies take 26% more Elemental DMG, and 19% more Physical DMG
     - During Stellar Outburst: Enemies take **26% (v2) > 32% (v3)** more Elemental DMG, and **19% (v2) > 24% (v3)** more Physical DMG
+    - v3D: **Team Shield DMG +60%**
 
 - When Wheel of Destiny is activated:
     - For every valk with Shadow Star tag, other team members gain Total DMG +4%.

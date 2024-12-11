@@ -52,7 +52,7 @@ SSS Kevin:
 ---
 
 Other
-- Reign Solaris Stigma 3pc: Added effect: When RoPromotion is activated, Team Shield DMG +40%
+- Reign Solaris Stigma 3pc: Added effect: When RoPromotion is activated, Team Shield DMG +60%
 - Adjusted value of Reign Solaris weapon (the non-pri version)
 - Not sure if I missed this or there was a hotfix change since v3, but pri arm weapon:
 Enemies take 10% (v3) > 11% (V3?) more Physical DMG from the wielder.
