@@ -19,6 +19,23 @@ image: "/images/valkportrait/dudu.png"
 
 ---
 
+### V3C
+- ER: Adjusted Reign Solaris in ER. Casting Star Shift ATK now counts as casting weapon skill.
+- Adjusted HP of SSS Deliverance Kevin
+- Phy weather Deliverance Kevin: Adjusted stats
+- Phy weather Deliverance Kevin: Fixed an issue where when the boss casts a skill, the character might be unable to trigger evasion skill or QTE
+
+---
+
+### V3B
+
+- Adjusted Physical Kevin stats (tankier now)
+- Adjusted Meteoroid Mockery stats
+- Adjusted SSS Kevin stats
+- Adjusted Durandal ER skill values
+
+---
+
 ### V3
 
 - Durandal: Adjusted mechanics and stats. Patch note no longer includes stat changes, please go to valk and gear page for the changes.

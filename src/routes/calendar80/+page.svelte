@@ -158,7 +158,7 @@
 </div>
 {#if activeTab === "Supply"}
 
-<div class="p-4 container-screen-2xl flex justify-center items-center mt-4">
+<div class="p-4 container-screen-2xl flex justify-center items-center mt-4 ">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
             <div class="w-[940px] rounded-lg bg-gradient-to-b from-cyan-500 to-cyan-100 ">
@@ -173,7 +173,7 @@
                     <div>WEEK 6<br />Feb 14 - 20 </div>
                 </div>
 
-                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
                     </div>                    
