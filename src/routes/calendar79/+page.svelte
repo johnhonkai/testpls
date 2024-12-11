@@ -74,7 +74,7 @@
         "JD": {
             title: "Battlesuit Supply A: Jovial Deception",
             description: '<li>Duration: 2 weeks.</li><li>A-rank: Sakuno Rondo (UP), Blueberry Blitz, Snowy Sniper, Swallowtail Phantasm</li>',
-
+            image: 'https://i.imgur.com/mQJECFl.png'
 
         },
         "Equip": {
