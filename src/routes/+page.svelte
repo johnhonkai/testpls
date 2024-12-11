@@ -88,13 +88,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2024-11-28'); // Start date for v7.9 in Regional Servers
-      const cnStartDate = new Date('2024-10-31');       // Start date for v7.9 in CN Servers
+      const cnStartDate = new Date('2024-12-12');       // Start date for v7.9 in CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v7.9 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
@@ -163,13 +163,15 @@
         <p class="text-sm sm:text-base text-slate-100 px-2">
             <strong class="text-amber-400">REGIONAL SERVERS</strong><br>
             - {regionalServerInfo}<br>
-            - v8.0 is on Jan 9
+            - v8.0 update is on Jan 9
         </p>
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
             <strong class="text-amber-400">CN SERVER</strong><br>
-            - {cnServerInfo}<br>
-            - v8.0 is on Dec 12
+            <!--- {cnServerInfo}<br>-->
+            - v7.9 Week 6 <br/>
+            - v8.0 update is in a few hours <br/>
+            - v8.1 update is on Jan 23
         </p>
     </div>
 
