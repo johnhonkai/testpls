@@ -267,12 +267,16 @@ const checkVotedStatus = async () => {
 </script>
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
-	<h1 class="text-3xl font-bold text-center text-emerald-500 mb-2">Honkai Impact 3rd Awards 2024</h1>
-	<p class="text-center text-sm text-gray-400 mb-8">Voting ends in: {countdown}</p>
 
-	
-	
 
+	<div class="flex justify-center items-center mb-10 p-4">
+		<img 
+		  src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/results%20copyvasd2.webp" 
+		  alt="Centered Image" 
+		  class="max-w-full max-h-[80vh] object-contain rounded-lg"
+		/>
+	  </div>
+	  
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-xl w-full">
@@ -292,14 +296,9 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: Hidden
+							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
-							<button on:click={() => openVoteModal(card.title, "Best Valkyrie")}>
 
-								VOTE
-							</button>
-						</CardItem>
 					</div>
 				</CardBody>
 			</CardContainer>
@@ -325,13 +324,9 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: Hidden
+							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold cursor-pointer">
-							<button on:click={() => openVoteModal(card.title, "Best Chapter")}>
-								VOTE
-							</button>
-						</CardItem>
+
 					</div>
 				</CardBody>
 			</CardContainer>
@@ -358,13 +353,9 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: Hidden
+							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
-							<button on:click={() => openVoteModal(card.title, "Best Boss")}>
-								VOTE
-							</button>
-						</CardItem>
+
 					</div>
 				</CardBody>
 			</CardContainer>
@@ -391,13 +382,9 @@ const checkVotedStatus = async () => {
 					</CardItem>
 					<div class="mt-5 flex items-center justify-between">
 						<CardItem {isMouseEntered} translateZ="50" className="text-sm  text-gray-300">
-							Votes: Hidden
+							Votes: {card.votes}
 						</CardItem>
-						<CardItem {isMouseEntered} translateZ={20} className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer">
-							<button on:click={() => openVoteModal(card.title, "Sussiest Songque Moment")}>
-								VOTE
-							</button>
-						</CardItem>
+	
 					</div>
 				</CardBody>
 			</CardContainer>

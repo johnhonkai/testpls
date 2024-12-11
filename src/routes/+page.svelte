@@ -264,7 +264,7 @@
         <img src="https://i.ytimg.com/vi/KUcYGq-4Gpc/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">8.0 Beta News</h3>
-          <p class="text-slate-300 text-base">New Durandal Gameplay</p>
+          <p class="text-slate-300 text-base">Reign Solaris Gameplay</p>
         </div>
       </a>
 
@@ -273,7 +273,7 @@
         <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">HI3 Awards 2024</h3>
-          <p class="text-slate-300 text-base">Vote now for your favorite HI3 content in 2024</p>
+          <p class="text-slate-300 text-base">Results Are Out!</p>
         </div>
       </a>
 
