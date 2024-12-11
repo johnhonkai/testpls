@@ -87,28 +87,36 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2024-11-28'); // Start date for v7.9 in Regional Servers
-      const cnStartDate = new Date('2024-12-12');       // Start date for v7.9 in CN Servers
+    const regionalStartDate = new Date('2024-11-28T04:00:00+08:00'); // Start date for v7.9 in Regional Servers at 4 AM UTC+8
+    const cnStartDate = new Date('2024-12-12T04:00:00+08:00');       // Start date for v7.9 in CN Servers at 4 AM UTC+8
 
-      const currentWeekRegional = calculateWeek(regionalStartDate);
-      const currentWeekCN = calculateWeek(cnStartDate);
+    const currentWeekRegional = calculateWeek(regionalStartDate);
+    const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
-  }
+    regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
+    cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
+}
 
-  function calculateWeek(startDate: Date): number {
+function calculateWeek(startDate) {
     const now = new Date();
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
 
-    // Convert current time to UTC+8 by adding 8 hours (8 * 60 * 60 * 1000 ms)
-    const nowUTC8 = new Date(now.getTime() + 8 * 60 * 60 * 1000);
-    
+    // Convert the start date and current time to UTC+8
+    const startUTC8 = new Date(startDate.getTime() - startDate.getTimezoneOffset() * 60000 + 8 * 60 * 60 * 1000);
+    const nowUTC8 = new Date(now.getTime() - now.getTimezoneOffset() * 60000 + 8 * 60 * 60 * 1000);
+
+    // Adjust the "now" time to match the update hour (4 AM UTC+8)
+    if (nowUTC8.getUTCHours() < 4) {
+        // If it's before 4 AM on the current day, consider the previous day
+        nowUTC8.setUTCDate(nowUTC8.getUTCDate() - 1);
+    }
+
     const diffInWeeks = Math.floor((Date.UTC(nowUTC8.getUTCFullYear(), nowUTC8.getUTCMonth(), nowUTC8.getUTCDate())
-        - Date.UTC(startDate.getUTCFullYear(), startDate.getUTCMonth(), startDate.getUTCDate())) / msInWeek);
+        - Date.UTC(startUTC8.getUTCFullYear(), startUTC8.getUTCMonth(), startUTC8.getUTCDate())) / msInWeek);
 
     return diffInWeeks + 1;
 }
+
 </script>
 
 
