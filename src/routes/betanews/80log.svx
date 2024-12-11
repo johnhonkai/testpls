@@ -19,6 +19,47 @@ image: "/images/valkportrait/dudu.png"
 
 ---
 
+### V3D
+Reign Solaris
+- Adjusted upgrade mats amount
+- Optimized some skill description
+- AR 2: Enemies are impaired, DEF -70% for 3s > 1s, removed on exit.
+- Fixed particle? issue after you exit
+- Fixed abnormal lag when using enhanced Charged ATK
+- Fixed abnormal dmg resistance calculation when using Charged ATK
+- Fixed an issue where, when AR is activated, the character switch cd will take effect immediately ?
+- Fixed an issue where Charged ATK third stage sp recovery would trigger multiple times when AR is not activated
+- Fixed an issue where ultimate evasion doesn't recover sp in surf form
+
+---
+
+Abyss
+- RoPromotion weather boss: Changed enemy distribution (huh still the same enemies tho ???)
+- Phyical Deliverance Kevin: Adjusted mechanic and stats
+- Dominance Aponia: Adjusted HP
+- RoPromotion Ice Emperor: Adjusted HP
+- Symphony Hellmaru: Adjusted HP
+- WoDestiny MHT-3C Tank: Adjusted HP
+
+---
+
+Arena
+
+SSS Kevin:
+- Adjusted his skill cast order
+- Adjusted sp pack drop location during transition phase
+
+---
+
+Other
+- Reign Solaris Stigma 3pc: Added effect: When RoPromotion is activated, Team Shield DMG +40%
+- Adjusted value of Reign Solaris weapon (the non-pri version)
+- Not sure if I missed this or there was a hotfix change since v3, but pri arm weapon:
+Enemies take 10% (v3) > 11% (V3?) more Physical DMG from the wielder.
+
+
+---
+
 ### V3C
 - ER: Adjusted Reign Solaris in ER. Casting Star Shift ATK now counts as casting weapon skill.
 - Adjusted HP of SSS Deliverance Kevin

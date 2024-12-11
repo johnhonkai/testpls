@@ -84,7 +84,7 @@ When AR is not activated:
 - When QTE hits, gain Flying Light, can be obtained once every 16s. When Charged ATK third stage hits, Flying Light will be consumed, and trigger these effects:
 	- Charged ATK deal 600% ATK of Physical DMG.
 	- Enemies take **10% (S) / 18% (SS1)** more Total DMG for 20s.
-	- Shield DMG +480%, Total DMG +56%, Physical DMG +56%, enemies are impaired, DEF -70% for 3s, removed on exit.
+	- Shield DMG +480%, Total DMG +56%, Physical DMG +56%, enemies are impaired, DEF -70% for **3s(v3) > 1s (v3d)**, removed on exit.
 
 ---
 **AR 3**<br/>

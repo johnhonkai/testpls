@@ -47,7 +47,7 @@ Self Total DMG **+20% (v2) > +15% (v3)**. New Dudu equip bonus:
 ---
 
 **PASSIVE 2**<br/>
-Enemies take **15% (v2) > 10% (v3)** more Physical DMG from the wielder.
+Enemies take **15% (v2) > 10% (v3) > 11% (v3?)** more Physical DMG from the wielder.
 New Dudu equip bonus: Team Crit DMG **+25% (v2) > 20% (v3)** and Elemental DMG **+25% (v2) > 20% (v3)**
 
 ---

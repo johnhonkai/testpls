@@ -1,0 +1,116 @@
+{
+  "categories": {
+    "Astral Ring": [
+      {
+        "slug": "ar1",
+        "title": "Astral Ring System",
+        "category": "Astral Ring",
+        "sortOrder": 1
+      },
+      {
+        "slug": "ar2",
+        "title": "Part 2 Teambuilding",
+        "category": "Astral Ring",
+        "sortOrder": 2
+      },
+      {
+        "slug": "ar3",
+        "title": "Planning Your Pulls for F2P / Monthly Pass Players",
+        "category": "Astral Ring",
+        "sortOrder": 3
+      }
+    ],
+    "Shop": [
+      {
+        "slug": "battlepass",
+        "title": "Battle Pass",
+        "category": "Shop",
+        "sortOrder": 1
+      },
+      {
+        "slug": "foundry",
+        "title": "Foundry",
+        "category": "Shop",
+        "sortOrder": 3
+      },
+      {
+        "slug": "asterite",
+        "title": "Asterite Shop",
+        "category": "Shop",
+        "sortOrder": 4
+      },
+      {
+        "slug": "wartreasury",
+        "title": "War Treasury Shop",
+        "category": "Shop",
+        "sortOrder": 5
+      }
+    ],
+    "Getting Started": [
+      {
+        "slug": "readthisfirst",
+        "title": "Read This First",
+        "category": "Getting Started",
+        "sortOrder": 1
+      },
+      {
+        "slug": "gameserver",
+        "title": "Game Server",
+        "category": "Getting Started",
+        "sortOrder": 2
+      },
+      {
+        "slug": "comparison",
+        "title": "Materials and Terms Comparison with Star Rail",
+        "category": "Getting Started",
+        "sortOrder": 3
+      },
+      {
+        "slug": "gacha",
+        "title": "Gacha in HI3",
+        "category": "Getting Started",
+        "sortOrder": 4
+      }
+    ],
+    "Game mechanics": [
+      {
+        "slug": "dmgelement",
+        "title": "Damage Element",
+        "category": "Game mechanics",
+        "sortOrder": 1
+      },
+      {
+        "slug": "dmgcalc",
+        "title": "Damage Calculation",
+        "category": "Game mechanics",
+        "sortOrder": 2
+      },
+      {
+        "slug": "impair",
+        "title": "Impair and Physical Breach",
+        "category": "Game mechanics",
+        "sortOrder": 3
+      },
+      {
+        "slug": "elebreach",
+        "title": "Elemental Breach",
+        "category": "Game mechanics",
+        "sortOrder": 4
+      },
+      {
+        "slug": "timestop",
+        "title": "Time Stop",
+        "category": "Game mechanics",
+        "sortOrder": 5
+      }
+    ],
+    "Others": [
+      {
+        "slug": "supplies",
+        "title": "Part 1 Gacha",
+        "category": "Others",
+        "sortOrder": 2
+      }
+    ]
+  }
+}
