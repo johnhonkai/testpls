@@ -269,7 +269,7 @@ function calculateWeek(startDate) {
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=KUcYGq-4Gp" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=KUcYGq-4Gpc" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src="https://i.ytimg.com/vi/KUcYGq-4Gpc/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
