@@ -170,7 +170,7 @@
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
             <strong class="text-amber-400">CN SERVER</strong><br>
-            {cnServerInfo}<br>
+            - {cnServerInfo}<br>
             - v8.1 update is on Jan 23
         </p>
     </div>
