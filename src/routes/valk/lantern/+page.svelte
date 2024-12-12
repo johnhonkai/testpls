@@ -407,15 +407,15 @@ function selectTabMobile(event) {
 
     {#if currentPage === 1}
 
-    <LanternDPS firstCharIndex={0} maindps={true} />
+    <LanternDPS maindps={true} />
 
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
 
-    <JDDPS firstCharIndex={1} />
+    <JDDPS firstCharName="Lantern" />
 
     <div class="divider divider-neutral"></div>
 
-    <ThelDPS firstCharIndex={2} />
+    <ThelDPS firstCharName="Lantern" />
 
     {/if}
 

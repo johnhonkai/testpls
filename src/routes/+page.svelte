@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/0sXVKJs.png" />
+    <meta property="og:image" content="https://i.imgur.com/mX6zxhQ.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -87,35 +87,29 @@
   });
 
   function updatePatchTime() {
-    const regionalStartDate = new Date('2024-11-28T04:00:00+08:00'); // Start date for v7.9 in Regional Servers at 4 AM UTC+8
-    const cnStartDate = new Date('2024-12-12T04:00:00+08:00');       // Start date for v7.9 in CN Servers at 4 AM UTC+8
+      const regionalStartDate = new Date('2024-11-29'); // Start date for v7.9 in Regional Servers
+      const cnStartDate = new Date('2024-12-12');       // Start date for v7.9 in CN Servers
 
-    const currentWeekRegional = calculateWeek(regionalStartDate);
-    const currentWeekCN = calculateWeek(cnStartDate);
+      const currentWeekRegional = calculateWeek(regionalStartDate);
+      const currentWeekCN = calculateWeek(cnStartDate);
 
-    regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
-    cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
-}
+      regionalServerInfo = `Currnt: v7.9 Week ${currentWeekRegional}`;
+      cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
+  }
 
-function calculateWeek(startDate) {
+  function calculateWeek(startDate: Date): number {
     const now = new Date();
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
 
-    // Convert the start date and current time to UTC+8
-    const startUTC8 = new Date(startDate.getTime() - startDate.getTimezoneOffset() * 60000 + 8 * 60 * 60 * 1000);
-    const nowUTC8 = new Date(now.getTime() - now.getTimezoneOffset() * 60000 + 8 * 60 * 60 * 1000);
-
-    // Adjust the "now" time to match the update hour (4 AM UTC+8)
-    if (nowUTC8.getUTCHours() < 4) {
-        // If it's before 4 AM on the current day, consider the previous day
-        nowUTC8.setUTCDate(nowUTC8.getUTCDate() - 1);
-    }
-
+    // Convert current time to UTC+8 by adding 8 hours (8 * 60 * 60 * 1000 ms)
+    const nowUTC8 = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+    
     const diffInWeeks = Math.floor((Date.UTC(nowUTC8.getUTCFullYear(), nowUTC8.getUTCMonth(), nowUTC8.getUTCDate())
-        - Date.UTC(startUTC8.getUTCFullYear(), startUTC8.getUTCMonth(), startUTC8.getUTCDate())) / msInWeek);
+        - Date.UTC(startDate.getUTCFullYear(), startDate.getUTCMonth(), startDate.getUTCDate())) / msInWeek);
 
     return diffInWeeks + 1;
 }
+
 
 </script>
 
@@ -176,9 +170,7 @@ function calculateWeek(startDate) {
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
             <strong class="text-amber-400">CN SERVER</strong><br>
-            <!--- {cnServerInfo}<br>-->
-            - v7.9 Week 6 <br/>
-            - v8.0 update is in a few hours <br/>
+            {cnServerInfo}<br>
             - v8.1 update is on Jan 23
         </p>
     </div>
@@ -204,19 +196,19 @@ function calculateWeek(startDate) {
       <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
           <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
-          <h2 class="text-xl font-bold text-blue-600">7.9 CRYSTAL INCOME</h2>
+          <h2 class="text-xl font-bold text-blue-600">8.0 CRYSTAL INCOME</h2>
         </div>
 
         <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2 ">
-          <li>F2P: 16,445</li>
-          <li>Monthly: 19,965</li>
-          <li>Monthly+BP: 21,285</li>
-          <li>Free 10 Battlesuit Cards + 6 Equipment Cards</li>
+          <li>F2P: 15,675</li>
+          <li>Monthly: 19,195</li>
+          <li>Monthly+BP: 20,515</li>
+          <li>Free 5 Battlesuit Cards + 1 Equipment Card</li>
         </ul>
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
 
         <div class="flex justify-center mt-5">
-        <a href="https://www.miyoushe.com/bh3/article/58891929">
+        <a href="https://www.miyoushe.com/bh3/article/59999849">
         <button class="btn btn-accent btn-sm">Source</button>
         </a>
       </div>

@@ -417,15 +417,15 @@ function selectTabMobile(event) {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <ThelDPS firstCharIndex={0} maindps={true}/>
+      <ThelDPS maindps={true}/>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
 
-      <JDDPS firstCharIndex={2} />
+      <JDDPS firstCharName="Thelema" />
 
       <div class="divider divider-neutral"></div>
 
-      <LanternDPS firstCharIndex={2} />
+      <LanternDPS firstCharName="Thelema"/>
 
 
 
@@ -436,11 +436,11 @@ function selectTabMobile(event) {
       {#if currentPage === 2}
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
       
-      <SimpDPS firstCharIndex={3} />
+      <SimpDPS firstCharName="Thelema"/>
 
       <div class="divider divider-neutral"></div>
 
-      <SenaDPS firstCharIndex={1} />
+      <SenaDPS firstCharName="Thelema" />
 
       {/if}
 
