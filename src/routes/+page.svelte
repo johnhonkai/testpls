@@ -203,7 +203,7 @@
           <li>F2P: 15,675</li>
           <li>Monthly: 19,195</li>
           <li>Monthly+BP: 20,515</li>
-          <li>Free 5 Battlesuit Cards + 1 Equipment Card</li>
+          <li>1 Equipment Card + 50% off the first 10 pull of Reign Solaris </li>
         </ul>
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
 
