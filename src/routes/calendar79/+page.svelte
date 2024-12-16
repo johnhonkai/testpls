@@ -91,7 +91,7 @@
         },
         "Freehoh": {
             title: "Free Herrscher of Human: Ego",
-            description: "Complete 4 out of 5 event missions in 7.9 to get free Herrscher of Human: Ego<li>Login</li><li>Clear phase 3 HI3xHSR Collab</li><li>Clear P2 Chapter 6</li><li>Clear the main stages of Ai-chan Cafe event</li><li>Clear 9 stages of Dual Core event</li>",
+            description: "Complete 4 out of 5 event missions in 7.9 to get free Herrscher of Human: Ego<li>Login</li><li>Clear phase 3 HI3xHSR Collab</li><li>Clear P2 Chapter 6</li><li>Clear the main stages of Snazzy Cards Club event</li><li>Clear 9 stages of Powered Duo event</li>",
             image: "https://i.imgur.com/YGirdES.png"
         },
         "FoV": {

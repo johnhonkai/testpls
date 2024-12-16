@@ -75,6 +75,8 @@
         "Valk1": {
             title: "Battlesuit Supply A: Reign Solaris",
             description: '<li>Duration: 4 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Divine Prayer (UP), Phantom Iron, Flame Sakitama, Wolf Dawn</li>',
+            image: "https://i.imgur.com/3EOIQRx.png"
+
         },
         "Equip": {
             title: "Equipment Supply",
@@ -87,6 +89,10 @@
         "TimeCapsule": {
             title: "Time Capsule",
             image: "https://i.imgur.com/E3grel4.png"
+        },
+        "Login": {
+            title: "7-Day Login",
+            image: "https://i.imgur.com/ig9SiwS.png"
         },
         "Freehoh": {
             title: "Free Herrscher of Human: Ego",
@@ -262,7 +268,7 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 7</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 7 and Cube Durandal event</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/Kkq9gtN.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -277,7 +283,7 @@
                      <span class="font-bold0">EVENT 2</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                <div on:click={() => openModal("Login")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login Event<br/>Free RS Stigma box, 120 crystal and asterite</span>
                     <!-- Image positioned on the right side -->
@@ -354,14 +360,15 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/Otto Apocalypse.webp" date="Jan 10" weather="Physical" bosspage="/boss?otto" />
+                    <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" date="Jan 13" weather="Shadow" bosspage="/boss?shadowtank" />
+
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Jan 14"/>
+                    <BossCard image="/images/Bosses/Dominator of Wolves.webp" />
+                    <BossCard image="/images/Bosses/Shadow Knight (SK).webp" />
                 </div>
 
             </div>
@@ -373,8 +380,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard />
+                    <BossCard />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">

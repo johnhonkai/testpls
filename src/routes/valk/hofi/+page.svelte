@@ -364,7 +364,7 @@ function selectTabMobile(event) {
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Herrscher of Origin Support</strong><br/>  Iskandar stigma has buffs for HoOrigin DPS. However, so far, HoOrigin top score Abyss bosses have not appeared in live version.
+          <strong class="text-amber-400">Herrscher of Origin Support</strong><br/>  Iskandar stigma has buffs for HoOrigin DPS. So far, HoOrigin only has one top score in live version Abyss, Starless Husk Mysticism.
       </p>
 
       <p class="mt-4 text-sm sm:text-base">
@@ -708,7 +708,11 @@ function selectTabMobile(event) {
               </div>
 
           </div>
-
+          <div class="p-2 mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                <b>Decimation: </b> Nexus 1 is stronger but - [1] Requires you to spam Blood Rose hp reduction, and [2] If battle takes too long, you will recover too much HP.
+            </p>
+            </div>
 
             <div class="divider divider-neutral"></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>

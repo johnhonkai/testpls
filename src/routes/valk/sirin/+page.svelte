@@ -46,7 +46,7 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'How to Play', short: 'howtoplay' },
+  //{ name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
   { name: 'Rank Up', short: 'rank' },

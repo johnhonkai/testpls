@@ -63,11 +63,42 @@ export const weatherList = {
     {id: 'meleehoc', name: 'Herrscher of Corruption'}
   ],
   physical: [
-    {id: 'phyalien', name: 'Alien Guard'}
+    {id: 'phyalien', name: 'Alien Guard'},
+    {id: 'otto', name: 'Otto Apocalypse'},
+
   ],
+  shadow: [
+    {id: 'shadowtank', name: 'MHT-3C Retaliator'},
+  ]
+  
 }
 
+export const weatherEffect = {
+  lightning: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",
+  fire: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.",
+  ice: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
+  physical: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.",
 
+  oblivion: "Stellar Crown: For every character in the team with Omniscient Star tag, team Total DMG +10%. When AR Rite of Oblivion is activated, team Total DMG +40%.",
+  shadow: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, valk on the field gain Total DMG +50% for 15s.",
+  resonance: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.",
+  stellar: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +20%.",
+  starless: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.",
+
+  imaginary: "IMG: IMG valk DMG +20%",
+  quantum: "QUA: QUA valk DMG +20%",
+  stardust: "Stardust: SD valk DMG +20%",
+  typecounter: "Counter: Type counter effect is 20% stronger.",
+
+  ranged: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK",
+  melee: "Scrappy: Enemies take 50% more Melee DMG, and take 50% less Ranged DMG",
+
+  blood: "Bloodthirsty: After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.",
+  bleed: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%",
+  stun: "Unbalanced: Enemies take 40% more DMG when stunned and within 4s after the stun ends.",
+  ignite: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%",
+
+}
 
 export const bossData = {
   lightningsprout: {
@@ -101,9 +132,9 @@ export const bossData = {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 
       weakness: 'Phy / Lightning / Ice / Fire (M)', 
-      typeicon: "images/type/IconNULL.png", 
+      typeicon: "images/type/IconNULL.webp", 
       bosspic: "images/Bosses/HOMU Emperor.webp", 
-      weather: "Stellar Crown: For every character in the team with Omniscient Star tag, team Total DMG +8%. When AR Rite of Oblivion is activated, team Total DMG +30%.", 
+      weather: "Stellar Crown: For every character in the team with Omniscient Star tag, team Total DMG +10%. When AR Rite of Oblivion is activated, team Total DMG +40%.", 
   },
   bloodsdmob: {
     name: 'SD-Mech Swarm', 
@@ -151,7 +182,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Saha Assaka.webp", 
-    weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +10%.", 
+    weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +20%.", 
   },
   stellarrpc: {
     name: 'RPC-6626', 
@@ -159,15 +190,15 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/RPC-6626.webp", 
-    weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +10%.", 
+    weather: "Stellar: When AR is activated, Total DMG +30%. During Stellar Outburst, gain extra Total DMG +20%.", 
   },
   starbenares:{
     name: 'Benares: Ice', 
       mechanics: 'First wave has creepers with paralyze trauma. When Astral Ring is not activated, Total DMG +20%', 
       weakness: 'Ice (H), Phy (H)', 
-      typeicon: "images/type/IconNULL.png", 
+      typeicon: "images/type/IconNULL.webp", 
       bosspic: "images/Bosses/Benares.webp", 
-      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
   },
   starrimestar:{
     name: 'Herrscher of the Rimestar', 
@@ -175,7 +206,7 @@ export const bossData = {
       weakness: 'Ice (Immune), Lightning (S)', 
       typeicon: "images/type/IconPSI.png", 
       bosspic: "images/Bosses/Herrscher of Rimestar.png", 
-      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
   },
   starandrius:{
     name: 'Dominator of Wolves', 
@@ -183,7 +214,7 @@ export const bossData = {
       weakness: 'Ice (Immune)', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Dominator of Wolves.webp", 
-      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
   },
   starbull:{
     name: 'Husk: Mysticism', 
@@ -191,7 +222,7 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
-      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
   },
   bleedhos: {
     name: 'Herrscher of Sentience', 
@@ -206,7 +237,7 @@ export const bossData = {
     name: 'Pishacha', 
       mechanics: 'Bleed is required', 
       weakness: 'None', 
-      typeicon: "images/type/IconNULL.png", 
+      typeicon: "images/type/IconNULL.webp", 
       bosspic: "images/Bosses/Pishacha.webp", 
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
@@ -215,7 +246,7 @@ export const bossData = {
     name: 'Vill-V', 
       mechanics: 'When HP reaches the final bar, Vill-V will become invincible and gain a huge bleed trauma meter. Fill the trauma to insta-kill her. Otherwise, you have to wait until the phase ends, then continue fighting her.', 
       weakness: 'None', 
-      typeicon: "images/type/IconNULL.png", 
+      typeicon: "images/type/IconNULL.webp", 
       bosspic: "images/Bosses/Flame-Chaser - Vill-V.webp", 
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
@@ -266,7 +297,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Vita.png", 
-    weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +5%. When AR World Star is activated, team Total DMG +30%.", 
+    weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.", 
   },
   meleehoc: {
     name: 'Herrscher of Corruption', 
@@ -291,6 +322,22 @@ export const bossData = {
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Raven.png", 
     weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
+  },
+  otto: {
+    name: 'Otto Apocalypse', 
+    mechanics: 'Starts with two IMG mobs. Otto Phase 2 has a tanky shield. ', 
+    weakness: 'None', 
+    typeicon: "images/type/IconIMG.png", 
+    bosspic: "images/Bosses/Otto Apocalypse.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },
+  shadowtank: {
+    name: 'MHT-3C Retaliator', 
+    mechanics: '', 
+    weakness: 'Ice (S), Lightning (S)', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },
 };
 

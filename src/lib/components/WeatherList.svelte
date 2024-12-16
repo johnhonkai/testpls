@@ -24,6 +24,7 @@
     stellar: "Stellar",
     stun: "Stun",
     physical: "Physical",
+    shadow: "Shadow",
     // Add other weather mappings as needed
   };
 
