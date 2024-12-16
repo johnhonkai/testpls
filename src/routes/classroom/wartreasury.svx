@@ -23,7 +23,7 @@ You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena and Abys
   <img src="https://i.imgur.com/L6y9GDQ.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
 </div>
 
-- Herrscher of Sentience: Part 1 Physical Support
+- Herrscher of Sentience: Part 1 Physical Support / DPS
 - Miracle Magical Girl: Fire / Ignite DPS
 - Jade Knight: Part 1 Ice support
 - Reminder, these characters need ranks and equipment to be decent
@@ -36,5 +36,4 @@ Unlocking and ranking them up also improves your Dorm Level EXP.
 
 ![wt er valks](https://i.imgur.com/C0RpUOj.jpeg)
 
-## Witch Orb Farm
 

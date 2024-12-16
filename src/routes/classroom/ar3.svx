@@ -21,7 +21,28 @@ What does this mean?
 
 <p class="text-2xl font-bold text-center text-fuchsia-300"> Pull a valk that you like, then build a team that synergizes with her. </p>
 
+---
+
 ## Planning Your Pulls
+
+### New Players
+
+The general rule is you should pull the latest Part 2 S-rank character, because:
+- She will help you blast through early game content without the need to farm old valk, weapon and stigma.
+- Since the valk is new, there are more bosses tailored for the new character dps and support roles in the current patch.
+
+However, before pulling, make sure to check the character review first to see her pros and cons. You can do so by checking [the valkyrie page](/valk).
+
+In addition, check out [the timeline page](/calendar80) too. 
+- If you are on week 3-4, the new valkyrie banner is almost over. 
+- If you are on week 5-6, the next patch is just around the corner. 
+
+You can consider saving for the next patch valk instead.
+
+
+---
+
+### Existing Players
 
 Everyone's account is different. You have to plan your pulls.
 

@@ -29,15 +29,17 @@ customSlug: "ar2"
 
 
 4. There are <span class="text-emerald-400">MULTIPLE OPTIMAL TEAM LINEUPS</span>. You are not just restricted to only two specific supports now. Every support has her own unique abilities. For example:
-- For Wheel of Destiny teams, <span class="text-orange-400">Senadina</span> can stay off-field the entire battle and still provide Elemental Breach.
-- For Wheel of Destiny teams, <span class="text-sky-300">Thelema</span> provides shieldbreak, evasion spam ar regen, and provides dmg herself.
+- For Wheel of Destiny teams, <span class="text-orange-400">Senadina</span> can provide powerful buffs like Elemental Breach while staying off-field the entire battle.
+- For Wheel of Destiny teams, <span class="text-sky-300">Thelema</span> provides shieldbreak, huge freeze trauma and evasion spam ar regen.
 - For World Star teams, <span class="text-fuchsia-300">Herrscher of Finality</span> provides super quick resonance trigger.
 
-
+---
 
 But of course, Honkai Impact is complex. Not all Astral Ring teams have multiple lineups. There are some teams that still only have one best lineup.
 - Herrscher of Finality DPS: Needs Herrscher of Truth and Herrscher of Origin.
 - Vita Lone Planetfarer DPS: Needs team members with Astral Ring: Rite of Oblivion (RoO) to activates buffs like Elemental Breach, buffs and stronger Ult. Right now, there are only two RoO valks besides Vita - Herrscher of Finality and Coralie.
+
+---
 
 5. For equipment, you only need to gacha for weapon, 60 pulls guarantee max. Stigma is forgeable, you also get a lot of stigma if you pull weapon from gacha. 
 In addition, when a new valkyrie debuts, you will get one stigma selector box.

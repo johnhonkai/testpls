@@ -15,7 +15,7 @@ Enemies have Elemental Resistance stat. **Elemental Breach** makes your attack d
 Ele Breach is very common in S-rank Valkyries. But only a few S-rank can give Elemental Breach for other valkyries through a buff called **Elemental Breach state.**
 
 1. Azure Empyrea<br/>
-  The first valk to provide Elemental Breach state. She's just and fair, she gives Breach for all valks, no questions asked.
+  The first valk to provide Elemental Breach state. She's just and fair, she gives Elemental Breach for all valks, no questions asked.
 
 2. Jade Knight<br/>
   Provides Elemental Breach state only for Ice valkyries.
@@ -33,7 +33,10 @@ Ele Breach is very common in S-rank Valkyries. But only a few S-rank can give El
   Provides Elemental Breach state only for Theresa characters when AR is not activated.
 
 7. Vita Lone Planetfarer<br/>
-    Provides Elemental Breach state for everyone if Astral Ring is activated.
+    - When AR World Star is activated, LP provides Elemental Breach state for World Star characters with Fire / Lightning / Ice DMG tag.
+    - When AR Wheel of Destiny is activated, LP provides Elemental Breach state for Wheel of Destiny characters.
+    - When AR Reason of Promotion is activated, LP provides Elemental Breach state for Reason of Promotion characters with Fire / Lightning / Ice DMG tag.
+    - When Astral Ring is activated, but AR World Star, Wheel of Destiny and Reason of Promotion are not activated, LP provides Elemental Breach state for characters with Fire / Lightning / Ice DMG tag.
 
 ---
 

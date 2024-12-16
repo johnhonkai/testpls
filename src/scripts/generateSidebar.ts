@@ -32,13 +32,15 @@ async function generateSidebarJson() {
 
             const slug = file.replace('.svx', '');
 
-            articles.push({
-                slug,
-                title: metadata.title,
-                category: metadata.category ?? 'Uncategorized',
-                sortOrder: metadata.sortOrder ?? 999, // Default sort order
-                rawContent, // Add the raw content
-            });
+            if (slug !== 'welcome') {
+                articles.push({
+                    slug,
+                    title: metadata.title,
+                    category: metadata.category ?? 'Uncategorized',
+                    sortOrder: metadata.sortOrder ?? 999, // Default sort order
+                    rawContent, // Add the raw content
+                });
+            }
         }
 
         const categorizedArticles = articles.reduce((acc, article) => {
