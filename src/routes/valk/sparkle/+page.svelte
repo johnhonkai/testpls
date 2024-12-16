@@ -605,7 +605,6 @@ function selectTabMobile(event) {
           class=" object-cover cursor-pointer"
           on:click={() => openLightbox('/images/valkbuff/buff_sparkle.webp')}
         />
-        <!-- Add more images as needed -->
       </div>
 
       <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
@@ -1061,6 +1060,7 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
+              <li>SS has increased independent multiplier. I am Elation and Ult gain increased ATK% multiplier.</li>
               <li>Every rank up has a DPS upgrade.</li>
             </ul>
           </div>
@@ -1069,8 +1069,8 @@ function selectTabMobile(event) {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S2 and SS: Improves P1 support buffs</li>
-              <li>SS: I am Elation restores 18 sp for Sparkle. In Part 1 team, this enables Sparkle to get Ult without using Combo ATK, improving score.</li>
+              <li>S2 and SS: Improves P1 support buffs<br/></li>
+              <li>SS: I am Elation restores 18 sp for Sparkle. This enables Sparkle to get Ult without using Combo ATK in some cases, improving score.<br/></li>
               <li>SS2: Improves buffs when supporting Schicksal's Imperative against QUA enemies.</li>
             </ul>
           </div>

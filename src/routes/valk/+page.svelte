@@ -146,7 +146,7 @@
 {/if}
 
 
-<section class="relative pt-4">
+<section class="relative pt-4 mb-20">
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
   </div>
