@@ -9,6 +9,7 @@ interface Article {
     title: string;
     category: string;
     sortOrder: number;
+    rawContent: string; // Include raw content
 }
 
 async function generateSidebarJson() {
@@ -22,7 +23,7 @@ async function generateSidebarJson() {
             const filePath = path.join(svxDirectory, file);
             const fileContent = fs.readFileSync(filePath, 'utf-8');
 
-            const { data: metadata } = matter(fileContent);
+            const { data: metadata, content: rawContent } = matter(fileContent);
 
             if (!metadata.title) {
                 console.error(`Missing title in file: ${file}`);
@@ -31,15 +32,13 @@ async function generateSidebarJson() {
 
             const slug = file.replace('.svx', '');
 
-            // Exclude 'welcome.svx' from the articles list
-            if (slug !== 'welcome') {
-                articles.push({
-                    slug,
-                    title: metadata.title,
-                    category: metadata.category ?? 'Uncategorized',
-                    sortOrder: metadata.sortOrder ?? 999, // Default sort order
-                });
-            }
+            articles.push({
+                slug,
+                title: metadata.title,
+                category: metadata.category ?? 'Uncategorized',
+                sortOrder: metadata.sortOrder ?? 999, // Default sort order
+                rawContent, // Add the raw content
+            });
         }
 
         const categorizedArticles = articles.reduce((acc, article) => {

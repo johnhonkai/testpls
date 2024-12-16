@@ -15,6 +15,8 @@
 <script>
     import { onMount } from 'svelte';
     import Toc from 'svelte-toc'; // Import the TOC component
+    import sidebar from '$lib/data/sidebar.json';
+
     export let data;
 
     let tocActive = false; // Control TOC rendering after mount
@@ -24,7 +26,10 @@
     let searchResults = []; // Stores search results
     let searchInput; // Reference to the search input element
 
-    const { categorizedArticles, sortedCategories, allArticles } = data;
+    const { categorizedArticles, sortedCategories } = data;
+
+    // Reconstruct allArticles from categorizedArticles
+    const allArticles = Object.values(categorizedArticles).flat();
 
     onMount(() => {
         tocActive = true; // Set tocActive to true once the component mounts
@@ -34,6 +39,7 @@
         showToc = !showToc;
     }
 
+    
     // Utility function to get a clean excerpt
     function getExcerpt(rawContent, query) {
         const lowerContent = rawContent.toLowerCase();
@@ -74,17 +80,16 @@
         }
     }
 
+
     function handleSearchChange(event) {
         searchQuery = event.target.value;
         searchArticles(searchQuery);
     }
 
-
     // Automatically focus the search input when the modal opens
     $: if (showSearchModal) {
         setTimeout(() => searchInput?.focus(), 0);
     }
-
 
     function closeSearchModal() {
         showSearchModal = false;
@@ -92,11 +97,12 @@
         searchResults = [];
     }
 
-	import { cn } from "$lib/utils/cn";
-	import AnimatedShinyText from "$lib/components/ui/AnimatedShinyText.svelte";
+    import { cn } from "$lib/utils/cn";
+    import AnimatedShinyText from "$lib/components/ui/AnimatedShinyText.svelte";
 
-
+    
 </script>
+
 
 
   <!-- Dropdown Button -->

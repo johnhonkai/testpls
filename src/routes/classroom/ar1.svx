@@ -35,7 +35,7 @@ Each Astral Ring Specialization has a connected **Astral Ring Attribute** (also 
   <img src="https://i.imgur.com/Tmyke4u.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-A Part 2 character can <span class="text-emerald-300">only have one AR Specialization</span>, but she can have <span class="text-amber-400">multiple AR tags </span>.
+A Part 2 character can only have <span class="text-emerald-300">one AR Specialization</span>, but she can have <span class="text-amber-400">multiple AR tags </span>.
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/T3c8bhc.png" alt="Icon" class="w-[800px] h-auto rounded-lg" />
