@@ -203,7 +203,7 @@ function selectTabMobile(event) {
   }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
     <img src="/images/bg/wave_lp.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
@@ -244,7 +244,7 @@ function selectTabMobile(event) {
   <!-- Right: Character Info (Centered) -->
   <div class="flex flex-col items-center text-center justify-start">
     <!-- Battlesuit Name -->
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center ">Lone Planetfarer</h1>
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center mb-2 sm:mb-0">Lone Planetfarer</h1>
 
     <!-- Character Name and Release Date -->
     <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Vita | Release Date: v7.8 (17 Oct 2024)</p>

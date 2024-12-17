@@ -208,7 +208,7 @@ function selectTabMobile(event) {
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0 pt-2	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0 pt-8	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="/images/bg/wave_simp.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
@@ -249,7 +249,7 @@ function selectTabMobile(event) {
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center ">Schicksal's Imperative</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center mb-2 sm:mb-0">Schicksal's Imperative</h1>
 
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Theresa Apocalypse | Release Date: v7.9 (28 Nov 2024)</p>

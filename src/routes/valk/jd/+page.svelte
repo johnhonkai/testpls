@@ -200,9 +200,9 @@ function selectTabMobile(event) {
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox" >    
-  <img src="/images/bg/wave_jd.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  <img src="/images/bg/wave_lp.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 

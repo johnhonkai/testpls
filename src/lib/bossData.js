@@ -956,7 +956,10 @@ export const teamData = {
         pct: '2%',
         bottext: "Highest Score: S2 801"
       },
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/WE8jzAjPt9c', abyss: 'Nirvana 541 D', uploader: 'Kyoshiro' },
+    ] 
   },
   bleedhos: {
     teamDataSets: [

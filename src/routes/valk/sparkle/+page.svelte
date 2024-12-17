@@ -206,7 +206,7 @@ function selectTabMobile(event) {
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0">
 <div class="absolute   top-[-3.5rem] w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/wave_sparkle2.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden "  /> 
 </div>
@@ -241,12 +241,10 @@ function selectTabMobile(event) {
   </div>
 </div>
 
-
-
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Thousand-Faced Maestro: Cameo!</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Thousand-Faced Maestro: Cameo!</h1>
 
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Sparkle | Release Date: v7.9 (28 Nov 2024)</p>
@@ -279,6 +277,8 @@ function selectTabMobile(event) {
     </div>
   </div> <!-- End common wrapper -->
 </div>
+
+
 </section>
 
 <div class="flex max-w-screen-xl justify-center mx-auto "> 

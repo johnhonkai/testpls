@@ -240,7 +240,7 @@ function selectTabMobile(event) {
   <!-- Battlesuit Name -->
 
   <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Miracle ☆ Magical Girl</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Miracle ☆ Magical Girl</h1>
 </div>
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Sirin | Release Date: v6.9 (14 Sept 2023)  </p>

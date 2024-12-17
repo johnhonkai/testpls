@@ -196,7 +196,7 @@ onMount(async () => {
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="/images/bg/wave_ce.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
@@ -236,7 +236,7 @@ onMount(async () => {
   <!-- Battlesuit Name -->
 
   <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Cosmic Expression</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Cosmic Expression</h1>
 </div>
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Griseo | Release Date: v7.1 (7 Dec 2023)

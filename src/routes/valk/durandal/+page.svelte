@@ -237,7 +237,7 @@ async function increaseLike() {
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0 mt-4">Reign Solaris</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">Reign Solaris</h1>
 
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md custom-font my-2 text-center tracking-wider md:block hidden  text-slate-100">Bianka 'Durandal' Ataegina<br/>Release Date: v8.0 (9 Jan 2024)</p>
