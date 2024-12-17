@@ -361,7 +361,7 @@ onMount(async () => {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM AND PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">New Players</strong>
-              <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. If you have extra Asterite, then you can consider using them to get Kira fragments.
+              <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. If you have extra Asterite, then you can consider getting Kira fragments.
               <br/> - Once you breakthrough Lv80+, you will encounter enemies with huge freeze trauma in Abyss. For new players, Kira and Pardofelis are your only farmable options to apply freeze. If you don't have any valkyrie that can apply freeze, you can farm Kira to counter the freeze mechanic.
             </p>
 

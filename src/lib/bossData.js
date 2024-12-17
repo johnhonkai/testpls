@@ -327,7 +327,7 @@ export const bossData = {
     name: 'Otto Apocalypse', 
     mechanics: 'Starts with two IMG mobs. Otto Phase 2 has a tanky shield. ', 
     weakness: 'None', 
-    typeicon: "images/type/IconIMG.png", 
+    typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Otto Apocalypse.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },
