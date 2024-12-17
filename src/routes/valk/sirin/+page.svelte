@@ -4,7 +4,7 @@
 
     <meta property="og:title" content="Sirin - Miracle ☆ Magical Girl" />
     <meta property="og:description" content="Miracle ☆ Magical Girl Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/i65fHp1.png" />
+    <meta property="og:image" content="https://i.imgur.com/kEBrm6B.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/sirin" />
     <meta property="og:type" content="website" />
 

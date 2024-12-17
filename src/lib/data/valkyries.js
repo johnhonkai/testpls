@@ -1,6 +1,6 @@
 export const valkyries = [
 
-    { name: 'Durandal (BETA)', 
+    { name: 'Reign Solaris', 
         image: '/images/valkportrait/dudu.png', 
         type: 'Img', 
         element: 'Physical', 

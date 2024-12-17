@@ -92,6 +92,7 @@
   { name: 'Miracle ☆ Magical Girl', image: '/images/valkportrait/Sirin Miracle Magical Girl.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/sirin', id:18},
 
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/horb', id:17},
+  { name: 'Sugary Starburst', image: '/images/valkportrait/Kira Sugary Starburst.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kira', id:19},
 
   { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing: ['Part 1', 'Rite of Oblivion'] , url: '/valk/hofi' , id:3 },
   { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hoo', id:2 } ,
