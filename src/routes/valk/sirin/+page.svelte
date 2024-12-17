@@ -358,8 +358,7 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Sirin:</strong> War Treasury</li>
               <li ><strong>G4 Little Joys:</strong> Foundry, Focused Supply</li>
-              <li><strong>Dream Cutter:</strong> Focused Supply</li>
-              <li>Not available in v7.9 </li>
+              <li><strong>Dream Cutter:</strong> Focused Supply. Not available in v7.9 </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -464,7 +463,7 @@ function selectTabMobile(event) {
         {#if activePlaystyle === '1'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Charged ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Standard Charged ATK Playstyle
+          Standard Charged ATK Playstyle. Stronger playstyle.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -605,9 +604,11 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press weapon.</li>
-          <li>Spam Basic ATK</li>
-          <li>If you have [Observation] Ego signet, you can use Ult at the start or to finish a wave. Deals big damage, and makes Basic and Combo ATK deal bonus 20% DMG (HP Loss DMG).</li>
+          <li>Hold ATK button to do a full duration Charged ATK, then press weapon to do Join ATK.</li>
+          <li>An evasion charge will be automatically consumed to restore full meter. Keep doing Charged ATK + Join ATK.</li>
+          <li>With [Stellar Breach] ego signet: When you are out of evasion charge, cast Ultimate to restore full meter and full evasion charges.</li>
+          <li>Without [Stellar Breach] ego signet: When you are out of evasion charge, just do Basic ATK to restore meter.</li>
+          <li>Repeat</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -617,7 +618,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/"
+                src="https://www.youtube.com/embed/vLmZCR_safM"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -628,9 +629,9 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Basic ATK Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Scissors the enemies</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Basic ATK Playstyle
+          A playstyle where you alternate ATK and Weapon button. Much weaker than Charged ATK playstyle.
 
         </p>
 
@@ -736,7 +737,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
@@ -744,8 +745,8 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
                 <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
             </div>
@@ -765,10 +766,12 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>At max Heart Flame (the three feather icons above HP bar), use Combo ATK > Enhanced Joint ATK. Then press weapon to switch stance. </li>
-          <li>When Heart Flame is not available, use Combo ATK > Press Weapon to switch stance.</li>
-          <li>If you have [Observation] Ego signet, you can use Ult at the start or to finish a wave. Deals big damage, and makes Basic and Combo ATK deal bonus 20% DMG (HP Loss DMG).</li>
-
+          <li>Press weapon button. </li>
+          <li>Weapon button will glow, press weapon button. ATK button will glow, press ATK button.</li>
+          <li>Keep alternating weapon and ATK button until you run out of evasion charge.</li>
+          <li>With [Stellar Breach] ego signet: When you are out of evasion charge, cast Ultimate to restore full meter and full evasion charges.</li>
+          <li>Without [Stellar Breach] ego signet: When you are out of evasion charge, just do Basic ATK to restore meter.</li>
+          <li>Repeat.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
@@ -778,7 +781,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/"
+                src="https://www.youtube.com/embed/Jg_HPkuMUOs"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1039,16 +1042,16 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Sirin DPS</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">FoV DPS vs Herrscher of Corruption in Red Lotus</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sirin DPS in Nirvana abyss</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/gStp5LF95Hg"
+                src="https://www.youtube.com/embed/9zqn6D8IsxE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1058,32 +1061,7 @@ function selectTabMobile(event) {
       </div>
 
     </div>
-    <div class=" gap-6 my-10">
-      <!-- Video 1 with title and description -->
 
-    
-      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
-
-        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">FoV DPS vs Parvati in Nirvana</p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-          <iframe
-          loading="lazy" 
-
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/lonrVng7W5g"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-    
-
-    </div>
 
   {/if}
   
