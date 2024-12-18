@@ -93,10 +93,16 @@
 
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/horb', id:17},
   { name: 'Sugary Starburst', image: '/images/valkportrait/Kira Sugary Starburst.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kira', id:19},
+  { name: 'Dreamweaver', image: '/images/valkportrait/Hare Dreamweaver.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/dreamweaver', id:20},
+  { name: 'Valkyrie Quicksand', image: '/images/valkportrait/Susannah Valkyrie Quicksand.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/vq', id:21},
 
   { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing: ['Part 1', 'Rite of Oblivion'] , url: '/valk/hofi' , id:3 },
   { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hoo', id:2 } ,
+  
+
   { name: 'Herrscher of Truth', image: '/images/valkportrait/Bronya Herrscher of Truth.png', type: 'Img', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hotr', id:1 } ,
+
+  { name: 'Chrono Navi', image: '/images/valkportrait/Chrono Navi.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/cn', id:22},
 
 ];
 

@@ -1113,4 +1113,98 @@ export const teamData = {
       
     ]},]
   },
+  otto: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 539 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_sera.png"],
+        rank: '1',
+        pct: '3%',
+        bottext: "Highest Score: 8S 839, 9S 895"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_sera.png"],
+        rank: '2,4,6,7',
+        pct: '57%',
+        bottext: "Highest Score: S 837, S2 859, SS 873, 8S 874, 95 885"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/sparkle.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_sera.png"],
+        rank: '3,5,8',
+        pct: '40%',
+        bottext: "Highest Score: S 822, S2 855, SS 866, 9S 873"
+      },
+      { 
+        type: 'extraTeamRow',
+        toptext: 'Highest score for different Vita, Sparkle and JD rank',
+        extraTeamRow: [
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS+ 895' },
+          { img: 'images/valkportrait/sparkle.png', text: 'SS+ 895' },
+          { img: 'images/valkportrait/Songque Jovial Deception.png', text: 'SS+ 885' },
+          { img: 'images/valkportrait/Songque Jovial Deception.png', text: 'S,S2 864' },
+          { img: 'images/valkportrait/sparkle.png', text: 'S,S2 840' },
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S2 840' },
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S N/A' },
+
+        ] 
+      },
+      
+    ]},]
+  },
+  shadowtank: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 539 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+        rank: '1-2, 5-10',
+        pct: '48%',
+        bottext: "Highest Score: S 760, S2 784, SS 807, 9S 830"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+        rank: '3-4',
+        pct: '50%',
+        bottext: "Highest Score: S 756, S2 789, SS 791, 9S 814"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_songque.png"],
+        rank: '81',
+        pct: '1%',
+        bottext: "Highest Score: SS 763"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '94',
+        pct: '1%',
+        bottext: "Highest Score: SSS 753"
+      },
+      { 
+        type: 'extraTeamRow',
+        toptext: 'Highest score for different Vita and Sena rank',
+        extraTeamRow: [
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS+ 830' },
+          { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SS+ 814' },
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS 807' },
+          { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SS 800' },
+          { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'S, S2 789' },
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S2 781' },
+          { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S N/A' },
+
+        ] 
+      },
+    ]},]
+  },
 }

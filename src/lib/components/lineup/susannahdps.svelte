@@ -27,7 +27,7 @@
 
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-amber-950 to-amber-800 shadow-lg shadow-base-100 overflow-hidden">
+<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-violet-950 to-violet-800 shadow-lg shadow-base-100 overflow-hidden">
     <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Valkyrie Quicksand DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
@@ -76,8 +76,8 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">HoRB and HoS: Provides impair (DEF reduction)</li>
-                <li class="text-sm sm:text-base">Valkyrie Quicksand attacks are considered as Bleed DMG, and Bleed DMG cannot crit, so HoRB and HoS standard stigma effect are not optimal for this team.</li>
+                <li class="text-sm sm:text-base mb-4">HoRB and HoS: Provides impair (DEF reduction)</li>
+                <li class="text-sm sm:text-base mb-4">Valkyrie Quicksand attacks are considered as Bleed DMG, and Bleed DMG cannot crit, so HoRB and HoS standard stigma effect are not optimal for this team.</li>
                 <li class="text-sm sm:text-base">HoRB and HoS can use Susannah Outing T and Aladdin MB for ~20% more damage than their signature stigma</li>
             </p>
         </div>
