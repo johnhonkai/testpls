@@ -1,5 +1,5 @@
 ---
-title: v8.0 Elysian Realm v2
+title: v8.0 Elysian Realm Live
 creationDate: "2024-11-25T16:52:12.764Z"
 lastModifiedDate: "2024-11-25T16:52:12.764Z"
 date: "2024-11-25"
@@ -64,22 +64,24 @@ image: "/images/valkportrait/dudu.png"
 **PASSIVE**
 - Activates AR Reason of Promotion
 - On entry, gain 200 AR
-- AR Regen +100%
+- AR Regen +150%
 - Stellar Outburst CD -80%
-- When you activate Stellar Outburst, gain 500 HP
-- You can accelerate by pressing or holding evasion while moving
+- When you activate Stellar Outburst, recover 500 HP
+- Take 30% less Total DMG
+- Casting Star Shift ATK counts as casting weapon skill
+- You can accelerate by pressing and holding evasion while moving
 
 **Signet 1**<br/>
-In surf form, generate 4 javelins per second to attack surrounding enemies when moving around, deal 800% ATK of Physical DMG (counts as Charged ATK), increase hit count by 5 points, and gain 5 AR per second.
+In surf form, generate 4 javelins per second to attack surrounding enemies when moving around, deal 500% ATK of Physical DMG (counts as Charged ATK), increase hit count by 10 points, and gain 4 AR per second.
 
 **Signet 2**<br/>
-When moving around in surf form, gain one dmg stack every 0.5 second, max 20 stacks. Each stack will buff the dmg multiplier of the next Star Shift ATK by 1000%, and then the stacks are cleared.
+When moving around in surf form, gain one dmg stack every 0.5 second, max 20 stacks. Gain 10 initial stacks. Each stack will cause the next Star Shift ATK to deal additional 600% ATK of Physical DMG, and then the stacks are cleared.
 
 **Signet 3**<br/>
-When using Star Shift ATK, Total DMG +60% for 50s, can be refreshed.
+When using Star Shift ATK, Total DMG +60% for 60s, can be refreshed.
 
 **Signet 4**<br/>
-Charged ATK follow-up will gather enemies. When using ??? or Charged ATK followup, consume one Sky Light to reset weapon cooldown. In surf form, Charged ATK third stage, followup, or ground attack, deal additional 3500% ATK of Physical DMG.
+Surf form activation gather enemies. When activating surf form or Charged ATK followup, consume one Sky Light to reset weapon cooldown. In surf form, Charged ATK third stage and followupdeal additional 1800% ATK of Physical DMG. Surf form activation deal additional 4x900% ATK of Physical DMG.
 
 **Signet 5**<br/>
-After activating surf form, Charged ATK third stage, followup, and ground attack gain Physical DMG +80% for 15s, can be refreshed.
+After activating surf form or Star Shift ATK, Charged ATK third stage, followup, and ground attack gain Physical DMG +80% for 15s, can be refreshed. 
