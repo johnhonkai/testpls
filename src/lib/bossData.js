@@ -1228,4 +1228,27 @@ export const teamData = {
       },
     ]},]
   },
+  phykevin: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_sera.png"],
+        rank: '1-2',
+        pct: '2%',
+        bottext: "Highest Score: 9S 934"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_sera.png"],
+        rank: '3+',
+        pct: '98%',
+        bottext: "Highest Score:  S 883, S2 902, SS 913, SS2 915, 9S 918"
+      },
+      
+    ]},]
+  },
 }
