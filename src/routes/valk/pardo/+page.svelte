@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Griseo - Cosmic Expression</title> 
+  <title>Pardofelis - Reverist Calico</title> 
 
-    <meta property="og:title" content="Griseo - Cosmic Expression"/>
-    <meta property="og:description" content="Cosmic Expression Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Pardofelis - Reverist Calico"/>
+    <meta property="og:description" content=" Reverist Calico Guide, Builds and Gameplay" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/ce" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/pardo" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -29,6 +29,10 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Lvdpsnormal from "$lib/components/lineup/lvdpsnormal.svelte";
 	import Susannahdps from "$lib/components/lineup/susannahdps.svelte";
 	import Cedps from "$lib/components/lineup/cedps.svelte";
+	import P1lightningdps from "$lib/components/lineup/p1lightningdps.svelte";
+	import Lvdpsdual from "$lib/components/lineup/lvdpsdual.svelte";
+	import P1ice from "$lib/components/lineup/p1ice.svelte";
+	import Ice3support from "$lib/components/lineup/ice3support.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -46,7 +50,7 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
+  // { name: 'Support Buffs', short: 'support' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
   { name: 'Overview Card', short: 'card' },
@@ -143,8 +147,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let celikes = likesData["ce"] || 0; // Get initial likes from JSON
-  const charName = "ce"; // Route name for this character
+  let celikes = likesData["pardo"] || 0; // Get initial likes from JSON
+  const charName = "pardo"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -198,13 +202,13 @@ onMount(async () => {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-  <img src="/images/bg/wave_ce.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  <img src="/images/bg/wave_pardo.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
 <!-- Left: Character Image -->
 <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/ce.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-15;"/> 
+  <img src="/images/valkfull/pardo.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-30;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button
@@ -236,10 +240,10 @@ onMount(async () => {
   <!-- Battlesuit Name -->
 
   <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Cosmic Expression</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Reverist Calico</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Griseo | Release Date: v7.1 (7 Dec 2023)
+  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Pardofelis | Release Date: v5.6 (7 Apr 2022)
 
   </p>
 
@@ -247,23 +251,22 @@ onMount(async () => {
   <div class="w-full max-w-sm mb-2">
     <!-- Container with 4 pictures (Centered) -->
     <div class="flex flex-col items-center">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-blue-500 outline-1 bg-blue-950/75 rounded-lg p-2 backdrop-blur-sm">
+      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-sm">
         <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconSD.webp" alt="Mech" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Bleed_DMG.png" alt="ar" class="w-auto h-8 md:h-10" />
+        <img src="/images/type/IconIMG.png" alt="Mech" class="w-auto h-8 md:h-10" />
+        <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
       </div>
     </div>
 
     <!-- Support For Container (Centered) -->
     <div class="flex flex-col mt-4 items-center">
 
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-blue-500 outline-1 bg-blue-950/75 rounded-lg p-2 backdrop-blur-sm">
+      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-sm">
         <div class="flex flex-wrap justify-center">
           <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
         </div >
         <div class="flex flex-row gap-2 flex-wrap justify-center">
-          <img src="/images/artype/p1bleed.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/p1ice.png" alt="Support 1" class="w-auto h-8 md:h-10" />
 
         </div>
       </div>
@@ -339,35 +342,49 @@ onMount(async () => {
           <h2 class="text-xl  font-semibold mt-4 mb-2 text-left cooltext text-slate-100">ROLES</h2>
 
           <p class="text-sm sm:text-base mt-4">
-              <strong class="text-amber-400">P1 Bleed Support</strong><br/> Cosmic Expression (CE) focuses on buffing Bleed DMG. She is the best valk for supporting battlesuits that deal Bleed DMG: Only Lunar Vow and Valkyrie Quicksand.
-          </p>
+              <span class="text-amber-400">P1 Ice Support, Freeze Applier</span><br/> 
+              Pardo provides  Total DMG + Ice DMG buff, huge sp recovery and can inflict Freeze trauma. Currently, she has been replaced by <a href="/valk/kira" class="link ">Shigure Kira.</a>
 
+          </p>
 
           <p class="text-sm sm:text-base mt-4">
-              <strong class="text-amber-400">Decent DPS</strong><br/> Can be a decent DPS vs Stardust and Bleed content.
-              <br/> Note: Most of CE's attacks are considered as Bleed DMG. These attacks cannot crit, and are not considered as Melee or Ranged DMG.
-          </p>
+            <span class="text-amber-400">Universal P1 Support</span><br/> 
+            Pardo is mainly for Part 1 Ice team, but other Part 1 teams can benefit from Pardo since she provides a good amount of Total DMG buff.
 
+        </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong>
-              <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team.
-              <br/> - Once you breakthrough Lv80+, you will encounter SD enemies in Abyss.  For new players, CE is the only farmable SD-type valkyrie. If you don't have any SD valkyrie, you can farm CE to counter SD enemies and gather SD shards.
+              <span class="text-amber-400">New Players on Reverist Calico</span>
+              <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. If you have extra Asterite, then you can consider getting Pardo for Elysian Ream first-clear crystal rewards.
+            </p>
+            <p class="mt-2 text-sm sm:text-base">
+
+            - In Arena and Lv80+ Abyss, you will encounter enemies that have huge freeze trauma and stage effects that require freeze.  For new players, Pardo and <a href="/valk/kira" class="link ">Shigure Kira</a>    are some of the farmable options to reliably apply freeze.
           </p>
 
+
+
+          <p class="mt-4 text-sm sm:text-base mb-2">
+            <span class="text-amber-400">New Players on Reverist Calico Equipment</span><br/> 
+            Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Pardo's gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+        </p>
+
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong><br/> CE is still used as a support in Lunar Vow and Susannah teams, and in Memorial Arena mode.
+              <span class="text-amber-400">Competitive</span><br/> Pardo is still used in SS Memorial Arena
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>CE:</strong> Asterite Shop, Open World Task</li>
-              <li><strong>CE Equipment:</strong> Focused Supply </li>
+              <li ><strong>Reverist Calico:</strong> Asterite Shop, Open World Task</li>
+              <li><strong>Bastet Stigma:</strong> Foundry </li>
+              <li><strong>Purana Phantasma:</strong> Focused Supply </li>
+
+
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -378,7 +395,7 @@ onMount(async () => {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/A1UE5RNOwaY"
+                src="https://www.youtube.com/embed/wGOpHgpS2lQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -394,17 +411,13 @@ onMount(async () => {
 
   <section class="max-w-screen-lg mx-auto ">
 
-    <Lvdpsnormal></Lvdpsnormal>
 
-
-    <div class="divider divider-neutral"></div>
-
-    <Susannahdps></Susannahdps>
+    <P1ice></P1ice>
 
     <div class="divider divider-neutral"></div>
 
-    <Cedps></Cedps>
-      
+    <Ice3support></Ice3support>
+
 </section>
 
   {/if}
@@ -422,56 +435,173 @@ onMount(async () => {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/04/50494840/cff2d2b8c2a9ac728113600ed229ecdf_4978381886122948498.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/02/25/50494840/1c681bd47f41b56dcebdd3b6b2b29802_7602493642656878560.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
 
                 </div>
-
-                  <div class="w-20 h-20 sm:w-28 sm:h-28">
-                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/01/282941837/2f66dd158b9e9f449efa05c78262e8c2_4026386947154504631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-                  </div>
-
-
-                  <div class="w-20 h-20 sm:w-28 sm:h-28">
-                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/01/282941837/2ea5eeb1d3799d38aeb1adc22f8f6f65_6747158028510894677.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-                  </div>
-
-                  
-                  <div class="w-20 h-20 sm:w-28 sm:h-28">
-                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/08/50494840/274e79ae6ab4d9c9da66ef7ae415609f_9025275228225325093.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-                </div>
-
               </div>  
-              <h4 class="text-base sm:text-base text-white">Anchor of the Voyage: Interstellar + Van Gogh</h4>
+              <h4 class="text-base sm:text-base text-white">Purana Phantasma</h4>
               </div>
 
 
-              <div class="p-4 mt-4 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded">
-                <p class="text-sm sm:text-base text-left mb-4">
-                  <b>Anchor of the Voyage: Interstellar</b><br/> All buffs, and gathers enemies.
-                </p>
-              
-                <p class="text-sm sm:text-base text-left mb-4">
-                  <b>Van Gogh </b><br/> Top has sp recovery, and 3PC increases Bleed trauma by 30%
-                </p>
-  
-              
+              <div class="p-4 mt-4 bg-gradient-to-r from-purple-950/75 to-purple-900/75 rounded">
                 <p class="text-sm sm:text-base text-left">
-                  <b>Affix</b><br/> Full ATK
+                  - Best weapon for Pardo, but not mandatory for her to function.
+                  <br/> - Ice characters in the team gain Ultimate CD -30%.
+
                 </p>
               </div>
   
+
               <div class="divider divider-neutral"></div>
 
+
+
+              <div class="flex flex-col justify-center items-center">
+                  
+                <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1 justify-center ">
+  
+
+  
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/02/25/50494840/27f6c9b5333ecf75e3cea5aa1b4e64a0_7537345594680698213.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
+    
+                  </div>
+    
+    
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/02/25/50494840/af6b489d8a62262cb8b474608b59f95d_1392671643236615924.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+    
+                  </div>
+
+                  <div class=" h-20  sm:h-28">
+                    <img src="/images/valkportrait/Plus.png" alt="Vita" class="w-full h-full object-cover">
+                </div>
+                  
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/02/25/50494840/8496438db6992b425bd7cbd58d909834_474514510210792054.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
+                </div>
+
+                                  
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/06/01/50494840/db44fac6bb8b32c22e17a825351673d2_4508064355194155989.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/14/73514954/edc6733fda3b2cd58dc6bc7b4075af54_5150773373846188441.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
+            </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/c69d04e80118236a3718c20fb6aaf33e_4541127151803469051.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
+            </div>
+  
+                </div>  
+                <h4 class="text-base sm:text-base text-white text-center">Bastet Set, or <br/> Bastet TM + Cezanne B / Newton B / Irene B</h4>
+                </div>
+  
+  
+                <div class="p-4 mt-4 bg-gradient-to-r from-purple-950/75 to-purple-900/75 rounded">
+
+                
+                  <p class="text-sm sm:text-base text-left mb-4">
+                    <b>G4 Bastet</b><br/> - Best set for Pardo, but for min-max cases, Bot stigma can be swapped out for another piece.
+                    <br/> - Mid piece grants 25% bonus freeze trauma. 3PC extends freeze duration by 20%.
+                    <br/> - Forgeable in Foundry.
+                  </p>
+    
+                
+                  <p class="text-sm sm:text-base text-left">
+                    <b>Affix</b><br/> SP recovery, SP cost reduction.
+                  </p>
+
+                </div>
+    
+  
+                <div class="divider divider-neutral"></div>
+
               <h2 class="text-xl font-semibold text-center  text-blue-400">OTHER STIGMA OPTIONS</h2>
+
+                <div class="flex flex-col justify-center items-center">
+                    
+                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1 justify-center">
+    
+  
+                    <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/f2e785b423273338556e66771a543a69_5615190248057583714.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
+  
+                    </div>
+
+                    <div class=" h-20  sm:h-28">
+                      <img src="/images/valkportrait/Plus.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+    
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/01/50494840/06170cbecb3347bac481adaaa3a47288_8566959529439830130.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+
+                  </div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/6100274/47912cb5ee05db0c9804de7c8be148c8_6704934550393204988.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/18/72350798/436635e5bb6f7fd4b37a3bcf724ce14f_8228886158374375296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/27/77124895/73f67f4d3998dfe3394682ac2a733ac6_8239283043787949047.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+                    </div>
+  
+                    <div class=" h-20  sm:h-28">
+                      <img src="/images/valkportrait/Plus.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
+                  </div>
+    
+                  </div>  
+                  <h4 class="text-base sm:text-base text-white text-center">Turgenev TB + Paganini M for shieldbreak / Mei Beach Party M for general buff <br/> / Tesla Band M for Lightning / Aslaug M for Fire</h4>
+                  </div>
+    
+    
+                  <div class="p-4 mt-4 bg-gradient-to-r from-blue-950/75 to-blue-900/75 rounded">
+  
+                  
+                    <p class="text-sm sm:text-base text-left ">
+                      <b>G3 Turgenev</b> <br/> - Forgeable in Foundry.
+
+                      <br/> - You should forge this before Bastet since this can be used by other Part 1 Elemental supports, and is still used in Memorial Arena.
+                    </p>
+      
+                  </div>
+      
+    
+                  <div class="divider divider-neutral"></div>
+
    
-              
+              <div class="flex flex-col justify-center items-center">
+
+                <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+  
+    
+  
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/31/282941837/e65a0afbe683a9b90c3ac5844d98a12c_580233590440738955.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/31/282941837/141b8b6bf380a84dc22e4edefa5d4ffc_2283739336785483035.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/31/282941837/bb34b0b344929564e4fff60ada174541_7013397103999569464.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                </div>
+  
+                </div>  
+                <h4 class="text-base sm:text-base text-white">Tsiolkovsky</h4>
+                </div>
+  
+
            </div>
-
-
-
-
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
@@ -508,384 +638,179 @@ onMount(async () => {
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
-      <div class="flex justify-center gap-4 my-6">
-          <button
-            on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            NORMAL COMBAT
-          </button>
-        
-          <button
-            on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            PARRY
-          </button>
+
+
+
+        <h2 class="text-xl font-semibold mb-4 mt-8 text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b>  Cat's Eyes + Hidden Claws</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Phantasma </p>
+
+            </div>
+          </div>
+          
         </div>
+        <div class="mt-3 rounded" >
+          <p class="text-sm sm:text-base text-left">
+              Pardo starts with two Ego signets. </p>
+          </div>
+
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+          
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+            
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+              
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+          <div class="mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                Pardo is loaded! Purchase and upgrade as many signets as you can. 
+              <br/>                <b> Decimation 1:</b> Your HP will be very low. If you are a new player, you can skip this, or build Vicissitude 2 first for survivability.
+
+              </p>
+            </div>
+            <div class="divider divider-neutral"></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Bronya Haxxor Bunny.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+          <div class="divider divider-neutral"></div>
+          
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+              <p class="text-base sm:text-lg font-semibold">MID</p>
+          </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Combo ATK ➔ Weapon ➔ Combo ATK ➔ Weapon (Predation). You can skip this if you have enough sp for Ult.</li>
+          <li>Use Ultimate.</li>
+          <li>Combo ATK ➔ Weapon ➔ Combo ATK ➔ Weapon (Predation). Repeat until Ult buff duration (Runaway) is over. (It's the angry cat icon above your HP bar)</li>
+          <li>Repeat.</li>
+        </ol>
+
+
+        <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/h_Jbt4Rmq30"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        {/if}
       
-        {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Normal Combat Playstyle</h2> 
-        <p class="text-sm sm:text-base text-center sm:text-left">
-          Normal playstyle but stronger
-        </p>
-
-        <div class="divider divider-neutral"></div>
-
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-
-        <div class="flex flex-col justify-center items-start ">
-
-        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-
-          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-          </div>
-            <!-- Left side image -->
-            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
-              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-            </div>
-            
-            <!-- Right side text sections -->
-            <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b>  Dazzle + Anchor</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Shining Blade</p>
-
-            </div>
-          </div>
-          
-        </div>
-        <div class="mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
-              CE starts with two Ego signets. This is enough to clear a run.</p>
-          </div>
-
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            <!-- First Signet with 'Start' text -->
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Daybreak (Kosma).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1 or 2</p>
-              </div>
-
-          
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-              
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">1</p>
-              </div>
-
-          </div>
-
-          <div class="p-2 mt-3 rounded" >
-            <p class="text-sm sm:text-base text-left">
-                <li class="text-sm sm:text-base"> In both playstyles, CE triggers all skills - Evasion, Weapon, Ultimate, Basic/Combo ATK - she can utilize a lot of signets.</li>
-                <li class="text-sm sm:text-base"> Getting Daybreak and Infinity is already enough to clear a run. So, whatever you pick after that is up to you, or, rng. </li>
-            </p>
-            </div>
-
-            <div class="divider divider-neutral"></div>
-            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">MID</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-            
-          </div>
-
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-              <p class="text-base sm:text-lg font-semibold">MID</p>
-          </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Ravenous_Gully.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-
-          </div>
-
-          
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
-
-        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Evade, then keep pressing ATK until Ult button flashes.</li>
-          <li>When Ult button is flashing, press it to use Ultimate.</li>
-          <li>Repeat</li>
-        </ol>
-
-        Technical Stuff
-
-          <li>Normal evasion will trigger evasion skill.</li>
-          <li>Combo ATK automatically deploy cross regardless of cooldown, so you don't have to press weapon skill in this playstyle. This synergizes with Infinity 1.</li>
-          <li>Ultimate resets evasion cd.</li>
-
-
-        <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/oswpOeUFnKc"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-        {/if}
-
-        {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Parry Playstyle</h2> 
-        <p class="text-sm sm:text-base text-center sm:text-left">
-          Griseo, we need to cook! - Star Wars
-        </p>
-
-        <div class="divider divider-neutral"></div>
-
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-
-        <div class="flex flex-col justify-center items-start ">
-
-        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-
-          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-          </div>
-            <!-- Left side image -->
-            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
-              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-            </div>
-            
-            <!-- Right side text sections -->
-            <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b>  Starlight + Meteorite </p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Shining Blade</p>
-
-            </div>
-          </div>
-          
-        </div>
-        <div class="mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
-              CE starts with two Ego signets. This is enough to clear a run.
-          </div>
-
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            <!-- First Signet with 'Start' text -->
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Daybreak (Kosma).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1 or 2</p>
-              </div>
-
-          
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-              
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">1</p>
-              </div>
-
-          </div>
-
-          <div class="p-2 mt-3 rounded" >
-            <p class="text-sm sm:text-base text-left">
-                <li class="text-sm sm:text-base"> In both playstyles, CE triggers all skills - Evasion, Weapon, Ultimate, Basic/Combo ATK - she can utilize a lot of signets.</li>
-                <li class="text-sm sm:text-base"> Getting Daybreak and Infinity is already enough to clear a run. So, whatever you pick after that is up to you, or, rng. </li>
-            </p>
-            </div>
-
-            <div class="divider divider-neutral"></div>
-            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">MID</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-            
-          </div>
-
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-
-          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-              <p class="text-base sm:text-lg font-semibold">MID</p>
-          </div>
-
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Ravenous_Gully.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-
-          </div>
-
-          
-          <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
-
-        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use weapon skill.</li>
-          <li>Hold evasion button to parry.</li>
-          <li>On the last parry, evasion skill will automatically trigger. Press ATK to use Basic ATK seq 4 and connect to Combo ATK and gain full meter.</li>
-          <li>Repeat</li>
-        </ol>
-
-        Technical Stuff
-
-          <li>Every time you use weapon skill, if you have enough sp, all Ultimate-related effects and signets will trigger.</li>
-
-
-        <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/oswpOeUFnKc"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-        {/if}
-      {/if}
 
 
   
@@ -897,16 +822,16 @@ onMount(async () => {
 
     
       <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Cosmic Expression DPS</h2>
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Pardo Support</h2>
 
-        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">CE DPS vs Stellar Abyss</p>
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Pardo in various teams</p>
 
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
           <iframe
           loading="lazy" 
 
               class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/_As-HtW5IXs"
+              src="https://www.youtube.com/embed/a5o8kocAi1s"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -933,60 +858,34 @@ onMount(async () => {
 
       {#if selectedTab === 'Translation Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
-      <div class="flex flex-col justify-center items-center">
-          
-          <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/01/282941837/2f66dd158b9e9f449efa05c78262e8c2_4026386947154504631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-              </div>
-
-          </div>  
-          <p class="text-sm sm:text-base text-white">Van Gogh T</p>
-
-      </div>
-
-      <div class="text-center my-4 rounded bg-gray-700">
-        <p class="text-left text-sm sm:text-base px-2 py-3">
-          <b>In-Game Text:</b><br/>
-          Unleashing Ultimate restores 15 sp for herself.
-        </p>
-      </div>
-
-      <div class="text-center my-4 rounded bg-cyan-700">
-        <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
-          <b>Correct Translation:</b><br/>
-          Unleashing weapon skill restores 15 sp for herself.
-        </p>
-      </div>
-
-
+      
       <div class="flex flex-col justify-center items-center">
           
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
             <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/11/08/50494840/274e79ae6ab4d9c9da66ef7ae415609f_9025275228225325093.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/02/25/50494840/1c681bd47f41b56dcebdd3b6b2b29802_7602493642656878560.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
             </div>
 
         </div>  
-        <p class="text-sm sm:text-base text-white">Van Gogh B</p>
+        <p class="text-sm sm:text-base text-white">Purana Phantasma</p>
 
     </div>
 
     <div class="text-center my-4 rounded bg-gray-700">
       <p class="text-left text-sm sm:text-base px-2 py-3">
         <b>In-Game Text:</b><br/>
-        If the wielder can inflict bleed...
+        With Ice DMG dealer on the team, Ultimate's CD is reduced by 30% (cannot stack) ...
       </p>
     </div>
 
-    <div class="text-center my-4 rounded bg-cyan-700">
+    <div class="text-center my-4 rounded bg-cyan-800">
       <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
         <b>Correct Translation:</b><br/>
-        If the wielder has bleed tag...
+        Any valkyrie in the team with Ice DMG tag gain Ultimate CD -30% (cannot stack) ...
       </p>
     </div>
+
 
 
       

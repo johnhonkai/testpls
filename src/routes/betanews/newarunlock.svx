@@ -22,9 +22,9 @@ image: "/images/valkportrait/dudu.png"
 ---
 ### LONE PLANETFARER
 
-When AR Reason of Promotion is activated:
+When AR Law of Ascension is activated:
 
-- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
+- After activating Stellar Outburst, you can select any valk with with Heavenly Shift tag and trigger the valk's Star Shift ATK. Other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
 
 - When you are not the leader:
 	- When base or planet quaker form's enhanced basic seq 4 hits: Reset the leader's switch cd and trigger her QTE 
@@ -43,9 +43,9 @@ When AR Reason of Promotion is activated:
 
 ### SPARKLE
 
-When AR Reason of Promotion is activated:
+When AR Law of Ascension is activated:
 
-- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
+- After activating Stellar Outburst, you can select any valk with with Heavenly Shift tag and trigger the valk's Star Shift ATK. Other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
 
 - Stellar Drain restore 10 more AR meter.
 
@@ -61,11 +61,11 @@ When AR Reason of Promotion is activated:
 
 ### JOVIAL DECEPTION
 
-When AR Reason of Promotion is activated:
+When AR Law of Ascension is activated:
 
 - When QTE hits, meter is fully restored, and gain 3 weapon stack.
 
-- After activating Stellar Outburst, you can select any valk with with Equinox Promotion tag and trigger the valk's Star Shift ATK. Other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
+- After activating Stellar Outburst, you can select any valk with with Heavenly Shift tag and trigger the valk's Star Shift ATK. Other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
 
 - Stellar Drain restore **15(v2) > 10(v3)** more AR meter, and Golden Form Combo ATK can consume Stellar Drain.
 

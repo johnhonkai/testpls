@@ -342,15 +342,26 @@ function selectTabMobile(event) {
         <div class="divider divider-neutral"></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
+        <p class="text-sm sm:text-base">
+          <strong class="text-amber-400 text-sm sm:text-base">New Players on Susannah</strong> 
 
-          <strong class="text-amber-400 ">New Players on Susannah</strong> 
           <br/> - Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. If you have extra Asterite, then you can consider getting Susannah for Elysian Ream first-clear crystal rewards.
-          <br/> - Susannah is highly dependent on Herrscher of Rebirth or Herrscher of Sentience to provide impair (DEF reduction). No HoRB or HoS, don't even consider using Susannah outside Elysian Realm.
+          <p class="text-sm sm:text-base mt-2">
+            - Susannah is highly dependent on Herrscher of Rebirth or Herrscher of Sentience for impair (DEF reduction). No HoRB or HoS, don't even consider using Susannah outside Elysian Realm.
+          </p>
 
           <p class="text-sm sm:text-base mt-4">
             <strong class="text-amber-400">New Players on Susannah's Gears</strong> 
-            <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Susannah's gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
-        </p>
+            <br/>
+
+          - Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. 
+          <p class="text-sm sm:text-base mt-2">
+
+            - Susannah's gears are available in Battle Pass, you can consider getting them that way. 
+          </p>
+            <p class="ml-4 text-sm sm:text-base"> 🤑 If you are a paid player, it's better to get Herrscher of Truth and her weapon Key of Ascension from Battle Pass.</p> 
+            <p class="ml-4 text-sm sm:text-base"> ⭐ If you are a F2P player, then Susannah weapon is a good pick. Seven Thunder is a good pick as well, it gives global +10 ATK. Key of Ascension is good for Herrscher of Truth but she is only obtainable from gacha. You can get it in case Herrscher of Truth is given for free, or obtainable from an event.</p> 
+
 
           
         <p class="text-sm sm:text-base mt-4">

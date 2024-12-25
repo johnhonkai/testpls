@@ -20,30 +20,30 @@ image: "/images/valkportrait/dudu.png"
 
 ### INTRO
 - S-rank Img Physical
-- Astral Ring: Reason of Promotion
+- Astral Ring: Law of Ascension
 - Is a DPS, can support WoDestiny Team, RoPromotion team, one future ??? AR team, and replaces Prometheus in P1 Physical team, provides stun and shieldbreak
 - Gameplay:  https://www.youtube.com/watch?v=KUcYGq-4Gpc
 
 ---
 ### LEADER 
-When set as leader, activate AR Reason of Promotion. SO cost: 200, Duration: 1s, CD: 40s
+When set as leader, activate AR Law of Ascension. SO cost: 200, Duration: 1s, CD: 40s
 
-When you have 1 team member with Equinox Promotion attribute: New Dudu Physical DMG +22% / 25% / 28%
+When you have 1 team member with Heavenly Shift attribute: New Dudu Physical DMG +22% / 25% / 28%
 
-When you have 2 team members with Equinox Promotion attribute: Teammates with Equinox Promotion tag can trigger New Dudu's Link ATK. New Dudu also restore 10 more AR when consuming Stellar Drain.
+When you have 2 team members with Heavenly Shift attribute: Teammates with Heavenly Shift tag can trigger New Dudu's Link ATK. New Dudu also restore 10 more AR when consuming Stellar Drain.
 
-When you have 3 team members with Equinox Promotion attribute: Enemies take 26%  / 27% / 28% more Physical DMG from New Dudu (independent multiplier). Initial AR +10
+When you have 3 team members with Heavenly Shift attribute: Enemies take 26%  / 27% / 28% more Physical DMG from New Dudu (independent multiplier). Initial AR +10
 
 ---
 
 ### ASTRAL RING
 
-Dudu is protected by AR Reason of Promotion. When Stellar Outburst is activated, deal 400% ATK of Physical DMG.
+Dudu is protected by AR Law of Ascension. When Stellar Outburst is activated, deal 400% ATK of Physical DMG.
 
-When AR Reason of Promotion is activated:
+When AR Law of Ascension is activated:
 
 
-- After activating Stellar Outburst, you can select a teammate with Equinox Promotion tag and trigger the character's Star Shift. Then, other Equinox Promotion characters will cast their Star Shift skill when they enter the field.
+- After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character's Star Shift. Then, other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
 
 - Dudu's Star Shift skill changes to Radiant Surf. She surfs through the enemies, deal 470%x2 ATK of Physical DMG. Then, she enters an enhanced state. During this period, you can click QTE button, up to 4 times, at full charge, unleash final attack, deal 540% ATK of Physical DMG. Each charge makes the final hit deals an additional 150% ATK of Physical DMG. After casting Star Shift ATK, you enter Surf form.
 

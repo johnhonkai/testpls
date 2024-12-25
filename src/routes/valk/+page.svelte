@@ -106,6 +106,17 @@
 
   { name: 'Chrono Navi', image: '/images/valkportrait/Chrono Navi.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/cn', id:22},
   { name: 'Jade Knight', image: '/images/valkportrait/Sushang Jade Knight.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/sushang', id:23},
+  { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hoh', id:25},
+  { name: 'Helical Contraption', image: '/images/valkportrait/VillV.png', type: 'Qua', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/villv', id:26},
+  { name: 'Starry Impression', image: '/images/valkportrait/Griseo Starry Impression.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/si', id:27},
+  { name: 'Disciplinary Perdition', image: '/images/valkportrait/Aponia Disciplinary Perdition.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/aponia', id:28},
+  { name: 'Golden Diva', image: '/images/valkportrait/Eden Golden Diva.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/eden', id:29},
+  { name: 'Reverist Calico', image: '/images/valkportrait/Pardofelis Reverist Calico.png', type: 'Img', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/pardo', id:30},
+  { name: 'Palatinus Equinox', image: '/images/valkportrait/Durandal Palatinus Equinox.png', type: 'Img', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/pe', id:31},
+  { name: 'Spina Astera', image: '/images/valkportrait/Rita Spina Astera.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/spa', id:32},
+  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/silverwing', id:33},
+  { name: "Sweet 'n' Spicy", image: '/images/valkportrait/Carole.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/carole', id:34},
+  { name: "Infinite Ouroboros", image: '/images/valkportrait/Mobius Infinite Ouroboros.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/mobius', id:35},
 
 ];
 

@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Misteln Schariac - Dreamweaver</title> 
+  <title>Vill-V - Helical Contraption</title> 
 
-    <meta property="og:title" content="Misteln Schariac - Dreamweaver" />
-    <meta property="og:description" content="Dreamweave Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/nJaOIWl.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/dreamweaver" />
+    <meta property="og:title" content="Vill-V - Helical Contraption" />
+    <meta property="og:description" content="Helical Contraption: Ego Guide, Builds and Gameplay" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/villv" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -30,6 +30,9 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 import Lightbox from '$lib/components/lightbox.svelte';
 	import Sirindps from "$lib/components/lineup/sirindps.svelte";
 	import P1physical from "$lib/components/lineup/p1physical.svelte";
+	import P1ice from "$lib/components/lineup/p1ice.svelte";
+	import Ice3support from "$lib/components/lineup/ice3support.svelte";
+	import P1fire from "$lib/components/lineup/p1fire.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -48,7 +51,7 @@ function closeLightbox() {
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
-  { name: 'Gameplay Examples', short: 'example' },
+  //{ name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
   { name: 'Rank Up', short: 'rank' },
   { name: 'Popular Question', short: 'qna' },
@@ -146,8 +149,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["hare"] || 0; // Get initial likes from JSON
-  const charName = "hare"; // Route name for this character
+  let fovlikes = likesData["vv"] || 0; // Get initial likes from JSON
+  const charName = "vv"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -204,7 +207,7 @@ function selectTabMobile(event) {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_hoo.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+    <img src="/images/bg/wave_prom.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
   
   
@@ -212,7 +215,7 @@ function selectTabMobile(event) {
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/dw.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-20;"/> 
+    <img src="/images/valkfull/villv.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-26;"/> 
   
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
@@ -242,23 +245,23 @@ function selectTabMobile(event) {
     <!-- Battlesuit Name -->
   
     <div>
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Dreamweaver</h1>
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Helical Contraption</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Misteln Schariac | Release Date: v6.6 (18 May 2023)  </p>
+    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Vill-V | Release Date: v5.9 (11 Aug 2022)  </p>
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-purple-500 outline-1 bg-purple-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-zinc-500 outline-1 bg-zinc-950/75 rounded-lg p-2 backdrop-blur-sm">
           <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+          <img src="/images/type/IconQUA.png" alt="Mech" class="w-auto h-8 md:h-10" />
+          <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
   
         </div>
       </div>
-  
+
   
     </div> <!-- End common wrapper -->
   </div>
@@ -331,43 +334,34 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Summoner Physical DPS</strong> <br/>
-            Dreamweaver's mechanic revolves around summoned entity to deal damage. Very underwhelming as a DPS.
+            <strong class="text-amber-400">Outdated Quantum DPS</strong> <br/>
+            Vill-V was more of a quantum type specialist rather than a Fire DPS. Her buffs were targeted on Quantum type, and all her top scores were Qua bosses.
         </p>
 
         <div class="divider divider-neutral"></div>
         <!-- Pull Recommendation Section -->
-
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
-        <p class="text-sm sm:text-base mt-4">
 
-          <strong class="text-amber-400 ">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. 
-        </p>
+        <p class="text-sm sm:text-base mt-4 mb-4">
+          <strong class="text-amber-400">Everyone</strong> <br/> Nah. Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Vill-V and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+      </p>
 
-        <p class="text-sm sm:text-base mt-4">
 
-          <strong class="text-amber-400 ">Light Spenders</strong> <br/> Dreamweaver and her gears are available in Battle Pass, but not recommended to get them. Dreamweaver is just not that good.
-        </p>
-        
-        <p class="text-sm sm:text-base mt-4">
-            <strong class="text-amber-400">Competitive</strong> <br/> She still has one or two bosses, but they rarely appear anymore.
-        </p>
 
         <div class="divider divider-neutral"></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Dreamweaver:</strong> Battle Pass v8.0 - 8.1</li>
-            <li ><strong>Dreamweaver Equipment:</strong> Battle Pass v8.0 - 8.1, Vintage Shop v8.2</li>
+            <li ><strong>Helical Contraption:</strong> Battlesuit Supply</li>
+            <li ><strong>Helical Contraption Equipment:</strong> Focused Supply</li>
 
         </ul>
         <div class="divider divider-neutral"></div>
         <!-- Full Guide Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
         <p class="mt-2 text-sm sm:text-base pb-4">
-            I didn't make a guide on her
-        </p>
-
+          I didn't make a guide on Vill-V
+      </p>
     </div>
 {/if}
 
@@ -378,7 +372,7 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
-    <P1physical></P1physical>
+    <P1fire></P1fire>
 
 </section>
 
@@ -397,23 +391,23 @@ function selectTabMobile(event) {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2023/04/01/50494840/09e103c7b0966bbe9fd1be53f51b952e_2699864083313674501.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/07/11/264755623/a3d30f67f31d0abf75f0e3cae778b28f_2328811248874384355.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2023/04/02/50494840/d9f8587091d80a4a0b69f424439de209_7399300095442608852.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/06/25/50494840/26733702e4e3079f2e6666b96ca013ba_7985062262695361933.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2023/04/02/50494840/acf24ffbd965f172b96b00e2a83c2dff_7590673960720768538.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/06/25/50494840/d591681323fdc3e48609ce1594f461e9_7055959847866042350.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2023/04/01/50494840/424d4fda58186dd39bae7c92a7c81729_2598856344905487421.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/06/25/50494840/de941d26b0ba8179e1729079bc29e57f_7300082095635260246.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Prophetic Dreams + Alexandra set</h4>
+              <h4 class="text-base sm:text-base text-white"> Tower of the Past + Carlo Collodi set</h4>
               </div>
 
 
@@ -424,22 +418,106 @@ function selectTabMobile(event) {
 
 
 
-            <div class="p-4 mt-4 bg-gradient-to-r from-violet-950/75 to-violet-900/75 rounded">
+            <div class="p-4 mt-4 bg-gradient-to-r from-red-950/75 to-red-900/75 rounded">
               <p class="text-sm sm:text-base text-left mb-4">
-                <b>Prophetic Dreams</b><br/> Big buffs, Crit DMG and some sp recovery.
+                <b>Tower of the Past</b><br/>
+                Big damage.
               </p>
             
               <p class="text-sm sm:text-base text-left mb-4">
-                <b>Alexandra </b><br/> Just big buffs and Crit DMG.
+                <b>Carlo Collodi</b><br/> - Big buffs. Mid piece has evasion cd -20%. Bottom piece has sp recovery.
+                <br/> - Priority should be MB > T.
               </p>
             
               <p class="text-sm sm:text-base text-left">
-                <b>Affix:</b> Full ATK.
+                <b>Affix:</b> Full ATK
               </p>
             </div>
 
 
             </div>
+
+            <div class="divider divider-neutral"></div>
+
+            <div>
+
+
+              <h2 class="text-xl font-semibold text-center  text-blue-400 mb-2">OTHER EQUIPMENT OPTIONS</h2>
+
+              <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> G4 Little Joys</h4>
+              </div>
+
+
+
+           </div>
+
+           <div>
+
+
+
+            <div class="p-4 mt-4 bg-gradient-to-r from-blue-950/75 to-blue-900/75 rounded">
+              <p class="text-sm sm:text-base text-left">
+                Next best option
+              </p>
+            </div>
+
+
+            </div>
+
+            <div class="divider divider-neutral"></div>
+
+
+            <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+  
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/75216984/012ad384fa52f9af1158877fe68d0627_3468778953287680325.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/91006211/20ba35b905a9ec935e2bf5afebb1f3e2_5266815546114285656.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/75216984/07bf0f5b958d33e8ecc7aaca33d89762_1930228974379517957.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> G3 Leeuwenhoek TB, G2 Thales M</h4>
+              </div>
+            
+
+              <div class="p-4 mt-4 bg-gradient-to-r from-blue-950/75 to-blue-900/75 rounded">
+                <p class="text-sm sm:text-base text-left">
+                  Just use this while you are farming the materials to upgrade to Little Joys set
+                </p>
+              </div>
+  
+
       {/if}
 
 
@@ -451,21 +529,21 @@ function selectTabMobile(event) {
             on:click={() => setPlaystyle('1')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            PHYSICAL BODY BUILD
+            STANDARD
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
             class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            ASTRAL BODY BUILD
+            BURST MODE
           </button>
         </div>
       
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Physical Body Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Standard Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Alternate weapon and ATK button. Easier playstyle.
+         Normal Vill-V but with boosted ER damage. Stronger playstyle.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -486,42 +564,40 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Thousand Thoughts ➔ Forms</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Oneiromancy</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Sleight + Facade</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Assemblage </p>
             </div>
           </div>
           
         </div>
         <div class="mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-            <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-            <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Thousand Thoughts), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-        </p>
+            Vill-V starts with two Ego signets.
           </div>
 
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-              </div>
-
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">1</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">1 or 2</p>
-              </div>
-            
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">2</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
@@ -531,6 +607,11 @@ function selectTabMobile(event) {
 
           </div>
 
+          <div class=" mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+              <b> Decimation 1:</b> Your HP will be very low. If you are a new player, you can skip this, or build Vicissitude 2 first for survivability.
+            </p>
+          </div>
 
             <div class="divider divider-neutral"></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -538,30 +619,32 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
+              </div>
+              <p class="text-base sm:text-lg font-semibold">START</p>
+          </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">MID</p>
-            </div>
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">MID</p>
+          </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">FINAL</p>
+          </div>
+            
             
           </div>
+
 
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
@@ -571,24 +654,24 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-              <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+              <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-            <div class="flex flex-row rounded">
-              <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
-        </div>
+              <div class="flex flex-row rounded">
+                <img src="/images/sigils/Light_as_a_Bodhi_Leaf.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">MID</p>
+          </div>
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Faraway_Ship.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
@@ -601,18 +684,22 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press weapon.</li>
-          <li>Weapon button will glow, press weapon button. ATK button will glow, press ATK button. Repeat.</li>
+          <li>Hold ATK to enter weapon mode for a while, to trigger buffs</li>
+          <li>Press Ult to activate Burst Mode</li>
+          <li>Hold ATK until you cast the second Interlude Salute</li>
+          <li>Press Ult to activate Burst Mode finisher attack</li>
+          <li>Hold ATK to enter weapon mode and attack until Burst Mode is available again</li>
+          <li>Repeat from step 2</li>
         </ol>
 
-        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
+        <p class="mt-8 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
         </p>
 
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/gOIxzjzGnrI"
+                src="https://www.youtube.com/embed/ikAFwXUv37o"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -623,9 +710,9 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Astral Body Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Burst Mode Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Summon Astral Body to fight. This playstyle has two issues: <br/> 1. It pushes you backwards, so your attacks can miss. <br/> 2. You can die much more easily.
+          You stay in Burst Mode for as long as you can.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -647,46 +734,45 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Absoluteness + Legacy</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Oneiromancy</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Transmission + Reversal</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Assemblage </p>
             </div>
           </div>
         </div>
         <div class="mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-            <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-            <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Absoluteness), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-        </p>
+              Vill-V starts with two Ego signets.
           </div>
+          
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+  
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">2</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">Sp regen</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">2</p>
               </div>
 
-              
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1</p>
+                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">2</p>
               </div>
 
               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
@@ -695,11 +781,12 @@ function selectTabMobile(event) {
               </div>
 
           </div>
+          <div class=" mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                 <b> Decimation 1:</b> Your HP will be very low. If you are a new player, you can skip this, or build Vicissitude 2 first for survivability.
+            </p>
+          </div>
 
-          <p class=" pt-2 text-sm sm:text-base text-center sm:text-left">
-            - Dreamweaver is one of the rare valks that can use Infinity 2. <br/>
-            - Recommended to get Vicissitude 2 after Infinity so you don't die so easily.
-          </p>
             <div class="divider divider-neutral"></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
@@ -707,15 +794,15 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -723,7 +810,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -735,29 +822,31 @@ function selectTabMobile(event) {
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
+
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-              <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+              <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+              <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
-            </div>
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">MID</p>
+          </div>
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/The_First_Scale.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+              <div class="flex flex-row rounded">
+                  <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
+              <p class="text-base sm:text-lg font-semibold">FINAL</p>
+          </div>
+
 
           </div>
 
@@ -766,11 +855,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press Ultimate to activate Astral Body.</li>
-          <li>Press weapon, then spam Basic ATK until the spear counter reaches 8 points (above your HP bar).</li>
-          <li>Use Charged ATK.</li>
-          <li>Repeat step 2 and 3.</li>
-        </ol>
+            <li>Hold ATK to enter weapon mode for a while, to trigger buffs</li>
+            <li>Press Ult to activate Burst Mode</li>
+            <li>Hold ATK until Burst Mode ends</li>
+            <li>After 3 Interlude Salute, weapon skill will reset. Press it.</li>
+            <li>If you run out of sp, Burst Mode will end. Hold ATK until Ultimate is available again.</li>
+          </ol>
+  
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
@@ -779,7 +870,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/pE-nh-AT9iY"
+                src="https://www.youtube.com/embed/UbH453JYC-k"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -815,7 +906,7 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  Enemies take 17.3% ➔ 20% more Physical DMG from Dreamweaver (independent)
+                  Interlude Salute Total DMG +37.5% ➔ 50%. Within 5s of entering Burst Mode, deal additional 225% ➔ 300% ATK of Fire DMG.
                 </td>
                 <td class="p-3">DPS</td>
               </tr>
@@ -823,54 +914,62 @@ function selectTabMobile(event) {
               <tr>
                 <td>S2</td>
                 <td>
-                 Initial SP +40
+                 - During Climax Approaching, sp regen +1.6 ➔ 2, hp recovery +24 ➔ 30. Weapon Mode Charged ATK Total DMG +35 ➔ 45%.
+                 <br/>
+                 - After entering Weapon Mode or Burst Mode, enemies take 13% ➔ 16.5% more Fire DMG from Helical Contraption (independent).
 
                 </td>
-                <td>Memorial Arena</td>
-              </tr>
+                <td>DPS</td>
+                            </tr>
               <tr>
                 <td>S3</td>
                 <td>
-                  Leader Skill: Team Crit DMG +22% ➔ 24%. For every Phy DMG dealer in the team, DW's summoned entities gain Physical DMG +8% ➔ 9%.
+                  Leader Skill: Team Total DMG +12% ➔ 16%. Team Fire DMG +10% ➔ 15%.
                 </td>
                 <td>DPS</td>
+
               </tr>
               <tr>
                 <td>SS</td>
                 <td>
-                  	
-                  UNLOCK: Ult finisher deal extra 350% ATK of Physical DMG.
+                  - UNLOCK: In Weapon Mode, Charged ATK Total DMG +15%, and recover 15 sp, cd 10s.
+                  <br/>
+                  - In Burst Mode, Fire DMG +32.5% ➔ 45%. Against collapsed QUA enemies, Fire DMG +17.5% ➔ 20%.
                 </td>
-                <td>DPS</td>
+                <td> DPS </td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  When Assemblage hits, restore 5 ➔ 8 sp. Assemblage deals extra 4x147% ➔ 4x220% ATK of Physical DMG.
-                	                </td>
-                <td>DPS
+                  - In Weapon Mode, Fire DMG +32% ➔ 40%. Against QUA enemies, Fire DMG +18.5% ➔ 20% <br/>
+                  - In Burst Mode, Fire DMG +15% ➔ 20%. Within 5s of exiting Burst Mode, Weapon Mode restores Heat Value, max 125 ➔ 150.
+                </td>
+                                  
+            <td> DPS </td>
+
               </tr>
               <tr>
                 <td>SS2</td>
                 <td>
-                  Kaleidoscope Physical DMG +17.5% ➔ 30%
+                After entering Weapon Mode or Burst Mode, enemies take 16.5% ➔ 20% more Fire DMG from Helical Contraption (independent).
                 </td>
-                <td>DPS
+                <td> DPS </td>
               </tr>
               <tr>
                 <td>SS3</td>
                 <td>
-                  Leader Skill: Team Crit DMG +24% ➔ 26%. For every Phy DMG dealer in the team, DW's summoned entities gain Physical DMG +9% ➔ 10%.
+                  Leader Skill: Team Total DMG +16% ➔ 20%. Team Fire DMG +15% ➔ 20%.
+
 
                 </td>
-                <td>DPS
+                <td>DPS</td>
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  UNLOCK: Astral Body ult restore extra 8 sp. Hitting enemies with evasion atk will trigger evasion skill, which can be connected into Basic ATK SEQ 4 by tapping ATK. Basic ATK SEQ 4 released this way will make Dreamweaver enter Weaving state.
+                  UNLOCK: When Interlude Salute hits a target, self Fire DMG +20% for 15s, can be refreshed.
                 </td>
-                <td>Improves rotation
+                <td> DPS</td>
               </tr>
             </tbody>
           </table>
@@ -913,16 +1012,16 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dreamweaver DPS</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Herrscher of Human DPS</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Dreamweaver vs Abyss Aponia</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoH vs Hellmaru Red Lotus</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/AWXdvIxXjDM"
+                src="https://www.youtube.com/embed/a5o8kocAi1s"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

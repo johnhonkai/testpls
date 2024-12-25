@@ -29,7 +29,7 @@ image: "/images/valkportrait/dudu.png"
 ATK: 416 ,  CRT: 37
 
 **ACTIVE [SP: 0] [CD: 0s]**<br/>
-The weapon active's CD, max charges and effects are based on wielder type. If the wielder has Equinox Promotion tag, Physical DMG **+32% (v2) > +25% (v3)**
+The weapon active's CD, max charges and effects are based on wielder type. If the wielder has Heavenly Shift tag, Physical DMG **+32% (v2) > +25% (v3)**
 
 New Dudu equip bonus:
 - During Star Shift ATK, an additional javelin will be generated each time the QTE button is pressed, max 4. 
@@ -100,8 +100,8 @@ New Dudu equip bonus:
     - When New Dudu has [Unstoppable], the enemy's Total DMG taken increased to 20% (not sure to or by 20%) (cannot stack)
     - Team Shield DMG +60%
 
-- When AR Reason of Promotion is activated:
-    - For every valk in the team with Equinox Promotion tag, other team members gain Total DMG +4%
+- When AR Law of Ascension is activated:
+    - For every valk in the team with Heavenly Shift tag, other team members gain Total DMG +4%
     - When New Dudu has [Unstoppable]:
  	    - Enemies take **22% (v2) > 21% (v3)** more Total DMG (cannot stack)
 	    - When New Dudu is the leader, enemies DEF -55%

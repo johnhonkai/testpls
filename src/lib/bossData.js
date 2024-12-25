@@ -65,10 +65,14 @@ export const weatherList = {
   physical: [
     {id: 'phyalien', name: 'Alien Guard'},
     {id: 'otto', name: 'Otto Apocalypse'},
+    {id: 'phykevin', name: 'Deliverance Kevin'},
 
   ],
   shadow: [
     {id: 'shadowtank', name: 'MHT-3C Retaliator'},
+  ],
+  symphony: [
+    {id: 'symphellmaru', name: 'Hellmaru'},
   ]
   
 }
@@ -338,6 +342,22 @@ export const bossData = {
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },
+  phykevin: {
+    name: 'Deliverance Kevin', 
+    mechanics: 'Has 3 phases. Final phase requires you to approach Kevin balls to destroy his hitcount shield.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconIMG.png", 
+    bosspic: "images/Bosses/Kevin Deliverance.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },
+  symphellmaru: {
+    name: 'Hellmaru', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Hellmaru.webp", 
+    weather: "Symphony:", 
   },
 };
 

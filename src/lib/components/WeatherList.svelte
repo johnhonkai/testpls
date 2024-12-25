@@ -25,6 +25,7 @@
     stun: "Stun",
     physical: "Physical",
     shadow: "Shadow",
+    symphony: "Symphony",
     // Add other weather mappings as needed
   };
 

@@ -20,7 +20,7 @@ A Part 2 valkyrie will have ONE Astral Ring Specialization. There are 12 differe
 Each Specialization has its own unique gameplay mechanic. Here's a summary of each one:
 - **World Star (WS):** Can create Resonance Marks. Certain attacks will trigger these Resonance Marks to deal damage.
 - **Wheel of Destiny (WOD): ** Centered around solo playstyle. Teammates become shadow atk during Stellar Outburst.
-- **Reason of Promotion (RoP):** QTE switch playstyle.
+- **Law of Ascension (LoA):** QTE switch playstyle.
 - **Rite of Oblivion (RoO):** Every RoO DPS has her own unique playstyle.
 
 
