@@ -49,7 +49,15 @@
       <p class="text-slate-100 text-xs sm:text-base">{boss.weakness}</p>
     </div>
 
+    {#if boss.debuff}
+    <div class=" flex justify-center text-center items-center p-2 bg-sky-900">
+      <p class="text-slate-100 text-sm sm:text-base font-semibold">Weakness</p>
+    </div>
 
+    <div class=" flex  text-left items-center p-2 bg-sky-900">
+      <p class="text-slate-100 text-xs sm:text-base">{boss.debuff}</p>
+    </div>
+    {/if}
 
   </div>
 

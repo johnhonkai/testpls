@@ -353,11 +353,12 @@ export const bossData = {
   },
   symphellmaru: {
     name: 'Hellmaru', 
-    mechanics: '', 
-    weakness: 'None', 
+    mechanics: 'First wave has two BIO mobs.', 
+    weakness: 'Fire (L)', 
+    debuff: 'Ice (L)', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Hellmaru.webp", 
-    weather: "Symphony:", 
+    weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
   },
 };
 
