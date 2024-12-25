@@ -78,6 +78,11 @@
             image: "https://i.imgur.com/3EOIQRx.png"
 
         },
+        "Valk2": {
+            title: "Battlesuit Supply B: Sparkle",
+            description: '<li>Duration: 2 weeks</li><li>A-rank: Umbral Rose (UP), Scarlet Fusion, Night Squire, Valkyrie Pledge</li>',
+
+        },
         "Equip": {
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls or less.</li>',
@@ -210,6 +215,39 @@
             
                 </div>
 
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                    </div> 
+                    <div></div>  
+                    <div></div>                   
+                    <div on:click={() => openModal("Valk2")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sparkle</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-24 h-full">
+                            <img src="https://i.imgur.com/dpVXF4o.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        </div>
+                    </div>    
+
+                </div>
+
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">EQUIPMENT SUPPLY B</span>
+                    </div>  
+                    <div></div>  
+                    <div></div>                    
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Sparkle Equipment</span>
+
+
+                    </div>     
+            
+                </div>
+
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
@@ -324,6 +362,44 @@
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/xMdDFiG.png" alt="Event 4" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 5</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Before the Endless Dream Ends <br/> Starts on Monday</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/PrckGCL.png" alt="Event 4" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 6</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">New Year 7-Day Log-in</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/pc6Eegc.png" alt="Event 4" class="w-full h-full object-cover" />
                     </div>
                 </div>
 
