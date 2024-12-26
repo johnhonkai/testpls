@@ -67,7 +67,7 @@
 
   const astralRings = [
     'All',
-    'Reason of Promotion',
+    'Law of Ascension',
     'World Star',
     'Wheel of Destiny',
     'Rite of Oblivion',
@@ -76,7 +76,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
-  { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Reason of Promotion'] , url: '/valk/durandal' , badge: 'Beta', id:16},
+  { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Law of Ascension'] , url: '/valk/durandal' , badge: 'Beta', id:16},
   { name: 'Thousand-Faced Maestro: Cameo!', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , badge: 'New', id:14},
   { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , id:13},
   { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/simp', id:12 },
@@ -117,6 +117,7 @@
   { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/silverwing', id:33},
   { name: "Sweet 'n' Spicy", image: '/images/valkportrait/Carole.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/carole', id:34},
   { name: "Infinite Ouroboros", image: '/images/valkportrait/Mobius Infinite Ouroboros.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/mobius', id:35},
+  { name: "Midnight Absinthe", image: '/images/valkportrait/Raven Midnight Absinthe.png', type: 'Img', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/raven', id:36},
 
 ];
 

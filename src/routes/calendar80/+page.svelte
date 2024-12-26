@@ -83,6 +83,9 @@
             description: '<li>Duration: 2 weeks</li><li>A-rank: Umbral Rose (UP), Scarlet Fusion, Night Squire, Valkyrie Pledge</li>',
 
         },
+        "Raffle": {
+            image: "https://i.imgur.com/CZNJxzs.png"
+        },
         "Equip": {
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls or less.</li>',
@@ -338,7 +341,7 @@
                      <span class="font-bold0">EVENT 3</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                <div on:click={() => openModal("Raffle")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Raffle Event: A chance to win 400 - 18,000 crystals, <br/> S-rank valkyries and more <br/></span>
                     <!-- Image positioned on the right side -->

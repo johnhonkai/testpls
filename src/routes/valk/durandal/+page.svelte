@@ -250,7 +250,7 @@ async function increaseLike() {
         <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
         <img src="/images/type/IconIMG.png" alt="IMG" class="w-auto h-8 md:h-10" />
         <img src="/images/element/Core_Physical.png" alt="Physical" class="w-auto h-8 md:h-10" />
-        <img src="/images/artype/ar future.png" alt="ar" class="w-auto h-8 md:h-10" />
+        <img src="/images/artype/ar loa.webp" alt="ar" class="w-auto h-8 md:h-10" />
       </div>
     </div>
 
