@@ -118,6 +118,13 @@
   { name: "Sweet 'n' Spicy", image: '/images/valkportrait/Carole.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/carole', id:34},
   { name: "Infinite Ouroboros", image: '/images/valkportrait/Mobius Infinite Ouroboros.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/mobius', id:35},
   { name: "Midnight Absinthe", image: '/images/valkportrait/Raven Midnight Absinthe.png', type: 'Img', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/raven', id:36},
+  { name: "Miss Pink Elf♪", image: '/images/valkportrait/Elysia Miss Pink Elf.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/mpe', id:37},
+  { name: "Herrscher of Flamescion", image: '/images/valkportrait/Kiana Herrscher of Flamescion.png', type: 'Psy', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/hofs', id:38},
+  { name: "Prinzessin der Verurteilung!", image: '/images/valkportrait/fischl.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/fischl', id:39},
+  { name: "Starchasm Nyx", image: '/images/valkportrait/Seele Starchasm Nyx.png', type: 'Qua', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/nyx', id:40},
+  { name: "Haxxor Bunny", image: '/images/valkportrait/Bronya Haxxor Bunny.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hb', id:41},
+  { name: "Herrscher of Sentience", image: '/images/valkportrait/Fu Hua Herrscher of Sentience.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/hos', id:42},
+  { name: "Blazing Hope", image: '/images/valkportrait/Asuka Blazing Hope.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/asuka', id:43},
 
 ];
 

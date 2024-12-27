@@ -688,13 +688,13 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Nerf This~! Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Ultimate Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          A playstyle where you keep entering and exiting Continuation form and launching your mecha to bombard the enemy.
-
+          Spam Ult
         </p>
 
         <div class="divider divider-neutral"></div>
+
 
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>

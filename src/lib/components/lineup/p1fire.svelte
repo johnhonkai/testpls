@@ -68,7 +68,7 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base mb-3">Sparkle provides around 7-10% DMG-per-second increase (depends on the valk) and faster rotation than Chrono Navi.   </li>
+                <li class="text-sm sm:text-base mb-3">Sparkle provides around 7-10% DMG-per-second increase (depends on the valk) and faster rotation than Chrono Navi. Sparkle also enables certain DPS to use two Ults in one rotation.  </li>
                 <li class="text-sm sm:text-base mb-3">Dea Anchora: DA can now use G4 Little Joys with no sp issue. This is around 15% more damage than her signature stigma G3 Shakespeare Adrift.</li>
                 <li class="text-sm sm:text-base mb-3">Herrscher of Flamescion: If you rotate too fast after using two Ults in one rotation, HoFs Ult will still be on cooldown the next time she switches in.</li>
                 <li class="text-sm sm:text-base mb-3">Spina Astera: You can't use double Ult, because you will have no meter after you use Charged ATK.</li>
