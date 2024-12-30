@@ -445,7 +445,7 @@
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Jan 14"/>
+                    <BossCard image="/images/BossesMA/SSS_Kevin.png" date="Jan 14"/>
                     <BossCard image="/images/Bosses/Dominator of Wolves.webp" />
                     <BossCard image="/images/Bosses/Shadow Knight (SK).webp" />
                 </div>
@@ -478,7 +478,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Mockery_Emperor.webp" date="Jan 24" weather="LoAscension" bosspage="/boss?momemperor" />
                 <BossCard />
                 </div>
                  

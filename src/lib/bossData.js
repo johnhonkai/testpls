@@ -73,6 +73,9 @@ export const weatherList = {
   ],
   symphony: [
     {id: 'symphellmaru', name: 'Hellmaru'},
+  ],
+  loascension: [
+    {id: 'momemperor', name: 'Mockery and Ice Emperor'},
   ]
   
 }
@@ -338,7 +341,7 @@ export const bossData = {
   shadowtank: {
     name: 'MHT-3C Retaliator', 
     mechanics: '', 
-    weakness: 'Ice (S), Lightning (S)', 
+    weakness: 'Ice (L), Lightning (L)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
@@ -354,11 +357,20 @@ export const bossData = {
   symphellmaru: {
     name: 'Hellmaru', 
     mechanics: 'First wave has two BIO mobs.', 
-    weakness: 'Fire (L)', 
-    debuff: 'Ice (L)', 
+    weakness: 'Fire (H)', 
+    debuff: 'Ice (H)', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Hellmaru.webp", 
     weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
+  },
+  momemperor: {
+    name: 'Meteor: Mockery and Ice Emperor', 
+    mechanics: '', 
+    weakness: 'Emperor: Ice (H)', 
+    debuff: 'Emperor: Fire (L)', 
+    typeicon: "images/type/SD PSY.webp", 
+    bosspic: "images/Bosses/Mockery_Emperor.webp", 
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
 };
 
@@ -436,12 +448,7 @@ export const teamData = {
           { img: 'images/valkportrait/vitas0.png', text: 'S0 0%' }
         ] 
       },              
-    ],},],
-    videos: [
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/Vryx1NK94nw', abyss: 'RedLotus 480D', uploader: 'Marisa Honkai' },
-    ] 
+    ],},]
   },
 
   firemobius:{
@@ -572,6 +579,9 @@ export const teamData = {
         pct: '1%',
       },
     ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
+    ] 
   },
   bloodsdmob: {
     teamDataSets: [

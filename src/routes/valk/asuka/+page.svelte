@@ -336,21 +336,25 @@ function selectTabMobile(event) {
         
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400">Part 1 Physical DPS</strong>
+          <br/> - Blazing Hope is an Evangelion collab character.
+          <br/> - Just a decent Physical DPS. Asuka was used a few times against Saha Assaka.
       </p>
-
-      <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2"> Blazing Hope is an Evangelion collab character.
-        </li>
-          <li class="mt-2"> Just a decent Physical DPS. Asuka was used a few times against Saha Assaka.</li>
-
-      </ul>
-
 
 
 
         <div class="divider divider-neutral"></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
+
+
+        <p class="mt-4 text-sm sm:text-base">
+          Asuka cannot be acquired anymore.
+      </p>
+
+
+        <div class="divider divider-neutral"></div>
+        <!-- How to Get Section -->
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW YOU COULD HAVE GOTTEN HER</h2>
 
 
         <p class="mt-4 text-sm sm:text-base">
@@ -368,18 +372,6 @@ function selectTabMobile(event) {
       <br/> - Children stigma was available from a limited-time Focused supply. Currently, the stigma can no longer be obtained.
       <br/> - G3 Columbus stigma was introduced as an alternative for Children set with the same stats.
   </p>
-
-
-        <div class="divider divider-neutral"></div>
-        <!-- How to Get Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
-        <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Asuka:</strong> Not available.</li>
-            <li ><strong>Lance of Longinus:</strong> Not available.</li>
-            <li ><strong>Children stigma:</strong> Not available.</li>
-            <li ><strong>G3 Columbus</strong> Foundry.</li>
-
-        </ul>
 
     </div>
 {/if}

@@ -53,7 +53,7 @@ function closeLightbox() {
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
    { name: 'Gameplay Examples', short: 'example' },
-  //{ name: 'Elysian Realm', short: 'er' },
+  { name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   { name: 'Popular Question', short: 'qna' },
   { name: 'Overview Card', short: 'card' },
@@ -366,7 +366,7 @@ function selectTabMobile(event) {
     <ul class="list-disc ml-6 text-sm sm:text-base">
 
         <li class="mt-2"> G3 Shakespeare Adrift / G4 Little Joys stigma is farmable in Foundry, but will take a couple of months.</li>
-        <li class="mt-2"> Her signature weapon Sagittarius Astra can only be obtained from gacha. Not recommended to use your crystal to get it. If weapon Sagittarius Astra is available through other means, such as spending event or Battle Pass, you can consider getting it that way.
+        <li class="mt-2"> Her signature weapon Sagittarius Astra can only be obtained from gacha. Not recommended to use your crystal to get it. If Sagittarius Astra is available through other means, such as spending event or Battle Pass, you can consider getting it that way.
         </li>
 
     </ul>
@@ -418,23 +418,23 @@ function selectTabMobile(event) {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/7797ec153fc6516419e6ccb5cd720f2d_199612893826922994.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/72350798/8c96ea3ce189e42f6e2f50cff009716b_5812774051109065846.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/19/77124895/3d5cf830e207990a24c3b2e8b382a931_2381995292430155616.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
             </div>
       
             <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/19/77124895/fcb0fb603d4687728609b8320e62ba7f_4478419982120441927.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
             </div>
       
             <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/19/77124895/89d6118587a3b81aef8526453454f4dd_3781213386012413494.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
             </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Lance of Longinus + Children set </h4>
+              <h4 class="text-base sm:text-base text-white"> Sagittarius Astra + Little Joys </h4>
               </div>
 
 
@@ -447,12 +447,16 @@ function selectTabMobile(event) {
 
             <div class="p-4 mt-4 bg-gradient-to-r from-red-950/75 to-red-900/75 rounded">
               <p class="text-sm sm:text-base text-left mb-4">
-                <b>Lance of Longinus</b><br/> One of the best weapons for Asuka.
+                <b>Sagittarius Astra</b><br/> A must-have for Dea Anchora.
               </p>
-            
+
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>G4 Little Joys</b><br/> - Strongest stigma for DA. <br/> - For normal battles, you only want to use this if you have Sparkle support. DA playstyle continously consumes sp to use Ultimate, without Sparkle, you will run out of sp very quickly.
+                <br/> - Forgeable in Foundry.
+              </p>
 
               <p class="text-sm sm:text-base text-left">
-                <b>Affix</b> <br/>Ideally, 4 ATK and 2 Crit DMG lines. Full ATK is also fine.
+                <b>Affix</b> <br/>Full ATK.
               </p>
             </div>
 
@@ -467,68 +471,33 @@ function selectTabMobile(event) {
             <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
       
             <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/27/6100274/630f32b2d8da1cffa01dd1d347caf76d_6246057471359952089.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/b15f8f70d01022a3f06066058d14116a_8986869091496679630.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
             </div>
-      
+            <div class="w-20 h-20 sm:w-28 sm:h-28">
+              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/c4a170c4ed6ee24d3054ff2e2ac4a83b_2713530785294335874.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          </div>           
+           <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/42878f472c480a9317d0e600f0d0a01f_1470009726707941809.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
       
             </div>  
       
-            <h4 class="text-base sm:text-base text-white">Abyss Flower: Liminal Spiral</h4>
+            <h4 class="text-base sm:text-base text-white">Shakespeare Adrift</h4>
       
             </div>
       
             
-            <div class="p-4 mt-4 bg-gradient-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded">
+            <div class="p-4 mt-4 bg-gradient-to-r from-zinc-950/75 to-zinc-900/75 rounded">
               <p class="text-sm sm:text-base text-left">
-                <b>Abyss Flower</b> <br/>
-                Damage-wise, very close to Longinus.
+                <b>G3 Shakespeare Adrift</b> <br/>
+                - This was DA's signature stigma before Sparkle support and G4 Little Joys.
+                <br/> - Was a must-have set since it solved DA's sp issue.
+                <br/> - Forgeable in Foundry, but not worth it anymore.
+
               </p>
             
             </div>
 
-            <div class="divider divider-neutral"></div>
-
-            <div>
-
-
-              <div class="flex flex-col justify-center items-center">
-                  
-              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/77124895/da0b06f6cdcc746515d754d3e62aadbc_218089820853957416.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-      
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/77124895/f9762bb1e59fbbfbb26d55442c0cc928_6953807172225273902.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-      
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/77124895/64de0dd9808187a681c0441e63f3db21_5431735846925388113.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> Columbus set</h4>
-              </div>
-
-
-
-           </div>
-
-           <div>
-
-
-
-            <div class="p-4 mt-4 bg-gradient-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded">
-              <p class="text-sm sm:text-base text-left">
-                <b>G3 Columbus</b><br/> - Has same stats as Children set.
-                <br/> - Forgeable in Foundry.
-              </p>
-            
-            </div>
-
-
-            </div>
             
 
       {/if}
@@ -537,32 +506,10 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
-      <div class="flex justify-center gap-4 my-6">
-        <button
-          on:click={() => setPlaystyle('1')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-          BRICK
-        </button>
-      
-        <button
-          on:click={() => setPlaystyle('2')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-          STANDARD
-        </button>
-      </div>
 
 
-      {#if activePlaystyle === '1'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Brick Playstyle</h2> 
-      <p class="text-sm sm:text-base text-center sm:text-left">
-        Use this when you have Brick equipped.
-      </p>
 
-      <div class="divider divider-neutral"></div>
-
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+        <h2 class="text-xl font-semibold mb-4 mt-8  text-left text-white cooltext">EGO SIGNETS</h2>
 
         <div class="flex flex-col justify-center items-start ">
 
@@ -578,74 +525,41 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Legion / Victory / Ego</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Supremacy </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Stars</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Sheen ➔ Halo</p>
 
             </div>
           </div>
         </div>
         <div class="mt-3 rounded" >
           <p class="text-sm sm:text-base text-left">
-            - You can start with any of the three Ego signets. Each Ego signet has a different starting general signet.
-            <br/>
-            - Legion: Buffed Combo ATK.
-            <br/>
-            - Victory: Bonk playstyle.
-            <br/>
-            - Ego: Summons a clone.
-            <br/>
-            - Supremacy gives a nuke every few seconds.
+            You can complete the run with just one Ego signet (Stars).
           </p>
         </div>
-
-        <div class="divider divider-neutral"></div>
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">STARTING GENERAL SIGNET</h2>
 
         
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          <!-- First Signet with 'Start' text -->
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-            <div class="badge badge-accent z-10 absolute top-2 font-semibold">LEGION</div>
-            <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">1</p>
-          </div>
-
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-            <div class="badge badge-accent z-10 absolute top-2 font-semibold">VICTORY</div>
-            <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">2</p>
-          </div>
-
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-            <div class="badge badge-accent z-10 absolute top-2 font-semibold">EGO</div>
-            <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">1</p>
-          </div>
-
-        </div>
-        <div class="mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
-            <b>Decimation 1:</b> To keep your HP low, bring Blood Rose support, and get enhanced signet [Burden, Difficulty, and Calamity] as soon as you can.
-          </p>
-        </div>
-
 
           
           <div class="divider divider-neutral"></div>
-          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">SUBSEQUENT GENERAL SIGNETS</h2>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext"> GENERAL SIGNETS</h2>
 
           
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
 
-
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">LEGION</div>
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
               <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
@@ -666,7 +580,10 @@ function selectTabMobile(event) {
           </div>
           <div class="mt-3 rounded" >
             <p class="text-sm sm:text-base text-left">
-               You want initial sp Gold signet so you can immediately use Ult at the start, without Lightning Empress support. You want sp regen so you can keep using Ult as soon as you can.
+               <b>SP Regen:</b> You want Deliverance sp regen signet very early so DA can keep spamming Ultimate.
+               <br/>
+               <b>Decimation 1:</b> Your HP will be very low. If you are a new player, skip Decimation 1, and build Vicissitude 2 instead for survivability.
+
             </p>
           </div>
 
@@ -677,34 +594,30 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
             
           </div>
-          <div class="mt-3 rounded" >
-            <p class="text-sm sm:text-base text-left">
-               You can swap out Lightning Empress once you get the initial sp Gold signet.
-            </p>
-          </div>
+
 
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
@@ -722,7 +635,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                <img src="/images/sigils/Rainbow_of_Absence.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -730,7 +643,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -742,19 +655,15 @@ function selectTabMobile(event) {
           <div class="divider divider-neutral"></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
-          <h2 class="text-md font-semibold  mt-3  text-left text-white ">Before Burst Mode</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press Lightning Empress support ➔ evade ➔ weapon. You should have 125 sp now. </li>
-            <li>If you still don't have 125 sp, press Ult to switch weapon ➔ Repeat Combo and weapon switch until you have 125 sp. </li>
-            <li>Hold Ult to activate Burst Mode. </li>
+            <li>Spam Ult button until meter is full. </li>
+            <li>hold ATK to perform Charged ATK and activate Astral Harness form.</li>
+            <li>Spam Ult button until DA launches the finisher kick. </li>
+            <li>Repeat.</li>
 
           </ol>
-          <h2 class="text-md font-semibold  mt-3  text-left text-white ">During Burst Mode</h2>
-          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press Ult ➔ spam ATK until full sequence is over ➔ press Ult ➔ press weapon.</li>
 
-          </ol>
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
         </p>
@@ -770,189 +679,7 @@ function selectTabMobile(event) {
                 loading="lazy">
             </iframe>
         </div>
-        {/if}
 
-        {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Standard Playstyle (Bonk!)</h2> 
-        <p class="text-sm sm:text-base text-center sm:text-left">
-          Bonks the enemy! Use this playstyle if HoS equips other gauntlets that isn't brick.
-        </p>
-  
-        <div class="divider divider-neutral"></div>
-  
-          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-  
-          <div class="flex flex-col justify-center items-start ">
-  
-          <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-  
-            <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-              <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-            </div>
-              <!-- Left side image -->
-              <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
-                <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-              </div>
-              
-              <!-- Right side text sections -->
-              <div class="flex flex-col space-y-2 pr-2 z-10">
-                <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Victory</p>
-                <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Dark Plumes </p>
-  
-              </div>
-            </div>
-          </div>
-          <div class="mt-3 rounded" >
-            <p class="text-sm sm:text-base text-left">
-              Dark Plumes gives sp regen and damage over time.
-            </p>
-          </div>
-  
-  
-  
-            
-            <div class="divider divider-neutral"></div>
-            <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-  
-            
-            <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-              <!-- First Signet with 'Start' text -->
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
-              </div>
-  
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">2</p>
-              </div>
-  
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
-              </div>
-  
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">2</p>
-              </div>
-
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold">1</p>
-              </div>
-  
-            </div>
-            <div class="mt-3 rounded" >
-              <p class="text-sm sm:text-base text-left">
-                 For Discipline 2, you just want the [You Shall Follow Good] enhanced signet.
-              </p>
-            </div>
-  
-              <div class="divider divider-neutral"></div>
-              <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-  
-            <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-              
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-  
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
-                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-                <p class="text-base sm:text-lg font-semibold">MID</p>
-            </div>
-  
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-              
-            </div>
-            <div class="mt-3 rounded" >
-              <p class="text-sm sm:text-base text-left">
-                 You can swap out Lightning Empress once you have enough sp regen.
-              </p>
-            </div>
-  
-            <div class="divider divider-neutral"></div>
-            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-  
-            <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            
-  
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/sigils/It_Will_Be_Written.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-                <p class="text-base sm:text-lg font-semibold">START</p>
-            </div>
-  
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                  <img src="/images/sigils/Veil_of_Tears.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
-                <p class="text-base sm:text-lg font-semibold">MID</p>
-            </div>
-  
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
-                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  </div>
-                <p class="text-base sm:text-lg font-semibold">FINAL</p>
-            </div>
-  
-            </div>
-  
-            
-            <div class="divider divider-neutral"></div>
-            <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
-            <h2 class="text-md font-semibold  mt-3  text-left text-white ">Before Burst Mode</h2>
-
-  
-            <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-              <li>Press Lightning Empress support ➔ evade ➔ Combo ATK.  </li>
-              <li>If you still don't have 125 sp, press Ult to switch weapon ➔ Repeat Combo and weapon switch until you have 125 sp. </li>
-              <li>Hold Ult to activate Burst Mode.</li>  
-            </ol>
-  
-            <h2 class="text-md font-semibold  mt-3  text-left text-white ">During Burst Mode</h2>
-            <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-              <li>Press Ult whenever it's available.</li>
-              <li>Hold ATK to start bonk sequence, spam ATK until bonk ends.</li>  
-              <li>Repeat until Burst Mode ends.</li>
-            </ol>
-
-          <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-              Check out this showcase from Marisa Honkai:
-          </p>
-  
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/pTHVf1kHZEU"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy">
-              </iframe>
-          </div>
-        {/if}
 
       {/if}
 
