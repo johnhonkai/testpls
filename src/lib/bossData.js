@@ -578,10 +578,7 @@ export const teamData = {
         lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Sushang Jade Knight.png", "images/valkportrait/Kira Sugary Starburst.png", "images/valkportrait/elf_ely.png"],
         pct: '1%',
       },
-    ]},],
-    videos: [
-      { url: 'https://www.youtube.com/embed/wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
-    ] 
+    ]},]
   },
   bloodsdmob: {
     teamDataSets: [
@@ -1127,7 +1124,10 @@ export const teamData = {
         pct: '1%',
         bottext: "Gear: DoUnity, Zhenyi TB Schro M. Highest Score: 813"
       },
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
+    ] 
   },
   villv: {
     teamDataSets: [
