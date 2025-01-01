@@ -212,7 +212,7 @@ function selectTabMobile(event) {
 <!-- Left: Character Image -->
 <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center "  id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/lunar_vow.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-4;"/> 
+  <img src="/images/valkfull/lunar_vow.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-52;"/> 
 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button
