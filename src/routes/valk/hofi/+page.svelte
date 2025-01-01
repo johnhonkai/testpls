@@ -242,15 +242,15 @@ function selectTabMobile(event) {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start">
+<div class="flex flex-col items-center text-center justify-start sm:mt-2">
   <!-- Battlesuit Name -->
 
   <div>
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Finality</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font text-center tracking-wider md:block hidden text-slate-100">Kiana Kaslana | Release Date: v6.4 (16 Feb 2023)  </p>
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">DLC Date: v7.8 (17 Oct 2024)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-1">Kiana Kaslana | Release Date: v6.4 (16 Feb 2023)   </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v7.8 (17 Oct 2024)</p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">

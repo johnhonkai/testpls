@@ -55,9 +55,9 @@ function closeLightbox() {
    { name: 'Gameplay Examples', short: 'example' },
   //{ name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
-  { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+  //{ name: 'Popular Question', short: 'qna' },
+  //{ name: 'Overview Card', short: 'card' },
+  //{ name: 'Translation Error', short: 'translation' },
 ];  
 
 // Function to select a tab and update the URL

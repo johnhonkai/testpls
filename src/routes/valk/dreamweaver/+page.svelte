@@ -434,7 +434,7 @@ function selectTabMobile(event) {
               </p>
             
               <p class="text-sm sm:text-base text-left">
-                <b>Affix:</b> Full ATK.
+                <b>Affix</b> <br/>Ideally, 4 ATK and 2 Crit DMG lines. Full ATK is also fine.
               </p>
             </div>
 

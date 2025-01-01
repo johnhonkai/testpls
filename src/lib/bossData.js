@@ -6,6 +6,8 @@ export const weatherList = {
   fire: [
     {id: 'firemobius', name: 'Mobius'},
     {id: 'firekosma', name: 'Kosma'},
+    {id: 'firetona', name: 'Tonatiuh'},
+
   ],
   ice: [
     {id: 'raven', name: 'Raven'},
@@ -372,7 +374,16 @@ export const bossData = {
     bosspic: "images/Bosses/Mockery_Emperor.webp", 
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
+  firetona: {
+    name: 'Tonatiuh - Sunshade', 
+    mechanics: '', 
+    weakness: 'Phy (L)', 
+    typeicon: "images/type/IconQUA.png", 
+    bosspic: "images/Bosses/Ultra Tonatiuh.webp", 
+    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },
 };
+
 
 export const teamData = {
   lightningsprout: {
@@ -1127,6 +1138,8 @@ export const teamData = {
     ]},],
     videos: [
       { url: 'https://www.youtube.com/embed/wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/uB7S9gjTB-U', abyss: 'RedLotus 502D', uploader: 'Amadeus' },
+      { url: 'https://www.youtube.com/embed/noY1ADbFXHE', abyss: 'Nirvana 539D', uploader: 'Kyoshiro' },
     ] 
   },
   villv: {
@@ -1257,6 +1270,29 @@ export const teamData = {
         rank: '3+',
         pct: '98%',
         bottext: "Highest Score:  S 883, S2 902, SS 913, SS2 915, 9S 918"
+      },
+      
+    ]},]
+  },
+  momemperor: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_sera.png"],
+        rank: '1+',
+        pct: '98%',
+        bottext: "Highest Score: S 839 , S2 874, SS 875, SS2 876, 9S 889"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+        rank: '88',
+        pct: '2%',
+        bottext: "Highest Score:  S2 839"
       },
       
     ]},]
