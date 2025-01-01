@@ -389,7 +389,7 @@ function selectTabMobile(event) {
   </p>
 
   <ul class="list-disc ml-6 text-sm sm:text-base">
-    <li class="m">Nebulous Duality is available in Growth Regimen phase 5. Go get it!</li>
+    <li class="mt-2">Nebulous Duality is available in Growth Regimen phase 5. Go get it!</li>
       <li class="mt-2"> Shattered Swords is available in Exchange Shop, but requires stigma resonance currency, which might take months for new player to farm. </li>
 
   </ul>
