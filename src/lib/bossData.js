@@ -376,7 +376,7 @@ export const bossData = {
   },
   firetona: {
     name: 'Tonatiuh - Sunshade', 
-    mechanics: '', 
+    mechanics: 'Phase 1 has two Qua shield, Phase 2 has three Qua shields. Transition: Hit the blue projectile two times to apply one quantum collapse.', 
     weakness: 'Phy (L)', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Ultra Tonatiuh.webp", 
@@ -1293,6 +1293,29 @@ export const teamData = {
         rank: '88',
         pct: '2%',
         bottext: "Highest Score:  S2 839"
+      },
+      
+    ]},]
+  },
+  firetona: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+        rank: '1+',
+        pct: '99%',
+        bottext: "Highest score: S 850, S2 852, SS 864, 9S 879"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+        rank: '5',
+        pct: '1%',
+        bottext: "Highest score: 9S 865"
       },
       
     ]},]

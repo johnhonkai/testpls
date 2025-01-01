@@ -355,9 +355,8 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Aponia:</strong> Battlesuit Supply, 6 stamps in Elysian Realm shop.</li>
+            <li ><strong>Aponia:</strong> Standard Supply, 6 stamps in Elysian Realm shop.</li>
             <li ><strong>Aponia Equipment:</strong> Focused Supply.</li>
-            <li>Very old valkyrie, so expect her to only be available from events or ADV Supply.</li>
 
         </ul>
         <div class="divider divider-neutral"></div>

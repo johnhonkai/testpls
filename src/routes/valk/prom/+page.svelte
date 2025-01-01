@@ -653,7 +653,7 @@ onMount(async () => {
           </div>
           <div class=" mt-3 rounded" >
             <p class="text-sm sm:text-base text-left">
-                 <b> Decimation 1:</b> Your HP will be very low, but don't worry - you have a super durable shield. BUT, you can still die from Huodou fire pool, so avoid it.
+                 <b> Decimation 1:</b> Your HP will be very low, get Vicissitude 2 for survivability.
             </p>
           </div>
 
@@ -750,7 +750,7 @@ onMount(async () => {
         {#if activePlaystyle === '2'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Shield Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-         Instead of using Combo ATK and Ult to smash, you use shield. Almost equal in strength and speed to standard playstyle.
+         Instead of Ult to smash, you use shield. Almost equal in strength and speed to standard playstyle.
         </p>
 
         <div class="divider divider-neutral"></div>
@@ -821,7 +821,7 @@ onMount(async () => {
           </div>
           <div class=" mt-3 rounded" >
             <p class="text-sm sm:text-base text-left">
-                 <b> Decimation 1:</b> Your HP will be very low, but don't worry - you have a super durable shield. BUT, you can still die from Huodou fire pool, so avoid it.
+              <b> Decimation 1:</b> Your HP will be very low, get Vicissitude 2 for survivability.
             </p>
           </div>
 
@@ -896,6 +896,7 @@ onMount(async () => {
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
             <li>Hold evade button for a bit. Prom will trigger an auto attack, and weapon button will flash.</li>
             <li>Press weapon button to smash.</li>
+            <li>Use Combo ATK, then press weapon to smash.</li>
             <li>Repeat.</li>
           </ol>
 

@@ -15,7 +15,7 @@
     <div class="flex justify-center items-center gap-2"> Version:
     <label class="form-control">
 
-        <select class="select select-bordered select-sm w-full max-w-xs" on:change={changeVersion} bind:value={currentVersion}>
+        <select class="select select-bordered select-sm w-24" on:change={changeVersion} bind:value={currentVersion}>
             
             {#each versions as ver}
                 <option value={ver}>{ver}</option>
