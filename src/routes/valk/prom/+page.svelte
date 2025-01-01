@@ -896,8 +896,9 @@ onMount(async () => {
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
             <li>Hold evade button for a bit. Prom will trigger an auto attack, and weapon button will flash.</li>
             <li>Press weapon button to smash.</li>
-            <li>Use Combo ATK, then press weapon to smash.</li>
+            <li>Use Combo ATK, then press weapon button to smash.</li>
             <li>Repeat.</li>
+            <li>For the final enemy, you can just do another Combo-weapon instead of evading.</li>
           </ol>
 
         <p class="mt-8 text-sm sm:text-base pb-4 text-center">
@@ -907,7 +908,7 @@ onMount(async () => {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/T-qZWI7n86A"
+                src="https://www.youtube.com/embed/Dgruiomxclg"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
