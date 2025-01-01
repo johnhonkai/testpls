@@ -342,8 +342,8 @@ onMount(async () => {
           <p class="text-sm sm:text-base mt-4">
               <strong class="text-amber-400">P1 Lightning Support, Paralyze Applier</strong><br/> 
               Eden provides Lightning DMG buff and can inflict Paralyze trauma. She is highly dependent on her signature weapon Echo of Paradise to function. Currently, her roles are:
-              <br/> - Support for Lunar Vow x SIMP team
-              <br/> - Eden can be used by any team to counter enemies or stages that require paralyze
+              <br/> - Eden has been replaced by <a href="/valk/simp" class="link ">Schicksal's Imperative </a> for most Part 1 teams, but some teams still use Eden,  like Lunar Vow x SIMP team and Herrscher of Origin DPS teams.
+              <br/> - Eden can be used by any team to counter enemies or stages that require paralyze.
 
           </p>
 
@@ -369,7 +369,7 @@ onMount(async () => {
         </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong><br/> Eden is still used in Lunar Vow x SIMP team, and for Memorial Arena
+              <strong class="text-amber-400">Competitive</strong><br/> Eden is still used in some Part 1 teams, like Lunar Vow x SIMP team, HoOrigin DPS team and for Memorial Arena.
           </p>
 
           <div class="divider divider-neutral"></div>
