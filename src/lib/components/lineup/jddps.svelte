@@ -6,6 +6,7 @@
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '98%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '94%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '80%', speed: 'Slow' },

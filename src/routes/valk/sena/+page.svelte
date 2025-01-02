@@ -251,7 +251,7 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Deepspace Anchor: First Light</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Senadina | Release Date: v7.3 (29 Feb 2024)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-3">Senadina | Release Date: v7.3 (29 Feb 2024)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">
@@ -270,7 +270,7 @@ function selectTabMobile(event) {
 
       <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-sm">
         <div class="flex flex-wrap justify-center">
-          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
+          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100 mb-1">SUPPORT FOR:</h2>
         </div >
         <div class="flex flex-row gap-2 flex-wrap justify-center">
           <img src="/images/artype/ar world star.png" alt="Support 2" class="w-auto h-8 md:h-10" />
@@ -363,14 +363,21 @@ function selectTabMobile(event) {
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+          <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">All Players</strong> <br/> As a support, in most teams, Sena's role overlaps with Vita. If you are wondering who to pull between Vita or Sena, here's a general overview of their performance:
-          </p>
+              <strong class="text-amber-400">All Players</strong> 
+              <br/> As a DPS, Sena only top scores Bloodlust swarm boss now.
+            </p>
+
+          <p class="mt-2 text-sm sm:text-base">
+            As a support, Sena's role overlaps with Vita. If you are wondering who to pull between Vita or Sena, here's a general overview of their performance:
+        </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores.</li>
-              <li>For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
-              <li>Future ??? AR team: One of the main reasons to prioritize pulling Vita over Sena is her ability to support future AR teams (Best support for one AR, less effective for the other 9 AR teams).</li>
+              <li class="mt-2">For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores.</li>
+              <li class="mt-2">For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
+              <li class="mt-2">Law of Ascension team: Sena cannot support this team. Vita can support this team, providing Physical and Elemental Breach. </li>
+              <li class="mt-2">Other 9 AR teams: Vita can provide Breach and buffs for the other 9 AR teams, but at a reduced effectiveness. </li>
+
           </ul>
           <p class="mt-2 text-sm sm:text-base">
             Based on the reasons listed above, pulling Sena is not highly recommended anymore.
@@ -382,7 +389,7 @@ function selectTabMobile(event) {
               <li ><strong>Senadina:</strong> Battlesuit Supply</li>
               <li><strong>Senadina's Weapon:</strong> Equipment Supply</li>
               <li><strong>Senadina's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v7.9. Last known supply is v7.8. </li>
+              <li>Not available in v8.0. Last known supply is v7.8. </li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -420,7 +427,7 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
 
 <Jddps firstCharName='Sena'></Jddps>
 

@@ -69,8 +69,11 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li>In 7.8, Senadina DPS is paired with Vita and Thelema against Oblivion weather Homu.</li>
-                <li>Sena's resonance mark has 10 trigger count limit. If both supports trigger resonance mark 6 times (Vita, Thelema, HoFi, Simp, Lantern, Sparkle), you can skip the last 3 resonance trigger attacks if you want to. (For example: Thelema uses Ult and uses the last three resonance attacks during time stop to deal dmg. Normally you don't want to do this because resonance atk won't trigger mark dmg during time stop.)</li>            
+                <li class="text-sm sm:text-base mb-4">Sena DPS's strongest and fastest team is Vita + HoFi. (Data based on 7.9 Bloodlust Swarm boss) , but in Red Lotus abyss where enemies die faster, other supports in the 90%+ range are still very good.</li>
+                <li class="text-sm sm:text-base mb-4"><b>Vita</b> provides Elemental Breach (Ele res reduction) and other strong buffs, gives a significant damage improvement.</li>
+                <li class="text-sm sm:text-base mb-4"><b>HoFi</b> triggers resonance marks very fast and provides good amount of buffs.</li>
+                <li class="text-sm sm:text-base mb-4">In 7.8, Senadina DPS is paired with Vita and Thelema against Oblivion weather Homu.</li>
+                <li class="text-sm sm:text-base">Sena's resonance mark has 10 trigger count limit. If both supports trigger resonance mark 6 times (Vita, Thelema, HoFi, Simp, Lantern, Sparkle), you can skip the last 3 resonance trigger attacks if you want to. (For example: Thelema uses Ult and uses the last three resonance attacks during time stop to deal dmg. Normally you don't want to do this because resonance atk won't trigger mark dmg during time stop.)</li>            
             </p>
         </div>
     </details>

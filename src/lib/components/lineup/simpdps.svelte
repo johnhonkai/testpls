@@ -78,9 +78,12 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base mb-3">Sparkle provides two more Qua collapse, extra TDM +8.5% (S) / 10% (SS2) buff for QUA teammates against QUA enemies. Her ult cd reduction also allows SIMP to use her Ult one more time during Stellar Outburst. For these reasons, Sparkle has become one of the best teammates against Qua enemies like Valralhal and Resonance Vita.</li>
-                <li class="text-sm sm:text-base mb-3">The pairings used in Top 100 are Sparkle + Thelema, and Vita + HoFi (Data based on Resonance Vita). Other pairings are still very good for Red Lotus and Nirvana retention.</li>
-                <li class="text-sm sm:text-base mb-3">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
+                <li class="text-sm sm:text-base mb-4"><b>Sparkle</b> provides two more Qua collapse, extra TDM +8.5% (S) / 10% (SS2) buff for QUA teammates against QUA enemies. Her ult cd reduction also allows SIMP to use her Ult one more time during Stellar Outburst. For these reasons, Sparkle has become one of the best teammates against Qua enemies like Valralhal and Resonance Vita.</li>
+                <li class="text-sm sm:text-base mb-4"><b>Vita</b> provides Elemental Breach (Ele res reduction) and other strong buffs, gives a significant damage improvement.</li>
+                <li class="text-sm sm:text-base mb-4"><b>HoFi</b> triggers resonance marks very fast and provides good amount of buffs.</li>
+                <li class="text-sm sm:text-base mb-4"><b>Senadina</b>  also provides Breach, and when paired with Songque AstralOp, you gain +25 more initial AR. </li>
+                <li class="text-sm sm:text-base mb-4">The pairings used in Top 100 are Sparkle + Thelema, and Vita + HoFi (Data based on Resonance Vita). Other pairings are still very good for Red Lotus and Nirvana retention.</li>
+                <li class="text-sm sm:text-base mb-4">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
                 <li class="text-sm sm:text-base">During Stellar Outburst, Homu mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
             </p>
         </div>

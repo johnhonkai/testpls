@@ -8,8 +8,10 @@
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '96%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '86%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '86%', speed: 'Slow' },
+
     ];
 
     const asopchar = [
@@ -76,9 +78,9 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">At S-rank, Sena support scores higher than Vita. Although Vita provides more buff, the dmg increase is not big enough to beat the score with Sena's zero field time. (Data based on Type Counter Kasumi).</li>
-                <li class="text-sm sm:text-base">At higher ranks and weapon synergy, Sena and Vita scores are close. (Data based on Type Counter Kasumi).</li>
-                <li class="text-sm sm:text-base">Thelema's abilities make her an indispensable support for Lantern. Shieldbreak is a game-changer against Kasumi. Evasion spam AR regen is used on multiple bosses: RPC, Tank, Mobius. 
+                <li class="text-sm sm:text-base mb-4">At S-rank, Sena support scores higher than Vita. Although Vita provides more buff, the dmg increase is not big enough to beat the score with Sena's zero field time. (Data based on Type Counter Kasumi).</li>
+                <li class="text-sm sm:text-base mb-4">At higher ranks and weapon synergy, Sena and Vita scores are close. (Data based on Type Counter Kasumi).</li>
+                <li class="text-sm sm:text-base"><b>Thelema</b>'s abilities make her an indispensable support for Lantern. Shieldbreak is a game-changer against Kasumi. Evasion spam AR regen is used on multiple bosses: RPC, Tank, Mobius. 
                 Thelema herself also contributes damage.</li>
             </p>
         </div>

@@ -8,6 +8,7 @@
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '99%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '93%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%', speed: 'Slow' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '91%', speed: '' },
 

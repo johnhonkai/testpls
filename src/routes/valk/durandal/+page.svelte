@@ -30,6 +30,9 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
   import { goto } from '$app/navigation';
 
 	import Dududps from '$lib/components/lineup/dududps.svelte';
+	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
+	import Jddps from "$lib/components/lineup/jddps.svelte";
+	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -385,8 +388,14 @@ async function increaseLike() {
 
       <Dududps maindps={true}/>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR Support </div>
-      
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <Jddps firstCharName="RS"></Jddps>
+
+      <Lanterndps firstCharName="RS"></Lanterndps>
+
+      <Thelemadps firstCharName="RS"></Thelemadps>
+
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Law of Ascension Support </div>
 
       {/if}
 

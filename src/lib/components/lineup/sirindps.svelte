@@ -68,12 +68,12 @@
         </summary>
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base mb-3">Sparkle provides tons of buffs, and allows Sirin to use <b>TWO ULTIMATES IN ONE ROTATION.</b> At S0 Syn1, Sparkle provides a minimum of <b>34% damage improvement for Sirin, </b> the biggest damage improvement for a new support in Part 1 Team. 
+                <li class="text-sm sm:text-base mb-4">Sparkle provides tons of buffs, and allows Sirin to use <b>TWO ULTIMATES IN ONE ROTATION.</b> At S0 Syn1, Sparkle provides a minimum of <b>34% damage improvement for Sirin, </b> the biggest damage improvement for a new support in Part 1 Team. 
                     <br/>Also faster rotation than Chrono Navi. </li>
                 
-                <li class="text-sm sm:text-base mb-3">Herrscher of Truth is mandatory for Sparkle support because: All Sparkle's big buffs are triggered by Ultimate skill, and it has a long cd. By default, you can only use this once every two rotations. Sparkle only gains ult cd reduction if she casts her Ult while having Elemental Breach state. In Fire teams, Ele Breach state can only be provided by Herrscher of Truth. (Or Azure Empyrea but she's outdated.)</li> 
-                <li class="text-sm sm:text-base mb-3">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
-                <li class="text-sm sm:text-base mb-3">Chrono Navi provides buffs, ignite, sp regen and more.</li>
+                <li class="text-sm sm:text-base mb-4">Herrscher of Truth is mandatory for Sparkle support because: All Sparkle's big buffs are triggered by Ultimate skill, and it has a long cd. By default, you can only use this once every two rotations. Sparkle only gains ult cd reduction if she casts her Ult while having Elemental Breach state. In Fire teams, Ele Breach state can only be provided by Herrscher of Truth. (Or Azure Empyrea but she's outdated.)</li> 
+                <li class="text-sm sm:text-base mb-4">Herrscher of Truth provides Elemental Breach, strong buffs and more.</li>
+                <li class="text-sm sm:text-base mb-4">Chrono Navi provides buffs, ignite, sp regen and more.</li>
             </p>
         </div>
     </details>

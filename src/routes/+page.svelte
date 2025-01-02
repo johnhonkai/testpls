@@ -227,6 +227,11 @@
               </p>
 
               <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
+                <span class="font-bold">HI3NEWYEAR</span><br/>
+                60 crystals
+              </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
                 <span class="font-bold">HonkaixHonkai</span><br/>
                 60 crystals
               </p>
