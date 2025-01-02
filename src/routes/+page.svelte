@@ -239,7 +239,8 @@
 
               <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
                 <span class="font-bold">KIANAGIFT , SPARKLEGIFT , DURANDALGIFT , SONGQUESGIFT</span><br/>
-                300 Asterite, 1 ADV skill mat , 1 stamina potion , 1 Special Outfit coupon
+                300 Asterite, 1 ADV skill mat , 1 stamina potion , 1 Special Outfit coupon<br/>
+                Expire: 00:00 Jan 27 (UTC+8)
               </p>
       
               <div class="flex justify-center mt-5">
