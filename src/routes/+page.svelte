@@ -228,7 +228,7 @@
 
               <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
                 <span class="font-bold">HI3NEWYEAR</span><br/>
-                60 crystals
+                60 crystals<br/>
                 Expire: 00:00 Jan 27 (UTC+8)
               </p>
 
