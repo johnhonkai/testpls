@@ -239,7 +239,7 @@
 
               <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
                 <span class="font-bold">KIANAGIFT , SPARKLEGIFT , DURANDALGIFT , SONGQUESGIFT</span><br/>
-                300 Asterite, 1 ADV skill mat , 1 stamina potion , 1 Special Outfit coupon<br/>
+                Materials<br/>
                 Expire: 00:00 Jan 27 (UTC+8)
               </p>
       
@@ -268,12 +268,12 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=KUcYGq-4Gpc" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=58foeOjLW58" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/KUcYGq-4Gpc/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/58foeOjLW58/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">8.0 Beta News</h3>
-          <p class="text-slate-300 text-base">Reign Solaris Gameplay</p>
+          <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
+          <p class="text-slate-300 text-base">New S-rank Revealed: Boom! Blazing Wishes!</p>
         </div>
       </a>
 
@@ -300,9 +300,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=C3qwGALYccg" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=JMLtbTO3L6E" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/C3qwGALYccg/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/JMLtbTO3L6E/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

@@ -658,7 +658,7 @@ function selectTabMobile(event) {
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
             <li>Spam Ult button until meter is full. </li>
-            <li>hold ATK to perform Charged ATK and activate Astral Harness form.</li>
+            <li>Hold ATK to perform Charged ATK and activate Astral Harness form.</li>
             <li>Spam Ult button until DA launches the finisher kick. </li>
             <li>Repeat.</li>
 

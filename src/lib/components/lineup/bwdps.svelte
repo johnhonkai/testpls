@@ -3,22 +3,21 @@
 
     // Define the data for main characters
     const mainCharacters = [
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  speed: '' },
-        { name: 'BW', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
-
     ];
 
     const asopchar = [
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png',  speed: '' },
-        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', speed: 'Slow' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_kiana.png', speed: 'Slow' },
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', speed: '' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',  speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'RS'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -28,14 +27,14 @@
     let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Reign Solaris DPS</h3>
+<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-rose-950 to-rose-900 shadow-lg shadow-base-100 overflow-hidden">
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">咚！炽愿吉星 DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/dudu.png" alt="SIMP" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/Blazing Wishes.png" alt="SIMP" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
         </div>
 
