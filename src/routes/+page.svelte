@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/mX6zxhQ.png" />
+    <meta property="og:image" content="https://i.imgur.com/ljddJ6v.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 

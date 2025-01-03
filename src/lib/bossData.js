@@ -1163,7 +1163,10 @@ export const teamData = {
         bottext: "Some SIMP use SignatureTB TeslaBand M. Highest Score: S2 760, SS 772, SSS 783"
       },
       
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
+    ] 
   },
   otto: {
     teamDataSets: [
