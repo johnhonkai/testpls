@@ -222,6 +222,12 @@
               </div>
       
               <p class=" text-sm sm:text-base text-slate-100 px-2 ">
+                <span class="font-bold">LITTLEKNIGHT   </span><br/>
+                350 crystals <br/>
+                Expire: Jan 4
+              </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
                 <span class="font-bold">Sparkleimpact3rd , Sparkleplay   </span><br/>
                 Sparkle Trial Card
               </p>
