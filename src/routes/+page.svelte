@@ -227,7 +227,7 @@
                 Expire: Jan 4
               </p>
 
-              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
                 <span class="font-bold">Sparkleimpact3rd , Sparkleplay   </span><br/>
                 Sparkle Trial Card
               </p>
@@ -248,10 +248,7 @@
                 Materials<br/>
                 Expire: 00:00 Jan 27 (UTC+8)
               </p>
-      
-              <div class="flex justify-center mt-5">
-
-            </div>
+              
             </div>
 
     </div>

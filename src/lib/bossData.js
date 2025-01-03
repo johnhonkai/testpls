@@ -382,6 +382,14 @@ export const bossData = {
     bosspic: "images/Bosses/Ultra Tonatiuh.webp", 
     weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
+  aponia: {
+    name: 'Aponia', 
+    mechanics: '', 
+    weakness: '', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Flame-Chaser - Aponia_SSS.webp", 
+    weather: "Dominance:", 
+  },
 };
 
 

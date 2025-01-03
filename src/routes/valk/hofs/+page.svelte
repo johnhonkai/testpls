@@ -355,9 +355,9 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Flamescion:</strong> Battlesuit Supply, 6 stamps in ER Shop.</li>
+            <li ><strong>Flamescion:</strong> Dorm Supply, 6 stamps in ER Shop.</li>
             <li ><strong>Flamescion Equipment:</strong> Focused Supply. There are alternative G3 and G4 stigma in foundry.</li>
-            <li>Very old valkyrie, so expect her to only be available from events or ADV Supply.</li>
+            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
 
         </ul>
         <div class="divider divider-neutral"></div>

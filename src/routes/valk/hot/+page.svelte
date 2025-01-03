@@ -385,9 +385,10 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li ><strong>Herrscher of Thunder:</strong> War Treasury.</li>
+          <li ><strong>Herrscher of Thunder:</strong> War Treasury, Dorm Supply.</li>
             <li ><strong>Seven Thunders:</strong> Battle Pass.</li>
             <li ><strong>G4 Handel:</strong> Forgeable in foundry.</li>
+            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
 
         </ul>
 

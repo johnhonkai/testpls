@@ -399,7 +399,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Sentience:</strong> War Treasury, 6 stamps in ER Shop</li>
+            <li ><strong>Herrscher of Sentience:</strong> War Treasury, Dorm Supply, 6 stamps in ER Shop.</li>
             <li ><strong>Brick, Pericles:</strong> Focused Supply.</li>
             <li ><strong>Nebulous Duality:</strong> Growth Regimen phase 5.</li>
             <li ><strong>Shattered Swords</strong> Exchange Shop.</li>

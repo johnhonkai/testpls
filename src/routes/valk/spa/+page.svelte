@@ -357,10 +357,10 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Spina Astera:</strong> Battlesuit Supply, 6 stamps in Elysian Realm shop.</li>
+            <li ><strong>Spina Astera:</strong> Dorm Supply, 6 stamps in Elysian Realm shop.</li>
             <li ><strong>Astral Divide:</strong> Focused Supply.</li>
             <li ><strong>G4 Ragna / G4 Little Joys:</strong> Foundry.</li>
-            <li>Very old valkyrie, so expect her to only be available from events or ADV Supply.</li>
+            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
 
         </ul>
         <div class="divider divider-neutral"></div>

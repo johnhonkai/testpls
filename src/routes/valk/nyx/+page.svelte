@@ -377,10 +377,9 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Flamescion:</strong> War Treasury.</li>
+            <li ><strong>Starchasm Nyx:</strong> War Treasury, Dorm Supply.</li>
             <li ><strong>G3 Verne:</strong> Foundry.</li>
             <li ><strong>Sanguine Gaze:</strong> Focused Supply.</li>
-
         </ul>
 
     </div>

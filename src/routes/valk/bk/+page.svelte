@@ -385,7 +385,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li ><strong>Bright Knight:</strong> War Treasury.</li>
+          <li ><strong>Bright Knight:</strong> War Treasury, Dorm Supply.</li>
             <li ><strong>Abyss Flower:</strong> Focused Supply.</li>
             <li ><strong>G3 Dante TM, G4 Elysia B:</strong> Forgeable in foundry.</li>
 
