@@ -638,7 +638,7 @@ function selectTabMobile(event) {
             <p class="text-sm sm:text-base text-left">
                <b>SP Regen:</b> You want sp regen signet early to consistently use Ultimate.
                <br/>
-               <b>Decimation 1:</b> Your HP will be very low but you gain a durable shield.
+               <b>Decimation 1:</b> Your HP will be very low, but FT has a durable shield.
             </p>
           </div>
 
@@ -712,7 +712,7 @@ function selectTabMobile(event) {
 
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press weapon ➔ Wait for a split second ➔ Use Ult </li>
+            <li>Press weapon ➔ Wait for like 0.2 second ➔ Use Ult </li>
             <li>Spam ATK button.</li>
             <li>When Ult is available, use Ultimate. You don't have to wait weapon cd to use Ult.</li>
             <li>Repeat.</li>
@@ -727,7 +727,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/p3aA9UZ4VM"
+                src="https://www.youtube.com/embed/Sp3aA9UZ4VM"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

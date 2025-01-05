@@ -374,7 +374,7 @@ function selectTabMobile(event) {
 
     <ul class="list-disc ml-6 text-sm sm:text-base">
 
-        <li class="mt-2"> Seven Thunders is available is Battle Pass. Should you get it? That's debatable, since everything in the BP is really good. </li>
+        <li class="mt-2"> Seven Thunders is available in Battle Pass. Should you get it? That's debatable, since everything in the BP is really good. Pros of getting 7T: Give +10 ATK for all valkyries.</li>
         <li class="mt-2"> G4 Handel is forgeable in Foundry.
         </li>
 
