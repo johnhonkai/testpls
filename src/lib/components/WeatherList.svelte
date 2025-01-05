@@ -27,6 +27,7 @@
     shadow: "Shadow",
     symphony: "Symphony",
     loascension: "Law of Ascension",
+    dominance: "Dominance"
     // Add other weather mappings as needed
   };
 

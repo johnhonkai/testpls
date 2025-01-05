@@ -220,19 +220,10 @@
                 <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
                 <h2 class="text-xl font-bold text-blue-600">ACTIVE CODES</h2>
               </div>
-      
-              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
-                <span class="font-bold">LITTLEKNIGHT   </span><br/>
-                350 crystals <br/>
-                Expire: Jan 4
-              </p>
 
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
-                <span class="font-bold">Sparkleimpact3rd , Sparkleplay   </span><br/>
-                Sparkle Trial Card
-              </p>
 
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2">
                 <span class="font-bold">HI3NEWYEAR</span><br/>
                 60 crystals<br/>
                 Expire: 00:00 Jan 27 (UTC+8)
@@ -249,6 +240,10 @@
                 Expire: 00:00 Jan 27 (UTC+8)
               </p>
               
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5 ">
+                <span class="font-bold">Sparkleimpact3rd , Sparkleplay   </span><br/>
+                Sparkle Trial Card
+              </p>
             </div>
 
     </div>

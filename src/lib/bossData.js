@@ -67,7 +67,7 @@ export const weatherList = {
   physical: [
     {id: 'phyalien', name: 'Alien Guard'},
     {id: 'otto', name: 'Otto Apocalypse'},
-    {id: 'phykevin', name: 'Deliverance Kevin'},
+    {id: 'deliverance', name: 'Bygone Deliverance'},
 
   ],
   shadow: [
@@ -77,8 +77,11 @@ export const weatherList = {
     {id: 'symphellmaru', name: 'Hellmaru'},
   ],
   loascension: [
-    {id: 'momemperor', name: 'Mockery and Ice Emperor'},
-  ]
+    {id: 'momemperor', name: 'Mockery and Frost Emperor'},
+  ],
+  dominance: [
+    {id: 'aponia', name: 'Aponia'},
+  ],
   
 }
 
@@ -348,8 +351,8 @@ export const bossData = {
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },
-  phykevin: {
-    name: 'Deliverance Kevin', 
+  deliverance: {
+    name: 'Bygone Deliverance', 
     mechanics: 'Has 3 phases. Final phase requires you to approach Kevin balls to destroy his hitcount shield.', 
     weakness: 'None', 
     typeicon: "images/type/IconIMG.png", 
@@ -366,7 +369,7 @@ export const bossData = {
     weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
   },
   momemperor: {
-    name: 'Meteor: Mockery and Ice Emperor', 
+    name: 'Meteor: Mockery and Frost Emperor', 
     mechanics: '', 
     weakness: 'Emperor: Ice (H)', 
     debuff: 'Emperor: Fire (L)', 
@@ -384,11 +387,11 @@ export const bossData = {
   },
   aponia: {
     name: 'Aponia', 
-    mechanics: '', 
-    weakness: '', 
+    mechanics: 'Starts with 3 BIO mobs. Aponia has a tanky shield.', 
+    weakness: 'Fire / Ice / Lightning (H)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Flame-Chaser - Aponia_SSS.webp", 
-    weather: "Dominance:", 
+    weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },
 };
 
@@ -1262,7 +1265,7 @@ export const teamData = {
       },
     ]},]
   },
-  phykevin: {
+  deliverance: {
     teamDataSets: [
     {
       tabname: "v8.0 CN",

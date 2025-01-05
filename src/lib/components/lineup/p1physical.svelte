@@ -3,10 +3,10 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  speed: '' },
-        { name: 'HoS', image: '/images/valkportrait/Fu Hua Herrscher of Sentience.png',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
-        { name: 'Prom', image: '/images/valkportrait/Prometheus Terminal Aide.png', teampct: '', speed: '' }
+        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', teampct: '100%', speed: '' },
+        { name: 'HoS', image: '/images/valkportrait/Fu Hua Herrscher of Sentience.png', teampct: '85%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '100%', speed: '' },
+        { name: 'Prom', image: '/images/valkportrait/Prometheus Terminal Aide.png', teampct: '76%', speed: '' }
     ];
 
     const asopchar = [

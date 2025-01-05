@@ -32,8 +32,10 @@ ATK: 416 ,  CRT: 37
 The weapon active's CD, max charges and effects are based on wielder type. If the wielder has Heavenly Shift tag, Physical DMG **+32% (v2) > +25% (v3)**
 
 New Dudu equip bonus:
-- During Star Shift ATK, an additional javelin will be generated each time the QTE button is pressed, max 4. 
-Release ATK to throw all javelins at the same time, deal 150% ATK of Physical DMG each (counts as weapon skill dmg)
+- During Stellar Shift, an additional javelin will be generated each time the QTE button is pressed, max 4. 
+Release ATK to throw all javelins at the same time, deal 150% ATK of Physical DMG each (counts as weapon skill dmg, Star Strafe ATK, and QTE dmg) <br/>
+*Star Strafe ATK: Stellar Shift and Heavenly Link attacks
+
 - When AR is not activated, when [Wild Form] Charged ATK third stage hits, grants the team Physical DMG +36%.
 
 ---
@@ -54,7 +56,8 @@ New Dudu equip bonus: Team Crit DMG **+25% (v2) > 20% (v3)** and Elemental DMG *
 
 **SYNERGY**<br/>
 Enemies take 2 / 4 / 6 % more Total DMG from valks on the field (independent multiplier) (cannot stack).
-New Dudu equip bonus: When Star Shift ATK hits an IMG enemy, the dmg received by Shell is transferred to Seed at 40% / 45% / 50% rate (counts as HP Loss DMG)
+New Dudu equip bonus: When Star Strafe ATK hits an IMG enemy, the dmg received by Shell is transferred to Seed at 40% / 45% / 50% rate (counts as HP Loss DMG)<br/>
+*Star Strafe ATK: Stellar Shift and Heavenly Link attacks
 
 ---
 
