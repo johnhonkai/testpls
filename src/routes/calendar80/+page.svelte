@@ -498,13 +498,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Flame-Chaser - Aponia_SSS.webp" date="Jan 31" weather="Dominance" bosspage="/boss?aponia" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp" date="Feb 3" weather="Ignite" bosspage="/boss?aka" />
+
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/BossesMA/SSS_Kevin.png" date="Feb 4"/>
+                    <BossCard image="/images/BossesMA/Parvati_SSS.webp" />
+                    <BossCard image="/images/Bosses/Alien Guard.webp" />
                 </div>
 
             </div>

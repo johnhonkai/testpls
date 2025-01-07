@@ -16,9 +16,9 @@
     
     <img src={boss.bosspic} alt="{boss.name} Picture" class="w-40 sm:w-60 h-auto object-cover sm:min-w-60  " />
     
-      <div class="flex items-center justify-center gap-2 mb-0">
-        <img src={boss.typeicon} alt="Boss Type Icon" class="w-6 h-6 sm:w-9 sm:h-9 mb-1" />
-        <h2 class="text-md md:text-xl text-center text-white custom-font tracking-wider ">{boss.name}</h2>
+      <div class="flex items-center justify-center gap-2 mb-0 mx-1">
+        <img src={boss.typeicon} alt="Boss Type Icon" class="w-6 h-6 lg:w-9 lg:h-9 mb-1" />
+        <h2 class="text-md lg:text-xl text-center text-white custom-font tracking-wider ">{boss.name}</h2>
       </div>
   </div>
 

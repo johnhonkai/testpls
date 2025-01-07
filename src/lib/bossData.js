@@ -56,7 +56,9 @@ export const weatherList = {
 
   ],
   ignite: [
-    {id: 'ignitehov', name: 'Herrscher of the Void'}
+    {id: 'ignitehov', name: 'Herrscher of the Void'},
+    {id: 'aka', name: 'Argent Knight: Artemis'},
+
   ],
   resonance: [
     {id: 'resovita', name: "Vita - Sea's Depths"}
@@ -392,6 +394,15 @@ export const bossData = {
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Flame-Chaser - Aponia_SSS.webp", 
     weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+  },
+  aka: {
+    name: 'Argent Knight: Artemis', 
+    mechanics: 'Starts with a BIO mob. AKA takes less damage while she is attacking, effect is disabled during time fracture. AKA has huge ignite trauma. When AKA is ignited, enter weakened state for 18 seconds, where she takes increased fire damage and most armor effects are disabled.', 
+    weakness: 'Physical / Lightning (M) , Ice (H)', 
+    debuff: 'Fire (M)',
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Argent Knight Artemis (AKA).webp", 
+    weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
   },
 };
 
@@ -1169,6 +1180,9 @@ export const teamData = {
     ]},],
     videos: [
       { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/cz6VOeE-slU', abyss: 'Nirvana 540D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/embed/pGHifau9Gk0', abyss: 'Nirvana 540D', uploader: 'phylynxbelt' },
+
     ] 
   },
   otto: {
