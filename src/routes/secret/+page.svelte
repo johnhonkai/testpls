@@ -6,100 +6,24 @@
     
 </script>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-3 rounded-xl shadow-lg space-y-4 my-10 text-white">
-    <!-- Title -->
-    <div class="text-center">
-      <h2 class="text-2xl font-semibold mb-2 text-amber-400">AR Charging - First Rotation</h2>
-    </div>
-  
-    <!-- Row 1 -->
-    <div class="flex items-center bg-slate-800 p-4 rounded-lg shadow-sm ">
-      <img
-        src="images/valkportrait/Vita Lone Planetfarer.png"
-        alt="Avatar"
-        class="h-14 w-14 rounded-full mr-4 border border-gray-700"
-      />
-      <div>
-        <p class="text-lg font-medium">Press Ult to enter Planet Quaker Form</p>
-        <p class="text-gray-400 text-sm">Before boss spawns</p>
-      </div>
-    </div>
-  
-    <!-- Row 2 -->
-    <div class="flex items-center bg-slate-800 p-4 rounded-lg shadow-sm ">
-      <img
-        src="images/valkportrait/Kiana Herrscher of Finality.png"
-        alt="Avatar"
-        class="h-14 w-14 rounded-full mr-4 border border-gray-700"
-      />
-      <div>
-        <p class="text-lg font-medium">Weapon</p>
-        <p class="text-gray-400 text-sm">When boss spawns</p>
-      </div>
-    </div>
-  
-    <!-- Row 3 -->
-    <div class="flex items-center bg-slate-800 p-4 rounded-lg shadow-sm ">
-      <img
-        src="images/valkportrait/Vita Lone Planetfarer.png"
-        alt="Avatar"
-        class="h-14 w-14 rounded-full mr-4 border border-gray-700"
-      />
-      <div>
-        <p class="text-lg font-medium">
-          QTE + Weapon Auto-cast ➔ Basic ATK until full meter ➔ Combo ATK ➔ Ultimate
-        </p>
-      </div>
-    </div>
-  
-    <!-- Row 4 -->
-    <div class="flex items-center bg-slate-800 p-4 rounded-lg shadow-sm ">
-      <img
-        src="images/valkportrait/sparkle.png"
-        alt="Avatar"
-        class="h-14 w-14 rounded-full mr-4 border border-gray-700"
-      />
-      <div>
-        <p class="text-lg font-medium">
-          QTE ➔ Ultimate ➔ Weapon (I am Elation) ➔ Combo ATK ➔ Basic ATK until full meter ➔ Combo ATK ➔ Weapon (I am Elation)
-        </p>
-        <p class="text-gray-400 text-sm">Note: Ultimate is flexible, you can use it whenever suitable</p>
-      </div>
-    </div>
-  </div>
 
 <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
     <div class="text-center">
-        <h2 class="text-xl font-semibold mb-4 text-amber-400">AR Charging - First Rotation</h2>
+        <h2 class="text-xl font-semibold mb-4 text-amber-400">Rotation Opener</h2>
       </div>
     <!-- Row 1 -->
     <div class="flex items-center bg-slate-800 p-3 rounded-lg">
       <img
-        src="images/valkportrait/Vita Lone Planetfarer.png"
+        src="images/valkportrait/dudu.png"
         alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
-        <p class="text-white  text-base">Press Ult to enter Planet Quaker Form</p>
-        <p class="text-gray-300 text-sm">Before boss spawns</p>
+        <p class="text-white  text-base">Press weapon to enter Skyrider form</p>
       </div>
     </div>
   
-    <!-- Row 2 -->
     <div class="flex items-center bg-slate-700 p-3 rounded-lg">
-      <img
-      src="images/valkportrait/Kiana Herrscher of Finality.png"
-      alt="Avatar"
-        class="h-12 w-12 rounded-full mr-4"
-      />
-      <div>
-        <p class="text-white  text-base">Weapon</p>
-        <p class="text-gray-300 text-sm">When boss spawns and Vita's switch cd is over</p>
-      </div>
-    </div>
-  
-    <!-- Row 3 -->
-    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
       <img
       src="images/valkportrait/Vita Lone Planetfarer.png"
       alt="Avatar"
@@ -107,28 +31,162 @@
       />
       <div>
         <p class="text-white  text-base">
-          QTE + Weapon Auto-cast ➔ Basic ATK until full meter ➔ Combo ATK ➔ Ultimate
+          Press Ult to enter Planet Quaker form ➔ Weapon ➔ Basic ATK until full meter ➔ Combo ATK ➔ Ultimate
         </p>
       </div>
     </div>
   
-    <!-- Row 4 -->
-    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
-      <img
-      src="images/valkportrait/sparkle.png"
-      alt="Avatar"
-        class="h-12 w-12 rounded-full mr-4"
-      />
-      <div>
-        <p class="text-white text-base">
-          QTE ➔ Ultimate ➔ Weapon (I am Elation) ➔ Combo ATK ➔ Basic ATK until full meter ➔ Combo ATK ➔ Weapon (I am Elation)
-        </p>
-        <p class="text-gray-300 text-sm">Note: Ultimate is flexible, you can use it whenever suitable</p>
+        <!-- Row 4 -->
+        <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+          <img
+          src="images/valkportrait/sparkle.png"
+          alt="Avatar"
+            class="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <p class="text-white text-base">
+              QTE ➔ Weapon ➔ Combo ATK ➔ Ultimate 
+            </p>
+            <p class="text-gray-300 text-sm">SS-rank Sparkle can skip Combo ATK</p>
+    
+          </div>
+        </div>
 
-      </div>
-    </div>
+
   </div>
   
+  <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
+    
+    <div class="text-center">
+        <h2 class="text-xl font-semibold mb-4 text-amber-400">Rotation Flow</h2>
+      </div>
+    <!-- Row 1 -->
+
+      <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/dudu.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">QTE ➔ Ultimate ➔ Charged ATK ➔ Charged ATK EX</p>
+        </div>
+      </div>
+
+    <!-- Row 2 -->
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/sparkle.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white text-base">
+            QTE ➔ Weapon ➔ Combo ATK ➔ Ultimate (if available)
+          </p>
+  
+        </div>
+      </div>
+    <!-- Row 3 -->
+
+      <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/dudu.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">QTE ➔ Charged ATK ➔ Charged ATK EX ➔ Weapon ➔ Charged ATK ➔ Charged ATK EX</p>
+        </div>
+      </div>
+
+    <!-- Row 4 -->
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/Vita Lone Planetfarer.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">QTE ➔ Press Ult to enter Planet Quaker form ➔ Basic ATK until full meter ➔ Ultimate (if available)</p>
+        </div>
+      </div>
+  
+  </div>
+
+  <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
+    
+    <div class="text-center">
+        <h2 class="text-xl font-semibold mb-4 text-amber-400">Stellar Shift Rotation</h2>
+      </div>
+
+      <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/unknownchar.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">Any character activates Stellar Outburst</p>
+        </div>
+      </div>
+
+    <!-- Row 1 -->
+
+      <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/dudu.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">Stellar Shift ➔ Press ATK 4 times ➔ Ultimate (if available) ➔ Charged ATK x3 ➔ Charged ATK EX</p>
+        </div>
+      </div>
+
+    <!-- Row 2 -->
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/sparkle.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white text-base">
+            Stellar Shift ➔ Weapon ➔ Combo ATK ➔ Ultimate (if available)
+          </p>
+  
+        </div>
+      </div>
+    <!-- Row 3 -->
+
+      <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/dudu.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">QTE ➔ Charged ATK ➔ Weapon ➔ Charged ATK ➔ Charged ATK EX
+            <br/>
+            Use Ultimate whenever available
+          </p>
+        </div>
+      </div>
+
+    <!-- Row 4 -->
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/Vita Lone Planetfarer.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">Stellar Shift ➔ Spam ATK until finisher move ➔ Ultimate (if available) </p>
+        </div>
+      </div>
+  
+  </div>
 
   <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
     

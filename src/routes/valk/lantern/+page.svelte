@@ -962,7 +962,7 @@ function selectTabMobile(event) {
                 <td>
                   Self Fire DMG +9% ➔ 16%. When AR: World Star is active, enemies take 3.5% ➔ 5% more Elemental DMG.
                 </td>
-                <td class="p-3">1. DPS<br>2. World Star Support</td>
+                <td class="p-3">DPS<br>World Star Support</td>
               </tr>
               <!-- Sample Row 2 -->
               <tr>
@@ -971,15 +971,15 @@ function selectTabMobile(event) {
                   UNLOCK: During Combo ATK, rocket launcher fires cluster bombs, deal additional 8x75% ATK of Fire DMG, counts as Combo ATK.
 
                 </td>
-                <td>1. DPS<br/>2. Hitcount</td>
+                <td>DPS<br/>Hitcount</td>
               </tr>
               <tr>
                 <td>S3</td>
                 <td>
                   Leader Skill:<br/>
-                  Team Shadow Star ATK gain Total DMG +18% ➔ 22%<br/>
-                  During AR Charging: Valk on the field gain Fire DMG +16% ➔ 20%<br/>
-                  During Stellar Outburst, enemies take 12% ➔ 15% more Fire DMG from valks on the field (independent multiplier)
+                  - Team Shadow Star ATK gain Total DMG +18% ➔ 22%<br/>
+                  - During AR Charging: Valk on the field gain Fire DMG +16% ➔ 20%<br/>
+                  - During Stellar Outburst, enemies take 12% ➔ 15% more Fire DMG from valks on the field (independent multiplier)
 
                 </td>
                 <td>DPS</td>
@@ -989,7 +989,7 @@ function selectTabMobile(event) {
                 <td>
                   UNLOCK: Self Combo ATK +20%. When you have Fire Shower buff, other teammates gain Total DMG +10%
                 </td>
-                <td>1. DPS <br/>2. Support</td>
+                <td>DPS <br/>Support</td>
               </tr>
               <tr>
                 <td>SS1</td>
@@ -998,7 +998,7 @@ function selectTabMobile(event) {
                   During Stellar Outburst: Valks with AR Wheel of Destiny gain Total DMG +15% ➔ 18%
 
                 </td>
-                <td>1. DPS <br/>2. WoD Support</td>
+                <td>DPS <br/>WoD Support</td>
               </tr>
               <tr>
                 <td>SS2</td>
@@ -1011,16 +1011,16 @@ function selectTabMobile(event) {
                 <td>SS3</td>
                 <td>
                   Leader Skill:<br/>
-                  Team Shadow Star ATK gain Total DMG +22% ➔ 26%<br/>
-                  During AR Charging: Valk on the field gain Fire DMG +20% ➔ 24%<br/>
-                  During Stellar Outburst, enemies take 15% ➔ 18% more Fire DMG from valks on the field (independent multiplier)               
+                  - Team Shadow Star ATK gain Total DMG +22% ➔ 26%<br/>
+                  - During AR Charging: Valk on the field gain Fire DMG +20% ➔ 24%<br/>
+                  - During Stellar Outburst, enemies take 15% ➔ 18% more Fire DMG from valks on the field (independent multiplier)               
                 </td>
                 <td>DPS
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  1. UNLOCK: Non-ultimate evasion on the ground also triggers evasion skill. CD: 1<br/>
+                  1. UNLOCK: Non-ultimate evasion on the ground also triggers evasion skill<br/>
                   2. When you use QTE or Firepower Rotation Attack, gain No Bullet Wasted buff, Self Fire DMG +26% ➔ 35%
                 </td>
                 <td>DPS

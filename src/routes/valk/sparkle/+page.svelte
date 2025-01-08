@@ -206,7 +206,7 @@ function selectTabMobile(event) {
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 md:mt-4 mt-0 pt-8	sm:pt-0">
 <div class="absolute   top-[-3.5rem] w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/wave_sparkle2.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden "  /> 
 </div>
@@ -604,6 +604,16 @@ function selectTabMobile(event) {
           alt="Buff 1"
           class=" object-cover cursor-pointer"
           on:click={() => openLightbox('/images/valkbuff/buff_sparkle.webp')}
+        />
+      </div>
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Sparkle%20Buff%20LoA.webp"
+          alt="Buff 2"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Sparkle%20Buff%20LoA.webp')}
         />
       </div>
 

@@ -525,16 +525,16 @@ function selectTabMobile(event) {
         <div class="flex flex-wrap gap-4 mt-8">
           <!-- Example image list for support buffs; add your own image sources -->
           <img
-            src="/images/valkbuff/buffs_vita1.png"
+            src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/vita%20buff%20edit.webp"
             alt="Buff 1"
             class=" object-cover cursor-pointer"
-            on:click={() => openLightbox('/images/valkbuff/buffs_vita1.png')}
+            on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/vita%20buff%20edit.webp')}
           />
           <img
-            src="/images/valkbuff/buffs_vita2.png"
+            src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/LP%20BUFF%202edit.webp"
             alt="Buff 2"
             class="object-cover cursor-pointer"
-            on:click={() => openLightbox('/images/valkbuff/buffs_vita2.png')}
+            on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/LP%20BUFF%202edit.webp')}
           />
           <!-- Add more images as needed -->
         </div>
@@ -1395,11 +1395,66 @@ function selectTabMobile(event) {
 
         {#if selectedTab === 'Translation Error'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
-
-        <div class="text-center my-4">
-          <p class="text-center text-sm sm:text-base">No known translation error
+        <div>
+          <div class="flex flex-col justify-center items-center">
+              
+            <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+    
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                    <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/09/06/50494840/2841a5bbda40fdb327b1d584d4472561_6166052678851258594.png?x-oss-process=image/quality,q_75/resize,s_120" alt="lv" class="w-full h-full object-cover">
+                </div>
+    
+            </div>  
+            <p class="text-sm sm:text-base text-white">Skyveil Feathers</p>
+    
+        </div>
+    
+        <div class="text-center my-4 rounded bg-gray-700">
+          <p class="text-left text-sm sm:text-base px-2 py-3">
+            <b>In-Game Text:</b><br/>
+            Enemies take 2% more Total DMG from the character on the field (exclusive).
           </p>
         </div>
+    
+        <div class="text-center my-4 rounded bg-cyan-700">
+          <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
+            <b>Correct Translation:</b><br/>
+            Enemies take 2% more Total DMG from the character on the field <b>(independent multiplier)</b> (exclusive).
+          </p>
+        </div>
+        </div>
+        <div class="divider divider-neutral"></div>
+
+        <div>
+          <div class="flex flex-col justify-center items-center">
+              
+            <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+    
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/09/06/50494840/7b4f3543ddead5167234273daed47246_5756606972921277661.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                </div>
+    
+            </div>  
+            <p class="text-sm sm:text-base text-white">Vita: Lone Planetfarer (T)</p>
+    
+        </div>
+    
+        <div class="text-center my-4 rounded bg-gray-700">
+          <p class="text-left text-sm sm:text-base px-2 py-3">
+            <b>In-Game Text:</b><br/>
+            When Lone Planetfarer has I Love Everyone!, enemies take 30% more Lightning DMG from their attacks.  
+          </p>
+        </div>
+    
+        <div class="text-center my-4 rounded bg-cyan-700">
+          <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
+            <b>Correct Translation:</b><br/>
+            When Lone Planetfarer has I Love Everyone!, enemies take 30% more Lightning DMG from <b>her own</b> attacks.  <br/>
+            (Only affects damage from LP herself).
+          </p>
+        </div>
+        </div>
+
         {/if}
 
 

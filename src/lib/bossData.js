@@ -1348,4 +1348,45 @@ export const teamData = {
       
     ]},]
   },
+
+  aponia: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 537 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Hare Dreamweaver.png", "images/valkportrait/dudu.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_bunny.png"],
+        rank: '1+',
+        pct: '99%',
+        bottext: "Highest score: S1 726, SS 747, SS2 773, SS3 780, 9S 808"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Hare Dreamweaver.png", "images/valkportrait/dudu.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '99',
+        pct: '1%',
+        bottext: "Highest score: 701"
+      },
+      
+    ]},]
+  },
+
+  aka: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 534 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Sirin Miracle Magical Girl.png", "images/valkportrait/sparkle.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '1+',
+        pct: '100%',
+        bottext: "Highest score: 868"
+      },
+      
+    ]},]
+  },
 }

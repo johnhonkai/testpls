@@ -476,10 +476,10 @@ function selectTabMobile(event) {
       <div class="flex flex-wrap gap-4 my-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="/images/valkbuff/buffs_jd.png"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/JD%20BUFF.webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('/images/valkbuff/buffs_jd.png')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/JD%20BUFF.webp')}
         />
       </div>
 
@@ -895,8 +895,13 @@ function selectTabMobile(event) {
           <!-- Support Upgrade Box -->
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
-            SS2: Enemies take 5.5% ➔ 7% more Ele and Phy DMG from WoD valks
-
+            
+            <ul class=" text-slate-100 text-base">
+              <li>SS2: Enemies take 5.5% ➔ 7% more Ele and Phy DMG from WoD valks.
+              </li>
+              <li>SSS: QTE TDM +18%. Good for Law of Ascension team.
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -987,7 +992,7 @@ function selectTabMobile(event) {
                   2. Team QTE gain Total DMG +18%.<br/>
                   3. When WoD is active: After using Ult, you gain AR meter equal to 5% of sp consumed by Ult. When Jovial Deception is the leader, restore additional 3% of AR meter. Max 12 points of AR meter can be recovered from one Ult. In SO: Ult CD -3 seconds.
                 </td>
-                <td>DPS
+                <td>1. DPS<br/>2. LoA Support
               </tr>
             </tbody>
           </table>
@@ -1107,7 +1112,7 @@ function selectTabMobile(event) {
             <p>	1. Max limit of Ult's additional Physical DMG is increased to 1300% (max 153 sp for max dmg).<br/>
               2. Team QTE gain Total DMG +18%. <br/>
               3. When WoD is active: After using Ult, you gain AR meter equal to 5% of sp consumed by Ult. When Jovial Deception is the leader, restore additional 3% of AR meter. Max 12 points of AR meter can be recovered from one Ult. In SO: Ult CD -3 seconds.
-            <p class="mt-2"><strong>Good for:</strong> DPS
+            <p class="mt-2"><strong>Good for:</strong> DPS, Law of Ascension support.
             </p>
           </div>
         </div>
@@ -1355,10 +1360,7 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Translation Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
 
-      <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base">No known translation error
-        </p>
-      </div>
+
       {/if}
 
 
