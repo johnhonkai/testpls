@@ -107,32 +107,13 @@
             description: "Complete 4 out of 5 event missions in 7.9 to get free Herrscher of Human: Ego<li>Login</li><li>Clear phase 3 HI3xHSR Collab</li><li>Clear P2 Chapter 6</li><li>Clear the main stages of Ai-chan Cafe event</li><li>Clear 9 stages of Dual Core event</li>",
             image: "https://i.imgur.com/YGirdES.png"
         },
-        "FoV": {
-            title: "Battlesuit Supply: Fenghuang of Vicissitude",
-            description: '<li>Duration: 1 week</li><li>Midnight Absinthe (UP), Shadow Dash, Luna Kindred, Valkyrie Accipiter</li>',
-            image: 'https://i.imgur.com/ejZ4Adp.png'
-        },
-        "OutfitBox": {
-            title: "OUTFIT SUPPLY BOX",
-            description: '<li>Duration: 1 week</li><li>7680 crystal max to get outfit box + all rewards.</li><li>Choose one outfit: Herrscher of the Void Frigid Empress, Celestial Hymn Empyrean Psalms, Argent Knight Bride, or ADV Outfit Tickets x100</li>',
-            image: 'https://i.imgur.com/DSr04fZ.jpeg'
-        },
-        "Crane": {
-            title: "Outfit Supply: Crane of Taixuan for Fenghuang of Vicissitude",
-            description: '<li>Duration: 2 weeks</li><li>9600 crystal to get outfit and all rewards.</li><li>S-rank selector: Choose HoThunder card / Bright Knight card / Phoenix card / HoThunder stamps x10 / Bright Knight stamps x5 / Phoenix stamps x5</li>',
-            image: 'https://i.imgur.com/6ilLhQ7.png'
-        },
-        "ToEons": {
-            title: "Focused Supply A",
-            description: "<li>Duration: 1 week</li><li>UP: Torch of Eons, Fu Hua OD</li><li>Weapon: Torch of Eons (UP), Echo of Paradise, KoAscension, Anchor of the Voyage, Pandora 18, Life Harvester, Lost Conviction</li><li>Stigma: Fu Hua OD (UP), Little Joys, Elysia Pristine, Cecilia Youth, Raiden Mei",
-            image: 'https://i.imgur.com/2u8A8ol.png'
-
+        "ADV": {
+            title: "ADV Supply: Fenghuang of Vicissitude",
+            description: '<li>Duration: 2 weeks</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 100 pulls.</li><li>You also get one FoV stamp (10 frags) every 10 pulls, until 100 pulls. (Total 10 stamps = 100 frags)</li>'
         },
         "Rebate": {
             title: "REBATE FOCUSED SUPPLY",
-            description: "<li>Duration: 2 weeks</li><li>UP: Bloodied Casket, Sweet Dreams</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Bloodied Casket (UP), Key of Ascension, Anchor of the Voyage, Torch of Eons, Life Harvester, Lost Conviction</li><li>Stigma: Sweet Dreams (UP), Aladdin, Alexandra, Dr Mei, Little Joys</li>",
-            image: 'https://i.imgur.com/fiqaN0f.png'
-
+            description: "<li>Duration: 2 weeks</li><li>UP: Torch of Eons, Fu Hua OD</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Torch of Eons (UP), Star Dance, Bloodied Casket, Pandora 18, Life Harvester, Rudder in Dream</li><li>Stigma: Fu Hua OD (UP), Cecilia Youth, Van Gogh, Elysia Pristine, Little Joys</li>",
         },
     };
 
@@ -200,6 +181,12 @@
                         </div>
                     </div>    
 
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Deepspace Anchor</span>
+   
+                    </div>    
+
                 </div>
 
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
@@ -215,12 +202,18 @@
                             <img src="https://i.imgur.com/N91w2u4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>     
-            
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Deepspace Anchor Equipment</span>
+   
+                    </div>    
                 </div>
 
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+
+                        <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div> 
                     <div></div>  
                     <div></div>                   
@@ -263,7 +256,39 @@
                     </div>     
             
                 </div>
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ADV SUPPLY</span>
+                    </div>                    
+                    <div></div>  
+                    <div></div>   
+                    <div></div>
+                    <div></div>     
+                    <div on:click={() => openModal("ADV")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Fenghuang of Vicissitude</span>
+   
+                    </div>    
+                </div>
 
+                <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+
+                        <span class="font-bold0">REBATE FOCUSED SUPPLY</span>
+                    </div> 
+                    <div></div>  
+                    <div></div>   
+                    <div></div>
+                    <div></div>                
+                    <div on:click={() => openModal("Rebate")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Torch of Eons <br/> FuHua OD</span>
+
+                    </div>    
+
+                </div>
 
                 <div class="relative grid grid-cols-7 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
@@ -408,6 +433,41 @@
 
             </div>
 
+
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 7</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Hot on the Trail</span>
+
+                </div>
+
+            </div>
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 8</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Web Event: Memories of the Moon Sea</span>
+
+                </div>
+
+            </div>
 
         </div>
     </div>
