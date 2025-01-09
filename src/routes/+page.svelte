@@ -256,13 +256,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
       <!-- News Item Template -->
-      <a href="/valk/sparkle" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news1">
+      <a href="/valk/durandal" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news1">
 
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/news1.webp" alt="First Article Image" class="w-full h-48 object-cover" >
+        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/guide%20thumb%20copy.webp" alt="First Article Image" class="w-full h-48 object-cover" >
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">New Battlesuit</h3>
-          <p class="text-slate-300 text-base">Sparkle - Thousand-Faced Maestro: Cameo!</p>
+          <p class="text-slate-300 text-base">Durandal - Reign Solaris</p>
         </div>
       </a>
 

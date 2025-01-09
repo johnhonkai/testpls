@@ -74,8 +74,8 @@
             <p class="text-sm sm:text-base">
                 <li class="text-sm sm:text-base mb-3">Herrscher of Rebirth: Provides impair (DEF -75%), increases Crit Rate to 100%, Crit DMG, sp regen and more</li>
                 <li class="text-sm sm:text-base mb-3">Herrscher of Sentience: Provides impair (DEF -75%)</li>
-                <li class="text-sm sm:text-base mb-3">Reign Solaris / Terminal Aide: Provides huge dmg buff and shieldbreak</li>
-                <li class="text-sm sm:text-base mb-3">When using Part 2 valkyries as DPS (Jovial Deception, Reign Solaris) in Part 1 team, make sure they are not the leader so Astral Ring is not activated.</li>
+                <li class="text-sm sm:text-base mb-3">Reign Solaris: Provides ~30% more damage than Terminal Aide. Also provides shieldbreak and stun trauma.</li>
+                <li class="text-sm sm:text-base mb-3">Terminal Aide: Provides huge dmg buff, shieldbreak and stun trauma.</li>
             </p>
         </div>
     </details>

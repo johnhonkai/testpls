@@ -3,22 +3,23 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },
         { name: 'BW', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
 
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png',  speed: '' },
-        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', speed: 'Slow' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  speed: 'Slow' }
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '97%', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '92%', speed: 'Slow' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' }
+
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'Sparkle'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -72,10 +73,24 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Placeholder</li>
 
-            </p>
+                <p class="text-sm sm:text-base mb-4">In v8.0, the best supports for Reign Solaris are Sparkle and Jovial Deception. Vita only starts beating other supports at really high rank (SSS) , but Vita is still a great option.</p>
+                <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
+                    Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.</p>
+                <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
+                     - Counters SD enemies (trigger sd critical point, gathers sd remnant). In v8.0, there will be a new Abyss stage with SD boss.
+                     <br/>
+                     - In Physical weather Abyss, JD will also get buffed by weather effect.
+                </p>          
+                <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, including Elemental Breach and Physical Breach.
+                    <br/>
+                    - Has a slightly longer on-field time than other supports.
+                </p>          
+
+                <p class="text-sm sm:text-base"><b>AstralOp</b><br/> - Currently, there is no dedicated Astral Op for Law of Ascension.
+                    <br/>
+                    - Sera provides initial AR, 18% Phy Taken and 18% Crit DMG.
+                </p> 
         </div>
     </details>
 </div>
