@@ -34,6 +34,9 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
+	import Hofidps from '$lib/components/lineup/hofidps.svelte';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -370,7 +373,7 @@ function selectTabMobile(event) {
         </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>Highly recommended. If you can afford it, get S2-rank for a major upgrade in rotation and damage.
+              <strong class="text-amber-400">Competitive</strong> <br/>Recommended. If you can afford it, get S2-rank for a major upgrade in rotation and damage.
           </p>
 
 
@@ -383,7 +386,7 @@ function selectTabMobile(event) {
               <li ><strong>Thelema:</strong> Battlesuit Supply</li>
               <li><strong>Thelema's Weapon:</strong> Equipment Supply</li>
               <li><strong>Thelema's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v7.9. Last known supply is v7.8. </li>
+              <li>Not available in v8.0. High chance of returning in v8.1 spending event. </li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -412,14 +415,27 @@ function selectTabMobile(event) {
   <section class="max-w-screen-lg mx-auto ">
 
 
-
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
 
       {#if currentPage === 1}
-      <!-- Category 1: Vita DPS -->
 
       <ThelDPS maindps={true}/>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName="Thelema"></Hohdps>
+
+      <div class="divider divider-neutral"></div>
+
 
       <JDDPS firstCharName="Thelema" />
 
@@ -434,8 +450,12 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> World Star Support </div>
       
+      <Sparkledps firstCharName="Thelema" ></Sparkledps>
+      
+      <div class="divider divider-neutral"></div>
+
       <SimpDPS firstCharName="Thelema"/>
 
       <div class="divider divider-neutral"></div>
@@ -494,7 +514,7 @@ function selectTabMobile(event) {
 
               <div class="p-2 mt-2 bg-gradient-to-r from-cyan-950/75 to-cyan-900/75 rounded" >
               <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base"><b>Banquet Rose:</b> Has two broken utilities: - 3 second timestop after ult, and evasion gives 2 AR meter.</li>
+                  <li class="text-sm sm:text-base"><b>Banquet Rose:</b> Has two important utilities: 3 second timestop after ult, and evasion gives 2 AR meter.</li>
                   <li class="text-sm sm:text-base"><b>Splendor of Ambers: </b> All buffs. </li>
                   <li class="text-sm sm:text-base"><b>Affix: </b> Full ATK.</li>
               </p>

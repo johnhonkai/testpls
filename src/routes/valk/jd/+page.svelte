@@ -29,6 +29,8 @@ import ThelDPS from '$lib/components/lineup/thelemadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
 	import Dududps from '$lib/components/lineup/dududps.svelte';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
+	import Badumdps from '$lib/components/lineup/badumdps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -90,7 +92,7 @@ let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
 
 // Calculate total pages based on the number of items
-$: totalItems = 3; // Total categories or groups in the lineup section
+$: totalItems = 2; // Total categories or groups in the lineup section
 $: totalPages = Math.ceil(totalItems / itemsPerPage);
 
 // Function to change pages
@@ -354,19 +356,29 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Future ??? AR Support</strong> <br/>Jovial Deception will be a support for one AR team in the future.
+            <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Jovial Deception is one of the best supports for Reign Solaris.
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players</strong><br/> JD is not a priority, but recommended to get since she can cover the annoying Physical and PhyShield weather. She will also be a support for a future AR team.
+              <strong class="text-amber-400">F2P Players</strong><br/> JD is good, but not a priority.
+              
           </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong><br/> The instant SD explosion is huge, and JD is also not bad as a Physical / Ranged valk, and topscores Ranged Kalpas. In addition, she will also be the uncontested best support for a future AR team, at least until another S-rank support is added for that AR.
-          </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">If you don't have any other Part 2 Physical valk, JD can cover the annoying Physical and PhyShield weather.  </li>
+            <li class="mt-2">If you still plan to get her, at least make sure she can synergize with your existing characters.</li>
+        </ul>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong><br/> JD is good, but her value for your account varies. Everyone's account is different. 
+          </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">The instant SD explosion is huge against SD bosses.</li>
+            <li class="mt-2">JD is okay as a Physical / Ranged valk, topscores Ranged Kalpas.</li>
+            <li class="mt-2">For Law of Ascension team, JD is currently one of the best supports for Reign Solaris.</li>
+        </ul>
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
@@ -374,7 +386,7 @@ function selectTabMobile(event) {
               <li ><strong>JD:</strong> Battlesuit Supply</li>
               <li><strong>JD's Weapon:</strong> Equipment Supply</li>
               <li><strong>JD's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Available in 7.9.</li>
+              <li>Not available in v8.0. High chance of returning in v8.1 spending event. </li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -402,11 +414,26 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
 
+    {#if currentPage === 1}
 
       <JDDPS maindps={true}/>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName='JD' ></Hohdps>
+
+      <div class="divider divider-neutral"></div>
 
       <LanternDPS firstCharName='JD' />
 
@@ -415,10 +442,32 @@ function selectTabMobile(event) {
 
       <ThelDPS firstCharName='JD'/>
 
+      {/if}
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
+      {#if currentPage === 2}
+
+
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Law of Ascension Support </div>
+
+      <Badumdps firstCharName='JD'></Badumdps>
+
+      <div class="divider divider-neutral"></div>
 
       <Dududps firstCharName='JD'></Dududps>
+
+      {/if}
+
+      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+        {#each Array(totalPages).fill(0) as _, index}
+            <button
+                on:click={() => goToPage(index + 1)}
+                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+            >
+                {index + 1}
+            </button>
+        {/each}
+    </div>
+
 </section>
 
   {/if}

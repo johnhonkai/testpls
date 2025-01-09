@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Kiana - 咚！炽愿吉星</title> 
+  <title>Ba-dum! Fiery Wishing Star</title> 
 
-    <meta property="og:title" content="Durandal - 咚！炽愿吉星" />
-    <meta property="og:description" content="咚！炽愿吉星 Guides, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/bw" />
+    <meta property="og:title" content="Kiana - Ba-dum! Fiery Wishing Star" />
+    <meta property="og:description" content="Ba-dum! Fiery Wishing Star Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/vh5MDfJ.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/badum" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +33,10 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Jddps from "$lib/components/lineup/jddps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
-	import Bwdps from "$lib/components/lineup/bwdps.svelte";
+	import Badumdps from "$lib/components/lineup/badumdps.svelte";
+	import Senadps from "$lib/components/lineup/senadps.svelte";
+	import Simpdps from "$lib/components/lineup/simpdps.svelte";
+	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -151,8 +154,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let durandallikes = likesData["bw"] || 0; // Get initial likes from JSON
-  const charName = "bw"; // Route name for this character
+  let durandallikes = likesData["badum"] || 0; // Get initial likes from JSON
+  const charName = "badum"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -241,7 +244,7 @@ async function increaseLike() {
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">咚！炽愿吉星</h1>
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">Ba-dum! Fiery Wishing Star</h1>
 
   <!-- Character Name and Release Date -->
   <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Kiana Kaslana | Release Date: v8.1 (20 Feb 2025)  </p>
@@ -267,6 +270,8 @@ async function increaseLike() {
         </div >
         <div class="flex flex-row gap-2 flex-wrap justify-center">
           <img src="/images/artype/ar loa.webp" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/ar world star.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/ar future.png" alt="Support 1" class="w-auto h-8 md:h-10" />
 
         </div>
       </div>
@@ -384,10 +389,22 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Bwdps maindps={true}></Bwdps>
+      <Badumdps></Badumdps>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Law of Ascension Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
       <Dududps firstCharName="BW"></Dududps>
+
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
+
+      <Sparkledps firstCharName="Badum"></Sparkledps>
+
+      <div class="divider divider-neutral"></div>
+
+      <Simpdps firstCharName="Badum"></Simpdps>
+
+      <div class="divider divider-neutral"></div>
+
+      <Senadps firstCharName="Badum"></Senadps>
 
       {/if}
 

@@ -35,7 +35,8 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 	import Jddps from "$lib/components/lineup/jddps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import P1physical from "$lib/components/lineup/p1physical.svelte";
-	import Bwdps from "$lib/components/lineup/bwdps.svelte";
+	import Badumdps from "$lib/components/lineup/badumdps.svelte";
+	import Hohdps from "$lib/components/lineup/hohdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -450,12 +451,21 @@ async function increaseLike() {
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
 
-      <Bwdps></Bwdps>
+      <Badumdps></Badumdps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName="RS"></Hohdps>
+
+      <div class="divider divider-neutral"></div>
+
       <Jddps firstCharName="RS"></Jddps>
 
+      <div class="divider divider-neutral"></div>
+
       <Lanterndps firstCharName="RS"></Lanterndps>
+
+      <div class="divider divider-neutral"></div>
 
       <Thelemadps firstCharName="RS"></Thelemadps>
 
@@ -1412,7 +1422,7 @@ async function increaseLike() {
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
           <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Reign Solaris DPS </h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Reign Solaris DPS rotation with Sparkle and Jovial Deception</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Reign Solaris DPS rotation example with Sparkle and Jovial Deception. Law of Ascension rotation is just alternating between supports. If you are using other supports (for example, Vita or Ba-dum Kiana), just swap Sparkle or JD in the rotation with your support.</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe

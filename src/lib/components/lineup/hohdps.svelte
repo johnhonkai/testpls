@@ -3,23 +3,24 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '99%', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '93%', speed: '' },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%', speed: 'Slow' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '91%', speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
+
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '', speed: 'Slow' },
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '', speed: '' },
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '94%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '87%', speed: 'Slow' }
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
@@ -36,15 +37,15 @@
 
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-blue-950 to-blue-900   shadow-lg shadow-base-100 overflow-hidden  ">
-    <h3 class="text-xl  font-semibold mb-2 text-center text-zinc-900 bg-slate-100">Mad Pleasure DPS</h3>
+<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-pink-950 to-pink-900   shadow-lg shadow-base-100 overflow-hidden  ">
+    <h3 class="text-xl  font-semibold mb-2 text-center text-zinc-900 bg-slate-100">Herrrscher of Human DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2  gap-2 gap-y-6 mb-4 justify-center">
 
 
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Sena" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/Elysia Herrscher of Human Ego.png" alt="Sena" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
         </div>
 
@@ -81,7 +82,7 @@
         </summary>
         <div class="py-3 px-4">
         <p class="text-sm sm:text-base">
-            <li class="text-sm sm:text-base">Currently, there is no live abyss data for Thelema DPS with Vita support. Vita's percentage is purely based on simple dmg test.</li>
+            Placeholder
         </p>
                        
         </div>

@@ -35,6 +35,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import P1fire from '$lib/components/lineup/p1fire.svelte';
 	import Sirindps from '$lib/components/lineup/sirindps.svelte';
 	import Dududps from '$lib/components/lineup/dududps.svelte';
+	import Badumdps from "$lib/components/lineup/badumdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -358,7 +359,7 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Future ??? AR Support</strong> <br/> Sparkle will be a support for one AR team in the future.
+            <strong class="text-amber-400">Law of Ascension Support</strong> <br/> Sparkle provides ult cd reduction, and has short on-field time.
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
@@ -368,23 +369,26 @@ function selectTabMobile(event) {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> It is NOT highly recommended to pull Sparkle. Vita [Lone Planetfarer] is available in v7.9 and she is much more valuable for new players. BUT, if you do decide to pull Sparkle, she will have her uses:
+              <strong class="text-amber-400">F2P Players</strong> <br/> Consider saving for v8.1 spending event. If you do decide to pull Sparkle, she will have her uses:
             </p>
               <ul class="list-disc ml-6 text-sm sm:text-base mt-3"></ul>
-              <li class="mt-2">Sparkle will cover Quantum content, but she won't be a very good dps anywhere else.</li>  
-              <li class="mt-2">You have a support for World Star teams. <span class="text-gray-400">(Also covered by Vita) </span></li>
-              <li class="mt-2">You have a support for the future ??? AR teams.  <span class="text-gray-400">(Also covered by Vita) </span></li>
+              <li class="mt-2">Law of Ascension: One of the best supports for Reign Solaris. </li>
+              <li class="mt-2">DPS: Sparkle will cover Quantum content, but she won't be a very good dps anywhere else.</li>  
+              <li class="mt-2">You have a support for World Star teams.</li>
 
           <p class="mt-5 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players / Competitive</strong> <br/>
+              <strong class="text-amber-400">Competitive</strong> <br/>
           </p>
           Sparkle's value varies. Everyone's account is different.
 
           <ul class="list-disc ml-6 text-sm sm:text-base">
+            
             <li class="mt-2">As DPS, Sparkle currently only top scores Fire Kosma, and is the second best top scorer for Resonance Vita. Sparkle will probably get more top score bosses in future patches, like most Part 2 valks. </li>
-              <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
-              <li class="mt-2">If you don't have FoV or Sirin, then Sparkle's value for your account diminishes.</li>
-              <li class="mt-2">In my opinion, a major deciding factor to pull Sparkle - is what she provides for the new AR. It's better to wait 8.0 Beta info on the new Astral Ring before you pull Sparkle.</li>
+            <li class="mt-2">Law of Ascension: One of the best supports for Reign Solaris.</li> 
+            <li class="mt-2">Sparkle is the new best support for Part 1 Fire teams. If you don't have FoV or Sirin, then Sparkle's value for your account diminishes.</li>
+
+            <li class="mt-2">Sparkle has buffs for Quantum teammates, and this makes Sparkle one of the best teammate for Schicksal's Imperative (SIMP) against Quantum enemies. But SIMP-Vita-Hofi are still good enough to be in top 100 in CN server.</li>
+
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -393,7 +397,7 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Sparkle:</strong> Battlesuit Supply</li>
               <li><strong>Sparkle's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Sparkle's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 7.9</li>
+              <li><strong>Sparkle's Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -421,7 +425,16 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
-
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
 
 
       {#if currentPage === 1}
@@ -429,7 +442,7 @@ function selectTabMobile(event) {
 
       <Sparkledps maindps={true}/>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
       
       <SimpDPS firstCharName="Sparkle" />
 
@@ -455,9 +468,14 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 3}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Future AR ??? Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 my-10"> Law of Ascension Support </div>
 
       <Dududps firstCharName ='Sparkle'></Dududps>
+
+      <div class="divider divider-neutral"></div>
+
+      <Badumdps firstCharName ='Sparkle'></Badumdps>
+
       {/if}
 
       <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">

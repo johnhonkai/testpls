@@ -7,13 +7,14 @@
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },
         { name: 'BW', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
 
     ];
 
     const asopchar = [
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '97%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '92%', speed: 'Slow' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '97%', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '92%', speed: '' },
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' }
 
     ];

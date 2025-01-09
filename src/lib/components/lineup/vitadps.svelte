@@ -71,7 +71,7 @@
         <div class="py-3 px-4">
             <p class="text-sm sm:text-base">
                 <li class="text-sm sm:text-base">Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, the only RoO valks beside Vita are Coralie and HoFi with Waxing Moon.</li>
-                <li class="text-sm sm:text-base">Special Case: Vita DPS with HoFi + Lunar Vow supports gets top score against Bleed weather HoSentience boss.</li>
+                <li class="text-sm sm:text-base mt-4">Special Case: Vita DPS with HoFi + Lunar Vow supports gets top score against Bleed weather HoSentience boss.</li>
             </p>
         </div>
     </details>

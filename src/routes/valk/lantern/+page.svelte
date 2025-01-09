@@ -33,6 +33,7 @@ import VitaDPS from '$lib/components/lineup/vitadps.svelte';
 
 import Lightbox from '$lib/components/lightbox.svelte';
 	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -366,8 +367,13 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>Recommended to pull as DPS, and as support for Thelema and Jovial Deception.
+              <strong class="text-amber-400">Competitive</strong><br/>
+              Lantern is good, but her value for your account varies. Everyone's account is different. 
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">As DPS, she still has top scores (RPC, Tank). For Stellar RPC, HoFi DPS also gets a good score comparable to Lantern.</li>
+            <li class="mt-2">Still the best support for Thelema and Jovial Deception.</li>
+        </ul>
 
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
@@ -376,7 +382,7 @@ function selectTabMobile(event) {
               <li ><strong>Lantern:</strong> Battlesuit Supply</li>
               <li><strong>Lantern's Weapon:</strong> Equipment Supply</li>
               <li><strong>Lantern's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v7.9. Last known supply is v7.8. </li>
+              <li>Not available in v8.0. High chance of returning in v8.1 spending event. </li>
 
           </ul>
           <div class="divider divider-neutral"></div>
@@ -404,12 +410,25 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-screen-lg mx-auto ">
-
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
     {#if currentPage === 1}
 
     <LanternDPS maindps={true} />
 
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName="Lantern" ></Hohdps>
+
+      <div class="divider divider-neutral"></div>
 
     <JDDPS firstCharName="Lantern" />
 
@@ -425,7 +444,7 @@ function selectTabMobile(event) {
 
 
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> World Star Support </div>
       
 <Sparkledps  firstCharName='Lantern' ></Sparkledps>
 

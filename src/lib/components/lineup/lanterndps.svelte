@@ -11,6 +11,7 @@
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '86%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '86%', speed: 'Slow' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
 
     ];
 

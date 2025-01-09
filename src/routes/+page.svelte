@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/ljddJ6v.png" />
+    <meta property="og:image" content="https://i.imgur.com/R5eJUYf.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -87,13 +87,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2024-11-29'); // Start date for v7.9 in Regional Servers
+      const regionalStartDate = new Date('2025-1-10'); // Start date for v7.9 in Regional Servers
       const cnStartDate = new Date('2024-12-12');       // Start date for v7.9 in CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v7.9 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.0 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.0 Week ${currentWeekCN}`;
   }
 
@@ -165,7 +165,7 @@
         <p class="text-sm sm:text-base text-slate-100 px-2">
             <strong class="text-amber-400">REGIONAL SERVERS</strong><br>
             - {regionalServerInfo}<br>
-            - v8.0 update is on Jan 9
+            - v8.1 update is on Feb 20
         </p>
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
@@ -240,10 +240,6 @@
                 Expire: 00:00 Jan 27 (UTC+8)
               </p>
               
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5 ">
-                <span class="font-bold">Sparkleimpact3rd , Sparkleplay   </span><br/>
-                Sparkle Trial Card
-              </p>
             </div>
 
     </div>
@@ -266,12 +262,12 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=58foeOjLW58" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=J2XGoON5gNA" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/58foeOjLW58/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/J2XGoON5gNA/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
-          <p class="text-slate-300 text-base">New S-rank Revealed: Boom! Blazing Wishes!</p>
+          <p class="text-slate-300 text-base">New Kiana and Elysia Divine Key!</p>
         </div>
       </a>
 
@@ -298,9 +294,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=JMLtbTO3L6E" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=a3hMZ44Rdac" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/JMLtbTO3L6E/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/a3hMZ44Rdac/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

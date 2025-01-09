@@ -274,7 +274,10 @@ function selectTabMobile(event) {
         <div class="flex flex-row gap-2 flex-wrap justify-center">
           <img src="/images/artype/ar_lp.png" alt="Support 2" class="w-auto h-8 md:h-10" />
           <img src="/images/artype/ar world star.png" alt="Support 2" class="w-auto h-8 md:h-10" />
+
           <img src="/images/artype/ar_hoo.png" alt="ar" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/AR All.png" alt="Support 2" class="w-auto h-8 md:h-10" />
+
         </div>
       </div>
     </div>

@@ -11,6 +11,8 @@
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '88%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '81%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '74%', speed: 'Slow' },
+        { name: 'Badum', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
+
     ];
 
     const asopchar = [

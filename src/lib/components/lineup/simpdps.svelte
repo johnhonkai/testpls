@@ -11,6 +11,7 @@
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '82%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '76%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '76%', speed: 'Slow' },
+        { name: 'Badum', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
 
 
     ];

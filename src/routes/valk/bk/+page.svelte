@@ -646,7 +646,7 @@ function selectTabMobile(event) {
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
             <li>Use weapon ➔ ATK until you have enough sp to use Burst Mode. </li>
             <li>Activate Burst Mode.</li>
-            <li>Evade forward (hit the enemy) ➔ Press ATK. Repeat two times. Your Ult cd will reset.</li>
+            <li>Evade forward (hit the enemy) ➔ Press ATK. Repeat two more times. On the third evasion skill trigger, your Ult cd will reset.</li>
             <li>Use weapon active finisher.</li>
             <li>Repeat.</li>
 

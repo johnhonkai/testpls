@@ -38,6 +38,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Lvdpsdual from '$lib/components/lineup/lvdpsdual.svelte';
 	import P1lightningdps from '$lib/components/lineup/p1lightningdps.svelte';
 	import Lvdpsnormal from '$lib/components/lineup/lvdpsnormal.svelte';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -421,7 +422,16 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
-
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
 
 
       {#if currentPage === 1}
@@ -429,7 +439,7 @@ function selectTabMobile(event) {
 
       <SimpDPS maindps={true}/>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
       
       <SenaDPS firstCharName="Simp" />
 
@@ -439,7 +449,11 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName="Simp" ></Hohdps>
+
+      <div class="divider divider-neutral"></div>
 
       <JDDPS firstCharName="Simp"  />
 
@@ -454,7 +468,7 @@ function selectTabMobile(event) {
       {/if}
 
       {#if currentPage === 3}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Part 1 Lightning Support </div>
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Part 1 Lightning Support </div>
 
       <Lvdpsdual></Lvdpsdual>
 

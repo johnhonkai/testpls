@@ -7,13 +7,15 @@
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+
     ];
 
     const asopchar = [
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png',  speed: '' },
-        { name: 'Bunny', image: '/images/valkportrait/elf_kiana.png', speed: 'Slow' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_kiana.png', speed: '' },
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  speed: 'Slow' }
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component
@@ -28,7 +30,7 @@
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-rose-950 to-rose-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">咚！炽愿吉星 DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Ba-dum! Fiery Wishing Star DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 

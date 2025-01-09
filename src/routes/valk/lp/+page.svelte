@@ -34,6 +34,9 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 
   import Lightbox from '$lib/components/lightbox.svelte';
 	import Dududps from '$lib/components/lineup/dududps.svelte';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
+	import Badumdps from '$lib/components/lineup/badumdps.svelte';
+	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
   let showLightbox = false;
   let selectedImage = '';
 
@@ -242,12 +245,12 @@ function selectTabMobile(event) {
 
 
   <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start">
+  <div class="flex flex-col items-center text-center justify-start mt-2">
     <!-- Battlesuit Name -->
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center mb-2 sm:mb-0">Lone Planetfarer</h1>
 
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Vita | Release Date: v7.8 (17 Oct 2024)</p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Vita | Release Date: v7.8 (17 Oct 2024)  </p>
 
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
@@ -350,7 +353,7 @@ function selectTabMobile(event) {
                 <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by Coralie support.
             </p>
             <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, ??? Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one future AR team. Vita provides Ele/Phy Breach, buffs, and higher AR regen.
+                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and higher AR regen.
             </p>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">The other 9 AR Supports</strong> <br/> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
@@ -359,26 +362,29 @@ function selectTabMobile(event) {
             <!-- Pull Recommendation Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">New Players / Have not played since 7.3</strong> <br/> Recommended to pull Vita for her flexible support capability. As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.
+                <strong class="text-amber-400">F2P Players</strong>
+                <br/>Recommended, but not mandatory.
             </p>
-            <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">F2P, already have Senadina</strong> <br/> Vita is not a top priority, since you already have Senadina to support World Star and WoDestiny teams. The only thing Sena cannot do is support the ??? AR team and the other 9 AR teams.
-            </p>
+            <ul class="list-disc ml-6 text-sm sm:text-base">
+              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her support capabilities, but she is still not mandatory for f2p.  </li>
+              <li class="mt-2">New Players: As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.</li>
+          </ul>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">Competitive</strong> <br/> Recommended, Vita's value is insane.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>For World Star team, currently Vita is undeniably the best support.</li>
-                <li>For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-                <li>For the future ??? AR team, Vita is currently one of the three best supports for that AR.</li>
+                <li class="mt-2">For World Star team, currently Vita is undeniably the best support.</li>
+                <li class="mt-2">For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
+                <li class="mt-2">For Law of Ascension team, Vita is currently one of the three best supports for that AR. But at low rank, loses to Sparkle + JD supports.</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- How to Get Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
             <ul class="list-disc ml-6 text-sm sm:text-base ">
-                <li ><strong>Vita:</strong> Battlesuit Supply</li>
-                <li><strong>Vita's Weapon:</strong> Equipment Supply</li>
-                <li><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable</li>
+                <li class="mt-2"><strong>Vita:</strong> Battlesuit Supply</li>
+                <li class="mt-2"><strong>Vita's Weapon:</strong> Equipment Supply</li>
+                <li class="mt-2"><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable</li>
+                <li class="mt-2">Not available in v8.0. High chance of returning in v8.1 spending event.</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- Full Guide Section -->
@@ -407,43 +413,63 @@ function selectTabMobile(event) {
 
     <section class="max-w-screen-lg mx-auto ">
 
-
+      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+        {#each Array(totalPages).fill(0) as _, index}
+            <button
+                on:click={() => goToPage(index + 1)}
+                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+            >
+                {index + 1}
+            </button>
+        {/each}
+    </div>
 
 
         {#if currentPage === 1}
         <!-- Category 1: Vita DPS -->
 
-        <VitaDPS firstCharIndex={0} />
+        <VitaDPS  />
 
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
-        
-        <SimpDPS firstCharIndex={0} />
+        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
+        <Sparkledps  firstCharName="Vita"></Sparkledps>
 
         <div class="divider divider-neutral"></div>
 
-        <SenaDPS  />
+        <SimpDPS  firstCharName="Vita" />
+
+        <div class="divider divider-neutral"></div>
+
+        <SenaDPS  firstCharName="Vita" />
         {/if}
 
         {#if currentPage === 2}
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Wheel of Destiny Support </div>
+        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
 
-        <JDDPS firstCharIndex={0} />
-
-        <div class="divider divider-neutral"></div>
-
-        <LanternDPS firstCharIndex={0} />
-
+        <Hohdps  firstCharName="Vita"></Hohdps>
 
         <div class="divider divider-neutral"></div>
 
-        <ThelDPS firstCharIndex={0} />
+        <JDDPS  firstCharName="Vita" />
+
+        <div class="divider divider-neutral"></div>
+
+        <LanternDPS  firstCharName="Vita" />
+
+
+        <div class="divider divider-neutral"></div>
+
+        <ThelDPS  firstCharName="Vita" />
 
         {/if}
 
         {#if currentPage === 3}
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> Future AR ??? Support </div>
+        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Law of Ascension Support </div>
 
-        <Dududps />
+        <Badumdps firstCharName="Vita"></Badumdps>
+
+        <div class="divider divider-neutral"></div>
+
+        <Dududps firstCharName="Vita" />
         {/if}
 
         <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">

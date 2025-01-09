@@ -5,7 +5,7 @@
 
     <meta property="og:title" content="Elysia - Herrscher of Human: Ego" />
     <meta property="og:description" content="Herrscher of Human: Ego Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.imgur.com/JzNsxXq.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/hoh" />
     <meta property="og:type" content="website" />
 
@@ -33,6 +33,12 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import P1physical from "$lib/components/lineup/p1physical.svelte";
 	import P1ice from "$lib/components/lineup/p1ice.svelte";
 	import Ice3support from "$lib/components/lineup/ice3support.svelte";
+	import Dududps from "$lib/components/lineup/dududps.svelte";
+	import Badumdps from "$lib/components/lineup/badumdps.svelte";
+	import Jddps from "$lib/components/lineup/jddps.svelte";
+	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
+	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
+	import Hohdps from "$lib/components/lineup/hohdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -241,14 +247,15 @@ function selectTabMobile(event) {
   
   
   <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start">
+  <div class="flex flex-col items-center text-center justify-start mt-5">
     <!-- Battlesuit Name -->
   
     <div>
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Human: Ego</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Elysia | Release Date: v6.0 (15 Sep 2022)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 ">Elysia | Release Date: v6.0 (15 Sep 2022) </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v8.1  (20 Feb 2025) </p>
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
@@ -258,12 +265,28 @@ function selectTabMobile(event) {
           <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
           <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
           <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-  
+          <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
+
         </div>
       </div>
+      <div class="flex flex-col mt-4 items-center" id="arbox">
 
+        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-sm">
+          <div class="flex flex-wrap justify-center">
+            <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
+          </div >
+          <div class="flex flex-row gap-2 flex-wrap justify-center">
+            <img src="/images/artype/ar loa.webp" alt="Support 1" class="w-auto h-8 md:h-10" />
+            <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
+            <img src="/images/artype/ar future.png" alt="Support 3" class="w-auto h-8 md:h-10" />
+  
+          </div>
+        </div>
+      </div>
   
     </div> <!-- End common wrapper -->
+
+
   </div>
   </section>
   
@@ -333,11 +356,16 @@ function selectTabMobile(event) {
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
-        <p class="mt-2 text-sm sm:text-base">
+        <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">Part 1 Ice DPS</strong> <br/>
             - Powerful Ice DPS with two forms: Herrscher of Human and Origin. Signature bow is mandatory to keep up with high sp cost.<br/>
             - In Elysian Realm, she gets +1 level to all normal signets.
         </p>
+
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400">Wheel of Destiny DPS</strong> <br/>
+          To be updated in the future.
+      </p>
 
         <div class="divider divider-neutral"></div>
         <!-- Pull Recommendation Section -->
@@ -355,7 +383,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Human:</strong> Battlesuit Supply, Free in v7.9</li>
+            <li ><strong>Herrscher of Human:</strong> Battlesuit Supply</li>
             <li ><strong>Herrscher of Human Equipment:</strong> Focused Supply</li>
 
         </ul>
@@ -363,8 +391,8 @@ function selectTabMobile(event) {
         <!-- Full Guide Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
         <p class="mt-2 text-sm sm:text-base pb-4">
-          Check out the full guide on YouTube: 
-      </p>
+          A very old guide from her release:
+        </p>
 
       <div class="relative overflow-hidden" style="padding-top: 56.25%;">
           <iframe
@@ -387,7 +415,29 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
+
     <P1ice></P1ice>
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny DPS </div>
+
+    <Hohdps maindps={true}></Hohdps>
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
+    <Badumdps  firstCharName="HoH"></Badumdps>
+
+    <div class="divider divider-neutral"></div>
+
+    <Dududps  firstCharName="HoH"></Dududps>
+
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
+
+    <Jddps  firstCharName="HoH"></Jddps>
+
+    <div class="divider divider-neutral"></div>
+
+    <Lanterndps  firstCharName="HoH"></Lanterndps>
+
+    <div class="divider divider-neutral"></div>
+
+    <Thelemadps firstCharName="HoH"></Thelemadps>
 
 </section>
 

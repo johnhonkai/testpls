@@ -33,6 +33,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
 	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
 	import { limit } from 'firebase/firestore';
+	import Hohdps from '$lib/components/lineup/hohdps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -409,7 +410,16 @@ function selectTabMobile(event) {
   <section class="max-w-screen-lg mx-auto ">
 
 
-
+    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
+      {#each Array(totalPages).fill(0) as _, index}
+          <button
+              on:click={() => goToPage(index + 1)}
+              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
+          >
+              {index + 1}
+          </button>
+      {/each}
+  </div>
 
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
@@ -428,6 +438,10 @@ function selectTabMobile(event) {
 
       {#if currentPage === 2}
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
+
+      <Hohdps firstCharName='Sena'></Hohdps>
+
+      <div class="divider divider-neutral"></div>
 
 <Jddps firstCharName='Sena'></Jddps>
 

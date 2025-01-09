@@ -10,6 +10,7 @@
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '94%', speed: 'Slow' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '90%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '88%', speed: 'Slow' },
+        { name: 'Badum', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
 
     ];
 

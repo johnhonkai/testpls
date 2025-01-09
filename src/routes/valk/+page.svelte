@@ -76,7 +76,8 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
-  { name: '咚！炽愿吉星', image: '/images/valkportrait/Blazing Wishes.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/bw' , badge: 'Beta', id:53},
+  { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/Blazing Wishes.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum' , badge: 'Beta', id:53},
+  { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Wheel of Destiny' , 'Part 1'], badge: 'Beta' , url: '/valk/hoh', id:25},
   { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Law of Ascension'] , url: '/valk/durandal' ,  badge: 'New', id:16},
   { name: 'Thousand-Faced Maestro: Cameo!', image: '/images/valkportrait/sparkle.png', type: 'Qua', element: 'Fire', astralRing: ['World Star'] , url: '/valk/sparkle' , id:14},
   { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: ['Rite of Oblivion'] , url: '/valk/lp' , id:13},
@@ -107,7 +108,6 @@
 
   { name: 'Chrono Navi', image: '/images/valkportrait/Chrono Navi.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/cn', id:22},
   { name: 'Jade Knight', image: '/images/valkportrait/Sushang Jade Knight.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/sushang', id:23},
-  { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hoh', id:25},
   { name: 'Helical Contraption', image: '/images/valkportrait/VillV.png', type: 'Qua', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/villv', id:26},
   { name: 'Starry Impression', image: '/images/valkportrait/Griseo Starry Impression.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/si', id:27},
   { name: 'Disciplinary Perdition', image: '/images/valkportrait/Aponia Disciplinary Perdition.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/aponia', id:28},
