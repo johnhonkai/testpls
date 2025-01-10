@@ -389,7 +389,7 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Badumdps></Badumdps>
+      <Badumdps maindps={true} ></Badumdps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
       <Dududps firstCharName="BW"></Dududps>

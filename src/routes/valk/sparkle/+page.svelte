@@ -359,7 +359,7 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Law of Ascension Support</strong> <br/> Sparkle provides ult cd reduction, and has short on-field time.
+            <strong class="text-amber-400">Law of Ascension Support</strong> <br/> Sparkle provides ult cd reduction and sp regen. More ult = more damage. She also has short on-field time.
         </p>
 
         <p class="mt-4 text-sm sm:text-base">
