@@ -1390,10 +1390,78 @@ export const teamData = {
     ]},]
   },
   raven: {
-    
+    teamDataSets: [
+    {
+      tabname: "v7.9 SEA",
+      teamInfoText: "Data is from v7.9 SEA Server Top 100 Myriad 541 D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '1-6, 8',
+        pct: '13%',
+        bottext: "Highest Score: SS1 771, SSS 788"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+        rank: '7, 9, 10',
+        pct: '58%',
+        bottext: "Highest Score: S 730, SS 762"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '15',
+        pct: '2%',
+        bottext: "Highest Score: SS 744"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_sera.png"],
+        rank: '36',
+        pct: '1%',
+        bottext: "Highest Score: SS 724"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/asop_sera.png"],
+        rank: '41',
+        pct: '12%',
+        bottext: "Highest Score: S 719"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_songque.png"],
+        rank: '57',
+        pct: '7%',
+        bottext: "Highest Score: S 701"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_sera.png"],
+        rank: '69',
+        pct: '3%',
+        bottext: "Highest Score: S 693"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/asop_songque.png"],
+        rank: '80',
+        pct: '2%',
+        bottext: "Highest Score: S 689"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_songque.png"],
+        rank: '93',
+        pct: '2%',
+        bottext: "Highest Score: S2 683"
+      },
+    ]},],
     videos: [
       { url: 'https://www.youtube.com/embed/RvNgM9cFmVE', abyss: 'Nirvana 541D', uploader: 'Marisa Honkai' },
 
     ] 
-  }
+  },
 }

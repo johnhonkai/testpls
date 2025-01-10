@@ -85,7 +85,8 @@
                 </p>          
                 <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, including Elemental Breach and Physical Breach.
                     <br/>
-                    - Has a slightly longer on-field time than other supports.
+                    - Has a slightly longer on-field time than other supports.<br/>
+                    - In Physical weather Abyss, Vita herself deals less damage since weather effect reduces Lightning DMG.
                 </p>          
 
                 <p class="text-sm sm:text-base"><b>AstralOp</b><br/> - Currently, there is no dedicated Astral Op for Law of Ascension.
