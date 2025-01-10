@@ -413,7 +413,7 @@ async function increaseLike() {
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
-          <p class="mt-2 text-sm sm:text-base pb-4">
+
             <p class="mt-2 text-sm sm:text-base pb-4">
               Check out the full guide on YouTube
           </p>

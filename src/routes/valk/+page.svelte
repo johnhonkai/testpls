@@ -68,9 +68,9 @@
   const astralRings = [
     'All',
     'Law of Ascension',
-    'World Star',
     'Wheel of Destiny',
     'Rite of Oblivion',
+    'World Star',
     'Part 1'
   ];
 
