@@ -346,7 +346,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/>Powerful ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
+              <strong class="text-amber-400">DPS</strong> <br/>Jovial Deception (JD) is a powerful ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
           </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">VS Senadina</strong> <br/>Against SD enemies, JD is better against solo boss. Against swarm enemies like Bloodthirsty SD-Mech mobs, it depends on ranks- or you can use JD and Sena on the same team.
@@ -379,14 +379,21 @@ function selectTabMobile(event) {
             <li class="mt-2">JD is okay as a Physical / Ranged valk, topscores Ranged Kalpas.</li>
             <li class="mt-2">For Law of Ascension team, JD is currently one of the best supports for Reign Solaris.</li>
         </ul>
+
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400">New Players</strong><br/> Do not pull JD from starter supply. 
+          It's a worse version of regular Battlesuit supply with a 50-50 chance and the counter is not shared with regular supply.
+          If you still want JD, wait for her normal Battlesuit supply.
+          
+      </p>
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>JD:</strong> Battlesuit Supply</li>
+              <li ><strong>JD:</strong> Battlesuit Supply, Starter Supply</li>
               <li><strong>JD's Weapon:</strong> Equipment Supply</li>
               <li><strong>JD's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v8.0. High chance of returning in v8.1 spending event. </li>
+              <li>Battlesuit supply not available in v8.0. High chance of returning in v8.1 spending event. </li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->

@@ -365,6 +365,13 @@ function selectTabMobile(event) {
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. 
+            It's a worse version of regular Battlesuit supply with a 50-50 chance and the counter is not shared with regular supply.
+            If you still want Sena, wait for her normal Battlesuit supply.
+            
+        </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">All Players</strong> 
               <br/> As a DPS, Sena only top scores Bloodlust swarm boss now.
@@ -387,10 +394,10 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Senadina:</strong> Battlesuit Supply</li>
-              <li><strong>Senadina's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Senadina's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v8.0. Last known supply is v7.8. </li>
+              <li class="mt-2" ><strong>Senadina:</strong> Battlesuit Supply, Starter Supply</li>
+              <li class="mt-2"><strong>Senadina's Weapon:</strong> Equipment Supply</li>
+              <li class="mt-2"><strong>Senadina's Stigma:</strong> Equipment Supply, Forgeable</li>
+              <li class="mt-2">Battlesuit supply not available in v8.0. High chance of returning in v8.1 spending event. </li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
