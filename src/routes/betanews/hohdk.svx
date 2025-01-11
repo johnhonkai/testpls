@@ -2,7 +2,7 @@
 creationDate: "2025-01-10T03:44:52.533Z"
 
 
-title: Elysia Divine Key and Stigma v2
+title: Elysia Divine Key, Stigma and New Skill v2
 
 version: '8.1'
 sortOrder: '4'
@@ -18,3 +18,180 @@ image: "/images/valkportrait/Elysia Herrscher of Human Ego.png"
 - [HoH Divine Key and Stigma](/betanews/hohdk)
 - [Theresa AstralOp](/betanews/teriasop)
 - [Elysian Realm (Soon)]()
+
+---
+
+## <span class="text-amber-400">Divine Key</span>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/9MTUqLe.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<p class="text-center">
+Translation by Aki
+</p>
+
+ATK: 441 ,  CRT: 19
+
+**ACTIVE [SP: 0] [CD: 0s]**<br/>
+The weapon active's CD, max charges and effects are based on wielder type. Use the bow to aim and shoot at targets (max aiming duration: 3s), deals 700% ATK of Ice DMG to targets. 
+
+
+Herrscher of Human: Ego  equip bonus:
+- In Herrscher of Human form, upon triggering Ego Blossom, generate one Blooming Shadow, additionally dealing 100% ATK of Ice DMG, for every surrounding enemy affected under [Pristine Flower Seed] and [Pristine Flower Cluster], self Total DMG +5%, max 3 stacks.
+
+- Obtain Astral Ring: Wheel of Destiny
+
+When Astral Ring is activated: Enemies on the field take +12% more Total DMG.
+
+During AR Charging: Weapon Active and Charged ATK gain Total DMG +12%.
+
+During Stellar Outburst or Augmented Ascension mode:<br/>
+Enters Herrscher of Origin form, upon pressing Ultimate or when Stellar Outburst or Augmented Ascension mode ends, cast [Everlasting Blessing] as substitute for original Ultimate, dealing 600% ATK of Ice DMG towards enemies, at the same time said Ultimate will consume all current SP, for each 1 SP consumed additionally deals 10% ATK of Ice DMG, max 2000%. When Wheel of Destiny or Law of Ascension is activated, Weapon Active and Charged ATK additionally deals 200% ATK of Ice DMG. 
+
+
+---
+
+**PASSIVE 1**<br/>
+Ice DMG +12%. <br/>
+Herrscher of Human: Ego equip bonus: Weapon shot charge is increased by 3, upon hitting an enemy that triggered Ego Blossom, restores 5 SP for self, under Herrscher of Human form, if current SP is lower than 75, will additionally restore 5 SP.
+
+---
+
+**PASSIVE 2**<br/>
+Weapon Active and Charged ATK gain Ice DMG +12%.<br/>
+Herrscher of Human: Ego equip bonus: Other team members gain Elemental DMG +8%, Physical DMG +12%. <br/>When AR Wheel of Destiny is activated: Other team members gain additional Elemental DMG +12%, Total DMG +12%.
+
+---
+
+**SYNERGY**<br/>
+Enemies take +2/4/6% more Total DMG from valk on the field (independent multiplier) (cannot be stacked). <br/>
+Herrscher of Human: Ego equip bonus: Enemies on the field take +3/6/9% more Ice DMG from herself (independent multiplier) (cannot be stacked). Gain 20/35/50 SP upon entering Stellar Outburst mode.
+
+---
+
+## <span class="text-amber-400">Solon Stigma</span>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/y7ryO84.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+**TOP** <br/>
+Ice DMG +15%. Herrscher of Human equip bonus: 
+- Enemies on the field take +15% more Ice DMG from herself. 
+- Characters with [Ego Blessing] status gain Total DMG +20%.
+
+---
+
+**MID**<br/>
+Ranged ATK gain Total DMG +12%. Herrscher of Human equip bonus: 
+- Weapon Active and Charged ATK gain Total DMG +12%.
+- Characters with [Ego Blessing] status gain Physical DMG +12%, Elemental DMG +30%.
+
+---
+
+**BOT**<br/>
+Ranged ATK gain Ice DMG +15%. Herrscher of Human equip bonus: When HoH has [Ego Blessing] status, enemies on the field take +10% more Physical DMG, +25% more Elemental DMG.
+
+---
+
+**2-PC SET**<br/>
+During Herrscher form, Ice DMG +15%. Herrscher of Human equip bonus: 
+- During Stellar Outburst or Augmented Ascension state, enemies on the field take +20% more Ice DMG from herself (independent multiplier).
+- When Astral Ring is activated, characters with [Ego Blessing] status gain Elemental DMG +20%, Physical DMG +15%, Crit DMG +15%. 
+
+
+---
+
+**3 SET:**
+During Herrscher Form, Ranged ATK gain Total DMG +15%.
+
+Herrscher of Human equip bonus:
+- Weapon Active CD -35%, Total DMG Resistance +30%. 
+- Upon casting Weapon Active, or upon applying [Pristine Flower Seed] onto any enemy on field, 
+or upon entering Stellar Outburst mode, team gains [Ego Blessing] status, last for 25s (can be refreshed).
+Characters with [Ego Blessing] status gain Total DMG +10%. 
+- During Stellar Outburst or Augmented Ascension mode, self Ice DMG +35%.
+
+- When AR Wheel of Destiny is activated:
+    - For every valk in the team with Shadow Star tag, other team members gain Elemental DMG +5%, Total DMG +3%.
+    - Characters with [Ego Blessing] status gain Physical DMG +12%, Crit DMG +15%, enemies take 12% more Total DMG and 12% more Physical DMG from teammates.
+    - During AR Charging: Other team members gain Physical DMG +25%, Elemental DMG +20%.
+    - During Stellar Outburst: Other team members gain Physical DMG +30%, Elemental DMG +36%.
+
+- When AR Law of Ascension is activated:
+    - Characters with [Ego Blessing] status gain Physical DMG +10%, Elemental DMG +20%, Total DMG +10%, and teammates gain additional Total DMG +8%.
+    - During AR Charging: Enemies on the field take +8% more Physical DMG, +27% more Elemental DMG and +15% more Total DMG from teammates.
+    - During Stellar Outburst: Enemies on the field take +8% more Physical DMG, +27% more Elemental DMG and +25% more Total DMG from teammates.
+
+---
+## <span class="text-amber-400">New Skills Unlocked</span>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/RdPgwqJ.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+### Leader Subskill 2
+
+When HoH is the leader, activates AR Wheel of Destiny. SO cost: 140, Duration: 22s, CD: 20s.
+
+- When there is 1 character with Harmonized Shadow Star tag: Team Shadow Star ATK gain Total DMG +26%.
+
+- When there are 2 characters with Harmonized Shadow Star tag: Valk on the field gain Ice DMG +20%. During AR Charging, valks with Shadow Star tag share Stellar Drain.
+
+- When there are 3 characters with Harmonized Shadow Star tag: During Stellar Outburst, enemies take 11% more Ice DMG from valks on the field (independent multiplier).
+
+### Astral Ring
+
+When activating SO, unleash Stellar Assault, deal 400% ATK of Ice DMG, enter Herrscher of Origin form and create Stars of the Past. Inflict 3 freeze trauma. Gain Herrscher meter, max 400 points, initial 0 point.
+Herrscher meter continuously recover, 80 points per second for the first 5 seconds, 40 per second after that.
+
+When AR Wheel of Destiny is activated:
+- WoD valks can summon HoH phantom, deal 1200% ATK of adaptive damage, and enter Rondo state for 11 seconds. 
+- During Stellar Outburst, HoH cannot be switched out. Other valks become phantom.
+- Click phantom to deal 800% ATK of Ice DMG (count as Shadow Star ATK), and inflict 6 freeze trauma. At the same time, HoH unleashes Shadow Star ATK, deal 1000% ATK of Ice DMG, during which, she is invincible.
+After that, gain 5s Rondo state.
+- In Rondo state, during 4-sequence Basic ATK, generate phantom, deal 100% / 8x15% / 4x40% / 200% ATK of Ice DMG (count as Shadow Star ATK).
+
+---
+
+** AR 1 ** <br/>
+[Toggle] When AR Law of Ascension is activated: Upon casting Stellar Shift and entering Augmented Ascension state, if evasion is not on cd, trigger evasion skill.
+
+---
+
+** AR 2 ** <br/>
+When Stellar Outburst ends, gain Stellar Drain. When Bloom is triggered, consume Stellar Drain, gain 10 AR.
+- When AR Wheel of Destiny is activated: Stellar Drain restore 10 more AR.
+- When AR Law of Ascension is activated: Stellar Drain restore 10 more AR.
+- When battle starts, gain a Stellar Drain.
+
+---
+** AR 3 ** <br/>
+When Astral Ring is activated, when a team member with Shadow Star or Heavenly Shift tag consume Stellar Drain, increases HoH sp charge record to 100 points. When battle starts, start with 100 points. Freeze status lasts 10% longer.
+
+After entering the field via QTE, or upon activating Ult, gain Star Dance effect, which will cause the next two Bloom to generate two additional flowe, each deal 100% ATK of Ice DMG.
+
+Upon entering Stellar Outburst or Augmented Ascension state, add 1 stack of Pristine Seed to all enemies.
+
+When AR Wheel of Destiny is activated:
+- When HoH enters via QTE, preceding valk switch CD -4s. When teammate's Stellar Drain is consumed, HoH's switch cd -4s, and her QTE is triggered (has 4s cd).
+- During Stellar Outburst: Every time you use Charged ATK or weapon skill, gain 5 sp. Teammates with AR WoD gain Physical DMG +5%, Elemental DMG +10%.
+- During Stellar Outburst: Valks with AR WoD can trigger HoH's phantom, deal 1200% ATK of Adaptive DMG and enter Rondo state for 11s.
+- When AR WoD is activated: Upon casting Ult [Everlasting Blessing], end Stellar Outburst state, and refunds 25% of remaining AR meter.
+
+---
+** AR 4 ** <br/>
+When Law of Ascension is activated:
+- Ego Blossom can trigger Stellar Drain.
+- After activating Stellar Outburst, you can select any valk with with Heavenly Shift tag and trigger the valk's Stellar Shift ATK. Other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
+- Stellar Shift: Enters Herrscher of Origin form and auto cast Charged ATK, deal 700% ATK of Ice DMG, trigger 4s time fracture.
+- Upon casting Stellar Shift, enter Augmented Ascension state for 6 seconds. On exit, cast Ult [Everlasting Blessing], then ends Augmented Ascension state.
+- When you are not the leader:
+    - When weapon skill hits, reset the leader's switch CD and trigger her QTE.
+    - When QTE hits, restore 15 AR and trigger the leader's Heavenly Shift atk, cd 16s.
+    - During Augmented Ascension state, the leader's Heavenly Shift atk is triggered once during Stellar Shift cast and when weapon skill hits.
+    - Heavenly Shift triggered by HoH deals 880% ATK of adaptive Elemental DMG, or 440% ATK of Physical DMG, according to the leader's dmg tag.
+
+---
+** AR 5 ** <br/>
+Related to a future AR.
