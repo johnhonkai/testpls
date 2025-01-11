@@ -12,6 +12,7 @@
     ];
 
     const asopchar = [
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '' , speed: '' },
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
         { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '97%', speed: '' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '92%', speed: '' },

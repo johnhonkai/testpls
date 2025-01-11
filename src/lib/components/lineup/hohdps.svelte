@@ -3,16 +3,14 @@
 
     // Define the data for main characters
     const mainCharacters = [
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '', speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '', speed: '' },
 
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '', speed: 'Slow' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '', speed: '' },
 
     ];
 
