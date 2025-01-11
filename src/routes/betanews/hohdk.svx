@@ -17,7 +17,7 @@ image: "/images/valkportrait/Elysia Herrscher of Human Ego.png"
 - [Ba-dum! Kiana Equipment](/betanews/badumgear)
 - [HoH Divine Key and Stigma](/betanews/hohdk)
 - [Theresa AstralOp](/betanews/teriasop)
-- [Elysian Realm](/81er)
+- [Elysian Realm](/betanews/81er)
 
 ---
 
