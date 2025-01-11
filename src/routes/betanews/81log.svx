@@ -49,7 +49,7 @@ image: "/images/valkportrait/Blazing Wishes.png"
 
 ## EX Abyss
 - Stardust weather Sa: Tribulations of Life (SD)
-- LoAscension weather Homu Magician (Typeless)
+- LoAscension weather Homu Emperor (Typeless)
 - Type Counter weather Sprout of Wishing (BIO)
 - Physical weather HoD Minion (IMG)
 - LoAscension weather Andrius (BIO)
