@@ -15,96 +15,245 @@ image: "/images/valkportrait/Blazing Wishes.png"
 - [Ba-dum! Kiana Equipment](/betanews/badumgear)
 - [HoH Divine Key and Stigma](/betanews/hohdk)
 - [Theresa AstralOp](/betanews/teriasop)
-- [Elysian Realm (Soon)]()
+- [Elysian Realm](/81er)
 
 
 ### INTRO
 - S-rank, SD, Fire, Gun user
 - Astral Ring: Law of Ascension
 - Is a DPS, can support Law of Ascension Team, Domain Resonance team, one future ??? AR team
-- Gameplay:  
+- Gameplay:  https://www.youtube.com/watch?v=xgH5sSoS25c
 
 ---
 ### LEADER 
-When set as leader, activate AR Law of Ascension. SO cost: , Duration: , CD: 
+When set as leader, activate AR Law of Ascension. SO cost: 200, Duration: 1s, CD: 40s.
 
-When you have 1 team member with Heavenly Shift attribute: 
+When you have 1 team member with Heavenly Shift attribute: Stellar Shift gain Fire DMG +15% (S) / 25% (S3) / 35% (SS3).
 
-When you have 2 team members with Heavenly Shift attribute: 
+When you have 2 team members with Heavenly Shift attribute: Teammates with Heavenly Shift tag can trigger Badum's Heavenly Link. Badum also restore 10 more AR when consuming Stellar Drain.
 
-When you have 3 team members with Heavenly Shift attribute: 
+When you have 3 team members with Heavenly Shift attribute: Enemies take 14% (S) / 15% (S3) / 16% (SS3) more Fire DMG from Badum (independent multiplier). Initial AR +10.
 
 ---
 
+**LEADER 1**<br/>
+When Ba-dum Kiana is the leader:
+- Self Fire DMG +24% (S) / 27% (SS) / 30% (SSS)
+- Dream Collab will detonate Passion mark, deal additional 480% (S) / 540% (SS) / 600% (SSS) ATK of Fire DMG
+- Ult and Dream Collab deal additional 800% (S) / 900% (SS) / 1000% (SSS) ATK of Fire DMG
+- Joy state gained from QTE is considered as Augmented Ascension state
+- When any team member enters via QTE or Stellar Shift, Ba-dum Kiana gain 8 sp
+- At the start of battle, initial sp +30
+
+---
+
+**LEADER 2**<br/>
+When Ba-dum Kiana is the leader:
+- When you are in Elemental Breach state, self Fire DMG +20%, Total DMG +6%
+- Ultimate gain Augmented Ascension state
+
+
+
 ### ASTRAL RING
 
-Ba-dum! is protected by AR Law of Ascension. When Stellar Outburst is activated, 
+Ba-dum! is protected by AR Law of Ascension. Upon casting Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Fire DMG.
+
+When AR Law of Ascension is activated:
+- After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character's Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
+- Stellar Shift: Hit the button prompt to deal 500%x2 + 2600% ATK of Fire DMG. On hit, apply Passion, You are in Augmented Ascension state during this time.  If meter is less than 40, meter will be restored to 40.
+- When Stellar Shift, Combo ATK or special weapon skill hits a target, teammates' switch cd are reset and their QTE are triggered.
+- When you are not the leader:
+    - When QTE hits, restore 15 AR, and trigger the leader's Heavenly Link, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader's damage type. CD: 16s.
+    - Upon casting Stellar Shift, trigger Heavenly Link twice.
+    - When Stellar Shift or QTE hits, restore full meter.
 
 ---
 
 **AR 1**<br/>
+When Stellar Outburst ends, gain Stellar Drain. Consuming Stellar Drain restore 10 AR.
+- When World Star is activated, Stellar Drain restore 10 more AR.
+- When Law of Ascension is activated, Stellar Drain restore 10 more AR.
+- Gain a Stellar Drain at the start of battle.
 
 ---
 
 **AR 2**<br/>
 
+When AR World Star is activated: 
+QTE restore full meter.
+Upon entering Stellar Outburst, Ba-dum! gain 6 Quantum Mech Energy (QME). When you have QME, spam Basic ATK to launch 4-sequence attack, each attack consumes QME to trigger resonance atk. During Stellar Outburst, you are in Dominance state (kinda like Iron Body).
+- SEQ 1: 200% + 300% ATK of Fire DMG.
+- SEQ 2: 1100% ATK of Fire DMG.
+- SEQ 3: 1200% ATK of Fire DMG.
+- SEQ 4: 1600% ATK of Fire DMG.
+- The last 2 QME will launch drum attack, 2025% + 300%x2 ATK of Fire DMG, trigger two resonance atk.
+- When airborne jump atk hits, deal 30% + 300% ATK of Fire DMG, consumes 1 QME to trigger one resonance atk.
+- Weapon button is disabled when you have QME.
+
 ---
 
 **AR 3**<br/>
+When AR Law of Ascension is activated: During Joy state, Total DMG +10% (S) / 15% (SS1). Joy state gained from Stellar Shift is considered as Augmented Ascension state.
 
 ---
 
 **AR 4**<br/>
+Related to future AR.
 
----
 
-**AR 5**<br/>
-
----
 
 ### PASSIVE
+Has [Good Fortune] meter. When meter is full, you can cast special weapon skill [Dream Collab]
 
+Meter starts at 0, max 240 points. <br/>
+Basic ATK restore 15 / 15 /30 / 45 points. When weapon or Combo hits, gain 30 points. Meter is cleared on exit. <br/>
+After casting Stellar Shift or QTE, gain 8 seconds of Joy state, can be refreshed. Dream Collab will end when Passion ends or when you exit. <br/>
+During Joy state, meter regen +100%, and gain higher anti-interrupt.
 
 ---
+
+**PASSIVE 1**<br/>
+Against SD enemy, Total DMG +20%. All team members gain SD Navigation state: Consuming SD remnant increases damage to SD enemy's Max HP by 30% (cannot stack).
+
+---
+
+**PASSIVE 2**<br/>
+Take 30% less damage. Team Fire DMG +20%.
+
+
 
 ### EVASION
+Deal 30% ATK of Fire DMG when you do aerial jump and hit an enemy, and reset aerial jump counter.
+
+Evasion skill: Trigger 3s time fracture, CD: 15s.
 
 ---
+
+**EVASION 1**<br/>
+**<span class="text-amber-400">[S2]</span>** (Toggle) Upon casting Combo ATK, weapon skill, or Basic ATK SEQ 4, trigger evasion skill.
+
+---
+
+**EVASION 2**<br/>
+**<span class="text-amber-400">[SSS]</span>** Upon casting QTE or Stellar Shift, reset evasion cd.
+
+
 
 ### WEAPON SKILL
 
+Press weapon: Deal 300%x2 ATK of Fire DMG, gathers nearby enemies, apply Passion mark to enemies.
+
+When meter is full, hold weapon button to use special weapon skill Dream Collab. Deal a total of 1575% ATK of Fire DMG, detonate all Passion marks on the field. Each mark detonation deals 100% ATK of Fire DMG. During this time, Joy state timer is paused.
+
+Weapon and Dream Collab will gather sd remnants.
+
 ---
+
+**WEAPON 1**<br/>
+Stellar Shift, weapon skill and Dream Collab will link up to 6 enemies hit, and the damage received from teammates and Ba-dum Kiana will be transferred to other linked enemies at a rate of 8.2% / 23% (S) ➔ 9.1% / 24% (S2) ➔ 10% / 25% (SS) respectively. (Transfer dmg is HP Loss DMG)
+
+
+---
+
+**WEAPON 2**<br/>
+Every time SD critical index is detonated, weapon skill and Dream Collab gain Total DMG +4% (S) / 5% (S1), max 20% (S) / 30% (S1).
+
+---
+
+**WEAPON 3**<br/>
+When weapon skill or Dream Collab hits a SD enemy, 8% of Max HP will be reduced, can only be triggered once per enemy. Trigger count refresh when enemy's HP reaches zero.
+
+---
+
+**WEAPON 4**<br/>
+(Toggle) When meter is full, you can cast Dream Collab by pressing weapon button instead of holding the button.
+
+
 ### BASIC ATK
+4-hit sequence, deal Fire DMG
 
+Ground:
+40%x2 , 30%x4 , 50%x3 , 550%x2 and adds Passion mark
 
+Air:
+50% , 30%x4 , 50%x3 , 420%x2 and adds Passion mark
+
+Evade or jump will not reset sequence
 
 ---
+
+**QTE**<br/>
+(Toggle) Trigger: Teammates use weapon skill or Ult, or enemies are time slowed. Deal 400% + 600% ATK of Fire DMG, and apply Passion mark to enemies hit, trigger 2s time fracture.
+
+---
+
+**BASIC 2**<br/>
+**<span class="text-amber-400">[SS]</span>** Upon entry via QTE, restore 40 meter, and 10 sp for yourself.
+
+
 ### COMBO ATK
 
+Ground Combo ATK: 350%x2 ATK of Fire DMG, knocks enemies up and pulling them.
 
+Air Combo ATK: 350%x2 ATK of Fire DMG, knocks enemies down and pulling them.
 
+Combo ATK adds Passion mark to enemies hit.
 
 ---
-### ULTIMATE
 
+**COMBO ATK 1**<br/>
+When an enemy on the field is hit by Combo ATK or Stellar Shift, the enemy takes 13% (S) / 18% (S2) / 20% (SS2) more Total DMG from Ba-dum Kiana's weapon skill and Ult.
 
----
+When there is more than one enemy on the field, this effect is temporarily disabled.
+
+### ULTIMATE 
+
+[SP: 90, CD: 24s] <br/>
+Hit the drum real hard. Deal 1200% ATK of Fire DMG, and restore 888 HP for the team. Has time stop.
+
 ### RANK UP
 
 **S1** <br/>
+Every time SD critical index is detonated, weapon skill and Dream Collab gain Total DMG +4% (S) / 5% (S1), max 20% (S) / 30% (S1).
+
+---
 
 **S2** <br/>
+- UNLOCK: Upon casting Combo ATK, weapon skill, or Basic ATK SEQ 4, trigger evasion skill.
+- Link enemy dmg share 8.2% / 23% (S) ➔ 9.1% / 24% (S2)
+- When an enemy on the field is hit by Combo ATK or Stellar Shift, the enemy takes 13% (S) / 18% (S2) more Total DMG from Ba-dum Kiana's weapon skill and Ult.
+
+---
+
 
 **S3** <br/>
 Lead Skill
 
+---
+
 **SS** <br/>
+- UNLOCK: Upon entry via QTE, restore 40 meter, and 10 sp for yourself.
+- Self Fire DMG +24% (S) / 27% (SS).  Passion mark, deal additional 480% (S) / 540% (SS) ATK of Fire DMG. Ult and Dream Collab deal additional 800% (S) / 900% (SS) ATK of Fire DMG
+- Link enemy dmg share 9.1% / 24% (S2)➔ 10% / 25% (SS)
+
+---
+
 
 **SS1** <br/>
+During Joy state, Total DMG +10% (S) / 15% (SS1).
+
+---
 
 **SS2** <br/>
+When an enemy on the field is hit by Combo ATK or Stellar Shift, the enemy takes 18% (S2) / 20% (SS2) more Total DMG from Ba-dum Kiana's weapon skill and Ult.
+
+---
 
 **SS3** <br/>
 Lead Skill
 
+---
+
 **SSS** <br/>
+- UNLOCK: Upon casting QTE or Stellar Shift, reset evasion cd.
+- Self Fire DMG +27% (SS) / 30% (SSS).  Passion mark, deal additional 540% (SS) / 600% (SSS) ATK of Fire DMG. Ult and Dream Collab deal additional 900% (SS) / 1000% (SSS) ATK of Fire DMG

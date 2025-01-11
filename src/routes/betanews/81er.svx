@@ -1,0 +1,88 @@
+---
+title: v8.1 Elysian Realm v2
+creationDate: "2024-11-25T16:52:12.764Z"
+lastModifiedDate: "2024-11-25T16:52:12.764Z"
+date: "2024-11-25"
+
+version: '8.1'
+sortOrder: '6'
+image: "/images/valkportrait/Blazing Wishes.png"
+
+---
+
+### LINKS
+
+- [8.1 Patch Note](/betanews/81log)
+- [Ba-dum! Kiana Skills](/betanews/badum)
+- [Ba-dum! Kiana Equipment](/betanews/badumgear)
+- [HoH Divine Key and Stigma](/betanews/hohdk)
+- [Theresa AstralOp](/betanews/teriasop)
+- [Elysian Realm](/81er)
+
+
+### PHASE 1
+
+**STAGE BUFF**
+- When valk attack hits, summon "Rice Cake Golden Shell" to attack the enemy (CD 5s), deals adaptive dmg and adds fireworks mark on the enemy (max 5 stacks). When weapon skill hits, fireworks mark can be detonated, deal HP Loss DMG based on the enemy's HP percentage. Enemies take 6% less Total DMG, increased by 1.8% after each battle ends up to 33% (independent multiplier)
+- It's Homu! It stole a negative weather slot and wishes you a happy new year! Say 'Thank You, Homu!' quickly
+- When valk triggers evasion skill or deal melee dmg, Total DMG +30% for 10s, can be refreshed
+- When Astral Ring is activated: Physical and Elemental DMG +24%
+- Discipline and Setsuna +2
+
+---
+
+**LOAD BUFF**
+- 0: F17 boss is changed to Homu Magician (typeless)
+- 5: Max sp +30
+- 5: Valk Total DMG +15%. Effect is disabled when you take dmg, lasts for 5s, can be refreshed.
+- 10: When you cast weapon skill, Elemental DMG +12% for 12s, can be refreshed.
+- 10: When Valk is not in Stellar Outburst state, Total DMG +20%.
+- 15: When there is a summoned unit on the field, or when enemy takes dmg from weapon skill, Total DMG +30% for 5s, can be refreshed.
+- 15: If valk weapon is bow, Drive Core, Javelin, Pistol, Chained Blades, gain Phy Breach +40%, and Ele Breach +20%
+
+
+### BA-DUM! KIANA
+
+**SPECIAL ADJUSTMENT**
+
+Battlesuit
+- Activates AR Law of Ascension
+- On entry, gain 100 sp
+- Stellar Outburst CD -80%
+- Gain higher anti-interrupt, take 50% less Total DMG
+
+Passive
+- Basic ATK meter recovery changed to 10/10/20/40
+- Weapon skill and Combo ATK meter recovery changed to 20.
+- Basic SEQ 4 and weapon skill can pull enemies.
+- Dream Collab restore 90 AR points.
+- Stellar Shift and Ult trigger evasion skill.
+- Passion mark detonation counts as both Basic ATK and Weapon.
+
+---
+
+**Signet 1**<br/>
+Basic ATK starts from SEQ 3 and SEQ 4 can be looped. Dream Collab deal additional 2200% ATK of Fire DMG and detonates 3 extra Passion marks. 
+Joy state no longer has a time limit. After casting two Dream Collabs, exit Joy state and refresh evasion skill cd. Gain full AR meter at the start of battle.
+
+---
+
+**Signet 2**<br/>
+Gain the following effects during Joy state: Basic ATK deals additional 600% ATK of Fire DMG. Basic ATK and passion detonation grants 10 hitcount.
+
+---
+
+**Signet 3**<br/>
+After using Ult, pulls nearby enemies and summon 8 Fortune Drums (considered as summoned units). 
+Jump two times, then land on the drum to trigger drum detonation (counts as weapon skill), deal 400% ATK of Fire DMG to all enemies on the field, restore 12 sp, and ult cd -2.2s.
+After all drums have been detonated, launch a downward slam, deal 1200% ATK of Fire DMG. After using Ult, Total DMG +60% for 10s, can be refreshed.
+
+---
+
+**Signet 4**<br/>
+Ult deals additional 2025% ATK of Fire DMG. After using Ult, every double jump reduces evasion cd by 2s and Fire DMG +3% (max 27%) for 10s, can be refreshed.
+
+---
+
+**Signet 5**<br/>
+When evasion skill is triggered, Fire DMG +50% for 15s, can be refreshed.
