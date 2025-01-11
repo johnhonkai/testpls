@@ -1,0 +1,119 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+
+title: v8.1 Patch Note v2
+
+version: '8.1'
+sortOrder: '1'
+image: "/images/valkportrait/Blazing Wishes.png"
+---
+
+### LINKS
+
+- [8.1 Patch Note](/betanews/81log)
+- [Ba-dum! Kiana Skills](/betanews/badum)
+- [Ba-dum! Kiana Equipment](/betanews/badumgear)
+- [HoH Divine Key and Stigma](/betanews/hohdk)
+- [Theresa AstralOp](/betanews/teriasop)
+- [Elysian Realm (Soon)]()
+
+---
+## <span class="text-amber-400">V2</span>
+
+## New Character
+- S-rank Kiana: Ba-dum! Fiery Wishing Star.
+- SD, Fire, AR Law of Ascension, Pistol user.
+- Is a DPS, can support LoAscension, World Star and one more future AR team.
+
+## New AstralOp
+- S-rank Theresa
+- AstralOp for Law of Ascension, Rite of Oblivion. Some buffs only require Heavenly Shift tag.
+
+## New Equipment
+- Elysia HoH Divine Key and Stigma. When equipped, HoH gains AR Wheel of Destiny.
+- Is a DPS, can support LoAscension, WoDestiny and one more future AR team.
+
+## New Outfits
+- Vita outfit. From outfit supply (Max 9600 crystal).
+- Lunar Vow outfit. From spending event 30k crystal milestone reward.
+- Coralie outfit. Free from event.
+
+## Event: New Wish Garden Tour
+- It's like Lantern autochess event
+
+## Chapter 7-EX
+
+## CN New Year Lobby
+
+## Event Rerun: When the Blood Moon Fades
+
+## EX Abyss
+- Stardust weather Sa: Tribulations of Life (SD)
+- LoAscension weather Homu Magician (Typeless)
+- Type Counter weather Sprout of Wishing (BIO)
+- Physical weather HoD Minion (IMG)
+- LoAscension weather Andrius (BIO)
+- LoAscension weather MHT-3C Retaliator (MECH)
+
+## Memorial Arena
+Added SSS Sa: Tribulations of Life (SD)
+
+## Elysian Realm
+- Added Badum Kiana
+- Added special adjustments for HoH with Divine Key
+- Updated stage effects
+
+## Elysian Realm Deep Sequence: Performance Test
+- The limited-time event is back. Clearing this is considered to be the same as clearing Corruption difficulty.
+- Features Badum Kiana, Reign Solaris, Sparkle and Lone Planetfarer.
+
+## Spending Event
+- Pull supplies, get tokens, and use tokens to exchange for valk card, stamps and more.
+- Reaching 30k crystal milestone rewards Lunar Vow outfit.
+- Exchange shop has Herrscher of Rebirth card, HoRB stamps, Dreamweaver stamps.
+
+## Battle Pass
+- Added Life Harvester and HoRB Stigma
+
+## Shop
+- Supply Shop: Added Herrscher of Human and Lunar Vow stamps. Removed Dreamweaver and Herrscher of Truth stamps. Adjusted the Max ATK affix limit to 2.
+- Exchange Shop: Added Mitternachts Waltz, Key of Radiance, Zhenyi stigma and Himeko stigma.
+- War Treasury: Added Herrscher of Flamescion and Infinite Ouroboros (uses Ancient Legacy).
+
+## Foundry
+- Added G4 Zeno.
+- Added Badum Kiana stigma and Solon stigma.
+
+---
+
+## <span class="text-amber-400">Value and System Changes</span>
+
+## Battlesuit Changes
+
+- Reign Solaris: Fixed an issue where if you are the leader, in certain cases, teammate's switch cd is abnormal after activating Stellar Outburst.
+- Reign Solaris: Corrected the description of Ultimate subskill 1 [Holy Sword's Chant]. This is only a text optimization, actual effect remains the same.
+- Reign Solaris: Corrected the description of leader skill. This is only a text optimization, actual effect remains the same.
+    - Old Text: Enemies take 25% more Physical DMG.
+    - New Text: Enemies take 26% more Physical DMG.
+- Lone Planetfarer: Fixed an issue against Physical Otto. When you press Ult to activate Star Crosser, you might have abnormal animation.
+
+## EX Abyss Changes
+- Shadow weather MHT 3C Retaliator: During transition phase, weakened state will be removed, and its weak point will be refreshed.
+- Shadow weather MHT 3C Retaliator: Increased the dmg debuff when you hit its weak point.
+- Bloodthirsty and Oblivion weather Homu: Changed Homei and Hola so that they are no longer affected by time fracture.
+- Dominance weather Aponia: Fixed an issue where some devices experience abnormal lag.
+- Physical weather Bygone Deliverance: When Herrscher of Rebirth or Lone Planetfarer are present, Bygone Deliverance may cast skills abnormally during transition phase.
+
+## Memorial Arena Changes
+- Meteroid: Fixed an issue where if you use SIMP, the boss has abnormal targeting.
+
+## Elysian Realm Changes
+- Reign Solaris: Fixed an issue where hoverboard is missing during idle animation.
+- Correct skill effect description of Daybreak, the Long Night Hangs Alone. This is only a text optimization, actual effect remains the same.
+
+## System Changes
+- Reign Solaris: Fixed abnormal AR meter issue in tactical classroom mode.
+- Reign Solaris: Corrected description of some instructions for first stage in tactical classroom mode.
+- Corrected description of some instructions for trauma lesson in tactical classroom mode.
+- Fixed an issue where skills might not be displayed when entering Divine Key room to remove gene limit.
+- Fixed an issue where some buttons in control setting were not customized properly.

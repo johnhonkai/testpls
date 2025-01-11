@@ -1,0 +1,110 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Ba-dum! Kiana Skill v2
+
+version: '8.1'
+sortOrder: '2'
+image: "/images/valkportrait/Blazing Wishes.png"
+
+---
+
+### LINKS
+
+- [8.1 Patch Note](/betanews/81log)
+- [Ba-dum! Kiana Skills](/betanews/badum)
+- [Ba-dum! Kiana Equipment](/betanews/badumgear)
+- [HoH Divine Key and Stigma](/betanews/hohdk)
+- [Theresa AstralOp](/betanews/teriasop)
+- [Elysian Realm (Soon)]()
+
+
+### INTRO
+- S-rank, SD, Fire, Gun user
+- Astral Ring: Law of Ascension
+- Is a DPS, can support Law of Ascension Team, Domain Resonance team, one future ??? AR team
+- Gameplay:  
+
+---
+### LEADER 
+When set as leader, activate AR Law of Ascension. SO cost: , Duration: , CD: 
+
+When you have 1 team member with Heavenly Shift attribute: 
+
+When you have 2 team members with Heavenly Shift attribute: 
+
+When you have 3 team members with Heavenly Shift attribute: 
+
+---
+
+### ASTRAL RING
+
+Ba-dum! is protected by AR Law of Ascension. When Stellar Outburst is activated, 
+
+---
+
+**AR 1**<br/>
+
+---
+
+**AR 2**<br/>
+
+---
+
+**AR 3**<br/>
+
+---
+
+**AR 4**<br/>
+
+---
+
+**AR 5**<br/>
+
+---
+
+### PASSIVE
+
+
+---
+
+### EVASION
+
+---
+
+### WEAPON SKILL
+
+---
+### BASIC ATK
+
+
+
+---
+### COMBO ATK
+
+
+
+
+---
+### ULTIMATE
+
+
+---
+### RANK UP
+
+**S1** <br/>
+
+**S2** <br/>
+
+**S3** <br/>
+Lead Skill
+
+**SS** <br/>
+
+**SS1** <br/>
+
+**SS2** <br/>
+
+**SS3** <br/>
+Lead Skill
+
+**SSS** <br/>

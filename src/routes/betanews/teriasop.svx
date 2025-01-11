@@ -1,0 +1,69 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+
+title: Theresa AstralOp v2
+
+version: '8.1'
+sortOrder: '5'
+image: "/images/valkportrait/Blazing Wishes.png"
+---
+
+### LINKS
+
+- [8.1 Patch Note](/betanews/81log)
+- [Ba-dum! Kiana Skills](/betanews/badum)
+- [Ba-dum! Kiana Equipment](/betanews/badumgear)
+- [HoH Divine Key and Stigma](/betanews/hohdk)
+- [Theresa AstralOp](/betanews/teriasop)
+- [Elysian Realm (Soon)]()
+
+---
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/QR1RdC2.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+## Assist Skill
+
+**<span class="text-amber-400">[S]</span>** Unleash Assist ATK, continuously pull surrounding enemies and deal a total of 1500% ATK of Lightning DMG. If Ba-dum! Kiana is the leader, Assist ATK deal additional 1500% ATK of Lightning DMG.
+
+**<span class="text-amber-400">[S]</span>** When Stellar Shift hits, Theresa summons a Judah spear, deal 800% ATK of Lightning DMG. Theresa gain Lightning DMG +100%.
+
+**<span class="text-amber-400">[SS]</span>** For every valk with Heavenly Shift tag, Theresa gain Total DMG +33%.
+
+**<span class="text-amber-400">[SSS]</span>** When AR Law of Ascension is activated: Theresa's ATK +100%. Assist ATK and Judah spear deal additional 1000% ATK of Lightning DMG.
+
+---
+
+
+## Recharge Skill
+
+**<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50. 
+During Stellar Outburst: Enemies take 18% more Elemental DMG and 5% more Total DMG.
+
+**<span class="text-amber-400">[S]</span>** For every valk with Heavenly Shift tag, initial AR +8.
+
+**<span class="text-amber-400">[SS]</span>**
+- Upon casting Assist ATK, restore 8 AR. Upon casting Judah spear, restore 2 AR, CD: 4s.
+- During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.
+- When AR Rite of Oblivion is activated: Upon casting Assist ATK, restore 36 AR.
+
+**<span class="text-amber-400">[SSS]</span>** When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.
+
+---
+
+## Passive Skill
+
+**<span class="text-amber-400">[S]</span>** When AR Law of Ascension is activated: 
+	- After activating Stellar Outburst: The leader can use Stellar Shift one more time.
+	- Team Elemental DMG +12%, Crit Rate +27%.
+	- HP Loss DMG inflicted by the leader is increased by 6%.
+
+When AR Rite of Oblivion is activated: 
+	- During AR Charging: Team Lightning DMG +18%.
+
+**<span class="text-amber-400">[S]</span>** Team take 18% less dmg. When Stellar Shift is casted, recover 600 HP.
+
+**<span class="text-amber-400">[SS]</span>** For every valk with Heavenly Shift tag, enemies take 5.5% more Elemental DMG and 2.5% more Physical DMG.
+
+**<span class="text-amber-400">[SSS]</span>** When AR Law of Ascension is activated: Enemies take 12% more Total DMG from QTE and Stellar Shift.

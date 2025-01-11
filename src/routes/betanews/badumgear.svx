@@ -1,0 +1,22 @@
+---
+creationDate: "2025-01-10T03:44:52.531Z"
+
+
+title: Ba-dum! Kiana Gear v2
+
+version: '8.1'
+sortOrder: '3'
+image: "/images/valkportrait/Blazing Wishes.png"
+
+---
+
+### LINKS
+
+- [8.1 Patch Note](/betanews/81log)
+- [Ba-dum! Kiana Skills](/betanews/badum)
+- [Ba-dum! Kiana Equipment](/betanews/badumgear)
+- [HoH Divine Key and Stigma](/betanews/hohdk)
+- [Theresa AstralOp](/betanews/teriasop)
+- [Elysian Realm (Soon)]()
+
+---
