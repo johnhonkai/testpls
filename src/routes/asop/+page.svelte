@@ -2201,7 +2201,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           <li>Shadow Star ATK Total DMG Taken +{compareCumulativeBuffs.shadowtdmtaken}%</li>
           {/if}
           
-          
+          {#if compareCumulativeBuffs.qtetdmtaken > 0 }
+          <li>QTE and Stellar Shift Total DMG Taken +{compareCumulativeBuffs.qtetdmtaken}%</li>
+        {/if}
+
           {#if compareCumulativeBuffs.tdmtaken > 0 || compareCumulativeBuffs.actdmtaken > 0 || compareCumulativeBuffs.sotdmtaken > 0 }
           <li>
           
