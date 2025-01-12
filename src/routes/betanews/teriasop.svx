@@ -38,15 +38,17 @@ image: "/images/valkportrait/Blazing Wishes.png"
 
 ## Recharge Skill
 
-**<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50. 
+**<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50. <br/>
 During Stellar Outburst: Enemies take 18% more Elemental DMG and 5% more Total DMG.
 
 **<span class="text-amber-400">[S]</span>** For every valk with Heavenly Shift tag, initial AR +8.
 
 **<span class="text-amber-400">[SS]</span>**
+When AR Law of Ascension is activated:
 - Upon casting Assist ATK, restore 8 AR. Upon casting Judah spear, restore 2 AR, CD: 4s.
 - During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.
-- When AR Rite of Oblivion is activated: Upon casting Assist ATK, restore 36 AR.
+
+When AR Rite of Oblivion is activated: Upon casting Assist ATK, restore 36 AR.
 
 **<span class="text-amber-400">[SSS]</span>** When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.
 
