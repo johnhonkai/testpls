@@ -1,5 +1,25 @@
 export const valkyries = [
 
+    { name: 'Ba-dum! Fiery Wishing Star', 
+        image: '/images/valkportrait/Blazing Wishes.png', 
+        type: 'SD', 
+        element: 'Fire', 
+        astralRing:'Law of Ascension', 
+        artag: ['Heavenly Shift' , 'Domain Resonance' ] , 
+        url: '/valk/badum',
+        cost: 200,
+    },
+
+    { name: 'Herrscher of Human: Ego', 
+        image: '/images/valkportrait/Elysia%20Herrscher%20of%20Human%20Ego.png', 
+        type: 'Psy', 
+        element: 'Ice', 
+        astralRing:'Wheel of Destiny', 
+        artag: ['Heavenly Shift' , 'Harmonized Shadow Star' ] , 
+        url: '/valk/hoh',
+        cost: 200,
+    },
+
     { name: 'Reign Solaris', 
         image: '/images/valkportrait/dudu.png', 
         type: 'Img', 
@@ -16,14 +36,19 @@ export const valkyries = [
         type: 'Qua', 
         element: 'Fire', 
         astralRing:'World Star', 
-        artag: ['Domain Resonance' ] , 
+        artag: ['Domain Resonance' , 'Heavenly Shift'] , 
         url: '/valk/sparkle',
         cost: 150,
     },
 
-    { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: 'Rite of Oblivion' , artag: [ 'Omniscient Star', 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/lp', cost: 150 },
+    { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: 'Rite of Oblivion' , 
+        artag: [ 'Omniscient Star', 'Domain Resonance' , 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/lp', cost: 150 },
+
+
     { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: 'World Star' , artag: [ 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/simp', cost: 150 },
-    { name: 'Jovial Deception: Shadowdimmer', image: '/images/valkportrait/Songque Jovial Deception.png', type: 'SD', element: 'Physical', astralRing: 'Wheel of Destiny' , artag: [ 'Harmonized Shadow Star'] , url: '/valk/jd', cost: 145},
+
+    { name: 'Jovial Deception: Shadowdimmer', image: '/images/valkportrait/Songque Jovial Deception.png', type: 'SD', element: 'Physical', astralRing: 'Wheel of Destiny' , artag: [ 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/jd', cost: 145},
+    
     { name: 'Lone Destruction: Shadowchaser', image: '/images/valkportrait/Lantern Lone Destruction.png', type: 'Psy', element: 'Fire', astralRing: 'Wheel of Destiny', artag: [ 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/lantern', cost: 140},
     { name: 'Mad Pleasure: Shadowbringer', image: '/images/valkportrait/Thelema Mad Pleasure.png', type: 'Mech', element: 'Ice', astralRing: 'Wheel of Destiny', artag: [ 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/thelema', cost: 140 },
     { name: 'Deepspace Anchor: First Light', image: '/images/valkportrait/Senadina Deepspace Anchor.png', type: 'SD', element: 'Lightning', astralRing: 'World Star', artag: [ 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/sena', cost: 150},
