@@ -1225,9 +1225,13 @@ export const teamData = {
           { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S N/A' },
 
         ] 
-      },
+      }
       
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/fOtZH8BiZYg', abyss: 'Nirvana 542D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/Chr0ksydpL4', abyss: 'Nirvana 542D', uploader: 'iChronos' },
+    ] 
   },
   shadowtank: {
     teamDataSets: [

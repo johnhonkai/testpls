@@ -76,7 +76,7 @@
         </summary>
         <div class="py-3 px-4">
 
-                <p class="text-sm sm:text-base mb-4">In v8.0, the best supports for Reign Solaris are Sparkle and Jovial Deception. Vita only starts beating other supports at really high rank (SSS) , but Vita is still a great option.</p>
+                <p class="text-sm sm:text-base mb-4">In v8.0, the best supports for Reign Solaris are Sparkle and Jovial Deception. Vita only starts beating other supports at really high rank (SS+) , but Vita is still a great option.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
                     Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
