@@ -603,7 +603,11 @@ async function increaseLike() {
 
           <div>
             <p class="font-semibold text-orange-300 mt-6">Part 1 Buff</p>
-           <p>As Part 1 support, you must enter with QTE, then do a Charged ATK to trigger 10% (S) / 18% (SS1) TDM Taken, and more self buff + shieldbreak.</p>
+           <p>- As Part 1 support, you must enter with QTE, then do a Charged ATK to trigger 10% (S) / 18% (SS1) TDM Taken, more self buff and more shieldbreak.
+            <br/>
+            - As Part 1 support, Ultimate makes enemies take 15% more Physical DMG for 20s.
+
+           </p>
           </div>
 
           <div>
