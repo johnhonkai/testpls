@@ -582,9 +582,9 @@
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Vita.png" date="Feb 11"/>
+                    <BossCard image="/images/BossesMA/BOSS_260_3S.png" />
+                    <BossCard image="/images/BossesMA/Dark Jixuanyuan (DXY).webp" />
                 </div>
 
             </div>
