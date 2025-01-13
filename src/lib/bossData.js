@@ -129,7 +129,7 @@ export const bossData = {
   },
   lightningguaymas: {
     name: 'Sprout of Wishing', 
-    mechanics: 'Phase 2 has lightning-vulnerable shield.', 
+    mechanics: '', 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 
