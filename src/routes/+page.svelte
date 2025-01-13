@@ -88,7 +88,7 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2025-1-10'); // Start date for v7.9 in Regional Servers
-      const cnStartDate = new Date('2024-12-12');       // Start date for v7.9 in CN Servers
+      const cnStartDate = new Date('2024-12-13');       // Start date for v7.9 in CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
@@ -262,21 +262,21 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=J2XGoON5gNA" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=xgH5sSoS25c" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/J2XGoON5gNA/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/xgH5sSoS25c/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
-          <p class="text-slate-300 text-base">New Kiana and Elysia Divine Key!</p>
+          <p class="text-slate-300 text-base">S-rank Kiana: Ba-dum! Fiery Wishing Star</p>
         </div>
       </a>
 
-      <a href="/hi3awards" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
+      <a href="https://www.youtube.com/watch?v=-1uALI68YHo" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hi3award.webp" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/-1uALI68YHo/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">HI3 Awards 2024</h3>
-          <p class="text-slate-300 text-base">Results Are Out!</p>
+          <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
+          <p class="text-slate-300 text-base">Herrscher of Human Divine Key</p>
         </div>
       </a>
 
@@ -294,9 +294,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=a3hMZ44Rdac" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=x6hZ6MvOayY" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/a3hMZ44Rdac/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/x6hZ6MvOayY/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

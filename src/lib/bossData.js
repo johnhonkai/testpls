@@ -1,7 +1,9 @@
 
 export const weatherList = {
   lightning: [
-    {id: 'lightningsprout',name: 'Sprout of Wishing'}
+    {id: 'lightningsprout',name: 'Sprout of Wishing'},
+    {id: 'lightningguaymas',name: 'Meteoroid: Guaymas'},
+
   ],
   fire: [
     {id: 'firemobius', name: 'Mobius'},
@@ -77,6 +79,8 @@ export const weatherList = {
   ],
   symphony: [
     {id: 'symphellmaru', name: 'Hellmaru'},
+    {id: 'kevin', name: 'Diabolic Kevin'},
+
   ],
   loascension: [
     {id: 'momemperor', name: 'Mockery and Frost Emperor'},
@@ -123,7 +127,14 @@ export const bossData = {
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
-
+  lightningguaymas: {
+    name: 'Sprout of Wishing', 
+    mechanics: 'Phase 2 has lightning-vulnerable shield.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Meteor_Guaymas.webp", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
+  },
   typekasumi: {
     name: 'Kasumi', 
     mechanics: 'Can choose fire or ice vulnerable shield.', 
@@ -368,6 +379,14 @@ export const bossData = {
     debuff: 'Ice (H)', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Hellmaru.webp", 
+    weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
+  },
+  kevin: {
+    name: 'Diabolic Kevin', 
+    mechanics: 'Kevin will record elemental dmg received for a certain duration. Then, he will take less dmg from the element with the highest recorded dmg. When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 
+    weakness: 'Physical (H)', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Kevin Kaslana.webp", 
     weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
   },
   momemperor: {
@@ -1467,5 +1486,29 @@ export const teamData = {
       { url: 'https://www.youtube.com/embed/RvNgM9cFmVE', abyss: 'Nirvana 541D', uploader: 'Marisa Honkai' },
 
     ] 
+  },
+
+  lightningguaymas: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_songque.png"],
+        rank: '1+',
+        pct: '99%',
+        bottext: "Highest score: S 781, S2 785, SS 812, 9S 843"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Helia Valkyrie Boltstorm.png", "images/valkportrait/asop_songque.png"],
+        rank: '47',
+        pct: '1%',
+        bottext: "Highest score: SS1 782"
+      },
+      
+    ]},]
   },
 }
