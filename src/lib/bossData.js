@@ -128,7 +128,7 @@ export const bossData = {
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
   lightningguaymas: {
-    name: 'Sprout of Wishing', 
+    name: 'Meteoroid: Guaymas', 
     mechanics: '', 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
