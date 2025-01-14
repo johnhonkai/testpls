@@ -308,7 +308,7 @@
         <img src="/images/newstab/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Arustat Site</h3>
-          <p class="text-slate-300 text-base">Check out Arustat site for HI3 teambuilder and more data</p>
+          <p class="text-slate-300 text-base">Check out Arustat site for HI3 teambuilder, Arena teams, gacha simulator, and more</p>
         </div>
       </a>
 
