@@ -5,7 +5,7 @@ title: Theresa AstralOp v2
 
 version: '8.1'
 sortOrder: '5'
-image: "/images/valkportrait/Blazing Wishes.png"
+image: "/images/valkportrait/asop_teri.png"
 ---
 
 ### LINKS

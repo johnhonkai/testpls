@@ -359,17 +359,17 @@ function selectTabMobile(event) {
 
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400 ">Asuka</strong>
-          <br/> Asuka was available from a limited-time SP supply. Currently, she can no longer be obtained.
+          <br/> Asuka was available from a limited-time SP Battlesuit supply. 
       </p>
 
 
       <p class="mt-4 text-sm sm:text-base">
         <strong class="text-amber-400 ">Lance of Longinus</strong>
-        <br/> Lance of Longinus was available from a limited-time Focused supply. Currently, the weapon can no longer be obtained.
+        <br/> Lance of Longinus was available from a limited-time Focused supply.
     </p>
     <p class="mt-4 text-sm sm:text-base">
       <strong class="text-amber-400 ">Children stigma set</strong>
-      <br/> - Children stigma was available from a limited-time Focused supply. Currently, the stigma can no longer be obtained.
+      <br/> - Children stigma was available from a limited-time Focused supply. 
       <br/> - G3 Columbus stigma was introduced as an alternative for Children set with the same stats.
   </p>
 

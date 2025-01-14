@@ -83,6 +83,12 @@
             description: '<li>Duration: 2 weeks</li><li>A-rank: Umbral Rose (UP), Scarlet Fusion, Night Squire, Valkyrie Pledge</li>',
 
         },
+        "Valk3": {
+            title: "Battlesuit Supply A: Deepspace Anchor",
+            description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Boltstorm (UP), Divine Prayer, Valkyrie Triumph, Yamabuki Armor</li>',
+            image: "https://i.imgur.com/zjUikLa.png"
+
+        },
         "Raffle": {
             image: "https://i.imgur.com/CZNJxzs.png"
         },
@@ -109,11 +115,13 @@
         },
         "ADV": {
             title: "ADV Supply: Fenghuang of Vicissitude",
-            description: '<li>Duration: 2 weeks</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 100 pulls.</li><li>You also get one FoV stamp (10 frags) every 10 pulls, until 100 pulls. (Total 10 stamps = 100 frags)</li>'
+            description: '<li>Duration: 2 weeks</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 100 pulls.</li><li>You also get one FoV stamp (10 frags) every 10 pulls, until 100 pulls. (Total 10 stamps = 100 frags)</li>',
+            image: "https://i.imgur.com/i3gDubR.png"
         },
         "Rebate": {
             title: "REBATE FOCUSED SUPPLY",
-            description: "<li>Duration: 2 weeks</li><li>UP: Torch of Eons, Fu Hua OD</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Torch of Eons (UP), Star Dance, Bloodied Casket, Pandora 18, Life Harvester, Rudder in Dream</li><li>Stigma: Fu Hua OD (UP), Cecilia Youth, Van Gogh, Elysia Pristine, Little Joys</li>",
+            description: "<li>Duration: 2 weeks</li><li>UP: Torch of Eons, Fu Hua OD</li><li>Each featured equipment is guaranteed within 50 pulls (200 pulls max)</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Torch of Eons (UP), Star Dance, Bloodied Casket, Pandora 18, Life Harvester, Rudder in Dream</li><li>Stigma: Fu Hua OD (UP), Cecilia Youth, Van Gogh, Elysia Pristine, Little Joys</li>",
+            image: "https://i.imgur.com/9Xp3dVl.png"
         },
     };
 
@@ -181,7 +189,7 @@
                         </div>
                     </div>    
 
-                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                    <div on:click={() => openModal("Valk3")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Deepspace Anchor</span>
    
@@ -334,7 +342,7 @@
     
                 <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 7 and Cube Durandal event</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 7 and Cube Bianka event</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/Kkq9gtN.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -464,6 +472,25 @@
                 <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Web Event: Memories of the Moon Sea</span>
+
+                </div>
+
+            </div>
+
+            <div class="relative grid grid-cols-7 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold">EVENT 9</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center text-center">v8.1 Login Event</span>
 
                 </div>
 
