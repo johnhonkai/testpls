@@ -189,7 +189,7 @@ export const asopbuffs = [
             rank: "SSS",
             available_by_default: "no",
 
-            description: "Sera's ATK +100%. Assist ATK and Judah spear deal additional 1000% ATK of Lightning DMG.",
+            description: "Theresa's ATK +100%. Assist ATK and Judah spear deal additional 1000% ATK of Lightning DMG.",
             condition: { astralRing: "Law of Ascension"},
 
         },
