@@ -1300,7 +1300,11 @@ export const teamData = {
 
         ] 
       },
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/embed/BLjl8jH-3BE', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/embed/WNymoQCWvEM', abyss: 'Nirvana 539D', uploader: 'iChronos' },
+    ] 
   },
   deliverance: {
     teamDataSets: [
