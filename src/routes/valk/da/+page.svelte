@@ -623,7 +623,7 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
               <div class="flex flex-row rounded">
-              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
               <p class="text-base sm:text-lg font-semibold">START</p>

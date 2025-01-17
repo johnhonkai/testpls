@@ -123,6 +123,10 @@
             description: "<li>Duration: 2 weeks</li><li>UP: Torch of Eons, Fu Hua OD</li><li>Each featured equipment is guaranteed within 50 pulls (200 pulls max)</li><li>For the first 50 pulls, you get 3 Equipment Supply Cards every 10 pulls (total 15 cards max)</li><li>Weapon: Torch of Eons (UP), Star Dance, Bloodied Casket, Pandora 18, Life Harvester, Rudder in Dream</li><li>Stigma: Fu Hua OD (UP), Cecilia Youth, Van Gogh, Elysia Pristine, Little Joys</li>",
             image: "https://i.imgur.com/9Xp3dVl.png"
         },
+        "Login81": {
+            title: "7-Day Login",
+            image: "https://i.imgur.com/72vgGBG.png"
+        },
     };
 
 
@@ -488,7 +492,7 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div on:click={() => openModal("")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold items-center justify-center border-2  border-cyan-700">
+                <div on:click={() => openModal("Login81")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center text-center">v8.1 Login Event</span>
 

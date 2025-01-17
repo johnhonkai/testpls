@@ -383,7 +383,7 @@ export const bossData = {
   },
   kevin: {
     name: 'Diabolic Kevin', 
-    mechanics: 'Kevin will record elemental dmg received for a certain duration. Then, he will take less dmg from the element with the highest recorded dmg. When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 
+    mechanics: 'Kevin will record elemental dmg received until the gauge is filled, or for a certain duration. Then, he will take less dmg from the element with the highest recorded dmg. When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 
     weakness: 'Physical (H)', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Kevin Kaslana.webp", 
