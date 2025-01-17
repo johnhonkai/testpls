@@ -190,7 +190,7 @@ When AR Wheel of Destiny is activated:
 ---
 ** AR 4 ** <br/>
 When Law of Ascension is activated:
-- ~~Ego Blossom can trigger Stellar Drain.~~
+- Ego Blossom can trigger Stellar Drain.
 - After activating Stellar Outburst, you can select any valk with with Heavenly Shift tag and trigger the valk's Stellar Shift ATK. Other Heavenly Shift characters will cast their Star Shift skill when they enter the field.
 - Stellar Shift: Enters Herrscher of Origin form and auto cast Charged ATK, deal 700% ATK of Ice DMG, trigger 4s time fracture.
 - Upon casting Stellar Shift, enter Augmented Ascension state for 6 seconds. On exit, cast Ult [Everlasting Blessing], then ends Augmented Ascension state.
