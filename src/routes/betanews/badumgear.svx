@@ -2,7 +2,7 @@
 creationDate: "2025-01-10T03:44:52.531Z"
 
 
-title: Ba-dum! Kiana Gear v2
+title: Ba-dum! Kiana Gear v3
 
 version: '8.1'
 sortOrder: '3'
@@ -36,11 +36,11 @@ The weapon active's CD, max charges and effects are based on wielder type.  If w
 
 
 Ba-dum! Fiery Wishing Star equip bonus: 
-- When you are the leader, upon casting Stellar Shift, apply timestop for 1.5s. Casting Ult or switching out will immediately end the timestop. For a certain duration after Stellar Shift, your Basic ATK gain Total DMG +20%.
+- When you are the leader, upon casting Stellar Shift, apply timestop for 1.5s. Casting Ult or switching out will immediately end the timestop. During Joy state after Stellar Shift, your Basic ATK gain Total DMG +20%.
 
 - During Stellar Shift, each drum hit deals additional 200% ATK of Fire DMG.
 
-- When there is only one enemy present on field and it has been inflicted with Passion multiple times, Dream Collab can detonate Passion one more time, deal 100% x 4 ATK of Fire DMG.
+- When there is only one enemy present on field **~~and it has been inflicted with Passion multiple times, Dream Collab can detonate Passion one more time~~**  > **you can apply one more Passion mark (v3)**,  deal 4x100% ATK of Fire DMG.
 
 ---
 
@@ -84,7 +84,7 @@ Ba-dum! Fiery Wishing Star equip bonus: Enemies on the field take +18% more Elem
 ---
 
 **2PC SET**<br/>
-Fire DMG +30%. Ba-dum! Fiery Wishing Star equip bonus: 
+Fire DMG **+30% (v2) > 35% (v3)**. Ba-dum! Fiery Wishing Star equip bonus: 
 - Enemies on the field take +20% more Fire DMG from herself.
 - When Astral Ring is activated: Enemies on the field take +30% more Elemental and Physical DMG from characters with [Let’s Play Together!] status.
 - When AR World Star is activated, during AR Charging: Team Total DMG +18%.
@@ -96,10 +96,14 @@ Fire DMG +30%. Ba-dum! Fiery Wishing Star equip bonus:
 ---
 
 **3PC SET**<br/>
-Total DMG +25%. Ba-dum! Fiery Wishing Star equip bonus: 
-- Team gain [Let’s Play Together!] status.
-- Enemies on the field take +20% more Total DMG from self.
+**~~Total DMG +25% (v2)~~ > Basic ATK and Ult gain Total DMG +17% (v3)**
+
+Ba-dum! Fiery Wishing Star equip bonus: 
+- ~~v2: Team gain [Let’s Play Together!] status.~~
+- **v3: Upon hitting an enemy with Combo ATK or QTE, or upon activating Stellar Outburst, or if you are the leader: Team gain [Let’s Play Together!] status for 25s, can be refreshed.**
+- Enemies on the field take **+20% (v2) > 30% (v3)** more Total DMG from self.
 - When Law of Ascension is activated:
-    - Characters with [Let’s Play Together!] gain Elemental DMG and Physical DMG +20%, Physical DMG +30%, (I think theres a wrong text here, check again in v3) , Total DMG +12%.
-    - Enemies on field take +20% more Total DMG from characters with [Let’s Play Together!] status.
+    - Characters with [Let’s Play Together!] gain Elemental DMG +20%, Physical DMG **+30% (v2) > 15% (v3)**, Total DMG **+12% (v2) > 15% (v3)**.
+    - Enemies on field take **+20% (v2) > 10% (v3)** more Total DMG from characters with [Let’s Play Together!] status.
+    - **v3: When Badum is not the leader, enemies' Total DMG taken by teammates increased by 20%.**
     - During Stellar Outburst: Enemies take +10% more Total DMG, +12% more Elemental and Physical DMG from characters with [Let’s Play Together!] status.
