@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: v8.1 Patch Note v2
+title: v8.1 Patch Note v3
 
 version: '8.1'
 sortOrder: '1'
@@ -18,6 +18,51 @@ image: "/images/valkportrait/Blazing Wishes.png"
 - [Elysian Realm](/betanews/81er)
 
 ---
+
+## <span class="text-amber-400">V3</span>
+
+
+**BATTLESUIT**<br/>
+- Badum Kiana: Adjusted skill effects and values. Refer to individual pages for all the changes.
+- HoH AR Skill: Adjusted skill and values. Refer to individual pages for all the changes.
+- Lone Planetfarer: 
+When Law of Ascension is activated: When Enhanced Basic ATK SEQ 4 hits, a new effect is added: Consume Stellar Drain and Abyss stacks, and restore additional 15 AR. Reset the leader's switch CD, and trigger her QTE, other effects remain the same.
+- Badum Kiana: Fixed repeated dmg issue when using Dream Collab in certain cases.
+- Badem Kiana: With signature weapon equipped, fixed an issue where timestop takes effect even when you are not the leader.
+- HoH with Divine Key: Fixed an issue where Special Ult and Augmented Ascension state are not affected by damage buffs related to Stellar Outburst and Origin Form.
+- FoV with Crane outfit: Fixed an issue where she has abnormal movement during story dialog.
+- HoH with Divine Key: Optimized Flamechaser mark appearance order during special ult.
+
+**ASTRALOP**<br/>
+- Theresa: Adjusted skill effects and values. Refer to individual pages for all the changes.
+
+
+**EQUIPMENT**<br/>
+- Skyveil Feathers:
+OLD: When entering battle, consuming Stellar Drain for the first time with Combo ATK restore 15 bonus AR Intensity. Disabled upon entering Stellar Outburst.
+NEW: When entering battle, hitting an enemy with Combo ATK restore 15 bonus AR Intensity. Disabled upon entering Stellar Outburst.
+- Badum weapon: Adjusted skill effects and values. Refer to individual pages for all the changes.
+- HoH Divine Key: Adjusted skill effects and values. Refer to individual pages for all the changes.
+
+**STIGMA**<br/>
+- Badum stigma: Adjusted skill effects and values. Refer to individual pages for all the changes.
+- Solon stigma: Adjusted skill effects and values. Refer to individual pages for all the changes.
+
+**EX ABYSS**<br/>
+- LoAscension weather Homu: Changed Homu Magician to Homu Emperor
+- LoAscension weather Andrius: Adjusted HP and shield HP of Andrius. Adjusted HP of BIO mobs.
+- Ice weather Raven: Fixed an issue where HoFi has abnormal movement during absolute time fracture.
+
+**MEMORIAL ARENA**<br/>
+- Adjusted SSS Sa stats.
+- Bygone Deliverance: Fixed Reign Solaris abnormal movement in certain cases.
+- Sprout of Wishing: Fixed Reign Solaris falling off the map in certain cases.
+
+**SYSTEM**<br/>
+- Fixed an issue for iOS devices where ground looks weird when HoFi uses absolute time fracture against Husk Existentialism.
+
+---
+
 ## <span class="text-amber-400">V2</span>
 
 ## New Character
