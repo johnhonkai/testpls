@@ -49,7 +49,7 @@ NEW: When entering battle, hitting an enemy with Combo ATK restore 15 bonus AR I
 - Solon stigma: Adjusted skill effects and values. Refer to individual pages for all the changes.
 
 **EX ABYSS**<br/>
-- LoAscension weather Homu: Changed Homu Magician to Homu Emperor
+- LoAscension weather Homu: Changed Homu Magician to Homu Performer (same boss, just different name and has spring arc city stage)
 - LoAscension weather Andrius: Adjusted HP and shield HP of Andrius. Adjusted HP of BIO mobs.
 - Ice weather Raven: Fixed an issue where HoFi has abnormal movement during absolute time fracture.
 
