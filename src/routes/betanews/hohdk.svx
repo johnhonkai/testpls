@@ -83,7 +83,7 @@ Herrscher of Human: Ego equip bonus:
 Ice DMG **+15% (v2) > 12% (v3)**. Herrscher of Human equip bonus: 
 - ~~**Enemies on the field take +15% more Ice DMG from herself.**~~ 
 - Characters with [Ego Blessing] status gain Total DMG **+20% (v2) > 12% (v3).**
-- **v3: During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , self Ice DMG +12%, and enemies take 15% more Ice DMG from herself. 
+- **v3: During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , self Ice DMG +12%, and enemies take 15% more Ice DMG from herself.** 
 
 ---
 
