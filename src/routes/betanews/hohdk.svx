@@ -83,7 +83,7 @@ Herrscher of Human: Ego equip bonus:
 Ice DMG **+15% (v2) > 12% (v3)**. Herrscher of Human equip bonus: 
 - ~~**Enemies on the field take +15% more Ice DMG from herself.**~~ 
 - Characters with [Ego Blessing] status gain Total DMG **+20% (v2) > 12% (v3).**
-- **v3: During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , self Ice DMG +12%, and enemies take 15% more Ice DMG from herself.** 
+- **v3: During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , self Ice DMG +12%, and enemies take 15% more Ice DMG from herself. ** 
 
 ---
 
@@ -117,10 +117,10 @@ Herrscher of Human equip bonus:
 or upon entering Stellar Outburst mode, team gains [Ego Blessing] status, last for 25s (can be refreshed).
 Characters with [Ego Blessing] status gain Total DMG +10%. 
 - During ~~Stellar Outburst or~~ Augmented Ascension **or when [WoDestiny is activated and HoH is in Stellar Outburst state]**, self Ice DMG **+35% (v2) > 45% (v3)**
-**and enemies take 15% more Ice DMG from herself (independent multiplier).**
+**and enemies take 15% more Ice DMG from herself (independent multiplier) (v3).**
 
 - When AR Wheel of Destiny is activated:
-    - **If HoH is in Elemental Breach state, self Ice DMG +16%.**
+    - **If HoH is in Elemental Breach state, self Ice DMG +16%. (v3)**
     - For every valk in the team with Shadow Star tag, other team members gain Elemental DMG **+5% (v2) > 8% (v3)**, Total DMG +3%.
     - Characters with [Ego Blessing] status gain Physical DMG +12%, Crit DMG +15%, enemies take 12% more Total DMG and **12%(v2) > 8%(v3)** more Physical DMG from teammates.
     - During AR Charging: Other team members gain Physical DMG +25%, Elemental DMG +20%.
