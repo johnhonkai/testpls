@@ -213,7 +213,7 @@ Combo ATK adds Passion mark to enemies hit.
 ---
 
 **COMBO ATK 1**<br/>
-When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes **13% (S) / 18% (S2) / 20% (SS2) [v2] > 12% (S) / 20% (S2) [v3]** more Total DMG from Ba-dum Kiana's weapon skill and Ult.
+When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes **13% (S) / 18% (S2) / 20% (SS2) [v2] > 12% (S) / 18% (S2) / 20% (SS) [v3]** more Total DMG from Ba-dum Kiana's weapon skill and Ult.
 
 When there is more than one enemy on the field, this effect is temporarily disabled.
 
