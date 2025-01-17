@@ -34,7 +34,7 @@ I am testing some stuff, I will update the v3 for SS and SSS skills in the futur
 
 **<span class="text-amber-400">[SS]</span>** For every valk with Heavenly Shift tag, Theresa gain Total DMG +33%.
 
-**<span class="text-amber-400">[SSS]</span>** When AR Law of Ascension is activated: Theresa's ATK +100%. Assist ATK and Judah spear deal additional 1000% ATK of Lightning DMG.
+**<span class="text-amber-400">[SSS]</span>** When AR Law of Ascension is activated: Theresa's ATK +100%. Assist ATK and Judah spear deal additional **1000% (v2) > 1500% (v3)** ATK of Lightning DMG.
 
 ---
 
@@ -48,12 +48,19 @@ During Stellar Outburst: Enemies take **18% (v2) > 8% (v3)** more Elemental DMG 
 
 **<span class="text-amber-400">[SS]</span>**
 When AR Law of Ascension is activated:
-- Upon casting Assist ATK, restore 8 AR. Upon casting Judah spear, restore 2 AR, CD: 4s.
-- During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.
+- Upon casting Synergy ATK, restore 8 AR. Upon casting Judah spear, restore 2 AR, CD: 4s.
+- V2: During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.
+- **V3: Stellar Outburst CD -3 seconds (cannot stack)**
 
 When AR Rite of Oblivion is activated: Upon casting Assist ATK, restore 36 AR.
 
-**<span class="text-amber-400">[SSS]</span>** When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.
+**<span class="text-amber-400">[SSS]</span>** 
+
+**V3: When AR Law of Ascension is activated:**
+- **Enemies take 12% more Total DMG from Stellar Shift and QTE.**
+- **When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.**
+
+V2: ~~When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.~~
 
 ---
 
@@ -71,8 +78,13 @@ When AR Rite of Oblivion is activated:
 
 **<span class="text-amber-400">[SS]</span>** 
 **When AR Law of Ascension is activated (v3):**
-For every valk with Heavenly Shift tag, enemies take **5.5% (v2) > ?? (v3)** more Elemental DMG and **2.5% (v2) > ?? (v3)** more Physical DMG.
+For every valk with Heavenly Shift tag, enemies take **5.5% (v2) > 1.5% (v3)** more Elemental DMG and **2.5% (v2) > 1.5% (v3)** more Physical DMG.
 
-**V3: When AR Rite of Oblivion is activated: For every valk with Omniscient Star tag, enemies take ?? more Elemental DMG and ?? more Physical DMG.**
+**V3: When AR Rite of Oblivion is activated: For every valk with Omniscient Star tag, enemies take 5% more Elemental DMG.**
 
-**<span class="text-amber-400">[SSS]</span>** When AR Law of Ascension is activated: Enemies take 12% more Total DMG from QTE and Stellar Shift.
+**<span class="text-amber-400">[SSS]</span>** 
+
+**v3: When AR Rite of Oblivion is activated: Enemies take 4.5% more Total DMG.**
+
+v2: ~~When AR Law of Ascension is activated: Enemies take 12% more Total DMG from QTE and Stellar Shift.~~
+
