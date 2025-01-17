@@ -155,7 +155,7 @@ Weapon and Dream Collab will gather sd remnants.
 **WEAPON 1**<br/>
 Stellar Shift, weapon skill and Dream Collab will link up to 6 enemies hit, and the damage received from teammates and Ba-dum Kiana will be transferred to other linked enemies at a rate of **8.2% / 23% (S) ➔ 9.1% / 24% (S2) ➔ 10% / 25% (SS) [v2] > 6% (S) / 7% (S2) / 8% (SS)** respectively. (Transfer dmg is HP Loss DMG) 
 
-**V3: If Badum is the leader, damage transfer from Badum is increased to **12% (S) / 14% (S2) / 16% (SS)**
+**V3: If Badum is the leader, damage transfer from Badum is increased to 12% (S) / 14% (S2) / 16% (SS)**
 
 
 ---
