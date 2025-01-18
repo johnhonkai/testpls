@@ -164,7 +164,7 @@ async function loadAstralOpData(astralOpName, type) {
     // Exclude AR entries that exceed the selected rank
     if (rankOrder[entry.rank] > rankOrder[rank]) return total;
 
-    const count = entry.condition ? countCharactersWithCondition(entry.condition) : 1;
+    const count = entry.condition ? countCharactersWithCondition(entry.condition, entry.activation) : 1;
     const applicableCount = entry.maxStack ? Math.min(count, entry.maxStack) : count;
     return total + entry.ar * applicableCount;
   }, 0);
@@ -175,7 +175,7 @@ function calculatePostSoAr(data, rank) {
     // Exclude AR entries that exceed the selected rank
     if (rankOrder[entry.rank] > rankOrder[rank]) return total;
 
-    const count = entry.condition ? countCharactersWithCondition(entry.condition) : 1;
+    const count = entry.condition ? countCharactersWithCondition(entry.condition, entry.activation) : 1;
     const applicableCount = entry.maxStack ? Math.min(count, entry.maxStack) : count;
     return total + entry.ar * applicableCount;
   }, 0);
@@ -185,17 +185,30 @@ function calculatePostSoAr(data, rank) {
 
 
   // Function to count characters with a specific condition
-  function countCharactersWithCondition(condition) {
-    let count = 0;
+  function countCharactersWithCondition(condition, activation) {
+  let count = 0;
 
-    // Check the 'astralRing' condition only for the 'leader' slot
+  // Check if the activation condition exists and is met
+  const isActivated = activation?.astralRing
+    ? slots.leader?.astralRing === activation.astralRing
+    : true; // If no activation condition, default to true
+
+  // Log to debug activation logic
+  console.log("Leader AstralRing:", slots.leader?.astralRing);
+  console.log("Activation AstralRing:", activation?.astralRing);
+  console.log("Is Activated:", isActivated);
+
+
+  // Proceed with condition checks only if activation is satisfied
+  if (isActivated) {
+    // Check the 'astralRing' condition for the 'leader' slot
     if (condition.astralRing) {
       const leader = slots.leader;
       const leaderMatch = leader && leader.astralRing === condition.astralRing;
       if (leaderMatch) count += 1;
     }
 
-    // Check the 'tag' condition for only 'leader', 'valkyrie1', and 'valkyrie2' slots
+    // Check the 'tag' condition for 'leader', 'valkyrie1', and 'valkyrie2' slots
     if (condition.tag) {
       const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
       relevantSlots.forEach(slotName => {
@@ -205,34 +218,35 @@ function calculatePostSoAr(data, rank) {
       });
     }
 
+    // Check the 'element' condition for 'leader', 'valkyrie1', and 'valkyrie2' slots
     if (condition.element) {
-  const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
-  relevantSlots.forEach(slotName => {
-    const character = slots[slotName];
-    const eleMatch = character && character.element === condition.element; // Updated to check for string match
-    if (eleMatch) count += 1;
-  });
-}
-
-
-  // Check if there are at least two different elements in the team
-  if (condition.element === "different") {
-    const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
-    const elements = new Set();
-
-    relevantSlots.forEach(slotName => {
-      const character = slots[slotName];
-      if (character && character.element) {
-        elements.add(character.element);
-      }
-    });
-
-    // Count the condition as met if there are at least two distinct elements
-    if (elements.size >= 2) {
-      count += 1;
+      const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
+      relevantSlots.forEach(slotName => {
+        const character = slots[slotName];
+        const eleMatch = character && character.element === condition.element;
+        if (eleMatch) count += 1;
+      });
     }
-  }
 
+    // Check if there are at least two different elements in the team
+    if (condition.element === "different") {
+      const relevantSlots = ['leader', 'valkyrie1', 'valkyrie2'];
+      const elements = new Set();
+
+      relevantSlots.forEach(slotName => {
+        const character = slots[slotName];
+        if (character && character.element) {
+          elements.add(character.element);
+        }
+      });
+
+      // Count the condition as met if there are at least two distinct elements
+      if (elements.size >= 2) {
+        count += 1;
+      }
+    }
+
+    // Check the 'valk' condition across all slots
     if (condition.valk) {
       const teamSlots = ['leader', 'valkyrie1', 'valkyrie2', 'astralOp'];
       const valkInTeam = teamSlots.some(slotName => {
@@ -241,11 +255,10 @@ function calculatePostSoAr(data, rank) {
       });
       if (valkInTeam) count += 1;
     }
-
-
-
-    return count;
   }
+
+  return count;
+}
 
   function calculateBuffs(buffs, rank) {
   return buffs
@@ -257,11 +270,11 @@ function calculatePostSoAr(data, rank) {
       if (buff.available_by_default === "yes") return true;
 
       // Show conditionally if available_by_default is "no" and condition is met
-      return buff.available_by_default === "no" && countCharactersWithCondition(buff.condition) > 0;
+      return buff.available_by_default === "no" && countCharactersWithCondition(buff.condition, buff.activation) > 0;
     })
     .map(buff => {
       let description = buff.description;
-      const stackCount = buff.maxStack ? Math.min(buff.maxStack, countCharactersWithCondition(buff.condition)) : 1;
+      const stackCount = buff.maxStack ? Math.min(buff.maxStack, countCharactersWithCondition(buff.condition, buff.activation)) : 1;
       const value1 = buff[`value1_${stackCount}`] || "";
       const value2 = buff[`value2_${stackCount}`] || "";
 
@@ -269,7 +282,7 @@ function calculatePostSoAr(data, rank) {
       description = description.replace(`{value1}`, value1).replace(`{value2}`, value2);
 
       // Determine if max or base value should be used and replace {value} in the description
-      const shouldUseMaxValue = buff.basevalue && buff.maxvalue && countCharactersWithCondition(buff.condition) > 0;
+      const shouldUseMaxValue = buff.basevalue && buff.maxvalue && countCharactersWithCondition(buff.condition, buff.activation) > 0;
       description = description.replace(`{value}`, shouldUseMaxValue ? buff.maxvalue : buff.basevalue);
 
       return { ...buff, description };
@@ -355,7 +368,7 @@ function calculatePostSoAr(data, rank) {
     buffs.forEach(buff => {
       if (rankOrder[buff.rank] > rankOrder[rank]) return;
 
-      const conditionMet = buff.available_by_default === "yes" && !buff.condition ? true : countCharactersWithCondition(buff.condition) > 0;
+      const conditionMet = buff.available_by_default === "yes" && !buff.condition ? true : countCharactersWithCondition(buff.condition, buff.activation) > 0;
 
       if (conditionMet) {
         cumulativeValues.phy += buff.phy || 0;
@@ -424,7 +437,7 @@ cumulativeValues.condtdmtaken += buff.condtdmtaken || 0;
 
 
 // Calculate dynamic values for bufftype1 and bufftype2 based on stack count
-const stackCount = buff.maxStack ? Math.min(buff.maxStack, countCharactersWithCondition(buff.condition)) : 1;
+const stackCount = buff.maxStack ? Math.min(buff.maxStack, countCharactersWithCondition(buff.condition, buff.activation)) : 1;
 
 // Convert bufftype1 to cumulative values if present
 if (buff.bufftype1 && buff[`value1_${stackCount}`]) {
@@ -438,7 +451,7 @@ if (buff.bufftype2 && buff[`value2_${stackCount}`]) {
 
 // Handle single bufftype with conditional basevalue and maxvalue
 if (buff.bufftype) {
-  const appliedValue = conditionMet && countCharactersWithCondition(buff.condition) > 0
+  const appliedValue = conditionMet && countCharactersWithCondition(buff.condition, buff.activation) > 0
     ? parseFloat(buff.maxvalue)
     : parseFloat(buff.basevalue);
   cumulativeValues[buff.bufftype] += appliedValue || 0;
