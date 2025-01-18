@@ -26,7 +26,7 @@ image: "/images/valkportrait/Blazing Wishes.png"
 - Badum Kiana: Adjusted skill effects and values. Refer to individual pages for all the changes.
 - HoH AR Skill: Adjusted skill and values. Refer to individual pages for all the changes.
 - Lone Planetfarer: 
-When Law of Ascension is activated: When Enhanced Basic ATK SEQ 4 hits, a new effect is added: Consume Stellar Drain and Abyss stacks, and restore additional 15 AR. Reset the leader's switch CD, and trigger her QTE, other effects remain the same.
+When Law of Ascension is activated: When Enhanced Basic ATK SEQ 4 hits, a new effect is added: Consume Stellar Drain and Abyss stacks, and restore additional 15 sp. Reset the leader's switch CD, and trigger her QTE, other effects remain the same.
 - Badum Kiana: Fixed repeated dmg issue when using Dream Collab in certain cases.
 - Badem Kiana: With signature weapon equipped, fixed an issue where timestop takes effect even when you are not the leader.
 - HoH with Divine Key: Fixed an issue where Special Ult and Augmented Ascension state are not affected by damage buffs related to Stellar Outburst and Origin Form.
