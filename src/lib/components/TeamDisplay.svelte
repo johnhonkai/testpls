@@ -6,6 +6,17 @@
   function selectTab(index) {
     activeIndex = index;
   }
+
+  function getThumbnail(videoUrl) {
+    if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) {
+      const youtubeId = videoUrl.split("v=")[1]?.split("&")[0] || videoUrl.split("/").pop();
+      return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+    } else if (videoUrl.includes("bilibili.com")) {
+      const bilibiliId = videoUrl.split("/video/")[1];
+      return `https://i.imgur.com/RrsKeX5.png`; // Replace with correct thumbnail URL pattern
+    }
+    return "";
+  }
 </script>
 
 {#if bossData && bossData.teamDataSets}
@@ -89,12 +100,14 @@
     <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext mt-9">GAMEPLAY EXAMPLES</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 mb-20">
       {#each bossData.videos as video, index}
-        <div class="bg-gray-100 p-4 rounded-lg">
-          <iframe src={video.url} title="Gameplay Video {index + 1}" allowfullscreen class="w-full h-44 rounded-sm"></iframe>
-          <p class="mt-2 text-gray-600 text-sm"><strong>Abyss:</strong> {video.abyss}</p>
-          <p class="text-gray-600 text-sm"><strong>Uploader:</strong> {video.uploader}</p>
-        </div>
-      {/each}
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <a href={video.url} target="_blank" rel="noopener noreferrer">
+          <img src={getThumbnail(video.url)} alt="Video Thumbnail" class="w-full h-44 object-cover rounded-sm" />
+        </a>
+        <p class="mt-2 text-gray-600 text-sm"><strong>Abyss:</strong> {video.abyss}</p>
+        <p class="text-gray-600 text-sm"><strong>Uploader:</strong> {video.uploader}</p>
+      </div>
+    {/each}
     </div>
   </div>
 {:else}

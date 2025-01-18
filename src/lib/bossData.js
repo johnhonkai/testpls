@@ -1329,7 +1329,9 @@ export const teamData = {
       
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/F7h6SF1QJXQ', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=F7h6SF1QJXQ', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.bilibili.com/video/BV146ktYBEPN/', abyss: 'S0 Reign Solaris vs Nirvana 541D', uploader: 'Saber' },
+
     ] 
   },
   momemperor: {
