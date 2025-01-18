@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: Theresa AstralOp v3 Partial
+title: Theresa AstralOp v3
 
 version: '8.1'
 sortOrder: '5'
@@ -22,9 +22,6 @@ image: "/images/valkportrait/asop_teri.png"
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/QR1RdC2.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
 </div>
-
-I am testing some stuff, I will update the v3 for SS and SSS skills in the future.
-
 
 ## Assist Skill
 
@@ -49,7 +46,7 @@ During Stellar Outburst: Enemies take **18% (v2) > 8% (v3)** more Elemental DMG 
 **<span class="text-amber-400">[SS]</span>**
 When AR Law of Ascension is activated:
 - Upon casting Synergy ATK, restore 8 AR. Upon casting Judah spear, restore 2 AR, CD: 4s.
-- V2: During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.
+- ~~V2: During AR Charging: When AR meter is full, reduce SO cd by 3s, only takes effect once per Stellar Outburst.~~
 - **V3: Stellar Outburst CD -3 seconds (cannot stack)**
 
 When AR Rite of Oblivion is activated: Upon casting Assist ATK, restore 36 AR.
