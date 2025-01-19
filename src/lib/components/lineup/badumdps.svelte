@@ -37,7 +37,7 @@
 
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/Blazing Wishes.png" alt="SIMP" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/kiana badum.png" alt="badum" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
         </div>
 

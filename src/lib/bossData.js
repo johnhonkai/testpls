@@ -1520,4 +1520,41 @@ export const teamData = {
       
     ]},]
   },
+  kevin: {
+    teamDataSets: [
+    {
+      tabname: "v8.0 CN",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Lantern Lone Destruction.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+        rank: '1-4',
+        pct: '5%',
+        bottext: "Highest score: 9S 814"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_songque.png"],
+        rank: '5, 7-10',
+        pct: '42%',
+        bottext: "Highest score: S3 765, SS 769, SS1 770, SS3 782"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '6',
+        pct: '1%',
+        bottext: "Highest score: 9S 779"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '31',
+        pct: '52%',
+        bottext: "Highest score: S3 765, SS1 766 , SS2 767 , SSS 769"
+      },
+      
+    ]},]
+  },
 }

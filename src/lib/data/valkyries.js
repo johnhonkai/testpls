@@ -1,7 +1,7 @@
 export const valkyries = [
 
     { name: 'Ba-dum! Fiery Wishing Star', 
-        image: '/images/valkportrait/Blazing Wishes.png', 
+        image: '/images/valkportrait/kiana badum.png', 
         type: 'SD', 
         element: 'Fire', 
         astralRing:'Law of Ascension', 
