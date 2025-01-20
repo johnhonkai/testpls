@@ -1557,4 +1557,16 @@ export const teamData = {
       
     ]},]
   },
+  symphellmaru: {
+    teamDataSets: [
+      {
+        tabname: "v8.0 CN",
+        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+      }],
+    videos: [
+      { url: 'https://youtu.be/YzAghCVowVk', abyss: 'Nirvana 540D , Redlotus 515D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.bilibili.com/video/BV1LmC5YJEz4/', abyss: 'S0 Thelema 740 vs Nirvana 541D', uploader: '春水草色向南深' },
+
+    ] 
+  },
 }
