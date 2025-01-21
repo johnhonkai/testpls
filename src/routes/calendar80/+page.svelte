@@ -627,14 +627,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Feb 14" weather="Starless" bosspage="/boss?starrimestar" />
+                    <BossCard image="/images/Bosses/Dominator of Wolves.webp" date="Feb 17" weather="Type" bosspage="/boss?typeandrius" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Meteor_Guaymas.webp" date="Feb 11"/>
+                    <BossCard image="/images/Bosses/Hephaestus SSS.webp" />
+                    <BossCard image="/images/Bosses/Kallen.webp" />
                 </div>
 
             </div>

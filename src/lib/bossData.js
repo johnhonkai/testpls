@@ -825,7 +825,19 @@ export const teamData = {
         lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/Chrono Navi.png", "images/valkportrait/elf_kiana.png"],
         pct: '100%',
       }
-    ]},],
+    ]},
+    {
+      tabname: "v8.0",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/Chrono Navi.png", "images/valkportrait/elf_kiana.png"],
+        pct: '100%',
+      }
+    ]},
+  ],
+    
   },
   starandrius: {
     teamDataSets: [

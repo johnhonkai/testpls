@@ -91,6 +91,7 @@
         },
         "Login1": {
             title: "7-Day Login",
+            description: "Continued from v8.0 Week 6",
             image: "https://i.imgur.com/72vgGBG.png"
         },
         "ADV": {
@@ -105,6 +106,10 @@
             title: "Carnival Supply",
             description: "",
             image: "https://i.imgur.com/reSwzqO.png"
+        },
+        "lpoutfit": {
+            title: "Outfit Supply",
+            description: "<li>Duration: 3 weeks</li><li>Max 9600 crystals for outfit + all rewards</li><li>S-rank box: Herrscher of Sentience, Stygian Nymph, Starchasm Nyx</li>",
         },
     };
 
@@ -188,7 +193,7 @@
                         <span class="absolute inset-0 flex items-center justify-center z-10">Ba-dum! Fiery Wishing Star Equipment</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
-                            <img src="https://i.imgur.com/N91w2u4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                            <img src="https://i.imgur.com/zyupPos.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>     
                 </div>
@@ -291,7 +296,7 @@
                          <span class="font-bold0">OUTFIT SUPPLY</span>
                     </div>                    
                     <div></div>      
-                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("lpoutfit")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">LP Outfit</span>
                            <!-- Image positioned on the right side -->
@@ -396,10 +401,10 @@
     
                 <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">First Event</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Teamfight Tactics Event</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="https://i.imgur.com/Kkq9gtN.png" alt="Event 1" class="w-full h-full object-cover " />
+                        <img src="https://i.imgur.com/7sMQAg7.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
@@ -410,12 +415,12 @@
                      <span class="font-bold0">EVENT 5</span>
                 </div> 
                 
-                <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event 3 (Starts on Tuesday): Free S-rank Selector, 5 Battlesuit Supply Cards, 288 Crystal and Ribbon</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Spring Lobby 2025</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="https://i.imgur.com/9ces1W1.png" alt="Event 1" class="w-full h-full object-cover " />
+                        <img src="https://i.imgur.com/6if181W.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
@@ -429,10 +434,43 @@
     
                 <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Time Capsule</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                        <img src="https://i.imgur.com/HY5K6Bb.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+            </div>
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 7</span>
+                </div> 
+                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free 2x Carnival Battlesuit Supply 10-Pull Cards <br/> Starts on Monday. Expires after supply ends.</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
                         <img src="https://i.imgur.com/bM4dZEU.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 8</span>
+                </div> 
+    
+                <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event 3 (Starts on Tuesday): Free S-rank Selector, 5 Battlesuit Supply Cards, 288 Crystal and Ribbon</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/9ces1W1.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
