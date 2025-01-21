@@ -145,7 +145,7 @@ export const valkbuffs = [
         condition: {  tag: "Omniscient Star"},
         maxStack: 3,
         value1_1: "5", value1_2: "10", value1_3: "15",
-        bufftype2: "eletaken",
+        bufftype1: "eletaken",
     },
 
     {
