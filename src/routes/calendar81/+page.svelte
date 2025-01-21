@@ -94,6 +94,10 @@
             description: "Continued from v8.0 Week 6",
             image: "https://i.imgur.com/72vgGBG.png"
         },
+        "Srankbox": {
+            title: "S-rank Box. Choose one:",
+            image: "https://i.imgur.com/BsIUjAl.png"
+        },
         "ADV": {
             title: "ADV Supply",
             description: '<li>Duration: 2 weeks</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 100 pulls.</li><li>You also get one rank-up stamp (10 frags) every 10 pulls, until 100 pulls. (Total 10 stamps = 100 frags)</li>'
@@ -465,7 +469,7 @@
                      <span class="font-bold0">EVENT 8</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("Srankbox")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event 3 (Starts on Tuesday): Free S-rank Selector, 5 Battlesuit Supply Cards, 288 Crystal and Ribbon</span>
                     <!-- Image positioned on the right side -->
