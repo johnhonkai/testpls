@@ -208,7 +208,7 @@
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
 
         <div class="flex justify-center mt-5">
-        <a href="https://www.miyoushe.com/bh3/article/59999849">
+        <a href="https://www.miyoushe.com/bh3/article/61044410">
         <button class="btn btn-accent btn-sm">Source</button>
         </a>
       </div>
