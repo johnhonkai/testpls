@@ -74,7 +74,7 @@
     const supplies = {
         "Valk1": {
             title: "Battlesuit Supply A: Ba-dum! Fiery Wishing Star",
-            description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: TBA</li>',
+            description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Blastmetal (UP), Shadow Dash, Valkyrie Accipiter, Valkyrie Gloria</li>',
 
         },
         "Valk2": {
