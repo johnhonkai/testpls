@@ -115,6 +115,11 @@
             title: "Outfit Supply",
             description: "<li>Duration: 3 weeks</li><li>Max 9600 crystals for outfit + all rewards</li><li>S-rank box: Herrscher of Sentience, Stygian Nymph, Starchasm Nyx</li>",
         },
+        "TimeCapsule": {
+            title: "Time Capsule",
+            description: "",
+            image: "https://i.imgur.com/uGu8jrG.png"
+        },
     };
 
 
