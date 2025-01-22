@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Ba-dum! Kiana Skill v3
+title: Ba-dum! Kiana Skill v4
 
 version: '8.1'
 sortOrder: '2'
@@ -38,7 +38,8 @@ When you have 3 team members with Heavenly Shift attribute: Enemies take 14% (S)
 
 **LEADER 1**<br/>
 When Ba-dum Kiana is the leader:
-- Self Fire DMG +24% (S) / 27% (SS) / 30% (SSS). **Self Elemental Breach +6% (v3).**
+- ~~v3: Self Fire DMG +24% (S) / 27% (SS) / 30% (SSS). Self Elemental Breach +6%.~~
+- ** <span class="text-emerald-400 bg-emerald-800 px-1"> v4: Self Fire DMG +20% (S) / 25% (SS) / 30% (SSS). Self Basic ATK gain Elemental Breach +6%. </span> **
 - Dream Collab will detonate Passion mark, deal additional 480% (S) / 540% (SS) / 600% (SSS) ATK of Fire DMG
 - Ult and Dream Collab deal additional **800% (S) / 900% (SS) / 1000% (SSS) [v2] > 500% (S) / 600 (SS) / 700% (SSS) [v3]** ATK of Fire DMG
 - Joy state gained from QTE is considered as Augmented Ascension state
@@ -49,7 +50,7 @@ When Ba-dum Kiana is the leader:
 
 **LEADER 2**<br/>
 When Ba-dum Kiana is the leader:
-- When you are in Elemental Breach state, self Fire DMG +20%, Total DMG +6%
+- When you are in Elemental Breach state, self Fire DMG +20% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> +24% (v4) </span>**, Total DMG +6%
 - Ultimate gain Augmented Ascension state
 
 
@@ -61,7 +62,7 @@ Ba-dum! is protected by AR Law of Ascension. Upon casting Stellar Outburst, unle
 When AR Law of Ascension is activated:
 - After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character's Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
 - Stellar Shift: Hit the button prompt to deal **500%x2 + 2600% (v2) > 300%x3 + 2400% (v3)** ATK of Fire DMG. On hit, apply Passion, You are in Augmented Ascension state during this time.  If meter is less than 40, meter will be restored to 40.
-- When Stellar Shift, Combo ATK or special weapon skill hits a target, teammates' switch cd are reset and their QTE are triggered.
+- When Stellar Shift, Combo ATK or special weapon skill hits a target, the leader's switch cd is reset and her QTE is triggered. If you are the leader, teammates' switch cd are reset and their QTE are triggered.
 - When you are not the leader:
     - When QTE hits, restore 15 AR, and trigger the leader's Heavenly Link, deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader's damage type. CD: 16s.
     - Upon casting Stellar Shift, trigger Heavenly Link twice.
@@ -86,7 +87,7 @@ Upon entering Stellar Outburst, Ba-dum! gain 6 Quantum Mech Energy (QME). When y
 - SEQ 2: 1100% ATK of Fire DMG.
 - SEQ 3: 1200% ATK of Fire DMG.
 - SEQ 4: 1600% ATK of Fire DMG.
-- The last 2 QME will launch drum attack, **2025% + 300%x2 (v2) > 1875% + 300%x2 (v3)** ATK of Fire DMG, trigger two resonance atk.
+- The last 2 QME will launch drum attack, ~~2025% + 300%x2 (v2) > 1875% + 300%x2 (v3) >~~ **<span class="text-emerald-400 bg-emerald-800 px-1"> +1825% + 300%x2 (v4) </span>** ATK of Fire DMG, trigger two resonance atk.
 - When airborne jump atk hits, deal 30% + 300% ATK of Fire DMG, consumes 1 QME to trigger one resonance atk.
 - Weapon button is disabled when you have QME.
 
@@ -106,7 +107,7 @@ Related to future AR.
 Has [Good Fortune] meter. When meter is full, you can cast special weapon skill [Dream Collab]
 
 Meter starts at 0, max 240 points. <br/>
-Basic ATK restore 15 / 15 /30 / 45 points. When weapon or Combo hits, gain 30 points. Meter is cleared on exit. <br/>
+Basic ATK restore ~~15 / 15 / 30 / 45 (v3)~~ ** <span class="text-emerald-400 bg-emerald-800 px-1"> 10 / 20 / 30 / 45 (v4) </span> ** points. When weapon or Combo hits, gain 30 (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 25 (v4) </span>**  points. Meter is cleared on exit. <br/>
 After casting Stellar Shift or QTE, gain 8 seconds of Joy state, can be refreshed. Dream Collab will end when Passion ends or when you exit. <br/>
 During Joy state, meter regen +100%, and gain higher anti-interrupt.
 
@@ -118,7 +119,7 @@ Against SD enemy, Total DMG +20%. All team members gain SD Navigation state: Con
 ---
 
 **PASSIVE 2**<br/>
-Take **30% (v2) > 20% (v3)** less damage. **Team Fire DMG +20% (v2) > Leader Fire DMG +20% (v3)**.
+Take **30% (v2) > 20% (v3)** less damage. ~~Team Fire DMG +20% (v2)~~ Leader Fire DMG +20% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 15% (v4) </span>** .
 
 
 
@@ -142,11 +143,11 @@ Evasion skill: Trigger 3s time fracture, CD: 15s.
 
 ### WEAPON SKILL
 
-Press weapon: Deal **300%x2 (v2) > 100%x2 (v3)** ATK of Fire DMG, gathers nearby enemies, apply Passion mark to enemies.
+Press weapon: Deal ~~300%x2 (v2) >~~ 100%x2 (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 100% + 200% (v4) </span>**  ATK of Fire DMG, gathers nearby enemies, apply Passion mark to enemies.
 
 **v3: When weapon skill hits an enemy with Passion mark, all enemies on the field without Passion mark will gain Passion mark.**
 
-When meter is full, hold weapon button to use special weapon skill Dream Collab. Deal a total of **1575% (V2) > 1875% (v3)** ATK of Fire DMG, detonate all Passion marks on the field. Each mark detonation deals **100% (v2) > 200% (v3)** ATK of Fire DMG. During this time, Joy state timer is paused.
+When meter is full, hold weapon button to use special weapon skill Dream Collab. Deal a total of ~~1575% (V2) >~~ 1875% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 1825% (v4) </span>**  ATK of Fire DMG, detonate all Passion marks on the field. Each mark detonation deals **100% (v2) > 200% (v3)** ATK of Fire DMG. During this time, Joy state timer is paused.
 
 Weapon and Dream Collab will gather sd remnants.
 
@@ -155,7 +156,7 @@ Weapon and Dream Collab will gather sd remnants.
 **WEAPON 1**<br/>
 Stellar Shift, weapon skill and Dream Collab will link up to 6 enemies hit, and the damage received from teammates and Ba-dum Kiana will be transferred to other linked enemies at a rate of **8.2% / 23% (S) ➔ 9.1% / 24% (S2) ➔ 10% / 25% (SS) [v2] > 6% (S) / 7% (S2) / 8% (SS)** respectively. (Transfer dmg is HP Loss DMG) 
 
-**V3: If Badum is the leader, damage transfer from Badum is increased to 12% (S) / 14% (S2) / 16% (SS)**
+V3: If Badum is the leader, damage transfer from Badum is increased to 12% (S) / 14% (S2) / 16% (SS) [v3] > **<span class="text-emerald-400 bg-emerald-800 px-1"> 15% (S) / 16% (S2) / 17% (SS)  (v4) </span>** 
 
 
 ---
@@ -213,7 +214,7 @@ Combo ATK adds Passion mark to enemies hit.
 ---
 
 **COMBO ATK 1**<br/>
-When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes **13% (S) / 18% (S2) / 20% (SS2) [v2] > 12% (S) / 18% (S2) / 20% (SS) [v3]** more Total DMG from Ba-dum Kiana's weapon skill and Ult.
+When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes ~~13% (S) / 18% (S2) / 20% (SS2) [v2]~~ 12% (S) / 18% (S2) / 20% (SS2) [v3] > **<span class="text-emerald-400 bg-emerald-800 px-1"> 11% (S) / 18% (S2) / 20% (SS2) [v4] </span>**  more Total DMG from Ba-dum Kiana's weapon skill and Ult.
 
 When there is more than one enemy on the field, this effect is temporarily disabled.
 
@@ -231,8 +232,8 @@ Every time SD critical index is detonated, weapon skill and Dream Collab gain To
 
 **S2** <br/>
 - UNLOCK: Upon casting Combo ATK, weapon skill, or Basic ATK SEQ 4, trigger evasion skill.
-- Link enemy dmg share 6% > 7%. If Badum is the leader, her own dmg transfer rate is increased to 12% > 14%.
-- When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes 12% (S) / 18% (S2) more Total DMG from Ba-dum Kiana's weapon skill and Ult.
+- Link enemy dmg share 6% > 7%. If Badum is the leader, her own dmg transfer rate is increased to 15% > 16%.
+- When an enemy on the field is hit by Badum's Combo ATK or Stellar Shift, the enemy takes 11% (S) / 18% (S2) more Total DMG from Ba-dum Kiana's weapon skill and Ult.
 
 ---
 
@@ -244,8 +245,8 @@ Lead Skill
 
 **SS** <br/>
 - UNLOCK: Upon entry via QTE, restore 40 meter, and 10 sp for yourself.
-- Self Fire DMG +24% (S) / 27% (SS).  Passion mark explosion deals additional 480% (S) / 540% (SS) ATK of Fire DMG. Ult and Dream Collab deal additional 500% (S) / 600% (SS) ATK of Fire DMG
-- Link enemy dmg share 7% > 8%. If Badum is the leader, her own dmg transfer rate is increased to 14% > 16%.
+- Self Fire DMG +20% (S) / 25% (SS).  Passion mark explosion deals additional 480% (S) / 540% (SS) ATK of Fire DMG. Ult and Dream Collab deal additional 500% (S) / 600% (SS) ATK of Fire DMG
+- Link enemy dmg share 7% > 8%. If Badum is the leader, her own dmg transfer rate is increased to 16% > 17%.
 
 ---
 
@@ -267,4 +268,4 @@ Lead Skill
 
 **SSS** <br/>
 - UNLOCK: Upon casting QTE or Stellar Shift, reset evasion cd.
-- Self Fire DMG +27% (SS) / 30% (SSS).  Passion mark explosion deal additional 540% (SS) / 600% (SSS) ATK of Fire DMG. Ult and Dream Collab deal additional 600% (SS) / 700% (SSS) ATK of Fire DMG
+- Self Fire DMG +25% (SS) / 30% (SSS).  Passion mark explosion deal additional 540% (SS) / 600% (SSS) ATK of Fire DMG. Ult and Dream Collab deal additional 600% (SS) / 700% (SSS) ATK of Fire DMG

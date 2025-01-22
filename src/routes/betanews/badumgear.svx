@@ -2,7 +2,7 @@
 creationDate: "2025-01-10T03:44:52.531Z"
 
 
-title: Ba-dum! Kiana Gear v3
+title: Ba-dum! Kiana Gear v4
 
 version: '8.1'
 sortOrder: '3'
@@ -78,7 +78,7 @@ Ba-dum! Fiery Wishing Star equip bonus: Characters with [Let’s Play Together!]
 ---
 
 **BOT**<br/>
-Total DMG +30%. <br/>
+Total DMG +30% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> +25% (v4) </span>** <br/>
 Ba-dum! Fiery Wishing Star equip bonus: Enemies on the field take +18% more Elemental and Physical DMG from characters with [Let’s Play Together!] status.
 
 ---
@@ -87,10 +87,13 @@ Ba-dum! Fiery Wishing Star equip bonus: Enemies on the field take +18% more Elem
 Fire DMG **+30% (v2) > 35% (v3)**. Ba-dum! Fiery Wishing Star equip bonus: 
 - Enemies on the field take +20% more Fire DMG from herself.
 - When Astral Ring is activated: Enemies on the field take +30% more Elemental and Physical DMG from characters with [Let’s Play Together!] status.
-- When AR World Star is activated, during AR Charging: Team Total DMG +18%.
+- When AR World Star is activated, during AR Charging: ~~Team Total DMG +18% (v3)~~ > **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: Team Total DMG +30%. Enemies take 13% more Total DMG from characters with [Let’s Play Together!] status. </span>** <br/>
+
+
 - When AR World Star is activated, during Stellar Outburst:
-    - Characters with [Let’s Play Together!] gain Elemental DMG +30%, Total DMG +8%.
-    - Enemies take +12% Total DMG from characters with [Let’s Play Together!] status, +28% more Total DMG from Weapon Active and Combo ATK of characters with [Let’s Play Together!] status.
+    - ~~v3: Characters with [Let’s Play Together!] gain Elemental DMG +30%, Total DMG +8%.~~
+    - **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: Characters with [Let’s Play Together!] status gain Total DMG and Lightning DMG +8%, Elemental DMG +10%. During Elemental Breach state, gain another Elemental DMG +20%. </span>** 
+    - Enemies take +12% Total DMG from characters with [Let’s Play Together!] status. Characters with [Let’s Play Together!] status Weapon Active and Combo ATK gain Total DMG +28%.
 
 
 ---
@@ -103,7 +106,7 @@ Ba-dum! Fiery Wishing Star equip bonus:
 - **v3: Upon hitting an enemy with Combo ATK or QTE, or upon activating Stellar Outburst, or if you are the leader: Team gain [Let’s Play Together!] status for 25s, can be refreshed.**
 - Enemies on the field take **+20% (v2) > 30% (v3)** more Total DMG from self.
 - When Law of Ascension is activated:
-    - Characters with [Let’s Play Together!] gain Elemental DMG +20%, Physical DMG **+30% (v2) > 15% (v3)**, Total DMG **+12% (v2) > 15% (v3)**.
-    - Enemies on field take **+20% (v2) > 10% (v3)** more Total DMG from characters with [Let’s Play Together!] status.
-    - **v3: When Badum is not the leader, enemies' Total DMG taken by teammates increased by 20%.**
-    - During Stellar Outburst: Enemies take +10% more Total DMG, +12% more Elemental and Physical DMG from characters with [Let’s Play Together!] status.
+    - Characters with [Let’s Play Together!] gain Elemental DMG +20%, Physical DMG ~~+30% (v2)~~ 15% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> +12% (v4) </span>** <br/> , Total DMG **+12% (v2) > 15% (v3)**.
+    - Enemies on field take **+20% (v2) > 10% (v3)** more Total DMG from teammates with [Let’s Play Together!] status.
+    - When Badum is not the leader, enemies' Total DMG taken by teammates with [Let’s Play Together!] status increased by 20% > **<span class="text-emerald-400 bg-emerald-800 px-1"> 15% (v4) </span>** <br/>
+    - During Stellar Outburst: Enemies take +10% more Total DMG from characters with [Let’s Play Together!] status. Characters with [Let’s Play Together!] status gain Elemental and Physical DMG +12%.

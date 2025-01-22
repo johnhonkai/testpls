@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: Theresa AstralOp v3
+title: Theresa AstralOp v4
 
 version: '8.1'
 sortOrder: '5'
@@ -39,7 +39,7 @@ image: "/images/valkportrait/asop_teri.png"
 ## Recharge Skill
 
 **<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50. <br/>
-During Stellar Outburst: Enemies take **18% (v2) > 8% (v3)** more Elemental DMG and 5% more Total DMG.
+During Stellar Outburst: Enemies take **18% (v2) > 8% (v3) > <span class="text-emerald-400 bg-emerald-800 px-1"> +12% (v4) </span>** more Elemental DMG and 5% more Total DMG.
 
 **<span class="text-amber-400">[S]</span>** For every valk with Heavenly Shift tag, initial AR +8.
 
@@ -69,7 +69,7 @@ V2: ~~When a valk uses Stellar Shift, restore 6 SP to everyone, CD: 4s.~~
 	- HP Loss DMG inflicted by the leader is increased by 6%.
 
 When AR Rite of Oblivion is activated: 
-	- During AR Charging: Team Lightning DMG **+18% (v2) > 35% (v3)**.
+	- During AR Charging: Team Lightning DMG **+18% (v2) > 35% (v3) > <span class="text-emerald-400 bg-emerald-800 px-1"> +25% (v4) </span>**.
 
 **<span class="text-amber-400">[S]</span>** Team take 18% less dmg. When Stellar Shift is casted, recover 600 HP.
 

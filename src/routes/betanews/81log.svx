@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: v8.1 Patch Note v3
+title: v8.1 Patch Note v4
 
 version: '8.1'
 sortOrder: '1'
@@ -16,6 +16,57 @@ image: "/images/valkportrait/Blazing Wishes.png"
 - [HoH Divine Key and Stigma](/betanews/hohdk)
 - [Theresa AstralOp](/betanews/teriasop)
 - [Elysian Realm](/betanews/81er)
+
+---
+
+## <span class="text-amber-400">V4</span>
+
+**Badum Kiana**
+- Adjusted skill description
+- Adjusted skill values on level ups
+- Adjusted a bunch of meter regen
+- Adjusted ult animation length
+- Adjusted passive, lead subskill, and lead values
+- Fixed lead subskill value not consistent with actual effect
+
+**Herrscher of Human**
+- Adjusted skill values with DLC weapon
+- Fixed AR regen issue with AR skill
+- Fixed an issue where Shadow Star ATK damage is abnormal when AR subskill isn't unlocked.
+- Optimized Ult performance with DLC weapon
+- Fixed an issue where Ult visual effects is abnormal
+
+**Theresa Apocalypse**
+- Adjusted Theresa's value at S-rank
+
+**Badum Stigma**
+- Adjusted 2pc value
+- Adjusted 3pc value
+- Added 2pc effect: When AR World Star is activated, during Stellar Outburst, if you are in Elemental Breach state, Elemental DMG +15% (in game says 20%)
+- Added 2pc effect:  When AR World Star is activated, during AR Charging, enemies take 13% more Elemental DMG from characters with [Let’s Play Together!] status
+
+**Solon Stigma**
+- Adjusted overall values and skill descriptions
+
+**Badum Weapon**
+- Adjusted passive skill description. This is only text optimization, actual effects remain the same.
+
+
+**HoH DLC Weapon**
+- Adjusted overall values and skill descriptions
+
+**Skyveil Feathers**
+- Fixed an issue where the additional AR regen is abnormally triggered after Stellar outburst is activated.
+
+**Elysian Realm**
+- Adjusted overall stage effect values
+- Adjusted enemy HP in Shallow Sequence
+- Adjusted Badum skill values
+- Adjusted HoH skill values with DLC weapon
+- Fixed Badum signet with Good Fortune signet triggering ??? signet effect
+
+**Memorial Arena**
+- Adjusted SSS Sa values
 
 ---
 
