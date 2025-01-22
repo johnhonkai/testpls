@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Ba-dum! Kiana Skill v4
+title: Ba-dum! Kiana Skill v4b
 
 version: '8.1'
 sortOrder: '2'
@@ -145,7 +145,7 @@ Evasion skill: Trigger 3s time fracture, CD: 15s.
 
 Press weapon: Deal ~~300%x2 (v2) >~~ 100%x2 (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 100% + 200% (v4) </span>**  ATK of Fire DMG, gathers nearby enemies, apply Passion mark to enemies.
 
-**v3: When weapon skill hits an enemy with Passion mark, all enemies on the field without Passion mark will gain Passion mark.**
+v3: When weapon skill hits an enemy with Passion mark, **<span class="text-emerald-400 bg-emerald-800 px-1"> deal 20.25% ATK of Fire DMG (v4b) </span>**, and all enemies on the field without Passion mark will gain Passion mark.
 
 When meter is full, hold weapon button to use special weapon skill Dream Collab. Deal a total of ~~1575% (V2) >~~ 1875% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 1825% (v4) </span>**  ATK of Fire DMG, detonate all Passion marks on the field. Each mark detonation deals **100% (v2) > 200% (v3)** ATK of Fire DMG. During this time, Joy state timer is paused.
 

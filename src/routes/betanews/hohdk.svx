@@ -2,7 +2,7 @@
 creationDate: "2025-01-10T03:44:52.533Z"
 
 
-title: Elysia Divine Key, Stigma and New Skill v4
+title: Elysia Divine Key, Stigma and New Skill v4B
 
 version: '8.1'
 sortOrder: '4'
@@ -45,7 +45,7 @@ Herrscher of Human: Ego  equip bonus:
 ~~During AR Charging: Weapon Active and Charged ATK gain Total DMG +12%.~~
 
 During Stellar Outburst or Augmented Ascension mode:<br/>
-Enters Herrscher of Origin form, upon pressing Ultimate or when Stellar Outburst or Augmented Ascension mode ends, cast [Everlasting Blessing] as substitute for original Ultimate, dealing **600% (v2) > 300% (v3)** ATK of Ice DMG towards enemies. Ultimate will consume all current SP, for each 1 SP consumed additionally deals ~~10% (v2)~~ 5% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 6% (v4) </span>** <br/> ATK of Ice DMG, max ~~2000% (v2) >~~ 1000% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 1200% (v4) </span>** <br/>. 
+Enters Herrscher of Origin form, upon pressing Ultimate or when Stellar Outburst or Augmented Ascension mode ends, cast [Everlasting Blessing] as substitute for original Ultimate, dealing ~~600% (v2) >~~ 300% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 200% (v4B) </span>** ATK of Ice DMG towards enemies. Ultimate will consume all current SP, for each 1 SP consumed additionally deals ~~10% (v2)~~ 5% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 6% (v4) </span>** <br/> ATK of Ice DMG, max ~~2000% (v2) >~~ 1000% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 1200% (v4) </span>** <br/>. 
 
 When Wheel of Destiny or Law of Ascension is activated:
 - ~~v3: Weapon Active and Charged ATK additionally deals 200% ATK of Ice DMG.~~
@@ -123,10 +123,10 @@ Herrscher of Human equip bonus **<span class="text-emerald-400 bg-emerald-800 px
 - Upon casting Weapon Active, or upon applying [Pristine Flower Seed] onto any enemy on field, 
 or upon entering Stellar Outburst mode, team gains [Ego Blessing] status, last for 25s (can be refreshed).
 Characters with [Ego Blessing] status gain Total DMG +10%. 
-- ~~v3: During Augmented Ascension or when [WoDestiny is activated and HoH is in Stellar Outburst state], self Ice DMG +35% (v2) > +45% (v3) and enemies take 15% more Ice DMG from herself (independent multiplier) (v3).~~
+- ~~v3: During Augmented Ascension or when [WoDestiny is activated and HoH is in Stellar Outburst state], self Ice DMG +35% (v2) > +45% (v3) and enemies take 15%  more Ice DMG from herself (independent multiplier) (v3).~~
 
 - **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: During Augmented Ascension or when [WoDestiny is activated and HoH is in Stellar Outburst state], self Ice DMG +15%,
-weapon skill, Charged ATK and Ult gain another Ice DMG +65%, and enemies take 15% more Ice DMG from herself (independent multiplier) </span>**
+weapon skill, Charged ATK and Ult gain another Ice DMG +65%, and enemies take 15% (v4) > 20% (v4b) more Ice DMG from herself (independent multiplier) </span>**
 
 - When AR Wheel of Destiny is activated:
     - If HoH is in Elemental Breach state, self Ice DMG +16%. (v3)
@@ -136,9 +136,9 @@ weapon skill, Charged ATK and Ult gain another Ice DMG +65%, and enemies take 15
     - During Stellar Outburst: Other team members gain Physical DMG +30%, Elemental DMG ~~+36% (v2) >~~ +30% (v3).
 
 - When AR Law of Ascension is activated:
-    - Characters with [Ego Blessing] status gain Physical DMG +10%, Elemental DMG ~~+20% (v2) >~~ +30% (v3), Total DMG +10%, and teammates gain additional Total DMG +8%, **<span class="text-emerald-400 bg-emerald-800 px-1"> teammates Melee ATK gain another Elemental DMG +20% (v4) </span>**
-    - During AR Charging: Enemies on the field take +8% more Physical DMG, +27% more Elemental DMG and +15% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 20% (v4) </span>** more Total DMG from teammates.
-    - During Stellar Outburst: The debuff from teammates (from the AR Charging line above) are increased, +8% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> +18% (v4) </span>** more Physical DMG, +27% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> > 30% (v4) </span>** more Elemental DMG and +25% more Total DMG.
+    - Characters with [Ego Blessing] status gain Physical DMG +10%, Elemental DMG ~~+20% (v2) >~~ +30% (v3), Total DMG +10%, and teammates gain additional Total DMG +8%, **<span class="text-emerald-400 bg-emerald-800 px-1"> teammates Melee ATK gain another Elemental DMG +20% (v4) > 12% (v4b) </span>**
+    - During AR Charging: Enemies on the field take +8% more Physical DMG, +27% (v4) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 14% (v4) </span>** more Elemental DMG and +15% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 20% (v4) > 15% (v4b) </span>** more Total DMG from teammates.
+    - During Stellar Outburst: The debuff from teammates (from the AR Charging line above) are increased, +8% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> +18% (v4) > 15% (v4b) </span>** more Physical DMG, +27% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> > 30% (v4) > 20% (v4b) </span>** more Elemental DMG and +25% (v3) > **<span class="text-emerald-400 bg-emerald-800 px-1"> 20% (v4b) </span>** more Total DMG.
 
 ---
 ## <span class="text-amber-400">New Skills Unlocked</span>

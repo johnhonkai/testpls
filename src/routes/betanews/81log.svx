@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: v8.1 Patch Note v4
+title: v8.1 Patch Note v4B
 
 version: '8.1'
 sortOrder: '1'
@@ -16,6 +16,49 @@ image: "/images/valkportrait/Blazing Wishes.png"
 - [HoH Divine Key and Stigma](/betanews/hohdk)
 - [Theresa AstralOp](/betanews/teriasop)
 - [Elysian Realm](/betanews/81er)
+
+---
+## <span class="text-amber-400">V4B</span>
+
+Badum Kiana
+- When weapon hits an enemy with Passion mark, **deal 20.25% ATK of Fire DMG** to enemies in an aoe, and spread Passion marks to other enemies.
+
+HoH
+- Adjusted stats when equipped with HoH DLC. (I don't see any changes in game. Either they forgot to change in-game value, or this stats is referring to something else.)
+- Special ult base damage 300% > 200% ATK of Ice DMG. (Not sure if this is v4 or v4b)
+- Fixed an issue where stigma skill would activate when you switch to a valk wearing Solon top.
+- Fixed an issue where: LoAscension is activated, and HoH does not count as a valk with Heavenly Shift tag.
+- Fixed special Ult abnormally missing dmg.
+
+
+Reign Solaris
+- Fixed an issue where she can't enter the field normally.
+
+Solon Stigma 3PC: 
+- Enemies take 15% > 20% more Ice DMG from herself (independent multiplier)
+- Teammates Melee ATK gain another Elemental DMG +20% > 12%
+When AR Law of Ascension is activated:
+- During AR Charging: Enemies on the field take +8% more Physical DMG, +27% > 14% more Elemental DMG and +20% > 15% more Total DMG from teammates.
+ - During Stellar Outburst: The debuff from teammates (from the AR Charging line above) are increased, +18% > 15% more Physical DMG, 30% > 20% more Elemental DMG and 25% > 20% more Total DMG.
+
+
+EX Abyss
+- SD Sa: Adjusted HP
+- Physical: Adjusted arrangement and HP of dolls (?)
+- LoA Homu: Adjusted HP of Homei and Hola
+- Adjusted HP of Andrius
+- LoA MHT-3C: Adjusted HP of Tank
+- Ice Hellmaru: Adjusted HP of Hellmaru
+- SD Sa: Adjusted status meter value (trauma?)
+
+
+Memorial Arena
+- Adjusted overall stats of SSS Sa
+- Adjusted status meter value (trauma?) of SSS Sa
+- Fixed an issue where SD shards might disappear in certain cases against SSS Sa
+
+
+
 
 ---
 
