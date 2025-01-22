@@ -46,7 +46,7 @@ EX Abyss
 - SD Sa: Adjusted HP
 - Physical: Adjusted arrangement and HP of dolls (?)
 - LoA Homu: Adjusted HP of Homei and Hola
-- Adjusted HP of Andrius
+- ??? weather Andrius: Adjusted shield value of Andrius
 - LoA MHT-3C: Adjusted HP of Tank
 - Ice Hellmaru: Adjusted HP of Hellmaru
 - SD Sa: Adjusted status meter value (trauma?)
