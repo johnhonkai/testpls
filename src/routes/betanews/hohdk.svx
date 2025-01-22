@@ -89,8 +89,8 @@ When AR WoDestiny or LoAscension is activated:
 Ice DMG **+15% (v2) > 12% (v3)**. Herrscher of Human equip bonus: 
 - ~~Enemies on the field take +15% more Ice DMG from herself.~~ 
 - **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: Self Ice DMG +12%. </span>**
-- ~~Characters with [Ego Blessing] status gain Total DMG+20% (v2) > 12% (v3).~~ **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: Moved to below. </span>**
-- During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , ~~self Ice DMG +12%, and~~ enemies take 15% more Ice DMG from herself, **<span class="text-emerald-400 bg-emerald-800 px-1"> v4: and characters with [Ego Blessing] status gain Total DMG +12%. </span>**  
+- Characters with [Ego Blessing] status gain Total DMG+20% (v2) > 12% (v3).
+- During Augmented Ascension state or when [WoDestiny is activated and HoH is in Stellar Outburst state] , ~~self Ice DMG +12%, and~~ enemies take 15% more Ice DMG from herself.
 
 ---
 
