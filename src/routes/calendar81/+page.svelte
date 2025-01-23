@@ -75,7 +75,7 @@
         "Valk1": {
             title: "Battlesuit Supply A: Ba-dum! Fiery Wishing Star",
             description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Blastmetal (UP), Shadow Dash, Valkyrie Accipiter, Valkyrie Gloria</li>',
-
+            image: "https://i.imgur.com/Bgwl3ag.jpeg"
         },
         "Valk2": {
             title: "Battlesuit Supply B: Lone Planetfarer",
@@ -85,14 +85,28 @@
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
         },
+        "HoHDLC": {
+            title: "Equipment Supply",
+            description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
+            image: "https://i.imgur.com/kniF12q.jpeg"
+        },
+        "BadumWeapon": {
+            title: "Equipment Supply",
+            description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
+            image: "https://i.imgur.com/55haToA.jpeg"
+        },
         "Returnee": {
             title: "Returnee Supply",
             description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
         },
         "Login1": {
-            title: "7-Day Login",
+            title: "7-Day Login 1",
             description: "Continued from v8.0 Week 6",
             image: "https://i.imgur.com/72vgGBG.png"
+        },
+        "Login2": {
+            title: "7-Day Login 2",
+            image: "https://i.imgur.com/R670Fut.png"
         },
         "Srankbox": {
             title: "S-rank Box. Choose one:",
@@ -118,7 +132,12 @@
         "TimeCapsule": {
             title: "Time Capsule",
             description: "",
-            image: "https://i.imgur.com/uGu8jrG.png"
+            image: "https://i.imgur.com/ijwUV7A.png"
+        },
+        "SpendingEvent": {
+            title: "Major Spending Event",
+            description: "",
+            image: "https://i.imgur.com/Ov9FbQm.png"
         },
     };
 
@@ -197,7 +216,7 @@
                         <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY A</span>
                     </div>                    
-                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Ba-dum! Fiery Wishing Star Equipment</span>
                         <!-- Image positioned on the right side -->
@@ -242,7 +261,7 @@
                         <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY B</span>
                     </div>  
-                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("HoHDLC")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">HoH DLC <br/> Solon</span>
                     </div>     
@@ -322,7 +341,7 @@
                     </div>                  
                     <div on:click={() => openModal("Returnee")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-9 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">TBA</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Lunar Vow and her equipment</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-[45px]">
                         </div>
@@ -357,7 +376,7 @@
                      <span class="font-bold0">EVENT 1</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("SpendingEvent")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Major Spending Event</span>
                     <!-- Image positioned on the right side -->
@@ -391,7 +410,7 @@
                      <span class="font-bold0">EVENT 3</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("Login2")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event 2: Kiana Stigma Box, Solon Stigma Box, 10 Equipment Supply Cards</span>
                     <!-- Image positioned on the right side -->
@@ -441,7 +460,7 @@
                      <span class="font-bold0">EVENT 6</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("TimeCapsule")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Time Capsule</span>
                     <!-- Image positioned on the right side -->
