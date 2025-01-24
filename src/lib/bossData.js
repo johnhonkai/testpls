@@ -1367,7 +1367,12 @@ export const teamData = {
         bottext: "Highest Score:  S2 839"
       },
       
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://youtu.be/65YuOc-ft_c', abyss: 'Nirvana 541D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.bilibili.com/video/BV14qCnYnErh/', abyss: 'S0 Reign Solaris 508 D', uploader: '奕桐s' },
+
+    ] 
   },
   firetona: {
     teamDataSets: [
