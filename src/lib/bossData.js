@@ -1578,7 +1578,7 @@ export const teamData = {
     teamDataSets: [
       {
         tabname: "v8.0 CN",
-        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D",
       }],
     videos: [
       { url: 'https://youtu.be/YzAghCVowVk', abyss: 'Nirvana 540D , Redlotus 515D', uploader: 'Marisa Honkai' },
