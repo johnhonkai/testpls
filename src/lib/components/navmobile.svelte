@@ -83,6 +83,29 @@
         document.removeEventListener('mousedown', handleClickOutside);
     };
 });
+
+// Handle ESC key and back button
+onMount(() => {
+		const handleKeyDown = (event) => {
+			if (event.key === 'Escape') {
+				closeModal();
+			}
+		};
+
+		const handlePopState = () => {
+			if (history.state?.modalOpen) {
+				closeModal();
+			}
+		};
+
+		document.addEventListener('keydown', handleKeyDown);
+		window.addEventListener('popstate', handlePopState);
+
+		return () => {
+			document.removeEventListener('keydown', handleKeyDown);
+			window.removeEventListener('popstate', handlePopState);
+		};
+	});
 </script>
 
 <div class="flex relative">
