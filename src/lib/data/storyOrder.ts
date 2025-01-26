@@ -14,7 +14,8 @@ export const storyOrder = [
       youtubeLink: 'https://youtu.be/example2',
       inGame: false,
       type: 'event',
-      version: '7.3'
+      version: '7.3',
+      canon: true,
     },
     {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event2small.webp',
@@ -22,7 +23,8 @@ export const storyOrder = [
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'event',
-        version: '7.3'
+        version: '7.3',
+        canon: true,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch2.webp',
@@ -30,7 +32,8 @@ export const storyOrder = [
         youtubeLink: 'https://youtu.be/example1',
         inGame: true,
         type: 'main', // 'main' for main story, 'event' for events
-        version: '7.4'
+        version: '7.4',
+
       },  
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event3.webp',
@@ -38,7 +41,8 @@ export const storyOrder = [
         youtubeLink: 'https://youtu.be/example2',
         inGame: false,
         type: 'event',
-        version: '7.4'
+        version: '7.4',
+        canon: false,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event4.webp',
@@ -46,7 +50,8 @@ export const storyOrder = [
         youtubeLink: 'https://youtu.be/example2',
         inGame: false,
         type: 'event',
-        version: '7.5'
+        version: '7.5',
+        canon: true,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3.webp',
@@ -64,6 +69,7 @@ export const storyOrder = [
         type: 'event',
         version: '7.5',
         description: "This event is not part of the current samsara. It might be possible in other samsaras.",
+        canon:false,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3EX.webp',
@@ -75,11 +81,12 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event6.webp',
-        title: "Schicksal's Work Guide",
+        title: "Schicksal Work Guide",
         youtubeLink: 'https://youtu.be/example2',
         inGame: false,
         type: 'event',
         version: '7.6',
+        canon: true,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event7.webp',
@@ -88,9 +95,10 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '7.7',
+        canon: true,
       },
       {
-        image: 'http://localhost:5173/images/hi3award24/ch4.webp',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch4.webp',
         title: "P2 Chapter 4: A Shore Under Watch",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
@@ -112,6 +120,7 @@ export const storyOrder = [
         inGame: false,
         type: 'event',
         version: '7.8',
+        canon: true,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event9.webp',
@@ -120,6 +129,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '7.9',
+        canon: true,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch6.webp',
@@ -130,7 +140,7 @@ export const storyOrder = [
         version: '7.9',
       },
       {
-        image: '/images/story/event1.webp',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7.webp',
         title: "P2 Chapter 7: Bouquets of Unfulfilled Wishes",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
@@ -138,12 +148,30 @@ export const storyOrder = [
         version: '8.0',
       },
       {
-        image: '/images/story/event1.webp',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event10.webp',
         title: "Countdown: To Sweet Dreams",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'event',
         version: '8.0',
+        canon: true,
+      },
+      {
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event11.webp',
+        title: "8.1 Event",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'event',
+        version: '8.1',
+        canon: true,
+      },
+      {
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7EX.webp',
+        title: "P2 Chapter 7-EX",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'main',
+        version: '8.1',
       },
 ];
   

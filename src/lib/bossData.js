@@ -533,6 +533,18 @@ export const teamData = {
 
   typeandrius:{
     teamDataSets: [
+
+    {
+      tabname: "v8.0",
+      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ???D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_songque.png"],
+        pct: '100%',
+        bottext: 'Highest score: S2 792, SS 816, SS2 821, SSS 834',
+      }
+    ]},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 SEA Server Top 100 Myriad 530D.",
@@ -559,7 +571,8 @@ export const teamData = {
           { img: 'images/valkportrait/vitas0.png', text: 'S0 790 Yuka' }
         ] 
       },
-    ]},] 
+    ]},
+  ] 
   },
   
   imgflower: {
@@ -1575,11 +1588,44 @@ export const teamData = {
     ]},]
   },
   symphellmaru: {
+    
     teamDataSets: [
       {
         tabname: "v8.0 CN",
-        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D",
-      }],
+        teamInfoText: "Data is from v8.0 SEA Server Top 100 Myriad 540 D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+            rank: '1, 5, 8',
+            pct: '67%',
+            bottext: "Highest score: S 762, S2 781, SS 796, 9S 835"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '2-4, 6, 7',
+            pct: '19%',
+            bottext: "Highest score: SS 794, SS1 816"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_songque.png"],
+            rank: '12',
+            pct: '13%',
+            bottext: "Highest score: S2 743, SS 786, SSS 791"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '35',
+            pct: '1%',
+            bottext: "Highest score: SSS 774"
+          },
+          
+        ]
+      }
+    ],
     videos: [
       { url: 'https://youtu.be/YzAghCVowVk', abyss: 'Nirvana 540D , Redlotus 515D', uploader: 'Marisa Honkai' },
       { url: 'https://www.bilibili.com/video/BV1LmC5YJEz4/', abyss: 'S0 Thelema 740 vs Nirvana 541D', uploader: '春水草色向南深' },
