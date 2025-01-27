@@ -83,20 +83,20 @@ export const valkbuffs = [
 
     {
         rank: "S",
-        description: "During Stellar Outburst, enemies take 8% more Elemental DMG and 5% more Total DMG.",
+        description: "During Stellar Outburst, enemies take 12% more Elemental DMG and 5% more Total DMG.",
         available_by_default: "yes",
 
-        soeletaken:8,
+        soeletaken:12,
         sotdmtaken:5
 
     },
 
     {
         rank: "S",
-        description: "When AR Rite of Oblivion is activated: During AR Charging, Team Lightning DMG +35%.",
+        description: "When AR Rite of Oblivion is activated: During AR Charging, Team Lightning DMG +25%.",
         available_by_default: "no",
         condition: { astralRing: "Rite of Oblivion"},
-        aclightning: 35,
+        aclightning: 25,
     },
 
     {
