@@ -38,7 +38,9 @@ export const weatherList = {
     {id: 'stunfish', name: 'Flying Fish'}
   ],
   stardust:[
-    {id: 'sdepernay', name: 'Meteroid: Epernay'}
+    {id: 'sdepernay', name: 'Meteroid: Epernay'},
+    {id: 'sdguaymas', name: 'Meteoroid: Guaymas'},
+
   ],
   stellar: [
     {id: 'stellarassaka', name: 'Assaka'},
@@ -422,6 +424,15 @@ export const bossData = {
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Argent Knight Artemis (AKA).webp", 
     weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
+  },
+  sdguaymas: {
+    name: 'Meteoroid: Guaymas', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Meteor_Guaymas.webp", 
+    weather: "Stardust: SD valk DMG +20%",
+
   },
 };
 
@@ -1631,5 +1642,31 @@ export const teamData = {
       { url: 'https://www.bilibili.com/video/BV1LmC5YJEz4/', abyss: 'S0 Thelema 740 vs Nirvana 541D', uploader: '春水草色向南深' },
 
     ] 
+  },
+  sdguaymas: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1, 5, 8',
+            pct: '67%',
+            bottext: "Highest score: S 762, S2 781, SS 796, 9S 835"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Lantern Lone Destruction.png", "/images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+            rank: '2-4, 6, 7',
+            pct: '19%',
+            bottext: "Highest score: SS 794, SS1 816"
+          },
+          
+        ]
+      }
+    ],
   },
 }
