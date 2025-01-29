@@ -1713,16 +1713,16 @@ export const teamData = {
           {
             type: 'lineup',
             lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
-            rank: '1, 5, 8',
-            pct: '67%',
-            bottext: "Highest score: S 762, S2 781, SS 796, 9S 835"
+            rank: '1-6',
+            pct: '97%',
+            bottext: "Highest score: S 832, S2 836, SS 843, 9S 860"
           },
           {
             type: 'lineup',
             lineup: ["images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Lantern Lone Destruction.png", "/images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
-            rank: '2-4, 6, 7',
-            pct: '19%',
-            bottext: "Highest score: SS 794, SS1 816"
+            rank: '7, 9',
+            pct: '3%',
+            bottext: "SS 830, 9S 845"
           },
           
         ]
