@@ -521,7 +521,7 @@
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
-                <div class="col-span-1 px-4 py-2 mr-3 ">v8.0 WEEK</div>
+                <div class="col-span-1 px-4 py-2 mr-3 ">v8.1 WEEK</div>
                 <div class="col-span-2 mr-4 px-4 py-2">EX ABYSS</div>
                 <div class="col-span-3 px-4 py-2">MEMORIAL ARENA</div>
             </div>
@@ -534,14 +534,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Meteor_Guaymas.webp" date="Feb 21" weather="Stardust" bosspage="/boss?sdguaymas" />
+                <BossCard image="/images/Bosses/Yae Kasumi.webp" date="Feb 24" weather="Type" bosspage="/boss?typekasumi" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/BossesMA/Sa_SSS.webp" date="Feb 25"  />
+                    <BossCard image="/images/BossesMA/Huodou_SSS.webp"  />
+                    <BossCard image="/images/Bosses/Assaka.webp"  />
                 </div>
 
             </div>

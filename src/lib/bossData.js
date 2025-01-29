@@ -479,6 +479,66 @@ export const teamData = {
   
   typekasumi: {
     teamDataSets: [
+      {
+        tabname: "v8.1",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '1-6',
+          pct: '40%',
+          bottext: "Highest score: SSS 830"
+
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '7-10',
+          pct: '59%',
+          bottext: "Highest score: SS 782, SS2 786, SS3 794, SSS 808"
+
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '41',
+          pct: '1%',
+          bottext: "Highest score: SSS 789"
+
+        },
+        
+        { 
+          type: 'extraTeamRow', 
+          toptext: 'Highest score for different Vita and Sena rank',
+          extraTeamRow: [
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SSS 830' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS1 808' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS 807' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SS 801' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S2 798' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'S2 785' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'S0 783' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S0 N/A' },
+          ] 
+        },  
+        { 
+          type: 'extraTeamRow', 
+          toptext: 'Vita and Sena use rate based on rank',
+          extraTeamRow: [
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS 42%' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SS+ 12%' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'SS 11%' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'SS+ 10%' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'S2 10%' },
+            { img: 'images/valkportrait/Senadina Deepspace Anchor.png', text: 'S0 9%' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S2 6%' },
+            { img: 'images/valkportrait/Vita Lone Planetfarer.png', text: 'S0 0%' },
+
+
+          ] 
+        },            
+      ],},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",

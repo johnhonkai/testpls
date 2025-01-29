@@ -80,7 +80,7 @@
         {/if}
 
         {#if entry.type === 'extraTeamRow'}
-          <div class={`flex flex-col ${entry.extraTeamRow.length > 6 ? 'lg:col-span-2' : ''} gap-2 justify-center items-center mb-4 bg-gray-100 p-4 rounded-lg `}>
+          <div class={`flex flex-col ${entry.extraTeamRow.length > 6 ? 'lg:col-span-2' : ''} gap-2 justify-center items-center  bg-gray-100 p-4 rounded-lg `}>
             <p class="text-gray-500 text-xs sm:text-sm text-center">{entry.toptext}</p>
 
             <div class="flex gap-4 justify-center items-center">
@@ -97,7 +97,7 @@
     </div>
 
     <!-- Gameplay Videos Section (only one set of videos) -->
-    <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext mt-9">GAMEPLAY EXAMPLES</h2>
+    <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext mt-12">GAMEPLAY EXAMPLES</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 mb-20">
       {#each bossData.videos as video, index}
       <div class="bg-gray-100 p-4 rounded-lg">
