@@ -36,7 +36,7 @@ For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span
 ## Server Differences for SEA, NA, EU
 
 ### Voice, UI Language and Reset Time
-| Server | Voice Over | UI Language | Reset Time |
+| Server | Voice Over | UI Language | Server Time |
 |  --------  |  :-----:  |  --------  |  -------  |
 | SEA | JP, CN | English , CN, Viet, Indo, Thai | UTC +8 |
 | Europe  | JP, CN  | English, CN, French, German | UTC +1 |
