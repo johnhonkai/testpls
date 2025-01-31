@@ -127,7 +127,8 @@
         },
         "lpoutfit": {
             title: "Outfit Supply",
-            description: "<li>Duration: 3 weeks</li><li>Max 9600 crystals for outfit + all rewards</li><li>S-rank box: Herrscher of Sentience, Stygian Nymph, Starchasm Nyx</li>",
+            description: "<li>Duration: 3 weeks</li><li>Max 9600 crystals for outfit + all rewards</li><li>S-rank box: Herrscher of Sentience card / 10 stamps, Stygian Nymph card / 5 stamps, Starchasm Nyx card / 5 stamps</li>",
+            image: "https://i.imgur.com/0Pc7G3X.png"
         },
         "TimeCapsule": {
             title: "Time Capsule",
