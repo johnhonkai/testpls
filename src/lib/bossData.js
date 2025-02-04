@@ -13,6 +13,8 @@ export const weatherList = {
   ],
   ice: [
     {id: 'raven', name: 'Raven'},
+    {id: 'icehellmaru', name: 'Hellmaru'},
+
   ],
   typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
@@ -40,7 +42,7 @@ export const weatherList = {
   stardust:[
     {id: 'sdepernay', name: 'Meteroid: Epernay'},
     {id: 'sdguaymas', name: 'Meteoroid: Guaymas'},
-
+    {id: 'sa', name: 'Sa'},
   ],
   stellar: [
     {id: 'stellarassaka', name: 'Assaka'},
@@ -201,7 +203,15 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconSD.webp", 
       bosspic: "images/Bosses/epernay.png", 
-      weather: "Stardust: SD valk DMG +20%", 
+      weather: "Stardust: SD valk DMG +20%.", 
+  },
+  sa: {
+    name: 'Sa', 
+      mechanics: 'Boss has multiple critical index points.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconSD.webp", 
+      bosspic: "images/Bosses/BOSS_471.png", 
+      weather: "Stardust: SD valk DMG +20%.", 
   },
   stellarassaka: {
     name: 'Saha: Assaka', 
@@ -348,6 +358,15 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Raven.png", 
+    weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
+  },
+  icehellmaru: {
+    name: 'Hellmaru', 
+    mechanics: 'Has PSY mobs.', 
+    weakness: 'Fire (H)',
+    debuff: "Ice (H)", 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Hellmaru.webp", 
     weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
   },
   otto: {
@@ -1723,6 +1742,32 @@ export const teamData = {
             rank: '7, 9',
             pct: '3%',
             bottext: "SS 830, 9S 845"
+          },
+          
+        ]
+      }
+    ],
+  },
+  sa: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1-3',
+            pct: '61%',
+            bottext: "Highest score: S 802, S2 804, SS 806, 9S 827"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '4-10',
+            pct: '39%',
+            bottext: "Highest score: S 802, SS 810, SSS 820"
           },
           
         ]
