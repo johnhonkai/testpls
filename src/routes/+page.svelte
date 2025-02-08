@@ -222,22 +222,9 @@
               </div>
 
 
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2">
-                <span class="font-bold">HI3NEWYEAR</span><br/>
-                60 crystals<br/>
-                Expire: 00:00 Jan 27 (UTC+8)
-              </p>
-
               <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
-                <span class="font-bold">T9WPKNWDJD , 25VPANMD4Y</span><br/>
-                50 crystals, 500 Asterite, 1 ADV skill mat
-              </p>
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
-                <span class="font-bold">KIANAGIFT , SPARKLEGIFT , DURANDALGIFT , SONGQUESGIFT</span><br/>
-                Materials<br/>
-                Expire: 00:00 Jan 27 (UTC+8)
+                <span class="font-bold">WithKiana                </span><br/>
+                60 crystals
               </p>
               
             </div>
