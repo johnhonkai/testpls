@@ -222,7 +222,7 @@
               </div>
 
 
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-5">
+              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
                 <span class="font-bold">WithKiana                </span><br/>
                 60 crystals
               </p>

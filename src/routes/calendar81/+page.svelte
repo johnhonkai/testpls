@@ -590,9 +590,10 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/HOMU Emperor.webp" date="Mar 7" weather="Flux" bosspage="/boss?fluxhomu" />
+                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Mar 10" weather="Type" bosspage="/boss?typesprout" />
                 </div>
+                 
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
                     <BossCard />

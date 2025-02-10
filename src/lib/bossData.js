@@ -19,6 +19,8 @@ export const weatherList = {
   typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
     {id: 'typeandrius', name:'Andrius'}, 
+    {id: 'typesprout', name:'Sprout of Wishing'}, 
+
   ],
   oblivion: [
     {id: 'obvhomu', name: 'Homu'}
@@ -86,8 +88,10 @@ export const weatherList = {
     {id: 'kevin', name: 'Diabolic Kevin'},
 
   ],
-  loascension: [
+  flux: [
     {id: 'momemperor', name: 'Mockery and Frost Emperor'},
+    {id: 'fluxhomu', name: 'Homu Performer'},
+
   ],
   dominance: [
     {id: 'aponia', name: 'Aponia'},
@@ -154,6 +158,14 @@ export const bossData = {
     weakness: 'Ice (Immune)',
     typeicon: "images/type/IconBIO.png",
     bosspic: "images/Bosses/Dominator of Wolves.webp",
+    weather: "Counter: Type counter effect is 20% stronger."
+  },
+  typesprout: {
+    name: 'Sprout of Wishing', 
+    mechanics: 'Phase 2 has lightning-vulnerable shield.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Counter: Type counter effect is 20% stronger."
   },
 
@@ -417,6 +429,14 @@ export const bossData = {
     debuff: 'Emperor: Fire (L)', 
     typeicon: "images/type/SD PSY.webp", 
     bosspic: "images/Bosses/Mockery_Emperor.webp", 
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
+  },
+  fluxhomu: {
+    name: 'Homu Performer', 
+    mechanics: '', 
+    weakness: 'Phy / Lightning / Ice / Fire (M)', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/HOMU Emperor.webp", 
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
   firetona: {
@@ -1770,6 +1790,97 @@ export const teamData = {
             bottext: "Highest score: S 802, SS 810, SSS 820"
           },
           
+        ]
+      }
+    ],
+  },
+
+  typesprout: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '100%',
+          },
+          
+        ]
+      }
+    ],
+  },
+
+  icehellmaru: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+            rank: '1-4, 6-9',
+            pct: '33%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '5, 10',
+            pct: '66%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+            rank: '64',
+            pct: '1%',
+          },
+          
+        ]
+      }
+    ],
+  },
+
+
+  fluxhomu: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/dudu.png", "images/valkportrait/asop_teri.png"],
+            rank: '1',
+            pct: '3%',
+            bottext: "Highest score: SS 811, 9S 833"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '2-10',
+            pct: '91%',
+            bottext: "Highest score: S 797, S2 799, SS 815, 8S 826 "
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+            rank: '50',
+            pct: '2%',
+            bottext: "Highest score: S 794"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/asop_teri.png"],
+            rank: '54',
+            pct: '4%',
+            bottext: "Highest score: SS 793"
+          },
         ]
       }
     ],

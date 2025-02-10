@@ -26,7 +26,7 @@
     physical: "Physical",
     shadow: "Shadow",
     symphony: "Symphony",
-    loascension: "Law of Ascension",
+    flux: "Flux",
     dominance: "Dominance"
     // Add other weather mappings as needed
   };
