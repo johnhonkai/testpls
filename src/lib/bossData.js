@@ -416,8 +416,8 @@ export const bossData = {
   },
   kevin: {
     name: 'Diabolic Kevin', 
-    mechanics: 'Kevin will record elemental dmg received until the gauge is filled, or for a certain duration. Then, he will take less dmg from the element with the highest recorded dmg. When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 
-    weakness: 'Physical (H)', 
+    mechanics: 'REPEL STATE: Kevin will record elemental dmg received until the gauge is filled, or until the timer ends. Then, he will take less dmg from the element with the highest recorded dmg, and takes more dmg from other elements. If the gauge falls below 50%, the dmg debuff is increased. RUIN DEBUFF: When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 
+    weakness: 'Physical (H). During Repel state, Physical (Immune).', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Kevin Kaslana.webp", 
     weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
