@@ -596,9 +596,9 @@
                  
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Mar 11"  />
+                    <BossCard image="/images/Bosses/Varaha.png"  />
+                    <BossCard image="/images/Bosses/Alien Guard.webp"  />
                 </div>
 
             </div>
