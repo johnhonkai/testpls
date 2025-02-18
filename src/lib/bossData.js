@@ -78,6 +78,7 @@ export const weatherList = {
     {id: 'phyalien', name: 'Alien Guard'},
     {id: 'otto', name: 'Otto Apocalypse'},
     {id: 'deliverance', name: 'Bygone Deliverance'},
+    {id: 'phyhod', name: 'Herrscher of Dominance'},
 
   ],
   shadow: [
@@ -91,6 +92,7 @@ export const weatherList = {
   flux: [
     {id: 'momemperor', name: 'Mockery and Frost Emperor'},
     {id: 'fluxhomu', name: 'Homu Performer'},
+    {id: 'fluxandrius', name: 'Dominator of Wolves'},
 
   ],
   dominance: [
@@ -160,6 +162,14 @@ export const bossData = {
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Counter: Type counter effect is 20% stronger."
   },
+  fluxandrius: {
+    name: 'Dominator of Wolves',
+    mechanics: 'Spawns BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
+    weakness: 'Ice (Immune)',
+    typeicon: "images/type/IconBIO.png",
+    bosspic: "images/Bosses/Dominator of Wolves.webp",
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
+  },
   typesprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
@@ -218,11 +228,11 @@ export const bossData = {
       weather: "Stardust: SD valk DMG +20%.", 
   },
   sa: {
-    name: 'Sa', 
+    name: 'Sa: Wheel of Transcendence', 
       mechanics: 'Boss has multiple critical index points.', 
       weakness: 'None', 
       typeicon: "images/type/IconSD.webp", 
-      bosspic: "images/Bosses/BOSS_471.png", 
+      bosspic: "images/BossesMA/Sa_SSS.webp", 
       weather: "Stardust: SD valk DMG +20%.", 
   },
   stellarassaka: {
@@ -362,6 +372,14 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Alien Guard.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },
+  phyhod: {
+    name: 'Herrscher of Dominance: Minion', 
+    mechanics: 'Starts with mobs.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconIMG.webp", 
+    bosspic: "images/Bosses/Herrscher of Domination Minion.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },
   raven: {

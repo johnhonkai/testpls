@@ -1,5 +1,9 @@
 export const valkyries = [
 
+    { name: 'RoO Valk no Reso tag', image: '/images/valkportrait/unknownchar.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Omniscient Star' ] , url: '/valk/coralie', cost: 150},
+
+    
+    
     { name: 'Ba-dum! Fiery Wishing Star', 
         image: '/images/valkportrait/kiana badum.png', 
         type: 'SD', 

@@ -572,7 +572,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard image="/images/Bosses/BOSS_471.png" date="Feb 28" weather="Stardust" bosspage="/boss?sa" />
+                    <BossCard image="/images/BossesMA/Sa_SSS.webp" date="Feb 28" weather="Stardust" bosspage="/boss?sa" />
                     <BossCard image="/images/Bosses/Hellmaru.webp" date="Mar 3" weather="Ice" bosspage="/boss?icehellmaru" />
                 </div>
                  
@@ -609,14 +609,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/Dominator of Wolves.webp" date="Mar 14" weather="Flux" bosspage="/boss?fluxandrius" />
+                    <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Mar 17" weather="Physical" bosspage="/boss?phyhod" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/BossesMA/Sa_SSS.webp" date="Mar 18"  />
+                    <BossCard image="/images/BossesMA/Aesir Heimdall_SSS.webp"  />
+                    <BossCard image="/images/Bosses/Herrscher of the Void.webp"  />
                 </div>
 
             </div>
