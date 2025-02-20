@@ -226,6 +226,12 @@
                 <span class="font-bold">WithKiana                </span><br/>
                 60 crystals
               </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-2 ">
+                <span class="font-bold">E7TTYFXSZA                </span><br/>
+                60 crystals <br/>
+                Expire: 18:00, MAR 20 (UTC+8)
+              </p>
               
             </div>
 
