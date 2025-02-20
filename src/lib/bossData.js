@@ -1832,6 +1832,25 @@ export const teamData = {
     ],
   },
 
+  fluxandrius: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/dudu.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '100%',
+          },
+          
+        ]
+      }
+    ],
+  },
+
   icehellmaru: {
     
     teamDataSets: [
