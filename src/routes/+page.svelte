@@ -93,7 +93,7 @@
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.0 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.1 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.1 Week ${currentWeekCN}`;
   }
 
@@ -221,16 +221,15 @@
                 <h2 class="text-xl font-bold text-blue-600">ACTIVE CODES</h2>
               </div>
 
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2 ">
-                <span class="font-bold">WithKiana                </span><br/>
-                60 crystals
+              <p class=" text-sm sm:text-base text-slate-100 px-2">
+                <span class="font-bold">LoveKiana                </span><br/>
+                100 crystals 
               </p>
+              
 
-              <p class=" text-sm sm:text-base text-slate-100 px-2 mt-2 ">
-                <span class="font-bold">E7TTYFXSZA                </span><br/>
-                60 crystals <br/>
-                Expire: 18:00, MAR 20 (UTC+8)
+              <p class=" text-sm sm:text-base text-slate-100 px-2  mt-2 ">
+                <span class="font-bold">E7TTYFXSZA , MOONTUNA , WithKiana                </span><br/>
+                60 crystals + Materials
               </p>
               
             </div>
