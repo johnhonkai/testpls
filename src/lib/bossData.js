@@ -1785,6 +1785,12 @@ export const teamData = {
         ]
       }
     ],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=HFieeDTcQWs', abyss: 'RedLotus 501D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/tZ01rj70k50', abyss: 'RedLotus 501D', uploader: 'Xintsu' },
+
+    ] 
+    
   },
   sa: {
     
