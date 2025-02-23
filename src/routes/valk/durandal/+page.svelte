@@ -842,7 +842,7 @@ async function increaseLike() {
         
         <!-- Right side text sections -->
         <div class="flex flex-col space-y-2 pr-2 z-10">
-          <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Iridiscence ➔ Daylight</p>
+          <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Daylight ➔ Iridiscence  </p>
           <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Everlasting Radiance </p>
         </div>
       </div>
@@ -851,7 +851,7 @@ async function increaseLike() {
     <div class="mt-3 rounded" >
       <p class="text-sm sm:text-base text-left">
         <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-        <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Iridiscence), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+        <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Daylight), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
     </p>
       </div>
 
