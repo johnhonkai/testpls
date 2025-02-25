@@ -232,6 +232,11 @@
                 <span class="font-bold">E7TTYFXSZA , MOONTUNA , WithKiana                </span><br/>
                 60 crystals + Materials
               </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2  mt-2 ">
+                <span class="font-bold">Kiana2025              </span><br/>
+                Phone Keychain
+              </p>
               
             </div>
 
