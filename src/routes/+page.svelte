@@ -222,7 +222,8 @@
               </div>
 
               <p class=" text-sm sm:text-base text-slate-100 px-2">
-                <span class="font-bold">LoveKiana                </span><br/>
+                <span class="font-bold">LoveKiana ,  MemoriesWithU
+                </span><br/>
                 100 crystals 
               </p>
               
