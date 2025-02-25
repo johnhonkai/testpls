@@ -56,6 +56,8 @@ export const weatherList = {
     {id: 'starrimestar', name: 'Herrscher of Rimestar'},
     {id: 'starandrius', name: 'Dominator of Wolves'},
     {id: 'starbull', name: 'Husk: Mysticism'},
+    {id: 'starsk', name: 'Shadow Knight'},
+
   ],
   bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
@@ -281,6 +283,14 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
+  },
+  starsk:{
+    name: 'Shadow Knight', 
+      mechanics: 'When you deal Elemental DMG to SK, she takes 1% more Physical DMG, max 10 stacks, lasts for 5s.', 
+      weakness: 'Ice / Fire / Lightning (M)', 
+      typeicon: "images/type/IconMECH.png", 
+      bosspic: "images/Bosses/Shadow Knight (SK).webp", 
       weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +50%.", 
   },
   bleedhos: {
