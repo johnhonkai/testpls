@@ -287,7 +287,7 @@ export const bossData = {
   },
   starsk:{
     name: 'Shadow Knight', 
-      mechanics: 'When you deal Elemental DMG to SK, she takes 1% more Physical DMG, max 10 stacks, lasts for 5s.', 
+      mechanics: 'When you deal Elemental DMG to SK, she takes 1% more Physical DMG for 5s, max 10 stacks.', 
       weakness: 'Ice / Fire / Lightning (M)', 
       typeicon: "images/type/IconMECH.png", 
       bosspic: "images/Bosses/Shadow Knight (SK).webp", 
@@ -715,6 +715,17 @@ export const teamData = {
   
   imgflower: {
     teamDataSets: [
+      {
+        tabname: "v8.1",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_teri.png"],
+          pct: '100%',
+        },
+      ]},
+    
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
@@ -724,7 +735,9 @@ export const teamData = {
         lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png"],
         pct: '100%',
       },
-    ]},]
+    ]},
+  
+  ]
   },
   obvhomu: {
     teamDataSets: [
@@ -967,6 +980,16 @@ export const teamData = {
   },
   starrimestar: {
     teamDataSets: [
+      {
+        tabname: "v8.0",
+        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/Chrono Navi.png", "images/valkportrait/elf_kiana.png"],
+          pct: '100%',
+        }
+      ]},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
@@ -977,16 +1000,7 @@ export const teamData = {
         pct: '100%',
       }
     ]},
-    {
-      tabname: "v8.0",
-      teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
-    entries: [
-      {
-        type: 'lineup',
-        lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/Chrono Navi.png", "images/valkportrait/elf_kiana.png"],
-        pct: '100%',
-      }
-    ]},
+
   ],
     
   },
