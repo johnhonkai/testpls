@@ -1914,6 +1914,10 @@ export const teamData = {
         ]
       }
     ],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=c9kokHaKrnc', abyss: 'RedLotus 504D', uploader: 'Marisa Honkai' }
+
+    ] 
   },
 
 
