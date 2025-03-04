@@ -6,8 +6,8 @@
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },
-        { name: 'BW', image: '/images/valkportrait/Blazing Wishes.png',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'BW', image: '/images/valkportrait/kiana badum.png', teampct: 'Mobs',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: 'Bow',  speed: '' },
 
     ];
 
@@ -76,7 +76,7 @@
         </summary>
         <div class="py-3 px-4">
 
-                <p class="text-sm sm:text-base mb-4">In v8.0, the best supports for Reign Solaris are Sparkle and Jovial Deception. Vita only starts beating other supports at really high rank (SS+) , but Vita is still a great option.</p>
+                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. For general use cases, Vita, Sparkle and Jovial Deception are the best. Vita only starts beating other supports at really high rank (SS+) , but Vita is still a great option.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
                     Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
@@ -90,9 +90,26 @@
                     - In Physical weather Abyss, Vita herself deals less damage since weather effect reduces Lightning DMG.
                 </p>          
 
-                <p class="text-sm sm:text-base"><b>AstralOp</b><br/> - Currently, there is no dedicated Astral Op for Law of Ascension.
+                <p class="text-sm sm:text-base mb-4"><b>Badum Kiana</b><br/> - Provides team-wide damage share against mobs.
                     <br/>
-                    - Sera provides initial AR, 18% Phy Taken and 18% Crit DMG.
+                    - Badum support is used against Physical HoD Minion in v8.1.
+                </p>   
+
+                <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human</b><br/>
+                    - Utility: As a bow user, HoH can hit enemy's weak spot.
+                    <br/>
+                     - There's only one boss that requires HoH support: MHT-3C Tank. MHT-3C gains a huge debuff when its weak spot is hit. This is the only situation where HoH support is the best.
+                </p> 
+    
+                <p class="text-sm sm:text-base"><b>AstralOp</b><br/> Theresa AstralOp provides tons of utilities:
+                    <br/>
+                    - Double Stellar Shift
+                    <br/>
+                    - Increased HP Loss DMG
+                    <br/>
+                    - Crit Rate +27%
+                    <br/>
+                    - Initial AR (S), and post-SO AR (SS)
                 </p> 
         </div>
     </details>

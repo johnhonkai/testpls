@@ -3,24 +3,23 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  speed: '' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '100%',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  teampct: '#2',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '#3',  speed: '' },
+
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '#4',  speed: '' },
 
     ];
 
     const asopchar = [
         { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' , speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png',  speed: '' },
         { name: 'Bunny', image: '/images/valkportrait/elf_kiana.png', speed: '' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', speed: '' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',  speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'RS'; // default to 'Vita'
+    export let firstCharName: string = 'Vita'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -74,10 +73,47 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Placeholder</li>
 
+            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually Vita or Sparkle. The second support depends on the boss.</p>
+
+            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, Elemental Breach, and slightly more AR meter.
+                <br/>
+                - Has a slightly longer on-field time than other supports.
+            </p>          
+
+        
+            <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
+                - Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.
             </p>
-        </div>
+
+            <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
+
+                 - Utility: Trigger SD critical point, gathers sd remnant. 
+                 <br/>
+                 - JD support is used against Stardust bosses - Guaymas and Sa in v8.1.
+                 <br/>
+            </p>     
+            
+            <p class="text-sm sm:text-base mb-4"><b>Reign Solaris</b><br/>
+                - Utility: Shieldbreak.
+                <br/>
+                 - RS support is used against Flux Andrius boss in v8.1.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human</b><br/>
+                - Utility: As a bow user, HoH can hit enemy's weak spot.
+                <br/>
+                 - There's only one boss that requires HoH support: MHT-3C Tank. MHT-3C gains a huge debuff when its weak spot is hit. This is the only situation where HoH support is the best.
+            </p> 
+
+            <p class="text-sm sm:text-base"><b>AstralOp</b><br/> Theresa AstralOp provides tons of utilities:
+                <br/>
+                - Double Stellar Shift
+                <br/>
+                - Increased HP Loss DMG
+                <br/>
+                - Initial AR (S), and post-SO AR (SS)
+            </p> 
+    </div>
     </details>
 </div>
