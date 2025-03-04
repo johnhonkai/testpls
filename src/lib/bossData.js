@@ -95,6 +95,7 @@ export const weatherList = {
     {id: 'momemperor', name: 'Mockery and Frost Emperor'},
     {id: 'fluxhomu', name: 'Homu Performer'},
     {id: 'fluxandrius', name: 'Dominator of Wolves'},
+    {id: 'fluxtank', name: 'MHT-3C Retaliator'},
 
   ],
   dominance: [
@@ -424,6 +425,14 @@ export const bossData = {
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },
+  fluxtank: {
+    name: 'MHT-3C Retaliator', 
+    mechanics: '', 
+    weakness: 'Ice (L), Lightning (L)', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
   deliverance: {
     name: 'Bygone Deliverance', 

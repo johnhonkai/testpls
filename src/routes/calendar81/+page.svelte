@@ -718,14 +718,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" date="Mar 28" weather="Flux" bosspage="/boss?fluxtank" />
+                    <BossCard image="/images/Bosses/Flame-Chaser - Vill-V.webp" date="Mar 31" weather="Bleed" bosspage="/boss?villv" />
                 </div>
-                 
+
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Meteor_Guaymas_SSS.webp" date="Apr 1"  />
+                    <BossCard image="/images/Bosses/Herrscher of Rimestar.png"  />
+                    <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp"  />
                 </div>
 
             </div>
