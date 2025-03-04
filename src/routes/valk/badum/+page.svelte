@@ -54,14 +54,14 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
-  { name: 'How to Play', short: 'howtoplay' },
+ // { name: 'Support Buffs', short: 'support' },
+ // { name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
-  { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+ // { name: 'Rank Up', short: 'rank' },
+ // { name: 'Popular Question', short: 'qna' },
+ // { name: 'Overview Card', short: 'card' },
+ // { name: 'Translation Error', short: 'translation' },
 ];  
 
 // Function to select a tab and update the URL
@@ -349,23 +349,58 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/> Placeholder text
+              <strong class="text-amber-400">DPS</strong> 
+            </p>
+              <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Badum is a Stardust Fire DPS with team-wide damage link utility.</li>
+            </ul>
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Team-wide Damage Link</strong> 
+            </p>
+              <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Against multiple enemies, Badum enables the team to share a portion of the dmg dealt between the enemies. </li>
+                <li>This utility is not restricted to a specific Astral Ring specialization.</li>
+
+            </ul>
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">SD Counter</strong> <br/>Against SD enemy, Badum can immediately reduce 8% of the enemy's Max HP.
+    
           </p>
 
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/>Can trigger Domain Resonance very fast.
+    
+          </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> uwooo
+              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get Badum in v8.1.
             </p>
 
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Existing Players</strong> <br/> Badum is an average Part 2 valk - She's a good dps on her bosses, underwhelming dps everywhere else, and she has a unique support utility - just like other Part 2 valks. Her value varies for everyone's account. Recommended to <a href="/classroom/ar3" class="link ">read this first </a>  to help you plan your pulls.
+            </p>
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/> 
+            </p>
+            <ul class="list-disc ml-6 text-sm sm:text-base">
+              <li class="mt-2">As DPS, Badum top scores four bosses in 8.1: SD Guaymas, SD Sa, Flux Homu, and Flux Andrius. Just like other Part 2 valks, she might get more bosses in the future.</li>
+              <li class="mt-2">For Law of Ascension teams, Badum support will be used in stages with mobs. For example, the new Physical weather HoD Minion boss.</li>
+              <li class="mt-2">For World Star teams, currently, there's no live data for Badum support in resonance teams. Badum is definitely the best support to use against mobs. For bosses, Badum triggers resonance marks very quickly, so she might replace HoFi, or Badum and HoFi might even be used together.</li>
+              <li class="mt-2">Badum will also be a support for a future Astral Ring.</li>
+
+          </ul>
           <div class="divider divider-neutral"></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Kiana:</strong> Battlesuit Supply</li>
-              <li><strong>Kiana's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Kiana's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.1</li>
+              <li ><strong>Badum:</strong> Battlesuit Supply</li>
+              <li><strong>Badum's Weapon:</strong> Equipment Supply</li>
+              <li><strong>Badum's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.1</li>
           </ul>
           <div class="divider divider-neutral"></div>
           <!-- Full Guide Section -->
@@ -416,7 +451,61 @@ async function increaseLike() {
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">EQUIPMENT</h2>
  
+      <div>
 
+
+        <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+
+        <div class="flex flex-col justify-center items-center">
+            
+        <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+          <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/12/50494840/a4b99262b96c85a84a800620d6e83105_330124851219025067.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-20 h-20 sm:w-28 sm:h-28">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/48a3cc392db80656d6b2631c6c1d9056_1797221286176213951.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+      </div>
+
+      <div class="w-20 h-20 sm:w-28 sm:h-28">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/f078f402393b4aefade874bbc004fc76_5628784475137967388.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+      </div>
+
+      <div class="w-20 h-20 sm:w-28 sm:h-28">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/461d39badbdcb91183a97c7d4fd4f347_5545063515496532811.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+      </div>
+
+        </div>  
+        <h4 class="text-base sm:text-base text-white"> Fortuitous Red + Happy Days Ahead set</h4>
+        </div>
+
+
+
+     </div>
+
+     <div>
+
+
+
+      <div class="p-4 mt-4 bg-gradient-to-r from-red-950/75 to-red-900/75 rounded">
+        <p class="text-sm sm:text-base text-left mb-4">
+          <b>Fortuitous Red </b><br/> - A powerful weapon for Badum, huge buffs.
+          <br/>- Gives Stellar Shift time stop.
+        </p>
+
+        <p class="text-sm sm:text-base text-left mb-4">
+          <b>Happy Days Ahead set</b><br/> - Huge buffs.
+          <br/> - Forgeable in Foundry.
+        </p>
+
+        <p class="text-sm sm:text-base text-left">
+          <b>Affix</b> <br/>Full ATK.
+        </p>
+      </div>
+
+
+      </div>
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
@@ -428,7 +517,339 @@ async function increaseLike() {
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
+      <div class="flex justify-center gap-4 my-6">
+
+        <button
+        on:click={() => setPlaystyle('1')}
+        class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+      >
+        DRUM SMASH
+      </button>
+
+
+        <button
+          on:click={() => setPlaystyle('2')}
+          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+        DRUM JUMP
+        </button>
       
+
+      </div>
+    
+      {#if activePlaystyle === '2'}
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Drum Jump Playstyle</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+       A fun playstyle where you just jump and jump and jump! Weaker than the Drum Smash playstyle.
+      </p>
+  
+      <div class="divider divider-neutral"></div>
+  
+      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+  
+      <div class="flex flex-col justify-center items-start ">
+  
+      <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+  
+        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+        </div>
+          <!-- Left side image -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+          </div>
+          
+          <!-- Right side text sections -->
+          <div class="flex flex-col space-y-2 pr-2 z-10">
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Fulfilled Wishes ➔ Pleasent Dreams  </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Serendipitous Luck </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="mt-3 rounded" >
+        <p class="text-sm sm:text-base text-left">
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: This playstyle is a little weak, so it's recommended to get both signets. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+      </p>
+        </div>
+  
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">2</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+        </div>
+  
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+          
+          
+        </div>
+  
+  
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+    
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/The_First_Scale.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+  
+  
+        </div>
+  
+        
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+  
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Use Ult</li>
+          <li>Spam jump button until all drums explode, then you will autocast Combo ATK</li>
+          <li>Repeat</li>
+          <li>Against multiple enemies or when a new wave starts, use weapon first at the start to apply damage share link</li>
+        </ol>
+      {/if}
+  
+      {#if activePlaystyle === '1'}
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Drum Smash Playstyle</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+       Stronger playstyle.
+      </p>
+  
+      <div class="divider divider-neutral"></div>
+  
+      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+  
+      <div class="flex flex-col justify-center items-start ">
+  
+      <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+  
+        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+        </div>
+          <!-- Left side image -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+          </div>
+          
+          <!-- Right side text sections -->
+          <div class="flex flex-col space-y-2 pr-2 z-10">
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Great Fortune ➔ Dazzling Joy</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Serendipitous Luck </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="mt-3 rounded" >
+        <p class="text-sm sm:text-base text-left">
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Great Fortune), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+      </p>
+        </div>
+  
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">2</p>
+            </div>
+  
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+  
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+        </div>
+        <div class="mt-3 rounded" >
+          <p class="text-sm sm:text-base text-left">
+            <b>Decimation 1:</b> Your HP will be very low. Build Vicissitude 2 for survivability. <br/>
+            <b>Decimation 1:</b> Get [Burden, Difficulty, and Calamity] enhancement signet as soon as you can to keep your HP low.
+          </p>
+        </div>
+  
+          <div class="divider divider-neutral"></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+          
+          
+        </div>
+  
+  
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+  
+          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+          <div class="flex flex-row rounded">
+            <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+          <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+      </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/Memory.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+            <div class="flex flex-row rounded">
+              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+  
+  
+        </div>
+  
+        
+        <div class="divider divider-neutral"></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+  
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Use Stellar Outburst (Stellar Shift).</li>
+          <li>Press ATK until meter is full ➔ Press weapon. Do this one more time.</li>
+          <li>Repeat.</li>
+          <li>Optional: You can use Ultimate to finish off a wave.</li>
+        </ol>
+  
+  
+      {/if}
 
       {/if}
 
@@ -452,6 +873,34 @@ async function increaseLike() {
   
  {#if selectedTab === 'Gameplay Examples'}
  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+
+ <div class=" gap-6 mt-5 mb-10">
+  <!-- Video 1 with title and description -->
+
+
+  <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Badum DPS and Senadina Support</h2>
+
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS SD Sa Boss</p>
+
+    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+      <iframe
+      loading="lazy" 
+
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/iSNZDuTlVDM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+  </div>
+</div>
+
+
+
+
+</div>
 
 
   {/if}
