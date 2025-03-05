@@ -1970,4 +1970,37 @@ export const teamData = {
       }
     ],
   },
+  
+  fluxtank: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/dudu.png","/images/valkportrait/Elysia Herrscher of Human Ego.png",  "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '81%',
+            bottext: "Highest score: S 823, S2 837, SS 846, SS1 849, 9S 857"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '31',
+            pct: '17%',
+            bottext: "Highest score: S 823, SS 828, 9S 832 "
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/dudu.png","/images/valkportrait/Elysia Herrscher of Human Ego.png",  "/images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+            rank: '46',
+            pct: '2%',
+            bottext: "Highest score: S2 825, SS 827"
+          },
+        ]
+      }
+    ],
+  },
 }
