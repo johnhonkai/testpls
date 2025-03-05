@@ -3,14 +3,18 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '', speed: '' },
+
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '#2', speed: '' },
+
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  speed: '' },
+
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '', speed: '' },
 
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '', speed: '' },
 
     ];
 
@@ -22,7 +26,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'Sena'; // default to 'Vita'
     export let maindps: boolean = false;
     
     // Find the character with the matching name and use it as firstCharred
@@ -79,10 +83,24 @@
             Details
         </summary>
         <div class="py-3 px-4">
-        <p class="text-sm sm:text-base">
-            Placeholder
-        </p>
-                       
+
+        <p class="text-sm sm:text-base mb-4"><b>Thelema</b><br/> - As DPS, HoH needs Thelema support.
+            <br/>
+            - Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.
+            <br/>
+            - Thelema also has a unique evasion spam strat to quickly regen AR meter, which can significantly improve score.
+            <br/>
+            - Thelema also contributes damage in ice weather.
+        </p>         
+        
+        <p class="text-sm sm:text-base mb-4"><b>Vita vs Sena</b><br/> - Vita provides strong buffs, Elemental Breach, and slightly more AR regen.
+            <br/>
+            - Sena provides buffs and Elemental Breach with zero field time.
+            <br/>
+            - At S-rank, Sena support scores higher than Vita. Although Vita provides stronger buff, the dmg increase is not big enough to beat the score with Sena's zero field time. 
+
+        </p>     
+
         </div>
     </details> 
 </div>

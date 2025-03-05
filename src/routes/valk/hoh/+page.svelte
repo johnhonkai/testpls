@@ -57,12 +57,14 @@ function closeLightbox() {
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
+  { name: 'Support Buffs', short: 'support' },
+
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
   { name: 'Rank Up', short: 'rank' },
   { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+  //{ name: 'Overview Card', short: 'card' },
+  //{ name: 'Translation Error', short: 'translation' },
 ];  
 
 // Function to select a tab and update the URL
@@ -364,46 +366,54 @@ function selectTabMobile(event) {
 
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400">Wheel of Destiny DPS</strong> <br/>
-          To be updated in the future.
+          When HoH equips the new Divine Key Flawless Benediction, she unlocks Astral Ring: Wheel of Destiny. This brings HoH DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
       </p>
+
+      <p class="mt-4 text-sm sm:text-base">
+        <strong class="text-amber-400">Law of Ascension Support</strong> <br/>
+        HoH does not provide any improvement for existing LoA lineup. However, as a bow weapon wielder, she can hit an enemy's weak spot. In v8.1, this utility is used against MHT-3C Tank boss. This is the only situation where HoH support is the best.
+    </p>
+
+    <p class="mt-4 text-sm sm:text-base">
+      <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/>
+      HoH does not provide any improvement for existing LoA lineup. Although, she can consume Stellar Drain very quickly.  </p>
+
+      <p class="mt-4 text-sm sm:text-base">
+        <strong class="text-amber-400">??? Support</strong> <br/>
+        HoH will be a support for a future Astral Ring.</p>
 
         <div class="divider divider-neutral"></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
 
         <p class="text-sm sm:text-base mt-4 mb-4">
-          <strong class="text-amber-400">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If HoRB and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+          <strong class="text-amber-400">New Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If HoH is available through other means, such as spending event or Battle Pass, you can consider getting her that way.
       </p>
 
-        <p class="text-sm sm:text-base mt-4">
-            <strong class="text-amber-400">Competitive</strong> <br/> HoH still has her top scores in Abyss, her bosses just don't appear that frequently anymore.
-        </p>
+    <p class="mt-4 text-sm sm:text-base">
+      <strong class="text-amber-400">Existing Players on DLC Equipment</strong> <br/>Although HoH DLC is good, there are some "requirements" that would make the DLC not worth it if you are on a budget. Here are the reasons:
+  </p>
+  <ul class="list-disc ml-6 text-sm sm:text-base">
+    <li>As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.</li>
+    <li>For casual / on-off  players, if you only have S0 HoH, then getting this Divine Key DLC will not guarantee you to get +100 in Abyss because HoH is a popular valk. A lot of players will have her at SS-rank or higher now in v8.1. </li>
+    <li>As support, her buffs are nothing exceptional. Her unique utility is that she can hit tank weak spot. So basically, HoH will only be useful as support very rarely outside of Arena.</li>
+    <li>She will also support one more AR in the future, so maybe she will be very good for that AR, but who knows.</li>
+    <li>Another new addition in v8.1 is Theresa AstralOp, which is very broken for LoAscension teams. I dare say that if you have to choose between HoH Divine Key and Theresa AstralOp, I would get Theresa.</li>
+  </ul>
 
         <div class="divider divider-neutral"></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
             <li ><strong>Herrscher of Human:</strong> Battlesuit Supply</li>
-            <li ><strong>Herrscher of Human Equipment:</strong> Focused Supply</li>
+            <li ><strong>Flawless Benediction:</strong> Equipment Supply</li>
+            <li ><strong>Solon Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.1</li>
+
 
         </ul>
         <div class="divider divider-neutral"></div>
         <!-- Full Guide Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
-        <p class="mt-2 text-sm sm:text-base pb-4">
-          A very old guide from her release:
-        </p>
-
-      <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-          <iframe
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/WuBE-HmiM_4"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-      </div>
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE (SOON)</h2>
 
     </div>
 {/if}
@@ -415,9 +425,7 @@ function selectTabMobile(event) {
 
   <section class="max-w-screen-lg mx-auto ">
 
-
-    <P1ice></P1ice>
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny DPS </div>
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny DPS </div>
 
     <Hohdps maindps={true}></Hohdps>
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
@@ -445,11 +453,69 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">EQUIPMENT</h2>
- 
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+        <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+
+        <div class="flex flex-col justify-center items-center">
+            
+        <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+          <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/12/50494840/1737edcad15a83aaace4ecee52ec6075_8178279159088041862.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/cc3e2a130ab142387f61a18964971b67_5923672359853492658.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/39ce08306135239894a71b83632dc3bb_5742649027447184790.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-20 h-20 sm:w-28 sm:h-28">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/81c49777f3475eec94186d999c52bc52_6928373393428968267.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+        </div>
+
+        </div>  
+        <h4 class="text-base sm:text-base text-white"> Flawless Benediction + Solon set</h4>
+        </div>
+
+
+
+     </div>
+
+     <div>
+
+
+
+      <div class="p-4 mt-4 bg-gradient-to-r from-pink-950/75 to-pink-900/75 rounded">
+        <p class="text-sm sm:text-base text-left mb-4">
+          <b>Domain of Ego</b>
+          <br/>- A must-have weapon to activate Astral Ring.
+          <br/>- Provides sp recovery.
+          <br/>- Gives access to improved gameplay, and a more flawless Ultimate.
+          <br/>- Synergy (duplicates) gives global ATK (Syn1 +10 ATK, Syn2 +5 ATK, Syn3 +5 ATK).
+        </p>
+      
+        <p class="text-sm sm:text-base text-left mb-4">
+          <b>Solon Stigma</b><br/> - Big buffs for self and teammate.
+        </p>
+      
+        <p class="text-sm sm:text-base text-left">
+          <b>Affix:</b> Full ATK
+        </p>
+      </div>
+
+
+      </div>
+
+      <div>
+
+        <div class="divider divider-neutral"></div>
+
+        <h2 class="text-xl font-semibold text-center  text-gray-400">OLD EQUIPMENT</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
@@ -484,105 +550,17 @@ function selectTabMobile(event) {
 
 
             <div class="p-4 mt-4 bg-gradient-to-r from-pink-950/75 to-pink-900/75 rounded">
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>Domain of Ego</b><br/> - <span class="text-pink-300">Domain of Ego is like a wedding ring...</span> You want to marry Elysia, you need a ring. Don't skip the ring. Ely will be very sad.
-                <br/>- A must-have weapon for damage and to keep up with HoH's high sp cost Ultimate.
-              </p>
-            
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>Elysia: Pristine</b><br/> - Big buffs. 3PC has weapon skill CD -25%. 
-                <br/> - All pieces are strong, try to get at least any 2PC.
-              </p>
-            
-              <p class="text-sm sm:text-base text-left">
-                <b>Affix:</b> Full ATK
+              <p class="text-sm sm:text-base text-left ">
+                Elysia's original wedding ring.
               </p>
             </div>
 
 
             </div>
 
-            <div class="divider divider-neutral"></div>
-
-            <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-blue-400 mb-2">OTHER EQUIPMENT OPTIONS</h2>
-
-              <div class="flex flex-col justify-center items-center">
-                  
-              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/4ebb3b5717d38d2145588b85b706c800_6470234861718683631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
-
-              </div>
-
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/08774ee8871f24d2a2f9bfca84818a55_2070324058174202393.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
-              </div>
-
-              
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/2839f23b32369fd802b918ed1caac92d_783370248046786155.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
-            </div>
-
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> G4 Willows</h4>
-              </div>
-
-
-
-           </div>
-
-           <div>
-
-
-
-            <div class="p-4 mt-4 bg-gradient-to-r from-blue-950/75 to-blue-900/75 rounded">
-              <p class="text-sm sm:text-base text-left">
-                Next best option
-              </p>
-            </div>
-
-
-            </div>
-
-            <div class="divider divider-neutral"></div>
-
-
-            <div class="flex flex-col justify-center items-center">
-                  
-              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-  
-
-                <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/15dd7c43648a1e05c6a5ba3e20b53111_6941433118228814288.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-              </div>
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/348560f2e0aacf2bf2386e8661db02ef_4729076017926979824.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-              </div>
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/67f871a34323228f0ac5e3988073216d_8906121590255459443.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-              </div>
-
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> G3 Ana set</h4>
-              </div>
-            
-
-              <div class="p-4 mt-4 bg-gradient-to-r from-blue-950/75 to-blue-900/75 rounded">
-                <p class="text-sm sm:text-base text-left">
-                  Just use Ana while you are farming the materials to upgrade to Willows set
-                </p>
-              </div>
+             
   
 
       {/if}
@@ -1073,7 +1051,7 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Herrscher of Human DPS</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Wheel of Destiny DPS Gameplay</h2>
 
           <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoH vs Hellmaru Red Lotus</p>
 
@@ -1082,7 +1060,7 @@ function selectTabMobile(event) {
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/a5o8kocAi1s"
+                src="https://www.youtube.com/embed/c9kokHaKrnc"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1093,12 +1071,87 @@ function selectTabMobile(event) {
 
     </div>
 
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
 
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Law of Ascension Support</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Support for Badum DPS (Starts at 5:03)</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/HFieeDTcQWs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class=" gap-6 my-10">
+    <!-- Video 1 with title and description -->
+
+  
+    <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+      <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Part 1 DPS Gameplay</h2>
+
+      <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoH vs Hellmaru Red Lotus</p>
+
+      <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+        <iframe
+        loading="lazy" 
+
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/a5o8kocAi1s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+  </div>
+
+</div>
   {/if}
   
   {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
+  <div class="my-6">
+    <div class="chat chat-start ">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/meibald.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-primary text-base text-white">Does HoH really need Thelema support?</div>
+    </div>
+
+    <div class="chat chat-end">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/ds.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-neutral text-base text-white py-5">
+        As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities. Thelema also provides evasion spam ar regen, and will contribute damage in Ice weather.
+
+      
+      </div>
+    </div>
+  </div>
 
   {/if}
 
@@ -1121,7 +1174,45 @@ function selectTabMobile(event) {
       </div>
       {/if}
 
+      {#if selectedTab === 'Support Buffs'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">SUPPORT BUFFS</h2>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//hoh%20buff.webp"
+          alt="Buff 1"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//hoh%20buff.webp')}
+        />
+      </div>
+      
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4 mt-10">
+        <p class="mb-4 font-semibold">How to activate HoH support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">AR Regen</p>
+            <p>- Weapon skill that triggers Ego Blossom will consume Stellar Drain. (When weapon button is flashing, casting weapon will trigger Ego Blossom).
+              <br/>
+              - In Law of Ascension team, QTE also restore AR.
+            </p>
+          </div>
 
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Solon Stigma</p>
+           <p>Casting weapon or Charged ATK triggers an important stigma buff [Ego's Devotion] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
+
+
+      </div>
+
+      <!-- Lightbox Component -->
+      <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
+      {/if}
   </div>
 
 </section>

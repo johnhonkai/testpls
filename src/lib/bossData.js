@@ -1924,7 +1924,8 @@ export const teamData = {
       }
     ],
     videos: [
-      { url: 'https://www.youtube.com/watch?v=c9kokHaKrnc', abyss: 'RedLotus 504D', uploader: 'Marisa Honkai' }
+      { url: 'https://www.youtube.com/watch?v=c9kokHaKrnc', abyss: 'RedLotus 504D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/MmdTMpuwkTw', abyss: 'Nirvana 536D', uploader: 'Haxxor' }
 
     ] 
   },
