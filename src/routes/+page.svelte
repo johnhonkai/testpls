@@ -302,7 +302,7 @@
         </div>
       </a>
 
-      <a href="https://arustats.herokuapp.com/" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content2">
+      <a href="https://arustats.com/" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src="/images/newstab/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
