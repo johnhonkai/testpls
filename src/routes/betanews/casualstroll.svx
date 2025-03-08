@@ -36,7 +36,7 @@ When you have 3 team members with Heavenly Shift attribute: Enemies take 16% (S)
 
 **LEADER 1**<br/>
 When CS is the leader:
-- Combo ATK duration is increased to 60 seconds. All your attacks will generate 3x hitcount.
+- Hitcount duration is increased to 60 seconds. All your attacks will generate 3x hitcount.
 - Ultimate gain Augmented Ascension state.
 - When any team member uses QTE, CS gains 8 sp.
 - When battle starts, initial sp +30.
