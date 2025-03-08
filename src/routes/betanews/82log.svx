@@ -1,0 +1,180 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+
+title: v8.2 Patch Note v2
+
+version: '8.2'
+sortOrder: '1'
+image: "/images/valkportrait/Casual Stroll.png"
+---
+
+### LINKS
+
+- [8.2 Patch Note](/betanews/82log)
+- [Casual Stroll Skills](/betanews/casualstroll)
+- [Casual Stroll  Equipment](/betanews/casualgear)
+
+---
+
+New S-rank Sushang Casual Stroll (unofficial translation)
+- BIO Phy Bleed
+- AR Law of Ascension
+
+<br/>
+
+New Outfits
+- Helia Outfit. Free from event
+- Kira Outfit. From Knight BP
+
+<br/>
+
+Chapter 8
+- Added new event Interstellar Adventure
+
+<br/>
+
+Event 1: Restaurant management event
+
+Event 2: Snazzy Cards Club
+
+Event 3: Powered Duo
+
+Event 4: Little ones are big helpers!
+
+<br/>
+
+EX Abyss
+- Flux weather Lantern
+- Fire weather MHT-3C
+- Stardust weather Creeper and Alien Guard
+
+<br/>
+
+Memorial Arena
+- SSS Lantern
+
+<br/>
+
+Elysian Realm
+- Added Casual Stroll
+- F17 Load Boss Pishacha
+
+<br/>
+
+Supply
+- Added Leap Supply and Leap Equipment
+
+<br/>
+
+Battle Pass
+- Added new BP
+- Please [watch this](<https://www.youtube.com/watch?v=8hIFZ3wdFiQ>) for BP rework stuff. There's too many changes
+
+<br/>
+
+BP EXP Adjustment
+- After purchasing Paladin BP, the extra EXP is increased from 20,000 to 30,000 (directly to level 30). Weekly exp boxes for all BP tiers are unifited to give 3,000 BP EXP.
+- Starting from v8.3, during version update week, the exp gained from combat missions and bp exp boses from Mon to Thursday can be inherited to the next BP period.
+- After v8.2 update, an extra bp box will be given that week. (8.1 BP EXP box will be invalied after v8.2)
+- You can now exchange Bchip to BP EXP point. Exchange ratio is 30 Bchip -> 1000 BP EXP.
+
+<br/>
+
+BP Price Adjustment
+- Paladin BP price is set to 1280 Bchip. If captain purchases Knight Pass first (600 Bchips), he can spend 680 Bchips to upgrade to Paladin.
+
+<br/>
+
+Shop
+- Exchange Shop added Whisper of the Past, Obscuring bow, Elysia stigma and Aslaug stigma
+- Witch Orb: Added Herrscher of Human stamps
+
+<br/>
+
+Foundry
+- Added G4 Cezanne
+- Added CS Sushang stigma
+
+<br/>
+
+System
+- Adjusted returnee content. Updated the way of obtaining returnee rewards. Optimized returnee compensation formula. Overhauled returnee interface.
+- Added AstralOp appreciation mode.
+- Added one-click upgrade for AstralOp and ELF skills.
+- Added emblem collection function and optimized emblem sort logic.
+
+<br/>
+
+BATTLESUIT CHANGES
+- Badum: Fixed an issue with aerial basic seq 4, when multiple enemies enter attack range one after another, it may cause the character to recover additional meter on hit.
+- Badum: Fixed an issue where Combo subskill 1 may fail if there is only one enemy in certain situations. (After an enemy is hit by Ba-Dum! Fiery Wishing Star's Combo ATK or Stellar Shift, it takes 20% more Total DMG from her Weapon Skill and Ultimate.)
+- Badum: Fixed missing voice when using Stellar Shift.
+- Badum: Fixed an issue where skill glossary mistakenly includes 'Summoned Drum' (ER Skill).
+- Badum: Fixed an issue where Basic ATK might be missing vfx.
+- Badum: Fixed weapon shadow may appear abnormal on certain stages.
+- HoFi: Fixed an issue where skill animation can be abnormally interrupted when casting weapon skill.
+- HoH: Fixed an issue where during SO, freeze trauma accumulation might be abnormal in certain situations.
+- HoH: Fixed an issue where if HoH has AR and is the leader, then a teammate without AR WoDestiny activates SO, HoH becomes abnormal and unable to exit Origin form.
+- HoH: Improved description for the AR skill [What Begins With Me Ends With Me]. This is only text optimization, actual effect remains the same. After the adjustment, the part related to Pristine Seed from subskill 2 [Tender, Like the Love of Petals] will be merged into the main AR skill text.
+- Kira: Fixed an issue where Charged ATK counts as weapon skill by some stigma.
+- JD: Fixed an issue where anti-aliasing effect might appear abnormally when using Ult in certain situations.
+- HoFs: Fixed abnormal sword model when using Time Runner outfit.
+- LP: Fixed Vita's hair moving abnormally during Ult when using Eldritch Vantage outfit.
+- Sparkle: Fixed abnormal feet model when using outfit.
+- BK: Fixed abnormal hair issue in some stages.
+
+<br/>
+ASTRALOP CHANGES
+
+Theresa: Fixed an issue where HP Loss DMG increase is not working properly for Reign Solaris skill (where QTE and 3rd stage charge hits img enemy, the dmg is transferred from shell to seed).
+
+<br/>
+
+WEAPON CHANGES
+- HoH DLC: Corrected text description. This is only text correction, actual effect remains the same. 
+- HoH DLC: Fixed an issue where the weapon might appear abnormal in Valkyrie menu.
+- Judgement of Shamash: Fixed abnormal model display issue.
+
+<br/>
+
+EX ABYSS CHANGES
+- Dominance Jizo: Adjusted HP.
+- Bleed Tribunal: Adjusted HP.
+- Flux Andrius: Fixed an issue where Andrius might behave abnormally during transition phase.
+- Starless Fu Hua: Fixed abnormal lag appearing in certain situations.
+- Type Counter Sprout of Wishing: Fixed an issue where HoFi cannot recover Descend point during transition phase.
+- Husk Existentialism: Corrected skill description of Desolate Crushing skill.
+
+<br/>
+
+MEMORIAL ARENA
+
+Huodou: Fixed an issue with Thelema with signature weapon. If she uses Ult, and Huodou enters transition phase during timestop, Arena timer may abnormally stop counting down.
+
+<br/>
+
+ELYSIAN REALM
+- Fixed an issue where Infinity signet Silent B might cause abnormal summon count.
+- Fixed an issue with Daybreak Long Night Hangs Alone nexus may cause the valk to have abnormal Tear stack count.
+- Fixed an issue where Homu Magician boss may appear abnormally in some situations.
+- Fixed an issue where Expand button may disappear abnormally in some situations.
+ 
+<br/>
+
+SYSTEM
+- Adjusted some rewards in newbie B-chip pack, starter manual and newbie login event.
+- Adjusted challenge missions of some expedition stages.
+- Fixed an issue where, when equipping weapon in Valkyrie menu, the weapon shown does not match the character.
+- Fixed an issue where the right joystick may fail to rotate view normally in some situations when switching to KMB control when you are using controller.
+- Fixed an issue where you can use AstralOp in Elysium and Kolosten open world.
+- Optimized group sorting method in Teamfight Tactics event.
+- Fixed Ore Jukebox might not play music properly.
+- Optimized AstralOp running movement in Hyperion 11.
+- Fixed abnormal flickering during scene loading in P2 Open World.
+- Fixed abnormal anti-aliasing effect when 'Shadow Quality' is set to medium.
+- Fixed an issue where valk feet may shake abnormally in appreciation mode.
+
+
+
+
+

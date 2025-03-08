@@ -1,0 +1,104 @@
+---
+creationDate: "2025-01-10T03:44:52.531Z"
+
+
+title: Sushang Casual Stroll Equipment v2
+
+version: '8.2'
+sortOrder: '3'
+image: "/images/valkportrait/Casual Stroll.png"
+
+---
+
+### LINKS
+
+- [8.2 Patch Note](/betanews/82log)
+- [Casual Stroll Skills](/betanews/casualstroll)
+- [Casual Stroll  Equipment](/betanews/casualgear)
+
+---
+
+## <span class="text-amber-400">Weapon</span> Azure Sleeve - Windseeker
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/2AdMfWD.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+ATK: 430 ,  CRT: 27
+
+**ACTIVE [SP: 0] [CD: 0s]**<br/>
+The weapon active skill is based on the wielder. If wielder has Heavenly Shift tag, Physical DMG +25%.
+
+Casual Stroll equip bonus:
+- During Stellar Shift, press ATK to deal 500% ATK of Physical DMG (considered as weapon skill, Stellar Shift and QTE damage).
+- When Basic ATK hits, apply this effect to the target: Every 0.25s, inflict 1 point of bleed for 1s, can be refreshed.
+
+---
+
+**PASSIVE 1**<br/>
+Bleed DMG +23%. 
+Casual Stroll equip bonus:
+- When an attack reduces the enemy's HP to 0, weapon cd is reset, CD: 3s.
+- When AR is activated: Self Physical DMG +20%, team Total DMG +25%.
+
+---
+
+**PASSIVE 2**<br/>
+Enemies take 11% more Physical DMG from the wielder.
+Casual Stroll equip bonus: Team Physical DMG +16%, Elemental DMG +18%.
+
+---
+
+**SYNERGY**<br/>
+Enemies take 2 / 4 / 6% more Total DMG from valks on the field (independent multiplier, cannot stack). <br/>
+Casual Stroll equip bonus: Enemies take 2 / 4 / 6% more Physical DMG from herself (independent multiplier, cannot stack).
+
+---
+
+## <span class="text-amber-400">Sushang: Fun and Joy set</span>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/3RR2naz.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+**TOP** <br/>
+Total DMG +15%. Casual Stroll equip bonus: 
+- Total DMG +10%. 
+- Characters with [Heaven and Earth] gain Total DMG +15%.
+
+
+---
+
+**MID**<br/>
+Physical DMG +13%. Casual Stroll equip bonus: 
+- Physical DMG +13%. 
+- Bleed trauma inflict rate +25%.
+- Characters with [Heaven and Earth] gain Physical DMG +16%, Elemental DMG +20%.
+
+---
+
+**BOT**<br/>
+Crit Rate +22%. Casual Stroll equip bonus:
+- Crit Rate +22%.
+- Enemies take 20% more Bleed DMG from CS.
+- Enemies take 15% more Physical DMG, 20% more Elemental DMG from characters with [Heaven and Earth].
+
+---
+
+**2PC SET**<br/>
+Take 20% less Total DMG. Casual Stroll equip bonus:
+- Enemies take 10% more Bleed DMG.
+- When AR Law of Ascension is activated: Characters with [Heaven and Earth] gain Crit DMG and Elemental DMG +15%.
+
+---
+
+**3PC SET**<br/>
+Total DMG +10%. Enemies take 18% more Physical DMG.
+
+Casual Stroll equip bonus:
+- Crit DMG +50%.
+- Upon hitting an enemy with QTE or weapon skill, upon activating Stellar Outburst, or when battle start and you are the leader, team gain [Heaven and Earth] for 25s, can be refreshed.
+-  When AR Law of Ascension is activated: 
+	- Characters with [Heaven and Earth] gain Physical DMG +10%, Elemental DMG +25%, Total DMG +10%.
+	- When you are on the field, enemies are impaired, DEF -55%.
+	- During AR Charging: Enemies take 18% more Total DMG, 15% more Physical DMG, 26% more Elemental DMG from characters with [Heaven and Earth].
+	- During Stellar Outburst: Enemies take 20% more Total DMG, 20% more Physical DMG, 32% more Elemental DMG from characters with [Heaven and Earth].

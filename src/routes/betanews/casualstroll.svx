@@ -1,0 +1,195 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Sushang Casual Stroll Skill v2
+
+version: '8.2'
+sortOrder: '2'
+image: "/images/valkportrait/Casual Stroll.png"
+
+---
+
+### LINKS
+
+- [8.2 Patch Note](/betanews/82log)
+- [Casual Stroll Skills](/betanews/casualstroll)
+- [Casual Stroll  Equipment](/betanews/casualgear)
+
+
+
+### INTRO
+- S-rank, BIO, Physical, Bleed, Gauntlets user
+- Astral Ring: Law of Ascension
+- Is a DPS, can support Law of Ascension Team, one future ??? AR team
+- Gameplay:  https://www.youtube.com/watch?v=5B2c5KepO-U
+
+---
+### LEADER 
+When set as leader, activate AR Law of Ascension. SO cost: 200, Duration: 1s, CD: 40s.
+
+When you have 1 team member with Heavenly Shift attribute: CS's Stellar Shift gain Physical DMG +18% (S) / 28% (S3) / 38% (SS3).
+
+When you have 2 team members with Heavenly Shift attribute: Teammates with Heavenly Shift tag can trigger CS’s Heavenly Link. CS also restore 10 more AR when consuming Stellar Drain.
+
+When you have 3 team members with Heavenly Shift attribute: Enemies take 16% (S) / 17% (S3) / 18% (SS3) more Physical DMG from CS (independent multiplier). Initial AR +10.
+
+---
+
+**LEADER 1**<br/>
+When CS is the leader:
+- Combo ATK duration is increased to 60 seconds. All your attacks will generate 3x hitcount.
+- Ultimate gain Augmented Ascension state.
+- When any team member uses QTE, CS gains 8 sp.
+- When battle starts, initial sp +30.
+
+
+---
+
+**LEADER 2**<br/>
+When CS is the leader:
+- Bleed DMG +68% (S) / 80% (SS1). 
+- When CS has Physical Breach, Bleed DMG +12%. 
+
+
+### ASTRAL RING
+
+Casual Stroll is protected by AR Law of Ascension. Upon casting Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Physical DMG.
+
+When AR Law of Ascension is activated:
+- After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
+- Stellar Shift: Deal 90%x3 + 18%x50 + 700% ATK of Physical DMG, trigger 2.8s of time stop, and reset weapon skill CD. After that, trigger 2s time fracture.
+- After casting Stellar Shift, enter Delicious state, counts as Augmented Ascension state, lasts for 11s. State is cleared on exit.
+- When you are the leader:
+	- During Delicious state, press weapon to cast Forest Trail, Razor Leaf, and Rainstorm in sequence. Ends Delicious state after casting Rainstorm.
+	- When the last hit of Combo ATK or Stellar Shift hits, teammates’ switch cd are reset and their QTE are triggered.
+	- Unshackled state gained from QTE counts as Augmented Ascension state.
+
+- When you are not the leader:
+	- During Delicious state, press weapon to cast Razor Leaf, then ends Delicious state.
+	- When the last hit of Stellar Shift hits, reset the leader's switch CD and trigger her QTE.
+	- When QTE skill hits an enemy, AR meter +15 points and trigger leader's Heavenly Link attack twice. CD: 16s.
+	- Upon casting Stellar Shift, trigger the leader's Heavenly Link attack twice.
+	- Heavenly Link deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader’s damage type.
+
+---
+
+**AR 1**<br/>
+When Stellar Outburst ends, gain Stellar Drain. During AR Charging state, when the enemy is hit by Forest Trail and Razor Leaf, consume Stellar Drain, restore 10 AR meter.
+- When AR Law of Ascension is activated, Stellar Drain restore 10 more AR.
+- Gain a Stellar Drain at the start of battle.
+
+---
+
+**AR 2**<br/>
+
+When AR Law of Ascension is activated:
+- Team Physical DMG +20%, Elemental DMG +20%.
+- CS's Stellar Shift gain Crit Rate +30%.
+
+---
+
+**AR 3**<br/>
+Related to a future AR.
+
+
+### PASSIVE
+CS has sword level meter, 4 points max. Meter is cleared when you leave the field.
+After using QTE, you gain Unshackled state for 9 seconds, can be refreshed. Unshackled state is removed when you leave the field.
+During Unshackled state, gain higher anti-interrupt.
+
+---
+
+**PASSIVE 1**<br/>
+When the leader's type is countering the enemy (type advantage), team members with the countering type gain Total DMG +10%. If CS is the leader, the value becomes 18%.
+
+---
+
+**PASSIVE 2**<br/>
+Takes 40% less Total DMG. Against bleeding enemies, gain Physical DMG +8% (S) / 12% (SS2) and Total DMG +6% (S) /  8% (SS2).
+
+---
+
+**PASSIVE 3**<br/>
+Enemies take 30% (S) / 35% (S1) more Bleed DMG from CS, and 6.5% (S) / 8% (S1) more Total DMG from the team.
+
+
+### EVASION
+Upon successful ult evasion, you can connect to Basic SEQ 4.
+Ult jump evasion triggers evasion skill. 
+Evasion skill: Trigger 3s global time fracture, CD 15s.
+
+---
+
+**EVASION 1**<br/>
+**<span class="text-amber-400">[S2]</span>** (Toggle) Upon casting Forest Trail, trigger evasion skill.
+
+---
+
+**EVASION 2**<br/>
+**<span class="text-amber-400">[SS2]</span>** fter casting QTE or Stellar Shift, reset evasion skill CD.
+
+
+
+### WEAPON SKILL
+
+Press weapon to deal 80%x11 ATK of Physical DMG. Gain 2 sword level, and inflict 6 points of bleed.
+
+Automatically cast weapon skill upon using QTE, deals 160% ATK of Physical DMG. 
+Upon using QTE or Basic SEQ 4, press weapon to deal 25%x11 + 200% + 450% ATK of Physical DMG, and gain 2 sword level.
+
+When CS is the leader, when you have Delicious state, during Forest Trail, press weapon to use Razor Leaf, knocks enemies away and deal 150% + 160% + 25%x13 + 600% ATK of Physical DMG. When CS is not the leader, when you have Delicious state, press weapon to use Razor Leaf.
+
+After using Combo ATK, tap weapon to use Rainstorm, deal 80%x4 + 25%x13 + 480% ATK of Physical DMG.
+
+Damage caused by Forest Trail, Razor Leaf, and Rainstorm is considered as Bleed DMG.
+
+---
+
+**WEAPON 1**<br/>
+**<span class="text-amber-400">[SS]</span>** Forest Trail, Razor Leaf, and Rainstorm gain Total DMG +20%
+
+
+### BASIC ATK
+
+SEQ 1: Deal 150%
+SEQ 2: Deal 50%x3+100% , sword level +1
+SEQ 3: Deal 200%
+SEQ 4: Deal 80%x5 , sword level +1
+Plunge ATK: Deal 350%
+
+---
+
+**BASIC 1**<br/>
+QTE: Triggers when teammate casts weapon skill, or enemy is time slowed, or enemy is hit by a teammate's Combo/Charged ATK. On QTE cast, weapon skill CD is reset, deal 400% ATK of Physical DMG, inflict 4 points of bleed, and trigger 2s time fracture.
+
+---
+
+**BASIC 2**<br/>
+Upon casting Combo ATK and Forest Trail, restore 500 HP for the team.
+
+
+### COMBO ATK
+
+When sword meter is full, hold ATK to use Combo ATK.
+
+Upon casting Combo ATK, clear sword level meter, deal 120%x3 + 100%x6 ATK of Physical DMG, and inflict 4 points of bleed.
+
+---
+
+**COMBO ATK 1**<br/>
+Rainstorm Total DMG +50% (S) / 80% (SS), restore 6 (S) / 10 (SS) sp for the team.
+When hitcount is >= 100, deal additional Physical DMG equal to hitcount x 1.5% (S) / 2.5% (SS) ATK  (up to 200 hitcount), final hit clears hitcount.
+
+---
+
+**COMBO ATK 2**<br/>
+When any of CS attack hits, deal 3 (S) /  4 (SS) points of dmg to shields that only take fixed damage.
+
+### ULTIMATE 
+
+[SP: 90, CD: 20s] <br/>
+Casts Petal Blizzard, deal 180%x2 + 10%x14 + 1000% ATK of Physical DMG. Has time stop.
+
+---
+
+**ULT 1**<br/>
+Ult Crit Rate +30%, deals additional 250% ATK of Physical DMG.
