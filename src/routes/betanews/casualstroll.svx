@@ -182,7 +182,7 @@ When hitcount is >= 100, deal additional Physical DMG equal to hitcount x 1.5% (
 ---
 
 **COMBO ATK 2**<br/>
-When any of CS attack hits, deal 3 (S) /  4 (SS) points of dmg to shields that only take fixed damage.
+When any of CS attack hits, deal 3 (S) /  4 (SSS) points of dmg to shields that only take fixed damage.
 
 ### ULTIMATE 
 
