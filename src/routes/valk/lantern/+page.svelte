@@ -344,26 +344,32 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
+      
+      <div class="flex max-w-screen-xl justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.1
+      </p>
+      </div>
 
       <div>
           <!-- Roles Section -->
-          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES </h2>
           
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Gunslinger Fire DPS</strong> <br/>Switches between three firearms to attack. Has hight hitcount. No ignite.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Lantern is good, but not the best support generally for World Star teams. But, Lantern is used against Fire Kosma to break his high hitcount hp fast.
+              <strong class="text-amber-400">World Star Support</strong> <br/>Not the best support, but Lantern is used against Fire Kosma to break his high hitcount hp fast.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/>One of the best supports for all WoDestiny DPS so far. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>One of the best supports for Jovial Deception and Mad Pleasure. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
           </p>
 
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players</strong> <br/>Lantern is good, but so is every other Part 2 S-rank. Not highly recommended to get Lantern due to Lantern having less value than other Part 2 S-ranks. If you still plan to get her, at least make sure she can synergize with your existing characters.
+              <strong class="text-amber-400">F2P Players</strong> <br/> Lantern is one of the valks available from Carnival Supply. Only use your free 20 pulls, not worth getting her using crystals now. In my opinion, the order of valk importance based on meta is Thelema > Jovial Deception > SIMP / Lantern.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">

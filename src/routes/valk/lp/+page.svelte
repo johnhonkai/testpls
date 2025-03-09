@@ -344,7 +344,11 @@ function selectTabMobile(event) {
     <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
         {#if selectedTab === 'Overview'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-screen-xl justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.1
+        </p>
+        </div>
         <div>
             <!-- Roles Section -->
             <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -352,8 +356,13 @@ function selectTabMobile(event) {
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by Coralie support.
             </p>
+
             <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and higher AR regen.
+                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and higher AR regen. 
+                <br/>
+                - For WoD teams, Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.
+                <br/>
+                - For LoA teams, Vita is always used for Badum team. Vita loses to other supports for Reign Solaris.
             </p>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">The other 9 AR Supports</strong> <br/> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
@@ -366,7 +375,9 @@ function selectTabMobile(event) {
                 <br/>Recommended, but not mandatory.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her support capabilities, but she is still not mandatory for f2p.  </li>
+              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her supporting three AR, but she's still not the best everywhere. For example, in WoD teams, she needs ranks to beat Sena. </li>
+              <li class="mt-2">Plus, new valks are already getting tags for the next AR. Vita can only act as an optional support for the future AR, since she does not have the proper tags.</li>
+
               <li class="mt-2">New Players: As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.</li>
           </ul>
             <p class="mt-4 text-sm sm:text-base">
@@ -375,7 +386,7 @@ function selectTabMobile(event) {
             <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li class="mt-2">For World Star team, currently Vita is undeniably the best support.</li>
                 <li class="mt-2">For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-                <li class="mt-2">For Law of Ascension team, Vita is currently one of the three best supports for that AR. But at low rank, loses to Sparkle + JD supports.</li>
+                <li class="mt-2">For Law of Ascension team, Vita is always used for Badum team. Vita loses to other supports for Reign Solaris.</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- How to Get Section -->
@@ -384,7 +395,6 @@ function selectTabMobile(event) {
                 <li class="mt-2"><strong>Vita:</strong> Battlesuit Supply</li>
                 <li class="mt-2"><strong>Vita's Weapon:</strong> Equipment Supply</li>
                 <li class="mt-2"><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable</li>
-                <li class="mt-2">Not available in v8.0. High chance of returning in v8.1 spending event.</li>
             </ul>
             <div class="divider divider-neutral"></div>
             <!-- Full Guide Section -->

@@ -340,36 +340,38 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
+      
+      <div class="flex max-w-screen-xl justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.1
+      </p>
+      </div>
 
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/>Jovial Deception (JD) is a powerful ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
+              <strong class="text-amber-400">DPS</strong> <br/>Jovial Deception (JD) is a ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">VS Senadina</strong> <br/>Against SD enemies, JD is better against solo boss. Against swarm enemies like Bloodthirsty SD-Mech mobs, it depends on ranks- or you can use JD and Sena on the same team.
+              <strong class="text-amber-400">VS Badum DPS</strong> <br/> Badum seems to be better as DPS, but still wants JD support for her utility.
           </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">WoDestiny Support</strong> <br/>Currently not the best support for any WoD team. Getting Stellar Drain is also slow.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Jovial Deception is one of the best supports for Reign Solaris.
+            <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Jovial Deception is one of the best supports for Reign Solaris. For Badum, JD support is used for SD bosses.
         </p>
           <div class="divider divider-neutral"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players</strong><br/> JD is good, but not a priority.
-              
+              <strong class="text-amber-400">All Players</strong> <br/> JD is one of the valks available from Carnival Supply. Only use your free 20 pulls, not worth getting her using crystals now. In my opinion, the order of valk importance based on meta is Thelema > Jovial Deception > SIMP / Lantern.
           </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-            <li class="mt-2">If you don't have any other Part 2 Physical valk, JD can cover the annoying Physical and PhyShield weather.  </li>
-            <li class="mt-2">If you still plan to get her, at least make sure she can synergize with your existing characters.</li>
-        </ul>
+
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong><br/> JD is good, but her value for your account varies. Everyone's account is different. 
@@ -377,7 +379,7 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base">
             <li class="mt-2">The instant SD explosion is huge against SD bosses.</li>
             <li class="mt-2">JD is okay as a Physical / Ranged valk, topscores Ranged Kalpas.</li>
-            <li class="mt-2">For Law of Ascension team, JD is currently one of the best supports for Reign Solaris.</li>
+            <li class="mt-2">For Law of Ascension team, JD is currently one of the best supports for Reign Solaris. For Badum, JD support is used for SD bosses.</li>
         </ul>
 
         <p class="mt-4 text-sm sm:text-base">

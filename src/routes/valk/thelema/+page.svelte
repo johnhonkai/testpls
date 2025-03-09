@@ -346,7 +346,12 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
-
+      
+      <div class="flex max-w-screen-xl justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.1
+      </p>
+      </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -355,10 +360,12 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">DPS</strong> <br/> Powerful Ice DPS with shieldbreak and huge freeze trauma.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/>One of the best supports for WoD teams. Provide strong buffs with important utilities: Shieldbreak, freeze trauma, AR regen and timestop.
+              <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/> - One of the best supports for all current WoD DPS. Provide strong buffs with important utilities: Shieldbreak, freeze trauma, AR regen and timestop.
+              <br/>
+              - Very important for Herrscher of Human DLC since her old bosses required shieldbreak and/or freeze. These utilities were provided by Sushang and Kira, but in WoD team, only Thelema can provide  these utilities.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Still one of the best supports for World Star teams, but some teams seem to do better with Vita + HoFi combo.
+              <strong class="text-amber-400">World Star Support</strong> <br/>Currently, Resonance teams seem to do better with Vita + HoFi / Badum combo.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -369,11 +376,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">F2P Players</strong> <br/>Thelema is very good, but not mandatory for the average player. If you still plan to get her, at least make sure she can synergize with your existing characters.
+            <strong class="text-amber-400">All Players</strong> <br/>- Thelema is good, but it's better to use your crystal on newer valks.
+            <br/>
+            - Thelema is one of the valks available from Carnival Supply. Only use your free 20 pulls, not worth getting her using crystals now. In my opinion, the order of valk importance based on meta is Thelema > Jovial Deception > SIMP / Lantern.
         </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>Recommended. If you can afford it, get S2-rank for a major upgrade in rotation and damage.
+              <strong class="text-amber-400">Competitive</strong> <br/>Thelema is still used in WoD teams, and she's very important for HoH team.
           </p>
 
 

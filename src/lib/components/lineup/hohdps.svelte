@@ -6,23 +6,22 @@
 
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '98%', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '92%', speed: '' },
 
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '#2', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%',  speed: '' },
 
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  speed: '' },
-
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '88%', speed: '' },
 
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '', speed: 'Slow' }
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '92%', speed: 'Slow' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '84%', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
@@ -98,6 +97,10 @@
             - Sena provides buffs and Elemental Breach with zero field time.
             <br/>
             - At S-rank, Sena support scores higher than Vita. Although Vita provides stronger buff, the dmg increase is not big enough to beat the score with Sena's zero field time. 
+
+        </p>     
+
+        <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> Serapeum provides the strongest dmg buff, as well as initial AR and post-SO AR regen.
 
         </p>     
 

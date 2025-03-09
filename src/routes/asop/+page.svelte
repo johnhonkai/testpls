@@ -517,7 +517,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 <div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg text-center">
   <h2 class="text-2xl font-semibold mb-2 text-teal-400">Astral Op Calculator</h2>
-  <p class="text-xs sm:text-sm">Calculate and compare AstralOp buffs.</p>
+  <p class="text-xs sm:text-sm">Calculate and compare AstralOp buffs.<br/>
+  Note: Do not trust Kiana ELF numbers. Kiana ELF numbers are high on paper, but in-game she is just on par with SS Dreamseeker for most teams.
+  </p>
 </div>
 
 <!-- Character Slots -->

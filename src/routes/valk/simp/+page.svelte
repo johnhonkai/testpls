@@ -347,7 +347,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
-
+      <div class="flex max-w-screen-xl justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.1
+      </p>
+      </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -362,10 +366,10 @@ function selectTabMobile(event) {
               </ul>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>One of the best supports for World Star teams. 
+              <strong class="text-amber-400">World Star Support</strong> <br/>Not the best support for any team currently.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Good support, can just ult and stay in the back like Senadina. However, SIMP does not offer any improvement on existing WoDestiny teams.
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Can just ult and stay in the back like Senadina. SIMP does not offer any improvement on existing WoDestiny teams.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -381,10 +385,11 @@ function selectTabMobile(event) {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-4 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players</strong> <br/> Not highly recommended. If you do decide to pull SIMP, then she will cover Quantum and Lightning content.
-          </p>
+            <strong class="text-amber-400">F2P Players</strong> <br/> SIMP is one of the valks available from Carnival Supply. Only use your free 20 pulls, not worth getting her using crystals now. In my opinion, the order of valk importance based on meta is Thelema > Jovial Deception > SIMP / Lantern.
+        </p>
+
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> SIMP topscores quite a number of bosses qua boss Valrahal, and resonance Opaque Shadow. With Lunar Vow double dps, SIMP also topscores Paralyze Sushang, and Starless Benares. 
+              <strong class="text-amber-400">Competitive</strong> <br/> SIMP topscores quite a number of bosses qua boss Valrahal, and resonance Opaque Shadow. With Lunar Vow double dps, SIMP also topscores Paralyze Sushang, and Starless Benares. However, it has been a while since SIMP is actually used outside Arena.
           </p>
 
           <div class="divider divider-neutral"></div>
