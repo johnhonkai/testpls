@@ -1,0 +1,15 @@
+---
+title: Should I Pull This New Valk?
+category: 'Astral Ring'
+sortOrder: 4
+customSlug: "pullnewvalk"
+
+---
+
+## Part 2 Gacha
+
+All Part 2 valks are both dps and can support, and each has unique support trait.
+
+Because of abyss weather effect, boss type and mechanics, all valks have their uses to counter a particular situation.
+
+If you want to pull a valk, for maximum DPS value, pull and full gear within the first 3 weeks, because after that, the valks will be more of a support.
