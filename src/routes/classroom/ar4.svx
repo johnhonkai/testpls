@@ -10,6 +10,10 @@ customSlug: "pullnewvalk"
 
 All Part 2 valks are both dps and can support, and each has unique support trait.
 
-Because of abyss weather effect, boss type and mechanics, all valks have their uses to counter a particular situation.
+Because of abyss weather effect, boss type and mechanics, all valks have their uses to counter a particular boss or mechanic.
+
+For DPS, these factors combined have ensured that no character can be the best at everything. 
+
+Some valks may be weaker as DPS, but has exceptional support capability (example: Sparkle).
 
 If you want to pull a valk, for maximum DPS value, pull and full gear within the first 3 weeks, because after that, the valks will be more of a support.
