@@ -737,14 +737,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/Otto Apocalypse.webp" date="Apr 4" weather="Physical" bosspage="/boss?otto" />
+                    <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" date="Apr 7" weather="Fire" bosspage="/boss?firetona" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/BOSS_460.png" date="Apr 8"  />
+                    <BossCard image="/images/BossesMA/MHT-3B Nirvana_SSS.webp"  />
+                    <BossCard image="/images/BossesMA/Deathly Doom.webp"  />
                 </div>
 
             </div>
