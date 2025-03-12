@@ -561,7 +561,7 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Fulfilled Wishes ➔ Pleasent Dreams  </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Fulfilled Wishes ➔ Pleasant Dreams  </p>
             <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Serendipitous Luck </p>
           </div>
         </div>
