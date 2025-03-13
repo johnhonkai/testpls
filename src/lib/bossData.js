@@ -1604,7 +1604,7 @@ export const teamData = {
         {
           type: 'lineup',
           lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
-          rank: '1-3, 5-10',
+          rank: '3, 5-10',
           pct: '46%',
           bottext: "Highest score: S 822, S2 825, SS 853, 9S 863"
         },
