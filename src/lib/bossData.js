@@ -1392,6 +1392,46 @@ export const teamData = {
   },
   otto: {
     teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '1-2, 4',
+          pct: '7%',
+          bottext: "Highest Score: SS 870, 9S 891"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '3, 5-10',
+          pct: '80%',
+          bottext: "Highest Score: SS 874, 9S 884"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/sparkle.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '17',
+          pct: '10%',
+          bottext: "Highest Score: S2 855, SSS 869"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+          rank: '21',
+          pct: '1%',
+          bottext: "Highest Score: SS1 864"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+          rank: '36',
+          pct: '2%',
+          bottext: "Highest Score: S2 854"
+        },
+      ]},
     {
       tabname: "v8.0 CN",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 539 D.",
@@ -1550,6 +1590,32 @@ export const teamData = {
   },
   firetona: {
     teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '1-2, 4',
+          pct: '26%',
+          bottext: "Highest score: S 822, S2 827, SS 847, 9S 869"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '1-3, 5-10',
+          pct: '46%',
+          bottext: "Highest score: S 822, S2 825, SS 853, 9S 863"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '30',
+          pct: '28%',
+          bottext: "Highest score: S 831, SS 844"
+        },
+      ]},
     {
       tabname: "v8.0 CN",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
