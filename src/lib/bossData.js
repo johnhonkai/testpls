@@ -1917,6 +1917,7 @@ export const teamData = {
       }
     ],
     videos: [
+      { url: 'https://youtu.be/knD4cguuSa0?si=A0qjedXjI-HF2MPE', abyss: 'Nirvana 542D', uploader: 'Kyoshiro' },
       { url: 'https://www.youtube.com/watch?v=iSNZDuTlVDM', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' }
 
     ] 
@@ -1957,7 +1958,11 @@ export const teamData = {
           
         ]
       }
-    ],
+    ],    
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=FWNfppQPXpA', abyss: 'RedLotus 507D', uploader: 'Marisa Honkai' },
+
+    ] 
   },
 
   icehellmaru: {
