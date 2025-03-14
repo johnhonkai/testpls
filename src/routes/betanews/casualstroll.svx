@@ -46,7 +46,7 @@ When CS is the leader:
 
 **LEADER 2**<br/>
 When CS is the leader:
-- Bleed DMG ~~+68% (S) / 80% (SS1) [v2]~~ > **+37.5% (S) / 45% (S2) [V3]**
+- Bleed DMG ~~+68% (S) / 80% (SS1) [v2]~~ > **+37.5% (S) / 40% (S2) / 45% (SS1) [V3]**
 - When CS has Physical Breach, ~~Bleed DMG +12% [v2]~~ > **Bleed DMG +15%, Total DMG +22% [v3]**. 
 
 
