@@ -103,5 +103,5 @@ Casual Stroll equip bonus:
 	- ~~**During AR Charging: Enemies take 18% more Total DMG, 15% more Physical DMG, 26% more Elemental DMG from characters with [Heaven and Earth].**~~
 	- During Stellar Outburst: Enemies take **20% (v2) > 10% (v3)** more Total DMG, **20% (v2) > 8% (v3)** more Physical DMG, **32% (v2) > 15% (v3)** more Elemental DMG from characters with [Heaven and Earth].
 	- **(New in v3) If you are not the leader: Enemies take 17% more Total DMG, 32% more Physical DMG, 32% more Elemental DMG from the leader with [Heaven and Earth]**.
-	- **(New in v3) If you are the leader and there is a teammate has Physical DMG tag, CS gain Bleed DMG +6%**
+	- **(New in v3) If you are the leader and there is a teammate with Physical DMG tag, CS gain Bleed DMG +6%**
 
