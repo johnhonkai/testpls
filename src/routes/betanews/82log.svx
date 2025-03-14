@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: v8.2 Patch Note v2
+title: v8.2 Patch Note v3
 
 version: '8.2'
 sortOrder: '1'

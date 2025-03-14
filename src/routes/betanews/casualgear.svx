@@ -2,7 +2,7 @@
 creationDate: "2025-01-10T03:44:52.531Z"
 
 
-title: Sushang Casual Stroll Equipment v2
+title: Sushang Casual Stroll Equipment v3
 
 version: '8.2'
 sortOrder: '3'
@@ -30,14 +30,14 @@ The weapon active skill is based on the wielder. If wielder has Heavenly Shift t
 
 Casual Stroll equip bonus:
 - During Stellar Shift, press ATK to deal 500% ATK of Physical DMG (considered as weapon skill, Stellar Shift and QTE damage).
-- When Basic ATK hits, apply this effect to the target: Every 0.25s, inflict 1 point of bleed for 1s, can be refreshed.
+- When Basic ATK **or weapon skill (v3)** hits, apply this effect to the target: Every 0.25s, inflict 1 point of bleed for 1s, can be refreshed.
 
 ---
 
 **PASSIVE 1**<br/>
 Bleed DMG +23%. 
 Casual Stroll equip bonus:
-- When an attack reduces the enemy's HP to 0, weapon cd is reset, CD: 3s.
+- When an attack reduces the enemy's HP to 0, weapon cd is reset, **CD: 3s (v2) > 1s (v3)**.
 - When AR is activated: Self Physical DMG +20%, team Total DMG +25%.
 
 ---
@@ -77,8 +77,8 @@ Physical DMG +13%. Casual Stroll equip bonus:
 ---
 
 **BOT**<br/>
-Crit Rate +22%. Casual Stroll equip bonus:
-- Crit Rate +22%.
+**Crit Rate +22% (v2) > Bleed DMG +13% (v3)**. Casual Stroll equip bonus:
+- **Crit Rate +22% (v2) > Bleed DMG +13% (v3)**.
 - Enemies take 20% more Bleed DMG from CS.
 - Enemies take 15% more Physical DMG, 20% more Elemental DMG from characters with [Heaven and Earth].
 
@@ -92,13 +92,16 @@ Take 20% less Total DMG. Casual Stroll equip bonus:
 ---
 
 **3PC SET**<br/>
-Total DMG +10%. Enemies take 18% more Physical DMG.
+Total DMG **+10% (v2) > 6% (v3)**. Enemies take 18% more Physical DMG.
 
 Casual Stroll equip bonus:
-- Crit DMG +50%.
+- **Crit DMG +50% (v2) > Bleed trauma inflict rate +25% (v3)**.
 - Upon hitting an enemy with QTE or weapon skill, upon activating Stellar Outburst, or when battle start and you are the leader, team gain [Heaven and Earth] for 25s, can be refreshed.
 -  When AR Law of Ascension is activated: 
-	- Characters with [Heaven and Earth] gain Physical DMG +10%, Elemental DMG +25%, Total DMG +10%.
-	- When you are on the field, enemies are impaired, DEF -55%.
-	- During AR Charging: Enemies take 18% more Total DMG, 15% more Physical DMG, 26% more Elemental DMG from characters with [Heaven and Earth].
-	- During Stellar Outburst: Enemies take 20% more Total DMG, 20% more Physical DMG, 32% more Elemental DMG from characters with [Heaven and Earth].
+	- ~~**When you are on the field (v3)**~~, enemies are impaired, DEF -55%.
+	- Characters with [Heaven and Earth] gain Physical DMG +10%, Elemental DMG **+25% (v2) > +13% (v3)**, ~~**Total DMG +10%**~~.
+	- ~~**During AR Charging: Enemies take 18% more Total DMG, 15% more Physical DMG, 26% more Elemental DMG from characters with [Heaven and Earth].**~~
+	- During Stellar Outburst: Enemies take **20% (v2) > 10% (v3)** more Total DMG, **20% (v2) > 8% (v3)** more Physical DMG, **32% (v2) > 15% (v3)** more Elemental DMG from characters with [Heaven and Earth].
+	- **(New in v3) If you are not the leader: Enemies take 17% more Total DMG, 32% more Physical DMG, 32% more Elemental DMG from the leader with [Heaven and Earth]**.
+	- **(New in v3) If you are the leader and there is a teammate has Physical DMG tag, CS gain Bleed DMG +6%**
+
