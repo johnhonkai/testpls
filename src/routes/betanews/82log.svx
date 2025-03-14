@@ -16,6 +16,38 @@ image: "/images/valkportrait/Casual Stroll.png"
 
 ---
 
+### v3
+
+SUSHANG
+- Sushang and gear v3 changes. Will update on site and rentry soon.
+
+EX ABYSS
+- Added Bleed HoCorruption
+- Added Bleed Husk
+- Flux Lantern: Adjusted stats
+- SD Alien-Creeper: Adjusted stats
+- Fire MHT-3C: Adjusted stats
+
+ASTRALOP
+- Fixed an issue where the vulnerability effect duration (?) is abnormal in LoA team.
+
+ELYSIAN REALM
+- Adjusted Sushang signets
+- Daybreak: Fixed abnormal Tear status
+- Infinity: Fixed abnormal dmg reduction from Silent B signet
+
+SYSTEM
+- Fixed abnormal movement for some characters in P2 Open World
+- Corrected enemy name in story
+- Corrected inconsistent enemy data in album
+- Fixed an issue where players might fall off the map in Chronicles - Eternal Memory, stage Challenge 03
+- Fixed abnormal jumping may happen in some situations when using KBM
+
+
+---
+
+### v2
+
 New S-rank Sushang Casual Stroll (unofficial translation)
 - BIO Phy Bleed
 - AR Law of Ascension
