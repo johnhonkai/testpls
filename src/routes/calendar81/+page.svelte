@@ -531,7 +531,12 @@
                 <div></div>
                 <div on:click={() => openModal("")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Bingo event?</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Bingo event</span>
+
+                </div>
+                <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Web event</span>
 
                 </div>
             </div>
@@ -756,15 +761,16 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                    <BossCard image="/images/Bosses/Flame-Chaser - Aponia_SSS.webp" date="Apr 11" weather="Dominance" bosspage="/boss?aponia" />
+                    <BossCard image="/images/Bosses/Parvati.webp" date="Apr 14" weather="Type" bosspage="/boss?typeparvati" />
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
+                    <BossCard image="/images/BossesMA/Sa_SSS.webp" date="Apr 15"  />
+                    <BossCard image="/images/BossesMA/Herrscher of Domination Minion_SSS.webp"  />
+                    <BossCard image="/images/BossesMA/Yae Kasumi.webp"  />
                 </div>
+
 
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >

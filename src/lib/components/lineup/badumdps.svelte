@@ -3,14 +3,14 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'CS', image: '/images/valkportrait/Casual Stroll.png',  teampct: '106%',  speed: 'BETA' },
+        { name: 'CS', image: '/images/valkportrait/Casual Stroll.png',  teampct: '105%',  speed: 'BETA' },
 
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '96%',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  teampct: 'SD',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: 'Shield',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '100%', utility: 'Shield',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '96%', utility: 'SD',  speed: '' },
 
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: 'Bow',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '96%', utility: 'Bow',  speed: '' },
 
     ];
 
@@ -49,7 +49,7 @@
 
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
         <!-- Plus Icon shown only if maindps is true -->
@@ -59,7 +59,7 @@
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">

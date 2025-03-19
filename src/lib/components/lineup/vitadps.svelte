@@ -11,9 +11,10 @@
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '100%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '99%', speed: 'Slow' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '93%', speed: 'Slow' },
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '99%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '98%', speed: 'Slow' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '92%', speed: 'Slow' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '91%', speed: 'Slow' }
     ];
 

@@ -3,6 +3,7 @@
     export let image: string;
     export let teampct: string;
     export let speed: string | undefined; // Optional: 'Fast' or 'Slow'
+    export let utility: string | undefined; // Optional: 'Fast' or 'Slow'
 
     // Function to determine the background color for teampct based on its value
     function getTeampctBg(teampct: string): string {
@@ -39,6 +40,12 @@
     </span>
     {/if}
 
+    <!-- Optional Badge for speed with conditional background color -->
+    {#if utility}
+        <span class="sm:badge-md badge badge-sm w-10 absolute sm:top-6 top-5 right-0.5 text-white px-1 rounded z-10 text-center bg-blue-900">
+            {utility}
+        </span>
+    {/if}
 
     <!-- Optional Badge for speed with conditional background color -->
     {#if speed}

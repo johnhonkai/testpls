@@ -20,6 +20,7 @@ export const weatherList = {
     {id: 'typekasumi', name:'Kasumi'}, 
     {id: 'typeandrius', name:'Andrius'}, 
     {id: 'typesprout', name:'Sprout of Wishing'}, 
+    {id: 'typeparvati', name:'Parvati'}, 
 
   ],
   oblivion: [
@@ -181,7 +182,14 @@ export const bossData = {
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Counter: Type counter effect is 20% stronger."
   },
-
+  typeparvati: {
+    name: 'Parvati', 
+    mechanics: '', 
+    weakness: 'Ice (Immune) , Physical (L)', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Parvati.webp", 
+    weather: "Counter: Type counter effect is 20% stronger."
+  },
   obvhomu: {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 
