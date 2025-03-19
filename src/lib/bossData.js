@@ -1648,6 +1648,18 @@ export const teamData = {
 
   aponia: {
     teamDataSets: [
+      {
+        tabname: "v8.1 CN",
+        teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Hare Dreamweaver.png", "images/valkportrait/dudu.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_bunny.png"],
+          rank: '1+',
+          pct: '100%'
+        },
+        
+      ]},
     {
       tabname: "v8.0 CN",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 537 D.",
@@ -1969,6 +1981,8 @@ export const teamData = {
     ],    
     videos: [
       { url: 'https://www.youtube.com/watch?v=FWNfppQPXpA', abyss: 'RedLotus 507D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/AzPx7kTVajg', abyss: 'Nirvana 543D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=CFp1LmN6yyQ', abyss: 'RedLotus 496D', uploader: 'Sheepless Ram' },
 
     ] 
   },
