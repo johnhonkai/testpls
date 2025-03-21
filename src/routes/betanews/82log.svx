@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: v8.2 Patch Note v3
+title: v8.2 Patch Note v4
 
 version: '8.2'
 sortOrder: '1'
@@ -15,6 +15,37 @@ image: "/images/valkportrait/Casual Stroll.png"
 - [Casual Stroll  Equipment](/betanews/casualgear)
 
 ---
+
+
+### V4
+
+SUSHANG
+- Optimized button glow effect 
+- Optimized bleed trauma icon
+- Adjusted leader skill subskill value after rank up
+- Adjusted AR skill value
+- Adjusted rank up text. Only text change, actual effect remains the same.
+
+
+LEADER SKILL
+
+When CS is the leader:
+
+V4: Bleed DMG +40% (S) / 42.5% (S2) / 45% (SS1) <br/>
+V3: Bleed DMG +37.5% (S) / 40% (S2) / 45% (SS1) 
+
+V4: When CS has Physical Breach, Bleed DMG +13%, Total DMG +22%.<br/>
+V3: When CS has Physical Breach, Bleed DMG +15%, Total DMG +22%.
+
+
+ASTRAL RING
+
+Stellar Shift
+V4: 40%x3 + 8%x50 + 300%, 3s time fracture. If you are the leader, deal additional 1050% ATK of Physical DMG.<br/>
+V3: 90%x3 + 18%x50 + 700%, 2s time fracture.
+
+A bunch of new boss stat changes
+
 
 ### v3
 

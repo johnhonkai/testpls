@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Sushang Casual Stroll Skill v3
+title: Sushang Casual Stroll Skill v4
 
 version: '8.2'
 sortOrder: '2'
@@ -46,8 +46,13 @@ When CS is the leader:
 
 **LEADER 2**<br/>
 When CS is the leader:
-- Bleed DMG ~~+68% (S) / 80% (SS1) [v2]~~ > **+37.5% (S) / 40% (S2) / 45% (SS1) [V3]**
-- When CS has Physical Breach, ~~Bleed DMG +12% [v2]~~ > **Bleed DMG +15%, Total DMG +22% [v3]**. 
+- ~~Bleed DMG +68% (S) / 80% (SS1) [v2] > +37.5% (S) / 40% (S2) / 45% (SS1) [V3]~~ > **Bleed DMG +40% (S) / 42.5% (S2) / 45% (SS1) [V4]**
+- When CS has Physical Breach, ~~Bleed DMG +12% [v2]~~  Bleed DMG **+15% (V3) > 13% (V4)**, Total DMG +22% . 
+
+---
+
+**LEADER 3**<br/>
+When CS is the leader, when Heavenly Link or Stellar Shift hits, deal additional 300% and 600% ATK of Physical DMG respectively to enemies with an unbroken shield. This attack gains Crit Rate +100%, Crit DMG +100%, and Shieldbreak +500%
 
 
 ### ASTRAL RING
@@ -56,9 +61,10 @@ Casual Stroll is protected by AR Law of Ascension. Upon casting Stellar Outburst
 
 When AR Law of Ascension is activated:
 - After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
-- Stellar Shift: Deal 90%x3 + 18%x50 + 700% ATK of Physical DMG, **inflict 6 points of Bleed (v3)**, trigger 2.8s of time stop, and reset weapon skill CD. After that, trigger 2s time fracture.
+- Stellar Shift: Deal ~~90%x3 + 18%x50 + 700%~~ **40%x3 + 8%x50 + 300% (V4)** ATK of Physical DMG, **inflict 6 points of Bleed (v3)**, trigger 2.8s of time stop, and reset weapon skill CD. After that, trigger ~~2s >~~ **3s (V4)** time fracture.
 - After casting Stellar Shift, enter Delicious state, counts as Augmented Ascension state, lasts for 11s. State is cleared on exit.
 - When you are the leader:
+	- **V4: Stellar Shift deal additional 1050% ATK of Physical DMG.**
 	- During Delicious state, press weapon to cast Forest Trail, Razor Leaf, and Rainstorm in sequence. Ends Delicious state after casting Rainstorm.
 	- When the last hit of Combo ATK or Stellar Shift hits, teammates’ switch cd are reset and their QTE are triggered.
 	- Unshackled state gained from QTE counts as Augmented Ascension state.
@@ -198,11 +204,6 @@ Casts Petal Blizzard, deal 180%x2 + 10%x14 + 1000% ATK of Physical DMG. Has time
 
 **ULT 1**<br/>
 Ult ~~**Crit Rate +30%,**~~ deals additional 250% ATK of Physical DMG.
-
----
-
-**ULT 2**<br/>
-** (New in v3) When CS is the leader, when Heavenly Link or Stellar Shift hits, deal additional 300% and 600% ATK of Physical DMG respectively to enemies with an unbroken shield. This attack gains Crit Rate +100%, Crit DMG +100%, and Shieldbreak +500%**
 
 ### RANK UP 
 
