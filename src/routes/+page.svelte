@@ -5,7 +5,7 @@
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
     <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
-    <meta property="og:image" content="https://i.imgur.com/QNgLGn7.png" />
+    <meta property="og:image" content="https://i.imgur.com/62qNVD7.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -88,13 +88,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2025-2-21'); // Start date for v7.9 in Regional Servers
-      const cnStartDate = new Date('2025-1-24');       // Start date for v7.9 in CN Servers
+      const cnStartDate = new Date('2025-3-27');       // Start date for v7.9 in CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v8.1 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.1 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.2 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
@@ -171,7 +171,7 @@
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
             <strong class="text-amber-400">CN SERVER</strong><br>
             - {cnServerInfo}<br>
-            - v8.2 update is on Mar 27
+            - v8.3 update is on May 29
         </p>
     </div>
 
@@ -182,13 +182,13 @@
           <h2 class="text-xl font-bold text-blue-600">8.2 INFO DATE</h2>
         </div>
         <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2">
-          <li>Valk Reveal and Content Teaser: Feb 27</li>
-          <li>Beta v1 (Private): Feb 28</li>
-          <li>Dev Video: Mar 6</li>
-          <li>Beta v2: Mar 7</li>
-          <li>Beta v3: Mar 14</li>
-          <li>Beta v4?: Mar 21</li>
-          <li>Dev Livestream: Mar 22</li>
+          <li>Valk Reveal and Content Teaser: May 1-2</li>
+          <li>Beta v1 (Private): May 2</li>
+          <li>Dev Video: May 8</li>
+          <li>Beta v2: May 9</li>
+          <li>Beta v3: May 16</li>
+          <li>Beta v4?: May 23</li>
+          <li>Dev Livestream: May 24</li>
         </ul>
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Estimated Date</p>
       </div>
@@ -197,14 +197,14 @@
       <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
           <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
-          <h2 class="text-xl font-bold text-blue-600">8.1 CRYSTAL INCOME</h2>
+          <h2 class="text-xl font-bold text-blue-600">8.2 CRYSTAL INCOME</h2>
         </div>
 
         <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2 ">
-          <li>F2P: 22,708</li>
-          <li>Monthly: 28,488</li>
-          <li>Monthly+BP: 29,808</li>
-          <li>10 Battlesuit Card + 11 Equipment Card + 50% off the first 10 pull of Ba-dum! Kiana </li>
+          <li>F2P: 22,210</li>
+          <li>Monthly: 28,590</li>
+          <li>Monthly+BP: 30,590</li>
+          <li>5 Battlesuit Card + 5 Equipment Card + 50% off the first 10 pull of Peregrine Sword </li>
         </ul>
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
 
