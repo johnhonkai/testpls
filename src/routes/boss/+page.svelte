@@ -23,7 +23,7 @@
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
   let selectedWeather = "flux"; // Default weather
-  let selectedBoss = "fluxandrius"; // Default boss
+  let selectedBoss = "fluxtank"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
 
