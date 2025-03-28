@@ -4,7 +4,7 @@ title: Sushang Casual Stroll Skill v4
 
 version: '8.2'
 sortOrder: '2'
-image: "/images/valkportrait/Casual Stroll.png"
+image: "/images/valkportrait/ps.png"
 
 ---
 

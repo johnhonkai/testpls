@@ -6,7 +6,7 @@ title: Sushang Casual Stroll Equipment v4
 
 version: '8.2'
 sortOrder: '3'
-image: "/images/valkportrait/Casual Stroll.png"
+image: "/images/valkportrait/ps.png"
 
 ---
 
