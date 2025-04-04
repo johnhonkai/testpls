@@ -149,7 +149,7 @@
                     <div>WEEK 3<br />May 9 - 16</div>
                     <div>WEEK 4<br />May 16 - 23</div>
                     <div>WEEK 5<br />May 23 - 30</div>
-                    <div>WEEK 6<br />Mar 30 - Jun 6 </div>
+                    <div>WEEK 6<br />May 30 - Jun 6 </div>
                     <div>WEEK 7<br />Jun 6 - 13 </div>
                     <div>WEEK 8<br />Jun 13 - 20 </div>
                     <div>WEEK 9<br />Jun 20 - 26 </div>
