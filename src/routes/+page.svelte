@@ -179,7 +179,7 @@
       <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-8 h-8 mr-2">
-          <h2 class="text-xl font-bold text-blue-600">8.2 INFO DATE</h2>
+          <h2 class="text-xl font-bold text-blue-600">8.3 INFO DATE</h2>
         </div>
         <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2">
           <li>Valk Reveal and Content Teaser: May 1-2</li>
