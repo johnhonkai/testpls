@@ -97,6 +97,7 @@ export const weatherList = {
     {id: 'fluxhomu', name: 'Homu Performer'},
     {id: 'fluxandrius', name: 'Dominator of Wolves'},
     {id: 'fluxtank', name: 'MHT-3C Retaliator'},
+    {id: 'lantern', name: 'Lantern'},
 
   ],
   dominance: [
@@ -482,6 +483,14 @@ export const bossData = {
     weakness: 'Phy / Lightning / Ice / Fire (M)', 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/HOMU Emperor.webp", 
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
+  },
+  lantern: {
+    name: 'Lantern', 
+    mechanics: 'Transition phase has high hitount hp', 
+    weakness: 'Fire (M)', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Lantern_Tsavorae_SSS.webp", 
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
   firetona: {
@@ -1430,9 +1439,9 @@ export const teamData = {
       
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=9NB9rocr36Y', abyss: 'Nirvana 548D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/embed/cz6VOeE-slU', abyss: 'Nirvana 540D', uploader: 'Xintsu' },
-      { url: 'https://www.youtube.com/embed/pGHifau9Gk0', abyss: 'Nirvana 540D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
 
     ] 
   },
@@ -2136,6 +2145,7 @@ export const teamData = {
     videos: [
       { url: 'https://www.bilibili.com/video/BV1sUXDYoEdu/', abyss: 'RedLotus ???D', uploader: '蜗牛吖-接代肝' },
       { url: 'https://www.youtube.com/watch?v=Y99i6pl7xFI', abyss: 'Nirvana 547D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=EiQ-jPfo6oY', abyss: 'Nirvana 547D', uploader: 'Xintsu' },
 
 
     ] 
