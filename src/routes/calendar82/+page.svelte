@@ -1,7 +1,7 @@
 
 
 <svelte:head>
-    <title>v8.1 Calendar and Boss Schedule</title> 
+    <title>v8.2 Calendar and Boss Schedule</title> 
     <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
     <meta property="og:description" content="Version 8.2" />
     <meta property="og:image" content={data.ogImage} />
