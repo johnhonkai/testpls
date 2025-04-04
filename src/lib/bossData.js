@@ -1280,6 +1280,32 @@ export const teamData = {
   },
   phyalien: {
     teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '1-3, 5-7, 9',
+          pct: '22%',
+          bottext: "Highest Score: SS 803, 9S 829"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '4, 8 , 10',
+          pct: '16%',
+          bottext: "Highest Score: S2 786, SS 807, 9S 818"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '27',
+          pct: '62%',
+          bottext: "Highest Score: S 774, S2 780, SS 784, SSS 788"
+        },
+      ]},
     {
       tabname: "v7.9 CN",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
