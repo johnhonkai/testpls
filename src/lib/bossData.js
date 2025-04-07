@@ -1690,7 +1690,11 @@ export const teamData = {
         bottext: "Highest score: 9S 865"
       },
       
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=EZwGtPTtQsA', abyss: 'RedLotus 511D', uploader: 'Marisa Honkai' },
+
+    ] 
   },
 
   aponia: {
