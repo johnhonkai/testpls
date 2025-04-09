@@ -2154,4 +2154,32 @@ export const teamData = {
 
     ] 
   },
+
+  lantern: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '85%',
+            bottext: "Highest score: S 796, S2 804, SS 825, 9S 843"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '31',
+            pct: '15%',
+            bottext: "Highest score: S 796, SS 801"
+          },
+          
+        ]
+      }
+    ],
+  },
 }
+
