@@ -326,7 +326,24 @@
             </div>
 
 
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 4</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("Login1")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Chapter 8</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/2wJwPVs.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
 
+            </div>
 
 
         </div>
@@ -380,13 +397,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                     <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="May 2" weather="Flux" bosspage="/boss?lantern" />
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Meteor_Guaymas.webp" date="May 5" weather="Lightning" bosspage="/boss?lightningguaymas" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/Varaha.png" date="May 6"  />
+                        <BossCard image="/images/BossesMA/Husk - Existentialism_SSS.webp"  />
+                        <BossCard image="/images/BossesMA/Assaka.webp"  />
                     </div>
     
 
