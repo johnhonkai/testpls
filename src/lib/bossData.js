@@ -2171,7 +2171,7 @@ export const teamData = {
           },
           {
             type: 'lineup',
-            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/dudu.png", "images/valkportrait/asop_teri.png"],
             rank: '31',
             pct: '15%',
             bottext: "Highest score: S 796, SS 801"
