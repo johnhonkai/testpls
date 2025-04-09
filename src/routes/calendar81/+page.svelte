@@ -130,6 +130,11 @@
             description: "<li>Duration: 3 weeks</li><li>Max 9600 crystals for outfit + all rewards</li><li>S-rank box: Herrscher of Sentience card / 10 stamps, Stygian Nymph card / 5 stamps, Starchasm Nyx card / 5 stamps</li>",
             image: "https://i.imgur.com/0Pc7G3X.png"
         },
+        "hohoutfit": {
+            title: "Outfit Supply",
+            description: "<li>Duration: 2 weeks</li><li>20% discount, so no S-rank box.</li>",
+            image: "https://i.imgur.com/vkIP3ZO.png"
+        },
         "TimeCapsule": {
             title: "Time Capsule",
             description: "",
@@ -362,7 +367,7 @@
                     <div></div> 
                     <div></div> 
 
-                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("hohoutfit")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">HoH Peachy Springs</span>
    
