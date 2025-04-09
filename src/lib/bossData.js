@@ -2147,7 +2147,7 @@ export const teamData = {
       }
     ],
     videos: [
-      { url: 'https://www.bilibili.com/video/BV1sUXDYoEdu/', abyss: 'RedLotus ???D', uploader: '蜗牛吖-接代肝' },
+      { url: 'https://www.bilibili.com/video/BV1sUXDYoEdu/', abyss: 'Ba-dum team in Red Lotus', uploader: '蜗牛吖-接代肝' },
       { url: 'https://www.youtube.com/watch?v=Y99i6pl7xFI', abyss: 'Nirvana 547D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=EiQ-jPfo6oY', abyss: 'Nirvana 547D', uploader: 'Xintsu' },
 
