@@ -78,8 +78,8 @@
             image: ""
         },
         "Valk2": {
-            title: "Battlesuit Supply B: Lone Planetfarer",
-            description: '<li>Duration: 2 weeks</li><li>A-rank: TBA</li>',
+            title: "Battlesuit Supply B: Ba-dum!",
+            description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Pledge (UP), Phantom Iron, Night Squire, Yamabuki Armor.</li>',
         },
         "Equip": {
             title: "Equipment Supply",
@@ -98,6 +98,17 @@
         "Returnee": {
             title: "Returnee Supply",
             description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
+        },
+        "NewADV": {
+            title: "New ADV Supply",
+            description: 'Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.',
+            image: "https://i.imgur.com/b9hWyRp.png"
+
+        },
+        "NewRebate": {
+            title: "New Equipment Rebate Supply",
+            description: 'Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).',
+            image: "https://i.imgur.com/7WAQKIs.png"
         },
     };
 
@@ -186,7 +197,82 @@
 
                 </div>
 
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                    </div>  
+                    <div></div> 
+                    <div></div>                 
+                    <div on:click={() => openModal("Valk2")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Ba-dum!</span>
+                           <!-- Image positioned on the right side -->
+                           <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
+                            <img src="https://i.imgur.com/HUuZySy.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>    
+ 
+                </div>
 
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">EQUIPMENT SUPPLY B</span>
+                    </div>   
+                    <div></div> 
+                    <div></div>                  
+                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Ba-dum! Equipment</span>
+                        <!-- Image positioned on the right side -->
+
+                    </div>     
+                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Flawless Benediction<br/>Solon</span>
+                        <!-- Image positioned on the right side -->
+
+                    </div>    
+
+                </div>
+
+
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+
+                        <span class="font-bold0">NEW ADV SUPPLY</span>
+                    </div> 
+                    <div></div>  
+                    <div></div>                   
+                    <div></div>  
+                    <div></div>                     
+                    <div on:click={() => openModal("NewADV")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Mad Pleasure</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                            <img src="https://i.imgur.com/v0CyVp0.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">NEW REBATE EQUIPMENT</span>
+                    </div>  
+                    <div></div>  
+                    <div></div>                   
+                    <div></div>  
+                    <div></div>                     
+                    <div on:click={() => openModal("NewRebate")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Mad Pleasure Equipment</span>
+
+                    </div>    
+            
+                </div>
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
@@ -200,42 +286,16 @@
                             <img src="https://i.imgur.com/wqXgzZw.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>     
-            
-                </div>
-                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip ">
-                    <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
-
-                        <span class="font-bold0">NEW ADV SUPPLY</span>
-                    </div> 
-                    <div></div>  
-                    <div></div>                   
-                    <div></div>  
-                    <div></div>                     
-                    <div></div>  
-                    <div></div>                   
-                    <div></div>  
-                    <div></div> 
-                    <div></div> 
-                </div>
-
-                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
-                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
-                         <span class="font-bold0">NEW REBATE EQUIPMENT</span>
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Serapeum</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
+                            <img src="https://i.imgur.com/I0zCv7C.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
                     </div>  
-                    <div></div>  
-                    <div></div>                   
-                    <div></div>  
-                    <div></div>                     
-                    <div></div>  
-                    <div></div>                   
-                    <div></div>  
-                    <div></div> 
-                    <div></div> 
             
                 </div>
-
 
 
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
@@ -345,6 +405,25 @@
 
             </div>
 
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 5</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("Login1")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Snazzy Cards Club</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/hGHcMJh.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>
