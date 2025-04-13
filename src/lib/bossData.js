@@ -46,6 +46,8 @@ export const weatherList = {
     {id: 'sdepernay', name: 'Meteroid: Epernay'},
     {id: 'sdguaymas', name: 'Meteoroid: Guaymas'},
     {id: 'sa', name: 'Sa'},
+    {id: 'sdalien', name: 'Alien Guard'},
+
   ],
   stellar: [
     {id: 'stellarassaka', name: 'Assaka'},
@@ -246,6 +248,14 @@ export const bossData = {
       typeicon: "images/type/IconSD.webp", 
       bosspic: "images/BossesMA/Sa_SSS.webp", 
       weather: "Stardust: SD valk DMG +20%.", 
+  },
+  sdalien: {
+    name: 'Alien Guard', 
+    mechanics: 'Creeper has Bleed trauma.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Alien Guard.webp", 
+    weather: "Stardust: SD valk DMG +20%.",
   },
   stellarassaka: {
     name: 'Saha: Assaka', 
@@ -1827,6 +1837,26 @@ export const teamData = {
 
   lightningguaymas: {
     teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Senadina Deepspace Anchor.png",  "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '1-10',
+          pct: '15%',
+          bottext: "Top Score: SS1 807, SS2 816, 9S 848. Only SS1+ Sena are in T100.",
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '13',
+          pct: '85%',
+          bottext: "Highest score: S 801, SS 809, 9S 809"
+        },
+        
+      ]},
     {
       tabname: "v8.0 CN",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
