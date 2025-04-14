@@ -251,7 +251,7 @@ export const bossData = {
   },
   sdalien: {
     name: 'Alien Guard', 
-    mechanics: 'Creeper has Bleed trauma.', 
+    mechanics: 'Starts with Creeper with Bleed trauma. Alien Guard does not have transition phase like the other versions.', 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Alien Guard.webp", 
@@ -2205,6 +2205,26 @@ export const teamData = {
             rank: '31',
             pct: '15%',
             bottext: "Highest score: S 796, SS 801"
+          },
+          
+        ]
+      }
+    ],
+  },
+
+  sdalien: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["/images/valkportrait/kiana badum.png", "images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '100%',
+            bottext: "Highest score: S 824, SS 842, 9S 867"
           },
           
         ]
