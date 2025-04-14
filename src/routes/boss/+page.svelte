@@ -22,7 +22,7 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "type"; // Default weather
+  let selectedWeather = "typecounter"; // Default weather
   let selectedBoss = "typeparvati"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
