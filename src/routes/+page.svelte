@@ -204,12 +204,12 @@
           <li>F2P: 22,210</li>
           <li>Monthly: 28,590</li>
           <li>Monthly+BP: 30,590</li>
-          <li>5 Battlesuit Card + 5 Equipment Card + 50% off the first 10 pull of Peregrine Sword </li>
+          <li>5 Equipment Card + 50% off the first 10 pull of Peregrine Sword </li>
         </ul>
         <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
 
         <div class="flex justify-center mt-5">
-        <a href="https://www.miyoushe.com/bh3/article/61044410">
+        <a href="https://www.miyoushe.com/bh3/article/62801524">
         <button class="btn btn-accent btn-sm">Source</button>
         </a>
       </div>
