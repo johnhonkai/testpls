@@ -2231,5 +2231,29 @@ export const teamData = {
       }
     ],
   },
+
+  typeparvati: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png","/images/valkportrait/sparkle.png", "images/valkportrait/elf_kiana.png"],
+            rank: '1+',
+            pct: '100%',
+          },
+          
+        ]
+      }
+    ],
+    videos: [
+      { url: 'https://youtu.be/vrEhqI6R1gM', abyss: 'Red Lotus 511D', uploader: 'Marisa Honkai' },
+
+
+    ] 
+  },
 }
 
