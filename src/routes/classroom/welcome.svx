@@ -2,6 +2,7 @@
 title: Welcome
 sortOrder: 1
 customSlug: "welcome"
+ogimage: https://i.imgur.com/6n7IsXG.png
 
 
 ---

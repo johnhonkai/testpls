@@ -3,6 +3,7 @@ title: Astral Ring System
 category: 'Astral Ring'
 sortOrder: 1
 customSlug: "ar1"
+ogimage: https://i.imgur.com/em2UvJe.png
 
 ---
 
@@ -46,7 +47,7 @@ A Part 2 character can only have <span class="text-emerald-300">one AR Specializ
 ### What AR Tags are used for
 
 AR tags determine two things:
-1. The valk can support the DPS with the matching AR Specialization and activate her unique mechanics. 
+1. A valk can support the DPS with the matching AR Specialization and activate the AR's unique mechanics. 
 2. AR tag is used to activate buffs or allow certain buffs to reach max effects. These include buffs from character skills, weapon, stigma, Astral Ops, and Abyss weather.
 
 
@@ -76,12 +77,14 @@ All Part 2 valkyries can enter an enhanced state called Stellar Outburst (SO). Y
   <img src="https://i.imgur.com/AW3Zx5U.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-### Terms
+### Terminology
 You will see these terms a lot in Part 2 buffs (character, equipment, AstralOp, Abyss weather)
 - **Astral Ring Charging**: When AR is activated, but you are not in Stellar Outburst mode.
 - **Stellar Outburst**: When AR is activated, and you are in Stellar Outburst mode.
+- **Augmented Ascension**: A special state only for Law of Ascension characters. During this state, you are considered to be in Stellar Outburst mode.
+
 
 ### Stellar Drain
 All Part 2 characters have Stellar Drain. Basically, you do Combo ATK / certain skill, you gain a good amount of AR Intensity (usually 20). 
-- Can only trigger once per AR Charging state
-- Stellar Drain refreshes after a Stellar Outburst ends
+- Can only trigger once per AR Charging state.
+- Stellar Drain refreshes after a Stellar Outburst ends.

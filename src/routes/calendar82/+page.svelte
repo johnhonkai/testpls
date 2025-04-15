@@ -74,8 +74,8 @@
     const supplies = {
         "Valk1": {
             title: "Battlesuit Supply A: Peregrine Sword",
-            description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Wolf Dawn (UP), Valkyrie Ranger, Valkyrei Triumph, Valkyrie Blastmetal</li>',
-            image: ""
+            description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Wolf Dawn (UP), Valkyrie Ranger, Valkyrie Triumph, Valkyrie Blastmetal</li>',
+            image: "https://i.imgur.com/aT64uCl.png"
         },
         "Valk2": {
             title: "Battlesuit Supply B: Ba-dum!",
@@ -89,11 +89,6 @@
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
             image: "https://i.imgur.com/kniF12q.jpeg"
-        },
-        "BadumWeapon": {
-            title: "Equipment Supply",
-            description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
-            image: ""
         },
         "Returnee": {
             title: "Returnee Supply",
@@ -121,7 +116,7 @@
 
     <h2 class="text-2xl font-semibold mb-2 text-cyan-400 ">Supply and Event Timeline</h2>
     <p class="text-xs sm:text-sm">
-        The data is based on CN server. Schedule might be different for SEA / KR / GLB servers.
+        The data is based on CN server. Schedule might be different for Regional servers.
     </p>
 </div>
   
@@ -186,7 +181,7 @@
                         <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY A</span>
                     </div>                    
-                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Peregrine Sword Equipment</span>
                         <!-- Image positioned on the right side -->
@@ -221,13 +216,13 @@
                     </div>   
                     <div></div> 
                     <div></div>                  
-                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Ba-dum! Equipment</span>
                         <!-- Image positioned on the right side -->
 
                     </div>     
-                    <div on:click={() => openModal("BadumWeapon")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Flawless Benediction<br/>Solon</span>
                         <!-- Image positioned on the right side -->
@@ -494,16 +489,15 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard />
-                    <BossCard />
-                    </div>
+                    <BossCard image="/images/Bosses/Alien Guard.webp" date="May 9" weather="Stardust" bosspage="/boss?sdalien" />
+                    <BossCard image="/images/Bosses/Husk - Nihilus (Hitcount).webp" date="May 12" weather="Bleed" bosspage="/boss?bleedhusk" />
+                </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/BOSS_471.png" date="May 13"  />
+                        <BossCard image="/images/Bosses/Meteor_Guaymas_SSS.webp"  />
+                        <BossCard image="/images/Bosses/Hephaestus.webp"  />
                     </div>
-    
 
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >

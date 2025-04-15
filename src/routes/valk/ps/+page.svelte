@@ -354,12 +354,12 @@ async function increaseLike() {
               <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>The first BIO DPS and first BLEED DPS for Part 2.</li>
                 <li>Reminder that Bleed DMG is not considered as Melee or Ranged DMG, and cannot crit.</li>
-                <li>As leader, all her attacks generate 3x hitcount.</li>
-                <li>Has high hitcount, and deal extra hits to hitcount shields.</li>
+                <li>Has high hitcount. As leader, all her attacks generate 3x hitcount.</li>
             </ul>
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">LoA Support</strong>                 <li>Attacks deal 3 (S) / 4 (SSS) hits to hitcount shields.</li>
+              <strong class="text-amber-400">LoA Support</strong>                 
+              <li>Attacks deal 3 (S) / 4 (SSS) hits to hitcount shields.</li>
               <li>To Be Updated.</li>
           </p>
 

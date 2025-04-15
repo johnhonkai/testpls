@@ -2,7 +2,7 @@ import sidebar from '$lib/data/sidebar.json';
 
 export async function load({ params }) {
   const post = await import(`../${params.slug}.svx`);
-  const { title, date, version, image, customSlug } = post.metadata;
+  const { title, date, version, ogimage, customSlug } = post.metadata;
   const content = post.default;
 
   // Extract categories from the sidebar JSON
@@ -26,7 +26,7 @@ export async function load({ params }) {
     title,
     date,
     version,
-    image,
+    ogimage,
     categorizedArticles,
     sortedCategories,
   };

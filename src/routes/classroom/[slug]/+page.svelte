@@ -3,7 +3,7 @@
 	<title>{data.title}</title> 
     <meta property="og:title" content={data.title} />
     <meta property="og:description" content="Learn the basics of Honkai Impact 3rd" />
-    <meta property="og:image" content="https://i.imgur.com/7CwpwmA.png" />
+    <meta property="og:image" content={data.ogimage} />
     <meta property="og:url" content={`https://marisaimpact.com/classroom/${data.slug}`} />
     <meta property="og:type" content="website" />
 

@@ -19,7 +19,7 @@ What does this mean?
 
 <h3 class="text-3xl font-bold text-center">You don't have to pull every S-rank.</h3>
 
-<p class="text-2xl font-bold text-center text-fuchsia-300"> Pull a valk that you like, then build a team that synergizes with her. </p>
+<p class="text-2xl font-bold text-center text-fuchsia-300"> Pull the latest valk, then build a team that synergizes with her. </p>
 
 ---
 
@@ -30,14 +30,20 @@ What does this mean?
 The general rule is you should pull the latest Part 2 S-rank character, because:
 - She will help you blast through early game content without the need to farm old valk, weapon and stigma.
 - Since the valk is new, there are more bosses tailored for the new character dps and support roles in the current patch.
+- The character gacha is readily available within the first 6 weeks of a patch.
+
 
 However, before pulling, make sure to check the character review first to see her pros and cons. You can do so by checking [the valkyrie page](/valk).
 
-In addition, check out [the timeline page](/calendar80) too. 
-- If you are on week 3-4, the new valkyrie banner is almost over. 
-- If you are on week 5-6, the next patch is just around the corner. 
 
-You can consider saving for the next patch valk instead.
+---
+
+### Time of Patch
+
+Check out [the timeline page](/calendar82) before pulling.
+- The best time to pull the new S-rank is within the first 3 weeks, where her bosses appear more often, and you can use her as DPS.
+- If you are on week 3 or later, the bosses made for that new S-rank will not appear as frequently anymore. That new S-rank will be used more often as a support than DPS. Pulling the S-rank now will not yield the most value, but it is still acceptable.
+- If you are on week 7-9, the latest character gacha is over. Wait for the next new S-rank.
 
 
 ---

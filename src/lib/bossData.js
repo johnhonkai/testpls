@@ -66,6 +66,7 @@ export const weatherList = {
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
     {id: 'pishacha', name: 'Pishacha'},
     {id: 'villv', name: 'Vill-V'},
+    {id: 'bleedhusk', name: 'Nihilius Husk'},
 
   ],
   ignite: [
@@ -315,10 +316,20 @@ export const bossData = {
   },
   bleedhos: {
     name: 'Herrscher of Sentience', 
-      mechanics: 'Transition has high hitcount hp', 
+      mechanics: 'Transition phase has high hitcount HP.', 
       weakness: 'None', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Herrscher\ of\ Sentience.webp", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+     
+  },
+
+  bleedhusk: {
+    name: 'Nihilius Husk', 
+    mechanics: 'After around 1.5 HP bar, Husk will kneel, during this time, Husk takes more damage. Transition phase has high hitcount HP.', 
+    weakness: 'Physical (L)', 
+      typeicon: "images/type/IconPSI.png", 
+      bosspic: "images/Bosses/Husk - Nihilus (Hitcount).webp", 
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },
