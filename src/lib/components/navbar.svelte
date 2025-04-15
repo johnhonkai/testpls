@@ -34,7 +34,7 @@
   });
 </script>
 
-<div class="lg:flex justify-center relative z-[100] hidden">
+<div class="lg:flex justify-center relative z-100 hidden">
 <header>
 
 

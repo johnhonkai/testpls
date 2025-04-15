@@ -257,7 +257,7 @@ function selectTabMobile(event) {
     <div class="w-full max-w-sm mb-2">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-xs">
           <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
           <img src="/images/type/IconBIO.png" alt="Mech" class="w-auto h-8 md:h-10" />
           <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
@@ -267,7 +267,7 @@ function selectTabMobile(event) {
 
       <div class="flex flex-col mt-4 items-center">
 
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-xs">
           <div class="flex flex-wrap justify-center">
             <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
           </div >
@@ -281,7 +281,7 @@ function selectTabMobile(event) {
   </div>
   </section>
   
-<div class="flex max-w-screen-xl justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -292,7 +292,7 @@ function selectTabMobile(event) {
           <button
             on:click={() => selectTab(tab.name)}
             class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
+                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
             {tab.name}
           </button>
         </li>
@@ -341,7 +341,7 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
-    <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4  text-center">OVERVIEW</h2>
+    <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
 
     <div>
         <!-- Roles Section -->
@@ -364,7 +364,7 @@ function selectTabMobile(event) {
 
 
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
 
@@ -395,7 +395,7 @@ function selectTabMobile(event) {
   </ul>
 
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -412,15 +412,15 @@ function selectTabMobile(event) {
 
 
   {#if selectedTab === 'Lineup'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">LINEUP</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
-  <section class="max-w-screen-lg mx-auto ">
+  <section class="max-w-(--breakpoint-lg) mx-auto ">
 
 
   
     <P1physical></P1physical>
 
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <Horbdps></Horbdps>
 
@@ -429,7 +429,7 @@ function selectTabMobile(event) {
   {/if}
 
       {#if selectedTab === 'Equipment'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">EQUIPMENT</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
  
       <div>
 
@@ -468,7 +468,7 @@ function selectTabMobile(event) {
 
 
 
-            <div class="p-4 mt-4 bg-gradient-to-r from-red-950/75 to-red-900/75 rounded">
+            <div class="p-4 mt-4 bg-linear-to-r from-red-950/75 to-red-900/75 rounded-sm">
               <p class="text-sm sm:text-base text-left mb-4">
                 <b>Brick</b><br/> - Big damage buffs. Brick introduces new skills, and fixes HoS skills that conflict with modern supports.
                 <br/> - HoS's Innate Vulnerability shield grants HoS Crit DMG. However, with Prometheus support, Prom shield will be active instead of HoS, preventing the Crit DMG buff from taking effect. Brick fixes this by making the Crit DMG buff permanent.
@@ -487,7 +487,7 @@ function selectTabMobile(event) {
 
 
             </div>
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
 
             <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> ALTERNATIVE STIGMA FOR DPS </h2>
 
@@ -515,7 +515,7 @@ function selectTabMobile(event) {
             </div>
       
             
-            <div class="p-4 mt-4 bg-gradient-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded">
+            <div class="p-4 mt-4 bg-linear-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded-sm">
               <p class="text-sm sm:text-base text-left mb-4">
                 <b>Sirin Ascendant T</b> <br/>
                 Available in Exchange Shop.
@@ -539,7 +539,7 @@ function selectTabMobile(event) {
             </div>
             <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
 
             <div>
 
@@ -578,7 +578,7 @@ function selectTabMobile(event) {
 
 
 
-            <div class="p-4 mt-4 bg-gradient-to-r from-red-950/75 to-red-900/75 rounded">
+            <div class="p-4 mt-4 bg-linear-to-r from-red-950/75 to-red-900/75 rounded-sm">
               <p class="text-sm sm:text-base text-left mb-4">
                 <b>Cosmic Duality</b><br/> - Provides sp regen and buff for the team.
                 <br/> - Available in Growth Regimen Phase 5
@@ -595,7 +595,7 @@ function selectTabMobile(event) {
 
 
             </div>
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
 
             <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> FOR BLEED TEAMS </h2>
 
@@ -623,7 +623,7 @@ function selectTabMobile(event) {
             </div>
       
             
-            <div class="p-4 mt-4 bg-gradient-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded">
+            <div class="p-4 mt-4 bg-linear-to-r from-fuchsia-950/75 to-fuchsia-900/75 rounded-sm">
               <p class="text-sm sm:text-base text-left mb-4">
                 <b>Why a different stigma set is used for Bleed teams? </b> <br/>
                 Bleed DMG cannot crit. Shattered Swords stigma effects have a mix of team Total DMG, Crit DMG and Crit Rate buffs. The only effect that will still work for Bleed valk is the 3PC: Team Total DMG +35%.
@@ -641,7 +641,7 @@ function selectTabMobile(event) {
               </p>
             </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
 
             <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> OTHER STIGMA OPTION FOR SUPPORT </h2>
 
@@ -671,19 +671,19 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'Elysian Realm'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
       <div class="flex justify-center gap-4 my-6">
         <button
           on:click={() => setPlaystyle('1')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           BRICK
         </button>
       
         <button
           on:click={() => setPlaystyle('2')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           STANDARD
         </button>
@@ -696,19 +696,19 @@ function selectTabMobile(event) {
         Use this when you have Brick equipped.
       </p>
 
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
         <div class="flex flex-col justify-center items-start ">
 
-        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+        <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
 
           <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
             <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
           </div>
             <!-- Left side image -->
-            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
               <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
             </div>
             
@@ -720,7 +720,7 @@ function selectTabMobile(event) {
             </div>
           </div>
         </div>
-        <div class="mt-3 rounded" >
+        <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
             - You can start with any of the three Ego signets. Each Ego signet has a different starting general signet.
             <br/>
@@ -734,32 +734,32 @@ function selectTabMobile(event) {
           </p>
         </div>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">STARTING GENERAL SIGNET</h2>
 
         
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           <!-- First Signet with 'Start' text -->
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
             <div class="badge badge-accent z-10 absolute top-2 font-semibold">LEGION</div>
             <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             <p class="text-lg font-semibold">1</p>
           </div>
 
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
             <div class="badge badge-accent z-10 absolute top-2 font-semibold">VICTORY</div>
             <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             <p class="text-lg font-semibold">2</p>
           </div>
 
-          <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
             <div class="badge badge-accent z-10 absolute top-2 font-semibold">EGO</div>
             <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             <p class="text-lg font-semibold">1</p>
           </div>
 
         </div>
-        <div class="mt-3 rounded" >
+        <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
             <b>Decimation 1:</b> To keep your HP low, bring Blood Rose support, and get enhanced signet [Burden, Difficulty, and Calamity] as soon as you can.
           </p>
@@ -767,68 +767,68 @@ function selectTabMobile(event) {
 
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">SUBSEQUENT GENERAL SIGNETS</h2>
 
           
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
 
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
           </div>
-          <div class="mt-3 rounded" >
+          <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
                You want initial sp Gold signet so you can immediately use Ult at the start, without Lightning Empress support. You want sp regen so you can keep using Ult as soon as you can.
             </p>
           </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
@@ -836,36 +836,36 @@ function selectTabMobile(event) {
           </div>
             
           </div>
-          <div class="mt-3 rounded" >
+          <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
                You can swap out Lightning Empress once you get the initial sp Gold signet.
             </p>
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/sigils/Rainbow_of_Absence.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
@@ -875,7 +875,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <h2 class="text-md font-semibold  mt-3  text-left text-white ">Before Burst Mode</h2>
@@ -914,19 +914,19 @@ function selectTabMobile(event) {
           Bonks the enemy! Use this playstyle if HoS equips other gauntlets that isn't brick.
         </p>
   
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
   
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
   
           <div class="flex flex-col justify-center items-start ">
   
-          <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+          <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
   
             <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
               <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
             </div>
               <!-- Left side image -->
-              <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
                 <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
               </div>
               
@@ -938,7 +938,7 @@ function selectTabMobile(event) {
               </div>
             </div>
           </div>
-          <div class="mt-3 rounded" >
+          <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
               Dark Plumes gives sp regen and damage over time.
             </p>
@@ -947,68 +947,68 @@ function selectTabMobile(event) {
   
   
             
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
   
             
             <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
               <!-- First Signet with 'Start' text -->
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
                 <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">2</p>
               </div>
   
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">2</p>
               </div>
   
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">2</p>
               </div>
   
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">2</p>
               </div>
 
-              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold">1</p>
               </div>
   
             </div>
-            <div class="mt-3 rounded" >
+            <div class="mt-3 rounded-sm" >
               <p class="text-sm sm:text-base text-left">
                  For Discipline 2, you just want the [You Shall Follow Good] enhanced signet.
               </p>
             </div>
   
-              <div class="divider divider-neutral"></div>
+              <div class="divider  "></div>
               <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
   
             <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
               
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
+              <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                   <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">START</p>
             </div>
   
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
                 <p class="text-base sm:text-lg font-semibold">MID</p>
             </div>
   
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                   <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
@@ -1016,36 +1016,36 @@ function selectTabMobile(event) {
             </div>
               
             </div>
-            <div class="mt-3 rounded" >
+            <div class="mt-3 rounded-sm" >
               <p class="text-sm sm:text-base text-left">
                  You can swap out Lightning Empress once you have enough sp regen.
               </p>
             </div>
   
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
   
             <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
   
-              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
+              <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                 <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/It_Will_Be_Written.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
                 <p class="text-base sm:text-lg font-semibold">START</p>
             </div>
   
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Veil_of_Tears.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-base sm:text-lg font-semibold">MID</p>
             </div>
   
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-                <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                     <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                     <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   </div>
@@ -1055,7 +1055,7 @@ function selectTabMobile(event) {
             </div>
   
             
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
             <h2 class="text-md font-semibold  mt-3  text-left text-white ">Before Burst Mode</h2>
 
@@ -1093,7 +1093,7 @@ function selectTabMobile(event) {
       {/if}
 
       {#if selectedTab === 'Rank Up'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">RANK UP</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
 
         <!-- Full Rank Up List -->
         <div class="text-slate-100 text-left mt-8 ">
@@ -1183,7 +1183,7 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'How to Play'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">HOW TO PLAY</h2>
   
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
@@ -1210,7 +1210,7 @@ function selectTabMobile(event) {
   
   
       {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
       <div class=" gap-6 mt-5 mb-10">
 
@@ -1239,13 +1239,13 @@ function selectTabMobile(event) {
   {/if}
   
   {#if selectedTab === 'Popular Question'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
 
   {/if}
 
   {#if selectedTab === 'Overview Card'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW CARD</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW CARD</h2>
 
   <div class="text-center my-4">
     <p class="text-center text-sm sm:text-base">Overview card delayed
@@ -1255,7 +1255,7 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'Translation Error'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
       <div class="flex flex-col justify-center items-center">
           
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
@@ -1269,14 +1269,14 @@ function selectTabMobile(event) {
 
     </div>
 
-    <div class="text-center my-4 rounded bg-gray-700">
+    <div class="text-center my-4 rounded-sm bg-gray-700">
       <p class="text-left text-sm sm:text-base px-2 py-3">
         <b>In-Game Text:</b><br/>
         Team gains 10% Crit Rate for 12s upon entry.
       </p>
     </div>
 
-    <div class="text-center my-4 rounded bg-cyan-800">
+    <div class="text-center my-4 rounded-sm bg-cyan-800">
       <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
         <b>Correct Translation:</b><br/>
         Team gains 10% Crit Rate while on the field.
@@ -1285,7 +1285,7 @@ function selectTabMobile(event) {
     </div>
 
 
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
       {/if}
 
 

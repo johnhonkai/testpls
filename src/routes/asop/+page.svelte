@@ -562,7 +562,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 <!-- Character Selection Modal -->
 {#if showModal}
-  <div class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center overflow-y-auto">
+  <div class="fixed inset-0 bg-black/70 flex justify-center items-center overflow-y-auto z-20">
     <div class="bg-gray-800 p-6 rounded-lg max-w-xl w-full max-h-[80vh] overflow-y-auto">
       <h3 class="text-lg font-semibold text-white mb-4">
         {#if selectedSlot === 'astralOp'}
@@ -600,14 +600,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 {#if slots.astralOp && slots.leader && slots.leader.astralRing}
 
 <!-- Main and Compare AstralOp Buffs Display -->
-<div class="flex gap-3 max-w-screen-xl mx-auto overflow-x-auto sm:overflow-visible sm:max-w-lg md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-20">
+<div class="flex gap-3 max-w-(--breakpoint-xl) mx-auto overflow-x-auto sm:overflow-visible sm:max-w-lg md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl) mb-20">
   <!-- Main AstralOp Buffs -->
   <div class="flex-1">
-    <div class="text-yellow-300 text-center font-bold rounded mt-3 text-lg"> {slots.astralOp.name}</div>
+    <div class="text-yellow-300 text-center font-bold rounded-sm mt-3 text-lg"> {slots.astralOp.name}</div>
 
     <div class="flex justify-center items-center mt-4 text-white text-center space-x-4 ">
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="radio" name="rank" value="S"  bind:group={selectedRank} on:change={updateValues} class="radio radio-warning radio-sm" />
+        <input type="radio" name="rank" value="S"  bind:group={selectedRank} on:change={updateValues} class="radio radio-warning radio-sm  " />
         <span>{rankLabels[0]}</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
@@ -647,8 +647,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
           <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
           x{ 
           parseFloat( 
@@ -676,8 +676,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           {/if}
         </div>
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -706,8 +706,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         </div>
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -738,8 +738,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -769,8 +769,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -799,13 +799,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
 
 {#if cumulativeBuffs.critdmg > 0}
-<div class="px-2 mx-1 mb-3 text-white text-left rounded w-fit" id="critdmg">
+<div class="px-2 mx-1 mb-3 text-white text-left rounded-sm w-fit" id="critdmg">
       Crit DMG +{(cumulativeBuffs.critdmg)}%
 </div>
 {/if}
 
 {#if cumulativeBuffs.crate > 0}
-<div class="px-2 mx-1 mb-3 text-white text-left rounded w-fit" id="critrate">
+<div class="px-2 mx-1 mb-3 text-white text-left rounded-sm w-fit" id="critrate">
       Crit Rate +{(cumulativeBuffs.crate)}%
 </div>
 {/if}
@@ -817,8 +817,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
 
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+            <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
           x{ 
           parseFloat( 
           (
@@ -845,8 +845,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 {/if}
 
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -876,8 +876,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -909,8 +909,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -941,8 +941,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -975,8 +975,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
         <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
           x{ 
           parseFloat( 
@@ -1001,8 +1001,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           }
           {/if}
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -1031,8 +1031,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -1061,8 +1061,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -1094,8 +1094,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -1128,8 +1128,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
       <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
         <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
     
           x{ 
@@ -1156,8 +1156,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 }
 {/if}
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
           
           x{ 
         parseFloat( 
@@ -1186,8 +1186,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -1219,8 +1219,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -1250,8 +1250,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -1327,7 +1327,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
         {#if cumulativeBuffs.actdmtaken !== cumulativeBuffs.sotdmtaken} 
         
-         <span class="bg-emerald-800 rounded px-2">AC</span> 
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
         
         / +{cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken}% 
         
@@ -1335,7 +1335,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         - {cumulativeBuffs.tdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.sotdmtaken}%
       {/if}
         
-        <span class="bg-sky-800 rounded px-2">SO</span>
+        <span class="bg-sky-800 rounded-sm px-2">SO</span>
 
 
         {/if}
@@ -1351,9 +1351,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       
       {#if cumulativeBuffs.acphy !== cumulativeBuffs.sophy} 
       
-       <span class="bg-emerald-800 rounded px-2">AC</span> 
+       <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
       
-      / +{cumulativeBuffs.phy + cumulativeBuffs.sophy}% <span class="bg-sky-800 rounded px-2">SO</span>
+      / +{cumulativeBuffs.phy + cumulativeBuffs.sophy}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
       {/if}
     
     </li>
@@ -1366,9 +1366,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
         {#if cumulativeBuffs.acphytaken !== cumulativeBuffs.sophytaken} 
         
-         <span class="bg-emerald-800 rounded px-2">AC</span> 
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
         
-        / +{cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+        / +{cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
         {/if}
       
       </li>
@@ -1390,9 +1390,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
       {#if cumulativeBuffs.aclightning !== cumulativeBuffs.solightning || cumulativeBuffs.acele !== cumulativeBuffs.soele} 
         
-         <span class="bg-emerald-800 rounded px-2">AC</span> 
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
         
-        / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.lightning + cumulativeBuffs.solightning}% <span class="bg-sky-800 rounded px-2">SO</span>
+        / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.lightning + cumulativeBuffs.solightning}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
       {/if}
       
       </li>
@@ -1405,9 +1405,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
         {#if cumulativeBuffs.aclightningtaken !== cumulativeBuffs.solightningtaken || cumulativeBuffs.aceletaken !== cumulativeBuffs.soeletaken} 
         
-         <span class="bg-emerald-800 rounded px-2">AC</span> 
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
         
-        / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+        / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
         {/if}
       
       </li>
@@ -1420,9 +1420,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       
   {#if cumulativeBuffs.acfire !== cumulativeBuffs.sofire || cumulativeBuffs.acele !== cumulativeBuffs.soele} 
       
-       <span class="bg-emerald-800 rounded px-2">AC</span> 
+       <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
       
-      / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.fire + cumulativeBuffs.sofire}% <span class="bg-sky-800 rounded px-2">SO</span>
+      / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.fire + cumulativeBuffs.sofire}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
   {/if}
     
     </li>
@@ -1435,9 +1435,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       
       {#if cumulativeBuffs.acfiretaken !== cumulativeBuffs.sofiretaken || cumulativeBuffs.aceletaken !== cumulativeBuffs.soeletaken} 
       
-       <span class="bg-emerald-800 rounded px-2">AC</span> 
+       <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
       
-      / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+      / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
       {/if}
     
     </li>
@@ -1450,9 +1450,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     
   {#if cumulativeBuffs.acice !== cumulativeBuffs.soice || cumulativeBuffs.acele !== cumulativeBuffs.soele} 
     
-     <span class="bg-emerald-800 rounded px-2">AC</span> 
+     <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
     
-    / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.ice + cumulativeBuffs.soice}% <span class="bg-sky-800 rounded px-2">SO</span>
+    / +{cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.ice + cumulativeBuffs.soice}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
   {/if}
   
   </li>
@@ -1465,9 +1465,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     
     {#if cumulativeBuffs.acicetaken !== cumulativeBuffs.soicetaken || cumulativeBuffs.aceletaken !== cumulativeBuffs.soeletaken} 
     
-     <span class="bg-emerald-800 rounded px-2">AC</span> 
+     <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
     
-    / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+    / +{cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken + cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
     {/if}
   
   </li>
@@ -1511,7 +1511,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <div class="flex-1">
     <!-- Rank Selection for Compare -->
 
-<div class="text-teal-300 text-center font-bold rounded mt-3 text-lg"> {slots.compareAstralOp.name}</div>
+<div class="text-teal-300 text-center font-bold rounded-sm mt-3 text-lg"> {slots.compareAstralOp.name}</div>
     <div class="flex justify-center items-center mt-4 text-white text-center space-x-4 ">
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="radio" name="compareRank" value="S"  bind:group={compareSelectedRank} on:change={updateCompareValues} class="radio radio-accent radio-sm" />
@@ -1553,8 +1553,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
           <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
-          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+          <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
           x{ 
           parseFloat( 
@@ -1582,8 +1582,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           {/if}
         </div>
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -1612,8 +1612,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         </div>
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -1644,8 +1644,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -1675,8 +1675,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -1705,13 +1705,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
 
 {#if compareCumulativeBuffs.critdmg > 0}
-<div class="px-2 mx-1 mb-3 text-white text-left rounded w-fit" id="critdmg">
+<div class="px-2 mx-1 mb-3 text-white text-left rounded-sm w-fit" id="critdmg">
   Crit DMG +{(compareCumulativeBuffs.critdmg)}%
 </div>
 {/if}
 
 {#if compareCumulativeBuffs.crate > 0}
-<div class="px-2 mx-1 mb-3 text-white text-left rounded w-fit" id="critrate">
+<div class="px-2 mx-1 mb-3 text-white text-left rounded-sm w-fit" id="critrate">
   Crit Rate +{(compareCumulativeBuffs.crate)}%
 </div>
 {/if}
@@ -1723,8 +1723,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
 
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-            <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+            <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
           x{ 
           parseFloat( 
           (
@@ -1751,8 +1751,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 {/if}
 
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -1782,8 +1782,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -1815,8 +1815,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -1847,8 +1847,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -1881,8 +1881,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
         <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
           x{ 
           parseFloat( 
@@ -1907,8 +1907,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           }
           {/if}
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
           x{ 
         parseFloat( 
@@ -1937,8 +1937,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -1967,8 +1967,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -2000,8 +2000,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -2034,8 +2034,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
       <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
         <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-emerald-800 rounded px-2  mr-1">AC</span> 
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
     
           x{ 
@@ -2062,8 +2062,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 }
 {/if}
         </div>
-        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">SO</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
           
           x{ 
         parseFloat( 
@@ -2092,8 +2092,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "World Star"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold  mr-1">Reso</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">Reso</span>
 
           x{ 
             parseFloat( 
@@ -2125,8 +2125,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Wheel of Destiny"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">Shadow</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">Shadow</span>
 
           x{ 
             parseFloat( 
@@ -2156,8 +2156,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
         {#if slots.leader.astralRing == "Law of Ascension"}
 
-        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded">
-          <span class="bg-sky-800 rounded px-2 text-bold mr-1">QTE</span>
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-sky-800 rounded-sm px-2 text-bold mr-1">QTE</span>
 
           x{ 
             parseFloat( 
@@ -2231,7 +2231,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             
             {#if compareCumulativeBuffs.actdmtaken !== compareCumulativeBuffs.sotdmtaken} 
             
-             <span class="bg-emerald-800 rounded px-2">AC</span> 
+             <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
             
             / +{compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken}% 
             
@@ -2239,7 +2239,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             - {compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.sotdmtaken}%
           {/if}
             
-            <span class="bg-sky-800 rounded px-2">SO</span>
+            <span class="bg-sky-800 rounded-sm px-2">SO</span>
           
           
             {/if}
@@ -2255,9 +2255,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           
           {#if compareCumulativeBuffs.acphy !== compareCumulativeBuffs.sophy} 
           
-           <span class="bg-emerald-800 rounded px-2">AC</span> 
+           <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
           
-          / +{compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy}% <span class="bg-sky-800 rounded px-2">SO</span>
+          / +{compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>
@@ -2270,9 +2270,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             
             {#if compareCumulativeBuffs.acphytaken !== compareCumulativeBuffs.sophytaken} 
             
-             <span class="bg-emerald-800 rounded px-2">AC</span> 
+             <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
             
-            / +{compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+            / +{compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
             {/if}
           
           </li>
@@ -2294,9 +2294,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             
           {#if compareCumulativeBuffs.aclightning !== compareCumulativeBuffs.solightning || compareCumulativeBuffs.acele !== compareCumulativeBuffs.soele} 
             
-             <span class="bg-emerald-800 rounded px-2">AC</span> 
+             <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
             
-            / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning}% <span class="bg-sky-800 rounded px-2">SO</span>
+            / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>
@@ -2309,9 +2309,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             
             {#if compareCumulativeBuffs.aclightningtaken !== compareCumulativeBuffs.solightningtaken || compareCumulativeBuffs.aceletaken !== compareCumulativeBuffs.soeletaken} 
             
-             <span class="bg-emerald-800 rounded px-2">AC</span> 
+             <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
             
-            / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+            / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
             {/if}
           
           </li>
@@ -2324,9 +2324,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           
           {#if compareCumulativeBuffs.acfire !== compareCumulativeBuffs.sofire || compareCumulativeBuffs.acele !== compareCumulativeBuffs.soele} 
           
-           <span class="bg-emerald-800 rounded px-2">AC</span> 
+           <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
           
-          / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire}% <span class="bg-sky-800 rounded px-2">SO</span>
+          / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>
@@ -2339,9 +2339,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           
           {#if compareCumulativeBuffs.acfiretaken !== compareCumulativeBuffs.sofiretaken || compareCumulativeBuffs.aceletaken !== compareCumulativeBuffs.soeletaken} 
           
-           <span class="bg-emerald-800 rounded px-2">AC</span> 
+           <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
           
-          / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+          / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>
@@ -2354,9 +2354,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           
           {#if compareCumulativeBuffs.acice !== compareCumulativeBuffs.soice || compareCumulativeBuffs.acele !== compareCumulativeBuffs.soele} 
           
-          <span class="bg-emerald-800 rounded px-2">AC</span> 
+          <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
           
-          / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.ice + compareCumulativeBuffs.soice}% <span class="bg-sky-800 rounded px-2">SO</span>
+          / +{compareCumulativeBuffs.ele + compareCumulativeBuffs.soele + compareCumulativeBuffs.ice + compareCumulativeBuffs.soice}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>
@@ -2369,9 +2369,9 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           
           {#if compareCumulativeBuffs.acicetaken !== compareCumulativeBuffs.soicetaken || compareCumulativeBuffs.aceletaken !== compareCumulativeBuffs.soeletaken} 
           
-          <span class="bg-emerald-800 rounded px-2">AC</span> 
+          <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
           
-          / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken}% <span class="bg-sky-800 rounded px-2">SO</span>
+          / +{compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken + compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken}% <span class="bg-sky-800 rounded-sm px-2">SO</span>
           {/if}
           
           </li>

@@ -348,7 +348,7 @@ function selectTabMobile(event) {
               - SP regen, faster rotation than HoS support, and more
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
@@ -359,7 +359,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">Competitive</strong><br/> HoRB is still the best support for Part 1 Physical teams. HoRB DPS form usage is a bit rare. Since HoRB DPS does not have impair, she requires Herrscher of Sentience for support.
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -367,7 +367,7 @@ function selectTabMobile(event) {
               <li><strong>Herrscher of Rebirth's Weapon and Stigma:</strong> Focused Supply, Starter Supply</li>
               <li>Regular supply not available in v7.9. </li>
           </ul>
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
@@ -397,15 +397,15 @@ function selectTabMobile(event) {
 
       <Horbdps></Horbdps>
 
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
       <P1physical></P1physical>
 
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
       <Susannahdps></Susannahdps>
 
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
       <Cedps></Cedps>
 
@@ -469,7 +469,7 @@ function selectTabMobile(event) {
       </div>
 
       
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
       <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> FOR BLEED TEAMS </h2>
 
@@ -515,7 +515,7 @@ function selectTabMobile(event) {
         </p>
       </div>
 
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
 
 
 
@@ -581,7 +581,7 @@ function selectTabMobile(event) {
           DPS Form standard playstyle
         </p>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
@@ -612,7 +612,7 @@ function selectTabMobile(event) {
           </p>
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -651,7 +651,7 @@ function selectTabMobile(event) {
                 </p>
             </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -682,7 +682,7 @@ function selectTabMobile(event) {
             
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -714,7 +714,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
@@ -749,7 +749,7 @@ function selectTabMobile(event) {
           Speedrun build using only Decay Ego signet. This run abuses Decimation 1 nuke. HoRB has high HP, and Decimation 1 damage increases the more HP you're missing = Big Nuke. Recommended for full gear HoRB.
         </p>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
@@ -773,7 +773,7 @@ function selectTabMobile(event) {
           
         </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -814,7 +814,7 @@ function selectTabMobile(event) {
                 </p>
             </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -845,7 +845,7 @@ function selectTabMobile(event) {
             
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -877,7 +877,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
@@ -913,7 +913,7 @@ function selectTabMobile(event) {
           Support Form standard playstyle
                 </p>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
@@ -947,7 +947,7 @@ function selectTabMobile(event) {
           
         </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -989,7 +989,7 @@ function selectTabMobile(event) {
                 </p>
             </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -1020,7 +1020,7 @@ function selectTabMobile(event) {
             
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -1052,7 +1052,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
@@ -1111,7 +1111,7 @@ function selectTabMobile(event) {
           </div>
         </div>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         {#if !isMobile}
         <!-- Full Rank Up List -->
@@ -1400,12 +1400,14 @@ function selectTabMobile(event) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
           </iframe>
+        </div>
       </div>
-    </div>
 
     
 
-  </div>
+    </div>
+
+
   {/if}
   
   {#if selectedTab === 'Popular Question'}

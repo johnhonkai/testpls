@@ -18,7 +18,7 @@
   }
 </script>
 
-<section class="max-w-screen-xl mx-auto p-4">
+<section class="max-w-(--breakpoint-xl) mx-auto p-4">
   <h1 class="text-2xl font-bold text-center mb-6">Story Order</h1>
 
   <!-- Filter Buttons -->

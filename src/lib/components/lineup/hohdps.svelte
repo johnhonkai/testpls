@@ -38,7 +38,7 @@
 
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-pink-950 to-pink-900   shadow-lg shadow-base-100 overflow-hidden  ">
+<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-pink-950 to-pink-900   shadow-lg shadow-base-100 overflow-hidden  ">
     <h3 class="text-xl  font-semibold mb-2 text-center text-zinc-900 bg-slate-100">Herrrscher of Human DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2  gap-2 gap-y-6 mb-4 justify-center">
@@ -47,7 +47,7 @@
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
             <img src="/images/valkportrait/Elysia Herrscher of Human Ego.png" alt="Sena" class="w-full h-full object-cover">
-            <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
+            <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -78,7 +78,7 @@
 
 
     <details class="group rounded-md my-2 overflow-hidden">
-        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-gradient-to-r from-sky-500/0 to-sky-500/0 via-slate-900 	 hover:transition-colors hover:duration-200">
+        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 	 hover:transition-colors hover:duration-200">
             Details
         </summary>
         <div class="py-3 px-4">

@@ -10,7 +10,7 @@
 <div class="w-36 h-16 relative bg-blue-900 rounded-lg flex flex-col items-center cursor-pointer hover:scale-105 transition transform will-change-transform ease-linear">
 
     {#if date}
-        <span class="w-[50px] h-[18px] leading-4 text-center absolute top-1 left-1 bg-orange-500 text-[14px] font-semibold rounded">
+        <span class="w-[50px] h-[18px] leading-4 text-center absolute top-1 left-1 bg-orange-500 text-[14px] font-semibold rounded-sm">
             {date}
         </span>
     {/if}
@@ -21,7 +21,7 @@
     {/if}
 
     {#if weather}
-        <span class="absolute bottom-0 right-1.5 font-semibold text-outline bg-opacity-50 rounded">
+        <span class="absolute bottom-0 right-1.5 font-semibold text-outline bg-opacity-50 rounded-sm">
             {weather}
         </span>
     {/if}

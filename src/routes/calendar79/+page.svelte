@@ -153,7 +153,7 @@
 
     <VersionSelect currentVersion="7.9"></VersionSelect>
 
-  <div role="tablist" class="tabs-bordered mt-4 space-x-2 ">
+  <div role="tablist" class="tabs-border mt-4 space-x-2 ">
      <button
         role="tab" class="tab {activeTab === 'Supply' ? 'tab-active ' : ''}"
         on:click={() => switchTab("Supply")}
@@ -174,9 +174,9 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mt-4">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
-            <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
+            <div class="w-[940px] rounded-lg bg-linear-to-b from-rose-500 to-rose-100 ">
                 <!-- Calendar Header Row -->
-                <div class="grid grid-cols-7 gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded text-sm ">
+                <div class="grid grid-cols-7 gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm ">
                     <div>Estimated date for SEA / KR / GLB</div>
                     <div>WEEK 1<br />Nov 28 - Dec 6</div>
                     <div>WEEK 2<br />Dec 6 - 13</div>
@@ -391,9 +391,9 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
-        <div class="w-[940px] rounded-lg bg-gradient-to-b from-rose-500 to-rose-100 ">
+        <div class="w-[940px] rounded-lg bg-linear-to-b from-rose-500 to-rose-100 ">
             <!-- Calendar Header Row -->
-            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded text-sm justify-center">
+            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm justify-center">
                 <div>EVENTS</div>
 
             </div>

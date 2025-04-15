@@ -70,7 +70,7 @@
           class="w-12 h-12 rounded-full object-cover border-2 border-gray-600"
         />
         <!-- Member Info -->
-        <div class="flex-grow">
+        <div class="grow">
           <a
             href={member["Link to profile"]}
             target="_blank"
@@ -107,7 +107,7 @@
         class="w-12 h-12 rounded-full object-cover border-2 border-gray-600"
       />
       <!-- Member Info -->
-      <div class="flex-grow">
+      <div class="grow">
         <span class="text-white font-medium text-sm">{member.Name}</span>
       </div>
     </li>
@@ -125,7 +125,7 @@
         class="w-12 h-12 rounded-full object-cover border-2 border-gray-600"
       />
       <!-- Member Info -->
-      <div class="flex-grow">
+      <div class="grow">
         <span class="text-white font-medium text-sm">{member.Name}</span>
       </div>
     </li>

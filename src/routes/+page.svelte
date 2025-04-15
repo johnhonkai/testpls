@@ -134,7 +134,7 @@
 
 <section class="relative flex m-0 justify-center " id="bannerpic">
 
-  <div class="relative max-w-screen-lg right-[-1rem]">
+  <div class="relative max-w-(--breakpoint-lg) right-[-1rem]">
   <div>
     <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test1.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDEud2VicCIsImlhdCI6MTczMjEyMzA1NCwiZXhwIjoyMDQ3NDgzMDU0fQ.7XeoccXhKwhr0-j_PGRBlBz-wlJw3AWSjg-_NakZMrA" alt="Banner" class="w-full h-full  object-cover">
   </div>
@@ -152,11 +152,11 @@
 
 
 <section class="py-6 z-10">
-  <div class="xl:max-w-screen-2xl lg:max-w-screen-lg mx-auto px-4">
+  <div class="xl:max-w-(--breakpoint-2xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
       
       <!-- Patch Time Section -->
-      <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
+      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
             <img src="/images/crystal.png" alt="Patch Time Icon" class="w-8 h-8 mr-2">
             <h2 class="text-xl font-bold text-blue-600">PATCH TIME</h2>
@@ -176,7 +176,7 @@
     </div>
 
       <!-- 8.0 Info Date Section -->
-      <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
+      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-8 h-8 mr-2">
           <h2 class="text-xl font-bold text-blue-600">8.3 INFO DATE</h2>
@@ -194,7 +194,7 @@
       </div>
 
       <!-- 7.9 Crystal Income Section -->
-      <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
+      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
         <div class="flex items-center mb-2 bg-white rounded-t-lg">
           <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
           <h2 class="text-xl font-bold text-blue-600">8.2 CRYSTAL INCOME</h2>
@@ -216,7 +216,7 @@
       </div>
 
             <!-- Active Codes -->
-            <div class="bg-gradient-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
+            <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
               <div class="flex items-center mb-2 bg-white rounded-t-lg">
                 <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
                 <h2 class="text-xl font-bold text-blue-600">ACTIVE CODES</h2>
@@ -245,7 +245,7 @@
   </div>
 </section>
 <section class="pb-10 pt-5  text-white z-10 ">
-  <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
+  <div class="xl:max-w-(--breakpoint-xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
     <h2 class="text-3xl font-bold mb-6 text-center">New Content</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -286,7 +286,7 @@
 </section>
 
 <section class="pb-10 pt-5  text-white z-10 mb-40">
-  <div class="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
+  <div class="xl:max-w-(--breakpoint-xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
     <h2 class="text-3xl font-bold mb-6 text-center">Featured</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

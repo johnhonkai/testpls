@@ -358,7 +358,7 @@ function selectTabMobile(event) {
 
 
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
@@ -375,7 +375,7 @@ function selectTabMobile(event) {
 
 
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -496,7 +496,7 @@ function selectTabMobile(event) {
       <p class="text-sm sm:text-base text-center sm:text-left">
         This is a very old valkyrie that requires ranks and her signature weapon to perform well. Please play at a lower difficulty if FT is at a low rank and does not have Sleeper's Dream equipped.
       </p>
-      <div class="divider divider-neutral"></div>
+      <div class="divider  "></div>
         <h2 class="text-xl font-semibold mb-4 mt-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
         <div class="flex flex-col justify-center items-start ">
@@ -528,7 +528,7 @@ function selectTabMobile(event) {
         
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext"> GENERAL SIGNETS</h2>
 
           
@@ -569,7 +569,7 @@ function selectTabMobile(event) {
             </p>
           </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -601,7 +601,7 @@ function selectTabMobile(event) {
           </div>
 
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -634,7 +634,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
 

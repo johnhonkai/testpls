@@ -28,7 +28,7 @@
 	<!-- Main Content Section -->
 	<Navbar></Navbar>
   <Navmobile></Navmobile>
-<main class="flex-grow mt-[3.5rem]">
+<main class="grow mt-[3.5rem]">
 	
 	{@render children()}
 

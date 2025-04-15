@@ -354,7 +354,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">DPS: </strong> Can also be an average DPS.
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
@@ -369,7 +369,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">Competitive:</strong> HoTr is still used in HoFinality trio team and Part 1 Fire teams. Part 1 Lightning teams use Lunar Vow support now. Lunar Vow uses Schicksal's Imperative support.
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -377,7 +377,7 @@ function selectTabMobile(event) {
               <li><strong>Domain of Ascension and Bronya Zaychik:</strong> Focused Supply, Battle Pass</li>
 
           </ul>
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
@@ -406,24 +406,24 @@ function selectTabMobile(event) {
 
 
     <Hofidps/>
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <Fovdps></Fovdps>
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <Sirindps></Sirindps>
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <P1fire />
 
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <Lvdpsnormal></Lvdpsnormal>
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <P1lightningdps/>
 
-    <div class="divider divider-neutral"></div>
+    <div class="divider  "></div>
 
     <Hotrdps />
 
@@ -532,7 +532,7 @@ function selectTabMobile(event) {
 
         </p>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
@@ -563,7 +563,7 @@ function selectTabMobile(event) {
           </p>
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -598,7 +598,7 @@ function selectTabMobile(event) {
           </div>
 
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -629,7 +629,7 @@ function selectTabMobile(event) {
             
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -661,7 +661,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
@@ -688,13 +688,13 @@ function selectTabMobile(event) {
         {/if}
 
         {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Ultimate Playstyle</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Nerf This~! Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Spam Ult
+          A playstyle where you keep entering and exiting Continuation form and launching your mecha to bombard the enemy.
+
         </p>
 
-        <div class="divider divider-neutral"></div>
-
+        <div class="divider  "></div>
 
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
@@ -724,7 +724,7 @@ function selectTabMobile(event) {
               <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Genuine Solution), but having more Ego signets is a big improvement, especially if you are not using full gear HoTR. You can get more Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
           </p>
           </div>
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -758,7 +758,7 @@ function selectTabMobile(event) {
           </div>
 
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -789,7 +789,7 @@ function selectTabMobile(event) {
             
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -821,7 +821,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
@@ -882,7 +882,7 @@ function selectTabMobile(event) {
           </div>
         </div>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
 
         {#if !isMobile}
         <!-- Full Rank Up List -->

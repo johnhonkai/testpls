@@ -279,7 +279,7 @@ const checkVotedStatus = async () => {
 	  
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST VALKYRIE</p>
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-xl w-full">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-(--breakpoint-xl) w-full">
 		{#each cards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
 				<CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-rose-900   border-white/[0.2] max-w-[280px] max-h-80 rounded-xl p-6 border">
@@ -307,7 +307,7 @@ const checkVotedStatus = async () => {
 
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">BEST CHAPTER</p>
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-(--breakpoint-xl) w-full">
 		{#each chaptercards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
 				<CardBody className="  relative group/card  hover:shadow-2xl  hover:shadow-emerald-500/[0.1]  bg-[url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bg.svg')]   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">
@@ -336,7 +336,7 @@ const checkVotedStatus = async () => {
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
 		BEST BOSS </p>
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-(--breakpoint-xl) w-full">
 		{#each bosscards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
 				<CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">
@@ -365,7 +365,7 @@ const checkVotedStatus = async () => {
 	<p class="cursor-default text-xl font-semibold  text-gray-300 mb-4 mt-20 relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
 		SUSSIEST SONGQUE MOMENT</p>
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-(--breakpoint-xl) w-full">
 		{#each songquecards as card (card.title)}
 			<CardContainer bind:isMouseEntered className="inter-var">
 				<CardBody className="relative group/card  hover:shadow-2xl  hover:shadow-emerald-500/[0.1]  bg-cyan-800   border-white/[0.2] max-w-[400px] max-h-80 rounded-xl p-6 border">

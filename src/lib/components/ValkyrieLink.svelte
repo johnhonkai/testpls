@@ -15,7 +15,7 @@
   </script>
   
   <a href={valkyrie.url} 
-  class="flex flex-col items-center text-center rounded" 
+  class="flex flex-col items-center text-center rounded-sm" 
   data-sveltekit-preload-data="hover"   
   on:click={handleClick}
 >

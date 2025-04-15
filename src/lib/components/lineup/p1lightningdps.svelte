@@ -27,7 +27,7 @@
 
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-gradient-to-b from-violet-950 to-violet-900 shadow-lg shadow-base-100 overflow-hidden">
+<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-violet-950 to-violet-900 shadow-lg shadow-base-100 overflow-hidden">
     <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Part 1 Lightning DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
@@ -35,7 +35,7 @@
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
             <img src="/images/valkportrait/P1Lightning.png" alt="LV" class="w-full h-full object-cover">
-            <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded z-10 text-center">Leader</span>
+            <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 
         <!-- Conditional Plus Icon -->

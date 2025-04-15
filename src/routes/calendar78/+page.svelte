@@ -146,7 +146,7 @@ goto(url.pathname + url.search, { replaceState: true });
 
     <VersionSelect currentVersion="7.8"></VersionSelect>
   <!-- Tabs for 'Supply and Events' and 'Boss' -->
-  <div role="tablist" class="tabs-bordered mt-4 space-x-2">
+  <div role="tablist" class="tabs-border mt-4 space-x-2">
      <button
         role="tab" class="tab {activeTab === 'Supply' ? 'tab-active' : ''}"
         on:click={() => switchTab("Supply")}
@@ -168,9 +168,9 @@ goto(url.pathname + url.search, { replaceState: true });
 <div class="p-4 mt-4 container-screen-2xl flex justify-center items-center ">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
-            <div class="w-[940px] rounded-lg bg-gradient-to-b from-cyan-500 to-teal-100 ">
+            <div class="w-[940px] rounded-lg bg-linear-to-b from-cyan-500 to-teal-100 ">
                 <!-- Calendar Header Row -->
-                <div class="grid grid-cols-7 gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded text-sm ">
+                <div class="grid grid-cols-7 gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm ">
                     <div>Estimated date for SEA / KR / GLB</div>
                     <div>WEEK 1<br />Oct 17 - 25</div>
                     <div>WEEK 2<br />Oct 25 - Nov 1</div>
@@ -333,9 +333,9 @@ goto(url.pathname + url.search, { replaceState: true });
 <div class="p-4 container-screen-2xl flex justify-center items-center">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
-        <div class="w-[940px] rounded-lg bg-gradient-to-b from-cyan-500 to-teal-100 ">
+        <div class="w-[940px] rounded-lg bg-linear-to-b from-cyan-500 to-teal-100 ">
             <!-- Calendar Header Row -->
-            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded text-sm justify-center">
+            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm justify-center">
                 <div>EVENTS</div>
 
             </div>

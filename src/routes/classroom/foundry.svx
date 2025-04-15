@@ -39,8 +39,8 @@ These are stigma used by Part 1 valks.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/f2e785b423273338556e66771a543a69_5615190248057583714.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/f2e785b423273338556e66771a543a69_5615190248057583714.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/75216984/73531d5b12f1133e5f5f926f1cf14b0b_2678839856354413010.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded-sm object-cover">
     </div>
 
     <!-- Right Column: Description -->
@@ -64,9 +64,9 @@ These are stigma used by Part 1 valks.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
-      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
-         <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/7df819142546acc5810989fe30c4873f_7239579905567990276.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
+      <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/763480600e89f9c800410a25da49ec2e_2776697066366451417.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded-sm object-cover">
+         <img src="https://act-upload.mihoyo.com/bh3-wiki/2023/08/12/282941837/8e65a0478b4e273cf49e6cd606a49483_4401041772639778296.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -89,9 +89,9 @@ These are stigma used by Part 1 valks.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/69197917c070e877ad922d21a3536325_2748643889039309262.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/a6ecf711857945fdcbfb02ccace6075d_8482437261998817983.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
-         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/b1c357b7a1d6d5e39fae925f7c90e724_8580284000724519020.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/69197917c070e877ad922d21a3536325_2748643889039309262.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/a6ecf711857945fdcbfb02ccace6075d_8482437261998817983.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded-sm object-cover">
+         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/b1c357b7a1d6d5e39fae925f7c90e724_8580284000724519020.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -114,9 +114,9 @@ These are stigma used by Part 1 valks.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/4ebb3b5717d38d2145588b85b706c800_6470234861718683631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/08774ee8871f24d2a2f9bfca84818a55_2070324058174202393.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded object-cover">
-         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/2839f23b32369fd802b918ed1caac92d_783370248046786155.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/4ebb3b5717d38d2145588b85b706c800_6470234861718683631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/08774ee8871f24d2a2f9bfca84818a55_2070324058174202393.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 2" class="h-20 w-20 rounded-sm object-cover">
+         <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/2839f23b32369fd802b918ed1caac92d_783370248046786155.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 3" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -139,7 +139,7 @@ These are stigma used by Part 1 valks.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/01/50494840/06170cbecb3347bac481adaaa3a47288_8566959529439830130.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/01/50494840/06170cbecb3347bac481adaaa3a47288_8566959529439830130.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -164,7 +164,7 @@ These weapons can be tuned in Divine Key Concierge to grant global buffs.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/e63ebeab40d84fa225cf2b05550bab40_876464344486042367.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/e63ebeab40d84fa225cf2b05550bab40_876464344486042367.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -185,7 +185,7 @@ These weapons can be tuned in Divine Key Concierge to grant global buffs.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/30/11528057/d69598245f77ea97a791df21845e1838_3532128283685716122.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/30/11528057/d69598245f77ea97a791df21845e1838_3532128283685716122.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 
@@ -207,7 +207,7 @@ These weapons can be tuned in Divine Key Concierge to grant global buffs.
   <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
     <!-- Left Column: Pictures -->
     <div class="flex justify-center space-x-2">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/10/75940953/ab171f1610b4f50c3a7200745ada1dc9_1143250954414845702.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded object-cover">
+      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/10/75940953/ab171f1610b4f50c3a7200745ada1dc9_1143250954414845702.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Image 1" class="h-20 w-20 rounded-sm object-cover">
 
     </div>
 

@@ -135,7 +135,7 @@
 	  )}
 	>
 	  <AnimatedShinyText
-		class=" inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"
+		class=" inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 dark:hover:text-neutral-400"
 
 		>
 		<span class="text-base lg:text-lg">✨ Search Articles</span>
@@ -189,7 +189,7 @@
                 <ul class="space-y-4">
                     {#each searchResults as result}
                         <li>
-                            <a href={`/classroom/${result.slug}`} class="block p-4 bg-base-200 rounded-lg shadow hover:bg-base-300">
+                            <a href={`/classroom/${result.slug}`} class="block p-4 bg-base-200 rounded-lg shadow-sm hover:bg-base-300">
                                 <p class="font-semibold">{result.title}</p>
                                 <p class="text-sm text-gray-500">
                                     <span>...{@html result.excerpt}...</span>
@@ -224,7 +224,7 @@
 		<div class="menu bg-base-300 shadow-md rounded-lg">
 			{#each sortedCategories as category}
 				<div class="mb-2">
-					<p class="menu-title text-slate-100 bg-emerald-700/50 rounded">{category}</p>
+					<p class="menu-title text-slate-100 bg-emerald-700/50 rounded-sm">{category}</p>
 					<ul>
 						{#each categorizedArticles[category] as article}
 							<li>
@@ -243,7 +243,7 @@
 	</aside>
 
 	<!-- Main Content -->
-	<article class="prose grow mx-auto md:max-w-[960px] p-6 bg-base-100 rounded-lg  prose-h2:bg-gradient-to-r from-teal-600 to-teal-400 prose-h2:text-black  prose-h2:rounded   prose-h3:text-amber-300 prose-h2:w-fit prose-h2:px-2">		
+	<article class="prose grow mx-auto md:max-w-[960px] p-6  rounded-lg ">		
 		{#if data.title !== 'Welcome'}
 		<h1>{data.title}</h1>
 		{/if}

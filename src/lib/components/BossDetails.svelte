@@ -22,7 +22,7 @@
       </div>
   </div>
 
-  <div class="grid grid-cols-[1fr,4fr] my-1 sm:my-3 justify-start mx-1 sm:mx-0 rounded-lg bg-sky-950 flex-grow-0 max-w-[700px] border border-sky-900">
+  <div class="grid grid-cols-[1fr_4fr] my-1 sm:my-3 justify-start mx-1 sm:mx-0 rounded-lg bg-sky-950 grow-0 max-w-[700px] border border-sky-900">
 
     <div class=" flex  justify-center text-center items-center p-2">
       <p class="text-slate-100 text-sm sm:text-base font-semibold">Weather</p>

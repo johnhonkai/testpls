@@ -102,7 +102,7 @@
       {#each bossData.videos as video, index}
       <div class="bg-gray-100 p-4 rounded-lg">
         <a href={video.url} target="_blank" rel="noopener noreferrer">
-          <img src={getThumbnail(video.url)} alt="Video Thumbnail" class="w-full h-44 object-cover rounded-sm" />
+          <img src={getThumbnail(video.url)} alt="Video Thumbnail" class="w-full h-44 object-cover rounded-xs" />
         </a>
         <p class="mt-2 text-gray-600 text-sm"><strong>Abyss:</strong> {video.abyss}</p>
         <p class="text-gray-600 text-sm"><strong>Uploader:</strong> {video.uploader}</p>

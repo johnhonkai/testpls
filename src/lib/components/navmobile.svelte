@@ -117,7 +117,7 @@ onMount(() => {
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
 					</svg>
 				</div>
-				<ul tabindex="0" class="menu menu-lg  dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+				<ul tabindex="0" class="menu menu-lg  dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-2 shadow-sm">
 					<li><a href="/valk">
 						Valkyrie
 						<span class="badge badge-sm badge-warning">NEW</span>
@@ -144,7 +144,7 @@ onMount(() => {
 						<img alt="Avatar" src={avatarImage} />
 					</div>
 				</div>
-				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-2 shadow-sm">
 					<li>
 						<a class="justify-between" on:click={openProfileModal} >
 							Profile
@@ -219,7 +219,7 @@ onMount(() => {
 						<div class="flex flex-col sm:flex-row justify-between items-start space-y-6 sm:space-y-0">
 							<!-- Support Me Section -->
 							<div class="flex items-start space-x-4">
-								<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/songquexd%20copy.webp" alt="Support Icon" class=" rounded h-20 w-20">
+								<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/songquexd%20copy.webp" alt="Support Icon" class=" rounded-sm h-20 w-20">
 								<div>
 									<p class="text-lg font-semibold mb-2">SUPPORT ME</p>
 									<div class="flex space-x-4">
@@ -319,7 +319,7 @@ onMount(() => {
 				You gonna go play Star Rail?
 			</p>
 			<div class="flex justify-center p-4">
-				<img src="https://i.imgur.com/QAchf3b.gif" alt="Support Icon" class=" rounded h-60 w-auto"/>
+				<img src="https://i.imgur.com/QAchf3b.gif" alt="Support Icon" class=" rounded-sm h-60 w-auto"/>
 			</div>
 			<div class="modal-action">
 				<button class="btn btn-secondary" on:click={closeModal}>Close</button>

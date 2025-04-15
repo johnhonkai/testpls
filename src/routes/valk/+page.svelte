@@ -191,7 +191,7 @@
   </div>
   <div class="relative max-w-5xl mx-auto mt-5">
     <h1
-    class="text-xl md:text-3xl font-bold text-center bg-gradient-to-b from-white to-neutral-300 text-transparent bg-clip-text mb-3"
+    class="text-xl md:text-3xl font-bold text-center bg-linear-to-b from-white to-neutral-300 text-transparent bg-clip-text mb-3"
   >
   Select a Valkyrie
   </h1>
@@ -249,7 +249,7 @@
   {#each filteredValkyries as valkyrie}
     <a 
       href={valkyrie.url} 
-      class="flex flex-col items-center text-center rounded" 
+      class="flex flex-col items-center text-center rounded-sm" 
       on:mouseenter={() => preloadImages(valkyrie.url)} 
     >
       <!-- Valkyrie Image with Badge -->
