@@ -354,7 +354,7 @@
     
                 <div on:click={() => openModal("Login1")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Sushang Restaurant</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Yunchin's Culinary Wonders</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/6irF4y4.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -391,7 +391,7 @@
                 <div></div>
                 <div on:click={() => openModal("Login1")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Chapter 8</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 8: Till the Long Road Reaches the Sky</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/2wJwPVs.png" alt="Event 1" class="w-full h-full object-cover " />

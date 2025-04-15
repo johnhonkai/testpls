@@ -33,13 +33,13 @@ customSlug: "ar2"
 - For Wheel of Destiny teams, <span class="text-sky-300">Thelema</span> provides shieldbreak, huge freeze trauma and evasion spam ar regen.
 - For World Star teams, <span class="text-fuchsia-300">Herrscher of Finality</span> provides super quick resonance trigger.
 
----
+<br/>
 
 But of course, Honkai Impact is complex. Not all Astral Ring teams have multiple lineups. There are some teams that still only have one best lineup.
-- Herrscher of Finality DPS: Needs Herrscher of Truth and Herrscher of Origin.
-- Vita Lone Planetfarer DPS: Needs team members with Astral Ring: Rite of Oblivion (RoO) to activates buffs like Elemental Breach, buffs and stronger Ult. Right now, there are only two RoO valks besides Vita - Herrscher of Finality and Coralie.
+- **Herrscher of Finality DPS**: Needs Herrscher of Truth and Herrscher of Origin.
+- **Vita Lone Planetfarer DPS**: Needs team members with Astral Ring: Rite of Oblivion (RoO) to activate buffs like Elemental Breach, buffs and stronger Ult. Right now, there are only two RoO valks besides Vita - Herrscher of Finality and Coralie.
 
 ---
 
-5. For equipment, you only need to gacha for weapon, 60 pulls guarantee max. Stigma is forgeable, you also get a lot of stigma if you pull weapon from gacha. 
+5. For equipment, you only need to gacha for weapon, 60 pulls guarantee max. Stigma is forgeable. You also get a lot of stigma if you pull weapon from gacha. 
 In addition, when a new valkyrie debuts, you will get one stigma selector box.
