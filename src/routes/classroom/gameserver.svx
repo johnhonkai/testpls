@@ -3,6 +3,7 @@ title: Game Server
 category: 'Getting Started'
 sortOrder: 2
 customSlug: "server"
+ogimage: https://i.imgur.com/Qp25wFG.jpeg
 
 ---
 

@@ -3,6 +3,7 @@ title: Planning Your Pulls for F2P / Monthly Pass Players
 category: 'Astral Ring'
 sortOrder: 3
 customSlug: "pullplan"
+ogimage: https://i.imgur.com/lJqfzIu.jpeg
 
 ---
 

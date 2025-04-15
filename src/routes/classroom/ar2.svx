@@ -3,6 +3,7 @@ title: Part 2 Teambuilding
 category: 'Astral Ring'
 sortOrder: 2
 customSlug: "ar2"
+ogimage: https://i.imgur.com/nXJzDQQ.jpeg
 
 ---
 

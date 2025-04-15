@@ -3,6 +3,7 @@ title: Read This First
 category: 'Getting Started'
 sortOrder: 1
 customSlug: "readthisfirst"
+ogimage: https://i.imgur.com/EyQMMHI.jpeg
 
 ---
 
