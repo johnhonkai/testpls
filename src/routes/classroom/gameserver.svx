@@ -45,8 +45,19 @@ For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span
 
 ---
 
+### Touch Feature
+In SEA server, you can touch valkyries! This feature is only available for very old Part 1 valkyries.
+
+<div class="flex items-center justify-center text-orange-300 ">
+
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/rJ3IQ_MLvac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+ </iframe>
+</div>
+
+---
+
 ### Anniversary Date
-Originally, the regional servers had different anniversary date. But starting from Part 2 (v7.3), our anniversaries are synced to around Feb/March (7.3 date is Feb 29, 2024)
+Originally, the regional servers had different anniversary date. But starting from Part 2 (v7.3), our anniversaries are synced to around Feb/March (7.3 date is Feb 29, 2024).
 
 ---
 
