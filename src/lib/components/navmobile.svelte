@@ -124,7 +124,7 @@ onMount(() => {
 
 					</a></li>
 					<li><a href="/asop">Astral Op</a></li>
-					<li><a href="/calendar81">Timeline</a></li>
+					<li><a href="/calendar82">Timeline</a></li>
 
 					<li><a href="/boss">Boss</a></li>
 					<li><a href="/betanews">Beta News</a></li>

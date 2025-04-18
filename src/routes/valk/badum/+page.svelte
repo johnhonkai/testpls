@@ -247,7 +247,7 @@ async function increaseLike() {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">Ba-dum! Fiery Wishing Star</h1>
 
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Kiana Kaslana | Release Date: v8.1 (20 Feb 2025)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Kiana Kaslana | Release Date: v8.1 (20 Feb 2025)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">

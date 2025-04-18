@@ -41,7 +41,8 @@
 
 	<!-- Main Content centered on larger screens -->
 <div class="flex flex-col my-20">
-	<article class="prose grow  mx-auto max-w-[960px] p-6 bg-slate-800 border-slate-700 border rounded-lg shadow-md space-y-5  ">
+	<article class="prose grow  mx-auto max-w-[960px] p-6 bg-slate-800 border-slate-700 border rounded-lg shadow-md  prose-ul:leading-6 prose-h3:bg-gradient-to-r prose-h3:from-cyan-700 prose-h3:to-cyan-500 prose-h3:text-black prose-h3:pl-2 prose-h3:rounded ">
+
 		<h1>{data.title}</h1>
 
 		<!-- Render the blog content -->

@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss';
+
 @import '@fortawesome/fontawesome-free/css/all.min.css' layer(utilities);
 
 
@@ -62,6 +65,11 @@
 	to {
 		transform: translateX(-30px);
 	}
+}
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+  --font-plusjakarta: "Plus Jakarta Sans", sans-serif;
 }
 
 :root::view-transition-old(root) {

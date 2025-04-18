@@ -97,13 +97,11 @@
         "NewADV": {
             title: "Ascension Supply: Mad Pleasure",
             description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banner.</li>',
-            image: "https://i.imgur.com/b9hWyRp.png"
 
         },
         "NewRebate": {
             title: "Ascension Armament: Mad Pleasure Equipment",
             description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banner.</li>',
-            image: "https://i.imgur.com/7WAQKIs.png"
         },
     };
 
@@ -166,6 +164,7 @@
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
                     </div>                    
                     <div on:click={() => openModal("Valk1")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Peregrine Sword<br/>First ten pulls are 50% off</span>
                         <!-- Image positioned on the right side -->
@@ -194,7 +193,9 @@
 
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+
+                        <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div>  
                     <div></div> 
                     <div></div>                 
@@ -411,7 +412,7 @@
                 <div></div>
                 <div on:click={() => openModal("Login1")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Snazzy Cards Club</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Snazzy Cards Championship</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/hGHcMJh.png" alt="Event 1" class="w-full h-full object-cover " />

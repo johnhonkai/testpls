@@ -4,6 +4,7 @@ category: 'Getting Started'
 sortOrder: 2
 customSlug: "server"
 ogimage: https://i.imgur.com/Qp25wFG.jpeg
+update: 8.2
 
 ---
 
@@ -50,7 +51,7 @@ In SEA server, you can touch valkyries! This feature is only available for very 
 
 <div class="flex items-center justify-center text-orange-300 ">
 
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/rJ3IQ_MLvac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe loading="lazy" width="420" height="300" src="https://www.youtube.com/embed/rJ3IQ_MLvac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
  </iframe>
 </div>
 

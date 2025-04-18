@@ -3,6 +3,7 @@ title: Should I Pull This New Valk?
 category: 'Astral Ring'
 sortOrder: 4
 customSlug: "pullnewvalk"
+update: 8.2
 
 ---
 

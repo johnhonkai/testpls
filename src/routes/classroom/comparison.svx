@@ -4,6 +4,7 @@ category: 'Getting Started'
 sortOrder: 3
 customSlug: "matsvsstarrail"
 ogimage: https://i.imgur.com/KUS69D0.jpeg
+update: 8.2
 
 ---
 

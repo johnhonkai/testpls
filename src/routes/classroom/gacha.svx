@@ -4,11 +4,9 @@ category: 'Getting Started'
 sortOrder: 4
 customSlug: "gacha"
 ogimage: https://i.imgur.com/yfWEnUv.jpeg
+update: 8.2
 
 ---
-
-
-
 
 ## Part 2 Supplies
 In Part 2, the gacha has been simplified. All Part 2 content are available from these gacha:

@@ -126,37 +126,6 @@
 </div>
 </div>
 
-<div class="z-10 hidden lg:flex  items-center justify-center xl:mt-10 ">
-	<button on:click={() => (showSearchModal = true)}
-		>
-	<div
-	  class={cn(
-		"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
-	  )}
-	>
-	  <AnimatedShinyText
-		class=" inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 dark:hover:text-neutral-400"
-
-		>
-		<span class="text-base lg:text-lg">✨ Search Articles</span>
-  
-		<svg
-		  xmlns="http://www.w3.org/2000/svg"
-		  width="24"
-		  height="24"
-		  viewBox="0 0 24 24"
-		  fill="none"
-		  stroke="currentColor"
-		  stroke-width="2"
-		  stroke-linecap="round"
-		  stroke-linejoin="round"
-		  class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
-		  ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg
-		>
-	  </AnimatedShinyText>
-	</div>
-</button>
-  </div>
 
 
 
@@ -210,53 +179,93 @@
 {/if}
 
 
+<div class="container mx-auto  flex flex-row mb-20">
+    <!-- Left Sidebar -->
+    <aside class="hidden xl:flex flex-col w-76 bg-base-200 text-base-content p-4 space-y-4 overflow-y-auto fixed top-0 left-0 h-screen z-20">
+      <!-- Welcome Button/Image -->
+      <div class="pt-4 mb-4 text-center">
+        <a href="/classroom/welcome" class="block">
+          <img src="/images/aichanread.webp" alt="welcome" class="w-12 h-12 mx-auto mb-2 hover:scale-110 transition-transform" />
+        </a>
+      </div>
+  
+      <!-- Categories and Articles -->
+      <div class="menu shadow-md rounded-lg">
+        {#each sortedCategories as category}
+          <div class="mb-2">
+            <p class="menu-title text-slate-100 bg-emerald-700/50 rounded-sm">{category}</p>
+            <ul>
+              {#each categorizedArticles[category] as article}
+                <li>
+                  <a
+                    href={`/classroom/${article.slug}`}
+                    class={`menu-item hover:text-emerald-300 ${article.slug === data.slug ? 'text-emerald-400 ' : ''}`}
+                  >
+                    {article.title}
+                  </a>
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/each}
+      </div>
+    </aside>
+  
+    <!-- Main content area with left margin to account for sidebar -->
+    <div class="flex-1 ml-0 xl:ml-64 px-4">
+      <div class="container mx-auto flex flex-row gap-4 mb-20 pt-4">
+        <!-- Main Content -->
+        <article class="prose grow mx-auto md:max-w-[960px] p-6 rounded-lg prose-h2:bg-linear-to-r prose-h2:from-teal-600 prose-h2:to-teal-400 prose-h2:text-black prose-h2:rounded-sm prose-h2:w-fit prose-h2:px-2 prose-h3:text-amber-300 prose-h1:font-plusjakarta">
+          {#if data.title !== 'Welcome'}
+            <h1 class="mb-1">{data.title}</h1>
+            <p class="mt-0.5 text-sm font-roboto text-slate-400">Updated For Version {data.update}</p>
+          {/if}
+          <svelte:component this={data.content} />
+        </article>
+  
+        <!-- TOC (Right Sidebar) -->
+        {#if tocActive}
+        
+          <aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg shadow-md hidden 2xl:block">
+            
+<div class="z-10 hidden lg:flex  items-center justify-center xl:mt-10 ">
+	<button on:click={() => (showSearchModal = true)}
+		>
+	<div
+	  class={cn(
+		"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+	  )}
+	>
+	  <AnimatedShinyText
+		class=" inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 dark:hover:text-neutral-400"
 
-<div class="container mx-auto  flex flex-row gap-4 mb-20">
-	<!-- Left Sidebar -->
-	<aside class="hidden xl:block xl:w-1/6 bg-base-200 text-base-content rounded-lg space-y-4 sticky top-16 self-start">
-		<!-- Welcome Button/Image -->
-		<div class="pt-4 bg-base-300 shadow-md rounded-lg mb-4 text-center">
-			<a href="/classroom/welcome" class="block">
-				<img src="/images/aichanread.webp" alt="welcome" class="w-12 h-12 mx-auto mb-2 hover:scale-110 transition-transform" />
-			</a>
-		</div>
-		<!-- Categories and Articles -->
-		<div class="menu bg-base-300 shadow-md rounded-lg">
-			{#each sortedCategories as category}
-				<div class="mb-2">
-					<p class="menu-title text-slate-100 bg-emerald-700/50 rounded-sm">{category}</p>
-					<ul>
-						{#each categorizedArticles[category] as article}
-							<li>
-								<a
-									href={`/classroom/${article.slug}`}
-									class={`menu-item hover:text-emerald-300 ${article.slug === data.slug ? 'text-emerald-400 ' : ''}`}
-								>
-									{article.title}
-								</a>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			{/each}
-		</div>
-	</aside>
-
-	<!-- Main Content -->
-	<article class="prose grow mx-auto md:max-w-[960px] p-6  rounded-lg ">		
-		{#if data.title !== 'Welcome'}
-		<h1>{data.title}</h1>
-		{/if}
-		<svelte:component this={data.content} />
-	</article>
-
-	<!-- Table of Contents -->
-	{#if tocActive}
-		<aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg shadow-md hidden 2xl:block">
-			<Toc class="toc p-4 rounded-lg shadow-lg" breakpoint={1500} />
-		</aside>
-	{/if}
-</div>
+		>
+		<span class="text-base lg:text-lg">✨ Search Articles</span>
+  
+		<svg
+		  xmlns="http://www.w3.org/2000/svg"
+		  width="24"
+		  height="24"
+		  viewBox="0 0 24 24"
+		  fill="none"
+		  stroke="currentColor"
+		  stroke-width="2"
+		  stroke-linecap="round"
+		  stroke-linejoin="round"
+		  class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
+		  ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg
+		>
+	  </AnimatedShinyText>
+	</div>
+</button>
+  </div>
+            <Toc class="toc p-4 rounded-lg shadow-lg" breakpoint={1500} />
+          </aside>
+        {/if}
+      </div>
+    </div>
+  </div>
+  
 
 <style>
 	:global(aside.toc > nav > ol > li.active) {

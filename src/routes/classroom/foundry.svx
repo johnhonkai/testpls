@@ -3,6 +3,7 @@ title: Foundry
 category: 'Shop'
 sortOrder: 3
 customSlug: "foundry"
+update: 8.2
 
 ---
 

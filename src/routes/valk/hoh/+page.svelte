@@ -256,7 +256,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Human: Ego</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 ">Elysia | Release Date: v6.0 (15 Sep 2022) </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Elysia | Release Date: v6.0 (15 Sep 2022) </p>
     <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v8.1  (20 Feb 2025) </p>
   
     <!-- Common wrapper to ensure same width -->

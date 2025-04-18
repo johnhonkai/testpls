@@ -3,6 +3,7 @@ title: Impair and Physical Breach
 category: 'Game mechanics'
 sortOrder: 3
 customSlug: "impair"
+update: 8.2
 
 ---
 
@@ -14,34 +15,50 @@ In Part 1, only a few valkyries / equipment can provide impair. These were very 
 - Herrscher of Rebirth, Herrscher of Sentience, Celestial Hymn ( DEF -75% )
 - Terminal Aide ( DEF -70%, 5 seconds only )
 - Divine Prayer ( DEF -80%, random target )
-- Briareus EX, Twins of Eden ( DEF -65% ) and more
+- Weapons: Briareus EX, Twins of Eden ( DEF -65% ) 
 
----
 
 ### Part 2
-In Part 2, currently we only have two Physical DPS, and they have their own impair.
-- New Durandal with her signature stigma (DEF -55%)
-- Jovial Deception with Leaf's Vision stigma (DEF -55%)
+In Part 2, so far all Physical valkyries have their own impair.
 
 ---
 
-## Two impairs do not stack
+### Two impairs do not stack
 
-Impairs do not stack. The latest impair will override the previous impair. However, Herrscher of Rebirth (HoRb) and Herrscher of Sentience (HoS) impair is like an aura, they are constantly reapplied every second on all enemies on the field.
+**IMPAIRS DO NOT STACK**. The latest impair will override the previous impair. 
+
+---
+
+### Impair Aura
+
+Herrscher of Rebirth (HoRB) and Herrscher of Sentience (HoS) impair is like an aura - the impair effect is constantly reapplied every tick on all enemies on the field.
 
 For example, if you use Celestial Hymn (CH) impair during HoS impair duration, CH impair will only apply for a split second before HoS impair is reapplied.
 
 ---
 
-
 ## What is Physical Breach?
-Physical Breach is basically impair, but Physical Breach can stack with impair!
+Physical Breach is basically impair, but **Physical Breach can stack with impair**!
 
 Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode and most Part 1 Physical DPS cannot apply impair, Physical Breach is added as an alternative to impair.
 
 In version 7.6, Serapeum AstralOp has Physical Breach for her assist skill.
 
-In version 7.8, Vita [Lone Planetfarer](/valk/lp) is officially the first valkyrie that can provide Physical Breach for other characters. (Physical Breach +37% (S) / 45% (S1))
+---
+
+### Physical Breach State
+
+In version 7.8, Vita [Lone Planetfarer](/valk/lp) is officially the first valkyrie that can provide Physical Breach for other characters. (Physical Breach +37% (S) / 45% (S1)).
+
+The Physical Breach is provided through a buff called Physical Breach state.
+
+---
+
+### Does Physical Breach stack with other Physical Breach
+1. Physical Breach stacks with other Physical Breach multiplicatively.
+2. Multiple Physical Breach **states** do not stack. You can only have one Physical Breach state. The latest Physical Breach state overrides the previous Physical Breach state. The only exception is with Vita Lone Planetfarer - 
+Vita does not override the previous Physical Breach state, and converts her own Breach state into Physical DMG buff at a certain rate.
+
 
 ---
 
@@ -59,9 +76,3 @@ Basically, Impair stacks with Phy Breach **multiplicatively**.
     Final Impair = 71.65%
   </p>
 
----
-
-## Does Physical Breach stack with other Physical Breach
-1. Physical Breach stacks with other Physical Breach multiplicatively.
-2. Multiple Physical Breach states do not stack. You can only have one Physical Breach state. The latest Physical Breach state overrides the previous Physical Breach state. The only exception is with Vita Lone Planetfarer - 
-Vita does not override the previous Physical Breach state, and converts her own Breach state into Physical DMG buff at a certain rate.

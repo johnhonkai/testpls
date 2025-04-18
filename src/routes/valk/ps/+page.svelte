@@ -37,6 +37,7 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 	import Senadps from "$lib/components/lineup/senadps.svelte";
 	import Simpdps from "$lib/components/lineup/simpdps.svelte";
 	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
+	import Psdps from "$lib/components/lineup/psdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -52,7 +53,7 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
-  //{ name: 'Lineup', short: 'lineup' },
+  { name: 'Lineup', short: 'lineup' },
  // { name: 'Equipment', short: 'equipment' },
  // { name: 'Support Buffs', short: 'support' },
  // { name: 'How to Play', short: 'howtoplay' },
@@ -411,22 +412,15 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Badumdps maindps={true} ></Badumdps>
+      <Psdps maindps={true} ></Psdps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-      <Dududps firstCharName="BW"></Dududps>
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
-
-      <Sparkledps firstCharName="Badum"></Sparkledps>
+      
+      <Badumdps firstCharName="PS"></Badumdps >
 
       <div class="divider  "></div>
 
-      <Simpdps firstCharName="Badum"></Simpdps>
-
-      <div class="divider  "></div>
-
-      <Senadps firstCharName="Badum"></Senadps>
+      <Dududps firstCharName="PS"></Dududps>
 
       {/if}
 

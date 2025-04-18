@@ -3,12 +3,18 @@ title: Battle Pass
 category: 'Shop'
 sortOrder: 1
 customSlug: "battlepass"
+update: 8.1
 
 ---
 
+## UPDATE PENDING
+NOTE: VERSION 8.2 WILL HAVE A HUGE BATTLE PASS UPDATE. THIS PAGE WILL BE UPDATED WHEN IT HITS LIVE VERSION IN ENGLISH SERVERS.
+
+---
 
 ## Introduction to Battle Pass
 HI3 Battle Pass rewards are very different from Honkai Star Rail and Genshin Impact. The biggest differences are:
+
 
 
 <div>

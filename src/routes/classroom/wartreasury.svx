@@ -3,6 +3,7 @@ title: War Treasury Shop
 category: 'Shop'
 sortOrder: 5
 customSlug: "wartreasury"
+update: "7.9 (2024)"
 
 ---
 
@@ -22,23 +23,30 @@ Now, War Treasury shop is just a retirement home for Part 1 valks.
 You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena and Abyss modes.
 
 
-## Still Somewhat Relevant Valkyries
-
+## First Valkyries to Unlock
+I personally recommend unlocking these S-ranks first. Just keep in mind they will not be a big improvement for your account even when fully geared since the meta right now is all about Part 2.
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/L6y9GDQ.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
 </div>
 
-- Herrscher of Sentience: Part 1 Physical Support / DPS
-- Miracle Magical Girl: Fire / Ignite DPS
-- Jade Knight: Part 1 Ice support
-- Reminder, these characters need ranks and equipment to be decent
+### Miracle Magical Girl
+- MECH Fire Ignite DPS.
+- The last S-rank farmable from War Treasury since debut.
+- She is still the only Ignite DPS in the game right now.
+
+### Herrscher of Sentience
+- Part 1 Physical Support and DPS.
+
+### Jade Knight
+- Part 1 Ice support.
+- Can be paired with Herrscher of Human obtained from starter event.
 
 
 ## Elysian Realm
 
 These characters are available in Elysian Realm mode. You can get <span class="text-blue-300">620 crystals</span> from first-clear mission, PER VALK. 
-Unlocking and ranking them up also improves your Dorm Level EXP.
+Unlocking and ranking them up also improves your Dorm Level EXP, and helps you fulfill S+ rank Dorm Errand requirements.
 
 ![wt er valks](https://i.imgur.com/C0RpUOj.jpeg)
 

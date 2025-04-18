@@ -4,6 +4,7 @@ category: 'Astral Ring'
 sortOrder: 3
 customSlug: "pullplan"
 ogimage: https://i.imgur.com/lJqfzIu.jpeg
+update: 7.9
 
 ---
 
@@ -11,10 +12,12 @@ ogimage: https://i.imgur.com/lJqfzIu.jpeg
 
 In Part 2, so far we have a new S-rank every patch. If you read some of the 'loud' comments online, they dislike this change from Part 1. 
 
-In my opinion, this is a little short-sighted and they are still stuck with Part 1 teambuilding.
+In my opinion, this is a little short-sighted and they are still stuck with Part 1 meta.
 
 
-As mentioned in Astral Ring Teambuilding article, Part 2 teams are no longer restricted to only two supports. There are multiple options for an optimal team.
+As mentioned in Astral Ring Teambuilding page:
+- All Part 2 S-ranks are DPS and Support.
+- Part 2 teams are no longer restricted to only two specific supports. There are multiple options for a team.
 
 What does this mean?
 

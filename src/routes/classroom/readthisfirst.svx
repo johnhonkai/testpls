@@ -4,6 +4,7 @@ category: 'Getting Started'
 sortOrder: 1
 customSlug: "readthisfirst"
 ogimage: https://i.imgur.com/EyQMMHI.jpeg
+update: 8.2
 
 ---
 
@@ -20,16 +21,13 @@ I don't expect you to read all the articles here. So here are some quick importa
 ## DO NOT PULL STARTER SUPPLY
 
 <div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/EhtIP0O.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
+  <img src="https://i.imgur.com/X1c2whI.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
 Starter Supply is bad for a number of reasons:
-1. Part 2 valkyries use a new Astral Ring system. The valkyries in Starter Supply Herrscher of Rebirth and Lunar Vow are Part 1 valkyries. 
-2. Starter supply is a worse version of a regular supply:
-
-<div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/sSx2rhW.png" alt="Icon" class="w-[800px] h-auto rounded-lg" />
-</div>
+1. Due to how the meta works, it is better to use your crystal to pull the newest valk. As F2P, your crystal income is very limited, you can only get one S-rank fully-geared every one or two patches, so you don't want to waste your crystal on older valks.
+2. Starter supply is only available for 90 days, and the guarantee counter is not shared with other supplies. Normal supplies are always available (in rotation) and the guarantee counter is shared with other normal supplies.
+3. The character [Deepspace Anchor](/valk/sena) is available in Battle Pass version 8.2 - 8.4. If you can afford it, consider purchasing Battle Pass to get her instead of pulling her from this supply. 
 
 
 ## DON'T UPGRADE EVERYTHING
@@ -38,7 +36,7 @@ Starter Supply is bad for a number of reasons:
   <img src="https://i.imgur.com/lgqzwbX.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of valkyries and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single valk or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on latest valkyries (Part 2 Valkyries). 
+Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of valkyries and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single valk or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on latest valkyries. 
 
 ## DO DAILIES AND EVENTS
 
@@ -53,27 +51,26 @@ This is where your dailies / weeklies / limited-time event missions are.
 
 None. All those free characters are old Part 1 valks or missing weapon and stigma.
 
-The best starter team is the first Part 2 S-rank + weapon that you pull. Then put [Coralie Valkyrie Blastmetal](/valk/coralie) as the support. It will be MILES better than whatever you get from those starter event.
+The best starter team is the first Part 2 S-rank that you pulled. Then, put [Coralie Valkyrie Blastmetal](/valk/coralie) as the support. It will be A LOT better than whatever you get from those starter events.
 
 
 ## THERE IS NO BROKEN CHARACTER
 
-There is no Acheron or Firefly broken-tier characters in Honkai Impact. 
+There is no Castorice or Mavuika or Miyabi in Honkai Impact. 
 
 1. The most important end-game mode EX Abyss uses a 'Weather' system, which buffs certain damage types or characters (like Fire UP, Melee UP, Imaginary Type UP), and every patch adds new bosses with weird mechanics that favor the newest characters. These factors combined have ensured that no character can be the best at everything. Some DPS can bruteforce more bosses than others, but can never bruteforce everything.
 
-2. The game has just started its brand new Part 2 phase. The meta is still very fresh and new.
-
-3. You might have heard a famous online saying of <span class="text-emerald-500"> "Pull support first because they last longer."</span> Well, all Part 2 S-ranks are both DPS and Support.
+2. You may have heard a famous online saying of <span class="text-emerald-500"> "Pull support first because they last longer."</span> Well, that quote is from Part 1. All Part 2 S-ranks are both DPS and Support.
 
 ### So, what do I pull with my crystal?
 
-For v7.9, check out [Sparkle](/valk/sparkle) and [Lone Planetfarer](/valk/lp)
+Pull the latest S-rank. 
 
 
 ## THE REAL GAME STARTS AT LV 80+
 
 Once you get to Level 80, you can breakthrough, increasing your max level, and unlocking an entirely new difficulty tier called **Exalted Tier** and a new end-game mode **Superstring Dimension**. 
 
-Yes, it is harder, but manageable, also gives significantly more crystal income per week. 
-And it only takes around a month for a new account to get to Lv80.
+Yes, it is harder, but manageable, and gives significantly more crystal income per week. 
+
+It only takes around a month for a new account to get to Lv80.

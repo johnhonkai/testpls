@@ -3,6 +3,7 @@ title: Time Stop
 category: 'Game mechanics'
 sortOrder: 5
 customSlug: "timestop"
+update: 8.2
 
 ---
 

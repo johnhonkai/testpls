@@ -2,7 +2,15 @@ export const valkyries = [
 
     { name: 'RoO Valk no Reso tag', image: '/images/valkportrait/unknownchar.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Omniscient Star' ] , url: '/valk/coralie', cost: 150},
 
-    
+    { name: 'Peregrine Sword', 
+        image: '/images/valkportrait/ps.png', 
+        type: 'BIO', 
+        element: 'Physical', 
+        astralRing:'Law of Ascension', 
+        artag: ['Heavenly Shift'] , 
+        url: '/valk/ps',
+        cost: 200,
+    },   
     
     { name: 'Ba-dum! Fiery Wishing Star', 
         image: '/images/valkportrait/kiana badum.png', 

@@ -62,7 +62,9 @@
     { name: 'Lightning', image: '/images/element/Core_Lightning_DMG.png' },
     { name: 'Ice', image: '/images/element/Core_Ice_DMG.png' },
     { name: 'Fire', image: '/images/element/Core_Fire_DMG.png' },
-    { name: 'Physical', image: '/images/element/Core_Physical.png' }
+    { name: 'Physical', image: '/images/element/Core_Physical.png' },
+    { name: 'Bleed', image: '/images/element/Core_Bleed_DMG.png' }
+
   ];
 
   const astralRings = [
@@ -76,7 +78,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
-  { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: 'Physical', astralRing: ['Law of Ascension'] , url: '/valk/ps',  badge: 'BETA', id:54},
+  { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/ps',  badge: 'BETA', id:54},
   { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/kiana badum.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum',  badge: 'New', id:53},
   { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Wheel of Destiny' , 'Part 1'], badge: 'Updated' , url: '/valk/hoh', id:25},
   { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Law of Ascension'] , url: '/valk/durandal' ,  id:16},
@@ -90,16 +92,16 @@
   { name: 'Valkyrie Boltstorm', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', type: 'Mech', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/helia', id:7 },
   { name: 'Valkyrie Blastmetal', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', type: 'Psy', element: 'Fire', astralRing: ['Rite of Oblivion'] , url: '/valk/coralie', id:6},
   { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/fov', id:5},
-  { name: 'Cosmic Expression', image: '/images/valkportrait/Griseo Cosmic Expression.png', type: 'SD', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ce', id:15},
-  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/lv', id:52},
-  { name: 'Miracle ☆ Magical Girl', image: '/images/valkportrait/Sirin Miracle Magical Girl.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/sirin', id:18},
+  { name: 'Cosmic Expression', image: '/images/valkportrait/Griseo Cosmic Expression.png', type: 'SD', element: ['Physical' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/ce', id:15},
+  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/lv', id:52},
+  { name: 'Miracle ☆ Magical Girl', image: '/images/valkportrait/Sirin Miracle Magical Girl.png', type: 'Mech', element: ['Fire' , 'Ignite'], astralRing: ['Part 1'] , url: '/valk/sirin', id:18},
 
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/horb', id:17},
   { name: 'Sugary Starburst', image: '/images/valkportrait/Kira Sugary Starburst.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kira', id:19},
   { name: 'Dreamweaver', image: '/images/valkportrait/Hare Dreamweaver.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/dreamweaver', id:20},
   { name: 'Terminal Aide 0017', image: '/images/valkportrait/Prometheus Terminal Aide.png', type: 'Img', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/prom', id:24},
 
-  { name: 'Valkyrie Quicksand', image: '/images/valkportrait/Susannah Valkyrie Quicksand.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/vq', id:21},
+  { name: 'Valkyrie Quicksand', image: '/images/valkportrait/Susannah Valkyrie Quicksand.png', type: 'Qua', element: ['Physical' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/vq', id:21},
 
   { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing: ['Part 1', 'Rite of Oblivion'] , url: '/valk/hofi' , id:3 },
   { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hoo', id:2 } ,
@@ -110,7 +112,7 @@
   { name: 'Chrono Navi', image: '/images/valkportrait/Chrono Navi.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/cn', id:22},
   { name: 'Jade Knight', image: '/images/valkportrait/Sushang Jade Knight.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/sushang', id:23},
   { name: 'Helical Contraption', image: '/images/valkportrait/VillV.png', type: 'Qua', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/villv', id:26},
-  { name: 'Starry Impression', image: '/images/valkportrait/Griseo Starry Impression.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/si', id:27},
+  { name: 'Starry Impression', image: '/images/valkportrait/Griseo Starry Impression.png', type: 'Psy', element: ['Physical' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/si', id:27},
   { name: 'Disciplinary Perdition', image: '/images/valkportrait/Aponia Disciplinary Perdition.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/aponia', id:28},
   { name: 'Golden Diva', image: '/images/valkportrait/Eden Golden Diva.png', type: 'Img', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/eden', id:29},
   { name: 'Reverist Calico', image: '/images/valkportrait/Pardofelis Reverist Calico.png', type: 'Img', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/pardo', id:30},
@@ -146,7 +148,7 @@
   // Filter the valkyries based on the selected filters
   $: filteredValkyries = valkyries.filter(valk => {
     const typeMatch = selectedType === 'All' || valk.type === selectedType;
-    const elementMatch = selectedElement === 'All' || valk.element === selectedElement;
+    const elementMatch = selectedElement === 'All' || valk.element.includes(selectedElement);
     const astralRingMatch = selectedAstralRing === 'All' || valk.astralRing.includes(selectedAstralRing);
     return typeMatch && elementMatch && astralRingMatch;
   });
@@ -157,6 +159,7 @@
     if (type === 'astralRing') selectedAstralRing = value;
   }
 
+  
    // Wait for all images in the ValkyrieLink components to load
    onMount(() => {
     const imagePromises = valkyries.map((valkyrie) => {
@@ -203,6 +206,7 @@
           {#each types as type}
             <button
               type="button"
+              title={type.name}
               class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
               class:bg-gray-300={selectedType === type.name}
               on:click={() => selectFilter('type', type.name)}>
@@ -218,6 +222,7 @@
           {#each elements as element}
             <button
               type="button"
+              title={element.name}
               class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
               class:bg-gray-300={selectedElement === element.name}
               on:click={() => selectFilter('element', element.name)}>

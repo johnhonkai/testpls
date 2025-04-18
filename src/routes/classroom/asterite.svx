@@ -3,6 +3,7 @@ title: Asterite Shop
 category: 'Shop'
 sortOrder: 4
 customSlug: "asterite"
+update: 8.2
 
 ---
 
@@ -28,7 +29,7 @@ Part 1 characters are slowly being pushed out from all teams. Some of them are s
 
 ### Elysian Realm
 These characters are available in Elysian Realm mode. You can get <span class="text-blue-300">620 crystals</span> from first-clear mission, PER VALK. 
-You only need to unlock them at A-rank for Elysian Realm. Unlocking and ranking them up also improves your Dorm Level EXP.
+You only need to unlock them at A-rank for Elysian Realm. Unlocking and ranking them up also improves your Dorm Level EXP, and helps you fulfill S+ rank Dorm Errand requirements.
 
 
 ![Characters in Elysian Realm](https://i.imgur.com/RdlOVa8.jpeg)
@@ -39,7 +40,7 @@ You can get Asterite currency naturally by doing dailies, weeklies, events, Dorm
 
 There is one feature to get Asterite that might be easily missed / forgotten by new players.
 
-As you complete missions, you gain Energy. And you can use energy to convert excess materials into Asterites. Check this once a week.
+As you complete missions, you gain Energy. And you can use energy to convert excess materials into Asterites. Check this once a week. However, as a new player, you might not have enough materials to do this exchange. It is fine to let it stay maxed out.
 
 ![ast 1](https://i.imgur.com/H04wmVA.jpeg)
 

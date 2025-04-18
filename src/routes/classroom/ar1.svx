@@ -4,6 +4,7 @@ category: 'Astral Ring'
 sortOrder: 1
 customSlug: "ar1"
 ogimage: https://i.imgur.com/wmGLHBO.jpeg
+update: 8.2
 
 ---
 

@@ -3,16 +3,19 @@ title: Elemental Breach
 category: 'Game mechanics'
 sortOrder: 4
 customSlug: "elebreach"
+update: 8.2
 
 ---
 
 ## What is Elemental Breach?
-Enemies have Elemental Resistance stat. **Elemental Breach** makes your attack directly substracts the Elemental Resistance stat of an enemy. It's a very powerful buff, I guess you can say it's like PEN RES from Star Rail.
+Enemies have Elemental Resistance stat. **Elemental Breach** makes your attack ignores a portion of the Elemental Resistance stat of an enemy. It's a very powerful buff. It's basically like PEN RES from Star Rail.
 
 
 ## Elemental Breach State
 
 Ele Breach is very common in S-rank Valkyries. But only a few S-rank can give Elemental Breach for other valkyries through a buff called **Elemental Breach state.**
+
+### Part 1 Valkyries
 
 1. Azure Empyrea<br/>
   The first valk to provide Elemental Breach state. She's just and fair, she gives Elemental Breach for all valks, no questions asked.
@@ -26,26 +29,23 @@ Ele Breach is very common in S-rank Valkyries. But only a few S-rank can give El
 4. Lunar Vow <br/>
   Provides Elemental Breach state only for Lightning valkyries.
 
-5. Senadina <br/>
+### Part 2 Valkyries
+
+1. Senadina <br/>
   Provides Elemental Breach state for World Star and Wheel of Destiny characters.
 
-6. Schicksal's Imperative <br/>
+2. Schicksal's Imperative <br/>
   Provides Elemental Breach state only for Theresa characters when AR is not activated.
 
-7. Vita Lone Planetfarer<br/>
-    - When AR World Star is activated, LP provides Elemental Breach state for World Star characters with Fire / Lightning / Ice DMG tag.
-    - When AR Wheel of Destiny is activated, LP provides Elemental Breach state for Wheel of Destiny characters.
-    - When AR Reason of Promotion is activated, LP provides Elemental Breach state for Reason of Promotion characters with Fire / Lightning / Ice DMG tag.
-    - When Astral Ring is activated, but AR World Star, Wheel of Destiny and Reason of Promotion are not activated, LP provides Elemental Breach state for characters with Fire / Lightning / Ice DMG tag.
-
----
+3. Vita Lone Planetfarer<br/>
+  Provides Elemental Breach state when Astral Ring is activated.
+  When WS / WoD / LoA is activated, the Elemental Breach state is only applied for valks with the same AR.
 
 ## Does Elemental Breach stack?
 1. Elemental Breach stacks with other Elemental Breach multiplicatively.
-2. Multiple Elemental Breach states do not stack. You can only have one Elemental Breach state. The latest Ele Breach state overrides the previous Ele Breach state. The only exception is with Vita Lone Planetfarer - 
+2. Multiple Elemental Breach **states** do not stack. You can only have one Elemental Breach state. The latest Ele Breach state overrides the previous Ele Breach state. The only exception is with Vita Lone Planetfarer - 
 Vita does not override the previous Ele Breach state, and converts her own Breach state into Elemental DMG buff at a certain rate.
 
----
 
 ## Translation Error
 

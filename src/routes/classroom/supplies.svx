@@ -3,6 +3,7 @@ title: Part 1 Gacha
 category: 'Others'
 sortOrder: 2
 customSlug: "gacha"
+update: 8.2
 
 ---
 

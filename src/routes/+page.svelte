@@ -87,8 +87,8 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2025-2-21'); // Start date for v7.9 in Regional Servers
-      const cnStartDate = new Date('2025-3-28');       // Start date for v7.9 in CN Servers
+      const regionalStartDate = new Date('2025-2-22'); // Start date Regional Servers
+      const cnStartDate = new Date('2025-3-29');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
@@ -223,20 +223,9 @@
               </div>
 
               <p class=" text-sm sm:text-base text-slate-100 px-2">
-                <span class="font-bold">LoveKiana ,  MemoriesWithU
+                <span class="font-bold">MASTERCHEF
                 </span><br/>
-                100 crystals 
-              </p>
-              
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2  mt-2 ">
-                <span class="font-bold">E7TTYFXSZA , MOONTUNA , WithKiana                </span><br/>
-                60 crystals + Materials
-              </p>
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2  mt-2 ">
-                <span class="font-bold">Kiana2025              </span><br/>
-                Phone Keychain
+                350 crystals 
               </p>
               
             </div>
