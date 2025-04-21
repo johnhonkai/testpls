@@ -25,7 +25,7 @@ I don't expect you to read all the articles here. So here are some quick importa
 </div>
 
 Starter Supply is bad for a number of reasons:
-1. Due to how the meta works, it is better to use your crystal to pull the newest valk. As F2P, your crystal income is very limited, you can only get one S-rank fully-geared every one or two patches, so you don't want to waste your crystal on older valks.
+1. Due to how the meta works, it is better to use your crystal to pull the newest valkyrie. As F2P, your crystal income is very limited, you can only get **ONE** S-rank fully-geared every one or two patches, so you don't want to waste your crystal on older valks.
 2. Starter supply is only available for 90 days, and the guarantee counter is not shared with other supplies. Normal supplies are always available (in rotation) and the guarantee counter is shared with other normal supplies.
 3. The character [Deepspace Anchor](/valk/sena) is available in Battle Pass version 8.2 - 8.4. If you can afford it, consider purchasing Battle Pass to get her instead of pulling her from this supply. 
 
@@ -36,7 +36,7 @@ Starter Supply is bad for a number of reasons:
   <img src="https://i.imgur.com/lgqzwbX.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
 </div>
 
-Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of valkyries and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single valk or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on latest valkyries. 
+Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of characters and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single character or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on the latest valkyries. 
 
 ## DO DAILIES AND EVENTS
 
