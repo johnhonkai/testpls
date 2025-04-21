@@ -507,10 +507,11 @@
                     4
                 </div>
 
+
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard />
-                    <BossCard />
-                    </div>
+                    <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" date="May 16" weather="Fire" bosspage="/boss?firekosma" />
+                    <BossCard image="/images/Bosses/Sa_SSS.webp" date="May 19" weather="Stardust" bosspage="/boss?sa" />
+                </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
                         <BossCard />
