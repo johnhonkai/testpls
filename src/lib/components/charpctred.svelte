@@ -35,7 +35,7 @@
 <div class="relative w-20 h-20 sm:w-28 sm:h-28">
     <!-- Badge for teampct with conditional background color -->
      {#if teampct}
-    <span class="sm:badge-md badge badge-sm w-10 absolute top-0.5 right-0.5 text-white px-1 rounded-sm z-10 text-center {getTeampctBg(teampct)}">
+    <span class="sm:badge-md badge badge-sm w-10 absolute top-0.5 right-0.5 text-white px-1 rounded-sm z-10 text-center  {getTeampctBg(teampct)}">
         {teampct}
     </span>
     {/if}
