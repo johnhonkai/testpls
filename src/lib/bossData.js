@@ -326,7 +326,7 @@ export const bossData = {
 
   bleedhusk: {
     name: 'Nihilius Husk', 
-    mechanics: 'After around 1.5 HP bar, Husk will kneel, during this time, Husk takes more damage. Transition phase has high hitcount HP.', 
+    mechanics: 'After around 1.5 HP bar, Husk will kneel, during this time, Husk takes more damage. Final phase has high hitcount HP.', 
     weakness: 'Physical (L)', 
       typeicon: "images/type/IconPSI.png", 
       bosspic: "images/Bosses/Husk - Nihilus (Hitcount).webp", 
@@ -2268,6 +2268,46 @@ export const teamData = {
 
 
     ] 
+  },
+
+  bleedhusk: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '1-2, 5, 7-10',
+            pct: '12%',
+            bottext: "Vita uses SusannahT AladdinMB. Highest score: S2 849, SS 881, 9S 897"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '3-4',
+            pct: '3%',
+            bottext: "Vita uses signature gear. Highest score: SS 863, SSS 890"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '6',
+            pct: '42%',
+            bottext: "Vita uses signature gear. Highest score: S2 857, SS 871, 9S 884"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '13',
+            pct: '43%',
+            bottext: "Vita uses SusannahT AladdinMB. Highest score: S 858, SS 877"
+          },
+        ]
+      }
+    ],
   },
 }
 

@@ -241,7 +241,7 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-5 mb-2 sm:mb-0">Herrscher of Rebirth</h1>
 
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Seele Vollerei | Release Date: v6.8 (3 Aug 2023)</p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Seele Vollerei | Release Date: v6.8 (3 Aug 2023)</p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">

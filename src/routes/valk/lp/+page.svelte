@@ -250,7 +250,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center mb-2 sm:mb-0">Lone Planetfarer</h1>
 
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Vita | Release Date: v7.8 (17 Oct 2024)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Vita | Release Date: v7.8 (17 Oct 2024)  </p>
 
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">

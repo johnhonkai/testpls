@@ -249,7 +249,7 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Finality</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-1">Kiana Kaslana | Release Date: v6.4 (16 Feb 2023)   </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Kiana Kaslana | Release Date: v6.4 (16 Feb 2023)   </p>
   <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v7.8 (17 Oct 2024)</p>
 
   <!-- Common wrapper to ensure same width -->

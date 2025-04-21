@@ -250,14 +250,14 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Valkyrie Boltstorm</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Erdős Helia | Release Date: v7.3 (29 Feb 2024)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Erdős Helia | Release Date: v7.3 (29 Feb 2024)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">
     <!-- Container with 4 pictures (Centered) -->
     <div class="flex flex-col items-center">
       <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-rose-500 outline-1 bg-rose-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
+        <img src="/images/ranks/Valkyrie_A.webp" alt="A-rank" class="w-auto h-8 md:h-10" />
         <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
         <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
         <img src="/images/artype/ar world star.png" alt="ar" class="w-auto h-8 md:h-10" />

@@ -244,7 +244,7 @@ onMount(async () => {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Chrono Navi</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Ai Hyperion Λ | Release Date: v6.2 (8 Dec 2022)
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Ai Hyperion Λ | Release Date: v6.2 (8 Dec 2022)
 
   </p>
 

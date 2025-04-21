@@ -249,7 +249,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Sentience</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 ">Fu Hua | Release Date: v4.6 (4 Mar 2021)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Fu Hua | Release Date: v4.6 (4 Mar 2021)  </p>
     <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v7.0 (26 Oct 2023)  </p>
 
   

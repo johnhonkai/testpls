@@ -247,8 +247,7 @@ async function increaseLike() {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Reign Solaris</h1>
 
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Bianka 'Durandal' Ataegina  </p>
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Release Date: v8.0 (9 Jan 2025)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Bianka | Release Date: v8.0 (9 Jan 2025) </p>
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">
     <!-- Container with 4 pictures (Centered) -->

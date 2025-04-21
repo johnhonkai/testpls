@@ -246,7 +246,7 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Fenghuang of Vicissitude</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Fu Hua | Release Date: v7.2 (18 Jan 2024)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Fu Hua | Release Date: v7.2 (18 Jan 2024)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">

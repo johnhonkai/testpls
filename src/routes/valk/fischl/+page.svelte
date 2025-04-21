@@ -238,7 +238,7 @@ onMount(async () => {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Prinzessin der Verurteilung!</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Fischl | Release Date: v4.9 (8 Jul 2021)
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Fischl | Release Date: v4.9 (8 Jul 2021)
 
   </p>
 
@@ -344,7 +344,7 @@ onMount(async () => {
 
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
@@ -362,7 +362,7 @@ onMount(async () => {
               <b class="text-amber-400">Competitive</b><br/> No uses.
           </p>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -444,7 +444,7 @@ onMount(async () => {
               </div>
   
   
-                <div class="divider divider-neutral"></div>
+                <div class="divider  "></div>
 
               <h2 class="text-xl font-semibold text-center  text-blue-400">OTHER EQUIPMENT OPTIONS</h2>
 
@@ -469,7 +469,7 @@ onMount(async () => {
               </div>
   
   
-                <div class="divider divider-neutral"></div>
+                <div class="divider  "></div>
 
               <div class="flex flex-col justify-center items-center">
                   
@@ -505,7 +505,7 @@ onMount(async () => {
                 <h4 class="text-base sm:text-base text-white">Turgenev TB + Tesla Band M / Avogadro M</h4>
                 </div>
 
-                <div class="divider divider-neutral"></div>
+                <div class="divider  "></div>
 
               <div class="flex flex-col justify-center items-center">
 
@@ -616,7 +616,7 @@ onMount(async () => {
         </p>
           </div>
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             <!-- First Signet with 'Start' text -->
@@ -659,7 +659,7 @@ onMount(async () => {
 
               </p>
             </div>
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -689,7 +689,7 @@ onMount(async () => {
           </div>
             
           </div>
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
@@ -723,7 +723,7 @@ onMount(async () => {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">

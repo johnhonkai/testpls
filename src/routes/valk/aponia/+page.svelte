@@ -248,7 +248,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Disciplinary Perdition</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Aponia | Release Date: v5.7 (19 May 2022)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Aponia | Release Date: v5.7 (19 May 2022)  </p>
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
@@ -341,23 +341,19 @@ function selectTabMobile(event) {
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">BATTLE PASS RECOMMENDATION</h2>
 
         <p class="text-sm sm:text-base mt-4 mb-4">
-          <strong class="text-amber-400">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Aponia and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+          I recommend getting Divine Keys first from Battle Pass for the global +10 ATK.
       </p>
 
-        <p class="text-sm sm:text-base mt-4">
-            <strong class="text-amber-400">Competitive</strong> <br/> No top score.
-        </p>
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Aponia:</strong> Dorm Supply, 6 stamps in Elysian Realm shop.</li>
-            <li ><strong>Aponia Equipment:</strong> Focused Supply.</li>
-            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
+            <li ><strong>Aponia:</strong> Dorm Supply, Battle Pass, 6 stamps in Elysian Realm shop.</li>
+            <li ><strong>Aponia Equipment:</strong> Battle Pass.</li>
 
         </ul>
         <div class="divider  "></div>

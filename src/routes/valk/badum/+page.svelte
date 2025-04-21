@@ -22,6 +22,7 @@ import { app } from "$lib/firebaseConfig";
 
 const db = getFirestore(app); // Ensure this is used for Firebase operations
 
+import Lightbox from '$lib/components/lightbox.svelte';
 
 
 
@@ -54,11 +55,11 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
- // { name: 'Support Buffs', short: 'support' },
+  { name: 'Support Buffs', short: 'support' },
  // { name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
- // { name: 'Rank Up', short: 'rank' },
+  { name: 'Rank Up', short: 'rank' },
  // { name: 'Popular Question', short: 'qna' },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
@@ -400,7 +401,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Badum:</strong> Battlesuit Supply</li>
               <li><strong>Badum's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Badum's Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.1</li>
+              <li><strong>Badum's Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -510,8 +511,41 @@ async function increaseLike() {
 
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">SUPPORT BUFFS</h2>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Badum%20Buff.webp"
+          alt="Buff 1"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Badum%20Buff.webp')}
+        />
+      </div>
+      
+      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
+        <p class="mb-4 font-semibold">How to activate Badum support buffs:</p>
+        
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">DMG Share Link</p>
+            <p>- Combo ATK, Weapon Skill and Immaculate Duet will apply the DMG share link to enemies. <br/>
+              - In Law of Ascension team, during Stellar Shift, bang drum with the proper button prompt will apply the link too.
+            </p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300 mt-6">Badum Stigma Buff</p>
+           <p>Combo ATK or QTE triggers an important stigma buff [Let's Have Fun!] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-orange-300  mt-6">Passive</p>
+            <p>The rest of her buffs are activated passively.</p>
+          </div>
 
 
+      </div>
+
+      <!-- Lightbox Component -->
+      <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
       {/if}
 
       {#if selectedTab === 'Elysian Realm'}
@@ -854,6 +888,7 @@ async function increaseLike() {
       {/if}
 
 
+
       {#if selectedTab === 'Rank Up'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
 
@@ -861,7 +896,251 @@ async function increaseLike() {
         <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded-sm m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
         </p>
       </div>
+      <h2 class="text-xl font-semibold my-4 cooltext text-white">NOTABLE RANK-UP</h2>
+
+        <!-- Notable Rank Ups Section -->
+        <div class="flex flex-col lg:flex-row gap-4 mb-8">
+          <!-- DPS Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
+            <ul class=" text-slate-100 text-base">
+              <li>S2 and SS: Higher DMG share ratio for linked enemies. </li>
+              <li>All ranks have damage upgrades.</li>
+            </ul>
+          </div>
       
+          <!-- Support Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
+            <ul class=" text-slate-100 text-base">
+              <li>S2 and SS: Higher DMG share ratio for linked enemies. </li>
+              <li>S2: Unlocks time fracture on demand. </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="divider  "></div>
+
+        {#if !isMobile}
+        <!-- Full Rank Up List -->
+        <div class="text-slate-100 text-left ">
+          <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
+          <table class="table table-zebra w-full bg-gray-800 rounded-lg shadow-md text-base">
+            <thead class="bg-gray-700">
+              <tr class="text-white" >
+                <th class="p-3 font-semibold w-[10px]">RANK</th>
+                <th class="p-3 font-semibold w-[550px]">SKILL</th>
+                <th class="p-3 font-semibold w-[150px]">GOOD FOR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sample Row 1 -->
+              <tr>
+                <td >S1</td>
+                <td>
+                  For every Critical Value detonated, SD enemies take 4 ➔ 5% more Total DMG from Weapon Skill and Immaculate Duet. Max 20% ➔ 40%.
+                </td>
+                <td class="p-3">DPS </td>
+              </tr>
+              <!-- Sample Row 2 -->
+              <tr>
+                <td>S2</td>
+                <td>
+
+                  - UNLOCK: Combo ATK, Weapon Skill and Basic SEQ 4 can trigger evasion skill.
+                  <br/>
+                  - Linked enemies share 6% ➔ 7% of DMG. If Badum is the leader, the DMG share ratio for Badum's own damage is 15% ➔ 16%.
+                  <br/>
+                  - When an enemy on the field is hit by Badum’s Combo ATK or Stellar Shift, the enemy takes 11% ➔ 18% more Total DMG from Badum's Weapon Skill and Ultimate.
+                  <br/>
+                  - When LoA is active: During Merriment, Badum Total DMG +10%  ➔ 13%.
+
+                </td>
+                <td>DPS<br/>Support<br/>Time fracture on demand</td>
+              </tr>
+              <tr>
+                <td>S3</td>
+                <td>
+                  Leader Skill:<br/>
+                  - Badum's Stellar Shift Fire DMG +15% ➔ 25%.
+                  <br/>
+                  - Enemies take 14% ➔ 15% more Fire DMG from Badum (independent multiplier).
+
+                </td>
+                <td>DPS</td>
+              </tr>
+              <tr>
+                <td>SS</td>
+                <td>
+                  - UNLOCK: Upon QTE entry, Badum gain 40 Fortune and 10 sp.
+                  <br/>
+                  - Self Fire DMG +20% ➔ 25%. Passion mark explosion deals additional 480% ➔ 540% ATK of Fire DMG. Ult and Immaculate Duet deal additional 500% ➔ 600% ATK of Fire DMG.
+                  <br/>
+                  - Linked enemies share 7% ➔ 8% of DMG. If Badum is the leader, the DMG share ratio for Badum's own damage is 16% ➔ 17%.
+                </td>
+                <td>DPS<br/>Support</td>
+
+              </tr>
+              <tr>
+                <td>SS1</td>
+                <td>
+                  When LoA is active: During Merriment, Badum Total DMG +13%  ➔ 15%.
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
+                <td>SS2</td>
+                <td>
+                  When an enemy on the field is hit by Badum’s Combo ATK or Stellar Shift, the enemy takes 18% ➔ 20% more Total DMG from Badum's Weapon Skill and Ultimate.
+
+                
+                
+                </td>
+                <td>DPS </td>
+              </tr>
+              <tr>
+                <td>SS3</td>
+                <td>
+                  Leader Skill:<br/>
+                  - Badum's Stellar Shift Fire DMG +25% ➔ 35%.
+                  <br/>
+                  - Enemies take 15% ➔ 16% more Fire DMG from Badum (independent multiplier).
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
+                <td>SSS</td>
+                <td>
+                  - UNLOCK: Upon casting QTE or Stellar Shift, reset evasion cd.
+                  <br/>
+                  - Self Fire DMG +25% ➔ 30%. Passion mark explosion deal additional 540% ➔ 600% ATK of Fire DMG. Ult and Immaculate Duet deals additional 600% ➔ 700% ATK of Fire DMG
+                </td>
+                <td>DPS
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        {/if}
+
+        {#if isMobile}
+        <!-- Full Rank Up List -->
+        <div class="text-slate-100 text-left ">
+          <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
+        </div>
+        <div class="accordion space-y-2 mb-4">
+          <!-- Accordion Item 1 -->
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(1)}>
+              <span>S1</span>
+              <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 1 ? 'open' : ''}">
+              <p>	For every Critical Value detonated, SD enemies take 4 ➔ 5% more Total DMG from Weapon Skill and Immaculate Duet. Max 20% ➔ 40%.
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(2)}>
+              <span>S2</span>
+              <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 2 ? 'open' : ''}">
+              <p>	- UNLOCK: Combo ATK, Weapon Skill and Basic SEQ 4 can trigger evasion skill.<br/>
+                - Linked enemies share 6% ➔ 7% of DMG. If Badum is the leader, the DMG share ratio for Badum's own damage is 15% ➔ 16%.<br/>
+                - When an enemy on the field is hit by Badum’s Combo ATK or Stellar Shift, the enemy takes 11% ➔ 18% more Total DMG from Badum's Weapon Skill and Ultimate.<br/>
+                - When LoA is active: During Merriment, Badum Total DMG +10% ➔ 13%.
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> DPS, Support, Time fracture on demand</p>
+            </div>
+          </div>
+
+        
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(3)}>
+            <span>S3</span>
+            <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 3 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              - Badum's Stellar Shift Fire DMG +15% ➔ 25%.<br/>
+              - Enemies take 14% ➔ 15% more Fire DMG from Badum (independent multiplier).	
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(4)}>
+            <span>SS</span>
+            <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 4 ? 'open' : ''}">
+            <p>- UNLOCK: Upon QTE entry, Badum gain 40 Fortune and 10 sp.<br/>
+              - Self Fire DMG +20% ➔ 25%. Passion mark explosion deals additional 480% ➔ 540% ATK of Fire DMG. Ult and Immaculate Duet deal additional 500% ➔ 600% ATK of Fire DMG.<br/>
+              - Linked enemies share 7% ➔ 8% of DMG. If Badum is the leader, the DMG share ratio for Badum's own damage is 16% ➔ 17%.
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(5)}>
+            <span>SS1</span>
+            <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 5 ? 'open' : ''}">
+            <p>When LoA is active: During Merriment, Badum Total DMG +13% ➔ 15%.</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(6)}>
+            <span>SS2</span>
+            <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 6 ? 'open' : ''}">
+            <p>When an enemy on the field is hit by Badum’s Combo ATK or Stellar Shift, the enemy takes 18% ➔ 20% more Total DMG from Badum's Weapon Skill and Ultimate.
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(7)}>
+            <span>SS3</span>
+            <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 7 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              - Badum's Stellar Shift Fire DMG +25% ➔ 35%.<br/>
+              - Enemies take 15% ➔ 16% more Fire DMG from Badum (independent multiplier).
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(8)}>
+            <span>SSS</span>
+            <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 8 ? 'open' : ''}">
+            <p>		- UNLOCK: Upon casting QTE or Stellar Shift, reset evasion cd. <br/>
+              - Self Fire DMG +25% ➔ 30%. Passion mark explosion deal additional 540% ➔ 600% ATK of Fire DMG. Ult and Immaculate Duet deals additional 600% ➔ 700% ATK of Fire DMG.	</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS
+            </p>
+          </div>
+        </div>
+
+
+    </div>
+        {/if}
       {/if}
 
       {#if selectedTab === 'How to Play'}

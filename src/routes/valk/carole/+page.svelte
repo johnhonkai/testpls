@@ -237,7 +237,7 @@ onMount(async () => {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Sweet 'n' Spicy</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Carole | Release Date: v5.3 (2 Dec 2021)
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Carole | Release Date: v5.3 (2 Dec 2021)
 
   </p>
 

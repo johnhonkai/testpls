@@ -249,7 +249,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Valkyrie Gloria</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Durandal | Release Date: v3.8 (2 Apr 2020)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Durandal | Release Date: v3.8 (2 Apr 2020)  </p>
 
   
     <!-- Common wrapper to ensure same width -->

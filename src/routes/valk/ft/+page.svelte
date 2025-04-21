@@ -249,7 +249,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Fervent Tempo Δ</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">Delta | Release Date: v4.3 (29 Oct 2020)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Delta | Release Date: v4.3 (29 Oct 2020)  </p>
 
   
     <!-- Common wrapper to ensure same width -->

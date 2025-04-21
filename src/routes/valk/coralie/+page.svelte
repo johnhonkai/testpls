@@ -246,7 +246,7 @@ onMount(async () => {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Valkyrie Blastmetal</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider sm:block hidden text-slate-100">Coralie 6626 Planck | Release Date: v7.3 (29 Feb 2024)
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Coralie 6626 Planck | Release Date: v7.3 (29 Feb 2024)
 
   </p>
 

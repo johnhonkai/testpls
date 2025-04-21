@@ -250,7 +250,7 @@ function selectTabMobile(event) {
   <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-2 sm:mb-0">Herrscher of Origin</h1>
 </div>
   <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Raiden Mei | Release Date: v6.4 (16 Feb 2023)  </p>
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Raiden Mei | Release Date: v6.4 (16 Feb 2023)  </p>
 
   <!-- Common wrapper to ensure same width -->
   <div class="w-full max-w-sm mb-2">

@@ -248,7 +248,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Starchasm Nyx</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md custom-font mb-2 text-center tracking-wider md:block hidden text-slate-100">Seele | Release Date: v4.8 (27 May 2021)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Seele | Release Date: v4.8 (27 May 2021)  </p>
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
@@ -340,7 +340,7 @@ function selectTabMobile(event) {
             - Has enemy link mechanic like Mobius, where she can share a portion of damage dealt to other enemies.
         </p>
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
 
@@ -373,7 +373,7 @@ function selectTabMobile(event) {
       </p>
 
 
-        <div class="divider divider-neutral"></div>
+        <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
@@ -457,7 +457,7 @@ function selectTabMobile(event) {
 
             </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
 
 <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> OTHER STIGMA OPTIONS </h2>
 
@@ -492,7 +492,7 @@ function selectTabMobile(event) {
   
   </div>
 
-<div class="divider divider-neutral"></div>
+<div class="divider  "></div>
 
 
       <div class="flex flex-col justify-center items-center">
@@ -556,7 +556,7 @@ function selectTabMobile(event) {
 
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
 
           
@@ -596,7 +596,7 @@ function selectTabMobile(event) {
             </p>
           </div>
 
-            <div class="divider divider-neutral"></div>
+            <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -628,7 +628,7 @@ function selectTabMobile(event) {
           </div>
 
 
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -661,7 +661,7 @@ function selectTabMobile(event) {
           </div>
 
           
-          <div class="divider divider-neutral"></div>
+          <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <h2 class="text-md font-semibold  mt-3  text-left text-white ">With Sanguine Gaze Equipped</h2>

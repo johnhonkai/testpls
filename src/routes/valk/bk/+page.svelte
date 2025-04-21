@@ -249,7 +249,7 @@ function selectTabMobile(event) {
     <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Bright Knight: Excelsis</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-1">Durandal | Release Date: v3.9 (14 May 2020)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Durandal | Release Date: v3.9 (14 May 2020)  </p>
     <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-4">Divine Key DLC: v4.7 (22 Apr 2021)  </p>
 
   

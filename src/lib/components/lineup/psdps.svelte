@@ -77,50 +77,7 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually Vita. The second support depends on the boss.</p>
-
-            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, Elemental Breach, and slightly more AR meter.
-                <br/>
-                - Has a slightly longer on-field time than other supports.
-            </p>          
-
-        
-            <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
-                Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.
-            </p>
-
-            <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
-
-                 - Utility: Trigger SD critical point, gathers sd remnant. 
-                 <br/>
-                 - JD support is used against Stardust bosses - Guaymas and Sa in v8.1.
-                 <br/>
-            </p>     
-            
-            <p class="text-sm sm:text-base mb-4"><b>Reign Solaris</b><br/>
-                - Utility: Shieldbreak.
-                <br/>
-                 - RS support is used against Flux Andrius boss in v8.1.
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human</b><br/>
-                - Utility: As a bow user, HoH can hit enemy's weak spot.
-                <br/>
-                 - There's only one boss that requires HoH support: MHT-3C Tank. MHT-3C gains a huge debuff when its weak spot is hit. This is the only situation where HoH support is the best.
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> Theresa AstralOp provides tons of utilities:
-                <br/>
-                - Double Stellar Shift
-                <br/>
-                - Increased HP Loss DMG
-                <br/>
-                - Initial AR (S), and post-SO AR (SS)
-            </p> 
-
-            <p class="text-sm sm:text-base"><b>AstralOp Dreamseeker vs Kiana</b><br/> 
-                Dreamseeker is stronger during AR Charging, Kiana is stronger during Stellar Outburst.
-            </p> 
+          
     </div>
     </details>
 </div>
