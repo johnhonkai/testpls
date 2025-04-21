@@ -513,11 +513,11 @@
                     <BossCard image="/images/Bosses/Sa_SSS.webp" date="May 19" weather="Stardust" bosspage="/boss?sa" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Apr 29"  />
+                    <BossCard image="/images/BossesMA/duonigue.png"  />
+                    <BossCard image="/images/BossesMA/Argent Knight Artemis.webp"  />
+                </div>
     
 
             </div>
