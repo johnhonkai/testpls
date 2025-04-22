@@ -3,8 +3,8 @@
 
 <svelte:head>
   <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
-    <meta property="og:title" content="Marisa Impact - A Honkai Impact 3rd Guide Website" />
-    <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More" />
+    <meta property="og:title" content="Honkai Impact Guide Website - Marisa Impact" />
+    <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More. Honkai Impact Guides. Hoyoverse. Guides For Honkai Impact. Marisa Honkai." />
     <meta property="og:image" content="https://i.imgur.com/62qNVD7.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
