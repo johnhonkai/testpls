@@ -380,7 +380,7 @@ async function increaseLike() {
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> <br/>  Recommended to get Peregrine Sword in v8.1. Try to get her within the first week of v8.2 because her bosses will appear more frequently during the first 3-4 weeks. After that, PS will be used as support more often.
+              <strong class="text-amber-400">Existing Players</strong> <br/>  Recommended to get Peregrine Sword in v8.2. Try to get her within the first week of v8.2 because her bosses will appear more frequently during the first 3-4 weeks. After that, PS will be used as support more often.
               <br/>
               If you don't have enough crystals to guarantee PS and her weapon, then just do the discounted ten-pull and save for the next S-rank.
             </p>
