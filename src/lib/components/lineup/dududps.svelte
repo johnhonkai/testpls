@@ -3,7 +3,7 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '108%',  speed: 'BETA' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },

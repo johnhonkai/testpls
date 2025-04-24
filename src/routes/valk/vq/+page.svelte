@@ -3,7 +3,7 @@
   <title>Susannah - Valkyrie Quicksand</title> 
 
     <meta property="og:title" content="Susannah - Valkyrie Quicksand" />
-    <meta property="og:description" content="Valkyrie Quicksand Guides, Builds and Gameplay" />
+    <meta property="og:description" content="Valkyrie Quicksand Guide, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/vx2ZBrl.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/vq" />
     <meta property="og:type" content="website" />

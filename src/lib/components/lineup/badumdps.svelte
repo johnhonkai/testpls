@@ -3,14 +3,13 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '105%',  speed: 'BETA' },
 
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '96%',  speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '100%', utility: 'Shield',  speed: '' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '98%', utility: 'Hit', },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '96%', utility: 'CD',  speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '96%', utility: 'SD',  speed: '' },
-
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '96%', utility: 'Bow',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
 
     ];
 

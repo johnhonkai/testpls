@@ -4,14 +4,13 @@
     // Define the data for main characters
     const mainCharacters = [
 
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '%',  speed: '' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '%',  speed: 'BETA' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  utility: 'Mobs',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', utility: 'SD',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '97%', utility: 'CD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
 
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '%',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '%', utility: 'Shield',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '%', utility: 'SD',  speed: '' },
-
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '%', utility: 'Bow',  speed: '' },
 
     ];
 
@@ -77,7 +76,10 @@
         </summary>
         <div class="py-3 px-4">
 
-          
+            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides Physical Breach state. When PS has Breach state, she gains Bleed DMG buff, which is a rare multiplier even in Part 2. This contributes a significant boost for PS DMG output.
+                <br/>
+                - Vita can use Susannah T Aladdin MB stigma. This improves Sushang's self dmg output, but supports' personal dmg are reduced.
+            </p>          
     </div>
     </details>
 </div>

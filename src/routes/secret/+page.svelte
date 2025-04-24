@@ -5,34 +5,35 @@
 
     
 </script>
-
+<div class="bg-white ">\
+  <div class="mb-20"></div>
 <div class="max-w-lg mx-auto bg-slate-900 p-4 rounded-lg space-y-2 my-10">
   <div class="text-center">
-      <h2 class="text-xl font-semibold mb-4 text-amber-400">Rotation Opener</h2>
+      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener with Dreamseeker AstralOp</h2>
     </div>
   <!-- Row 1 -->
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
     <img
-      src="images/valkportrait/dudu.png"
+      src="images/valkportrait/Vita Lone Planetfarer.png"
       alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base">Level 3 Charged ATK</p>
+      <p class="text-white  text-base">Press Ult (Enter Planet Quaker Form) ➔ Weapon ➔ Basic ATK until final sequence ➔ Ultimate</p>
     </div>
   </div>
 
   <div class="flex items-center bg-slate-700 p-3 rounded-lg">
     <img
-    src="images/valkportrait/Songque Jovial Deception.png"
+    src="images/valkportrait/kiana badum.png"
     alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
       <p class="text-white  text-base mb-1">
-        QTE ➔ Combo ATK ➔ Ultimate
+        QTE
       </p>
-      <p class="text-gray-300 text-sm">Weapon skill can be used to gather SD remnant</p>
+      <p class="text-gray-300 text-sm">To activate buffs.</p>
 
     </div>
   </div>
@@ -40,18 +41,64 @@
       <!-- Row 4 -->
       <div class="flex items-center bg-slate-800 p-3 rounded-lg">
         <img
-        src="images/valkportrait/sparkle.png"
+        src="images/valkportrait/ps.png"
         alt="Avatar"
           class="h-12 w-12 rounded-full mr-4"
         />
         <div>
           <p class="text-white text-base mb-1">
-            QTE ➔ Weapon ➔ Combo ATK ➔ Ultimate 
+            QTE ➔ Weapon ➔ Combo ATK ➔ Weapon ➔ Ultimate (optional)
           </p>
-          <p class="text-gray-300 text-sm">SS-rank Sparkle can skip Combo ATK</p>
+          <p class="text-gray-300 text-sm">Ult is flexible, but don't use it when weapon button is flashing.
+
+          </p>
   
         </div>
       </div>
+
+      <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/kiana badum.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base mb-1">
+            QTE ➔ Combo ATK / Weapon
+          </p>
+          <p class="text-gray-300 text-sm">Combo ATK is faster. Weapon skill is better for mobs to apply dmg link effect.</p>
+    
+        </div>
+      </div>
+
+      <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+        <img
+          src="images/valkportrait/ps.png"
+          alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base">            QTE ➔ Weapon ➔ Combo ATK ➔ Weapon ➔ Ultimate (optional)
+          </p>
+
+        </div>
+      </div>
+
+      <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+        <img
+        src="images/valkportrait/Vita Lone Planetfarer.png"
+        alt="Avatar"
+          class="h-12 w-12 rounded-full mr-4"
+        />
+        <div>
+          <p class="text-white  text-base mb-1">
+            QTE 
+          </p>
+          <p class="text-gray-300 text-sm">To gain AR intensity. Stellar Outburst is ready. </p>
+
+        </div>
+      </div>
+
 
 
 </div>
@@ -60,20 +107,20 @@
   
   <div class="text-center">
       <h2 class="text-xl font-semibold text-amber-400 mb-1">AR Charging Rotation</h2>
-      <p class="text-sm text-slate-400 text-center mb-4">It doesn't have to be JD QTE first. The important thing is to alternate the supports to keep up with the 16s cd of the ar regen and Heavenly Link effect from the support's QTE skill.</p>
+      <p class="text-sm text-slate-400 text-center mb-4">It doesn't have to be PS QTE first. The important thing is to alternate the supports to keep up with the 16s cd of the AR regen and Heavenly Link effect from the support's QTE skill.</p>
 
     </div>
   <!-- Row 1 -->
 
     <div class="flex items-center bg-slate-800 p-3 rounded-lg">
       <img
-        src="images/valkportrait/dudu.png"
+        src="images/valkportrait/ps.png"
         alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
-        <p class="text-white  text-base mb-1">QTE ➔ Ultimate ➔ Ground Charged ATK ➔ Weapon ➔ Charged ATK ➔ Charged ATK EX</p>
-        <p class="text-gray-300 text-sm">Ult is flexible, can be used whenever available / suitable.</p>
+        <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Combo ATK ➔ Weapon ➔ Ultimate (optional)</p>
+        <p class="text-gray-300 text-sm">Ult is flexible, but don't use it when weapon button is flashing.</p>
 
       </div>
     </div>
@@ -81,47 +128,45 @@
   <!-- Row 2 -->
   <div class="flex items-center bg-slate-700 p-3 rounded-lg">
     <img
-      src="images/valkportrait/Songque Jovial Deception.png"
+      src="images/valkportrait/kiana badum.png"
       alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Combo ATK ➔ Ultimate</p>
-      <p class="text-gray-300 text-sm">Weapon skill can be used to gather SD remnant</p>
+      <p class="text-white  text-base mb-1">QTE ➔ Combo ATK / Weapon</p>
+      <p class="text-gray-300 text-sm">Combo ATK is faster. Weapon skill is better for mobs to apply dmg link effect.</p>
 
     </div>
   </div>
   <!-- Row 3 -->
 
-    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
-      <img
-        src="images/valkportrait/dudu.png"
-        alt="Avatar"
-        class="h-12 w-12 rounded-full mr-4"
-      />
-      <div>
-        <p class="text-white  text-base">QTE ➔ Charged ATK ➔ Charged ATK EX ➔ Weapon ➔ Charged ATK ➔ Charged ATK EX</p>
-        
-      </div>
-    </div>
+  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/ps.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Combo ATK ➔ Weapon ➔ Ultimate (optional)</p>
 
+    </div>
+  </div>
   <!-- Row 4 -->
 
     <div class="flex items-center bg-slate-700 p-3 rounded-lg">
       <img
-      src="images/valkportrait/sparkle.png"
+      src="images/valkportrait/Vita Lone Planetfarer.png"
       alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
         <p class="text-white text-base mb-1">
-          QTE ➔ Weapon ➔ Combo ATK ➔ Ultimate (if available)
+          QTE ➔ Press Ult (Enter Planet Quaker Form) ➔ Weapon ➔ Basic ATK until final sequence ➔ Ultimate
         </p>
-        <p class="text-gray-300 text-sm">Can skip Combo ATK if you have enough sp for Ult.</p>
 
       </div>
     </div>
-    <p class="text-sm text-slate-400 text-center">Cycle this until you can activate Stellar Outburst</p>
+    <p class="text-sm text-slate-400 text-center">Repeat until you can activate Stellar Outburst.</p>
 
 </div>
 
@@ -146,13 +191,13 @@
 
     <div class="flex items-center bg-slate-700 p-3 rounded-lg">
       <img
-        src="images/valkportrait/dudu.png"
+        src="images/valkportrait/ps.png"
         alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
-        <p class="text-white  text-base mb-1">Stellar Shift ➔ Press ATK 4 times ➔ Ultimate (if available) ➔ Charged ATK x3 ➔ Charged ATK EX</p>
-        <p class="text-gray-300 text-sm">Ult is flexible, can be used whenever available / suitable.</p>
+        <p class="text-white  text-base mb-1">Stellar Shift ➔ Press QTE button ➔ Weapon x3 ➔ Ultimate (optional) </p>
+        <p class="text-gray-300 text-sm">Ult is flexible, but don't use it when weapon button is flashing.        </p>
 
       </div>
     </div>
@@ -160,13 +205,13 @@
   <!-- Row 2 -->
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
     <img
-    src="images/valkportrait/sparkle.png"
+    src="images/valkportrait/kiana badum.png"
     alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
       <p class="text-white text-base mb-1">
-        Stellar Shift ➔ Weapon ➔ Combo ATK ➔ Ultimate (if available)
+        Stellar Shift ➔ Press QTE button x2 ➔ Weapon ➔ Ultimate
         
       </p>
       <p class="text-gray-300 text-sm">Can skip Combo ATK if you have enough sp for Ult.</p>
@@ -176,35 +221,35 @@
 
   <!-- Row 3 -->
 
-    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
-      <img
-        src="images/valkportrait/dudu.png"
-        alt="Avatar"
-        class="h-12 w-12 rounded-full mr-4"
-      />
-      <div>
-        <p class="text-white  text-base mb-1">QTE ➔ Ground Charged ATK ➔ Weapon ➔ Charged ATK ➔ Charged ATK EX </p>
-          <p class="text-gray-300 text-sm">Ult is flexible, can be used whenever available / suitable.</p>
+  <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/ps.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Combo ATK ➔ Weapon ➔ Ultimate (optional)</p>
+      <p class="text-gray-300 text-sm">If you are using Theresa AstralOp, then repeat PS' Stellar Shift sequence above instead.        </p>
 
-       
-      </div>
     </div>
+  </div>
+
 
   <!-- Row 4 -->
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
     <img
-    src="images/valkportrait/Songque Jovial Deception.png"
+    src="images/valkportrait/Vita Lone Planetfarer.png"
     alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
       <p class="text-white text-base">
-        Stellar Shift ➔ Weapon ➔ Combo ATK ➔ Ultimate (if available)
+        Stellar Shift ➔ Spam ATK until mecha punch ➔ Ultimate
       </p>
 
     </div>
   </div>
-  <p class="text-sm text-slate-400 text-center">Continue with AR Charging Rotation</p>
+  <p class="text-sm text-slate-400 text-center">Continue with AR Charging Rotation.</p>
 
 </div>
 
@@ -872,3 +917,5 @@
       </div>
     </div>
   </div>
+
+</div>
