@@ -732,7 +732,7 @@ async function increaseLike() {
       {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Umbrella Throw Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       A fun playstyle where you just jump and jump and jump! Weaker than the Drum Smash playstyle.
+       Spam evade and weapon.
       </p>
   
       <div class="divider  "></div>
