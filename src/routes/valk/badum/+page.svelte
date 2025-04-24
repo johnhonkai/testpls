@@ -378,13 +378,9 @@ async function increaseLike() {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get Badum in v8.1.
+              <strong class="text-amber-400">New Players</strong> <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch..
             </p>
-
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> <br/> Badum is an average Part 2 valk - She's a good dps on her bosses, underwhelming dps everywhere else, and she has a unique support utility - just like other Part 2 valks. Her value varies for everyone's account. Recommended to <a href="/classroom/ar3" class="link ">read this first </a>  to help you plan your pulls.
-            </p>
-
+            
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong> <br/> 
             </p>
