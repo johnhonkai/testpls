@@ -271,8 +271,8 @@ async function increaseLike() {
           <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
         </div >
         <div class="flex flex-row gap-2 flex-wrap justify-center">
+          <img src="/images/artype/ar grail.png" alt="ar" class="w-auto h-8 md:h-10" />
           <img src="/images/artype/ar loa.webp" alt="Support 1" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar future.png" alt="Support 1" class="w-auto h-8 md:h-10" />
 
         </div>
       </div>
