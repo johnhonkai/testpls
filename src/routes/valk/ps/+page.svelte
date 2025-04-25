@@ -380,11 +380,18 @@ async function increaseLike() {
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> <br/>  Recommended to get Peregrine Sword in v8.2. Try to get her within the first week of v8.2 because her bosses will appear more frequently during the first 3-4 weeks. After that, PS will be used as support more often.
-              <br/>
-              If you don't have enough crystals to guarantee PS and her weapon, then just do the discounted ten-pull and save for the next S-rank.
+              <strong class="text-amber-400">Existing Players</strong> 
             </p>
 
+
+            <ul class="list-disc ml-6 text-sm sm:text-base">
+              <li>              Peregrine Sword is a typical Part 2 valk. 
+              </li>
+              <li>              Recommended to get Peregrine Sword in v8.2, IF you can guarantee valk + weapon within the first week of v8.2 to get the most value out of her, because her bosses will appear more frequently during the first 3-4 weeks. After that, PS will be used as support more often.
+              </li>
+              <li>              If you don't have enough crystals to guarantee PS and her weapon, then just do the discounted ten-pull and save for the next S-rank.
+                </li>
+          </ul>
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong> <br/> Pull.
             </p>
