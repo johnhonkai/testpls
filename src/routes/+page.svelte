@@ -223,9 +223,15 @@
               </div>
 
               <p class=" text-sm sm:text-base text-slate-100 px-2">
-                <span class="font-bold">MASTERCHEF
+                <span class="font-bold">CCAZRD01
                 </span><br/>
-                350 crystals 
+                60 crystals 
+              </p>
+
+              <p class=" text-sm sm:text-base text-slate-100 px-2 pt-5">
+                <span class="font-bold">CHOWANDCHEW
+                </span><br/>
+                Materials 
               </p>
               
             </div>
