@@ -53,7 +53,7 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
+ // { name: 'Lineup', short: 'lineup' },
  // { name: 'Equipment', short: 'equipment' },
  // { name: 'Support Buffs', short: 'support' },
  // { name: 'How to Play', short: 'howtoplay' },
@@ -254,7 +254,7 @@ async function increaseLike() {
   <div class="w-full max-w-sm mb-2">
     <!-- Container with 4 pictures (Centered) -->
     <div class="flex flex-col items-center" id="typebox">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-emerald-500 outline-1 bg-emerald-950/75 rounded-lg p-2 backdrop-blur-xs">
+      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
         <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
         <img src="/images/type/IconBIO.png" alt="IMG" class="w-auto h-8 md:h-10" />
         <img src="/images/element/Core_Lightning_DMG.png" alt="Lightning" class="w-auto h-8 md:h-10" />
@@ -265,7 +265,7 @@ async function increaseLike() {
     <!-- Support For Container (Centered) -->
     <div class="flex flex-col mt-4 items-center" id="arbox">
 
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-emerald-500 outline-1 bg-emerald-950/75 rounded-lg p-2 backdrop-blur-xs">
+      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
         <div class="flex flex-wrap justify-center">
           <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
         </div >
