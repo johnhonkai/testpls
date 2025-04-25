@@ -218,7 +218,7 @@ async function increaseLike() {
 <!-- Left: Character Image -->
 <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-54;"/> 
+  <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
   <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
     <button
         on:click={increaseLike}
