@@ -259,9 +259,9 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=-BsNXqnaGUWA" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
+      <a href="https://www.youtube.com/watch?v=BsNXqnaGUWA" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/-BsNXqnaGUWA/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/BsNXqnaGUWA/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">8.3 News</h3>
           <p class="text-slate-300 text-base">Astral Ring Heavenly Grail</p>
