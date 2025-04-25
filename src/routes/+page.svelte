@@ -182,8 +182,8 @@
           <h2 class="text-xl font-bold text-blue-600">8.3 INFO DATE</h2>
         </div>
         <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2">
-          <li>Valk Reveal and Content Teaser: May 1-2</li>
-          <li>Beta v1 (Private): May 2</li>
+          <li>Valk Reveal and Content Teaser: Apr 24</li>
+          <li>Beta v1 (Private): Apr 25</li>
           <li>Dev Video: May 8</li>
           <li>Beta v2: May 9</li>
           <li>Beta v3: May 16</li>
