@@ -2,7 +2,7 @@
 <slot /> <!-- This will render the content of each page -->
 
 <svelte:head>
-  <title>Marisa Impact - A Honkai Impact 3rd Guide Website</title> 
+  <title>Honkai Impact Guide Website</title> 
     <meta property="og:title" content="Honkai Impact Guide Website - Marisa Impact" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More. Honkai Impact Guides. Hoyoverse. Guides For Honkai Impact. Marisa Honkai." />
     <meta property="og:image" content="https://i.imgur.com/62qNVD7.png" />
@@ -250,21 +250,21 @@
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=xgH5sSoS25c" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
+      <a href="https://www.youtube.com/watch?v=TbNFrAgShhU" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/xgH5sSoS25c/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/TbNFrAgShhU/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
-          <p class="text-slate-300 text-base">S-rank Kiana: Ba-dum! Fiery Wishing Star</p>
+          <h3 class="text-xl font-semibold mb-2">8.3 News</h3>
+          <p class="text-slate-300 text-base">S-rank Helia</p>
         </div>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=-1uALI68YHo" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
+      <a href="https://www.youtube.com/watch?v=-BsNXqnaGUWA" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/-1uALI68YHo/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/-BsNXqnaGUWA/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">8.1 News</h3>
-          <p class="text-slate-300 text-base">Herrscher of Human Divine Key</p>
+          <h3 class="text-xl font-semibold mb-2">8.3 News</h3>
+          <p class="text-slate-300 text-base">Astral Ring Heavenly Grail</p>
         </div>
       </a>
 
@@ -282,9 +282,9 @@
 
 
 
-      <a href="https://www.youtube.com/watch?v=EFTnUDj6mgM" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
+      <a href="https://www.youtube.com/watch?v=yHzyiM35t3E" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
         <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/EFTnUDj6mgM/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+        <img src="https://i.ytimg.com/vi/yHzyiM35t3E/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
           <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>

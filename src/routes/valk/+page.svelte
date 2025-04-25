@@ -69,6 +69,7 @@
 
   const astralRings = [
     'All',
+    'Heavenly Grail',
     'Law of Ascension',
     'Wheel of Destiny',
     'Rite of Oblivion',
@@ -78,6 +79,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
  const valkyries = [
+  { name: '位面武器·失序时空', image: '/images/valkportrait/New Helia.png', type: 'Bio', element: 'Lightning', astralRing: ['Heavenly Grail'] , url: '/valk/ha',  badge: 'Beta', id:55},
   { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/ps',  badge: 'New', id:54},
   { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/kiana badum.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum',  id:53},
   { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Wheel of Destiny' , 'Part 1'],  url: '/valk/hoh', id:25},
