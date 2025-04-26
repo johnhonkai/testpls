@@ -4,24 +4,21 @@
     // Define the data for main characters
     const mainCharacters = [
 
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  utility: 'Mobs',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', utility: 'SD',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '97%', utility: 'CD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
-
+        { name: 'PS', image: '/images/valkportrait/ps.png', },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', },
 
     ];
 
     const asopchar = [
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' , speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png',  teampct: '92%' ,speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',   teampct: '91%' ,speed: '' }
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'PS'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -31,14 +28,14 @@
     let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-teal-950 to-teal-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Peregrine Sword DPS</h3>
+<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-orange-950 to-orange-900 shadow-lg shadow-base-100 overflow-hidden">
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">位面武器·失序时空 DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/ps.png" alt="badum" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/New Helia.png" alt="badum" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 

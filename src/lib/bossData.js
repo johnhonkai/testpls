@@ -1344,7 +1344,11 @@ export const teamData = {
         pct: '51%',
         bottext: "Highest Score: 756"
       },
-    ]},]
+    ]},],
+        videos: [
+          { url: 'https://www.bilibili.com/video/BV15CZcY1EQs', abyss: 'S0-rank PS Red Lotus', uploader: '宇轩aa' },
+      { url: 'https://youtu.be/Qua1xOkPMA0', abyss: 'Nirvana 548 D', uploader: 'beltbelt' },
+    ] 
   },
   pishacha: {
     teamDataSets: [

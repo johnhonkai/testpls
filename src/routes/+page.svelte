@@ -87,13 +87,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2025-2-22'); // Start date Regional Servers
+      const regionalStartDate = new Date('2025-4-27'); // Start date Regional Servers
       const cnStartDate = new Date('2025-3-29');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.1 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.2 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.2 Week ${currentWeekCN}`;
   }
 
@@ -165,7 +165,7 @@
         <p class="text-sm sm:text-base text-slate-100 px-2">
             <strong class="text-amber-400">REGIONAL SERVERS</strong><br>
             - {regionalServerInfo}<br>
-            - v8.2 update is on Apr 24
+            - v8.3 update is on June 26
         </p>
 
         <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">

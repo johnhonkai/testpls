@@ -73,8 +73,8 @@
 			</li>
 
 
-			<li aria-current={$page.url.pathname === '/hi3awards' ? 'page' : undefined}>
-				<a href="/hi3awards" class="custom-font" data-sveltekit-preload-data="hover">HI3 Awards</a>
+			<li aria-current={$page.url.pathname === '/chapter' ? 'page' : undefined}>
+				<a href="/chapter" class="custom-font" data-sveltekit-preload-data="hover">Chapter</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

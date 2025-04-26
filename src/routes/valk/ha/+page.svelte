@@ -38,6 +38,7 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 	import Simpdps from "$lib/components/lineup/simpdps.svelte";
 	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
 	import Psdps from "$lib/components/lineup/psdps.svelte";
+	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -53,7 +54,7 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
- // { name: 'Lineup', short: 'lineup' },
+  { name: 'Lineup', short: 'lineup' },
  // { name: 'Equipment', short: 'equipment' },
  // { name: 'Support Buffs', short: 'support' },
  // { name: 'How to Play', short: 'howtoplay' },
@@ -394,15 +395,7 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Psdps maindps={true} ></Psdps>
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-      
-      <Badumdps firstCharName="PS"></Badumdps >
-
-      <div class="divider  "></div>
-
-      <Dududps firstCharName="PS"></Dududps>
+      <Heliadps maindps={true} ></Heliadps>
 
       {/if}
 
