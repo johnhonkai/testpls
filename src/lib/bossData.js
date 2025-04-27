@@ -1138,6 +1138,47 @@ export const teamData = {
   },
   resovita: {
     teamDataSets: [
+      {
+        tabname: "v8.1",
+        teamInfoText: "Data is from v8.1 SEA Server Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_songque.png"],
+          rank: '1+',
+          pct: '55%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '5, 9',
+          pct: '15%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '18',
+          pct: '22%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/elf_kiana.png"],
+          rank: '78',
+          pct: '6%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_songque.png"],
+          rank: '85',
+          pct: '1%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+          rank: '86',
+          pct: '2%',
+        },
+      ]},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
@@ -2058,6 +2099,25 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '85%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '4, 6',
+            pct: '15%',
+          },
+          
+        ]
+      },
+      {
         tabname: "v8.1 CN",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -2077,10 +2137,10 @@ export const teamData = {
           },
           
         ]
-      }
+      },
     ],
     videos: [
-      { url: 'https://youtu.be/knD4cguuSa0?si=A0qjedXjI-HF2MPE', abyss: 'Nirvana 542D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/knD4cguuSa0', abyss: 'Nirvana 542D', uploader: 'Kyoshiro' },
       { url: 'https://www.youtube.com/watch?v=iSNZDuTlVDM', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' }
 
     ] 
@@ -2133,6 +2193,31 @@ export const teamData = {
   icehellmaru: {
     
     teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+            rank: '1+',
+            pct: '29%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '9',
+            pct: '70%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_sera.png"],
+            rank: '77',
+            pct: '1%',
+          },
+          
+        ]
+      },
       {
         tabname: "v8.1 CN",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
