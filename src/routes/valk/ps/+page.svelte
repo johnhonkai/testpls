@@ -883,7 +883,7 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Evade ➔ Weapon. Repeat three times.</li>
+          <li>Evade ➔ Weapon. Do this three times.</li>
           <li>Press Weapon.</li>
           <li>Repeat.</li>
           <li>Optional: You can use Ultimate to finish off a wave.</li>
