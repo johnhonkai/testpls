@@ -727,7 +727,7 @@ async function increaseLike() {
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Use Stellar Outburst (Stellar Shift).</li>
           <li>Press ATK.</li>
-          <li>Press Weapon three times.</li>
+          <li>Press Weapon five times.</li>
           <li>Repeat.</li>
           <li>Optional: You can use Ultimate to finish off a wave.</li>
         </ol>
