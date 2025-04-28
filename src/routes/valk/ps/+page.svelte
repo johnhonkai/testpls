@@ -725,9 +725,8 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use Stellar Outburst (Stellar Shift).</li>
-          <li>Press ATK.</li>
-          <li>Press Weapon five times.</li>
+          <li>Use Stellar Outburst (Stellar Shift). Press QTE button when the prompt appears.</li>
+          <li>Press weapon five times.</li>
           <li>Repeat.</li>
           <li>Optional: You can use Ultimate to finish off a wave.</li>
         </ol>
@@ -887,7 +886,7 @@ async function increaseLike() {
           <li>Evade ➔ Weapon. Repeat three times.</li>
           <li>Press Weapon.</li>
           <li>Repeat.</li>
-          <li>AOptional: You can use Ultimate to finish off a wave.</li>
+          <li>Optional: You can use Ultimate to finish off a wave.</li>
         </ol>
       {/if}
 
