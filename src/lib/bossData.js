@@ -1465,7 +1465,10 @@ export const teamData = {
         pct: '2%',
         bottext: "Highest Score: SS 803"
       },
-    ]},]
+    ]},],    
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=7ADji7fSAgY', abyss: 'RedLotus 511D', uploader: 'Marisa Honkai' },
+    ] 
   },
   starbull: {
     teamDataSets: [
