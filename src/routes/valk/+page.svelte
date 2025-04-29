@@ -13,8 +13,12 @@
 
 
 <script lang="ts">
+    import { fade, slide } from 'svelte/transition';
+
   import Fa from 'svelte-fa';
   import { faSort } from '@fortawesome/free-solid-svg-icons';
+  import { faFilter } from '@fortawesome/free-solid-svg-icons';
+  import { faCog } from '@fortawesome/free-solid-svg-icons';
 
   import { onMount } from 'svelte';
 
@@ -190,6 +194,15 @@
   return bVal - aVal; // descending
 });
 
+let showFilters = false; // default hidden on mobile
+let isMobile = false;
+
+onMount(() => {
+  const checkMobile = () => isMobile = window.innerWidth < 768;
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+  return () => window.removeEventListener('resize', checkMobile);
+});
 </script>
 
 <!-- Loading Screen -->
@@ -206,11 +219,24 @@
     <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
   </div>
   <div class="relative max-w-6xl mx-auto mt-5">
-    <h1
-    class="text-xl md:text-3xl font-bold text-center bg-linear-to-b from-white to-neutral-300 text-transparent bg-clip-text mb-3"
-  >
-  Select a Valkyrie
-  </h1>
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <h1 class="text-xl md:text-3xl font-bold text-center bg-linear-to-b from-white to-neutral-300 text-transparent bg-clip-text">
+        Select a Valkyrie
+      </h1>
+    
+      <!-- Toggle Button: Only visible on mobile -->
+      <button
+        on:click={() => showFilters = !showFilters}
+        class="md:hidden btn btn-xs ml-2 text-white hover:bg-white hover:text-black"
+        aria-label="Toggle Filters"
+      >
+      <Fa icon={faFilter} size="1.3x"  />
+
+      </button>
+    </div>
+    {#if !isMobile || showFilters}
+    <div transition:slide="{{ duration: 300 }}">
+
     <!-- Filter Containers -->
     <div class="flex flex-col md:flex-row justify-between gap-4 mb-4 mx-4">
       <!-- Filter by Type -->
@@ -265,14 +291,17 @@
       
     <button 
   on:click={() => sortByDLC = !sortByDLC}
-  class=" w-60 mb-4 py-2  text-white hover:bg-white hover:text-black transition btn btn-sm sm:btn-md "
+  class=" w-60 py-2  text-white hover:bg-white hover:text-black transition btn btn-sm sm:btn-md "
 >
 <Fa icon={faSort} /> {sortByDLC ? 'Release + DLC Date' : 'Release Date'}
 </button>
+
 </div>
+    </div>
+{/if}
 
 <!-- Valkyrie Grid -->
-<div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
+<div class=" mt-5 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
   {#each sortedValkyries as valkyrie}
     <a 
       href={valkyrie.url} 
