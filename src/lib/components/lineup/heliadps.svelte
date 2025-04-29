@@ -67,16 +67,4 @@
         {/each}
     </div>
 
-    <details class="group rounded-md my-2 overflow-hidden">
-        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 hover:transition-colors hover:duration-200">
-            Details
-        </summary>
-        <div class="py-3 px-4">
-
-            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides Physical Breach state. When PS has Breach state, she gains Bleed DMG buff, which is a rare multiplier even in Part 2. This contributes a significant boost for PS DMG output.
-                <br/>
-                - Vita can use Susannah T Aladdin MB stigma. This improves Sushang's self dmg output, but supports' personal dmg are reduced.
-            </p>          
-    </div>
-    </details>
 </div>

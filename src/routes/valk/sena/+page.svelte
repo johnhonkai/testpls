@@ -367,9 +367,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. 
-            It's a worse version of regular Battlesuit supply with a 50-50 chance and the counter is not shared with regular supply.
-            If you still want Sena, wait for her normal Battlesuit supply.
+            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. Due to how meta works, it's better to use your crystal to pull the latest valkyrie. If you can afford to spend, get Sena from Battle Pass.
             
         </p>
           <p class="mt-4 text-sm sm:text-base">

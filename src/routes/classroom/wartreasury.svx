@@ -18,7 +18,7 @@ Now, War Treasury shop is just a retirement home for Part 1 valks.
   <img src="https://i.imgur.com/u5EOove.png" alt="Icon" class="w-[300px] h-auto rounded-lg" />
 </div>
 
-**Ancient Willpower (AW)** and **Ancient Legacy (AL)** are the currencies used in War Treasury shop. The main source of AW and AL are from Memorial Arena mode. AL can also be obtained from Abyss mode. You can get them from other sources such as Battle Pass and events.
+**Ancient Willpower (AW)** and **Ancient Legacy (AL)** are the currencies used in War Treasury shop. The main source of AW and AL is from Memorial Arena mode. You can get them from other sources such as Abyss mode, Battle Pass and events.
 
 You get significantly more AL in Exalted tier (Lv81+) of Memorial Arena and Abyss modes.
 
@@ -32,11 +32,12 @@ I personally recommend unlocking these S-ranks first. Just keep in mind they wil
 
 ### Miracle Magical Girl
 - MECH Fire Ignite DPS.
-- The last S-rank farmable from War Treasury since debut.
-- She is still the only Ignite DPS in the game right now.
+- The last S-rank farmable from War Treasury from debut patch.
+- She is still the only Ignite DPS in the game right now. She still top scores some Ignite weather bosses (although they rarely appear now).
 
 ### Herrscher of Sentience
 - Part 1 Physical Support and DPS.
+- Backbone support for Part 1 Physical teams, until you get Herrscher of Rebirth. 
 
 ### Jade Knight
 - Part 1 Ice support.

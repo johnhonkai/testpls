@@ -2,7 +2,7 @@
   <title>Valkyrie Select</title> 
     <meta property="og:title" content="Valkyrie Select" />
     <meta property="og:description" content="Honkai Impact Guide - Character Page" />
-    <meta property="og:image" content="https://i.imgur.com/iymSWy5.png" />
+    <meta property="og:image" content="https://i.imgur.com/aXbdNbK.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk" />
     <meta property="og:type" content="website" />
 
@@ -63,7 +63,8 @@
     { name: 'Ice', image: '/images/element/Core_Ice_DMG.png' },
     { name: 'Fire', image: '/images/element/Core_Fire_DMG.png' },
     { name: 'Physical', image: '/images/element/Core_Physical.png' },
-    { name: 'Bleed', image: '/images/element/Core_Bleed_DMG.png' }
+    { name: 'Bleed', image: '/images/element/Core_Bleed_DMG.png' },
+    { name: 'Ignite', image: '/images/element/ignite.png' }
 
   ];
 
@@ -194,7 +195,7 @@
   <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
     <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
   </div>
-  <div class="relative max-w-5xl mx-auto mt-5">
+  <div class="relative max-w-6xl mx-auto mt-5">
     <h1
     class="text-xl md:text-3xl font-bold text-center bg-linear-to-b from-white to-neutral-300 text-transparent bg-clip-text mb-3"
   >
@@ -210,7 +211,7 @@
               type="button"
               title={type.name}
               class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
-              class:bg-gray-300={selectedType === type.name}
+              class:bg-blue-600={selectedType === type.name}
               on:click={() => selectFilter('type', type.name)}>
               <img src={type.image} alt={type.name} class="w-6 h-6 object-cover mb-1" />
             </button>
@@ -226,7 +227,7 @@
               type="button"
               title={element.name}
               class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
-              class:bg-gray-300={selectedElement === element.name}
+              class:bg-blue-600={selectedElement === element.name}
               on:click={() => selectFilter('element', element.name)}>
               <img src={element.image} alt={element.name} class="w-6 h-6 object-cover mb-1" />
             </button>
@@ -237,13 +238,12 @@
 
     <!-- Astral Ring Filter -->
     <div class="rounded-lg mb-8">
-      <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 gap-2 mx-4">
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2 mx-4">
         {#each astralRings as astralRing}
           <button
             type="button"
             class="btn btnar text-center rounded-lg hover:bg-gray-200 hover:text-black active:bg-gray-300 transition-colors w-full lg:whitespace-nowrap"
-            class:bg-gray-300={selectedAstralRing === astralRing}
-            class:text-black={selectedAstralRing === astralRing}
+            class:bg-blue-600={selectedAstralRing === astralRing}
             on:click={() => selectFilter('astralRing', astralRing)}>
             <span class="text-xs sm:text-sm md:text-base font-medium">{astralRing}</span>
           </button>
@@ -263,7 +263,7 @@
       <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
         {#if valkyrie.badge}
           <span 
-            class="absolute top-1 left-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
+            class="absolute top-1 right-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
             class:badge-ghost={valkyrie.badge === 'Beta'}
             class:badge-primary={valkyrie.badge === 'New'}
             class:badge-accent={valkyrie.badge === 'Updated'}
@@ -271,6 +271,23 @@
             {valkyrie.badge}
           </span>
         {/if}
+
+
+        {#if valkyrie.type}
+        <div class="absolute top-1 left-0 mx-1 w-7 sm:w-8 h-auto  text-white   z-10">
+          <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover overflow-hidden" />
+        </div>
+      {/if}
+
+
+        {#if valkyrie.element}
+        {#each (Array.isArray(valkyrie.element) ? valkyrie.element : [valkyrie.element]) as el, i}
+          <div class="absolute left-0  mx-1 w-7 sm:w-8 h-auto  text-white  z-10" style={`top: ${2.2 + (i * 2)}rem`}>
+            <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-full h-full object-cover" />
+          </div>
+        {/each}
+      {/if}
+
         <img 
           src={valkyrie.image} 
           alt={valkyrie.name}

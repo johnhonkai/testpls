@@ -18,7 +18,7 @@ update: 8.2
 I don't expect you to read all the articles here. So here are some quick important tips to prevent you from wasting important resources.
 
 
-## DO NOT PULL STARTER SUPPLY
+## Do Not Pull Starter Supply
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/X1c2whI.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
@@ -38,7 +38,7 @@ Starter Supply is bad for a number of reasons:
 
 Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You will get a lot of characters and equipment from starter event, Dorm Supplies, shops, etc. Don't spend your resources on every single character or gear that you get. That is an easy way to go bankrupt on materials in early game. Use it only on the latest valkyries. 
 
-## DO DAILIES AND EVENTS
+## Do Dailies and Events
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/j2MK187.jpeg" alt="Icon" class="w-[800px] h-auto rounded-lg" />
@@ -47,14 +47,14 @@ Honkai Impact is 8 years old, that means 8 YEARS WORTH OF OUTDATED CONTENT. You 
 This is where your dailies / weeklies / limited-time event missions are.
 
 
-## THE BEST STARTER TEAM
+## The Best Starter Team
 
 None. All those free characters are old Part 1 valks or missing weapon and stigma.
 
 The best starter team is the first Part 2 S-rank that you pulled. Then, put [Coralie Valkyrie Blastmetal](/valk/coralie) as the support. It will be A LOT better than whatever you get from those starter events.
 
 
-## THERE IS NO BROKEN CHARACTER
+## There is No Broken Character
 
 There is no Castorice or Mavuika or Miyabi in Honkai Impact. 
 
@@ -67,7 +67,7 @@ There is no Castorice or Mavuika or Miyabi in Honkai Impact.
 Pull the latest S-rank. 
 
 
-## THE REAL GAME STARTS AT LV 80+
+## The Real Game Starts at Level 80+
 
 Once you get to Level 80, you can breakthrough, increasing your max level, and unlocking an entirely new difficulty tier called **Exalted Tier** and a new end-game mode **Superstring Dimension**. 
 

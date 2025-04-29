@@ -8,24 +8,27 @@ update: 8.2
 ---
 
 ## The Original Four
-Most damage in Honkai Impact belong to one of following damage element:
+Most damage in Honkai Impact belong to one of following damage elements:
 - Physical DMG
 - Lightning DMG
 - Ice DMG
 - Fire DMG
 
----
 
-1. Most valkyries' attacks only deal one dmg element.
-2. Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG.
-3. Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. Only Physical DMG can crit.
-
----
-
-<p class="text-center">Each damage has its own colour:</p>
+<p class="text-center">Each element has its own damage colour:</p>
 <p align="center">
   <img src="https://i.imgur.com/zDFPLaL.png" alt="dmg color" class=" w-auto h-auto rounded-lg" />
 </p>
+
+### More Info
+1. All valkyries have one element, which can be seen in valkyrie menu. 
+    - Most modern valkyries only deal damage of their corresponding element.
+    - Older valkyries may deal a different damage from their corresponding element.
+2. Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG.
+3. Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. Only Physical DMG can crit.
+
+
+
 
 ---
 
@@ -47,7 +50,7 @@ Characters with Bleed / Ignite DMG benefit from buffs that affect both their pri
 ### Bleed / Ignite DMG vs DoT
 Although they are not entirely the same, Bleed and Ignite DMG do inherit some properties from Bleed and Ignite status damage-over-time (DoT). For example:
 - Bleed DoT <span class="text-emerald-400">does not crit</span>. Valkyrie Quicksand and Cosmic Expression attacks that deal Bleed DMG also cannot crit.
-- Bleed / Ignite DoT are <span class="text-emerald-400">not considered to be Melee or Ranged DMG</span>. Bleed / Ignite DMG are also not considered as Melee / Ranged DMG.
+- Bleed / Ignite DoT are <span class="text-emerald-400">not considered as Melee or Ranged DMG</span>. Bleed / Ignite DMG are also not considered as Melee / Ranged DMG.
 - If an <span class="text-emerald-400">equipment buffs Bleed / Ignite DMG</span>, it affects both the valk's Bleed / Ignite DoT and Bleed / Ignite DMG.
 
 
@@ -65,7 +68,10 @@ TOTAL DMG is not exactly a damage type, but it is very common in skill descripti
 
 ## HP Loss DMG
 HP Loss DMG is a special dmg that only a few valkyries have. It deals a fixed damage and the damage value is equal to a percentage of another damage.
-- For example: Herrscher of Finality - During Stellar Outburst, each Basic ATK deals additional HP Loss DMG. The HP Loss DMG value is equal to 120% of the Basic ATK's damage.
+
+Examples of HP Loss DMG
+- Herrscher of Finality: During Stellar Outburst, each Basic ATK deals additional HP Loss DMG, equal to 120% of the Basic ATK's damage.
+- Reign Solaris: Against IMG enemies, a portion of damage dealt to IMG shell will be dealt to IMG seed. This damage is HP Loss DMG.
 
 Some enemies require HP Loss DMG to counter their mechanics. For example, Twin Wardens.
 
