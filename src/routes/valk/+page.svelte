@@ -265,7 +265,7 @@
       
     <button 
   on:click={() => sortByDLC = !sortByDLC}
-  class=" w-60 mb-4 py-2  text-white hover:bg-blue-700 transition btn btn-sm sm:btn-md "
+  class=" w-60 mb-4 py-2  text-white hover:bg-white hover:text-black transition btn btn-sm sm:btn-md "
 >
 <Fa icon={faSort} /> {sortByDLC ? 'Release + DLC Date' : 'Release Date'}
 </button>
