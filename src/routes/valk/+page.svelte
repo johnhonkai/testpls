@@ -13,6 +13,9 @@
 
 
 <script lang="ts">
+  import Fa from 'svelte-fa';
+  import { faSort } from '@fortawesome/free-solid-svg-icons';
+
   import { onMount } from 'svelte';
 
   let isLoading = true; // Track if the page is still loading
@@ -244,7 +247,7 @@
     </div>
 
     <!-- Astral Ring Filter -->
-    <div class="rounded-lg mb-8">
+    <div class="rounded-lg mb-6">
       <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2 mx-4">
         {#each astralRings as astralRing}
           <button
@@ -258,6 +261,15 @@
       </div>
     </div>
 
+    <div class="flex justify-center">
+      
+    <button 
+  on:click={() => sortByDLC = !sortByDLC}
+  class=" w-60 mb-4 py-2  text-white hover:bg-blue-700 transition btn btn-sm sm:btn-md "
+>
+<Fa icon={faSort} /> {sortByDLC ? 'Release + DLC Date' : 'Release Date'}
+</button>
+</div>
 
 <!-- Valkyrie Grid -->
 <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
