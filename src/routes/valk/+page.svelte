@@ -179,7 +179,14 @@
     });
   });
 
-  
+  let sortByDLC = true;
+
+  $: sortedValkyries = [...filteredValkyries].sort((a, b) => {
+  const aVal = sortByDLC ? Math.max(a.verdebut ?? 0, a.verdlc ?? 0) : a.verdebut ?? 0;
+  const bVal = sortByDLC ? Math.max(b.verdebut ?? 0, b.verdlc ?? 0) : b.verdebut ?? 0;
+  return bVal - aVal; // descending
+});
+
 </script>
 
 <!-- Loading Screen -->
@@ -220,8 +227,8 @@
       </div>
 
       <!-- Filter by Element -->
-      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg ">
-        <div class="flex justify-center flex-wrap gap-1">
+      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
+        <div class="flex justify-center flex-wrap gap-0.5 md:gap-1">
           {#each elements as element}
             <button
               type="button"
@@ -251,9 +258,10 @@
       </div>
     </div>
 
+
 <!-- Valkyrie Grid -->
 <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
-  {#each filteredValkyries as valkyrie}
+  {#each sortedValkyries as valkyrie}
     <a 
       href={valkyrie.url} 
       class="flex flex-col items-center text-center rounded-sm" 
