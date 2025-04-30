@@ -170,6 +170,16 @@
                             <img src="https://i.imgur.com/MCy8jwJ.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
                     </div>    
+
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-24 h-full">
+                            <img src="https://i.imgur.com/gtjC1GP.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        </div>
+                    </div>    
  
                 </div>
 
@@ -185,7 +195,14 @@
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
                             <img src="https://i.imgur.com/hcQe2jm.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
-                    </div>     
+                    </div>    
+                    
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Reign Solaris Equipment</span>
+                        <!-- Image positioned on the right side -->
+
+                    </div>  
 
                 </div>
 
@@ -295,6 +312,35 @@
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">OUTFIT</span>
+                    </div>  
+                    <div></div>     
+                    <div></div>                
+                    <div></div>                
+                    <div></div>                
+                    <div></div>               
+
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">DA, AKA, AE Outfit<br/>9600 crystals</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-14 h-full">
+                            <img src="https://i.imgur.com/OyAXGhx.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>         
+                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Till Death Do Us Part<br/>B-chip outfit</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-14 h-[45px]">
+                            <img src="https://i.imgur.com/p0yd9n4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>         
+                </div>
+
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">RETURNEE SUPPLY</span>
                     </div>                  
                     <div on:click={() => openModal("Returnee")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-9 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
@@ -305,7 +351,6 @@
                         </div>
                     </div>                 
                 </div>
-
 
 
                 
@@ -451,7 +496,33 @@
                 <div on:click={() => openModal("Login1")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Web Event: Yunchin Market<br/>Free 3-star Helia Stigma</span>
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
+                        <img src="https://i.imgur.com/J0JFtzs.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
 
+            </div>
+
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 8</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div on:click={() => openModal("Login1")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Powered Duo</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/nlS8WVR.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
                 </div>
 
             </div>
