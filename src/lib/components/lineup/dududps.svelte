@@ -3,9 +3,10 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
+
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },
         { name: 'BW', image: '/images/valkportrait/kiana badum.png', teampct: 'Mobs',  speed: '' },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: 'Bow',  speed: '' },
@@ -22,7 +23,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'PS'; // default to 'Vita'
+    export let firstCharName: string = 'Sparkle'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred

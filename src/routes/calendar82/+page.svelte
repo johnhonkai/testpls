@@ -419,6 +419,42 @@
 
             </div>
 
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-cyan-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 6</span>
+                </div> 
+                
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("Login1")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event: Free 5 Equipment Supply Cards</span>
+
+                </div>
+
+            </div>
+
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-cyan-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 7</span>
+                </div> 
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("Login1")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-cyan-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Web Event: Yunchin Market<br/>Free 3-star Helia Stigma</span>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -526,14 +562,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard />
-                    <BossCard />
-                    </div>
+                    <BossCard image="/images/Bosses/Hellmaru.webp" date="May 23" weather="Ice" bosspage="/boss?icehellmaru" />
+                    <BossCard image="/images/Bosses/Saha Assaka.webp" date="May 26" weather="Stellar" bosspage="/boss?stellarassaka" />
+                </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/BossesMA/Hephaestus_SSS.webp" date="Apr 29"  />
+                        <BossCard image="/images/Bosses/MOBIUS.png"  />
+                        <BossCard image="/images/Bosses/Kallen.webp"  />
                     </div>
     
 

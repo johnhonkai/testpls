@@ -1468,6 +1468,8 @@ export const teamData = {
     ]},],    
     videos: [
       { url: 'https://www.youtube.com/watch?v=7ADji7fSAgY', abyss: 'RedLotus 511D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=Ij1mHFVdCqA', abyss: 'Nirvana 545D', uploader: 'chronos002' },
+
     ] 
   },
   starbull: {
