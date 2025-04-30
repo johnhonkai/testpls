@@ -322,7 +322,7 @@
 
                     <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-cyan-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">DA, AKA, AE Outfit<br/>9600 crystals</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">DA, AKA, AE Outfit<br/>7680 crystals</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-14 h-full">
                             <img src="https://i.imgur.com/OyAXGhx.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
