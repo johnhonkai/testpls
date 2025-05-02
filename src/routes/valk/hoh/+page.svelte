@@ -39,6 +39,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Hohdps from "$lib/components/lineup/hohdps.svelte";
+	import CharBio from "$lib/components/CharBio.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -51,22 +52,36 @@ function closeLightbox() {
   showLightbox = false;
 }
 
+
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
-  { name: 'Equipment', short: 'equipment' },
-  //{ name: 'How to Play', short: 'howtoplay' },
-  { name: 'Support Buffs', short: 'support' },
-
-  { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
-  { name: 'Popular Question', short: 'qna' },
-  //{ name: 'Overview Card', short: 'card' },
-  //{ name: 'Translation Error', short: 'translation' },
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+ // { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Question', short: 'qna' , icon: faComments  },
+ // { name: 'Overview Card', short: 'card' },
+ // { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
 // Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
@@ -205,91 +220,104 @@ function selectTabMobile(event) {
 
 
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  #star-container {
+    background: radial-gradient(rgb(var(--light-pink-rgb)), rgb(var(--dark-pink-rgb)));
+  }
+
+  #star-gradient-overlay {
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-pink-rgb)));
+  }
+
+  #app {
+  height: 37rem;
+  overflow: hidden;
+  position: relative;
 }
 </style>
 
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_hofi.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
-  </div>
+
+
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+    <div id="app">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
+      </div>
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+      </div>
+    </div>
+  
+    
+    </div>
   
   
   
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/hoh.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
-  
-    <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
+    <img src="/images/valkfull/hoh.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
+   <!-- Like Button: Bottom-right overlay -->
+   <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
       <button
         on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
+        disabled={hasLiked}
+        class="bg-pink-800/70 hover:bg-pink-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
+      >
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
           <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
           />
         </svg>
-        <span class="text-white font-semibold">{fovlikes}</span>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{fovlikes}</span>
       </button>
     </div>
-  
   </div>
   
+  </div>
   
   
   <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start mt-5">
-    <!-- Battlesuit Name -->
-  
-    <div>
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Human: Ego</h1>
+  <div class="flex flex-col items-center text-center justify-start">
+    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Herrscher of Human: Ego
+    </h1>
+  <!-- Character Info Cards -->
+<div class="rounded-lg overflow-hidden shadow-md bg-slate-200 text-black text-xs w-full font-medium">
+  <div class="flex">
+    <div class="bg-pink-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Name</div>
+    <div class="px-3 py-1 flex-1 flex items-center">Elysia</div>
   </div>
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Elysia | Release Date: v6.0 (15 Sep 2022) </p>
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v8.1  (20 Feb 2025) </p>
-  
-    <!-- Common wrapper to ensure same width -->
-    <div class="w-full max-w-sm mb-2">
-      <!-- Container with 4 pictures (Centered) -->
-      <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-
-        </div>
-      </div>
-      <div class="flex flex-col mt-4 items-center" id="arbox">
-
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <div class="flex flex-wrap justify-center">
-            <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
-          </div >
-          <div class="flex flex-row gap-2 flex-wrap justify-center">
-            <img src="/images/artype/ar grail.png" alt="ar" class="w-auto h-8 md:h-10" />
-            <img src="/images/artype/ar loa.webp" alt="Support 1" class="w-auto h-8 md:h-10" />
-            <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-  
-          </div>
-        </div>
-      </div>
-  
-    </div> <!-- End common wrapper -->
-
-
+  <div class="flex">
+    <div class="bg-pink-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Release</div>
+    <div class="px-3 py-1 flex-1 flex items-center">v6.0 (15 Sep 2022)</div>
   </div>
+  <div class="flex">
+    <div class="bg-pink-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">DLC</div>
+    <div class="px-3 py-1 flex-1 flex items-center">v8.1 (20 Feb 2025)</div>
+  </div>
+</div>
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="psy" element="ice" ar="wod" bg="bg-pink-800" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['hg' , 'loa' , 'wod']}  bg="bg-pink-800"/>
+  </div>
+
+  
   </section>
   
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
@@ -299,14 +327,25 @@ function selectTabMobile(event) {
 
     <ul class="space-y-2">
       {#each tabs as tab}
-        <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
-        </li>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+    
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+    
+    </button>
       {/each}
     </ul>
     </aside>
@@ -353,7 +392,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
-
+    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+      <p class="text-sm sm:text-base">
+        <strong>Updated For v8.2 (24 Apr 2025)
+    </p>
+    </div>
     <div>
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -366,7 +409,7 @@ function selectTabMobile(event) {
 
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400">Wheel of Destiny DPS</strong> <br/>
-          When HoH equips the new Divine Key Flawless Benediction, she unlocks Astral Ring: Wheel of Destiny. This brings HoH DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
+          When HoH equips the new Divine Key <span class="text-pink-300">Flawless Benediction</span>, she unlocks Astral Ring: Wheel of Destiny. This brings HoH DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
       </p>
 
       <p class="mt-4 text-sm sm:text-base">
@@ -379,16 +422,23 @@ function selectTabMobile(event) {
       HoH does not provide any improvement for existing LoA lineup. Although, she can consume Stellar Drain very quickly.  </p>
 
       <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400">??? Support</strong> <br/>
+        <strong class="text-amber-400">Future AR Support</strong> <br/>
         HoH will be a support for a future Astral Ring.</p>
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
 
-        <p class="text-sm sm:text-base mt-4 mb-4">
-          <strong class="text-amber-400">New Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If HoH is available through other means, such as spending event or Battle Pass, you can consider getting her that way.
-      </p>
+        <p class="text-sm sm:text-base mt-4">
+          <strong class="text-amber-400">New Players on Herrrscher of Human</strong> 
+          <br/>Currently, there are two ways to get HoH.
+        </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li><span class="text-pink-300 ">Battle Pass:</span> As F2P, you can unlock HoH for free from Battle Pass. However, it will take you five patches, which is almost A YEAR. You can speed the process by purchasing Knight or Paladin Pass.</li>
+            <li><span class="text-teal-300 ">Starter B-chip Pack: </span> If you can afford it, you can get HoH from this pack.</li>
+          </ul>
+          
+      
 
     <p class="mt-4 text-sm sm:text-base">
       <strong class="text-amber-400">Existing Players on DLC Equipment</strong> <br/>Although HoH DLC is good, there are some "requirements" that would make the DLC not worth it if you are on a budget. Here are the reasons:
@@ -396,18 +446,18 @@ function selectTabMobile(event) {
   <ul class="list-disc ml-6 text-sm sm:text-base">
     <li>As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.</li>
     <li>For casual / on-off  players, if you only have S0 HoH, then getting this Divine Key DLC will not guarantee you to get +100 in Abyss because HoH is a popular valk. A lot of players will have her at SS-rank or higher now in v8.1. </li>
-    <li>As support, her buffs are nothing exceptional. Her unique utility is that she can hit tank weak spot. So basically, HoH will only be useful as support very rarely outside of Arena.</li>
-    <li>She will also support one more AR in the future, so maybe she will be very good for that AR, but who knows.</li>
-    <li>Another new addition in v8.1 is Theresa AstralOp, which is very broken for LoAscension teams. I dare say that if you have to choose between HoH Divine Key and Theresa AstralOp, I would get Theresa.</li>
+    <li>As LoA and WoD support, her buffs are nothing exceptional. Her unique utility is that she can hit tank weak spot. So basically, HoH will only be useful as support very rarely outside of Arena.</li>
+    <li>She will also support one more AR in the future, so <span class="text-teal-300 ">maybe she will be very good for that AR</span>, but who knows.</li>
+    <li>But of course, for whales who can afford it, just pull.</li>
   </ul>
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Human:</strong> Battlesuit Supply</li>
-            <li ><strong>Flawless Benediction:</strong> Equipment Supply</li>
-            <li ><strong>Solon Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.1</li>
+            <li ><strong>Herrscher of Human:</strong> Battle Pass, Starter B-chip Pack.</li>
+            <li ><strong>Flawless Benediction:</strong> Equipment Supply.</li>
+            <li ><strong>Solon Stigma:</strong> Equipment Supply, Forgeable.</li>
 
 
         </ul>
@@ -1045,7 +1095,7 @@ function selectTabMobile(event) {
   {/if}
   
   
-      {#if selectedTab === 'Gameplay Examples'}
+      {#if selectedTab === 'Gameplay'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
       <div class=" gap-6 mt-5 mb-10">
@@ -1122,7 +1172,7 @@ function selectTabMobile(event) {
 </div>
   {/if}
   
-  {#if selectedTab === 'Popular Question'}
+  {#if selectedTab === 'Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
   <div class="my-6">

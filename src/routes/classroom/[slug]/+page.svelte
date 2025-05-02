@@ -215,18 +215,26 @@
     <div class="flex-1 ml-0 xl:ml-64 px-4">
       <div class="container mx-auto flex flex-row gap-4 mb-20 pt-4">
         <!-- Main Content -->
-        <article class="prose grow mx-auto md:max-w-[960px] p-6 rounded-lg prose-h2:bg-linear-to-r prose-h2:from-teal-600 prose-h2:to-teal-400 prose-h2:text-black prose-h2:rounded-sm prose-h2:w-fit prose-h2:px-2 prose-h3:text-amber-300 prose-h1:font-plusjakarta">
-          {#if data.title !== 'Welcome'}
-            <h1 class="mb-1">{data.title}</h1>
-            <p class="mt-0.5 text-sm font-roboto text-slate-400">Updated For Version {data.update}</p>
-          {/if}
-          <svelte:component this={data.content} />
-        </article>
+<article
+  class="prose prose-invert grow mx-auto md:max-w-[960px] px-6 py-8 rounded-2xl 
+         prose-h1:mb-2 prose-h1:font-plusjakarta prose-h1:text-3xl 
+         prose-h2:mt-8 prose-h2:mb-3 prose-h2:bg-gradient-to-r prose-h2:from-teal-600 prose-h2:to-teal-400  prose-h2:font-plusjakarta
+         prose-h2:text-black prose-h2:px-3 prose-h2:py-1 prose-h2:rounded-md prose-h2:font-semibold prose-h2:w-fit
+         prose-h3:text-amber-300 prose-h3:font-semibold
+         prose-p:text-slate-300 prose-li:marker:text-teal-400 prose-a:text-sky-400 hover:prose-a:underline
+         "
+>
+  {#if data.title !== 'Welcome'}
+    <h1>{data.title}</h1>
+    <p class="text-sm text-slate-400 mb-4 -mt-2 tracking-wide">Updated for Version {data.update}</p>
+  {/if}
+  <svelte:component this={data.content} />
+</article>
   
         <!-- TOC (Right Sidebar) -->
         {#if tocActive}
         
-          <aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg shadow-md hidden 2xl:block">
+          <aside class="xl:w-1/6 sticky top-16 h-[calc(100vh-4rem)] bg-base-100 rounded-lg  hidden 2xl:block ">
             
 <div class="z-10 hidden lg:flex  items-center justify-center xl:mt-10 ">
 	<button on:click={() => (showSearchModal = true)}

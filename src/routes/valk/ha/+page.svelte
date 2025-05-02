@@ -51,20 +51,37 @@ function closeLightbox() {
   showLightbox = false;
 }
 
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import CharBio from "$lib/components/CharBio.svelte";
+
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
- // { name: 'Equipment', short: 'equipment' },
- // { name: 'Support Buffs', short: 'support' },
- // { name: 'How to Play', short: 'howtoplay' },
- // { name: 'Gameplay Examples', short: 'example' },
- //{ name: 'Elysian Realm', short: 'er' },
- // { name: 'Rank Up', short: 'rank' },
- // { name: 'Popular Question', short: 'qna' },
- // { name: 'Overview Card', short: 'card' },
- // { name: 'Translation Error', short: 'translation' },
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+//  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+//  { name: 'Gameplay', short: 'example', icon: faVideo },
+//  { name: 'Elysian Realm', short: 'er', icon: faFire },
+//  { name: 'Rank Up', short: 'rank', icon: faStar },
+// { name: 'Question', short: 'qna' , icon: faComments  },
+// { name: 'Overview Card', short: 'card' },
+// { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
+
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
+   
 
 // Function to select a tab and update the URL
 function selectTab(tab) {
@@ -200,44 +217,62 @@ async function increaseLike() {
 </script>
 
 
-
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+   #apphelia {
+    height: 34rem;
+    overflow: hidden;
+    position: relative;
+  }
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_fov.svg" alt="Durandal wave" class="w-full h-full object-cover overflow-hidden" /> 
-  </div>
+
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+    <div id="apphelia">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
+      </div>
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+      </div>
+    </div>
+  
+    
+    </div>
 
 
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
-  <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-    <button
+  <!-- Like Button: Bottom-right overlay -->
+  <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
+      <button
         on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-5 h-5"
-        >
-            <path
-                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-            />
+        disabled={hasLiked}
+        class="bg-orange-800/80 hover:bg-orange-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
+      >
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
+          />
         </svg>
-        <span class="text-white font-semibold">{durandallikes}</span>
-    </button>
-</div>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{durandallikes}</span>
+      </button>
+    </div>
+  </div>
 
 </div>
 
@@ -245,44 +280,45 @@ async function increaseLike() {
 
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
+ 
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">位面武器·失序时空 (BETA)</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">位面武器·失序时空</h1>
 
-  <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Erdős Helia | Release Date: v8.3 (26 June 2025)  </p>
-
-  <!-- Common wrapper to ensure same width -->
-  <div class="w-full max-w-sm mb-2">
-    <!-- Container with 4 pictures (Centered) -->
-    <div class="flex flex-col items-center" id="typebox">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconBIO.png" alt="IMG" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Lightning_DMG.png" alt="Lightning" class="w-auto h-8 md:h-10" />
-        <img src="/images/artype/ar grail.png" alt="ar" class="w-auto h-8 md:h-10" />
+  <!-- Character Info Cards -->
+  <div class="space-y-2 w-[260px] md:w-[300px]">
+    <!-- Name Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+        Name
+      </div>
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+        Erdős Helia
       </div>
     </div>
 
-    <!-- Support For Container (Centered) -->
-    <div class="flex flex-col mt-4 items-center" id="arbox">
-
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <div class="flex flex-wrap justify-center">
-          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
-        </div >
-        <div class="flex flex-row gap-2 flex-wrap justify-center">
-          <img src="/images/artype/ar grail.png" alt="Support 1" class="w-auto h-8 md:h-10" />
-
-        </div>
+    <!-- Release Date Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+        Release
+      </div>
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+        v8.3 (26 June 2025)
       </div>
     </div>
-  </div> <!-- End common wrapper -->
+  </div>
+
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="hg" bg="bg-orange-800" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['hg']}  bg="bg-orange-800"/>
 </div>
 
 
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto  mt-5 "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >

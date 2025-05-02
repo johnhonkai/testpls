@@ -34,6 +34,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
 	import { limit } from 'firebase/firestore';
 	import Hohdps from '$lib/components/lineup/hohdps.svelte';
+	import CharBio from '$lib/components/CharBio.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -45,21 +46,36 @@ function openLightbox(image) {
 function closeLightbox() {
   showLightbox = false;
 }
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
-  { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
-  { name: 'How to Play', short: 'howtoplay' },
-  { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
-  { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Question', short: 'qna' , icon: faComments  },
+ // { name: 'Overview Card', short: 'card' },
+  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
+
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
+  
 
 // Function to select a tab and update the URL
 function selectTab(tab) {
@@ -199,18 +215,30 @@ function selectTabMobile(event) {
 
 
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+ 
+ #appsena {
+    height: 34rem;
+    overflow: hidden;
+    position: relative;
+  }
 </style>
+  
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
-<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-  <img src="/images/bg/wave_sena.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
-</div>
-
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+      <div id="appsena">
+        <div id="star-container">
+          <div id="star-pattern"></div>
+          <div id="star-gradient-overlay"></div>
+        </div>
+        <div id="stripe-container">
+          <div id="stripe-pattern"></div>
+        </div>
+      </div>
+    
+      
+      </div>
+  
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
   <img src="/images/bg/ava_sena.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
@@ -221,23 +249,31 @@ function selectTabMobile(event) {
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/Senadina.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-8;"/> 
 
-  <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-    <button
-      on:click={increaseLike}
-      class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-             {hasLiked ? '' : 'hover:bg-blue-700'}">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-5 h-5"
+  <!-- Like Button: Bottom-right overlay -->
+  <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
+      <button
+        on:click={increaseLike}
+        disabled={hasLiked}
+        class="bg-orange-800/80 hover:bg-orange-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
       >
-        <path
-          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-        />
-      </svg>
-      <span class="text-white font-semibold">{senalikes}</span>
-    </button>
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{senalikes}</span>
+      </button>
+    </div>
   </div>
 
 </div>
@@ -246,61 +282,69 @@ function selectTabMobile(event) {
 
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
+
   <!-- Battlesuit Name -->
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Deepspace Anchor: First Light</h1>
 
-  <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Deepspace Anchor: First Light</h1>
-</div>
-  <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Senadina | Release Date: v7.3 (29 Feb 2024)  </p>
-
-  <!-- Common wrapper to ensure same width -->
-  <div class="w-full max-w-sm mb-2">
-    <!-- Container with 4 pictures (Centered) -->
-    <div class="flex flex-col items-center">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconSD.webp" alt="Mech" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-        <img src="/images/artype/ar world star.png" alt="ar" class="w-auto h-8 md:h-10" />
+  <!-- Character Info Cards -->
+  <div class="space-y-2 w-[260px] md:w-[300px]">
+    <!-- Name Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+        Name
+      </div>
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+        Senadina
       </div>
     </div>
 
-    <!-- Support For Container (Centered) -->
-    <div class="flex flex-col mt-4 items-center">
-
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-orange-500 outline-1 bg-orange-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <div class="flex flex-wrap justify-center">
-          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100 mb-1">SUPPORT FOR:</h2>
-        </div >
-        <div class="flex flex-row gap-2 flex-wrap justify-center">
-          <img src="/images/artype/ar world star.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar wheel of destiny.png" alt="ar" class="w-auto h-8 md:h-10" />
-        </div>
+    <!-- Release Date Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+        Release
+      </div>
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+        v7.3 (29 Feb 2024)
       </div>
     </div>
-  </div> <!-- End common wrapper -->
+  </div>
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="sd" element="lightning" ar="ws" bg="bg-orange-800" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['wod', 'ws']}  bg="bg-orange-800"/>
 </div>
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mt-5"> 
 
 
-  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
-
+  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4 text-gray-200 sticky top-16 h-[calc(100vh-4rem)]">
     <ul class="space-y-2">
       {#each tabs as tab}
-        <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
-        </li>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+  
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+  
+    </button>
       {/each}
     </ul>
-    </aside>
+  </aside>
 
 <style>
 .dropdown.dropdown-center.dropdown-right .dropdown-content,
@@ -345,18 +389,29 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
 
+      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.2 (24 Apr 2025)
+      </p>
+      </div>
+
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/> Good Lightning SD DPS. Excels against SD mobs thanks to dmg link mechanic. Does not beat Jovial Deception vs solo SD boss, or Lunar Vow vs lightning boss, BUT can still handle them well enough for the average player.
+              <strong class="text-amber-400">DPS</strong> <br/> An okay Lightning SD DPS. Excels against SD mobs thanks to dmg link mechanic. However, she has not been used as much as DPS, because:
+              <br/>
+              - Swarm bosses don't appear that frequently anymore.
+              <br/>
+              - Low rank Sena can't compete with more recent DPSes. For example: Against Lightning Guaymas boss, she needs at least SS-rank to score higher than Ba-dum! Kiana.
+              <br/>
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/> Provides Elemental Breach and strong buffs. Has zero on-field time.
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/> Great support. Provides Elemental Breach and strong buffs, with ZERO on-field time.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/> Sena is Tier 2 support for Sparkle and Schicksal's Imperative. Sena generates a resonance mark that can be consumed by Sparkle / SIMP to trigger resonance dmg 3 times.
+              <strong class="text-amber-400">World Star Support</strong> <br/> Sena is a lower tier support for Resonance teams. Sena generates a resonance mark that can be consumed by other DPS to trigger resonance dmg 3 times.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -370,32 +425,44 @@ function selectTabMobile(event) {
             <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. Due to how meta works, it's better to use your crystal to pull the latest valkyrie. If you can afford to spend, get Sena from Battle Pass.
             
         </p>
+
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400">F2P Players</strong> 
+          <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch.
+
+
+        </p>
+
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">All Players</strong> 
-              <br/> As a DPS, Sena only top scores Bloodlust swarm boss now.
+              <strong class="text-amber-400">Spending Players</strong> 
+
+              <br/> 
+              Recommended to get Sena and her weapon from Battle Pass. She still has her niche in the meta.
+              <br/>
             </p>
 
+            <p class="mt-2 text-sm sm:text-base">
+              As a <span class="text-teal-300">DPS</span>, Sena only top scores Bloodlust swarm boss now. As a <span class="text-rose-300">support</span>, Sena's role somewhat overlaps with Vita.
+
+          </p>
           <p class="mt-2 text-sm sm:text-base">
-            As a support, Sena's role overlaps with Vita. If you are wondering who to pull between Vita or Sena, here's a general overview of their performance:
         </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
               <li class="mt-2">For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores.</li>
               <li class="mt-2">For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
-              <li class="mt-2">Law of Ascension team: Sena cannot support this team. Vita can support this team, providing Physical and Elemental Breach. </li>
-              <li class="mt-2">Other 9 AR teams: Vita can provide Breach and buffs for the other 9 AR teams, but at a reduced effectiveness. </li>
+              <li class="mt-2">Sena cannot support Law of Ascension team like Vita. </li>
 
           </ul>
           <p class="mt-2 text-sm sm:text-base">
-            Based on the reasons listed above, pulling Sena is not highly recommended anymore.
+            Based on the reasons listed above, pulling Sena is not highly recommended anymore, but she's available in Battle Pass, so get her if you can afford it.
         </p>
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li class="mt-2" ><strong>Senadina:</strong> Battlesuit Supply, Starter Supply</li>
-              <li class="mt-2"><strong>Senadina's Weapon:</strong> Equipment Supply</li>
+              <li class="mt-2" ><strong>Senadina:</strong> Battle Pass v8.2-8.4, Battlesuit Supply, Starter Supply</li>
+              <li class="mt-2"><strong>Senadina's Weapon:</strong> Battle Pass v8.2-8.4, Equipment Supply</li>
               <li class="mt-2"><strong>Senadina's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li class="mt-2">Battlesuit supply not available in v8.0. High chance of returning in v8.1 spending event. </li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -506,31 +573,69 @@ function selectTabMobile(event) {
               <h4 class="text-base sm:text-base text-white">Red Star Thunderbolt + Perfect Morning Set</h4>
               </div>
 
-              <div class="py-2 px-2 mt-2 bg-linear-to-r from-cyan-950/75 to-cyan-900/75 rounded-sm" >
-              <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base mb-2"><b>Red Star Thunderbolt: </b> All buffs</li>
-                  <li class="text-sm sm:text-base mb-2"><b>Perfect Morning: </b> MID and 3PC have WoDestiny support buffs that require Sena to consume 30 sp on standby (off field). The sp consumption is triggered when battle starts, when SO activates, and when SO ends. If Sena is on the field when enemy spawns (battle starts), Sena does consume sp but SHE IS NOT ON STANDBY, so the stigma buffs will not activate.</li>
-                  <li class="text-sm sm:text-base mb-2"><b>Perfect Morning: </b> When supporting WoDestiny team, if Sena switches in, some of the buffs from Prismatic Stars buff will be disabled permanently. However, if Sena equips Perfect Morning 3PC, Sena can switch in without losing any buff.</li>
-                  <li class="text-sm sm:text-base mb-2"><b>Affix: </b> Full ATK.</li>
-              </p>
+
+
+
+              <div class="p-4 mt-4 bg-linear-to-r from-cyan-950/75 to-cyan-900/75 rounded-sm">
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Red Star Thunderbolt </b><br/>  Huge self buffs and team buffs.
+                </p>
+        
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Perfect Morning set</b><br/> - MID and 3PC have WoDestiny support buffs that require Sena to consume 30 sp on standby (off field). The sp consumption is triggered when battle starts, when SO activates, and when SO ends. If Sena is on the field when enemy spawns (battle starts), Sena does consume sp but SHE IS NOT ON STANDBY, so the stigma buffs will not activate.
+                  <br/> - When supporting WoDestiny team, if Sena switches in, some of the buffs from Prismatic Stars buff will be disabled permanently. However, if Sena equips Perfect Morning 3PC, Sena can switch in without losing any buff.
+                  <br/> - Forgeable in Foundry.
+                </p>
+        
+                <p class="text-sm sm:text-base text-left">
+                  <b>Affix</b> <br/>Full ATK.
+                </p>
               </div>
+        
 
               <div class="divider  "></div>
 
               <h2 class="text-xl font-semibold text-center">TRANSITIONAL</h2>
-              <div class="flex flex-col justify-center items-center">
-                  
-                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+              <div class="flex flex-row justify-center items-center gap-5">
+                <div class="flex flex-col justify-center items-center">
+                
+                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
   
-                      <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
                           <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/09/06/50494840/2841a5bbda40fdb327b1d584d4472561_6166052678851258594.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
                       </div>
   
                   </div>  
-                  <p class="text-sm sm:text-base text-white">Skyveil Feathers</p>
-  
-                  <p></p>
+                  <p class="text-sm sm:text-base text-white text-center">Skyveil Feathers</p>
                   </div>
+
+
+                <div class="flex flex-col justify-center items-center">
+                
+                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
+  
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
+                          <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/10/19/50494840/1bf1d09cd6de50e1e2e90aa9054c37e2_6487852907325483142.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      </div>
+  
+                  </div>  
+                  <p class="text-sm sm:text-base text-white text-center">Volatile Sparkler
+                  </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                
+                  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden ">
+  
+                      <div class="w-14 h-14 sm:w-28 sm:h-28">
+                          <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/01/15/73749426/e4a04240fc1beb3486b1edf52fc8e686_1933481799434645907.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                      </div>
+  
+                  </div>  
+                  <p class="text-sm sm:text-base text-white text-center">Life of Pi</p>
+                </div>
+                
+              </div>
            </div>
       {/if}
 
@@ -1367,7 +1472,7 @@ function selectTabMobile(event) {
   {/if}
   
   
-      {#if selectedTab === 'Gameplay Examples'}
+      {#if selectedTab === 'Gameplay'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
 
@@ -1420,7 +1525,7 @@ function selectTabMobile(event) {
 </div>
   {/if}
   
-  {#if selectedTab === 'Popular Question'}
+  {#if selectedTab === 'Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
   <div class="text-center my-4">
@@ -1439,7 +1544,7 @@ function selectTabMobile(event) {
   {/if}
 
 
-      {#if selectedTab === 'Translation Error'}
+      {#if selectedTab === 'TL Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
       <div class="flex flex-col justify-center items-center">
           

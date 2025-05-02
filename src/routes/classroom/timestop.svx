@@ -1,6 +1,6 @@
 ---
 title: Time Stop
-category: 'Game mechanics'
+category: 'Game Mechanics'
 sortOrder: 5
 customSlug: "timestop"
 update: 8.2
@@ -8,7 +8,7 @@ update: 8.2
 ---
 
 ## What is Time Stop?
-Time Stop, or officially called as Time Frozen Domain (no one actually uses this term) is a feature that some valkyries have. One or more of their abilities can **pause stage timer and buff timer** during its animation OR for a certain duration. Only S-rank valkyries have this feature.
+Time Stop, or officially known as Time Frozen Domain (no one actually uses this term) is a feature that some valkyries have. One or more of their abilities can **pause stage timer and buff timer** during its animation OR for a certain duration. Only S-rank valkyries have this feature.
 
 ## Why is it so good?
 

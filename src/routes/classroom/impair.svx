@@ -1,6 +1,6 @@
 ---
 title: Impair and Physical Breach
-category: 'Game mechanics'
+category: 'Game Mechanics'
 sortOrder: 3
 customSlug: "impair"
 update: 8.2

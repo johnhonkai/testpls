@@ -15,6 +15,8 @@
 
 
 <script lang="ts">
+
+
 import { onMount } from "svelte";
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
 import { getFirestore } from "firebase/firestore";
@@ -50,21 +52,37 @@ function closeLightbox() {
   showLightbox = false;
 }
 
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire} from '@fortawesome/free-solid-svg-icons';
+	import CharBio from '$lib/components/CharBio.svelte';
+
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
-  { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
-  { name: 'How to Play', short: 'howtoplay' },
-  { name: 'Gameplay Examples', short: 'example' },
- { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
- // { name: 'Popular Question', short: 'qna' },
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
 ];  
 
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
+  
 // Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
@@ -154,7 +172,8 @@ function toggleTabs() {
 
 function selectTabMobile(event) {
       selectedTab = event.target.value;
-  }
+}
+
   let durandallikes = likesData["ps"] || 0; // Get initial likes from JSON
   const charName = "ps"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
@@ -201,107 +220,243 @@ async function increaseLike() {
 
 
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+:root {
+  --glow-rgb: 245 245 245;
+  
+  --light-gold-rgb: 13, 148, 136;
+  --dark-gold-rgb: 15, 118, 110;
+  
+  --primary-stripe-rgb: 230 230 230;
+  --secondary-stripe-rgb: 240 240 240;
 }
+
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#app {
+  height: 37rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#star-container {
+  background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));
+  height: 100%;  
+  overflow: hidden;
+  position: relative;
+}
+
+#star-pattern {
+  background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
+  background-size: 10%;  
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  opacity: 0.10;
+  animation: pan 180s linear infinite;
+  will-change: background-position;
+}
+
+#star-gradient-overlay {
+  background: radial-gradient(circle, transparent 75%, rgb(var(--dark-gold-rgb)));
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+#stripe-container {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0px;
+  translate: -50% 0%;
+  height: 10rem;
+  min-height: 240px;
+  width: 100%;
+  min-width: 2000px;
+  background-color: rgb(var(--stripe-primary-rgb));
+  
+  clip-path: polygon(
+    0% 5%, 1.25% 0%, 2.5% 5%, 
+    3.75% 0%, 5% 5%, 6.25% 0%, 
+    7.5% 5%, 8.75% 0%, 10% 5%, 
+    11.25% 0%, 12.5% 5%, 13.75% 0%, 
+    15% 5%, 16.25% 0%, 17.5% 5%, 
+    18.75% 0%, 20% 5%, 21.25% 0%, 
+    22.5% 5%, 23.75% 0%, 25% 5%, 
+    26.25% 0%, 27.5% 5%, 28.75% 0%, 
+    30% 5%, 31.25% 0%, 32.5% 5%, 
+    33.75% 0%, 35% 5%, 36.25% 0%, 
+    37.5% 5%, 38.75% 0%, 40% 5%, 
+    41.25% 0%, 42.5% 5%, 43.75% 0%, 
+    45% 5%, 46.25% 0%, 47.5% 5%, 
+    48.75% 0%, 50% 5%, 51.25% 0%, 
+    52.5% 5%, 53.75% 0%, 55% 5%, 
+    56.25% 0%, 57.5% 5%, 58.75% 0%, 
+    60% 5%, 61.25% 0%, 62.5% 5%, 
+    63.75% 0%, 65% 5%, 66.25% 0%, 
+    67.5% 5%, 68.75% 0%, 70% 5%, 
+    71.25% 0%, 72.5% 5%, 73.75% 0%, 
+    75% 5%, 76.25% 0%, 77.5% 5%, 
+    78.75% 0%, 80% 5%, 81.25% 0%, 
+    82.5% 5%, 83.75% 0%, 85% 5%, 
+    86.25% 0%, 87.5% 5%, 88.75% 0%, 
+    90% 5%, 91.25% 0%, 92.5% 5%, 
+    93.75% 0%, 95% 5%, 96.25% 0%, 
+    97.5% 5%, 98.75% 0%, 100% 5%, 
+    100% 100%, 0% 100%
+  );
+}
+
+#stripe-pattern {
+  height: 100%;
+  width: 100%;
+  background-size: 18px 18px;
+  background-color:var(--color-base-100);
+  animation: pan 360s linear infinite;
+}
+
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_lp.svg" alt="Durandal wave" class="w-full h-full object-cover overflow-hidden" /> 
-  </div>
+
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+    <div id="app">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
+      </div>
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+      </div>
+    </div>
+
+    
+      </div>
 
 
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/ps.png" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-54;"/> 
-  <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-    <button
+  <img src="/images/valkfull/ps.png" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain" style="view-transition-name: valkyrie-image-54;" />
+
+  <!-- Like Button: Bottom-right overlay -->
+  <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
+      <button
         on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-5 h-5"
-        >
-            <path
-                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-            />
+        disabled={hasLiked}
+        class="bg-teal-800/80 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
+      >
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
+          />
         </svg>
-        <span class="text-white font-semibold">{durandallikes}</span>
-    </button>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{durandallikes}</span>
+      </button>
+    </div>
+  </div>
+  
 </div>
-
-</div>
-
 
 
 <!-- Right: Character Info (Centered) -->
 <div class="flex flex-col items-center text-center justify-start">
+
   <!-- Battlesuit Name -->
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0 mt-4">Peregrine Sword</h1>
+  <h1 class="text-xl md:text-2xl text-white mt-4 mb-2 italic font-russoone">Peregrine Sword</h1>
 
-  <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Li Sushang | Release Date: v8.2 (24 Apr 2025)  </p>
-
-  <!-- Common wrapper to ensure same width -->
-  <div class="w-full max-w-sm mb-2">
-    <!-- Container with 4 pictures (Centered) -->
-    <div class="flex flex-col items-center" id="typebox">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-emerald-500 outline-1 bg-emerald-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconBIO.png" alt="IMG" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Physical.png" alt="Physical" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Bleed_DMG.png" alt="Physical" class="w-auto h-8 md:h-10" />
-        <img src="/images/artype/ar loa.webp" alt="ar" class="w-auto h-8 md:h-10" />
+  <!-- Character Info Cards -->
+  <div class="space-y-2 w-[260px] md:w-[300px]">
+    <!-- Name Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
+        Name
+      </div>
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
+        Li Sushang
       </div>
     </div>
 
-    <!-- Support For Container (Centered) -->
-    <div class="flex flex-col mt-4 items-center" id="arbox">
-
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-emerald-500 outline-1 bg-emerald-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <div class="flex flex-wrap justify-center">
-          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
-        </div >
-        <div class="flex flex-row gap-2 flex-wrap justify-center">
-          <img src="/images/artype/ar grail.png" alt="ar" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar loa.webp" alt="Support 1" class="w-auto h-8 md:h-10" />
-
-        </div>
+    <!-- Release Date Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
+        Release
+      </div>
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
+        v8.2 (24 Apr 2025)
       </div>
     </div>
-  </div> <!-- End common wrapper -->
+  </div>
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="bio" element="phy" optelement="bleed" ar="loa" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['loa', 'hg']} />
+
 </div>
+
 
 
 </section>
 
+
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
-  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
-
+  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4 text-gray-200 sticky top-16 h-[calc(100vh-4rem)]">
     <ul class="space-y-2">
       {#each tabs as tab}
-        <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
-        </li>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+  
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+  
+    </button>
       {/each}
     </ul>
-    </aside>
-
+  </aside>
+  
 <style>
 .dropdown.dropdown-center.dropdown-right .dropdown-content,
 .dropdown-center.dropdown-left .dropdown-content{
@@ -466,19 +621,19 @@ async function increaseLike() {
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
           <div class="w-20 h-20 sm:w-28 sm:h-28">
-            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/07/50494840/8ec6127a6d4363462a001191b6d4cc35_1812491884462959797.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+            <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/1.png" alt="Jadeite Sleeves" class="w-full h-full object-cover">
         </div>
 
         <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/ced58aa0b298cb83be62a620ff7cd33d_3065648174616263356.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/2.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/9235e966b346ec0806897a73e0deb58c_1611100570569610354.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/3.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/0baf38c937ac92a238b9526dbce45437_5545858369582851653.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/4.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
         </div>  
@@ -500,7 +655,8 @@ async function increaseLike() {
         </p>
 
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Newfound Joys set</b><br/> - Huge buffs.
+          <b>Newfound Joys set</b><br/> - Huge self and team buffs.
+          <br/> - 3PC provides impair (DEF -55%)
           <br/> - Forgeable in Foundry.
         </p>
 
@@ -525,27 +681,33 @@ async function increaseLike() {
         />
       </div>
       
-      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
-        <p class="mb-4 font-semibold">How to activate Peregrine Sword support buffs:</p>
-        
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
-            <p>Joint Weapon skill Forest Piercer and Leaf Sweep can consume Stellar Drain. 
-            </p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">PS Stigma Buff</p>
-           <p>Weapon Skill or QTE triggers an important stigma buff [The World is an Oyster] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Passive</p>
-            <p>The rest of her buffs are activated passively.</p>
-          </div>
-
-
+      <div class="my-6 px-4 py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
+        <h3 class="text-lg sm:text-xl font-bold text-center">
+          How to Activate Peregrine Sword Support Buffs
+        </h3>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
+          <p class="leading-relaxed">
+            Joint Weapon skill <span class="italic text-sky-200">Forest Piercer</span> and <span class="italic text-sky-200">Leaf Sweep</span> can consume Stellar Drain.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">PS Stigma Buff</h4>
+          <p class="leading-relaxed">
+            Weapon Skill or QTE triggers an important stigma buff <span class="text-sky-200 italic">[The World is an Oyster]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
+          <p class="leading-relaxed">
+            The rest of her buffs are activated passively.
+          </p>
+        </div>
       </div>
+      
 
       <!-- Lightbox Component -->
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
@@ -1171,7 +1333,7 @@ async function increaseLike() {
   {/if}
   
   
- {#if selectedTab === 'Gameplay Examples'}
+ {#if selectedTab === 'Gameplay'}
  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
 
  <div class=" gap-6 mt-5 mb-10">
@@ -1205,7 +1367,7 @@ async function increaseLike() {
 
   {/if}
   
-  {#if selectedTab === 'Popular Question'}
+  {#if selectedTab === 'Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
   <div class="text-center my-4">

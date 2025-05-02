@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("ttps://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss';
 
@@ -41,6 +45,9 @@
     font-family: 'wf';
     src: url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/font/WFMedium.ttf') format('truetype');
     font-style: normal;
+
+
+
 }
 
 @keyframes fade-in {
@@ -70,6 +77,10 @@
 @theme {
   --font-roboto: "Roboto", sans-serif; 
   --font-plusjakarta: "Plus Jakarta Sans", sans-serif;
+  --font-worksans: "Work Sans", sans-serif;
+  --font-russoone: "Russo One", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+
 }
 
 :root::view-transition-old(root) {
@@ -248,4 +259,126 @@ html, body {
     max-height: 500px; /* Adjust as needed */
     opacity: 1;
   }
+
+  :root {
+    --glow-rgb: 245 245 245;
+    
+    --light-orange-rgb: 251, 146, 60;
+    --dark-orange-rgb: 194, 65, 12;  
+
+    --light-red-rgb: 248, 113, 113;  
+    --dark-red-rgb: 153, 27, 27;    
+
+    --light-pink-rgb: 244, 114, 182; 
+  --dark-pink-rgb: 157, 23, 77;     
+
+  --light-emerald-rgb: 52, 211, 153;  
+  --dark-emerald-rgb: 6, 95, 70;      
+    
+   --light-teal-rgb: 45, 212, 191;
+   --dark-teal-rgb: 15, 118, 110;    
+
+    --primary-stripe-rgb: 230 230 230;
+    --secondary-stripe-rgb: 240 240 240;
+  }
   
+  @keyframes pan {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+  #app {
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #star-container {
+    background: radial-gradient(rgb(var(--light-orange-rgb)), rgb(var(--dark-orange-rgb)));
+    height: 100%;  
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #star-pattern {
+    background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
+    background-size: 10%;  
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    translate: -50% 0%;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    opacity: 0.10;
+    animation: pan 180s linear infinite;
+    will-change: background-position;
+  }
+  
+  #star-gradient-overlay {
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-orange-rgb)));
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 2;
+  }
+  
+  #stripe-container {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0px;
+    translate: -50% 0%;
+    height: 10rem;
+    min-height: 240px;
+    width: 100%;
+    min-width: 2000px;
+    background-color: rgb(var(--stripe-primary-rgb));
+    
+    clip-path: polygon(
+      0% 5%, 1.25% 0%, 2.5% 5%, 
+      3.75% 0%, 5% 5%, 6.25% 0%, 
+      7.5% 5%, 8.75% 0%, 10% 5%, 
+      11.25% 0%, 12.5% 5%, 13.75% 0%, 
+      15% 5%, 16.25% 0%, 17.5% 5%, 
+      18.75% 0%, 20% 5%, 21.25% 0%, 
+      22.5% 5%, 23.75% 0%, 25% 5%, 
+      26.25% 0%, 27.5% 5%, 28.75% 0%, 
+      30% 5%, 31.25% 0%, 32.5% 5%, 
+      33.75% 0%, 35% 5%, 36.25% 0%, 
+      37.5% 5%, 38.75% 0%, 40% 5%, 
+      41.25% 0%, 42.5% 5%, 43.75% 0%, 
+      45% 5%, 46.25% 0%, 47.5% 5%, 
+      48.75% 0%, 50% 5%, 51.25% 0%, 
+      52.5% 5%, 53.75% 0%, 55% 5%, 
+      56.25% 0%, 57.5% 5%, 58.75% 0%, 
+      60% 5%, 61.25% 0%, 62.5% 5%, 
+      63.75% 0%, 65% 5%, 66.25% 0%, 
+      67.5% 5%, 68.75% 0%, 70% 5%, 
+      71.25% 0%, 72.5% 5%, 73.75% 0%, 
+      75% 5%, 76.25% 0%, 77.5% 5%, 
+      78.75% 0%, 80% 5%, 81.25% 0%, 
+      82.5% 5%, 83.75% 0%, 85% 5%, 
+      86.25% 0%, 87.5% 5%, 88.75% 0%, 
+      90% 5%, 91.25% 0%, 92.5% 5%, 
+      93.75% 0%, 95% 5%, 96.25% 0%, 
+      97.5% 5%, 98.75% 0%, 100% 5%, 
+      100% 100%, 0% 100%
+    );
+  }
+  
+  #stripe-pattern {
+    height: 100%;
+    width: 100%;
+    background-size: 18px 18px;
+    background-color:var(--color-base-100);
+    animation: pan 360s linear infinite;
+  }

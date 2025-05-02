@@ -1,6 +1,6 @@
 ---
 title: Damage Element
-category: 'Game mechanics'
+category: 'Game Mechanics'
 sortOrder: 1
 customSlug: "dmgelement"
 update: 8.2
