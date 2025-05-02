@@ -47,6 +47,9 @@
   </script>
   
   {#if mode === 'dps'}
+
+  <div class="w-full overflow-hidden flex justify-center">
+
   <div class={`mt-2 w-[260px] md:w-[300px] ${bg} rounded-xl p-2 shadow-md backdrop-blur-sm flex flex-wrap justify-center gap-2`}>
     {#if rank && imgMap[rank]}
         <div class="tooltip" data-tip={imgMap[rank].tip}>
@@ -80,8 +83,12 @@
         {/if}
       {/each}
     </div>
+  </div>
   
   {:else if mode === 'support'}
+
+  <div class="w-full overflow-hidden flex justify-center">
+
   <div class={`mt-2 w-[260px] md:w-[300px] ${bg} rounded-xl p-2 shadow-md backdrop-blur-sm`}>
     <h2 class="text-white text-sm font-semibold mb-1">SUPPORT FOR:</h2>
       <div class="flex justify-center flex-wrap gap-2">
@@ -94,5 +101,6 @@
         {/each}
       </div>
     </div>
+  </div>
   {/if}
   

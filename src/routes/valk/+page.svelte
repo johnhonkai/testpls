@@ -194,7 +194,7 @@
   return bVal - aVal; // descending
 });
 
-let showFilters = false; // default hidden on mobile
+let showFilters = true; // default hidden on mobile
 let isMobile = false;
 
 onMount(() => {

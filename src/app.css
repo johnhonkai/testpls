@@ -314,7 +314,7 @@ html, body {
     z-index: 1;
     height: 100%;
     width: 100%;
-    min-width: 1200px;
+/* min-width: 1200px; ← REMOVE this line */
     opacity: 0.10;
     animation: pan 180s linear infinite;
     will-change: background-position;
