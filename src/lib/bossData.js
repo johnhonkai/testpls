@@ -2365,6 +2365,9 @@ export const teamData = {
     ],
     videos: [
       { url: 'https://www.youtube.com/watch?v=DSzhuERbxJQ', abyss: 'RedLotus 512D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=Bv7ve3ESs-o', abyss: 'S0 PS Nirvana 546D', uploader: 'Kyoshiro' },
+      { url: 'https://www.youtube.com/watch?v=9o5RwieYSa4', abyss: 'SS PS Nirvana 546D', uploader: 'OneMoreBox' },
+
     ] 
   },
 
