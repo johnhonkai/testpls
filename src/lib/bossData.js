@@ -9,6 +9,7 @@ export const weatherList = {
     {id: 'firemobius', name: 'Mobius'},
     {id: 'firekosma', name: 'Kosma'},
     {id: 'firetona', name: 'Tonatiuh'},
+    {id: 'firetank', name: 'MHT-3C Retaliator'},
 
   ],
   ice: [
@@ -463,6 +464,15 @@ export const bossData = {
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
+  },
+
+  firetank: {
+    name: 'MHT-3C Retaliator', 
+    mechanics: '', 
+    weakness: 'Ice (L), Lightning (L)', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
+    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
   deliverance: {
     name: 'Bygone Deliverance', 
@@ -1985,7 +1995,13 @@ export const teamData = {
         bottext: "Highest score: SS1 782"
       },
       
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=78zc190jesE', abyss: 'S0 Badum Nirvana 543D', uploader: 'Kyoshiro' },
+      { url: 'https://www.youtube.com/watch?v=xDsJnLlM9FQ', abyss: 'Senadina Nirvana 543D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=bSpVV_Fg5K0', abyss: 'SS Badum Nirvana 543D', uploader: 'chronos002' },
+
+    ] 
   },
   kevin: {
     teamDataSets: [

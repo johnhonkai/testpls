@@ -22,8 +22,8 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "flux"; // Default weather
-  let selectedBoss = "lantern"; // Default boss
+  let selectedWeather = "lightning"; // Default weather
+  let selectedBoss = "lightningguaymas"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
 
@@ -34,7 +34,7 @@
     const bossParam = queryParams[0];
     if (bossParam && bossData[bossParam]) {
       selectedBoss = bossParam;
-      selectedWeather = findWeatherByBossId(bossParam) || "lantern";
+      selectedWeather = findWeatherByBossId(bossParam) || "lightningguaymas";
     }
     // Wait for initial images to load
     checkImagesLoaded();
@@ -110,12 +110,40 @@
   </div>
 {/if}
 
-<div class="relative mx-auto pt-3 pb-0 rounded-lg text-center " class:invisible={isFirstLoad && isLoading}>
-  <h2 class="text-2xl font-semibold mb-2 text-amber-400">Abyss Boss Database</h2>
-  <p class="text-xs sm:text-sm">
-    This page contains Abyss boss info, top teams, and gameplay showcase.
-  </p>
+<div class="relative w-full h-60 md:h-80 overflow-hidden "  id="bannerpic">
+
+  <img
+    src="/images/bridge.webp"
+    alt="Header"
+    class="w-full h-full object-cover opacity-45"
+  />
+
+
+ 
+  <!-- Text overlay -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30 ">
+      Abyss Boss Database
+    </h1>
+    <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
+      Boss info, top teams, and gameplay showcase for Abyss mode.
+
+
+    </p>
+  </div>
+  
+    <div class="absolute bottom-0  right-1/2 translate-x-[190%] md:translate-x-[220%] z-0 cursor-pointer">
+      <img 
+        src="/images/quamilf.png" 
+        alt="Banner" 
+        class="h-55 md:h-72 w-auto object-cover"
+      >
+    </div>
+  <!-- Blur overlay at bottom -->
+  <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
+
 </div>
+
 
 <div class="page-container mx-auto p-2 max-w-2xl" class:invisible={isFirstLoad && isLoading}>
   <!-- Weather List Component -->
