@@ -1,7 +1,7 @@
 <svelte:head>
-  <title>Valkyrie Select</title> 
-    <meta property="og:title" content="Valkyrie Select" />
-    <meta property="og:description" content="Honkai Impact Guide - Character Page" />
+  <title>Valkyrie Guide</title> 
+    <meta property="og:title" content="Valkyrie Guide" />
+    <meta property="og:description" content="Honkai Impact Character Guides" />
     <meta property="og:image" content="https://i.imgur.com/aXbdNbK.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk" />
     <meta property="og:type" content="website" />
@@ -10,6 +10,7 @@
 
     <link rel="canonical" href="https://marisaimpact.com/valk" />
 </svelte:head>
+
 
 
 <script lang="ts">
@@ -334,51 +335,54 @@
  
 <div class=" mt-5 xl:mt-1 mx-auto  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-4 sm:gap-6 2xl:w-6xl lg:max-w-5xl 2xl:max-w-6xl">
   {#each sortedValkyries as valkyrie}
-    <a 
-      href={valkyrie.url} 
-      class="flex flex-col items-center text-center rounded-sm" 
-      on:mouseenter={() => preloadImages(valkyrie.url)} 
-    >
-      <!-- Valkyrie Image with Badge -->
-      <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
-        {#if valkyrie.badge}
-          <span 
-            class="absolute top-1 right-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
-            class:badge-ghost={valkyrie.badge === 'Beta'}
-            class:badge-primary={valkyrie.badge === 'New'}
-            class:badge-accent={valkyrie.badge === 'Updated'}
-          >
-            {valkyrie.badge}
-          </span>
-        {/if}
+  <a 
+  href={valkyrie.url} 
+  class="flex flex-col items-center text-center rounded-sm w-full"
+  on:mouseenter={() => preloadImages(valkyrie.url)}
+>
+  <div class="flex flex-col justify-start items-center w-full h-35 sm:h-45">
+    <!-- Image Wrapper -->
+    <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
+      {#if valkyrie.badge}
+        <span 
+          class="absolute top-1 right-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
+          class:badge-ghost={valkyrie.badge === 'Beta'}
+          class:badge-primary={valkyrie.badge === 'New'}
+          class:badge-accent={valkyrie.badge === 'Updated'}
+        >
+          {valkyrie.badge}
+        </span>
+      {/if}
 
-
-        {#if valkyrie.type}
-        <div class="absolute top-1 left-0 sm:mx-1 w-7 sm:w-8 h-auto  text-white   z-10">
-          <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover overflow-hidden" />
+      {#if valkyrie.type}
+        <div class="absolute top-1 left-0 sm:mx-1 w-7 sm:w-8 z-10">
+          <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover" />
         </div>
       {/if}
 
-
-        {#if valkyrie.element}
+      {#if valkyrie.element}
         {#each (Array.isArray(valkyrie.element) ? valkyrie.element : [valkyrie.element]) as el, i}
-          <div class="absolute left-0  sm:mx-1 w-7 sm:w-8 h-auto  text-white  z-10" style={`top: ${2.2 + (i * 2)}rem`}>
+          <div class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10" style={`top: ${2.2 + (i * 2)}rem`}>
             <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-full h-full object-cover" />
           </div>
         {/each}
       {/if}
 
-        <img 
-          src={valkyrie.image} 
-          alt={valkyrie.name}
-          class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 rounded-md transition-transform duration-300 transform group-hover:scale-110"
-          style="view-transition-name: valkyrie-image-{valkyrie.id};"
-        />
-      </div>
-  
-      <!-- Valkyrie Name -->
-      <div class="text-xs sm:text-sm md:text-base font-medium mb-2 sm:leading-5 mt-1">{valkyrie.name}</div>
-    </a>
+      <img 
+        src={valkyrie.image} 
+        alt={valkyrie.name}
+        class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 rounded-md transition-transform duration-300 transform group-hover:scale-110"
+        style="view-transition-name: valkyrie-image-{valkyrie.id};"
+      />
+    </div>
+
+    <!-- Name (Truncated) -->
+    <div class="text-xs sm:text-sm md:text-base font-medium mt-1 leading-snug text-center h-[2.5em]">
+      {valkyrie.name}
+    </div>
+  </div>
+</a>
+
   {/each}
 </div>
 

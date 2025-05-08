@@ -115,7 +115,7 @@ onMount(() => {
         <div class="navbar-start">
 
     <!-- Left: Logo -->
-    <a href="/" class="btn btn-ghost font-russoone font-thin tracking-wide italic leading-3.5">
+    <a href="/" class="btn btn-ghost font-russoone font-thin tracking-wide italic leading-3.5 text-white">
         <img src="/images/logo.webp" alt="Marisa Impact Logo" class="w-14 h-10" />
         MARISA<br/>IMPACT
     </a>
