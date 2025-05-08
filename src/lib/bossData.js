@@ -2248,7 +2248,6 @@ export const teamData = {
       },
     ],
     videos: [
-      { url: 'https://youtu.be/knD4cguuSa0', abyss: 'Nirvana 542D', uploader: 'Kyoshiro' },
       { url: 'https://www.youtube.com/watch?v=iSNZDuTlVDM', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' }
 
     ] 
