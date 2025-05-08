@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>位面武器·失序时空</title> 
+  <title>Planar Armament: Warped Spacetime</title> 
 
-    <meta property="og:title" content="位面武器·失序时空" />
-    <meta property="og:description" content="位面武器·失序时空 Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Planar Armament: Warped Spacetime" />
+    <meta property="og:description" content="Planar Armament: Warped Spacetime Guides, Builds and Gameplay" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/ha" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/paws" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -282,7 +282,7 @@ async function increaseLike() {
 <div class="flex flex-col items-center text-center justify-start sm:mt-8">
  
   <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">位面武器·失序时空</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Planar Armament: Warped Spacetime</h1>
 
   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">
@@ -312,7 +312,7 @@ async function increaseLike() {
   <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="hg" bg="bg-orange-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['hg']}  bg="bg-orange-800"/>
+  <CharBio mode="support" ar={['hg' , 'loa']}  bg="bg-orange-800"/>
 </div>
 
 
