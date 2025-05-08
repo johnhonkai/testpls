@@ -130,11 +130,15 @@ onMount(() => {
 					<li><a href="/betanews">Beta News</a></li>
 					<li><a href="/classroom/welcome">Classroom</a></li>
 
+					<li><a href="/story">Story</a></li>
 					<li><a href="/hi3awards">HI3 Awards</a></li>
 
 				</ul>
 			</div>
-			<a href="/" class="btn btn-ghost">Marisa Impact BETA</a>
+			<a href="/" class="btn btn-ghost font-russoone font-thin tracking-wide italic leading-3.5">
+				<img src="/images/logo.webp" alt="Marisa Impact Logo" class="w-14 h-10" />
+				MARISA<br/>IMPACT
+			</a>
 		</div>
 
 		<div class="navbar-end">

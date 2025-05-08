@@ -14,7 +14,7 @@
     <button 
       type="button" 
       on:click={() => selectBoss(boss)} 
-      class="boss-button {boss.id === selectedBoss ? 'selected' : ''}"
+      class="boss-button btn btn-sm max-w-50  {boss.id === selectedBoss ? 'selected' : ''}"
     >
       {boss.name}
     </button>

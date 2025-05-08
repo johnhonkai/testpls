@@ -1,0 +1,60 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: New Helia Equipment Translation v2
+version: '8.3'
+sortOrder: '3'
+image: "/images/valkportrait/New Helia.png"
+
+---
+
+### LINKS
+
+- [8.3 Patch Note](/betanews/83log)
+- [New Helia Skills](/betanews/helia)
+- [New Helia Equipment](/betanews/heliagear)
+
+---
+
+### INTRO
+- S-rank, BIO, Lightning, Crossbow user
+- Astral Ring: Heavenly Grail
+- Is a DPS, can support Heavenly Grail
+- Gameplay: 
+
+---
+
+### WEAPON 
+Placeholder
+
+#### ACTIVE
+Placeholder
+
+#### PASSIVE 1
+Placeholder
+
+#### PASSIVE 2
+Placeholder
+
+#### SYNERGY
+Placeholder
+
+---
+
+### STIGMA 
+
+
+#### TOP
+Placeholder
+
+
+#### MID
+Placeholder
+
+#### BOT
+Placeholder
+
+#### 2PC
+Placeholder
+
+#### 3PC
+Placeholder

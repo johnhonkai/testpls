@@ -514,16 +514,37 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 </script>
 
 
+<div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
-<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg text-center">
-  <h2 class="text-2xl font-semibold mb-2 text-teal-400">Astral Op Calculator</h2>
-  <p class="text-xs sm:text-sm">Calculate and compare AstralOp buffs.<br/>
-  Note: Do not trust Kiana ELF numbers. Kiana ELF numbers are high on paper, but in-game she is just on par with SS Dreamseeker for most teams.
-  </p>
+  <img
+    src="https://i.imgur.com/wzCApbr.png"
+    alt="Header"
+    class="w-full h-full object-cover [object-position:50%_30%] opacity-45"
+    />
+
+
+ 
+  <!-- Text overlay -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-6 z-10">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30 ">
+      Astral Op Calculator
+    </h1>
+    <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
+      Calculate and compare AstralOp buffs
+
+    </p>
+  </div>
+  
+
+  <!-- Blur overlay at bottom -->
+  <div class="absolute bottom-0 left-0 w-full h-15 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
+
 </div>
 
+
+
 <!-- Character Slots -->
-<div class="flex justify-center items-center gap-6 my-8">
+<div class="flex justify-center items-center gap-6 mt-2 ">
   {#each Object.entries(slots) as [slot, character]}
     <div class="relative w-24 h-24 cursor-pointer" on:click={() => openModal(slot)}>
       {#if character}
@@ -558,6 +579,11 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   </button>
 </div>
 
+<div class="max-w-5xl mx-auto px-4 pb-0 rounded-lg text-center my-2">
+  <p class="text-xs sm:text-sm text-gray-400">
+  Note: Do not trust Kiana ELF numbers. Kiana ELF numbers are high on paper, but in-game she is just on par with SS Dreamseeker for most teams.
+  </p>
+</div>
 
 
 <!-- Character Selection Modal -->

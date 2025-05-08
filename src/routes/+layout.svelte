@@ -8,6 +8,7 @@
 
 	import { onNavigate } from '$app/navigation';
 	import Navmobile from '$lib/components/navmobile.svelte';
+	import Newnav from '$lib/components/newnav.svelte';
 
 	onNavigate((navigation) => {
     if (
@@ -27,8 +28,16 @@
 <div class="flex flex-col min-h-[100vh]">
 	<!-- Main Content Section -->
 	<Navbar></Navbar>
+
+  <div class="lg:block hidden">
+  <Newnav></Newnav>
+  </div>
+
+  <div class="block lg:hidden">
   <Navmobile></Navmobile>
-<main class="grow mt-[3.5rem]">
+</div>
+
+<main class="grow mt-[3.5rem] lg:mt-0 min-h-[1600px]">
 	
 	{@render children()}
 

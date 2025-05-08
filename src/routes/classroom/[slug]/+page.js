@@ -10,7 +10,7 @@ export async function load({ params }) {
 
   // Generate sorted categories dynamically
   const sortCategories = (categories) => {
-    const predefinedOrder = ['Event', 'Getting Started', 'Valk', 'Astral Ring', 'Shop', 'Uncategorized'];
+    const predefinedOrder = ['Event', 'Getting Started', 'Valk', 'Astral Ring','Shop', 'Game Mechanics' ,  'Uncategorized'];
     return Object.keys(categories).sort((a, b) => {
       const aIndex = predefinedOrder.indexOf(a);
       const bIndex = predefinedOrder.indexOf(b);

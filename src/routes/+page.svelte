@@ -5,7 +5,7 @@
   <title>Honkai Impact Guide Website</title> 
     <meta property="og:title" content="Honkai Impact Guide Website - Marisa Impact" />
     <meta property="og:description" content="Honkai Impact 3rd Guides, Character Builds, Beta News and More. Honkai Impact Guides. Hoyoverse. Guides For Honkai Impact. Marisa Honkai." />
-    <meta property="og:image" content="https://i.imgur.com/62qNVD7.png" />
+    <meta property="og:image" content="https://i.imgur.com/MJiD6X5.png" />
     <meta property="og:url" content="https://marisaimpact.com" />
     <meta property="og:type" content="website" />
 
@@ -18,7 +18,7 @@
   import { onMount } from 'svelte';
 
   // IDs of images to wait for
-  const imageIds = ['bgwave', 'bannerpic', 'news1', 'news2', 'news3', 'content1' , 'content2'];
+  const imageIds = ['bannerpic', 'news1', 'news2', 'news3', 'content1' , 'content2'];
 
   let isLoading = true;
 
@@ -64,16 +64,16 @@
 
   
   let isClicked = false;
-  let imageSrc = '/images/test2.webp';
+  let imageSrc = '/images/durandal.webp';
 
   // Function to handle image click
   function handleClick() {
     isClicked = true;
-    imageSrc = '/images/test3.webp';
+    imageSrc = '/images/durandal2.webp';
 
     // Revert to the original image after a few seconds
     setTimeout(() => {
-      imageSrc = '/images/test2.webp';
+      imageSrc = '/images/durandal.webp';
       isClicked = false;
     }, 3000); // Adjust time as needed
   }
@@ -123,66 +123,80 @@
 {/if}
 
 
-<div class="page-content {isLoading ? 'hidden' : 'visible'}">
-<section class="relative flex m-0 justify-center z-[-10]" id="bgwave">
 
-  <img src="/images/bg/wave_sparkle.svg" alt="Banner" class="absolute top-0 w-full  h-auto z-[-7]">
 
-    <img src="/images/radial.svg" alt="Banner" class="absolute top-0 left-0 w-full h-full object-cover z-[-1] mix-blend-multiply">
+<div class="relative w-full h-60 md:h-80 overflow-hidden cursor-pointer" on:click={handleClick}  id="bannerpic">
 
-</section>
+  <img
+    src="/images/bridge.webp"
+    alt="Header"
+    class="w-full h-full object-cover opacity-45"
+  />
 
-<section class="relative flex m-0 justify-center " id="bannerpic">
 
-  <div class="relative max-w-(--breakpoint-lg) right-[-1rem]">
-  <div>
-    <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/sign/images/test1.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdGVzdDEud2VicCIsImlhdCI6MTczMjEyMzA1NCwiZXhwIjoyMDQ3NDgzMDU0fQ.7XeoccXhKwhr0-j_PGRBlBz-wlJw3AWSjg-_NakZMrA" alt="Banner" class="w-full h-full  object-cover">
+ 
+  <!-- Text overlay -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold font-russoone italic tracking-wider text-shadow-lg/30 w">
+      Honkai Impact Guide
+    </h1>
+    <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
+      Powered by Mars Super Computer, written in Ajita++
+    </p>
   </div>
-  <div class="absolute bottom-0 z-20 cursor-pointer" on:click={handleClick}>
-    <img 
-      src={imageSrc} 
-      alt="Banner" 
-      class="w-full h-full object-cover {isClicked ? 'stretch' : ''}"
-    >
-  </div>
+  
+
+    <div class="absolute bottom-0  right-1/2 translate-x-[155%] md:translate-x-[170%] z-0 cursor-pointer" on:click={handleClick}>
+      <img 
+        src={imageSrc} 
+        alt="Banner" 
+        class="h-55 md:h-72 w-auto object-cover {isClicked ? 'stretch' : ''}"
+      >
+    </div>
+  <!-- Blur overlay at bottom -->
+  <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
 
 </div>
-</section>
 
 
+<div class="page-content {isLoading ? 'hidden' : 'visible'}">
 
-<section class="py-6 z-10">
-  <div class="xl:max-w-(--breakpoint-2xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
+<section class="z-10">
+  <div class="max-w-screen-2xl mx-auto px-4 py-6">
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-      
-      <!-- Patch Time Section -->
-      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
-        <div class="flex items-center mb-2 bg-white rounded-t-lg">
-            <img src="/images/crystal.png" alt="Patch Time Icon" class="w-8 h-8 mr-2">
-            <h2 class="text-xl font-bold text-blue-600">PATCH TIME</h2>
+  
+      <!-- Card -->
+      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+          <img src="/images/crystal.png" alt="Patch Time Icon" class="w-6 h-6" />
+          <h2 class="text-lg font-semibold text-white tracking-tight">PATCH TIME</h2>
         </div>
-        
-        <p class="text-sm sm:text-base text-slate-100 px-2">
-            <strong class="text-amber-400">REGIONAL SERVERS</strong><br>
-            - {regionalServerInfo}<br>
-            - v8.3 update is on June 26
-        </p>
-
-        <p class="text-sm sm:text-base text-slate-100 px-2 mt-3">
-            <strong class="text-amber-400">CN SERVER</strong><br>
-            - {cnServerInfo}<br>
-            - v8.3 update is on May 29
-        </p>
-    </div>
-
-      <!-- 8.0 Info Date Section -->
-      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
-        <div class="flex items-center mb-2 bg-white rounded-t-lg">
-          <img src="/images/crystal.png" alt="Info Date Icon" class="w-8 h-8 mr-2">
-          <h2 class="text-xl font-bold text-blue-600">8.3 INFO DATE</h2>
+        <div class="text-sm text-slate-300 space-y-4">
+          <div>
+            <div class="text-amber-400 font-semibold">REGIONAL SERVERS</div>
+            <p>
+              - {regionalServerInfo}<br />
+              - v8.3 update is on June 26
+            </p>
+          </div>
+          <div>
+            <div class="text-teal-400 font-semibold">CN SERVER</div>
+            <p>
+              - {cnServerInfo}<br />
+              - v8.3 update is on May 29
+            </p>
+          </div>
         </div>
-        <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2">
-          <li>Valk Reveal and Content Teaser: Apr 24</li>
+      </div>
+  
+      <!-- Info Date -->
+      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+          <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.3 INFO DATE</h2>
+        </div>
+        <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+          <li>Valk Teaser & Reveal: Apr 24</li>
           <li>Beta v1 (Private): Apr 25</li>
           <li>Dev Video: May 8</li>
           <li>Beta v2: May 9</li>
@@ -190,126 +204,127 @@
           <li>Beta v4?: May 23</li>
           <li>Dev Livestream: May 24</li>
         </ul>
-        <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Estimated Date</p>
+        <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>
-
-      <!-- 7.9 Crystal Income Section -->
-      <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
-        <div class="flex items-center mb-2 bg-white rounded-t-lg">
-          <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
-          <h2 class="text-xl font-bold text-blue-600">8.2 CRYSTAL INCOME</h2>
+  
+      <!-- Crystal Income -->
+      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+          <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.2 CRYSTAL INCOME</h2>
         </div>
-
-        <ul class="list-disc ml-6 text-sm sm:text-base text-slate-100 px-2 ">
+        <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
           <li>F2P: 22,210</li>
           <li>Monthly: 28,590</li>
           <li>Monthly+BP: 30,590</li>
-          <li>5 Equipment Card + 50% off the first 10 pull of Peregrine Sword </li>
+          <li>5 Equipment Card + 50% off the first 10 pull of Peregrine Sword</li>
         </ul>
-        <p class="text-sm sm:text-base text-gray-300 px-2 mt-3">Note: Calculation uses Agony 3 income</p>
-
-        <div class="flex justify-center mt-5">
-        <a href="https://www.miyoushe.com/bh3/article/62801524">
-        <button class="btn btn-accent btn-sm">Source</button>
-        </a>
+        <p class="text-xs text-slate-400 mt-3">Note: Calculation uses Agony 3 income</p>
+        <div class="flex justify-center mt-4">
+          <a href="https://www.miyoushe.com/bh3/article/62801524">
+            <button class="text-sm font-medium rounded-md px-4 py-1.5 bg-blue-500 text-white hover:bg-blue-600 transition cursor-pointer">
+              Source
+            </button>
+          </a>
+        </div>
       </div>
+  
+      <!-- Active Codes -->
+      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+          <img src="/images/crystal.png" alt="Codes Icon" class="w-6 h-6" />
+          <h2 class="text-lg font-semibold text-white tracking-tight">ACTIVE CODES</h2>
+        </div>
+        <div class="text-sm text-slate-300 space-y-4">
+          <div>
+            <span class="font-bold text-white">CCAZRD01</span><br />
+            60 crystals
+          </div>
+          <div>
+            <span class="font-bold text-white">CHOWANDCHEW</span><br />
+            Materials
+          </div>
+        </div>
       </div>
-
-            <!-- Active Codes -->
-            <div class="bg-linear-to-b from-cyan-950 to-cyan-900 rounded-lg shadow-md outline-white outline-2 outline-double pb-3">
-              <div class="flex items-center mb-2 bg-white rounded-t-lg">
-                <img src="/images/crystal.png" alt="Crystal Income Icon" class="w-8 h-8 mr-2">
-                <h2 class="text-xl font-bold text-blue-600">ACTIVE CODES</h2>
-              </div>
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2">
-                <span class="font-bold">CCAZRD01
-                </span><br/>
-                60 crystals 
-              </p>
-
-              <p class=" text-sm sm:text-base text-slate-100 px-2 pt-5">
-                <span class="font-bold">CHOWANDCHEW
-                </span><br/>
-                Materials 
-              </p>
-              
-            </div>
-
+  
     </div>
   </div>
+  
 </section>
 <section class="pb-10 pt-5  text-white z-10 ">
-  <div class="xl:max-w-(--breakpoint-xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">New Honkai Impact Guides!</h2>
-
+  <div class="xl:max-w-[var(--breakpoint-xl)] lg:max-w-[var(--breakpoint-lg)] mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center text-white">News</h2>
+  
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <!-- News Item Template -->
-      <a href="/valk/ps" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news1">
-
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/98-TVVWPN6o/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+  
+      <a href="/valk/ps" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ytimg.com/vi/98-TVVWPN6o/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">New Battlesuit</h3>
-          <p class="text-slate-300 text-base">Sushang - Peregrine Sword</p>
+          <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
+          <p class="text-slate-300">Sushang - Peregrine Sword</p>
         </div>
       </a>
-
-      <a href="https://www.youtube.com/watch?v=TbNFrAgShhU" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news2">
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/TbNFrAgShhU/hqdefault.jpg" alt="Second Article Image" class="w-full h-48 object-cover">
+  
+      <a href="https://www.youtube.com/watch?v=TbNFrAgShhU" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ytimg.com/vi/TbNFrAgShhU/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">8.3 News</h3>
-          <p class="text-slate-300 text-base">S-rank Helia</p>
+          <h3 class="text-lg font-semibold text-white mb-1">8.3 News</h3>
+          <p class="text-slate-300">S-rank Helia</p>
         </div>
       </a>
-
-      <a href="https://www.youtube.com/watch?v=BsNXqnaGUWA" class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="news3">
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/BsNXqnaGUWA/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+  
+      <a href="https://www.youtube.com/watch?v=BsNXqnaGUWA" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ytimg.com/vi/BsNXqnaGUWA/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">8.3 News</h3>
-          <p class="text-slate-300 text-base">Astral Ring Heavenly Grail</p>
+          <h3 class="text-lg font-semibold text-white mb-1">8.3 News</h3>
+          <p class="text-slate-300 text-md">Astral Ring Heavenly Grail</p>
         </div>
       </a>
-
-      <!-- Add more news items as needed -->
-      
+  
     </div>
   </div>
+  
+  
+  
+  
+  
 </section>
 
 <section class="pb-10 pt-5  text-white z-10 mb-40">
-  <div class="xl:max-w-(--breakpoint-xl) lg:max-w-(--breakpoint-lg) mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">Featured</h2>
-
+  <div class="xl:max-w-[var(--breakpoint-xl)] lg:max-w-[var(--breakpoint-lg)] mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center text-white">Featured</h2>
+  
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-
-
-      <a href="https://www.youtube.com/watch?v=yHzyiM35t3E" target=”_blank”  class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content1">
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="https://i.ytimg.com/vi/yHzyiM35t3E/hqdefault.jpg" alt="Third Article Image" class="w-full h-48 object-cover">
+  
+      <a href="https://www.youtube.com/watch?v=yHzyiM35t3E" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ytimg.com/vi/yHzyiM35t3E/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Latest Video From Earth</h3>
-          <p class="text-slate-300 text-base">Check out Marisa Honkai's channel</p>
+          <h3 class="text-lg font-semibold text-white mb-1">Latest Video From Earth</h3>
+          <p class="text-slate-300 text-sm">Check out Marisa Honkai's channel</p>
         </div>
       </a>
-
-      <a href="https://arustats.com/" target=”_blank” class="block bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-200 ease-in-out" id="content2">
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src="/images/newstab/arustat.webp" alt="Fourth Article Image" class="w-full h-48 object-cover">
+  
+      <a href="https://arustats.com/" target="_blank" id="content2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="/images/newstab/arustat.webp" alt="Arustat Site" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
         <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Arustat Site</h3>
-          <p class="text-slate-300 text-base">Check out Arustat site for HI3 teambuilder, Arena teams, gacha simulator, and more</p>
+          <h3 class="text-lg font-semibold text-white mb-1">Arustat Site</h3>
+          <p class="text-slate-300 text-sm">Check out Arustat site for HI3 teambuilder, Arena teams, gacha simulator, and more</p>
         </div>
       </a>
-
-      <!-- Add more news items as needed -->
-      
+  
     </div>
   </div>
+  
 </section>
 <footer class="footer footer-center bg-base-300 text-base-content p-4">
   <aside>

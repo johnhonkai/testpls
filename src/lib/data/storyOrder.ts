@@ -2,14 +2,14 @@
 export const storyOrder = [
     {
       image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch1.webp',
-      title: 'P2 Chapter 1: Hundred Years of Solitary Shadow',
+      title: 'P2 Ch 1: Hundred Years of Solitary Shadow',
       youtubeLink: 'https://youtu.be/example1',
       inGame: true,
       type: 'main', // 'main' for main story, 'event' for events
       version: '7.3'
     },
     {
-      image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event1.webp',
+      image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter//Event1male.webp',
       title: 'A Feast Sought in Data',
       youtubeLink: 'https://youtu.be/example2',
       inGame: false,
@@ -28,7 +28,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch2.webp',
-        title: 'P2 Chapter 2: The Seven Shus in the Maze',
+        title: 'P2 Ch 2: The Seven Shus in the Maze',
         youtubeLink: 'https://youtu.be/example1',
         inGame: true,
         type: 'main', // 'main' for main story, 'event' for events
@@ -55,7 +55,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3.webp',
-        title: 'P2 Chapter 3: A Crime Foretold',
+        title: 'P2 Ch 3: A Crime Foretold',
         youtubeLink: 'https://youtu.be/example2',
         inGame: false,
         type: 'main',
@@ -73,7 +73,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3EX.webp',
-        title: 'P2 Chapter 3-EX: Bitterness for A Sleepwalker',
+        title: 'P2 Ch 3-EX: Bitterness for A Sleepwalker',
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
@@ -99,7 +99,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch4.webp',
-        title: "P2 Chapter 4: A Shore Under Watch",
+        title: "P2 Ch 4: A Shore Under Watch",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
@@ -107,7 +107,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch4-2.webp',
-        title: "P2 Chapter 5: The First and Last War",
+        title: "P2 Ch 5: The First and Last War",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
@@ -133,7 +133,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch6.webp',
-        title: "P2 Chapter 6: Wails Stifled by the Silent Shadow",
+        title: "P2 Ch 6: Wails Stifled by the Silent Shadow",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
@@ -141,7 +141,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7.webp',
-        title: "P2 Chapter 7: Bouquets of Unfulfilled Wishes",
+        title: "P2 Ch 7: Bouquets of Unfulfilled Wishes",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
@@ -158,7 +158,7 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event11.webp',
-        title: "8.1 Event",
+        title: "Ongoing: Make-A-Wish Fest!",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'event',
@@ -167,11 +167,28 @@ export const storyOrder = [
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7EX.webp',
-        title: "P2 Chapter 7-EX",
+        title: "P2 Ch 7-EX: To None May God Pray",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
         version: '8.1',
+      },
+      {
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter//Event10.webp',
+        title: "Yunchin's Culinary Wonders",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'event',
+        version: '8.2',
+        canon: true,
+      },
+      {
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter//Ch8.webp',
+        title: "P2 Ch 8: Till the Long Road Reaches the Sky",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'main',
+        version: '8.2',
       },
 ];
   

@@ -224,13 +224,14 @@ function selectTabMobile(event) {
   }
   
   #app {
-    height: 36rem;
+    height: 35rem;
     overflow: hidden;
     position: relative;
   }
   </style>
   
-  <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+  <div class="sm:mt-14"></div>
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
     <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
       <div id="app">
         <div id="star-container">

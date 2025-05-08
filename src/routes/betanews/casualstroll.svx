@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Sushang Casual Stroll Skill v4
+title: Sushang Peregrine Sword Skill v4
 
 version: '8.2'
 sortOrder: '2'
@@ -14,7 +14,7 @@ image: "/images/valkportrait/ps.png"
 - [Casual Stroll Skills](/betanews/casualstroll)
 - [Casual Stroll  Equipment](/betanews/casualgear)
 
-
+---
 
 ### INTRO
 - S-rank, BIO, Physical, Bleed, Gauntlets user
@@ -23,6 +23,7 @@ image: "/images/valkportrait/ps.png"
 - Gameplay:  https://www.youtube.com/watch?v=5B2c5KepO-U
 
 ---
+
 ### LEADER 
 When set as leader, activate AR Law of Ascension. SO cost: 200, Duration: 1s, CD: 40s.
 
@@ -32,9 +33,8 @@ When you have 2 team members with Heavenly Shift attribute: Teammates with Heave
 
 When you have 3 team members with Heavenly Shift attribute: Enemies take 16% (S) / 17% (S3) / 18% (SS3) more Physical DMG from CS (independent multiplier). Initial AR +10.
 
----
 
-**LEADER 1**<br/>
+#### LEADER 1
 When CS is the leader:
 - Hitcount duration is increased to 60 seconds. All your attacks will generate 3x hitcount.
 - **~~Ultimate gain Augmented Ascension state~~** (Moved to Ult).
@@ -42,18 +42,16 @@ When CS is the leader:
 - When battle starts, initial sp +30.
 
 
----
-
-**LEADER 2**<br/>
+#### LEADER 2
 When CS is the leader:
 - ~~Bleed DMG +68% (S) / 80% (SS1) [v2] > +37.5% (S) / 40% (S2) / 45% (SS1) [V3]~~ > **Bleed DMG +40% (S) / 42.5% (S2) / 45% (SS1) [V4]**
 - When CS has Physical Breach, ~~Bleed DMG +12% [v2]~~  Bleed DMG **+15% (V3) > 13% (V4)**, Total DMG +22% . 
 
----
 
-**LEADER 3**<br/>
+#### LEADER 3
 When CS is the leader, when Heavenly Link or Stellar Shift hits, deal additional 300% and 600% ATK of Physical DMG respectively to enemies with an unbroken shield. This attack gains Crit Rate +100%, Crit DMG +100%, and Shieldbreak +500%
 
+---
 
 ### ASTRAL RING
 
@@ -77,26 +75,21 @@ When AR Law of Ascension is activated:
 	- Upon casting Stellar Shift, trigger the leader's Heavenly Link attack twice.
 	- Heavenly Link deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader’s damage type.
 
----
-
-**AR 1**<br/>
+#### AR 1
 When Stellar Outburst ends, gain Stellar Drain. During AR Charging state, when the enemy is hit by Forest Trail and Razor Leaf, consume Stellar Drain, restore 10 AR meter.
 - When AR Law of Ascension is activated, Stellar Drain restore 10 more AR.
 - Gain a Stellar Drain at the start of battle.
 
----
-
-**AR 2**<br/>
+#### AR 2
 
 When AR Law of Ascension is activated:
 - Team Physical DMG **+20% (v2) > 10% (v3)**, Elemental DMG **+20% (v2) > 10% (v3)**.
 - ~~**CS's Stellar Shift gain Crit Rate +30%**~~.
 
----
-
-**AR 3**<br/>
+#### AR 3
 Related to a future AR.
 
+---
 
 ### PASSIVE
 
@@ -106,38 +99,30 @@ CS has sword level meter, 4 points max. Meter is cleared when you leave the fiel
 After using QTE, you gain Unshackled state for 9 seconds, can be refreshed. Unshackled state is removed when you leave the field.
 During Unshackled state, gain higher anti-interrupt.
 
----
-
-**PASSIVE 1**<br/>
+#### PASSIVE 1
 When the leader's type is countering the enemy (type advantage), team members with the countering type gain Total DMG **+10%(v2) > 6% (v3)**. If CS is the leader, the value becomes **18% (v2) > 10% (v3)**.
 
----
-
-**PASSIVE 2**<br/>
+#### PASSIVE 2
 Takes 40% less Total DMG. Against bleeding enemies, gain Physical DMG +8% (S) / 12% (SS2) and Total DMG +6% (S) /  8% (SS2).
 
----
-
-**PASSIVE 3**<br/>
+#### PASSIVE 3
 Enemies take 30% (S) / 35% (S1) more Bleed DMG from CS, and **6.5% (S) / 8% (S1) [v2] > 6% (S) / 8% (S1) [v3]** more Total DMG from the team.
 
+---
 
 ### EVASION
 Upon successful ult evasion, you can connect to Basic SEQ 4.
 Ult jump evasion triggers evasion skill. 
 Evasion skill: Trigger 3s global time fracture, CD 15s.
 
----
-
-**EVASION 1**<br/>
+#### EVASION 1
 **<span class="text-amber-400">[S2]</span>** (Toggle) Upon casting Forest Trail, trigger evasion skill.
 
----
-
-**EVASION 2**<br/>
+#### EVASION 2
 **<span class="text-amber-400">[SS2]</span>** After casting QTE or Stellar Shift, reset evasion skill CD.
 
 
+---
 
 ### WEAPON SKILL
 
@@ -150,11 +135,10 @@ In Delicious state, during Forest Trail, press weapon to use Razor Leaf, knocks 
 After using Combo ATK, tap weapon to use Rainstorm, deal 80%x4 + 25%x13 + 480% ATK of Physical DMG.
 
 
----
-
-**WEAPON 1**<br/>
+#### WEAPON 1
 **<span class="text-amber-400">[SS]</span>** Forest Trail, Razor Leaf, and Rainstorm gain Total DMG +20%
 
+---
 
 ### BASIC ATK
 
@@ -164,18 +148,15 @@ SEQ 3: Deal 200%<br/>
 SEQ 4: Deal 80%x5 , sword level +1 , inflict 4 points of Bleed<br/>
 Plunge ATK: Deal 350%
 
----
-
-**BASIC 1**<br/>
+#### BASIC 1
 QTE: Triggers when teammate casts weapon skill, or enemy is time slowed, or enemy is hit by a teammate's Combo/Charged ATK. On QTE cast, weapon skill CD is reset and will auto-cast, deal 400% ATK of Physical DMG, inflict **4 (v2) > 6 (v3)** points of bleed, and trigger 2s time fracture.
 
----
-
-**BASIC 2**<br/>
+#### BASIC 2
 Upon casting Combo ATK and Forest Trail, restore 500 HP for the team.
 
 **When Forest Trail hits, CS restores 12 sp, CD: 16s.(v3)**
 
+---
 
 ### COMBO ATK
 
@@ -183,27 +164,25 @@ When sword meter is full, hold ATK to use Combo ATK.
 
 Upon casting Combo ATK, clear sword level meter, deal 120%x3 + 100%x6 ATK of Physical DMG, and inflict **4 (v2) > 6 (v3)** points of bleed.
 
----
-
-**COMBO ATK 1**<br/>
+#### COMBO ATK 1
 Rainstorm Total DMG +50% (S) / 65% (SS) / 80% (SSS), restore 6 (S) / 8 (SS) / 10 (SSS) sp for the team. 
 When hitcount is >= **100 (v2) > 50 (v3)**, deal additional Physical DMG equal to hitcount x 1.5% (S) / 2% (S) / 2.5% (SSS) ATK , up to **200 (v2) > 150 (v3)** hitcount, final hit clears hitcount.
 
 
----
-
-**COMBO ATK 2**<br/>
+#### COMBO ATK 2
 When any of CS attack hits, deal 3 (S) /  4 (SSS) points of dmg to shields that only take fixed damage.
+
+---
 
 ### ULTIMATE 
 
 [SP: 90, CD: 20s] <br/>
 Casts Petal Blizzard, deal 180%x2 + 10%x14 + 1000% ATK of Physical DMG. Has time stop. **Ultimate gain Augmented Ascension state (v3)**
 
----
-
-**ULT 1**<br/>
+#### ULT 1
 Ult ~~**Crit Rate +30%,**~~ deals additional 250% ATK of Physical DMG.
+
+---
 
 ### RANK UP 
 

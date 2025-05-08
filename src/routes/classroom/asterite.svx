@@ -11,7 +11,7 @@ update: 8.2
 Asterite Shop is where you can purchase A-rank fragments and higher-tier upgrade materials using Asterite currency.
 
 
-## Part 2 valkyries
+## Part 2 Valkyries
 
 ![Coralie and Helia](https://i.imgur.com/k61cYbh.jpeg)
 
@@ -23,9 +23,9 @@ Asterite Shop is where you can purchase A-rank fragments and higher-tier upgrade
 
 
 
-## Part 1 valkyries
+## Part 1 Valkyries
 
-Part 1 characters are slowly being pushed out from all teams. Some of them are still useful for new players, but there's no urgency to farm them, as their impact on your account late game is not that big once you have your first proper Part 2 team.
+Most Part 1 characters are already obselete. Some of them are still useful for new players, but there's no urgency to farm them, as their impact on your account late game is not that big.
 
 ### Elysian Realm
 These characters are available in Elysian Realm mode. You can get <span class="text-blue-300">620 crystals</span> from first-clear mission, PER VALK. 

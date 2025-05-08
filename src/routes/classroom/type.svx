@@ -1,0 +1,78 @@
+---
+title: Type
+category: "Game Mechanics"
+sortOrder: 1
+customSlug: "type"
+update: 8.2
+
+---
+
+## Character and Enemy Types
+There are currently 7 types in Honkai Impact. A character or enemy can only have one type.
+- Biologic (BIO)
+- Mechanical (MECH)
+- Psychic (PSY)
+- Quantum (QUA)
+- Imaginary (IMG)
+- Stardust (SD)
+- Enemies can also be typeless
+
+## Type Counter Relationship
+
+<div class="flex items-center justify-center text-orange-300 my-0 py-0">
+  <img src="https://i.imgur.com/aJVugXg.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+Image above shows the relationship between types.
+- Straight line means type advantage / effective against / strong against.
+- Dotted line means type disadvantage / not effective against / weak against.
+
+Examples:
+- PSY valks deal more damage against MECH enemies, but deal less damage against BIO enemies.
+- IMG valks deal more damage against IMG enemies, but deal less damage against QUA enemies.
+
+
+## Type Counter Bonus
+When a valk attacks an enemy with type advantage, the valk deals <span class="text-amber-300 ">30%</span> more damage.
+
+In Abyss mode, the bonus damage becomes even stronger in Type Counter weather: Type counter effect is 20% stronger.
+
+
+## BIO, MECH, PSY
+BIO, MECH and PSY types were the first types in the game. These characters / enemies do not have any special type-exclusive mechanic besides type advantage.
+
+## Quantum
+
+### QUA Enemies
+1. QUA enemies have a QUA shield. When the shield is active, the QUA enemy takes reduced damage and have higher anti-interrupt. 
+2. A QUA enemy can have multiple stacks of QUA shields.
+
+### QUA Characters
+1. QUA characters have abilities that can immediately remove a stack of QUA shield.
+2. Sparkle can insta-kill QUA enemies below 10% HP.
+
+## Imaginary
+
+### IMG Enemies
+1. IMG enemies have two HP bars - shell hp and seed hp. 
+2. Your attacks will hit shell hp first. When shell hp bar is depleted, the seed will be exposed, and now you can attack the seed.
+3. When seed is exposed, the shell will gradually restore HP. If seed HP is full, it will return to normal, and you have to attack the shell again.
+
+### IMG Characters
+1. Some IMG characters have abilities that can transfer a portion dmg dealt from the shell to the seed.
+2. Some IMG characters can insta-kill IMG seed once it is below a certain HP treshold.
+
+
+## Stardust
+
+### SD Enemies
+1. SD enemies utilize 'regular HP' bar and 'Max HP' bar. 
+2. SD enemies have critical points on their HP bar. When the HP bar reaches the critical point:
+    - SD remnants will drop. Any valk can collect the SD remnants to deal big damage to the enemy.
+    - They will enter Consolidated state. During this state, attacks will deal damage to Max HP bar.
+3. After a certain duration, SD enemy will return to its normal state, and your attacks will deal damage to regular HP bar again.
+
+### SD Characters
+1. SD characters have abilities that can instantly gather SD remnants, and the remnant dmg is stronger.
+2. Jovial Deception can instantly trigger critical point.
+3. Ba-dum! can reduce 8% of Max HP bar.

@@ -224,7 +224,7 @@ ELYSIAN REALM
  
 <br/>
 
-SYSTEM
+#### SYSTEM
 - Adjusted some rewards in newbie B-chip pack, starter manual and newbie login event.
 - Adjusted challenge missions of some expedition stages.
 - Fixed an issue where, when equipping weapon in Valkyrie menu, the weapon shown does not match the character.

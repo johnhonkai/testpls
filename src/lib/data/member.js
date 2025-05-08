@@ -226,6 +226,16 @@ export const ytmember = [
 
     },
     {
+      "Member": "Thang…",
+      "Link to profile": "https://www.youtube.com/channel/UC7w8Uhbj3500wcOqmXljM3A",
+      "Current level": "Equinox Supporter",
+      "Total time on level (months)": 2.16667,
+      "Total time as member (months)": 2.16667,
+      "Last update": "Joined",
+      "Last update timestamp": "2025-04-10T21:35:09.598-07:00",
+      Image: "/images/memberpic/shikichan.png",
+    },
+    {
       "Member": "zKodla",
       "Link to profile": "https://www.youtube.com/channel/UCJ2UNwSCyWyt69G5kLcI15w",
       "Current level": "Herrscher of Origin",

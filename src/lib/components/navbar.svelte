@@ -44,38 +44,96 @@
 		</svg>
 		<ul class="text-slate-800">
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" class="custom-font" data-sveltekit-preload-data="hover">Home</a>
+				<a href="/" class="nav-link custom-font" data-sveltekit-preload-data="hover">Home</a>
 			</li>
       <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : undefined}>
-				<a href="/valk" class="custom-font" data-sveltekit-preload-data="hover">Valkyrie</a>
+				<a href="/valk" class="nav-link custom-font" data-sveltekit-preload-data="hover">Valkyrie</a>
 			</li>
 
       <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
-				<a href="/asop" class="custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
+				<a href="/asop" class="nav-link custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
 			</li>
 
 
 			
 			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
-				<a href="/calendar82" class="custom-font" data-sveltekit-preload-data="hover">Timeline</a>
+				<a href="/calendar82" class="nav-link custom-font" data-sveltekit-preload-data="hover">Timeline</a>
 			</li>
 
 			<li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
-				<a href="/boss" class="custom-font" data-sveltekit-preload-data="hover">Boss</a>
+				<a href="/boss" class="nav-link custom-font" data-sveltekit-preload-data="hover">Boss</a>
 			</li>
 
 			<li aria-current={$page.url.pathname.startsWith('/betanews') ? 'page' : undefined}>
-				<a href="/betanews" class="custom-font" data-sveltekit-preload-data="hover">Beta News</a>
+				<a href="/betanews" class="nav-link custom-font" data-sveltekit-preload-data="hover">Beta News</a>
 			</li>
 
 			<li aria-current={$page.url.pathname.startsWith('/classroom') ? 'page' : undefined}>
-				<a href="/classroom/welcome" class="custom-font" data-sveltekit-preload-data="hover">Classroom</a>
+				<a href="/classroom/welcome" class="nav-link custom-font" data-sveltekit-preload-data="hover">Classroom</a>
 			</li>
 
 
-			<li aria-current={$page.url.pathname === '/chapter' ? 'page' : undefined}>
-				<a href="/chapter" class="custom-font" data-sveltekit-preload-data="hover">Chapter</a>
-			</li>
+
+			<div class="relative group">
+				<!-- Button -->
+				<a
+				  class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
+				  data-sveltekit-preload-data="hover"
+				>
+				  MORE ▾
+				</a>
+			  
+				<!-- Dropdown -->
+				<div
+				  class="absolute top-5 -right-40 w-[500px] bg-zinc-900 text-white shadow-xl rounded-lg
+				  invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50"
+				>
+				  <div class="grid grid-cols-2 gap-4 p-4">
+					<!-- Left column -->
+
+					<a
+					href="/story"
+					data-sveltekit-preload-data="hover"
+				  >
+					<div
+					class="bg-zinc-800 rounded-md p-4 h-full transition hover:bg-zinc-700 hover:shadow-md cursor-pointer"
+				  >
+					<div class="text-white font-semibold mb-1">Story</div>
+					<p class="text-sm text-zinc-400">Story and Events Order</p>
+				  </div>
+					</a>
+					<!-- Right column -->
+					<div class="flex flex-col gap-3">
+						<a
+						href="/hi3awards"
+						data-sveltekit-preload-data="hover"
+					  >
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+
+						<div class="font-semibold">2024 Awards</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Celebrate HI3</p>
+					  </div>
+					</a>
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+						<div class="font-semibold">💬 Feedback</div>
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">No</p>
+					  </div>
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800 cursor-pointer"
+					  >
+						<div class="font-semibold">⚙️ To Be Added</div>
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Coming Soon</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -170,20 +228,20 @@ li {
 	}
 
 
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.85rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-	a:hover {
+	.nav-link {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 0.5rem;
+	color: var(--color-text);
+	font-weight: 700;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+.nav-link:hover {
 		color: var(--color-theme-1, #00aaff);
 	}
 

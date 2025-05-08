@@ -12,6 +12,8 @@ export default {
 		extend: {
 			animation: {
 				shimmer: "shimmer 8s infinite",
+				scroll: 'scroll 10s linear infinite',
+
 			  },
 			  keyframes: {
 				shimmer: {
@@ -22,6 +24,10 @@ export default {
 					"background-position": "calc(100% + var(--shimmer-width)) 0",
 				  },
 				},
+				scroll: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' },
+				  },
 			  },
 			
 			
@@ -33,4 +39,3 @@ export default {
 	
 	
 } as Config;
-

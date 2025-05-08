@@ -56,12 +56,12 @@
   // Filter options
   const types = [
     { name: 'All', image: '/images/type/IconNULL.png' },
-    { name: 'Psy', image: '/images/type/IconPSI.png' },
-    { name: 'Mech', image: '/images/type/IconMECH.png' },
-    { name: 'Bio', image: '/images/type/IconBIO.png' },
-    { name: 'Qua', image: '/images/type/IconQUA.png' },
-    { name: 'Img', image: '/images/type/IconIMG.png' },
-    { name: 'SD', image: '/images/type/IconSD.webp' }
+    { name: 'Psy', image: '/images/type/iconsmall_psy.webp' },
+    { name: 'Mech', image: '/images/type/iconsmall_mech.webp' },
+    { name: 'Bio', image: '/images/type/iconsmall_bio.webp' },
+    { name: 'Qua', image: '/images/type/iconsmall_qua.webp' },
+    { name: 'Img', image: '/images/type/iconsmall_img.webp' },
+    { name: 'SD', image: '/images/type/iconsmall_sd.webp' }
   ];
 
   const elements = [
@@ -194,15 +194,7 @@
   return bVal - aVal; // descending
 });
 
-let showFilters = true; // default hidden on mobile
-let isMobile = false;
 
-onMount(() => {
-  const checkMobile = () => isMobile = window.innerWidth < 768;
-  checkMobile();
-  window.addEventListener('resize', checkMobile);
-  return () => window.removeEventListener('resize', checkMobile);
-});
 </script>
 
 <!-- Loading Screen -->
@@ -214,94 +206,133 @@ onMount(() => {
 {/if}
 
 
-<section class="relative pt-4 mb-20">
-  <div class="absolute top-0 w-full h-[90vh] z-[-10]" id="bgwave">
-    <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" />
-  </div>
-  <div class="relative max-w-6xl mx-auto mt-5">
-    <div class="flex items-center justify-center gap-2 mb-2">
-      <h1 class="text-xl md:text-3xl font-bold text-center bg-linear-to-b from-white to-neutral-300 text-transparent bg-clip-text">
-        Select a Valkyrie
-      </h1>
-    
-      <!-- Toggle Button: Only visible on mobile -->
-      <button
-        on:click={() => showFilters = !showFilters}
-        class="md:hidden btn btn-xs ml-2 text-white hover:bg-white hover:text-black"
-        aria-label="Toggle Filters"
-      >
-      <Fa icon={faFilter} size="1.3x"  />
 
-      </button>
-    </div>
-    {#if !isMobile || showFilters}
-    <div transition:slide="{{ duration: 300 }}">
+<div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
+
+  <img
+    src="https://img.goodfon.com/original/1920x1080/3/22/igra-anime-honkai-impact-3rd-devushka-oruzhie-bronia-mekh.jpg"
+    alt="Header"
+    class="w-full h-full object-cover [object-position:50%_25%] opacity-45"
+    />
+
+
+ 
+  <!-- Text overlay -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-7 z-10">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30 ">
+      Valkyrie Guide
+    </h1>
+    <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
+      Selet A Valkyrie
+    </p>
+  </div>
+  
+
+  <!-- Blur overlay at bottom -->
+  <div class="absolute bottom-0 left-0 w-full h-15 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
+
+</div>
+
+  <div class="relative max-w-[1600px] mx-auto mb-20">
+
+    <div class="flex flex-col 2xl:flex-row items-center 2xl:items-start">
 
     <!-- Filter Containers -->
-    <div class="flex flex-col md:flex-row justify-between gap-4 mb-4 mx-4">
+    <div class="flex flex-col gap-1 w-full 2xl:w-74 md:flex-row 2xl:flex-col mb-4 text-center max-w-6xl 2xl:h-20  2xl:sticky 2xl:top-5 ">
+
       <!-- Filter by Type -->
-      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
-        <div class="flex justify-center flex-wrap gap-0.5 md:gap-1">
+       <div class="mx-0 items-left ml-4  hidden 2xl:block">
+        <p class="text-left text-slate-300 hidden 2xl:block">
+          Type
+        </p>
+       </div>
+      <div class="flex-1 p-1 rounded-lg w-full md:w-auto 2xl:mb-4">
+        <div class="join  whitespace-nowrap ">
           {#each types as type}
             <button
               type="button"
               title={type.name}
-              class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
-              class:bg-blue-600={selectedType === type.name}
-              on:click={() => selectFilter('type', type.name)}>
-              <img src={type.image} alt={type.name} class="w-6 h-6 object-cover mb-1" />
+              class="btn join-item btn-sm p-1  h-10 w-12 sm:h-12 2xl:w-10 2xl:h-9 border shadow-none 
+                hover:bg-gray-600 active:bg-gray-500 transition-colors 
+                {selectedType === type.name ? ' text-white bg-blue-600' : ' text-base'}"
+              on:click={() => selectFilter('type', type.name)}
+            >
+              <img src={type.image} alt={type.name} class="w-6 h-6 object-cover" />
             </button>
           {/each}
         </div>
       </div>
+      
 
       <!-- Filter by Element -->
-      <div class="flex-1 p-0.5 md:p-2 bg-gray-100 rounded-lg">
-        <div class="flex justify-center flex-wrap gap-0.5 md:gap-1">
+      <div class="mx-0 items-left ml-4  hidden 2xl:block">
+        <p class="text-left text-slate-300 hidden 2xl:block">
+          Element
+        </p>
+       </div>
+      <div class="flex-1 p-1 rounded-lg w-full md:w-auto 2xl:mb-4">
+        <div class="join  whitespace-nowrap">
           {#each elements as element}
             <button
               type="button"
               title={element.name}
-              class="btn btn-xs rounded-lg p-1 hover:bg-gray-200 active:bg-gray-300 transition-colors w-12 h-12"
-              class:bg-blue-600={selectedElement === element.name}
-              on:click={() => selectFilter('element', element.name)}>
-              <img src={element.image} alt={element.name} class="w-6 h-6 object-cover mb-1" />
+              class="btn join-item btn-sm p-1  h-10 w-12 sm:h-12 2xl:w-10 2xl:h-9 border shadow-none 
+               hover:bg-gray-600 active:bg-gray-500 transition-colors
+                {selectedElement === element.name ? ' text-white bg-blue-600' : ' text-base'}"
+              on:click={() => selectFilter('element', element.name)}
+            >
+            <img src={element.image} alt={element.name} class="w-6 h-6 object-cover" />
+
             </button>
           {/each}
         </div>
       </div>
-    </div>
 
-    <!-- Astral Ring Filter -->
-    <div class="rounded-lg mb-6">
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2 mx-4">
+          <!-- Astral Ring Filter -->
+          <div class="mx-0 items-left ml-4  hidden 2xl:block">
+            <p class="text-left text-slate-300">
+              Astral Ring
+            </p>
+           </div>
+          <div class="flex-1 p-1 rounded-lg w-full md:w-auto ">
+
+    <div class="xl:mb-4">
+      <select
+        class="select select-ghost  w-full max-w-xs bg-base-200 h-10 sm:h-12 2xl:h-9  rounded-lg text-sm cursor-pointer focus:outline-none focus:bg-base-200"
+        bind:value={selectedAstralRing}
+        on:change={(e) => selectFilter('astralRing', e.target.value)}
+      >
+        <option disabled selected value="">Select Astral Ring</option>
         {#each astralRings as astralRing}
-          <button
-            type="button"
-            class="btn btnar text-center rounded-lg hover:bg-gray-200 hover:text-black active:bg-gray-300 transition-colors w-full lg:whitespace-nowrap"
-            class:bg-blue-600={selectedAstralRing === astralRing}
-            on:click={() => selectFilter('astralRing', astralRing)}>
-            <span class="text-xs sm:text-sm md:text-base font-medium">{astralRing}</span>
-          </button>
+          <option value={astralRing}>{astralRing}</option>
         {/each}
-      </div>
+      </select>
+    </div>
+          </div>
+
+    
+          <!-- Sort By Date and DLC -->
+
+          <div class="mx-0 items-left ml-4  hidden 2xl:block">
+            <p class="text-left text-slate-300">
+              Sort By
+            </p>
+           </div>
+           <button 
+           on:click={() => sortByDLC = !sortByDLC}
+           class="btn px-3 text-left text-white hover:bg-gray-700 hover:text-white transition 2xl:btn btn-sm sm:btn-md hidden 2xl:inline-block 2xl:h-9 2xl:w-auto"
+           >
+         {sortByDLC ? 'Release + DLC Date' : 'Release Date'}
+         </button>
+
     </div>
 
-    <div class="flex justify-center">
-      
-    <button 
-  on:click={() => sortByDLC = !sortByDLC}
-  class=" w-60 py-2  text-white hover:bg-white hover:text-black transition btn btn-sm sm:btn-md "
->
-<Fa icon={faSort} /> {sortByDLC ? 'Release + DLC Date' : 'Release Date'}
-</button>
 
-</div>
-    </div>
-{/if}
+
 
 <!-- Valkyrie Grid -->
-<div class=" mt-5 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-4 sm:gap-6">
+ 
+<div class=" mt-5 xl:mt-1 mx-auto  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-4 sm:gap-6 2xl:w-6xl lg:max-w-5xl 2xl:max-w-6xl">
   {#each sortedValkyries as valkyrie}
     <a 
       href={valkyrie.url} 
@@ -352,8 +383,9 @@ onMount(() => {
 </div>
 
   </div>
-</section>
 
+  </div>
+  
 <style>
   .loading-screen {
     background: rgba(0, 0, 0, 0.8);

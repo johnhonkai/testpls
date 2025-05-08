@@ -1,0 +1,143 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: New Helia Translation v2
+version: '8.3'
+sortOrder: '2'
+image: "/images/valkportrait/New Helia.png"
+
+---
+
+### LINKS
+
+- [8.3 Patch Note](/betanews/83log)
+- [New Helia Skills](/betanews/helia)
+- [New Helia  Equipment](/betanews/heliagear)
+
+---
+
+### INTRO
+- S-rank, BIO, Lightning, Crossbow user
+- Astral Ring: Heavenly Grail
+- Is a DPS, can support Heavenly Grail
+- Gameplay: 
+
+---
+
+### LEADER 
+Placeholder
+
+#### LEADER 1
+Placeholder
+
+#### LEADER 2
+Placeholder
+
+#### LEADER 3
+Placeholder
+
+---
+
+### ASTRAL RING
+
+New Helia is protected by AR Heavenly Grail. 
+
+#### AR 1
+Placeholder
+
+#### AR 2
+Placeholder
+
+#### AR 3
+Placeholder
+
+
+---
+
+### PASSIVE
+Placeholder
+
+
+
+#### PASSIVE 1
+Placeholder
+
+#### PASSIVE 2
+Placeholder
+
+#### PASSIVE 3
+Placeholder
+
+---
+
+### EVASION
+Placeholder
+
+
+#### EVASION 1
+Placeholder
+
+#### EVASION 2
+Placeholder
+
+
+---
+
+### WEAPON SKILL
+
+
+#### WEAPON 1
+Placeholder
+
+---
+
+### BASIC ATK
+Placeholder
+
+
+
+#### BASIC 1
+Placeholder
+
+#### BASIC 2
+Placeholder
+
+
+---
+
+### COMBO ATK
+Placeholder
+
+#### COMBO ATK 1
+Placeholder
+
+
+#### COMBO ATK 2
+Placeholder
+
+---
+
+### ULTIMATE 
+Placeholder
+
+#### ULT 1
+Placeholder
+
+---
+
+### RANK UP 
+
+S1: 
+
+S2: 
+
+S3: Lead
+
+SS: 
+
+SS1: 
+
+SS2:
+
+SS3: Lead
+
+SSS: 

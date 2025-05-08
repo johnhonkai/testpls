@@ -219,13 +219,13 @@ async function increaseLike() {
 
 <style>
    #apphelia {
-    height: 34rem;
+    height: 37rem;
     overflow: hidden;
     position: relative;
   }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
     <div id="apphelia">
@@ -244,7 +244,7 @@ async function increaseLike() {
 
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center" id="valkpicbox">
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center sm:mt-8" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
   <!-- Like Button: Bottom-right overlay -->
@@ -279,7 +279,7 @@ async function increaseLike() {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start">
+<div class="flex flex-col items-center text-center justify-start sm:mt-8">
  
   <!-- Battlesuit Name -->
   <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">位面武器·失序时空</h1>
@@ -288,20 +288,20 @@ async function increaseLike() {
   <div class="space-y-2 w-[260px] md:w-[300px]">
     <!-- Name Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Name
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
         Erdős Helia
       </div>
     </div>
 
     <!-- Release Date Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs">
         Release
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
         v8.3 (26 June 2025)
       </div>
     </div>
@@ -318,7 +318,7 @@ async function increaseLike() {
 
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto  mt-5 "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >

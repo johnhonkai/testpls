@@ -468,7 +468,7 @@ export const bossData = {
 
   firetank: {
     name: 'MHT-3C Retaliator', 
-    mechanics: '', 
+    mechanics: 'This is a different fire tank, no transition phase.', 
     weakness: 'Ice (L), Lightning (L)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
@@ -1115,6 +1115,59 @@ export const teamData = {
   },
   quavalralhal: {
     teamDataSets: [
+      {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '1+',
+          pct: '50%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_songque.png"],
+          rank: '6-7',
+          pct: '12%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+          rank: '12',
+          pct: '6%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+          rank: '31',
+          pct: '7%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '37',
+          pct: '20%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_songque.png"],
+          rank: '51',
+          pct: '2%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/elf_kiana.png"],
+          rank: '91',
+          pct: '2%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/elf_kiana.png"],
+          rank: '98',
+          pct: '1%',
+        },
+      ]},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
@@ -1131,7 +1184,9 @@ export const teamData = {
         pct: '20%',
         bottext: 'Highest Score: S0 786, S2 801'
       }
-    ]},]
+    ]},
+  
+  ]
   },
   ignitehov: {
     teamDataSets: [
@@ -2468,6 +2523,39 @@ export const teamData = {
             rank: '13',
             pct: '43%',
             bottext: "Vita uses SusannahT AladdinMB. Highest score: S 858, SS 877"
+          },
+        ]
+      }
+    ],
+  },
+
+  firetank: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2 CN",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png","images/valkportrait/asop_sera.png"],
+            rank: '1+',
+            pct: '84%',
+            bottext: "Highest score: S 787, S2 802, SS 814, SS1 820, 9S 838"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png","images/valkportrait/asop_sera.png"],
+            rank: '18',
+            pct: '2%',
+            bottext: "Highest score: SS 788, 9S 808"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Senadina Deepspace Anchor.png","images/valkportrait/asop_sera.png"],
+            rank: '61',
+            pct: '14%',
+            bottext: "Highest score: S 781, S2 788"
           },
         ]
       }

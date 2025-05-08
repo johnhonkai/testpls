@@ -107,7 +107,7 @@
 
   <!-- Dropdown Button -->
 <div class="flex justify-center xl:hidden ">
-  <div class=" my-4 p-4 max-w-[600px]">
+  <div class=" mt-4 pt-4 max-w-[600px]">
     <select
         class="select select-bordered w-full"
         on:change={(event) => (window.location.href = event.target.value)}
@@ -179,9 +179,9 @@
 {/if}
 
 
-<div class="container mx-auto  flex flex-row mb-20">
+<div class="container mx-auto sm:mt-10 flex flex-row mb-20">
     <!-- Left Sidebar -->
-    <aside class="hidden xl:flex flex-col w-76 bg-base-200 text-base-content p-4 space-y-4 overflow-y-auto fixed top-0 left-0 h-screen z-20">
+    <aside class="z-100 hidden xl:flex flex-col w-72 bg-base-200 text-base-content p-2 space-y-4 overflow-y-auto fixed top-0 left-0 h-screen ">
       <!-- Welcome Button/Image -->
       <div class="pt-4 mb-4 text-center">
         <a href="/classroom/welcome" class="block">
@@ -190,7 +190,7 @@
       </div>
   
       <!-- Categories and Articles -->
-      <div class="menu shadow-md rounded-lg">
+      <div class="menu  rounded-lg">
         {#each sortedCategories as category}
           <div class="mb-2">
             <p class="menu-title text-slate-100 bg-emerald-700/50 rounded-sm">{category}</p>
@@ -217,16 +217,23 @@
         <!-- Main Content -->
 <article
   class="prose prose-invert grow mx-auto md:max-w-[960px] px-6 py-8 rounded-2xl 
-         prose-h1:mb-2 prose-h1:font-plusjakarta prose-h1:text-3xl 
-         prose-h2:mt-8 prose-h2:mb-3 prose-h2:bg-gradient-to-r prose-h2:from-teal-600 prose-h2:to-teal-400  prose-h2:font-plusjakarta
+         prose-h1:mb-2 prose-h1:font-plusjakarta prose-h1:text-2xl  sm:prose-h1:text-3xl 
+         prose-h2:mt-12 prose-h2:mb-3 prose-h2:bg-gradient-to-r prose-h2:from-teal-600 prose-h2:to-teal-400  prose-h2:font-plusjakarta
          prose-h2:text-black prose-h2:px-3 prose-h2:py-1 prose-h2:rounded-md prose-h2:font-semibold prose-h2:w-fit
-         prose-h3:text-amber-300 prose-h3:font-semibold
-         prose-p:text-slate-300 prose-li:marker:text-teal-400 prose-a:text-sky-400 hover:prose-a:underline
+         prose-h2:text-lg sm:prose-h2:text-xl  
+
+         prose-h3:text-gray-300 prose-h3:font-semibold prose-h3:text-lg sm:prose-h3:text-xl 
+         prose-li:marker:text-teal-400 prose-a:text-sky-400 hover:prose-a:underline
+
+         prose-li:text-sm sm:prose-li:text-base 
+
+		     prose-p:text-sm sm:prose-p:text-base 
+
          "
 >
   {#if data.title !== 'Welcome'}
     <h1>{data.title}</h1>
-    <p class="text-sm text-slate-400 mb-4 -mt-2 tracking-wide">Updated for Version {data.update}</p>
+    <div class="text-sm text-slate-400 italic ml-0.5 mb-4  tracking-wide ">Updated for Version {data.update}</div>
   {/if}
   <svelte:component this={data.content} />
 </article>
@@ -267,7 +274,7 @@
 	</div>
 </button>
   </div>
-            <Toc class="toc p-4 rounded-lg shadow-lg" breakpoint={1500} />
+            <Toc class="toc p-4 rounded-lg " breakpoint={1500} />
           </aside>
         {/if}
       </div>

@@ -28,10 +28,10 @@
 
       <!-- Tab Navigation (only if there are multiple datasets) -->
   {#if bossData.teamDataSets.length > 1}
-  <div class="flex space-x-4 my-6 ">
+  <div class="flex space-x-4 mt-3 mb-4 ">
     {#each bossData.teamDataSets as teamData, index}
       <button
-        class="py-2 px-4  rounded-lg 
+        class="py-2 px-4  rounded-lg btn
                 {activeIndex === index ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
         on:click={() => selectTab(index)}
       >

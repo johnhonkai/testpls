@@ -48,59 +48,55 @@
   
   {#if mode === 'dps'}
 
-  <div class="w-full overflow-hidden flex justify-center">
 
   <div class={`mt-2 w-[260px] md:w-[300px] ${bg} rounded-xl p-2 shadow-md backdrop-blur-sm flex flex-wrap justify-center gap-2`}>
     {#if rank && imgMap[rank]}
-        <div class="tooltip" data-tip={imgMap[rank].tip}>
-          <img src={imgMap[rank].src} alt={rank} class="h-8 md:h-10" />
+        <div class="lg:tooltip" data-tip={imgMap[rank].tip}>
+          <img src={imgMap[rank].src} alt={rank} class="h-8 " />
         </div>
       {/if}
   
       {#if type && imgMap[type]}
-        <div class="tooltip" data-tip={imgMap[type].tip}>
-          <img src={imgMap[type].src} alt={type} class="h-8 md:h-10" />
+        <div class="lg:tooltip" data-tip={imgMap[type].tip}>
+          <img src={imgMap[type].src} alt={type} class="h-8 " />
         </div>
       {/if}
   
       {#if element && imgMap[element]}
-        <div class="tooltip" data-tip={imgMap[element].tip}>
-          <img src={imgMap[element].src} alt={element} class="h-8 md:h-10" />
+        <div class="lg:tooltip" data-tip={imgMap[element].tip}>
+          <img src={imgMap[element].src} alt={element} class="h-8 " />
         </div>
       {/if}
   
       {#if optelement && imgMap[optelement]}
-        <div class="tooltip" data-tip={imgMap[optelement].tip}>
-          <img src={imgMap[optelement].src} alt={optelement} class="h-8 md:h-10" />
+        <div class="lg:tooltip" data-tip={imgMap[optelement].tip}>
+          <img src={imgMap[optelement].src} alt={optelement} class="h-8 " />
         </div>
       {/if}
   
       {#each arList as arType}
         {#if imgMap[arType]}
-          <div class="tooltip" data-tip={imgMap[arType].tip}>
-            <img src={imgMap[arType].src} alt={arType} class="h-8 md:h-10" />
+          <div class="lg:tooltip" data-tip={imgMap[arType].tip}>
+            <img src={imgMap[arType].src} alt={arType} class="h-8 " />
           </div>
         {/if}
       {/each}
     </div>
-  </div>
   
   {:else if mode === 'support'}
 
-  <div class="w-full overflow-hidden flex justify-center">
 
   <div class={`mt-2 w-[260px] md:w-[300px] ${bg} rounded-xl p-2 shadow-md backdrop-blur-sm`}>
     <h2 class="text-white text-sm font-semibold mb-1">SUPPORT FOR:</h2>
       <div class="flex justify-center flex-wrap gap-2">
         {#each arList as arType}
           {#if imgMap[arType]}
-          <div class="tooltip" data-tip={imgMap[arType].tip}>
-            <img src={imgMap[arType].src} alt={arType} class="h-8 md:h-10" />
+          <div class="lg:tooltip" data-tip={imgMap[arType].tip}>
+            <img src={imgMap[arType].src} alt={arType} class="h-8" />
           </div>
           {/if}
         {/each}
       </div>
     </div>
-  </div>
   {/if}
   

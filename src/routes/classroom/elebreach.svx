@@ -1,7 +1,7 @@
 ---
 title: Elemental Breach
-category: 'Game Mechanics'
-sortOrder: 4
+category: "Game Mechanics"
+sortOrder: 5
 customSlug: "elebreach"
 update: 8.2
 

@@ -263,7 +263,7 @@ async function increaseLike() {
 
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/bw.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-53;"/> 
  <!-- Like Button: Bottom-right overlay -->
@@ -298,27 +298,27 @@ async function increaseLike() {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start">
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Ba-dum! Fiery Wishing Star</h1>
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
+  <h1 class="text-xl md:text-2xl text-white mt-4 mb-2 italic font-russoone">Ba-dum! Fiery Wishing Star</h1>
 
   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">
     <!-- Name Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Name
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
         Kiana Kaslana
       </div>
     </div>
 
     <!-- Release Date Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Release
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
         v8.1 (20 Feb 2025)
       </div>
     </div>

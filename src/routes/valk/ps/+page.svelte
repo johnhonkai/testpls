@@ -240,7 +240,7 @@ async function increaseLike() {
 }
 
 #app {
-  height: 37rem;
+  height: 35rem;
   overflow: hidden;
   position: relative;
 }
@@ -352,7 +352,7 @@ async function increaseLike() {
 
 
 <!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-60 md:h-72 flex justify-center mt-4" id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/ps.png" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain" style="view-transition-name: valkyrie-image-54;" />
 
@@ -387,7 +387,7 @@ async function increaseLike() {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start">
+<div class="flex flex-col items-center text-center justify-start sm:mt-8">
 
   <!-- Battlesuit Name -->
   <h1 class="text-xl md:text-2xl text-white mt-4 mb-2 italic font-russoone">Peregrine Sword</h1>

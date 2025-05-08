@@ -1,0 +1,77 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.3 Patch Note v2
+version: '8.3'
+sortOrder: '1'
+image: "/images/valkportrait/New Helia.png"
+---
+
+### LINKS
+
+- [8.3 Patch Note](/betanews/83log)
+- [New Helia Skills](/betanews/helia)
+- [New Helia  Equipment](/betanews/heliagear)
+
+---
+
+
+### V2
+
+#### New S-rank Helia
+- BIO Lightning
+- AR Heavenly Grail
+
+
+#### New Outfits
+- Placeholder
+
+#### Chapter 9
+- Placeholder
+
+#### Event 1
+
+#### EX Abyss
+- Placeholder
+
+#### Memorial Arena
+- Placeholder
+
+#### Elysian Realm
+- Added New Helia
+- Placeholder
+
+#### Battle Pass
+- Added Lunar Vow and her gears
+- Placeholder
+
+#### Shop
+- Placeholder
+
+
+#### Foundry
+- Placeholder
+
+
+#### System
+- Placeholder
+
+#### Battlesuit Changes
+- Placeholder
+
+#### Equipment Changes
+- Placeholder
+
+#### EX Abyss Changes
+- Placeholder
+
+
+#### Memorial Arena Changes
+- Placeholder
+
+#### Elysian Realm Changes
+- Placeholder
+ 
+#### System Changes
+- Placeholder
+
+

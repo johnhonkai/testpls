@@ -198,6 +198,7 @@ onMount(async () => {
 }
 </style>
 
+<div class="sm:mt-14"></div>
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
 <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
   <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/wave_coralie.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 

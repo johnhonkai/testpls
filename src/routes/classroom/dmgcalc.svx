@@ -1,7 +1,7 @@
 ---
 title: Damage Calculation
-category: 'Game Mechanics'
-sortOrder: 2
+category: "Game Mechanics"
+sortOrder: 3
 customSlug: "dmgcalc"
 update: 8.2
 
