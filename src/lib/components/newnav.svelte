@@ -109,7 +109,7 @@ onMount(() => {
 	});
 </script>
 
-<div class="flex relative max-w-[1600px] mx-auto">
+<div class="flex relative mx-auto">
 
 	<div class="navbar py-0 absolute z-40 lg:z-20 " style="view-transition-name: daisyuinav;">
         <div class="navbar-start">
