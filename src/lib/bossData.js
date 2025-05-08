@@ -989,6 +989,37 @@ export const teamData = {
   },
   stellarassaka: {
     teamDataSets: [
+      {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 50 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+          rank: '1+',
+          pct: '24%',
+          bottext: 'Vita uses Susannah T Aladdin MB'
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+          rank: '3,6,9',
+          pct: '24%',
+          bottext: 'Vita uses signature stigma'
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '32',
+          pct: '1%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '36',
+          pct: '1%',
+        },
+      ]},
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
