@@ -64,7 +64,12 @@ When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult i
 
 #### AR 1
 When LoA is active:
-you know the usual LoA support stuff.
+- After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
+- Unleash Combo ATK, deal 4200% ATK of Lightning DMG.
+- When entering via Stellar Shift, you enter Augmented Ascension state for 6s, state ends when you exit.
+- When Ult hits a target, leader's switch cd is reset, and trigger her QTE.
+- When QTE hits a target, AR +15, trigger leader's Heavenly Link atk once, CD:16s.
+- Upon casting Stellar Shift, trigger leader's Heavenly Link twice. Heavenly Link deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader’s damage type.
 
 #### AR 2
 After SO ends, gain Stellar Drain. When Ult hits, restore 10 AR.
