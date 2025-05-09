@@ -49,7 +49,7 @@
 		   prose-h3:text-azure-400 prose-h3:font-semibold prose-h3:text-lg sm:prose-h3:text-xl 
 
 
-		   prose-h4:mt-12 sm:prose-h4:text-lg 
+		   prose-h4:mt-8 sm:prose-h4:text-lg 
 
 		     prose-a:text-sky-400 hover:prose-a:underline 
 		   prose-li:text-sm sm:prose-li:text-base 
