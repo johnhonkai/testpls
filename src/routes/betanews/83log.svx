@@ -18,60 +18,78 @@ image: "/images/valkportrait/New Helia.png"
 ### V2
 
 #### New S-rank Helia
-- BIO Lightning
+- BIO Lightning Crossbow user
 - AR Heavenly Grail
 
 
 #### New Outfits
-- Placeholder
+- CE Griseo Outfit
+
+#### 8.3 Event
 
 #### Chapter 9
-- Placeholder
+- Event Star Cruiser Enhanced Edition
 
-#### Event 1
+#### Event: Hot on the Trail
+
+#### Event: Hyperion Cabbage Garden
 
 #### EX Abyss
-- Placeholder
+- Physical weather Sampo (PSY)
+- Extreme Source weather Ice Emperor (PSY) and Parvati (PSY)
+- Extreme Source weather: For every valk with Mutual Regen tag, team TDM +10%. When AR Heavenly Grail is activated, TDM +40%.
+- Resonance weather Guaymas (SD)
+- Lightning weather Tribunal (MECH)
+- Paralyze weather Assaka (PSY)
 
 #### Memorial Arena
-- Placeholder
+- Added SSS Sampo (PSY)
+
 
 #### Elysian Realm
 - Added New Helia
-- Placeholder
+- F17 load boss Parvati
+- Updated stage effects
 
 #### Battle Pass
-- Added Lunar Vow and her gears
-- Placeholder
+- Main Shop: Added Lunar Vow, stamps and gears
+- Reserve Shop: Added HoOrigin, Jade Knight, their stamps and their gears
 
 #### Shop
-- Placeholder
-
+- Exchange Shop: Added Basilisk cross, Linnaeus, Miracle Kissy Pillow, Paganini
+- ER Shop: Added Dreamweaver stamps
 
 #### Foundry
-- Placeholder
+- Added G4 Collodi and NewHelia stigma
 
-
-#### System
-- Placeholder
 
 #### Battlesuit Changes
-- Placeholder
+- Added the new ar tags for PS, Badum, HoH with DK, and RS.
+- PS: Fixed an issue where LoA is not activated: PS Ult abnormally gain Ascension state.
+- PS: Fixed an issue where she can get stuck during plunge attack.
+- PS: Fixed bridge interaction model issue.
+- PS: Fixed eye issue in appreciation mode.
+- Sparkle: In WS team, fixed an issue regarding abnormal meter gain after QTE.
+- JD: Fixed fish skip.
+- HoFi: Fixed abnormal weapon skill cast.
+- Badum: In Resonance team, fixed combo atk abnormal cast.
+- JD: Fixed an issue where you cast [xxx], but there's no target, resulting in abnormal dmg.
+- HoH with DK: In LoA team, fixed abnormal behavior when entering SO after using weapon skill.
+- HoH with DK: In WoD team, fixed an issue where herrscher form duration is abnormal.
+- HoH with DK: Fixed dmg lost if she uses ult and immediately switch out.
+- HoFi: Fixed falling off map.
+- Adjusted text description for a bunch of stuff.
+- Fixed a bunch of outfit issues.
+
 
 #### Equipment Changes
-- Placeholder
+- Fixed message popping up that both Sleeping Beauty and Swan Lake pri arm are already owned after purchasing either weapon.
 
 #### EX Abyss Changes
-- Placeholder
-
-
-#### Memorial Arena Changes
-- Placeholder
+- Bleed HoS: Fixed an issue where she might cast the skill "Seeing Flowers in Dream" repeatedly.
+- Ice side stage?: Fixed abnormal hp drop
 
 #### Elysian Realm Changes
-- Placeholder
+- Optimized the effect for Helix Special Weapon No 4
  
-#### System Changes
-- Placeholder
-
 
