@@ -1,0 +1,77 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Unlocked AR Skills v2
+version: '8.3'
+sortOrder: '4'
+image: "/images/valkportrait/ps.png"
+
+---
+
+### LINKS
+
+- [8.3 Patch Note](/betanews/83log)
+- [New Helia Skills](/betanews/helia)
+- [New Helia Equipment](/betanews/heliagear)
+- [New AR Skills](/betanews/83newskill)
+
+---
+
+### INTRO
+The following characters will unlock the ??? skill in v8.3 and can support New AR Heavenly Grail.
+
+---
+
+### Herrscher of Human
+
+When consuming Stellar Drain, restore 10 more AR.
+
+When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
+
+During AR Charging: After entering via QTE, the next Ult sp cost reduced to 0, effect is removed on exit.
+
+During Stellar Outburst:
+- Max SP +150. When switching in for the first time, enters Herrscher form. Ult is replaced with Eternal Prayer, and sp cost reduced to 0. Auto-cast Charged ATK, deal 700% ATK of Ice DMG, and trigger 4s time fracture, then cast Ult before ending Herrscher form. When remaining SO time is less than 1s, after exiting SO in Herrscher Form, HoH will autocast Ult, then ends Herrscher Form while on the field.
+- When first Charged ATK or Ult hits an enemy, gain 155/128 sp.
+
+---
+
+### Peregrine Sword
+
+After entering via QTE, the next Ult sp cost reduced to 0, effect is removed on exit.
+
+When consuming Stellar Drain, restore 10 more AR.
+
+When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
+
+During Stellar Outburst:
+- Max SP +220. After entering via QTE, the first Joint Weapon and Ult hit restore 140/128 sp.
+
+---
+
+### Ba-dum!
+After entering via QTE, the next Ult sp cost reduced to 0, effect is removed on exit.
+
+Restore full meter when entering via QTE.
+
+When consuming Stellar Drain, restore 10 more AR.
+
+When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
+
+During Stellar Outburst:
+- Max SP +220. After entering via QTE, the first Special Weapon Skill and Ult hit restore 165/128 sp.
+
+---
+
+### Reign Solaris
+
+Team Shieldbreak +80%.
+
+After entering via QTE, the next Ult sp cost reduced to 0, effect is removed on exit.
+
+When consuming Stellar Drain, restore 10 more AR.
+
+When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
+
+During Stellar Outburst:
+- Max SP +200. After entering via QTE, the first Special Weapon Skill and Ult hit restore 155/128 sp.
+

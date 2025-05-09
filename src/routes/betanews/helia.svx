@@ -11,7 +11,9 @@ image: "/images/valkportrait/New Helia.png"
 
 - [8.3 Patch Note](/betanews/83log)
 - [New Helia Skills](/betanews/helia)
-- [New Helia  Equipment](/betanews/heliagear)
+- [New Helia Equipment](/betanews/heliagear)
+- [New AR Skills](/betanews/83newskill)
+
 
 ---
 
