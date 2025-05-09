@@ -54,7 +54,7 @@
 		     prose-a:text-sky-400 hover:prose-a:underline 
 		   prose-li:text-sm sm:prose-li:text-base 
 
-		   prose-p:text-sm sm:prose-p:text-base
+		   prose-p:text-sm sm:prose-p:text-base prose-p:-mb-1
 
 		   "
 		

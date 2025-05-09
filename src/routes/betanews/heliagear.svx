@@ -15,46 +15,75 @@ image: "/images/valkportrait/New Helia.png"
 
 ---
 
-### INTRO
-- S-rank, BIO, Lightning, Crossbow user
-- Astral Ring: Heavenly Grail
-- Is a DPS, can support Heavenly Grail
-- Gameplay: 
-
----
 
 ### WEAPON 
-Placeholder
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/gadSahN.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">From Ashes to Sunshine: Diligence</p>
+</div>
+</div>
+
 
 #### ACTIVE
-Placeholder
+The weapon active cd, charge, and effects are based on the wielder. If wielder has Mutual Regen tag, Lightning DMG +30%. Planar Armament equip bonus: 
+- When you are the leader, after you cast Combo ATK, on the next Stellar Outburst, initial sp is equal to 10% of max sp.
+- Upon casting Condensed Lightning, trigger 1.5s time stop.
 
 #### PASSIVE 1
-Placeholder
+Total DMG +35%. Planar Armament equip bonus: 
+- Team Elemental and Physical DMG +12%.
+- During SO: Self Lightning DMG +30%, team Total DMG +12%.
 
 #### PASSIVE 2
-Placeholder
+Enemies take 25% more Total DMG from the wielder. Planar Armament equip bonus: 
+- Team Total DMG +10%, Elemental DMG +15%.
 
 #### SYNERGY
-Placeholder
+Enemies take 2 / 4 / 6% more Total DMG (independent, cannot stack).
+
+Planar Armament equip bonus: Enemies take 2 / 4 / 6% more Lightning DMG from wielder (independent, cannot stack).
+
 
 ---
 
 ### STIGMA 
 
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/dqEOVhh.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Destiny's Choice set</p>
+</div>
+</div>
 
 #### TOP
-Placeholder
-
+Lightning DMG +40%. Planar Armament equip bonus: 
+- Characters with [Raise the Banner] gain Total DMG +20%.
 
 #### MID
-Placeholder
+Total DMG resistance +25%. Planar Armament equip bonus:  
+- Characters with [Raise the Banner] gain Physical and Elemental DMG +25%.
 
 #### BOT
-Placeholder
+Total DMG +25%. Planar Armament equip bonus: 
+- Enemies take 18% more Physical and Elemental DMG from characters with [Raise the Banner].
 
 #### 2PC
-Placeholder
+Lightning DMG +40%. Planar Armament equip bonus: 
+- Enemies take 30% more Lightning DMG.
+- When AR is activated: Enemies take 20% more Elemental DMG from characters with [Raise the Banner].
+- When LoA is activated: During AR Charging, team Total DMG +27%, and enemies take 25% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG +20%.
+- When LoA is activated: During Stellar Outburst, team Total DMG +37%, and enemies take 35% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG +25%.
 
 #### 3PC
-Placeholder
+Ult and Combo ATK gain Total DMG +15%. Planar Armament equip bonus: 
+- When Ult or QTE hits a target, or upon activating Stellar Outburst, or when entering battle as leader, team gain [Raise the Banner] for 25s, can be refreshed.
+-  Enemies take 22% more Total DMG.
+-  When Heavenly Grail is activated:
+    - Characters with [Raise the Banner] gain Elemental DMG +20%, Physical DMG +12%, Total DMG +15%.
+    - Enemies take 10% more Total DMG from characters with [Raise the Banner].
+    - During SO: Enemies take 12% more Total DMG, Physical, Elemental DMG from characters with [Raise the Banner].
