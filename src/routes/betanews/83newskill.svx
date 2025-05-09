@@ -33,6 +33,14 @@ During Stellar Outburst:
 - Max SP +150. When switching in for the first time, enters Herrscher form. Ult is replaced with Eternal Prayer, and sp cost reduced to 0. Auto-cast Charged ATK, deal 700% ATK of Ice DMG, and trigger 4s time fracture, then cast Ult before ending Herrscher form. When remaining SO time is less than 1s, after exiting SO in Herrscher Form, HoH will autocast Ult, then ends Herrscher Form while on the field.
 - When first Charged ATK or Ult hits an enemy, gain 155/128 sp.
 
+#### HoH Stigma
+
+When Heavenly Grail is activated:
+- Characters with [Ego Blessing] gain Elemental DMG +30%, Physical DMG +12%, Total DMG +35%.
+- Enemies take 25% more Total DMG from characters with [Ego Blessing].
+- During SO: Enemies take 10% more Total DMG from characters with [Ego Blessing], and characters with [Ego Blessing] gain Physical and Elemental DMG +10%. 
+
+
 ---
 
 ### Peregrine Sword
@@ -45,6 +53,14 @@ When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
 
 During Stellar Outburst:
 - Max SP +220. After entering via QTE, the first Joint Weapon and Ult hit restore 140/128 sp.
+
+#### PS Stigma
+
+When Heavenly Grail is activated:
+- Characters with [World is Oyster] gain Elemental DMG +30%, Physical DMG +12%, Total DMG +12%.
+- Enemies take 25% more Total DMG from characters with [World is Oyster] .
+- During SO: Enemies take 10% more Total DMG from characters with [World is Oyster] , and characters with [World is Oyster] gain Physical and Elemental DMG +10%. 
+
 
 ---
 
@@ -59,6 +75,13 @@ When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
 
 During Stellar Outburst:
 - Max SP +220. After entering via QTE, the first Special Weapon Skill and Ult hit restore 165/128 sp.
+
+#### Badum Stigma
+
+When Heavenly Grail is activated:
+- Characters with [Let's Play] gain Elemental DMG +30%, Physical DMG +12%, Total DMG +12%.
+- Enemies take 25% more Total DMG from characters with [Let's Play].
+- During SO: Enemies take 10% more Total DMG from characters with [Let's Play], and characters with [Let's Play] gain Physical and Elemental DMG +10%. 
 
 ---
 
@@ -75,3 +98,9 @@ When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
 During Stellar Outburst:
 - Max SP +200. After entering via QTE, the first Charged ATK and Ult hit restore 155/128 sp.
 
+#### RS Stigma
+
+When Heavenly Grail is activated:
+- Characters with [Unstoppable] gain Elemental DMG +30%, Physical DMG +12%, Total DMG +12%.
+- Enemies take 25% more Total DMG from characters with [Unstoppable].
+- During SO: Enemies take 10% more Total DMG from characters with [Unstoppable], and characters with [Unstoppable] gain Physical and Elemental DMG +10%. 

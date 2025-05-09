@@ -21,7 +21,7 @@ image: "/images/valkportrait/New Helia.png"
 - S-rank, BIO, Lightning, Crossbow user
 - Astral Ring: Heavenly Grail
 - Is a DPS, can support Heavenly Grail and Law of Ascension teams
-- Gameplay: 
+- Gameplay: https://youtu.be/YRZvtHZ6R80
 
 ---
 
