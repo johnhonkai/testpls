@@ -73,5 +73,5 @@ When consuming Stellar Drain, restore 10 more AR.
 When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
 
 During Stellar Outburst:
-- Max SP +200. After entering via QTE, the first Special Weapon Skill and Ult hit restore 155/128 sp.
+- Max SP +200. After entering via QTE, the first Charged ATK and Ult hit restore 155/128 sp.
 

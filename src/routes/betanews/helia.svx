@@ -53,7 +53,7 @@ When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult i
 - When SO ends, team members no longer share sp bar, Shimmering Trace is cleared, and restore sp to the value before SO began.
 - When you are the leader:
     - When a teammate with Mutual Regen use Ult, Planar Armament switch cd is reset, and her QTE is triggered.
-    - When SO is activated: Planar Armament gain Floating Pivot for 30s. It can be refreshed and triggers again when Planar Armamen enters the field or uses Ult. Floating Pivot is removed when SO ends.
+    - When SO is activated: Planar Armament gain Floating Hub for 30s. It can be refreshed and triggers again when Planar Armamen enters the field or uses Ult. Floating Hub is removed when SO ends.
     - During SO, SP consumption for the three ults are increased to 300 each.
     - During SO, each team member will gain 300 points of Shimmering Trace when they use Ult for the first time.
     - During SO, after using Combo ATK for the first time, the sp regen of teammates with Mutual Regen is increased by 50%, and Shimmering Trace gain rate +100%.
@@ -63,13 +63,19 @@ When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult i
     - During SO, the first QTE of Planar Armament will restore full Burning Light meter. After hitting the enemy with the first Combo ATK / Finisher Ult, restore 140 / 128 sp for herself.
 
 #### AR 1
-Placeholder
+When LoA is active:
+you know the usual LoA support stuff.
 
 #### AR 2
-Placeholder
+After SO ends, gain Stellar Drain. When Ult hits, restore 10 AR.
+- When HG is active, restore 10 more AR.
+- When LoA is active, restore 10 more AR.
+- Gain Stellar Drain at the start of battle.
+
 
 #### AR 3
-Placeholder
+When you are the leader:
+During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +30%/30%/50% (S2), lasts until SO ends. If the entire team triggers Evolution Method 3 times during SO, and if the team's sp is less than 110 after SO ends, team will recover 110 sp after SO ends.
 
 
 ---
@@ -84,17 +90,18 @@ Some of Planar Armament moves will unleash Roaming Blades:
 - Ult 2: 17 hits, 30%x17 , 5 sp
 - Ult 3: 5 hits, 30%x5 , 5 sp
 - Combo ATK: 11 hits, 30%x11 
-- theres more
+- theres more basically every attack deals more hits and dmg
 
 
 #### PASSIVE 1
-Placeholder
+During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 20% (SS) more Lightning DMG.
 
 #### PASSIVE 2
 - When you enter battle, if you are not the leader, initial sp +25. If you are the leader, initial sp +100.
 - During AR Charging: On hit, if sp is more than 0 and less than 100, sp regen rate +300%.
 
 #### PASSIVE 3
+Gain 40% TDM resistance, and gain Total DMG +10% (S) / 20% (S1) against enemies hit by Ult. (not sure about this one)
 
 #### PASSIVE 4
 Locked Skill. This companion star is still awaiting its time and has yet to appear in the night sky.
@@ -102,23 +109,20 @@ Locked Skill. This companion star is still awaiting its time and has yet to appe
 ---
 
 ### EVASION
-Placeholder
-
+Trigger 3s time fracture, cd 15s.
 
 #### EVASION 1
-Placeholder
+When you are the leader, restore 24 sp on ultimate evasion, cd 1s.
 
-#### EVASION 2
-Placeholder
 
 
 ---
 
 ### WEAPON SKILL
-
+Deal 150%x2 ATK of Lightning DMG, CD: 15s.
 
 #### WEAPON 1
-Placeholder
+[S2] Gain extra weapon charge, and weapon skill trigger evasion skill.
 
 ---
 
@@ -133,7 +137,7 @@ Plunge ATK: Deal 200% + 400% ATK of Lightning DMG
 
 
 #### BASIC 1
-Placeholder
+QTE: Triggered when teammate use weapon skill ot Ult, or when enemies are time slowed. Deal 200%x5 ATK of Lightning DMG, restore 10 sp for self, trigger 2s time fracture.
 
 #### BASIC 2
 Basic ATK Seq 3 inflicts 2 points of paralyze trauma.
@@ -147,11 +151,8 @@ At full meter, hold ATK to use Combo ATK.
 Combo ATK will clear meter, and trigger 4s time fracture, continuously pull enemies, deal 700%x3 + 200% ATK of Lightning DMG, and trigger teammate's QTE on hit.
 
 #### COMBO ATK 1
-Placeholder
+When the first Combo ATK hits during SO, increase max sp by 500 points. Removed when SO ends.
 
-
-#### COMBO ATK 2
-Placeholder
 
 ---
 
@@ -164,21 +165,21 @@ You will use different ults based on the number of [Ult stack] , and you gain on
 
 When casting any of the 3 ults, trigger 3s time fracture, gain Iron Body and take 30% less dmg. SP cost: 100, CD: 0s.
 
-After casting any of the 3 ults, gain Floating Pivot for 10s, can be refreshed. Floating Pivot will end once you exit. When using certain Ults, you will unleash Roaming Blades.
+After casting any of the 3 ults, gain Floating Hub for 10s, can be refreshed. Floating Hub will end once you exit. When using certain Ults, you will unleash Roaming Blades.
 
 During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher, deal 100%x5 + 900% ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
 
 #### ULT 1
-Placeholder
+When you have Floating Hub, gain higher anti-interrupy, and when using Ult, restore 300 HP.
 
 #### ULT 2
 Ult inflicts 12 points of paralyze trauma.
 
 #### ULT 3
-Placeholder
+When you are the leader, after using Finisher Ult to exit SO, AR meter will restore to 40% of remaining AR intensity, at minimum will restore 20 AR.
 
 #### ULT 4
-Placeholder
+[SS] When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
 
 ---
 
