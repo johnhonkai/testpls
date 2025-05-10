@@ -162,7 +162,7 @@ When the first Combo ATK hits during SO, increase max sp by 500 points. Removed 
 ---
 
 ### ULTIMATE 
-You will use different ults based on the number of [Ult stack] , and you gain one stack after casting  Ult.
+You will use different ults based on the number of Burning Light stack , and you gain one stack after casting  Ult.
 - No stack: 400%x2 + 480%
 - 1 stack: 200%x7 + 800%
 - 2 stack: 1200%
@@ -170,9 +170,9 @@ You will use different ults based on the number of [Ult stack] , and you gain on
 
 When casting any of the 3 ults, trigger 3s time fracture, gain Iron Body and take 30% less dmg. SP cost: 100, CD: 0s.
 
-After casting any of the 3 ults, gain Floating Hub for 10s, can be refreshed. Floating Hub will end once you exit. When using certain Ults, you will unleash Roaming Blades.
+After casting any of the 3 ults, gain Floating Hub for 10s, can be refreshed. Floating Hub will end once you exit. When using certain moves, you will unleash Roaming Blades.
 
-During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher, deal 100%x5 + 900% ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
+During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher Ult, deal 100%x5 + 900% ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
 
 #### ULT 1
 When you have Floating Hub, gain higher anti-interrupy, and when using Ult, restore 300 HP.
@@ -181,7 +181,7 @@ When you have Floating Hub, gain higher anti-interrupy, and when using Ult, rest
 Ult inflicts 12 points of paralyze trauma.
 
 #### ULT 3
-When you are the leader, after using Finisher Ult to exit SO, AR meter will restore to 40% of remaining AR intensity, at minimum will restore 20 AR.
+When you are the leader, after using Finisher Ult to exit SO, AR meter will restore 40% of remaining AR intensity, at minimum will restore 20 AR.
 
 #### ULT 4
 [SS] When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
