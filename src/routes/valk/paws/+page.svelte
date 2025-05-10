@@ -29,15 +29,6 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 
   import { goto } from '$app/navigation';
   import Lightbox from "$lib/components/lightbox.svelte";
-	import Dududps from '$lib/components/lineup/dududps.svelte';
-	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
-	import Jddps from "$lib/components/lineup/jddps.svelte";
-	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
-	import Badumdps from "$lib/components/lineup/badumdps.svelte";
-	import Senadps from "$lib/components/lineup/senadps.svelte";
-	import Simpdps from "$lib/components/lineup/simpdps.svelte";
-	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
-	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 let showLightbox = false;
 let selectedImage = '';
@@ -52,22 +43,22 @@ function closeLightbox() {
 }
 
 import Fa from 'svelte-fa';
-import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
-	import CharBio from "$lib/components/CharBio.svelte";
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire} from '@fortawesome/free-solid-svg-icons';
+	import CharBio from '$lib/components/CharBio.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
-//  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-//  { name: 'Gameplay', short: 'example', icon: faVideo },
-//  { name: 'Elysian Realm', short: 'er', icon: faFire },
-//  { name: 'Rank Up', short: 'rank', icon: faStar },
-// { name: 'Question', short: 'qna' , icon: faComments  },
-// { name: 'Overview Card', short: 'card' },
-// { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+ // { name: 'Equipment', short: 'equipment', icon: faBolt  },
+ //   { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+ //   { name: 'How to Play', short: 'howtoplay', icon: faBook },
+ //   { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+ //   { name: 'Rank Up', short: 'rank', icon: faStar },
+ //   { name: 'Question', short: 'qna' , icon: faComments  },
+ // { name: 'Overview Card', short: 'card' },
+ // { name: 'Translation Error', short: 'translation' },
 ];  
 
 function handleClick(tabName) {
@@ -81,7 +72,6 @@ function handleClick(tabName) {
     activeIcon = tabName;
     setTimeout(() => (activeIcon = null), 300); // reset after animation
   }
-   
 
 // Function to select a tab and update the URL
 function selectTab(tab) {
@@ -219,7 +209,7 @@ async function increaseLike() {
 
 <style>
    #apphelia {
-    height: 37rem;
+    height: 35rem;
     overflow: hidden;
     position: relative;
   }
@@ -244,7 +234,7 @@ async function increaseLike() {
 
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center sm:mt-8" id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
   <!-- Like Button: Bottom-right overlay -->
@@ -318,7 +308,7 @@ async function increaseLike() {
 
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -326,12 +316,25 @@ async function increaseLike() {
     <ul class="space-y-2">
       {#each tabs as tab}
         <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+  
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+  
+    </button>
         </li>
       {/each}
     </ul>
@@ -545,17 +548,17 @@ async function increaseLike() {
 
         <button
         on:click={() => setPlaystyle('1')}
-        class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
       >
-        AUGMENTED ASCENSION
+        AR CHARGING
       </button>
 
 
         <button
           on:click={() => setPlaystyle('2')}
-          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
-        UMBRELLA THROW
+        STELLAR OUTBURST
         </button>
       
 
@@ -564,9 +567,9 @@ async function increaseLike() {
 
   
       {#if activePlaystyle === '1'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Augmented Ascension Playstyle</h2> 
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Enhanced Augmented Ascension playstyle.
+       Spam weapon and ult. Also Combo ATK once or twice. 
       </p>
   
       <div class="divider  "></div>
@@ -587,8 +590,8 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Emerald Edge ➔ Gallant Hero</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Five Flavors </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Signet 1 ➔ Signet 2</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Signet 5 </p>
           </div>
         </div>
         
@@ -596,7 +599,7 @@ async function increaseLike() {
       <div class="mt-3 rounded-sm" >
         <p class="text-sm sm:text-base text-left">
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Emerald Edge), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Signet 1), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
       </p>
         </div>
   
@@ -606,12 +609,12 @@ async function increaseLike() {
           <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Daybreak (Kosma).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
   
@@ -640,7 +643,7 @@ async function increaseLike() {
           
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START</p>
@@ -648,7 +651,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -656,7 +659,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -674,7 +677,7 @@ async function increaseLike() {
   
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
@@ -682,24 +685,24 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
           <div class="flex flex-row rounded-sm">
-            <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
           <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
       </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Light_as_a_Bodhi_Leaf.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Empty_like_Shala.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Faraway_Ship.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
@@ -712,21 +715,34 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use Stellar Outburst (Stellar Shift).</li>
-          <li>Press ATK.</li>
-          <li>Press Weapon three times.</li>
+          <li>Spam Weapon ➔ Ult.</li>
+          <li>When you have 5 combo buff stacks, use Combo ATK.</li>
+          <li>You can use Combo ATK at less than 5 stacks if you can finish off the enemy.</li>
           <li>Repeat.</li>
-          <li>Optional: You can use Ultimate to finish off a wave.</li>
         </ol>
   
-  
+    
+          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/qtxw9khxLp4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
       {/if}
 
-
       {#if activePlaystyle === '2'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Umbrella Throw Playstyle</h2> 
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Spam evade and weapon.
+       Spam Basic ATK more.
       </p>
   
       <div class="divider  "></div>
@@ -747,8 +763,8 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Leisurely Mood ➔ Riding Winds  </p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Five Flavors </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Signet 3 ➔ Signet 4</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Signet 5 </p>
           </div>
         </div>
         
@@ -756,7 +772,7 @@ async function increaseLike() {
       <div class="mt-3 rounded-sm" >
         <p class="text-sm sm:text-base text-left">
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Leisurely Mood), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Signet 3), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
       </p>
         </div>
   
@@ -764,33 +780,29 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           <!-- First Signet with 'Start' text -->
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-            <img src="/images/signets/Signets of Daybreak (Kosma).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">1</p>
-          </div>
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
+  
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
 
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold ">1</p>
-          </div>
-
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">1</p>
-          </div>
-
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">2</p>
-          </div>
-
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">1</p>
-          </div>
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
   
         </div>
+
   
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -799,7 +811,7 @@ async function increaseLike() {
           
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START</p>
@@ -807,7 +819,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -815,7 +827,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -830,10 +842,10 @@ async function increaseLike() {
   
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           
-    
+  
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
@@ -841,24 +853,24 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
           <div class="flex flex-row rounded-sm">
-            <img src="/images/sigils/Fragile_Friend.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <img src="/images/sigils/Out_of_Reach.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
           <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
       </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Light_as_a_Bodhi_Leaf.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Empty_like_Shala.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Faraway_Ship.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
@@ -871,12 +883,30 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Evade ➔ Weapon. Repeat three times.</li>
-          <li>Press Weapon.</li>
+          <li>Activate Stellar Outburst.</li>
+          <li>Spam Basic ATK. You will auto-cast Ult if you have enough sp.</li>
+          <li>At 3 Burnigh Light stack, use Combo ATK, then Finisher Ult.</li>
+          <li>Use Ult once while you wait SO to be available again.</li>
           <li>Repeat.</li>
-          <li>AOptional: You can use Ultimate to finish off a wave.</li>
         </ol>
+  
+          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/qtxw9khxLp4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
       {/if}
+
 
 
       {/if}

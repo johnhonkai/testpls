@@ -13,6 +13,7 @@
 
     const asopchar = [
         { name: 'Teri', image: '/images/valkportrait/asop_teri.png', },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', },
         { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',  }
     ];
