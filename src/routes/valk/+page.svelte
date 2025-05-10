@@ -130,7 +130,7 @@
       Valkyrie Guide
     </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Selet A Valkyrie
+      Select A Valkyrie
     </p>
   </div>
   

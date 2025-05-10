@@ -24,9 +24,11 @@ image: "/images/valkportrait/New Helia.png"
 
 
 #### New Outfits
-- CE Griseo Outfit
+- CE Griseo diver outfit, free from event
 
-#### 8.3 Event
+#### 8.3 Main Event
+- PvZ style event
+- Rewards CE outfit
 
 #### Chapter 9
 - Event Star Cruiser Enhanced Edition
@@ -36,7 +38,7 @@ image: "/images/valkportrait/New Helia.png"
 #### Event: Hyperion Cabbage Garden
 
 #### EX Abyss
-- Physical weather Sampo (PSY)
+- Melee weather Sampo (PSY)
 - Extreme Source weather Ice Emperor (PSY) and Parvati (PSY)
 - Extreme Source weather: For every valk with Mutual Regen tag, team TDM +10%. When AR Heavenly Grail is activated, TDM +40%.
 - Resonance weather Guaymas (SD)
@@ -45,7 +47,6 @@ image: "/images/valkportrait/New Helia.png"
 
 #### Memorial Arena
 - Added SSS Sampo (PSY)
-
 
 #### Elysian Realm
 - Added New Helia
