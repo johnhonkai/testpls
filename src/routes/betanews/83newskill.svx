@@ -30,7 +30,7 @@ When SO is activated, if Ult CD is more than 4s, then it is reduced to 4s.
 During AR Charging: After entering via QTE, the next Ult sp cost reduced to 0, effect is removed on exit.
 
 During Stellar Outburst:
-- Max SP +150. When switching in for the first time, enters Herrscher form. Ult is replaced with Eternal Prayer, and sp cost reduced to 0. Auto-cast Charged ATK, deal 700% ATK of Ice DMG, and trigger 4s time fracture, then cast Ult before ending Herrscher form. When remaining SO time is less than 1s, after exiting SO in Herrscher Form, HoH will autocast Ult, then ends Herrscher Form while on the field.
+- Max SP +150. When switching in for the first time, enters Herrscher form. Ult is replaced with Eternal Prayer, and sp cost reduced to 0. Ult will auto-cast Charged ATK (i think it's just instantly applied after ult), deal 700% ATK of Ice DMG, and trigger 4s time fracture, then cast Ult before ending Herrscher form. When remaining SO time is less than 1s, after exiting SO in Herrscher Form, HoH will autocast Ult, then ends Herrscher Form while on the field.
 - When first Charged ATK or Ult hits an enemy, gain 155/128 sp.
 
 #### HoH Stigma

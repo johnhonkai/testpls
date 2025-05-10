@@ -34,7 +34,7 @@ Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
 
 #### LEADER 1
 When you are the leader:
-- Elemental Breach +6% (S) / ?% (S2) and enemies take 7% / ?% (S2) more Total DMG, additional 14% / ?% (S2) during AR Charging.
+- Elemental Breach +6% and enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
 - During AR Charging: Every time you use Ult, gain 2.5 AR intensity.
 
 #### LEADER 2
@@ -190,9 +190,13 @@ When you are the leader, after using Finisher Ult to exit SO, AR meter will rest
 
 ### RANK UP 
 
-S1: 
-
+S1: Gain 40% TDM resistance, and gain Total DMG +10% (S) / 20% (S1) against enemies hit by Ult. (not sure about this one)
+ 
 S2: 
+- During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +28%/28%/47% (S2), lasts until SO ends.
+- Weapon skill triggers evasion skill.
+- Enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
+
 
 S3: Lead
 

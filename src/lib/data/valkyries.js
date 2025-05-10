@@ -2,6 +2,17 @@ export const valkyries = [
 
     { name: 'RoO Valk no Reso tag', image: '/images/valkportrait/unknownchar.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Omniscient Star' ] , url: '/valk/coralie', cost: 150},
 
+    { name: 'Planar Armament', 
+        image: '/images/valkportrait/New Helia.png', 
+        type: 'BIO', 
+        element: 'Lightning', 
+        astralRing:'Heavenly Grail', 
+        artag: ['Mutual Regen' , 'Heavenly Shift'] , 
+        url: '/valk/paws',
+        cost: 200,
+    },   
+    
+
     { name: 'Peregrine Sword', 
         image: '/images/valkportrait/ps.png', 
         type: 'BIO', 
