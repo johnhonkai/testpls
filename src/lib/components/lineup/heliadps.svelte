@@ -3,23 +3,22 @@
 
     // Define the data for main characters
     const mainCharacters = [
-
-        { name: 'PS', image: '/images/valkportrait/ps.png', },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '99%', },
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '98%', utility: 'Shield',},
 
     ];
 
     const asopchar = [
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', },
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '#2' , speed: 'Faster'  },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '#1',  speed: 'Slower'  },
         { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',  }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'PS'; // default to 'Vita'
+    export let firstCharName: string = 'Badum'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -30,7 +29,7 @@
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-orange-950 to-orange-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">位面武器·失序时空 DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Planar Armament DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 

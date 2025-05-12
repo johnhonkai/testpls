@@ -97,7 +97,7 @@ export const weatherList = {
 
   ],
   flux: [
-    {id: 'momemperor', name: 'Mockery and Frost Emperor'},
+    {id: 'momemperor', name: 'Mockery & Emperor'},
     {id: 'fluxhomu', name: 'Homu Performer'},
     {id: 'fluxandrius', name: 'Dominator of Wolves'},
     {id: 'fluxtank', name: 'MHT-3C Retaliator'},
@@ -2490,6 +2490,10 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://www.youtube.com/watch?v=wIOYFVArkYs', abyss: 'Nirvana 540D', uploader: 'phylynxbelt' },
+
+    ] 
   },
 
   typeparvati: {
