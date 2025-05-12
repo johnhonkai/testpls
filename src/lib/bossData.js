@@ -15,6 +15,7 @@ export const weatherList = {
   ice: [
     {id: 'raven', name: 'Raven'},
     {id: 'icehellmaru', name: 'Hellmaru'},
+    {id: 'icehuodou', name: 'Huodou'},
 
   ],
   typecounter: [
@@ -439,6 +440,15 @@ export const bossData = {
     debuff: "Ice (H)", 
     typeicon: "images/type/IconNULL.webp", 
     bosspic: "images/Bosses/Hellmaru.webp", 
+    weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
+  },
+    icehuodou: {
+    name: 'Huodou', 
+    mechanics: 'Starts with BIO mobs.', 
+    weakness: 'None', 
+    debuff: "Ice (M)", 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Huodou.webp", 
     weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
   },
   otto: {
@@ -2590,6 +2600,39 @@ export const teamData = {
             rank: '61',
             pct: '14%',
             bottext: "Highest score: S 781, S2 788"
+          },
+        ]
+      }
+    ],
+  },
+
+    icehuodou: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Vita Lone Planetfarer.png","images/valkportrait/asop_sera.png"],
+            rank: '1+',
+            pct: '97%',
+            bottext: "Highest score: S 802, SS 831, 9S 853"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/dudu.png","images/valkportrait/asop_sera.png"],
+            rank: '82',
+            pct: '2%',
+            bottext: "Highest score: S2 805"
+          },
+                    {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Songque Jovial Deception.png","images/valkportrait/asop_sera.png"],
+            rank: '100',
+            pct: '1%',
+            bottext: "Highest score: SS 801"
           },
         ]
       }
