@@ -1,6 +1,7 @@
-<title>Honkai Impact Story Order</title> 
+<svelte:head>
+<title>Story Order</title> 
 
-<meta property="og:title" content="Story Order" />
+<meta property="og:title" content="Honkai Impact Story Order" />
 <meta property="og:description" content="Story order for Part 2 Chapters and Events" />
 <meta property="og:image" content="https://i.imgur.com/VZplzDF.png" />
 <meta property="og:url" content="https://marisaimpact.com/story" />
@@ -10,7 +11,7 @@
 
 
 <link rel="canonical"  />
-
+</svelte:head>
 
 <script lang="ts">
   import { storyOrder } from '$lib/data/storyOrder';
