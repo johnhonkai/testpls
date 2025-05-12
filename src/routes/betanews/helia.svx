@@ -34,7 +34,7 @@ Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
 
 #### LEADER 1
 When you are the leader:
-- Elemental Breach +6% and enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
+- Elemental Breach +6% and enemies take 7% / 8.5% (S2) / 10% (SS) more Total DMG, additional 14% / 17% (S2) / 20% (SS) during AR Charging.
 - During AR Charging: Every time you use Ult, gain 2.5 AR intensity.
 
 #### LEADER 2
@@ -80,7 +80,7 @@ After SO ends, gain Stellar Drain. When Ult hits, restore 10 AR.
 
 #### AR 3
 When you are the leader:
-During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +30%/30%/50% (S2), lasts until SO ends. If the entire team triggers Evolution Method 3 times during SO, and if the team's sp is less than 110 after SO ends, team will recover 110 sp after SO ends.
+During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +30%/30%/50% (S2) / +30%/30%/50% (S2), lasts until SO ends. If the entire team triggers Evolution Method 3 times during SO, and if the team's sp is less than 110 after SO ends, team will recover 110 sp after SO ends.
 
 
 ---
@@ -99,14 +99,14 @@ Some of Planar Armament moves will unleash Roaming Blades:
 
 
 #### PASSIVE 1
-During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 20% (SS) more Lightning DMG.
+During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) / 30% (SS) more Lightning DMG.
 
 #### PASSIVE 2
 - When you enter battle, if you are not the leader, initial sp +25. If you are the leader, initial sp +100.
 - During AR Charging: On hit, if sp is more than 0 and less than 100, sp regen rate +300%.
 
 #### PASSIVE 3
-Gain 40% TDM resistance, and gain Total DMG +10% (S) / 20% (S1) against enemies hit by Ult. (not sure about this one)
+Gain 40% TDM resistance, and gain Total DMG +10% (S) / 15% (S1) / 20% (SS) against enemies hit by Ult. (not sure about this one)
 
 #### PASSIVE 4
 Locked Skill. This companion star is still awaiting its time and has yet to appear in the night sky.
@@ -190,22 +190,25 @@ When you are the leader, after using Finisher Ult to exit SO, AR meter will rest
 
 ### RANK UP 
 
-S1: Gain 40% TDM resistance, and gain Total DMG +10% (S) / 20% (S1) against enemies hit by Ult. (not sure about this one)
+S1: Gain Total DMG +10% (S) / 15% (S1) against enemies hit by Ult. 
  
 S2: 
 - During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +28%/28%/47% (S2), lasts until SO ends.
-- Weapon skill triggers evasion skill.
+- UNLOCK: Weapon skill triggers evasion skill.
 - Enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
 
 
 S3: Lead
 
 SS: 
+- UNLOCK: When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
+- Gain Total DMG +15% (S1) / 20% (SS) against enemies hit by Ult. 
+- During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) more Lightning DMG.
 
-SS1: 
-
-SS2:
+SS1: During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +28%/28%/47% (S2) / +30%/30%/50% (S2), lasts until SO ends.
+ 
+SS2: Elemental Breach +6% and enemies take 8.5% (S2) / 10% (SS) more Total DMG, additional 17% (S2) / 20% (SS) during AR Charging.
 
 SS3: Lead
 
-SSS: 
+SSS: During AR Charging: When AR intensity is more than 145 points, enemies take 22% (S) / 30% (SS) more Lightning DMG.
