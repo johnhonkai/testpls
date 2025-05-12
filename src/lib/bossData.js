@@ -2571,6 +2571,9 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://youtu.be/DWrewcsyGho', abyss: 'Red Lotus 507D', uploader: 'Marisa Honkai' },
+    ] 
   },
 
   firetank: {
