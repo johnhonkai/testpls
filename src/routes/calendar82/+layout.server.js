@@ -11,4 +11,4 @@ export async function load({ url }) {
     return {
         ogImage
     };
-}https://www.youtube.com/watch?v=98-TVVWPN6o
+}
