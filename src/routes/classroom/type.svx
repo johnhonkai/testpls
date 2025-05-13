@@ -8,7 +8,7 @@ update: 8.2
 ---
 
 ## Character and Enemy Types
-There are currently 7 types in Honkai Impact. A character or enemy can only have one type.
+There are currently 6 types in Honkai Impact. A character or enemy can only have one type.
 - Biologic (BIO)
 - Mechanical (MECH)
 - Psychic (PSY)
