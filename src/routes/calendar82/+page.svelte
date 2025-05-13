@@ -694,11 +694,11 @@
                     <BossCard image="/images/Bosses/Huodou.webp" date="Jun 6" weather="Ice" bosspage="/boss?icehuodou" />
                     <BossCard image="/images/Bosses/Otto Apocalypse.webp" date="Jun 9" weather="Physical" bosspage="/boss?otto" />
                 </div>
-                     
+
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard />
+                        <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Jun 10"  />
+                        <BossCard image="/images/Bosses/Flame-Chaser - Aponia_SSS.webp"  />
+                        <BossCard image="/images/Bosses/Alien Guard.webp"  />
                     </div>
     
 
