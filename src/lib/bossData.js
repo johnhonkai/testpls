@@ -2573,6 +2573,8 @@ export const teamData = {
     ],
         videos: [
       { url: 'https://youtu.be/DWrewcsyGho', abyss: 'Red Lotus 507D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/D43TAsj4uu8', abyss: 'Nirvana 541D', uploader: 'chronos002' },
+
     ] 
   },
 
