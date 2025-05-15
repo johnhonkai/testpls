@@ -99,7 +99,7 @@ Some of Planar Armament moves will unleash Roaming Blades:
 
 
 #### PASSIVE 1
-During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) / 30% (SS) more Lightning DMG.
+During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) / 30% (SSS) more Lightning DMG.
 
 #### PASSIVE 2
 - When you enter battle, if you are not the leader, initial sp +25. If you are the leader, initial sp +100.
@@ -211,4 +211,4 @@ SS2: Elemental Breach +6% and enemies take 8.5% (S2) / 10% (SS2) more Total DMG,
 
 SS3: Lead
 
-SSS: During AR Charging: When AR intensity is more than 145 points, enemies take 22% (S) / 30% (SS) more Lightning DMG.
+SSS: During AR Charging: When AR intensity is more than 145 points, enemies take 22% (S) / 30% (SSS) more Lightning DMG.
