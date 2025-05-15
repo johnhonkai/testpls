@@ -34,7 +34,7 @@ Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
 
 #### LEADER 1
 When you are the leader:
-- Elemental Breach +6% and enemies take 7% / 8.5% (S2) / 10% (SS) more Total DMG, additional 14% / 17% (S2) / 20% (SS) during AR Charging.
+- Elemental Breach +6% and enemies take 7% / 8.5% (S2) / 10% (SS2) more Total DMG, additional 14% / 17% (S2) / 20% (SS2) during AR Charging.
 - During AR Charging: Every time you use Ult, gain 2.5 AR intensity.
 
 #### LEADER 2
@@ -207,7 +207,7 @@ SS:
 
 SS1: During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +28%/28%/47% (S2) / +30%/30%/50% (S2), lasts until SO ends.
  
-SS2: Elemental Breach +6% and enemies take 8.5% (S2) / 10% (SS) more Total DMG, additional 17% (S2) / 20% (SS) during AR Charging.
+SS2: Elemental Breach +6% and enemies take 8.5% (S2) / 10% (SS2) more Total DMG, additional 17% (S2) / 20% (SS2) during AR Charging.
 
 SS3: Lead
 
