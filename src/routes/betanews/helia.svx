@@ -176,7 +176,7 @@ When casting any of the 3 ults, ~~trigger 3s time fracture (moved down)~~, gain 
 
 After casting any of the 3 ults, gain Floating Hub for 10s, can be refreshed. Floating Hub will end once you exit. When using certain moves, you will unleash Roaming Blades.
 
-During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher Ult, deal **100%x5 + 900% (v2) > 180%x5 +90% (v3)** ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
+During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher Ult, deal **100%x5 + 900% (v2) > 180%x5 +900% (v3)** ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
 
 #### ULT 1
 When you have Floating Hub, gain higher anti-interrupy, and when using Ult, restore 300 HP.
