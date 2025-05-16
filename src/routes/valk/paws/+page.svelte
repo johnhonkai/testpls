@@ -53,7 +53,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
  // { name: 'Equipment', short: 'equipment', icon: faBolt  },
  //   { name: 'Support Buffs', short: 'support', icon: faCircleUser },
  //   { name: 'How to Play', short: 'howtoplay', icon: faBook },
- //   { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
  //   { name: 'Rank Up', short: 'rank', icon: faStar },
  //   { name: 'Question', short: 'qna' , icon: faComments  },
@@ -1189,7 +1189,7 @@ async function increaseLike() {
   {/if}
   
   
- {#if selectedTab === 'Gameplay Examples'}
+ {#if selectedTab === 'Gameplay'}
  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
 
  <div class=" gap-6 mt-5 mb-10">
@@ -1197,7 +1197,7 @@ async function increaseLike() {
 
 
   <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Peregrine Sword DPS</h2>
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Planar Armament DPS</h2>
 
     <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
 
@@ -1206,7 +1206,7 @@ async function increaseLike() {
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/hMuf_UM-HZg"
+          src="https://www.youtube.com/embed/qtxw9khxLp4"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
