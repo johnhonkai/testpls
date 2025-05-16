@@ -130,8 +130,9 @@ Deal 150%x2 ATK of Lightning DMG, CD: 15s.
 #### WEAPON 1
 [S2] Gain extra weapon charge, **~~and weapon skill trigger evasion skill~~ and extra evasion charge (v3)**.
 
-#### WEAPON 1
-**[Toggle] Weapon skill trigger evasion skill(v3)**.
+#### WEAPON 2
+[Toggle] **Weapon skill trigger evasion skill(v3)**.
+
 ---
 
 ### BASIC ATK
