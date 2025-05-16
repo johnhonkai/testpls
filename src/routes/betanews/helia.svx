@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: New Helia Translation v2
+title: New Helia Translation v3
 version: '8.3'
 sortOrder: '2'
 image: "/images/valkportrait/New Helia.png"
@@ -28,13 +28,13 @@ image: "/images/valkportrait/New Helia.png"
 ### LEADER 
 Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
 - When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG +12%.
-- When there are 2 characters with Mutual Regen tag: Planar Armament Max SP +630
-- When there are 3 characters with Mutual Regen tag: Enemies take 16% more Lightning DMG from Planar Armament (independent).
+- When there are 2 characters with Mutual Regen tag: During SO, Planar Armament Max SP **+630 (v2) > 200 (v3)**
+- When there are 3 characters with Mutual Regen tag: **During SO, Planar Armament Max SP +430. (v3)** Enemies take 16% more Lightning DMG from Planar Armament (independent).
 
 
 #### LEADER 1
 When you are the leader:
-- Elemental Breach +6% and enemies take 7% / 8.5% (S2) / 10% (SS2) more Total DMG, additional 14% / 17% (S2) / 20% (SS2) during AR Charging.
+- Elemental Breach +6% and enemies take 7% (S) / 8.5% (S2) / 10% (SS2) more Total DMG, additional 14% (S) / 17% (S2) / 20% (SS2) during AR Charging.
 - During AR Charging: Every time you use Ult, gain 2.5 AR intensity.
 
 #### LEADER 2
@@ -47,25 +47,26 @@ Teammate's Ult will inflict 9 points of paralyze trauma, cd 3s, seperate cd for 
 New Helia is protected by AR Heavenly Grail. During SO activation, deal 400% ATK of Lightning DMG.
 
 When AR Heavenly Grail is activated:
-- During SO: Max SP +200, and team share one sp bar, max sp is equal to the sum of every member's max sp, and initial sp is equal to 50% of max sp.
+- During SO: All team members share sp. Max sp is equal to the sum of every member's max sp, and initial sp is equal to 50% of max sp. **The max sp that can be consumed by non-leader team member's Ult is equal to 100% of their max sp before SO is activated. (v3)**
+- During SO: Max SP +200.
 When you are the leader, you gain 100% sp consumed by yourself (not affected by sp reduction effect). When Shimmering Trace reaches 900 points, the trace is reset and Evolution Method is triggered.
-When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult is enhanced, deal additional 600% / 1000% ATK of Lightning DMG.
+When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult is enhanced, deal additional **600% / 1000% (v2) > 500% / 1250% (v3)** ATK of Lightning DMG.
 - When SO ends, team members no longer share sp bar, Shimmering Trace is cleared, and restore sp to the value before SO began.
 - When you are the leader:
     - When a teammate with Mutual Regen use Ult, Planar Armament switch cd is reset, and her QTE is triggered.
     - When SO is activated: Planar Armament gain Floating Hub for 30s. It can be refreshed and triggers again when Planar Armamen enters the field or uses Ult. Floating Hub is removed when SO ends.
-    - During SO, SP consumption for the three ults are increased to 300 each.
+    - During SO, SP consumption for the three ults are increased to 300 each, **and deal additional 270% / 400% / 210% ATK of Lightning DMG (v3)**
     - During SO, each team member will gain 300 points of Shimmering Trace when they use Ult for the first time.
     - During SO, after using Combo ATK for the first time, the sp regen of teammates with Mutual Regen is increased by 50%, and Shimmering Trace gain rate +100%.
     - During SO, after casting Finisher Ult, SO will end.
 - When you are not the leader:
     - When QTE hits a target, the next Ult will cost 0 sp, effect ends when you exit.
-    - During SO, the first QTE of Planar Armament will restore full Burning Light meter. After hitting the enemy with the first Combo ATK / Finisher Ult, restore 140 / 128 sp for herself.
+    - During SO, the first QTE of Planar Armament will restore full Burning Light meter. After hitting the enemy with the first Combo ATK / Finisher Ult, restore 140 / 128 sp.
 
 #### AR 1
 When LoA is active:
 - After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
-- Stellar Shift: Unleash Combo ATK, deal 4200% ATK of Lightning DMG.
+- Stellar Shift: Unleash Combo ATK, deal **4200% (v2) > 4000% (v3)** ATK of Lightning DMG.
 - When entering via Stellar Shift, you enter Augmented Ascension state for 6s, state ends when you exit.
 - When Ult hits a target, leader's switch cd is reset, and trigger her QTE.
 - When QTE hits a target, AR +15, trigger leader's Heavenly Link atk once, CD:16s.
@@ -127,8 +128,10 @@ When you are the leader, restore 24 sp on ultimate evasion, cd 1s.
 Deal 150%x2 ATK of Lightning DMG, CD: 15s.
 
 #### WEAPON 1
-[S2] Gain extra weapon charge, and weapon skill trigger evasion skill.
+[S2] Gain extra weapon charge, **~~and weapon skill trigger evasion skill~~ and extra evasion charge (v3)**.
 
+#### WEAPON 1
+**[Toggle] Weapon skill trigger evasion skill(v3)**.
 ---
 
 ### BASIC ATK
@@ -153,26 +156,26 @@ Basic ATK Seq 3 inflicts 2 points of paralyze trauma.
 ### COMBO ATK
 At full meter, hold ATK to use Combo ATK.
 
-Combo ATK will clear meter, and trigger 4s time fracture, continuously pull enemies, deal 700%x3 + 200% ATK of Lightning DMG, and trigger teammate's QTE on hit.
+Combo ATK will clear meter, and trigger 4s time fracture, continuously pull enemies, deal **700%x3 + 2000% (v2) > 500%x3 +2500% (v3)** ATK of Lightning DMG, and trigger teammate's QTE on hit.
 
 #### COMBO ATK 1
-When the first Combo ATK hits during SO, increase max sp by 500 points. Removed when SO ends.
+**~~When the first Combo ATK hits during SO, increase max sp by 500 points. Removed when SO ends.~~ (v3)**
 
 
 ---
 
 ### ULTIMATE 
 You will use different ults based on the number of Burning Light stack , and you gain one stack after casting  Ult.
-- No stack: 400%x2 + 480%
-- 1 stack: 200%x7 + 800%
-- 2 stack: 1200%
+- No stack: 400%x2 + ~~ 480% (v2)~~ **700% (v3)**
+- 1 stack: 200%x7 + ~~ 800% (v2)~~ **530% (v3)**
+- 2 stack: ~~1200% (v2)~~ **1065% (v3)**
 - 3 stack: Each time you press ult, Helia will cast the previous three ults in sequence.
 
-When casting any of the 3 ults, trigger 3s time fracture, gain Iron Body and take 30% less dmg. SP cost: 100, CD: 0s.
+When casting any of the 3 ults, ~~trigger 3s time fracture (moved down)~~, gain Iron Body and take 30% less dmg. SP cost: 100, CD: 0s.
 
 After casting any of the 3 ults, gain Floating Hub for 10s, can be refreshed. Floating Hub will end once you exit. When using certain moves, you will unleash Roaming Blades.
 
-During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher Ult, deal 100%x5 + 900% ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
+During Stellar Outburst, after casting Combo ATK, press Ult to use Finisher Ult, deal **100%x5 + 900% (v2) > 180%x5 +90% (v3)** ATK of Lightning DMG. Finisher has time stop. SP cost: 0, CD:0s.
 
 #### ULT 1
 When you have Floating Hub, gain higher anti-interrupy, and when using Ult, restore 300 HP.
@@ -186,6 +189,9 @@ When you are the leader, after using Finisher Ult to exit SO, AR meter will rest
 #### ULT 4
 [SS] When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
 
+#### ULT 5
+**New: When casting the three ults, trigger 3s time fracture. (v3)**
+
 ---
 
 ### RANK UP 
@@ -194,7 +200,7 @@ S1: Gain Total DMG +10% (S) / 15% (S1) against enemies hit by Ult.
  
 S2: 
 - During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +28%/28%/47% (S2), lasts until SO ends.
-- UNLOCK: Weapon skill triggers evasion skill.
+- UNLOCK: Gain extra weapon charge, and weapon skill trigger evasion skill.
 - Enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
 
 

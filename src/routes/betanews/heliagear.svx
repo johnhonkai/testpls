@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: New Helia Equipment Translation v2
+title: New Helia Equipment Translation v3
 version: '8.3'
 sortOrder: '3'
 image: "/images/valkportrait/New Helia.png"
@@ -31,16 +31,16 @@ image: "/images/valkportrait/New Helia.png"
 
 #### ACTIVE
 The weapon active cd, charge, and effects are based on the wielder. If wielder has Mutual Regen tag, Lightning DMG +30%. Planar Armament equip bonus: 
-- When you are the leader, after you cast Combo ATK, on the next Stellar Outburst, initial sp is equal to 10% of max sp.
-- Upon casting Condensed Lightning, trigger 1.5s time stop.
+- When you are the leader, after you cast Combo ATK, on the next Stellar Outburst, initial sp is increased by 10% of max sp.
+- Upon casting Ult Finisher, trigger 1.5s time stop.
 
 #### PASSIVE 1
-Total DMG +35%. Planar Armament equip bonus: 
+Total DMG **+35% (v2) > 20% (v3).** Planar Armament equip bonus: 
 - Team Elemental and Physical DMG +12%.
-- During SO: Self Lightning DMG +30%, team Total DMG +12%.
+- When AR is activated: Self Lightning DMG +30%, team Total DMG +12%.
 
 #### PASSIVE 2
-Enemies take 25% more Total DMG from the wielder. Planar Armament equip bonus: 
+Enemies take 25% more **Total DMG(v2) > Lightning DMG (v3)** from the wielder. Planar Armament equip bonus: 
 - Team Total DMG +10%, Elemental DMG +15%.
 
 #### SYNERGY
@@ -63,7 +63,7 @@ Planar Armament equip bonus: Enemies take 2 / 4 / 6% more Lightning DMG from wie
 </div>
 
 #### TOP
-Lightning DMG +40%. Planar Armament equip bonus: 
+Lightning DMG **+40% (v2) > 30% (v3)**. Planar Armament equip bonus: 
 - Characters with [Raise the Banner] gain Total DMG +20%.
 
 #### MID
@@ -71,21 +71,21 @@ Total DMG resistance +25%. Planar Armament equip bonus:
 - Characters with [Raise the Banner] gain Physical and Elemental DMG +25%.
 
 #### BOT
-Total DMG +25%. Planar Armament equip bonus: 
+Total DMG +25% . Planar Armament equip bonus: 
 - Enemies take 18% more Physical and Elemental DMG from characters with [Raise the Banner].
 
 #### 2PC
-Lightning DMG +40%. Planar Armament equip bonus: 
+Lightning DMG **+40% (v2) > 35% (v3).** Planar Armament equip bonus: 
 - Enemies take 30% more Lightning DMG.
 - When AR is activated: Enemies take 20% more Elemental DMG from characters with [Raise the Banner].
-- When LoA is activated: During AR Charging, team Total DMG +27%, and enemies take 25% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG +20%.
-- When LoA is activated: During Stellar Outburst, team Total DMG +37%, and enemies take 35% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG +25%.
+- When LoA is activated: During AR Charging, team Total DMG **+27% (v2) > 12% (v3)**, and enemies take 25% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG **+20% (v2) > 15%. Self Total DMG +8% (v3)**.
+- When LoA is activated: During Stellar Outburst, team Total DMG **+37% (v2) > 22% (v3)**, and enemies take 35% more Total DMG from characters with [Raise the Banner], and characters with [Raise the Banner] gain Physical and Elemental DMG **+25% (v2) > 20%.  Self Total DMG +8% (v3)**.
 
 #### 3PC
 Ult and Combo ATK gain Total DMG +15%. Planar Armament equip bonus: 
 - When Ult or QTE hits a target, or upon activating Stellar Outburst, or when entering battle as leader, team gain [Raise the Banner] for 25s, can be refreshed.
--  Enemies take 22% more Total DMG.
+-  **~~Enemies take 22% more Total DMG.~~ (V3)**
 -  When Heavenly Grail is activated:
     - Characters with [Raise the Banner] gain Elemental DMG +20%, Physical DMG +12%, Total DMG +15%.
-    - Enemies take 10% more Total DMG from characters with [Raise the Banner].
-    - During SO: Enemies take 12% more Total DMG, Physical, Elemental DMG from characters with [Raise the Banner].
+    - Enemies take 10% more Total DMG from characters with [Raise the Banner]. **If you are not the leader +11% more. (v3)**
+    - During SO: Enemies take 12% more Total DMG, Physical, Elemental DMG from characters with [Raise the Banner] **and Mutual Regen tag (v3)**.

@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.3 Patch Note v2
+title: v8.3 Patch Note v3
 version: '8.3'
 sortOrder: '1'
 image: "/images/valkportrait/New Helia.png"
@@ -15,6 +15,36 @@ image: "/images/valkportrait/New Helia.png"
 
 ---
 
+### V3
+
+#### Battlesuit
+- Planar Armament: Adjusted overall skills and values.
+- Valkyrie Blastmetal: Fixed abnormal action performance when connecting evasion with enhanced weapon skill.
+
+#### Equipment
+- Adjusted some PAWS equipment
+
+#### Summer Outfits Rerun
+- Opened outfit Shop
+
+#### EX Abyss
+- Adjusted stats of the new bosses Parvati, Tribunal, Sampo
+- Lightning Tribunal: Adjusted effect. When core is destroyed during transition phase, team deals more Bleed DMG.
+
+#### Memorial Arena
+- Adjusted SSS Sampo stats
+
+#### Elysian Realm
+- Adjusted PAWS signets
+- Fixed an issue where enemy gather skill would fail
+- Increased drop limit for Rusted Insignia
+
+#### System
+- P2 Chapter 8: Fixed an issue where Helia weapon skill may behave abnormally
+- P2 Chapter 8: Fixed an issue where 'Traveling to Dawn and Daylight' quest would be abnormally blocked
+- Fixed abnormal black screen in Litost boss fight
+
+---
 
 ### V2
 
