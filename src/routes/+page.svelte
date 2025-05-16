@@ -146,7 +146,7 @@
   </div>
   
 
-    <div class="absolute bottom-0  right-1/2 translate-x-[155%] md:translate-x-[170%] z-0 cursor-pointer" on:click={handleClick}>
+    <div class="absolute bottom-0  right-1/2 translate-x-[135%] md:translate-x-[170%] z-0 cursor-pointer" on:click={handleClick}>
       <img 
         src={imageSrc} 
         alt="Banner" 
