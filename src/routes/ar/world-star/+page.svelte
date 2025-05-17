@@ -1,95 +1,107 @@
 <svelte:head>
-  <title>Wheel of Destiny</title> 
+  <title>World Star</title> 
 
-    <meta property="og:title" content="Wheel of Destiny characters"/>
-    <meta property="og:description" content="Info for characters in Wheel of Destiny teams." />
-    <meta property="og:image" content="https://i.imgur.com/gUwuGDl.png" />
-    <meta property="og:url" content="https://marisaimpact.com/ar/wheel-of-destiny" />
+    <meta property="og:title" content="World Star"/>
+    <meta property="og:description" content="Info for characters in World Star teams." />
+    <meta property="og:image" content="https://i.imgur.com/J2Jd0hl.png" />
+    <meta property="og:url" content="https://marisaimpact.com/ar/world-star" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://marisaimpact.com/ar/wheel-of-destiny" />
+    <link rel="canonical" href="https://marisaimpact.com/ar/world-star" />
 </svelte:head>
 
 <script lang="ts">
-    import type { PageData } from './$types';
+    import type { PageData } from '../world-star/$types';
 
     let { data }: { data: PageData } = $props();
 
   const dps = [
-    { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
-    { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
-        { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
-
-    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice"},
+    { name: "Sparkle", image: "/images/valkportrait/sparkle.png" , type: "Qua" , element: "Fire" },
+    { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" , type: "Qua" , element: "Lightning" },
+    { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png", type: "Sd" , element: "Lightning" },
 
   ];
 
   const support = [
-    { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
-    { name: "Reign Solaris", image: "/images/valkportrait/dudu.png", type: "Img" , element: "Physical" },
+    { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
+    { name: "Sparkle", image: "/images/valkportrait/sparkle.png" , type: "Qua" , element: "Fire" },
     { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png", type: "Mech" , element: "Lightning" },
+    { name: "HoFi", image: "/images/valkportrait/Kiana Herrscher of Finality.png" , type: "Img" , element: "Fire" },
     { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" , type: "Qua" , element: "Lightning" },
-    { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
     { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
-    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice"},
-    { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , type: "Sd" , element: "Lightning" },
+    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice" },
+    { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png", type: "Sd" , element: "Lightning" },
+    { name: "Helia", image: "/images/valkportrait/Helia Valkyrie Boltstorm.png", type: "Mech" , element: "Lightning" },
+    { name: "Coralie", image: "/images/valkportrait/Coralie Valkyrie Blastmetal.png", type: "Psy" , element: "Fire" },
+
   ];
 
   const utilities = {
-    "Breach State": [
-        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
+        "Fast Reso Trigger": [
+        { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" },
+        { name: "HoFi", image: "/images/valkportrait/Kiana Herrscher of Finality.png" },
     ],
 
-    "AR Regen": [
-        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
-        { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , details: "Has a unique aerial evasion spam tech. With signature weapon (gain 2 AR after evasion) and against the right attack, Thelema can provide the team a lot of AR regen in a short time." },
+  //      "Reso Mark Placer": [
+  //      { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" },
+  //      { name: "Helia", image: "/images/valkportrait/Helia Valkyrie Boltstorm.png"},
+  //  ],
 
+        "Breach State": [
+        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" },
     ],
 
-    "Zero Field Time": [
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
+        "AR Regen": [
+        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+    //    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , details: "Has a unique aerial evasion spam tech. With signature weapon (gain 2 AR after evasion) and against the right attack, Thelema can provide the team a lot of AR regen in a short time." },
+
     ],
 
         Shieldbreak: [
-            { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
     ],
 
     Hitcount: [
-      { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" },
-      { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+        { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" },
+        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+        { name: "Helia", image: "/images/valkportrait/Helia Valkyrie Boltstorm.png" },
     ],
 
     Freeze: [
-            { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
+        {  name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
     ],
 
-    Paralyze: [],
+    Paralyze: [
+        { name:  "Helia", image: "/images/valkportrait/Helia Valkyrie Boltstorm.png" },
+
+    ],
 
     Ignite: [],
 
-    Bleed: [],
+    Bleed: [
 
-    Stun: [
-      { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
     ],
 
-    Mobs: [],
+
+    "Multi-Target DMG Share": [
+      { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" }
+    ],
 
     Stardust: [
-            { name: "Jovial Deception", 
-            image: "/images/valkportrait/Songque Jovial Deception.png" ,  
-            details: "JD Combo ATK can immediately trigger critical point of SD enemy." },
+            { name: "Ba-dum!", 
+            image: "/images/valkportrait/kiana badum.png",
+            details: "Badum can immediately reduce 8% of SD enemy's Max HP." },
+           
+
     ],
 
-    Cooldown: [],
+    "Ult CD Reduction": [
+      { name: "Sparkle", image: "/images/valkportrait/sparkle.png", }
+    ],
 
     Bow: [
-            { name: "Herrscher of Human", 
-            image: "/images/valkportrait/Elysia Herrscher of Human Ego.png",
-           details: "As a bow user, HoH can hit an enemy's weak spot. This is only used for Tank boss. When its weak spot is hit, Tank gets a huge debuff." },
     ],
 
   };
@@ -130,7 +142,7 @@ async function captureStats() {
   
   // Trigger download
   const link = document.createElement('a');
-  link.download = `wheel-of-destiny.png`;
+  link.download = `world-star.png`;
   link.href = canvas.toDataURL();
   link.click();
 }
@@ -139,9 +151,9 @@ async function captureStats() {
 <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
   <img
-        src="/images/bg_wod.webp" 
+    src="/images/bg_ws.webp"
     alt="Header"
-    class="w-full h-full object-cover [object-position:50%_30%] opacity-45"
+    class="w-full h-full object-cover [object-position:50%_70%] opacity-45"
   />
 
 
@@ -149,14 +161,13 @@ async function captureStats() {
   <!-- Text overlay -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Wheel of Destiny
+  World Star
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
     v8.2
   </span>
 </h1>
-  
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Wheel of Destiny teams
+      Overview for World Star teams
 
 
     </p>
@@ -182,12 +193,12 @@ async function captureStats() {
 
 <div class="relative max-w-7xl min-h-screen pb-10 text-white mx-auto bg-base-100" id="statsSection">
 
-  <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart" style="display:none">
+    <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart" style="display:none">
 
   <img
-    src="/images/bg_wod.webp"
+    src="/images/bg_ws.webp"
     alt="Header"
-    class="w-full h-full object-cover object-top opacity-75"
+    class="w-full h-full object-cover [object-position:50%_70%] opacity-45"
   />
 
 
@@ -195,13 +206,13 @@ async function captureStats() {
   <!-- Text overlay -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Wheel of Destiny
+  World Star
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
     v8.2
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Wheel of Destiny teams
+      Overview for World Star teams
 
 
     </p>
@@ -212,17 +223,15 @@ async function captureStats() {
   <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
 
 </div>
-
 <div class="px-4 sm:px-6">
 
 <section>
   <h2 class="text-xl sm:text-2xl font-semibold pt-2 cooltext">Overview</h2>
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
-      <strong class="text-white">Wheel of Destiny</strong> team focuses on solo DPS. 
-    </span>
-    <span class="block">
-      Teammates with the <span class="text-indigo-400 font-medium">Harmonized Shadow Star</span> tag become shadow attacks during Stellar Outburst.
+      <strong class="text-white">World Star</strong> characters can generate <span class="text-teal-400 font-medium">Domain Resonance Mark</span>.
+      <br/>
+      Teammates with <span class="text-teal-400 font-medium">Domain Resonance</span> tag can trigger the marks.
     </span>
   </p>
 </section>
@@ -301,7 +310,9 @@ async function captureStats() {
     </div>
   </section>
 
-    <section class="flex-1">
+      
+  <!-- Support Section -->
+  <section class="flex-1">
     <h2 class="text-xl sm:text-2xl font-semibold pb-2 cooltext">AstralOp</h2>
     <div class="flex flex-wrap gap-3">
 
@@ -309,15 +320,15 @@ async function captureStats() {
 
 
           <img
-            src="/images/valkportrait/asop_sera.png"
+            src="/images/valkportrait/asop_songque.png"
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
         </div>
     </div>
   </section>
 
-</div>
 
+</div>
 
   <div class="divider"></div>
 
@@ -360,6 +371,9 @@ async function captureStats() {
 
     </section>
   </div>
+
+
+
   </div>
 
   <div

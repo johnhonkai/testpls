@@ -347,7 +347,7 @@ function selectTabMobile(event) {
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.1
+            <strong>Updated For v8.2 (24 Apr 2025)
         </p>
         </div>
         <div>
@@ -359,11 +359,11 @@ function selectTabMobile(event) {
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a powerful support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and higher AR regen. 
+                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a good support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and slightly higher AR regen. 
                 <br/>
                 - For WoD teams, Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.
                 <br/>
-                - For LoA teams, Vita is always used for Badum team. Vita loses to other supports for Reign Solaris.
+                - For LoA teams, Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.
             </p>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">The other 9 AR Supports</strong> <br/> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
@@ -373,7 +373,9 @@ function selectTabMobile(event) {
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Recommended, but not mandatory.
+                <br/>Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
               <li class="mt-2">Vita is one of the better Part 2 valks to get due to her supporting three AR, but she's still not the best everywhere. For example, in WoD teams, she needs ranks to beat Sena. </li>
@@ -387,7 +389,7 @@ function selectTabMobile(event) {
             <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li class="mt-2">For World Star team, currently Vita is undeniably the best support.</li>
                 <li class="mt-2">For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-                <li class="mt-2">For Law of Ascension team, Vita is always used for Badum team. Vita loses to other supports for Reign Solaris.</li>
+                <li class="mt-2">For Law of Ascension team, Vita is always used for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.</li>
             </ul>
             <div class="divider  "></div>
             <!-- How to Get Section -->

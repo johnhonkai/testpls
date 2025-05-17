@@ -1,7 +1,34 @@
 <script>
-  import { onMount } from 'svelte';
-	import { page } from '$app/stores';
+import { onMount } from 'svelte';
+import { page } from '$app/stores';
 
+import { goto } from '$app/navigation';
+
+import { afterNavigate, beforeNavigate } from '$app/navigation';
+
+	import Fa from 'svelte-fa';
+  import { faStar , faWebAwesome , faChartSimple } from '@fortawesome/free-solid-svg-icons';
+
+beforeNavigate(() => {
+  document.documentElement.classList.add('hover-disabled');
+});
+
+afterNavigate(() => {
+  requestAnimationFrame(() => {
+    document.documentElement.classList.remove('hover-disabled');
+  });
+});
+
+function handleClick(event, path) {
+  const dropdown = event.currentTarget.closest('.group')?.querySelector('.dropdown-menu');
+  if (dropdown) {
+    dropdown.classList.add('opacity-0', 'invisible');
+  }
+
+  setTimeout(() => {
+    goto(path);
+  }, 100);
+}
   let isOpen = false;
   let isNavbarVisible = true;
   let lastScrollY = 0;
@@ -46,9 +73,107 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/" class="nav-link custom-font" data-sveltekit-preload-data="hover">Home</a>
 			</li>
-      <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : undefined}>
-				<a href="/valk" class="nav-link custom-font" data-sveltekit-preload-data="hover">Valkyrie</a>
+<li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : $page.url.pathname.startsWith('/ar') ? 'page' : undefined}>
+  <div class="relative group mt-3.5 -mr-1">
+				<!-- Button -->
+    <div
+      class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
+      on:click={(e) => handleClick(e, '/valk')}
+    >
+      VALKYRIE ▾
+    </div>
+			  
+				<!-- Dropdown -->
+    <div
+      class="dropdown-menu absolute top-6 -right-50 w-[500px] bg-zinc-900 text-white shadow-xl rounded-lg
+      invisible opacity-0 group-hover:visible group-hover:opacity-100
+      transition-all duration-200 z-50"
+    >
+				  <div class="grid grid-cols-2 gap-4 p-4">
+					<!-- Left column -->
+
+					<a
+					href="/valk"
+					data-sveltekit-preload-data="hover"
+				  >
+					<div
+					class="bg-zinc-800 rounded-md p-4 h-full transition hover:bg-zinc-700 hover:shadow-md cursor-pointer"
+				  >
+					<div class="text-white font-semibold mb-1">Valkyrie Guide</div>
+					<p class="text-sm text-zinc-400">Learn more about your waifus here</p>
+				  </div>
+					</a>
+					<!-- Right column -->
+					<div class="flex flex-col gap-3">
+						<a
+						href="/ar"
+						data-sveltekit-preload-data="hover"
+					  >
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+
+						<div class="font-semibold">
+														        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-amber-400">
+          <Fa icon={faStar} />
+		  Astral Ring
+        </span>  
+
+
+						</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Overview of all AR teams.</p>
+					  </div>
+					</a>
+											<a
+						href="/statistics"
+						data-sveltekit-preload-data="hover"
+					  >			
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800 cursor-pointer"
+					  >
+						<div class="font-semibold">
+							        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-rose-500">
+          <Fa icon={faChartSimple} />
+		  Statistics
+        </span>  
+
+
+						</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Charater usage in a version</p>
+					  </div>
+											</a>
+											<a
+						href="/best-valkyries"
+						data-sveltekit-preload-data="hover"
+					  >
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+						<div class="font-semibold"> 
+							        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-teal-500">
+          <Fa icon={faWebAwesome} />
+		  Best Valkyries
+        </span>  
+							
+						</div>
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Coming Soon</p>
+					  </div>
+
+											</a>
+
+
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</li>
+
+
 
       <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
 				<a href="/asop" class="nav-link custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
@@ -146,6 +271,11 @@
 
 
 <style>
+
+	.hover-disabled .group:hover .dropdown-menu {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
   .navbar {
 	display: flex;
   position: absolute;

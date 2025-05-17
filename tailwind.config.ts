@@ -32,7 +32,19 @@ export default {
 			
 			
 		},
-		
+		  corePlugins: {
+    preflight: false // if using DaisyUI, to avoid oklch injection
+  },
+		daisyui: {
+    themes: [
+      {
+        custom: {
+          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+          "base-100": "#1a1a1a", // fallback from oklch
+        },
+      },
+    ],
+  },
 	},
 
 	plugins: [typography, containerQueries, aspectRatio],

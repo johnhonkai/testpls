@@ -1,90 +1,85 @@
 <svelte:head>
-  <title>Wheel of Destiny</title> 
+  <title>Heavenly Grail</title> 
 
-    <meta property="og:title" content="Wheel of Destiny characters"/>
-    <meta property="og:description" content="Info for characters in Wheel of Destiny teams." />
-    <meta property="og:image" content="https://i.imgur.com/gUwuGDl.png" />
-    <meta property="og:url" content="https://marisaimpact.com/ar/wheel-of-destiny" />
+    <meta property="og:title" content="Astral Ring: Heavenly Grail"/>
+    <meta property="og:description" content="Info for characters in Heavenly Grail teams." />
+    <meta property="og:image" content="https://i.imgur.com/9yj8KnO.png" />
+    <meta property="og:url" content="https://marisaimpact.com/ar/heavenly-grail" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://marisaimpact.com/ar/wheel-of-destiny" />
+    <link rel="canonical" href="https://marisaimpact.com/ar/heavenly-grail" />
 </svelte:head>
 
 <script lang="ts">
-    import type { PageData } from './$types';
+    import type { PageData } from '../heavenly-grail/$types';
 
     let { data }: { data: PageData } = $props();
 
   const dps = [
-    { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
-    { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
-        { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
-
-    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice"},
+    { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" , type: "Bio" , element: "Lightning" },
 
   ];
 
   const support = [
+    { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" , type: "Bio" , element: "Lightning" },
+    { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
+    { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
     { name: "Reign Solaris", image: "/images/valkportrait/dudu.png", type: "Img" , element: "Physical" },
-    { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png", type: "Mech" , element: "Lightning" },
-    { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" , type: "Qua" , element: "Lightning" },
-    { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
-    { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
-    { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice"},
-    { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , type: "Sd" , element: "Lightning" },
+
+
   ];
 
   const utilities = {
     "Breach State": [
-        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
-    ],
-
-    "AR Regen": [
-        { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
-        { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , details: "Has a unique aerial evasion spam tech. With signature weapon (gain 2 AR after evasion) and against the right attack, Thelema can provide the team a lot of AR regen in a short time." },
-
-    ],
-
-    "Zero Field Time": [
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
     ],
 
         Shieldbreak: [
-            { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
+            { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
     ],
 
     Hitcount: [
-      { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" },
-      { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+        { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
     ],
 
     Freeze: [
-            { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
+           
     ],
 
-    Paralyze: [],
+    Paralyze: [
+
+      { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" },
+    ],
 
     Ignite: [],
 
-    Bleed: [],
+    Bleed: [
+              { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
+
+    ],
 
     Stun: [
       { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
     ],
 
-    Mobs: [],
 
-    Stardust: [
-            { name: "Jovial Deception", 
-            image: "/images/valkportrait/Songque Jovial Deception.png" ,  
-            details: "JD Combo ATK can immediately trigger critical point of SD enemy." },
+    "Multi-Target DMG Share": [
+
+       { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" },
     ],
 
-    Cooldown: [],
+    Stardust: [
+            { name: "Ba-dum!", 
+            image: "/images/valkportrait/kiana badum.png",
+            details: "Badum can immediately reduce 8% of SD enemy's Max HP." },
+           
+
+    ],
+
+    "Ult CD Reduction": [
+    ],
 
     Bow: [
             { name: "Herrscher of Human", 
@@ -98,7 +93,7 @@
     selectedChar: null
   });
 
-   import html2canvas from 'html2canvas-pro';
+  import html2canvas from 'html2canvas-pro';
   import { onMount , onDestroy , tick } from 'svelte';
 	import Fa from 'svelte-fa';
   import { faCamera } from '@fortawesome/free-solid-svg-icons';
@@ -130,18 +125,18 @@ async function captureStats() {
   
   // Trigger download
   const link = document.createElement('a');
-  link.download = `wheel-of-destiny.png`;
+  link.download = `heavenly-grail.png`;
   link.href = canvas.toDataURL();
   link.click();
 }
 </script>
 
-<div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
+  <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
   <img
-        src="/images/bg_wod.webp" 
+    src="/images/bridge.webp"
     alt="Header"
-    class="w-full h-full object-cover [object-position:50%_30%] opacity-45"
+    class="w-full h-full object-cover opacity-45"
   />
 
 
@@ -149,26 +144,24 @@ async function captureStats() {
   <!-- Text overlay -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Wheel of Destiny
+  Heavenly Grail
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.2
+    v8.3
   </span>
 </h1>
-  
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Wheel of Destiny teams
+      Info for characters in Heavenly Grail teams.
 
 
     </p>
   </div>
-  
 
   <!-- Blur overlay at bottom -->
   <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
 
 </div>
 
-    <div class="flex justify-center mb-6 mt-20 " style="display:none">
+    <div class="flex justify-center mb-6 mt-20"  style="display:none">
     <button
       onclick={captureStats}
       class="px-4 py-2 rounded-md  font-medium transition cursor-pointer  text-xs sm:text-sm h-10 w-auto
@@ -180,49 +173,45 @@ async function captureStats() {
     </button>
   </div>
 
-<div class="relative max-w-7xl min-h-screen pb-10 text-white mx-auto bg-base-100" id="statsSection">
+<div class="max-w-7xl min-h-screen pb-10 text-white mx-auto relative bg-base-100" id="statsSection">
 
-  <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart" style="display:none">
+  <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart"  style="display:none">
 
   <img
-    src="/images/bg_wod.webp"
+    src="/images/bridge.webp"
     alt="Header"
-    class="w-full h-full object-cover object-top opacity-75"
+    class="w-full h-full object-cover opacity-45"
   />
 
 
  
   <!-- Text overlay -->
-  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  pb-3 md:pb-0 md:pt-4 z-10">
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Wheel of Destiny
+  Heavenly Grail
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.2
+    v8.3
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Wheel of Destiny teams
+      Info for characters in Heavenly Grail teams.
 
 
     </p>
   </div>
-  
 
   <!-- Blur overlay at bottom -->
   <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
 
 </div>
 
-<div class="px-4 sm:px-6">
-
+<div class="px-6">
 <section>
   <h2 class="text-xl sm:text-2xl font-semibold pt-2 cooltext">Overview</h2>
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
-      <strong class="text-white">Wheel of Destiny</strong> team focuses on solo DPS. 
-    </span>
-    <span class="block">
-      Teammates with the <span class="text-indigo-400 font-medium">Harmonized Shadow Star</span> tag become shadow attacks during Stellar Outburst.
+      <strong class="text-white">Heavenly Grail</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
+      <br/>Teammates with the <span class="text-teal-400 font-medium">Mutual Regen</span> can provide increased sp regen and won't consume sp when casting Ultimate (first Ult after QTE).
     </span>
   </p>
 </section>
@@ -237,7 +226,7 @@ async function captureStats() {
 
   
   <!-- DPS Section -->
-  <section class="flex-3">
+  <section class="flex-1">
     <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">DPS</h2>
     <div class="flex flex-wrap gap-3">
       {#each dps as char}
@@ -269,7 +258,7 @@ async function captureStats() {
 
 
   <!-- Support Section -->
-  <section class="flex-5">
+  <section class="flex-3">
     <h2 class="text-xl sm:text-2xl font-semibold pb-2 cooltext">Support</h2>
     <div class="flex flex-wrap gap-3">
       {#each support as char}
@@ -301,7 +290,9 @@ async function captureStats() {
     </div>
   </section>
 
-    <section class="flex-1">
+      
+  <!-- Support Section -->
+  <section class="flex-1">
     <h2 class="text-xl sm:text-2xl font-semibold pb-2 cooltext">AstralOp</h2>
     <div class="flex flex-wrap gap-3">
 
@@ -309,15 +300,24 @@ async function captureStats() {
 
 
           <img
-            src="/images/valkportrait/asop_sera.png"
+            src="/images/valkportrait/asop_songque.png"
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+
+                <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+
+          <img
+            src="/images/valkportrait/asop_teri.png"
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
         </div>
     </div>
   </section>
 
-</div>
 
+</div>
 
   <div class="divider"></div>
 
@@ -359,14 +359,19 @@ async function captureStats() {
 
 
     </section>
-  </div>
+
+
+
+
   </div>
 
   <div
   id="watermark"
-  class="absolute top-10 right-4 opacity-70 text-xs text-white pointer-events-none select-none"
-   style="display:none"
+  class="absolute top-5 right-4 opacity-70 text-xs text-white pointer-events-none select-none"
+  style="display:none"
 >
   <img src="/images/watermark.jpg" alt="Watermark" class="w-28 opacity-50" />
+</div> 
+
 </div>
 </div>

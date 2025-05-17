@@ -24,7 +24,6 @@
   import { onMount } from 'svelte';
   import { types, elements, astralRings, valkyries } from '$lib/data/characterdata.js';
 
-  let isLoading = true; // Track if the page is still loading
 
   const imageIds = ["bgwavebox", "avabox", "valkpicbox"]; // IDs of divs containing images
 
@@ -76,22 +75,6 @@
     if (type === 'astralRing') selectedAstralRing = value;
   }
 
-  
-   // Wait for all images in the ValkyrieLink components to load
-   onMount(() => {
-    const imagePromises = valkyries.map((valkyrie) => {
-      return new Promise<void>((resolve) => {
-        const img = new Image();
-        img.src = valkyrie.image;
-        img.onload = () => resolve();
-        img.onerror = () => resolve(); // Resolve even if the image fails to load
-      });
-    });
-
-    Promise.all(imagePromises).then(() => {
-      isLoading = false; // Hide the loading screen
-    });
-  });
 
   let sortByDLC = true;
 
@@ -101,23 +84,22 @@
   return bVal - aVal; // descending
 });
 
+// Tracks which valkyrie images have finished loading
+let loadedImages: Record<string, boolean> = {};
+
+function markImageLoaded(name: string) {
+  loadedImages[name] = true;
+}
 
 </script>
 
-<!-- Loading Screen -->
-{#if isLoading}
-  <div class="loading-screen fixed inset-0 bg-black flex items-center justify-center z-50">
-    <span class="loading loading-spinner loading-lg text-secondary"></span>
-    <p class="text-white mt-4">Loading...</p>
-  </div>
-{/if}
 
 
 
 <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
   <img
-    src="https://img.goodfon.com/original/1920x1080/3/22/igra-anime-honkai-impact-3rd-devushka-oruzhie-bronia-mekh.jpg"
+    src="/images/banner_valk.jpg"
     alt="Header"
     class="w-full h-full object-cover [object-position:50%_25%] opacity-45"
     />
@@ -240,56 +222,69 @@
 <!-- Valkyrie Grid -->
  
 <div class=" mt-5 xl:mt-1 mx-auto  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-4 sm:gap-6 2xl:w-6xl lg:max-w-5xl 2xl:max-w-6xl">
-  {#each sortedValkyries as valkyrie}
+{#each sortedValkyries as valkyrie}
   <a 
-  href={valkyrie.url} 
-  class="flex flex-col items-center text-center rounded-sm w-full"
-  on:mouseenter={() => preloadImages(valkyrie.url)}
->
-  <div class="flex flex-col justify-start items-center w-full h-35 sm:h-45">
-    <!-- Image Wrapper -->
-    <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
-      {#if valkyrie.badge}
-        <span 
-          class="absolute top-1 right-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
-          class:badge-ghost={valkyrie.badge === 'Beta'}
-          class:badge-primary={valkyrie.badge === 'New'}
-          class:badge-accent={valkyrie.badge === 'Updated'}
-        >
-          {valkyrie.badge}
-        </span>
-      {/if}
+    href={valkyrie.url} 
+    class="flex flex-col items-center text-center rounded-sm w-full"
+    on:mouseenter={() => preloadImages(valkyrie.url)}
+  >
+    <div class="flex flex-col justify-start items-center w-full h-35 sm:h-45">
+      <!-- Image Wrapper -->
+      <div class="relative w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-md group">
+        {#if valkyrie.badge}
+          <span 
+            class="absolute top-1 right-1 badge text-white text-xs font-bold px-1.5 py-0.5 z-10"
+            class:badge-ghost={valkyrie.badge === 'Beta'}
+            class:badge-primary={valkyrie.badge === 'New'}
+            class:badge-accent={valkyrie.badge === 'Updated'}
+          >
+            {valkyrie.badge}
+          </span>
+        {/if}
 
-      {#if valkyrie.type}
-        <div class="absolute top-1 left-0 sm:mx-1 w-7 sm:w-8 z-10">
-          <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover" />
-        </div>
-      {/if}
-
-      {#if valkyrie.element}
-        {#each (Array.isArray(valkyrie.element) ? valkyrie.element : [valkyrie.element]) as el, i}
-          <div class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10" style={`top: ${2.2 + (i * 2)}rem`}>
-            <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-full h-full object-cover" />
+        {#if valkyrie.type}
+          <div class="absolute top-1 left-0 sm:mx-1 w-7 sm:w-8 z-10">
+            <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover" />
           </div>
-        {/each}
-      {/if}
+        {/if}
 
-      <img 
-        src={valkyrie.image} 
-        alt={valkyrie.name}
-        class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 rounded-md transition-transform duration-300 transform group-hover:scale-110"
-        style="view-transition-name: valkyrie-image-{valkyrie.id};"
-      />
+        {#if valkyrie.element}
+          {#each (Array.isArray(valkyrie.element) ? valkyrie.element : [valkyrie.element]) as el, i}
+            <div class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10" style={`top: ${2.2 + (i * 2)}rem`}>
+              <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-full h-full object-cover" />
+            </div>
+          {/each}
+        {/if}
+
+        {#if loadedImages[valkyrie.name]}
+          <img 
+            src={valkyrie.image} 
+            alt={valkyrie.name}
+            class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
+          />
+        {:else}
+          <!-- Skeleton loader with same size -->
+          <div class="absolute inset-0 bg-gray-700 animate-pulse rounded-md"></div>
+
+          <!-- Silent preload -->
+          <img 
+            src={valkyrie.image} 
+            alt=""
+            class="hidden"
+            on:load={() => markImageLoaded(valkyrie.name)}
+            on:error={() => markImageLoaded(valkyrie.name)}
+          />
+        {/if}
+      </div>
+
+      <!-- Name is always shown, outside image -->
+      <div class="text-xs sm:text-sm md:text-base font-medium mt-1 leading-snug text-center h-[2.5em]">
+        {valkyrie.name}
+      </div>
     </div>
+  </a>
+{/each}
 
-    <!-- Name (Truncated) -->
-    <div class="text-xs sm:text-sm md:text-base font-medium mt-1 leading-snug text-center h-[2.5em]">
-      {valkyrie.name}
-    </div>
-  </div>
-</a>
-
-  {/each}
 </div>
 
   </div>
@@ -297,23 +292,7 @@
   </div>
   
 <style>
-  .loading-screen {
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 9999;
-  }
 
-  .spinner {
-    width: 50px;
-    height: 50px;
-    border: 6px solid rgba(255, 255, 255, 0.3);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
 
   @keyframes spin {
     from {
@@ -322,5 +301,14 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+    @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .animate-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
   }
 </style>

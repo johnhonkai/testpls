@@ -16,6 +16,8 @@
 <script lang="ts">
   import { storyOrder } from '$lib/data/storyOrder';
   import { onMount } from 'svelte';
+	import Fa from 'svelte-fa';
+import { faEyeSlash , faEye } from '@fortawesome/free-solid-svg-icons';
 
   let filter = 'all'; // Default filter to show all
   $: filteredStories = storyOrder.filter((story) => {
@@ -47,6 +49,7 @@
 
 function toggleView() {
   showSpoilerFree = !showSpoilerFree;
+
 }
 </script>
 
@@ -83,7 +86,7 @@ function toggleView() {
   <div class="flex justify-center gap-3 mb-5 ">
     <button
       on:click={() => selectFilter('all')}
-      class="px-4 py-2 rounded-md border text-sm font-medium transition  text-xs sm:text-sm
+      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
              bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
              data-[active=true]:bg-white data-[active=true]:text-black"
       data-active={filter === 'all'}>
@@ -91,7 +94,7 @@ function toggleView() {
     </button>
     <button
       on:click={() => selectFilter('main')}
-      class="px-4 py-2 rounded-md border text-sm font-medium transition  text-xs sm:text-sm
+      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
              bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
              data-[active=true]:bg-white data-[active=true]:text-black"
       data-active={filter === 'main'}>
@@ -99,7 +102,7 @@ function toggleView() {
     </button>
     <button
       on:click={() => selectFilter('event')}
-      class="px-4 py-2 rounded-md border text-sm font-medium transition  text-xs sm:text-sm
+      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
              bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
              data-[active=true]:bg-white data-[active=true]:text-black"
       data-active={filter === 'event'}>
@@ -110,9 +113,21 @@ function toggleView() {
   <div class="flex justify-center mb-6">
     <button
       on:click={toggleView}
-      class="px-4 py-2 rounded-md border text-sm font-medium transition cursor-pointer  text-xs sm:text-sm
+      class="px-4 py-2 rounded-md border font-medium transition cursor-pointer  text-xs sm:text-sm
              bg-gray-800 text-white border-gray-700 hover:bg-gray-700">
-      {showSpoilerFree ? 'Show Full Version' : 'Show Spoiler-Free Version'}
+ 
+
+        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer">
+        {#if !showSpoilerFree}
+          <Fa icon={faEyeSlash} /> Show Spoiler-Free Version
+        {:else}
+          <Fa icon={faEye} /> Show Full Version
+        {/if}
+        </span>  
+
+
+
     </button>
   </div>
 

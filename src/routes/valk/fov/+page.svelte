@@ -353,7 +353,6 @@ function selectTabMobile(event) {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>FoV:</strong> Battlesuit Supply</li>
               <li><strong>FoV's Weapon and Stigma:</strong> Focused Supply</li>
-              <li>Not available in v7.9. Last known supply is v7.6. </li>
 
           </ul>
           <div class="divider  "></div>

@@ -347,7 +347,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.2 (24 Apr 2025)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl mt-4 font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -383,7 +387,7 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> Recommended to get, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS should be more useful for 2-3 patches, since her bosses should return more often now that she gets a DLC.
+              <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> You can try to get it if you can afford it, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS is only used once in a while now in Abyss.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">

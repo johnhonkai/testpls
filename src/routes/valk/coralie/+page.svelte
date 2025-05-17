@@ -342,31 +342,40 @@ onMount(async () => {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW</h2>
+      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto my-4">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.2 (24 Apr 2025)
+      </p>
+      </div >
 
-      <div>
+      <div class="mt-3">
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
-
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Free-to-Play Part 2 Support:</strong> Valkyrie Blastmetal is a free-to-play support option for any Astral Ring team.
-          </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> Can trigger Domain Resonance marks.
+          
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Free-to-Play Part 2 Support</strong> <br/> Valkyrie Blastmetal is a free-to-play support option for any Astral Ring team.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Vita Support:</strong> Coralie is the best support for Vita [Lone Planetfarer], until we get a better option.
-        </p>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/> Can trigger Domain Resonance marks.
+          </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Vita Support</strong> <br/> Coralie is the best support for Vita [Lone Planetfarer], until we get a better option.
+          </p>
+
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players / F2P:</strong> Recommended to farm Coralie since she can be deployed in any Astral Ring team, especially if you are new and missing an S-rank for the third member in the team. Plus, all her equipment are free.
+
+                    <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">New Players</strong> <br/> Recommended to farm Coralie since she can be deployed in any Astral Ring team, especially if you are new and missing an S-rank for the third member in the team. Plus, all her equipment are free.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Coralie is a mandatory support for Vita. When a new AR type is introduced, and if you lack a third member for that AR team, then Coralie will become useful again.
+                    <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/> Coralie is a mandatory support for Vita. When a new AR type is introduced, and if you lack a third member for that AR team, then Coralie can be a decent alternative for that team.
           </p>
+
 
           <div class="divider  "></div>
           <!-- How to Get Section -->

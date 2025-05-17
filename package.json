@@ -152,6 +152,9 @@
 	"@sveltejs/adapter-static": "^3.0.6",
 	
 		
+	"chart.js": "^4.4.9",
+	
+		
 	"firebase": "^11.0.2",
 	
 		
@@ -162,6 +165,12 @@
 	
 		
 	"html-to-image": "^1.11.11",
+	
+		
+	"html2canvas": "^1.4.1",
+	
+		
+	"html2canvas-pro": "^1.5.11",
 	
 		
 	"marked": "^14.1.3",

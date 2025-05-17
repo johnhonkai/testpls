@@ -342,37 +342,44 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW</h2>
-
-      <div>
+      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.2 (24 Apr 2025)
+      </p>
+      </div >
+      <div class="mt-3">
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support:</strong> When fully geared, Helia is a powerful support for World Star team (Deepspace Anchor, Schicksal's Imperative and Sparkle), but loses to other S-rank supports due to slower rotation and lack of timestop and self damage.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong> <br/> When fully geared, Helia is a decent support for World Star team (Deepspace Anchor, Schicksal's Imperative and Sparkle), but loses to other S-rank supports due to slower rotation and lack of timestop and self damage.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Utilities:</strong> Has high hitcount, and can apply moderate paralyze trauma.
-        </p>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Utilities</strong> <br/> Has high hitcount, and can apply moderate paralyze trauma.
+          </p>
+
+
           
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players:</strong> Not a priortiy, but you should farm Helia if you have a World Star DPS (Deepspace Anchor, Schicksal's Imperative, or Sparkle), and you're lacking the third support for that DPS.
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">New Players</strong> <br/> Not a priority, but you should farm Helia if you have a World Star DPS (Deepspace Anchor, Schicksal's Imperative, or Sparkle), and you're lacking the third support for that DPS.
           </p>
-          
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> Helia is still usable, but loses to other S-rank supports due to slower rotation and lack of timestop and self damage. 
-              For characters like SIMP and Sparkle, they have 18 resonance trigger limit - It's better to pair them with a character with 6 mark trigger count (like Vita, Thelema, HoFi) instead of Helia.
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/> Helia is still usable, but loses to other S-rank supports due to slower rotation and lack of timestop and self damage. For characters like SIMP and Sparkle, they have 18 resonance trigger limit - It's better to pair them with a character with 6 mark trigger count (like Vita, Thelema, HoFi) instead of Helia.
           </p>
+
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Helia:</strong>  Asterite Shop, Open World Task, Battlesuit Supply</li>
-              <li><strong>Helia's Weapon:</strong> Part 2 Chapter 5, Equipment Supply, Synergy Upgrade in Asterite Shop</li>
+              <li><strong>Helia's Weapon:</strong> Equipment Supply, Synergy Upgrade in Asterite Shop</li>
               <li><strong>Helia's Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider  "></div>

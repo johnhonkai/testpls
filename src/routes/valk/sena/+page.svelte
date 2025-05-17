@@ -423,35 +423,31 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. Due to how meta works, it's better to use your crystal to pull the latest valkyrie. If you can afford to spend, get Sena from Battle Pass.
+            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. If you can afford to spend, get Sena from Battle Pass instead.
             
         </p>
 
-        <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">F2P Players</strong> 
-          <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch.
-
-
-        </p>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Spending Players</strong> 
 
               <br/> 
-              Recommended to get Sena and her weapon from Battle Pass. She still has her niche in the meta.
+              Recommended to get Sena and her weapon from Battle Pass. She still has her niche as WoD support in the meta.
               <br/>
             </p>
 
-            <p class="mt-2 text-sm sm:text-base">
-              As a <span class="text-teal-300">DPS</span>, Sena only top scores Bloodlust swarm boss now. As a <span class="text-rose-300">support</span>, Sena's role somewhat overlaps with Vita.
 
-          </p>
           <p class="mt-2 text-sm sm:text-base">
         </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores.</li>
+              <li class="mt-2">For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores. In some cases, you can even use both Vita and Sena in the same team.</li>
               <li class="mt-2">For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
-              <li class="mt-2">Sena cannot support Law of Ascension team like Vita. </li>
 
           </ul>
           <p class="mt-2 text-sm sm:text-base">

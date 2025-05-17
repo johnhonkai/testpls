@@ -1084,7 +1084,7 @@ export const teamData = {
       entries: [
         {
           type: 'lineup',
-          lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/Chrono Navi.png", "images/valkportrait/elf_kiana.png"],
+          lineup: ["images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/sparkle.png", "images/valkportrait/elf_kiana.png"],
           pct: '100%',
         }
       ]},
@@ -1286,7 +1286,7 @@ export const teamData = {
         },
       ]},
     {
-      tabname: "v7.8",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
@@ -1672,8 +1672,55 @@ export const teamData = {
   },
   otto: {
     teamDataSets: [
+            {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/ps.png", "images/valkportrait/asop_teri.png"],
+          rank: '1+',
+          pct: '82%',
+          bottext: "Highest Score: S 864, S2 884, SS 891, SS1 894, 9S 906"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '15',
+          pct: '1%',
+          bottext: "Highest Score: 9S 888"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '16',
+          pct: '11%',
+          bottext: "Highest Score: S2 880, SS 888"
+        },
+                {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '31',
+          pct: '1%',
+          bottext: "Highest Score: 9S 883"
+        },
+                        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/ps.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '35',
+          pct: '4%',
+          bottext: "Highest Score: S2 881"
+        },
+                        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '95',
+          pct: '1%',
+          bottext: "Highest Score: SS 951"
+        },
+      ]},
       {
-        tabname: "v8.1 CN",
+        tabname: "v8.1",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
         {
@@ -1713,7 +1760,7 @@ export const teamData = {
         },
       ]},
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 539 D.",
     entries: [
       {

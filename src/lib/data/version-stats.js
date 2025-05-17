@@ -1,0 +1,52 @@
+export const usageByVersion = {
+  '8.1': [
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 397, SUP: 259 },
+    { name: 'Reign Solaris', DPS: 283, SUP: 403 },
+    { name: 'Jovial Deception: Shadowdimmer', DPS: 3, SUP: 494 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 117, SUP: 389 },
+    { name: 'Lone Planetfarer', DPS: 100, SUP: 587 },
+    { name: 'Lone Destruction: Shadowchaser', DPS: 1, SUP: 5 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 0, SUP: 264 },
+    { name: 'Herrscher of Human: Ego', DPS: 199, SUP: 104 },
+    { name: 'Deepspace Anchor: First Light', DPS: 0, SUP: 73 },
+    { name: 'Herrscher of Finality', DPS: 100, SUP: 196 },
+    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 100 },
+    { name: 'Herrscher of Rebirth', DPS: 100, SUP: 200 },
+    { name: 'Lunar Vow: Crimson Love', DPS: 100, SUP: 0 },
+    { name: 'Herrscher of Sentience', DPS: 100, SUP: 100 },
+    { name: "Schicksal's Imperative", DPS: 83, SUP: 100 },
+    { name: 'Cosmic Expression', DPS: 0, SUP: 100 },
+    { name: 'Dreamweaver', DPS: 100, SUP: 0 },
+    { name: 'Fenghuang of Vicissitude', DPS: 100, SUP: 0 },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 100 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 200 },
+
+    
+  ],
+
+    '8.0': [
+    { name: 'Reign Solaris', DPS: 300, SUP: 100 },
+    { name: 'Lone Planetfarer', DPS: 113, SUP: 337 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 100, SUP: 441 },
+    { name: 'Jovial Deception: Shadowdimmer', DPS: 1, SUP: 295 },
+    { name: 'Lone Destruction: Shadowchaser', DPS: 104, SUP: 88 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 81, SUP: 106 },
+    { name: 'Deepspace Anchor: First Light', DPS: 100, SUP: 130 },
+    { name: 'Herrscher of Finality', DPS: 94, SUP: 312 },
+    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 113 },
+    { name: 'Dreamweaver', DPS: 100, SUP: 0 },
+    { name: 'Herrscher of Rebirth', DPS: 0, SUP: 100 },
+    { name: 'Miracle ☆ Magical Girl', DPS: 100, SUP: 0 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 294 },
+    { name: 'Valkyrie Boltstorm', DPS: 0, SUP: 1 },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 94 },
+    { name: 'Fenghuang of Vicissitude', DPS: 100, SUP: 0 },
+  ],
+
+};
+
+export const versionDates = {
+  '8.0': "12 Dec 2024 - 23 Jan 2025",
+  '8.1': "23 Jan - 27 Mar 2025",
+  '8.2': "27 Mar - 29 May 2025",
+};

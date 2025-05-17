@@ -346,11 +346,11 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
       
-      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-        <p class="text-sm sm:text-base">
-          <strong>Updated For v8.1
-      </p>
-      </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.2 (24 Apr 2025)
+        </p>
+        </div>
 
       <div>
           <!-- Roles Section -->
@@ -369,13 +369,17 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players</strong> <br/> Lantern is one of the valks available from Carnival Supply. Only use your free 20 pulls, not worth getting her using crystals now. In my opinion, the order of valk importance based on meta is Thelema > Jovial Deception > SIMP / Lantern.
-          </p>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
+
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong><br/>
-              Lantern is good, but her value for your account varies. Everyone's account is different. 
+              Lantern has not been used as much recently.
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
             <li class="mt-2">As DPS, she still has top scores (RPC, Tank). For Stellar RPC, HoFi DPS also gets a good score comparable to Lantern.</li>
@@ -389,7 +393,6 @@ function selectTabMobile(event) {
               <li ><strong>Lantern:</strong> Battlesuit Supply</li>
               <li><strong>Lantern's Weapon:</strong> Equipment Supply</li>
               <li><strong>Lantern's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Not available in v8.0. High chance of returning in v8.1 spending event. </li>
 
           </ul>
           <div class="divider  "></div>
