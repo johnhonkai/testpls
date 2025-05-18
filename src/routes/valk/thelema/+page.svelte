@@ -935,11 +935,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press Ult to enter Planet Quaker form.</li>
-          <li>Press weapon ➔ spam Basic ATK until meter is full.</li>
-          <li>When meter is full, use Combo ATK.</li>
-          <li>When ult is available, use Ult.</li>
-          <li>Repeat.</li>
+          <li>To Be Updated</li>
         </ol>
 
         <p class="mt-8 text-sm sm:text-base pb-4 text-center">
