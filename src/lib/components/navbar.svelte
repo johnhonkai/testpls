@@ -147,7 +147,7 @@ function handleClick(event, path) {
 					  </div>
 											</a>
 											<a
-						href="/best-valkyries"
+						
 						data-sveltekit-preload-data="hover"
 					  >
 					  <div
