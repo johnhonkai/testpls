@@ -91,6 +91,23 @@ function markImageLoaded(name: string) {
   loadedImages[name] = true;
 }
 
+// Ensure cached images are marked as loaded too
+onMount(() => {
+  sortedValkyries.forEach(valk => {
+    const img = new Image();
+    img.src = valk.image;
+
+    if (img.complete) {
+      // Already in cache and loaded
+      loadedImages[valk.name] = true;
+    } else {
+      // Otherwise listen for load
+      img.onload = () => markImageLoaded(valk.name);
+      img.onerror = () => markImageLoaded(valk.name);
+    }
+  });
+});
+
 </script>
 
 
@@ -256,25 +273,15 @@ function markImageLoaded(name: string) {
           {/each}
         {/if}
 
-        {#if loadedImages[valkyrie.name]}
-          <img 
-            src={valkyrie.image} 
-            alt={valkyrie.name}
-            class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
-          />
-        {:else}
-          <!-- Skeleton loader with same size -->
-          <div class="absolute inset-0 bg-gray-700 animate-pulse rounded-md"></div>
-
-          <!-- Silent preload -->
-          <img 
-            src={valkyrie.image} 
-            alt=""
-            class="hidden"
-            on:load={() => markImageLoaded(valkyrie.name)}
-            on:error={() => markImageLoaded(valkyrie.name)}
-          />
-        {/if}
+{#if loadedImages[valkyrie.name]}
+  <img 
+    src={valkyrie.image} 
+    alt={valkyrie.name}
+    class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
+  />
+{:else}
+  <div class="absolute inset-0 bg-gray-700 animate-pulse rounded-md"></div>
+{/if}
       </div>
 
       <!-- Name is always shown, outside image -->
