@@ -61,8 +61,8 @@ AR tags determine two things:
 
 ### Rite of Oblivion
 The only exception to these rules is Rite of Oblivion (RoO). 
-1. RoO characters have buffs that do not require specific AR activation, so they can support any AR.
-2. However, **without the matching AR tag,** they can't activate the AR unique mechanic and certain buffs.
+1. RoO characters have buffs that do not require specific AR activation, so in theory, they can support any AR... right?
+2. However, **without the matching AR tag, they can't activate certain important mechanics or unique buffs for that AR.** This means, RoO valks are just below average support options for teams without the matching AR tag.
 3. Other AR specializations' leader skills require three members with specific AR tags to activate buffs. Rite of Oblivion characters count as a valid member **even without the required AR tag.**
 
 Here is an example with Coralie. Coralie is a RoO character with Domain Resonance tag.

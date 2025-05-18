@@ -164,7 +164,7 @@ async function captureStats() {
 </div>
 
 
-<div id="statsSection" class="max-w-6xl mx-auto px-4 pt-5 pb-10 space-y-6 relative bg-base-100">
+<div id="statsSection" class="max-w-6xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
 
   <div class="flex flex-col justify-center">
         <h1 class="flex items-center gap-2 text-md sm:text-xl font-bold drop-shadow-md text-white  m-auto text-shadow-lg/30 text-center">
