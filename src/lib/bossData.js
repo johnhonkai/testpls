@@ -1456,6 +1456,7 @@ export const teamData = {
       },
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/embed/JYRahGxcRz4', abyss: 'Nirvana 542 D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/embed/WE8jzAjPt9c', abyss: 'Nirvana 541 D', uploader: 'Kyoshiro' },
     ] 
   },
@@ -2685,6 +2686,24 @@ export const teamData = {
             rank: '100',
             pct: '1%',
             bottext: "Highest score: SS 801"
+          },
+        ]
+      }
+    ],
+  },
+
+      starsk: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/Fu Hua Herrscher of Sentience.png", "/images/valkportrait/dudu.png","images/valkportrait/elf_bunny.png"],
+            rank: '1+',
+            pct: '100%',
           },
         ]
       }

@@ -211,7 +211,7 @@ async function captureStats() {
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
       <strong class="text-white">Heavenly Grail</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>Teammates with the <span class="text-teal-400 font-medium">Mutual Regen</span> can provide increased sp regen and won't consume sp when casting Ultimate (first Ult after QTE).
+      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ultimate (first Ult after QTE).
     </span>
   </p>
 </section>
@@ -344,7 +344,7 @@ async function captureStats() {
 
   <!-- Tooltip -->
   {#if char.details}
-    <div class="absolute z-50 bottom-full  mb-2 w-48 sm:w-60 text-sm text-white bg-teal-800 p-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition pointer-events-none">
+    <div class="hidden sm:block absolute z-50 bottom-full  mb-2 w-48 sm:w-60 text-sm text-white bg-teal-800 p-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition pointer-events-none">
       {char.details}
     </div>
   {/if}

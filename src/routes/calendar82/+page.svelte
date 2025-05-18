@@ -711,7 +711,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard />
+                    <BossCard image="/images/Bosses/Shadow Knight (SK).webp" date="Jun 13" weather="Starless" bosspage="/boss?starsk" />
                     <BossCard />
                     </div>
                      

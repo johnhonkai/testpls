@@ -142,7 +142,7 @@
 </div>
 
 
-<div class="page-container mx-auto p-2 max-w-2xl" class:invisible={isFirstLoad && isLoading}>
+<div class="page-container mx-auto p-2 max-w-2xl  min-h-[1300px]" class:invisible={isFirstLoad && isLoading}>
   <!-- Weather List Component -->
   <WeatherList 
     weathers={weatherList} 

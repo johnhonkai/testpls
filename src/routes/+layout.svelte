@@ -37,7 +37,7 @@
   <Navmobile></Navmobile>
 </div>
 
-<main class="grow mt-[3.5rem] lg:mt-0 min-h-[1600px]">
+<main class="grow mt-[3.5rem] lg:mt-0">
 	
 	{@render children()}
 

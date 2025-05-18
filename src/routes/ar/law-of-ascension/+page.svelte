@@ -147,7 +147,7 @@ async function captureStats() {
   <img
     src="/images/bg_loa.webp"
     alt="Header"
-    class="w-full h-full object-cover opacity-45"
+    class="w-full h-full object-cover opacity-60"
   />
 
 
@@ -191,7 +191,7 @@ async function captureStats() {
   <img
     src="/images/bg_loa.webp"
     alt="Header"
-    class="w-full h-full object-cover opacity-45"
+    class="w-full h-full object-cover opacity-60"
   />
 
 
@@ -347,7 +347,7 @@ async function captureStats() {
 
   <!-- Tooltip -->
   {#if char.details}
-    <div class="absolute z-50 bottom-full  mb-2 w-48 sm:w-60 text-sm text-white bg-teal-800 p-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition pointer-events-none">
+    <div class="hidden sm:block absolute z-50 bottom-full  mb-2 w-48 sm:w-60 text-sm text-white bg-teal-800 p-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition pointer-events-none">
       {char.details}
     </div>
   {/if}
