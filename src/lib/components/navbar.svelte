@@ -80,7 +80,7 @@ function handleClick(event, path) {
       class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
       on:click={(e) => handleClick(e, '/valk')}
     >
-      VALKYRIE ▾
+      VALKYRIE▾
     </div>
 			  
 				<!-- Dropdown -->
@@ -194,7 +194,7 @@ function handleClick(event, path) {
 				  class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
 				  data-sveltekit-preload-data="hover"
 				>
-				  BOSS ▾
+				  BOSS▾
 				</a>
 			  
 				<!-- Dropdown -->
@@ -270,7 +270,7 @@ function handleClick(event, path) {
 				  class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
 				  data-sveltekit-preload-data="hover"
 				>
-				  MORE ▾
+				  MORE▾
 				</a>
 			  
 				<!-- Dropdown -->
