@@ -36,12 +36,15 @@
       wod: { src: '/images/artype/ar wheel of destiny.png', tip: 'Wheel of Destiny is centered around solo playstyle.' },
       roo: { src: '/images/artype/ar roo.png', tip: 'Every Rite of Oblivion DPS has her own playstyle.' },
       hg: { src: '/images/artype/ar grail.png', tip: 'Heavenly Grail playstyle revolves around consuming SP.' },
+      all: { src: '/images/artype/AR All.png', tip: 'Can be a below average, last resort support option for other AR.' },
+      lp: { src: '/images/artype/ar_lp.png', tip: 'Can support Lone Planetfarer' },
 
       // Part 1
       p1phy: { src: '/images/artype/p1physical.png', tip: 'Part 1 Physical Team' },
       p1fire: { src: '/images/artype/p1fire.png', tip: 'Part 1 Fire Team' },
       p1lightning: { src: '/images/artype/p1lightning.png', tip: 'Part 1 Lightning Team' },
       p1ice: { src: '/images/artype/p1ice.png', tip: 'Part 1 Ice Team' },
+      hoo: { src: '/images/artype/ar_hoo.png', tip: 'Can support Herrscher of Origin' },
 
     };
   </script>

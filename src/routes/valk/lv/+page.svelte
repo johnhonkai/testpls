@@ -337,7 +337,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-4">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.3 (26 June 2025)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-4 text-left cooltext text-slate-100">ROLES</h2>
@@ -357,16 +361,19 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive </strong><br/> Her scores are now even higher with the new Schicksal's Imperative support. However, getting LV should not be prioritized over Part 2 characters.
+              <strong class="text-amber-400">Paid Players </strong><br/> If you can afford to buy Knight or Paladin BP, AND if you already have other P2 characters in the BP, then Lunar Vow is a good pick.
+          </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive </strong><br/> Her scores are now even higher with the new Schicksal's Imperative support. However, her bosses only appear once in a while now, so getting LV should not be prioritized over Part 2 characters.
           </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Lunar Vow:</strong> Battlesuit Supply, Starter Supply</li>
-              <li><strong>Lunar Vow's Weapon and Stigma:</strong> Focused Supply, Starter Supply</li>
-              <li>ADV Supply and Rebate Focused Supply available in v7.9. </li>
+              <li ><strong>Lunar Vow:</strong> Battle Pass v8.3-8.5</li>
+              <li><strong>Lunar Vow's Weapon and Stigma:</strong> Battle Pass v8.3-8.5</li>
 
           </ul>
           <div class="divider  "></div>
@@ -872,21 +879,7 @@ function selectTabMobile(event) {
           <li>Repeat. </li>
         </ol>
 
-        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/umzF5U6uxWs"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
         {/if}
 
       {/if}

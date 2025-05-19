@@ -37,6 +37,7 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 	import Hohdps from '$lib/components/lineup/hohdps.svelte';
 	import Badumdps from '$lib/components/lineup/badumdps.svelte';
 	import Sparkledps from '$lib/components/lineup/sparkledps.svelte';
+	import CharBio from '$lib/components/CharBio.svelte';
   let showLightbox = false;
   let selectedImage = '';
 
@@ -49,21 +50,36 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
     showLightbox = false;
   }
  
-    let selectedTab = 'Overview'; // Default tab
-    const tabs = [
-    { name: 'Overview', short: 'overview' },
-    { name: 'Lineup', short: 'lineup' },
-    { name: 'Equipment', short: 'equipment' },
-    { name: 'Support Buffs', short: 'support' },
-    { name: 'Rank Up', short: 'rank' },
-    { name: 'How to Play', short: 'howtoplay' },
-    { name: 'Gameplay Examples', short: 'example' },
-    { name: 'Elysian Realm', short: 'er' },
-    { name: 'Popular Question', short: 'qna' },
-    { name: 'Overview Card', short: 'card' },
-    { name: 'Translation Error', short: 'translation' },
-  ];  
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 
+  let selectedTab = 'Overview'; // Default tab
+  const tabs = [
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Question', short: 'qna' , icon: faComments  },
+  { name: 'Overview Card', short: 'card' },
+  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+];  
+
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
+  
 // Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
@@ -196,21 +212,39 @@ function selectTabMobile(event) {
 }
 </script>
 
-
-
 <style>
-  .like-container {
-      display: flex;
-      align-items: center;
-      gap: 8px;
+  #star-container {
+    background: radial-gradient(rgb(var(--light-teal-rgb)), rgb(var(--dark-teal-rgb)));
   }
+
+  #star-gradient-overlay {
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-teal-rgb)));
+  }
+
+  #app {
+  height: 37rem;
+  overflow: hidden;
+  position: relative;
+}
 </style>
 
-<div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_lp.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
-  </div>
+
+
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+    <div id="app">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
+      </div>
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+      </div>
+    </div>
+  
+    
+    </div>
 
 
   <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
@@ -218,87 +252,102 @@ function selectTabMobile(event) {
   </div>
 
   <!-- Left: Character Image -->
-  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
     <!-- Image for Larger Screens -->
     <img src="/images/valkfull/vita.webp" alt="Lone Planetfarer" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-13;"/> 
   
-    <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
+  <!-- Like Button: Bottom-right overlay -->
+   <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
       <button
         on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
+        disabled={hasLiked}
+        class="bg-teal-800/70 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
+      >
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
           <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
           />
         </svg>
-        <span class="text-white font-semibold">{lplikes}</span>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{lplikes}</span>
       </button>
     </div>
-  
+  </div>
   </div>
 
 
 
   <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start mt-2">
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
     <!-- Battlesuit Name -->
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center mb-2 sm:mb-0">Lone Planetfarer</h1>
+    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Lone Planetfarer</h1>
 
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Vita | Release Date: v7.8 (17 Oct 2024)  </p>
-
-    <!-- Common wrapper to ensure same width -->
-    <div class="w-full max-w-sm mb-2">
-      <!-- Container with 4 pictures (Centered) -->
-      <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-teal-500 outline-1 bg-sky-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar roo.png" alt="ar" class="w-auto h-8 md:h-10" />
-        </div>
+  <!-- Character Info Cards -->
+  <div class="space-y-2 w-[260px] md:w-[300px]">
+    <!-- Name Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
+        Name
       </div>
-
-
-      <div class="flex flex-col mt-4 items-center">
-
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-teal-500 outline-1 bg-sky-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <div class="flex flex-wrap justify-center">
-            <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
-          </div >
-          <div class="flex flex-row gap-2 flex-wrap justify-center">
-            <img src="/images/artype/ar world star.png" alt="Support 1" class="w-auto h-8 md:h-10" />
-            <img src="/images/artype/ar wheel of destiny.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-            <img src="/images/artype/ar loa.webp" alt="Support 3" class="w-auto h-8 md:h-10" />
-            <img src="/images/artype/AR All.png" alt="Support 4" class="w-auto h-8 md:h-10" />
-          </div>
-        </div>
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
+        Vita
       </div>
-    </div> <!-- End common wrapper -->
+    </div>
+
+    <!-- Release Date Card -->
+    <div class="flex rounded-lg overflow-hidden shadow-md">
+      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
+        Release
+      </div>
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
+      v7.8 (17 Oct 2024)
+      </div>
+    </div>
+  </div>
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['ws' , 'wod' ,'loa', 'all']} />
   </div>
 </section>
 
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
-  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
+  <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4 text-gray-200 sticky top-16 h-[calc(100vh-4rem)]">
 
     <ul class="space-y-2">
       {#each tabs as tab}
-        <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
-        </li>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+  
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+  
+    </button>
       {/each}
     </ul>
     </aside>
@@ -345,7 +394,7 @@ function selectTabMobile(event) {
     <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
         {#if selectedTab === 'Overview'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-4">
           <p class="text-sm sm:text-base">
             <strong>Updated For v8.2 (24 Apr 2025)
         </p>
@@ -374,23 +423,22 @@ function selectTabMobile(event) {
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
                 <br/>Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to 
-                <br/> - Save until you can guarantee valk + fullgear,
-                <br/> - Then get the latest valk early in the patch.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her supporting three AR, but she's still not the best everywhere. For example, in WoD teams, she needs ranks to beat Sena. </li>
+              <li class="mt-2">Save until you can guarantee valk + fullgear, </li>
+              <li class="mt-2">Then get the latest valk early in the patch.</li>
+          </ul>
+                        <p class="mt-6 text-sm sm:text-base">
+                <strong class="text-amber-400">Spending Competitive Players </strong><br/> Recommended if you can afford to top up.
+            </p>
+            <ul class="list-disc ml-6 text-sm sm:text-base">
+              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her supporting three AR, and she is a staple support for quite a number of teams, BUT she's still not the best everywhere, especially at S0-rank. </li>
               <li class="mt-2">Plus, new valks are already getting tags for the next AR. Vita can only act as an optional support for the future AR, since she does not have the proper tags.</li>
 
               <li class="mt-2">New Players: As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.</li>
           </ul>
-            <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">Competitive</strong> <br/> Recommended, Vita's value is insane.
-            </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li class="mt-2">For World Star team, currently Vita is undeniably the best support.</li>
-                <li class="mt-2">For WoDestiny team, S0-Vita loses to S0-Sena, thanks to Sena having zero off-field time (small score difference). At higher ranks and synergy, Vita beats Sena.</li>
-                <li class="mt-2">For Law of Ascension team, Vita is always used for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.</li>
-            </ul>
+
+
             <div class="divider  "></div>
             <!-- How to Get Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
@@ -610,14 +658,14 @@ function selectTabMobile(event) {
         <div class="flex justify-center gap-4 my-6">
             <button
               on:click={() => setPlaystyle('1')}
-              class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+              class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
             >
               STELLAR OUTBURST
             </button>
           
             <button
               on:click={() => setPlaystyle('2')}
-              class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+              class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
             >
               AR CHARGING
             </button>
@@ -1284,7 +1332,7 @@ function selectTabMobile(event) {
     {/if}
     
     
-        {#if selectedTab === 'Gameplay Examples'}
+        {#if selectedTab === 'Gameplay'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
     
         <div class=" gap-6 mt-4 mb-10">
@@ -1369,7 +1417,7 @@ function selectTabMobile(event) {
   </div>
     {/if}
     
-    {#if selectedTab === 'Popular Question'}
+    {#if selectedTab === 'Question'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
         <div class="my-6">
@@ -1432,7 +1480,7 @@ function selectTabMobile(event) {
     {/if}
 
 
-        {#if selectedTab === 'Translation Error'}
+        {#if selectedTab === 'TL Error'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
         <div>
           <div class="flex flex-col justify-center items-center">

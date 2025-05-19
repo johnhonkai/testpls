@@ -33,6 +33,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Simpdps from '$lib/components/lineup/simpdps.svelte';
 	import Senadps from '$lib/components/lineup/senadps.svelte';
 	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
+	import CharBio from "$lib/components/CharBio.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -45,20 +46,35 @@ function closeLightbox() {
   showLightbox = false;
 }
 
+import Fa from 'svelte-fa';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
-  { name: 'Equipment', short: 'equipment' },
-  { name: 'Support Buffs', short: 'support' },
-  { name: 'How to Play', short: 'howtoplay' },
-  { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
-  { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+    { name: 'Overview', short: 'overview', icon: faHome },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Question', short: 'qna' , icon: faComments  },
+ // { name: 'Overview Card', short: 'card' },
+  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
+
+function handleClick(tabName) {
+    selectTab(tabName);
+    animateIcon(tabName);
+  }
+
+  let activeIcon = null;
+
+  function animateIcon(tabName) {
+    activeIcon = tabName;
+    setTimeout(() => (activeIcon = null), 300); // reset after animation
+  }
 
 // Function to select a tab and update the URL
 function selectTab(tab) {
@@ -194,20 +210,38 @@ function selectTabMobile(event) {
 </script>
 
 
-
 <style>
-.like-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  #star-container {
+    background: radial-gradient(rgb(var(--light-fuchsia-rgb)), rgb(var(--dark-fuchsia-rgb)));
+  }
+
+  #star-gradient-overlay {
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-fuchsia-rgb)));
+  }
+
+  #app {
+  height: 38rem;
+  overflow: hidden;
+  position: relative;
 }
 </style>
 
-<div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-8	sm:pt-0	">
-<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-  <img src="/images/bg/wave_hofi.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
-</div>
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
+    <div id="app">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
+      </div>
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+      </div>
+    </div>
+  
+    
+    </div>
+  
 
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
@@ -215,27 +249,34 @@ function selectTabMobile(event) {
 </div>
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-68 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/kiana_hofi.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-3;"/> 
+  <img src="/images/valkfull/kiana_hofi.webp" alt="HoFi" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-3;"/> 
 
-  <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-    <button
-      on:click={increaseLike}
-      class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-             {hasLiked ? '' : 'hover:bg-blue-700'}">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-5 h-5"
+   <div class="absolute bottom-2 right-2 z-10">
+    <div
+      class="tooltip tooltip-left"
+      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
+    >
+      <button
+        on:click={increaseLike}
+        disabled={hasLiked}
+        class="bg-fuchsia-800/70 hover:bg-fuchsia-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
       >
-        <path
-          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-        />
-      </svg>
-      <span class="text-white font-semibold">{hofilikes}</span>
-    </button>
+        <!-- Heart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
+               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+               6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+  
+        <!-- Like Count -->
+        <span class="font-semibold">{hofilikes}</span>
+      </button>
+    </div>
   </div>
 
 </div>
@@ -243,47 +284,37 @@ function selectTabMobile(event) {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-2">
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
   <!-- Battlesuit Name -->
 
   <div>
-  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Herrscher of Finality</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Herrscher of Finality</h1>
 </div>
-  <!-- Character Name and Release Date -->
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Kiana Kaslana | Release Date: v6.4 (16 Feb 2023)   </p>
-  <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-2">DLC Date: v7.8 (17 Oct 2024)</p>
 
-  <!-- Common wrapper to ensure same width -->
-  <div class="w-full max-w-sm mb-2">
-    <!-- Container with 4 pictures (Centered) -->
-    <div class="flex flex-col items-center">
-      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-fuchsia-500 outline-1 bg-fuchsia-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-        <img src="/images/type/IconIMG.png" alt="Mech" class="w-auto h-8 md:h-10" />
-        <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-        <img src="/images/artype/ar roo.png" alt="ar" class="w-auto h-8 md:h-10" />
-      </div>
-    </div>
-
-    <!-- Support For Container (Centered) -->
-    <div class="flex flex-col mt-4 items-center">
-
-      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-fuchsia-500 outline-1 bg-fuchsia-950/75 rounded-lg p-2 backdrop-blur-xs">
-        <div class="flex flex-wrap justify-center">
-          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
-        </div >
-        <div class="flex flex-row gap-2 flex-wrap justify-center">
-          <img src="/images/artype/ar_lp.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/ar world star.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-
-          <img src="/images/artype/ar_hoo.png" alt="ar" class="w-auto h-8 md:h-10" />
-          <img src="/images/artype/AR All.png" alt="Support 2" class="w-auto h-8 md:h-10" />
-
-        </div>
-      </div>
-    </div>
-  </div> <!-- End common wrapper -->
+  <!-- Character Info Cards -->
+<div class="rounded-lg overflow-hidden shadow-md bg-slate-200 text-black text-xs w-full font-medium">
+  <div class="flex">
+    <div class="bg-fuchsia-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Name</div>
+    <div class="px-3 py-1 flex-1 flex items-center">Kiana Kaslana</div>
+  </div>
+  <div class="flex">
+    <div class="bg-fuchsia-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Release</div>
+    <div class="px-3 py-1 flex-1 flex items-center">v6.4 (16 Feb 2023)</div>
+  </div>
+  <div class="flex">
+    <div class="bg-fuchsia-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">DLC</div>
+    <div class="px-3 py-1 flex-1 flex items-center">v7.8 (17 Oct 2024)</div>
+  </div>
 </div>
+
+
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="img" element="fire" ar="roo" bg="bg-fuchsia-800" />
+
+  <!-- Support Section -->
+  <CharBio mode="support" ar={['lp' , 'ws' , 'hoo' , 'all']}  bg="bg-fuchsia-800"/>
+  </div>
+
 </section>
 
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
@@ -293,14 +324,25 @@ function selectTabMobile(event) {
 
     <ul class="space-y-2">
       {#each tabs as tab}
-        <li>
-          <button
-            on:click={() => selectTab(tab.name)}
-            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
-            {tab.name}
-          </button>
-        </li>
+      <button
+      on:click={() => handleClick(tab.name)}
+      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
+             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
+             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
+             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
+             before:scale-x-0 before:origin-left
+             hover:text-white hover:border-sky-600
+             {selectedTab === tab.name 
+               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
+               : ''}">
+    
+      <!-- Icon with rotation animation -->
+      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
+        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
+        {tab.name}
+      </span>
+    
+    </button>
       {/each}
     </ul>
     </aside>
@@ -356,27 +398,27 @@ function selectTabMobile(event) {
           <!-- Roles Section -->
           <h2 class="text-xl mt-4 font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong><br/> Powerful Fire-IMG DPS, the culmination of 6 years of journey. HoFi's full potential is only unlocked in Herrscher Trio team with Herrscher of Origin and Herrscher of Truth.
+          <p class="mt-6 text-sm sm:text-base">
+              <strong class="text-amber-400">Original Role: Part 1 DPS</strong><br/> Powerful Fire-IMG DPS, the culmination of 6 years of journey. HoFi's full potential is only unlocked in Herrscher Trio team with <a href="/valk/hoo" class="link ">Herrscher of Origin </a> and <a href="/valk/hotr" class="link ">Herrscher of Truth.</a>
           </p>
-          <p class="mt-4 text-sm sm:text-base">
+          <p class="mt-6 text-sm sm:text-base">
               <strong class="text-amber-400">Rite of Oblivion DPS</strong><br/>When HoFi equips the new Divine Key Waxing Moon, she unlocks Astral Ring: Rite of Oblivion. HoFi's role also expands into a support for the following teams:
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Vita Support</strong><br/>  In 7.8, HoFi+DLC is an important support for the new valk Vita [Lone Planetfarer]. Without HoFi, Vita loses around 50% DMG, which is massive, and at this point, even Vita support performs better than Vita DPS. This will remain true until we get a new Rite-of-Oblivion character.
+          <p class="mt-6 text-sm sm:text-base">
+              <strong class="text-amber-400">Vita Support</strong><br/>  Currently, HoFi+DLC is an important support for <a href="/valk/lp" class="link ">Vita Lone Planetfarer</a>. Without HoFi, Vita loses around 50% DMG, which is massive, and at this point, even Vita support performs better than Vita DPS. This will remain true until we get a new Rite-of-Oblivion character.
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
+          <p class="mt-6 text-sm sm:text-base">
             <strong class="text-amber-400">World Star Support</strong><br/> One of the best supports for World Star team. Can trigger Domain Resonance very fast.
         </p>
 
-        <p class="mt-4 text-sm sm:text-base">
+        <p class="mt-6 text-sm sm:text-base">
           <strong class="text-amber-400">Herrscher of Origin Support</strong><br/>  Iskandar stigma has buffs for HoOrigin DPS. So far, HoOrigin only has one top score in live version Abyss, Starless Husk Mysticism.
       </p>
 
-      <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400">General AR Support</strong><br/>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as Coralie.
+      <p class="mt-6 text-sm sm:text-base">
+        <strong class="text-amber-400">Last Resort Support Option For Other AR</strong><br/>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as Coralie.
     </p>
 
           <div class="divider  "></div>
@@ -386,15 +428,15 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">New / F2P Players</strong><br/> Not recommended, you can't even get her and Divine Key right now if you wanted to.
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
+          <p class="mt-6 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> You can try to get it if you can afford it, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS is only used once in a while now in Abyss.
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
+          <p class="mt-6 text-sm sm:text-base">
             <strong class="text-amber-400">For Super Whales</strong><br/> Waxing Moon pistol synergy (duplicates) gives global ATK (Syn1 +10 ATK, Syn2 +5 ATK, Syn3 +5 ATK).
         </p>
 
-        <p class="mt-4 text-sm sm:text-base">
+        <p class="mt-6 text-sm sm:text-base">
           <strong class="text-amber-400">Original Gears</strong><br/> No reason to get them now.
       </p>
 
@@ -402,11 +444,9 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>HoFi:</strong> Battlesuit Supply. Not available in v7.9. Last known supply is v7.5.</li>
-              <li ><strong>HoFi Stamps:</strong> 7.9 Top-up Event.</li>
-              <li><strong>Waxing Moon:</strong> Equipment Supply. Not available in v7.9. Last known supply is v7.8.</li>
+              <li ><strong>HoFi:</strong> Battlesuit Supply.</li>
+              <li><strong>Waxing Moon:</strong> Equipment Supply.</li>
               <li><strong>Iskandar Stigma:</strong> Equipment Supply, Forgeable.</li>
-              <li><strong>Key of Anonimity, Kiana Kaslana Stigma:</strong> Focused Supply.</li>
 
           </ul>
           <div class="divider  "></div>
@@ -635,14 +675,14 @@ function selectTabMobile(event) {
       <div class="flex justify-center gap-4 my-6">
           <button
             on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             COMBO ATK
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             ULTIMATE
           </button>
@@ -1185,7 +1225,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
   {/if}
   
   
-      {#if selectedTab === 'Gameplay Examples'}
+      {#if selectedTab === 'Gameplay'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
       <div class=" gap-6 mt-5 mb-10">
@@ -1244,7 +1284,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
   </div>
   {/if}
   
-  {#if selectedTab === 'Popular Question'}
+  {#if selectedTab === 'Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
       <div class="my-6">
@@ -1282,7 +1322,7 @@ After entry via Joint Bursting, HoFi gains Total DMG +13.1% ➔ 15% for 10s.
   {/if}
 
 
-      {#if selectedTab === 'Translation Error'}
+      {#if selectedTab === 'TL Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
       
       <div class="flex flex-col justify-center items-center">

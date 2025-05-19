@@ -229,16 +229,14 @@ function selectTabMobile(event) {
   }
 
   #app {
-  height: 36rem;
+  height: 38rem;
   overflow: hidden;
   position: relative;
 }
 </style>
 
 
-<div class="sm:mt-14"></div>
 
-<div class="sm:mt-14"></div>
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
@@ -258,7 +256,7 @@ function selectTabMobile(event) {
   
   
   <!-- Left: Character Image -->
-  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
     <!-- Image for Larger Screens -->
     <img src="/images/valkfull/hoh.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
    <!-- Like Button: Bottom-right overlay -->
@@ -292,7 +290,7 @@ function selectTabMobile(event) {
   
   
   <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start">
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
     <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Herrscher of Human: Ego
     </h1>
   <!-- Character Info Cards -->
@@ -403,7 +401,7 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Part 1 Ice DPS</strong> <br/>
+            <strong class="text-amber-400">Original Role: Part 1 Ice DPS</strong> <br/>
             - Powerful Ice DPS with two forms: Herrscher of Human and Origin. Signature bow is mandatory to keep up with high sp cost.<br/>
             - In Elysian Realm, she gets +1 level to all normal signets.
         </p>

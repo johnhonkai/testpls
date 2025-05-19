@@ -224,13 +224,13 @@ function selectTabMobile(event) {
   }
   
   #app {
-    height: 35rem;
+    height: 37rem;
     overflow: hidden;
     position: relative;
   }
   </style>
   
-  <div class="sm:mt-14"></div>
+
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
     <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
       <div id="app">
@@ -251,7 +251,7 @@ function selectTabMobile(event) {
 </div>
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/sparkle.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-14;"/> 
 
@@ -271,8 +271,9 @@ function selectTabMobile(event) {
   </div>
 </div>
 
-<div class="flex flex-col items-center text-center justify-start">
-  <!-- Battlesuit Name -->
+<!-- Right: Character Info (Centered) -->
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
+    <!-- Battlesuit Name -->
   <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Thousand-Faced Maestro: Cameo!
   </h1>
   <!-- Character Info Cards -->
@@ -397,7 +398,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">Part 1 Fire Support</strong> <br/> Sparkle is the new best support for Part 1 Fire and Ignite teams, replacing Chrono Navi. Sparkle allows Fenghuang of Vicissitude and Miracle Magical Girl to  <b>USE ULTIMATE TWICE PER ROTATION</b>. Sparkle also provides sp regen, huge Ignite DMG, and extra ignite stacks. 
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/> New best teammate for Schicksal's Imperative against Quantum enemies. Just another buffer for Senadina.
+              <strong class="text-amber-400">World Star Support</strong> <br/> One of the better teammate for Schicksal's Imperative against Quantum enemies. Just another buffer for Senadina.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -412,9 +413,15 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">New / F2P Players              </strong> 
-              <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch.
-            </p>
+              <br/> Not recommended. Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to
 
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            
+            <li class="mt-2">Save until you can guarantee valk + fullgear,</li>
+            <li class="mt-2">Then get the latest valk early in the patch.</li> 
+
+
+          </ul>
 
           <p class="mt-5 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive / Spending Players</strong> <br/>

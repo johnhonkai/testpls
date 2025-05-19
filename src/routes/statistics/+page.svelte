@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Character Usage Statistics</title> 
+  <title>Version Statistics</title> 
 
-    <meta property="og:title" content="Character Usage Statistics"/>
-    <meta property="og:description" content="How many times a valk is used in a version." />
+    <meta property="og:title" content="Version Statistics"/>
+    <meta property="og:description" content="Character usage stats in a version." />
     <meta property="og:image" content="https://i.imgur.com/VhbgV38.png" />
     <meta property="og:url" content="https://marisaimpact.com/statistics" />
     <meta property="og:type" content="website" />
