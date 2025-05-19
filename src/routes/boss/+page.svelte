@@ -104,9 +104,9 @@
 
 <!-- Loading Screen -->
 {#if isFirstLoad && isLoading}
-  <div class="loading-screen">
-    <div class="spinner"></div>
-    <p>Loading data...</p>
+<div class="loading-screen fixed inset-0  flex items-center justify-center z-50">
+  <span class="loading loading-spinner loading-lg text-secondary"></span>
+    <p class="text-white mt-4">Loading...</p>
   </div>
 {/if}
 
@@ -172,19 +172,19 @@
 
 <style>
   .loading-screen {
-    position: fixed;
-    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     z-index: 9999;
   }
+
 
   .spinner {
     width: 50px;
     height: 50px;
-    border: 6px solid rgba(0, 0, 0, 0.2);
-    border-top: 6px solid #333;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
