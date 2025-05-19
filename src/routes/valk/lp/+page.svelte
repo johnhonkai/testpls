@@ -315,7 +315,7 @@ function selectTabMobile(event) {
   </div>
 
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo" />
+  <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo"  />
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['ws' , 'wod' ,'loa', 'all']} />
@@ -403,19 +403,21 @@ function selectTabMobile(event) {
             <!-- Roles Section -->
             <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
             
-            <p class="mt-4 text-sm sm:text-base">
+            <p class="mt-6 text-sm sm:text-base">
                 <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by Coralie support.
             </p>
 
-            <p class="mt-4 text-sm sm:text-base">
+            <p class="mt-6 text-sm sm:text-base">
                 <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a good support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and slightly higher AR regen. 
                 <br/>
                 - For WoD teams, Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.
                 <br/>
                 - For LoA teams, Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.
             </p>
-            <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">The other 9 AR Supports</strong> <br/> Vita can also support the other 9 Astral Ring teams. Vita still provides Breach and buffs, but at reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
+            <p class="mt-6 text-sm sm:text-base">
+                <strong class="text-amber-400">Last Resort Support Option For Other AR </strong> <br/> 
+                As a RoOblivion character, Vita can technically support other AR teams, but she is as terrible as Coralie.
+                Vita still provides Breach and buffs, but at a reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
             </p>
             <div class="divider  "></div>
             <!-- Pull Recommendation Section -->

@@ -269,6 +269,9 @@ html, body {
     --light-red-rgb: 248, 113, 113;  
     --dark-red-rgb: 153, 27, 27;    
 
+    --light-red-darker-rgb: 220, 80, 80;    /* Slightly deeper than 248,113,113 */
+--dark-red-darker-rgb: 112, 15, 15;     /* Much deeper than 153,27,27 */
+
     --light-pink-rgb: 244, 114, 182; 
   --dark-pink-rgb: 157, 23, 77;     
 
@@ -280,6 +283,9 @@ html, body {
 
    --light-fuchsia-rgb: 232, 121, 249;   /* Soft, light pink-purple */
 --dark-fuchsia-rgb: 136, 19, 145;     /* Deep fuchsia with strong contrast */
+
+--light-purple-rgb: 196, 155, 253;   /* Soft pastel purple (like Tailwind's purple-300) */
+--dark-purple-rgb: 88, 28, 135;      /* Deep royal purple (like purple-900) */
 
     --primary-stripe-rgb: 230 230 230;
     --secondary-stripe-rgb: 240 240 240;

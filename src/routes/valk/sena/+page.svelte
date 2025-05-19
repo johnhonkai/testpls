@@ -216,37 +216,35 @@ function selectTabMobile(event) {
 
 <style>
  
- #appsena {
-    height: 34rem;
+ #app {
+    height: 35.5rem;
     overflow: hidden;
     position: relative;
   }
 </style>
   
 
-<div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
-      <div id="appsena">
-        <div id="star-container">
-          <div id="star-pattern"></div>
-          <div id="star-gradient-overlay"></div>
-        </div>
-        <div id="stripe-container">
-          <div id="stripe-pattern"></div>
-        </div>
+    <div id="app">
+      <div id="star-container">
+        <div id="star-pattern"></div>
+        <div id="star-gradient-overlay"></div>
       </div>
-    
-      
+      <div id="stripe-container">
+        <div id="stripe-pattern"></div>
       </div>
+    </div>
   
+    
+    </div>
 
 <div class="fixed  h-1/2 w-1/2 top-[-5vh] right-[-20vw]  z-[-8] hidden sm:block " id="avabox">    
   <img src="/images/bg/ava_sena.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
 <!-- Left: Character Image -->
-<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
   <img src="/images/valkfull/Senadina.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-8;"/> 
 
@@ -282,30 +280,30 @@ function selectTabMobile(event) {
 
 
 <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start">
+<div class="flex flex-col items-center text-center justify-start sm:mt-10">
 
   <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Deepspace Anchor: First Light</h1>
+    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Deepspace Anchor: First Light</h1>
 
-  <!-- Character Info Cards -->
+   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">
     <!-- Name Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Name
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
         Senadina
       </div>
     </div>
 
     <!-- Release Date Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs sm:text-sm">
+      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Release
       </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs sm:text-sm font-medium">
-        v7.3 (29 Feb 2024)
+      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
+      v7.3 (29 Feb 2024)
       </div>
     </div>
   </div>
@@ -695,21 +693,21 @@ function selectTabMobile(event) {
       <div class="flex justify-center gap-4 my-6">
           <button
             on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
            ONE EGO
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             AR CHARGING
           </button>
 
           <button
           on:click={() => setPlaystyle('3')}
-          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           STELLAR OUTBURST
         </button>

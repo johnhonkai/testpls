@@ -256,7 +256,7 @@ function selectTabMobile(event) {
   
   
   <!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
+<div class="relative w-auto h-48 sm:h-66 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
     <!-- Image for Larger Screens -->
     <img src="/images/valkfull/hoh.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
    <!-- Like Button: Bottom-right overlay -->
@@ -621,14 +621,14 @@ function selectTabMobile(event) {
       <div class="flex justify-center gap-4 my-6">
           <button
             on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             HUMAN AND ORIGIN
           </button>
         
           <button
             on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             CHARGED ATK
           </button>
