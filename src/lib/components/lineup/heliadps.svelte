@@ -5,8 +5,8 @@
     const mainCharacters = [
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
         { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '99%', },
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '98%', utility: 'Shield',},
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '97%', },
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '96%', utility: 'Shield',},
 
     ];
 

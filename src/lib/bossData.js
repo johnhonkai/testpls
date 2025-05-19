@@ -69,6 +69,7 @@ export const weatherList = {
     {id: 'pishacha', name: 'Pishacha'},
     {id: 'villv', name: 'Vill-V'},
     {id: 'bleedhusk', name: 'Nihilius Husk'},
+    {id: 'bleed-tribunal', name: 'Cruising Tribunal'},
 
   ],
   ignite: [
@@ -335,6 +336,17 @@ export const bossData = {
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },
+
+    'bleed-tribunal': {
+    name: 'Cruising Tribunal', 
+    mechanics: "Phase 1: Mechas have high hitcount hp, destroy them to remove Tribunal's dmg reduction. Phase 2: Tribunal has high hit count hp.",
+    weakness: 'None', 
+      typeicon: "images/type/IconMECH.png", 
+      bosspic: "images/Bosses/tribunal.png", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+     
+  },
+
   pishacha: {
     name: 'Pishacha', 
       mechanics: 'Bleed is required', 
@@ -2306,6 +2318,7 @@ export const teamData = {
       },
     ],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=H7qx5qk0-X0', abyss: 'Nirvana 539D', uploader: 'TockyTommy' },
       { url: 'https://www.youtube.com/watch?v=iSNZDuTlVDM', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' }
 
     ] 

@@ -27,7 +27,7 @@ image: "/images/valkportrait/New Helia.png"
 
 ### LEADER 
 Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
-- When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG +12% (S) / 18% (S3) / 24% (SS3).
+- When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG ~~+12% (S) / 18% (S3) / 24% (SS3)~~ **+10% (S) / 18% (S) / 26% (SS3) [v3B]**
 - When there are 2 characters with Mutual Regen tag: During SO, Planar Armament Max SP **+630 (v2) > 200 (v3)**
 - When there are 3 characters with Mutual Regen tag: **During SO, Planar Armament Max SP +430. (v3)** Enemies take 16% (S) / 18% (S3) / 20% (SS3) more Lightning DMG from Planar Armament (independent).
 
@@ -107,7 +107,7 @@ During AR Charging: When AR intensity is more than 145 points, enemies take 14% 
 - During AR Charging: On hit, if sp is more than 0 and less than 100, sp regen rate +300%.
 
 #### PASSIVE 3
-Gain 40% TDM resistance, and gain Total DMG +10% (S) / 15% (S1) / 20% (SS) against enemies hit by Ult. (not sure about this one)
+Gain 40% TDM resistance, and gain Total DMG ~~+10% (S) / 15% (S1) / 20% (SS) [V3]~~ > **+10% (S) / 16% (S1) / 25% (SS) [V3B]** against enemies hit by Ult. (not sure about this one)
 
 #### PASSIVE 4
 Locked Skill. This companion star is still awaiting its time and has yet to appear in the night sky.
@@ -167,8 +167,8 @@ Combo ATK will clear meter, and trigger 4s time fracture, continuously pull enem
 
 ### ULTIMATE 
 You will use different ults based on the number of Burning Light stack , and you gain one stack after casting  Ult.
-- No stack: 400%x2 + ~~ 480% (v2)~~ **700% (v3)**
-- 1 stack: 200%x7 + ~~ 800% (v2)~~ **530% (v3)**
+- No stack: 400%x2 + ~~480% (v2)~~ **700% (v3)**
+- 1 stack: 200%x7 + ~~800% (v2)~~ **530% (v3)**
 - 2 stack: ~~1200% (v2)~~ **1065% (v3)**
 - 3 stack: Each time you press ult, Helia will cast the previous three ults in sequence.
 
@@ -188,7 +188,7 @@ Ult inflicts 12 points of paralyze trauma.
 When you are the leader, after using Finisher Ult to exit SO, AR meter will restore 40% of remaining AR intensity, at minimum will restore 20 AR.
 
 #### ULT 4
-[SS] When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
+[SS] When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate SO.
 
 #### ULT 5
 **New: When casting the three ults, trigger 3s time fracture. (v3)**
