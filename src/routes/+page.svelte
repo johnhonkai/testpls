@@ -16,12 +16,7 @@
 
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { faCopy } from '@fortawesome/free-solid-svg-icons';
-  import Fa from 'svelte-fa';
 
-  function copyToClipboard(code: string) {
-    navigator.clipboard.writeText(code);
-  }
   // IDs of images to wait for
   const imageIds = ['bannerpic', 'news1', 'news2', 'news3', 'content1' , 'content2'];
 
@@ -234,38 +229,23 @@
         </div>
       </div>
   
-<!-- Active Codes -->
-<div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
-  <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
-    <img src="/images/crystal.png" alt="Codes Icon" class="w-6 h-6" />
-    <h2 class="text-lg font-semibold text-white tracking-tight">ACTIVE CODES</h2>
-  </div>
-
-  <div class="text-sm text-slate-300 space-y-4">
-    {#each [
-      { code: 'CCAZRD01', reward: '60 crystals' },
-      { code: 'CHOWANDCHEW', reward: 'Materials' }
-    ] as entry}
-      <div class="flex items-center justify-between gap-2">
-        <div>
-          <span class="font-bold text-white">{entry.code}</span>
-          
-                  <button
-          class="tooltip tooltip-right ml-2 top-3 text-slate-300 hover:text-white transition cursor-pointer"
-          data-tip="Copy Code"
-          on:click={() => copyToClipboard(entry.code)}
-        >
-          <Fa icon={faCopy} class="w-4 h-4" />
-        </button>
-
-          <br />
-          {entry.reward}
+      <!-- Active Codes -->
+      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+          <img src="/images/crystal.png" alt="Codes Icon" class="w-6 h-6" />
+          <h2 class="text-lg font-semibold text-white tracking-tight">ACTIVE CODES</h2>
         </div>
-
+        <div class="text-sm text-slate-300 space-y-4">
+          <div>
+            <span class="font-bold text-white">CCAZRD01</span><br />
+            60 crystals
+          </div>
+          <div>
+            <span class="font-bold text-white">CHOWANDCHEW</span><br />
+            Materials
+          </div>
+        </div>
       </div>
-    {/each}
-  </div>
-</div>
   
     </div>
   </div>
