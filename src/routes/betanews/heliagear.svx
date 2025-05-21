@@ -87,5 +87,5 @@ Ult and Combo ATK gain Total DMG +15%. Planar Armament equip bonus:
 -  **~~Enemies take 22% more Total DMG.~~ (V3)**
 -  When Heavenly Grail is activated:
     - Characters with [Raise the Banner] gain Elemental DMG +20%, Physical DMG +12%, Total DMG +15%.
-    - Enemies take 10% more Total DMG from characters with [Raise the Banner]. If you are the leader (not leader? not sure) TDM Taken **+11% (V3) > 25% (V3C)** more, **and Physical DMG +20% (V3C)**
+    - Enemies take 10% more Total DMG from characters with [Raise the Banner]. If you are the leader (not leader? not sure) TDM Taken **+11% (V3) > 25% (V3C)** more, **and characters with [Raise the Banner] gain Physical DMG +20% (V3C)**
     - During SO: Enemies take 12% more Total DMGfrom characters with [Raise the Banner] **and Mutual Regen tag (v3)**, these chars also gain Physical and Elemental DMG +12%.
