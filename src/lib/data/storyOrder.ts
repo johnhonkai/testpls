@@ -57,7 +57,7 @@ export const storyOrder = [
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3.webp',
         title: 'P2 Ch 3: A Crime Foretold',
         youtubeLink: 'https://youtu.be/example2',
-        inGame: false,
+        inGame: true,
         type: 'main',
         version: '7.5'
       },
