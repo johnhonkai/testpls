@@ -234,5 +234,14 @@ export const storyOrder = [
         type: 'main',
         version: '8.2',
       },
+            {
+        image: 'https://i.imgur.com/b47XPPH.jpeg',
+        title: "Fly! Space Ranger!",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'side',
+        version: '8.2',
+        canon: false,
+      },
 ];
   
