@@ -1700,8 +1700,8 @@ export const teamData = {
           type: 'lineup',
           lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
           rank: '15',
-          pct: '1%',
-          bottext: "Highest Score: 9S 888"
+          pct: '2%',
+          bottext: "Highest Score: SS 951, 9S 888"
         },
         {
           type: 'lineup',
@@ -1723,13 +1723,6 @@ export const teamData = {
           rank: '35',
           pct: '4%',
           bottext: "Highest Score: S2 881"
-        },
-                        {
-          type: 'lineup',
-          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
-          rank: '95',
-          pct: '1%',
-          bottext: "Highest Score: SS 951"
         },
       ]},
       {

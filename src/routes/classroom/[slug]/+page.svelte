@@ -225,7 +225,7 @@
          prose-h3:text-gray-300 prose-h3:font-semibold prose-h3:text-lg sm:prose-h3:text-xl 
          prose-li:marker:text-teal-400 prose-a:text-sky-400 hover:prose-a:underline
 
-         prose-li:text-sm sm:prose-li:text-base 
+         prose-li:text-sm sm:prose-li:text-base  prose-ul:pb-3
 
 		     prose-p:text-sm sm:prose-p:text-base 
 
