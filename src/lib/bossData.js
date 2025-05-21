@@ -2311,6 +2311,8 @@ export const teamData = {
       },
     ],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=XqmJjwPJG4k', abyss: 'Nirvana 539D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=DLMAp9s4IVM', abyss: 'Nirvana 539D', uploader: 'schz' },
       { url: 'https://www.youtube.com/watch?v=H7qx5qk0-X0', abyss: 'Nirvana 539D', uploader: 'TockyTommy' },
       { url: 'https://www.youtube.com/watch?v=iSNZDuTlVDM', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' }
 
@@ -2715,5 +2717,33 @@ export const teamData = {
       }
     ],
   },
+
+  'bleed-tribunal': {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.2",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/Theresa Schicksal's Imperative.png", "/images/valkportrait/Griseo Cosmic Expression.png","images/valkportrait/elf_kiana.png"],
+            rank: '1+',
+            pct: '98%',
+            bottext: "Highest score: S2 741, SS 764, SSS 787"
+          },
+                    {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/Bronya Herrscher of Truth.png", "/images/valkportrait/Griseo Cosmic Expression.png","images/valkportrait/elf_kiana.png"],
+            rank: '99',
+            pct: '2%',
+            bottext: "Highest score: 732"
+          },
+        ]
+      }
+    ],
+  },
 }
+
+
 
