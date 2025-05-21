@@ -1,5 +1,13 @@
 // src/lib/data/storyOrder.ts
 export const storyOrder = [
+      {
+      image: 'https://i.imgur.com/qBo8X1K.png',
+      title: 'Honkai Impact Part 2 First Look',
+      youtubeLink: 'https://youtu.be/example1',
+      inGame: false,
+      type: 'main', // 'main' for main story, 'event' for events
+      version: '7.3'
+    },
     {
       image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch1.webp',
       title: 'P2 Ch 1: Hundred Years of Solitary Shadow',
@@ -66,7 +74,7 @@ export const storyOrder = [
         title: 'Non-stop Stage Clears Carnival',
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
-        type: 'event',
+        type: 'side',
         version: '7.5',
         description: "This event is not part of the current samsara. It might be possible in other samsaras.",
         canon:false,
@@ -105,6 +113,15 @@ export const storyOrder = [
         type: 'main',
         version: '7.7',
       },
+            {
+        image: 'https://i.imgur.com/cYUqdTg.jpeg',
+        title: "Investigation? Theresa's Great Adventure!",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'side',
+        version: '7.7',
+        canon: false,
+      },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch4-2.webp',
         title: "P2 Ch 5: The First and Last War",
@@ -112,6 +129,15 @@ export const storyOrder = [
         inGame: true,
         type: 'main',
         version: '7.8',
+      },
+      {
+        image: 'https://i.imgur.com/EI5YgrY.jpeg',
+        title: "Construction? Imagination? Simulation Battles!",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'side',
+        version: '7.8',
+        canon: false,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event8.webp',
@@ -139,6 +165,15 @@ export const storyOrder = [
         type: 'main',
         version: '7.9',
       },
+            {
+        image: 'https://i.imgur.com/yJZzEWk.png',
+        title: "Excavate? Pursuit? Big Winner!",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'side',
+        version: '7.9',
+        canon: false,
+      },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7.webp',
         title: "P2 Ch 7: Bouquets of Unfulfilled Wishes",
@@ -146,6 +181,15 @@ export const storyOrder = [
         inGame: true,
         type: 'main',
         version: '8.0',
+      },
+      {
+        image: 'https://i.imgur.com/IZoaodE.jpeg',
+        title: "Clean-up Masters on Duty",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'side',
+        version: '8.0',
+        canon: false,
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event10.webp',

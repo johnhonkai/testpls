@@ -20,14 +20,18 @@
 import { faEyeSlash , faEye } from '@fortawesome/free-solid-svg-icons';
 
   let filter = 'all'; // Default filter to show all
-  $: filteredStories = storyOrder.filter((story) => {
-    if (filter === 'all') return true;
-    return story.type === filter;
-  });
+  
+$: filteredStories = storyOrder.filter((story) => {
+  if (filter === 'all') return true;
+  if (filter === 'main') return story.type === 'main';
+  if (filter === 'main-event') return story.type === 'event';
+  if (filter === 'side-event') return story.type === 'side';
+  return false;
+});
 
-  function selectFilter(selected: 'all' | 'main' | 'event') {
-    filter = selected;
-  }
+function selectFilter(selected: 'all' | 'main' | 'main-event' | 'side-event') {
+  filter = selected;
+}
 
   // Generate a YouTube search URL based on the story title
   function generateYouTubeSearchUrl(title: string): string {
@@ -80,7 +84,7 @@ function toggleView() {
 
 </div>
 
-<section class="max-w-[1600px] mx-auto px-4 mb-25">
+<section class="max-w-[1600px] mx-auto px-4 mb-40">
 
   <!-- Filter Buttons -->
   <div class="flex justify-center gap-3 mb-5 ">
@@ -101,12 +105,20 @@ function toggleView() {
       Main Chapters
     </button>
     <button
-      on:click={() => selectFilter('event')}
+      on:click={() => selectFilter('main-event')}
       class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
              bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
              data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'event'}>
-      Events
+      data-active={filter === 'main-event'}>
+      Main Events
+    </button>
+        <button
+      on:click={() => selectFilter('side-event')}
+      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
+             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
+             data-[active=true]:bg-white data-[active=true]:text-black"
+      data-active={filter === 'side-event'}>
+      Side Events
     </button>
   </div>
 
@@ -145,14 +157,22 @@ function toggleView() {
             <span
               class="inline-block rounded-full px-2 py-0.5 bg-blue-600 text-white"
               class:bg-teal-800={story.type === 'main'}
-              class:bg-cyan-800={story.type === 'event'}>
-              {story.type === 'main' ? 'Main Chapter' : 'Event'}
+              class:bg-cyan-800={story.type === 'event'}
+              >
+
+{#if story.type === 'main'}
+  Main Chapter
+{:else if story.type === 'event'}
+  Main Event
+{:else if story.type === 'side'}
+  Side Event
+{/if}
             </span>
-            {#if story.type === 'event'}
-              <span class="inline-block rounded-full px-2 py-0.5 bg-yellow-500 text-black">
-                {story.canon ? 'Canon' : 'Not Canon'}
-              </span>
-            {/if}
+{#if story.type === 'event' || story.type === 'side'}
+  <span class="inline-block rounded-full px-2 py-0.5 bg-yellow-500 text-black">
+    {story.canon ? 'Canon' : 'Not Canon'}
+  </span>
+{/if}
           </div>
         
           <!-- Top Right Version Badge -->
@@ -207,11 +227,11 @@ function toggleView() {
             <td class="px-4 py-2 ">{index + 1}</td>
             <td class="px-4 py-2 ">{story.title}</td>
             <td class="px-4 py-2 text-center">v{story.version}</td>
-            <td class="px-4 py-2 text-center">
-              {#if story.type === 'event'}
-              {story.canon ? 'Yes' : 'No'}
-              {/if}
-            </td>
+<td class="px-4 py-2 text-center">
+  {#if story.type === 'event' || story.type === 'side'}
+    {story.canon ? 'Yes' : 'No'}
+  {/if}
+</td>
             <td class="px-4 py-2 text-center">{story.inGame ? 'Yes' : 'No'}</td>
             <td class="px-4 py-2 ">
               <a
