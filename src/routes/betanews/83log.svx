@@ -34,7 +34,7 @@ EX ABYSS
 
 When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG
 - V3: +12% (S) / 18% (S3) / 24% (SS3) 
-- V3B: **+10% (S) / 18% (S) / 26% (SS3)** 
+- V3B: **+10% (S) / 18% (S3) / 26% (SS3)** 
 
 Gain Total DMG +XX% against enemies hit by Ult.
 - V3: +10% (S) / 15% (S1) / 20% (SS) 

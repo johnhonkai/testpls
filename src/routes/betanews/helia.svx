@@ -27,7 +27,7 @@ image: "/images/valkportrait/New Helia.png"
 
 ### LEADER 
 Activates AR Heavenly Grail. SO cost: 175, SO Duration: 30s, CD: 27s.
-- When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG ~~+12% (S) / 18% (S3) / 24% (SS3)~~ **+10% (S) / 18% (S) / 26% (SS3) [v3B]**
+- When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG ~~+12% (S) / 18% (S3) / 24% (SS3)~~ **+10% (S) / 18% (S3) / 26% (SS3) [v3B]**
 - When there are 2 characters with Mutual Regen tag: During SO, Planar Armament Max SP **+630 (v2) > 200 (v3)**
 - When there are 3 characters with Mutual Regen tag: **During SO, Planar Armament Max SP +430. (v3)** Enemies take 16% (S) / 18% (S3) / 20% (SS3) more Lightning DMG from Planar Armament (independent).
 
