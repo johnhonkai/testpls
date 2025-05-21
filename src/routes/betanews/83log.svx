@@ -15,6 +15,33 @@ image: "/images/valkportrait/New Helia.png"
 
 ---
 
+### V3C
+
+PAWS
+- When you consume sp to use Ult, recover HP.
+
+PAWS STIGMA
+- Top: Lightning DMG +30% (v3) > **40% (V3C)**
+- 2PC: Lightning DMG +35% (v3) > **37%(V3C)**
+- 3PC: Enemies take 10% more Total DMG from characters with [Raise the Banner]. If you are not the leader (leader? not the leader?), TDM Taken +11% (V3) > **25% (V3C)** more, and **Physical DMG +20% (V3C)**.
+
+EX ABYSS
+- Adjusted HP of new bosses [Pavarti] and [Frost Emperor], [Saha assaka] 
+
+---
+
+### V3B
+
+When there is 1 character with Mutual Regen tag: Planar Armament Lightning DMG
+- V3: +12% (S) / 18% (S3) / 24% (SS3) 
+- V3B: **+10% (S) / 18% (S) / 26% (SS3)** 
+
+Gain Total DMG +XX% against enemies hit by Ult.
+- V3: +10% (S) / 15% (S1) / 20% (SS) 
+- V3B: **+10% (S) / 16% (S1) / 25% (SS)**
+
+---
+
 ### V3
 
 #### Battlesuit
