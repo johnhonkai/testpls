@@ -1,0 +1,62 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.3 Elysian Realm v3
+version: '8.3'
+sortOrder: '5'
+image: "/images/valkportrait/New Helia.png"
+---
+
+### LINKS
+
+- [8.3 Patch Note](/betanews/83log)
+- [New Helia Skills](/betanews/helia)
+- [New Helia Equipment](/betanews/heliagear)
+- [New AR Skills](/betanews/83newskill)
+- [Elysian Realm](/betanews/83er)
+
+---
+
+### Stage Buffs
+
+- When you get a FC signet for the first time, you also get a 'weapon assistant' for the corresponding FC signet group, max 13 different weapon types. Enemies take 6% less Total DMG, after each floor, the tdm effect increased by 1.8%, up to 37% (independent multiplier)
+- Enemies gain 30% Total DMG resistance (independent multiplier). When valk deals 500 Lightning, Fire or Physical DMG, this effect is disabled for 3s, can be refreshed.
+- F15 is changed to time mode. For every enemy you defeat, you gain 5 points. When battle ends, you can exchange the points for random rewards (signets, coins, etc)
+- Phase 1: When AR is activated: Valk Total DMG +24%
+- Phase 2: When you use Ult or Combo ATK, Physical or Elemental DMG +25% for 12s, can be refreshed.
+- Phase 1: Deliverance and Helix +2
+- Phase 2: Gold and Reverie +2
+
+---
+
+### Load Buffs
+- 0: F17 boss is replaced with Parvati
+- 5: 'Weapon assistant' gain Physical and Elemental DMG +100%, Total DMG +125%, enemies take 80% more Total DMG from 'Weapon assistant', but every other damage is reduced by 95%.
+- 5: Valk Total DMG +15%. Upon taking dmg, this effect is disabled for 5s, can be refreshed.
+- 10: After triggering evasion skill, valk Physical and Elemental DMG +15%, lasts for 8s, can be refreshed.
+- 10: When an enemy takes dmg from weapon skill, they take 10% more Total DMG for 5s, can be refreshed.
+- 15: When you deal Ult DMG or Melee DMG, valk Total DMG +30% for 5s, can be refreshed.
+- 15: Valk with rapidshot crossbow, javelin, gauntlet, pistol gain Physical Breach +40%, Elemental Breach +20%.
+
+---
+
+### Planar Armament
+
+#### Battlesuit Changes
+- Activates AR Heavenly Grail
+- Max SP +50. Gain full AR at the start of battle. Combo ATK and Ult restore 900 HP.
+
+#### Signet 1
+During AR Charging: Ult Total DMG +40%. Weapon skill has no cd, restore 25 sp, and greatly increase character's action speed for a short time. After using weapon skill, the next ult cost reduced to 50 points, and only Ult 1 will be casted.
+
+#### Signet 2
+During AR Charging: Weapon and Ult Total DMG +40%. Casting Ult grants Combo ATK Total DMG +50%, max 5 stacks, stacks are cleared after use Combo ATK.
+
+#### Signet 3
+During SO: Attacks have afterimages. Basic ATK speed is increased, and Basic ATK Total DMG +20%. 
+Final hit restore 30 sp. Pressing ATK button quickly in a short time can consume 100 sp to use Ult 2. When SO ends, gain full AR, SO CD reduced to 1.5s.
+
+#### Signet 4
+During SO: Finisher Ult Total DMG +150%, final hit restore 20 extra sp.
+
+#### Signet 5
+After consuming sp, Total DMG +50% for 15s, can be refreshed.
