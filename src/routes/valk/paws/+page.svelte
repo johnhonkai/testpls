@@ -885,7 +885,7 @@ async function increaseLike() {
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst.</li>
           <li>Spam Basic ATK. You will auto-cast Ult if you have enough sp.</li>
-          <li>At 3 Burnigh Light stack, use Combo ATK, then Finisher Ult.</li>
+          <li>At 3 Burning Light stack, use Combo ATK, then Finisher Ult.</li>
           <li>Use Ult once while you wait SO to be available again.</li>
           <li>Repeat.</li>
         </ol>

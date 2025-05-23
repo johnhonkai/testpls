@@ -209,7 +209,7 @@ S2:
 S3: Lead
 
 SS: 
-- UNLOCK: When you are the leader, during AR Charging: When AR is full, Helia next ult sp cost is reduced to 0, only applies once every full AR charge. Effect ends when you activate or end SO.
+- UNLOCK: When you are the leader, during AR Charging: When AR is full, Helia ult will no longer cost sp, only applies once every full AR charge. Effect ends when you activate or end SO.
 - Gain Total DMG +15% (S1) / 20% (SS) against enemies hit by Ult. 
 - During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) more Lightning DMG.
 
