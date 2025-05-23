@@ -731,7 +731,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Jun 20" weather="Type" bosspage="/boss?typesprout" />
                 <BossCard />
                 </div>
                  

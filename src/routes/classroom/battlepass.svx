@@ -23,7 +23,7 @@ HI3 Battle Pass rewards are very different from Honkai Star Rail and Genshin Imp
 ---
 
 ## BP Tiers
-There are three tiers - <span class="text-teal-300">Vanguard</span> (Free), <span class="text-orange-300">Knight</span> (~5 USD), and <span class="text-red-300">Paladin</span> (~20 USD). 
+There are three tiers - <span class="text-teal-300">Vanguard</span> (Free), <span class="text-orange-300">Knight</span> (~10 USD), and <span class="text-red-300">Paladin</span> (~20 USD). 
 
 
 <div class="flex items-center justify-center text-orange-300 ">
