@@ -131,6 +131,6 @@ Only get the stamps, don't get her equipment. She uses a different set for Part 
 
 ---
 
-#### 3. Save
+#### 4. Save
 
 Everything else in the Reserve Works shop is outdated. Save your crystallum for BP Works Shop item, or wait for a better item that might get added to the Reserve Works shop in the future.
