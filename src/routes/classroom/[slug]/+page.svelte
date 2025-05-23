@@ -223,6 +223,11 @@
          prose-h2:text-lg sm:prose-h2:text-xl  
 
          prose-h3:text-gray-300 prose-h3:font-semibold prose-h3:text-lg sm:prose-h3:text-xl 
+
+         		   prose-h4:mt-8 sm:prose-h4:text-lg 
+
+
+
          prose-li:marker:text-teal-400 prose-a:text-sky-400 hover:prose-a:underline
 
          prose-li:text-sm sm:prose-li:text-base  prose-ul:pb-3
@@ -231,6 +236,21 @@
 
          "
 >
+
+  <style>
+	.prose h3::before {
+    content: '';
+    display: inline-block;
+    height: 1.25rem;        /* h-5 */
+    width: 0.25rem;         /* w-1 */
+    background-color: #14b8a6; /* Tailwind bg-blue-500 */
+    margin-right: 0.5rem;   /* mr-2 */
+    position: relative;
+    top: 0.2rem;           /* adjusts vertical alignment */
+  }
+  
+  </style>
+
   {#if data.title !== 'Welcome'}
     <h1>{data.title}</h1>
     <div class="text-sm text-slate-400 italic ml-0.5 mb-4  tracking-wide ">Updated for Version {data.update}</div>
