@@ -13,6 +13,7 @@ image: "/images/valkportrait/New Helia.png"
 - [New Helia Skills](/betanews/helia)
 - [New Helia Equipment](/betanews/heliagear)
 - [New AR Skills](/betanews/83newskill)
+- [Elysian Realm](/betanews/83er)
 
 
 ---
