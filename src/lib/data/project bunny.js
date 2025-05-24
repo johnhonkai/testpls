@@ -43,7 +43,7 @@ export const valkbuffs = [
     },
 
     {
-            rank: "SS",
+            rank: "S",
             description: "For every Physical DMG dealer on the team, team Physical DMG +1.5%. Current buff: Physical DMG +{value1}%.",
             available_by_default: "no",
             condition: { element: "Physical" },
