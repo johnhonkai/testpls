@@ -2431,8 +2431,8 @@ export const teamData = {
       }
     ],
     videos: [
-       { url: 'https://www.youtube.com/watch?v=/ftPtbTiOhA4', abyss: 'RedLotus 496D', uploader: 'Sheepless Ram' },
-       { url: 'https://www.youtube.com/watch?v=/CSf9Zy_2meA', abyss: 'Nirvana 540D', uploader: 'beltbelt' },     
+       { url: 'https://www.youtube.com/watch?v=ftPtbTiOhA4', abyss: 'RedLotus 496D', uploader: 'Sheepless Ram' },
+       { url: 'https://www.youtube.com/watch?v=CSf9Zy_2meA', abyss: 'Nirvana 540D', uploader: 'beltbelt' },     
       { url: 'https://www.youtube.com/watch?v=c9kokHaKrnc', abyss: 'RedLotus 504D', uploader: 'Marisa Honkai' },
       { url: 'https://youtu.be/MmdTMpuwkTw', abyss: 'Nirvana 536D', uploader: 'Haxxor' }
 
