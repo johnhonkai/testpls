@@ -243,5 +243,22 @@ export const storyOrder = [
         version: '8.2',
         canon: false,
       },
+            {
+        image: 'https://i.imgur.com/fpXM64Z.png',
+        title: "Bon Voyage! Towards Blessings and Wishes!",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'event',
+        version: '8.3',
+        canon: true,
+      },
+            {
+        image: 'https://i.imgur.com/5wNq6b0.png',
+        title: "P2 Ch 9: If Destiny Concludes Today",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'main',
+        version: '8.3',
+      },      
 ];
   
