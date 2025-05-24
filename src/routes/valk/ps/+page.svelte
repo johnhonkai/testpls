@@ -894,6 +894,21 @@ async function increaseLike() {
         </ol>
   
   
+                  <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/7aORrboXSKU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
       {/if}
 
 
@@ -944,20 +959,21 @@ async function increaseLike() {
             <p class="text-lg font-semibold">1</p>
           </div>
 
-          <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold ">1</p>
+                              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+            <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <p class="text-lg font-semibold">2</p>
           </div>
-
+          
           <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
             <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             <p class="text-lg font-semibold">1</p>
           </div>
 
           <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-            <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            <p class="text-lg font-semibold">2</p>
+            <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <p class="text-lg font-semibold ">1</p>
           </div>
+
 
           <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
             <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -1023,8 +1039,8 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Light_as_a_Bodhi_Leaf.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Empty_like_Shala.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Forget-Me-Not.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Stained_Sakura.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
         </div>
@@ -1050,6 +1066,23 @@ async function increaseLike() {
           <li>Repeat.</li>
           <li>Optional: You can use Ultimate to finish off a wave.</li>
         </ol>
+
+          
+                  <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/NLfBIDfW9oM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
       {/if}
 
 
@@ -1343,14 +1376,14 @@ async function increaseLike() {
   <div class="bg-gray-800 p-4 rounded-lg shadow-md">
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Peregrine Sword DPS</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">PS DPS vs Flux Lantern</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/hMuf_UM-HZg"
+          src="https://www.youtube.com/embed/DSzhuERbxJQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1363,7 +1396,32 @@ async function increaseLike() {
 
 
 </div>
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
 
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Peregrine Sword Support</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">PS Support for Ba-dum!</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/wIOYFVArkYs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    
+
+    </div>
 
   {/if}
   
