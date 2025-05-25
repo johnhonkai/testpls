@@ -339,6 +339,12 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
+        
+    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.2 (24 Apr 2025)
+        </p>
+        </div>
 
     <div>
         <!-- Roles Section -->
@@ -354,27 +360,27 @@ function selectTabMobile(event) {
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
 
-        <p class="text-sm sm:text-base mt-4 mb-4">
-          <strong class="text-amber-400">New Players on Sushang</strong> <br/> Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so yes, go ahead and farm Sushang.
+        <p class="text-sm sm:text-base mt-4 mb-7">
+          <strong class="text-amber-400">New Players on Sushang</strong> <br/> You get Jade Knight for free from starter event. As for her fragments in War Treasury, not a priority. It's better to unlock other battlesuits first for Elysian Realm first-clear crystal rewards.
       </p>
 
-          <strong class="text-amber-400 ">New Players on Sushang's Equipment</strong>
+          <strong class="text-amber-400 mb-8">New Players on Sushang's Equipment</strong>
           <ul class="list-disc ml-6 text-sm sm:text-base">
               <li class="mt-2"> Sushang has a decent farmable option: Nebulous Duality glove and G3 Turgenev, but will take a couple of months to forge.</li>
-              <li class="mt-2">Her signature equipment can only be obtained from gacha. Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Sushang's gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.</li>
+              <li class="mt-2">Her signature equipment can only be obtained from Battle Pass. Not worth it to get.</li>
   
           </ul>
 
-        <p class="text-sm sm:text-base mt-4">
-            <strong class="text-amber-400">Competitive</strong> <br/> She is still the best support for Part 1 ice teams.
+        <p class="text-sm sm:text-base mt-6">
+            <strong class="text-amber-400">Competitive</strong> <br/> She is still the best support for Part 1 ice team, but Part 1 ice teams are not used anymore.
         </p>
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Jade Knight:</strong> War Treasury</li>
-            <li ><strong>Jade Knight Equipment:</strong> Focused Supply</li>
+            <li ><strong>Jade Knight:</strong> Starter Event, War Treasury</li>
+            <li ><strong>Jade Knight Equipment:</strong> Battle Pass</li>
 
         </ul>
         <div class="divider  "></div>

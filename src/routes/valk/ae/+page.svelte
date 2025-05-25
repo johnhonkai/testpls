@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Seele - Starchasm Nyx </title> 
-    <meta property="og:title" content="Seele - Starchasm Nyx" />
-    <meta property="og:description" content="Starchasm Nyx Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/nyx" />
+    <title>Fu Hua - Azure Empyrea</title> 
+    <meta property="og:title" content="Fu Hua - Azure Empyrea" />
+    <meta property="og:description" content="Azure Empyrea Guide, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/S00fcVZ.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/ae" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -33,6 +33,7 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import Ice3support from "$lib/components/lineup/ice3support.svelte";
 	import P1lightningdps from "$lib/components/lineup/p1lightningdps.svelte";
 	import P1fire from "$lib/components/lineup/p1fire.svelte";
+	import Horbdps from "$lib/components/lineup/horbdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -48,12 +49,12 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
+  //{ name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
-  // { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
-  { name: 'Rank Up', short: 'rank' },
+   { name: 'Gameplay Examples', short: 'example' },
+  //{ name: 'Elysian Realm', short: 'er' },
+  //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
   //{ name: 'Translation Error', short: 'translation' },
@@ -149,8 +150,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["nyx"] || 0; // Get initial likes from JSON
-  const charName = "nyx"; // Route name for this character
+  let fovlikes = likesData["ae"] || 0; // Get initial likes from JSON
+  const charName = "ae"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -206,9 +207,9 @@ function selectTabMobile(event) {
 
 
 <div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_sparkle.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+    <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
   
   
@@ -216,7 +217,7 @@ function selectTabMobile(event) {
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/nyx.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-40;"/> 
+    <img src="/images/valkfull/ae.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-51;"/> 
   
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
@@ -245,11 +246,12 @@ function selectTabMobile(event) {
   <div class="flex flex-col items-center text-center justify-start">
     <!-- Battlesuit Name -->
   
-    <div>
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Starchasm Nyx</h1>
+    <div >
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Azure Empyrea</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Seele Vollerei | Release Date: v4.8 (27 May 2021)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Fu Hua | Release Date: v3.7 (13 Feb 2020)  </p>
+
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
@@ -257,13 +259,28 @@ function selectTabMobile(event) {
       <div class="flex flex-col items-center">
         <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-xs">
           <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconQUA.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+          <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
+          <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
   
         </div>
-      </div>
 
-  
+
+      </div>
+            <!-- Support For Container (Centered) -->
+    <div class="flex flex-col mt-4 items-center">
+
+      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-xs">
+        <div class="flex flex-wrap justify-center">
+          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
+        </div >
+        <div class="flex flex-row gap-2 flex-wrap justify-center">
+          <img src="/images/artype/p1ice.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/p1lightning.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+          <img src="/images/artype/p1fire.png" alt="Support 1" class="w-auto h-8 md:h-10" />
+
+        </div>
+      </div>
+    </div>
     </div> <!-- End common wrapper -->
   </div>
   </section>
@@ -334,43 +351,22 @@ function selectTabMobile(event) {
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
-        <p class="mt-2 text-sm sm:text-base">
-            <strong class="text-amber-400">Outdated Part 1 Ice DPS</strong> <br/>
-            - An Ice DPS that heavily relies on Burst Mode to deal damage.
-            <br/>
-            - Has enemy link mechanic like Mobius, where she can share a portion of damage dealt to other enemies.
-        </p>
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400">Outdated Part 1 Elemental Support</strong>
+          <br/>
+          Azure Empyrea (AE) was the first support that provides Elemental Breach for other valkyries (reduces a portion of enemy's Elemental resistance).
+          
+      </p>
+
+
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
-
-
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400 ">New Players on Starchasm Nyx</strong>
-      </p>
+          <strong class="text-amber-400 ">War Treasury</strong>
+          <br/> It is better to get other valkyries that can be used in Elysian Realm mode first for the first-clear crystal rewards.
 
-      <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so no, not recommended to farm Starchasm Nyx first. </li>
-          <li class="mt-2"> You can consider unlocking Starchasm Nyx in the future for Elysian Ream first-clear crystal rewards.</li>
-
-      </ul>
-
-      <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on Starchasm Nyx Equipment</strong>
-        <br/>
-    </p>
-
-    <ul class="list-disc ml-6 text-sm sm:text-base">
-
-        <li class="mt-2"> G4 Willows stigma is farmable in Foundry, but will take a couple of months.</li>
-        <li class="mt-2">        Her signature weapon Sanguine Gaze can only be obtained from gacha. Not recommended to use your crystal to get it. If Sanguine Gaze is available through other means, such as spending event or Battle Pass, you can consider getting it that way.
-        </li>
-
-    </ul>
-
-      <p class="text-sm sm:text-base mt-4">
-          <strong class="text-amber-400">Competitive</strong> <br/> No top scores.
       </p>
 
 
@@ -378,9 +374,10 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Starchasm Nyx:</strong> War Treasury, Dorm Supply.</li>
-            <li ><strong>G3 Verne:</strong> Foundry.</li>
-            <li ><strong>Sanguine Gaze:</strong> Focused Supply.</li>
+          <li ><strong>Azure Empyrea:</strong> Dorm Supply, War Treasury, Battle Pass.</li>
+            <li ><strong>Cosmic Duality:</strong> Exchange Shop, Battle Pass.</li>
+            <li ><strong>Fu Hua Margrave: </strong> Exchange Shop, Battle Pass.</li>
+
         </ul>
 
     </div>
@@ -393,7 +390,10 @@ function selectTabMobile(event) {
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
 
-    <P1ice></P1ice>
+
+  
+    <P1fire></P1fire>
+
 
 </section>
 
@@ -412,113 +412,28 @@ function selectTabMobile(event) {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/72350798/77dbe170306159dfe11d6ff0a26cdd4e_1755260399481649022.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/72350798/49af15ff2079750b65d08e8c3f1b45c7_7494978688822983090.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/16/73514954/b02175f93ad78513650a4ed0c91a78fe_3129276870079388835.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-      
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/16/73514954/5ebd22783dd8277405d3080a56ffff5f_2946944908690835308.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-      
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/16/73514954/dbfa16e57fa55bcec2c6875d9b4cae9f_7652830857628424293.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/30/50494840/3c6878aa3f8374ec3c83c6fd10b0bd9a_863407068952870580.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/30/50494840/15dea92b7fb5cd87ad6627875a266385_9916730472908248.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/30/50494840/5945dff0282af271e16e57c7ad15a4ae_7519164841930847555.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+              </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Sanguine Gaze + Verne set </h4>
+              <h4 class="text-base sm:text-base text-white"> Cosmic Duality + Fu Hua Margrave </h4>
               </div>
 
 
 
            </div>
-
-           <div>
-
-
-
-            <div class="p-4 mt-4 bg-linear-to-r from-red-950/75 to-red-900/75 rounded-sm">
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>Sanguine Gaze</b><br/> Big damage buffs. Weapon skill gives one meter stack. Enables a special weapon skill during Burst Mode.
-              </p>
-            
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>G3 Verne</b><br/> - Best set for Nyx. <br/>
-                - Bottom has 20% ATK Speed. You can really notice the difference in the speed.
-                - 3PC has sp regen, important for Nyx since she depends on Burst Mode to deal damage.
-              </p>
-
-              <p class="text-sm sm:text-base text-left">
-                <b>Affix</b> <br/>Full ATK.
-              </p>
-            </div>
-
-
-            </div>
-
-            <div class="divider  "></div>
-
-<h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> OTHER STIGMA OPTIONS </h2>
-
-
-<div class="flex flex-col justify-center items-center">
-                  
-  <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-    <div class="w-20 h-20 sm:w-28 sm:h-28">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/4ebb3b5717d38d2145588b85b706c800_6470234861718683631.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
-
-    </div>
-
-
-    <div class="w-20 h-20 sm:w-28 sm:h-28">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/08774ee8871f24d2a2f9bfca84818a55_2070324058174202393.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
-    </div>
-
-    
-    <div class="w-20 h-20 sm:w-28 sm:h-28">
-      <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/09/16/50494840/2839f23b32369fd802b918ed1caac92d_783370248046786155.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
-  </div>
-
-  </div>  
-  <h4 class="text-base sm:text-base text-white"> G4 Willows set</h4>
-  </div>
-  <div class="p-4 mt-4 bg-linear-to-r from-blue-950/75 to-blue-900/75 rounded-sm">
-    <p class="text-sm sm:text-base text-left">
-      Willows is around 12% weaker than Verne.
-    </p>
-  
-  </div>
-
-<div class="divider  "></div>
-
-
-      <div class="flex flex-col justify-center items-center">
-          
-      <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-        <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/15dd7c43648a1e05c6a5ba3e20b53111_6941433118228814288.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-      </div>
-
-      <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/348560f2e0aacf2bf2386e8661db02ef_4729076017926979824.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-      </div>
-
-      <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/67f871a34323228f0ac5e3988073216d_8906121590255459443.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-      </div>
-
-
-      </div>  
-
-      <h4 class="text-base sm:text-base text-white"> G3 Ana</h4>
-    </div>
-  
-
 
       {/if}
 
@@ -526,11 +441,14 @@ function selectTabMobile(event) {
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
+      <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-0 md:mb-2 text-center sm:text-left text-amber-400">Warning: Old Valk</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+        This is a very old A-rank valkyrie with weak ER signets. Please play at a lower difficulty.
+      </p>
+      <div class="divider  "></div>
 
 
-
-
-        <h2 class="text-xl font-semibold mb-4 mt-8  text-left text-white cooltext">EGO SIGNETS</h2>
+        <h2 class="text-xl font-semibold mb-4 mt-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
         <div class="flex flex-col justify-center items-start ">
 
@@ -546,32 +464,31 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Frigidity + Abyssal Gaze</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Toxic Bath </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Battle Song </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Gambit</p>
 
             </div>
           </div>
         </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+            You can complete the run with just one Ego signet (Glory). Gambit is extra damage.
+          </p>
+        </div>
 
-
-
+        
 
           
           <div class="divider  "></div>
-          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext"> GENERAL SIGNETS</h2>
 
           
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-            <!-- First Signet with 'Start' text -->
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">2</p>
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -579,11 +496,11 @@ function selectTabMobile(event) {
               <p class="text-lg font-semibold">2</p>
             </div>
 
-
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
+
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -593,7 +510,9 @@ function selectTabMobile(event) {
           </div>
           <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
-               You want to get sp regen from Deliverance signet as early as you can to continuously use Burst Mode.
+              <b>Decimation 1:</b> Your HP will be very low. Get Vicissitude 2 for survivability. <br/>
+              <b>Gold:</b> You want sp regen to keep using Ultimate.<br/>
+
             </p>
           </div>
 
@@ -604,15 +523,15 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -620,44 +539,48 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
             
           </div>
-
+          <div class="mt-3 rounded-sm" >
+            <p class="text-sm sm:text-base text-left">
+              You can swap Lightning Empress to Azure Empyrea once you have enough sp regen.
+            </p>
+          </div>
 
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           
-
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-              <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+              <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <img src="/images/sigils/It_Will_Be_Written.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
-              <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+              <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                  <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
+
 
           </div>
 
@@ -665,23 +588,14 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
-          <h2 class="text-md font-semibold  mt-3  text-left text-white ">With Sanguine Gaze Equipped</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press weapon ➔ ATK ➔ spam ATK until full meter ➔ Charged ATK. Repeat this until you have enough sp to activate Burst Mode. </li>
-            <li>Press Ult to activate Burst Mode.</li>
-            <li>Hold ATK to start Charged ATK sequence ➔ Spam ATK to continue the attack. Press weapon skill whenever it's available. If the sequence is broken because you are out of stacks, spam ATK until full stack, then restart the Charged ATK sequence.</li>
-            <li>When Burst Mode duration is almost over (the Seele icon above HP bar), press Ult to use finisher attack.</li>
-
-          </ol>
-
-          <h2 class="text-md font-semibold  mt-3  text-left text-white ">With Other Scythe Equipped</h2>
-
-          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Spam ATK until full meter ➔ Charged ATK. Repeat this until you have enough sp to activate Burst Mode. </li>
-            <li>Press Ult to activate Burst Mode.</li>
-            <li>Hold ATK to start Charged ATK sequence ➔ Spam ATK to continue the attack. If the sequence is broken because you are out of stacks, spam ATK until full stack, then restart the Charged ATK sequence.</li>
-            <li>When Burst Mode duration is almost over (the Seele icon above HP bar), press Ult to use finisher attack.</li>
+            <li>Use Lightning Empress support ➔ Use Ultimate </li>
+            <li>Charged ATK ➔ Weapon. Repeat this until Ult buff duration ends. (there's no indicator, but you will know Ult buff is over when your Charged ATK activates sprint). </li>
+            <li>Note that you cannot use weapon skill (throw) on enemies with Iron Body. So, in this case, use Charged ATK ➔ spam Basic ATK until full meter, and repeat.</li>
+            <li>After ult buff ends, use Charged ATK (sprint) and spam Basic ATK to gain meter, until you have enough sp to use Ultimate.</li>
+            <li>Repeat.</li>
+            <li>If you can trigger evasion skill, spam [Evade ➔ Press ATK once] until evasion buff duration ends. (purple icon above hp bar)</li>
 
           </ol>
 
@@ -692,7 +606,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/olTWj0iDdqM"
+                src="https://www.youtube.com/embed/VWCylOtLvDQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -701,18 +615,14 @@ function selectTabMobile(event) {
             </iframe>
         </div>
 
+
       {/if}
 
       {#if selectedTab === 'Rank Up'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
 
-      <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded-sm m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
-        </p>
-      </div>
-
         <!-- Full Rank Up List -->
-        <div class="text-slate-100 text-left ">
+        <div class="text-slate-100 text-left mt-8 ">
           <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
           <table class="table table-zebra w-full bg-gray-800 rounded-lg shadow-md text-base">
             <thead class="bg-gray-700">
@@ -727,7 +637,7 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  Nyx gains Total DMG +6.4% ➔ 8.2%, Charged ASTK Total DMG +20% ➔ 26%
+                  Enemies take 16% ➔ 20% more Fire DMG from DA (independent multiplier).
                 </td>
                 <td class="p-3">DPS</td>
               </tr>
@@ -735,16 +645,16 @@ function selectTabMobile(event) {
               <tr>
                 <td>S2</td>
                 <td>
-                 UNLOCK: Basic ATK seq 5 deal 360% ATK of Ice DMG and restore 1 Carmine Gash.
+                  UNLOCK: On standby, restore 1.5 sp per second.
 
                 </td>
-                <td>DPS</td>
+                <td>SP Regen</td>
               </tr>
 
               <tr>
                 <td>S3</td>
                 <td>
-                  Leader Skill: Team Ice DMG +27%. With Bronya on the team, Charged ATK Total DMG +32%.
+                  Leader Skill:  Team Ult ATK Total DMG +18% ➔ 21%. With 3 valks with Fire tag in the team, Fire DMG +21% ➔ 25.5%.
                 </td>
                 <td>DPS</td>
 
@@ -752,14 +662,15 @@ function selectTabMobile(event) {
               <tr>
                 <td>SS</td>
                 <td>
-                  UNLOCK: Basic ATK seq 4 gain Ice DMG +70%. Each hit restores 1 bonus sp.
+                  - UNLOCK: Astral Flare EX deal additional 320% ATK of Fire DMG.
+                  <br/> - UNLOCK: Astral Flare EX and Voidstar Anchor EX gain Fire DMG +25%
                 </td>
-                <td> DPS <br/> SP Regen</td>
+                <td> DPS </td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  Nyx gains Total DMG +8.2% ➔ 10%, Charged ASTK Total DMG +26% ➔ 32%.
+                  Enemies take 20% ➔ 24% more Fire DMG from DA (independent multiplier).
 
                 </td>
                                   
@@ -769,23 +680,23 @@ function selectTabMobile(event) {
               <tr>
                 <td>SS2</td>
                 <td>
-                  For every 45 Ice DMG hits taken by enemies within Nightmare Stage, they take 180% ➔ 300% ATK of Ice DMG.
+                  UNLOCK: Seiriois Ballista Total DMG +50%.
                 </td>
                 <td> DPS</td>
               </tr>
               <tr>
                 <td>SS3</td>
                 <td>
-                  Leader Skill: Team Ice DMG +27% ➔ 30%. With Bronya on the team, Charged ATK Total DMG +32% ➔ 35%.
+                  Leader Skill:  Team Ult ATK Total DMG +21% ➔ 24%. With 3 valks with Fire tag in the team, Fire DMG +25.5% ➔ 30%.
                 </td>
                 <td>DPS </td>
               </tr>
               <tr>
                 <td>SSS</td>
                 <td>
-                  UNLOCK: During Burst Mode, Charged ATK deal additional 2x20% ATK of Ice DMG.
+                  UNLOCK: Seiriois Ballista restore 10 sp, and sp cost cap raised to 42.
                 </td>
-                <td> DPS</td>
+                <td> DPS <br/> SP Regen</td>
               </tr>
             </tbody>
           </table>
@@ -828,16 +739,15 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Herrscher of Human DPS</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Azure Empyrea - Fire Support</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoH vs Hellmaru Red Lotus</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/a5o8kocAi1s"
+                src="https://www.youtube.com/embed/29Y8qMgNHGE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -847,6 +757,29 @@ function selectTabMobile(event) {
       </div>
 
     </div>
+
+      
+    <div class=" gap-6 mt-5 mb-10">
+
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Azure Empyrea - Ice Support</h2>
+
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/eMBXkfAneG8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+  </div>
 
 
   {/if}

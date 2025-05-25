@@ -68,7 +68,14 @@ This is where you pull AstralOp. What is AstralOp? Well it's basically like Bang
 When a valkyrie is over 8 patches old, that valkyrie might be available in these special supplies:
 
 ### Ascension Supply
+
+
 A special version of Battlesuit Supply, where you can immediately get SS-rank valk if you do 90 pulls.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/k8PkfXz.jpeg" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
 - Cost per pull: 280 crystal, or one Ascension Supply Card.
 - Every 10 pulls guarantee an A-rank or S-rank valk.
 - Featured S-rank is guaranteed within 90 pulls / 25,200 crystals. 
@@ -76,6 +83,11 @@ A special version of Battlesuit Supply, where you can immediately get SS-rank va
 - Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banner.
 
 ### Armament Ascension Supply
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/r8Lzsbm.jpeg" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
 A special version of Equipment Supply, where you can get up to 18 Equipment Supply cards.
 - Cost per pull: 280 crystal, or one Equipment Supply Card.
 - Every 10 pulls guarantee weapon or one of the stigma pieces.

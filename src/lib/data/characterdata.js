@@ -85,4 +85,9 @@
   { name: "Starlit Astrologos", image: '/images/valkportrait/Theresa Starlit Astrologos.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sa', verdebut: 4.0,  id:49},
   { name: "Bright Knight: Excelsis", image: '/images/valkportrait/Durandal Bright Knight.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/bk', verdebut: 3.9, verdlc: 4.7, id:50},
   { name: "Valkyrie Gloria", image: '/images/valkportrait/Durandal Valkyrie Gloria.png', type: 'Qua', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/vg', verdebut: 3.8,  id:51},
+  { name: "Azure Empyrea", image: '/images/valkportrait/Fu Hua Azure Empyrea.png', type: 'Psy', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/ae', verdebut: 3.7,  id:52},
+  { name: "Darkbolt Jonin", image: '/images/valkportrait/Sakura Darkbolt Jonin.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/dj', verdebut: 3.6,  id:53},
+  { name: "Stygian Nymph", image: '/images/valkportrait/Seele Stygian Nymph.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sn', verdebut: 3.5,  id:54},
+  { name: "Hawk of the Fog", image: '/images/valkportrait/Fu Hua Hawk of the Fog.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hotf', verdebut: 3.5,  id:55},
+
 ];

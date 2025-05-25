@@ -353,7 +353,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Helical Contraption:</strong> Battlesuit Supply</li>
+            <li ><strong>Helical Contraption:</strong> Battle Pass</li>
             <li ><strong>Helical Contraption Equipment:</strong> Focused Supply</li>
 
         </ul>
