@@ -33,7 +33,7 @@ image: "/images/valkportrait/New Helia.png"
 #### ACTIVE
 The weapon active cd, charge, and effects are based on the wielder. If wielder has Mutual Regen tag, Lightning DMG +30%. Planar Armament equip bonus: 
 - When you are the leader, after you cast Combo ATK, on the next Stellar Outburst, initial sp is increased by 10% of max sp.
-- Upon casting Ult Finisher, trigger 1.5s time stop.
+- Upon casting Ult 3, trigger 1.5s time stop.
 
 #### PASSIVE 1
 Total DMG **+35% (v2) > 20% (v3).** Planar Armament equip bonus: 
