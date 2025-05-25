@@ -192,17 +192,19 @@
         <div class="text-sm text-slate-300 space-y-4">
           <div>
             <div class="text-amber-400 font-semibold">REGIONAL SERVERS</div>
-            <p>
-              - {regionalServerInfo}<br />
-              - v8.3 update is on June 26
-            </p>
+
+            <ul class="list-disc pl-5 text-sm text-slate-300 ">
+              <li>{regionalServerInfo}</li>
+              <li>v8.3 update is on June 26</li>
+            </ul>
           </div>
           <div>
             <div class="text-teal-400 font-semibold">CN SERVER</div>
-            <p>
-              - {cnServerInfo}<br />
-              - v8.3 update is on May 29
-            </p>
+
+            <ul class="list-disc pl-5 text-sm text-slate-300 ">
+              <li>{cnServerInfo}</li>
+              <li>v8.3 update is on May 29</li>
+            </ul>            
           </div>
         </div>
       </div>
