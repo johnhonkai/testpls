@@ -18,6 +18,7 @@
   import { onMount } from 'svelte';
   import { faCopy } from '@fortawesome/free-solid-svg-icons';
   import Fa from 'svelte-fa';
+  import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
   function copyToClipboard(code: string) {
     navigator.clipboard.writeText(code);
@@ -115,7 +116,19 @@
     return diffInWeeks + 1;
 }
 
+  // Abyss difficulty selection
+  let difficulty = 'Agony 3';
 
+  // Base values (Agony 3)
+  const baseF2P = 20145;
+  const baseMonthly = 25305;
+  const baseBP = 27305;
+
+  // Adjusted values
+  $: bonus = difficulty === 'Red Lotus' ? 1280 : difficulty === 'Nirvana' ? 1600 : 0;
+  $: f2p = baseF2P + bonus;
+  $: monthly = baseMonthly + bonus;
+  $: bp = baseBP + bonus;
 </script>
 
 
@@ -212,28 +225,72 @@
       </div>
   
       <!-- Crystal Income -->
-      <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
-        <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
-          <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.3 CRYSTAL INCOME</h2>
-        </div>
-        <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>F2P: 20,145</li>
-          <li>Monthly: 25,305</li>
-          <li>Monthly+BP: 27,305</li>
-          <li>5 Equipment Card + 50% off the first 10 pull of PAWS</li>
-          <li>Plus 1 Battlesuit Card + 1 Equipment Card from top-up event</li>
-        </ul>
-        <p class="text-xs text-slate-400 mt-3">Note: Calculation uses Agony 3 income</p>
-        <div class="flex justify-center mt-4">
-          <a href="https://www.miyoushe.com/bh3/article/64685650">
-            <button class="text-sm font-medium rounded-md px-4 py-1.5 bg-blue-500 text-white hover:bg-blue-600 transition cursor-pointer">
-              Source
-            </button>
-          </a>
-        </div>
-      </div>
+<div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
+  <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
+    <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
+    <h2 class="text-lg font-semibold text-white tracking-tight">8.3 CRYSTAL INCOME</h2>
+  </div>
+
+
+  <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+    <li>F2P: {f2p.toLocaleString()}</li>
+    <li>Monthly: {monthly.toLocaleString()}</li>
+    <li>Monthly+BP: {bp.toLocaleString()}</li>
+    <li>5 Equipment Card + 50% off the first 10 pull of PAWS</li>
+    <li>Plus 1 Battlesuit Card + 1 Equipment Card from top-up event</li>
+  </ul>
+
   
+
+  <!-- Difficulty Switcher -->
+<div class="flex gap-2 mt-4 mb-2 justify-center items-center flex-wrap">
+  <button
+    class="px-3 py-1 text-xs sm:text-sm rounded-md border font-medium transition cursor-pointer
+           border-gray-600 text-white hover:bg-gray-700
+           data-[active=true]:bg-white data-[active=true]:text-black"
+    data-active={difficulty === 'Agony 3'}
+    on:click={() => difficulty = 'Agony 3'}
+  >
+    Agony 3
+  </button>
+
+  <button
+    class="px-3 py-1 text-xs sm:text-sm rounded-md border font-medium transition cursor-pointer
+           border-gray-600 text-white hover:bg-gray-700
+           data-[active=true]:bg-white data-[active=true]:text-black"
+    data-active={difficulty === 'Red Lotus'}
+    on:click={() => difficulty = 'Red Lotus'}
+  >
+    Red Lotus
+  </button>
+
+  <div class="flex items-center gap-1">
+    <button
+      class="px-3 py-1 text-xs sm:text-sm rounded-md border font-medium transition cursor-pointer
+             border-gray-600 text-white hover:bg-gray-700
+             data-[active=true]:bg-white data-[active=true]:text-black"
+      data-active={difficulty === 'Nirvana'}
+      on:click={() => difficulty = 'Nirvana'}
+    >
+      Nirvana
+    </button>
+
+    <!-- Always-visible info icon -->
+    <a 
+      href="https://www.miyoushe.com/bh3/article/64685650"
+      target="_blank"
+      class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
+      data-tip="Go to source"
+      aria-label="Source"
+    >
+       <Fa icon={faCircleInfo} size="lg" />
+    </a>
+  </div>
+</div>
+
+
+</div>
+
 <!-- Active Codes -->
 <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
   <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
