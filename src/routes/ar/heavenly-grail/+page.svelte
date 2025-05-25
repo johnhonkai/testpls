@@ -18,12 +18,12 @@
     let { data }: { data: PageData } = $props();
 
   const dps = [
-    { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" , type: "Bio" , element: "Lightning" },
+    { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
 
   ];
 
   const support = [
-    { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" , type: "Bio" , element: "Lightning" },
+    { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
     { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
     { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
@@ -50,7 +50,7 @@
 
     Paralyze: [
 
-      { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" },
+      { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
     ],
 
     Ignite: [],
@@ -150,7 +150,7 @@ async function captureStats() {
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Info for characters in Heavenly Grail teams.
+      Overview for Heavenly Grail teams.
 
 
     </p>
@@ -194,7 +194,7 @@ async function captureStats() {
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Info for characters in Heavenly Grail teams.
+      Overview for Heavenly Grail teams.
 
 
     </p>
@@ -211,7 +211,7 @@ async function captureStats() {
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
       <strong class="text-white">Heavenly Grail</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ultimate (first Ult after QTE).
+      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE during SO).
     </span>
   </p>
 </section>

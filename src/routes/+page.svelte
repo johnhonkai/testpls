@@ -198,16 +198,15 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.3 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.4 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: Apr 24</li>
-          <li>Beta v1 (Private): Apr 25</li>
-          <li>Dev Video: May 8</li>
-          <li>Beta v2: May 9</li>
-          <li>Beta v3: May 16</li>
-          <li>Beta v4?: May 23</li>
-          <li>Dev Livestream: May 24</li>
+          <li>Valk Teaser & Reveal: Jun 26-27</li>
+          <li>Beta v1 (Private): Jun 27</li>
+          <li>Dev Video: Jul 3</li>
+          <li>Beta v2: Jul 4</li>
+          <li>Beta v3: Jul 11</li>
+          <li>Dev Livestream: Jul 19</li>
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>
@@ -216,17 +215,18 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.2 CRYSTAL INCOME</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.3 CRYSTAL INCOME</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>F2P: 22,210</li>
-          <li>Monthly: 28,590</li>
-          <li>Monthly+BP: 30,590</li>
-          <li>5 Equipment Card + 50% off the first 10 pull of Peregrine Sword</li>
+          <li>F2P: 20,145</li>
+          <li>Monthly: 25,305</li>
+          <li>Monthly+BP: 27,305</li>
+          <li>5 Equipment Card + 50% off the first 10 pull of PAWS</li>
+          <li>Plus 1 Battlesuit Card + 1 Equipment Card from top-up event</li>
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Calculation uses Agony 3 income</p>
         <div class="flex justify-center mt-4">
-          <a href="https://www.miyoushe.com/bh3/article/62801524">
+          <a href="https://www.miyoushe.com/bh3/article/64685650">
             <button class="text-sm font-medium rounded-md px-4 py-1.5 bg-blue-500 text-white hover:bg-blue-600 transition cursor-pointer">
               Source
             </button>
@@ -248,8 +248,13 @@
     ] as entry}
       <div class="flex items-center justify-between gap-2">
         <div>
-          <span class="font-bold text-white">{entry.code}</span>
-          
+        <button
+          class="font-bold text-white hover:underline focus:outline-none cursor-pointer tooltip tooltip-right"
+          on:click={() => copyToClipboard(entry.code)}
+          data-tip="Copy Code"
+        >
+          {entry.code}
+        </button>          
                   <button
           class="tooltip tooltip-right ml-2 top-0.5  text-slate-300 hover:text-white transition cursor-pointer"
           data-tip="Copy Code"

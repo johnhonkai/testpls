@@ -3,22 +3,22 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
         { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '97%', },
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '96%', utility: 'Shield',},
 
     ];
 
     const asopchar = [
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '#2' , speed: 'Faster'  },
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '#1',  speed: 'Slower'  },
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '#2' , speed: 'Faster'  },
         { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',  }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Badum'; // default to 'Vita'
+    export let firstCharName: string = 'PS'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -35,7 +35,7 @@
 
         <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/New Helia.png" alt="badum" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/paws.png" alt="badum" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 
