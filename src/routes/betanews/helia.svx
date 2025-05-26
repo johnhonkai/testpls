@@ -50,7 +50,7 @@ New Helia is protected by AR Heavenly Grail. During SO activation, deal 400% ATK
 When AR Heavenly Grail is activated:
 - During SO: All team members share sp. Max sp is equal to the sum of every member's max sp, and initial sp is equal to 50% of max sp. **The max sp that can be consumed by non-leader team member's Ult is equal to 100% of their max sp before SO is activated. (v3)**
 - During SO: Max SP +200.
-When you are the leader, you gain 100% sp consumed by yourself (not affected by sp reduction effect). When Shimmering Trace reaches 900 points, the trace is reset and Evolution Method is triggered.
+When you are the leader, you gain Shimmering Trace equal to 100% of sp consumed by yourself (not affected by sp reduction effect). When Shimmering Trace reaches 900 points, the trace is reset and Evolution Method is triggered.
 When the team has triggered Evolution Method twice, Combo ATK and Finisher Ult is enhanced, deal additional **600% / 1000% (v2) > 500% / 1250% (v3)** ATK of Lightning DMG.
 - When SO ends, team members no longer share sp bar, Shimmering Trace is cleared, and restore sp to the value before SO began.
 - When you are the leader:
