@@ -1,4 +1,28 @@
 export const usageByVersion = {
+
+    '8.2': [
+    { name: 'Peregrine Sword', DPS: 400, SUP: 186 },
+    { name: 'Lone Planetfarer', DPS: 100, SUP: 961 },
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 285 , SUP: 636 },
+    { name: 'Jovial Deception: Shadowdimmer', DPS: 38, SUP: 265 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 100, SUP: 236 },
+    { name: 'Lone Destruction: Shadowchaser', DPS: 100, SUP: 70 },
+    { name: 'Reign Solaris', DPS: 162, SUP: 117 },
+    { name: 'Deepspace Anchor: First Light', DPS: 15, SUP: 143 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 156, SUP: 51 },   
+    { name: 'Herrscher of Finality', DPS: 100, SUP: 135 },
+    { name: 'Herrscher of Human: Ego', DPS: 100, SUP: 100 }, 
+    { name: "Schicksal's Imperative", DPS: 44, SUP: 98 },
+    { name: 'Herrscher of Rebirth', DPS: 100, SUP: 0 },
+    { name: 'Herrscher of Sentience', DPS: 0, SUP: 100 },
+    { name: 'Lunar Vow: Crimson Love', DPS: 100, SUP: 0 },
+    { name: 'Cosmic Expression', DPS: 0, SUP: 100 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 102 },
+    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 100  },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 100 },
+
+  ],
+
   '8.1': [
     { name: 'Ba-dum! Fiery Wishing Star', DPS: 397, SUP: 259 },
     { name: 'Reign Solaris', DPS: 283, SUP: 403 },

@@ -19,7 +19,7 @@
 	import Fa from 'svelte-fa';
   import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
-  let selectedVersion = '8.1';
+  let selectedVersion = '8.2';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
