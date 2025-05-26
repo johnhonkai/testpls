@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="World Star"/>
     <meta property="og:description" content="Info for characters in World Star teams." />
-    <meta property="og:image" content="https://i.imgur.com/J2Jd0hl.png" />
+    <meta property="og:image" content="https://i.imgur.com/3jvoLah.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/world-star" />
     <meta property="og:type" content="website" />
 
@@ -74,6 +74,8 @@
     ],
 
     Paralyze: [
+        {  name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" },
+
         { name:  "Helia", image: "/images/valkportrait/Helia Valkyrie Boltstorm.png" },
 
     ],

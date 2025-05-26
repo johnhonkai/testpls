@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Wheel of Destiny characters"/>
     <meta property="og:description" content="Info for characters in Wheel of Destiny teams." />
-    <meta property="og:image" content="https://i.imgur.com/gUwuGDl.png" />
+    <meta property="og:image" content="https://i.imgur.com/6rsfd6b.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/wheel-of-destiny" />
     <meta property="og:type" content="website" />
 
@@ -66,7 +66,10 @@
             { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
     ],
 
-    Paralyze: [],
+    Paralyze: [
+              {  name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" },
+
+    ],
 
     Ignite: [],
 
