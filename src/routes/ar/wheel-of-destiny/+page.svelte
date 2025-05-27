@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Wheel of Destiny characters"/>
     <meta property="og:description" content="Info for characters in Wheel of Destiny teams." />
-    <meta property="og:image" content="https://i.imgur.com/6rsfd6b.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/lzFSeSF.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/wheel-of-destiny" />
     <meta property="og:type" content="website" />
 
@@ -20,7 +20,7 @@
   const dps = [
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
     { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
-        { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
+    { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
 
     { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" , type: "Mech" , element: "Ice"},
 
@@ -40,7 +40,7 @@
   const utilities = {
     "Breach State": [
         { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
+        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png"  },
     ],
 
     "AR Regen": [
@@ -50,7 +50,9 @@
     ],
 
     "Zero Field Time": [
-        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena has zero on-field time." },
+        { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png" , details: "Sena can stay in the back the entire fight." },
+        { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" , details: "SIMP only has to Ult, then she can stay in the back."  },
+
     ],
 
         Shieldbreak: [
