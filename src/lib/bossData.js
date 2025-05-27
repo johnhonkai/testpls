@@ -1066,7 +1066,12 @@ export const teamData = {
         pct: '1%',
         bottext: 'Highest score: SSS 809'
       },
-    ]},]
+    ]},],
+    videos: [
+      { url: 'https://www.bilibili.com/video/BV163LyzmEKk/', abyss: 'RedLotus 504D', uploader: '执念微阳' },
+      { url: 'https://www.youtube.com/watch?v=cRMEKU4dM0A', abyss: 'Nirvana 539D', uploader: 'schz' },
+
+    ] 
   },
   starbenares: {
     teamDataSets: [

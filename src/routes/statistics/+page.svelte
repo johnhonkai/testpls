@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Version Statistics"/>
     <meta property="og:description" content="Character usage stats in a version." />
-    <meta property="og:image" content="https://i.imgur.com/VhbgV38.png" />
+    <meta property="og:image" content="https://i.imgur.com/k2TyBh4.png" />
     <meta property="og:url" content="https://marisaimpact.com/statistics" />
     <meta property="og:type" content="website" />
 

@@ -764,11 +764,11 @@
                 <BossCard image="/images/Bosses/Husk - Existentialism.webp" date="Jun 23" weather="IMG" bosspage="/boss?imgflower" />
                 </div>
                  
-                <div class="flex col-span-3 justify-center gap-1 ml-2">
-                    <BossCard />
-                    <BossCard />
-                    <BossCard />
-                </div>
+                    <div class="flex col-span-3 justify-center gap-1 ml-2">
+                        <BossCard image="/images/Bosses/Vita.png" date="Jun 24"  />
+                        <BossCard image="/images/Bosses/Twins.png"  />
+                        <BossCard image="/images/Bosses/Shadow Knight (SK).webp"  />
+                    </div>
 
             </div>
         </div>
