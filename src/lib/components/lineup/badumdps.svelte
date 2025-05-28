@@ -5,11 +5,12 @@
     const mainCharacters = [
 
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '100%', utility: 'Shield',  speed: '' },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '98%', utility: 'Hit', },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '96%', utility: 'CD',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '96%', utility: 'SD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '100%',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '97%', utility: 'Hit', },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '95%', utility: 'CD',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', utility: 'SD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '92%', utility: 'Bow',  speed: '' },
 
     ];
 
@@ -20,7 +21,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'PS'; // default to 'Vita'
+    export let firstCharName: string = 'Vita'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -84,17 +85,25 @@
 
         
             <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
-                Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.
+                Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time. 
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
 
                  - Utility: Trigger SD critical point, gathers sd remnant. 
                  <br/>
-                 - JD support is used against Stardust bosses - Guaymas and Sa in v8.1.
+                 - JD support is used against Stardust bosses - Guaymas and Sa.
                  <br/>
             </p>     
             
+            <p class="text-sm sm:text-base mb-4"><b>Paragrine Sword</b><br/>
+
+                 - Utility: Bleed
+                 <br/>
+                 - Used against SD Alien Guard to counter creepers with Bleed trauma.
+                 <br/>
+            </p>    
+
             <p class="text-sm sm:text-base mb-4"><b>Reign Solaris</b><br/>
                 - Utility: Shieldbreak.
                 <br/>

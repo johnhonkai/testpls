@@ -211,7 +211,7 @@ async function captureStats() {
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
       <strong class="text-white">Heavenly Grail</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE during SO).
+      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE).
     </span>
   </p>
 </section>

@@ -3,27 +3,27 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
-
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%',  speed: '' },
-        { name: 'BW', image: '/images/valkportrait/kiana badum.png', teampct: 'Mobs',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: 'Bow',  speed: '' },
+        { name: 'BW', image: '/images/valkportrait/kiana badum.png', teampct: '100%',  speed: '' },    
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '97%',   },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '96%',   },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '95%',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '92%',  speed: '' },
 
     ];
 
     const asopchar = [
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '119%' , speed: 'BETA' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '97%', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '92%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' }
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' , speed: '' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '84%', speed: '' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '82%', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '77%', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '76%', speed: '' }
 
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Sparkle'; // default to 'Vita'
+    export let firstCharName: string = 'JD'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -78,11 +78,11 @@
         </summary>
         <div class="py-3 px-4">
 
-                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. For general use cases, Vita, Sparkle and Jovial Deception are the best. Vita only starts beating other supports at really high rank (SS+) , but Vita is still a great option.</p>
+                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. For general use cases, JD, Sparkle, Badum, RS are great options.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
-                    Provides Ult cd reduction and sp regen. More ult = more damage! She also has short on-field time.</p>
+                    Provides Ult cd reduction and sp regen. More ult = more damage. She also has short on-field time.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
-                     - Counters SD enemies (trigger sd critical point, gathers sd remnant). In v8.0, there will be a new Abyss stage with SD boss.
+                     - Counters SD enemies (trigger sd critical point, gathers sd remnant).
                      <br/>
                      - In Physical weather Abyss, JD will also get buffed by weather effect.
                 </p>          
@@ -92,7 +92,9 @@
                     - In Physical weather Abyss, Vita herself deals less damage since weather effect reduces Lightning DMG.
                 </p>          
 
-                <p class="text-sm sm:text-base mb-4"><b>Badum Kiana</b><br/> - Provides team-wide damage share against mobs.
+                <p class="text-sm sm:text-base mb-4"><b>Badum Kiana</b>
+                     <br/> - Has one of the biggest buffs.               
+                    <br/> - Provides team-wide damage share against mobs.
                     <br/>
                     - Badum support is used against Physical HoD Minion in v8.1.
                 </p>   

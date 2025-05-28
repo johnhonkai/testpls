@@ -7,6 +7,7 @@
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  utility: 'Mobs',  speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '98%',  speed: '' },    
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', utility: 'SD',  speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '97%', utility: 'CD',  speed: '' },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
@@ -16,8 +17,8 @@
 
     const asopchar = [
         { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' , speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png',  teampct: '92%' ,speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',   teampct: '91%' ,speed: '' }
+        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png',  teampct: '91%' ,speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',   teampct: '90%' ,speed: '' }
     ];
 
     // Pass the index or name of the first character to the reusable component

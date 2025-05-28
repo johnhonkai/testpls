@@ -39,7 +39,7 @@ There are three tiers - <span class="text-teal-300">Vanguard</span> (Free), <spa
 ### Some notable rewards for the paid tier
 - Knight / Paladin BP unlocks the ability to purchase S-rank character and equipment from 1-2 years ago.
 - Knight / Paladin BP gives fragments for the featured S-rank. Knight 10 frags, Paladin 10+20 = 30 frags.
-- Paladin BP gives a Wafer Stabilizer and Dataflow, used to fine-tune your stigma affix stats. This is useful for competitive players.
+- Paladin BP gives Wafer Stabilizer and Dataflow, used to fine-tune stigma affix stats. This is useful for competitive players.
 - Cosmetic: Knight BP gives an outfit / outfit box, Paladin BP gives a ribbon.
 
 
