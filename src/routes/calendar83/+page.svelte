@@ -90,7 +90,7 @@
         },
         "OutfitRerun": {
             title: "Outfit Rerun Event",
-            image: "https://i.imgur.com/5fU9brD.png"
+            image: "https://i.imgur.com/anYIaO6.jpeg"
         },
     };
 
