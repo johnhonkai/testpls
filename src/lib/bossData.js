@@ -1244,7 +1244,11 @@ export const teamData = {
       }
     ]},
   
-  ]
+  ],
+      videos: [
+      { url: 'https://www.bilibili.com/video/BV1ZTVNzFEmd/', abyss: 'Sparkle - RedLotus 505D', uploader: '就是爱吃柚子i' },
+      { url: 'https://www.bilibili.com/video/BV1wLVVzoEzF?', abyss: 'SIMP - RedLotus 515D', uploader: '怂憨天使布狼牙' },
+    ] 
   },
   ignitehov: {
     teamDataSets: [
