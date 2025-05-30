@@ -94,13 +94,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2025-4-27'); // Start date Regional Servers
-      const cnStartDate = new Date('2025-3-29');       // Start date CN Servers
+      const cnStartDate = new Date('2025-5-30');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v8.2 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.2 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.3 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
@@ -195,7 +195,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v8.3 update is on June 26</li>
+              <li>v8.3 update is on 26 June </li>
             </ul>
           </div>
           <div>
@@ -203,7 +203,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
-              <li>v8.3 update is on May 29</li>
+              <li>v8.4 update is on 25 July</li>
             </ul>            
           </div>
         </div>
@@ -216,12 +216,12 @@
           <h2 class="text-lg font-semibold text-white tracking-tight">8.4 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: Jun 26-27</li>
-          <li>Beta v1 (Private): Jun 27</li>
-          <li>Dev Video: Jul 3</li>
-          <li>Beta v2: Jul 4</li>
-          <li>Beta v3: Jul 11</li>
-          <li>Dev Livestream: Jul 19</li>
+          <li>Valk Teaser & Reveal: 26-27 Jun </li>
+          <li>Beta v1 (Private): 27 Jun </li>
+          <li>Dev Video: 3 July </li>
+          <li>Beta v2: 4 July </li>
+          <li>Beta v3: 11 July </li>
+          <li>Dev Livestream: 19 July </li>
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>
