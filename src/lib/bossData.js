@@ -3,7 +3,7 @@ export const weatherList = {
   lightning: [
     {id: 'lightningsprout',name: 'Sprout of Wishing'},
     {id: 'lightningguaymas',name: 'Meteoroid: Guaymas'},
-
+    {id: 'husk-hitcount',name: 'Husk (Hit ver)'},
   ],
   fire: [
     {id: 'firemobius', name: 'Mobius'},
@@ -154,6 +154,14 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
+  },
+  'husk-hitcount': {
+    name: 'Husk (Hitcount ver)', 
+    mechanics: 'After around 1.5 HP bar, Husk will kneel, during this time, Husk takes more damage. Final phase has high hitcount HP.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Husk - Nihilus (Hitcount).webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
   typekasumi: {
@@ -2763,6 +2771,47 @@ export const teamData = {
             pct: '2%',
             bottext: "Highest score: 732"
           },
+        ]
+      }
+    ],
+  },
+
+    'husk-hitcount': {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '1,3,4',
+            pct: '55%',
+            bottext: "Top Score: S 815, S2 824, 6S 829, 9S 871"
+
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png",  "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png","images/valkportrait/asop_teri.png"],
+            rank: '2,5-10',
+            pct: '40%',
+            bottext: "Top Score: S2 826, 6S 852, 9S 867"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+            rank: '84',
+            pct: '3%',
+            bottext: "Top Score: S 808"
+          },   
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/asop_songque.png"],
+            rank: '97',
+            pct: '2%',
+            bottext: "Top Score: S2 800"
+          },                    
         ]
       }
     ],
