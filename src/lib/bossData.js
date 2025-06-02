@@ -498,7 +498,7 @@ export const bossData = {
 
   firetank: {
     name: 'MHT-3C Retaliator', 
-    mechanics: 'This is a different fire tank, no transition phase.', 
+    mechanics: 'This is a different fire tank, no transition phase. Has a weakspot. Use an archer character to hit the weakspot to apply a huge debuff. Weakspot and debuff are reset when Phase 2 starts.', 
     weakness: 'Ice (L), Lightning (L)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
