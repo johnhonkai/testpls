@@ -372,9 +372,9 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard/>
-                    <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Husk - Nihilus (Hitcount).webp" date="Jun 27" weather="Lightning" bosspage="/boss?husk-hitcount" />
+                <BossCard image="/images/Bosses/Herrscher of Sentience.webp" date="Jun 30" weather="Bleed" bosspage="/boss?bleedhos" />
+                </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
                         <BossCard />
