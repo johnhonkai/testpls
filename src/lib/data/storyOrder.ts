@@ -546,6 +546,7 @@ export const storyP1= [
       type: 'main',
       version: '3.0'
     },   
+   
     {
       image: 'https://i.imgur.com/udt72IL.png',
       title: "Dreams of Gemina",
@@ -569,6 +570,20 @@ export const storyP1= [
       type: 'captainverse',
       version: '3.1',
     },   
+     {
+      image: 'https://i.imgur.com/MQi9Jls.png',
+      title: "Seele's Quantum Diary",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.1',
+    },    
+     {
+      image: 'https://i.imgur.com/DprFIe4.png',
+      title: "Armada Imaginary Maze",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.2',
+    },        
     {
       image: 'https://i.imgur.com/uDVt5bm.png',
       title: "P1 Ch11: Deep End of the Sea",
@@ -686,15 +701,7 @@ export const storyP1= [
       type: 'animation',
       version: '3.6',
       link: 'https://www.youtube.com/watch?v=gVHD6ieRmTI'
-    },      
-    {
-      image: 'https://img.youtube.com/vi/ROXUApi5mg8/hqdefault.jpg',
-      title: "When Sparks Converge",
-      inGame: true,
-      type: 'event',
-      version: '3.6',
-      link: 'https://www.youtube.com/watch?v=ROXUApi5mg8'
-    },      
+    },       
     {
       image: 'https://i.imgur.com/J9bQDhq.png',
       title: 'Empyrean Legends',
@@ -998,6 +1005,15 @@ export const storyP1= [
       version: '4.9',
       link: 'https://www.youtube.com/watch?v=U9e3MFZI3zE'
     },  
+    
+    {
+      image: 'https://img.youtube.com/vi/ROXUApi5mg8/hqdefault.jpg',
+      title: "When Sparks Converge",
+      inGame: true,
+      type: 'event',
+      version: '4.9',
+      link: 'https://www.youtube.com/watch?v=ROXUApi5mg8'
+    },     
     {
       image: 'https://i.imgur.com/RB0TCBX.png',
       title: "Estival Seaside Amusement Park",
