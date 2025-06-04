@@ -1,9 +1,9 @@
 <svelte:head>
-<title>Story Order</title> 
+<title>Part 1 Story Order</title> 
 
 <meta property="og:title" content="Honkai Impact Story Order" />
-<meta property="og:description" content="Story order for Part 2 Chapters and Events" />
-<meta property="og:image" content="https://i.imgur.com/VZplzDF.png" />
+<meta property="og:description" content="Story order for Part 1 Chapters and Events" />
+<meta property="og:image" content="https://i.imgur.com/MllzCSG.png" />
 <meta property="og:url" content="https://marisaimpact.com/story" />
 <meta property="og:type" content="website" />
 

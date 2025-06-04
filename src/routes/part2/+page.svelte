@@ -1,5 +1,5 @@
 <svelte:head>
-<title>Story Order</title> 
+<title>Part 2 Story Order</title> 
 
 <meta property="og:title" content="Honkai Impact Story Order" />
 <meta property="og:description" content="Story order for Part 2 Chapters and Events" />
