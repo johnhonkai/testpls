@@ -796,7 +796,7 @@ export const storyP1= [
       image: 'https://i.imgur.com/c4TlRak.png',
       title: "Theater of Thunder",
       inGame: false,
-      type: 'captainverse',
+      type: 'event',
       version: '4.0',
     },    
     {

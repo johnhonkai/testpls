@@ -1104,7 +1104,7 @@ async function increaseLike() {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
-              <li>S2: More Bleed DMG. </li>
+              <li>S1, S2: More Bleed DMG. </li>
               <li>All ranks have damage upgrades.</li>
             </ul>
           </div>

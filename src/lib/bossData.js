@@ -1494,6 +1494,19 @@ export const teamData = {
   bleedhos: {
     teamDataSets: [
       {
+        tabname: "v8.3 CN",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 50 Only, Myriad ??? D. ",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+          rank: '1+',
+          pct: '100%',
+          bottext: "Highest Score: S 797, S2 802, 6S 830, 9S 841 "
+
+        }
+      ]},      
+      {
         tabname: "v8.2 CN",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 50 Only, Myriad ??? D. ",
       entries: [

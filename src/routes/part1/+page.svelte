@@ -315,7 +315,9 @@ Captainverse
 {:else if story.type === 'captainverse'}  
   Captainverse
 {:else if story.type === 'captainverse-manga'}  
-  Capverse Manga    
+  Capverse Manga  
+{:else if story.type === 'captainverse-animation'}  
+  Capverse Animation     
 {:else if story.type === 'alt-world'}  
   Alt World
 {:else if story.type === 'event'}
