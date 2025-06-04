@@ -2701,6 +2701,9 @@ export const teamData = {
     ],
         videos: [
       { url: 'https://youtu.be/NDmbAeYB-Dw', abyss: 'Red Lotus 505D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/YJqueHxOSds', abyss: 'S-Lantern Nirvana 541D', uploader: 'phylynxbelt' },
+      { url: 'https://youtu.be/YyXgBKXW-d0', abyss: 'S-Lantern Nirvana 541D', uploader: 'Xintsu' },
+
     ] 
   },
 
