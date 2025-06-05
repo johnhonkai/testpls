@@ -99,57 +99,28 @@ function toggleView() {
 
 <section class="max-w-[1600px] mx-auto px-4 mb-40">
 
-  <!-- Filter Buttons -->
-  <div class="flex justify-center gap-3 mb-5 ">
-    <button
-      on:click={() => selectFilter('all')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'all'}>
-      Show All
-    </button>
-    <button
-      on:click={() => selectFilter('main')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'main'}>
-      Main Story
-    </button>
-    <button
-      on:click={() => selectFilter('event')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'event'}>
-      Events
-    </button>
-    <button
-      on:click={() => selectFilter('captainverse')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'captainverse'}>
-      Captainverse
-    </button>    
+<!-- Filter Buttons -->
+<div class="w-full overflow-x-auto pb-2 mb-5 sm:pb-0">
+  <div class="flex gap-3 justify-start sm:justify-center min-w-max px-4">
+    {#each [
+      { id: 'all', label: 'Show All' },
+      { id: 'main', label: 'Main Story' },
+      { id: 'event', label: 'Events' },
+      { id: 'captainverse', label: 'Captainverse' },
+      { id: 'animation', label: 'Animation' }
+    ] as btn}
       <button
-      on:click={() => selectFilter('alt-world')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'alt-world'}>
-      Alt World
-    </button>  
-        <button
-      on:click={() => selectFilter('animation')}
-      class="px-4 py-2 rounded-md border cursor-pointer  font-medium transition  text-xs sm:text-sm
-             bg-gray-800 text-white border-gray-700 hover:bg-gray-700 
-             data-[active=true]:bg-white data-[active=true]:text-black"
-      data-active={filter === 'animation'}>
-      Animation
-    </button>          
+        on:click={() => selectFilter(btn.id)}
+        class="cursor-pointer px-4 py-2 rounded-md border font-medium transition whitespace-nowrap text-xs sm:text-sm
+               bg-gray-800 text-white border-gray-700 hover:bg-gray-700
+               data-[active=true]:bg-white data-[active=true]:text-black"
+        data-active={filter === btn.id}>
+        {btn.label}
+      </button>
+    {/each}
   </div>
+</div>
+
 
   <div class="flex justify-center mb-6">
     <button
@@ -281,14 +252,14 @@ Captainverse
   </div>
   {:else}
   <!-- Spoiler-Free View -->
-  <div class="overflow-x-auto rounded-lg border border-base-300 mx-auto max-w-5xl">
+  <div class="overflow-x-auto rounded-lg border border-base-300 mx-auto max-w-4xl">
     <table class="min-w-full  text-sm text-left text-gray-300">
       <thead class="bg-base-200 text-xs uppercase text-gray-400">
         <tr >
           <th class="px-4 py-2 ">#</th>
           <th class="px-4 py-2">Title</th>
           <th class="px-4 py-2 text-center">Version</th>
-          <th class="px-4 py-2 text-center">Canon</th>
+          <th class="px-4 py-2 text-center">Type</th>
           <th class="px-4 py-2 text-center">In-Game</th>
           <th class="px-4 py-2 ">YouTube</th>
         </tr>

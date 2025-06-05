@@ -19,8 +19,8 @@
 
 
   const astralRings = [
-    { name: "Part 1", slug: "part1", image: "https://i.imgur.com/fCVEMBO.png" },
-    { name: "Part 2", slug: "part2", image: "https://i.imgur.com/C8lb47l.png"},
+    { name: "Part 1 (2016)", slug: "part1", image: "https://i.imgur.com/fCVEMBO.png" },
+    { name: "Part 2 (2023)", slug: "part2", image: "https://i.imgur.com/C8lb47l.png"},
   ];
 </script>
 
@@ -40,7 +40,7 @@
       Story Order
     </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview of each Astral Ring group
+      Release order of Honkai Impact story.
 
 
     </p>

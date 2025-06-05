@@ -3,11 +3,20 @@ export const storyOrder = [
       {
       image: 'https://i.imgur.com/qBo8X1K.png',
       title: 'Honkai Impact Part 2 First Look',
-      youtubeLink: 'https://youtu.be/example1',
       inGame: false,
-      type: 'main', // 'main' for main story, 'event' for events
-      version: '6.9'
+      type: 'promo-video',
+      version: '6.9',
+      link: 'https://www.youtube.com/watch?v=L3tGgYUCeU4'
+    
     },
+      {
+      image: 'https://img.youtube.com/vi/o_yXVy-SvEs/hqdefault.jpg',
+      title: 'Going All Out!',
+      inGame: false,
+      type: 'promo-video',
+      version: '7.3',
+      link: 'https://www.youtube.com/watch?v=o_yXVy-SvEs'
+    },   
     {
       image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch1.webp',
       title: 'P2 Ch 1: Hundred Years of Solitary Shadow',
@@ -16,6 +25,14 @@ export const storyOrder = [
       type: 'main', // 'main' for main story, 'event' for events
       version: '7.3'
     },
+      {
+      image: 'https://img.youtube.com/vi/5rU31FslD28/hqdefault.jpg',
+      title: 'Chapter 1 Cutscene',
+      inGame: true,
+      type: 'animation',
+      version: '7.3',
+      link: 'https://www.youtube.com/watch?v=5rU31FslD28'
+    },      
     {
       image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter//Event1male.webp',
       title: 'A Feast Sought in Data',
@@ -23,7 +40,7 @@ export const storyOrder = [
       inGame: false,
       type: 'event',
       version: '7.3',
-      canon: true,
+      canon: 'computer'
     },
     {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event2small.webp',
@@ -32,8 +49,16 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '7.3',
-        canon: true,
+        canon: 'computer',
       },
+       {
+      image: 'https://img.youtube.com/vi/GixGwedTiuI/hqdefault.jpg',
+      title: 'Banquet Begins',
+      inGame: false,
+      type: 'promo-video',
+      version: '7.4',
+      link: 'https://www.youtube.com/watch?v=GixGwedTiuI'
+    },        
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch2.webp',
         title: 'P2 Ch 2: The Seven Shus in the Maze',
@@ -50,8 +75,16 @@ export const storyOrder = [
         inGame: false,
         type: 'event',
         version: '7.4',
-        canon: false,
+        canon: 'computer',
       },
+       {
+      image: 'https://img.youtube.com/vi/sm1AhwznUtQ/hqdefault.jpg',
+      title: 'Everlasting Luminance',
+      inGame: false,
+      type: 'promo-video',
+      version: '7.5',
+      link: 'https://www.youtube.com/watch?v=sm1AhwznUtQ'
+    },         
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event4.webp',
         title: 'Lantern Against Shadow',
@@ -59,7 +92,7 @@ export const storyOrder = [
         inGame: false,
         type: 'event',
         version: '7.5',
-        canon: true,
+        canon: 'computer',
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3.webp',
@@ -69,6 +102,14 @@ export const storyOrder = [
         type: 'main',
         version: '7.5'
       },
+       {
+      image: 'https://img.youtube.com/vi/OIdsT4gaCvw/hqdefault.jpg',
+      title: '"Venerable Seven Shus, unite as the one Law!',
+      inGame: true,
+      type: 'animation',
+      version: '7.5',
+      link: 'https://www.youtube.com/watch?v=OIdsT4gaCvw'
+    },        
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event5.webp',
         title: 'Non-stop Stage Clears Carnival',
@@ -79,6 +120,14 @@ export const storyOrder = [
         description: "This event is not part of the current samsara. It might be possible in other samsaras.",
         canon:false,
       },
+       {
+      image: 'https://img.youtube.com/vi/mcjI-djzbdE/hqdefault.jpg',
+      title: 'Legend of the Seven Shus Trailer',
+      inGame: true,
+      type: 'animation',
+      version: '7.6',
+      link: 'https://www.youtube.com/watch?v=mcjI-djzbdE'
+    },         
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3EX.webp',
         title: 'P2 Ch 3-EX: Bitterness for A Sleepwalker',
@@ -94,7 +143,7 @@ export const storyOrder = [
         inGame: false,
         type: 'event',
         version: '7.6',
-        canon: true,
+        canon: 'dream'
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event7.webp',
@@ -103,7 +152,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '7.7',
-        canon: true,
+        canon: 'dream'
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/ch4.webp',
@@ -122,6 +171,14 @@ export const storyOrder = [
         version: '7.7',
         canon: false,
       },
+       {
+      image: 'https://img.youtube.com/vi/Stpq9ficpkA/hqdefault.jpg',
+      title: 'Star Voyager',
+      inGame: false,
+      type: 'promo-video',
+      version: '7.8',
+      link: 'https://www.youtube.com/watch?v=Stpq9ficpkA'
+    },         
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch4-2.webp',
         title: "P2 Ch 5: The First and Last War",
@@ -146,8 +203,16 @@ export const storyOrder = [
         inGame: false,
         type: 'event',
         version: '7.8',
-        canon: true,
+        canon: 'main-world',
       },
+       {
+      image: 'https://img.youtube.com/vi/vfJosv-jBWo/hqdefault.jpg',
+      title: 'Star Rail Collab Concept Trailer',
+      inGame: false,
+      type: 'promo-video',
+      version: '7.9',
+      link: 'https://www.youtube.com/watch?v=vfJosv-jBWo'
+    },         
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event9.webp',
         title: "Honkai: A Fool's Hand",
@@ -155,7 +220,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '7.9',
-        canon: true,
+        canon: 'computer',
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch6.webp',
@@ -198,8 +263,16 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '8.0',
-        canon: true,
+        canon: 'dream',
       },
+      {
+      image: 'https://img.youtube.com/vi/pYG9DFhHAAY/hqdefault.jpg',
+      title: "Let's Celebrate the New Year",
+      inGame: true,
+      type: 'event-animation',
+      version: '8.0',
+      link: 'https://www.youtube.com/watch?v=pYG9DFhHAAY'
+    },          
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event11.webp',
         title: "Ongoing: Make-A-Wish Fest!",
@@ -207,7 +280,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '8.1',
-        canon: true,
+        canon: 'main-world',
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Ch7EX.webp',
@@ -224,7 +297,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '8.2',
-        canon: true,
+        canon: 'main-world',
       },
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter//Ch8.webp',
@@ -250,7 +323,7 @@ export const storyOrder = [
         inGame: true,
         type: 'event',
         version: '8.3',
-        canon: true,
+        canon: 'alt-world',
       },
             {
         image: 'https://i.imgur.com/5wNq6b0.png',
@@ -936,7 +1009,7 @@ export const storyP1= [
       image: 'https://i.imgur.com/HwFwIPO.png',
       title: "Once Upon a Time in Shenzhou ",
       inGame: false,
-      type: 'alt-world',
+      type: 'event',
       version: '4.6',
     },    
     {
@@ -1363,14 +1436,14 @@ export const storyP1= [
       image: 'https://i.imgur.com/MFeTfeZ.png',
       title: "Bustling Holiday Symphony 1",
       inGame: false,
-      type: 'alt-world',
+      type: 'event',
       version: '6.3',
     },  
    {
       image: 'https://i.imgur.com/BKWM0Hs.png',
       title: "Bustling Holiday Symphony 2",
       inGame: false,
-      type: 'alt-world',
+      type: 'event',
       version: '6.4',
     },  
     {
