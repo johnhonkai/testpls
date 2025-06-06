@@ -81,7 +81,8 @@ export const weatherList = {
     {id: 'resovita', name: "Vita - Sea's Depths"}
   ],
   melee: [
-    {id: 'meleehoc', name: 'Herrscher of Corruption'}
+    {id: 'meleehoc', name: 'Herrscher of Corruption'},
+    {id: 'sampo', name: 'Sampo'}
   ],
   physical: [
     {id: 'phyalien', name: 'Alien Guard'},
@@ -429,6 +430,14 @@ export const bossData = {
     bosspic: "images/Bosses/Herrscher of Corruption.webp", 
     weather: "Scrappy: Enemies take 50% more Melee DMG, and take 50% less Ranged DMG", 
   },
+  sampo: {
+    name: 'Masked Fool - Sampo', 
+    mechanics: 'Transition phase has paralyze trauma', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Sampo.webp", 
+    weather: "Scrappy: Enemies take 50% more Melee DMG, and take 50% less Ranged DMG", 
+  },  
   phyalien: {
     name: 'Alien Guard', 
     mechanics: 'Transition phase: Stand on the glowing platform, the boss attack will drop SD remnants. Deal enough damage to begin Phase 2. Use a SD-type DPS or Support to quickly gather SD remnants. ', 
