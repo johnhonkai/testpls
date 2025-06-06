@@ -1082,7 +1082,7 @@ export const storyP1= [
     {
       image: 'https://img.youtube.com/vi/ROXUApi5mg8/hqdefault.jpg',
       title: "When Sparks Converge",
-      inGame: true,
+      inGame: false,
       type: 'event',
       version: '4.9',
       link: 'https://www.youtube.com/watch?v=ROXUApi5mg8'
