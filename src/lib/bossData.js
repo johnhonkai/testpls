@@ -473,7 +473,7 @@ export const bossData = {
   },
     icehuodou: {
     name: 'Huodou', 
-    mechanics: 'Starts with BIO mobs.', 
+    mechanics: 'Starts with BIO mobs with 50% DMG reduction shield, freeze them to remove this shield. Huodou Phase 2 has huge freeze trauma.', 
     weakness: 'None', 
     debuff: "Ice (M)", 
     typeicon: "images/type/IconBIO.png", 
@@ -2760,6 +2760,10 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://www.youtube.com/watch?v=5xBz7QTztLY', abyss: 'Red Lotus 506D', uploader: 'Marisa Honkai' },
+
+    ] 
   },
 
       starsk: {
