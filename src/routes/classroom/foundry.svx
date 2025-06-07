@@ -229,11 +229,13 @@ These weapons can be tuned in Divine Key Concierge to grant global buffs.
   <img src="https://i.imgur.com/ibN9Pbt.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
 </div>
 
-There are a few useful weapons in Exchange Shop, and you can purchase them using Weapon Resonance. These used to be a common currency since Part 1 gacha has multiple weapons, and you can convert them to Weapon Resonance.
+There are some useful weapons in Exchange Shop, and you can purchase them using <span class="text-teal-400">Weapon Resonance</span>. 
 
-This is not the case anymore. Part 2 weapons cannot be converted to Weapon Resonance, and Part 2 gacha do not drop Part 1 equipment.
+Weapon Resonance used to be a common currency in Part 1 - you can get Weapon Resoncance by converting Part 1 gacha weapons, and you can easily get weapons from Part 1 gacha.
 
-So, how do you get Weapon Resonance now? You can forge 'Bounty Weapons' in Foundry, and convert them to Weapon Resonance. Among these Bounty Weapons, 3rd Sacred Relic has the lowest cost of Honkai Piece.
+This is not the case anymore, since Part 2 supplies do not give Part 1 gacha weapons.
+
+So, how do you get Weapon Resonance now? You can forge 'Bounty Weapons' in Foundry, and convert them to Weapon Resonance. Out of all the Bounty Weapons, <span class="text-amber-400">3rd Sacred Relic</span> has the lowest cost of Honkai Piece.
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/GKgJbGM.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />

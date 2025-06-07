@@ -187,15 +187,7 @@ function toggleView() {
   Animation
 {/if}
             </span>
-{#if story.type === 'event' || story.type === 'side'}
-  <span class="inline-block rounded-full px-2 py-0.5 bg-yellow-500 text-black">
-{#if story.canon === 'event'}
-Event
-{:else if story.canon === 'captainverse'}
-Captainverse
-{/if}
-  </span>
-{/if}
+
           </div>
         
           <!-- Top Right Version Badge -->

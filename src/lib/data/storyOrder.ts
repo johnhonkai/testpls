@@ -966,7 +966,16 @@ export const storyP1= [
       inGame: true,
       type: 'main',
       version: '4.3'
-    },  
+    }, 
+    {
+      image: 'https://i.imgur.com/uonggOE.png',
+      title: "Durandal's Pilgrimage",
+      inGame: false,
+      type: 'event',
+      version: '4.4',
+       
+    },       
+    
     {
       image: 'https://i.imgur.com/q7KlDbb.png',
       title: 'Stellar Mythos',
