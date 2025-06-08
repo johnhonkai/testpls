@@ -2852,6 +2852,42 @@ export const teamData = {
       }
     ],
   },
+
+  sampo: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '1+',
+            pct: '89%',
+            bottext: "Highest Score: S2 791, SS 804, 6S 840, 9S 864"
+
+          },       
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+            rank: '49',
+            pct: '10%',
+            bottext: "Highest Score: S2 791, 6S 799"
+
+          },    
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_ds.png"],
+            rank: '87',
+            pct: '1%',
+            bottext: "Highest Score: SS 782"
+
+          },                           
+        ]
+      }
+    ],
+  },
 }
 
 
