@@ -207,7 +207,7 @@ export const storyOrder = [
       },
        {
       image: 'https://img.youtube.com/vi/vfJosv-jBWo/hqdefault.jpg',
-      title: 'Star Rail Collab Concept Trailer',
+      title: 'Star Rail Crossover Concept Trailer',
       inGame: false,
       type: 'promo-video',
       version: '7.9',

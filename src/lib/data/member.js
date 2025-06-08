@@ -236,6 +236,16 @@ export const ytmember = [
       Image: "/images/memberpic/shikichan.png",
     },
     {
+      "Member": "TouchMeSenpai",
+      "Link to profile": "https://www.youtube.com/channel/UC7w8Uhbj3500wcOqmXljM3A",
+      "Current level": "Equinox Supporter",
+      "Total time on level (months)": 26.2925,
+      "Total time as member (months)": 37.0667,
+      "Last update": "Joined",
+      "Last update timestamp": "2025-04-10T21:35:09.598-07:00",
+      Image: "/images/memberpic/shikichan.png",
+    },    
+    {
       "Member": "zKodla",
       "Link to profile": "https://www.youtube.com/channel/UCJ2UNwSCyWyt69G5kLcI15w",
       "Current level": "Herrscher of Origin",
@@ -403,15 +413,6 @@ export const ytmember = [
       "Total time as member (months)": 42.0667,
       "Last update": "Re-joined",
       "Last update timestamp": "2022-01-14T02:21:10.316-08:00"
-    },
-    {
-      "Member": "TouchMeSenpai",
-      "Link to profile": "https://www.youtube.com/channel/UCq_BwO-Xwj4RIkMDkneZfeQ",
-      "Current level": "Herrscher of Finality",
-      "Total time on level (months)": 26.2925,
-      "Total time as member (months)": 37.0667,
-      "Last update": "Upgraded",
-      "Last update timestamp": "2022-09-07T03:08:40.41-07:00"
     },
     {
       "Member": "qodnec",

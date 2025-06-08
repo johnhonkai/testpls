@@ -2762,6 +2762,8 @@ export const teamData = {
     ],
         videos: [
       { url: 'https://www.youtube.com/watch?v=5xBz7QTztLY', abyss: 'Red Lotus 506D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/Iek-5US9aco', abyss: 'S0 Thelema Nirvana 542D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/geC_BDCdJpg', abyss: 'SS Thelema Nirvana 542D', uploader: 'phylynxbelt' },
 
     ] 
   },

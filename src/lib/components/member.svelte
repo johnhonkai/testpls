@@ -59,9 +59,9 @@
       <li
         class="relative flex items-center gap-3 p-4 rounded-md bg-cover bg-center shadow-lg overflow-hidden 
         {tier === 'Equinox Supporter' && index === 0 ? 'bg-[url("/images/bg/wpr2.svg")] text-white' : ''} 
-        {tier === 'Equinox Supporter' && index === 1 ? 'bg-[url("/images/bg/member_card_equinox_2.svg")] text-white' : ''} 
+        {tier === 'Equinox Supporter' && index === 1 ? 'bg-[url("/images/bg/wpr2.svg")] text-white' : ''} 
         {tier === 'Equinox Supporter' && index === 2 ? 'bg-[url("/images/bg/member_card_equinox_2.svg")] text-white' : ''} 
-
+        {tier === 'Equinox Supporter' && index === 3 ? 'bg-[url("/images/bg/member_card_equinox_2.svg")] text-white' : ''} 
         {tier === 'Herrscher of Finality' ? 'bg-[url("/images/bg/member_card_finality.svg")] text-black font-semibold' : ''} 
         {tier === 'Herrscher of Origin' ? 'bg-[url("/images/bg/member_card_origin.svg")]' : ''}"
       >
