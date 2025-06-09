@@ -102,6 +102,7 @@ export const storyOrder = [
         type: 'main',
         version: '7.5'
       },
+
        {
       image: 'https://img.youtube.com/vi/OIdsT4gaCvw/hqdefault.jpg',
       title: '"Venerable Seven Shus, unite as the one Law!',
@@ -110,6 +111,7 @@ export const storyOrder = [
       version: '7.5',
       link: 'https://www.youtube.com/watch?v=OIdsT4gaCvw'
     },        
+
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event5.webp',
         title: 'Non-stop Stage Clears Carnival',
@@ -127,7 +129,8 @@ export const storyOrder = [
       type: 'animation',
       version: '7.6',
       link: 'https://www.youtube.com/watch?v=mcjI-djzbdE'
-    },         
+    },  
+          
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Ch3EX.webp',
         title: 'P2 Ch 3-EX: Bitterness for A Sleepwalker',
@@ -145,6 +148,14 @@ export const storyOrder = [
         version: '7.6',
         canon: 'dream'
       },
+       {
+      image: 'https://img.youtube.com/vi/-jdNRXk9WjY/hqdefault.jpg',
+      title: 'Summertime Reminiscences',
+      inGame: true,
+      type: 'promo-video',
+      version: '7.6',
+      link: 'https://www.youtube.com/watch?v=-jdNRXk9WjY'
+    },        
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/Event7.webp',
         title: "Born From A Dream",
