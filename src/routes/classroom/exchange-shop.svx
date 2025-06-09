@@ -1,0 +1,165 @@
+---
+title: Exchange Shop
+category: 'Shop'
+sortOrder: 5
+customSlug: "exchange-shop"
+update: 8.2
+
+---
+
+
+## Exchange Shop
+Exchange Shop has old Part 1 equipment that can be exchanged using <span class="text-blue-300">Weapon Resonance</span> and <span class="text-red-300">Stigma Resonance</span>. 
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/XqiwUo7.png" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+
+---
+
+## How to Get Resonance
+
+### Weapon Resonance
+
+Weapon Resonance used to be a common currency in Part 1 - you can get Weapon Resonance by converting Part 1 gacha weapons, and you can easily get weapons from Part 1 gacha.
+
+This is not the case anymore, since Part 2 supplies do not give Part 1 gacha weapons.
+
+So, how do you get Weapon Resonance now? You can forge 'Bounty Weapons' in Foundry, and convert them to Weapon Resonance. Out of all the Bounty Weapons, <span class="text-amber-400">3rd Sacred Relic</span> has the lowest Honkai Piece cost.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/GKgJbGM.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+
+### Stigma Resonance
+You get Stigma Resonance weekly from Open World. As a new player, you also get an abundance of them from starter event, but once that is over, you will only get a limited amount every week, so don't waste them.
+
+
+---
+
+## Weapon
+
+### Oath of Judah
+Oath of Judah is a Divine Key weapon - it can be tuned in Divine Key Concierge to grant global ATK and Lightning DMG buff. If you already have Salvation of Sakura tuned in, Oath of Judah can still give global +10 ATK.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/1Ma2BU2.png" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+
+---
+
+## Stigma
+Stigma in this category are still used by Part 1 valkyries, mostly in Memorial Arena mode.
+
+### Turgenev TB
+Turgenev TB is a universal Elemental support stigma that can be used by any support. It is still used by <a href='/valk/eden'>Golden Diva</a> in certain cases, and still used by a lot of valks in Memorial Arena mode.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/WbaD2yc.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+### Mei Beach M and Newton B
+These two stigma are stigmas that apply short but powerful debuff. They are commonly used for SS-rank Arena bosses. Veteran players have multiple copies of these stigma.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/xq9swAD.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+### Tesla Band TM
+- Tesla Band T: Physical Support, sometimes used in Arena.
+- Tesla Band M: Lightning Support, sometimes used in Arena.
+
+<div class="flex items-center justify-center text-orange-300 mt-[-40px]">
+  <img src="https://i.imgur.com/RvjJrMe.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+### Jin Shengtan TM
+Jin Shengtan (JST) TM is a universal Elemental support stigma, like a weaker version of Turgenev TB, but - JST and Turgenev are commonly paired together on the two supports in Arena.
+
+<div class="flex items-center justify-center text-orange-300">
+  <img src="https://i.imgur.com/BiIFRKF.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+### Schrodinger M
+Schrodinger M can reduce Ult cd. <a href='/valk/hoo'>Herrscher of Origin</a> sometimes use Schrodinger M in Arena - and very situationally in Abyss.
+
+<div class="flex items-center justify-center text-orange-300">
+  <img src="https://i.imgur.com/OLXtlIS.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+---
+
+## Forge Materials
+Stigma in this category are just decent, but they are used to forge G4 stigma, which are the best stigma for certain Part 1 valkyries, and general second best options for other Part 1 valkyries.
+
+### Goemon
+Material for G4 Handel set, which is used by <a href='/valk/hot'>Herrscher of Thunder</a>, <a href='/valk/eden'>Golden Diva</a>, and a great option for other Part 1 Lightning DPS.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/QcFgLv1.png" alt="Icon" class="w-[350px] h-auto rounded-lg" />
+</div>
+
+### Leeuwenhoek
+Material for G4 Little Joys set, which is used by <a href='/valk/sirin'>Sirin</a>, <a href='/valk/da'>Dea Anchora</a>, and a great option for other Part 1 Fire DPS.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/Ys68v66.png" alt="Icon" class="w-[350px] h-auto rounded-lg" />
+</div>
+
+---
+
+## Others
+
+Equipment in this category are the signature set for outdated Part 1 valkyries. There's no urgency to get these. Please read the valk's guide page to learn more about the valk before you decide to spend your resources on these equipment.
+
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/gMpIe7m.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Midnight Absinthe Equipment</p>
+
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/Xr4kWPQ.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Miss Pink Elf Equipment.</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/0YoP7CZ.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Herrscher of Flamescion Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/RbqmmMJ.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Fischl Equipment. Zhenyi can be used by other Part 1 Lightning DPS.</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/pW2dbUo.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Starchasm Nyx Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/Or3YG1N.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Herrscher of Sentience Old Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/1ro7ZHD.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Bright Knight Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/A7VUb1I.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Twilight Paladin Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/JSx4851.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Azure Empyrea Equipment</p>
+
+<div class="flex items-center justify-center text-orange-300 mb-[-30px]">
+  <img src="https://i.imgur.com/peDIy7S.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+<p class="text-center text-lg">Stygian Nymph Equipment</p>

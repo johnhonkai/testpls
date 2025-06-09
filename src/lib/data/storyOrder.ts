@@ -1328,7 +1328,15 @@ export const storyP1= [
       type: 'animation',
       version: '5.9',
       link: 'https://www.youtube.com/watch?v=29hvIBUimDU'
-    },         
+    },   
+
+    {
+      image: 'https://i.imgur.com/G59v53l.png',
+      title: "Summer Survival Rhapsody Side A",
+      inGame: false,
+      type: 'event',
+      version: '5.9',
+    },            
     {
       image: 'https://i.imgur.com/aKIx0n8.png',
       title: "P1 Ch31: Für Elysia",
@@ -1352,14 +1360,7 @@ export const storyP1= [
       version: '5.9',
       link: 'https://www.youtube.com/watch?v=OxglpytZOuo'
     },    
- 
-    {
-      image: 'https://i.imgur.com/G59v53l.png',
-      title: "Summer Survival Rhapsody Side A",
-      inGame: false,
-      type: 'event',
-      version: '5.9',
-    },     
+    
       {
       image: 'https://img.youtube.com/vi/ji2W64aX9OE/hqdefault.jpg',
       title: "Elysia's Sweet Afternoon Tea",
@@ -1536,13 +1537,7 @@ export const storyP1= [
       type: 'main',
       version: '6.7'
     },     
-   {
-      image: 'https://i.imgur.com/I2aZArF.png',
-      title: "Before the Endless Dream Ends",
-      inGame: false,
-      type: 'captainverse',
-      version: '6.8',
-    },  
+
     {
       image: 'https://i.imgur.com/M62I2Qt.png',
       title: "P1.5 Ch39: Daughters of the Sea",
@@ -1557,6 +1552,13 @@ export const storyP1= [
       type: 'animation',
       version: '6.8',
       link: 'https://www.youtube.com/watch?v=nz_Ra4G57A4'
+    },      
+   {
+      image: 'https://i.imgur.com/I2aZArF.png',
+      title: "Before the Endless Dream Ends",
+      inGame: false,
+      type: 'captainverse',
+      version: '6.8',
     },      
    {
       image: 'https://i.imgur.com/oL53R5f.png',
@@ -1608,6 +1610,13 @@ export const storyP1= [
       type: 'main',
       version: '7.1'
     }, 
+    {
+      image: 'https://i.imgur.com/lJR5HH6.png',
+      title: "The Star Which the Moon Gazes Upon",
+      inGame: true,
+      type: 'main',
+      version: '7.2'
+    },     
    {
       image: 'https://i.imgur.com/OveSCUn.png',
       title: "Wild Phoenix Chase",
@@ -1615,11 +1624,5 @@ export const storyP1= [
       type: 'event',
       version: '7.2',
     },  
-    {
-      image: 'https://i.imgur.com/lJR5HH6.png',
-      title: "The Star Which the Moon Gazes Upon",
-      inGame: true,
-      type: 'main',
-      version: '7.2'
-    },                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                     
 ];

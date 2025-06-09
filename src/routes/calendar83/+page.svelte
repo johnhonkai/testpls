@@ -92,6 +92,11 @@
             title: "Outfit Rerun Event",
             image: "https://i.imgur.com/anYIaO6.jpeg"
         },
+        "VitaOutfit": {
+            title: "Eldritch Vantage Outfit Supply",
+            description: '<li>Duration: 2 weeks</li><li>S-rank box: HoS card or 10 stamps, SN card or 5 stamps, Nyx card or 5 stamps.</li>',
+            image: "https://i.imgur.com/QJiW3ek.jpeg"
+        },        
     };
 
 
@@ -228,7 +233,7 @@
                          <span class="font-bold0">OUTFIT SUPPLY</span>
                     </div>       
                     <div></div>           
-                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-amber-700">
+                    <div on:click={() => openModal("VitaOutfit")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-amber-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Eldritch Vantage<br/>9600 crystals</span>
                         <!-- Image positioned on the right side -->

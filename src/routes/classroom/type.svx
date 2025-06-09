@@ -39,7 +39,7 @@ In Abyss mode, the bonus damage becomes even stronger in Type Counter weather: T
 
 
 ## BIO, MECH, PSY
-BIO, MECH and PSY types were the first types in the game. These characters / enemies do not have any special type-exclusive mechanic besides type advantage.
+BIO, MECH and PSY types are the first types in the game. These characters / enemies do not have any type-exclusive mechanic besides type counter bonus.
 
 ## Quantum
 
@@ -48,7 +48,7 @@ BIO, MECH and PSY types were the first types in the game. These characters / ene
 2. A QUA enemy can have multiple stacks of QUA shields.
 
 ### QUA Characters
-1. QUA characters have abilities that can immediately remove a stack of QUA shield.
+1. QUA characters have abilities that can immediately remove stack(s) of QUA shield.
 2. Sparkle can insta-kill QUA enemies below 10% HP.
 
 ## Imaginary
