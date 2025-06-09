@@ -10,6 +10,12 @@ update: 8.2
 ## What is Time Stop?
 Time Stop, or officially known as Time Frozen Domain (no one actually uses this term) is a feature that certain S-rank valkyries have. One or more of their abilities can **pause stage timer and buff timer** during its animation OR for a certain duration.
 
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/pD7f7La.jpeg" alt="Icon" class="h-[300px] w-auto rounded-lg" />
+</div>
+
+Image above shows before and after <a href='/valk/durandal'>Reign Solaris</a> ultimate skill, which has time stop. The bonus point timer remains the same, while the boss hp goes from x4 bar to bye bye bar.
+
 ## Why is it so good?
 
 ### Score

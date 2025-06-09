@@ -8,7 +8,7 @@ update: 8.2
 ---
 
 ## The Original Four
-Most damage in Honkai Impact belong to one of following damage elements:
+Most damage in Honkai Impact belong to one of following damage:
 - Physical DMG
 - Lightning DMG
 - Ice DMG
@@ -24,10 +24,11 @@ Most damage in Honkai Impact belong to one of following damage elements:
 1. All valkyries have one element, which can be seen in valkyrie menu. 
     - Most modern valkyries only deal damage of their corresponding element.
     - Older valkyries may deal a different damage from their corresponding element.
-2. Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG.
+2. Collectively, Lightning, Ice and Fire DMG are referred to as Elemental DMG. If a buff says it affects Elemental DMG, then it refers to Lightning, Ice and Fire DMG - not Physical DMG.
+
 3. Unlike Honkai Star Rail and Genshin Impact, in HI3, Elemental DMG cannot crit. Only Physical DMG can crit.
 
-
+4. Against enemies with type disadvantage, crit will have white number. You can still crit, it just won't show the yellow number. Why is this a thing? I don't know.
 
 
 ---
@@ -37,15 +38,19 @@ Most damage in Honkai Impact belong to one of following damage elements:
 In 2023, Bleed DMG and Ignite DMG were introduced. These are not new damage elements, rather, they are extra damage elements that exist alongside one of the four main damage elements.
 Characters with Bleed / Ignite DMG benefit from buffs that affect both their primary element and Bleed / Ignite DMG.
 
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/yQhz4bO.png" alt="Icon" class="h-[100px] w-auto rounded-lg" />
+</div>
+
 ### Valks with Bleed DMG
 - [Peregrine Sword](/valk/ps): Deals Physical DMG, and most of her attacks also count as Bleed DMG.
-- [Lunar Vow](/valk/lv): Deals Lightning DMG, and most of her attacks also count as Bleed DMG.
-- [Valkyrie Quicksand](/valk/vq): Deals Physical DMG, and most of her attacks also count as Bleed DMG.
 - [Cosmic Expression](/valk/ce): Deals Physical DMG, and most of her attacks also count as Bleed DMG.
+- [Lunar Vow](/valk/lv): Deals Lightning DMG, and most of her attacks also count as Bleed DMG.
+- [Valkyrie Quicksand](/valk/vq): Deals Physical DMG, and all of her attacks also count as Bleed DMG.
 
 
 ### Valks with Ignite DMG
-- [Miracle Magical Girl](/valk/sirin): Deals Fire DMG, and her attacks also count as Ignite DMG.
+- [Miracle Magical Girl](/valk/sirin): Deals Fire DMG, and most of her attacks also count as Ignite DMG.
 
 ### Bleed / Ignite DMG vs DoT
 Although they are not entirely the same, Bleed and Ignite DMG do inherit some properties from Bleed and Ignite status damage-over-time (DoT). For example:
@@ -60,14 +65,12 @@ In addition, valkyries that deal Bleed / Ignite DMG has buffs that are related t
 
 ---
 
-
-## Total DMG
-TOTAL DMG is not exactly a damage type, but it is very common in skill descriptions that it has to be mentioned here. Characters, equipment, etc can provide a universal dmg buff known as **Total DMG** buff. Total DMG buff will benefit all damage elements.
-
----
-
 ## HP Loss DMG
-HP Loss DMG is a special dmg that only a few valkyries have. It deals a fixed damage and the damage value is equal to a percentage of another damage.
+HP Loss DMG is a special dmg that only a few valkyries have. It deals a fixed damage and the damage value is equal to a percentage of another damage. Basically like True DMG in Star Rail.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/XeJEi9t.png" alt="HP Loss DMG" class="h-[300px] w-auto rounded-lg" />
+</div>
 
 Examples of HP Loss DMG
 - Herrscher of Finality: During Stellar Outburst, each Basic ATK deals additional HP Loss DMG, equal to 120% of the Basic ATK's damage.

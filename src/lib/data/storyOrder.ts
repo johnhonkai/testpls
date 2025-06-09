@@ -105,7 +105,7 @@ export const storyOrder = [
 
        {
       image: 'https://img.youtube.com/vi/OIdsT4gaCvw/hqdefault.jpg',
-      title: '"Venerable Seven Shus, unite as the one Law!',
+      title: 'Venerable Seven Shus, unite as the one Law!',
       inGame: true,
       type: 'animation',
       version: '7.5',

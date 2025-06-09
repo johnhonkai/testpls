@@ -10,28 +10,40 @@ update: 8.2
 ## What is Impair?
 Enemies have DEF stat, which affects their resistance to Physical DMG. **Impair** reduces the DEF stat by a percentage.
 
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/cSr7IFs.jpeg" alt="Icon" class="h-[350px] w-auto rounded-lg" />
+</div>
+
+---
+
+## How to Impair?
+
 ### Part 1
 In Part 1, only a few valkyries / equipment can provide impair. These were very valuable supports for Physical teams.
 - Herrscher of Rebirth, Herrscher of Sentience, Celestial Hymn ( DEF -75% )
 - Terminal Aide ( DEF -70%, 5 seconds only )
 - Divine Prayer ( DEF -80%, random target )
-- Weapons: Briareus EX, Twins of Eden ( DEF -65% ) 
+- Weapons: Briareus EX, Twins of Eden ( DEF -65% ) and more.
 
 
 ### Part 2
-In Part 2, so far all Physical valkyries have their own impair.
+In Part 2, so far, all Physical valkyries have their own impair.
 
 ---
+## Impair Effect Behavior
+
+
+
 
 ### Two impairs do not stack
 
 **IMPAIRS DO NOT STACK**. The latest impair will override the previous impair. 
 
----
+
 
 ### Impair Aura
 
-Herrscher of Rebirth (HoRB) and Herrscher of Sentience (HoS) impair is like an aura - the impair effect is constantly reapplied every tick on all enemies on the field.
+<a href='/valk/horb'>Herrscher of Rebirth (HoRB)</a> and <a href='/valk/hos'>Herrscher of Sentience (HoS)</a> impair is like an aura - the impair effect is constantly reapplied every tick on all enemies on the field.
 
 For example, if you use Celestial Hymn (CH) impair during HoS impair duration, CH impair will only apply for a split second before HoS impair is reapplied.
 
@@ -40,11 +52,11 @@ For example, if you use Celestial Hymn (CH) impair during HoS impair duration, C
 ## What is Physical Breach?
 Physical Breach is basically impair, but **Physical Breach can stack with impair**!
 
-Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode and most Part 1 Physical DPS cannot apply impair, Physical Breach is added as an alternative to impair.
+Physical Breach was first introduced in version 5.0 for Elysian Realm mode. Since it is a solo mode and most Part 1 Physical DPS cannot apply their own impair, Physical Breach is added as an alternative to impair.
 
 In version 7.6, Serapeum AstralOp has Physical Breach for her assist skill.
 
----
+
 
 ### Physical Breach State
 
@@ -52,7 +64,7 @@ In version 7.8, Vita [Lone Planetfarer](/valk/lp) is officially the first valkyr
 
 The Physical Breach is provided through a buff called Physical Breach state.
 
----
+
 
 ### Does Physical Breach stack with other Physical Breach
 1. Physical Breach stacks with other Physical Breach multiplicatively.

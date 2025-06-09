@@ -37,7 +37,7 @@ Patches are longer now, that means more crystal for every S-rank release!
 
 F2P can get S-rank valk fullgear <span class="text-emerald-300">every one or two patches</span> (one if you're lucky)
 
-Monthly / Monthly + BP players, you can get <span class="text-emerald-300">new S-rank every patch now</span>, assuming average luck. You will only have issue deciding what to pull when a patch has extra stuff like Divine Key or AstralOp.
+Monthly / Monthly + BP players, you can get <span class="text-emerald-300">new S-rank every patch now</span> (assuming average luck). You will only have issue deciding what to pull when a patch has extra stuff like Divine Key or AstralOp.
 
 ## All Part 2 Valks are balanced and have their own niche
 
@@ -56,7 +56,7 @@ What a typical Part 2 valk means:
 
 This infographic below shows what you how nice it is that there are so <span class="text-emerald-300">many support options </span> now, and every valk has her own niche.
 
-On the other hand, it's and also kinda <span class="text-red-300">disgusting </span> how if you don't have the valk to counter a specific mechanic, some bosses just become unbearable.
+On the other hand, it's also kinda <span class="text-red-300">disgusting </span> how if you don't have the valk to counter a specific mechanic, some bosses just become unbearable.
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/Lmo2iVM.jpeg" alt="Icon" class="w-[700px] h-auto rounded-lg" />
@@ -68,7 +68,7 @@ On the other hand, it's and also kinda <span class="text-red-300">disgusting </s
 
 ---
 
-### But, The Best Supports Keep Changing!
+### The Best Supports Keep Changing
 
 A valk's best team changes based on the boss.
 Let's take [Ba-dum!](/valk/badum) as example. Most of the time Badum's best teammates are Vita, Sparkle and JD.
@@ -125,12 +125,12 @@ but I have no crystal to get every valk because Im F2P"
 I know there are some valks that are 'better than typical' like Vita. 
 That is true, Vita is the most flexible support in the last few patches (but she's still not the best everywhere, especially at S0-rank).
 
-If you got her on debut, then congrats. But if you were thinking to get Vita on rerun, then the problem remains the same- **<span class="text-blue-300"> Crystals </span>**.
+If you got her on debut, then congrats. But if you were thinking to get Vita on rerun, then the problem remains the same- **<span class="text-blue-300"> CRYSTALS </span>**. You don't have crystals.
 
-If you're a monthly player/whaler, who can afford new valk + Vita, then yes, it's worth it to get Vita on her rerun. 
+If you're a monthly player/whaler, who can afford new valk + Vita, then yeah, it was worth it to get Vita on her rerun. 
 
-But for F2P who can only afford one S-rank valk every one or two patches, was it worth it skipping new valk to pull Vita rerun?
-**Debatable.**
+But for a F2P player who can only afford one S-rank valk every one or two patches, was it worth it skipping new valk to pull Vita rerun?
+**ABSOLUTELY NOT.**
 
 
 ---
@@ -143,7 +143,7 @@ Characters also have locked skills for future AR, which can hide their true valu
   <img src="/images/valkportrait/sparkle.png" alt="Icon" class="w-[100px] h-auto rounded-lg" />
 </div>
 
-Take [Sparkle](/valk/sparkle) for example. Sparkle looked really mid in World Star teams. She was good in P1 Fire but that didn't matter much when AR is the new craze.
+Take [Sparkle](/valk/sparkle) for example. During her release, Sparkle looked really underwhelming in World Star teams. She was good in P1 Fire but that didn't matter much when AR is the new craze.
 
 Then, Law of Ascension was revealed. Turns out Sparkle has one of the best kits for that AR.
 
@@ -152,9 +152,9 @@ Then, Law of Ascension was revealed. Turns out Sparkle has one of the best kits 
 </div>
 
 
-And of course, valks with new Astral Ring should be a higher priority to pull, right?
+> And of course, valks with new Astral Ring should be a higher priority to pull, right?
 
-So F2P should just skip the valk in the current patch to guarantee this new valk with new AR next patch, right?
+> So F2P should just skip the valk in the current patch to guarantee this new valk with new AR next patch, right?
 
 Well turns out the best support for that valk with new AR is the valk from previous patch
  (Sparkle for RS, PS for Helia). Now your shiny new AR is not at its full potential.
@@ -187,7 +187,7 @@ For most valkyries, their bosses appear during the first 3-4 weeks of the new pa
 
 You really really want to get valk + weapon.
 
-Weapon has always been very important in HI3. There's usually important utilities locked behind weapon and no good alternative F2P options.
+Weapon has always been very important in HI3. There's usually important utilities locked behind weapon and there is no good alternative F2P options.
 
 For example, if you dont have Reign Solaris' weapon, her attacks won't have the img dmg transfer mechanic, on top of the usual dmg loss.
 
@@ -201,15 +201,18 @@ With signature weapon, Planar Armament gain 10% more initial sp during SO. This 
   <img src="https://i.imgur.com/MLzRV4N.png" alt="Icon" class="w-[900px] h-auto rounded-lg" />
 </div>
 
-For support role, all P2 weapons now have this independent multiplier.
-Unless you have another compatible P2 weapon, the dmg loss from not having this independent multiplier is big enough that you would be better off using another support with full gear.
+For support role, all P2 weapons now have this <span class="text-cyan-300">independent multiplier</span>.
+Unless you have another compatible P2 weapon, the dmg loss from not having this independent multiplier is big enough that you would be better off using another support with full gear (unless the boss requires a specific utility that the valk can provide).
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/RL1lBuA.jpeg" alt="Icon" class="w-[900px] h-auto rounded-lg" />
 </div>
 
+##  New Valk is Cheaper
+New valkyries usually come with 50% off for the first ten pulls of Battlesuit Supply.
+
 ##  END
-That's it for this page. Hopefully, this page has laid out all the factors at hand that lead us to the conclusion for this pull recommendation:
+That's it for this page. Hopefully, this page has laid out all the factors that lead us to the conclusion for this pull recommendation:
 
 Due to how meta works (all valks are kinda balanced now and have their own niche) 
 

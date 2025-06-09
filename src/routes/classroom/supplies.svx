@@ -20,7 +20,7 @@ Before v7.3, Battlesuit Supply is known as Expansion Supply, and has some differ
 A valkyrie supply that allows you to immediately get SS-rank if you hit 100 pulls milestone. This is only available for valkyries that are over 8 patches old.
 - Every 10 pulls give you a stamp (10 fragments). S-rank card is guaranteed within 100 pulls.
 - S-rank drop rate is much lower than normal battlesuit supply.
-- A-rank offrates include all A-ranks in the game.
+- A-rank offrates include all A-ranks in the game (excluding SP valks).
 
 ---
 
@@ -65,20 +65,19 @@ Event version of Focused Supply that appears during spending event.
 
 ### Part 1 Divine Key Supply (Removed)
 This is where you can pull Divine Key weapons. Divine Keys are a special type of weapons. 
-- Some of them are useless, some become DLC to certain valkyries like Bright Knight and Herrschers.
 - Gacha divine keys give global +10 ATK to all characters.
-
+- Modern divine keys are like DLC that bring back old valkyries to meta.
 
 ---
 
-### Schicksal Arsenal (Very Likely Removed)
+### Schicksal Arsenal (Removed)
 Schicksal Arsenal is a type of Focused Supply with boosted 4-star equipment drop rate. There are two featured weapons and 1 featured stigma. Usually one of the featured weapon is a divine key, and the other featured weapon + stigma set is for an SP valkyrie.
 - Cost: 280 crystal per pull
 - Guarantees one of the featured weapon in 50 pulls
 
 ---
 
-### Firepower Supply (Very Likely Removed)
+### Firepower Supply (Removed)
 There will be a list of equipment. You can select a number of weapons + stigma sets to become the content of Firepower Supply.
 - Cost: 2,800 crystal
 - You can only do one ten-pull

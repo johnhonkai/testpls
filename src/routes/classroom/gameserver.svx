@@ -29,13 +29,16 @@ In Hoyoplay Launcher (PC), there are six servers that you can choose. For mobile
 
 Only SEA, EU and NA servers use <span class="text-emerald-400">English language</span>.
 
-For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span>. EU / NA app name is <span class="text-emerald-400">Honkai Impact 3rd</span>.
 
 ![List of available HI3 servers in Hoyoplay](https://i.imgur.com/PEyX4D0.png)
 
 ---
 
 ## Server Differences for SEA, NA, EU
+
+### App Name
+For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span>. EU / NA app name is <span class="text-emerald-400">Honkai Impact 3rd</span>.
+
 
 ### Voice, UI Language and Reset Time
 | Server | Voice Over | UI Language | Server Time |
@@ -44,7 +47,7 @@ For mobile, SEA app name is <span class="text-emerald-400">Honkai Impact 3</span
 | Europe  | JP, CN  | English, CN, French, German | UTC +1 |
 | Americas | JP, CN  | English, CN, French, German| UTC -5 |
 
----
+
 
 ### Touch Feature
 In SEA server, you can touch valkyries! This feature is only available for very old Part 1 valkyries.
@@ -55,25 +58,26 @@ In SEA server, you can touch valkyries! This feature is only available for very 
  </iframe>
 </div>
 
----
+
 
 ### Anniversary Date
 Originally, the regional servers had different anniversary date. But starting from Part 2 (v7.3), our anniversaries are synced to around Feb/March (7.3 date is Feb 29, 2024).
 
----
+
 
 ### Server Population
 SEA server has significantly more players. It is unclear who has more players for NA and EU.
 
-**Online matchmaking:** HI3 has multiplayer events from time to time like Fall Guys, Chibi Lobby. Plus,  in 7.9, there will be a card game multiplayer in HI3 x HSR collab event. Matchmaking is faster in SEA server. 
+**Online matchmaking:** HI3 has multiplayer events from time to time like Fall Guys, Chibi Lobby and HSR Collab card event. Matchmaking is faster in SEA server. 
 I once tried EU server, and took a long time to get a match in Fall Guys event.
 
 **Competitive:** HI3's hardest mode is EX Abyss - it has ranking system and extra crystals and emblems for reaching Top 100 in every round.
 - Since there are more players, it's harder to get Top 50 in SEA server.
 - Top 100 score breakpoint is also much higher in SEA than NA / EU.
-- But, Nirvana group retention is easier than NA / EU because more players = more brackets = less chance to be in the same room with T100 players.
+- Nirvana group retention is easier in SEA than NA / EU because more players = more brackets = less chance to be in the same room with T100 players.
+- For Red Lotus group, EU server has lower Disturbance than other servers (enemies have less HP).
 
----
+
 
 ### Physical Merch Limitation
 From time to time, there are physical merch giveaways like Art Collection and raffle event. Physical merch is only shipped to certain countries tied to the server geographically. Below is an example of Art Collection Vol 2 shipping areas for SEA server.
@@ -85,7 +89,7 @@ From time to time, there are physical merch giveaways like Art Collection and ra
 
 
 
-
+---
 
 ## So, which server should you play?
 By default, it's best to play the default server for your region.
@@ -93,7 +97,7 @@ By default, it's best to play the default server for your region.
 - If you're looking for faster matchmaking and more populated in-game lobbies, then play SEA server.
 - If getting physical merch matters to you, choose the default server for your region.
 
-
+---
 
 ## More Server Trivia
 
