@@ -703,7 +703,7 @@ export const storyP1= [
       version: '3.4'
     },   
     {
-      image: 'https://i.imgur.com/OV9wvKG.png',
+      image: 'https://i.imgur.com/4taKvIY.png',
       title: 'St. Freya Fiesta',
       inGame: false,
       type: 'captainverse',
@@ -767,14 +767,14 @@ export const storyP1= [
       type: 'main',
       version: '3.6'
     }, 
+
     {
-      image: 'https://img.youtube.com/vi/gVHD6ieRmTI/hqdefault.jpg',
-      title: "Meteoric Salvation",
-      inGame: true,
-      type: 'animation',
+      image: 'https://i.imgur.com/1NR5icE.png',
+      title: "Kiana's Birthday 2019",
+      inGame: false,
+      type: 'captainverse',
       version: '3.6',
-      link: 'https://www.youtube.com/watch?v=gVHD6ieRmTI'
-    },       
+    },            
     {
       image: 'https://i.imgur.com/J9bQDhq.png',
       title: 'Empyrean Legends',
@@ -783,6 +783,28 @@ export const storyP1= [
       version: '3.7',
        
     }, 
+    {
+      image: 'https://i.imgur.com/w7EuzbB.png',
+      title: "Fu Hua's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.7',
+    },  
+    {
+      image: 'https://img.youtube.com/vi/gVHD6ieRmTI/hqdefault.jpg',
+      title: "Meteoric Salvation",
+      inGame: true,
+      type: 'animation',
+      version: '3.7',
+      link: 'https://www.youtube.com/watch?v=gVHD6ieRmTI'
+    },    
+    {
+      image: 'https://i.imgur.com/nZhJnrj.png',
+      title: "Rita's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.7',
+    },          
     {
       image: 'https://i.imgur.com/fpfxs86.png',
       title: "A Post-Honkai Odyssey Trailer",
@@ -829,6 +851,20 @@ export const storyP1= [
       link: 'https://www.youtube.com/watch?v=SS92KohSI4w'
     },      
     {
+      image: 'https://i.imgur.com/NMKvKWQ.png',
+      title: "Theresa's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.8',
+    },      
+    {
+      image: 'https://i.imgur.com/YzUiH46.png',
+      title: "Mei's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '3.8',
+    },          
+    {
       image: 'https://i.imgur.com/ukZ2lwH.png',
       title: 'Hymn Excelsis',
       inGame: false,
@@ -836,6 +872,9 @@ export const storyP1= [
       version: '3.9',
        
     },   
+ 
+  
+    
     {
       image: 'https://i.imgur.com/n2kbAht.png',
       title: 'Honkai Kingdoms: ZERO',
@@ -856,7 +895,14 @@ export const storyP1= [
       inGame: false,
       type: 'captainverse',
       version: '4.0',
-    },      
+    },   
+    {
+      image: 'https://i.imgur.com/KgsspgW.png',
+      title: "Himeko's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '4.0',
+    },          
     {
       image: 'https://i.imgur.com/6AHD3e4.png',
       title: "P1 Ch17: Thunders Over Nagazora",
@@ -901,7 +947,20 @@ export const storyP1= [
       type: 'main',
       version: '4.1'
     },  
-
+    {
+      image: 'https://i.imgur.com/B2mha7V.png',
+      title: "Sakura's Birthday 2020",
+      inGame: false,
+      type: 'event',
+      version: '4.1',
+    },     
+    {
+      image: 'https://i.imgur.com/pump1oi.png',
+      title: "Bronya's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '4.1',
+    },  
     {
       image: 'https://i.imgur.com/dTAaatW.png',
       title: "Rosemary's Floriograph",
@@ -968,6 +1027,14 @@ export const storyP1= [
       version: '4.3'
     }, 
     {
+      image: 'https://i.imgur.com/Jow2hwL.png',
+      title: "Seele's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '4.3',
+    },  
+
+    {
       image: 'https://i.imgur.com/uonggOE.png',
       title: "Durandal's Pilgrimage",
       inGame: false,
@@ -992,6 +1059,21 @@ export const storyP1= [
       version: '4.4'
     },   
     {
+      image: 'https://i.imgur.com/cxLQe9Z.png',
+      title: "Kiana's Birthday 2020",
+      inGame: false,
+      type: 'captainverse',
+      version: '4.4',
+    },  
+    {
+      image: 'https://i.imgur.com/w2IKRHy.png',
+      title: "Evangelion Collab Concept Trailer",
+      inGame: false,
+      type: 'animation',
+      version: '4.4',
+      link: 'https://www.youtube.com/watch?v=MA1-AE6VS7E'
+    },         
+    {
       image: 'https://i.imgur.com/pqnjkyE.png',
       title: 'Evangelion Collab',
       inGame: false,
@@ -999,6 +1081,14 @@ export const storyP1= [
       version: '4.5',
        
     },   
+    {
+      image: 'https://i.imgur.com/jw3x0Lu.png',
+      title: "Durandal's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '4.5',
+       
+    },       
     {
       image: 'https://i.imgur.com/DsjaFAP.png',
       title: "P1 Ch22: Me and Myself",
@@ -1020,7 +1110,29 @@ export const storyP1= [
       inGame: false,
       type: 'event',
       version: '4.6',
-    },    
+    },  
+    {
+      image: 'https://i.imgur.com/8D8yi3B.png',
+      title: "Fu Hua's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '4.6',
+    },       
+    {
+      image: 'https://i.imgur.com/Uvatmw9.png',
+      title: "Rita's Birthday 2021",
+      inGame: false,
+      type: 'captainverse',
+      version: '4.6',
+    },       
+    {
+      image: 'https://img.youtube.com/vi/NmlaYhzmzMc/hqdefault.jpg',
+      title: "Hijacked",
+      inGame: false,
+      type: 'captainverse-animation',
+      version: '4.7',
+      link: 'https://www.youtube.com/watch?v=NmlaYhzmzMc'
+    },     
     {
       image: 'https://i.imgur.com/Q17e2WV.png',
       title: "Arc: Light Bound",
@@ -1029,12 +1141,26 @@ export const storyP1= [
       version: '4.7',
     },   
     {
+      image: 'https://i.imgur.com/pnUbbjb.png',
+      title: "Theresa's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '4.7',
+    },      
+    {
       image: 'https://i.imgur.com/YN7LWkZ.png',
       title: "P1 Ch23: The Solo Stage",
       inGame: true,
       type: 'main',
       version: '4.7'
     },
+    {
+      image: 'https://i.imgur.com/whdyoAt.png',
+      title: "Mei's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '4.7',
+    },  
     {
       image: 'https://i.imgur.com/9bLUTcv.png',
       title: "Seele's One Day Adventure ",
@@ -1067,11 +1193,18 @@ export const storyP1= [
     },    
     {
       image: 'https://i.imgur.com/pOmu5nP.png',
-      title: "Genshin Impact Collab",
+      title: "Genshin Impact Crossover",
       inGame: false,
       type: 'event',
       version: '4.9',
     },    
+    {
+      image: 'https://i.imgur.com/HvzVVc0.png',
+      title: "Himeko's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '4.9',
+    },     
     {
       image: 'https://i.imgur.com/eGE93Yu.png',
       title: "P1 Ch25: Set Tomorrow Ablaze",
@@ -1095,7 +1228,8 @@ export const storyP1= [
       type: 'event',
       version: '4.9',
       link: 'https://www.youtube.com/watch?v=ROXUApi5mg8'
-    },     
+    },   
+
     {
       image: 'https://i.imgur.com/RB0TCBX.png',
       title: "Estival Seaside Amusement Park",
@@ -1104,13 +1238,27 @@ export const storyP1= [
       version: '5.0',
     }, 
     {
+      image: 'https://i.imgur.com/IBdNqLZ.png',
+      title: "Sakura's Birthday 2021",
+      inGame: false,
+      type: 'event',
+      version: '5.0',
+    },      
+    {
       image: 'https://img.youtube.com/vi/Ofg2_qN3MrQ/hqdefault.jpg',
       title: "Elysian Realm Concept Trailer",
       inGame: false,
       type: 'animation',
       version: '5.0',
       link: 'https://www.youtube.com/watch?v=Ofg2_qN3MrQ'
-    },      
+    },  
+    {
+      image: 'https://i.imgur.com/jELIUWC.png',
+      title: "Bronya's Birthday 2021",
+      inGame: false,
+      type: 'captainverse',
+      version: '5.0',
+    },             
     {
       image: 'https://i.imgur.com/ZeagcC7.png',
       title: "Elysian Realm Chapter 1",
@@ -1184,7 +1332,7 @@ export const storyP1= [
       title: "A Post-Honkai Odyssey 2 Trailer",
       inGame: false,
       type: 'animation',
-      version: '5.3',
+      version: '5.2',
       link: 'https://www.youtube.com/watch?v=tXfZfErVegI'
     }, 
      {
@@ -1192,9 +1340,10 @@ export const storyP1= [
       title: "Reburn 2",
       inGame: false,
       type: 'animation',
-      version: '5.3',
+      version: '5.2',
       link: 'https://www.youtube.com/watch?v=f7Y1GcPVU3U'
-    },            
+    }, 
+               
     {
       image: 'https://i.imgur.com/OhVCWtj.png',
       title: "Before Starfall",
