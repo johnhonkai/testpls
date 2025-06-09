@@ -2389,7 +2389,11 @@ export const teamData = {
           
         ]
       }
-    ],
+    ],    
+    videos: [
+      { url: 'https://www.bilibili.com/video/BV1LWjEzqE7N/', abyss: 'RedLotus 511D', uploader: '执念微阳' },
+
+    ] 
   },
 
   fluxandrius: {
