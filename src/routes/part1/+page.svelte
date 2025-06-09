@@ -27,7 +27,7 @@ $: filteredStories = storyP1.filter((story) => {
   if (filter === 'event') return story.type === 'event' || story.type === 'captainverse' || story.type === 'alt-world'  ;
   if (filter === 'captainverse') return story.type === 'captainverse' || story.type === 'captainverse-manga' || story.type === 'captainverse-animation'   ;
   if (filter === 'alt-world') return story.type === 'alt-world'  ;
-  if (filter === 'animation') return story.type === 'animation' || story.type === 'captainverse-animation' ;
+  if (filter === 'animation') return story.type === 'animation'  || story.type === 'event-animation' || story.type === 'captainverse-animation' ;
 
   return false;
 });
@@ -171,6 +171,8 @@ function toggleView() {
   Capverse Manga  
 {:else if story.type === 'captainverse-animation'}  
   Capverse Animation 
+{:else if story.type === 'event-animation'}  
+  Event Animation   
 {:else if story.type === 'alt-world'}  
   Alt World
 {:else if story.type === 'event'}
@@ -280,7 +282,9 @@ function toggleView() {
 {:else if story.type === 'captainverse-manga'}  
   Capverse Manga  
 {:else if story.type === 'captainverse-animation'}  
-  Capverse Animation     
+  Capverse Animation   
+{:else if story.type === 'event-animation'}  
+  Event Animation        
 {:else if story.type === 'alt-world'}  
   Alt World
 {:else if story.type === 'event'}

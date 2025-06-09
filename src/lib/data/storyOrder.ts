@@ -283,7 +283,15 @@ export const storyOrder = [
       type: 'event-animation',
       version: '8.0',
       link: 'https://www.youtube.com/watch?v=pYG9DFhHAAY'
-    },          
+    },  
+      {
+      image: 'https://i.imgur.com/eYpr2Iu.png',
+      title: "Kiana's New Year Special Video",
+      inGame: false,
+      type: 'promo-video',
+      version: '8.0',
+      link: 'https://www.bilibili.com/video/BV19scReME11/'
+    },                
       {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Event11.webp',
         title: "Ongoing: Make-A-Wish Fest!",
@@ -328,9 +336,8 @@ export const storyOrder = [
         canon: false,
       },
             {
-        image: 'https://i.imgur.com/fpXM64Z.png',
+        image: 'https://i.imgur.com/OjQxtpb.png',
         title: "Bon Voyage! Towards Blessings and Wishes!",
-        youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'event',
         version: '8.3',
@@ -1080,7 +1087,7 @@ export const storyP1= [
       image: 'https://i.imgur.com/w2IKRHy.png',
       title: "Evangelion Collab Concept Trailer",
       inGame: false,
-      type: 'animation',
+      type: 'event-animation',
       version: '4.4',
       link: 'https://www.youtube.com/watch?v=MA1-AE6VS7E'
     },         
@@ -1719,7 +1726,15 @@ export const storyP1= [
       inGame: false,
       type: 'captainverse',
       version: '6.8',
-    },      
+    },    
+    {
+      image: 'https://img.youtube.com/vi/JlqQb2pNLSw/hqdefault.jpg',
+      title: "Promare Crossover Concept Trailer",
+      inGame: false,
+      type: 'event-animation',
+      version: '6.8',
+      link: 'https://www.youtube.com/watch?v=JlqQb2pNLSw'
+    },         
    {
       image: 'https://i.imgur.com/oL53R5f.png',
       title: "After the Blood Moon Fades",
