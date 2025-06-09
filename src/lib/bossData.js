@@ -1848,6 +1848,7 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.bilibili.com/video/BV1AfEvzvE7D/', abyss: 'RedLotus 517D', uploader: '我不是老酋长' },
       { url: 'https://www.youtube.com/embed/fOtZH8BiZYg', abyss: 'Nirvana 542D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/embed/Chr0ksydpL4', abyss: 'Nirvana 542D', uploader: 'iChronos' },
     ] 
