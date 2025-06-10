@@ -20,7 +20,7 @@
 
   const astralRings = [
     { name: "Part 1 (2016)", slug: "part1", image: "https://i.imgur.com/fCVEMBO.png" },
-    { name: "Part 2 (2023)", slug: "part2", image: "https://i.imgur.com/C8lb47l.png"},
+    { name: "Part 2 (2024)", slug: "part2", image: "https://i.imgur.com/C8lb47l.png"},
   ];
 </script>
 

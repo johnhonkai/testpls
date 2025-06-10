@@ -707,7 +707,7 @@ export const storyP1= [
     },  
     {
       image: 'https://img.youtube.com/vi/6rRBmN8EueM/hqdefault.jpg',
-      title: "Ch11-EX CG",
+      title: "Ch11-EX Cutscene",
       inGame: true,
       type: 'animation',
       version: '3.3',
@@ -729,7 +729,7 @@ export const storyP1= [
     },  
     {
       image: 'https://img.youtube.com/vi/NRJE9gm_rnA/hqdefault.jpg',
-      title: "[Seele] ",
+      title: "「Seele」",
       inGame: true,
       type: 'animation',
       version: '3.4',
@@ -1465,7 +1465,15 @@ export const storyP1= [
       inGame: false,
       type: 'captainverse',
       version: '5.7',
-    },        
+    },     
+     {
+      image: 'https://img.youtube.com/vi/MnHTYV3G2gU/hqdefault.jpg',
+      title: "Griseo wants to paint with you",
+      inGame: false,
+      type: 'animation',
+      version: '5.8',
+      link: 'https://www.youtube.com/watch?v=MnHTYV3G2gU'
+    },           
     {
       image: 'https://i.imgur.com/aVJDjSe.png',
       title: "P1 Ch30: Marcia Funebre",
@@ -1479,7 +1487,15 @@ export const storyP1= [
       inGame: false,
       type: 'event',
       version: '5.8',
-    },     
+    },   
+     {
+      image: 'https://img.youtube.com/vi/W6LrEGx2euY/hqdefault.jpg',
+      title: "Griseo in Wonderland",
+      inGame: false,
+      type: 'animation',
+      version: '5.8',
+      link: 'https://www.youtube.com/watch?v=W6LrEGx2euY'
+    },           
      {
       image: 'https://img.youtube.com/vi/OEL958NS7aE/hqdefault.jpg',
       title: "Rehearsal",
@@ -1690,6 +1706,14 @@ export const storyP1= [
       type: 'captainverse',
       version: '6.6',
     },     
+    {
+      image: 'https://i.imgur.com/3L9lxyB.png',
+      title: "Ocean Dive Outfits Chibi Video",
+      inGame: false,
+      type: 'animation',
+      version: '6.7',
+      link: 'https://www.youtube.com/watch?v=_qyWEKeXa9U'
+    },      
    {
       image: 'https://i.imgur.com/P0fVrEL.png',
       title: "☆Perfect Performance☆",
@@ -1771,6 +1795,14 @@ export const storyP1= [
       type: 'main',
       version: '7.0'
     },   
+     {
+      image: 'https://img.youtube.com/vi/M1wbOw8NbMo/hqdefault.jpg',
+      title: "Griseo's Star Journey",
+      inGame: false,
+      type: 'animation',
+      version: '7.1',
+      link: 'https://www.youtube.com/watch?v=M1wbOw8NbMo'
+    },        
    {
       image: 'https://i.imgur.com/jnQt0v0.png',
       title: "Starry Voyage: Strike Back!",
@@ -1799,5 +1831,11 @@ export const storyP1= [
       type: 'event',
       version: '7.2',
     },  
-                                                                                                                                                                                                                                                                                                                                                                     
+   {
+      image: 'https://i.imgur.com/zNuKGUN.png',
+      title: "Durandal's Birthday + New Year 2024",
+      inGame: false,
+      type: 'event',
+      version: '7.2',
+    },                                                                                                                                                                                                                                                                                                                                                                       
 ];
