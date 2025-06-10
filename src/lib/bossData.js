@@ -193,7 +193,7 @@ export const bossData = {
   typesprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
-    weakness: 'None', 
+    weakness: 'Ice (L)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Counter: Type counter effect is 20% stronger."

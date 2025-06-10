@@ -34,7 +34,23 @@ These characters are available in Elysian Realm mode.
 - Unlocking and ranking them up also improves your Dorm Level EXP, which grants you global ATK and buffs - and it helps you fulfill S+ rank Dorm Errand requirements.
 
 
+#### A-rank Valkyries
+
 ![Characters in Elysian Realm](https://i.imgur.com/RdlOVa8.jpeg)
+
+
+#### Augment Core Selector 
+
+For Augment Core selector, these are the augment valks that are available in Elysian Realm.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/pL8naO3.jpeg" alt="Icon" class="w-[650px] h-auto rounded-lg" />
+</div>
+
+- You need the base valkyries + augment cores to unlock them in Elysian Realm, so it will take longer to get compared to the A-rank valks above.
+- Not recommended to purchase these all at once since it can get costly. You can get the core slowly over time from Open World, then purchase the remaining cores required to unlock the next augment upgrade.
+
+
 
 ## Asterite Currency
 

@@ -89,5 +89,6 @@
   { name: "Darkbolt Jonin", image: '/images/valkportrait/Sakura Darkbolt Jonin.png', type: 'Bio', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/dj', verdebut: 3.6,  id:53},
   { name: "Stygian Nymph", image: '/images/valkportrait/Seele Stygian Nymph.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sn', verdebut: 3.5,  id:54},
   { name: "Hawk of the Fog", image: '/images/valkportrait/Fu Hua Hawk of the Fog.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hotf', verdebut: 3.5,  id:55},
+  { name: "Twilight Paladin", image: '/images/valkportrait/Theresa Twilight Paladin.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/tp', verdebut: 3.4,  id:56},
 
 ];
