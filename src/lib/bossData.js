@@ -431,8 +431,8 @@ export const bossData = {
     weather: "Scrappy: Enemies take 50% more Melee DMG, and take 50% less Ranged DMG", 
   },
   sampo: {
-    name: 'Masked Fool - Sampo', 
-    mechanics: 'Transition phase has paralyze trauma', 
+    name: 'Masked Fool Sampo', 
+    mechanics: "Sampo takes more Melee DMG. Transition phase: Sampo's hat has high HP and huge paralyze trauma, fill the trauma to instantly destroy it.", 
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Sampo.webp", 

@@ -303,7 +303,9 @@
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
       { code: 'CCAZRD01', reward: '60 crystals' },
-      { code: 'CHOWANDCHEW', reward: 'Materials' }
+      { code: 'CHOWANDCHEW', reward: 'Materials' },
+      { code: 'GDLNPP6SLA', reward: 'Materials' }
+
     ] as entry}
       <div class="flex items-center justify-between gap-2">
         <div>

@@ -23,7 +23,7 @@
     { name: "Wheel of Destiny", slug: "wheel-of-destiny", image: "/images/artype/banner_wod.webp"},
     { name: "Rite of Oblivion", slug: "rite-of-oblivion", image: "/images/artype/banner_roo.webp" },
     { name: "Law of Ascension", slug: "law-of-ascension", image: "/images/artype/banner_loa.webp" },
-    { name: "Heavenly Grail", slug: "heavenly-grail", image: "/images/artype/banner_hg.webp" },
+    { name: "Grail of Infinitude", slug: "grail-of-infinitude", image: "/images/artype/banner_hg.webp" },
 
   ];
 </script>

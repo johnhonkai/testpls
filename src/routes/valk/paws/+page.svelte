@@ -299,10 +299,10 @@ async function increaseLike() {
 
 
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="hg" bg="bg-orange-800" />
+  <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="gof" bg="bg-orange-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['hg' , 'loa']}  bg="bg-orange-800"/>
+  <CharBio mode="support" ar={['gof' , 'loa']}  bg="bg-orange-800"/>
 </div>
 
 

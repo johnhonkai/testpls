@@ -21,7 +21,7 @@
 
     export const astralRings = [
     'All',
-    'Heavenly Grail',
+    'Grail of Infinitude',
     'Law of Ascension',
     'Wheel of Destiny',
     'Rite of Oblivion',
@@ -31,7 +31,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Heavenly Grail'] , url: '/valk/paws',  badge: 'Beta', verdebut: 8.3, id:55},
+  { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/paws',  badge: 'Beta', verdebut: 8.3, id:55},
   { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/ps',  badge: 'New', verdebut: 8.2, id:54},
   { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/kiana badum.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum', verdebut: 8.1, id:53},
   { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Wheel of Destiny' , 'Part 1'],  url: '/valk/hoh', verdebut: 6.0, verdlc: 8.1, id:25},
@@ -90,5 +90,6 @@
   { name: "Stygian Nymph", image: '/images/valkportrait/Seele Stygian Nymph.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sn', verdebut: 3.5,  id:54},
   { name: "Hawk of the Fog", image: '/images/valkportrait/Fu Hua Hawk of the Fog.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hotf', verdebut: 3.5,  id:55},
   { name: "Twilight Paladin", image: '/images/valkportrait/Theresa Twilight Paladin.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/tp', verdebut: 3.4,  id:56},
+  { name: "Herrscher of Reason", image: '/images/valkportrait/Bronya Herrscher of Reason.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hor', verdebut: 3.3, verdlc: 6.1,  id:57},
 
 ];

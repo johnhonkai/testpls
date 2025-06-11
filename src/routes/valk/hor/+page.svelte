@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Durandal - Bright Knight: Excelsis</title> 
-    <meta property="og:title" content="Durandal - Bright Knight: Excelsis" />
-    <meta property="og:description" content="Bright Knight: Excelsis Guide, Builds and Gameplay" />
+    <title>Herrscher of Reason</title> 
+    <meta property="og:title" content="Bronya - Herrscher of Reason" />
+    <meta property="og:description" content="Herrscher of Reason Guide, Builds and Gameplay" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/bk" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/hor" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -52,8 +52,8 @@ function closeLightbox() {
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
-  // { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
+   { name: 'Gameplay Examples', short: 'example' },
+  //{ name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
@@ -150,8 +150,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["bk"] || 0; // Get initial likes from JSON
-  const charName = "bk"; // Route name for this character
+  let fovlikes = likesData["hor"] || 0; // Get initial likes from JSON
+  const charName = "hor"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -217,7 +217,7 @@ function selectTabMobile(event) {
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/bk.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-50;"/> 
+    <img src="/images/valkfull/hor.png" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-50;"/> 
   
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
@@ -247,11 +247,11 @@ function selectTabMobile(event) {
     <!-- Battlesuit Name -->
   
     <div >
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Bright Knight: Excelsis</h1>
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Herrscher of Reason</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Durandal | Release Date: v3.9 (14 May 2020)  </p>
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-4">Divine Key DLC: v4.7 (22 Apr 2021)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">Bronya | Release Date: v3.3 (15 Aug 2019)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mb-4">Divine Key DLC: v6.1 (27 Oct 2022)  </p>
 
   
     <!-- Common wrapper to ensure same width -->
@@ -261,7 +261,7 @@ function selectTabMobile(event) {
         <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-blue-500 outline-1 bg-blue-950/75 rounded-lg p-2 backdrop-blur-xs">
           <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
           <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+          <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
   
         </div>
 
@@ -339,17 +339,16 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Outdated Part 1 Physical DPS</strong>
+          <strong class="text-amber-400">Outdated Part 1 Ice DPS</strong>
           
       </p>
 
 
 
       <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">Bright Knight (BK) is a very old battlesuit that was brought to meta again in 2021 with the introduction of Divine Key [Abyss Flower], a weapon of mass destruction.</li>
-          <li class="mt-2"> Really wants ranks and Abyss Flower to be usable.</li>
-          <li class="mt-2"> Currently, BK has been replaced by <a href="/valk/dreamweaver" class="link ">Dreamweaver.</a> </li>
-
+        <li class="mt-2">Herrscher of Reason (HoR) is an Ice DPS on a bike!</li>
+        <li class="mt-2"> Was brought back to meta as a niche dps with the Divine Key [Star of Eden: World]. </li>
+        <li class="mt-2"> HoR has been replaced by <a href='/valk/thelema' class="link">Thelema</a> with the same type and damage. </li>
       </ul>
 
 
@@ -359,24 +358,24 @@ function selectTabMobile(event) {
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400 ">New Players on Bright Knight</strong>
+          <strong class="text-amber-400 ">Herrscher of Reason in War Treasury</strong>
       </p>
 
       <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">War Treasury: Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so no, not recommended to farm BK first. </li>
-          <li class="mt-2"> You can consider unlocking BK in the future for Elysian Realm first-clear crystal rewards.</li>
+        <li class="mt-2">Sirin and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so no, not recommended to farm HoR first. </li>
+          <li class="mt-2"> You can consider unlocking HoR in the future for Elysian Realm first-clear crystal rewards.</li>
 
       </ul>
 
       <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on BK Equipment</strong>
+        <strong class="text-amber-400 ">New Players on HoR Equipment</strong>
         <br/>
     </p>
 
     <ul class="list-disc ml-6 text-sm sm:text-base">
 
-        <li class="mt-2"> Abyss Flower: Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Abyss Flower is available through other means, such as spending event or Battle Pass, you can consider getting it that way.</li>
-        <li class="mt-2"> Dante TM and Elysia B stigma are forgable in Foundry. Forge resources are limited, don't forge these stigma first.
+        <li class="mt-2"> Currently, Star of Eden: World is not available anywhere. If you want it, then you have to wait (maybe years) until it gets added to Battle Pass.</li>
+        <li class="mt-2"> G4 Willows is available in Foundry, but will take a couple of months to forge.
         </li>
 
     </ul>
@@ -386,9 +385,9 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li ><strong>Bright Knight:</strong> War Treasury, Dorm Supply.</li>
-            <li ><strong>Abyss Flower:</strong> Focused Supply.</li>
-            <li ><strong>G3 Dante TM, G4 Elysia B:</strong> Forgeable in foundry.</li>
+          <li ><strong>Herrscher of Reason:</strong> War Treasury, Dorm Supply, Battle Pass.</li>
+            <li ><strong>Star of Eden World:</strong> Unknown.</li>
+            <li ><strong>G4 Willows:</strong> Forgeable in foundry.</li>
 
         </ul>
 
@@ -404,7 +403,7 @@ function selectTabMobile(event) {
 
 
   
-    <P1physical></P1physical>
+    <P1ice></P1ice>
 
 
 </section>
@@ -424,27 +423,27 @@ function selectTabMobile(event) {
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/27/6100274/630f32b2d8da1cffa01dd1d347caf76d_6246057471359952089.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/10/11/50494840/a43d70789a2e749344fc488d8bfb49f4_8074562924204456595.png" alt="SoE World" class="w-full h-full object-cover">
               </div>
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/07d0bfb9c4e2963d96d3c3419c5a07fd_1780370626432059729.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/10/11/50494840/4ebb3b5717d38d2145588b85b706c800_3095257241293522131.png" alt="Willows T" class="w-full h-full object-cover">
 
               </div>
 
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/d6118c457a605b93278fb21fc8ae937e_7644099038321284032.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/10/11/50494840/08774ee8871f24d2a2f9bfca84818a55_2389093310024176828.png" alt="Willows M" class="w-full h-full object-cover">
 
               </div>
 
               
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/6100274/4b099751e7656a2400c3ad1427981d24_7231378109109545047.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/10/11/50494840/2839f23b32369fd802b918ed1caac92d_1707256399085666837.png" alt="Willows B" class="w-full h-full object-cover">
               </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Abyss Flower + Dante TM, Elysia B </h4>
+              <h4 class="text-base sm:text-base text-white"> Star of Eden: World + G4 Willows </h4>
               </div>
 
 
@@ -457,11 +456,15 @@ function selectTabMobile(event) {
 
             <div class="p-4 mt-4 bg-linear-to-r from-violet-950/75 to-violet-900/75 rounded-sm">
               <p class="text-sm sm:text-base text-left">
-                <b>Abyss Flower </b><br/> - A must-have for Bright Knight.
-                <br/> - Big buffs, powerful nuke, sp regen.
-                <br/> - Adds timestop to weapon finisher.
+                <b>Star of Eden: World </b>
+                <br/> - You can drift!
+                <br/> - Adds timestop to Ult activation.
               </p>
-
+              
+              <p class="text-sm sm:text-base text-left mt-5">
+                <b>G4 Willows </b>
+                <br/> - Affix: Full ATK.
+              </p>
             </div>
 
 
@@ -476,7 +479,7 @@ function selectTabMobile(event) {
 
       <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-0 md:mb-2 text-center sm:text-left text-amber-400">Warning: Old Valk</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-        This is a very old valkyrie that requires ranks and her signature weapon to perform well. Please play at a lower difficulty if BK is at a low rank and does not have Abyss Flower equipped.
+        This is a very old valkyrie. Please play at a lower difficulty if HoR is at a low rank and does not have Star of Eden World equipped.
       </p>
       <div class="divider  "></div>
 
@@ -497,15 +500,14 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Glory </p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Gambit</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Wisdom </p>
 
             </div>
           </div>
         </div>
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
-            You can complete the run with just one Ego signet (Glory). Gambit is extra damage.
+            This build is for Star of Eden: World weapon.
           </p>
         </div>
 
@@ -520,13 +522,8 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -534,14 +531,11 @@ function selectTabMobile(event) {
               <p class="text-lg font-semibold">2</p>
             </div>
 
-            
-
-
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
             </div>
-
+            
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
@@ -553,11 +547,7 @@ function selectTabMobile(event) {
             </div>
 
           </div>
-          <div class="mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left">
-              <b>Setsuna 1:</b> Get extra evasion charges signet. Get [Ame-Shiko] enhancement to reset Ult CD. <br/>
-            </p>
-          </div>
+
 
             <div class="divider  "></div>
             <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -566,7 +556,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
@@ -574,7 +564,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -582,17 +572,12 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
             
-          </div>
-          <div class="mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left">
-              You can swap Lightning Empress to Snowy Sniper once you have enough sp regen.
-            </p>
           </div>
 
           <div class="divider  "></div>
@@ -793,7 +778,7 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">DA with Sparkle Support</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">HoR DPS</h2>
 
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
@@ -801,7 +786,7 @@ function selectTabMobile(event) {
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/kY_1zw8LNF0"
+                src="https://www.youtube.com/embed/5xBz7QTztLY"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -812,28 +797,6 @@ function selectTabMobile(event) {
 
     </div>
 
-      
-    <div class=" gap-6 mt-5 mb-10">
-
-      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-        <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">DA with HoTr and CN Support</h2>
-
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-          <iframe
-          loading="lazy" 
-
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/lonrVng7W5g"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-      </div>
-    </div>
-
-  </div>
 
 
   {/if}

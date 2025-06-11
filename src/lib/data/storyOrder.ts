@@ -351,6 +351,14 @@ export const storyOrder = [
         type: 'main',
         version: '8.3',
       },      
+            {
+        image: 'https://i.imgur.com/WmKD83w.jpeg',
+        title: "Space Ranger: Graveyard of Stars",
+        inGame: true,
+        type: 'side',
+        version: '8.3',
+        canon: false,
+      },      
 ];
   
 
@@ -792,6 +800,7 @@ export const storyP1= [
       inGame: false,
       type: 'captainverse',
       version: '3.6',
+      link: 'https://www.youtube.com/watch?v=d7Hl4p6qRAo'
     },            
     {
       image: 'https://i.imgur.com/J9bQDhq.png',
@@ -808,6 +817,14 @@ export const storyP1= [
       type: 'captainverse',
       version: '3.7',
     },  
+    {
+      image: 'https://i.imgur.com/upW6aPO.png',
+      title: 'Valentine Event 2020',
+      inGame: false,
+      type: 'event',
+      version: '3.7',
+       
+    },     
     {
       image: 'https://img.youtube.com/vi/gVHD6ieRmTI/hqdefault.jpg',
       title: "Meteoric Salvation",
@@ -920,6 +937,7 @@ export const storyP1= [
       inGame: false,
       type: 'captainverse',
       version: '4.0',
+      link: 'https://www.youtube.com/watch?v=40EnN1rHMLs'
     },          
     {
       image: 'https://i.imgur.com/6AHD3e4.png',

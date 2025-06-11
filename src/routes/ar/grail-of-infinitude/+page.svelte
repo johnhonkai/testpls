@@ -1,19 +1,19 @@
 <svelte:head>
-  <title>Heavenly Grail</title> 
+  <title>Grail of Infinitude</title> 
 
-    <meta property="og:title" content="Astral Ring: Heavenly Grail"/>
-    <meta property="og:description" content="Info for characters in Heavenly Grail teams." />
+    <meta property="og:title" content="Astral Ring: Grail of Infinitude"/>
+    <meta property="og:description" content="Info for characters in Grail of Infinitude teams." />
     <meta property="og:image" content="https://i.imgur.com/9yj8KnO.png" />
-    <meta property="og:url" content="https://marisaimpact.com/ar/heavenly-grail" />
+    <meta property="og:url" content="https://marisaimpact.com/ar/grail-of-infinitude" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://marisaimpact.com/ar/heavenly-grail" />
+    <link rel="canonical" href="https://marisaimpact.com/ar/grail-of-infinitude" />
 </svelte:head>
 
 <script lang="ts">
-    import type { PageData } from '../heavenly-grail/$types';
+    import type { PageData } from '../grail-of-infinitude/$types';
 
     let { data }: { data: PageData } = $props();
 
@@ -144,13 +144,13 @@ async function captureStats() {
   <!-- Text overlay -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Heavenly Grail
+  Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
     v8.3
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Heavenly Grail teams.
+      Overview for Grail of Infinitude teams.
 
 
     </p>
@@ -188,13 +188,13 @@ async function captureStats() {
   <!-- Text overlay -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
-  Heavenly Grail
+  Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
     v8.3
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Heavenly Grail teams.
+      Overview for Grail of Infinitude teams.
 
 
     </p>
@@ -210,8 +210,8 @@ async function captureStats() {
   <h2 class="text-xl sm:text-2xl font-semibold pt-2 cooltext">Overview</h2>
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
-      <strong class="text-white">Heavenly Grail</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>Teammates with <span class="text-teal-400 font-medium">Mutual Regen</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE).
+      <strong class="text-white">Grail of Infinitude</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
+      <br/>Teammates with <span class="text-teal-400 font-medium">Symbiosis</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE).
     </span>
   </p>
 </section>
