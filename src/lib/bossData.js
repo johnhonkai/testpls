@@ -2365,7 +2365,20 @@ export const teamData = {
     
     teamDataSets: [
             {
-        tabname: "v8.2 CN",
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '100%',
+          },
+          
+        ]
+      },      
+            {
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2378,7 +2391,7 @@ export const teamData = {
         ]
       },
       {
-        tabname: "v8.1 CN",
+        tabname: "v8.1",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
