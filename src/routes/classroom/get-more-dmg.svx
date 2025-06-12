@@ -1,0 +1,122 @@
+---
+title: How to Get More DMG
+category: "Game Mechanics"
+sortOrder: 7
+customSlug: "get-more-dmg"
+update: 8.2
+
+---
+
+
+
+## Stigma Affix
+
+You can get a max of 138 ATK from refining your stigma affix. This is equal to 1/4 of a PRI-ARM weapon ATK stat.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/HuYH25h.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+
+### Acceptable ATK Stat
+As a new player, you won't have a lot of materials to refine stigma affix. So, something like this is good enough.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/3MsklFf.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+## Dorm Bonus
+
+Levelling up your Dorm EXP will grant you <span class="text-teal-300">bonus stats for all characters</span>. The bonus include: ATK, Total DMG, Physical DMG and Elemental DMG buff.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/9CMrYnI.jpeg" alt="Icon" class="w-[680px] h-auto rounded-lg" />
+</div>
+
+### How to increase Dorm EXP
+Unlock and rank up as many characters as you can from Asterite Shop, War Treasury, etc. Do note that A-rank valks have a limit. You can check it in the Dorm menu.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/pdVQvMD.jpeg" alt="Icon" class="w-[680px] h-auto rounded-lg" />
+</div>
+
+## Divine Keys / Stellar Keys
+
+In Honkai Impact, there are special weapons called Divine Keys / Stellar Keys. 
+- Gacha Divine Keys give global +10 ATK, each.
+- Gacha Stellar Keys give global +10-20 ATK, each.
+
+When these ATK stack up, they can give a bonus equal to having a second weapon on your valk!
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/tV9cDBi.png" alt="Icon" class="w-[300px] h-auto rounded-lg" />
+</div>
+
+Image above shows my current bonus ATK from all the divine keys = 159 ATK. That is equal to around maxed out ATK affix from a stigma set, or just below a Lv50 weapon ATK stat!
+
+### Gene Limit Buffs
+Divine Keys also grant global damage buffs through Gene Limit.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/zSwGY4x.jpeg" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+
+### How to Get Divine Keys
+
+
+#### 1. Realms of Battle
+
+You can get these F2P divine keys from Realms of Battle mode. Even after you already got them all, keep doing this mode every week to get the upgrade materials. Note that the upgrade cost is very expensive for a new player - just take your time.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/jijkk3A.jpeg" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+#### 2. Exchange Shop 
+You can get <span class="text-amber-300">Oath of Judah</span> from Exchange Shop. 
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/1Ma2BU2.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+You need <span class="text-teal-300">Weapon Resonance</span> to exchange for Judah. Weapon Resonance used to be a common currency in Part 1 - you can get Weapon Resonance by converting Part 1 gacha weapons, and you can easily get weapons from Part 1 gacha.
+
+This is not the case anymore, since Part 2 supplies do not give Part 1 gacha weapons.
+
+So, how do you get Weapon Resonance now? You can forge 'Bounty Weapons' in Foundry, and convert them to Weapon Resonance. Out of all the Bounty Weapons, <span class="text-amber-400">3rd Sacred Relic</span> has the lowest Honkai Piece cost.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/GKgJbGM.jpeg" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+#### 3. Battle Pass
+These Divine Keys are available in Battle Pass. They cost 10 Crystallum each, which is equal to 2 patches worth for F2P players.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/ayypL15.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+Do note that some of these Divine Keys have been given for free in the past, and may be available in major spending event (happens twice a year). Only get the Divine Keys above from BP if you can't wait that long.
+
+#### 4. Supply
+
+Stellar Keys are only available in supply.
+
+#### 5. Not Available
+
+The rest of the divine keys are currently unobtainable. Just wait for them to be added in Battle Pass.
+
+## Emblem
+
+Some emblems give bonus stats and damage buffs. The most commonly used emblems are the Abyss emblems. You may not have these as a new player, so just equip any emblem that you have.
+
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/whNUUiL.jpeg" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
+
+For Elysian Realm (ER), the Flame-Chaers emblems give significant damage boost. Always remember to equip it when doing your ER run. The max HP is great especially if you are using Decimation signets.
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/E575eB2.png" alt="Icon" class="w-[600px] h-auto rounded-lg" />
+</div>
