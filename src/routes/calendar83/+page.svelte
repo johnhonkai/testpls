@@ -208,7 +208,8 @@
 
                 <div class="relative grid grid-cols-9 gap-1  h-[55px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                        <span class="absolute w-[30px] h-[4px] bg-amber-600 inline-block top-[-3px] left-0"></span>                         
+                        <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div>  
                     <div class=" col-span-2"></div>                  
                     <div on:click={() => openModal("")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-amber-700">
@@ -485,7 +486,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard/>
+                <BossCard image="/images/Bosses/Meteor_Guaymas.webp" date="Jul 11" weather="Resonance" bosspage="/boss?resoguaymas" />
                     <BossCard />
                     </div>
                      

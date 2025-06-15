@@ -78,7 +78,9 @@ export const weatherList = {
 
   ],
   resonance: [
-    {id: 'resovita', name: "Vita - Sea's Depths"}
+    {id: 'resovita', name: "Vita - Sea's Depths"},
+    {id: 'resoguaymas', name: "Meteoroid: Guaymas"}
+  
   ],
   melee: [
     {id: 'meleehoc', name: 'Herrscher of Corruption'},
@@ -422,6 +424,15 @@ export const bossData = {
     bosspic: "images/Bosses/Vita.png", 
     weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.", 
   },
+  resoguaymas: {
+    name: 'Meteoroid: Guaymas', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Meteor_Guaymas.webp", 
+    weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.", 
+  },
+
   meleehoc: {
     name: 'Herrscher of Corruption', 
     mechanics: 'Transition phase has high hitcount hp', 
