@@ -112,7 +112,9 @@ export const weatherList = {
   dominance: [
     {id: 'aponia', name: 'Aponia'},
   ],
-  
+  extreme: [
+    {id: 'extreme-parvati', name: 'Parvati'},
+  ],  
 }
 
 export const weatherEffect = {
@@ -208,6 +210,14 @@ export const bossData = {
     bosspic: "images/Bosses/Parvati.webp", 
     weather: "Counter: Type counter effect is 20% stronger."
   },
+  'extreme-parvati': {
+    name: 'Parvati', 
+    mechanics: '', 
+    weakness: 'Ice (Immune) , Physical (L)', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Parvati.webp", 
+    weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
+  },  
   obvhomu: {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 

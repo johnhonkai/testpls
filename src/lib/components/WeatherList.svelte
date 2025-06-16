@@ -27,7 +27,8 @@
     shadow: "Shadow",
     symphony: "Symphony",
     flux: "Flux",
-    dominance: "Dominance"
+    dominance: "Dominance",
+    extreme: "Extreme"
     // Add other weather mappings as needed
   };
 
