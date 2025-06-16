@@ -2917,6 +2917,34 @@ export const teamData = {
       }
     ],
   },
+
+   resoguaymas: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad 550 D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '1+',
+            pct: '94%',
+            bottext: "Highest Score:"
+
+          },        
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+            rank: '31',
+            pct: '6%',
+            bottext: "Highest Score: S2 824, SS2 830"
+
+          },                                    
+        ]
+      }
+    ],
+  }, 
 }
 
 

@@ -22,8 +22,8 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "starless"; // Default weather
-  let selectedBoss = "starsk"; // Default boss
+  let selectedWeather = "bleed"; // Default weather
+  let selectedBoss = "bleed-tribunal"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
 
@@ -34,7 +34,7 @@
     const bossParam = queryParams[0];
     if (bossParam && bossData[bossParam]) {
       selectedBoss = bossParam;
-      selectedWeather = findWeatherByBossId(bossParam) || "starless";
+      selectedWeather = findWeatherByBossId(bossParam) || "bleed";
     }
     // Wait for initial images to load
     checkImagesLoaded();
