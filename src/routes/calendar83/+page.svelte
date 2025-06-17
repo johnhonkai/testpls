@@ -491,9 +491,9 @@
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard   />
+                        <BossCard image="/images/Bosses/Sa_SSS.webp" date="Jul 15"  />
+                        <BossCard image="/images/BossesMA/Parvati_SSS.webp" />
+                        <BossCard image="/images/Bosses/Assaka.webp"   />
                     </div>
     
 

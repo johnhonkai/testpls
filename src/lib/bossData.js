@@ -436,7 +436,7 @@ export const bossData = {
   },
   resoguaymas: {
     name: 'Meteoroid: Guaymas', 
-    mechanics: '', 
+    mechanics: "This Guaymas has critical index point near the start of HP bar - this is to help Senadina get top score. In other Guaymas versions with index point closer to the end of HP bar, Sena loses to Badum with JD support.", 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 
