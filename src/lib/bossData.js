@@ -2955,6 +2955,39 @@ export const teamData = {
       }
     ],
   }, 
+   extremeparvati: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '1+',
+            pct: '91%',
+
+          },         
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+            rank: '56',
+            pct: '8%',
+
+          },      
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '87',
+            pct: '1%',
+
+          },                                              
+        ]
+      }
+    ],
+  }, 
+  
 }
 
 
