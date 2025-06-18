@@ -2955,7 +2955,7 @@ export const teamData = {
       }
     ],
   }, 
-   extremeparvati: {
+   'extreme-parvati': {
     
     teamDataSets: [
       {
