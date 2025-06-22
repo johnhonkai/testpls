@@ -2994,7 +2994,68 @@ export const teamData = {
       }
     ],
   }, 
+ 
   
+   bleedhoc: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '1-2',
+            pct: '52%',
+            bottext: "Vita uses OutingT AladdinMB. Highest Score: S2 839, SS 847, 6S 856, 9S 885"
+
+          },         
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '3',
+            pct: '22%',
+            bottext: "Vita uses signature stigma. Highest Score: SS 837, 6S 851, 8S 880"
+
+          },      
+           {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '4,7,10',
+            pct: '14%',
+            bottext: "Vita uses OutingT AladdinMB. Highest Score: 6S 860, 9S 875"
+
+          },  
+          
+           {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '5,6,8,9',
+            pct: '10%',
+            bottext: "Vita uses signature stigma. Highest Score: SS 848, 9S 871"
+
+          },      
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '32',
+            pct: '1%',
+            bottext: "Vita uses VanGoghT AladdinMB. Highest Score: 6S 851"
+
+          },    
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '72',
+            pct: '1%',
+            bottext: "Vita uses CezanneT AladdinMB. Highest Score: 6S 838"
+
+          },                              
+        ]
+      }
+    ],
+  },   
 }
 
 
