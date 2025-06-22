@@ -70,7 +70,7 @@ export const weatherList = {
     {id: 'villv', name: 'Vill-V'},
     {id: 'bleedhusk', name: 'Nihilius Husk'},
     {id: 'bleed-tribunal', name: 'Cruising Tribunal'},
-
+    {id: 'bleedhoc', name: 'Herrscher of Corruption'},
   ],
   ignite: [
     {id: 'ignitehov', name: 'Herrscher of the Void'},
@@ -367,7 +367,14 @@ export const bossData = {
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },
-
+  bleedhoc: {
+    name: 'Herrscher of Corruption', 
+    mechanics: 'Transition phase has high hitcount hp', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Herrscher of Corruption.webp", 
+    weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%",      
+  },
   pishacha: {
     name: 'Pishacha', 
       mechanics: 'Bleed is required', 
