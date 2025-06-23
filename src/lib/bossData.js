@@ -4,6 +4,8 @@ export const weatherList = {
     {id: 'lightningsprout',name: 'Sprout of Wishing'},
     {id: 'lightningguaymas',name: 'Meteoroid: Guaymas'},
     {id: 'husk-hitcount',name: 'Husk (Hit ver)'},
+    {id: 'lighttribunal',name: 'Cruising Tribunal'},
+
   ],
   fire: [
     {id: 'firemobius', name: 'Mobius'},
@@ -169,6 +171,14 @@ export const bossData = {
     bosspic: "images/Bosses/Husk - Nihilus (Hitcount).webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
+  'lighttribunal': {
+    name: 'Cruising Tribunal', 
+    mechanics: 'This boss is closer to Dominance weather version. Transition phase: Justice Core only takes Bleed DMG. If Justice Core is destroyed, team gain Bleed DMG buff. Final phase: Gather mobs to destroy the boss.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/tribunal.png", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG. ",	
+  },  
   typekasumi: {
     name: 'Kasumi', 
     mechanics: 'Can choose fire or ice vulnerable shield.', 
@@ -443,7 +453,7 @@ export const bossData = {
   },
   resoguaymas: {
     name: 'Meteoroid: Guaymas', 
-    mechanics: "This Guaymas has critical index point near the start of HP bar - this is to help Senadina get top score. In other Guaymas versions with index point closer to the end of HP bar, Sena loses to Badum with JD support.", 
+    mechanics: "This Guaymas has critical index point near the start of HP bar - this is to help Senadina get top score. In other Guaymas versions with index point closer to the end of HP bar, lower rank Sena loses to Badum with JD support.", 
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 

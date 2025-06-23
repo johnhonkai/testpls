@@ -506,7 +506,7 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Herrscher of Corruption.webp" date="Jul 18" weather="Bleed" bosspage="/boss?bleedhoc" />
-                    <BossCard />
+                <BossCard image="/images/Bosses/tribunal.png" date="Jul 21" weather="Lightning" bosspage="/boss?lighttribunal" />
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">

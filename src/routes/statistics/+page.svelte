@@ -19,7 +19,7 @@
 	import Fa from 'svelte-fa';
   import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
-  let selectedVersion = '8.2';
+  let selectedVersion = '8.3 (First Month)';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
@@ -122,8 +122,8 @@ async function captureStats() {
   <div class="relative" id="versionDropdown">
     <button
       on:click={toggleDropdown}
-      class="btn inline-flex items-center justify-between w-48 bg-base-300 text-white px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-700 transition">
-      Version {selectedVersion}
+      class="btn inline-flex items-center justify-between w-60 bg-base-300 text-white px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-700 transition">
+      Ver {selectedVersion}
       <svg
         class="ml-2 w-4 h-4 transition-transform duration-200 transform {dropdownOpen ? 'rotate-180' : ''}"
         fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"

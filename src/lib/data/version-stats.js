@@ -1,5 +1,21 @@
 export const usageByVersion = {
 
+    '8.3 (First Month)': [
+    { name: 'Planar Armament: Warped Spacetime', DPS: 300, SUP: 0 },
+    { name: 'Peregrine Sword', DPS: 200, SUP: 300 },
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 0 , SUP: 574 },
+    { name: 'Herrscher of Human: Ego', DPS: 0, SUP: 2 },    
+    { name: 'Lone Planetfarer', DPS: 100, SUP: 300 },
+    { name: 'Herrscher of Finality', DPS: 0, SUP: 100 },
+    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 100  },
+    { name: 'Deepspace Anchor: First Light', DPS: 100, SUP: 0 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 0, SUP: 24 },   
+    { name: 'Lunar Vow: Crimson Love', DPS: 100, SUP: 0 },
+    { name: "Schicksal's Imperative", DPS: 0, SUP: 100 },
+    { name: 'Cosmic Expression', DPS: 0, SUP: 100 },
+
+    ], 
+
     '8.2': [
     { name: 'Peregrine Sword', DPS: 400, SUP: 186 },
     { name: 'Lone Planetfarer', DPS: 100, SUP: 961 },
@@ -73,4 +89,6 @@ export const versionDates = {
   '8.0': "12 Dec 2024 - 23 Jan 2025",
   '8.1': "23 Jan - 27 Mar 2025",
   '8.2': "27 Mar - 29 May 2025",
+  '8.3 (First Month)': "29 May - 26 June 2025",
+
 };
