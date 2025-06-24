@@ -509,11 +509,12 @@
                 <BossCard image="/images/Bosses/tribunal.png" date="Jul 21" weather="Lightning" bosspage="/boss?lighttribunal" />
                     </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard   />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Sampo.webp" date="Jul 22"  />
+                    <BossCard image="/images/Bosses/Flame-Chaser - Aponia_SSS.webp" />
+                    <BossCard image="/images/Bosses/Alien Guard.webp"   />
+                </div>
+    
     
 
             </div>  
