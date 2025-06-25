@@ -729,20 +729,14 @@ export const storyP1= [
       version: '3.4'
     },   
     {
-      image: 'https://i.imgur.com/4taKvIY.png',
-      title: 'St. Freya Fiesta',
-      inGame: false,
-      type: 'captainverse',
-      version: '3.4',
-    },  
-    {
       image: 'https://img.youtube.com/vi/NRJE9gm_rnA/hqdefault.jpg',
       title: "「Seele」",
       inGame: true,
       type: 'animation',
       version: '3.4',
       link: 'https://www.youtube.com/watch?v=NRJE9gm_rnA'
-    },     
+    },      
+   
     {
       image: 'https://img.youtube.com/vi/P909aUnspT4/hqdefault.jpg',
       title: "「Bronya」",
@@ -750,7 +744,16 @@ export const storyP1= [
       type: 'animation',
       version: '3.4',
       link: 'https://www.youtube.com/watch?v=P909aUnspT4'
-    },       
+    },
+        
+    {
+      image: 'https://i.imgur.com/4taKvIY.png',
+      title: 'St. Freya Fiesta',
+      inGame: false,
+      type: 'captainverse',
+      version: '3.4',
+    },  
+       
     {
       image: 'https://i.imgur.com/1QWKWoe.png',
       title: 'Stygian Blooms',
