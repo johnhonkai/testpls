@@ -366,7 +366,7 @@
           <img src="https://i.ytimg.com/vi/WJAHvgl4noA/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">8.3 News</h3>
+          <h3 class="text-lg font-semibold text-white mb-1">8.4 News</h3>
           <p class="text-slate-300 text-md">AstralOp Chenxue</p>
         </div>
       </a>
