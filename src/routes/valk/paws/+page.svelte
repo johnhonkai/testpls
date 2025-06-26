@@ -45,18 +45,21 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire} from '@fortawesome/free-solid-svg-icons';
 	import CharBio from '$lib/components/CharBio.svelte';
+	import Dududps from "$lib/components/lineup/dududps.svelte";
+	import Badumdps from "$lib/components/lineup/badumdps.svelte";
+	import Psdps from "$lib/components/lineup/psdps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
- // { name: 'Equipment', short: 'equipment', icon: faBolt  },
- //   { name: 'Support Buffs', short: 'support', icon: faCircleUser },
- //   { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  // { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+    { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
- //   { name: 'Rank Up', short: 'rank', icon: faStar },
- //   { name: 'Question', short: 'qna' , icon: faComments  },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
+    { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
 ];  
@@ -390,16 +393,52 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">DPS</strong> 
               <br/>
-              To Be Updated.
+              Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS with the new Astral Ring Grail of Infinitude. The new Astral Ring playstyle uses Ultimate more often and consume significantly more sp.
+            </p>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Utility</strong> 
+              <br/>
+              PARALYZE: PAWS Ultimate can inflict paralyze trauma. When Helia is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
             </p>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong> 
+              <br/>
+              Currently, we are lacking data on PAWS support performance in live server, but she might not replace the existing LoA teams. Plus, so far, LoA DPS doesn't have any boss that requires Paralyze trauma.
+            </p>
 
+                      <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Grail of Infinitude Support</strong> 
+              <br/>
+              PAWS will be a support for future Grail of Infinitude characters.
+            </p>
           
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get New Helia in v8.3.
+              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get PAWS in v8.3.
+            </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Existing Players</strong> 
+              <br/>
+              PAWS is a typical Part 2 valk: <br/>
+              - Top scores her bosses, decent dps everywhere else. <br/>
+              - Best support for certain lineups. <br/>
+              - Provides unique utilities that makes her the best DPS or support for certain enemies.
+          </p>
+
+          <p class="mt-3 text-sm sm:text-base">
+              Recommended to get PAWS in v8.3 if you can guarantee valk + weapon, preferably within the first week of v8.3 to get the most value out of her, because her bosses will appear more frequently during the first 3-4 weeks. After that, PAWS will be used as support more often.
+          </p>
+
+          <p class="mt-3 text-sm sm:text-base">
+          If you don't have enough crystals to guarantee PAWS and her weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.         </p>
+
+
+                      <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong> <br/> Pull.
             </p>
 
           <div class="divider  "></div>
@@ -414,12 +453,22 @@ async function increaseLike() {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out the full guide on YouTube: (SOON)
+            Check out the full guide on YouTube:
         </p>
   
-
+                <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/QguYcI48WnY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
 
       </div>
+
   {/if}
   
 
@@ -436,9 +485,23 @@ async function increaseLike() {
 
       <Heliadps maindps={true} ></Heliadps>
 
+
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
+      
+      <Psdps firstCharName="PAWS"></Psdps>
+
+      <div class="divider  "></div>
+
+      <Badumdps firstCharName="PAWS"></Badumdps>
+
+      <div class="divider  "></div>
+
+      <Dududps firstCharName="PAWS"></Dududps>
+
+
       {/if}
 
-     
+
 </section>
 
   {/if}
@@ -456,23 +519,23 @@ async function increaseLike() {
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
           <div class="w-20 h-20 sm:w-28 sm:h-28">
-            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/07/50494840/8ec6127a6d4363462a001191b6d4cc35_1812491884462959797.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/05/11/50494840/da02b4b839bf81284e7f98efdf86ff41_3415222748096311262.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Rainbow" class="w-full h-full object-cover">
         </div>
 
         <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/ced58aa0b298cb83be62a620ff7cd33d_3065648174616263356.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/05/10/9809137/ddd99f080b3a2ba3efbe62aca1ea573d_2750096196681250716.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/9235e966b346ec0806897a73e0deb58c_1611100570569610354.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/05/10/9809137/5ec82754c12f45145e7e4b513c50ff30_3655955345208804206.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/12/9917988/0baf38c937ac92a238b9526dbce45437_5545858369582851653.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/05/10/9809137/5c57f914ce3903b288a3028929db0a74_7607993804575502614.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
         </div>  
-        <h4 class="text-base sm:text-base text-white"> Jadeite Sleeves + Newfound Joys set</h4>
+        <h4 class="text-base sm:text-base text-white"> Rainbow From Cinders + Helia stigma set</h4>
         </div>
 
 
@@ -483,24 +546,123 @@ async function increaseLike() {
 
 
 
-      <div class="p-4 mt-4 bg-linear-to-r from-teal-950/75 to-teal-900/75 rounded-sm">
+      <div class="p-4 mt-4 bg-linear-to-r from-orange-950/75 to-orange-900/75 rounded-sm">
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Jadeite Sleeves </b><br/> - Best weapon for Peregrine Sword, huge self buffs and team buffs.
-          <br/>- Utility: Resets weapon skill after an enemy's HP reaches 0. This is used for Flux Lantern boss transition phase.
+          <b>Rainbow From Cinders </b><br/> - Best weapon for PAWS, huge self buffs and team buffs.
+          <br/>- Gives Ult 3 timestop for 1.5s.
+          <br/>- During Stellar Outburst, initial sp +10% of max sp.
         </p>
 
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Newfound Joys set</b><br/> - Huge buffs.
+          <b>Helia stigma set</b><br/> - Huge buffs.
           <br/> - Forgeable in Foundry.
         </p>
 
         <p class="text-sm sm:text-base text-left">
-          <b>Affix</b> <br/>Full ATK.
+          <b>Affix</b> <br/>Full ATK. Some advanced runs might use sp regen / cost reduction.
         </p>
       </div>
 
 
       </div>
+
+      <div class="divider  "></div>
+
+<div class="text-slate-100">
+  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - PAWS DPS</h2>
+  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
+    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
+      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
+        <tr>
+          <th class="p-3 font-semibold">Weapon</th>
+          <th class="p-3 font-semibold text-right">Total DMG</th>
+          <th class="p-3 font-semibold text-right">Percentage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-700">
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders  Syn3</td>
+          <td class="p-3 text-right">42,195,968</td>
+          <td class="p-3 text-right">107.37%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders  Syn2</td>
+          <td class="p-3 text-right">40,726,912</td>
+          <td class="p-3 text-right">103.63%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders  Syn1 </td>
+          <td class="p-3 text-right">39,298,688</td>
+          <td class="p-3 text-right">100.00%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Burn the Long Night Syn1</td>
+          <td class="p-3 text-right">29,220,672</td>
+          <td class="p-3 text-right">74.36%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Electrifying Arc Syn3</td>
+          <td class="p-3 text-right">28,751,808</td>
+          <td class="p-3 text-right">73.16%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Ta-Da! Syn3</td>
+          <td class="p-3 text-right">26,630,528</td>
+          <td class="p-3 text-right">67.76%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+       <div class="divider  "></div>
+
+<div class="text-slate-100">
+  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - Peregrine Sword Support</h2>
+  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
+    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
+      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
+        <tr>
+          <th class="p-3 font-semibold">Weapon</th>
+          <th class="p-3 font-semibold text-right">Total DMG</th>
+          <th class="p-3 font-semibold text-right">Percentage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-700">
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders Syn3</td>
+          <td class="p-3 text-right">48,189,248</td>
+          <td class="p-3 text-right">103.47%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders Syn2</td>
+          <td class="p-3 text-right">47,502,528</td>
+          <td class="p-3 text-right">102%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Rainbow From Cinders Syn1 </td>
+          <td class="p-3 text-right">46,573,440</td>
+          <td class="p-3 text-right">100%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Burn the Long Night Syn1</td>
+          <td class="p-3 text-right">41,138,112</td>
+          <td class="p-3 text-right">88.33%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Electrifying Arc Syn3</td>
+          <td class="p-3 text-right">40,289,728</td>
+          <td class="p-3 text-right">86.51%</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Ta-Da! Syn3</td>
+          <td class="p-3 text-right">39,536,128</td>
+          <td class="p-3 text-right">84.89%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>     
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
@@ -569,7 +731,7 @@ async function increaseLike() {
       {#if activePlaystyle === '1'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Spam weapon and ult. Also Combo ATK once or twice. 
+       Spam weapon and ult. Also Combo ATK once or twice (optional). 
       </p>
   
       <div class="divider  "></div>
@@ -590,8 +752,8 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Signet 1 ➔ Signet 2</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Signet 5 </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> White Arrow ➔ Triple Aligned Fires</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Square Array </p>
           </div>
         </div>
         
@@ -599,7 +761,7 @@ async function increaseLike() {
       <div class="mt-3 rounded-sm" >
         <p class="text-sm sm:text-base text-left">
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Signet 1), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (White Arrow), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
       </p>
         </div>
   
@@ -620,12 +782,22 @@ async function increaseLike() {
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
+              <p class="text-lg font-semibold">1 or 2</p>
             </div>
-  
+
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1 or 2</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -634,7 +806,11 @@ async function increaseLike() {
             </div>
   
         </div>
-
+      <div class="mt-3 rounded-sm" >
+        <p class="text-sm sm:text-base text-left">
+          This playstyle utilizes all three skills: weapon skill, evasion skill, Ultimate - so a lot of signets can work. Just commit to 3 or 4 nexus for each run.
+      </p>
+        </div>
   
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -716,9 +892,7 @@ async function increaseLike() {
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Spam Weapon ➔ Ult.</li>
-          <li>When you have 5 combo buff stacks, use Combo ATK.</li>
-          <li>You can use Combo ATK at less than 5 stacks if you can finish off the enemy.</li>
-          <li>Repeat.</li>
+          <li>If you have [Triple Aligned Fires] signet, you can use Combo ATK when you have 5 buff stacks. However, spamming weapon ➔ ult is still faster and deals more dmg than using Combo ATK. This is really just optional.</li>
         </ol>
   
     
@@ -729,7 +903,7 @@ async function increaseLike() {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/LhodKQ9sK8M"
+                src="https://www.youtube.com/embed/1sY-468DJnM"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -742,7 +916,7 @@ async function increaseLike() {
       {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Spam Basic ATK more.
+       Spam Basic ATK.
       </p>
   
       <div class="divider  "></div>
@@ -763,8 +937,8 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Signet 3 ➔ Signet 4</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>   Signet 5 </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Lower Arrowhead ➔ Backstepped Firing </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Square Array </p>
           </div>
         </div>
         
@@ -772,7 +946,7 @@ async function increaseLike() {
       <div class="mt-3 rounded-sm" >
         <p class="text-sm sm:text-base text-left">
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Signet 3), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Lower Arrowhead), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
       </p>
         </div>
   
@@ -792,10 +966,15 @@ async function increaseLike() {
             </div>
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
             </div>
-
+            
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
@@ -885,7 +1064,7 @@ async function increaseLike() {
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst.</li>
           <li>Spam Basic ATK. You will auto-cast Ult if you have enough sp.</li>
-          <li>At 3 Burning Light stack, use Combo ATK, then Finisher Ult.</li>
+          <li>If Stellar Outburst is almost over, use Combo ATK, then Finisher Ult.</li>
           <li>Use Ult once while you wait SO to be available again.</li>
           <li>Repeat.</li>
         </ol>
@@ -897,7 +1076,7 @@ async function increaseLike() {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/LhodKQ9sK8M"
+                src="https://www.youtube.com/embed/wuUI7GX1Q2E"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -926,20 +1105,16 @@ async function increaseLike() {
           <!-- DPS Upgrade Box -->
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
-            <ul class=" text-slate-100 text-base">
-              <li>S2: More Bleed DMG. </li>
-              <li>All ranks have damage upgrades.</li>
+            <ul class=" text-slate-100 text-sm sm:text-base">
+              <li>S2: Additional weapon skill charge. Improves rotation. </li>
+              <li>SS: During AR Charging, when AR is maxed, Ult wont cost sp.</li>
             </ul>
           </div>
       
           <!-- Support Upgrade Box -->
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
-            <ul class=" text-slate-100 text-base">
-              <li>S2: Unlocks time fracture on demand. </li>
-              <li>SSS: More hits for hitcount shields.</li>
 
-            </ul>
           </div>
         </div>
 
@@ -947,100 +1122,85 @@ async function increaseLike() {
 
         {#if !isMobile}
         <!-- Full Rank Up List -->
-        <div class="text-slate-100 text-left ">
-          <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
-          <table class="table table-zebra w-full bg-gray-800 rounded-lg shadow-md text-base">
-            <thead class="bg-gray-700">
-              <tr class="text-white" >
-                <th class="p-3 font-semibold w-[10px]">RANK</th>
-                <th class="p-3 font-semibold w-[550px]">SKILL</th>
-                <th class="p-3 font-semibold w-[150px]">GOOD FOR</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Sample Row 1 -->
-              <tr>
-                <td >S1</td>
-                <td>
-                  Enemies take 30% ➔ 35% more Bleed DMG from PS, and 6% ➔ 8% more Total DMG from the team.
-                </td>
-                <td class="p-3">DPS <br/> Support </td>
-              </tr>
-              <!-- Sample Row 2 -->
-              <tr>
-                <td>S2</td>
-                <td>
+<div class="text-slate-100">
+  <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
+  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
+    <table class="min-w-full bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
+      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
+        <tr>
+          <th class="p-3 font-semibold text-center w-20">Rank</th>
+          <th class="p-3 font-semibold">Skill</th>
+          <th class="p-3 font-semibold text-center w-36">Good For</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-700">
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-blue-300">S1</td>
+          <td class="p-3">Gain Total DMG +10% ➔ 15% against PSY enemies.</td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-blue-300">S2</td>
+          <td class="p-3 space-y-2">
+            <div>- UNLOCK: Gain 1 extra Weapon Skill charge and Evasion Skill charge.</div>
+            <div>- As leader: During SO, when team triggers Facet of Infinitude 1/2/3 times, Team Lightning DMG +26%/26%/44% ➔ +28%/28%/47%.</div>
+            <div>- As leader: Enemies take 7% ➔ 8.5% more Total DMG from PAWS, additional +14% ➔ 17% during AR Charging.</div>
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-blue-300">S3</td>
+          <td class="p-3 space-y-2">
+            <div>Leader Skill:</div>
+            <div>- PAWS Lightning DMG +10% ➔ 18%.</div>
+            <div>- Enemies take 16% ➔ 18% more Lightning DMG from PAWS (independent).</div>
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-yellow-300">SS</td>
+          <td class="p-3 space-y-2">
+            <div>- UNLOCK: During AR Charging, if AR is full, PAWS Ultimate no longer consumes SP (until SO is activated).</div>
+            <div>- Gain Total DMG +15% ➔ 25% against PSY enemies.</div>
+            <div>- During AR Charging, if AR Intensity > 145, enemies take 14% ➔ 22% more Lightning DMG from PAWS.</div>
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-yellow-300">SS1</td>
+          <td class="p-3">
+            As leader: During SO, when team triggers Facet of Infinitude 1/2/3 times, Team Lightning DMG +28%/28%/47% ➔ +30%/30%/50%.
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-yellow-300">SS2</td>
+          <td class="p-3">
+            As leader: Enemies take 8.5% ➔ 10% more Total DMG from PAWS, additional +17% ➔ 20% during AR Charging.
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-yellow-300">SS3</td>
+          <td class="p-3 space-y-2">
+            <div>Leader Skill:</div>
+            <div>- PAWS Lightning DMG +18% ➔ 26%.</div>
+            <div>- Enemies take 18% ➔ 20% more Lightning DMG from PAWS (independent).</div>
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3 text-center font-bold text-red-400">SSS</td>
+          <td class="p-3">
+            During AR Charging, if AR Intensity > 145, enemies take 22% ➔ <strong>230%</strong> more Lightning DMG from PAWS.
+          </td>
+          <td class="p-3 text-center">DPS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-                  - UNLOCK: Casting Forest Piercer triggers evasion skill.
-                  <br/>
-                  - Self Bleed DMG +40% ➔ 42.5%
-
-                </td>
-                <td>DPS<br/>Time fracture on demand</td>
-              </tr>
-              <tr>
-                <td>S3</td>
-                <td>
-                  Leader Skill:<br/>
-                  - PS's Stellar Shift Physical DMG +18% ➔ 28%.
-                  <br/>
-                  - Enemies take 17% ➔ 18% more Physical DMG from PS (independent multiplier).
-
-                </td>
-                <td>DPS</td>
-              </tr>
-              <tr>
-                <td>SS</td>
-                <td>
-                  - UNLOCK: Joint Weapon Skill Total DMG +20%.
-                  <br/>
-                  - Swaying with Wind and Rain Total DMG +50 ➔ 65% and restore 5 ➔ 6 sp for the team. When hitcount is >= 50, deal additional Physical DMG equal to hitcount x 1.5% ➔ 2% ATK
-                </td>
-                <td>DPS<br/>SP Regen</td>
-
-              </tr>
-              <tr>
-                <td>SS1</td>
-                <td>
-                  Self Bleed DMG +42.5% ➔ 50%
-                </td>
-                <td>DPS
-              </tr>
-              <tr>
-                <td>SS2</td>
-                <td>
-                  - UNLOCK: Casting QTE or Stellar Shift resets evasion skill.
-                  <br/>
-                  - Against bleeding enemies, gain Physical DMG +8% ➔ 12% and Total DMG +6% ➔ 8%.
-
-                
-                
-                </td>
-                <td>DPS </td>
-              </tr>
-              <tr>
-                <td>SS3</td>
-                <td>
-                  Leader Skill:<br/>
-                  - PS's Stellar Shift Physical DMG +28% ➔ 38%.
-                  <br/>
-                  - Enemies take 18% ➔ 19% more Physical DMG from PS (independent multiplier).
-
-                </td>
-                <td>DPS</td>
-              </tr>
-              <tr>
-                <td>SSS</td>
-                <td>
-                  - Swaying with Wind and Rain Total DMG +65 ➔ 80% and restore 6 ➔ 7 sp for the team. When hitcount is >= 50, deal additional Physical DMG equal to hitcount x 2% ➔ 2.5% ATK
-                  <br/>
-                  - When any of CS attack hits, deal 3 ➔ 4 points of dmg to shields that only take fixed damage.
-                </td>
-                <td>DPS <br/> SP Regen </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
         {/if}
 
         {#if isMobile}
@@ -1057,9 +1217,9 @@ async function increaseLike() {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>	Enemies take 30% ➔ 35% more Bleed DMG from PS, and 6% ➔ 8% more Total DMG from the team.
+              <p>	Gain Total DMG +10% ➔ 15% against PSY enemies.	
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -1069,10 +1229,11 @@ async function increaseLike() {
               <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
-              <p>		- UNLOCK: Casting Forest Piercer triggers evasion skill. <br/>
-                - Self Bleed DMG +40% ➔ 42.5%
+              <p>		- UNLOCK: Gain 1 extra Weapon Skill charge and Evasion Skill charge. <br/>
+                - As leader: During SO, when team triggers Facet of Infinitude 1/2/3 times, Team Lightning DMG +26%/26%/44% ➔ +28%/28%/47%. <br/>
+                - As leader: Enemies take 7% ➔ 8.5% more Total DMG from PAWS, additional +14% ➔ 17% during AR Charging.
               </p>
-              <p class="mt-2"><strong>Good for:</strong> DPS, Time fracture on demand</p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
             </div>
           </div>
 
@@ -1085,8 +1246,8 @@ async function increaseLike() {
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
             <p>Leader Skill:<br/>
-              - PS's Stellar Shift Physical DMG +18% ➔ 28%.<br/>
-              - Enemies take 17% ➔ 18% more Physical DMG from PS (independent multiplier).	
+              - PAWS Lightning DMG +10% ➔ 18%.<br/>
+              - Enemies take 16% ➔ 18% more Lightning DMG from PAWS (independent).
             </p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
@@ -1098,10 +1259,13 @@ async function increaseLike() {
             <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
-            <p>- UNLOCK: Joint Weapon Skill Total DMG +20%. <br/>
-              - Swaying with Wind and Rain Total DMG +50 ➔ 65% and restore 5 ➔ 6 sp for the team. When hitcount is >= 50, deal additional Physical DMG equal to hitcount x 1.5% ➔ 2% ATK
+            <p>	
+- UNLOCK: During AR Charging, if AR is full, PAWS Ultimate no longer consumes SP (until SO is activated). <br/>
+- Gain Total DMG +15% ➔ 25% against PSY enemies. <br/>
+- During AR Charging, if AR Intensity > 145, enemies take 14% ➔ 22% more Lightning DMG from PAWS.
+
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, SP Regen</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
 
@@ -1111,7 +1275,7 @@ async function increaseLike() {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>Self Bleed DMG +42.5% ➔ 50%</p>
+            <p>As leader: During SO, when team triggers Facet of Infinitude 1/2/3 times, Team Lightning DMG +28%/28%/47% ➔ +30%/30%/50%.</p>
             <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
@@ -1123,8 +1287,7 @@ async function increaseLike() {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>- UNLOCK: Casting QTE or Stellar Shift resets evasion skill. <br/>
-              - Against bleeding enemies, gain Physical DMG +8% ➔ 12% and Total DMG +6% ➔ 8%
+            <p>As leader: Enemies take 8.5% ➔ 10% more Total DMG from PAWS, additional +17% ➔ 20% during AR Charging.
             </p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
@@ -1137,8 +1300,8 @@ async function increaseLike() {
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
             <p>	Leader Skill: <br/>
-              - PS's Stellar Shift Physical DMG +28% ➔ 38%.<br/>
-              - Enemies take 18% ➔ 19% more Physical DMG from PS (independent multiplier).
+              - PAWS Lightning DMG +18% ➔ 26%.<br/>
+- Enemies take 18% ➔ 20% more Lightning DMG from PAWS (independent).
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
         </div>
@@ -1149,8 +1312,7 @@ async function increaseLike() {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>		- Swaying with Wind and Rain Total DMG +65 ➔ 80% and restore 6 ➔ 7 sp for the team. When hitcount is >= 50, deal additional Physical DMG equal to hitcount x 2% ➔ 2.5% ATK. <br/>
-              - When any of CS attack hits, deal 3 ➔ 4 points of dmg to shields that only take fixed damage. </p>
+            <p>	During AR Charging, if AR Intensity > 145, enemies take 22% ➔ 230% more Lightning DMG from PAWS. </p>
             <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
@@ -1166,14 +1328,14 @@ async function increaseLike() {
       <div class=" gap-6 mt-4">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">DPS and Support Rotation</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">DPS Rotation - Full team (BADUM PS)</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sorry, will post a separate vid for this part later.</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Full team rotation example</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/98-TVVWPN6o"
+                src="https://www.youtube.com/embed/CswFcEddAjc"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1186,6 +1348,50 @@ async function increaseLike() {
 
     </div>
 
+          <div class=" gap-6 mt-10">
+        <!-- Video 1 with title and description -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">DPS Rotation - Missing a teammate with Symbiosis tag (HOH CORALIE)</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Incomplete team rotation example</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/DD-CDUr3qls"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
+        </div>
+      </div>
+
+    </div>
+
+          <div class=" gap-6 mt-10">
+        <!-- Video 1 with title and description -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Law of Ascension Support Sequence</h2>
+
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/O42uJ2_H5eQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
+        </div>
+      </div>
+
+    </div>    
   {/if}
   
   
@@ -1223,12 +1429,32 @@ async function increaseLike() {
 
   {/if}
   
-  {#if selectedTab === 'Popular Question'}
+  {#if selectedTab === 'Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-  <div class="text-center my-4">
-    <p class="text-center text-sm sm:text-base">No popular question
-    </p>
+  <div class="my-6">
+    <div class="chat chat-start ">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/meibald.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-primary text-base text-white">I am missing a team member with Symbiosis tag. What valk should I use as support?</div>
+    </div>
+
+    <div class="chat chat-end">
+      <div class="chat-image avatar">
+        <div class="w-10 sm:w-12 rounded-full">
+          <img
+            alt="Tailwind CSS chat bubble component"
+            src="/images/ds.webp" />
+        </div>
+      </div>
+      <div class="chat-bubble chat-bubble-neutral text-base text-white py-5">
+If you are missing a teammate with Symbiosis tag, you can use Rite of Oblivion characters: Lone Planetfarer, Herrscher of Finality or Valkyrie Blastmetal. During Stellar Outburst, you cannot do a full rotation since you won't have enough sp, so just do one PAWS sequence, and end Stellar Outburst early. (See How to Play section for an example).      </div>
+    </div>
   </div>
   {/if}
 

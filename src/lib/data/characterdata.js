@@ -31,8 +31,9 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/paws',  badge: 'Beta', verdebut: 8.3, id:55},
-  { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/ps',  badge: 'New', verdebut: 8.2, id:54},
+  //  { name: 'Name Pending', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/dragoon',  badge: 'New', verdebut: 8.4, id:58},  
+  { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/paws',  badge: 'New', verdebut: 8.3, id:55},
+  { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/ps',   verdebut: 8.2, id:54},
   { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/kiana badum.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum', verdebut: 8.1, id:53},
   { name: 'Herrscher of Human: Ego', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', type: 'Psy', element: 'Ice', astralRing: ['Wheel of Destiny' , 'Part 1'],  url: '/valk/hoh', verdebut: 6.0, verdlc: 8.1, id:25},
   { name: 'Reign Solaris', image: '/images/valkportrait/dudu.png', type: 'Img', element: 'Physical', astralRing: ['Law of Ascension'] , url: '/valk/durandal' , verdebut: 8.0, id:16},

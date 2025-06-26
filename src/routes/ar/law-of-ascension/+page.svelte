@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Law of Ascension characters"/>
     <meta property="og:description" content="Info for characters in Law of Ascension teams." />
-    <meta property="og:image" content="https://i.imgur.com/6eOeDMZ.png" />
+    <meta property="og:image" content="https://i.imgur.com/67AxvH0.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/law-of-ascension" />
     <meta property="og:type" content="website" />
 
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <script lang="ts">
-    import type { PageData } from '../heavenly-grail/$types';
+    import type { PageData } from '../law-of-ascension/$types';
 
     let { data }: { data: PageData } = $props();
 
@@ -25,7 +25,7 @@
   ];
 
   const support = [
-  //  { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" , type: "Bio" , element: "Lightning" },
+    { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
     { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
     { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
@@ -57,7 +57,7 @@
 
     Paralyze: [
 
-    //  { name: "Planar Armament", image: "/images/valkportrait/New Helia.png" },
+      { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
     ],
 
     Ignite: [],
@@ -157,7 +157,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Law of Ascension
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.2
+    v8.3
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -203,7 +203,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Law of Ascension
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.2
+    v8.3
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">

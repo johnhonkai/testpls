@@ -108,7 +108,7 @@ During AR Charging: When AR intensity is more than 145 points, enemies take 14% 
 - During AR Charging: On hit, if sp is more than 0 and less than 100, sp regen rate +300%.
 
 #### PASSIVE 3
-Gain 40% TDM resistance, and gain Total DMG ~~+10% (S) / 15% (S1) / 20% (SS) [V3]~~ > **+10% (S) / 16% (S1) / 25% (SS) [V3B]** against enemies hit by Ult. (not sure about this one)
+Gain 40% TDM resistance, and gain Total DMG ~~+10% (S) / 15% (S1) / 20% (SS) [V3]~~ > **+10% (S) / 16% (S1) / 25% (SS) [V3B]** against PSY enemies.
 
 #### PASSIVE 4
 Locked Skill. This companion star is still awaiting its time and has yet to appear in the night sky.
@@ -198,19 +198,19 @@ When you are the leader, after using Finisher Ult to exit SO, AR meter will rest
 
 ### RANK UP 
 
-S1: Gain Total DMG +10% (S) / 15% (S1) against enemies hit by Ult. 
+S1: Gain Total DMG +10% (S) / 15% (S1) against PSY enemies. 
  
 S2: 
 - During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +26%/26%/44% (S) / +28%/28%/47% (S2), lasts until SO ends.
 - UNLOCK: Gain extra weapon and evasion charge.
-- Enemies take 7% / 8.5% (S2) more Total DMG, additional 14% / 17% (S2) during AR Charging.
+- Enemies take 7% / 8.5% (S2) more Total DMG from PAWS, additional 14% / 17% (S2) during AR Charging.
 
 
 S3: Lead
 
 SS: 
 - UNLOCK: When you are the leader, during AR Charging: When AR is full, Helia ult no longer consume sp. Effect ends when you activate or end SO.
-- Gain Total DMG +15% (S1) / 20% (SS) against enemies hit by Ult. 
+- Gain Total DMG +15% (S1) / 20% (SS) against PSY enemies. 
 - During AR Charging: When AR intensity is more than 145 points, enemies take 14% (S) / 22% (SS) more Lightning DMG.
 
 SS1: During SO, when team triggers Evolution Method 1/2/3 times, Team Lightning DMG +28%/28%/47% (S2) / +30%/30%/50% (S2), lasts until SO ends.
@@ -219,4 +219,4 @@ SS2: Elemental Breach +6% and enemies take 8.5% (S2) / 10% (SS2) more Total DMG,
 
 SS3: Lead
 
-SSS: During AR Charging: When AR intensity is more than 145 points, enemies take 22% (S) / 30% (SSS) more Lightning DMG.
+SSS: During AR Charging: When AR intensity is more than 145 points, enemies take 22% (SS) / 30% (SSS) more Lightning DMG.

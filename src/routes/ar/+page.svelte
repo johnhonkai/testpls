@@ -67,7 +67,7 @@
           href={`/ar/${ar.slug}`}
           class="group relative flex flex-col items-center rounded-2xl bg-zinc-900/80 hover:bg-zinc-800/90 transition p-4 shadow-md hover:shadow-lg"
         >
-          <div class="w-20 h-20 sm:w-24 sm:h-24 mb-3 rounded-xl overflow-hidden bg-gray-800">
+          <div class="w-36 h-20 sm:w-24 sm:h-24 mb-3 rounded-xl overflow-hidden bg-gray-800">
             <img
               src={ar.image}
               alt={ar.name}

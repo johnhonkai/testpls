@@ -11,10 +11,10 @@
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '#1',  },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png',  teampct: '#2'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '#3'   },
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '#4' , speed: 'Faster'  },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '100%',  },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png',  teampct: '99%'  },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '97%'   },
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '96%' , speed: 'Faster'  },
 
     ];
 
@@ -68,4 +68,14 @@
         {/each}
     </div>
 
+    <details class="group rounded-md my-2 overflow-hidden">
+        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 hover:transition-colors hover:duration-200">
+            Details
+        </summary>
+        <div class="py-3 px-4">
+
+            <p class="text-sm sm:text-base mb-4">If you are missing a teammate with Symbiosis tag, you can use Rite of Oblivion characters: <a href='/valk/lp' class="link">Lone Planetfarer</a>, <a href='/valk/hofi' class="link">Herrscher of Finality</a> or <a href='/valk/hofi' class="link">Valkyrie Blastmetal.</a> During Stellar Outburst, you cannot do a full rotation since you won't have enough sp, so just do one PAWS sequence, and end Stellar Outburst early. (See How to Play section for an example).</p>
+
+    </div>
+    </details>
 </div>

@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Astral Ring: Grail of Infinitude"/>
     <meta property="og:description" content="Info for characters in Grail of Infinitude teams." />
-    <meta property="og:image" content="https://i.imgur.com/9yj8KnO.png" />
+    <meta property="og:image" content="https://i.imgur.com/H9SvrgG.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/grail-of-infinitude" />
     <meta property="og:type" content="website" />
 
@@ -42,6 +42,8 @@
 
     Hitcount: [
         { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
+      { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
+
     ],
 
     Freeze: [
@@ -134,9 +136,9 @@ async function captureStats() {
   <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
   <img
-    src="/images/bridge.webp"
+    src="/images/bg_goi.jpg"
     alt="Header"
-    class="w-full h-full object-cover opacity-45"
+    class="w-full h-full object-cover [object-position:50%_15%] opacity-45"
   />
 
 
@@ -178,9 +180,9 @@ async function captureStats() {
   <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart"  style="display:none">
 
   <img
-    src="/images/bridge.webp"
+    src="/images/bg_goi.jpg"
     alt="Header"
-    class="w-full h-full object-cover opacity-45"
+    class="w-full h-full object-cover [object-position:50%_15%] opacity-45"
   />
 
 
@@ -211,7 +213,7 @@ async function captureStats() {
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
       <strong class="text-white">Grail of Infinitude</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>Teammates with <span class="text-teal-400 font-medium">Symbiosis</span> tag can provide increased sp regen and won't consume sp when casting Ult (first Ult after QTE).
+      <br/>During Stellar Outburst, teammates with <span class="text-teal-400 font-medium">Symbiosis</span> tag can provide increased sp regen, Shining Trace points, and they won't consume sp when casting Ult.
     </span>
   </p>
 </section>
@@ -305,14 +307,28 @@ async function captureStats() {
           />
         </div>
 
-                <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+          <img
+            src="/images/valkportrait/elf_kiana.png"
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
 
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+          <img
+            src="/images/valkportrait/asop_ds.png"
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
 
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
           <img
             src="/images/valkportrait/asop_teri.png"
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
         </div>
+
+
     </div>
   </section>
 
