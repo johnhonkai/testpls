@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Planar Armament: Warped Spacetime</title> 
+  <title>逆命魔龙·降临！</title> 
 
-    <meta property="og:title" content="Planar Armament: Warped Spacetime" />
-    <meta property="og:description" content="Planar Armament: Warped Spacetime Guides, Builds and Gameplay" />
+    <meta property="og:title" content="逆命魔龙·降临！" />
+    <meta property="og:description" content="逆命魔龙·降临！ Guides, Builds and Gameplay" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/paws" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/scoralie" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -52,14 +52,14 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
-  { name: 'Lineup', short: 'lineup', icon: faUsers },
-  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  //{ name: 'Lineup', short: 'lineup', icon: faUsers },
+  //{ name: 'Equipment', short: 'equipment', icon: faBolt  },
   // { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-    { name: 'How to Play', short: 'howtoplay', icon: faBook },
-  { name: 'Gameplay', short: 'example', icon: faVideo },
-  { name: 'Elysian Realm', short: 'er', icon: faFire },
-  { name: 'Rank Up', short: 'rank', icon: faStar },
-    { name: 'Question', short: 'qna' , icon: faComments  },
+  //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  //{ name: 'Gameplay', short: 'example', icon: faVideo },
+  //{ name: 'Elysian Realm', short: 'er', icon: faFire },
+  //{ name: 'Rank Up', short: 'rank', icon: faStar },
+  //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
 ];  
@@ -166,8 +166,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let durandallikes = likesData["ha"] || 0; // Get initial likes from JSON
-  const charName = "ha"; // Route name for this character
+  let durandallikes = likesData["scoralie"] || 0; // Get initial likes from JSON
+  const charName = "scoralie"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -211,17 +211,35 @@ async function increaseLike() {
 
 
 <style>
-   #apphelia {
-    height: 35rem;
+  #star-container {
+    background: radial-gradient(rgb(var(--light-red-rgb)), rgb(var(--dark-red-rgb)));
+    height: 100%;  
     overflow: hidden;
     position: relative;
   }
+
+  #star-gradient-overlay {
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-red-rgb)));
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  #app {
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+}
 </style>
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
-    <div id="apphelia">
+    <div id="app">
       <div id="star-container">
         <div id="star-pattern"></div>
         <div id="star-gradient-overlay"></div>
@@ -239,7 +257,7 @@ async function increaseLike() {
 <!-- Left: Character Image -->
 <div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
   <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/new helia.webp" alt="Peregrine Sword" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
+  <img src="/images/valkfull/scoralie.png" alt="S Coralie" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
   <!-- Like Button: Bottom-right overlay -->
   <div class="absolute bottom-2 right-2 z-10">
     <div
@@ -249,7 +267,7 @@ async function increaseLike() {
       <button
         on:click={increaseLike}
         disabled={hasLiked}
-        class="bg-orange-800/80 hover:bg-orange-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
+        class="bg-red-800/80 hover:bg-red-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
       >
         <!-- Heart Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
@@ -275,37 +293,37 @@ async function increaseLike() {
 <div class="flex flex-col items-center text-center justify-start sm:mt-8">
  
   <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Planar Armament: Warped Spacetime</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">逆命魔龙·降临！</h1>
 
   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">
     <!-- Name Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
+      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
         Name
       </div>
       <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Erdős Helia
+        Coralie 6626 Planck
       </div>
     </div>
 
     <!-- Release Date Card -->
     <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-orange-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs">
+      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs">
         Release
       </div>
       <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        v8.3 (26 June 2025)
+        v8.4 (21 Aug 2025)
       </div>
     </div>
   </div>
 
 
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="gof" bg="bg-orange-800" />
+  <CharBio mode="dps" rank="s" type="mech" element="fire" ar="roo" bg="bg-red-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['gof' , 'loa']}  bg="bg-orange-800"/>
+  <CharBio mode="support" ar={['all']}  bg="bg-red-800"/>
 </div>
 
 
@@ -391,54 +409,16 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> 
+              <strong class="text-amber-400">BETA</strong> 
               <br/>
-              Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS with the new Astral Ring Grail of Infinitude. The new Astral Ring playstyle uses Ultimate more often and consume significantly more sp.
-            </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Utility</strong> 
-              <br/>
-              PARALYZE: PAWS Ultimate can inflict paralyze trauma. When Helia is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
-            </p>
-
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Law of Ascension Support</strong> 
-              <br/>
-              Currently, we are lacking data on PAWS support performance in live server, but she might not replace the existing LoA teams. Plus, so far, LoA DPS doesn't have any boss that requires Paralyze trauma.
-            </p>
-
-                      <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Grail of Infinitude Support</strong> 
-              <br/>
-              PAWS will be a support for future Grail of Infinitude characters.
-            </p>
+                To Be Updated.            </p>
+            
           
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get PAWS in v8.3.
-            </p>
-
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> 
-              <br/>
-              PAWS is a typical Part 2 valk: <br/>
-              - Top scores her bosses, decent dps everywhere else. <br/>
-              - Best support for certain lineups. <br/>
-              - Provides unique utilities that makes her the best DPS or support for certain enemies.
-          </p>
-
-          <p class="mt-3 text-sm sm:text-base">
-              Recommended to get PAWS in v8.3 if you can guarantee valk + weapon, preferably within the first week of v8.3 to get the most value out of her, because her bosses will appear more frequently during the first 3-4 weeks. After that, PAWS will be used as support more often.
-          </p>
-
-          <p class="mt-3 text-sm sm:text-base">
-          If you don't have enough crystals to guarantee PAWS and her weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.         </p>
-
-
-                      <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> Pull.
+              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get Dragoon Coralie in v8.4.
             </p>
 
           <div class="divider  "></div>
@@ -447,19 +427,19 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.3</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.4</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out the full guide on YouTube:
+            Check out the full guide on YouTube: (SOON)
         </p>
   
                 <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/QguYcI48WnY"
+                src="https://www.youtube.com/embed/"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1192,7 +1172,7 @@ async function increaseLike() {
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-red-400">SSS</td>
           <td class="p-3">
-            During AR Charging, if AR Intensity > 145, enemies take 22% ➔ 30% more Lightning DMG from PAWS.
+            During AR Charging, if AR Intensity > 145, enemies take 22% ➔ <strong>230%</strong> more Lightning DMG from PAWS.
           </td>
           <td class="p-3 text-center">DPS</td>
         </tr>
@@ -1312,7 +1292,7 @@ async function increaseLike() {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	During AR Charging, if AR Intensity > 145, enemies take 22% ➔ 30% more Lightning DMG from PAWS. </p>
+            <p>	During AR Charging, if AR Intensity > 145, enemies take 22% ➔ 230% more Lightning DMG from PAWS. </p>
             <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
