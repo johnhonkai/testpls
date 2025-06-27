@@ -3,7 +3,7 @@ title: Battle Pass
 category: 'Shop'
 sortOrder: 1
 customSlug: "battlepass"
-update: 8.2
+update: 8.3
 
 ---
 
@@ -52,12 +52,34 @@ There are three tiers - <span class="text-teal-300">Vanguard</span> (Free), <spa
 
 BP Works Shop has S-rank characters from the last 1-2 years, and the content of the shop can only be purchased if you buy Knight or Paladin Pass.
 
-![BP Equipment](https://i.imgur.com/Z84WA7B.png)
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/za7i3oH.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/mnorMje.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
+</div>
+
+### Should You Get Knight / Paladin For This Shop?
+
+If you can afford it, yeah definitely. Part 2 characters all have their niche as both dps and support, and this shop is how you can quickly get the older Part 2 characters.
+
+> Why don't I just get these characters from supplies?
+
+If you haven't noticed, NOT ALL CHARACTERS ARE IN BATTLESUIT SUPPLY - ONLY THE RECENT ONES. These characters are in Battle Pass for a reason - they will no longer appear in regular supplies.
+
+---
+
+### Should I get THIS or THAT?
+
+Refer to [each valk guide page](/valk) for more info. But general answer for most cases: Get Part 2 valk first. If all the sets are for Part 2 valk, then get the latest valk.
+
+---
 
 ### How the shop works
 - In each version, BP Works adds a set of S-rank character and her equipment.
 - Every set lasts for 3 versions.
-- The shop has 3 sets: set from current patch and previous two patches. Since the shop is new, v8.2 will only have the v8.2 S-rank set.
+- The shop has 3 sets: set from current patch and previous two patches. Since the shop was only added last patch, v8.3 will only have the v8.2 and v8.3 S-rank set.
 - Purchasing Knight or Paladin BP will allow you to purchase all 3 sets that are available in that version. In the next version, if you don't buy Knight or Paladin BP, you cannot purchase the content of the new set added in that version, but you can still purchase the set from the previous 2 versions.
 
 If you don't get how it works, here's a visual example:
@@ -67,23 +89,17 @@ If you don't get how it works, here's a visual example:
 </div>
 
 
-### Should You Get Senadina / Whatever Character in There?
-If you can afford it, yeah definitely. Since Part 2 characters all have their niche as both dps and support, then it is worth getting Senadina + weapon, or whatever character is going to be in the shop.
-
->I can only afford one S-rank + weapon out of the three, which one should I get?
-
-Refer to [each valk guide page](/valk) for more info. But general answer for most cases: Get Part 2 valk first. If all the sets are for Part 2 valk, then get the latest valk.
 
 
 ---
 
 ## Reserve Works Shop
 
-Reserve Works Shop has all S-rank characters and most equipment from over 3 years ago. Currently, the content of the shop is up until <span class="text-pink-300"> Herrscher of Human patch (v6.0) </span>.
+Reserve Works Shop has all S-rank characters and most equipment from over 3 years ago. Currently, the content of the shop is up until <span class="text-pink-300"> Herrscher of Origin patch (v6.4) </span>.
 
 The developers have stated that this shop will be updated gradually over time.
 
-![BP Equipment](https://i.imgur.com/QfzNLWO.png)
+![BP Equipment](https://i.imgur.com/tNpwwOy.png)
 
 <br/>
 
@@ -115,19 +131,19 @@ However, do note that some Divine Keys have been given for free in the past, and
 
 
 <div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/e3rUR1t.png" alt="Icon" class="w-[400px] h-auto rounded-lg" />
+  <img src="https://i.imgur.com/MLHZ782.png" alt="Icon" class="h-[250px] w-auto rounded-lg" />
 </div>
 
-Herrscher of Human (HoH) is the only meta character in the shop. If you have not maxed her ranks yet, then you can consider getting her stamps from this shop.
+Herrscher of Human (HoH) and Herrscher of Origin (HoO) are the only meta characters in the shop. If you have not maxed their ranks yet, then you can consider getting the stamps from this shop.
 
-**Regarding buying HoH battlesuit for F2P** <br/>
+**Regarding buying battlesuit for F2P** <br/>
 For F2P, 24 Crystallum cost is VERY EXPENSIVE. It is equal to 5 patches worth of Crystallum, that is almost a year worth! 
 
 **For new players that can afford it** <br/>
 HoH battlesuit is available in starter B-chip pack. Save your Crystallum and get HoH from the pack instead.
 
 **Note**<br/> 
-Only get the stamps, don't get her equipment. She uses a different set for Part 2. [Please go to Herrscher of Human guide page to learn more.](/valk/hoh)
+For HoH: Only get the stamps, don't get her equipment. She uses a different set for Part 2. [Please go to Herrscher of Human guide page to learn more.](/valk/hoh)
 
 ---
 
