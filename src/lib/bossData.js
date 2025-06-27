@@ -2906,7 +2906,11 @@ export const teamData = {
           },                    
         ]
       }
-    ],
+    ],       
+     videos: [
+      { url: 'https://youtu.be/F_zhJ4fpfJE', abyss: 'Red Lotus 512 D', uploader: 'Marisa Honkai' },
+
+    ] 
   },
 
   sampo: {
