@@ -303,6 +303,7 @@
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
       { code: 'CCQWLK02', reward: '30 crystals' },
+      { code: 'HAPPYSCHOOLFEST', reward: '30 crystals' },
 
     ] as entry}
       <div class="flex items-center justify-between gap-2">
