@@ -6,7 +6,7 @@ export const valkyries = [
         image: '/images/valkportrait/paws.png', 
         type: 'BIO', 
         element: 'Lightning', 
-        astralRing:'Heavenly Grail', 
+        astralRing:'Grail of Infinitude', 
         artag: ['Symbiosis' , 'Heavenly Shift'] , 
         url: '/valk/paws',
         cost: 200,
