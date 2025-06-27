@@ -99,7 +99,7 @@
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.2 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.3 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.3 Week ${currentWeekCN}`;
   }
 
