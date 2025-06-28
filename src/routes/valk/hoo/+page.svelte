@@ -45,13 +45,13 @@ function closeLightbox() {
   { name: 'Overview', short: 'overview' },
   { name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
-  { name: 'How to Play', short: 'howtoplay' },
+//  { name: 'How to Play', short: 'howtoplay' },
   { name: 'Gameplay Examples', short: 'example' },
   { name: 'Elysian Realm', short: 'er' },
   { name: 'Rank Up', short: 'rank' },
   { name: 'Popular Question', short: 'qna' },
-  { name: 'Overview Card', short: 'card' },
-  { name: 'Translation Error', short: 'translation' },
+//  { name: 'Overview Card', short: 'card' },
+//  { name: 'Translation Error', short: 'translation' },
 ];  
 
 // Function to select a tab and update the URL
@@ -341,43 +341,58 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW</h2>
-
+    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.3 (26 Jun 2025)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Herrscher Trio Enabler:</strong> Enables Herrscher Trio team with HoTruth and HoFinality
-          </p>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS:  </strong> Can also be a decent Lightning / IMG DPS. The new HoFi Divine Key improves HoO damage output by ~20%.
-          </p>
+
+        <p class="mt-2 text-sm sm:text-base">
+            <strong class="text-amber-400">Herrscher Trio Enabler</strong> <br/>
+            Enables Herrscher Trio team with Herrscher of Finality and Herrscher of Truth.
+        </p>
+
+        <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">DPS</strong> <br/>
+            Can also be a decent Lightning / IMG DPS. The new HoFi Divine Key improves HoO damage output by ~20%.
+        </p>
+
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P Players:</strong> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If Hoo and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
-          </p>
 
-          <p class="mt-2 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive:</strong> HoO is still used in Trio team. As DPS, she has one top score, vs Starless weather Husk: Mysticism.
-          </p>
+
+                  <p class="mt-2 text-sm sm:text-base">
+            <strong class="text-amber-400">Battle Pass</strong> <br/>
+            You can get HoOrigin from Battle Pass. However, as F2P, it will take you five patches, which is almost A YEAR. For spenders, if you can afford it, you can speed the process by purchasing Knight or Paladin Pass.
+        </p>
+
+                          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Competitive</strong> <br/>
+            HoO is still used in Trio team. As DPS, she has one top score, vs Starless weather Husk: Mysticism. Sometimes, she is still used in Arena.
+          
+        </p>
+
+
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>HoOrigin:</strong> Battlesuit Supply.</li>
-              <li ><strong>HoOrigin Stamps:</strong> Elysian Realm Shop, Witch Orb Shop.</li>
-              <li><strong>Domain of Unity and Raiden Mei stigma: </strong> Focused Supply.</li>
-              <li>Not available in v7.9. Last known supply is v7.2. HoO has been given for free two times.</li>
+              <li ><strong>HoOrigin:</strong> Battle Pass.</li>
+              <li ><strong>HoOrigin Stamps:</strong> Elysian Realm Shop, Witch Orb Shop, Battle Pass.</li>
+              <li><strong>Domain of Unity and Raiden Mei stigma: </strong> Battle Pass.</li>
 
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-              Check out the full guide on YouTube: 
+              Check out the full guide on YouTube (Outdated): 
           </p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">

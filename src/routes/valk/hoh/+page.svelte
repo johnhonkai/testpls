@@ -313,7 +313,7 @@ function selectTabMobile(event) {
   <CharBio mode="dps" rank="s" type="psy" element="ice" ar="wod" bg="bg-pink-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['hg' , 'loa' , 'wod']}  bg="bg-pink-800"/>
+  <CharBio mode="support" ar={['goi' , 'loa' , 'wod']}  bg="bg-pink-800"/>
   </div>
 
   
@@ -393,7 +393,7 @@ function selectTabMobile(event) {
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
     <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
       <p class="text-sm sm:text-base">
-        <strong>Updated For v8.2 (24 Apr 2025)
+        <strong>Updated For v8.3 (26 June 2025)
     </p>
     </div>
     <div>
@@ -413,7 +413,7 @@ function selectTabMobile(event) {
 
       <p class="mt-4 text-sm sm:text-base">
         <strong class="text-amber-400">Law of Ascension Support</strong> <br/>
-        HoH does not provide any improvement for existing LoA lineup. However, as a bow weapon wielder, she can hit an enemy's weak spot. In v8.1, this utility is used against MHT-3C Tank boss. This is the only situation where HoH support is the best.
+        HoH does not provide any improvement for existing LoA lineup. However, as a bow weapon wielder, she can hit an enemy's weak spot. This utility is used against MHT-3C Tank boss. This is the only situation in Abyss where HoH support is the best.
     </p>
 
     <p class="mt-4 text-sm sm:text-base">
@@ -421,8 +421,8 @@ function selectTabMobile(event) {
       HoH does not provide any improvement for existing LoA lineup. Although, she can consume Stellar Drain very quickly.  </p>
 
       <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400">Future AR Support</strong> <br/>
-        HoH will be a support for a future Astral Ring.</p>
+        <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>
+        Third best support for <a href="/valk/paws"  class="link">PAWS.</a> </p>
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
@@ -446,7 +446,7 @@ function selectTabMobile(event) {
     <li>As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.</li>
     <li>For casual / on-off  players, if you only have S0 HoH, then getting this Divine Key DLC will not guarantee you to get +100 in Abyss because HoH is a popular valk. A lot of players will have her at SS-rank or higher now in v8.1. </li>
     <li>As LoA and WoD support, her buffs are nothing exceptional. Her unique utility is that she can hit tank weak spot. So basically, HoH will only be useful as support very rarely outside of Arena.</li>
-    <li>She will also support one more AR in the future, so <span class="text-teal-300 ">maybe she will be very good for that AR</span>, but who knows.</li>
+    <li>As GoI support, HoH is third best support for PAWS. But, she might still be used in Arena due to limited support options. </li>
     <li>But of course, for whales who can afford it, just pull.</li>
   </ul>
 

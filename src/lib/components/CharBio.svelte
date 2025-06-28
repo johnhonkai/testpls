@@ -35,7 +35,7 @@
       ws: { src: '/images/artype/ar world star.png', tip: 'World Star playstyle revolves around generating and detonating Resonance marks.' },
       wod: { src: '/images/artype/ar wheel of destiny.png', tip: 'Wheel of Destiny is centered around solo playstyle.' },
       roo: { src: '/images/artype/ar roo.png', tip: 'Every Rite of Oblivion DPS has her own playstyle.' },
-      gof: { src: '/images/artype/ar grail.png', tip: 'Grail of Infinitude playstyle revolves around consuming SP.' },
+      goi: { src: '/images/artype/ar grail.png', tip: 'Grail of Infinitude playstyle revolves around consuming SP.' },
       all: { src: '/images/artype/AR All.png', tip: 'Can be a below average, last resort support option for other AR.' },
       lp: { src: '/images/artype/ar_lp.png', tip: 'Can support Lone Planetfarer' },
 

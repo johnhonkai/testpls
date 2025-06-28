@@ -92,5 +92,9 @@
   { name: "Hawk of the Fog", image: '/images/valkportrait/Fu Hua Hawk of the Fog.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hotf', verdebut: 3.5,  id:55},
   { name: "Twilight Paladin", image: '/images/valkportrait/Theresa Twilight Paladin.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/tp', verdebut: 3.4,  id:56},
   { name: "Herrscher of Reason", image: '/images/valkportrait/Bronya Herrscher of Reason.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/hor', verdebut: 3.3, verdlc: 6.1,  id:57},
+  { name: "Void Drifter", image: '/images/valkportrait/Kiana Void Drifter.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/void-drifter', verdebut: 3.3,  id:59},
+  { name: "Swallowtail Phantasm", image: '/images/valkportrait/Seele Swallowtail Phantasm.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/swallowtail-phantasm', verdebut: 3.2,  id:60},
+  { name: "Molotov Cherry", image: '/images/valkportrait/Rozaliya Molotov Cherry.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/molotov-cherry', verdebut: 3.1,  id:61},
+  { name: "Blueberry Blitz", image: '/images/valkportrait/Liliya Blueberry Blitz.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/blueberry-blitz', verdebut: 3.1,  id:62},
 
 ];

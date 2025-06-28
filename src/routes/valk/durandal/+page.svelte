@@ -314,7 +314,7 @@ async function increaseLike() {
   <CharBio mode="dps" rank="s" type="img" element="phy" ar="loa" bg="bg-teal-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['gof' , 'loa' , 'wod' , 'p1phy']}  bg="bg-teal-800"/>
+  <CharBio mode="support" ar={['goi' , 'loa' , 'wod' , 'p1phy']}  bg="bg-teal-800"/>
   <!-- Character Name and Release Date -->
   
 </div>

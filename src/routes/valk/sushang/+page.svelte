@@ -342,7 +342,7 @@ function selectTabMobile(event) {
         
     <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.3 (26 Jun 2025)
         </p>
         </div>
 
@@ -379,7 +379,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Jade Knight:</strong> Starter Event, War Treasury</li>
+            <li ><strong>Jade Knight:</strong> Starter Event, War Treasury, Battle Pass</li>
             <li ><strong>Jade Knight Equipment:</strong> Battle Pass</li>
 
         </ul>

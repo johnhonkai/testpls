@@ -419,7 +419,7 @@ async function increaseLike() {
   <CharBio mode="dps" rank="s" type="bio" element="phy" optelement="bleed" ar="loa" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['loa', 'gof']} />
+  <CharBio mode="support" ar={['goi','loa' ]} />
 
 </div>
 

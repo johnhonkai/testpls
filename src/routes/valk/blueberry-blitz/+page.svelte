@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Fervent Tempo Δ</title> 
-    <meta property="og:title" content="Fervent Tempo Δ" />
-    <meta property="og:description" content="Fervent Tempo Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/ft" />
+    <title>Liliya - Blueberry Blitz</title> 
+    <meta property="og:title" content="Liliya - Blueberry Blitz" />
+    <meta property="og:description" content="Blueberry Blitz Guide, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/9ox9t6f.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/blueberry-blitz" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -49,11 +49,11 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
+  //{ name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
    { name: 'Gameplay Examples', short: 'example' },
-  { name: 'Elysian Realm', short: 'er' },
+  //{ name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
@@ -150,8 +150,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["ft"] || 0; // Get initial likes from JSON
-  const charName = "ft"; // Route name for this character
+  let fovlikes = likesData["roza"] || 0; // Get initial likes from JSON
+  const charName = "roza"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -207,9 +207,9 @@ function selectTabMobile(event) {
 
 
 <div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_hofi.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+    <img src="/images/bg/wave_hotr.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
   
   
@@ -217,7 +217,7 @@ function selectTabMobile(event) {
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/ft.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-45;"/> 
+    <img src="/images/valkfull/bb.png" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-51;"/> 
   
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
@@ -246,36 +246,27 @@ function selectTabMobile(event) {
   <div class="flex flex-col items-center text-center justify-start">
     <!-- Battlesuit Name -->
   
-    <div class="mt-4">
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Fervent Tempo Δ</h1>
+    <div >
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-1">Blueberry Blitz</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Delta | Release Date: v4.3 (29 Oct 2020)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Liliya | Release Date: v3.1 (23 May 2019)  </p>
 
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
+        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-blue-500 outline-1 bg-blue-950/75 rounded-lg p-2 backdrop-blur-xs">
+          <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
+          <img src="/images/type/IconMECH.png" alt="BIO" class="w-auto h-8 md:h-10" />
           <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
   
         </div>
-      </div>
-      <div class="flex flex-col mt-4 items-center">
 
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <div class="flex flex-wrap justify-center">
-            <h2 class="text-sm md:text-base mb-2 text-slate-100">Augment form of Molotov Cherry</h2>
-          </div >
-          <div class="flex flex-row gap-2 flex-wrap justify-center">
-            <img src="/images/valkportrait/Rozaliya Molotov Cherry.png" alt="Support 1" class="w-auto h-14 md:h-20" />
-  
-          </div>
-        </div>
+
       </div>
+
     </div> <!-- End common wrapper -->
   </div>
   </section>
@@ -348,59 +339,36 @@ function selectTabMobile(event) {
         
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400">Outdated Part 1 Physical DPS</strong>
+          <br/>
+          
+          
       </p>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">
+          <li class="mt-2">Blueberry Blitz (BB) is a silly Physical DPS that can parry attack and counter with a poweful slash.</li>
+          <li class="mt-2">She was very strong in Arena, but required a lot of RNG checks to pull off 0-1s clear run.</li>
+          <li class="mt-2">If <a href="/valk/molotov-cherry" class="link text-pink-300">Rozaliya Molotov Cherry (MC)</a> is on the same team, MC's attacks become stronger and Liliya will appear in the attack animations. MC also gains access to a new Ultimate.</li>
+          <li class="mt-2">MC has an upgraded form - <a href="/valk/ft" class="link text-pink-300">Fervent Tempo (FT).</a> Liliya can be still be used together with FT to unleash double parries!</li>
 
-      <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">Fervent Tempo (FT) is an old Physical DPS with flashy neon effects. </li>
-          <li class="mt-2"> One of the best valks in her time. She was one of the valks that can get 0s clear in Arena, and was also strong in Abyss.</li>
-
-      </ul>
-
-
+        </ul>
 
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400 ">New Players on Molotov Cherry</strong>
+          <strong class="text-amber-400 ">New Players</strong>
+          <br/>
+          You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
+ 
       </p>
-
-      <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so no, not recommended to farm Molotov Cherry first. </li>
-          <li class="mt-2"> You can consider unlocking Molotov Cherry in the future for Elysian Realm first-clear crystal rewards.</li>
-
-      </ul>
-
-      <p class="mt-8 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on Fervent Tempo augment materials</strong>
-        <br/>Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. 
-      </p>
-
-      <p class="mt-8 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on FT Equipment</strong>
-    </p>
-
-    
-
-    <ul class="list-disc ml-6 text-sm sm:text-base">
-
-        <li class="mt-2"> FT can use a variety of stigma like G4 Bianka Theater, G3 Shuijing, G2 Michelangelo, but will take time to forge.</li>
-        <li class="mt-2"> Her signature PRI-ARM [Sleeper's Dream] can be forged after you unlock Sleeping Beauty or Swan Lake - both are in Exchange Shop.
-        </li>
-
-    </ul>
-
-
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Molotov Cherry:</strong> War Treasury.</li>
-            <li ><strong>Fervent Tempo Augment Materials:</strong> Asterite Shop.</li>
-            <li ><strong>Sleeper's Dream:</strong> Can be forged after you unlock Sleeping Beauty or Swan Lake - both are in Exchange Shop.</li>
-            <li ><strong>G4 Bianka Theater:</strong> Foundry.</li>
+          <li ><strong>Blueberry Blitz:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
+          <li ><strong>Sleeper's Dream:</strong> Can be forged after you unlock Sleeping Beauty or Swan Lake - both are in Exchange Shop. </li>
+
 
         </ul>
 
@@ -414,11 +382,7 @@ function selectTabMobile(event) {
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
 
-
-  
     <P1physical></P1physical>
-
-
 </section>
 
   {/if}
@@ -429,150 +393,52 @@ function selectTabMobile(event) {
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">DPS</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/431ef4ef893fcc80c67e0fcd04fbfd34_2177486758135738481.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/76361817/431ef4ef893fcc80c67e0fcd04fbfd34_2528697595790786237.png" alt="Path to Acheron" class="w-full h-full object-cover">
               </div>
+
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/01/07/6100274/41e4d989af800e4d7fd72b6f42c6cc33_4282086594759474453.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/76361817/7d492a17c97e18b19eb56062d11c400e_2835686767604713731.png" alt="Cecilia Youth T" class="w-full h-full object-cover">
 
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/01/07/6100274/4b335e379a0646bdedead6f2ca9f0b7a_6484465932610883565.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/01/07/6100274/1c8667b918d8d70b8d0d812fa66cf58f_8638048929336059481.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-            </div>
-
-
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> Sleeper's Dream + Bianka Theater </h4>
               </div>
 
 
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/76361817/b7d1353929a8a21a9e75174b8acb57d9_4471600366190290520.png" alt="Cecilia Youth M" class="w-full h-full object-cover">
+
+              </div>
+
+              
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/24/76361817/d27f270b461524535006fb9a7847a556_971335972534709322.png" alt="Cecilia Youth B" class="w-full h-full object-cover">
+            </div>
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> Sleeper's Dream + G3 Shuijing set </h4>
+              </div>
 
            </div>
 
-           <div>
-
-
-
-            <div class="p-4 mt-4 bg-linear-to-r from-red-950/75 to-red-900/75 rounded-sm">
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>Sleeper's Dream</b><br/> - A must-have weapon for FT.
-                <br/> - Active skill creates an attack that can be parried by FT to trigger her Retaliation EX attack.
-              </p>
-
-              <p class="text-sm sm:text-base text-left mb-4">
-                <b>G4 Bianka Theater</b><br/> - Strongest stigma for FT? Not even sure anymore. 
-                <br/> - Forgeable in Foundry.
-              </p>
-
-              <p class="text-sm sm:text-base text-left">
-                <b>Affix</b> <br/>Ideally, 4 ATK and 2 Crit DMG lines. Full ATK is also fine.
-              </p>
-            </div>
-
-
-            </div>
-            
-            <div class="divider  "></div>
-            <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> OTHER STIGMA OPTIONS </h2>
-
-            <div class="flex flex-col justify-center items-center">
-                  
-              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/27/5683276/078e53e7a557ce6cd8ca074e59724ce0_5198793186591170947.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
-              </div>
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/26/6100274/47912cb5ee05db0c9804de7c8be148c8_6704934550393204988.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
-              </div>
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/16/73514954/d27f270b461524535006fb9a7847a556_5537619636548721975.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
-              </div>
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> Shuijing TB</h4>
-              </div>
-              <div class="p-4 mt-4 bg-linear-to-r from-zinc-950/75 to-zinc-900/75 rounded-sm">
-                <p class="text-sm sm:text-base text-left">
-                  - Requires QTE. Commonly seen in Memorial Arena, but can also be used in Abyss. <br/>
-                  - G3 Shuijing is forgeable in Foundry.
-                </p>
-              </div>
-              <div class="divider  "></div>
-
-            <div class="flex flex-col justify-center items-center">
-                  
-              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-    
-                <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/18/72350798/8144af2b0eda219452e3ed7fe23d852a_2364863141621330892.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-    
-                </div>
-    
-                <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/d6118c457a605b93278fb21fc8ae937e_7644099038321284032.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-    
-                </div>
-    
-                <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/18/72350798/3dcaf1a1544a0976ba1615f7da892de3_1340802825687014112.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-    
-                </div>
-              </div>  
-              <h4 class="text-base sm:text-base text-white"> Michelangelo TB, Dante M</h4>
-              </div>
-    
-    
-              <div class="p-4 mt-4 bg-linear-to-r from-zinc-950/75 to-zinc-900/75 rounded-sm">
-                <p class="text-sm sm:text-base text-left">
-                  - G2 Michelangelo is forgeable in Foundry. <br/>
-                  - G3 Dante is forgeable in Foundry.
-                </p>
-              </div>
       {/if}
 
 
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
-
-      <div class="flex justify-center gap-4 my-6">
-        <button
-          on:click={() => setPlaystyle('1')}
-          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-          BUILD
-        </button>
-      
-        <button
-          on:click={() => setPlaystyle('2')}
-          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-          EQUIPMENT
-        </button>
-      </div>
-      {#if activePlaystyle === '1'}
-
-
       <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-0 md:mb-2 text-center sm:text-left text-amber-400">Warning: Old Valk</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-        This is a very old valkyrie that requires ranks and her signature weapon to perform well. Please play at a lower difficulty if FT is at a low rank and does not have Sleeper's Dream equipped.
+        This is a very old A-rank valkyrie with weak ER signets. Please play at a lower difficulty.
       </p>
       <div class="divider  "></div>
+
+
         <h2 class="text-xl font-semibold mb-4 mt-4  text-left text-white cooltext">EGO SIGNETS</h2>
 
         <div class="flex flex-col justify-center items-start ">
@@ -589,15 +455,15 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Silence</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Mixing</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Battle Song </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Gambit</p>
 
             </div>
           </div>
         </div>
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
-            You can complete the run with just one Ego signet (Silence). Mixing helps gather enemies.
+            You can complete the run with just one Ego signet (Glory). Gambit is extra damage.
           </p>
         </div>
 
@@ -617,19 +483,15 @@ function selectTabMobile(event) {
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -639,9 +501,9 @@ function selectTabMobile(event) {
           </div>
           <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
-               <b>SP Regen:</b> You want sp regen signet early to consistently use Ultimate.
-               <br/>
-               <b>Decimation 1:</b> Your HP will be very low, but FT has a durable shield.
+              <b>Decimation 1:</b> Your HP will be very low. Get Vicissitude 2 for survivability. <br/>
+              <b>Gold:</b> You want sp regen to keep using Ultimate.<br/>
+
             </p>
           </div>
 
@@ -652,7 +514,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
@@ -660,7 +522,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -668,21 +530,24 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Mei Lightning Empress.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
             
           </div>
-
+          <div class="mt-3 rounded-sm" >
+            <p class="text-sm sm:text-base text-left">
+              You can swap Lightning Empress to Azure Empyrea once you have enough sp regen.
+            </p>
+          </div>
 
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           
-
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -693,7 +558,7 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
-                <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -703,9 +568,10 @@ function selectTabMobile(event) {
               <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                </div>
+              </div>
               <p class="text-base sm:text-lg font-semibold">FINAL</p>
           </div>
+
 
           </div>
 
@@ -715,11 +581,12 @@ function selectTabMobile(event) {
 
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press weapon ➔ Wait for like 0.2 second ➔ Use Ult </li>
-            <li>Spam ATK button.</li>
-            <li>When Ult is available, use Ultimate. You don't have to wait weapon cd to use Ult.</li>
+            <li>Use Lightning Empress support ➔ Use Ultimate </li>
+            <li>Charged ATK ➔ Weapon. Repeat this until Ult buff duration ends. (there's no indicator, but you will know Ult buff is over when your Charged ATK activates sprint). </li>
+            <li>Note that you cannot use weapon skill (throw) on enemies with Iron Body. So, in this case, use Charged ATK ➔ spam Basic ATK until full meter, and repeat.</li>
+            <li>After ult buff ends, use Charged ATK (sprint) and spam Basic ATK to gain meter, until you have enough sp to use Ultimate.</li>
             <li>Repeat.</li>
-            <li>If you don't have enough sp to use Ult, just spam Basic ATK.</li>
+            <li>If you can trigger evasion skill, spam [Evade ➔ Press ATK once] until evasion buff duration ends. (purple icon above hp bar)</li>
 
           </ol>
 
@@ -730,7 +597,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/Sp3aA9UZ4VM"
+                src="https://www.youtube.com/embed/VWCylOtLvDQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -738,46 +605,8 @@ function selectTabMobile(event) {
                 loading="lazy">
             </iframe>
         </div>
-        {/if}
-
-        {#if activePlaystyle === '2'}
-
-        <div class="flex flex-col justify-center items-center">
-                  
-          <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/431ef4ef893fcc80c67e0fcd04fbfd34_2177486758135738481.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-            </div>
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/18/72350798/8144af2b0eda219452e3ed7fe23d852a_2364863141621330892.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-            </div>
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/75216984/d6118c457a605b93278fb21fc8ae937e_7644099038321284032.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-            </div>
-
-            <div class="w-20 h-20 sm:w-28 sm:h-28">
-              <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/18/72350798/3dcaf1a1544a0976ba1615f7da892de3_1340802825687014112.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
-
-            </div>
-          </div>  
-          <h4 class="text-base sm:text-base text-white">Sleeper's Dream + Michelangelo TB, Dante M</h4>
-          </div>
 
 
-          <div class="p-4 mt-4 bg-linear-to-r from-purple-950/75 to-purple-900/75 rounded-sm">
-            <p class="text-sm sm:text-base text-left">
-              - Better for Elysian Realm. <br/>
-              - G2 Michelangelo is forgeable in Foundry. <br/>
-              - G3 Dante is forgeable in Foundry.
-            </p>
-          </div>
-          {/if}
       {/if}
 
       {#if selectedTab === 'Rank Up'}
@@ -901,7 +730,25 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">FT DPS vs Shadow Knight Abyss</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Liliya DPS vs SSS Jizo</h2>
+
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/zx4Lf-kvt5I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+
+              <div class="bg-gray-800 mt-8 p-4 pt-10 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Liliya Supporting Fervent Tempo</h2>
 
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
@@ -917,10 +764,8 @@ function selectTabMobile(event) {
             </iframe>
         </div>
       </div>
-
     </div>
 
-      
 
 
   {/if}
