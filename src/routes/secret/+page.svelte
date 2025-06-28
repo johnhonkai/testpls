@@ -49,7 +49,7 @@ async function captureStats() {
 // full team rotation  
 <div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10">
   <div class="text-center">
-      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener</h2>
+      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener </h2>
     </div>
   <!-- Row 1 -->
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
@@ -59,7 +59,7 @@ async function captureStats() {
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base">Combo ATK ➔ Ultimate</p>
+      <p class="text-white  text-base">Combo ATK ➔ Ultimate (if available)</p>
     </div>
   </div>
 
@@ -71,7 +71,7 @@ async function captureStats() {
     />
     <div>
       <p class="text-white  text-base mb-1">
-        QTE ➔ Weapon ➔ Ultimate
+        QTE ➔ Weapon ➔ Ultimate (if available) 
       </p>
 
     </div>
@@ -86,7 +86,7 @@ async function captureStats() {
         />
         <div>
           <p class="text-white text-base mb-1">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
+            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
           </p>
 
         </div>
@@ -94,7 +94,7 @@ async function captureStats() {
 
       </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "  >
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "    >
   
   <div class="text-center">
       <h2 class="text-xl font-semibold text-amber-400 mb-1">AR Charging Rotation</h2>
@@ -110,7 +110,7 @@ async function captureStats() {
       />
       <div>
           <p class="text-white text-base mb-1">
-            Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK
+            Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK 
           </p>
       </div>
     </div>
@@ -123,7 +123,7 @@ async function captureStats() {
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Combo ATK / Weapon ➔ Ultimate</p>
+      <p class="text-white  text-base mb-1">QTE ➔ Combo ATK / Weapon ➔ Ultimate (if available)</p>
       <p class="text-gray-300 text-sm">Combo ATK is faster. Weapon skill is better for mobs to apply dmg link effect.</p>
 
     </div>
@@ -137,7 +137,7 @@ async function captureStats() {
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate </p>
+      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate (if available)</p>
 
     </div>
   </div>
@@ -151,7 +151,7 @@ async function captureStats() {
       />
       <div>
         <p class="text-white text-base mb-1">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
+            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
         </p>
 
       </div>
@@ -160,7 +160,7 @@ async function captureStats() {
 
 </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "  id="statsSection">
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 " >
   
   <div class="text-center">
       <p class="text-xl font-semibold mb-4 text-amber-400">Stellar Outburst Rotation</p>
@@ -268,7 +268,7 @@ async function captureStats() {
         />
         <div>
           <p class="text-white text-base mb-2">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst (SO).
+            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst (SO).
           </p>
           <p class="text-white text-base mb-1">
             Make sure to have at least 100 sp before using SO, so you can use Ult immediately after SO ends.
@@ -279,7 +279,7 @@ async function captureStats() {
 
       </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "  >
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "  id="statsSection">
   
   <div class="text-center">
       <h2 class="text-xl font-semibold text-amber-400 mb-1">AR Charging Rotation</h2>
@@ -295,7 +295,7 @@ async function captureStats() {
       />
       <div>
           <p class="text-white text-base mb-1">
-            Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK
+            Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK
           </p>
       </div>
     </div>
@@ -308,7 +308,7 @@ async function captureStats() {
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate</p>
+      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate (if available)</p>
 
     </div>
   </div>
@@ -337,7 +337,7 @@ async function captureStats() {
       />
         <div>
           <p class="text-white text-base mb-2">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst (SO).
+            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst (SO).
           </p>
           <p class="text-white text-base mb-1">
             Make sure to have at least 100 sp before using SO, so you can use Ult immediately after SO ends.

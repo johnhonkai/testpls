@@ -1335,7 +1335,7 @@ async function increaseLike() {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/CswFcEddAjc"
+                src="https://www.youtube.com/embed/12e2P_nHgsE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1358,7 +1358,7 @@ async function increaseLike() {
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/DD-CDUr3qls"
+                src="https://www.youtube.com/embed/9IreoIUPF28"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
