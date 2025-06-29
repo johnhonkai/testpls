@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Peregrine Sword</title> 
+  <title>Sushang - Peregrine Sword</title> 
 
-    <meta property="og:title" content="Peregrine Sword" />
+    <meta property="og:title" content="Sushang - Peregrine Sword" />
     <meta property="og:description" content="Peregrine Sword Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/NsNZLST.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/ps" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/peregrine-sword" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -1343,14 +1343,14 @@ async function increaseLike() {
       <div class=" gap-6 mt-4">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">DPS and Support Rotation</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Peregrine Sword DPS</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Sorry, will post a separate vid for this part later.</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">DPS Rotation Example</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/98-TVVWPN6o"
+                src="https://www.youtube.com/embed/XXv5vL6W28w"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

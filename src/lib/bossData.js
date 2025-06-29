@@ -171,7 +171,7 @@ export const bossData = {
     bosspic: "images/Bosses/Husk - Nihilus (Hitcount).webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
-  'lighttribunal': {
+  lighttribunal: {
     name: 'Cruising Tribunal', 
     mechanics: 'This boss is closer to Dominance weather version. Transition phase: Justice Core only takes Bleed DMG. If Justice Core is destroyed, team gain Bleed DMG buff. Final phase: Gather mobs to destroy the boss.', 
     weakness: 'None', 
@@ -3071,7 +3071,26 @@ export const teamData = {
         ]
       }
     ],
-  },   
+  },
+  
+     lighttribunal: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/Theresa Schicksal's Imperative.png", "/images/valkportrait/Griseo Cosmic Expression.png", "images/valkportrait/elf_kiana.png"],
+            rank: '1+',
+            pct: '100%',
+
+          },                                     
+        ]
+      }
+    ],
+  }, 
 }
 
 

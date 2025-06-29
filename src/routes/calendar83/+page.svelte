@@ -76,6 +76,10 @@
             title: "Battlesuit Supply A: PAWS",
             description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Gloria (UP), Blueberry Blitz, Flame Sakitama, Kriegmesser</li>',
         },
+        "Valk3": {
+            title: "Battlesuit Supply B: Sparkle",
+            description: '<li>Duration: 2 weeks</li><li>A-rank: Shadow Dash (UP), Valkyrie Ranger, Gyakushinn Miko, Yamabuki Armor </li>',
+        },        
         "Equip": {
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
@@ -564,7 +568,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                    <BossCard/>
+                <BossCard image="/images/Bosses/Vita.png" date="Jul 25" weather="Resonance" bosspage="/boss?resovita" />
                     <BossCard />
                     </div>
                      
