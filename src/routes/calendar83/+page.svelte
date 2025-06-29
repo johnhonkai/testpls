@@ -226,7 +226,7 @@
                         </div>
                     </div>    
 
-                    <div on:click={() => openModal("")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-amber-700">
+                    <div on:click={() => openModal("Valk3")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-amber-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sparkle</span>
