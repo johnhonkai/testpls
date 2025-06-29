@@ -1370,7 +1370,27 @@ async function increaseLike() {
       </div>
 
     </div>
+          <div class=" gap-6 mt-10">
+        <!-- Video 1 with title and description -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Faster Basic ATK Sequence</h2>
 
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/gRMbDjyj70I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
+        </div>
+      </div>
+
+    </div>    
           <div class=" gap-6 mt-10">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
