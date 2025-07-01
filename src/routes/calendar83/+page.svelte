@@ -569,13 +569,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Vita.png" date="Jul 25" weather="Resonance" bosspage="/boss?resovita" />
-                    <BossCard />
+                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Jul 28" weather="Flux" bosspage="/boss?lantern" />
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard   />
+                    <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Jul 29"  />
+                    <BossCard image="/images/Bosses/Herrscher of Rimestar.png" />
+                    <BossCard image="/images/Bosses/Shadow Knight (SK).webp"   />
                     </div>
     
 
