@@ -1323,6 +1323,54 @@ export const teamData = {
   resovita: {
     teamDataSets: [
       {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_songque.png"],
+          rank: '1+',
+          pct: '51%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '7',
+          pct: '21%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '26',
+          pct: '16%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+          rank: '55',
+          pct: '2%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+          rank: '57',
+          pct: '1%',
+        },  
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+          rank: '59',
+          pct: '8%',
+        },  
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/elf_kiana.png"],
+          rank: '95',
+          pct: '1%',
+        },                    
+      ]},
+
+      {
         tabname: "v8.1",
         teamInfoText: "Data is from v8.1 SEA Server Top 100 Myriad ??? D.",
       entries: [
@@ -1585,8 +1633,10 @@ export const teamData = {
       },
     ]},],
         videos: [
-          { url: 'https://www.bilibili.com/video/BV15CZcY1EQs', abyss: 'S0-rank PS Red Lotus', uploader: '宇轩aa' },
-      { url: 'https://youtu.be/Qua1xOkPMA0', abyss: 'Nirvana 548 D', uploader: 'beltbelt' },
+      { url: 'https://youtu.be/11KlqaxlKW0', abyss: 'S0 PS Nirvana 549 D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/esCyROThzjM', abyss: 'SS PS Nirvana 549 D', uploader: 'beltbelt' },
+      { url: 'https://youtu.be/J-95MfL9Bn8', abyss: 'S2 PS Nirvana ??? D', uploader: 'Ismaël' },
+      { url: 'https://www.bilibili.com/video/BV15CZcY1EQs', abyss: 'S0-rank PS Red Lotus', uploader: '宇轩aa' },
     ] 
   },
   pishacha: {
@@ -2621,7 +2671,34 @@ export const teamData = {
     
     teamDataSets: [
       {
-        tabname: "v8.2 CN",
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '1',
+            pct: '1%',
+            bottext: "Vita uses OutingT AladdinMB. Highest Score: 9S 841"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/paws.png", "images/valkportrait/asop_teri.png"],
+            rank: '2+',
+            pct: '96%',
+            bottext: "Highest Score: S2 799, SS 803, S2 812, 6S 827, 8S 841"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '48',
+            pct: '3%',
+            bottext: "Vita uses original gears. Highest Score: 5S 805"
+          },          
+        ]
+      },      
+      {
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
