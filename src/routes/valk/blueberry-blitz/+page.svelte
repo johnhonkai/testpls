@@ -346,6 +346,16 @@ function selectTabMobile(event) {
         <ul class="list-disc ml-6 text-sm sm:text-base ">
           <li class="mt-2">Blueberry Blitz (BB) is a silly Physical DPS that can parry attack and counter with a poweful slash.</li>
           <li class="mt-2">She was very strong in Arena, but required a lot of RNG checks to pull off 0-1s clear run.</li>
+
+        </ul>
+
+        <p class="mt-7 text-sm sm:text-base">
+          <strong class="text-amber-400">Rozaliya Support</strong>
+          <br/>
+          
+          
+      </p>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">
           <li class="mt-2">If <a href="/valk/molotov-cherry" class="link text-pink-300">Rozaliya Molotov Cherry (MC)</a> is on the same team, MC's attacks become stronger and Liliya will appear in the attack animations. MC also gains access to a new Ultimate.</li>
           <li class="mt-2">MC has an upgraded form - <a href="/valk/ft" class="link text-pink-300">Fervent Tempo (FT).</a> Liliya can be still be used together with FT to unleash double parries!</li>
 

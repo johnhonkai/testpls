@@ -739,28 +739,6 @@ function selectTabMobile(event) {
 
     </div>
 
-      
-    <div class=" gap-6 mt-5 mb-10">
-
-      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-        <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Azure Empyrea - Ice Support</h2>
-
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-          <iframe
-          loading="lazy" 
-
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/eMBXkfAneG8"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-      </div>
-    </div>
-
-  </div>
 
 
   {/if}
