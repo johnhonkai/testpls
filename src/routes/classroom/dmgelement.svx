@@ -35,7 +35,7 @@ Most damage in Honkai Impact belong to one of following damage:
 
 
 ## Bleed and Ignite DMG
-In 2023, Bleed DMG and Ignite DMG were introduced. These are not new damage elements, rather, they are extra damage elements that exist alongside one of the four main damage elements.
+In 2023, Bleed DMG and Ignite DMG were introduced. These damage elements exist alongside one of the four main damage elements.
 Characters with Bleed / Ignite DMG benefit from buffs that affect both their primary element and Bleed / Ignite DMG.
 
 <div class="flex items-center justify-center text-orange-300 ">
@@ -51,6 +51,7 @@ Characters with Bleed / Ignite DMG benefit from buffs that affect both their pri
 
 ### Valks with Ignite DMG
 - [Miracle Magical Girl](/valk/sirin): Deals Fire DMG, and most of her attacks also count as Ignite DMG.
+- [Dragoon Coralie](/valk/scoralie): Deals Fire DMG, and most of her attacks also count as Ignite DMG.
 
 ### Bleed / Ignite DMG vs DoT
 Although they are not entirely the same, Bleed and Ignite DMG do inherit some properties from Bleed and Ignite status damage-over-time (DoT). For example:
