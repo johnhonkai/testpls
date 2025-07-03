@@ -230,7 +230,7 @@ async function increaseLike() {
   }
 
   #app {
-  height: 35rem;
+  height: 36rem;
   overflow: hidden;
   position: relative;
 }
@@ -320,10 +320,10 @@ async function increaseLike() {
 
 
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="mech" element="fire" ar="roo" bg="bg-red-800" />
+  <CharBio mode="dps" rank="s" type="mech" element="fire" optelement="ignite" ar="roo" bg="bg-red-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['all']}  bg="bg-red-800"/>
+  <CharBio mode="support" ar={['goi', 'loa','all']}  bg="bg-red-800"/>
 </div>
 
 

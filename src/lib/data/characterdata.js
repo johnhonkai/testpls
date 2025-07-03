@@ -31,7 +31,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: '逆命魔龙·降临！', image: '/images/valkportrait/scoralie.png', type: 'Mech', element: 'Fire', astralRing: ['Rite of Oblivion'] , url: '/valk/scoralie',  badge: 'Beta', verdebut: 8.4, id:58},  
+  { name: '逆命魔龙·降临！', image: '/images/valkportrait/scoralie.png', type: 'Mech', element: ['Fire','Ignite'], astralRing: ['Rite of Oblivion'] , url: '/valk/scoralie',  badge: 'Beta', verdebut: 8.4, id:58},  
   { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/paws',  badge: 'New', verdebut: 8.3, id:55},
   { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/peregrine-sword',   verdebut: 8.2, id:54},
   { name: 'Ba-dum! Fiery Wishing Star', image: '/images/valkportrait/kiana badum.png', type: 'SD', element: 'Fire', astralRing: ['Law of Ascension'] , url: '/valk/badum', verdebut: 8.1, id:53},
