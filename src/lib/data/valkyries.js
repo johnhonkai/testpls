@@ -1,6 +1,16 @@
 export const valkyries = [
 
     { name: 'RoO Valk no Reso tag', image: '/images/valkportrait/unknownchar.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Omniscient Star' ] , url: '/valk/coralie', cost: 150},
+    
+    { name: 'Dragoon Coralie', 
+        image: '/images/valkportrait/scoralie.png', 
+        type: 'MECH', 
+        element: 'Fire', 
+        astralRing:'Rite of Oblivion', 
+        artag: ['Omniscient Star', 'Symbiosis' , 'Heavenly Shift' , ] , 
+        url: '/valk/scoralie',
+        cost: 200,
+    },   
 
     { name: 'Planar Armament', 
         image: '/images/valkportrait/paws.png', 
