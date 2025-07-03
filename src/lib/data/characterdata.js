@@ -79,7 +79,7 @@
   { name: "Herrscher of Sentience", image: '/images/valkportrait/Fu Hua Herrscher of Sentience.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/hos', verdebut: 4.6, verdlc: 7.0, id:42},
   { name: "Blazing Hope", image: '/images/valkportrait/Asuka Blazing Hope.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/asuka', verdebut: 4.5, id:43},
   { name: "Dea Anchora", image: '/images/valkportrait/Durandal Dea Anchora.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/da', verdebut: 4.4, id:44},
-  { name: "Fervent Tempo Δ", image: '/images/valkportrait/ft.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ft', verdebut: 4.3, id:45},
+  { name: "Fervent Tempo Δ", image: '/images/valkportrait/fervent-tempo.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ft', verdebut: 4.3, id:45},
   { name: "Fallen Rosemary", image: '/images/valkportrait/Rita Fallen Rosemary.png', type: 'Qua', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/fr', verdebut: 4.2, id:46},
   //{ name: "Danzai Spectramancer", image: '/images/valkportrait/Mei Danzai Spectramancer.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/danzai', id:47},
   { name: "Herrscher of Thunder", image: '/images/valkportrait/Mei Herrscher of Thunder.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hot', verdebut: 4.1, verdlc: 5.8, id:48},
