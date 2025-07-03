@@ -271,8 +271,9 @@ function selectTabMobile(event) {
             <h2 class="text-sm md:text-base mb-2 text-slate-100">Augment form of Molotov Cherry</h2>
           </div >
           <div class="flex flex-row gap-2 flex-wrap justify-center">
+            <a href="/valk/molotov-cherry">
             <img src="/images/valkportrait/Rozaliya Molotov Cherry.png" alt="Support 1" class="w-auto h-14 md:h-20" />
-  
+            </a>
           </div>
         </div>
       </div>

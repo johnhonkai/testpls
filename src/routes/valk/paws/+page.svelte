@@ -212,7 +212,7 @@ async function increaseLike() {
 
 <style>
    #apphelia {
-    height: 35rem;
+    height: 36rem;
     overflow: hidden;
     position: relative;
   }
@@ -305,7 +305,7 @@ async function increaseLike() {
   <CharBio mode="dps" rank="s" type="bio" element="lightning" ar="goi" bg="bg-orange-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['goi' , 'loa']}  bg="bg-orange-800"/>
+  <CharBio mode="support" ar={['scoralie' , 'goi' , 'loa']}  bg="bg-orange-800"/>
 </div>
 
 
@@ -404,15 +404,21 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong> 
               <br/>
-              Currently, we are lacking data on PAWS support performance in live server, but she might not replace the existing LoA teams. Plus, so far, LoA DPS doesn't have any boss that requires Paralyze trauma.
+              Currently, we are lacking data on PAWS support performance in live server. So far, she is only used as Peregrine Sword teammate vs Lantern boss. Also, LoA DPS doesn't have any boss that requires Paralyze trauma.
             </p>
 
-                      <p class="mt-4 text-sm sm:text-base">
+            <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Grail of Infinitude Support</strong> 
               <br/>
               PAWS will be a support for future Grail of Infinitude characters.
             </p>
-          
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Dragoon Coralie Support</strong> 
+              <br/>
+              PAWS might potentially be the best support for Dragoon Coralie (new valk in v8.4)
+            </p>
+
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>

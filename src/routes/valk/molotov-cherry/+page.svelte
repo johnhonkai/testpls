@@ -254,7 +254,7 @@ function selectTabMobile(event) {
 
   
     <!-- Common wrapper to ensure same width -->
-    <div class="w-full max-w-sm mb-2">
+    <div class="w-full max-w-sm mb-4">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
         <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
@@ -268,6 +268,16 @@ function selectTabMobile(event) {
       </div>
 
     </div> <!-- End common wrapper -->
+            <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
+          <div class="flex flex-wrap justify-center">
+            <h2 class="text-sm md:text-base mb-2 text-slate-100">Base form of Fervent Tempo</h2>
+          </div >
+          <div class="flex flex-row gap-2 flex-wrap justify-center">
+            <a href="/valk/ft">
+            <img src="/images/valkportrait/ft.png" alt="Support 1" class="w-auto h-14 md:h-20" />
+            </a>
+          </div>
+        </div>
   </div>
   </section>
   

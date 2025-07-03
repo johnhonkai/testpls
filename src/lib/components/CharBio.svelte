@@ -45,6 +45,7 @@
       p1lightning: { src: '/images/artype/p1lightning.png', tip: 'Part 1 Lightning Team' },
       p1ice: { src: '/images/artype/p1ice.png', tip: 'Part 1 Ice Team' },
       hoo: { src: '/images/artype/ar_hoo.png', tip: 'Can support Herrscher of Origin' },
+      scoralie: { src: '/images/artype/scoralie.png', tip: 'Can support Dragoon Coralie' },
 
     };
   </script>
