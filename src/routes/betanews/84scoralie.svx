@@ -110,7 +110,7 @@ Evasion skill: Time fracture 2s, CD 15s.
 Slash continuously, deal 400% ATK of Fire DMG, inflict 2.5 ignite trauma.
 
 #### WEAPON 1
-During SO, the base ATK multiplier for Basic ATK 1-4, weapon skill and dragon claw in increased by 30%.
+During SO, the base ATK multiplier for Basic ATK 1-4, weapon skill and special weapon skill Dragon Claw is increased by 30%.
 
 ---
 
