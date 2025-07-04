@@ -1,0 +1,50 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.4 Elysian Realm v2
+version: '8.4'
+sortOrder: '6'
+image: "/images/valkportrait/scoralie.png"
+---
+
+### LINKS
+
+- [8.4 Patch Note](/betanews/84log)
+- [S-Coralie Skills](/betanews/84scoralie)
+- [S-Coralie Equipment](/betanews/84scoraliegear)
+- [New PAWS Skills](/betanews/84newskill)
+- [Chenxue Asop](/betanews/84chenxue)
+- [Elysian Realm](/betanews/84er)
+
+
+---
+
+### Stage Buffs
+
+
+---
+
+### Load Buffs
+- 0: 
+- 5: 
+- 5: 
+- 10: 
+- 10: 
+- 15: 
+- 15: 
+
+---
+
+### Dragoon Coralie 
+
+#### Battlesuit Changes
+
+
+#### Signet 1
+
+#### Signet 2
+
+#### Signet 3
+
+#### Signet 4
+
+#### Signet 5

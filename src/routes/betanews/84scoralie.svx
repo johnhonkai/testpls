@@ -1,0 +1,204 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: S-rank Coralie Translation v2
+version: '8.4'
+sortOrder: '2'
+image: "/images/valkportrait/scoralie.png"
+
+---
+
+### LINKS
+
+- [8.4 Patch Note](/betanews/84log)
+- [S-Coralie Skills](/betanews/84scoralie)
+- [S-Coralie Equipment](/betanews/84scoraliegear)
+- [New PAWS Skills](/betanews/84newskill)
+- [Chenxue Asop](/betanews/84chenxue)
+- [Elysian Realm](/betanews/84er)
+
+
+---
+
+### INTRO
+- S-rank, Mech, Fire, Ignite, Rocket Hammer user
+- Astral Ring: Rite of Oblivion
+- Has Shift and Symbiosis tags (Can support LoA and GoI)
+- Gameplay:  
+
+---
+
+### LEADER 
+Activates AR Rite of Oblivion. SO cost: 150. SO Duration: 15s, CD: 25s.
+- When there is 1 character protected by Astral Ring in the team: Team Total DMG +10% (S) / 11% (S3) / 12% (SS3).
+- When there are 2 characters protected by Astral Ring in the team: Team Physical and Elemental DMG +10% (S) / 11% (S3) / 12% (SS3).
+- When there are 3 characters protected by Astral Ring in the team: Enemies take 4% (S) / 5% (S3) / 6% (SS3) more Total DMG.
+
+
+#### LEADER 1
+When you are the leader: If PAWS is in the team, Total DMG and Fire DMG +13.14%.
+
+#### LEADER 2
+- Initial AR +25. 
+- Enemies take 25% more Fire DMG from self.
+- When there are 2/3 Rite of Oblivion characters in the team, Dragoon Coralie Total DMG and Fire DMG +31%/54% (S) / +35%/60% (S2).
+
+#### LEADER 3
+[SSS] When you are the leader: Initial AR +25.
+
+---
+
+### ASTRAL RING
+
+S-Coralie is protected by AR Rite of Oblivion. When you activate SO, deal 400% ATK of Fire DMG.
+
+When you are the leader:
+- After activating SO, the first entry will release Castorice Breath, Level 1 deals 1800% ATK of Fire DMG, add 18 ignite trauma. Keep holding the special button to upgrade to Level 3, deal max 2520% ATK of Fire DMG. After that, finisher deals 1600% ATK of Fire DMG, add 9 ignite trauma, and has time stop.
+- During SO: After activating finisher, end SO, and refunds 25% of AR intensity based on the remaining SO duration.
+
+
+#### AR 1
+When Law of Ascension is activated:
+- After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
+- Stellar Shift: Unleash Level 1 Castorice Breath, deal 1200% ATK of Fire DMG, gain 1 Boiling Point stack, add 12 ignite trauma. If you hold special button, it will upgrade to Level 3, deal max 1680% ATK of Fire DMG. After that, unleash finisher attack, deal 1600% ATK of Fire DMG, add 9 ignite trauma, and gain time stop.
+- When entering via Stellar Shift, you enter Augmented Ascension state for 6s, state ends when you exit.
+- When you are not the leader: 
+    - When Stellar Shift or Dragon Claw hits a target, leader's switch cd is reset, and trigger her QTE.
+    - When QTE hits a target, AR +15, trigger leader's Heavenly Link atk once, CD:16s.
+    - During Augmented Ascension state, when ??? hits, trigger leader's Heavenly Link atk twice.
+    - Dragoon Coralie's Heavenly Link deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader’s damage type.
+
+
+#### AR 2
+When Grail of Infinitude is activated:
+- During Stellar Outburst:
+    - When you use Ult, you won't consume SP and won't deal additional dmg.
+    - The first time you enter via QTE, you will gain one Boiling Point stack.
+    - Max SP +256. After entering via QTE, the first Dragon Claw and Ult recover Shimmering Trace +170/128 respectively.
+
+#### AR 3
+When SO is over, gain Stellar Drain. Dragon Claw will consume Stellar Drain. Consuming it recovers 20 AR. Gain a Stellar Drain at the start of battle.
+
+#### AR 4
+When you are the leader, when SO ends, if AR is less than 15, it will be restored to 15.
+
+#### AR 5
+[S2] When Castorice Breath ends, trigger 2s time fracture.
+
+---
+
+### PASSIVE
+All Dragoon Coralie dmg are considered as Ignite DMG (not considered as Melee or Ranged DMG). Has max 1 Boiling Point stack, increased to 3 max during SO. Boiling Point will be cleared on exit.
+
+#### PASSIVE 1
+When Law of Ascension is activated: If there's another Rite of Oblivion character in the team, enemies take 14%/24% more Physical/Elemental DMG.
+
+#### PASSIVE 2
+[SS] Self Ignite DMG +10%
+
+#### PASSIVE 3
+Duration of freeze, stun, paralyze, ignite, and bleed status caused by the team increases by 50%.
+
+---
+
+### EVASION
+Evasion skill: Time fracture 2s, CD 15s.
+
+
+---
+
+### WEAPON SKILL
+Slash continuously, deal 400% ATK of Fire DMG, inflict 2.5 ignite trauma.
+
+#### WEAPON 1
+During SO, the base ATK multiplier for Basic ATK 1-4, weapon skill and dragon claw in increased by 30%.
+
+---
+
+### BASIC ATK
+4 seq, deal Fire DMG and ignite
+- 1: 290%, 1 Ignite
+- 2: 200%+230%, 1+1 Ignite 
+- 3: 140%x2+260%, 1*2+2 Ignite
+- 4: 10% + 340%, 3 Ignite
+- For a short time after Seq 4 hits, you can connect to Dragon Claw
+
+#### BASIC 1
+QTE Trigger: Time slow, teammate cast weapon skill or Ult, deal 160%x2 + 540% ATK of Fire DMG, add 1x2+2 Ignite trauma, trigger 1.5s time fracture, and refresh Dragon Claw. During QTE, you are in Iron Body state. 
+
+#### BASIC 2
+When AR is activated: When a teammate consumes Stellar Drain, your switch CD -1s (S) / -8s (SS), and trigger your QTE.
+
+#### BASIC 3
+Self take 10% (S) / 30% (SS1) less Total DMG, and gain higher anti-interrupt during Basic ATK. 
+
+---
+
+### COMBO ATK
+When Basic ATK seq 4 or QTE hits a target, for a short duration, press weapon to unleash Dragon Claw, deal a total of 1210% ATK of Fire DMG, add 6.5 ignite trauma, and gain Boiling Point stack.
+
+#### COMBO ATK 1
+When Dragon Claw hits a target, if the target has a status trauma corresponding to the leader's trait, and the trauma is not full, add 12 (S) / 36 (SS2) points to the trauma.
+
+#### COMBO ATK 2
+(Toggle) Casting Dragon Claw triggers 3.5s time fracture.
+
+---
+
+### ULTIMATE 
+
+Ult cost: 0sp, CD: 0s.
+
+When you have Boiling Point stack, you can use Ult. When you consume 1/2/3 stacks, you can unleash 7/17/30 of Castorice Breath. When you press the special button during Castorice Breath and there is still Boiling Point stack, you will consume the stack to make the breath stronger. 
+- Level 1: Deals 50% ATK of Fire DMG, add 0.3 ignite trauma, and can be upgrade to Level 2 after 7 hits.
+- Level 2: Deals 60% ATK of Fire DMG, add 0.4 ignite trauma, and can be upgrade to Level 3 after 10 hits.
+- Level 3: Deals 70% ATK of Fire DMG, add 0.5 ignite trauma.
+
+After Ult is used, you can connect to Flame of Triumph, deal 140% ATK of Fire DMG, add 2 ignite trauma. If you used Level 3 Ult, it will connect to Eternal Flame, deal a total of 910% ATK of Fire DMG, and 6 ignite trauma. 
+
+Activating the finisher will consume all sp, each sp consumed adds additional 5% ATK of Fire DMG (max 100%). Finisher has time stop.
+
+#### ULT 1
+When you use Ult or enter SO, other team members will gain Dragon Lord state, lasts for 25s, can be refreshed. Dragon Lord provides the following buffs:
+- Fire/Lightning/Ice valks gain Elemental Breach state: Ele Breach +4%, increased to 9% if they have Dragon's Might buff.
+- Physical valks gain Physical Breach state: Phy Breach +13%, increased to 29% if they have Dragon's Might buff.
+- Note: Dragon's Might is coralie's stigma buff.
+
+#### ULT 2
+Finisher additional dmg cap increased based on your Ult Level. Level 1 is 100%, Level 2 is 200%, Level 3 is 500%.
+
+#### ULT 3
+When AR Law of Ascension or Grail of Infinitude is activated: Ele/Phy Breach provided is increased to 9% / 29%, and if Dragon's Might buff is active, increased to 14% / 45%.
+- Note: Dragon's Might is coralie's stigma buff.
+
+#### ULT 4
+Team members with Dragon Lord state gain Elemental DMG +12% (S) / +20% (S1) , Physical DMG +10% (S) / +15% (S1)
+
+---
+
+### RANK UP 
+
+S1: Team members with Dragon Lord state gain Elemental DMG +12% (S) / +20% (S1) , Physical DMG +10% (S) / +15% (S1)
+
+S2: 
+- When there are 2/3 Rite of Oblivion characters in the team, Dragoon Coralie Total DMG and Fire DMG +31%/54% (S) / +35%/60% (S2).
+- UNLOCK: When Castorice Breath ends, trigger 2s time fracture.
+
+S3:
+- Team Total DMG +10% (S) / 11% (S3)
+- Team Physical and Elemental DMG +10% (S) / 11% (S3)
+- Enemies take 4% (S) / 5% (S3) more Total DMG.
+
+SS:
+- When AR is activated: When a teammate consumes Stellar Drain, your switch CD -1s (S) / -8s (SS), and trigger your QTE.
+- UNLOCK: Self Ignite DMG +10%
+
+SS1: Self take 10% (S) / 30% (SS1) less Total DMG, and gain higher anti-interrupt during Basic ATK. 
+
+SS2: When Dragon Claw hits a target, if the target has a status trauma corresponding to the leader's trait, and the trauma is not full, add 12 (S) / 36 (SS2) points to the trauma.
+
+SS3:
+- Team Total DMG +11% (S3) / 12% (SS3).
+- Team Physical and Elemental DMG +11% (S3) / 12% (SS3).
+- Enemies take 5% (S3) / 6% (SS3) more Total DMG.
+
+SSS: When you are the leader: Initial AR +25.

@@ -9,7 +9,11 @@ image: "/images/valkportrait/scoralie.png"
 ### LINKS
 
 - [8.4 Patch Note](/betanews/84log)
-
+- [S-Coralie Skills](/betanews/84scoralie)
+- [S-Coralie Equipment](/betanews/84scoraliegear)
+- [New PAWS Skills](/betanews/84newskill)
+- [Chenxue Asop](/betanews/84chenxue)
+- [Elysian Realm](/betanews/84er)
 
 ---
 

@@ -1,0 +1,73 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+
+title: Chenxue AstralOp v2
+
+version: '8.4'
+sortOrder: '5'
+image: "/images/valkportrait/asop_chenxue.png"
+---
+
+### LINKS
+
+- [8.4 Patch Note](/betanews/84log)
+- [S-Coralie Skills](/betanews/84scoralie)
+- [S-Coralie Equipment](/betanews/84scoraliegear)
+- [New PAWS Skills](/betanews/84newskill)
+- [Chenxue Asop](/betanews/84chenxue)
+- [Elysian Realm](/betanews/84er)
+
+
+---
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/2rLuPX7.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+
+Note: I don't know which skills are SS or SSS rank. Will update in the future.
+
+## Assist Skill
+
+**<span class="text-amber-400">[S]</span>** Unleash Synergy ATK, pull enemies and deal 2500% ATK of Fire DMG. When PAWS and Dragoon Coralie are both in the team, Synergy ATK deals additional 1200% ATK of Fire DMG.
+
+**<span class="text-amber-400">[S]</span>** Chenxue Fire DMG +130%.
+
+**<span class="text-amber-400">[SS]</span>** Chenxue Total DMG +125%. When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.
+
+**<span class="text-amber-400">[SSS]</span>** Chenxue ATK +120%.
+
+---
+
+
+## Recharge Skill
+
+**<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50.
+
+**<span class="text-amber-400">[S]</span>** For every character with AR Grail of Infinitude or Rite of Oblivion, initial AR +11. For every character with Symbiosis or Resonance trait, initial AR +8. Each character can only be counted once.
+
+**<span class="text-amber-400">[SS]</span>** SO cd -4s (cannot stack, highest value will take effect). When AR Grail of Infinitude is activated: During SO, valk gains 10 sp upon casting Ult, cd 12s (cd is separate for each character, can only be trigger 3 times max per SO).
+
+When Rite of Oblivion is activated: When SO ends, restore 36 AR.  
+
+**<span class="text-amber-400">[SSS]</span>** When Rite of Oblivion or Grail of Infinitude is activated: When SO ends, based on the remaining SO duration, reduce the current SO cd by 35% of the remaining proportion, up to 4.5s.
+
+---
+
+## Passive Skill
+
+**<span class="text-amber-400">[S]</span>** During AR Charging: Enemies take 8% more Elemental DMG, 5% more Physical DMG. During SO: Enemies take 22% more Elemental DMG, 12% more Physical DMG.
+
+When AR Grail of Infinitude is activated: 
+- When activating or exiting SO, reduce the team’s switch cooldown by 8s and trigger team QTE.
+- During SO: When a valk casts Ult for the first time, gain additional 300 Shimmering Trace and 120 sp.
+- Team Elemental DMG +8%, Physical DMG +4%, Crit Rate +25%.
+
+When AR Rite of Oblivion is activated:
+- Team Elemental DMG +18%, Physical DMG +8%, Crit Rate +25%.
+- During SO: Team Lightning DMG +6%.
+
+**<span class="text-amber-400">[S]</span>** Team take 20% less Total DMG. Upon casting Ult, valks on field recover 600 HP, cd 12s (separate cd)
+
+**<span class="text-amber-400">[SS]</span>** For every team member with Symbiosis or Omniscient Star tag, enemies take 1.5% more Total DMG.
+
+**<span class="text-amber-400">[SSS]</span>** Enemies take 6% more Total DMG from Ult.

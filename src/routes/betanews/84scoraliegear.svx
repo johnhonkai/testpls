@@ -1,0 +1,95 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: S-rank Coralie Equipment Translation v2
+version: '8.4'
+sortOrder: '3'
+image: "/images/valkportrait/scoralie.png"
+
+---
+
+### LINKS
+
+- [8.4 Patch Note](/betanews/84log)
+- [S-Coralie Skills](/betanews/84scoralie)
+- [S-Coralie Equipment](/betanews/84scoraliegear)
+- [New PAWS Skills](/betanews/84newskill)
+- [Chenxue Asop](/betanews/84chenxue)
+- [Elysian Realm](/betanews/84er)
+
+---
+
+
+### WEAPON 
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/LMaTM8d.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Dragon's Might Burns the Sky: Ultimate! </p>
+</div>
+</div>
+
+
+#### ACTIVE
+The weapon active cd, charge, and effects are based on the wielder. If the wielder has Omniscient Star trait, Fire DMG +30%.
+Dragoon Coralie equip bonus: 
+- Enhanced Weapon Skill deal additional 300% ATK of Fire DMG.
+- Self ignite trauma inflict rate +25%.
+
+#### PASSIVE 1
+Self ignite trauma inflict rate +20%. Dragoon Coralie equip bonus: When AR is activated: Enemies take 12% more Fire DMG, Team Total DMG +15%.
+
+#### PASSIVE 2
+Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: Enemies take 15% more Total DMG.
+
+#### SYNERGY
+Enemies take 2 / 4 / 6% more Total DMG (independent, cannot stack).
+
+Dragoon Coralie equip bonus: Enemies take 2 / 4 / 6% more Fire DMG from herself (independent).
+
+---
+
+### STIGMA 
+
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/oM3iZpQ.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">No Game No Life set</p>
+</div>
+</div>
+
+#### TOP
+Self Fire DMG +30%. Dragoon Coralie equip bonus: Enemies take 15% more Total DMG from valks with Dragon's Might.
+
+#### MID
+Self takes 30% less Total DMG. Dragoon Coralie equip bonus: Valks with Dragon's Might gain Elemental DMG +30%.
+
+#### BOT
+Self Total DMG +25%. Dragoon Coralie equip bonus: Valks with Dragon's Might gain Physical DMG +24%.
+
+#### 2PC
+Self Basic ATK (including Combo and Charged ATK) gain Total DMG +37%. Dragoon Coralie equip bonus: 
+- Enemies take 25% more Ignite DMG from herself.
+- Valks with Dragon's Might gain Total DMG +17%.
+
+#### 3PC
+Self Ult gain Fire DMG +10%. Dragoon Coralie equip bonus: 
+- When AR is activated:
+  - Team gains Dragon's Might.
+  - Dragoon Coralie Ignite DMG +20%.
+  - Enemies take 10% more Elemental DMG, 16% more Physical DMG, 10% more Total DMG.
+- When AR Law of Ascension is activated:
+  - During AR Charging: 
+    - Enemies take 14% more Elemental DMG, 5% more Physical DMG, 5% more Total DMG.
+  - During Stellar Outburst: 
+    - Enemies take 14% more Elemental DMG, 5% more Physical DMG, 10% more Total DMG.
+- When AR Grail of Infinitude is activated:
+  - During AR Charging: 
+    - Enemies take 5% more Elemental DMG, 4% more Physical DMG, 4% more Total DMG.
+  - During Stellar Outburst: 
+    - Enemies take 15% more Elemental DMG, 12% more Physical DMG, 13% more Total DMG. 
+- When AR Rite of Oblivion is activated:
+  - Team Ignite and Bleed DMG +12%.
+  - Enemies take 10% more Elemental DMG, 8% more Physical DMG.
