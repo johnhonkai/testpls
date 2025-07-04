@@ -42,7 +42,7 @@ image: "/images/valkportrait/asop_chenxue.png"
 
 **<span class="text-amber-400">[S]</span>** During AR Charging: When attack hits, gain 1 AR per 0.5 second, lasts for 1s. Initial AR +50.
 
-**<span class="text-amber-400">[S]</span>** For every character with AR Grail of Infinitude or Rite of Oblivion, initial AR +11. For every character with Symbiosis or Resonance trait, initial AR +8. Each character can only be counted once.
+**<span class="text-amber-400">[S]</span>** For every character with AR Grail of Infinitude or Rite of Oblivion, initial AR +11. For every character with Symbiosis or Omniscient Star trait, initial AR +8. Each character can only be counted once.
 
 **<span class="text-amber-400">[SS]</span>** SO cd -4s (cannot stack, highest value will take effect). When AR Grail of Infinitude is activated: During SO, valk gains 10 sp upon casting Ult, cd 12s (cd is separate for each character, can only be trigger 3 times max per SO).
 
