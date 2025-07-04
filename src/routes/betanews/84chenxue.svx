@@ -24,7 +24,6 @@ image: "/images/valkportrait/asop_chenxue.png"
   <img src="https://i.imgur.com/2rLuPX7.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
 </div>
 
-Note: I don't know which skills are SS or SSS rank. Will update in the future.
 
 ## Assist Skill
 
