@@ -1,0 +1,67 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.4 Patch Note v2
+version: '8.4'
+sortOrder: '1'
+image: "/images/valkportrait/scoralie.png"
+---
+
+### LINKS
+
+- [8.4 Patch Note](/betanews/84log)
+
+
+---
+
+### V2
+
+#### New S-rank Coralie
+- MECH Fire Ignite DPS, Rocket Hammer
+- AR Rite of Oblivion
+- Has Shift and Symbiosis tags (Can support LoA and GoI)
+
+#### New AstralOp
+- Added Chenxue 
+
+#### New Outfits
+- Thelema Outfit
+- Lantern Outfit 
+
+#### 8.4 Main Event - Gather! Summer Friends Paradise!
+
+#### New EX Chapter
+
+#### Event: Quenching Star Battle
+
+#### Event: Fall Girls
+
+#### EX Abyss
+- Fire weather Shadow Knight Litost
+- Ignite weather Andrius
+- Added new Fire and Bleed side stages
+
+#### Memorial Arena
+- Added SSS Shadow Knight Litost 
+
+#### Elysian Realm
+- Added Dragoon Coralie
+- F17 load boss is Benares - Mega Change. Its weakness will change depending on the weather conditions.
+- Updated stage effects.
+
+#### Battle Pass
+- Main Shop: Added FoV, her stamps and her gears.
+- Reserve Shop: Added HoFi, her stamps, her old gears, Chrono Navi gears, and Seven Thunders
+
+#### Mini Spending Event
+
+#### Shop
+- Exchange Shop: Silverwing gears and PE gears
+- Witch Orb: Added HoFi stamps
+- ER Shop: Added more Dreamweaver stamps
+
+#### Foundry
+- Added Dragoon Coralie stigma
+- You can now direct forge G4 elysia, willow, handel, and sirin stigma
+
+#### Battlesuit Changes
+- To Be Updated
