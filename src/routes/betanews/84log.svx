@@ -31,17 +31,15 @@ image: "/images/valkportrait/scoralie.png"
 
 #### New EX Chapter
 
-#### Event: Quenching Star Battle
-
-#### Event: Fall Girls
+#### Event: ER Lite, Fall Girls
 
 #### EX Abyss
-- Fire weather Shadow Knight Litost
+- Fire weather Litost - Cinders of the Night
 - Ignite weather Andrius
 - Added new Fire and Bleed side stages
 
 #### Memorial Arena
-- Added SSS Shadow Knight Litost 
+- Added SSS Litost - Cinders of the Night
 
 #### Elysian Realm
 - Added Dragoon Coralie
