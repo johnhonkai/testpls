@@ -19,18 +19,31 @@ image: "/images/valkportrait/scoralie.png"
 ---
 
 ### Stage Buffs
-
+- Upon entering the Elysian Realm, the system will record the weather and temperature conditions in Hyperion at that time. When enemies gain a status effect, the temperature increases by 2°C.
+For subsequent status effect inflicted, the temperature increases by 0.02°C each time.
+The first time enemies enter ignited state, temperature increases by 0.5°C, up to a maximum of 20°C per floor.
+When the temperature exceeds 40°C, enemies take 0.2% more Total DMG for each additional 1°C.
+When the temperature reaches 100°C, only those capable of withstanding intense flames or absolute frost may prevail...
+When the Valkyrie’s current HP is above 20%, she loses up to 10% of max HP per second.
+After each floor, enemies take 0.3% less Total DMG, up to a maximum reduction of 12%. (independent)
+- Enemies gain 30% Total DMG reduction (independent). When valk deals 500 points of Lightning, Fire, or Physical DMG, this effect is disabled, lasts for 3s, can be refreshed.
+- Depending on the weather conditions, corresponding weather effects will occur.
+When enemies gain status effect, valk gain Total DMG +20% for 8s.
+If valk HP is below 18% of max HP, she recovers 100 HP per second, can be refreshed.
+On F15, the mode changes to High-Risk Mode, and there is no upper limit to temperature increase on that floor.
+- When you deal Ult or Combo ATK DMG to the enemy, valk Physical and Elemental DMG +25% for 12s, can be refreshed.
+- Decimation and Gold +2
 
 ---
 
 ### Load Buffs
-- 0: 
-- 5: 
-- 5: 
-- 10: 
-- 10: 
-- 15: 
-- 15: 
+- 0: F17 boss is replaced with Benares (typeless), and its appearance changes according to the weather.
+- 5: Temperature is set to 28°C, and a weather suitable for the current character is set.
+- 5: Valk Total DMG +15%. After taking dmg, disable this effect for 5s, can be refreshed.
+- 10: Upon casting weapon skill, valk Elemental DMG +12% for 12s, can be refreshed.
+- 10: When valk is not in Stellar Outburst state, Total DMG +20%.
+- 15: When enemy gains bleed, ignite, or paralyze status, valk Total DMG +30% for 15s, can be refreshed.
+- 15: Valks with crossbow, pistol, gauntlet, or rocket hammer gain Physical Breach +40%, Ele Breach +20%.
 
 ---
 
@@ -38,13 +51,27 @@ image: "/images/valkportrait/scoralie.png"
 
 #### Battlesuit Changes
 
+Valk adjustment
+- Activate Rite of Oblivion
+- Start the battle with full AR 
+- Enemies take 20% more Fire DMG from the valk (independent)
+
+Ult adjustment
+- Casting and increasing Castorice breath level count as casting Ult 
+- Castorice breath no longer stops the enemy from moving 
+- Disabled the finisher additional dmg increase from consuming sp
 
 #### Signet 1
+During AR Charging: Boiling Point max stack is increased to 3, gain max stacks at the start of battle. After casting weapon skill, can connect to Dragon Claw. When casting Dragon Claw, keep pressing weapon skill to deal 15x150%+600% ATK of Fire DMG (counts as Ignite DMG), and gain 1 Boiling Point stack. Ult activation is changed to press Ult when Boiling Point stacks are maxed out. After casting Ult, weapon skill Fire DMG +100%, lasts for 10s, can be refreshed and restore 1 Boiling Point stack.
 
 #### Signet 2
+During AR Charging: After casting Ult, can connect to Dragon Claw. When Boiling Point stack is not at max, each time you use Dragon Claw, recover 125 sp. When casting Ult, trigger evasion skill. When casting Dragon Claw, evasion cd -8s. Ult Fire DMG +200%, and max sp +160.
 
 #### Signet 3
+During SO: SO duration +90s. Ult is changed to Super Castorice Breath. When Flame is full, press Ult to use Super Castorice Breath, deal additional 6500% ATK of Fire DMG. During that time, HP -20% per second (can only go down to 25% of max hp at most). When Basic SEQ 4 hits, recover 200 HP and 1 Flame. Ult Total DMG +60%. SO cd -5s. When SO ends, gain full AR.
 
 #### Signet 4
+During SO: When Basic SEQ 4 hits, deal additional 1150% ATK of Fire DMG  (counts as both Basic ATK and Ult Ignite DMG). Ult Fire DMG +50%.
 
 #### Signet 5
+When weapon skill or Ult hits an enemy, the enemy takes 40% more Total DMG for 20s, can be refreshed.
