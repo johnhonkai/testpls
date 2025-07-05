@@ -19,7 +19,7 @@ image: "/images/valkportrait/scoralie.png"
 ---
 
 ### Stage Buffs
-- Upon entering the Elysian Realm, the system will record the weather and temperature conditions in Hyperion at that time. When enemies gain a status effect, the temperature increases by 2°C.
+- Upon entering Elysian Realm, system will record the weather and temperature in Hyperion. When enemies gain a status effect, the temperature increases by 2°C.
 For subsequent status effect inflicted, the temperature increases by 0.02°C each time.
 The first time enemies enter ignited state, temperature increases by 0.5°C, up to a maximum of 20°C per floor.
 When the temperature exceeds 40°C, enemies take 0.2% more Total DMG for each additional 1°C.
