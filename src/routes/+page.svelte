@@ -203,7 +203,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
-              <li>v8.4 update is on 25 July</li>
+              <li>v8.4 update is on 24 July</li>
             </ul>            
           </div>
         </div>
