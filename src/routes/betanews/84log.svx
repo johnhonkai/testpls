@@ -66,4 +66,36 @@ image: "/images/valkportrait/scoralie.png"
 - You can now direct forge G4 elysia, willow, handel, and sirin stigma
 
 #### Battlesuit Changes
-- To Be Updated
+- PAWS: Unlocked the locked skill
+- PAWS: Fixed abnormal bridge interaction
+- PAWS: Fixed plunge atk animation may cause abnormal movement
+- PAWS: Fixed abnormal weapon display on the bridge
+- PAWS: Fixed abnormal combo atk camera visuals at low frame rate 
+- JD: Fixed an issue wher Basic ATK seq 1 can be cast continuously 
+- Lantern: Fixed abnormal model display when jumping
+- Lantern: Fixed abnormal actions in P2 open world 
+- Coralie: Fixed abnormal movement 
+- HoH: Fixed an issue where, after triggering evasion skill with non-ult evasion, holding weapon skill wont activate aimed shot.
+
+#### Stigma Changes
+Added this effect to Vita, Coralie and HoFi stigma 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +12%
+
+#### EX Abyss Changes
+- Fixed abnormal background when Badum uses Stellar Shift on certain stages
+- RoOblivion weather: For each valk in the team with Omniscient Star tag, Team Total DMG +10% --> Team Total DMG +15% (max 30%). Other effects remain the same.
+- Stellar weather: Fixed an issue where [When AR is activated: Team gain Total DMG] does not apply to non-AR valks in the team.
+
+#### Memorial Arena Changes
+- SSS Lantern: Fixed abnormal hp
+
+#### Elysian Realm Changes
+- Valkyrie Boltstorm: Fixed an issue where, if you have Sparkling Lightning signet, the 'reload item' can drop outside the map
+
+#### System 
+- Adjusted the visual effect in valk team formation menu
+- PC: Fixed an issue where confirmation key may trigger left mouse click if the mouse is outside the game window
+- iOS: Fixed an issue where you cannot be redirected to web page properly
+- Fixed Badum abnormal special weapon skill in tutorial 
+- Fixed being able to fall off the map in first main chapter 
+- Fixed abnormal camera hight in 17-12
+- Fixed abnormal area in 17-5
