@@ -35,7 +35,10 @@ image: "/images/valkportrait/scoralie.png"
 
 #### New EX Chapter
 
-#### Event: ER Lite, Fall Girls
+#### Event: Starforged Clash 
+An event using ER signets
+
+#### Fall Girls
 
 #### EX Abyss
 - Fire weather Litost - Cinders of the Night
@@ -96,6 +99,6 @@ Added this effect to Vita, Coralie and HoFi stigma 3-PC: When AR Rite of Oblivio
 - PC: Fixed an issue where confirmation key may trigger left mouse click if the mouse is outside the game window
 - iOS: Fixed an issue where you cannot be redirected to web page properly
 - Fixed Badum abnormal special weapon skill in tutorial 
-- Fixed being able to fall off the map in first main chapter 
-- Fixed abnormal camera hight in 17-12
-- Fixed abnormal area in 17-5
+- Fixed being able to fall off the map in certain Part 1 chapters
+- Fixed abnormal camera hight in Chapter 17-12
+- Fixed abnormal locked area in Chapter 17-5
