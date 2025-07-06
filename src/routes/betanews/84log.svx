@@ -81,7 +81,8 @@ An event using ER signets
 - HoH: Fixed an issue where, after triggering evasion skill with non-ult evasion, holding weapon skill wont activate aimed shot.
 
 #### Stigma Changes
-Added this effect to Vita, Coralie and HoFi stigma 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +12%
+- Added this effect to Vita stigma 3PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +20%
+- Added this effect to Coralie and HoFi stigma (Iskandar) 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +12%
 
 #### EX Abyss Changes
 - Fixed abnormal background when Badum uses Stellar Shift on certain stages
