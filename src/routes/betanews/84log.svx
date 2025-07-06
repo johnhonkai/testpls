@@ -74,7 +74,7 @@ An event using ER signets
 - PAWS: Fixed plunge atk animation may cause abnormal movement
 - PAWS: Fixed abnormal weapon display on the bridge
 - PAWS: Fixed abnormal combo atk camera visuals at low frame rate 
-- JD: Fixed an issue wher Basic ATK seq 1 can be cast continuously 
+- JD: Fixed an issue where Basic ATK seq 1 can be cast continuously 
 - Lantern: Fixed abnormal model display when jumping
 - Lantern: Fixed abnormal actions in P2 open world 
 - Coralie: Fixed abnormal movement 
