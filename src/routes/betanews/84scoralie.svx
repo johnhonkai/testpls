@@ -60,12 +60,12 @@ When you are the leader:
 #### AR 1
 When Law of Ascension is activated:
 - After activating Stellar Outburst, you can select a teammate with Heavenly Shift tag and trigger the character’s Stellar Shift. Then, other Heavenly Shift characters will cast their Stellar Shift skill when they enter the field.
-- Stellar Shift: Unleash Level 1 Castorice Breath, deal 1200% ATK of Fire DMG, gain 1 Boiling Point stack, add 12 ignite trauma. If you hold special button, it will upgrade to Level 3, deal max 1680% ATK of Fire DMG. After that, unleash finisher attack, deal 1600% ATK of Fire DMG, add 9 ignite trauma, and gain time stop.
+- Stellar Shift: Unleash Level 1 Castorice Breath, deal 1200% (v2) > 1620% (v2b) ATK of Fire DMG, gain 1 Boiling Point stack, add 12 (v2) > 18 (v2b) ignite trauma. If you hold special button, it will gradually upgrade to Level 3, deal max 1680% (v2) > 2040% (v2b) ATK of Fire DMG. After that, unleash finisher attack, deal 1600% (v2) > 1150% (v2b) ATK of Fire DMG, add 9 ignite trauma. Valk is invincible and has time stop during the start and the end of Castorice breath.
 - When entering via Stellar Shift, you enter Augmented Ascension state for 6s, state ends when you exit.
 - When you are not the leader: 
     - When Stellar Shift or Dragon Claw hits a target, leader's switch cd is reset, and trigger her QTE.
     - When QTE hits a target, AR +15, trigger leader's Heavenly Link atk once, CD:16s.
-    - During Augmented Ascension state, when ??? hits, trigger leader's Heavenly Link atk twice.
+    - During Augmented Ascension state, when Stellar Shift hits, trigger leader's Heavenly Link atk twice.
     - Dragoon Coralie's Heavenly Link deal 440% ATK of Physical DMG or 880% ATK of adaptive Elemental DMG based on the leader’s damage type.
 
 
