@@ -35,9 +35,10 @@ Activates AR Rite of Oblivion. SO cost: 150. SO Duration: 15s, CD: 25s.
 
 
 #### LEADER 1
-When you are the leader: If PAWS is in the team, Total DMG and Fire DMG +13.14%.
+When you are the leader: If PAWS is in the team, self Total DMG and Fire DMG +13.14%.
 
 #### LEADER 2
+When you are the leader: 
 - Initial AR +25. 
 - Enemies take 25% more Fire DMG from self.
 - When there are 2/3 Rite of Oblivion characters in the team, Dragoon Coralie Total DMG and Fire DMG +31%/54% (S) / +35%/60% (S2).
