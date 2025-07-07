@@ -29,7 +29,7 @@ image: "/images/valkportrait/asop_chenxue.png"
 
 **<span class="text-amber-400">[S]</span>** Unleash Synergy ATK, pull enemies and deal 2500% ATK of Fire DMG. When PAWS and Dragoon Coralie are both in the team, Synergy ATK deals additional 1200% ATK of Fire DMG.
 
-**<span class="text-amber-400">[S]</span>** Chenxue Fire DMG +130%.
+**<span class="text-amber-400">[S]</span>** Chenxue Fire DMG +130%
 
 **<span class="text-amber-400">[SS]</span>** Chenxue Total DMG +125%. When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.
 
