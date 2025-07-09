@@ -676,13 +676,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Herrscher of Corruption.webp" date="Aug 1" weather="Melee" bosspage="/boss?meleehoc" />
-                    <BossCard />
+                <BossCard image="/images/Bosses/Hellmaru.webp" date="Aug 4" weather="Ice" bosspage="/boss?icehellmaru" />
                     </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard />
-                        <BossCard />
-                        <BossCard   />
+                    <BossCard image="/images/Bosses/epernay.png" date="Aug 5"  />
+                    <BossCard image="/images/Bosses/Hephaestus SSS.webp" />
+                    <BossCard image="/images/Bosses/Doom.webp"   />
                     </div>
     
 
