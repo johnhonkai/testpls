@@ -64,19 +64,7 @@ export const extraregen = [
 ];
 
 export const specialbuff = [
-    {
-    rank: "S",
-    description: "After activating Stellar Outburst: The leader can use Stellar Shift one more time.",
-    available_by_default: "no",
-    condition: { astralRing: "Law of Ascension"},
-    },
 
-    {
-        rank: "S",
-        description: "HP Loss DMG inflicted by the leader is increased by 6%.",
-        available_by_default: "no",
-        condition: { astralRing: "Law of Ascension"},
-    },
     
 ];
 
