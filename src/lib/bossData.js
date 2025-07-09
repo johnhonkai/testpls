@@ -2493,6 +2493,7 @@ export const teamData = {
       }
     ],    
     videos: [
+      { url: 'https://www.youtube.com/watch?v=X_mMDauQujI', abyss: 'Nirvana 547D', uploader: 'chronos002' },
       { url: 'https://www.bilibili.com/video/BV1LWjEzqE7N/', abyss: 'RedLotus 511D', uploader: '执念微阳' },
 
     ] 
