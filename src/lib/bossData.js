@@ -1459,6 +1459,38 @@ export const teamData = {
   },
   meleehoc: {
     teamDataSets: [
+        {
+      tabname: "v8.3",
+      teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/paws.png", "images/valkportrait/ps.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+        rank: '1+',
+        pct: '88%',
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/paws.png", "images/valkportrait/ps.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+        rank: '44',
+        pct: '10%',
+      },
+
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
+        rank: '65',
+        pct: '1%',
+      },
+
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/paws.png", "images/valkportrait/ps.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_ds.png"],
+        rank: '83',
+        pct: '1%',
+      },
+
+    ]},  
     {
       tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
