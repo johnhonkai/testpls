@@ -17,6 +17,40 @@ image: "/images/valkportrait/scoralie.png"
 
 ---
 
+### V3
+
+#### Dragoon Coralie 
+- Adjusted skills and stigma values. Please refer to her page for the changes.
+
+#### A-Coralie Stigma 
+- 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +12% (v2) > 8% (v3)
+
+#### EX Abyss
+- Fire Litost: Adjusted stats
+- Ignite Andrius: Adjusted stats
+- Fire side stage: Adjusted stats
+- Bleed side stage: Adjusted stats
+- Melee Sampo: Fixed abnormal camera during transition 
+- Melee Sampo: Fixed an issue where Trickster Hat might disappear abnormally during transition
+- Sprout: Fixed an issue where valk might get out of bounds during transition.
+
+#### Memorial Arena
+- SSS Litost: Adjusted stats.
+- SSS Sampo: Fixed an issue where the card wheel may shift abnormally.
+- SSS AKA: Fixed an issue where Frost  Armor may appear abnormal and cannot be broken.
+- Sprout: Fixed an issue where valk might get out of bounds during transition.
+
+#### Elysian Realm
+- Adjusted Dragoon Coralie values
+- Adjusted stage effects
+
+#### System
+- P2: Fixed audio problem in "Brighter than the Sunlight" and "Higher than the Clouds".
+- Theresa's Great Adventure: Fixed 1-6 abnormal model display
+- Fixed Game Mode not activating in iOS 18.
+
+---
+
 ### V2
 
 #### New S-rank Coralie
