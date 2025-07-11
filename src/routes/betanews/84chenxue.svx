@@ -1,7 +1,7 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
 
-title: Chenxue AstralOp v2
+title: Chenxue AstralOp v3
 
 version: '8.4'
 sortOrder: '5'
