@@ -94,7 +94,7 @@ When Grail of Infinitude is activated:
 When SO ends, gain Stellar Drain. Dragon Claw will consume Stellar Drain. Consuming it recovers 20 AR. Gain a Stellar Drain at the start of battle.
 
 #### AR 4
-When you are the leader, when SO ends, if AR is less than **15 (v2) > 20 (v3)**, it will be restored to **15 (v2) > 20 (v3)*.
+When you are the leader, when SO ends, if AR is less than **15 (v2) > 20 (v3)**, it will be restored to **15 (v2) > 20 (v3)**.
 
 #### AR 5
 [S2] When Castorice Breath ends, trigger 2s time fracture.
