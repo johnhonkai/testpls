@@ -59,10 +59,10 @@ When Rite of Oblivion is activated: When SO ends, restore 36 AR.
 When AR Grail of Infinitude is activated: 
 - When activating or exiting SO, reduce the team’s switch cooldown by 8s and trigger team QTE.
 - During SO: When a valk casts Ult for the first time, gain additional 300 Shimmering Trace and 120 sp.
-- Team Elemental DMG +8%, Physical DMG +4%, Crit Rate +25%.
+- Team Elemental DMG **+8% (v2) > 4% (v3)**, Physical DMG +4%, Crit Rate **+25% (v2) > +27% (v3).**
 
 When AR Rite of Oblivion is activated:
-- Team Elemental DMG +18%, Physical DMG +8%, Crit Rate +25%.
+- Team Elemental DMG +18%, Physical DMG +8%, Crit Rate **+25% (v2) > +27% (v3).**
 - During SO: Team Lightning DMG +6%.
 
 **<span class="text-amber-400">[S]</span>** Team take 20% less Total DMG. Upon casting Ult, valks on field recover 600 HP, cd 12s (separate cd)

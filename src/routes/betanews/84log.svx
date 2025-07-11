@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.4 Patch Note v2
+title: v8.4 Patch Note v3
 version: '8.4'
 sortOrder: '1'
 image: "/images/valkportrait/scoralie.png"
@@ -22,8 +22,16 @@ image: "/images/valkportrait/scoralie.png"
 #### Dragoon Coralie 
 - Adjusted skills and stigma values. Please refer to her page for the changes.
 
+#### Chenxue AstralOp
+When AR Grail of Infinitude is activated: 
+- Team Elemental DMG **+8% (v2) > 4% (v3)**, Physical DMG +4%, Crit Rate **+25% (v2) > +27% (v3).**
+
+When AR Rite of Oblivion is activated:
+- Team Elemental DMG +18%, Physical DMG +8%, Crit Rate **+25% (v2) > +27% (v3).**
+
+
 #### A-Coralie Stigma 
-- 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG +12% (v2) > 8% (v3)
+- 3-PC: When AR Rite of Oblivion is activated: Team Ignite and Bleed DMG **+12% (v2) > 8% (v3)**
 
 #### EX Abyss
 - Fire Litost: Adjusted stats
