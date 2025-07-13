@@ -2560,6 +2560,25 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.3 CN",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+            rank: '1-3',
+            pct: '25%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '3+',
+            pct: '75%',
+          },
+          
+        ]
+      },      
+      {
         tabname: "v8.2 CN",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
