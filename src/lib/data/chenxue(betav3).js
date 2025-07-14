@@ -88,9 +88,9 @@ export const valkbuffs = [
         description: "When AR Grail of Infinitude is activated: Team Elemental DMG +8%, Physical DMG +4%, Crit Rate +25%.",
         available_by_default: "no",
         condition: { astralRing: "Grail of Infinitude"},
-        ele: 8,
+        ele: 4,
         phy: 4,
-        crate:25,
+        crate:27,
     },
 
     {
@@ -100,7 +100,7 @@ export const valkbuffs = [
         condition: { astralRing: "Rite of Oblivion"},
         ele: 18,
         phy: 8,
-        crate:25,
+        crate:27,
         solightning: 6,
     },
 
