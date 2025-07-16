@@ -48,11 +48,12 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Dududps from "$lib/components/lineup/dududps.svelte";
 	import Badumdps from "$lib/components/lineup/badumdps.svelte";
 	import Psdps from "$lib/components/lineup/psdps.svelte";
+	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
-  //{ name: 'Lineup', short: 'lineup', icon: faUsers },
+    { name: 'Lineup', short: 'lineup', icon: faUsers },
   //{ name: 'Equipment', short: 'equipment', icon: faBolt  },
   // { name: 'Support Buffs', short: 'support', icon: faCircleUser },
   //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
@@ -461,22 +462,11 @@ async function increaseLike() {
 
 
       {#if currentPage === 1}
-      <!-- Category 1: Vita DPS -->
 
-      <Heliadps maindps={true} ></Heliadps>
+      <Coraliedps maindps={true}></Coraliedps>
 
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-      
-      <Psdps firstCharName="PAWS"></Psdps>
 
-      <div class="divider  "></div>
-
-      <Badumdps firstCharName="PAWS"></Badumdps>
-
-      <div class="divider  "></div>
-
-      <Dududps firstCharName="PAWS"></Dududps>
 
 
       {/if}
@@ -1401,7 +1391,24 @@ async function increaseLike() {
   </div>
 </div>
 
+  <div class="bg-gray-800 mt-10 p-4 rounded-lg shadow-md">
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie Support</h2>
 
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various teams</p>
+
+    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+      <iframe
+      loading="lazy" 
+
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/rIObNjUv2eY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+  </div>
+</div>
 
 
 </div>
