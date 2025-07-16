@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.4 Patch Note v3
+title: v8.4 Patch Note v3c
 version: '8.4'
 sortOrder: '1'
 image: "/images/valkportrait/scoralie.png"
@@ -16,6 +16,21 @@ image: "/images/valkportrait/scoralie.png"
 - [Elysian Realm](/betanews/84er)
 
 ---
+### V3C
+
+Chenxue Asop
+- GoI: Added TDM +4%
+- RoO: Added TDM +8%
+- SO cd reduction is based on 35% > 40% of remaining SO duration. Max cd is still the same (4.5s)
+
+### V3B
+
+Added toggle for these skills that affect status trauma
+- COMBO 1: When Dragon Claw hits a target, if the target has a status trauma corresponding to the leader’s trait, and the trauma is not full, add 12 (S) / 36 (SS2) points to the trauma.
+- PASSIVE 3: Duration of freeze, stun, paralyze, ignite, and bleed status caused by the team increases by 50%.
+
+And some bugfixes and ignite andrius hp adjustment
+
 
 ### V3
 

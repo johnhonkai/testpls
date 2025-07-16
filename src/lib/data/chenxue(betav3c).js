@@ -88,6 +88,7 @@ export const valkbuffs = [
         description: "When AR Grail of Infinitude is activated: Team Elemental DMG +8%, Physical DMG +4%, Crit Rate +25%.",
         available_by_default: "no",
         condition: { astralRing: "Grail of Infinitude"},
+        tdm: 4,
         ele: 4,
         phy: 4,
         crate:27,
@@ -98,6 +99,7 @@ export const valkbuffs = [
         description: "When AR Rite of Oblivion is activated: Team Elemental DMG +18%, Physical DMG +8%, Crit Rate +25%. During SO: Team Lightning DMG +6%.",
         available_by_default: "no",
         condition: { astralRing: "Rite of Oblivion"},
+        tdm: 8,
         ele: 18,
         phy: 8,
         crate:27,
@@ -141,7 +143,7 @@ export const valkbuffs = [
         rank: "SSS",
         available_by_default: "no",
         condition_or: { astralRing: ["Rite of Oblivion" , "Grail of Infinitude"]},
-        description: "When Rite of Oblivion or Grail of Infinitude is activated: When SO ends, based on the remaining SO duration, reduce the current SO cd by 35% of the remaining proportion, up to 4.5s.",
+        description: "When Rite of Oblivion or Grail of Infinitude is activated: When SO ends, based on the remaining SO duration, reduce the current SO cd by 40% of the remaining proportion, up to 4.5s.",
     },  
 
 ];
