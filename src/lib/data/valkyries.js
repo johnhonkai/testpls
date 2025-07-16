@@ -9,6 +9,8 @@ export const valkyries = [
         artag: ['Rite of Oblivion','Omniscient Star', 'Symbiosis' , 'Heavenly Shift' , ] , 
         url: '/valk/scoralie',
         cost: 200,
+        initial_ar: "+ 25 (S) + 10 (PAWS) + 25 (SSS)"
+        
     },   
 
     { name: 'Planar Armament', 

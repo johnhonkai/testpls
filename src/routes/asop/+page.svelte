@@ -31,8 +31,8 @@
   });
 
 
-  let initialar, postsoar, valkbuffs, asopbuffs , specialbuff; // Declare data placeholders
-  let compareinitialar, comparesoar, comparevalkbuffs, compareasopbuffs , comparespecialbuff; // Declare data placeholders
+  let initialar, initialartext, postsoar, valkbuffs, asopbuffs , specialbuff; // Declare data placeholders
+  let compareinitialar, compareinitialartext, comparesoar, comparevalkbuffs, compareasopbuffs , comparespecialbuff; // Declare data placeholders
 
   let slots;
 
@@ -56,7 +56,7 @@
   let processedAsopBuffs = [];
   let cumulativeBuffs = {}; // Initialize cumulativeBuffs as an empty object
   let extraregen = [];
-
+  let initialARtext = "";
 
   let compareInitialAR = 0;
   let comparePostSOAR = 0;
@@ -64,6 +64,7 @@
   let compareProcessedAsopBuffs = [];
   let compareCumulativeBuffs = {};
   let compareextraregen = [];
+  let compareinitialARtext = "";
 
   let selectedRank = 'SSS'; // default to the highest rank
   let compareSelectedRank = 'SSS';
@@ -84,10 +85,10 @@ $: if (slots.astralOp) {
 async function loadAstralOpData(astralOpName, type) {
     const data = await import(`$lib/data/${astralOpName.toLowerCase()}.js`);
     if (type === 'main') {
-      ({ initialar, postsoar, valkbuffs, asopbuffs, extraregen , specialbuff } = data);
+      ({ initialar, initialartext, postsoar, valkbuffs, asopbuffs, extraregen , specialbuff } = data);
       updateValues();
     } else if (type === 'compare') {
-  ({ initialar: compareinitialar, postsoar: comparesoar, valkbuffs: comparevalkbuffs, asopbuffs: compareasopbuffs, extraregen: compareextraregen , specialbuff: comparespecialbuff } = data);
+  ({ initialar: compareinitialar, initialartext : compareinitialartext , postsoar: comparesoar, valkbuffs: comparevalkbuffs, asopbuffs: compareasopbuffs, extraregen: compareextraregen , specialbuff: comparespecialbuff } = data);
   updateCompareValues();
 }
 
@@ -146,6 +147,7 @@ async function loadAstralOpData(astralOpName, type) {
     processedValkBuffs = calculateBuffs(valkbuffs, selectedRank);
     processedAsopBuffs = calculateBuffs(asopbuffs, selectedRank);
     cumulativeBuffs = calculateCumulativeValues([...valkbuffs, ...asopbuffs], selectedRank);
+    initialARtext = slots.leader.initial_ar;
   }
 
   function updateCompareValues() {
@@ -154,6 +156,8 @@ async function loadAstralOpData(astralOpName, type) {
     compareProcessedValkBuffs = calculateBuffs(comparevalkbuffs, compareSelectedRank);
     compareProcessedAsopBuffs = calculateBuffs(compareasopbuffs, compareSelectedRank);
     compareCumulativeBuffs = calculateCumulativeValues([...comparevalkbuffs, ...compareasopbuffs], compareSelectedRank);
+    compareinitialARtext = slots.leader.initial_ar;
+  
   }
   
   // Calculate total AR for Initial AR based on conditions
@@ -178,7 +182,11 @@ const count = entry.condition
   }, 0);
 }
 
-
+function checkLeaderInitialAR() {
+  if ( slots.leader.initial_ar ){
+    return slots.leader.initial_ar ;
+  }
+}
 
 function calculatePostSoAr(data, rank) {
   return data.reduce((total, entry) => {
@@ -746,7 +754,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
   <div class="mt-6 p-4 bg-gray-800 rounded-lg text-white">
     <h3 class="text-lg font-semibold text-cyan-400">AR Recovery</h3>
-    <p>Initial AR = {initialAR}</p>
+    <p>Initial AR = {initialAR} {initialARtext} </p> 
     <p>AR after Stellar Outburst = {postSOAR}</p>
     {#if extraregen && extraregen.length > 0}
         <div>
@@ -1659,7 +1667,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
   <div class="mt-6 p-4 bg-cyan-950/50 rounded-lg text-white">
     <h3 class="text-lg font-semibold text-cyan-400">AR Recovery</h3>
-    <p>Initial AR = {compareInitialAR}</p>
+    <p>Initial AR = {compareInitialAR} {initialARtext}</p>
     <p>AR after Stellar Outburst = {comparePostSOAR}</p>
     {#if compareextraregen && compareextraregen.length > 0}
     <div>
