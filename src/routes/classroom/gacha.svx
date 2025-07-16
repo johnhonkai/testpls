@@ -14,10 +14,15 @@ In Part 2, the gacha has been simplified. All Part 2 content are available from 
 - Equipment Supply
 - AstralOp Supply
 
+Note for characters: Only recent S-rank characters are available from these supplies (at max 7 patches old). Older characters will be available through other means:
+- When characters are at least 8 patches old, they will enter a special supply called Ascension Supply (see below)
+- They might also be available in Battle Pass 
+- There is still a chance that older characters will rerun in regular supplies, but so far, they don't.
+
 ---
 
 ### Battlesuit Supply
-This is where you pull S-rank characters.
+This is where you pull S-rank characters. 
 
 <div class="flex items-center justify-center text-orange-300 ">
   <img src="https://i.imgur.com/MtRcDfT.png" alt="Icon" class="w-[700px] h-auto rounded-lg" />
