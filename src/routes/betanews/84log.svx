@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.4 Patch Note v3c
+title: v8.4 Patch Note V3E
 version: '8.4'
 sortOrder: '1'
 image: "/images/valkportrait/scoralie.png"
@@ -31,6 +31,12 @@ Other battlesuits
 
 ### V3D
 
+Battlesuits
+- BFD: Team status trauma duration increase now has "cannot stack" clause.
+- BFD: Fixed an issue where her Ult button can be too bright.
+- HORB: Fixed an issue where, in Soul Shaper form, and Dawn Shadow(?) is not present, Badum, can abnormally trigger her QTE.
+- Optimized camera when BFD uses Ult.
+
 BFD Weapon
 - When AR is activated: Enemies take 12% more Fire DMG > Enemies take 15% more Total DMG.
 - When AR is activated: Enemies take 15% more Total DMG > Enemies take 12% more Fire DMG
@@ -39,6 +45,10 @@ Stigma Changes
 - BFD Stigma: Added new effect to 3PC: When GoI is activated: During AR Charging: Team Physical DMG +18%. During SO: Team Physical DMG +24%.
 - Bastet Stigma: Fixed an issue where 3PC freeze extension duration is incorrect.
 - Bastet Stigma: Fixed an issue where 3PC freeze extension duration is applied to freeze status applied outside of the team.
+
+EX ABYSS
+- Fixed an issue where in certain cases, the stage buffs for Paralyze, Freeze, Stun weather would not apply correctly.
+
 
 
 ### V3C
