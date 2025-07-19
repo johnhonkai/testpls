@@ -40,7 +40,7 @@ Dragoon Coralie equip bonus:
 Self ignite trauma inflict rate +20%. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 12% more Fire DMG~~ **Enemies take 15% more Total DMG (V3D)**, Team Total DMG +15%.
 
 #### PASSIVE 2
-Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: ~Enemies take 15% more Total DMG~~ **Enemies take 12% more Fire DMG (V3D)**.
+Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 15% more Total DMG~~ **Enemies take 12% more Fire DMG (V3D)**.
 
 #### SYNERGY
 Enemies take 2 / 4 / 6% more Total DMG (independent, cannot stack).
