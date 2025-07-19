@@ -16,6 +16,31 @@ image: "/images/valkportrait/scoralie.png"
 - [Elysian Realm](/betanews/84er)
 
 ---
+
+
+### V3E
+
+BFD
+- Adjusted Dragon Breath duration as leader. Time stop also reduced from 2.5 to 2.4s to match the change
+- When LoA or GoI is activated: The dragon breath skill name is changed.
+- Optimized camera
+- Corrected some text description
+
+Other battlesuits
+- Fixed an issue where Stellar Assault dmg is abnormal when LoA is activated. The affected characters are: BFD, LP, HoH.
+
+### V3D
+
+BFD Weapon
+- When AR is activated: Enemies take 12% more Fire DMG > Enemies take 15% more Total DMG.
+- When AR is activated: Enemies take 15% more Total DMG > Enemies take 12% more Fire DMG
+
+Stigma Changes
+- BFD Stigma: Added new effect to 3PC: When GoI is activated: During AR Charging: Team Physical DMG +18%. During SO: Team Physical DMG +24%.
+- Bastet Stigma: Fixed an issue where 3PC freeze extension duration is incorrect.
+- Bastet Stigma: Fixed an issue where 3PC freeze extension duration is applied to freeze status applied outside of the team.
+
+
 ### V3C
 
 Chenxue Asop

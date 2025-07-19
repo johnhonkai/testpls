@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: S-rank Coralie Equipment Translation v3
+title: S-rank Coralie Equipment Translation V3E
 version: '8.4'
 sortOrder: '3'
 image: "/images/valkportrait/scoralie.png"
@@ -37,10 +37,10 @@ Dragoon Coralie equip bonus:
 - Self ignite trauma inflict rate +25%.
 
 #### PASSIVE 1
-Self ignite trauma inflict rate +20%. Dragoon Coralie equip bonus: When AR is activated: Enemies take 12% more Fire DMG, Team Total DMG +15%.
+Self ignite trauma inflict rate +20%. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 12% more Fire DMG~~ **Enemies take 15% more Total DMG (V3D)**, Team Total DMG +15%.
 
 #### PASSIVE 2
-Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: Enemies take 15% more Total DMG.
+Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: ~Enemies take 15% more Total DMG~~ **Enemies take 12% more Fire DMG (V3D)**.
 
 #### SYNERGY
 Enemies take 2 / 4 / 6% more Total DMG (independent, cannot stack).
@@ -88,8 +88,10 @@ Self Ult gain Fire DMG +10%. Dragoon Coralie equip bonus:
 - When AR Grail of Infinitude is activated:
   - During AR Charging: 
     - Enemies take **5% (v2) > 6% (v3)** more Elemental DMG, 4% more Physical DMG, 4% more Total DMG.
+    - **Team Physical DMG +18% (V3D)**
   - During Stellar Outburst: 
     - Enemies take **15% (v2) > 16% (v3)** more Elemental DMG, 12% more Physical DMG, 13% more Total DMG. 
+    - **Team Physical DMG +24% (V3D)**
 - When AR Rite of Oblivion is activated:
   - Team Ignite and Bleed DMG +12%.
   - Enemies take **10% (v2) > 14% (v3)** more Elemental DMG, **8% (v2) > 11% (v3)** more Physical DMG.
