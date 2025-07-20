@@ -117,6 +117,9 @@ export const weatherList = {
   extreme: [
     {id: 'extreme-parvati', name: 'Parvati'},
   ],  
+  paralyze: [
+    {id: 'para-assaka', name: 'Assaka'},
+  ],   
 }
 
 export const weatherEffect = {
@@ -147,6 +150,14 @@ export const weatherEffect = {
 }
 
 export const bossData = {
+  "para-assaka": {
+    name: 'Assaka', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Assaka.webp", 
+    weather: "Paralyze: Enemies take 40% more DMG when paralyze and within 4s after the paralyze ends.",	
+  },  
   lightningsprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
@@ -3220,6 +3231,24 @@ export const teamData = {
       }
     ],
   }, 
+     "para-assaka": {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.3",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png",  "/images/valkportrait/kiana badum.png", "/images/valkportrait/ps.png", ],
+            rank: '1+',
+            pct: '100%',
+
+          },                                     
+        ]
+      }
+    ],
+  },  
 }
 
 
