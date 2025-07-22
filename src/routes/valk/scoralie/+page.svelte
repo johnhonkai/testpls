@@ -1,9 +1,9 @@
 
 <svelte:head>
-  <title>逆命魔龙·降临！</title> 
+  <title>Behold! Fate-Defying Dragon</title> 
 
-    <meta property="og:title" content="逆命魔龙·降临！" />
-    <meta property="og:description" content="逆命魔龙·降临！ Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Behold! Fate-Defying Dragon！" />
+    <meta property="og:description" content="Behold! Fate-Defying Dragon Guides, Builds and Gameplay" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="https://marisaimpact.com/valk/scoralie" />
     <meta property="og:type" content="website" />
@@ -294,7 +294,7 @@ async function increaseLike() {
 <div class="flex flex-col items-center text-center justify-start sm:mt-8">
  
   <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">逆命魔龙·降临！</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Behold! Fate-Defying Dragon</h1>
 
   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">
