@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Version Statistics"/>
     <meta property="og:description" content="Character usage stats in a version." />
-    <meta property="og:image" content="https://i.imgur.com/k2TyBh4.png" />
+    <meta property="og:image" content="https://i.imgur.com/3UCd2G7.png" />
     <meta property="og:url" content="https://marisaimpact.com/statistics" />
     <meta property="og:type" content="website" />
 
@@ -19,7 +19,7 @@
 	import Fa from 'svelte-fa';
   import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
-  let selectedVersion = '8.3 (First Month)';
+  let selectedVersion = '8.3';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
@@ -36,6 +36,8 @@ $: withImages = (usageByVersion[selectedVersion] ?? []).map(entry => {
 });
 
 
+$: totalDPS = dpsList?.reduce((sum, char) => sum + (Number(char.DPS) || 0), 0);
+$: totalSUP = supList?.reduce((sum, char) => sum + (Number(char.SUP) || 0), 0);
 
 function sortWithTiebreaker(type: 'DPS' | 'SUP') {
   return withImages
@@ -102,6 +104,7 @@ async function captureStats() {
   link.href = canvas.toDataURL();
   link.click();
 }
+
 </script>
 
 <!-- Banner -->
@@ -181,7 +184,7 @@ async function captureStats() {
     
     <!-- DPS Table -->
     <div>
-      <h2 class="text-xl font-bold text-blue-400 mb-3">DPS Usage</h2>
+      <h2 class="text-xl font-bold text-blue-400 mb-3">DPS Usage </h2>
       <div class="overflow-x-auto border border-gray-700 rounded-lg">
         <table class="min-w-full divide-y divide-gray-700 text-sm text-left text-white">
           <thead class="bg-base-300 text-gray-300 text-sm uppercase tracking-wide">
@@ -213,7 +216,7 @@ async function captureStats() {
 
     <!-- SUP Table -->
     <div>
-      <h2 class="text-xl font-bold text-rose-400 mb-3  ">Support Usage</h2>
+      <h2 class="text-xl font-bold text-rose-400 mb-3  ">Support Usage </h2>
       <div class="overflow-x-auto border border-gray-700 rounded-lg">
         <table class="min-w-full divide-y divide-gray-700 text-sm text-left text-white ">
           <thead class="bg-base-300 text-gray-300 text-sm uppercase tracking-wide ">

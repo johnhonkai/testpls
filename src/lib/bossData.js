@@ -816,7 +816,16 @@ export const teamData = {
 
   typeandrius:{
     teamDataSets: [
-
+    {
+      tabname: "v8.3",
+      teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ???D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png"],
+        pct: '100%',
+      }
+    ]},
     {
       tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ???D.",
@@ -2443,6 +2452,25 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.3 CN",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '92%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+            rank: '55+',
+            pct: '8%',
+          },
+          
+        ]
+      },      
+      {
         tabname: "v8.2 CN",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -2889,6 +2917,31 @@ export const teamData = {
   firetank: {
     
     teamDataSets: [
+        {
+        tabname: "v8.3 CN",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Senadina Deepspace Anchor.png","images/valkportrait/asop_sera.png"],
+            rank: '1+',
+            pct: '37%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png" ,"images/valkportrait/asop_sera.png"],
+            rank: '2+',
+            pct: '59%',
+          },          
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png","images/valkportrait/asop_sera.png"],
+            rank: '34',
+            pct: '4%',
+          },
+
+        ]
+      },    
       {
         tabname: "v8.2 CN",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
@@ -3230,6 +3283,11 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://youtu.be/vofECCc2WqI', abyss: 'Nirvana 551D', uploader: 'chronos002' },
+      { url: 'hhttps://youtu.be/s4q__4vYQZM', abyss: 'Nirvana 551D', uploader: 'Xintsu' },
+
+    ] 
   }, 
      "para-assaka": {
     

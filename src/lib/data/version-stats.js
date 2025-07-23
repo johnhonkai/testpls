@@ -1,18 +1,23 @@
 export const usageByVersion = {
 
-    '8.3 (First Month)': [
-    { name: 'Planar Armament: Warped Spacetime', DPS: 300, SUP: 0 },
-    { name: 'Peregrine Sword', DPS: 200, SUP: 300 },
-    { name: 'Ba-dum! Fiery Wishing Star', DPS: 0 , SUP: 574 },
-    { name: 'Herrscher of Human: Ego', DPS: 0, SUP: 2 },    
-    { name: 'Lone Planetfarer', DPS: 100, SUP: 300 },
-    { name: 'Herrscher of Finality', DPS: 0, SUP: 100 },
-    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 100  },
-    { name: 'Deepspace Anchor: First Light', DPS: 100, SUP: 0 },
-    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 0, SUP: 24 },   
+    '8.3': [
+    { name: 'Planar Armament: Warped Spacetime', DPS: 499, SUP: 96 },
+    { name: 'Peregrine Sword', DPS: 300, SUP: 499 },
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 100 , SUP: 801 },
+    { name: 'Herrscher of Human: Ego', DPS: 100, SUP: 102 },    
+    { name: 'Lone Planetfarer', DPS: 200, SUP: 619 },
+    { name: 'Herrscher of Finality', DPS: 1, SUP: 224 },
+    { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 200  },
+    { name: 'Deepspace Anchor: First Light', DPS: 100, SUP: 62 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 24, SUP: 84 },   
     { name: 'Lunar Vow: Crimson Love', DPS: 100, SUP: 0 },
-    { name: "Schicksal's Imperative", DPS: 0, SUP: 100 },
+    { name: "Schicksal's Imperative", DPS: 76, SUP: 100 },
     { name: 'Cosmic Expression', DPS: 0, SUP: 100 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 0, SUP: 211 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 1 },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 1 },
+    { name: 'Lone Destruction: Shadowchaser', DPS: 100, SUP: 0 },
+    { name: 'Jovial Deception: Shadowdimmer', DPS: 0, SUP: 100 },
 
     ], 
 
@@ -89,6 +94,6 @@ export const versionDates = {
   '8.0': "12 Dec 2024 - 23 Jan 2025",
   '8.1': "23 Jan - 27 Mar 2025",
   '8.2': "27 Mar - 29 May 2025",
-  '8.3 (First Month)': "29 May - 26 June 2025",
+  '8.3': "29 May - 24 July 2025",
 
 };
