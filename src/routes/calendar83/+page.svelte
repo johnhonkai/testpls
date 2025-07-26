@@ -385,13 +385,23 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
-        <div class="w-[1215px] rounded-lg bg-linear-to-b from-amber-500 to-amber-100 ">
+        <div class="w-[1215px]  bg-linear-to-b from-amber-500 to-amber-100 ">
             <!-- Calendar Header Row -->
-            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm justify-center">
+            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2  text-sm justify-center">
                 <div>EVENTS</div>
 
             </div>
-
+                <div class="grid grid-cols-9 gap-2 text-center font-semibold bg-gray-800 text-white p-2  text-sm ">
+                    <div>Estimated date for Regional Servers</div>
+                    <div>WEEK 1<br/>Jun 26 - Jul 4</div>
+                    <div>WEEK 2<br/>Jul 4 - 11</div>
+                    <div>WEEK 3<br/>Jul 11 - 18</div>
+                    <div>WEEK 4<br/>Jul 18 - 25</div>
+                    <div>WEEK 5<br/>Jul 25 - Aug 1</div>
+                    <div>WEEK 6<br/>Aug 1 - 8 </div>
+                    <div>WEEK 7<br/>Aug 8 - 15</div>
+                    <div>WEEK 8<br/>Aug 15 - 21 </div>
+                </div>
 
             <div class="relative grid grid-cols-9 gap-1 h-[55px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
