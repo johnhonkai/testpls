@@ -75,6 +75,7 @@ export const weatherList = {
     {id: 'bleedhoc', name: 'Herrscher of Corruption'},
   ],
   ignite: [
+    {id: 'ignite-benares', name: 'Benares'},
     {id: 'ignitehov', name: 'Herrscher of the Void'},
     {id: 'aka', name: 'Argent Knight: Artemis'},
 
@@ -454,6 +455,14 @@ export const bossData = {
     bosspic: "images/Bosses/Herrscher of the Void.webp", 
     weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
   },
+  "ignite-benares": {
+    name: 'Benares', 
+    mechanics: '', 
+    weakness: 'Ice (H), Phy (H), Fire (M), Light (M)', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Benares.webp", 
+    weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
+  },  
   resovita: {
     name: "Vita - Sea's Depths", 
     mechanics: "Phase 1 has three Qua shields, phase 2 has two Qua shields. Transition phase drains all your sp. Evade Vita's attacks and catch the falling energy orbs to regain lost sp, and gain dmg buff.", 

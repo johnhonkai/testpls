@@ -339,13 +339,26 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
-        <div class="w-[1350px] rounded-lg bg-linear-to-b from-rose-500 to-rose-100 ">
+        <div class="w-[1350px]  bg-linear-to-b from-rose-500 to-rose-100 ">
             <!-- Calendar Header Row -->
-            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2 rounded-sm text-sm justify-center">
+            <div class="flex gap-2 text-center font-semibold bg-gray-800 text-white p-2  text-sm justify-center">
                 <div>EVENTS</div>
 
             </div>
+                <!-- Calendar Header Row -->
+                <div class="grid grid-cols-10 gap-2 text-center font-semibold bg-gray-800 text-white p-2  text-sm ">
+                    <div>Estimated date for Regional Servers</div>
+                    <div>WEEK 1<br/>Aug 21 - 29</div>
+                    <div>WEEK 2<br/>Aug 29 - Sep 5</div>
+                    <div>WEEK 3<br/>Sep 5 - 12</div>
+                    <div>WEEK 4<br/>Sep 12 - 19</div>
+                    <div>WEEK 5<br/>Sep 19 - 26</div>
+                    <div>WEEK 6<br/>Sep 26 - Oct 3 </div>
+                    <div>WEEK 7<br/>Oct 3 - 10</div>
+                    <div>WEEK 8<br/>Oct 10 - 17 </div>
+                    <div>WEEK 9<br/>Oct 17 - 23 </div>
 
+                </div>
 
             <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
@@ -395,15 +408,31 @@
                 </div>
 
             </div>
-
             <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 4</span>
                 </div> 
                 
+                
+                <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free 5 Battlesuit Cards (Starts on Saturday 10AM)</span>
+                    <!-- Image positioned on the right side -->
+
+                </div>
+
+                
+            </div>
+
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 5</span>
+                </div> 
+                
                 <div></div>
-                <div on:click={() => openModal("OutfitRerun")} class="col-span-8 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div on:click={() => openModal("")} class="col-span-8 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Assemble! Summer Friendship Resort</span>
                     <!-- Image positioned on the right side -->
@@ -446,7 +475,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Benares.webp" date="Aug 22" weather="Ignite" bosspage="/boss?ignite-benares" />
                 <BossCard />
                 </div>
                      

@@ -94,13 +94,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2025-6-28'); // Start date Regional Servers
-      const cnStartDate = new Date('2025-5-30');       // Start date CN Servers
+      const cnStartDate = new Date('2025-7-25');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v8.3 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.3 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.4 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
@@ -120,9 +120,9 @@
   let difficulty = 'Agony 3';
 
   // Base values (Agony 3)
-  const baseF2P = 20145;
-  const baseMonthly = 25305;
-  const baseBP = 27305;
+  const baseF2P = 21710;
+  const baseMonthly = 28090;
+  const baseBP = 30090;
 
   // Adjusted values
   $: bonus = difficulty === 'Red Lotus' ? 1280 : difficulty === 'Nirvana' ? 1600 : 0;
@@ -203,7 +203,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
-              <li>v8.4 update is on 24 July</li>
+              <li>v8.5 update is on 25 September</li>
             </ul>            
           </div>
         </div>
@@ -213,15 +213,15 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.4 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.5 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: 26-27 Jun </li>
-          <li>Beta v1 (Private): 27 Jun </li>
-          <li>Dev Video: 3 July </li>
-          <li>Beta v2: 4 July </li>
-          <li>Beta v3: 11 July </li>
-          <li>Dev Livestream: 19 July </li>
+          <li>Valk Teaser & Reveal: 28-29 August </li>
+          <li>Beta v1 (Private): 29 August </li>
+          <li>Dev Video: 4 September </li>
+          <li>Beta v2: 5 September </li>
+          <li>Beta v3: 12 September </li>
+          <li>Dev Livestream: 20 September </li>
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>
@@ -230,7 +230,7 @@
 <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
   <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
     <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-    <h2 class="text-lg font-semibold text-white tracking-tight">8.3 CRYSTAL INCOME</h2>
+    <h2 class="text-lg font-semibold text-white tracking-tight">8.4 CRYSTAL INCOME</h2>
   </div>
 
 
@@ -238,8 +238,7 @@
     <li>F2P: {f2p.toLocaleString()}</li>
     <li>Monthly: {monthly.toLocaleString()}</li>
     <li>Monthly+BP: {bp.toLocaleString()}</li>
-    <li>5 Equipment Card + 50% off the first 10 pull of PAWS</li>
-    <li>Plus 1 Battlesuit Card + 1 Equipment Card from top-up event</li>
+    <li>10 Battlesuit Cards + 5 Equipment Cards + 50% off the first 10 pull of PAWS</li>
   </ul>
 
   
@@ -279,7 +278,7 @@
 
     <!-- Always-visible info icon -->
     <a 
-      href="https://www.miyoushe.com/bh3/article/64685650"
+      href="https://www.miyoushe.com/bh3/article/66684071"
       target="_blank"
       class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
       data-tip="Go to source"
