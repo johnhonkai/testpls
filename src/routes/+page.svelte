@@ -125,7 +125,7 @@
   const baseBP = 30090;
 
   // Adjusted values
-  $: bonus = difficulty === 'Red Lotus' ? 1280 : difficulty === 'Nirvana' ? 1600 : 0;
+  $: bonus = difficulty === 'Red Lotus' ? 1440 : difficulty === 'Nirvana' ? 1800 : 0;
   $: f2p = baseF2P + bonus;
   $: monthly = baseMonthly + bonus;
   $: bp = baseBP + bonus;
