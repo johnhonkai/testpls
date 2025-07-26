@@ -157,7 +157,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Assaka.webp", 
-    weather: "Paralyze: Enemies take 40% more DMG when paralyze and within 4s after the paralyze ends.",	
+    weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
   },  
   lightningsprout: {
     name: 'Sprout of Wishing', 

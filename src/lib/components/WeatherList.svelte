@@ -28,7 +28,8 @@
     symphony: "Symphony",
     flux: "Flux",
     dominance: "Dominance",
-    extreme: "Extreme"
+    extreme: "Extreme",
+    paralyze: "Paralyze"
     // Add other weather mappings as needed
   };
 
