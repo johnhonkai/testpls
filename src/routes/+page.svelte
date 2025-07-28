@@ -238,7 +238,7 @@
     <li>F2P: {f2p.toLocaleString()}</li>
     <li>Monthly: {monthly.toLocaleString()}</li>
     <li>Monthly+BP: {bp.toLocaleString()}</li>
-    <li>10 Battlesuit Cards + 5 Equipment Cards + 50% off the first 10 pull of Coralie</li>
+    <li>5 Battlesuit Cards + 5 Equipment Cards + 50% off the first 10 pull of Coralie</li>
   </ul>
 
   
