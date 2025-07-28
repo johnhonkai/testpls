@@ -15,6 +15,8 @@
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4859783658310038"
      crossorigin="anonymous"></script>    
+
+<meta name="google-adsense-account" content="ca-pub-4859783658310038">     
 </svelte:head>
 
 <script lang="ts">

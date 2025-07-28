@@ -208,14 +208,14 @@ onMount(() => {
 								<div>
 									<p class="text-lg font-semibold mb-2">SUPPORT ME</p>
 									<div class="flex space-x-4">
-										<a href="https://www.youtube.com/marisahonkai/join" target="_blank" class="btn btn-square btn-outline">
-											<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
+										<a href="https://www.youtube.com/marisahonkai/join" target="_blank" class="btn btn-square ">
+										<img src="/images/icon/yt.webp" alt="YT" class="h-6 w-8 opacity-70">
 										</a>
-										<a href="https://ko-fi.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-											<i class="fas fa-mug-hot text-xl"></i> <!-- Font Awesome Ko-fi -->
+										<a href="https://ko-fi.com/marisahonkai" target="_blank" class="btn btn-square ">
+										<img src="/images/icon/ko-fi.png" alt="KoFi" class="h-6 w-8 opacity-70">
 										</a>
-										<a href="https://paypal.me/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-											<i class="fab fa-paypal text-xl"></i> <!-- Font Awesome PayPal -->
+										<a href="https://paypal.me/marisahonkai" target="_blank" class="btn btn-square ">
+										<img src="/images/icon/pp.png" alt="Paypal" class="h-6 w-8 opacity-70">
 										</a>
 									</div>
 									<p class="text-gray-400 text-sm mt-2">Join YouTube membership, or donate</p>
@@ -227,7 +227,7 @@ onMount(() => {
 								<p class="text-lg font-semibold mb-2">SOCIAL</p>
 								<div class="flex space-x-4">
 									<a href="https://www.youtube.com/@MarisaHonkai" target="_blank" class="btn btn-square btn-outline">
-										<i class="fab fa-youtube text-xl"></i> <!-- Font Awesome YouTube -->
+										<img src="/images/icon/yt.webp" alt="YT" class="h-6 w-8 opacity-70">
 									</a>
 									<a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank" class="btn btn-square btn-outline">
 										<img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/images/hoyolab%20copy.webp" alt="HoYoLab" class="h-6 w-8 opacity-70">
