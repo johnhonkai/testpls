@@ -340,6 +340,12 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
+        
+      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.3 (26 June 2025)
+        </p>
+        </div>
 
       <div>
           <!-- Roles Section -->
@@ -363,10 +369,6 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Light Spenders:</strong>  HoTR and her gears are available in Battle Pass, you can consider getting them that way.
-        </p>
-
-          <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive:</strong> HoTr is still used in HoFinality trio team and Part 1 Fire teams. Part 1 Lightning teams use Lunar Vow support now. Lunar Vow uses Schicksal's Imperative support.
           </p>
 
@@ -374,8 +376,8 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>HoTr:</strong> Battlesuit Supply, Battle Pass</li>
-              <li><strong>Domain of Ascension and Bronya Zaychik:</strong> Focused Supply, Battle Pass</li>
+              <li ><strong>HoTr:</strong> Not available.</li>
+              <li><strong>Domain of Ascension and Bronya Zaychik:</strong> Not available.</li>
 
           </ul>
           <div class="divider  "></div>
