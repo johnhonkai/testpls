@@ -2771,6 +2771,33 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/scoralie.png",  "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+            rank: '1-3, 5',
+            pct: '5%',
+            bottext: "Highest Score: 9S 849"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "images/valkportrait/asop_teri.png"],
+            rank: '4, 7+',
+            pct: '77%',
+            bottext: "Highest Score: S+ 819, SS 821, 6S 831, 9S 839"
+          },     
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/ps.png","/images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/paws.png", "images/valkportrait/asop_teri.png"],
+            rank: '6',
+            pct: '18%',
+            bottext: "Highest Score: 6S 825, 7S 832"
+          },               
+        ]
+      },         
+      {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -3315,7 +3342,26 @@ export const teamData = {
         ]
       }
     ],
-  },  
+  }, 
+     "ignite-benares": {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '100%',
+            bottext: "Highest Score: S2 838, 6S 853, 9S 870"
+
+          },                                     
+        ]
+      }
+    ],
+  },   
 }
 
 
