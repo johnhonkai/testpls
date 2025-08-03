@@ -1548,6 +1548,8 @@ export const teamData = {
       },
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/embed/KSbbJGo_ly8', abyss: 'PAWS Nirvana 550D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/embed/oLXSKjKIiew', abyss: 'FoV Nirvana 550D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/embed/gStp5LF95Hg', abyss: 'RedLotus 501D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/embed/aS_H4XU_td4', abyss: 'Nirvana 539D', uploader: 'Amadeus' },
     ] 
