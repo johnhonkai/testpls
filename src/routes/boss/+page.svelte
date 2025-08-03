@@ -22,7 +22,7 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "meleee"; // Default weather
+  let selectedWeather = "melee"; // Default weather
   let selectedBoss = "meleehoc"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
