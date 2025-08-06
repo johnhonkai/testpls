@@ -12,6 +12,7 @@ export const weatherList = {
     {id: 'firekosma', name: 'Kosma'},
     {id: 'firetona', name: 'Tonatiuh'},
     {id: 'firetank', name: 'MHT-3C Retaliator'},
+    {id: 'litost', name: 'Litost'},
 
   ],
   ice: [
@@ -431,6 +432,14 @@ export const bossData = {
       bosspic: "images/Bosses/Flame-Chaser - Kosma.webp", 
       weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
+  litost: {
+    name: 'Litost', 
+      mechanics: "All phases have ignite trauma check.", 
+      weakness: 'None', 
+      typeicon: "images/type/IconBIO.png", 
+      bosspic: "images/Bosses/Litost.webp", 
+      weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },  
   imgflower: {
       name: 'Husk: Existentialism', 
       mechanics: 'Transition phase requires melee atk to parry balls. Parrying the final massive rock will make the boss take more dmg.', 
@@ -878,6 +887,21 @@ export const teamData = {
   
   imgflower: {
     teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_chenxue.png"],
+          pct: '88%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_teri.png"],
+          pct: '12%',
+        },        
+      ]},      
       {
         tabname: "v8.1",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D.",
@@ -3364,6 +3388,33 @@ export const teamData = {
       }
     ],
   },   
+    litost: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '97%',
+            bottext: "Highest Score: S2 839, 6S 851, 9S 866"
+
+          },   
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '57',
+            pct: '3%',
+            bottext: "Highest Score: S 821"
+
+          },                                              
+        ]
+      }
+    ],
+  },    
 }
 
 

@@ -494,16 +494,15 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Litost.webp" date="Aug 29" weather="Fire" bosspage="/boss?litost" />
+                <BossCard image="/images/Bosses/Husk%20-%20Existentialism.webp" date="Sep 5" weather="IMG" bosspage="/boss?imgflower" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
+                        <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Sep 6"/>
+                        <BossCard image="/images/Bosses/Herrscher of Rimestar.png"/>
+                        <BossCard image="/images/Bosses/SampoSS.webp"/>
                     </div>
-
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->
