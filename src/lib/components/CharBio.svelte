@@ -38,6 +38,7 @@
       goi: { src: '/images/artype/ar grail.png', tip: 'Grail of Infinitude playstyle revolves around consuming SP.' },
       all: { src: '/images/artype/AR All.png', tip: 'Can be a below average, last resort support option for other AR.' },
       lp: { src: '/images/artype/ar_lp.png', tip: 'Can support Lone Planetfarer' },
+      scoralie: { src: '/images/artype/scoralie.png', tip: 'Can support Dragoon Coralie' },
 
       // Part 1
       p1phy: { src: '/images/artype/p1physical.png', tip: 'Part 1 Physical Team' },
@@ -45,7 +46,6 @@
       p1lightning: { src: '/images/artype/p1lightning.png', tip: 'Part 1 Lightning Team' },
       p1ice: { src: '/images/artype/p1ice.png', tip: 'Part 1 Ice Team' },
       hoo: { src: '/images/artype/ar_hoo.png', tip: 'Can support Herrscher of Origin' },
-      scoralie: { src: '/images/artype/scoralie.png', tip: 'Can support Dragoon Coralie' },
 
     };
   </script>

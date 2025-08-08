@@ -358,7 +358,23 @@ export const storyOrder = [
         type: 'side',
         version: '8.3',
         canon: false,
-      },      
+      },   
+      {
+        image: 'https://i.imgur.com/hNXwfWY.png',
+        title: "P2 Ch 9-EX: Yet The Stars Still Sparkle",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'main',
+        version: '8.4',
+      }, 
+            {
+        image: 'https://i.imgur.com/sxcMKSs.png',
+        title: "Assemble! Summer Friendship Resort",
+        inGame: true,
+        type: 'event',
+        version: '8.4',
+        canon: 'alt-world',
+      },        
 ];
   
 

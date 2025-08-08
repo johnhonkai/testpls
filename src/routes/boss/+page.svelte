@@ -22,8 +22,8 @@
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "ice"; // Default weather
-  let selectedBoss = "icehellmaru"; // Default boss
+  let selectedWeather = "paralyze"; // Default weather
+  let selectedBoss = "para-assaka"; // Default boss
   let isLoading = true;
   let isFirstLoad = true; // Flag to distinguish initial load
 

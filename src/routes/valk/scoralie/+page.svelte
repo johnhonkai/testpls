@@ -324,7 +324,7 @@ async function increaseLike() {
   <CharBio mode="dps" rank="s" type="mech" element="fire" optelement="ignite" ar="roo" bg="bg-red-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['goi', 'loa','all']}  bg="bg-red-800"/>
+  <CharBio mode="support" ar={['goi', 'loa', 'lp' , 'all']}  bg="bg-red-800"/>
 </div>
 
 
