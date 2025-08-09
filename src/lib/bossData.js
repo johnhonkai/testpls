@@ -2798,7 +2798,7 @@ export const teamData = {
     teamDataSets: [
       {
         tabname: "v8.4",
-        teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
             type: 'lineup',
