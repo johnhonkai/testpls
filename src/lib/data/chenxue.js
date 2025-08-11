@@ -96,6 +96,13 @@ export const valkbuffs = [
 
     {
         rank: "S",
+        description: "When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.",
+        available_by_default: "no",
+        condition: { astralRing: "Grail of Infinitude"},
+    },
+
+    {
+        rank: "S",
         description: "When AR Rite of Oblivion is activated: Team Total DMG +8%, Elemental DMG +18%, Physical DMG +8%, Crit Rate +25%. During SO: Team Lightning DMG +6%.",
         available_by_default: "no",
         condition: { astralRing: "Rite of Oblivion"},
@@ -153,6 +160,22 @@ export const asopbuffs = [
      {
         rank: "S",
         available_by_default: "yes",
-        description: "Unleash Synergy ATK, pull enemies and deal 2500% ATK of Fire DMG. When PAWS and Dragoon Coralie are both in the team, Synergy ATK deals additional 1200% ATK of Fire DMG.",
+        description: "Unleash Synergy ATK, pull enemies and deal 2500% ATK of Fire DMG. When both PAWS and BFD are in the team, Synergy ATK deals additional 1200% ATK of Fire DMG.",
     },   
+
+     {
+        rank: "S",
+        available_by_default: "yes",
+        description: "Chenxue Fire DMG +130%.",
+    }, 
+     {
+        rank: "SS",
+        available_by_default: "yes",
+        description: "Chenxue Total DMG +125%.",
+    },     
+     {
+        rank: "SSS",
+        available_by_default: "yes",
+        description: "Chenxue ATK +120%.",
+    },      
 ];

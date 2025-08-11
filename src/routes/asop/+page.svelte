@@ -775,10 +775,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 
 
-      <div class="flex mt-4 gap-4 flex-col sm:flex-row">
+  <div class="grid gap-2 md:grid-cols-4">
 
-        <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
-          <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
+    <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-amber-700 text-center font-semibold py-2">Physical DMG</div>
           <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
@@ -949,8 +949,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white  z-2 " id="totallightning">
-        <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
+    <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden" id="totallightning">
+      <div class="bg-violet-700 text-center font-semibold py-2">Lightning DMG</div>
 
 
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
@@ -1110,8 +1110,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
-        <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
+    <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-blue-700 text-center font-semibold py-2">Ice DMG</div>
 
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
@@ -1264,8 +1264,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
-        <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
+    <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-red-700 text-center font-semibold py-2">Fire DMG</div>
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
@@ -1433,7 +1433,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <summary class="my-summary cursor-pointer text-base text-slate-300 hover:bg-cyan-900 hover:text-white px-2 rounded-md">
         Buff Breakdown
       </summary>
-      <div>
+    <div class="text-sm">
     <ul class="space-y-2 text-gray-200 mt-2">
 
       {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.condtdm > 0}
@@ -1622,9 +1622,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <h3 class="text-lg font-semibold text-cyan-400">Valkyrie Buffs (Detailed)</h3>
     <ul class="space-y-2 mt-2">
       {#each processedValkBuffs as buff}
-        <li class="p-2 bg-gray-700 rounded-md">
-          <strong>{displayRank(buff.rank)}</strong>: {@html buff.description}
-        </li>
+                    <li class="flex items-start gap-3 p-3 bg-gray-800/60 hover:bg-gray-800/80 rounded-lg border border-gray-700/40 transition-colors">
+        <span class="bg-cyan-700 text-xs font-bold px-2 py-1 rounded-md shrink-0">
+          {displayRank(buff.rank)}
+        </span>
+        <span class="text-sm leading-relaxed" > {@html buff.description} </span>
+      </li>
       {/each}
     </ul>
   </div>
@@ -1636,9 +1639,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <h3 class="text-lg font-semibold text-cyan-400">AstralOp Buffs</h3>
     <ul class="space-y-2 mt-2">
       {#each processedAsopBuffs as buff}
-        <li class="p-2 bg-gray-700 rounded-md">
-          <strong>{displayRank(buff.rank)}</strong>: {@html buff.description}
-        </li>
+
+
+                    <li class="flex items-start gap-3 p-3 bg-gray-800/60 hover:bg-gray-800/80 rounded-lg border border-gray-700/40 transition-colors">
+        <span class="bg-cyan-700 text-xs font-bold px-2 py-1 rounded-md shrink-0">
+          {displayRank(buff.rank)}
+        </span>
+        <span class="text-sm leading-relaxed" > {@html buff.description} </span>
+      </li>      
       {/each}
     </ul>
   </div>
@@ -1687,10 +1695,10 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <h3 class="text-lg font-semibold text-cyan-400 mb-4">Valkyrie Buffs (Simplified)</h3>
 
 
-      <div class="flex mt-4 gap-4 flex-col sm:flex-row">
+  <div class="grid gap-2 md:grid-cols-4">
 
-        <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalphy">
-          <p class=" bg-amber-700 text-center rounded-t-lg px-2">Physical DMG</p>
+    <div class=" border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-amber-700 text-center font-semibold py-2">Physical DMG</div>
           <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
@@ -1857,9 +1865,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white  z-2 " id="totallightning">
-        <p class=" bg-violet-700 text-center rounded-t-lg px-2 ">Lightning DMG</p>
-
+    <div class=" border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-violet-700 text-center font-semibold py-2">Lightning DMG</div>
 
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
             <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
@@ -2016,8 +2023,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalice">
-        <p class=" bg-blue-700 text-center rounded-t-lg px-2">Ice DMG</p>
+    <div class=" border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-blue-700 text-center font-semibold py-2">Ice DMG</div>
 
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
@@ -2170,8 +2177,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
       </div>
 
-      <div class="  text-white rounded-lg text-left border border-white z-2 " id="totalfire">
-        <p class=" bg-red-700 text-center rounded-t-lg px-2">Fire DMG</p>
+    <div class=" border border-gray-700 rounded-lg overflow-hidden">
+      <div class="bg-red-700 text-center font-semibold py-2">Fire DMG</div>
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-emerald-800 rounded-sm px-2  mr-1">AC</span> 
 
@@ -2338,7 +2345,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           <summary class="my-summary cursor-pointer text-base text-slate-300 hover:bg-cyan-900 hover:text-white px-2 rounded-md">
             Buff Breakdown
           </summary>
-          <div>
+          <div class="text-sm">
         <ul class="space-y-2 text-gray-200 mt-2">
   
           {#if compareCumulativeBuffs.tdm > 0 || compareCumulativeBuffs.condtdm > 0}
@@ -2527,9 +2534,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <h3 class="text-lg font-semibold text-cyan-400">Valkyrie Buffs (Detailed)</h3>
     <ul class="space-y-2 mt-2">
       {#each compareProcessedValkBuffs as buff}
-        <li class="p-2 bg-gray-700 rounded-md">
-          <strong>{displayRankcompare(buff.rank)}</strong>: {@html buff.description}
-        </li>
+
+        <li class="flex items-start gap-3 p-3 bg-gray-800/60 hover:bg-gray-800/80 rounded-lg border border-gray-700/40 transition-colors">
+        <span class="bg-cyan-700 text-xs font-bold px-2 py-1 rounded-md shrink-0">
+          {displayRankcompare(buff.rank)}
+        </span>
+        <span class="text-sm leading-relaxed" > {@html buff.description} </span>
+      </li>
       {/each}
     </ul>
   </div>
@@ -2539,9 +2550,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <h3 class="text-lg font-semibold text-cyan-400">AstralOp Buffs</h3>
       <ul class="space-y-2 mt-2">
         {#each compareProcessedAsopBuffs as buff}
-          <li class="p-2 bg-gray-700 rounded-md">
-            <strong>{displayRankcompare(buff.rank)}</strong>: {@html buff.description}
-          </li>
+
+
+                  <li class="flex items-start gap-3 p-3 bg-gray-800/60 hover:bg-gray-800/80 rounded-lg border border-gray-700/40 transition-colors">
+        <span class="bg-cyan-700 text-xs font-bold px-2 py-1 rounded-md shrink-0">
+          {displayRankcompare(buff.rank)}
+        </span>
+        <span class="text-sm leading-relaxed" > {@html buff.description} </span>
+      </li>
         {/each}
       </ul>
     </div>

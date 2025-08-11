@@ -28,7 +28,7 @@ export const extraregen = [
 export const valkbuffs = [
     {
     rank: "S",
-    description: "During Stellar Outburst, team Elemental DMG +10%, Fire and Lightning DMG +12%, and enemies take 12% more Total DMG",
+    description: "During Stellar Outburst, team Elemental DMG +10%, Fire and Lightning DMG +12%, and enemies take 12% more Total DMG.",
     available_by_default: "yes",
     soele:10,
     sofire:12,
@@ -39,7 +39,7 @@ export const valkbuffs = [
 
     {
     rank: "S",
-    description: "Team Fire and Lightning DMG +4%",
+    description: "Team Fire and Lightning DMG +4%.",
     available_by_default: "yes",
     fire:4,
     lightning:4,
@@ -47,7 +47,7 @@ export const valkbuffs = [
 
     {
     rank: "SS",
-    description: "During Stellar Outburst, enemies take 8% more Fire and Lightning DMG",
+    description: "During Stellar Outburst, enemies take 8% more Fire and Lightning DMG.",
     available_by_default: "yes",
     sofiretaken:8,
     solightningtaken:8,
@@ -56,7 +56,7 @@ export const valkbuffs = [
     {
         rank: "SSS",
         available_by_default: "no",
-        description: "When the team has members of different elements, team Total DMG +8%",
+        description: "When the team has members of different elements, team Total DMG +8%.",
         tdm: 8,
         condition: { element: "different" },  
 
@@ -70,7 +70,7 @@ export const asopbuffs = [
     {
         rank: "S",
         available_by_default: "yes",
-        description: "Synergy ATK deals 1200% + 1500% ATK of Fire / Lightning DMG",
+        description: "Synergy ATK deals 1200% + 1500% ATK of Fire / Lightning DMG.",
 
 
     },
@@ -84,7 +84,7 @@ export const asopbuffs = [
     {
         rank: "SSS",
         available_by_default: "yes",
-        description: "Kiana's Elemental DMG +100%. Synergy ATK Total DMG +45%",
+        description: "Kiana's Elemental DMG +100%. Synergy ATK Total DMG +45%.",
 
 
     },
