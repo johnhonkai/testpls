@@ -121,6 +121,8 @@ export const weatherList = {
   ],  
   paralyze: [
     {id: 'para-assaka', name: 'Assaka'},
+    {id: 'sushang', name: 'Sushang'},
+
   ],   
 }
 
@@ -160,6 +162,14 @@ export const bossData = {
     bosspic: "images/Bosses/Assaka.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
   },  
+  sushang: {
+    name: 'Sushang', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Li Sushang.webp", 
+    weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
+  },    
   lightningsprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
@@ -882,7 +892,11 @@ export const teamData = {
         ] 
       },
     ]},
-  ] 
+  ],
+      videos: [
+      { url: 'https://www.bilibili.com/video/BV16auBz7EaT/', abyss: 'RedLotus 516D', uploader: '奇星可璇' },
+      { url: 'https://www.youtube.com/watch?v=NzfIWuQuExY', abyss: 'Nirvana 530D', uploader: 'schz' },
+    ], 
   },
   
   imgflower: {
@@ -3368,6 +3382,12 @@ export const teamData = {
         ]
       }
     ],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=k064enUnqNc', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://youtu.be/tP76Nvh78-Q', abyss: 'Nirvana 547D', uploader: 'iChronos' },
+      { url: 'https://youtu.be/WsNd17eQIeA', abyss: 'Nirvana 547D', uploader: 'phylynxbelt' },
+
+    ] 
   }, 
      "ignite-benares": {
     

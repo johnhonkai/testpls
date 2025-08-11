@@ -17,32 +17,59 @@
   import { page } from '$app/stores';
   import { onMount, tick } from 'svelte';
   import { weatherList, bossData, teamData } from '$lib/bossData.js';
+  import { bossSchedule } from '$lib/bossDate.js'; // ✅ match file name case
+
   import WeatherList from '$lib/components/WeatherList.svelte';
   import BossList from '$lib/components/BossList.svelte';
   import BossDetails from '$lib/components/BossDetails.svelte';
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
-  let selectedWeather = "paralyze"; // Default weather
-  let selectedBoss = "para-assaka"; // Default boss
+  let selectedWeather = "fire"; // default fallback
+  let selectedBoss = "firetank";
   let isLoading = true;
-  let isFirstLoad = true; // Flag to distinguish initial load
+  let isFirstLoad = true;
 
   $: currentPage = $page.url.searchParams;
 
+  // ✅ Auto-detect version & boss
+  function getCurrentBoss() {
+    const now = new Date();
+
+    for (const version in bossSchedule) {
+      for (const phase of bossSchedule[version]) {
+        const start = new Date(phase.start);
+        const end = new Date(phase.end);
+
+        if (now >= start && now < end) {
+          return phase;
+        }
+      }
+    }
+    return null;
+  }
+
   onMount(() => {
+    // Set default from schedule
+    const current = getCurrentBoss();
+    if (current) {
+      selectedBoss = current.boss;
+      selectedWeather = current.weather;
+    }
+
+    // Override from URL param if present
     const queryParams = [...currentPage.keys()];
     const bossParam = queryParams[0];
     if (bossParam && bossData[bossParam]) {
       selectedBoss = bossParam;
-      selectedWeather = findWeatherByBossId(bossParam) ;
+      selectedWeather = findWeatherByBossId(bossParam);
     }
-    // Wait for initial images to load
+
     checkImagesLoaded();
   });
 
   async function checkImagesLoaded() {
     isLoading = true;
-    await tick(); // Wait for the DOM to render updated components
+    await tick();
 
     const bossDetailsImages = Array.from(
       document.querySelectorAll('#boss-details img')
@@ -52,28 +79,25 @@
     );
 
     const imagePromises = [...bossDetailsImages, ...teamDetailsImages].map((img) => {
-  return new Promise((resolve) => {
-    if (img instanceof HTMLImageElement) {
-      if (img.complete) {
-        resolve();
-      } else {
-        img.addEventListener('load', resolve);
-        img.addEventListener('error', resolve); // Resolve even on error
-      }
-    } else {
-      // If it's not an image element, resolve immediately
-      resolve();
-    }
-  });
-});
-
+      return new Promise((resolve) => {
+        if (img instanceof HTMLImageElement) {
+          if (img.complete) {
+            resolve();
+          } else {
+            img.addEventListener('load', resolve);
+            img.addEventListener('error', resolve);
+          }
+        } else {
+          resolve();
+        }
+      });
+    });
 
     await Promise.all(imagePromises);
     isLoading = false;
-    isFirstLoad = false; // Mark initial load as complete
+    isFirstLoad = false;
   }
 
-  // Find the weather for a given boss ID
   function findWeatherByBossId(bossId) {
     for (const weather in weatherList) {
       if (weatherList[weather].some((boss) => boss.id === bossId)) {
@@ -91,16 +115,17 @@
   function handleSelectBoss(event) {
     selectedBoss = event.detail.boss.id;
     updateURL();
-    checkImagesLoaded(); // Trigger image loading for new boss selection
+    checkImagesLoaded();
   }
 
-  // Update the URL to include the selected boss ID
   function updateURL() {
     const url = new URL(window.location.href);
     url.search = selectedBoss ? `?${selectedBoss}` : '';
     history.replaceState({}, '', url);
   }
 </script>
+
+
 
 <!-- Loading Screen -->
 {#if isFirstLoad && isLoading}
