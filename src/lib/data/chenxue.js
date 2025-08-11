@@ -142,6 +142,7 @@ export const valkbuffs = [
         description: "Enemies take 6% more Total DMG from Ult.",
         available_by_default: "yes",
         condtdmtaken:6,
+        
     },
 
      

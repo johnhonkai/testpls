@@ -173,7 +173,7 @@ export const bossData = {
   lightningsprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
-    weakness: 'None', 
+    weakness: 'Ice (L)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
@@ -3435,6 +3435,33 @@ export const teamData = {
       }
     ],
   },    
+    sushang: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1-5,7+',
+            pct: '65%',
+            bottext: "Highest Score: S2 801, SS 813, 6S 829, 9S 852"
+
+          },   
+          {
+            type: 'lineup',
+            lineup: ["/images/valkportrait/paws.png", "images/valkportrait/scoralie.png", "/images/valkportrait/ps.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '6',
+            pct: '35%',
+            bottext: "Highest Score: S2 798, 5S 821, 9S 835"
+
+          },                                              
+        ]
+      }
+    ],
+  },     
 }
 
 

@@ -1850,6 +1850,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         </div>
         {/if}
 
+
+        
 {#if compareCumulativeBuffs.critdmg > 0}
 <div class="px-2 mx-1 mb-3 text-white text-left rounded-sm w-fit" id="critdmg">
   Crit DMG +{(compareCumulativeBuffs.critdmg)}%
