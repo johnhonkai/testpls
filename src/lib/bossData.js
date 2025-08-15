@@ -703,7 +703,7 @@ export const teamData = {
         {
           type: 'lineup',
           toptext: '',
-          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_theresa.png"],
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_teri.png"],
           rank: '75',
           pct: '1%',
           bottext: '',
@@ -711,7 +711,7 @@ export const teamData = {
          {
           type: 'lineup',
           toptext: '',
-          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_theresa.png"],
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_teri.png"],
           rank: '80',
           pct: '4%',
           bottext: '',
