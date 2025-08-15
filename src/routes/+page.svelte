@@ -302,6 +302,7 @@
 
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
+      { code: 'EVILDRAGON', reward: '350 crystals' },
       { code: 'CCQWLK02', reward: '30 crystals' },
       { code: 'HAPPYSCHOOLFEST', reward: '30 crystals' },
 
