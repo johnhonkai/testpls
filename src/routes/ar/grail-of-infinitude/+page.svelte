@@ -23,6 +23,7 @@
   ];
 
   const support = [
+    { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" , type: "Mech" , element: ["Fire" , "Ignite"] },
     { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
     { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
     { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
@@ -34,6 +35,8 @@
 
   const utilities = {
     "Breach State": [
+      { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+
     ],
 
         Shieldbreak: [
@@ -55,7 +58,10 @@
       { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
     ],
 
-    Ignite: [],
+    Ignite: [
+      { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+
+    ],
 
     Bleed: [
               { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
@@ -148,7 +154,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -192,7 +198,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -302,28 +308,7 @@ async function captureStats() {
 
 
           <img
-            src="/images/valkportrait/asop_songque.png"
-            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
-          />
-        </div>
-
-        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
-          <img
-            src="/images/valkportrait/elf_kiana.png"
-            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
-          />
-        </div>
-
-        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
-          <img
-            src="/images/valkportrait/asop_ds.png"
-            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
-          />
-        </div>
-
-        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
-          <img
-            src="/images/valkportrait/asop_teri.png"
+            src="/images/valkportrait/asop_chenxue.png"
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
         </div>
