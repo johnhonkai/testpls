@@ -681,6 +681,43 @@ export const teamData = {
   lightningsprout: {
     teamDataSets: [
       {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D.",
+        entries: [
+        {
+          type: 'lineup',
+          toptext: '',
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_chenxue.png"],
+          rank: '1+',
+          pct: '74%',
+          bottext: '',
+        },
+         {
+          type: 'lineup',
+          toptext: '',
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_chenxue.png"],
+          rank: '24',
+          pct: '21%',
+          bottext: '',
+        },   
+        {
+          type: 'lineup',
+          toptext: '',
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Coralie Valkyrie Blastmetal.png", "images/valkportrait/asop_theresa.png"],
+          rank: '75',
+          pct: '1%',
+          bottext: '',
+        },  
+         {
+          type: 'lineup',
+          toptext: '',
+          lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_theresa.png"],
+          rank: '80',
+          pct: '4%',
+          bottext: '',
+        },                     
+      ] },      
+      {
         tabname: "v7.9",
         teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
         entries: [
