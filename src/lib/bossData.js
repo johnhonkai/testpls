@@ -3084,6 +3084,9 @@ export const teamData = {
       }
     ],
         videos: [
+      { url: 'https://youtu.be/hFj42mwaRVQ', abyss: 'Nirvana 549D', uploader: 'Xintsu' },
+      { url: 'https://youtu.be/jn4buUKfgvU', abyss: 'Nirvana ???D', uploader: 'Ismaël' },
+      { url: 'https://youtu.be/kR4sMKROfTw', abyss: 'Sparkle Nirvana 540D', uploader: 'Sheepless Ram' },
       { url: 'https://youtu.be/NDmbAeYB-Dw', abyss: 'Red Lotus 505D', uploader: 'Marisa Honkai' },
       { url: 'https://youtu.be/YJqueHxOSds', abyss: 'S-Lantern Nirvana 541D', uploader: 'phylynxbelt' },
       { url: 'https://youtu.be/YyXgBKXW-d0', abyss: 'S-Lantern Nirvana 541D', uploader: 'Xintsu' },
