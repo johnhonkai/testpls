@@ -186,13 +186,13 @@ When AR Law of Ascension or Grail of Infinitude is activated: Ele/Phy Breach pro
 - Note: Dragon's Might is coralie's stigma buff.
 
 #### ULT 4
-Team members with Dragon Lord state gain Elemental DMG +12%, Physical DMG +10%
+[S1] Enemies take Elemental DMG +12%, Physical DMG +10% from characters with Dragon Lord state.
 
 ---
 
 ### RANK UP 
 
-S1: Team members with Dragon Lord state gain Elemental DMG +12%, Physical DMG +10%
+S1: Enemies take Elemental DMG +12%, Physical DMG +10% from characters with Dragon Lord state.
 
 S2: 
 - When there are 2/3 Rite of Oblivion characters in the team, Dragoon Coralie Total DMG and Fire DMG +31%/54% (S) / +35%/60% (S2).

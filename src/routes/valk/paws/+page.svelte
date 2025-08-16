@@ -565,7 +565,7 @@ async function increaseLike() {
         </p>
 
         <p class="text-sm sm:text-base text-left">
-          <b>Affix</b> <br/>Full ATK. Some advanced runs might use sp regen / cost reduction.
+          <b>Affix</b> <br/>Full ATK.
         </p>
       </div>
 
