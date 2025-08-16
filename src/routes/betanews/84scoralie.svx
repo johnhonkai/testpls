@@ -152,7 +152,7 @@ Self take 10% (S) / 30% (SS1) less Total DMG. **After entering via QTE or upon c
 When Basic ATK seq 4 or QTE hits a target, for a short duration, press weapon to unleash Dragon Claw, deal a total of **1210% (v2) > 1100% (v3)** ATK of Fire DMG, add 6.5 ignite trauma, and gain Boiling Point stack.
 
 #### COMBO ATK 1
-When Dragon Claw hits a target, if the target has a status trauma corresponding to the leader's trait, and the trauma is not full, add 12 (S) / 36 (SS2) points to the trauma.
+Rampant Dragon Claws adds 12 (S) / 36 (SS2) points to status trauma inflicted by the leader. 
 
 #### COMBO ATK 2
 (Toggle) Casting Dragon Claw triggers 3.5s time fracture and restore 200 HP.
@@ -209,7 +209,7 @@ SS:
 
 SS1: Self take 10% (S) / 30% (SS1) less Total DMG.
 
-SS2: When Dragon Claw hits a target, if the target has a status trauma corresponding to the leader's trait, and the trauma is not full, add 12 (S) / 36 (SS2) points to the trauma.
+SS2: Rampant Dragon Claws adds 12 (S) / 36 (SS2) points to status trauma inflicted by the leader. 
 
 SS3:
 - Team Total DMG +10% (S3) / 12% (SS3)
