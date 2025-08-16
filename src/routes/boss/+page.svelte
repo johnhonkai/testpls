@@ -4,7 +4,7 @@
 
     <meta property="og:title" content="Honkai Impact 3rd Abyss Boss Data"/>
     <meta property="og:description" content="Comprehensive Boss Data" />
-    <meta property="og:image" content="https://i.imgur.com/jmqv6NV.png" />
+    <meta property="og:image" content="https://i.imgur.com/i4PWpS1.png" />
     <meta property="og:url" content="https://marisaimpact.com/boss" />
     <meta property="og:type" content="website" />
 

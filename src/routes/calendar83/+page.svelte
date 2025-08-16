@@ -552,7 +552,7 @@
                 <div class="col-span-7"></div>
                 <div on:click={() => openModal("")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-amber-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">5 Equip Card</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">2 Equip Card</span>
                     <!-- Image positioned on the right side -->
 
                 </div>

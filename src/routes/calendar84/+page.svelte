@@ -367,7 +367,7 @@
     
                 <div on:click={() => openModal("")} class="col-span-9 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event: [1] 5 Equipment Supply Cards. [2] BFD Stigma Box, Crystals, AE Imaginon</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Log-in Event: [1] 2 Equipment Supply Cards. [2] BFD Stigma Box, Crystals, AE Imaginon</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/3skVKiF.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -516,9 +516,9 @@
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
+                        <BossCard image="/images/Bosses/Aesir Heimdall_SSS.webp" date="Sep 13"/>
+                        <BossCard image="/images/BossesMA/Husk Mysticism_SSS.webp"/>
+                        <BossCard image="/images/Bosses/Herrscher of the Void.webp"/>
                     </div>
     
 

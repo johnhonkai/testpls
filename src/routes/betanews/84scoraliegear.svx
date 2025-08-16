@@ -40,7 +40,7 @@ Dragoon Coralie equip bonus:
 Self ignite trauma inflict rate +20%. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 12% more Fire DMG~~ **Enemies take 15% more Total DMG (V3D)**, Team Total DMG +15%.
 
 #### PASSIVE 2
-Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 15% more Total DMG~~ **Enemies take 12% more Fire DMG (V3D)**.
+Enemies take 15% more Total DMG from wielder. Dragoon Coralie equip bonus: When AR is activated: ~~Enemies take 15% more Total DMG~~ **Enemies take 12% more Fire DMG from self (V3D)**.
 
 #### SYNERGY
 Enemies take 2 / 4 / 6% more Total DMG (independent, cannot stack).
@@ -82,7 +82,7 @@ Self Ult gain Fire DMG +10%. Dragoon Coralie equip bonus:
   - Enemies take 19% more Elemental DMG, 16% more Physical DMG, 10% more Total DMG.
 - When AR Law of Ascension is activated:
   - During AR Charging: 
-    - Enemies take 14% more Elemental DMG, 5% more Physical DMG, 5% more Total DMG.
+    - Enemies take 14% more Elemental DMG, 5% more Physical DMG, ~~5% more Total DMG.~~
   - During Stellar Outburst: 
     - Enemies take 14% more Elemental DMG, 5% more Physical DMG, **10% (v2) > 5% (v2b)** more Total DMG.
 - When AR Grail of Infinitude is activated:
