@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: PAWS Unlocked Skill v2
+title: PAWS Unlocked Skill v3
 version: '8.4'
 sortOrder: '4'
 image: "/images/valkportrait/paws.png"
@@ -25,5 +25,5 @@ When Dragoon Coralie is the leader:
 - Team Elemental DMG +30%, Total DMG +20%, and enemies take 16% more Total DMG.
 - When consuming Stellar Drain, restore 10 additional AR.
 - Team members with [PAWS Stigma buff] gain Ignite DMG +12%.
-- When battle starts, initial AR +10.
+- When battle starts, initial sp +10.
 - Dragoon Coralie gain Fire DMG and Total DMG +5.20%.
