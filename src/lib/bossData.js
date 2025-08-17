@@ -3031,6 +3031,43 @@ export const teamData = {
     
     teamDataSets: [
         {
+        tabname: "v8.4 CN",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Senadina Deepspace Anchor.png","images/valkportrait/asop_sera.png"],
+            rank: '1-3',
+            pct: '52%',
+            bottext: "Highest Score: 6S 775, 7S 778, 9S 819"
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png" ,"images/valkportrait/asop_sera.png"],
+            rank: '4+',
+            pct: '42%',
+            bottext: "Highest Score: 6S 778, 7S 801, 8S 804"
+
+          },         
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png","images/valkportrait/asop_chenxue.png"],
+            rank: '44',
+            pct: '4%',
+            bottext: "Highest Score: 6S 755, 7S 775"
+          },          
+          
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Vita Lone Planetfarer.png","images/valkportrait/asop_sera.png"],
+            rank: '64',
+            pct: '2%',
+            bottext: "Highest Score: 6S 764"
+          },
+
+        ]
+      },       
+        {
         tabname: "v8.3 CN",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [

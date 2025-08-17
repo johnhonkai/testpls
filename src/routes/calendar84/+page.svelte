@@ -512,11 +512,11 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Litost.webp" date="Aug 29" weather="Fire" bosspage="/boss?litost" />
-                <BossCard image="/images/Bosses/Husk%20-%20Existentialism.webp" date="Sep 5" weather="IMG" bosspage="/boss?imgflower" />
+                <BossCard image="/images/Bosses/Husk%20-%20Existentialism.webp" date="Sep 1" weather="IMG" bosspage="/boss?imgflower" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Sep 6"/>
+                        <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Sep 2"/>
                         <BossCard image="/images/Bosses/Herrscher of Rimestar.png"/>
                         <BossCard image="/images/Bosses/SampoSS.webp"/>
                     </div>
@@ -528,12 +528,12 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Li Sushang.webp" date="Sep 8" weather="Paralyze" bosspage="/boss?sushang" />
-                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Sep 12" weather="Lightning" bosspage="/boss?lightningsprout" />
+                <BossCard image="/images/Bosses/Li Sushang.webp" date="Sep 5" weather="Paralyze" bosspage="/boss?sushang" />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Sep 8" weather="Lightning" bosspage="/boss?lightningsprout" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="/images/Bosses/Aesir Heimdall_SSS.webp" date="Sep 13"/>
+                        <BossCard image="/images/Bosses/Aesir Heimdall_SSS.webp" date="Sep 9"/>
                         <BossCard image="/images/BossesMA/Husk Mysticism_SSS.webp"/>
                         <BossCard image="/images/Bosses/Herrscher of the Void.webp"/>
                     </div>
@@ -547,7 +547,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" date="Sep 12" weather="Fire" bosspage="/boss?firetank" />
                 <BossCard />
                 </div>
                      
