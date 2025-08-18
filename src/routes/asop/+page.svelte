@@ -307,7 +307,7 @@ function countCharactersWithOrCondition(condition_or, activation) {
 
       relevantSlots.forEach(slotName => {
         const character = slots[slotName];
-        if (character && character.element) {
+    if (character && character.element && character.element !== "Physical") {
           elements.add(character.element);
         }
       });
@@ -2571,3 +2571,21 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 </div>
 
 {/if}
+
+<div class="max-w-3xl mx-auto p-6 mb-24 rounded-2xl  text-white">
+  <!-- Header -->
+  <h2 class="text-2xl font-bold text-cyan-400 mb-4">Changelog</h2>
+
+  <!-- Entry -->
+  <div class="space-y-6">
+    <!-- Version -->
+    <div class="border-l-4 border-cyan-500 pl-4">
+      <h3 class="text-md font-semibold">18 Aug 2025 </h3>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Kiana ELF: Fixed the S-rank buff from [enemies take 12% more Total DMG] to the correct translation [enemies take 12% more Elemental DMG].</li>
+        <li>Kiana ELF: 4-star skill now properly ignores Physical valks from multi-element check.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>

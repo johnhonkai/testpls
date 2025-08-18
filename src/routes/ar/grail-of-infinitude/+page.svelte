@@ -35,9 +35,16 @@
 
   const utilities = {
     "Breach State": [
-      { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+        { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
 
     ],
+
+    "Trauma Boost": [
+            { name: "Fate-Defying Dragon!", 
+            image: "/images/valkportrait/scoralie.png" ,
+           details: "Dragon Claw adds 12 (S) / 36 (SS2) points to status trauma inflicted by the leader. She also extends status trauma duration by 50%." },
+    ],
+
 
         Shieldbreak: [
             { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
@@ -266,7 +273,7 @@ async function captureStats() {
 
 
   <!-- Support Section -->
-  <section class="flex-3">
+  <section class="flex-4">
     <h2 class="text-xl sm:text-2xl font-semibold pb-2 cooltext">Support</h2>
     <div class="flex flex-wrap gap-3">
       {#each support as char}

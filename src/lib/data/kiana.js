@@ -28,15 +28,20 @@ export const extraregen = [
 export const valkbuffs = [
     {
     rank: "S",
-    description: "During Stellar Outburst, team Elemental DMG +10%, Fire and Lightning DMG +12%, and enemies take 12% more Total DMG.",
+    description: "During Stellar Outburst, Fire and Lightning DMG +12% to inflammable or conductive enemies, and enemies take 12% more Elemental DMG.",
     available_by_default: "yes",
-    soele:10,
     sofire:12,
     solightning:12,
-    sotdmtaken:12,
+    soeletaken:12,
 
     },
+    {
+    rank: "S",
+    description: "Synergy ATK grants Team Elemental DMG +10% for 12s, duration refreshes when Synergy ATK launches again (either through premature detonation or in 7 seconds after first Synergy ATK).",
+    available_by_default: "yes",
+    soele:10,
 
+    },
     {
     rank: "S",
     description: "Team Fire and Lightning DMG +4%.",

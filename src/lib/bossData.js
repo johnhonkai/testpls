@@ -79,6 +79,7 @@ export const weatherList = {
     {id: 'ignite-benares', name: 'Benares'},
     {id: 'ignitehov', name: 'Herrscher of the Void'},
     {id: 'aka', name: 'Argent Knight: Artemis'},
+    {id: 'hoice', name: 'Herrscher of Ice'},
 
   ],
   resonance: [
@@ -584,7 +585,7 @@ export const bossData = {
 
   firetank: {
     name: 'MHT-3C Retaliator', 
-    mechanics: 'This is a different fire tank, no transition phase. Has a weakspot. Use an archer character to hit the weakspot to apply a huge debuff. Weakspot and debuff are reset when Phase 2 starts.', 
+    mechanics: 'This is a different fire tank, no transition phase. Has a weakspot. Use an archer character to hit the weakspot to apply a powerful debuff. Weakspot and debuff are reset when Phase 2 starts.', 
     weakness: 'Ice (L), Lightning (L)', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
@@ -665,6 +666,14 @@ export const bossData = {
     bosspic: "images/Bosses/Argent Knight Artemis (AKA).webp", 
     weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
   },
+  hoice: {
+    name: 'Herrscher of Ice', 
+    mechanics: 'Phase 2: HoIce gains two stacks of Frost Barriers, increasing her defense. Apply ignite trauma to disable Frost Barrier. (One ignite stack = one Frost Barrier stack disabled).', 
+    weakness: 'Ice (H)', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Herrscher of Ice.webp", 
+    weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
+  },  
   sdguaymas: {
     name: 'Meteoroid: Guaymas', 
     mechanics: '', 
@@ -3355,6 +3364,12 @@ export const teamData = {
         ]
       }
     ],
+         videos: [
+      { url: 'https://youtu.be/Wgz2zgn2pzQ', abyss: 'Nirvana 549 D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/BZPQmN0jX7U', abyss: 'Nirvana 549 D', uploader: 'Adit Rama' },
+      { url: 'https://youtu.be/w6okcdU14WM', abyss: 'Nirvana 549 D', uploader: 'chronos002' },
+
+    ] 
   }, 
  
   
