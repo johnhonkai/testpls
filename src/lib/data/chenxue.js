@@ -141,7 +141,7 @@ export const valkbuffs = [
         rank: "SSS",
         description: "Enemies take 6% more Total DMG from Ult.",
         available_by_default: "yes",
-        condtdmtaken:6,
+        ulttdmtaken:6,
         
     },
 

@@ -423,6 +423,7 @@ function calculateBuffs(buffs, rank) {
       shadowtdmtaken: 0,
       qtetdmtaken: 0,
       condtdmtaken: 0,
+      ulttdmtaken: 0,
 
       lightning: 0,
       aclightning: 0,
@@ -491,6 +492,7 @@ cumulativeValues.actdmtaken += buff.actdmtaken || 0;
 cumulativeValues.sotdmtaken += buff.sotdmtaken || 0;
 cumulativeValues.qtetdmtaken += buff.qtetdmtaken || 0;
 cumulativeValues.shadowtdmtaken += buff.shadowtdmtaken || 0;
+cumulativeValues.ulttdmtaken += buff.ulttdmtaken || 0;
 
 cumulativeValues.lightning += buff.lightning || 0;
 cumulativeValues.aclightning += buff.aclightning || 0;
@@ -793,14 +795,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
           - x{ 
             parseFloat( 
 
 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
-              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
               (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy) / 100)) *
               (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100))
               ).toFixed(3)
@@ -826,12 +828,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
     (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
@@ -856,12 +858,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
     (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
@@ -887,12 +889,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
     (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) 
     ).toFixed(3)
@@ -918,12 +920,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
     (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
     (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100)) 
     ).toFixed(3)
@@ -966,12 +968,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((cumulativeBuffs.lightning + cumulativeBuffs.aclightning + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
             (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.aclightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
     ).toFixed(3)
@@ -997,12 +999,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
           (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
@@ -1027,12 +1029,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
           (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
     ).toFixed(3)
@@ -1061,12 +1063,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
           (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
           (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
     ).toFixed(3)
@@ -1093,14 +1095,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
-    (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning) / 100)) *
-    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken) / 100))
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
+    (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
   )
 }
@@ -1126,12 +1128,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             ).toFixed(3)
           )
           }
-          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
           - x{ 
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
-              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((cumulativeBuffs.ice + cumulativeBuffs.acice + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
             (1+((cumulativeBuffs.icetaken + cumulativeBuffs.acicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
               ).toFixed(3)
@@ -1153,12 +1155,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
           (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
@@ -1182,14 +1184,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
-    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice) / 100)) *
-    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
+    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken  + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
     ).toFixed(3)
   )
 }
@@ -1213,14 +1215,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
-    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice) / 100)) *
-    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1246,14 +1248,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
-    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice) / 100)) *
-    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
+    (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1281,12 +1283,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((cumulativeBuffs.fire + cumulativeBuffs.acfire + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
             (1+((cumulativeBuffs.firetaken + cumulativeBuffs.acfiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
@@ -1308,12 +1310,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
           (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
           ).toFixed(3)
@@ -1338,14 +1340,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm + cumulativeBuffs.resotdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken) / 100)) *
-    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire) / 100)) *
-    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
+    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1370,14 +1372,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
-    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire) / 100)) *
-    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.shadowtdmtaken) / 100)) *
+    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1401,14 +1403,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0}
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
-    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
-    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire) / 100)) *
-    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken) / 100)) 
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.qtetdmtaken) / 100)) *
+    (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -1436,7 +1438,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <div class="text-sm">
     <ul class="space-y-2 text-gray-200 mt-2">
 
-      {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.condtdm > 0}
+      {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.condtdm > 0  }
         <li>
           Total DMG +{cumulativeBuffs.tdm}%{#if cumulativeBuffs.condtdm > 0} - {cumulativeBuffs.tdm + cumulativeBuffs.condtdm}%{/if}</li>
       {/if}
@@ -1459,8 +1461,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   
         Total DMG Taken +{cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken}%
 
-        {#if cumulativeBuffs.condtdmtaken > 0}
-        - {cumulativeBuffs.tdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.actdmtaken}%
+        {#if cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+        - {cumulativeBuffs.tdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.actdmtaken}%
       {/if}
         
         {#if cumulativeBuffs.actdmtaken !== cumulativeBuffs.sotdmtaken} 
@@ -1470,7 +1472,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         / +{cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken}% 
         
         {#if cumulativeBuffs.condtdmtaken > 0}
-        - {cumulativeBuffs.tdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.sotdmtaken}%
+        - {cumulativeBuffs.tdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken + cumulativeBuffs.sotdmtaken}%
       {/if}
         
         <span class="bg-sky-800 rounded-sm px-2">SO</span>
@@ -1713,12 +1715,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
           - x{ 
             parseFloat( 
             (
               (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
               (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
               (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100))
               ).toFixed(3)
@@ -1742,12 +1744,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
     (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
     (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
@@ -1772,12 +1774,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
     (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.sophy) / 100)) *
     (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
@@ -1803,7 +1805,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
@@ -1834,7 +1836,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
@@ -1883,12 +1885,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
             (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
@@ -1912,12 +1914,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
           (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
           ).toFixed(3)
@@ -1942,12 +1944,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
     (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
     (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100)) 
     ).toFixed(3)
@@ -1976,14 +1978,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
     (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
-    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning) / 100)) *
-    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken) / 100))
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.solightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.solightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
   )
 }
@@ -2008,7 +2010,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
@@ -2041,12 +2043,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             ).toFixed(3)
           )
           }
-          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+          {#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
           - x{ 
             parseFloat( 
             (
               (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
             (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
@@ -2068,12 +2070,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
           (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
           ).toFixed(3)
@@ -2097,12 +2099,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
           (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
               ).toFixed(3)
@@ -2128,14 +2130,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
     (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
-    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice) / 100)) *
-    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken) / 100)) 
+    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.soice + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.soicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -2161,7 +2163,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
@@ -2196,12 +2198,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
             (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
             (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
@@ -2223,12 +2225,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 ||  compareCumulativeBuffs.ulttdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
           (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
           (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100))
           ).toFixed(3)
@@ -2253,14 +2255,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             )
             }
 
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0  }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm + compareCumulativeBuffs.resotdm) / 100)) *
-    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken) / 100)) *
-    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
-    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) 
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.ulttdmtaken) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -2285,14 +2287,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm + compareCumulativeBuffs.condtdm) / 100)) *
     (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.sotdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.shadowtdmtaken) / 100)) *
-    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire) / 100)) *
-    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken) / 100)) 
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.sofire + compareCumulativeBuffs.ele + compareCumulativeBuffs.soele) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.sofiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.soeletaken) / 100)) 
 
     ).toFixed(3)
   )
@@ -2316,7 +2318,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               ).toFixed(3)
             )
             }
-{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0}
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
 - x{ 
   parseFloat( 
   (
@@ -2367,13 +2369,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           <li>QTE and Stellar Shift Total DMG Taken +{compareCumulativeBuffs.qtetdmtaken}%</li>
         {/if}
 
-          {#if compareCumulativeBuffs.tdmtaken > 0 || compareCumulativeBuffs.actdmtaken > 0 || compareCumulativeBuffs.sotdmtaken > 0 || compareCumulativeBuffs.condtdmtaken > 0 }
+          {#if compareCumulativeBuffs.tdmtaken > 0 || compareCumulativeBuffs.actdmtaken > 0 || compareCumulativeBuffs.sotdmtaken > 0 || compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ulttdmtaken > 0 }
           <li>
           
             Total DMG Taken +{compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken}%
           
-            {#if compareCumulativeBuffs.condtdmtaken > 0}
-            - {compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.actdmtaken}%
+            {#if compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ulttdmtaken > 0}
+            - {compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.ulttdmtaken }%
           {/if}
             
             {#if compareCumulativeBuffs.actdmtaken !== compareCumulativeBuffs.sotdmtaken} 
@@ -2582,6 +2584,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <div class="border-l-4 border-cyan-500 pl-4">
       <h3 class="text-md font-semibold">18 Aug 2025 </h3>
       <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Chenxue: SSS skill [Ult DMG Taken] now won't be included in other AR-exclusive buffs (Reso,Shadow,QTE)</li>
         <li>Kiana ELF: Fixed the S-rank buff from [enemies take 12% more Total DMG] to the correct translation [enemies take 12% more Elemental DMG].</li>
         <li>Kiana ELF: 4-star skill now properly ignores Physical valks from multi-element check.</li>
       </ul>
