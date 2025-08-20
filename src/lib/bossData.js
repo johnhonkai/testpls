@@ -3554,6 +3554,33 @@ export const teamData = {
       }
     ],
   },     
+    hoice: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/scoralie.png", "images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '99%',
+            bottext: "Highest Score: S2 808, 6S 824, 9S 838"
+
+          },   
+          {
+            type: 'lineup',
+            lineup: ["/images/valkportrait/paws.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '64',
+            pct: '1%',
+            bottext: "Highest Score: SS 795"
+
+          },                                              
+        ]
+      }
+    ],
+  },       
 }
 
 

@@ -2585,6 +2585,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
       <h3 class="text-md font-semibold">18 Aug 2025 </h3>
       <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
         <li>Chenxue: SSS skill [Ult DMG Taken] now won't be included in other AR-exclusive buffs (Reso,Shadow,QTE)</li>
+        <li>Chenxue: Fixed Crit Rate in detailed weapon description from 25% to 27%.</li>
         <li>Kiana ELF: Fixed the S-rank buff from [enemies take 12% more Total DMG] to the correct translation [enemies take 12% more Elemental DMG].</li>
         <li>Kiana ELF: 4-star skill now properly ignores Physical valks from multi-element check.</li>
       </ul>
