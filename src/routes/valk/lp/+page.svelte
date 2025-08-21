@@ -52,6 +52,8 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
  
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import Coraliedps from '$lib/components/lineup/coraliedps.svelte';
+	import Psdps from '$lib/components/lineup/psdps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -396,7 +398,7 @@ function selectTabMobile(event) {
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-4">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.4 (21 Aug 2025)
         </p>
         </div>
         <div>
@@ -404,19 +406,28 @@ function selectTabMobile(event) {
             <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
             
             <p class="mt-6 text-sm sm:text-base">
-                <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by Coralie support.
+                <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by A-Coralie / HoFi support.
             </p>
 
             <p class="mt-6 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a good support for World Star, WoDestiny, and one LoAscension team. Vita provides Ele/Phy Breach, buffs, and slightly higher AR regen. 
-                <br/>
-                - For WoD teams, Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.
-                <br/>
-                - For LoA teams, Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.
+                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a good support for World Star, WoDestiny, and LoAscension teams. Vita provides Ele/Phy Breach, buffs, and slightly higher AR regen. 
+
             </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li class="mt-2">For <span class="text-teal-300">World Star</span> teams: Vita is one of the best supports.   </li>
+                <li class="mt-2">For <span class="text-violet-300">WoD</span> teams: Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.</li> 
+                <li class="mt-2">For <span class="text-amber-300">LoA</span> teams: <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.</li> 
+          </ul>     
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Behold! Fate-Defying Dragon Support</strong> 
+              <br/>
+              Vita is the best support for <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a>.
+            </p>
+
             <p class="mt-6 text-sm sm:text-base">
                 <strong class="text-amber-400">Last Resort Support Option For Other AR </strong> <br/> 
-                As a RoOblivion character, Vita can technically support other AR teams, but she is as terrible as Coralie.
+                As a RoOblivion character, Vita can technically support other AR teams, but she is as terrible as A-rank Coralie.
                 Vita still provides Breach and buffs, but at a reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
             </p>
             <div class="divider  "></div>
@@ -424,22 +435,18 @@ function selectTabMobile(event) {
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to 
+                <br/>Not recommended. Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to 
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
               <li class="mt-2">Save until you can guarantee valk + fullgear, </li>
               <li class="mt-2">Then get the latest valk early in the patch.</li>
           </ul>
-                        <p class="mt-6 text-sm sm:text-base">
-                <strong class="text-amber-400">Spending Competitive Players </strong><br/> Recommended if you can afford to top up.
-            </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">Vita is one of the better Part 2 valks to get due to her supporting three AR, and she is a staple support for quite a number of teams, BUT she's still not the best everywhere, especially at S0-rank. </li>
-              <li class="mt-2">Plus, new valks are already getting tags for the next AR. Vita can only act as an optional support for the future AR, since she does not have the proper tags.</li>
 
-              <li class="mt-2">New Players: As DPS, her support options are very limited (until a new RoO valk is added), so new players won't be able to use her optimal DPS team.</li>
-          </ul>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              Vita is still useful but her value has been reduced since she cannot support Grail of Infinitude teams, and New Coralie has taken over as Breach provider in Law of Ascension teams. Even if you are REALLY LOADED, you should pull the more recent valks first (BFD, PAWS), save for next patch valk, and then only consider getting Vita if your wallet is still loaded.
+          </p>
 
             <div class="divider  "></div>
             <!-- How to Get Section -->
@@ -493,6 +500,10 @@ function selectTabMobile(event) {
 
         <VitaDPS  />
 
+        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Behold! Fate-Defying Dragon Support </div>
+
+        <Coraliedps></Coraliedps>
+
         <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
         <Sparkledps  firstCharName="Vita"></Sparkledps>
 
@@ -528,11 +539,18 @@ function selectTabMobile(event) {
         {#if currentPage === 3}
         <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Law of Ascension Support </div>
 
-        <Badumdps firstCharName="Vita"></Badumdps>
+        <Psdps></Psdps>
+        
+        <div class="divider  "></div>
+
+        <Badumdps ></Badumdps>
 
         <div class="divider  "></div>
 
-        <Dududps firstCharName="Vita" />
+        <Dududps />
+
+
+
         {/if}
 
         <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
