@@ -1240,13 +1240,23 @@ function selectTabMobile(event) {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//hoh%20buff.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//hoh%20buff.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp')}
         />
       </div>
-      
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp"
+          alt="Buff 2"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp')}
+        />
+      </div>
+            
       <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4 mt-10">
         <p class="mb-4 font-semibold">How to activate HoH support buffs:</p>
         
