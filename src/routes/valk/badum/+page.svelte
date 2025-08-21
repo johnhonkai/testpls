@@ -53,6 +53,8 @@ function closeLightbox() {
 
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import Psdps from "$lib/components/lineup/psdps.svelte";
+	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -66,7 +68,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Rank Up', short: 'rank', icon: faStar },
   { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
- // { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
 function handleClick(tabName) {
@@ -408,7 +410,7 @@ async function increaseLike() {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.2 (24 Apr 2025)
+          <strong>Updated For v8.4 (21 August 2025)
       </p>
       </div>
       <div>
@@ -436,24 +438,34 @@ async function increaseLike() {
           </p>
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Can trigger Domain Resonance very fast.
+              <strong class="text-amber-400">World Star Support</strong> <br/>Can trigger Domain Resonance very fast. Best support for Sparkle and Senadina.
     
           </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong> <br/>One of the best supports for Peregrine Sword and Reign Solaris.
+  
+          </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>One of the best supports for PAWS.    
+          </p>
+
           <div class="divider"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players</strong> <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch..
+              <strong class="text-amber-400">New / F2P Players</strong> <br/> Not recommended. Due to how Part 2 meta works, it is better to pull the newest S-rank in the patch.
             </p>
             
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive / Spending Players</strong> <br/> 
+              Badum has a pretty good value. Whether you can get her, is up to your wallet. Still, prioritize getting new valks first before even considering getting Badum.
             </p>
             <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">As DPS, Badum top scores four bosses in 8.1: SD Guaymas, SD Sa, Flux Homu, and Flux Andrius. Just like other Part 2 valks, she might get more bosses in the future.</li>
-              <li class="mt-2">For Law of Ascension teams, Badum support will be used in stages with mobs. For example, the new Physical weather HoD Minion boss.</li>
-              <li class="mt-2">For World Star teams, currently, there's no live data for Badum support in resonance teams. Badum is definitely the best support to use against mobs. For bosses, Badum triggers resonance marks very quickly, so she might replace HoFi, or Badum and HoFi might even be used together.</li>
-              <li class="mt-2">Badum will also be a support for a future Astral Ring.</li>
+              <li class="mt-2">As DPS, Badum has some top scores: SD Guaymas, SD Sa, Flux Homu, and Flux Andrius.</li>
+              <li class="mt-2">As support, Badum is the best support for a lot of valks: PAWS, Peregrine Sword, Reign Solaris, Sparkle, Senadina.</li>
+
 
           </ul>
           <div class="divider  "></div>
@@ -486,10 +498,18 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Badumdps maindps={true} ></Badumdps>
+      <Badumdps ></Badumdps>
+
+            <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16">Grail of Infinitude Support </div>
+
+            <Heliadps></Heliadps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-      <Dududps firstCharName="BW"></Dududps>
+      <Dududps></Dududps>
+
+      <div class="divider  "></div>
+
+      <Psdps></Psdps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
 
@@ -575,12 +595,22 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Badum%20Buff.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Badum%20Buff%201.webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Badum%20Buff.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Badum%20Buff%201.webp')}
         />
       </div>
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Badum%20Buff%202.webp"
+          alt="Buff 1"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/Badum%20Buff%202.webp')}
+        />
+      </div>      
       
       <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
         <p class="mb-4 font-semibold">How to activate Badum support buffs:</p>
@@ -1263,12 +1293,33 @@ async function increaseLike() {
   </div>
   {/if}
 
-
-      {#if selectedTab === 'Translation Error'}
+      {#if selectedTab === 'TL Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
 
-      <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base">No known translation error
+<div class="flex flex-col justify-center items-center">
+          
+          <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/01/17/50494840/48a3cc392db80656d6b2631c6c1d9056_1797221286176213951.png" alt="Stigma" class="w-full h-full object-cover">
+              </div>
+
+          </div>  
+          <p class="text-sm sm:text-base text-white">Kiana: Shower of Fortune 3PC</p>
+
+      </div>
+
+      <div class="text-center my-4 rounded-sm bg-gray-700">
+        <p class="text-left text-sm sm:text-base px-2 py-3">
+          <b>In-Game Text:</b><br/>
+          When Law of Ascension is activated: Enemies take 10% more Total DMG from characters with Let's Have Fun! and Symbiosis.
+        </p>
+      </div>
+
+      <div class="text-center my-4 rounded-sm bg-cyan-700">
+        <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
+          <b>Correct Translation:</b><br/>
+          When Law of Ascension is activated: Enemies take 10% more Total DMG from characters with Let's Have Fun! and Heavenly Shift.
         </p>
       </div>
       {/if}

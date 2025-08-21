@@ -55,6 +55,8 @@ function closeLightbox() {
 
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import Psdps from "$lib/components/lineup/psdps.svelte";
+	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -393,7 +395,7 @@ function selectTabMobile(event) {
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
     <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
       <p class="text-sm sm:text-base">
-        <strong>Updated For v8.3 (26 June 2025)
+        <strong>Updated For v8.4 (21 August 2025)
     </p>
     </div>
     <div>
@@ -418,11 +420,11 @@ function selectTabMobile(event) {
 
     <p class="mt-4 text-sm sm:text-base">
       <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/>
-      HoH does not provide any improvement for existing LoA lineup. Although, she can consume Stellar Drain very quickly.  </p>
+      HoH does not provide any improvement for existing WoD lineup. However, as a bow weapon wielder, she can hit an enemy's weak spot. This utility is used against MHT-3C Tank boss. This is the only situation in Abyss where HoH support is the best. Additionally, HoH can consume Stellar Drain very quickly.  </p>
 
       <p class="mt-4 text-sm sm:text-base">
         <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>
-        Third best support for <a href="/valk/paws"  class="link">PAWS.</a> </p>
+        Fourth best support for <a href="/valk/paws"  class="link">PAWS.</a> </p>
 
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
@@ -433,8 +435,8 @@ function selectTabMobile(event) {
           <br/>Currently, there are two ways to get HoH.
         </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-            <li><span class="text-pink-300 ">Battle Pass:</span> As F2P, you can unlock HoH for free from Battle Pass. However, it will take you five patches, which is almost A YEAR. You can speed the process by purchasing Knight or Paladin Pass.</li>
             <li><span class="text-teal-300 ">Starter B-chip Pack: </span> If you can afford it, you can get HoH from this pack.</li>
+            <li><span class="text-pink-300 ">Battle Pass:</span> As F2P, you can unlock HoH for free from Battle Pass. However, it will take you five patches, which is almost A YEAR. You can speed the process by purchasing Knight or Paladin Pass.</li>
           </ul>
           
       
@@ -446,8 +448,8 @@ function selectTabMobile(event) {
     <li>As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.</li>
     <li>For casual / on-off  players, if you only have S0 HoH, then getting this Divine Key DLC will not guarantee you to get +100 in Abyss because HoH is a popular valk. A lot of players will have her at SS-rank or higher now in v8.1. </li>
     <li>As LoA and WoD support, her buffs are nothing exceptional. Her unique utility is that she can hit tank weak spot. So basically, HoH will only be useful as support very rarely outside of Arena.</li>
-    <li>As GoI support, HoH is third best support for PAWS. But, she might still be used in Arena due to limited support options. </li>
-    <li>But of course, for whales who can afford it, just pull.</li>
+    <li>As GoI support, HoH is fourth best support for PAWS. But, she might still be used in Arena due to limited support options. </li>
+    <li>But of course, for whales who can afford it, just pull. Still, prioritize getting new valks first before even considering getting HoH DLC.</li>
   </ul>
 
         <div class="divider  "></div>
@@ -477,12 +479,22 @@ function selectTabMobile(event) {
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny DPS </div>
 
     <Hohdps maindps={true}></Hohdps>
+
+    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Grail of Infinitude Support </div>
+
+    <Heliadps></Heliadps>
+
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-    <Badumdps  firstCharName="HoH"></Badumdps>
+    
+    <Psdps></Psdps>    
+
+    <div class="divider  "></div>
+    
+    <Badumdps></Badumdps>
 
     <div class="divider  "></div>
 
-    <Dududps  firstCharName="HoH"></Dududps>
+    <Dududps></Dududps>
 
     <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
 
@@ -541,7 +553,7 @@ function selectTabMobile(event) {
 
       <div class="p-4 mt-4 bg-linear-to-r from-pink-950/75 to-pink-900/75 rounded-sm">
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Domain of Ego</b>
+          <b>Flawless Benediction</b>
           <br/>- A must-have weapon to activate Astral Ring.
           <br/>- Provides sp recovery.
           <br/>- Gives access to improved gameplay, and a more flawless Ultimate.
@@ -806,7 +818,7 @@ function selectTabMobile(event) {
         {#if activePlaystyle === '2'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Human Form Charged ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          This playstyle is much weaker, but, it's actually faster in real time than the first playstyle because you have to watch ten hours of Elysia transformation.
+          This playstyle is weaker, but it's waaay faster in real time than the first playstyle because you don't have to watch ten hours of Elysia transformation.
         </p>
 
         <div class="divider  "></div>

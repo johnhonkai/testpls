@@ -76,9 +76,9 @@
             title: "Battlesuit Supply A: Behold! Fate-Defying Dragon",
             description: '<li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Blastmetal (UP), Valkyrie Triumph, Valkyrie Accipiter, Midnight Absinthe</li>',
         },
-        "Valk3": {
-            title: "Battlesuit Supply B: Sparkle",
-            description: '<li>Duration: 2 weeks</li><li>A-rank: Shadow Dash (UP), Valkyrie Ranger, Gyakushinn Miko, Yamabuki Armor </li>',
+        "Valk2": {
+            title: "Battlesuit Supply B: Reign Solaris",
+            description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Pledge (UP), Ritual Imayoh, Snowy Sniper, Wolf Dawn </li>',
         },        
         "Equip": {
             title: "Equipment Supply",
@@ -96,11 +96,16 @@
             title: "Outfit Rerun Event",
             image: "https://i.imgur.com/anYIaO6.jpeg"
         },
-        "VitaOutfit": {
-            title: "Eldritch Vantage Outfit Supply",
-            description: '<li>Duration: 2 weeks</li><li>S-rank box: HoS card or 10 stamps, SN card or 5 stamps, Nyx card or 5 stamps.</li>',
-            image: "https://i.imgur.com/QJiW3ek.jpeg"
+        "HoFiOutfit": {
+            title: "Selenic Ripples Outfit Supply",
+            description: '<li>Duration: 2 weeks</li><li>Max cost: 7680 crystal for outfit + other rewards</li><li>S-rank box: AE card or 10 stamps, SN card or 5 stamps, DA card or 5 stamps.</li>',
+            image: "https://i.imgur.com/QGpCGL3.jpeg"
         },  
+        "OutfitBox": {
+            title: "Outfit Box Supply",
+            description: '<li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li>',
+            image: "https://i.imgur.com/gSqyfXW.png"
+        },          
         "NewADV": {
             title: "Ascension Supply: Lantern",
             description: '<li>Duration: 2 weeks.</li><li>A-rank: </li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banners.</li>',
@@ -226,7 +231,7 @@
                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div>  
                     <div class=" col-span-4"></div>                  
-                    <div on:click={() => openModal("")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("Valk2")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris</span>
@@ -291,18 +296,18 @@
                     </div>       
                     <div></div>      
                     <div></div>      
-                    <div on:click={() => openModal()} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("HoFiOutfit")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">HoFi Outfit</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">HoFi Outfit<br/>7680 crystals</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-[47px]">
                             <img src="https://i.imgur.com/1d6apD4.png" alt="Vita" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>    
                     
-                    <div on:click={() => openModal()} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                    <div on:click={() => openModal("OutfitBox")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Outfit Box?</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Outfit Box<br/>7680 crystals</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
                             <img src="https://i.imgur.com/QuaLE6G.png" alt="Vita" class="w-full h-full object-cover rounded-md" />

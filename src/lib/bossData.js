@@ -166,7 +166,7 @@ export const bossData = {
   sushang: {
     name: 'Sushang', 
     mechanics: '', 
-    weakness: 'None', 
+    weakness: 'Ice (H), Physical (M)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Li Sushang.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	

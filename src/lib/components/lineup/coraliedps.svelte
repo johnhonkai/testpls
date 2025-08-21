@@ -3,18 +3,19 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Paws', image: '/images/valkportrait/paws.png',   },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',    },
-        { name: 'Hofi', image: '/images/valkportrait/Kiana Herrscher of Finality.png',   },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png',   },
+        { name: 'Paws', image: '/images/valkportrait/paws.png',  teampct: '100%', },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%',   },
+        { name: 'Hofi', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '93%',  },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%'  },
 
     ];
 
     const asopchar = [
         { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png' ,  teampct: '100%',  },
-        { name: 'Theresa', image: '/images/valkportrait/asop_teri.png',  teampct: 'TBA'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: 'TBA'   },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png' ,  teampct: 'TBA' , },
+        { name: 'Theresa', image: '/images/valkportrait/asop_teri.png',  teampct: '94%'  },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png' ,  teampct: '94%' , },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '92%' , },        
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '87%'   },
 
     ];
 
@@ -50,10 +51,7 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
-            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
+
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -74,8 +72,23 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4"></p>
+            <p class="text-sm sm:text-base mb-4">
+                BFD best teammates are PAWS and Vita.    
+            </p>
 
+            <p class="text-sm sm:text-base mb-4"><b>PAWS</b><br/> - Provides strong buffs.
+                <br/>
+                - Can quickly trigger buffs and Stellar Drain through Ultimate.
+
+            </p>      
+
+            <p class="text-sm sm:text-base mb-4"><b>No PAWS?</b><br/> If you don't have PAWS, then you want two Rite of Oblivion characters as support. Her leader skill is strong, but requires all characters in the team to be Rite of Oblivion characters to activate / reach max buffs.
+
+            </p>      
+
+            <p class="text-sm sm:text-base mb-4"><b>Vita</b><br/> Provides Elemental Breach state and strong buffs.
+
+            </p>  
     </div>
     </details>
 </div>

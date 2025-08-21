@@ -48,13 +48,14 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Dududps from "$lib/components/lineup/dududps.svelte";
 	import Badumdps from "$lib/components/lineup/badumdps.svelte";
 	import Psdps from "$lib/components/lineup/psdps.svelte";
+	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
   { name: 'Equipment', short: 'equipment', icon: faBolt  },
-  // { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+   { name: 'Support Buffs', short: 'support', icon: faCircleUser },
     { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
@@ -385,7 +386,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+      <p class="text-sm sm:text-base">
+        <strong>Updated For v8.4 (21 August 2025)
+    </p>
+    </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -393,18 +398,24 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">DPS</strong> 
               <br/>
-              Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS with the new Astral Ring Grail of Infinitude. The new Astral Ring playstyle uses Ultimate more often and consume significantly more sp.
+              Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS with the new Astral Ring Grail of Infinitude (GoI). GoI playstyle uses Ultimate more often and consume significantly more sp.
             </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Utility</strong> 
+              <strong class="text-amber-400">Utility: Paralyze</strong> 
               <br/>
-              PARALYZE: PAWS Ultimate can inflict paralyze trauma. When Helia is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
+              PAWS Ultimate can inflict paralyze trauma. When Helia is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
+            </p>
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Behold! Fate-Defying Dragon Support</strong> 
+              <br/>
+              PAWS is the best support for <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a>.
             </p>
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong> 
               <br/>
-              Currently, we are lacking data on PAWS support performance in live server. So far, she is only used as Peregrine Sword teammate vs Lantern boss. Also, LoA DPS doesn't have any boss that requires Paralyze trauma.
+              PAWS does not provide any improvement for Badum and Reign Solaris lineups. For Peregrine Sword, PAWS support is used against Lantern boss. Also, LoA DPS doesn't have any boss that requires Paralyze trauma.
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
@@ -413,47 +424,31 @@ async function increaseLike() {
               PAWS will be a support for future Grail of Infinitude characters.
             </p>
 
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Dragoon Coralie Support</strong> 
-              <br/>
-              PAWS might potentially be the best support for Dragoon Coralie (new valk in v8.4)
-            </p>
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get PAWS in v8.3.
+
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear.
+                <br/> - Then get the latest valk early in the patch.
             </p>
 
+  
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> 
-              <br/>
-              PAWS is a typical Part 2 valk: <br/>
-              - Top scores her bosses, decent dps everywhere else. <br/>
-              - Best support for certain lineups. <br/>
-              - Provides unique utilities that makes her the best DPS or support for certain enemies.
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              PAWS is still new (one patch old), still relevant in the meta as support and DPS - especially as BFD support - so I would say PAWS is still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valk first (BFD), save for next patch valk, and then only consider getting PAWS if your wallet is still loaded.
           </p>
-
-          <p class="mt-3 text-sm sm:text-base">
-              Recommended to get PAWS in v8.3 if you can guarantee valk + weapon, preferably within the first week of v8.3 to get the most value out of her, because her bosses will appear more frequently during the first 3-4 weeks. After that, PAWS will be used as support more often.
-          </p>
-
-          <p class="mt-3 text-sm sm:text-base">
-          If you don't have enough crystals to guarantee PAWS and her weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.         </p>
-
-
-                      <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> Pull.
-            </p>
-
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.3</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable.</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -491,18 +486,21 @@ async function increaseLike() {
 
       <Heliadps maindps={true} ></Heliadps>
 
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> BFD Support </div>
+
+      <Coraliedps ></Coraliedps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
       
-      <Psdps firstCharName="PAWS"></Psdps>
+      <Psdps></Psdps>
 
       <div class="divider  "></div>
 
-      <Badumdps firstCharName="PAWS"></Badumdps>
+      <Badumdps></Badumdps>
 
       <div class="divider  "></div>
 
-      <Dududps firstCharName="PAWS"></Dududps>
+      <Dududps maindps={true}></Dududps>
 
 
       {/if}
@@ -676,33 +674,46 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Peregrine%20Buffs.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PAWS%20Buff%201.webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Peregrine%20Buffs.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PAWS%20Buff%201.webp')}
         />
       </div>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <!-- Example image list for support buffs; add your own image sources -->
+        <img
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PAWS%20Buff%202%20(1).webp"
+          alt="Buff 2"
+          class=" object-cover cursor-pointer"
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PAWS%20Buff%202%20(1).webp')}
+        />
+      </div>      
+      <div class="my-6 px-4 py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
+        <h3 class="text-lg sm:text-xl font-bold text-center">
+          How to Activate PAWS Support Buffs
+        </h3>
       
-      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
-        <p class="mb-4 font-semibold">How to activate Peregrine Sword support buffs:</p>
-        
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
-            <p>Joint Weapon skill Forest Piercer and Leaf Sweep can consume Stellar Drain. 
-            </p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">PS Stigma Buff</p>
-           <p>Weapon Skill or QTE triggers an important stigma buff [The World is an Oyster] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Passive</p>
-            <p>The rest of her buffs are activated passively.</p>
-          </div>
-
-
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
+          <p class="leading-relaxed">
+            Ultimate consume Stellar Drain.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">PAWS Stigma Buff</h4>
+          <p class="leading-relaxed">
+            Ultimate or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Raise the Banner]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
+          <p class="leading-relaxed">
+            The rest of her buffs are activated passively.
+          </p>
+        </div>
       </div>
 
       <!-- Lightbox Component -->
@@ -1431,22 +1442,42 @@ async function increaseLike() {
   <div class="bg-gray-800 p-4 rounded-lg shadow-md">
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Planar Armament DPS</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Abyss Husk</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/qtxw9khxLp4"
+          src="https://www.youtube.com/embed/F_zhJ4fpfJE"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
       </iframe>
   </div>
+
 </div>
 
+  <div class="bg-gray-800 mt-10 p-4 rounded-lg shadow-md">
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Planar Armament DPS</h2>
+
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">VS Abyss Parvati</p>
+
+    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+      <iframe
+      loading="lazy" 
+
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/Wgz2zgn2pzQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+  </div>
+
+</div>
 
 
 

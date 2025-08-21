@@ -3,33 +3,38 @@
 
     // Define the data for main characters
     const mainCharacters = [
-
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%',  speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  utility: 'Mobs',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '98%',  speed: '' },    
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', utility: 'SD',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '97%', utility: 'CD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '93%', utility: 'Bow',  speed: '' },
+
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '96%',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '95%', utility: 'Shield',  speed: '' },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '94%',  speed: '' },    
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '94%', utility: 'SD',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '93%', utility: 'CD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '89%', utility: 'Bow',  speed: '' },
 
 
     ];
 
     const asopchar = [
         { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' , speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png',  teampct: '91%' ,speed: '' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png',  teampct: '91%' ,speed: '' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png',   teampct: '90%' ,speed: '' }
     ];
-
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'BFD'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'BFD' && char.name !== 'Vita'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-teal-950 to-teal-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -51,6 +56,10 @@
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
         <!-- Plus Icon shown only if maindps is true -->
@@ -77,10 +86,18 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides Physical Breach state. When PS has Breach state, she gains Bleed DMG buff, which is a rare multiplier even in Part 2. This contributes a significant boost for PS DMG output.
-                <br/>
-                - Vita can use Susannah T Aladdin MB stigma. This improves Sushang's self dmg output, but supports' personal dmg are reduced.
-            </p>          
-    </div>
+             <p class="text-sm sm:text-base mb-4"><b>First Support: BFD or Vita</b><br/>
+                In an optimal lineup, the first support is a valk that can provide Breach state - either <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> or <a href='/valk/vita' class="link">Vita Lone Planetfarer</a>. When PS has Breach state, she gains Bleed DMG buff, which is a rare multiplier even in Part 2. This contributes a significant boost for PS DMG output.  
+            </p>
+
+            <p class="text-sm sm:text-base mb-4"><b>Planar Armament</b><br/> PAWS support is used against Lantern boss. Thanks to type advantage, PAWS can contribute significantly higher damage in this specific match-up.
+
+            </p>     
+
+                        <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> 
+                Vita can use Susannah T Aladdin MB stigma. This improves Sushang's self dmg output, but supports' personal dmg are reduced.
+            </p>    
+        
+        </div>
     </details>
 </div>

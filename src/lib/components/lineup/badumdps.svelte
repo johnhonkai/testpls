@@ -3,14 +3,14 @@
 
     // Define the data for main characters
     const mainCharacters = [
-
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: '' },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '100%',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '99%', utility: 'Shield',  speed: '' },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '97%', utility: 'Hit', },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '95%', utility: 'CD',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', utility: 'SD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '92%', utility: 'Bow',  speed: '' },
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%',  speed: '' },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', utility: 'Hit', },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '98%',  speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '96%',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '97%', utility: 'Shield',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '93%', utility: 'CD',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '93%', utility: 'SD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '90%', utility: 'Bow',  speed: '' },
 
     ];
 
@@ -21,14 +21,19 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'BFD'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'BFD' && char.name !== 'Vita'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-rose-950 to-rose-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -50,6 +55,10 @@
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
         <!-- Plus Icon shown only if maindps is true -->
@@ -76,7 +85,7 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually Vita. The second support depends on the boss.</p>
+            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually BFD / Vita for Elemental Breach buff. The second support depends on the boss.</p>
 
             <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, Elemental Breach, and slightly more AR meter.
                 <br/>

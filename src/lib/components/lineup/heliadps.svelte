@@ -3,23 +3,25 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', },
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%', },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '97%', },
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '96%', utility: 'Shield',},
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '99%', },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '96%', },
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '95%', utility: 'Shield',},
 
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '100%',  },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png',  teampct: '99%'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '97%'   },
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '96%' , speed: 'Faster'  },
+        { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png' ,  teampct: '100%', speed: 'Faster'   },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '97%',  },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png',  teampct: '96%'  },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '94%'   },
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png' ,  teampct: '93%' , speed: 'Faster'  },
 
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'PS'; // default to 'Vita'
+    export let firstCharName: string = 'BFD'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -50,10 +52,7 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
-            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
+
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -74,7 +73,22 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">If you are missing a teammate with Symbiosis tag, you can use Rite of Oblivion characters: <a href='/valk/lp' class="link">Lone Planetfarer</a>, <a href='/valk/hofi' class="link">Herrscher of Finality</a> or <a href='/valk/hofi' class="link">Valkyrie Blastmetal.</a> During Stellar Outburst, you cannot do a full rotation since you won't have enough sp, so just do one PAWS sequence, and end Stellar Outburst early. (See How to Play section for an example).</p>
+             <p class="text-sm sm:text-base mb-4">
+                PAWS's best teammates are <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> + either <a href='/valk/badum' class="link">Badum!</a> or <a href='/valk/peregrine-sword' class="link">Peregrine Sword (PS)</a>.
+            </p>
+
+            <p class="text-sm sm:text-base mb-4"><b>BFD</b><br/> - Provides elemental breach and strong buffs.
+                <br/>
+                - Increases the amount of paralyze trauma inflicted by PAWS.
+
+            </p> 
+
+            
+            <p class="text-sm sm:text-base mb-4"><b>Chenxue</b><br/> Chenxue speeds up your Stellar Outburst rotation by allowing the support to skip actions like Combo ATK or Weapon Skill - the supports just have to cast Ult.
+
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4"><b>Missing a teammate with Symbiosis tag</b><br/> If you are missing a teammate with Symbiosis tag, you can use Rite of Oblivion characters: <a href='/valk/lp' class="link">Lone Planetfarer</a>, <a href='/valk/hofi' class="link">Herrscher of Finality</a> or <a href='/valk/hofi' class="link">Valkyrie Blastmetal.</a> During Stellar Outburst, you cannot do a full rotation since you won't have enough sp, so just do one PAWS sequence, and end Stellar Outburst early. (See How to Play section for an example).</p>
 
     </div>
     </details>

@@ -343,33 +343,33 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="/valk/paws" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="/valk/behold-fate-defying-dragon" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/QguYcI48WnY/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/jd-ohD_6dOE/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
-          <p class="text-slate-300">Helia - PAWS</p>
+          <p class="text-slate-300">Coralie - BFD</p>
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=vETZY5YPOI8" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=8NufpnRYd08" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/vETZY5YPOI8/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/8NufpnRYd08/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">8.4 News</h3>
-          <p class="text-slate-300">S-rank Coralie</p>
+          <h3 class="text-lg font-semibold text-white mb-1">New Elysia</h3>
+          <p class="text-slate-300">OMG she's back!</p>
         </div>
       </a>
   
       <a href="https://www.youtube.com/watch?v=8NufpnRYd08" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/8NufpnRYd08/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.imgur.com/nevGihU.jpeg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Elysia</h3>
-          <p class="text-slate-300 text-md">OMG she's back!</p>
+          <p class="text-slate-300 text-md">There's no news so here's Ely again</p>
         </div>
       </a>
   
@@ -388,9 +388,9 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=8NufpnRYd08" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=WELfoE4MCpE" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/8NufpnRYd08/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/WELfoE4MCpE/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">Latest Video From Earth</h3>

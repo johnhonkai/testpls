@@ -3,11 +3,15 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '100%',  speed: '' },
-        { name: 'BW', image: '/images/valkportrait/kiana badum.png', teampct: '100%',  speed: '' },    
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%',  speed: '' },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '97%',   },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '96%',   },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '100%',  speed: '' },  
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', utility: 'CD',  speed: '' },
+
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%',  speed: '' },
+
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '97%', },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '97%',   },
+
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '95%',  speed: '' },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '92%',  speed: '' },
 
@@ -23,7 +27,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'JD'; // default to 'Vita'
+    export let firstCharName: string = 'Badum'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -54,14 +58,10 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
         {/if}
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
-            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -78,9 +78,9 @@
         </summary>
         <div class="py-3 px-4">
 
-                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. For general use cases, JD, Sparkle, Badum, RS are great options.</p>
+                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. The first support is usually Badum since she provides the biggest buff. For general use cases, Peregrine Sword, Jovial Deception, and Sparkle are all great options for second support.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
-                    Provides Ult cd reduction and sp regen. More ult = more damage. She also has short on-field time.</p>
+                    Provides Ult cd reduction and sp regen. More ult = more damage per rotation. Especially useful against IMG enemies so Reign Solaris can nuke the img core faster. Sparkle also has short on-field time.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>
                      - Counters SD enemies (trigger sd critical point, gathers sd remnant).
                      <br/>
@@ -99,11 +99,6 @@
                     - Badum support is used against Physical HoD Minion in v8.1.
                 </p>   
 
-                <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human</b><br/>
-                    - Utility: As a bow user, HoH can hit enemy's weak spot.
-                    <br/>
-                     - There's only one boss that requires HoH support: MHT-3C Tank. MHT-3C gains a huge debuff when its weak spot is hit. This is the only situation where HoH support is the best.
-                </p> 
     
                 <p class="text-sm sm:text-base"><b>AstralOp</b><br/> Theresa AstralOp provides tons of utilities:
                     <br/>

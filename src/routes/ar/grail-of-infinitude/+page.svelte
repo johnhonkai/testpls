@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Astral Ring: Grail of Infinitude"/>
     <meta property="og:description" content="Info for characters in Grail of Infinitude teams." />
-    <meta property="og:image" content="https://i.imgur.com/H9SvrgG.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/nyectNk.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/grail-of-infinitude" />
     <meta property="og:type" content="website" />
 

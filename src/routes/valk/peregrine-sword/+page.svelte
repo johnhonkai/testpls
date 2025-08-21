@@ -53,8 +53,9 @@ function closeLightbox() {
 }
 
 import Fa from 'svelte-fa';
-import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire} from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 	import CharBio from '$lib/components/CharBio.svelte';
+	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -68,7 +69,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Rank Up', short: 'rank', icon: faStar },
   { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
- // { name: 'Translation Error', short: 'translation' },
+ { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
 function handleClick(tabName) {
@@ -499,7 +500,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+        <p class="text-sm sm:text-base">
+          <strong>Updated For v8.4 (21 August 2025)
+      </p>
+      </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -514,49 +519,47 @@ async function increaseLike() {
             </ul>
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">LoA Support</strong>
+              <strong class="text-amber-400">Utility: Bleed and Hitcount</strong>
+              <li>PS attacks have high hitcount. Her attacks also deal 3 (S) / 4 (SSS) hits to hitcount shields.</li>
+              <li>Provides Bleed trauma. </li>     
+              <li>These utilities are used as dps and support to counter certain enemies (eg. Husk, Lantern, HoCorruption).</li>              
+
             </p>    
-              <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>For LoA teams, Peregrine Sword support is good, but does not provide any improvement for existing LoA lineup besides providing the following utilities:  </li>
-              <li>Hitcount: Attacks deal 3 (S) / 4 (SSS) hits to hitcount shields.</li>
-              <li>Provides Bleed trauma. Counters certain enemies.</li>
-              </ul>
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong>
+              <br/>
+              For LoA teams, Peregrine Sword is one of the best supports for Badum and Reign Solaris. RS is also used in situations where hitcount/bleed is required (eg. Arena Husk).
+            </p>    
+
           
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Future AR Support</strong> <br/>To Be Updated.
+            <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>One of the best supports for <a href="/valk/paws" class="link ">PAWS</a>.
         </p>
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
+
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get Peregrine Sword in v8.2.
-            </p>
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              PS is still relevant in the recent meta as support and DPS, so I would say she's still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valks first (BFD, PAWS), save for next patch valk, and then only consider getting PS if your wallet is still loaded.
+          </p>
 
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> 
-            </p>
-
-
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>              Peregrine Sword is a typical Part 2 valk. 
-              </li>
-              <li>              Recommended to get Peregrine Sword in v8.2, IF you can guarantee valk + weapon within the first week of v8.2 to get the most value out of her, because her bosses will appear more frequently during the first 3-4 weeks. After that, PS will be used as support more often.
-              </li>
-              <li>              If you don't have enough crystals to guarantee PS and her weapon, then just do the discounted ten-pull and save for the next S-rank.
-                </li>
-          </ul>
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> Pull.
-            </p>
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Peregrine Sword:</strong> Battlesuit Supply</li>
               <li><strong>Peregrine Sword Weapon:</strong> Equipment Supply</li>
-              <li><strong>Peregrine Sword Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.2</li>
+              <li><strong>Peregrine Sword Stigma:</strong> Equipment Supply, Forgeable.</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -591,15 +594,19 @@ async function increaseLike() {
       {#if currentPage === 1}
       <!-- Category 1: Vita DPS -->
 
-      <Psdps maindps={true} ></Psdps>
+      <Psdps></Psdps>
+
+      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Grail of Infinitude Support </div>
+
+      <Heliadps></Heliadps>
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
       
-      <Badumdps firstCharName="PS"></Badumdps >
+      <Badumdps></Badumdps >
 
       <div class="divider  "></div>
 
-      <Dududps firstCharName="PS"></Dududps>
+      <Dududps></Dududps>
 
       {/if}
 
@@ -674,10 +681,10 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Peregrine%20Buffs.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PS%20Buff22.webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics//Peregrine%20Buffs.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PS%20Buff22.webp')}
         />
       </div>
       
@@ -1444,11 +1451,33 @@ async function increaseLike() {
   {/if}
 
 
-      {#if selectedTab === 'Translation Error'}
+      {#if selectedTab === 'TL Error'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
 
-      <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base">No known translation error
+<div class="flex flex-col justify-center items-center">
+          
+          <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+              <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/3.png" alt="Stigma" class="w-full h-full object-cover">
+              </div>
+
+          </div>  
+          <p class="text-sm sm:text-base text-white">Li Sushang: Peregrine Sword (M)</p>
+
+      </div>
+
+      <div class="text-center my-4 rounded-sm bg-gray-700">
+        <p class="text-left text-sm sm:text-base px-2 py-3">
+          <b>In-Game Text:</b><br/>
+          Characters with World is My Oyster deal 16% more Total DMG...
+        </p>
+      </div>
+
+      <div class="text-center my-4 rounded-sm bg-cyan-700">
+        <p class="text-left text-sm sm:text-base px-2 py-3 text-white">
+          <b>Correct Translation:</b><br/>
+          Characters with World is My Oyster deal 16% more Physical DMG...
         </p>
       </div>
       {/if}

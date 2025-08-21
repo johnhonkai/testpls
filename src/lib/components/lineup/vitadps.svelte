@@ -3,24 +3,27 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '100%', speed: '' },
+        { name: 'SCoralie', image: '/images/valkportrait/scoralie.png', teampct: '100%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '100%', speed: '' },
-        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png', teampct: '85%', speed: '' },
-        { name: 'Eden', image: '/images/valkportrait/Eden Golden Diva.png', teampct: '65%', speed: 'Fast' },
-        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '50%', speed: 'Slow' },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '97%', speed: '' },
+        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png', teampct: '82%', speed: '' },
+        { name: 'Eden', image: '/images/valkportrait/Eden Golden Diva.png', teampct: '62%', speed: 'Fast' },
+        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '47%', speed: 'Slow' },
     ];
 
     const asopchar = [
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '100%' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '99%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '98%', speed: 'Slow' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '92%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '91%', speed: 'Slow' }
+        { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png', teampct: '100%' },
+
+        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '97%' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '96%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '95%', speed: 'Slow' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '89%', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '88%', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Coralie'; // default to 'Vita'
-    export let maindps: boolean = false;
+    export let firstCharName: string = 'SCoralie'; // default to 'Vita'
+
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
@@ -47,9 +50,6 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
         {/if}
 
-        {#if !maindps}
-        <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -70,10 +70,28 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base">Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, the only RoO valks beside Vita are Coralie and HoFi with Waxing Moon.</li>
-                <li class="text-sm sm:text-base mt-4">Special Case: Vita DPS with HoFi + Lunar Vow supports gets top score against Bleed weather HoSentience boss.</li>
+
+             <p class="text-sm sm:text-base mb-4">
+                Vita's best teammates are <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> + either <a href='/valk/hofi' class="link">Herrscher of Finality (HoFi)</a> or <a href='/valk/coralie' class="link">Valkyrie Blastmetal (VBM)</a>.
             </p>
+
+            <p class="text-sm sm:text-base mb-4"><b>VBM</b><br/> - VBM provides slightly stronger buff than HoFi during Stellar Outburst.
+                <br/>
+                - VBM support is actually used in Top 100 Abyss team against Lightning weather Sprout of Wishing boss.
+
+            </p>  
+
+            <p class="text-sm sm:text-base mb-4"><b>Rite of Oblivion character requirement</b><br/> - Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). 
+                <br/>
+                - Without three RoO members, Vita's damage significantly drops.
+
+            </p>  
+
+                        <p class="text-sm sm:text-base mb-4"><b>Special Case</b><br/> Vita DPS with HoFi + Lunar Vow supports got top score against Bleed weather HoSentience boss once.
+                <br/>
+
+
+            </p>  
         </div>
     </details>
 </div>

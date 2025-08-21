@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Rite of Oblivion characters"/>
     <meta property="og:description" content="Info for characters in Rite of Oblivion teams." />
-    <meta property="og:image" content="https://i.imgur.com/w6CBJaD.png" />
+    <meta property="og:image" content="https://i.imgur.com/JdB87vs.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/rite-of-oblivion" />
     <meta property="og:type" content="website" />
 
@@ -142,7 +142,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Rite of Oblivion
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -186,7 +186,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Rite of Oblivion
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -221,11 +221,45 @@ async function captureStats() {
     <!-- DPS + Support Section Side-by-Side on Wide Screens -->
 <div class="flex flex-col xl:flex-row gap-12 ">
 
-  
-  <!-- DPS Section -->
   <section class="flex-1">
-    <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">Lone Planetfarer DPS</h2>
+    <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">Behold! Fate-Defying Dragon! DPS</h2>
     <div class="flex flex-wrap gap-3">
+
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_mech.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_fire.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 4.0rem">
+                <img src="/images/element/icon_ignite.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/scoralie.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+
+       <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_bio.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_lightning.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/paws.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
 
         <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
 
@@ -277,11 +311,96 @@ async function captureStats() {
 
     </div>
     
-    <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
-      Playstyle: Like a normal Part 1 team.<br/>
-      Requires teammates with AR Rite of Oblivion.
+    <p class="text-sm sm:text-base text-gray-300 leading-relaxed  mt-2">
+      Team Members: <br/>
+      - Planar Armament: Warped Spacetime <br/>
+      - Rite of Oblivion characters
     </p>
   </section>
+
+  <!-- Vita Section -->
+  <section class="flex-1">
+    <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">Lone Planetfarer DPS</h2>
+    <div class="flex flex-wrap gap-3">
+
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_mech.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_lightning.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/Vita Lone Planetfarer.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_mech.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_fire.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 4.0rem">
+                <img src="/images/element/icon_ignite.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/scoralie.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_img.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_fire.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/Kiana Herrscher of Finality.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+                <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src="/images/type/icon_psy.webp"  class="w-6 sm:w-full h-full object-cover" />
+            </div>
+
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style="top: 2.1rem">
+                <img src="/images/element/icon_fire.webp" class="w-6 sm:w-full h-full object-cover" />
+              </div>
+
+          <img
+            src='/images/valkportrait/Coralie Valkyrie Blastmetal.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+
+
+    </div>
+    
+    <p class="text-sm sm:text-base text-gray-300 leading-relaxed mt-2">
+      Team Members: <br/>
+      - Rite of Oblivion characters
+    </p>
+  </section>
+
+</div>
+
+<div class="flex flex-col xl:flex-row gap-12 ">
+
 
   <!-- HoFi Section -->
   <section class="flex-1">
@@ -338,9 +457,10 @@ async function captureStats() {
 
     </div>
     
-    <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
-      Playstyle: Utilizes Joint Ult QTE.<br/>
-      Requires HoOrigin and HoTruth as teammates.
+    <p class="text-sm sm:text-base text-gray-300 leading-relaxed mt-2">
+      Team Members: <br/>
+      - Herrscher of Origin <br/>
+      - Herrscher of Truth
     </p>
   </section>
 </div>
@@ -356,6 +476,14 @@ async function captureStats() {
   <section class="flex-1">
     <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">AstralOp</h2>
     <div class="flex flex-wrap gap-3">
+
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+
+          <img
+            src='/images/valkportrait/asop_chenxue.png'
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
 
         <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
 

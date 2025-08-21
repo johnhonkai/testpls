@@ -396,7 +396,7 @@ async function increaseLike() {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.2 (24 Apr 2025)
+          <strong>Updated For v8.4 (21 August 2025)
       </p>
       </div>
       <div>
@@ -411,14 +411,14 @@ async function increaseLike() {
           <li>IMG Counter: RS has multiple skills that can transfer damage from IMG shell to seed.</li>
       </ul>
         <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Part 1 Physical Support</strong> <br/>RS is the new best support for Part 1 Physical teams, replacing <a href="/valk/prom" class="link ">Prometheus Terminal Aide.</a>  
+            <strong class="text-amber-400">Part 1 Physical Support</strong> <br/>RS is the best support for Part 1 Physical teams, replacing <a href="/valk/prom" class="link ">Prometheus Terminal Aide.</a>  
         </p>
         <ul class="list-disc ml-6 text-sm sm:text-base">
           <li>RS gives around 30% increased damage output than Terminal Aide. </li>
           <li>RS provides shieldbreak and can inflict stun trauma. </li>
       </ul>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Law of Ascension Support</strong> <br/>For LoAscension teams, RS provides shieldbreak and impair (DEF -55%). 
+          <strong class="text-amber-400">Law of Ascension Support</strong> <br/>For LoAscension teams, RS provides shieldbreak and stun, which are not used anywhere currently. RS is not the best support for other LoA valks (Badum, Peregrine Sword).
 
       </p>
 
@@ -428,7 +428,7 @@ async function increaseLike() {
     </p>
 
     <p class="mt-4 text-sm sm:text-base">
-      <strong class="text-amber-400">Future AR Support</strong> <br/> RS will be a support for a future Astral Ring.
+      <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/> For GoInfinitude teams, RS provides shieldbreak and stun, which are not used anywhere currently.  
 
   </p>
 
@@ -436,20 +436,22 @@ async function increaseLike() {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New / F2P Players</strong> <br/> Not recommended. Due to how Part 2 works, it is better to pull the newest S-rank in the patch..
-          </p>
-
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive / Spending Players</strong> <br/> Recommended. RS value is insane.
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">As <span class="text-teal-300">DPS</span>, RS top scores Phy Otto, Phy HoD, Phy Deliverance, and Ascension mob boss.</li>
-              <li class="mt-2">For <span class="text-rose-300">Law of Ascension</span> teams, RS will be an important shieldbreak support against enemies with tanky shields. </li>
-              <li class="mt-2">For <span class="text-amber-300">Part 1 Physical</span> teams, RS replaces Prometheus, providing around ~30% increased damage, plus shieldbreak and stun.</li>
-              <li class="mt-2">RS will also be a support for a <span class="text-sky-300">future Astral Ring.</span></li>
 
-          </ul>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              Just like most recent Part 2 valks, RS still has her niche. Whether you can get her, is up to your wallet. Still, prioritize getting new valks first before even considering getting RS.
+          </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+            <li class="mt-2">As support: RS is still the best Part 1 Physical support. Not the best support in any other Part 2 teams.</li>
+            <li class="mt-2">As DPS: RS is a really good Physical / IMG DPS. BUT currently, RS DPS is missing bosses in Abyss. This might be because JD currently has a game-breaking bug (and RS uses JD support), so miHoYo is avoiding any bosses that involve JD support. She can still be used in Arena.</li>
+        </ul>
+
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
@@ -617,20 +619,20 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20SUPPORT%20BUFF%201.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%201%20(1).webp"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20SUPPORT%20BUFF%201.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%201%20(1).webp')}
         />
       </div>
 
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20SUPPORT%20BUFF%202.webp"
+          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%202%20(1).webp"
           alt="Buff 2"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20SUPPORT%20BUFF%202.webp')}
+          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%202%20(1).webp')}
         />
       </div>
       

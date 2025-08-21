@@ -45,56 +45,101 @@ async function captureStats() {
         </span>  
     </button>
   </div>
-
 // full team rotation  
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10">
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10"  >
   <div class="text-center">
-      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener </h2>
+      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener (Instant SO) </h2>
     </div>
   <!-- Row 1 -->
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
     <img
-      src="images/valkportrait/kiana badum.png"
+      src="images/valkportrait/paws.png"
       alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base">Combo ATK ➔ Ultimate (if available)</p>
+      <p class="text-white  text-base">Ultimate</p>
     </div>
   </div>
 
-  <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
     <img
-    src="images/valkportrait/ps.png"
+    src="images/valkportrait/scoralie.png"
     alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
       <p class="text-white  text-base mb-1">
-        QTE ➔ Weapon ➔ Ultimate (if available) 
+        QTE ➔ Weapon ➔ Ultimate ➔ Activate Stellar Outburst
       </p>
 
     </div>
   </div>
 
-      <!-- Row 4 -->
-      <div class="flex items-center bg-slate-800 p-3 rounded-lg">
-        <img
-        src="images/valkportrait/paws.png"
-        alt="Avatar"
-          class="h-12 w-12 rounded-full mr-4"
-        />
-        <div>
-          <p class="text-white text-base mb-1">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
-          </p>
-
-        </div>
       </div>
 
-      </div>
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10"  id="statsSection" >
+  <div class="text-center">
+      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener (Delay SO) </h2>
+    </div>
+  <!-- Row 1 -->
+  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Vita Lone Planetfarer.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base">Press Ult to enter Planet Quaker form</p>
+    </div>
+  </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "    >
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+    src="images/valkportrait/paws.png"
+    alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">
+        Ultimate
+      </p>
+
+    </div>
+  </div>
+
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Vita Lone Planetfarer.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base">Weapon ➔ Basic ATK until final sequence ➔ Combo ATK (Can skip if enough sp to use Ult) ➔ Ultimate</p>
+    </div>
+
+
+    
+  </div>
+
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+    src="images/valkportrait/scoralie.png"
+    alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">
+        QTE ➔ Weapon ➔ Ultimate ➔ Activate Stellar Outburst ➔ Basic ATK x4 ➔ Weapon ➔ Ultimate. Repeat until when you want to use Stellar Outburst ➔ Activate Stellar Outburst
+      </p>
+
+    </div>
+
+  </div>
+
+      </div>      
+
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "   >
   
   <div class="text-center">
       <h2 class="text-xl font-semibold text-amber-400 mb-1">AR Charging Rotation</h2>
@@ -104,27 +149,30 @@ async function captureStats() {
 
     <div class="flex items-center bg-slate-800 p-3 rounded-lg">
       <img
-        src="images/valkportrait/paws.png"
+        src="images/valkportrait/scoralie.png"
         alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
           <p class="text-white text-base mb-1">
-            Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK 
+            Basic ATK x4 ➔ Weapon ➔ Ultimate. 
           </p>
+          <p class="text-teal-500 mt-2 text-base">
+           If some time has passed after Stellar Outburst (eg. after transition phase), if support buffs have expired, then start with supports sequence instead.
+          </p>
+
       </div>
     </div>
 
   <!-- Row 2 -->
   <div class="flex items-center bg-slate-700 p-3 rounded-lg">
     <img
-      src="images/valkportrait/kiana badum.png"
+      src="images/valkportrait/Vita Lone Planetfarer.png"
       alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Combo ATK / Weapon ➔ Ultimate (if available)</p>
-      <p class="text-gray-300 text-sm">Combo ATK is faster. Weapon skill is better for mobs to apply dmg link effect.</p>
+      <p class="text-white  text-base mb-1">Press Ult to enter Planet Quaker form ➔ Weapon ➔ Basic ATK until final sequence ➔ Combo ATK ➔ Ultimate</p>
 
     </div>
   </div>
@@ -132,26 +180,28 @@ async function captureStats() {
 
   <div class="flex items-center bg-slate-800 p-3 rounded-lg">
     <img
-      src="images/valkportrait/ps.png"
+      src="images/valkportrait/paws.png"
       alt="Avatar"
       class="h-12 w-12 rounded-full mr-4"
     />
     <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate (if available)</p>
-
+      <p class="text-white  text-base mb-1">QTE ➔ Ultimate</p>
+          <p class="text-teal-500 mt-2 text-base">
+           If there's other sp source (eg. stage sp pack), then you can toggle off QTE.
+          </p>
     </div>
   </div>
   <!-- Row 4 -->
 
     <div class="flex items-center bg-slate-700 p-3 rounded-lg">
       <img
-      src="images/valkportrait/paws.png"
+      src="images/valkportrait/scoralie.png"
       alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
         <p class="text-white text-base mb-1">
-            QTE ➔ Ultimate ➔ Weapon ➔ Ultimate ➔ Basic ATK x3 ➔ Ultimate ➔ Combo ATK. Repeat until you can activate Stellar Outburst.
+            QTE ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Weapon ➔ Ultimate. Repeat until Stellar Outburst is ready ➔ Activate Stellar Outburst
         </p>
 
       </div>
@@ -160,7 +210,7 @@ async function captureStats() {
 
 </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 " >
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10">
   
   <div class="text-center">
       <p class="text-xl font-semibold mb-4 text-amber-400">Stellar Outburst Rotation</p>
@@ -168,65 +218,179 @@ async function captureStats() {
   </div>
     <div class="flex items-center bg-slate-800 p-3 rounded-lg">
       <img
-        src="images/valkportrait/paws.png"
+        src="images/valkportrait/scoralie.png"
         alt="Avatar"
         class="h-12 w-12 rounded-full mr-4"
       />
       <div>
-        <p class="text-white  text-base">Ultimate x3 ➔ Combo ATK  </p>
+        <p class="text-white  text-base">Hold ATK until Dragon Breath ends ➔ Basic ATK x2 ➔ Weapon ➔ Basic ATK x4 ➔ Weapon ➔ Ultimate ➔ Hold Ult button until prompt ends.    </p>
+        <p class="text-teal-500 mt-2 text-base">As mentioned in skill section, you can end Stellar Outburst early by casting Ult with 1 or 2 Guzzled Flames stacks.  </p>
 
       </div>
     </div>
 
-  <!-- Row 1 -->
-
-    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
-      <img
-        src="images/valkportrait/kiana badum.png"
-        alt="Avatar"
-        class="h-12 w-12 rounded-full mr-4"
-      />
-      <div>
-        <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate</p> 
-
-      </div>
-    </div>
-
-  <!-- Row 2 -->
-  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
-    <img
-    src="images/valkportrait/ps.png"
-    alt="Avatar"
-      class="h-12 w-12 rounded-full mr-4"
-    />
-    <div>
-        <p class="text-white  text-base mb-1">QTE ➔ Weapon ➔ Ultimate
-      </p> 
-
-
-    </div>
-  </div>
-
-  <!-- Row 3 -->
-
-  <div class="flex items-center bg-slate-700 p-3 rounded-lg">
-    <img
-      src="images/valkportrait/paws.png"
-      alt="Avatar"
-      class="h-12 w-12 rounded-full mr-4"
-    />
-    <div>
-      <p class="text-white  text-base mb-1">QTE ➔ Ultimate x3 ➔ Combo ATK ➔ Ultimate Finisher</p>
-        <p class="text-gray-300 text-sm">If this is the final rotation, you can use weapon skill for more damage. If not, preferably, you want to save weapon skill for AR Charging state.</p>
-
-    </div>
-  </div>
 
 
  
   <p class="text-sm text-slate-400 text-center">Continue with AR Charging Rotation</p>
 
 </div>
+
+// f2p team rotation  
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10">
+  <div class="text-center">
+      <h2 class="text-xl font-semibold mb-4 text-amber-400 ">Rotation Opener </h2>
+    </div>
+  <!-- Row 1 -->
+  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Vita Lone Planetfarer.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base">Press Ult to enter Planet Quaker form</p>
+    </div>
+  </div>
+
+  <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+    src="images/valkportrait/Coralie Valkyrie Blastmetal.png"
+    alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">
+        Ultimate
+      </p>
+
+    </div>
+  </div>
+
+      <!-- Row 3 -->
+  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Vita Lone Planetfarer.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base">Weapon ➔ Basic ATK until final sequence ➔ Combo ATK ➔ Ultimate</p>
+    </div>
+  </div>
+
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+    src="images/valkportrait/scoralie.png"
+    alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">
+        QTE ➔ Weapon ➔ Ultimate ➔ ATK a bit until AR meter is full ➔ Activate Stellar Outburst
+      </p>
+
+    </div>
+  </div>
+
+      </div>
+
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 "     >
+  
+  <div class="text-center">
+      <h2 class="text-xl font-semibold text-amber-400 mb-1">AR Charging Rotation</h2>
+
+    </div>
+  <!-- Row 1 -->
+
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+      <img
+        src="images/valkportrait/scoralie.png"
+        alt="Avatar"
+        class="h-12 w-12 rounded-full mr-4"
+      />
+      <div>
+          <p class="text-white text-base mb-1">
+            Basic ATK x4 ➔ Weapon ➔ Ultimate. Repeat one more time.
+          </p>
+          <p class="text-teal-500 mt-2 text-base">
+           If some time has passed after Stellar Outburst (eg. after transition phase), if support buffs have expired, then start with supports sequence instead.
+          </p>
+
+      </div>
+    </div>
+
+  <!-- Row 2 -->
+  <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Coralie Valkyrie Blastmetal.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">Weapon ➔ Weapon again when button glows ➔ Ultimate (optional for more dmg)</p>
+
+    </div>
+  </div>
+  <!-- Row 3 -->
+
+  <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+    <img
+      src="images/valkportrait/Vita Lone Planetfarer.png"
+      alt="Avatar"
+      class="h-12 w-12 rounded-full mr-4"
+    />
+    <div>
+      <p class="text-white  text-base mb-1">QTE ➔ Basic ATK until final sequence ➔ Press Ult to enter Planet Quaker form ➔ Weapon ➔ Basic ATK until final sequence ➔ Combo ATK ➔ Ultimate</p>
+
+    </div>
+  </div>
+  <!-- Row 4 -->
+
+    <div class="flex items-center bg-slate-700 p-3 rounded-lg">
+      <img
+      src="images/valkportrait/scoralie.png"
+      alt="Avatar"
+        class="h-12 w-12 rounded-full mr-4"
+      />
+      <div>
+        <p class="text-white text-base mb-1">
+            QTE ➔ Weapon ➔ Ultimate ➔ Basic ATK x4 ➔ Weapon ➔ Ultimate. Repeat until Stellar Outburst is ready ➔ Activate Stellar Outburst
+        </p>
+
+      </div>
+    </div>
+  <p class="text-sm text-slate-400 text-center">Continue with Stellar Outburst Rotation</p>
+
+</div>
+
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10 ">
+  
+  <div class="text-center">
+      <p class="text-xl font-semibold mb-4 text-amber-400">Stellar Outburst Rotation</p>
+    
+  </div>
+    <div class="flex items-center bg-slate-800 p-3 rounded-lg">
+      <img
+        src="images/valkportrait/scoralie.png"
+        alt="Avatar"
+        class="h-12 w-12 rounded-full mr-4"
+      />
+      <div>
+        <p class="text-white  text-base">Hold ATK until Dragon Breath ends ➔ Basic ATK x2 ➔ Weapon ➔ Basic ATK x4 ➔ Weapon ➔ Ultimate ➔ Hold Ult button until prompt ends.    </p>
+        <p class="text-teal-500 mt-2 text-base">As mentioned in skill section, you can end Stellar Outburst early by casting Ult with 1 or 2 Guzzled Flames stacks.  </p>
+
+      </div>
+    </div>
+
+
+
+ 
+  <p class="text-sm text-slate-400 text-center">Continue with AR Charging Rotation</p>
+
+</div>
+
+
 
 // f2p team rotation  
 <div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10" >
@@ -712,7 +876,7 @@ async function captureStats() {
 
       </div>
 
-<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10" id="statsSection">
+<div class="max-w-lg mx-auto bg-slate-900 p-4  space-y-2 my-10" >
   <div class="text-center">
       <h2 class="text-xl font-semibold mb-4 text-amber-400 ">AR Charging Rotation </h2>
     </div>

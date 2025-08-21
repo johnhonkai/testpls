@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="World Star"/>
     <meta property="og:description" content="Info for characters in World Star teams." />
-    <meta property="og:image" content="https://i.imgur.com/3jvoLah.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/pu6sT2z.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/world-star" />
     <meta property="og:type" content="website" />
 
@@ -80,7 +80,9 @@
 
     ],
 
-    Ignite: [],
+    Ignite: [
+            { name: "Sparkle", image: "/images/valkportrait/sparkle.png", details: "When Sparkle cast her ult on an ally, that ally's Ult will apply 12 points of ignite."}
+    ],
 
     Bleed: [
 
@@ -165,7 +167,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   World Star
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -210,7 +212,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   World Star
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.3
+    v8.4
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
