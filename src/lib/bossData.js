@@ -3499,6 +3499,10 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://youtu.be/9bM6aBJFOBw', abyss: 'Red Lotus 515D', uploader: 'Mori' },
+
+    ] 
   },   
     litost: {
     
