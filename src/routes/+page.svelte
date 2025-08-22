@@ -94,13 +94,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2025-6-28'); // Start date Regional Servers
+      const regionalStartDate = new Date('2025-8-22'); // Start date Regional Servers
       const cnStartDate = new Date('2025-7-25');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.3 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.4 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.4 Week ${currentWeekCN}`;
   }
 
@@ -196,11 +196,11 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v8.4 update is on 21 Aug </li>
+              <li>v8.5 update is on 23 October </li>
             </ul>
           </div>
           <div>
-            <div class="text-teal-400 font-semibold">CN SERVER</div>
+            <div class="text-red-400 font-semibold">CN SERVER</div>
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
@@ -222,7 +222,7 @@
           <li>Dev Video: 4 September </li>
           <li>Beta v2: 5 September </li>
           <li>Beta v3: 12 September </li>
-          <li>Dev Livestream: 20 September </li>
+          <li>Livestream: 20 September </li>
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>

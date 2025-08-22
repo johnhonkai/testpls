@@ -76,9 +76,9 @@
                 BFD best teammates are PAWS and Vita.    
             </p>
 
-            <p class="text-sm sm:text-base mb-4"><b>PAWS</b><br/> - Provides strong buffs.
+            <p class="text-sm sm:text-base mb-4"><b>PAWS</b><br/> - Provides strong buffs. The buffs she provides is better than having 2 Rite of Oblivion supports (for most cases).
                 <br/>
-                - Can quickly trigger buffs and Stellar Drain through Ultimate.
+                - Can quickly consume Stellar Drain through Ultimate.
 
             </p>      
 
