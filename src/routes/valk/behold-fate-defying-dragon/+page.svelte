@@ -479,7 +479,7 @@ async function increaseLike() {
               Recommended to get BFD in v8.4 if you can guarantee valk + weapon, preferably within the first week of v8.4 to get the most value out of her DPS role, because her bosses will appear more frequently during the first 3-4 weeks. After that, BFD will be used as support more often.
             </p>
            <p class="mt-4 text-sm sm:text-base">
-                          If you don't have enough crystals to guarantee PAWS and her weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.
+                          If you don't have enough crystals to guarantee valk + weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
