@@ -6,7 +6,7 @@
         { name: 'Paws', image: '/images/valkportrait/paws.png',  teampct: '100%', },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%',   },
         { name: 'Hofi', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '93%',  },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%'  },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '90%'  },
 
     ];
 
