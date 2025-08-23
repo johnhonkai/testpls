@@ -3576,7 +3576,7 @@ export const teamData = {
           },   
           {
             type: 'lineup',
-            lineup: ["/images/valkportrait/paws.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
+            lineup: ["images/valkportrait/scoralie.png", "/images/valkportrait/paws.png",  "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
             rank: '64',
             pct: '1%',
             bottext: "Highest Score: SS 795"
