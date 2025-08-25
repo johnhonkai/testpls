@@ -104,7 +104,7 @@
         "OutfitBox": {
             title: "Outfit Box Supply",
             description: '<li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li>',
-            image: "https://i.imgur.com/gSqyfXW.png"
+            image: "https://i.imgur.com/UOFxmct.jpeg"
         },          
         "NewADV": {
             title: "Ascension Supply: Lantern",
@@ -572,8 +572,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Sep 19" weather="Stardust" bosspage="/boss?sa" />
+                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Sep 22" weather="Physical" bosspage="/boss?phyhod" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
