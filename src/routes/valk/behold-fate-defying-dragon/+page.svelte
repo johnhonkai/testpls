@@ -4,7 +4,7 @@
 
     <meta property="og:title" content="Behold! Fate-Defying Dragon！" />
     <meta property="og:description" content="Behold! Fate-Defying Dragon Guides, Builds and Gameplay" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.imgur.com/tMpk3Zt.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/behold-fate-defying-dragon" />
     <meta property="og:type" content="website" />
 

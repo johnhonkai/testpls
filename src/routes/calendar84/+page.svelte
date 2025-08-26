@@ -577,11 +577,10 @@
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
+                        <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Sep 23"/>
+                        <BossCard image="/images/Bosses/Sampo.webp"/>
+                        <BossCard image="/images/Bosses/HOMU Emperor.webp"/>
                     </div>
-    
 
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
