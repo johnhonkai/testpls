@@ -320,7 +320,7 @@ function selectTabMobile(event) {
   <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo"  />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['ws' , 'wod' ,'loa', 'all']} />
+  <CharBio mode="support" ar={['scoralie' , 'ws' , 'wod' ,'loa']} />
   </div>
 </section>
 

@@ -87,10 +87,9 @@ let filteredMainCharacters = mainCharacters.filter(
 
             <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually BFD / Vita for Elemental Breach buff. The second support depends on the boss.</p>
 
-            <p class="text-sm sm:text-base mb-4"><b>Lone Planetfarer</b><br/> - Provides strong buffs, Elemental Breach, and slightly more AR meter.
-                <br/>
-                - Has a slightly longer on-field time than other supports.
-            </p>          
+             <p class="text-sm sm:text-base mb-4"><b>BFD vs Vita</b><br/>
+                BFD is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.  
+            </p>     
 
         
             <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>

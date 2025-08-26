@@ -326,7 +326,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-4">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.4 (21 Aug 2025)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -343,16 +347,20 @@ function selectTabMobile(event) {
               <strong class="text-amber-400 ">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If FoV and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
           </p>
 
-          <p class="mt-2 text-sm sm:text-base mt-4">
-              <strong class="text-amber-400">Competitive</strong> <br/> FoV bosses still appear every patch. However, getting FoV should not be prioritized over Part 2 characters. SS-rank has a big upgrade that completely changes rotation.
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400 ">Paid Players</strong> <br/> If you can afford to buy Knight or Paladin BP, AND if you already have other P2 characters in the BP, then you can consider getting FoV.
+          </p>
+
+          <p class="text-sm sm:text-base mt-4">
+              <strong class="text-amber-400">Competitive</strong> <br/> FoV bosses only appear once in a while now, so getting her should not be prioritized over Part 2 characters. SS-rank has a big upgrade that completely changes rotation.
           </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>FoV:</strong> Battlesuit Supply</li>
-              <li><strong>FoV's Weapon and Stigma:</strong> Focused Supply</li>
+              <li ><strong>FoV:</strong> Battle Pass</li>
+              <li><strong>FoV's Weapon and Stigma:</strong> Battle Pass</li>
 
           </ul>
           <div class="divider  "></div>

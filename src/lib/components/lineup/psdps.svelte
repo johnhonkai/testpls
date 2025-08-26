@@ -90,6 +90,10 @@ let filteredMainCharacters = mainCharacters.filter(
                 In an optimal lineup, the first support is a valk that can provide Breach state - either <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> or <a href='/valk/vita' class="link">Vita Lone Planetfarer</a>. When PS has Breach state, she gains Bleed DMG buff, which is a rare multiplier even in Part 2. This contributes a significant boost for PS DMG output.  
             </p>
 
+             <p class="text-sm sm:text-base mb-4"><b>BFD vs Vita</b><br/>
+                BFD is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.  
+            </p>
+
             <p class="text-sm sm:text-base mb-4"><b>Planar Armament</b><br/> PAWS support is used against Lantern boss. Thanks to type advantage, PAWS can contribute significantly higher damage in this specific match-up.
 
             </p>     

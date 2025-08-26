@@ -333,7 +333,11 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+            <strong>Updated For v8.4 (21 Aug 2025)
+        </p>
+        </div>
     <div>
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -359,12 +363,12 @@ function selectTabMobile(event) {
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400 ">New Players on HoT</strong>
+          <strong class="text-amber-400 ">New Players on HoT from War Treasury</strong>
       </p>
 
       <ul class="list-disc ml-6 text-sm sm:text-base">
-        <li class="mt-2">Sirin, Sushang and Herrscher of Sentience are the only battlesuits in War Treasury that are still somewhat relevant, so no, not recommended to farm HoT first. </li>
-          <li class="mt-2"> You can consider unlocking HoT in the future for Elysian Realm first-clear crystal rewards.</li>
+        <li class="mt-2">Recommended to farm Herrscher of Sentience first from War Treasury.</li>
+          <li class="mt-2"> You can consider unlocking HoT later for Elysian Realm first-clear crystal rewards.</li>
 
       </ul>
 
@@ -375,7 +379,7 @@ function selectTabMobile(event) {
 
     <ul class="list-disc ml-6 text-sm sm:text-base">
 
-        <li class="mt-2"> Seven Thunders is available in Battle Pass. Should you get it? That's debatable, since everything in the BP is really good. Pros of getting 7T: Give +10 ATK for all valkyries.</li>
+        <li class="mt-2"> Seven Thunders is available from Battle Pass. It's a Divine Key, so getting it will give +10 ATK for all valkyries.</li>
         <li class="mt-2"> G4 Handel is forgeable in Foundry.
         </li>
 
@@ -389,7 +393,6 @@ function selectTabMobile(event) {
           <li ><strong>Herrscher of Thunder:</strong> War Treasury, Dorm Supply.</li>
             <li ><strong>Seven Thunders:</strong> Battle Pass.</li>
             <li ><strong>G4 Handel:</strong> Forgeable in foundry.</li>
-            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
 
         </ul>
 

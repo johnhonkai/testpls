@@ -312,7 +312,7 @@ function selectTabMobile(event) {
   <CharBio mode="dps" rank="s" type="img" element="fire" ar="roo" bg="bg-fuchsia-800" />
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['lp' , 'ws' , 'hoo' , 'all']}  bg="bg-fuchsia-800"/>
+  <CharBio mode="support" ar={['scoralie', 'lp' , 'ws' , 'hoo' ]}  bg="bg-fuchsia-800"/>
   </div>
 
 </section>
@@ -391,7 +391,7 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.4 (21 Aug 2025)
         </p>
         </div>
       <div>
@@ -406,30 +406,37 @@ function selectTabMobile(event) {
           </p>
 
           <p class="mt-6 text-sm sm:text-base">
-              <strong class="text-amber-400">Vita Support</strong><br/>  Currently, HoFi+DLC is an important support for <a href="/valk/lp" class="link ">Vita Lone Planetfarer</a>. Without HoFi, Vita loses around 50% DMG, which is massive, and at this point, even Vita support performs better than Vita DPS. This will remain true until we get a new Rite-of-Oblivion character.
+              <strong class="text-amber-400">Vita and BFD Support</strong><br/>  HoFi+DLC is one of the better supports for <a href="/valk/lp" class="link ">Vita Lone Planetfarer</a> and <a href="/valk/behold-fate-defying-dragon" class="link ">Behold! Fate-Defying Dragon</a>.
           </p>
 
           <p class="mt-6 text-sm sm:text-base">
             <strong class="text-amber-400">World Star Support</strong><br/> One of the best supports for World Star team. Can trigger Domain Resonance very fast.
         </p>
 
+
         <p class="mt-6 text-sm sm:text-base">
           <strong class="text-amber-400">Herrscher of Origin Support</strong><br/>  Iskandar stigma has buffs for HoOrigin DPS. So far, HoOrigin only has one top score in live version Abyss, Starless Husk Mysticism.
       </p>
 
       <p class="mt-6 text-sm sm:text-base">
-        <strong class="text-amber-400">Last Resort Support Option For Other AR</strong><br/>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as Coralie.
+        <strong class="text-amber-400">Last Resort Support Option For Other AR</strong><br/>  As a RoOblivion character, HoFi can technically support other AR teams, but she is as terrible as A-rank Coralie.
     </p>
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players</strong><br/> Not recommended, you can't even get her and Divine Key right now if you wanted to.
-          </p>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">F2P Players</strong>
+                <br/>Not very recommended. You can get HoFi from Battle Pass (BP), but it will take you almost a year to get enough Crystallum to exchange her. Personally, I think getting Divine Keys from BP for the +10 ATK is still better for your account long-term. Also, even if you get HoFi, you still need to get the DLC gears from supply - not really worth using your crystal to get old stuff as a F2P player.
+            </p>
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Paid Players</strong>
+                <br/>If you can afford Knight or Paladin BP, then you can get HoFi much faster. Just a reminder that you still need to get the DLC gears from supply.
+            </p>
 
           <p class="mt-6 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> You can try to get it if you can afford it, especially for Vita support and World Star support. HoOrigin support is more of a bonus. As DPS, HoFi DPS is only used once in a while now in Abyss.
+              <strong class="text-amber-400">Competitive Players on DLC Gears</strong><br/> You can try to get it if you can afford it, especially for Vita or BFD support. HoOrigin support is more of a bonus. As DPS, HoFi DPS is still used at least once every patch in Abyss.
           </p>
 
           <p class="mt-6 text-sm sm:text-base">
@@ -437,14 +444,14 @@ function selectTabMobile(event) {
         </p>
 
         <p class="mt-6 text-sm sm:text-base">
-          <strong class="text-amber-400">Original Gears</strong><br/> No reason to get them now.
+          <strong class="text-amber-400">Original Gears</strong><br/> They are available in BP, but no reason to get them now.
       </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>HoFi:</strong> Battlesuit Supply.</li>
+              <li ><strong>HoFi:</strong> Battle Pass, ADV Supply.</li>
               <li><strong>Waxing Moon:</strong> Equipment Supply.</li>
               <li><strong>Iskandar Stigma:</strong> Equipment Supply, Forgeable.</li>
 
