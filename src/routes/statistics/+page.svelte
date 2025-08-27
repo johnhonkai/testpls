@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Version Statistics"/>
     <meta property="og:description" content="Character usage stats in a version." />
-    <meta property="og:image" content="https://i.imgur.com/3UCd2G7.png" />
+    <meta property="og:image" content="https://i.imgur.com/qZGJQLj.png" />
     <meta property="og:url" content="https://marisaimpact.com/statistics" />
     <meta property="og:type" content="website" />
 
@@ -202,16 +202,15 @@ function toggleView() {
 </div>
 
 <!-- Control Bar -->
-<div class="flex justify-center gap-3 mt-5 mb-6">
+<div class="flex flex-col sm:flex-row justify-center items-center gap-0 sm:gap-3 mt-5  mb-2 sm:mb-6 w-full">
 
-  <!-- Version Control with Arrows -->
+  <!-- Left Section: Version Control + Camera -->
   <div class="flex items-center gap-2">
     <!-- Left Arrow -->
     <button
       on:click={() => changeVersion(+1)}
       class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 disabled:opacity-40"
       disabled={versions.indexOf(selectedVersion) === versions.length - 1}
-
     >
       <Fa icon={faChevronLeft} />
     </button>
@@ -254,25 +253,26 @@ function toggleView() {
     >
       <Fa icon={faChevronRight} />
     </button>
+
+    <!-- Capture Button -->
+    <button
+      on:click={captureStats}
+      class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700"
+      title="Capture Stats"
+    >
+      <Fa icon={faCamera} size="1.2x" />
+    </button>
   </div>
 
-  <!-- Capture Button -->
-  <button
-    on:click={captureStats}
-    class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700"
-    title="Capture Stats"
-  >
-    <Fa icon={faCamera} size="1.2x" />
-  </button>
-
-  <!-- View Toggle -->
+  <!-- View Toggle (always below on mobile, side-by-side on desktop) -->
   <button
     on:click={toggleView}
-    class="px-4 py-2 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 h-10 cursor-pointer"
+    class="mt-3 sm:mt-0 px-4 py-2 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 h-10 cursor-pointer w-auto text-center"
   >
     {viewMode === 'list' ? 'Tier View' : 'List View'}
   </button>
 </div>
+
 
 
 <div id="statsSection" class="max-w-7xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
@@ -369,15 +369,23 @@ function toggleView() {
     <div class="flex rounded-lg overflow-hidden bg-blue-900/40 mb-6">
       
       <!-- Left: Tier Letter -->
-      <div class="flex items-center justify-center w-20 bg-blue-800 text-white text-2xl font-bold py-12.5">
+      <div 
+        class="flex items-center justify-center 
+               w-10 text-lg py-6        <!-- mobile -->
+               sm:w-20 sm:text-2xl sm:py-12.5 <!-- desktop -->
+               bg-blue-800 text-white font-bold">
         {tier}
       </div>
 
       <!-- Right: Characters -->
-      <div class="flex flex-wrap gap-4 p-4 flex-1">
+      <div class="flex flex-wrap gap-3 sm:gap-4 p-3 sm:p-4 flex-1">
         {#each tieredDPS.filter(c => c.dpsTier === tier) as char}
-          <a href={char.url} class="flex flex-col items-center w-24">
-            <img src={char.image} alt={char.name} class="w-20 h-20 rounded-lg object-cover border-2 border-blue-400" />
+          <a href={char.url} class="flex flex-col items-center w-20 sm:w-24">
+            <img 
+              src={char.image} 
+              alt={char.name} 
+              class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover border-2 border-blue-400" 
+            />
             <span class="text-xs text-center mt-1">{char.dpsCount}</span>
           </a>
         {/each}
@@ -393,15 +401,23 @@ function toggleView() {
     <div class="flex rounded-lg overflow-hidden bg-rose-900/40 mb-6">
       
       <!-- Left: Tier Letter -->
-      <div class="flex items-center justify-center w-20 bg-rose-800 text-white text-2xl font-bold">
+      <div 
+        class="flex items-center justify-center 
+               w-10 text-lg py-6
+               sm:w-20 sm:text-2xl sm:py-12
+               bg-rose-800 text-white font-bold">
         {tier}
       </div>
 
       <!-- Right: Characters -->
-      <div class="flex flex-wrap gap-4 p-4 flex-1">
+      <div class="flex flex-wrap gap-3 sm:gap-4 p-3 sm:p-4 flex-1">
         {#each tieredSUP.filter(c => c.supTier === tier) as char}
-          <a href={char.url} class="flex flex-col items-center w-24">
-            <img src={char.image} alt={char.name} class="w-20 h-20 rounded-lg object-cover border-2 border-rose-400" />
+          <a href={char.url} class="flex flex-col items-center w-20 sm:w-24">
+            <img 
+              src={char.image} 
+              alt={char.name} 
+              class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover border-2 border-rose-400" 
+            />
             <span class="text-xs text-center mt-1">{char.supCount}</span>
           </a>
         {/each}
@@ -409,6 +425,7 @@ function toggleView() {
     </div>
   {/each}
 </div>
+
 
 
 </div>
