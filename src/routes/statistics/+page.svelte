@@ -17,7 +17,9 @@
   import { valkyries } from '$lib/data/characterdata';
   import { onMount , onDestroy , tick } from 'svelte';
 	import Fa from 'svelte-fa';
-  import { faCamera } from '@fortawesome/free-solid-svg-icons';
+  import { faCamera , faChevronLeft , faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+  let viewMode: 'list' | 'tier' = 'list'; // default list view
 
   let selectedVersion = '8.3';
   const versions = Object.keys(usageByVersion);
@@ -36,8 +38,66 @@ $: withImages = (usageByVersion[selectedVersion] ?? []).map(entry => {
 });
 
 
-$: totalDPS = dpsList?.reduce((sum, char) => sum + (Number(char.DPS) || 0), 0);
-$: totalSUP = supList?.reduce((sum, char) => sum + (Number(char.SUP) || 0), 0);
+function convertRelativeTier(value: number, maxValue: number): 'S' | 'A' | 'B' {
+  if (!maxValue) return 'B';
+  const percent = (value / maxValue) * 100;
+  if (percent >= 50) return 'S';
+  if (percent >= 19) return 'A';
+  return 'B';
+}
+
+$: dpsMax = Math.max(...(usageByVersion[selectedVersion] ?? []).map(e => Number(e.DPS) || 0));
+$: supMax = Math.max(...(usageByVersion[selectedVersion] ?? []).map(e => Number(e.SUP) || 0));
+
+$: tieredDPS = (usageByVersion[selectedVersion] ?? [])
+  .filter(entry => Number(entry.DPS) > 0)
+  .map(entry => {
+    const match = valkyries.find(v => v.name === entry.name);
+    const dpsValue = Number(entry.DPS);
+    return {
+      ...entry,
+      dpsCount: dpsValue,
+      dpsTier: convertRelativeTier(dpsValue, dpsMax),
+      image: match?.image ?? '',
+      url: match?.url ?? '',
+      verdebut: match?.verdebut ?? 0,
+      verdlc: match?.verdlc ?? 0
+    };
+  })
+  .sort((a, b) => {
+    const diff = b.dpsCount - a.dpsCount;
+    if (diff !== 0) return diff;
+    const aDate = a.verdlc || a.verdebut || 99;
+    const bDate = b.verdlc || b.verdebut || 99;
+    return bDate - aDate;
+  });
+
+$: tieredSUP = (usageByVersion[selectedVersion] ?? [])
+  .filter(entry => Number(entry.SUP) > 0)
+  .map(entry => {
+    const match = valkyries.find(v => v.name === entry.name);
+    const supValue = Number(entry.SUP);
+    return {
+      ...entry,
+      supCount: supValue,
+      supTier: convertRelativeTier(supValue, supMax),
+      image: match?.image ?? '',
+      url: match?.url ?? '',
+      verdebut: match?.verdebut ?? 0,
+      verdlc: match?.verdlc ?? 0
+    };
+  })
+  .sort((a, b) => {
+    const diff = b.supCount - a.supCount;
+    if (diff !== 0) return diff;
+    const aDate = a.verdlc || a.verdebut || 99;
+    const bDate = b.verdlc || b.verdebut || 99;
+    return bDate - aDate;
+  });
+
+
+
+
 
 function sortWithTiebreaker(type: 'DPS' | 'SUP') {
   return withImages
@@ -105,6 +165,27 @@ async function captureStats() {
   link.click();
 }
 
+onMount(() => {
+  const saved = localStorage.getItem('viewMode');
+  if (saved === 'list' || saved === 'tier') {
+    viewMode = saved as 'list' | 'tier';
+  }
+});
+
+function toggleView() {
+  viewMode = viewMode === 'list' ? 'tier' : 'list';
+  localStorage.setItem('viewMode', viewMode);
+}
+
+  // helper: go to previous/next version
+  function changeVersion(step) {
+    let idx = versions.indexOf(selectedVersion);
+    let newIdx = idx + step;
+    if (newIdx >= 0 && newIdx < versions.length) {
+      selectVersion(versions[newIdx]);
+    }
+  }
+
 </script>
 
 <!-- Banner -->
@@ -120,54 +201,81 @@ async function captureStats() {
   <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
 </div>
 
-<!-- Version Dropdown -->
-<div class="flex justify-center mt-5 gap-1">
-  <div class="relative" id="versionDropdown">
+<!-- Control Bar -->
+<div class="flex justify-center gap-3 mt-5 mb-6">
+
+  <!-- Version Control with Arrows -->
+  <div class="flex items-center gap-2">
+    <!-- Left Arrow -->
     <button
-      on:click={toggleDropdown}
-      class="btn inline-flex items-center justify-between w-60 bg-base-300 text-white px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-700 transition">
-      Ver {selectedVersion}
-      <svg
-        class="ml-2 w-4 h-4 transition-transform duration-200 transform {dropdownOpen ? 'rotate-180' : ''}"
-        fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="M19 9l-7 7-7-7" />
-      </svg>
+      on:click={() => changeVersion(+1)}
+      class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 disabled:opacity-40"
+      disabled={versions.indexOf(selectedVersion) === versions.length - 1}
+
+    >
+      <Fa icon={faChevronLeft} />
     </button>
 
-    {#if dropdownOpen}
-      <ul
-        class="absolute z-50 mt-2 w-full bg-base-300 border border-gray-700 rounded-md shadow-lg max-h-60 overflow-auto transition-all duration-200 animate-in fade-in slide-in-from-top-1
-        
-        "
-      >
-        {#each versions as version}
-          <li
-            on:click={() => selectVersion(version)}
-            class="px-4 py-2 cursor-pointer hover:bg-gray-700 text-white text-sm transition-colors"
-          >
-            {version}
-          </li>
-        {/each}
-      </ul>
-    {/if}
-  </div>
+    <!-- Version Dropdown -->
+    <div class="relative" id="versionDropdown">
+      <button
+        on:click={toggleDropdown}
+        class="cursor-pointer inline-flex items-center justify-between w-44 bg-zinc-800 text-white px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-700 transition h-10">
+        Ver {selectedVersion}
+        <svg
+          class="ml-2 w-4 h-4 transition-transform duration-200 transform {dropdownOpen ? 'rotate-180' : ''}"
+          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
 
-    <div class="flex justify-center mb-6">
+      {#if dropdownOpen}
+        <ul
+          class="cursor-pointer absolute z-50 mt-2 w-full bg-zinc-800 border border-gray-700 rounded-md shadow-lg max-h-60 overflow-auto transition-all duration-200 animate-in fade-in slide-in-from-top-1"
+        >
+          {#each versions as version}
+            <li
+              on:click={() => selectVersion(version)}
+              class="px-4 py-2 cursor-pointer hover:bg-slate-700 text-white text-sm transition-colors"
+            >
+              {version}
+            </li>
+          {/each}
+        </ul>
+      {/if}
+    </div>
+
+    <!-- Right Arrow -->
     <button
-      on:click={captureStats}
-      class="px-4 py-2 rounded-md  font-medium transition cursor-pointer  text-xs sm:text-sm h-10 w-auto
-            text-white hover:bg-gray-700">
-        <span 
-        class="relative z-10 flex items-center gap-2 cursor-pointer text-center">
-          <Fa icon={faCamera} size="1.3x" />
-        </span>  
+      on:click={() => changeVersion(-1)}
+      class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 disabled:opacity-40"
+      disabled={versions.indexOf(selectedVersion) === 0}
+    >
+      <Fa icon={faChevronRight} />
     </button>
   </div>
+
+  <!-- Capture Button -->
+  <button
+    on:click={captureStats}
+    class="cursor-pointer flex items-center justify-center h-10 w-10 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700"
+    title="Capture Stats"
+  >
+    <Fa icon={faCamera} size="1.2x" />
+  </button>
+
+  <!-- View Toggle -->
+  <button
+    on:click={toggleView}
+    class="px-4 py-2 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 h-10 cursor-pointer"
+  >
+    {viewMode === 'list' ? 'Tier View' : 'List View'}
+  </button>
 </div>
 
 
-<div id="statsSection" class="max-w-6xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
+<div id="statsSection" class="max-w-7xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
 
   <div class="flex flex-col justify-center">
         <h1 class="flex items-center gap-2 text-md sm:text-xl font-bold drop-shadow-md text-white  m-auto text-shadow-lg/30 text-center">
@@ -179,8 +287,10 @@ async function captureStats() {
       Date: {versionDate}
     </p>
   </div>
+  
+  {#if viewMode === 'list'}
   <!-- Responsive Grid for DPS and SUP side by side on large screens -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-15">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
     
     <!-- DPS Table -->
     <div>
@@ -246,7 +356,65 @@ async function captureStats() {
       </div>
     </div>
   </div>
+{/if}
 
+{#if viewMode === 'tier'}
+
+<div class="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+  
+<!-- DPS Tier List -->
+<div>
+  <h2 class="text-xl font-bold text-blue-400 mb-3">DPS Usage V{selectedVersion}</h2>
+  {#each ['S','A','B'] as tier}
+    <div class="flex rounded-lg overflow-hidden bg-blue-900/40 mb-6">
+      
+      <!-- Left: Tier Letter -->
+      <div class="flex items-center justify-center w-20 bg-blue-800 text-white text-2xl font-bold py-12.5">
+        {tier}
+      </div>
+
+      <!-- Right: Characters -->
+      <div class="flex flex-wrap gap-4 p-4 flex-1">
+        {#each tieredDPS.filter(c => c.dpsTier === tier) as char}
+          <a href={char.url} class="flex flex-col items-center w-24">
+            <img src={char.image} alt={char.name} class="w-20 h-20 rounded-lg object-cover border-2 border-blue-400" />
+            <span class="text-xs text-center mt-1">{char.dpsCount}</span>
+          </a>
+        {/each}
+      </div>
+    </div>
+  {/each}
+</div>
+
+<!-- SUP Tier List -->
+<div>
+  <h2 class="text-xl font-bold text-rose-400 mb-3">Support Usage V{selectedVersion}</h2>
+  {#each ['S','A','B'] as tier}
+    <div class="flex rounded-lg overflow-hidden bg-rose-900/40 mb-6">
+      
+      <!-- Left: Tier Letter -->
+      <div class="flex items-center justify-center w-20 bg-rose-800 text-white text-2xl font-bold">
+        {tier}
+      </div>
+
+      <!-- Right: Characters -->
+      <div class="flex flex-wrap gap-4 p-4 flex-1">
+        {#each tieredSUP.filter(c => c.supTier === tier) as char}
+          <a href={char.url} class="flex flex-col items-center w-24">
+            <img src={char.image} alt={char.name} class="w-20 h-20 rounded-lg object-cover border-2 border-rose-400" />
+            <span class="text-xs text-center mt-1">{char.supCount}</span>
+          </a>
+        {/each}
+      </div>
+    </div>
+  {/each}
+</div>
+
+
+</div>
+
+
+{/if}
 <!--     <div>
     <p class="text-xs sm:text-sm italic text-center mt-12">
       Note: Lone Planetfarer supports are mostly S2-SS+ rank, which is a big difference compared to S0-rank.
@@ -262,5 +430,6 @@ async function captureStats() {
 </div>
 
 </div>
+
 
 

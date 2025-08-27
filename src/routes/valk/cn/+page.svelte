@@ -373,7 +373,7 @@ onMount(async () => {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Chrono Navi:</strong> Asterite Shop, Open World Task</li>
-              <li><strong>Chrono Navi Equipment:</strong> Focused Supply. Not available in 7.9. </li>
+              <li><strong>Chrono Navi Equipment:</strong> Battle Pass. </li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

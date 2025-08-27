@@ -2547,6 +2547,27 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.4 CN",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/scoralie.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '96%',
+            bottext: 'S 793, SS 807, 6S 812, 8S 820',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+            rank: '39',
+            pct: '4%',
+            bottext: 'S 780 (with SS Vita), 6S 793',
+          },
+          
+        ]
+      },       
+      {
         tabname: "v8.3 CN",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -2933,6 +2954,9 @@ export const teamData = {
       }
     ],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=AT0kpedHaIg', abyss: 'SS PS Nirvana 548D', uploader: 'chronos002' },
+      { url: 'https://www.youtube.com/watch?v=xqhIC2bmsQ4', abyss: 'S2 PS Nirvana 548D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=T52e4eiY4UU', abyss: 'S2 PS Nirvana', uploader: 'Ismaël' },
       { url: 'https://www.youtube.com/watch?v=DSzhuERbxJQ', abyss: 'RedLotus 512D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=Bv7ve3ESs-o', abyss: 'S0 PS Nirvana 546D', uploader: 'Kyoshiro' },
       { url: 'https://www.youtube.com/watch?v=9o5RwieYSa4', abyss: 'SS PS Nirvana 546D', uploader: 'OneMoreBox' },
@@ -3585,7 +3609,52 @@ export const teamData = {
         ]
       }
     ],
-  },       
+  },     
+  
+    phyhod: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/ps.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '1+',
+            pct: '92%',
+            bottext: "Highest Score: S 820, S2 845, 6S 875, 9S 888"
+
+          },   
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '28',
+            pct: '1%',
+            bottext: "Highest Score: SS 852"
+
+          },          
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/dudu.png", "images/valkportrait/ps.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '48',
+            pct: '5%',
+            bottext: "Highest Score: S2 825, 5S 834"
+
+          },        
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/dudu.png", "images/valkportrait/ps.png", "/images/valkportrait/sparkle.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '70',
+            pct: '2%',
+            bottext: "Highest Score: S2 822"
+
+          },                                                  
+        ]
+      }
+    ],
+  },  
+
 }
 
 
