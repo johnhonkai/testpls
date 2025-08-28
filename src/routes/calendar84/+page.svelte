@@ -467,6 +467,24 @@
 
             </div>
                      
+            <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 5</span>
+                </div> 
+                
+                <div class="col-span-5"></div>
+                <div on:click={() => openModal("")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Elysia Livestream</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/yPu9Xdu.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                
+            </div>
     </div>
     </div>
 
