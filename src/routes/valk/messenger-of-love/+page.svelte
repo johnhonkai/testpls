@@ -50,11 +50,12 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 	import Vitadps from "$lib/components/lineup/vitadps.svelte";
+	import Newelydps from "$lib/components/lineup/newelydps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-//  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
@@ -433,7 +434,7 @@ async function increaseLike() {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get MoL in v8.5.
+              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get New Elysia in v8.5.
             </p>
             
 
@@ -468,28 +469,12 @@ async function increaseLike() {
 
       {#if currentPage === 1}
 
-      <Coraliedps maindps={true}></Coraliedps>
-
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Vita Support </div>
-
-      <Vitadps></Vitadps>
+      <Newelydps></Newelydps>
+      
 
       <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Grail of Infinitude Support </div>
 
       <Heliadps></Heliadps>
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
-
-      <Psdps></Psdps>
-
-      <div class="divider"></div>
-
-      <Badumdps></Badumdps>
-
-      <div class="divider"></div>
-
-      <Dududps></Dududps>
-
 
       {/if}
 
