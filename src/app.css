@@ -289,6 +289,9 @@ html, body {
 
     --primary-stripe-rgb: 230 230 230;
     --secondary-stripe-rgb: 240 240 240;
+
+    --light-pink-rgb: 244, 114, 182;   /* Tailwind pink-400 */
+--dark-pink-rgb: 190, 24, 93;      /* Tailwind pink-700 */
   }
   
   @keyframes pan {
