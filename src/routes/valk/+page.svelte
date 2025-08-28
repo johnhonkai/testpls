@@ -2,7 +2,7 @@
   <title>Valkyrie Guide</title> 
     <meta property="og:title" content="Valkyrie Guide" />
     <meta property="og:description" content="Honkai Impact Character Guides" />
-    <meta property="og:image" content="https://i.imgur.com/aXbdNbK.png" />
+    <meta property="og:image" content="https://i.imgur.com/48ghF0s.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk" />
     <meta property="og:type" content="website" />
 
