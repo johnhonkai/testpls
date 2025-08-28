@@ -372,7 +372,7 @@ function toggleView() {
       <div 
         class="flex items-center justify-center 
                w-10 text-lg py-6        <!-- mobile -->
-               sm:w-20 sm:text-2xl sm:py-12.5 <!-- desktop -->
+               sm:w-14 sm:text-2xl sm:py-12.5 <!-- desktop -->
                bg-blue-800 text-white font-bold">
         {tier}
       </div>
@@ -404,7 +404,7 @@ function toggleView() {
       <div 
         class="flex items-center justify-center 
                w-10 text-lg py-6
-               sm:w-20 sm:text-2xl sm:py-12
+               sm:w-14 sm:text-2xl sm:py-12
                bg-rose-800 text-white font-bold">
         {tier}
       </div>
