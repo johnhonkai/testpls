@@ -25,7 +25,7 @@
   import TeamDisplay from '$lib/components/TeamDisplay.svelte';
 
   let selectedWeather = "fire"; // default fallback
-  let selectedBoss = "firetank";
+  let selectedBoss = "litost";
   let isLoading = true;
   let isFirstLoad = true;
 
