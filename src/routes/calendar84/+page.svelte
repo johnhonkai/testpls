@@ -537,7 +537,7 @@
                         <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 7</span>
+                     <span class="font-bold0">EVENT 8</span>
                 </div> 
                 
                 <div class="col-span-6"></div>
