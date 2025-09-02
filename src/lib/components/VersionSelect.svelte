@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
 
     let versions = ["8.4" , "8.3" , "8.2", "8.1", "8.0" , "7.9", "7.8"];
-    export let currentVersion = "8.3"; // Set current version
+    export let currentVersion = "8.4"; // Set current version
 
     function changeVersion(event) {
         const newVersion = event.target.value;

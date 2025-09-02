@@ -2714,8 +2714,28 @@ export const teamData = {
   icehellmaru: {
     
     teamDataSets: [
+            {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_sera.png"],
+            rank: '1+',
+            pct: '70%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/asop_sera.png"],
+            rank: '36',
+            pct: '30%',
+          },
+
+          
+        ]
+      },   
       {
-        tabname: "v8.3 CN",
+        tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2734,7 +2754,7 @@ export const teamData = {
         ]
       },      
       {
-        tabname: "v8.2 CN",
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2759,7 +2779,7 @@ export const teamData = {
         ]
       },
       {
-        tabname: "v8.1 CN",
+        tabname: "v8.1",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
