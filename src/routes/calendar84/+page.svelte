@@ -79,14 +79,18 @@
         "Valk2": {
             title: "Battlesuit Supply B: Reign Solaris",
             description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Pledge (UP), Ritual Imayoh, Snowy Sniper, Wolf Dawn </li>',
-        },        
+        },    
+        "Valk3": {
+            title: "Battlesuit Supply A: PAWS",
+            description: '<li>Duration: 3 weeks</li><li>A-rank: Valkyrie Boltstorm (UP), Night Squire, Divine Prayer, Valkyrie Gloria </li>',
+        },             
         "Equip": {
             title: "Equipment Supply",
             description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
         },
         "Returnee": {
             title: "Returnee Supply",
-            description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
+            description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status (Note: I heard you need around 60 days now since 6 patches a year)</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
         },
         "Topup": {
             title: "Topup Event",
@@ -107,13 +111,13 @@
             image: "https://i.imgur.com/UOFxmct.jpeg"
         },          
         "NewADV": {
-            title: "Ascension Supply: Lantern",
-            description: '<li>Duration: 2 weeks.</li><li>A-rank: </li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banners.</li>',
+            title: "Ascension Supply: Jovial Deception",
+            description: '<li>Duration: 3 weeks.</li><li>A-rank: Swallowtail Phantasm (UP), Sakuno Rondo, Valkyrie Ranger, Kriegmesser </li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banners.</li>',
 
         },
         "NewRebate": {
-            title: "Ascension Armament: Lantern Equipment",
-            description: '<li>Duration: 2 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
+            title: "Ascension Armament: Jovial Deception Equipment",
+            description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
 
         },            
     };
@@ -205,7 +209,15 @@
                             <img src="https://i.imgur.com/hasnaxg.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
                     </div>    
- 
+                    <div on:click={() => openModal("Valk3")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">PAWS</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                            <img src="https://i.imgur.com/wOVwI1A.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        </div>
+                    </div>   
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
@@ -221,7 +233,11 @@
                             <img src="https://i.imgur.com/4IxIfsX.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>                   
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">PAWS Equipment</span>
 
+                    </div>     
 
                 </div>
 
@@ -316,6 +332,38 @@
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-zinc-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ASCENSION SUPPLY</span>
+                    </div>       
+                    <div class="col-span-6"></div>    
+                    
+                    <div on:click={() => openModal("NewADV")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class=" absolute inset-0 flex items-center justify-center z-10 leading-5">Jovial Deception</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
+                            <img src="https://i.imgur.com/XkScT4O.png" alt="Vita" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>  
+
+                </div>
+
+                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ARMAMENT ASCENSION</span>
+                    </div>       
+                    <div class="col-span-6"></div>    
+                    
+                    <div on:click={() => openModal("NewRebate")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-rose-700">
+                        <!-- Centered Text -->
+                        <span class=" absolute inset-0 flex items-center justify-center z-10 leading-5">Jovial Deception Equipment</span>
+
+                    </div>  
+
+                </div>
+                                <div class="relative grid grid-cols-10 gap-1  h-[55px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">RETURNEE SUPPLY</span>
@@ -485,6 +533,25 @@
 
                 
             </div>
+
+                        <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-rose-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 7</span>
+                </div> 
+                
+                <div class="col-span-6"></div>
+                <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Star-Tempering Clash</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/bpA0Gbv.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                
+            </div>
     </div>
     </div>
 
@@ -608,14 +675,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Hellmaru.webp" date="Sep 26" weather="Ice" bosspage="/boss?icehellmaru" />
+                <BossCard image="/images/Bosses/Varaha.png" date="Sep 29" weather="Quantum" bosspage="/boss?valralhal" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
+                        <BossCard image="/images/Bosses/MOBIUS.png" date="Sep 30"/>
+                        <BossCard image="/images/Bosses/Sa_SSS.webp"/>
+                        <BossCard image="/images/Bosses/Hellmaru.webp"/>
                     </div>
     
 
