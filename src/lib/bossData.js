@@ -984,7 +984,14 @@ export const teamData = {
       },
     ]},
   
-  ]
+  ],
+      videos: [
+      { url: 'https://youtu.be/ZvHPgFmotwA', abyss: 'Nirvana 543D', uploader: 'Haxxor' },
+      { url: 'https://youtu.be/-vXLpwk0Ok0', abyss: 'Nirvana', uploader: 'Xintsu' },
+      { url: 'https://youtu.be/K67RSdGcRGI', abyss: 'Nirvana 550D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/IETI4xy41Tg', abyss: 'Nirvana 550D', uploader: 'phylynxbelt' },
+
+    ] 
   },
   obvhomu: {
     teamDataSets: [
