@@ -1349,6 +1349,59 @@ export const teamData = {
   quavalralhal: {
     teamDataSets: [
       {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '1+',
+          pct: '70%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_songque.png"],
+          rank: '8',
+          pct: '12%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/elf_kiana.png"],
+          rank: '27',
+          pct: '4%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+          rank: '32',
+          pct: '4%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_songque.png"],
+          rank: '47',
+          pct: '6%',
+        }, 
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_chenxue.png"],
+          rank: '53',
+          pct: '1%',
+        },    
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/scoralie.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+          rank: '78',
+          pct: '2%',
+        },   
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png", "images/valkportrait/sparkle.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/elf_kiana.png"],
+          rank: '79',
+          pct: '1%',
+        },                        
+      ]},      
+      {
         tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
