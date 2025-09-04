@@ -43,6 +43,7 @@ function closeLightbox() {
 
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -309,7 +310,7 @@ onMount(async () => {
   <CharBio mode="dps" rank="a" type="psy" element="fire" ar="roo"  bg="bg-red-800"/>
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['lp' , 'ws' , 'all']} bg="bg-red-800"/>
+  <CharBio mode="support" ar={['scoralie' , 'lp' , 'ws' , 'all']} bg="bg-red-800"/>
 </div>
 </section>
 
@@ -404,8 +405,9 @@ onMount(async () => {
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Vita Support</strong> <br/> Coralie is the best support for Vita [Lone Planetfarer], until we get a better option.
+              <strong class="text-amber-400">Vita Support</strong> <br/> Coralie is one of the best supports for Vita [Lone Planetfarer], until we get a better option.
           </p>
+
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
@@ -416,7 +418,7 @@ onMount(async () => {
           </p>
 
                     <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> Coralie is a mandatory support for Vita. When a new AR type is introduced, and if you lack a third member for that AR team, then Coralie can be a decent alternative for that team.
+              <strong class="text-amber-400">Competitive</strong> <br/> Even with the introduction of S-rank Coralie, A-rank Coralie remains as one of the best supports for Vita. 
           </p>
 
 
@@ -453,6 +455,9 @@ onMount(async () => {
 
       <VitaDPS maindps={true} />
 
+            <div class="divider"></div>
+
+      <Coraliedps/>
 
 
 
