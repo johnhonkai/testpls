@@ -368,7 +368,7 @@
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">Art Collection Vol 4</h3>
-          <p class="text-slate-300 text-md">Free Artbook returns! (for CN)</p>
+          <p class="text-slate-300 text-md">Free Artbook returns (for CN)!</p>
         </div>
       </a>
   
