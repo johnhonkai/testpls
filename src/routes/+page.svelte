@@ -352,23 +352,23 @@
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=YjJYHYE0wVE" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=BtRMoDwjFuo" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/YjJYHYE0wVE/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/BtRMoDwjFuo/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">v8.5 Elysia Revealed!</h3>
-          <p class="text-slate-300">Hi♪ Love-Wish Elf♥</p>
+          <p class="text-slate-300">Hi♪ Love Elf♥</p>
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=pl9BeXgYNQI" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=buikpBFjC7Y" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/pl9BeXgYNQI/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/buikpBFjC7Y/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">Art Collection Vol 4</h3>
-          <p class="text-slate-300 text-md">Free Artbook returns (for CN)!</p>
+          <h3 class="text-lg font-semibold text-white mb-1">9th Anniversary Freebies</h3>
+          <p class="text-slate-300 text-md">Free Herrscher of Truth, over 50 free pulls, and more</p>
         </div>
       </a>
   
