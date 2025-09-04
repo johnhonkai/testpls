@@ -368,7 +368,7 @@
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">9th Anniversary Freebies</h3>
-          <p class="text-slate-300 text-md">Free Herrscher of Truth, over 50 free pulls, and more</p>
+          <p class="text-slate-300 text-md">Free HoTruth, over 50 free pulls, and more</p>
         </div>
       </a>
   
