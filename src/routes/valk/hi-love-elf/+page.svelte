@@ -450,9 +450,19 @@ async function increaseLike() {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out the full guide on YouTube: (Soon)
+            Check out her gameplay
         </p>
   
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/eZZHr9euFbw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
 
       </div>
 

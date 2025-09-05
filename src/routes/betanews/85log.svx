@@ -7,6 +7,13 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 ---
 
 
+### LINKS
+
+- [8.5 Patch Note](/betanews/85log)
+- [HoRB DLC](/betanews/85horbdlc)
+
+---
+
 
 ### V2
 
