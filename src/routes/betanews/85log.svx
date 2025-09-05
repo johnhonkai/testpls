@@ -1,0 +1,113 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.5 Patch Note v2
+version: '8.5'
+sortOrder: '1'
+image: "/images/valkportrait/Elysia Hi Love Elf.png"
+---
+
+
+
+### V2
+
+#### New S-rank Elysia
+- S-rank SD Ice, Bow
+- AR Grail of Infinitude
+- Support AR Tags: Symbiosis, Resonance, Shadow Star 
+
+#### New Equipment 
+- Stellar Key and Aristophanes stigma DLC for HoRB. Gives HoRB AR World Star and AR tags Resonance, Symbiosis
+
+#### New Outfits
+- Kiana Badum - Winter Wishes outfit - From outfit supply (9600 crystals)
+- Songque outfit - 30,000 crystal milestone reward from spending event
+- Coralie outfit - free from event
+
+#### 8.5 Main Event - Embark! Youthful Dreams
+- There's "Ace Student Exam" and "Final Exam" mode.
+
+#### P2 Chapter 10
+
+#### Event: Ellie Wonderland Adventure
+- Control Ellie Cube
+- Three areas and one EX stage
+
+#### Event: Happy Arcade
+- 22 story stages and 12 challenge stages
+- New online battle mode
+
+#### EX Abyss
+- Dominance weather Shadow Knight (MECH) with Alien Guard mob (SD)
+- Extreme weather Meteroid: Paros (SD)
+- Extreme weather Flying Fish (PSY)
+- Ice weather Meteroid: Epernay (SD)
+
+#### Memorial Arena
+- Added SSS Meteroid: Paros (SD)
+
+#### Elysian Realm
+- Added New Elysia
+- Added special adjustment for HoRB with Stellar Key
+- F17 load boss is Alien Guard
+- Updated stage effects
+
+#### Art Book Vol 4 event 
+- Free Art Book Vol 4 (Other servers might not get this book)
+- Divine Key Box 
+- Other materials
+
+#### Major Spending Event
+- 30k crystal milestone rewards Songque outfit 
+- Spending event shop: Thelema card, Thelema stamps, Sena stamps, and the regular stuff
+
+#### Battle Pass
+- Main Shop: Thelema card, stamps and weapon
+- Reserve Shop: Added HoTruth card, stamps, Key of Ascension, Bronya Zaychik stigma, Twirling Glaze, and Aladdin stigma
+
+#### Shop
+- Exchange Shop: Added Spina equipment (Astral Divide and Ragna), and Pardo equipment (Purana and Bastet)
+- Supply Shop: HoH stamps have been replaced with Sena stamps.
+- War Treasury: Added Silverwing, Palatinus Equinox, Spina Astera card and fragments
+
+#### Supply
+- Dorm Supply: Added Herrscher of Human, Jade Knight, Herrscher of Truth, Herrscher of Finality, Dreamweaver, Vill-V
+
+#### Foundry
+- Added G4 Li Sushang stigma.
+- Added New Elysia stigma and HoRB DLC stigma
+
+#### Battlesuit Changes
+- Valk system has added a new [Summon] tag.
+- PAWS: AR skill adjustment: 
+    - When not as leader, during SO, the first QTE used by PAWS fully restores Scorch, **and the next Ult will be Condensed Thunder (NEW).**
+    - ... the first Pierced Sun/Rainless Skies that hits, **or when Condensed Thunder hits (NEW)**, restores 140/128 SP.
+- Sparkle: Fixed an issue where she might show abnormal animation when hit in Part 2 map.
+- JD: Fixed an issue where in WoD team, JD might not be able to cast Shadow during SO.
+- Thelema: Fixed abnormal facial expression on the bridge.
+- MPE: Fixed an issue where she equips HoH DLC bow, might trigger abnormal error when grabbed by enemy throw attack.
+- HoH: Fixed an issue where she repeats her voiceline in win pose.
+- PAWS: Fixed an issue where Fearless could show abnormal AR energy recovery value in certain cases.
+- PAWS: Fixed abnormal model in valk showcase menu.
+- Fixed an issue where valks could have abnormal eye highlight rendering.
+
+#### Weapon Changes
+- Optimized visual effect for Coralie weapon.
+
+#### Memorial Arena Changes
+- SS Sampo: Optimized voice frequency 
+- SSS Deliverance: Fixed an issue where Valralhal may not disappear after stage transition in certain cases.
+- SSS Litost: Fixed an issue at low fps, Litost could encounter abnormal stalling during transition phase.
+
+#### EX Abyss Changes
+- Valralhal: Fixed an issue where Valralhal can move out of camera range when using Coralie.
+- Paralyze Sushang: Fixed an issue where Sushang can be attacked during her appearance phase.
+
+#### Elysian Realm Changes
+- Stygian Nymph: Added special adjustment Crit Rate +30%, Total DMG +70%. Also adjusted SN signet values.
+
+#### System 
+- Chapter 6, Stage 6-3: Fixed an issue where drops can fall outside the map.
+- Chapter 11, Stage 11-1: Fixed abnormal black screen in end screen.
+- Fixed PAWS not able to activate SO in story.
+- A new V-sync setting has been added to image quality setting for desktop.
+- Fixed abnormal water surface rendering in some scenes.

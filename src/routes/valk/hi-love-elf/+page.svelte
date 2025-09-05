@@ -1,9 +1,9 @@
 
 <svelte:head>
-  <title>Messenger of Love</title> 
+  <title>Hi♪ Love Elf♥</title> 
 
-    <meta property="og:title" content="Elysia - Messenger of Love" />
-    <meta property="og:description" content="Messenger of Love Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Elysia - Hi♪ Love Elf ♥" />
+    <meta property="og:description" content="Hi♪ Love Elf ♥ Guides, Builds and Gameplay" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="https://marisaimpact.com/valk/messenger-of-love" />
     <meta property="og:type" content="website" />

@@ -1,4 +1,4 @@
-
+<svelte:head>
   <title>Seele - Herrscher of Rebirth</title> 
 
     <meta property="og:title" content="Seele - Herrscher of Rebirth" />
@@ -10,32 +10,26 @@
     <meta name="twitter:card" content="summary_large_image">
 
 
-<link rel="canonical"  />
+    <link rel="canonical"  />
+</svelte:head>
 
 <script lang="ts">
-import { onMount } from "svelte";
+    import { goto } from '$app/navigation';
+    import likesData from '$lib/data/likes.json'; // Import local JSON data
+
+    import { onMount } from "svelte";
 import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import helper functions
 import { getFirestore } from "firebase/firestore";
 import { app } from "$lib/firebaseConfig";
 
 const db = getFirestore(app); // Ensure this is used for Firebase operations
 
-  import { goto } from '$app/navigation';
-  import likesData from '$lib/data/likes.json'; // Import local JSON data
-
 
 import Lightbox from '$lib/components/lightbox.svelte';
-	import Sirindps from "$lib/components/lineup/sirindps.svelte";
-	import P1physical from "$lib/components/lineup/p1physical.svelte";
-	import P1ice from "$lib/components/lineup/p1ice.svelte";
-	import Ice3support from "$lib/components/lineup/ice3support.svelte";
-	import Dududps from "$lib/components/lineup/dududps.svelte";
-	import Badumdps from "$lib/components/lineup/badumdps.svelte";
-	import Jddps from "$lib/components/lineup/jddps.svelte";
-	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
-	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
-	import Hohdps from "$lib/components/lineup/hohdps.svelte";
-	import CharBio from "$lib/components/CharBio.svelte";
+	import Horbdps from '$lib/components/lineup/horbdps.svelte';
+	import P1physical from '$lib/components/lineup/p1physical.svelte';
+	import Susannahdps from '$lib/components/lineup/susannahdps.svelte';
+	import Cedps from '$lib/components/lineup/cedps.svelte';
 let showLightbox = false;
 let selectedImage = '';
 
@@ -48,38 +42,20 @@ function closeLightbox() {
   showLightbox = false;
 }
 
-
-import Fa from 'svelte-fa';
-import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
-	import Psdps from "$lib/components/lineup/psdps.svelte";
-	import Heliadps from "$lib/components/lineup/heliadps.svelte";
-
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-    { name: 'Overview', short: 'overview', icon: faHome },
-  { name: 'Lineup', short: 'lineup', icon: faUsers },
-  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
- // { name: 'How to Play', short: 'howtoplay', icon: faBook },
-  { name: 'Gameplay', short: 'example', icon: faVideo },
-  { name: 'Elysian Realm', short: 'er', icon: faFire },
-  { name: 'Rank Up', short: 'rank', icon: faStar },
-//  { name: 'Question', short: 'qna' , icon: faComments  },
- // { name: 'Overview Card', short: 'card' },
- // { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+  { name: 'Overview', short: 'overview' },
+  { name: 'Lineup', short: 'lineup' },
+  { name: 'Equipment', short: 'equipment' },
+  { name: 'How to Play', short: 'howtoplay' },
+  { name: 'Gameplay Examples', short: 'example' },
+  { name: 'Elysian Realm', short: 'er' },
+  { name: 'Rank Up', short: 'rank' },
+  { name: 'Popular Question', short: 'qna' },
+  { name: 'Overview Card', short: 'card' },
+  { name: 'Translation Error', short: 'translation' },
 ];  
 
-function handleClick(tabName) {
-    selectTab(tabName);
-    animateIcon(tabName);
-  }
-
-  let activeIcon = null;
-
-  function animateIcon(tabName) {
-    activeIcon = tabName;
-    setTimeout(() => (activeIcon = null), 300); // reset after animation
-  }
 // Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
@@ -114,7 +90,7 @@ let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
 
 // Calculate total pages based on the number of items
-$: totalItems = 2; // Total categories or groups in the lineup section
+$: totalItems = 3; // Total categories or groups in the lineup section
 $: totalPages = Math.ceil(totalItems / itemsPerPage);
 
 // Function to change pages
@@ -170,7 +146,7 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["horb"] || 0; // Get initial likes from JSON
+  let horblikes = likesData["horb"] || 0; // Get initial likes from JSON
   const charName = "horb"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
@@ -186,7 +162,6 @@ function selectTabMobile(event) {
 
   if (userHasLiked) {
     hasLiked = true; // Update state to disable the button
-    
     localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
   }
 });
@@ -198,7 +173,7 @@ function selectTabMobile(event) {
       return;
     }
 
-    fovlikes++;
+    horblikes++;
 
     // Call likeWithVoterId to send the like to Firebase
     await likeWithVoterId(charName, voterId);
@@ -218,131 +193,100 @@ function selectTabMobile(event) {
 
 
 <style>
-  #star-container {
-    background: radial-gradient(rgb(var(--light-purple-rgb)), rgb(var(--dark-purple-rgb)));
-  }
-
-  #star-gradient-overlay {
-    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-purple-rgb)));
-  }
-
-  #app {
-  height: 38rem;
-  overflow: hidden;
-  position: relative;
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 </style>
 
-
-
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
-
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
-    <div id="app">
-      <div id="star-container">
-        <div id="star-pattern"></div>
-        <div id="star-gradient-overlay"></div>
-      </div>
-      <div id="stripe-container">
-        <div id="stripe-pattern"></div>
-      </div>
-    </div>
-  
-    
-    </div>
-  
-  
-  
-  <!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-66 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/horb.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
-   <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-violet-800/70 hover:bg-violet-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{fovlikes}</span>
-      </button>
-    </div>
-  </div>
-  
-  </div>
-  
-  
-  <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Herrscher of Rebirth
-    </h1>
-  <!-- Character Info Cards -->
-<div class="rounded-lg overflow-hidden shadow-md bg-slate-200 text-black text-xs w-full font-medium">
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Name</div>
-    <div class="px-3 py-1 flex-1 flex items-center">Seele Vollerei</div>
-  </div>
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Release</div>
-    <div class="px-3 py-1 flex-1 flex items-center">v6.8 (3 Aug 2023)</div>
-  </div>
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">DLC</div>
-    <div class="px-3 py-1 flex-1 flex items-center">v8.5 (23 Oct 2025)</div>
-  </div>
+<div class="sm:mt-14"></div>
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+<div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox" >    
+  <img src="/images/bg/wave_hoo.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
 </div>
 
-  <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="psy" element="phy" ar="ws" bg="bg-violet-800" />
 
-  <!-- Support Section -->
-  <CharBio mode="support" ar={['goi' , 'ws' , 'p1phy']}  bg="bg-violet-800"/>
+
+<!-- Left: Character Image -->
+<div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+  <!-- Image for Larger Screens -->
+  <img src="/images/valkfull/horb.webp" alt="JD" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-17;"/> 
+
+  <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
+    <button
+      on:click={increaseLike}
+      class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
+             {hasLiked ? '' : 'hover:bg-blue-700'}">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-5 h-5"
+      >
+        <path
+          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        />
+      </svg>
+      <span class="text-white font-semibold">{horblikes}</span>
+    </button>
   </div>
 
-  
-  </section>
-  
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+</div>
+
+
+
+<!-- Right: Character Info (Centered) -->
+<div class="flex flex-col items-center text-center justify-start">
+  <!-- Battlesuit Name -->
+  <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-5 mb-2 sm:mb-0">Herrscher of Rebirth</h1>
+
+  <!-- Character Name and Release Date -->
+  <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Seele Vollerei | Release Date: v6.8 (3 Aug 2023)</p>
+
+  <!-- Common wrapper to ensure same width -->
+  <div class="w-full max-w-sm mb-2">
+    <!-- Container with 4 pictures (Centered) -->
+    <div class="flex flex-col items-center">
+      <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-violet-500 outline-1 bg-violet-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
+        <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
+        <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+      </div>
+    </div>
+
+    <!-- Support For Container (Centered) -->
+    <div class="flex flex-col mt-4 items-center">
+
+      <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-violet-500 outline-1 bg-violet-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <div class="flex flex-wrap justify-center">
+          <h2 class="text-base md:text-md custom-font tracking-wider text-slate-100">SUPPORT FOR:</h2>
+        </div >
+        <div class="flex flex-row gap-2 flex-wrap justify-center">
+          <img src="/images/artype/p1physical.png" alt="Support 3" class="w-auto h-8 md:h-10" />
+
+        </div>
+      </div>
+    </div>
+  </div> <!-- End common wrapper -->
+</div>
+</section>
+
+<div class="flex max-w-screen-xl justify-center mx-auto "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
 
     <ul class="space-y-2">
       {#each tabs as tab}
-      <button
-      on:click={() => handleClick(tab.name)}
-      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
-             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
-             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
-             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
-             before:scale-x-0 before:origin-left
-             hover:text-white hover:border-sky-600
-             {selectedTab === tab.name 
-               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
-               : ''}">
-    
-      <!-- Icon with rotation animation -->
-      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
-        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
-        {tab.name}
-      </span>
-    
-    </button>
+        <li>
+          <button
+            on:click={() => selectTab(tab.name)}
+            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
+                   {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
+            {tab.name}
+          </button>
+        </li>
       {/each}
     </ul>
     </aside>
@@ -387,83 +331,84 @@ function selectTabMobile(event) {
   <!-- Tab Content -->
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
-    {#if selectedTab === 'Overview'}
-    <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
-    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-      <p class="text-sm sm:text-base">
-        <strong>Partially Updated For v8.5 (23 October 2025)
-    </p>
-    </div>
-    <div>
-        <!-- Roles Section -->
-        <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+      {#if selectedTab === 'Overview'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4 text-center">OVERVIEW</h2>
 
+      <div>
+          <!-- Roles Section -->
+          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+          
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/>Herrscher of Rebirth (HoRB) is a powerful Part 1 Physical DPS. She has a unique skill where she can use Ultimate again when she defeats an enemy with a non-Ultimate attack. 
+              <strong class="text-amber-400">DPS</strong> <br/>Herrscher of Rebirth (HoRB) is a powerful Part 1 Physical DPS. She has a unique skill where she can use Ultimate again when she defeats an enemy with a non-Ultimate attack.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1 Physical Support</strong> <br/>HoRB is the backbone of Part 1 Physical teams, providing a wide range of buffs, including: <br/>
+              <strong class="text-amber-400">Physical Support</strong> <br/>HoRB is the backbone of Part 1 Physical teams, providing a wide range of buffs, including: <br/>
               - 75% impair (DEF reduction) <br/>
               - Increases team Crit Rate to 100% <br/>
               - Crit DMG buff<br/>
               - SP regen, faster rotation than HoS support, and more
-          </p>        
+          </p>
 
-        <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">World Star DPS</strong> <br/>
-            HoRB is now brought back into the meta with the addition of her DLC. Her role also expands as a Part 2 support for the following teams:
-        </p>
+          <div class="divider  "></div>
+          <!-- Pull Recommendation Section -->
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">F2P Players</strong><br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If HoRB and her gears are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+          </p>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Competitive</strong><br/> HoRB is still the best support for Part 1 Physical teams. HoRB DPS form usage is a bit rare. Since HoRB DPS does not have impair, she requires Herrscher of Sentience for support.
+          </p>
 
-      <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>
-        To Be Updated
-      </p>
+          <div class="divider  "></div>
+          <!-- How to Get Section -->
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
+          <ul class="list-disc ml-6 text-sm sm:text-base ">
+              <li ><strong>Herrscher of Rebirth:</strong> Battlesuit Supply, Starter Supply</li>
+              <li><strong>Herrscher of Rebirth's Weapon and Stigma:</strong> Focused Supply, Starter Supply</li>
+              <li>Regular supply not available in v7.9. </li>
+          </ul>
+          <div class="divider  "></div>
+          <!-- Full Guide Section -->
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
+          <p class="mt-2 text-sm sm:text-base pb-4">
+              Check out the full guide on YouTube: 
+          </p>
 
-    <p class="mt-4 text-sm sm:text-base">
-      <strong class="text-amber-400">World Star Support</strong> <br/>
-        To Be Updated
-    </p>
-
-
-        <div class="divider  "></div>
-        <!-- Pull Recommendation Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
-
-        <p class="text-sm sm:text-base mt-4">
-          <strong class="text-amber-400">To Be Updated</strong> 
-          <br/>TBA
-        </p>
-
-      
-
-
-        <div class="divider  "></div>
-        <!-- How to Get Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
-        <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Rebirth:</strong> Not available.</li>
-
-
-        </ul>
-        <div class="divider  "></div>
-        <!-- Full Guide Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE (SOON)</h2>
-
-    </div>
-{/if}
-
-
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/xiKbmxcVWZs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+  {/if}
+  
 
   {#if selectedTab === 'Lineup'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">LINEUP</h2>
 
-  <section class="max-w-(--breakpoint-lg) mx-auto ">
-
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> TO BE UPDATED </div>
+  <section class="max-w-screen-lg mx-auto ">
 
 
 
+      <Horbdps></Horbdps>
+
+      <div class="divider  "></div>
+
+      <P1physical></P1physical>
+
+      <div class="divider  "></div>
+
+      <Susannahdps></Susannahdps>
+
+      <div class="divider  "></div>
+
+      <Cedps></Cedps>
 
 </section>
 
@@ -604,7 +549,7 @@ function selectTabMobile(event) {
 
 
 
-     {#if selectedTab === 'Elysian Realm'}
+      {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
       <div class="flex justify-center gap-4 my-6">
@@ -1140,13 +1085,36 @@ function selectTabMobile(event) {
       {/if}
 
       {#if selectedTab === 'Rank Up'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">RANK UP</h2>
 
       <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded-sm m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
+        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
         </p>
       </div>
+      <h2 class="text-xl font-semibold my-4 cooltext text-white">NOTABLE RANK-UP</h2>
 
+        <!-- Notable Rank Ups Section -->
+        <div class="flex flex-col lg:flex-row gap-4 mb-8">
+          <!-- DPS Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
+            <ul class=" text-slate-100 text-base">
+              <li>Every rank except S2 has a DPS upgrade
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Support Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
+            S2: Allows you to skip Combo ATK for sp to use Ultimate. Speeds up rotation and improves score.
+
+          </div>
+        </div>
+
+        <div class="divider  "></div>
+
+        {#if !isMobile}
         <!-- Full Rank Up List -->
         <div class="text-slate-100 text-left ">
           <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
@@ -1163,7 +1131,7 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  In HoHuman form, Ele Breach +7.5% ➔ 10%. In HoOrigin form, Ele Breach +15% ➔ +18%
+                  DPS Form: Joint weapon skill finishing slash boosts Combo ATK's Physical DMG +35% ➔ 50%
                 </td>
                 <td class="p-3">DPS</td>
               </tr>
@@ -1171,84 +1139,204 @@ function selectTabMobile(event) {
               <tr>
                 <td>S2</td>
                 <td>
-                 - UNLOCK: An enemy with Pristine Seed take 50% ATK of Ice DMG per second.
-                 <br/>
-                 - Upon hitting an enemy with Pristine Seed, Total DMG +13% ➔ 25%, and sp restore +0.5 ➔ 1. CD: 1s.
+                  Support Form: <br/>
+                  - After ultimate evasion, each hit of Basic ATK seq 3 recover 8 ➔ 12 sp for HoRB <br/>
+                  - Triggering time fracture for the first time restores 15 ➔ 30 sp extra sp for HoRB <br/>
+                  - Team Total DMG + 7% ➔ 17% for 16s
 
                 </td>
-                <td>DPS</td>
-                            </tr>
+                <td>Support<br/><b>Recommended!</b> You don't have to use Combo ATK for sp</td>
+              </tr>
               <tr>
                 <td>S3</td>
                 <td>
-                  Leader Skill: Team ice valks initial sp +50 ➔ 55. Team Ice DMG +30% ➔ 32%. While Stars of the Past is in effect, team additional Ice DMG +10% ➔ 15%
+                  Leader Skill:<br/>
+                    - Team Max HP +5% ➔ 7.5%<br/>
+                    - Team Physical DMG +10% ➔ 15%
                 </td>
                 <td>DPS</td>
-
               </tr>
               <tr>
                 <td>SS</td>
                 <td>
-                  - UNLOCK: In HoHuman form, Charged ATK Total DMG +30%. In HoOrigin form, Charged ATK Total DMG +50% and self Total DMG +10%
-                  <br/>
-                  - Global Time Fracture triggered from entering HoOrigin form increases from 3s to 5s.
+                  UNLOCK: For every 0.5s of Joint Weapon skill, final slash deals additional 40% ATK of Physical DMG<br/>
+                  Crit Conversion state: Attacks with 100% Crit Rate gain 2% ➔ 8%% Physical DMG against enemies with Withering Fissure
                 </td>
-                <td> DPS <br/> Memorial Arena</td>
+                <td> DPS<br/>Support</td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  In HoOrigin form, Charged ATK deal additional 110% ➔ 200% ATK of Ice DMG. Every Charged ATK casted causes finisher to deal additional 220% ➔ 400% ATK of Ice DMG, max 2 stacks.
-                </td>
-                                  
-            <td> DPS </td>
-
-              </tr>
-              <tr>
-                <td>SS2</td>
-                <td>
-                  Ego Blossom Total DMG +14% ➔ 20%. Extra Ice DMG from Pristine Bloomage state increases from 38% to 50% ATK of Ice DMG.
-                </td>
-                <td> DPS </td>
-              </tr>
-              <tr>
-                <td>SS3</td>
-                <td>
-                  Leader Skill: Team ice valks initial sp +55 ➔ +60. Team Ice DMG +32% ➔ +35%. While Stars of the Past is in effect, team additional Ice DMG +15% ➔ 20%
-
-
+                  Enemies with Withering Fissure take 2.6% ➔ 5% more Total DMG from HoRB (independent multiplier)
                 </td>
                 <td>DPS</td>
               </tr>
               <tr>
+                <td>SS2</td>
+                <td>
+                  DPS Form: Max HP +1040 ➔ 1200. When Max HP is over 3000, for every 10 exceeding HP, enemies take 1% more Total DMG from HoRB, max 41% ➔ 45%
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
+                <td>SS3</td>
+                <td>
+                  Leader Skill:<br/>
+                    - Team Max HP +7.5% ➔ 10%<br/>
+                    - Team Physical DMG +15% ➔ 20%              
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
                 <td>SSS</td>
                 <td>
-                  UNLOCK: After using evasion skill in HoHuman form, gain Ice DMG +50% for 5s, CD: 60s. CD refreshes upon exiting HoOrigin form.
+                  UNLOCK: Support Form: Triggering global time fracture restores 15 sp, cd: 16s<br/>
+                  UNLOCK: DPS Form: Each Ult cast makes it deal additional 80% ATK of Physical DMG, max 3 stacks.<br/>
+                  Support Form: Triggering time fracture for the first time restores 30 ➔ 60 sp extra sp for HoRB
                 </td>
-                <td> DPS</td>
+                <td>DPS <br/> Support <br/> Memorial Arena
               </tr>
             </tbody>
           </table>
         </div>
+        {/if}
+
+        {#if isMobile}
+        <!-- Full Rank Up List -->
+        <div class="text-slate-100 text-left ">
+          <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
+        </div>
+        <div class="accordion space-y-2 mb-4">
+          <!-- Accordion Item 1 -->
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(1)}>
+              <span>S1</span>
+              <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 1 ? 'open' : ''}">
+              <p>DPS Form: Joint weapon skill finishing slash boosts Combo ATK's Physical DMG +35% ➔ 50%
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(2)}>
+              <span>S2</span>
+              <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 2 ? 'open' : ''}">
+              <p>	Support Form:<br/>
+                - After ultimate evasion, each hit of Basic ATK seq 3 recover 8 ➔ 12 sp for HoRB<br/>
+                - Triggering time fracture for the first time restores 15 ➔ 30 sp extra sp for HoRB<br/>
+                - Team Total DMG + 7% ➔ 17% for 16s
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> Support. <b>Recommended!</b> You don't have to use Combo ATK for sp to use Ultimate.</p>
+            </div>
+          </div>
+
+        
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(3)}>
+            <span>S3</span>
+            <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 3 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              Leader Skill:
+              - Team Max HP +5% ➔ 7.5%<br/>
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(4)}>
+            <span>SS</span>
+            <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 4 ? 'open' : ''}">
+            <p>1. 	UNLOCK: For every 0.5s of Joint Weapon skill, final slash deals additional 40% ATK of Physical DMG<br/>
+              2. Crit Conversion state: Attacks with 100% Crit Rate gain 2% ➔ 8%% Physical DMG against enemies with Withering Fissure
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(5)}>
+            <span>SS1</span>
+            <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 5 ? 'open' : ''}">
+            <p>Enemies with Withering Fissure take 2.6% ➔ 5% more Total DMG from HoRB (independent multiplier)</p>
+            <p class="mt-2"><strong>Good for:</strong>  DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(6)}>
+            <span>SS2</span>
+            <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 6 ? 'open' : ''}">
+            <p>
+              DPS Form: Max HP +1040 ➔ 1200. When Max HP is over 3000, for every 10 exceeding HP, enemies take 1% more Total DMG from HoRB, max 41% ➔ 45%
+
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(7)}>
+            <span>SS3</span>
+            <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 7 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              - Team Max HP +7.5% ➔ 10%<br/>
+              - Team Physical DMG +15% ➔ 20%
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(8)}>
+            <span>SSS</span>
+            <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 8 ? 'open' : ''}">
+            <p>	1. UNLOCK: Support Form: Triggering global time fracture restores 15 sp, cd: 16s <br/>
+              2. UNLOCK: DPS Form: Each Ult cast makes it deal additional 80% ATK of Physical DMG, max 3 stacks. <br/>
+              3. Support Form: Triggering time fracture for the first time restores 30 ➔ 60 sp extra sp for HoRB
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support, Memorial Arena
+            </p>
+          </div>
+        </div>
 
 
+    </div>
+        {/if}
       {/if}
 
 
       {#if selectedTab === 'How to Play'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">HOW TO PLAY</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
   
-      <div class=" gap-6 mt-4">
+      <div class=" gap-6 mt-5">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB Support and DPS</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 4:27</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Support at 4:56, DPS at 8:40</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/xBoYcLBsnZ0"
+                  src="https://www.youtube.com/embed/xiKbmxcVWZs"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1259,14 +1347,16 @@ function selectTabMobile(event) {
 
       </div>
 
+
   {/if}
   
   
-      {#if selectedTab === 'Gameplay'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
       <div class=" gap-6 mt-5 mb-10">
+        <!-- Video 1 with title and description -->
 
+      
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
           <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB DPS</h2>
 
@@ -1286,45 +1376,48 @@ function selectTabMobile(event) {
         </div>
       </div>
 
+      
+      
+
     </div>
+
+    <div class=" gap-6 my-10">
+      <!-- Video 1 with title and description -->
+
+    
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+        <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">VID 2</h2>
+
+        <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Description 2</p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+          loading="lazy" 
+
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    
+
+    </div>
+
 
   {/if}
   
-  {#if selectedTab === 'Question'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
-
-  <div class="my-6">
-    <div class="chat chat-start ">
-      <div class="chat-image avatar">
-        <div class="w-10 sm:w-12 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="/images/meibald.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble chat-bubble-primary text-base text-white">Does HoH really need Thelema support?</div>
-    </div>
-
-    <div class="chat chat-end">
-      <div class="chat-image avatar">
-        <div class="w-10 sm:w-12 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="/images/ds.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble chat-bubble-neutral text-base text-white py-5">
-        As DPS, HoH needs Thelema support. Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities. Thelema also provides evasion spam ar regen, and will contribute damage in Ice weather.
-
-      
-      </div>
-    </div>
-  </div>
+  {#if selectedTab === 'Popular Question'}
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTIONS</h2>
 
   {/if}
 
   {#if selectedTab === 'Overview Card'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW CARD</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW CARD</h2>
 
   <div class="text-center my-4">
     <p class="text-center text-sm sm:text-base">Overview card delayed
@@ -1334,7 +1427,7 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'Translation Error'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
 
       <div class="text-center my-4">
         <p class="text-center text-sm sm:text-base">No known translation error
@@ -1342,55 +1435,7 @@ function selectTabMobile(event) {
       </div>
       {/if}
 
-      {#if selectedTab === 'Support Buffs'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">SUPPORT BUFFS</h2>
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp"
-          alt="Buff 1"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp')}
-        />
-      </div>
 
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp"
-          alt="Buff 2"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp')}
-        />
-      </div>
-            
-      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4 mt-10">
-        <p class="mb-4 font-semibold">How to activate HoH support buffs:</p>
-        
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">AR Regen</p>
-            <p>- Weapon skill that triggers Ego Blossom will consume Stellar Drain. (When weapon button is flashing, casting weapon will trigger Ego Blossom).
-              <br/>
-              - In Law of Ascension team, QTE also restore AR.
-            </p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">Solon Stigma</p>
-           <p>Casting weapon or Charged ATK triggers an important stigma buff [Ego's Devotion] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Passive</p>
-            <p>The rest of her buffs are activated passively.</p>
-          </div>
-
-
-      </div>
-
-      <!-- Lightbox Component -->
-      <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
-      {/if}
   </div>
 
 </section>

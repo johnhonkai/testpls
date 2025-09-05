@@ -32,6 +32,8 @@
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
   { name: 'Hi♪ Love Elf♥', image: '/images/valkportrait/Elysia Hi Love Elf.png', type: 'SD', element: 'Ice', astralRing: ['Grail of Infinitude'] , url: '/valk/hi-love-elf',  badge: 'Beta', verdebut: 8.5, id:59},  
+  { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['World Star' , 'Part 1'] , url: '/valk/horb', badge: 'Beta', verdebut: 6.8, verdlc: 8.5, id:17},
+  
   { name: 'Behold! Fate-Defying Dragon', image: '/images/valkportrait/scoralie.png', type: 'Mech', element: ['Fire','Ignite'], astralRing: ['Rite of Oblivion'] , url: '/valk/behold-fate-defying-dragon',  badge: 'New', verdebut: 8.4, id:58},  
   { name: 'Planar Armament: Warped Spacetime', image: '/images/valkportrait/paws.png', type: 'Bio', element: 'Lightning', astralRing: ['Grail of Infinitude'] , url: '/valk/paws', verdebut: 8.3, id:55},
   { name: 'Peregrine Sword', image: '/images/valkportrait/ps.png', type: 'Bio', element: ['Physical' , 'Bleed'], astralRing: ['Law of Ascension'] , url: '/valk/peregrine-sword',   verdebut: 8.2, id:54},
@@ -51,7 +53,6 @@
   { name: 'Cosmic Expression', image: '/images/valkportrait/Griseo Cosmic Expression.png', type: 'SD', element: ['Physical' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/ce', verdebut: 7.1, id:15},
   { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/lv', verdebut: 7.0, id:52},
   { name: 'Miracle ☆ Magical Girl', image: '/images/valkportrait/Sirin Miracle Magical Girl.png', type: 'Mech', element: ['Fire' , 'Ignite'], astralRing: ['Part 1'] , url: '/valk/sirin', verdebut: 6.9, id:18},
-  { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/horb', verdebut: 6.8, id:17},
   { name: 'Sugary Starburst', image: '/images/valkportrait/Kira Sugary Starburst.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kira', verdebut: 6.7, id:19},
   { name: 'Dreamweaver', image: '/images/valkportrait/Hare Dreamweaver.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/dreamweaver', verdebut: 6.6,  id:20},
   { name: 'Terminal Aide 0017', image: '/images/valkportrait/Prometheus Terminal Aide.png', type: 'Img', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/prom', verdebut: 6.6, id:24},
