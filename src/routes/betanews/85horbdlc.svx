@@ -47,7 +47,7 @@ Self Crit Rate +20%. Herrscher of Rebirth equip bonus:
 During SO, enemies take 15% / 30% / 45% more Total DMG from the valk on the field.
 Herrscher of Rebirth equip and leader bonus:
 - Ult Crit DMG +60% / 120% / 180%.
-- Upon casting Ult, for every remaining Overflowing Sea Branches reso trigger counter, restore 1 / 2 / 3 AR point, if this AR regen is triggered, SO CD -3s.
+- Upon casting new Ult Cradle of Whispering Sea, for every remaining Overflowing Sea Branches reso trigger counter, restore 1 / 2 / 3 AR point, if this AR regen is triggered, SO CD -3s.
 
 ---
 
@@ -122,9 +122,7 @@ When HoRB is the leader, activate AR World Star. SO cost: 150. SO Duration: 25s,
 
 The character is protected by AR World Star. When AR is activated: All damage from HoRB except for Stellar Assault is considered as summon damage.
 
-Press Ult to use Ult. When entering Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Physical DMG. 
-
-HoRB Ult is replaced with Cradle of Whispering Sea, deals 1500% ATK of Physical DMG.
+Press Ult to use Ult. When entering Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Physical DMG. During SO, HoRB Ult is replaced with Cradle of Whispering Sea, deals 1500% ATK of Physical DMG.
 
 When World Star is activated:
 - HoRB is fixed to Life Binder form. In Life Binder Form:
