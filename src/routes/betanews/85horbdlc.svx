@@ -32,7 +32,7 @@ Herrscher of Rebirth equip bonus:
 - The weapon active’s DMG, CD and SP cost are based on wielder type.
 - Gain AR World Star. During SO, her Ult is replaced with Cradle of Whispering Sea, dealing 1500% ATK of Physical DMG.
 - Weapon Skill and Joint Weapon gain Crit Rate +25%.
-- When AR World Star is activated: HoRB gains QME, and upon casting Combo ATK, trigger 1.5s time stop.
+- When AR World Star is activated: When HoRB has QME, upon casting Combo ATK, trigger 1.5s time stop.
 
 #### PASSIVE 1
 Self Physical DMG +30%. Herrscher of Rebirth equip bonus: 
