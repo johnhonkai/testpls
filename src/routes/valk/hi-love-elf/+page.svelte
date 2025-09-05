@@ -1,9 +1,9 @@
 
 <svelte:head>
-  <title>Hi♪ Love Elf♥</title> 
+  <title>Hi ♪ Love Elf♥</title> 
 
-    <meta property="og:title" content="Elysia - Hi♪ Love Elf ♥" />
-    <meta property="og:description" content="Hi♪ Love Elf ♥ Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Elysia - Hi ♪ Love Elf ♥" />
+    <meta property="og:description" content="Hi ♪ Love Elf ♥ Guides, Builds and Gameplay" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="https://marisaimpact.com/valk/messenger-of-love" />
     <meta property="og:type" content="website" />
@@ -296,7 +296,7 @@ async function increaseLike() {
 <div class="flex flex-col items-center text-center justify-start sm:mt-8">
  
   <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Hi♪ Love Elf ♥</h1>
+  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Hi ♪ Love Elf ♥</h1>
 
   <!-- Character Info Cards -->
   <div class="space-y-2 w-[260px] md:w-[300px]">

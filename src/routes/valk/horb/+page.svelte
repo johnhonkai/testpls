@@ -1139,14 +1139,38 @@ function selectTabMobile(event) {
 
       {/if}
 
+      
       {#if selectedTab === 'Rank Up'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">RANK UP</h2>
 
       <div class="text-center my-4">
-        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded-sm m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
+        <p class="text-center text-sm sm:text-base"><b>Reminder:</b> <span class="text-black bg-white font-semibold rounded m-2 px-2"> S0 rank is enough </span> for most players. A fully built S0-rank team is better than SSS-rank DPS without signature weapon and proper supports.
         </p>
       </div>
+      <h2 class="text-xl font-semibold my-4 cooltext text-white">NOTABLE RANK-UP</h2>
 
+        <!-- Notable Rank Ups Section -->
+        <div class="flex flex-col lg:flex-row gap-4 mb-8">
+          <!-- DPS Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
+            <ul class=" text-slate-100 text-base">
+              <li>Every rank except S2 has a DPS upgrade
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Support Upgrade Box -->
+          <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
+            S2: Allows you to skip Combo ATK for sp to use Ultimate. Speeds up rotation and improves score.
+
+          </div>
+        </div>
+
+        <div class="divider  "></div>
+
+        {#if !isMobile}
         <!-- Full Rank Up List -->
         <div class="text-slate-100 text-left ">
           <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
@@ -1163,7 +1187,7 @@ function selectTabMobile(event) {
               <tr>
                 <td >S1</td>
                 <td>
-                  In HoHuman form, Ele Breach +7.5% ➔ 10%. In HoOrigin form, Ele Breach +15% ➔ +18%
+                  DPS Form: Joint weapon skill finishing slash boosts Combo ATK's Physical DMG +35% ➔ 50%
                 </td>
                 <td class="p-3">DPS</td>
               </tr>
@@ -1171,67 +1195,187 @@ function selectTabMobile(event) {
               <tr>
                 <td>S2</td>
                 <td>
-                 - UNLOCK: An enemy with Pristine Seed take 50% ATK of Ice DMG per second.
-                 <br/>
-                 - Upon hitting an enemy with Pristine Seed, Total DMG +13% ➔ 25%, and sp restore +0.5 ➔ 1. CD: 1s.
+                  Support Form: <br/>
+                  - After ultimate evasion, each hit of Basic ATK seq 3 recover 8 ➔ 12 sp for HoRB <br/>
+                  - Triggering time fracture for the first time restores 15 ➔ 30 sp extra sp for HoRB <br/>
+                  - Team Total DMG + 7% ➔ 17% for 16s
 
                 </td>
-                <td>DPS</td>
-                            </tr>
+                <td>Support<br/><b>Recommended!</b> You don't have to use Combo ATK for sp</td>
+              </tr>
               <tr>
                 <td>S3</td>
                 <td>
-                  Leader Skill: Team ice valks initial sp +50 ➔ 55. Team Ice DMG +30% ➔ 32%. While Stars of the Past is in effect, team additional Ice DMG +10% ➔ 15%
+                  Leader Skill:<br/>
+                    - Team Max HP +5% ➔ 7.5%<br/>
+                    - Team Physical DMG +10% ➔ 15%
                 </td>
                 <td>DPS</td>
-
               </tr>
               <tr>
                 <td>SS</td>
                 <td>
-                  - UNLOCK: In HoHuman form, Charged ATK Total DMG +30%. In HoOrigin form, Charged ATK Total DMG +50% and self Total DMG +10%
-                  <br/>
-                  - Global Time Fracture triggered from entering HoOrigin form increases from 3s to 5s.
+                  UNLOCK: For every 0.5s of Joint Weapon skill, final slash deals additional 40% ATK of Physical DMG<br/>
+                  Crit Conversion state: Attacks with 100% Crit Rate gain 2% ➔ 8%% Physical DMG against enemies with Withering Fissure
                 </td>
-                <td> DPS <br/> Memorial Arena</td>
+                <td> DPS<br/>Support</td>
               </tr>
               <tr>
                 <td>SS1</td>
                 <td>
-                  In HoOrigin form, Charged ATK deal additional 110% ➔ 200% ATK of Ice DMG. Every Charged ATK casted causes finisher to deal additional 220% ➔ 400% ATK of Ice DMG, max 2 stacks.
-                </td>
-                                  
-            <td> DPS </td>
-
-              </tr>
-              <tr>
-                <td>SS2</td>
-                <td>
-                  Ego Blossom Total DMG +14% ➔ 20%. Extra Ice DMG from Pristine Bloomage state increases from 38% to 50% ATK of Ice DMG.
-                </td>
-                <td> DPS </td>
-              </tr>
-              <tr>
-                <td>SS3</td>
-                <td>
-                  Leader Skill: Team ice valks initial sp +55 ➔ +60. Team Ice DMG +32% ➔ +35%. While Stars of the Past is in effect, team additional Ice DMG +15% ➔ 20%
-
-
+                  Enemies with Withering Fissure take 2.6% ➔ 5% more Total DMG from HoRB (independent multiplier)
                 </td>
                 <td>DPS</td>
               </tr>
               <tr>
+                <td>SS2</td>
+                <td>
+                  DPS Form: Max HP +1040 ➔ 1200. When Max HP is over 3000, for every 10 exceeding HP, enemies take 1% more Total DMG from HoRB, max 41% ➔ 45%
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
+                <td>SS3</td>
+                <td>
+                  Leader Skill:<br/>
+                    - Team Max HP +7.5% ➔ 10%<br/>
+                    - Team Physical DMG +15% ➔ 20%              
+                </td>
+                <td>DPS
+              </tr>
+              <tr>
                 <td>SSS</td>
                 <td>
-                  UNLOCK: After using evasion skill in HoHuman form, gain Ice DMG +50% for 5s, CD: 60s. CD refreshes upon exiting HoOrigin form.
+                  UNLOCK: Support Form: Triggering global time fracture restores 15 sp, cd: 16s<br/>
+                  UNLOCK: DPS Form: Each Ult cast makes it deal additional 80% ATK of Physical DMG, max 3 stacks.<br/>
+                  Support Form: Triggering time fracture for the first time restores 30 ➔ 60 sp extra sp for HoRB
                 </td>
-                <td> DPS</td>
+                <td>DPS <br/> Support <br/> Memorial Arena
               </tr>
             </tbody>
           </table>
         </div>
+        {/if}
+
+        {#if isMobile}
+        <!-- Full Rank Up List -->
+        <div class="text-slate-100 text-left ">
+          <h2 class="text-xl font-semibold mb-4 cooltext">FULL RANK-UP LIST</h2>
+        </div>
+        <div class="accordion space-y-2 mb-4">
+          <!-- Accordion Item 1 -->
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(1)}>
+              <span>S1</span>
+              <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 1 ? 'open' : ''}">
+              <p>DPS Form: Joint weapon skill finishing slash boosts Combo ATK's Physical DMG +35% ➔ 50%
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> DPS</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title" on:click={() => toggleItem(2)}>
+              <span>S2</span>
+              <span class="text-md">{openItem === 2 ? '-' : '+'}</span>
+            </div>
+            <div class="accordion-content {openItem === 2 ? 'open' : ''}">
+              <p>	Support Form:<br/>
+                - After ultimate evasion, each hit of Basic ATK seq 3 recover 8 ➔ 12 sp for HoRB<br/>
+                - Triggering time fracture for the first time restores 15 ➔ 30 sp extra sp for HoRB<br/>
+                - Team Total DMG + 7% ➔ 17% for 16s
+              </p>
+              <p class="mt-2"><strong>Good for:</strong> Support. <b>Recommended!</b> You don't have to use Combo ATK for sp to use Ultimate.</p>
+            </div>
+          </div>
+
+        
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(3)}>
+            <span>S3</span>
+            <span class="text-md">{openItem === 3 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 3 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              Leader Skill:
+              - Team Max HP +5% ➔ 7.5%<br/>
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(4)}>
+            <span>SS</span>
+            <span class="text-md">{openItem === 4 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 4 ? 'open' : ''}">
+            <p>1. 	UNLOCK: For every 0.5s of Joint Weapon skill, final slash deals additional 40% ATK of Physical DMG<br/>
+              2. Crit Conversion state: Attacks with 100% Crit Rate gain 2% ➔ 8%% Physical DMG against enemies with Withering Fissure
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(5)}>
+            <span>SS1</span>
+            <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 5 ? 'open' : ''}">
+            <p>Enemies with Withering Fissure take 2.6% ➔ 5% more Total DMG from HoRB (independent multiplier)</p>
+            <p class="mt-2"><strong>Good for:</strong>  DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(6)}>
+            <span>SS2</span>
+            <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 6 ? 'open' : ''}">
+            <p>
+              DPS Form: Max HP +1040 ➔ 1200. When Max HP is over 3000, for every 10 exceeding HP, enemies take 1% more Total DMG from HoRB, max 41% ➔ 45%
+
+            </p>
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(7)}>
+            <span>SS3</span>
+            <span class="text-md">{openItem === 7 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 7 ? 'open' : ''}">
+            <p>Leader Skill:<br/>
+              - Team Max HP +7.5% ➔ 10%<br/>
+              - Team Physical DMG +15% ➔ 20%
+            <p class="mt-2"><strong>Good for:</strong> DPS</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title" on:click={() => toggleItem(8)}>
+            <span>SSS</span>
+            <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
+          </div>
+          <div class="accordion-content {openItem === 8 ? 'open' : ''}">
+            <p>	1. UNLOCK: Support Form: Triggering global time fracture restores 15 sp, cd: 16s <br/>
+              2. UNLOCK: DPS Form: Each Ult cast makes it deal additional 80% ATK of Physical DMG, max 3 stacks. <br/>
+              3. Support Form: Triggering time fracture for the first time restores 30 ➔ 60 sp extra sp for HoRB
+            <p class="mt-2"><strong>Good for:</strong> DPS, Support, Memorial Arena
+            </p>
+          </div>
+        </div>
 
 
+    </div>
+        {/if}
       {/if}
 
 
