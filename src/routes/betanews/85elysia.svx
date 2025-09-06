@@ -244,7 +244,7 @@ When Ult with max arrows hits a SD enemy, detonate its critical index, can only 
 
 S1: 
 - WoD Support: Ele DMG +20% (S) > 30% (S1), Phy DMG +20% (S) > 30% (S1). Ranged Ele DMG +5% (S) > 30% (S1)
-- WStar Support: For every WS character in the team, during AR Charging, Total DMG +3% (S) > 8% (S1), during SO, Total DMG  > 8% (S1).
+- WStar Support: For every WS character in the team, during AR Charging, Total DMG +3% (S) > 8% (S1), during SO, Total DMG +3% (S) > 8% (S1).
 
 S2: 
 - UNLOCK: Non-ultimate evasion can trigger evasion skill 
