@@ -1,0 +1,61 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.5 Elysian Realm v2
+version: '8.5'
+sortOrder: '5'
+image: "/images/valkportrait/Elysia Hi Love Elf.png"
+---
+
+### LINKS
+
+- [8.5 Patch Note](/betanews/85log)
+- [HoRB DLC](/betanews/85horbdlc)
+- [Elysian Realm](/betanews/85er)
+
+
+---
+
+### Stage Buffs
+- Upon entering a floor, summon a Heart Reflection (counts as a summon) based on the equipped support sigil. Obtaining its corresponding Nexus or Signet will unlock Heart Reflection Prayer, and completing the related challenge will also increase its damage. Enemy dmg taken -6%, after each floor, -0.3%, up to 12% (independent multiplier).
+- The negative effect has been removed (Please accept my blessing~)
+- Every 8s, a Heart Shadow Prayer with unlocked core signet or Ego signet will be randomly summoned to assist in battle.
+- When AR is activated, valk Physical and Ele DMG +24%.
+- All base signet +1
+
+---
+
+### Load Buffs
+- 0: 
+- 5: 
+- 5: 
+- 10: 
+- 10: 
+- 15: 
+- 15: 
+
+---
+
+### Hi Love Elf
+
+#### Battlesuit Changes
+
+Valk adjustment
+- Activate AR GoInfinitude
+- Max SP +100. Gain full AR at the start of battle.
+- Base signet level +1
+- At the start of a run, you can choose one more Ego signet.
+
+#### Signet 1
+During SO: Each Basic ATK generates a Wish Flower, max 4, considered as summoned unit, and deals additional 800% ATK of Ice DMG. Weapon followup causes Wish Flower to Full Bloom, each dealing 120% ATK of Ice DMG, cd 2s. When SO ends, restore full AR.
+
+#### Signet 2
+During SO: weapon skill deals 50% ATK of Ice DMG. ??? deals additional 1200% ATK of Ice DMG, Full Bloom deals additional 1500% ATK of Ice DMG.
+
+#### Signet 3
+During AR Charging: Weapon gives 150 sp. After using Ult, can connect to Basic SEQ 3. Basic SEQ 4 refreshes weapon and Ult cd. Weapon deals additional 2000% ATK of Ice DMG.
+
+#### Signet 4
+During AR Charging: When Ult is fully charged and released, [Flower of Love and Wishes] deals additional 700% ATK of Ice DMG and triggers evasion skill.
+
+#### Signet 5
+When Basic ATK or weapon skill hits a target, enemies take 40% more Total DMG, lasts for 20s, can be refreshed.

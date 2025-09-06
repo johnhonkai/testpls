@@ -11,6 +11,7 @@ image: "/images/valkportrait/Seele Herrscher of Rebirth.png"
 
 - [8.5 Patch Note](/betanews/85log)
 - [HoRB DLC](/betanews/85horbdlc)
+- [Elysian Realm](/betanews/85er)
 
 ---
 
