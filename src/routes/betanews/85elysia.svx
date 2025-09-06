@@ -99,7 +99,7 @@ When World Star is activated:
     - 2: Joint weapon, deal 400% + 100%x2, consume 2 QME, trigger 2 reso
     - 3: Shoorts Ult (instantly at 7 arrows) and activates Lovefield in High Spring state, deal 1600% + 100%x2, consume 2 QME, trigger 2 reso, and then you can use Ult Finisher, deal 1000% ATK of Ice DMG.
 - Team recover 100 HP when a reso atk is triggered.
-- During SO: Ult Finisher consume QME to unleash weapon skill Wishbloom Resonation and derived attack Heart’s First Benediction. During this time, Ult gain Ice DMG +100% Ice DMG, and Ele Breach +10%. (sorry this doesnt make sense likely wrong translation)
+- During SO: Using Ult Finisher, Weapon Skill, Joint Weapon, and Ult by consuming QME makes the attacks gain Ice DMG +100% Ice DMG, and Ele Breach +10%.
 
 
 ---
