@@ -18,20 +18,20 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 ### Stage Buffs
 - Upon entering a floor, summon a Heart Reflection (counts as a summon) based on the equipped support sigil. Obtaining its corresponding Nexus or Signet will unlock Heart Reflection Prayer, and completing the related challenge will also increase its damage. Enemy dmg taken -6%, after each floor, -0.3%, up to 12% (independent multiplier).
 - The negative effect has been removed (Please accept my blessing~)
-- Every 8s, a Heart Shadow Prayer with unlocked core signet or Ego signet will be randomly summoned to assist in battle.
+- Every 8s, a Heart Reflection Prayer with unlocked core signet or Ego signet will be randomly summoned to assist in battle.
 - When AR is activated, valk Physical and Ele DMG +24%.
-- All base signet +1
+- All base signet level +1
 
 ---
 
 ### Load Buffs
-- 0: 
-- 5: 
-- 5: 
-- 10: 
-- 10: 
-- 15: 
-- 15: 
+- 0: F17 boss is replaced with Alien Guard
+- 15: When you gain Deliverance or Gold signet, every time you use Ult, sp and max sp +200, max 600.
+- 15: When you get Setsuna or Reverie signet, when you trigger evasion skill, gain Total DMG for 10s (+5% for every 100 silver, up to 100%), can be refreshed, upon refresh gain 5 silver, max 20 times per floor.
+- 15: When you get Helix or Bodhi signet, weapon Total DMG +40%. For every 150 hitcount accumulated, weapon Total DMG +1%, max 20 stacks.
+- 15: When you get Decimation or Deliverance signet, Total DMG +50% for 10s after using Ult, can be refreshed. 100 HP will be lost every 0.1 sec (HP loss stops at 20% HP)
+- 15: When you get Stars or Infinity signet, after triggering evasion, weapon, or Ult 3 times, OR when you create a summon, summon a drawing board that deals dmg in an aoe, lasts 15s, counts as a summon. When the board is present, enemies take 30% more Total DMG.
+- 15: Physical Breach +35%, Ele Breach +18%, each time you gain Ego signet, Phy Breach +5%, Ele Breach +2%.
 
 ---
 
@@ -69,3 +69,15 @@ When HoRB Stellar Key is equipped:
 - Activate World Star
 - Starts the battle with full AR. Overflowing Sea Branches deal 25% ATK of Physical DMG when triggered by reso akt, no longer affected by ???, and restore 10 AR and 5 sp.
 - Attacking in SO no longer consume QME, and each reso atk deals 710% ATK of Physical DMG.
+
+#### Signet 2
+When HoRB Stellar Key is equipped: During AR Charging, Physical DMG +10%.
+
+#### Signet 3
+When HoRB Stellar Key is equipped: SO CD -12s after using Ult in SO.
+
+#### Signet 4
+When HoRB Stellar Key is equipped: When AR is activated, Physical DMG +20%.
+
+#### Signet 5
+When HoRB Stellar Key is equipped: Resonance ATK Total DMG +20%.
