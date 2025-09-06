@@ -59,3 +59,13 @@ During AR Charging: When Ult is fully charged and released, [Flower of Love and 
 
 #### Signet 5
 When Basic ATK or weapon skill hits a target, enemies take 40% more Total DMG, lasts for 20s, can be refreshed.
+
+---
+
+### Herrscher of Rebirth
+
+#### Battlesuit Changes
+When HoRB Stellar Key is equipped:
+- Activate World Star
+- Starts the battle with full AR. Overflowing Sea Branches deal 25% ATK of Physical DMG when triggered by reso akt, no longer affected by ???, and restore 10 AR and 5 sp.
+- Attacking in SO no longer consume QME, and each reso atk deals 710% ATK of Physical DMG.

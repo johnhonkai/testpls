@@ -47,7 +47,7 @@ Self Crit Rate +20%. Herrscher of Rebirth equip bonus:
 #### SYNERGY
 During SO, enemies take 15% / 30% / 45% more Total DMG from the valk on the field.
 Herrscher of Rebirth equip and leader bonus:
-- Ult Crit DMG +60% / 120% / 180%.
+- New Ult Cradle of Whispering Sea gain Crit DMG +60% / 120% / 180%.
 - Upon casting new Ult Cradle of Whispering Sea, for every remaining Overflowing Sea Branches reso trigger counter, restore 1 / 2 / 3 AR point, if this AR regen is triggered, SO CD -3s.
 
 ---
