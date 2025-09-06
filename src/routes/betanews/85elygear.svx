@@ -83,7 +83,7 @@ Ice DMG +25%. Hi Love Elf equip bonus:
   - During SO: Valks with [Heartblossom] gain Ele DMG +10%, Phy DMG +8%, Total DMG +5%, enemies take +15% more Total DMG from characters with [Heartblossom].
 
 #### 3PC
-Ult, weapon skil gain Total DMG +80%. Hi Love Elf equip bonus:
+Ult, weapon skill gain Total DMG +80%. Hi Love Elf equip bonus:
 - When weapon or QTE hits, or upon activating SO, or when the battle starts when Ely is the leader, team gain [Heartblossom] for 25s, can be refreshed.
 - When GoInfinitude is activated:
   - Hi Love Elf Ice DMG +10%, Total DMG +10%
