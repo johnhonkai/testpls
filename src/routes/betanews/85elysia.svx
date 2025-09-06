@@ -37,7 +37,7 @@ Activates AR Grail of Infinitude. SO cost: 175. SO Duration: 30s, CD: 27s.
 As leader:
 - Enemies take 6.4% (S) / 10% (SS) more total damage from Hi Love ELf. During AR Charging, additional +3.2% (S) / 5% (SS).
 - During AR Charging: Each time you use weapon or Ult, restore 3 / 2.5 points of AR meter.
-- Ultimate from a team member with Symbiosis tag will inflict 90 points of freeze, cd 3s, cd for each teammate is calculated seperately.
+- Ultimate from a team member with Symbiosis tag will inflict 9 points of freeze, cd 3s, cd for each teammate is calculated seperately.
 
 
 ---

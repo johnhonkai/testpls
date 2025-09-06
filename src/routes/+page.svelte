@@ -352,23 +352,23 @@
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=BtRMoDwjFuo" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=eZZHr9euFbw" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/BtRMoDwjFuo/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/eZZHr9euFbw/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">v8.5 Elysia Revealed!</h3>
-          <p class="text-slate-300">Hi♪ Love Elf♥</p>
+          <h3 class="text-lg font-semibold text-white mb-1">v8.5 Elysia Gameplay!</h3>
+          <p class="text-slate-300">Hi ♪ Love Elf ♥ Gameplay</p>
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=buikpBFjC7Y" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=GKAAdGBc918" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/buikpBFjC7Y/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/GKAAdGBc918/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">9th Anniversary Freebies</h3>
-          <p class="text-slate-300 text-md">Free HoTruth, over 50 free pulls, and more</p>
+          <h3 class="text-lg font-semibold text-white mb-1">HoRB DLC Gameplay</h3>
+          <p class="text-slate-300 text-md">Seele gets a Stellar Key Upgrade</p>
         </div>
       </a>
   
@@ -387,9 +387,9 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=ksFhk2P47zI" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=buikpBFjC7Y" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/ksFhk2P47zI/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/buikpBFjC7Y/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">Latest Video From Earth</h3>
