@@ -1,6 +1,27 @@
 export const valkyries = [
 
-  
+    { name: 'Hi Love Elf', 
+        image: '/images/valkportrait/Elysia%20Hi%20Love%20Elf.png', 
+        type: 'SD', 
+        element: 'Ice', 
+        astralRing:'Grail of Infinitude', 
+        artag: ['Grail of Infinitude', 'Symbiosis' , 'Harmonized Shadow Star', 'Domain Resonance'] , 
+        url: '/valk/hi-love-elf',
+        cost: 200,
+        
+    }, 
+
+    { name: 'Herrscher of Rebirth', 
+        image: '/images/valkportrait/Seele Herrscher of Rebirth.png', 
+        type: 'Psy', 
+        element: 'Physical', 
+        astralRing:'World Star', 
+        artag: ['World Star', 'Symbiosis' , 'Domain Resonance'] , 
+        url: '/valk/horb',
+        cost: 200,
+        
+    },  
+
     { name: 'Dragoon Coralie', 
         image: '/images/valkportrait/scoralie.png', 
         type: 'MECH', 
