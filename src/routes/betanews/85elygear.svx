@@ -1,0 +1,96 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Hi♪ Love Elf♥ Equipment Translation V2
+version: '8.5'
+sortOrder: '3'
+image: "/images/valkportrait/Elysia Hi Love Elf.png"
+
+---
+
+### LINKS
+
+- [8.5 Patch Note](/betanews/85log)
+- [Hi Love Elf Skills](/betanews/85elysia)
+- [Hi Love Elf Equipment](/betanews/85elygear)
+- [HoRB DLC](/betanews/85horbdlc)
+- [Elysian Realm](/betanews/85er)
+
+---
+
+
+### WEAPON 
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/Ee5OHWb.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Pure Love Verse: Heartfelt Wish </p>
+</div>
+</div>
+
+
+#### ACTIVE
+The weapon active’s DMG, CD and SP cost are based on wielder type. If wielder has Symbiosis tag, Ice DMG +30%. Hi Love Elf equip bonus:
+- As leader, during SO, initial sp +10%.
+- During AR Charging: When weapon skill hits a target, if sp is less than 150, restore to 150, cd 15s. CD is refreshed when SO ends.
+
+#### PASSIVE 1
+Total DMG +15%. Hi Love Elf equip bonus:
+- Team Resonance ATK Ele DMG +12%, Phy DMG +15%.
+- When AR is activated: Self Ice DMG +15%, Team Total DMG +12%, enemies take 15% more Total DMG.
+
+#### PASSIVE 2
+Enemies take 12% more Ice DMG from herself. Hi Love Elf equip bonus:
+- Self Total DMG +12%. Team Ele DMG +10%.
+- When GoInfinitude is activated: Team members with Symbiosis tag gain Ele DMG +10%, Phy DMG +15%.
+
+#### SYNERGY
+Enemies take 2 / 4 / 6% more Total DMG from valks on the field (independent, cannot stack).
+
+Hi Love Elf equip bonus: Enemies take 2 / 4 / 6% more Ice DMG from herself (independent).
+
+---
+
+### STIGMA 
+
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/X33Axm0.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Serene Bloom set</p>
+</div>
+</div>
+
+#### TOP
+Ice DMG +30%. Hi Love Elf equip bonus:
+- Valks with [Heartblossom] gain Total DMG +20%.
+
+#### MID
+Host takes 30% less Total DMG. Hi Love Elf equip bonus:
+- Valks with [Heartblossom] gain Ele DMG and Phy DMG +30%.
+
+#### BOT
+Total DMG +20%. Hi Love Elf equip bonus:
+- Enemies take 15% more Phy DMG and Ele DMG from valks with [Heartblossom].
+
+#### 2PC
+Ice DMG +25%. Hi Love Elf equip bonus:
+- Enemies take 25% more Ice DMG from herself.
+- When AR is activated: Enemies take 12% more Ele DMG and Phy DMG from valks with [Heartblossom].
+- When WoDestiny is activated:
+  - Valks with [Heartblossom] gain Ele DMG +40%, Phy DMG +20%, Total DMG +10%, enemies take +35% more Total DMG from characters with [Heartblossom].
+  - During SO: Valks with [Heartblossom] gain Ele DMG +10%, Phy DMG +8%, Total DMG +5%, enemies take +15% more Total DMG from characters with [Heartblossom].
+
+#### 3PC
+Ult, weapon skil gain Total DMG +80%. Hi Love Elf equip bonus:
+- When weapon or QTE hits, or upon activating SO, or when the battle starts when Ely is the leader, team gain [Heartblossom] for 25s, can be refreshed.
+- When GoInfinitude is activated:
+  - Hi Love Elf Ice DMG +10%, Total DMG +10%
+  - Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +25%, Phy DMG +5%, Total DMG +30%. Enemies take 5% more Phy DMG, 5% more Ele DMG, 40% more Total DMG from valks with [Heartblossom] and Symbiosis tag.
+  - During SO: Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +10%, Phy DMG +5%, Total DMG +5%. Enemies take 5% more Ele DMG and 5% more Total DMG from valks with [Heartblossom] and Symbiosis tag.
+
+- When World Star is activated:  
+  - Self Ice DMG +20% and Total DMG +10%.
+  - Valks with [Heartblossom] gain Ele DMG +15%, Total DMG +20%, and enemies take 18% more Ele DMG and 12% more Phy DMG from valks with [Heartblossom]
+  - During SO: Valks with [Heartblossom] gain Ele DMG +55%, and enemies take 25% more Total DMG from valks with [Heartblossom].

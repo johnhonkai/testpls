@@ -9,6 +9,8 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 ### LINKS
 
 - [8.5 Patch Note](/betanews/85log)
+- [Hi Love Elf Skills](/betanews/85elysia)
+- [Hi Love Elf Equipment](/betanews/85elygear)
 - [HoRB DLC](/betanews/85horbdlc)
 - [Elysian Realm](/betanews/85er)
 
@@ -81,3 +83,26 @@ When HoRB Stellar Key is equipped: When AR is activated, Physical DMG +20%.
 
 #### Signet 5
 When HoRB Stellar Key is equipped: Resonance ATK Total DMG +20%.
+
+---
+
+### Stygian Nymph BUFF
+
+#### Battlesuit Changes
+- NEW: Crit Rate +30% and Total DMG +70%
+
+#### Signet 1
+- Before: Within 12s after switching between Saule and Veliona, Total DMG increases by 10%
+- After: Within 12s after switching between Saule and Veliona, Total DMG increases by **10% + 10%**
+
+#### Signet 3
+- Before: When evading through an enemy and triggering Ultimate Evasion Skill, the enemy takes 10% bonus Total DMG for 6s.
+- After: When evading through an enemy and triggering Ultimate Evasion Skill, the enemy takes **10% + 10% + 10% + 10% + 10% + 10%** bonus Total DMG for 6s.
+
+#### Signet 4
+- Before: Casting Ultimate creates a resonance field which deals 200% ATK of bonus Physical DMG 
+- After: Casting Ultimate creates a resonance field which deals **1200%** ATK of bonus Physical DMG 
+
+#### Signet 5
+- Before: Any mark resonance deals 10% bonus Physical DMG. CD: 5s.
+- After: Any mark resonance deal **10% + 10%** bonus Physical DMG. CD: 5s.

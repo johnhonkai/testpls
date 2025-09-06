@@ -10,6 +10,8 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 ### LINKS
 
 - [8.5 Patch Note](/betanews/85log)
+- [Hi Love Elf Skills](/betanews/85elysia)
+- [Hi Love Elf Equipment](/betanews/85elygear)
 - [HoRB DLC](/betanews/85horbdlc)
 - [Elysian Realm](/betanews/85er)
 
