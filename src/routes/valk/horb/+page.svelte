@@ -448,8 +448,17 @@ function selectTabMobile(event) {
         </ul>
         <div class="divider  "></div>
         <!-- Full Guide Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE (SOON)</h2>
-
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">STELLAR KEY GAMEPLAY</h2>
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/GKAAdGBc918"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
     </div>
 {/if}
 
