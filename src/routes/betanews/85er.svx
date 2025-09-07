@@ -18,9 +18,9 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 ---
 
 ### Stage Buffs
-- Upon entering a floor, summon a Heart Reflection (counts as a summon) based on the equipped support sigil. Obtaining its corresponding Nexus or Signet will unlock Heart Reflection Prayer, and completing the related challenge will also increase its damage. Enemy dmg taken -6%, after each floor, -0.3%, up to 12% (independent multiplier).
+- Upon entering a floor, summon a Heart Reflection (Flamechaser chibi) (counts as a summon) based on the equipped support sigil. Obtaining its corresponding Nexus or Enhancement Signet will unlock Heart Reflection Prayer, and completing the related challenge will also increase its damage. Enemy dmg taken -6%, after each floor, -1.8%, up to 33% (independent multiplier).
 - The negative effect has been removed (Please accept my blessing~)
-- Every 8s, a Heart Reflection Prayer with unlocked core signet or Ego signet will be randomly summoned to assist in battle.
+- Every 8s, a Heart Reflection Prayer with unlocked Nexus signet or Ego signet will be randomly summoned to assist in battle.
 - When AR is activated, valk Physical and Ele DMG +24%.
 - All base signet level +1
 

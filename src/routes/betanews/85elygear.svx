@@ -40,7 +40,7 @@ Total DMG +15%. Hi Love Elf equip bonus:
 - When AR is activated: Self Ice DMG +15%, Team Total DMG +12%, enemies take 15% more Total DMG.
 
 #### PASSIVE 2
-Enemies take 12% more Ice DMG from herself. Hi Love Elf equip bonus:
+Enemies take 12% more Ice DMG from the wielder. Hi Love Elf equip bonus:
 - Self Total DMG +12%. Team Ele DMG +10%.
 - When GoInfinitude is activated: Team members with Symbiosis tag gain Ele DMG +10%, Phy DMG +15%.
 

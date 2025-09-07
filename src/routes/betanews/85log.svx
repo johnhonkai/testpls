@@ -34,9 +34,11 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 - Coralie outfit - free from event
 
 #### 8.5 Main Event - Embark! Youthful Dreams
+- Gameplay like Vampire Survivors, or ZZZ's Bizarre Brigade arcade game.
 - There's "Ace Student Exam" and "Final Exam" mode.
 
 #### P2 Chapter 10
+- Rewards SSS Dreamseeker
 
 #### Event: Ellie Wonderland Adventure
 - Control Ellie Cube

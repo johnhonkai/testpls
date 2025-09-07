@@ -708,7 +708,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         {/if}
       </h3>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
         {#each 
           (selectedSlot === 'astralOp' || selectedSlot === 'compareAstralOp' 
             ? astralop 
@@ -2581,6 +2581,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <!-- Entry -->
   <div class="space-y-6">
     <!-- Version -->
+    <div class="border-l-4 border-purple-500 pl-4">
+      <h3 class="text-md font-semibold">6 Sep 2025 </h3>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Added HorB and New Elysia</li>
+      </ul>
+    </div>
     <div class="border-l-4 border-cyan-500 pl-4">
       <h3 class="text-md font-semibold">18 Aug 2025 </h3>
       <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
@@ -2590,6 +2596,5 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         <li>Kiana ELF: 4-star skill now properly ignores Physical valks from multi-element check.</li>
       </ul>
     </div>
-
   </div>
 </div>
