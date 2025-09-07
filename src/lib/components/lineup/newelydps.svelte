@@ -4,6 +4,7 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'BFD', image: '/images/valkportrait/scoralie.png'},
+        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png'},
         { name: 'PAWS', image: '/images/valkportrait/paws.png'},
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png' },
         { name: 'PS', image: '/images/valkportrait/ps.png' },
@@ -32,7 +33,7 @@
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-pink-950 to-pink-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Hi♪ Love Elf♥ DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Hi ♪ Love Elf ♥ DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 

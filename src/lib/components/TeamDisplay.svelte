@@ -98,7 +98,7 @@
 
     <!-- Gameplay Videos Section (only one set of videos) -->
     <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext mt-12">GAMEPLAY EXAMPLES</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 mb-15">
       {#each bossData.videos as video, index}
       <div class="bg-gray-100 p-4 rounded-lg">
         <a href={video.url} target="_blank" rel="noopener noreferrer">
@@ -109,7 +109,9 @@
       </div>
     {/each}
     </div>
+  <p class="text-center text-xs sm:text-sm text-gray-400 mb-15">If you want your video to be featured, go to <a href='https://discord.gg/uSyNA3kNk7' class="link">Discord</a>, and post your video in ex-abyss channel.</p>
+
   </div>
 {:else}
-  <p class="text-center text-gray-600">No team data available.</p>
+  <p class="text-center text-xs sm:text-sm text-gray-400 mb-15">If you want your video to be featured, go to <a href='https://discord.gg/uSyNA3kNk7' class="link">Discord</a>, and post your video in ex-abyss channel.</p>
 {/if}

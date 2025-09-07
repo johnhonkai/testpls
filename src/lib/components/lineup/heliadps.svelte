@@ -8,6 +8,8 @@
         { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '99%', },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '96%', },
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '95%', utility: 'Shield',},
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png'},
+        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png'},
 
     ];
 

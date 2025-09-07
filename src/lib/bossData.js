@@ -3330,6 +3330,25 @@ export const teamData = {
     'husk-hitcount': {
     
     teamDataSets: [
+            {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/scoralie.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '1+',
+            pct: '99%',
+
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '81',
+            pct: '1%',
+          },                  
+        ]
+      },
       {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
@@ -3665,6 +3684,12 @@ export const teamData = {
         ]
       }
     ],
+           videos: [
+            { url: 'https://youtu.be/hH1DQUUifdg', abyss: 'Nirvana 551 D', uploader: 'Kyoshiro' },
+            { url: 'https://youtu.be/gOUQAV4luos', abyss: 'Nirvana 551 D', uploader: 'phylynxbelt' },
+            { url: 'https://youtu.be/xyH7oarWuFQ', abyss: 'Nirvana', uploader: 'Ismaël' },
+
+            ]
   },     
     hoice: {
     

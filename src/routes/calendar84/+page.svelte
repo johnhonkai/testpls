@@ -694,7 +694,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Husk - Nihilus (Hitcount).webp" date="Oct 3" weather="Lightning" bosspage="/boss?husk-hitcount" />
                 <BossCard />
                 </div>
                      
