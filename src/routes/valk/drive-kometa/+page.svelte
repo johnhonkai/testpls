@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Danzai Spectramancer</title> 
-    <meta property="og:title" content="Danzai Spectramancer" />
-    <meta property="og:description" content="Danzai Spectramancer Guide, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/xh8AXUN.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/danzai" />
+    <title>Drive Kometa</title> 
+    <meta property="og:title" content="Drive Kometa" />
+    <meta property="og:description" content="Drive Kometa Guide, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/MFm9LYH.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/drive-kometa" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -52,7 +52,7 @@ function closeLightbox() {
   //{ name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
-   { name: 'Gameplay Examples', short: 'example' },
+  // { name: 'Gameplay Examples', short: 'example' },
   //{ name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
@@ -150,8 +150,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["danzai"] || 0; // Get initial likes from JSON
-  const charName = "danzai"; // Route name for this character
+  let fovlikes = likesData["dk"] || 0; // Get initial likes from JSON
+  const charName = "dk"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -209,7 +209,7 @@ function selectTabMobile(event) {
 <div class="sm:mt-14"></div>
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_lantern.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+    <img src="/images/bg/wave_hofi.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
   
   
@@ -217,7 +217,7 @@ function selectTabMobile(event) {
   <!-- Left: Character Image -->
   <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
     <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/danzai.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-47;"/> 
+    <img src="/images/valkfull/dk.png" alt="Drive Kometa" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-45;"/> 
   
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
@@ -247,32 +247,32 @@ function selectTabMobile(event) {
     <!-- Battlesuit Name -->
   
     <div class="mt-4">
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Danzai Spectramancer</h1>
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Drive Kometa</h1>
   </div>
     <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Raiden Mei | Release Date: v4.2 (15 Sep 2020)  </p>
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Bronya Zaychik | Release Date: v3.1 (23 May 2019)  </p>
 
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-sm">
-          <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconMECH.png" alt="Mech" class="w-auto h-8 md:h-10" />
+        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
+          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
+          <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
           <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
   
         </div>
       </div>
       <div class="flex flex-col mt-4 items-center">
 
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-sm">
+        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
           <div class="flex flex-wrap justify-center">
-            <h2 class="text-sm md:text-base mb-2 text-slate-100">Augment form of Shadow Dash</h2>
+            <h2 class="text-sm md:text-base mb-2 text-slate-100">Augment form of Yamabuki Armor</h2>
           </div >
-          <div class="flex flex-row gap-2 flex-wrap justify-center ">
-            <img src="/images/valkportrait/Mei Shadow Dash.png" alt="Support 1" class="w-auto h-14 md:h-20 rounded-lg" />
-  
+          <div class="flex flex-row gap-2 flex-wrap justify-center">
+            <img src="/images/valkportrait/Bronya Yambuki Armor.png" alt="Support 1" class="w-auto h-14 md:h-20" />
+
           </div>
         </div>
       </div>
@@ -280,7 +280,7 @@ function selectTabMobile(event) {
   </div>
   </section>
   
-<div class="flex max-w-screen-xl justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -291,7 +291,7 @@ function selectTabMobile(event) {
           <button
             on:click={() => selectTab(tab.name)}
             class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
-                   {selectedTab === tab.name ? 'bg-gradient-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-gradient-to-r from-orange-600 to-amber-500 '}">
+                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
             {tab.name}
           </button>
         </li>
@@ -340,27 +340,21 @@ function selectTabMobile(event) {
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
-    <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-4  text-center">OVERVIEW</h2>
+    <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
 
     <div>
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Outdated Part 1 Physical Support</strong>
-          <br/>
-          - Danzai Spectramancer was a Physical support that summons shadows to deal damage and trigger buffs. 
-          <br/>
-          - I don't specifically remember why, but Danzai was not very impactful as a support. She was fun to play tho.
+          <strong class="text-amber-400">Outdated Part 1 Support</strong>
       </p>
 
-        <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Fun Fact</strong>
-          <br/>
-          She is supposed to have a signature stigma named Liebig. It even has official art in beta. However, it was cancelled and became a Big Lie.
-      </p>
+      <ul class="list-disc ml-6 text-sm sm:text-base">
+        <li class="mt-2">Drive Kometa (DK) is a support that grants shield, dmg reduction and buffs for the team.</li>
+          <li class="mt-2"> DK was one of the best supports in her time. Her dmg reduction helps valks survive hp drain effect in abyss, and she can easily gathers enemies - which was a huge deal back then. Yamabuki Armor was already used a lot in Arena for her time fracture - Drive Kometa just improved Yamabuki in all aspects.</li>
 
-
+      </ul>
 
 
 
@@ -369,16 +363,18 @@ function selectTabMobile(event) {
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400 ">New Players on Shadow Dash</strong>
-          <br/> Expedition: Only very old valks are in expedition. There's no priority to farm anyone in expedition.
+          <strong class="text-amber-400 ">New Players</strong>
+          <br/>
+          You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
       </p>
 
 
 
       <p class="mt-6 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on Danzai Spectramancer augment materials</strong>
+        <strong class="text-amber-400 ">New Players on Drive Kometa augment materials</strong>
         <br/>Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. 
       </p>
+
 
 
 
@@ -386,9 +382,9 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Shadow Dash:</strong> Expedition, Open World.</li>
-            <li ><strong>Danzai Spectramancer Augment Materials:</strong> Asterite Shop.</li>
-            <li ><strong>Nue of the Shadows:</strong> Exchange Shop.</li>
+            <li ><strong>Yamabuki Armor:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
+            <li ><strong>Drive Kometa Augment Materials:</strong> Asterite Shop, Expedition, Adventure Task.</li>
+            <li ><strong>Briareus EX:</strong> Base form Briareus PRI is in Exchange Shop.</li>
 
         </ul>
 
@@ -398,9 +394,9 @@ function selectTabMobile(event) {
 
 
   {#if selectedTab === 'Lineup'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">LINEUP</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
-  <section class="max-w-screen-lg mx-auto ">
+  <section class="max-w-(--breakpoint-lg) mx-auto ">
 
 
   
@@ -412,55 +408,80 @@ function selectTabMobile(event) {
   {/if}
 
       {#if selectedTab === 'Equipment'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">EQUIPMENT</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
  
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST ONCE UPON A TIME</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/10/75940953/9e4c2cb04374a46dfd203301f83986a2_8880213069129025952.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/27/73514954/3ced18b5a203e3d0651e9479d0668b67_8793408144062405226.png" alt="Vita" class="w-full h-full object-cover">
               </div>
 
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/91006211/8df74cb6e5ee71bc13378e1da77cbedd_1865693904391156566.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/17/91006211/f1f28faad25a7eb5ec89e85ff2366465_4460918943463098008.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
+               <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/27/73514954/edc6733fda3b2cd58dc6bc7b4075af54_3670737469910791582.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Nue of the Shadows </h4>
+              <h4 class="text-base sm:text-base text-white"> Briareus EX + Gustav TM Newton B</h4>
               </div>
 
 
 
            </div>
 
-           <div>
+           <div class="divider"></div>
+      <div>
 
 
-            </div>
-            
-            
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">ORIGINAL</h2>
 
+              <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/27/73514954/076b17e2696dd3a6bdfcf2b9922786ff_8237958378173443895.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> Star Shatterer: Vikrant </h4>
+              </div>
+
+
+
+           </div>        
       {/if}
 
 
       {#if selectedTab === 'Elysian Realm'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
 
       <div class="flex justify-center gap-4 my-6">
         <button
           on:click={() => setPlaystyle('1')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           BUILD
         </button>
       
         <button
           on:click={() => setPlaystyle('2')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           EQUIPMENT
         </button>
@@ -477,13 +498,13 @@ function selectTabMobile(event) {
 
         <div class="flex flex-col justify-center items-start ">
 
-        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+        <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
 
           <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
             <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
           </div>
             <!-- Left side image -->
-            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
               <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
             </div>
             
@@ -495,7 +516,7 @@ function selectTabMobile(event) {
             </div>
           </div>
         </div>
-        <div class="mt-3 rounded" >
+        <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
             You can complete the run with just one Ego signet (Silence). Mixing helps gather enemies.
           </p>
@@ -510,38 +531,38 @@ function selectTabMobile(event) {
           
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">LEGION</div>
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
               <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
           </div>
-          <div class="mt-3 rounded" >
+          <div class="mt-3 rounded-sm" >
             <p class="text-sm sm:text-base text-left">
                <b>SP Regen:</b> You want sp regen signet early to consistently use Ultimate.
                <br/>
-               <b>Decimation 1:</b> Your HP will be very low but you gain a durable shield.
+               <b>Decimation 1:</b> Your HP will be very low, but FT has a durable shield.
             </p>
           </div>
 
@@ -550,24 +571,24 @@ function selectTabMobile(event) {
 
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
             
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
               <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/valkportrait/Bronya Snowy Sniper.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
@@ -583,24 +604,24 @@ function selectTabMobile(event) {
           <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
           
 
-            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
               <p class="text-base sm:text-lg font-semibold">START</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                 <img src="/images/sigils/Pseudo_Miracle.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
               <p class="text-base sm:text-lg font-semibold">MID</p>
           </div>
 
-          <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
-              <div class="flex flex-row rounded">
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
@@ -615,7 +636,7 @@ function selectTabMobile(event) {
 
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-            <li>Press weapon ➔ Wait for a split second ➔ Use Ult </li>
+            <li>Press weapon ➔ Wait for like 0.2 second ➔ Use Ult </li>
             <li>Spam ATK button.</li>
             <li>When Ult is available, use Ultimate. You don't have to wait weapon cd to use Ult.</li>
             <li>Repeat.</li>
@@ -630,7 +651,7 @@ function selectTabMobile(event) {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/p3aA9UZ4VM"
+                src="https://www.youtube.com/embed/Sp3aA9UZ4VM"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -670,7 +691,7 @@ function selectTabMobile(event) {
           </div>
 
 
-          <div class="p-4 mt-4 bg-gradient-to-r from-purple-950/75 to-purple-900/75 rounded">
+          <div class="p-4 mt-4 bg-linear-to-r from-purple-950/75 to-purple-900/75 rounded-sm">
             <p class="text-sm sm:text-base text-left">
               - Better for Elysian Realm. <br/>
               - G2 Michelangelo is forgeable in Foundry. <br/>
@@ -681,7 +702,7 @@ function selectTabMobile(event) {
       {/if}
 
       {#if selectedTab === 'Rank Up'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">RANK UP</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
 
         <!-- Full Rank Up List -->
         <div class="text-slate-100 text-left mt-8 ">
@@ -769,7 +790,7 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'How to Play'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">HOW TO PLAY</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">HOW TO PLAY</h2>
   
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
@@ -796,12 +817,12 @@ function selectTabMobile(event) {
   
   
       {#if selectedTab === 'Gameplay Examples'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
   
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Danzai 1</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">FT DPS vs Shadow Knight Abyss</h2>
 
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
@@ -809,7 +830,7 @@ function selectTabMobile(event) {
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/6aJUND5n0uk"
+                src="https://www.youtube.com/embed/Uj-k2Duz918"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -821,39 +842,18 @@ function selectTabMobile(event) {
     </div>
 
       
-    <div class=" gap-6 mt-5 mb-10">
-
-      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-        <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Danzai 2</h2>
-
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-          <iframe
-          loading="lazy" 
-
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/ODqSjgt9kas"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-      </div>
-    </div>
-
-  </div>
 
 
   {/if}
   
   {#if selectedTab === 'Popular Question'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">POPULAR QUESTION</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
 
   {/if}
 
   {#if selectedTab === 'Overview Card'}
-  <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">OVERVIEW CARD</h2>
+  <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW CARD</h2>
 
   <div class="text-center my-4">
     <p class="text-center text-sm sm:text-base">Overview card delayed
@@ -863,7 +863,7 @@ function selectTabMobile(event) {
 
 
       {#if selectedTab === 'Translation Error'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">TRANSLATION ERROR</h2>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">TRANSLATION ERROR</h2>
       <div class="text-center my-4">
         <p class="text-center text-sm sm:text-base">No known translation error
         </p>
