@@ -411,7 +411,7 @@ function selectTabMobile(event) {
 
         <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">World Star DPS</strong> <br/>
-            HoRB is now brought back into the meta with the addition of her DLC. Her role also expands as a Part 2 support for the following teams:
+            HoRB is now brought back into the meta with the addition of her DLC, turning her into a World Star DPS. Her role also expands as a Part 2 support for the following teams:
         </p>
 
 

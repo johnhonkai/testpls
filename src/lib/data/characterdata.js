@@ -83,7 +83,7 @@
   { name: "Dea Anchora", image: '/images/valkportrait/Durandal Dea Anchora.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/da', verdebut: 4.4, id:44},
   { name: "Fervent Tempo Δ", image: '/images/valkportrait/fervent-tempo.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ft', verdebut: 4.3, id:45},
   { name: "Fallen Rosemary", image: '/images/valkportrait/Rita Fallen Rosemary.png', type: 'Qua', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/fr', verdebut: 4.2, id:46},
-  //{ name: "Danzai Spectramancer", image: '/images/valkportrait/Mei Danzai Spectramancer.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/danzai', id:47},
+  { name: "Danzai Spectramancer", image: '/images/valkportrait/Mei Danzai Spectramancer.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/danzai', verdebut: 4.2, id:47},
   { name: "Herrscher of Thunder", image: '/images/valkportrait/Mei Herrscher of Thunder.png', type: 'Psy', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/hot', verdebut: 4.1, verdlc: 5.8, id:48},
   { name: "Starlit Astrologos", image: '/images/valkportrait/Theresa Starlit Astrologos.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sa', verdebut: 4.0,  id:49},
   { name: "Bright Knight: Excelsis", image: '/images/valkportrait/Durandal Bright Knight.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/bk', verdebut: 3.9, verdlc: 4.7, id:50},
@@ -98,5 +98,6 @@
   { name: "Swallowtail Phantasm", image: '/images/valkportrait/Seele Swallowtail Phantasm.png', type: 'Qua', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/swallowtail-phantasm', verdebut: 3.2,  id:60},
   { name: "Molotov Cherry", image: '/images/valkportrait/Rozaliya Molotov Cherry.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/molotov-cherry', verdebut: 3.1,  id:61},
   { name: "Blueberry Blitz", image: '/images/valkportrait/Liliya Blueberry Blitz.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/blueberry-blitz', verdebut: 3.1,  id:62},
+  { name: "Drive Kometa", image: '/images/valkportrait/Drive Kometa.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/drive-kometa', verdebut: 3.1,  id:63},
 
 ];

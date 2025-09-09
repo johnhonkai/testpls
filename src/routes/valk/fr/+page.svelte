@@ -3,7 +3,7 @@
     <title>Rita - Fallen Rosemary</title> 
     <meta property="og:title" content="Rita - Fallen Rosemarya" />
     <meta property="og:description" content="Fallen Rosemary Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.imgur.com/WiWmN8H.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/fr" />
     <meta property="og:type" content="website" />
 

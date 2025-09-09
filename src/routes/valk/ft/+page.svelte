@@ -3,7 +3,7 @@
     <title>Fervent Tempo Δ</title> 
     <meta property="og:title" content="Fervent Tempo Δ" />
     <meta property="og:description" content="Fervent Tempo Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.imgur.com/1Eh2coj.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/ft" />
     <meta property="og:type" content="website" />
 
