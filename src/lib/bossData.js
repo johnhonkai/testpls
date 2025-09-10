@@ -760,6 +760,8 @@ export const teamData = {
 
       videos: [
       { url: 'https://youtu.be/a_kRBKl13qA', abyss: 'RedLotus 520D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/r8rp8j68SA4', abyss: 'Nirvana 552D', uploader: 'phylynxbelt' },
+
     ], 
 
   },
@@ -1872,7 +1874,33 @@ export const teamData = {
   phyalien: {
     teamDataSets: [
       {
-        tabname: "v8.2 CN",
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '1+',
+          pct: '34%',
+          bottext: "Highest Score: 6S 801, 9S 823"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/asop_sera.png"],
+          rank: '25',
+          pct: '2%',
+          bottext: "Highest Score: SS JD SS Lantern SSS Thel 788"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/dudu.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/asop_teri.png"],
+          rank: '28',
+          pct: '64%',
+          bottext: "Highest Score: S2 RS 777, SS RS SS Badum 781, SSS RS SS Badum S2 JD 786"
+        },
+      ]},      
+      {
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
         {
@@ -1898,7 +1926,7 @@ export const teamData = {
         },
       ]},
     {
-      tabname: "v7.9 CN",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
