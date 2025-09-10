@@ -28,11 +28,11 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 
 ### Load Buffs
 - 0: F17 boss is replaced with Alien Guard
-- 15: When you gain Deliverance or Gold signet, every time you use Ult, sp and max sp +200, max 600.
-- 15: When you get Setsuna or Reverie signet, when you trigger evasion skill, gain Total DMG for 10s (+5% for every 100 silver, up to 100%), can be refreshed, upon refresh gain 5 silver, max 20 times per floor.
-- 15: When you get Helix or Bodhi signet, weapon Total DMG +40%. For every 150 hitcount accumulated, weapon Total DMG +1%, max 20 stacks.
-- 15: When you get Decimation or Deliverance signet, Total DMG +50% for 10s after using Ult, can be refreshed. 100 HP will be lost every 0.1 sec (HP loss stops at 20% HP)
-- 15: When you get Stars or Infinity signet, after triggering evasion, weapon, or Ult 3 times, OR when you create a summon, summon a drawing board that deals dmg in an aoe, lasts 15s, counts as a summon. When the board is present, enemies take 30% more Total DMG.
+- 15: When you have Deliverance or Gold signet: Every time you use Ult, sp and max sp +200, max 600.
+- 15: When you have Setsuna or Reverie signet: When you trigger evasion skill, gain Total DMG for 10s (+5% for every 100 silver, up to 100%), can be refreshed, upon refresh gain 5 silver, max 20 times per floor.
+- 15: When you have Helix or Bodhi signet: Weapon Total DMG +40%. For every 150 hitcount accumulated, weapon Total DMG +1%, max 20 stacks.
+- 15: When you have Decimation or Deliverance signet: Total DMG +50% for 10s after using Ult, can be refreshed. 100 HP will be lost every 0.1 sec (HP loss stops at 20% HP)
+- 15: When you have Stars or Infinity signet: After triggering evasion, weapon, or Ult 3 times, OR when you create a summon, summon a drawing board that deals dmg in an aoe, lasts 15s, counts as a summon. When the board is present, enemies take 30% more Total DMG.
 - 15: Physical Breach +35%, Ele Breach +18%, each time you gain Ego signet, Phy Breach +5%, Ele Breach +2%.
 
 ---

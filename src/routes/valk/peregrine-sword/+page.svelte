@@ -520,11 +520,15 @@ async function increaseLike() {
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Utility: Bleed and Hitcount</strong>
+            </p>    
+
+            <ul class="list-disc ml-6 text-sm sm:text-base">
               <li>PS attacks have high hitcount. Her attacks also deal 3 (S) / 4 (SSS) hits to hitcount shields.</li>
               <li>Provides Bleed trauma. </li>     
               <li>These utilities are used as dps and support to counter certain enemies (eg. Husk, Lantern, HoCorruption).</li>              
+            </ul>
 
-            </p>    
+
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong>

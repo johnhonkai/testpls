@@ -92,14 +92,14 @@ When WoDestiny is activated:
 When World Star is activated:
 - During AR Charging: All arrows from Ult deal additional 200% ATK of Ice DMG.
 - When entering SO, Ely activates Lovefield in High Spring state.
-- For every World Star character in the team, during AR Charging, Total DMG +3% (S) / 8% (S1), during SO, Total DMG  / 8% (S1).
+- For every World Star character in the team, during AR Charging, Total DMG +3% (S) / 8% (S1), during SO, Total DMG +3% (S) / 8% (S1).
 - SO cd -5s (cannot stack).
 - When entering SO, gain 6 QME, keep pressing atk button to launch resonance atk in the following order:
     - 1: Weapon skill, deal 100%x5 + 100%x2, consume 2 QME, trigger 2 reso
     - 2: Joint weapon, deal 400% + 100%x2, consume 2 QME, trigger 2 reso
-    - 3: Shoorts Ult (instantly at 7 arrows) and activates Lovefield in High Spring state, deal 1600% + 100%x2, consume 2 QME, trigger 2 reso, and then you can use Ult Finisher, deal 1000% ATK of Ice DMG.
+    - 3: Shoorts Ult (instantly at 7 arrows) and activates Love Field Dome in Full Spring state, deal 1600% + 100%x2, consume 2 QME, trigger 2 reso, and then you can use Ult Finisher, deal 1000% ATK of Ice DMG.
 - Team recover 100 HP when a reso atk is triggered.
-- During SO: Using Ult Finisher, Weapon Skill, Joint Weapon, and Ult by consuming QME makes the attacks gain Ice DMG +100% Ice DMG, and Ele Breach +10%.
+- During SO: Using Ult Finisher, Weapon Skill, Joint Weapon, and Ult by consuming QME makes the attacks gain Ice DMG +100%, and Ele Breach +10%.
 
 
 ---

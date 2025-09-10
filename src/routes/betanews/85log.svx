@@ -85,6 +85,7 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 - Exchange Shop: Added Spina equipment (Astral Divide and Ragna), and Pardo equipment (Purana and Bastet)
 - Supply Shop: HoH stamps have been replaced with Sena stamps.
 - War Treasury: Added Silverwing, Palatinus Equinox, Spina Astera card and fragments
+- War Treasury: The cost for Dea Anchora, HoThunder, Bright Knight, Azure Empyrea, Jade Knight card and fragments are changed to Ancient Willpower. (DA, BK, JK --> 14 AW, max 15 | HoT, AE --> 9 AW, max 25)
 
 #### Supply
 - Dorm Supply: Added Herrscher of Human, Jade Knight, Herrscher of Truth, Herrscher of Finality, Dreamweaver, Vill-V
@@ -126,5 +127,5 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 - Chapter 6, Stage 6-3: Fixed an issue where drops can fall outside the map.
 - Chapter 11, Stage 11-1: Fixed abnormal black screen in end screen.
 - Fixed PAWS not able to activate SO in story.
-- A new V-sync setting has been added to image quality setting for desktop.
+- A new V-sync setting has been added to graphics quality setting for desktop (can turn Vsync on or off).
 - Fixed abnormal water surface rendering in some scenes.

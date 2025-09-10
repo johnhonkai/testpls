@@ -143,7 +143,7 @@ When World Star is activated:
     - HoRB cannot use weapon button during SO.
   - When HoRB is the leader: 
     - Generate Overflowing Sea Branches on the field as a resonance mark, can be triggered by reso atk to deal 30% ATK of Physical DMG for each hit. The mark is considered as a summoned entity. Can trigger 18 times, interval 0.7s.
-    - During SO, after HoRB consumes 6 QME, she can use Ult, Ult CD -6s. For every time reso mark is triggerd, Ult will deal additional 40% ATK of Physical DMG. After casting Ult, SO will end.
+    - During SO, after HoRB consumes 6 QME, she can use Ult, Ult CD -6s. For every time reso mark is triggered, Ult will deal additional 40% ATK of Physical DMG. After casting Ult, SO will end.
 
 When Grail of Infinitude is activated:
 - HoRB remains in Soul Shaper form. In Soul Shaper Form:
@@ -178,7 +178,7 @@ When World Star is activated:
 #### AR 3
 
 When GoInfinitude is activated:
-- Passive Subskill 2 is forced to take effect. When time fracture is triggerd, if sp is less than 160, then increase it to 160, cd 25s.
+- Passive Subskill 2 is forced to take effect. When time fracture is triggered, if sp is less than 160, then increase it to 160, cd 25s.
 - When SO ends, gain 165 sp.
 - During AR Charging: When HoRB uses ult, it will consume extra sp, up to 60. Team Total DMG +0.5% of the extra sp consumed, lasts for 25s.
 - During SO: 
