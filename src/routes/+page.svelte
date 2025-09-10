@@ -94,8 +94,8 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2025-8-22'); // Start date Regional Servers
-      const cnStartDate = new Date('2025-7-25');       // Start date CN Servers
+      const regionalStartDate = new Date('2025-8-24'); // Start date Regional Servers
+      const cnStartDate = new Date('2025-7-26');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
