@@ -3175,7 +3175,7 @@ export const teamData = {
     teamDataSets: [
         {
         tabname: "v8.4 CN",
-        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 555 D",
         entries: [
           {
             type: 'lineup',
@@ -3264,6 +3264,7 @@ export const teamData = {
       }
     ],
         videos: [
+      { url: 'https://www.bilibili.com/video/BV1WWYCzaEfE/', abyss: 'SS Coralie Nirvana 555D', uploader: '浅忆_浮生如梦' },
       { url: 'https://youtu.be/hFj42mwaRVQ', abyss: 'Nirvana 549D', uploader: 'Xintsu' },
       { url: 'https://youtu.be/jn4buUKfgvU', abyss: 'Nirvana ???D', uploader: 'Ismaël' },
       { url: 'https://youtu.be/kR4sMKROfTw', abyss: 'Sparkle Nirvana 540D', uploader: 'Sheepless Ram' },
