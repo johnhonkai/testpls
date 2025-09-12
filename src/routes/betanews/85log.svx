@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.5 Patch Note v2
+title: v8.5 Patch Note v3
 version: '8.5'
 sortOrder: '1'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
@@ -22,6 +22,40 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 
 ---
 
+### V3
+
+#### Battlesuit Changes
+- Hi Love Elf: Adjusted overall mechanics and values. Please see her page for the changes.
+- HoRB: Adjusted AR skill values.
+- Divine Prayer: Optimized skirt model performance when wearing Winter Princess outfit.
+- Valkyrie Blastmetal: Fixed abnormal eyebrow colour on default outfit.
+
+#### Weapon and Stigma Changes
+- Hi Love Elf weapon and stigma: Adjusted skill effects and values.
+- Horb DLC weapon and stigma: Adjusted skill effects and values.
+- Dragon Coralie Weapon: Adjusted active skill description from 'Enhanced Weapon Skill' to 'Rampant Dragon Claws'. This is only text change, effect remains the same.
+
+#### AstralOp
+- Chenxue: Fixed skill description
+
+#### Abyss 
+- Extreme Paros: Adjusted overall stats
+- Dominance Fu Hua: Adjusted overall stats
+- Ice Guaymas: Adjusted overall stats
+- Extreme Flying Fish: Adjusted overall stats
+
+#### Arena 
+- SSS Paros: Adjusted overall stats
+
+#### Elysian Realm 
+- HoRB: Fixed an issue with Withering Signet where Combo or Joint Combo can deal abnormal dmg.
+- HoRB: Added battlesuit special effect: When HoRB DLC Stellar Key is not equipped, the default form is locked to Soul Shaper form, otherwise it is locked to Life Binder form. Added a new effect: In Life Binder form, each Combo or Joint Combo deals additional 1060% ATK of Physical DMG.
+
+#### System
+- Chapter 6 6-5: Fixed the girl in training cabin able to move outside the map.
+
+
+---
 
 ### V2
 

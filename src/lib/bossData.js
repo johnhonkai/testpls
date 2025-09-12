@@ -1875,7 +1875,7 @@ export const teamData = {
     teamDataSets: [
       {
         tabname: "v8.4",
-        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D.",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 550 D.",
       entries: [
         {
           type: 'lineup',
@@ -3664,7 +3664,7 @@ export const teamData = {
     teamDataSets: [
       {
         tabname: "v8.4",
-        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 551 D",
         entries: [
           {
             type: 'lineup',
@@ -3755,7 +3755,7 @@ export const teamData = {
     teamDataSets: [
       {
         tabname: "v8.4",
-        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 552 D",
         entries: [
           {
             type: 'lineup',
