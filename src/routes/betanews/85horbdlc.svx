@@ -155,7 +155,7 @@ When World Star is activated:
     - Generate Overflowing Sea Branches on the field as a resonance mark, can be triggered by reso atk to deal **30% (v2) > 280% (v3)** ATK of Physical DMG for each hit. The mark is considered as a summoned entity. Can trigger 18 times, interval 0.7s.
     - During SO, after HoRB consumes 6 QME, she can use Cradle Ult, deal 500% ATK of Physical DMG, Ult CD -6s. For every time reso mark is triggered, Ult will deal additional **40% (v2) > 100% (v3)** ATK of Physical DMG. After casting Ult, SO will end.
   - When HoRB is not the leader: 
-    - **V3: When Stellar Outburst cannot be activated, and HoRB is using Joint Weapon, force the skill to end.**
+    - **V3: When Stellar Outburst is activated, and HoRB is using Joint Weapon, force the skill to end.**
     - **V3: Cradle Ult deal 1500% ATK of Physical DMG.**
 
 
