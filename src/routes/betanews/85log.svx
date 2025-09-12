@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.5 Patch Note v3
+title: v8.5 Patch Note v3B
 version: '8.5'
 sortOrder: '1'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
@@ -22,7 +22,7 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 
 ---
 
-### V3
+### V3 and V3B
 
 #### Battlesuit Changes
 - Hi Love Elf: Adjusted overall mechanics and values. Please see her page for the changes.
@@ -34,9 +34,10 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 - Hi Love Elf weapon and stigma: Adjusted skill effects and values.
 - Horb DLC weapon and stigma: Adjusted skill effects and values.
 - Dragon Coralie Weapon: Adjusted active skill description from 'Enhanced Weapon Skill' to 'Rampant Dragon Claws'. This is only text change, effect remains the same.
+- Irene Stigma: Fixed an issue where stigma recommended character is missing.
 
 #### AstralOp
-- Chenxue: Fixed skill description
+- Chenxue: Fixed skill description regarding GoI ar regen. Added "...AR regen trigger count resets after each Stellar Outburst".  This is only text change, effect remains the same.
 
 #### Abyss 
 - Extreme Paros: Adjusted overall stats

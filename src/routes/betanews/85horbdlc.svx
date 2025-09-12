@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: HoRB DLC Translation v2
+title: HoRB DLC Translation v3B
 version: '8.5'
 sortOrder: '4'
 image: "/images/valkportrait/Seele Herrscher of Rebirth.png"
@@ -37,25 +37,33 @@ Gameplay here: https://youtu.be/GKAAdGBc918
 Unleash a slash dealing 1000% ATK of Physical DMG.
 Herrscher of Rebirth equip bonus: 
 - The weapon active’s DMG, CD and SP cost are based on wielder type.
-- Gain AR World Star. During SO, her Ult is replaced with Cradle of Whispering Sea, dealing 1500% ATK of Physical DMG.
-- Weapon Skill and Joint Weapon gain Crit Rate +25%.
+- Gain AR World Star. During SO, her Ult is replaced with Cradle of Whispering Sea, ~~dealing 1500% ATK of Physical DMG.~~
+  - **V3: When HoRB is the leader, Cradle of Whispering Sea deals 500% ATK of Physical DMG. Every time Overflowing Sea Branches reso atk  is triggered, Cradle of Whispering Sea deals additional 100% ATK of Physical DMG.**
+  - **V3: When HoRB is not the leader, Cradle of Whispering Sea deals 1500% ATK of Physical DMG**
+- Weapon Skill and Joint Weapon gain Crit Rate **+25%  (v2) > 50% (v3)**.
 - When AR World Star is activated: When HoRB has QME, upon casting Combo ATK, trigger 1.5s time stop.
+- **V3: When World Star and GoI are not activated: HoRB is fixed in Life Binder form.** (v2 effect, already stated in ar skill section)
 
 #### PASSIVE 1
-Self Physical DMG +30%. Herrscher of Rebirth equip bonus: 
-Team Physical DMG +10%, Elemental DMG +30%, Resonance ATK gain Total DMG +60% against enemies with Withering Fissure.
+Self Physical DMG **+30% (v2) > 20% (v3)**. Herrscher of Rebirth equip bonus: 
+
+~~Team Physical DMG +10%,~~ Elemental DMG +30%, Resonance ATK gain Total DMG +60% against enemies with Withering Fissure.
 
 #### PASSIVE 2
-Self Crit Rate +20%. Herrscher of Rebirth equip bonus: 
-- Self Crit Rate +20% more.
+Self Crit Rate **+20% (v2) > 15% (v3)**. Herrscher of Rebirth equip bonus: 
+- Self Crit Rate **+20% (v2) > 15% (v3)** more.
 - Team summoned unit Total DMG +15%.
 
 #### SYNERGY
-During SO: Enemies take 15% / 30% / 45% more Total DMG from the valk on the field.
+
+~~V2: During SO: Enemies take 15% / 30% / 45% more Total DMG from the valk on the field.~~
+
+**V3: Enemies take 10% / 20% / 30% more Total DMG from resonance atk and from valks on the field.**
+
 
 Herrscher of Rebirth equip and leader bonus:
-- New Ult Cradle of Whispering Sea gain Crit DMG +60% / 120% / 180%.
-- Upon casting new Ult Cradle of Whispering Sea, for every remaining Overflowing Sea Branches reso trigger counter, restore 1 / 2 / 3 AR point, if this AR regen is triggered, SO CD -3s.
+- New Ult Cradle of Whispering Sea gain Crit DMG ~~+60% / 120% / 180% (v2)~~ **+50% / 100% / 150% (v3)**
+- Upon casting new Ult Cradle of Whispering Sea, **AR +6 points (v3)**, for every remaining Overflowing Sea Branches reso trigger counter, restore ~~1 / 2 / 3 (v2)~~ **1 / 1.5 / 2 (v3)** AR point, if this AR regen is triggered, SO CD -3s.
 
 ---
 
@@ -76,26 +84,27 @@ Total DMG +12%. HoRB Equip Bonus:
 - Characters with [Blooming Flower] gain Total DMG +20%.
 
 #### MID
-Physical DMG +15%. HoRB Equip Bonus:
-- Physical DMG +15%.
+Physical DMG **+15% (v2) > 10% (v3)**. HoRB Equip Bonus:
+- Physical DMG **+15% (v2) > 10% (v3)**.
 - Characters with [Blooming Flower] gain Physical DMG +6% and Elemental DMG +20%.
 
 
 #### BOT
 Crit DMG +20%. HoRB Equip Bonus:
-- Summoned units Physical DMG +15%
+- Summoned units Physical DMG **+15% (v2) > 10% (v3).**
 - Enemies take 10% more Physical DMG and 20% more Elemental DMG from characters with [Blooming Flower].
 
 #### 2PC
 Take 20% less Total DMG. HoRB equip and leader bonus:
-- Self Crit DMG +20%.
+- ~~Self Crit DMG +20%.~~
 - Enemies take 10% more Total DMG from HoRB.
-- Shieldbreak +40%.
-- Enemies take 15% more Total DMG from characters with [Blooming Flower].
+- Shieldbreak **+40% (v2) > 60% (v3B)**.
+- ~~Enemies take 15% more Total DMG from characters with [Blooming Flower].~~
+- **V3: When World Star is activated: Self Crit DMG +20%. Enemies take 15% more Total DMG from characters with [Blooming Flower].** 
 
 #### 3PC
-Enemies take 16% more Physical DMG from HoRB. HoRB Equip Bonus:
-- Self Crit Rate +10%.
+Enemies take **16% (v2) > 12% (v3)** more Physical DMG from HoRB. HoRB Equip Bonus:
+- Self Crit Rate **+10% (v2) > 20% (v3)**
 
 HoRB Equip Bonus:
 - When all team members are protected by Astral Ring:
@@ -103,17 +112,17 @@ HoRB Equip Bonus:
   - In Soul Shaper form, when you cast Ult or activate SO, add [Blooming Flower] to all team members for 25s, can be refreshed.
 
 When World Star is activated:
-- For every team member with Resonance tag, other team members gain Total DMG +10%.
+- For every team member with Resonance tag, other team members gain Total DMG **+10% (v2) > 5% (v3)**.
 - When you have [Blooming Flower]:
   - All enemies are impaired, DEF -55%.
-  - Characters with [Blooming Flower] gain Ele DMG +20%, Phy DMG +6%, Total DMG +15%.
-  - During AR Charging: Enemies take 16% more Ele DMG and 6% more Phy DMG from the team.
-  - During SO: Enemies take 20% more Ele DMG and 8% more Phy DMG from the team.
+- Characters with [Blooming Flower] gain Ele DMG +20%, Phy DMG +6%, Total DMG **+15% (v2) > 10% (v3)**.
+- During AR Charging: Enemies take 16% more Ele DMG and 6% more Phy DMG from the team.
+- During SO: Enemies take **20% (v2) > 24% (v3)** more Ele DMG and **8% (v2) > 5% (v3)** more Phy DMG from the team.
 
 When GoInfinitude is activated:
   - Characters with [Blooming Flower] gain Ele DMG +20%, Phy DMG +6%, Total DMG +15%.
   - During AR Charging: Enemies take 12% more Ele DMG and 6% more Phy DMG from the team.
-  - During SO: Enemies take 20% more Ele DMG and 8% more Phy DMG from the team.
+- During SO: Enemies take **20% (v2) > 24% (v3)** more Ele DMG and **8% (v2) > 5% (v3)** more Phy DMG from the team.
 
 ---
 
@@ -122,15 +131,15 @@ When GoInfinitude is activated:
 When HoRB is the leader, activate AR World Star. SO cost: 150. SO Duration: 25s, CD: 25s.
 - When there is 1 character with Domain Resonance tag in the team: During AR Charging, Team Physical DMG +10%.
 - When there are 2 characters with Domain Resonance tag in the team: HoRB Resonance ATK Total DMG +10%, and Stellar Drain grants 5 extra AR.
-- When there are 3 characters with Domain Resonance tag in the team: Enemies take 10% more Physical DMG from HoRB's reso atk (independent multiplier).
+- When there are 3 characters with Domain Resonance tag in the team: Enemies take **10% (v2) > 6% (v3)** more Physical DMG from HoRB's reso atk (independent multiplier).
 
 ### NEW ASTRAL RING SKILL TREE 
 
 #### AR MAIN SKILL
 
-The character is protected by AR World Star. When AR is activated: All damage from HoRB except for Stellar Assault is considered as summon damage.
+The character is protected by AR World Star. When AR is activated: All damage from HoRB except for Stellar Assault is considered as summon damage, **and HoRB gains higher anti-interrupt (v3B).**
 
-Press Ult to use Ult. When entering Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Physical DMG. During SO, HoRB Ult is replaced with Cradle of Whispering Sea, deals 1500% ATK of Physical DMG.
+Pressing Ult button now directly cast Ult. When entering Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Physical DMG. 
 
 When World Star is activated:
 - HoRB is fixed to Life Binder form. In Life Binder Form:
@@ -138,12 +147,18 @@ When World Star is activated:
   - Ult subskill 3 is changed to: When Joint Weapon final slash hits a target, or upon Stellar Outburst activation, the next Combo ATK gain Physical DMG +50%.
 - During Stellar Outburst:
   - Leave Dewy Twilight on the field for 30s, causing the enemies to be continuously affected by Withering Fissure. When attacking enemies with Withering Fissure, Crit Rate +40%. When SO ends, Dewy Twilight is removed.
-  - HoRB gains 6 QME. Click atk button to launch Basic ATK and Combo ATK, each consumes 1 QME to trigger Resonance ATK. HoRB is in Iron Body during this attack.
-    - Hit dmg in sequence: 160%, 8x20% , 2x100%, 300%, 500%, 1000% and restore 50 sp.
+  - HoRB gains 6 QME. Click atk button to launch Basic ATK and Combo ATK, each consumes 1 QME to trigger Resonance ATK. HoRB is in Iron Body during this attack. **Triggering evasion skill no longer connects to Basic ATK SEQ 4 (v3)**
+    - Hit dmg in sequence: 160%, 8x20% , 2x100%, 300%, ~~500%~~ **600%+500%**, 1000% and restore **50 (v2) > 52 (v3)** sp.
     - HoRB cannot use weapon button during SO.
   - When HoRB is the leader: 
-    - Generate Overflowing Sea Branches on the field as a resonance mark, can be triggered by reso atk to deal 30% ATK of Physical DMG for each hit. The mark is considered as a summoned entity. Can trigger 18 times, interval 0.7s.
-    - During SO, after HoRB consumes 6 QME, she can use Ult, Ult CD -6s. For every time reso mark is triggered, Ult will deal additional 40% ATK of Physical DMG. After casting Ult, SO will end.
+    - **V3: During Joint Weapon, Stellar Outburst cannot be activated.**
+    - Generate Overflowing Sea Branches on the field as a resonance mark, can be triggered by reso atk to deal **30% (v2) > 280% (v3)** ATK of Physical DMG for each hit. The mark is considered as a summoned entity. Can trigger 18 times, interval 0.7s.
+    - During SO, after HoRB consumes 6 QME, she can use Cradle Ult, deal 500% ATK of Physical DMG, Ult CD -6s. For every time reso mark is triggered, Ult will deal additional **40% (v2) > 100% (v3)** ATK of Physical DMG. After casting Ult, SO will end.
+  - When HoRB is not the leader: 
+    - **V3: When Stellar Outburst cannot be activated, and HoRB is using Joint Weapon, force the skill to end.**
+    - **V3: Cradle Ult deal 1500% ATK of Physical DMG.**
+
+
 
 When Grail of Infinitude is activated:
 - HoRB remains in Soul Shaper form. In Soul Shaper Form:
@@ -169,18 +184,18 @@ Gain Stellar Drain at the start of battle.
 #### AR 2
 
 When World Star is activated:
-- Upon QTE entry, pull surrounding enemies to the ground and deal 10% ATK of Physical DMG, restore full Herrscher meter.
+- Upon QTE entry, pull surrounding enemies to the ground and deal **10% (v2) > 100% (v3)** ATK of Physical DMG, restore full Herrscher meter.
 - When a teammate consume Stellar Drain, HoRB CD -4s.
 - When a teammate consume Stellar Drain, weapon skill is casted, or Ult is casted, HoRB QTE is triggered.
-- During SO, switch cd -4s.
-- During SO, if a valk in the team has Phy/Ele Breach State, enemies take 8% more Phy DMG / 11% more Ele DMG.
+- ~~During SO, switch cd -4s.~~
+- During SO, if a valk in the team has Phy/Ele Breach State, enemies take **8% (v2) > 5% (v3)** more Phy DMG / **11% (v2) > 10% (v3)** more Ele DMG.
 
 #### AR 3
 
 When GoInfinitude is activated:
 - Passive Subskill 2 is forced to take effect. When time fracture is triggered, if sp is less than 160, then increase it to 160, cd 25s.
 - When SO ends, gain 165 sp.
-- During AR Charging: When HoRB uses ult, it will consume extra sp, up to 60. Team Total DMG +0.5% of the extra sp consumed, lasts for 25s.
+- During AR Charging: When HoRB uses ult, it will consume extra sp, up to 60. Team Total DMG +0.5% x the extra sp consumed, lasts for 25s.
 - During SO: 
   - If Ult cd > 4s, it will be reduced to 4s.
   - After entering via QTE, next Ult activation and sp consumption are reduced to 0, effect ends upon exit.
@@ -188,6 +203,7 @@ When GoInfinitude is activated:
 
 #### AR 4
 
-When Resonance Mark is triggered and deals dmg, the subsequent dmg multiplier is increased by 40%.
-
-When HoRB is the leader, Overflowing Sea Branches will consume other marks created by teammates. Upon devouring, trigger reso 3 times, without consuming its own trigger count. Each trigger deals 170% ATK of Physical DMG, interval 0.5s. If devoured mark trigger >7 times, each trigger will deal 800% ATK of Physical DMG. During SO, you can only trigger each teammate's mark 3 times max.
+When HoRB is the leader: 
+- **V3: During SO: After triggering Overflowing Branches reso mark for the first time, team gains Life and Prosperity buff. After triggering reso mark 5 times in a row, Life and Prosperity will be consumed, causing the next reso atk to deal additional 600% ATK of Physical DMG. Ends when you exit.**
+- Overflowing Sea Branches will consume other marks created by teammates. Upon devouring, trigger reso 3 times, without consuming its own trigger count. Each trigger deals 170% ATK of Physical DMG, interval 0.5s. If devoured mark trigger >7 times, each trigger will deal 800% ATK of Physical DMG. During SO, you can only trigger each teammate's mark 3 times max.
+- ~~When Resonance Mark is triggered and deals dmg, the subsequent dmg multiplier is increased by 40%.~~
