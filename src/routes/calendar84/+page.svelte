@@ -713,7 +713,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Dominator of Wolves.webp" date="Oct 10" weather="Ignite" bosspage="/boss?igniteandrius" />
                 <BossCard />
                 </div>
                      

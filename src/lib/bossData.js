@@ -80,6 +80,7 @@ export const weatherList = {
     {id: 'ignitehov', name: 'Herrscher of the Void'},
     {id: 'aka', name: 'Argent Knight: Artemis'},
     {id: 'hoice', name: 'Herrscher of Ice'},
+    {id: 'igniteandrius', name: 'Dominator of Wolves'},
 
   ],
   resonance: [
@@ -220,6 +221,14 @@ export const bossData = {
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Counter: Type counter effect is 20% stronger."
   },
+  igniteandrius: {
+    name: 'Dominator of Wolves',
+    mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
+    weakness: 'Ice (Immune)',
+    typeicon: "images/type/IconBIO.png",
+    bosspic: "images/Bosses/Dominator of Wolves.webp",
+    weather: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%", 
+  },  
   fluxandrius: {
     name: 'Dominator of Wolves',
     mechanics: 'Spawns BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
@@ -3265,6 +3274,10 @@ export const teamData = {
     ],
         videos: [
       { url: 'https://www.bilibili.com/video/BV1WWYCzaEfE/', abyss: 'SS Coralie Nirvana 555D', uploader: '浅忆_浮生如梦' },
+      { url: 'https://youtu.be/DxRxzz5yDT4/', abyss: 'SS Coralie Nirvana 553D', uploader: 'phylynxbelt' },
+      { url: 'https://youtu.be/1yRba78Rx6w', abyss: 'Nirvana 553D', uploader: 'Kyoshiro' },
+      { url: 'https://youtu.be/_kcaYoteh5g', abyss: 'S Coralie Nirvana 553D', uploader: 'Petrixica' },
+      { url: 'https://youtu.be/BupBm09iZjc', abyss: 'Coralie Nirvana 546D', uploader: 'Sheepless Ram' },
       { url: 'https://youtu.be/hFj42mwaRVQ', abyss: 'Nirvana 549D', uploader: 'Xintsu' },
       { url: 'https://youtu.be/jn4buUKfgvU', abyss: 'Nirvana ???D', uploader: 'Ismaël' },
       { url: 'https://youtu.be/kR4sMKROfTw', abyss: 'Sparkle Nirvana 540D', uploader: 'Sheepless Ram' },
@@ -3794,6 +3807,34 @@ export const teamData = {
     ],
   },  
 
+
+    igniteandrius: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/scoralie.png", "images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '99%',
+            bottext: "Highest Score: S2 821, 6S 831, 9S 850"
+
+          },
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '46',
+            pct: '1%',
+            bottext: "Highest Score: SSS 812"
+
+          },                                                  
+        ]
+      }
+    ],
+  },  
 }
 
 
