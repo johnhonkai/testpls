@@ -3274,7 +3274,7 @@ export const teamData = {
     ],
         videos: [
       { url: 'https://www.bilibili.com/video/BV1WWYCzaEfE/', abyss: 'SS Coralie Nirvana 555D', uploader: '浅忆_浮生如梦' },
-      { url: 'https://youtu.be/DxRxzz5yDT4/', abyss: 'SS Coralie Nirvana 553D', uploader: 'phylynxbelt' },
+      { url: 'https://youtu.be/DxRxzz5yDT4', abyss: 'SS Coralie Nirvana 553D', uploader: 'phylynxbelt' },
       { url: 'https://youtu.be/1yRba78Rx6w', abyss: 'Nirvana 553D', uploader: 'Kyoshiro' },
       { url: 'https://youtu.be/_kcaYoteh5g', abyss: 'S Coralie Nirvana 553D', uploader: 'Petrixica' },
       { url: 'https://youtu.be/BupBm09iZjc', abyss: 'Coralie Nirvana 546D', uploader: 'Sheepless Ram' },
