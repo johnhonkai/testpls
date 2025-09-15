@@ -3761,6 +3761,10 @@ export const teamData = {
         ]
       }
     ],
+               videos: [
+            { url: 'https://youtu.be/gdxxF8FEdBk', abyss: 'Red Lotus 518 D', uploader: 'Moriso Honkai' },
+
+            ]
   },     
   
     phyhod: {
