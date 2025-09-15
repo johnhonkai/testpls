@@ -23,7 +23,7 @@
     { name: "Wheel of Destiny", slug: "wheel-of-destiny", image: "/images/artype/banner_wod.webp"},
     { name: "Rite of Oblivion", slug: "rite-of-oblivion", image: "/images/artype/banner_roo.webp" },
     { name: "Law of Ascension", slug: "law-of-ascension", image: "/images/artype/banner_loa.webp" },
-    { name: "Grail of Infinitude", slug: "grail-of-infinitude", image: "/images/artype/banner_hg.webp" },
+    { name: "Grail of Infinitude", slug: "grail-of-infinitude", image: "/images/artype/banner_goi.webp" },
 
   ];
 </script>
@@ -59,7 +59,7 @@
 
 <div class="px-4 py-10 md:hidden">
   <div class="max-w-6xl mx-auto">
-    <h1 class="text-3xl font-semibold text-center text-white mb-10 drop-shadow">Select an Astral Ring</h1>
+    <h1 class="text-lg font-semibold text-center text-white mb-10 drop-shadow">Select an Astral Ring</h1>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6 ">
       {#each astralRings as ar}

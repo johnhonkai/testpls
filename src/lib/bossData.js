@@ -223,7 +223,7 @@ export const bossData = {
   },
   igniteandrius: {
     name: 'Dominator of Wolves',
-    mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
+    mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has an elemental shield.',
     weakness: 'Ice (Immune)',
     typeicon: "images/type/IconBIO.png",
     bosspic: "images/Bosses/Dominator of Wolves.webp",

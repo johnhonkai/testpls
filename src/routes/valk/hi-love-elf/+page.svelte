@@ -59,7 +59,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-//  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
 //  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
@@ -1423,7 +1423,7 @@ async function increaseLike() {
 
 
   <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie DPS</h2>
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf DPS</h2>
 
     <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
 
@@ -1432,7 +1432,7 @@ async function increaseLike() {
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/gYRI5gO67H8"
+          src="https://www.youtube.com/embed/q2IOUHYp3z8"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1441,24 +1441,6 @@ async function increaseLike() {
   </div>
 </div>
 
-  <div class="bg-gray-800 mt-10 p-4 rounded-lg shadow-md">
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie Support</h2>
-
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various teams</p>
-
-    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-      <iframe
-      loading="lazy" 
-
-          class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/rIObNjUv2eY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-      </iframe>
-  </div>
-</div>
 
 
 </div>
