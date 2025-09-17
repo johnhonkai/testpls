@@ -3763,7 +3763,9 @@ export const teamData = {
     ],
                videos: [
             { url: 'https://youtu.be/gdxxF8FEdBk', abyss: 'Red Lotus 518 D', uploader: 'Moriso Honkai' },
-
+            { url: 'https://youtu.be/DOOtvSILvTg', abyss: 'Nirvana 550 D', uploader: 'Xintsu' },
+            { url: 'https://youtu.be/fJKd4LlZoIA', abyss: 'SS Coralie Nirvana 550 D', uploader: 'phylynxbelt' },
+            { url: 'https://youtu.be/k6I-7kUyb2M', abyss: 'S Coralie Nirvana 550 D', uploader: 'Kyoshiro' },
             ]
   },     
   
