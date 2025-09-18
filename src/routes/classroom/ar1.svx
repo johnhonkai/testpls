@@ -4,7 +4,7 @@ category: 'Astral Ring'
 sortOrder: 1
 customSlug: "ar1"
 ogimage: https://i.imgur.com/wmGLHBO.jpeg
-update: 8.2
+update: 8.5
 
 ---
 
@@ -23,10 +23,11 @@ Each Specialization has its own unique gameplay mechanic. Here's a summary of ea
 - **World Star (WS):** Can create Resonance Marks. Certain attacks will trigger these Resonance Marks to deal damage.
 - **Wheel of Destiny (WOD): ** Centered around solo playstyle. Teammates become shadow atk during Stellar Outburst.
 - **Law of Ascension (LoA):** QTE switch playstyle.
+- **Grail of Infinitude (GoI):** Consumes significantly more sp.
 - **Rite of Oblivion (RoO):** Every RoO DPS has her own unique playstyle.
 
 
-### Astral Ring Activation
+## Astral Ring Activation
 
 When a Part 2 valkyrie is set as leader, it will activate her AR Specialization.
 

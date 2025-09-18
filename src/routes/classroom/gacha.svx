@@ -4,7 +4,7 @@ category: 'Getting Started'
 sortOrder: 4
 customSlug: "gacha"
 ogimage: https://i.imgur.com/yfWEnUv.jpeg
-update: 8.2
+update: 8.5
 
 ---
 
@@ -15,8 +15,8 @@ In Part 2, the gacha has been simplified. All Part 2 content are available from 
 - AstralOp Supply
 
 Note for characters: Only recent S-rank characters are available from these supplies (at max 7 patches old). Older characters will be available through other means:
-- When characters are at least 8 patches old, they will enter a special supply called Ascension Supply (see below)
-- They might also be available in Battle Pass 
+- When characters are at least 8 patches old, they will enter a special supply called Ascension Supply (see below).
+- They might also be available in Battle Pass and spending event.
 - There is still a chance that older characters will rerun in regular supplies, but so far, they don't.
 
 ---
@@ -70,7 +70,7 @@ This is where you pull AstralOp. What is AstralOp? Well it's basically like Bang
 
 ## Special Part 2 Supplies
 
-When a valkyrie is over 8 patches old, that valkyrie might be available in these special supplies:
+When a valkyrie is at least 8 patches old, that valkyrie might be available in these special supplies:
 
 ### Ascension Supply
 

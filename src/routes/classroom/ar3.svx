@@ -4,7 +4,7 @@ category: 'Astral Ring'
 sortOrder: 3
 customSlug: "pullplan"
 ogimage: https://i.imgur.com/XXwK13r.jpeg
-update: 8.2
+update: 8.5
 
 ---
 
@@ -14,7 +14,8 @@ This page has a [video version available here.](https://youtu.be/PIgVRcIyY4w)
 
 ## Introduction
 
-Since HI3 started having 9-weeks patch, whenever someone asked [Should I pull this new valk], I will give this answer:
+Since HI3 started having 6 patches a year, whenever someone asks <span class="text-teal-400">"Should I pull this new valk"</span>, I will give this answer:
+
 
 Due to how meta works (all valks are kinda balanced on release and have their own niche) 
 

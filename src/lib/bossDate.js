@@ -69,7 +69,55 @@ export const bossSchedule = {
     weather: "ignite",
     start: "2025-09-15T15:00:00+08:00",
     end: "2025-09-19T15:00:00+08:00"   
-  }           
+  },      
+  {
+    boss: "sa",
+    weather: "stardust",
+    start: "2025-09-19T15:00:00+08:00",
+    end: "2025-09-22T15:00:00+08:00"   
+  },    
+   {
+    boss: "phyhod",
+    weather: "physical",
+    start: "2025-09-22T15:00:00+08:00",
+    end: "2025-09-26T15:00:00+08:00"   
+  },  
+   {
+    boss: "icehellmaru",
+    weather: "ice",
+    start: "2025-09-26T15:00:00+08:00",
+    end: "2025-09-29T15:00:00+08:00"   
+  }, 
+   {
+    boss: "quavalralhal",
+    weather: "quantum",
+    start: "2025-09-29T15:00:00+08:00",
+    end: "2025-10-03T15:00:00+08:00"   
+  },   
+    {
+    boss: "husk-hitcount",
+    weather: "lightning",
+    start: "2025-10-03T15:00:00+08:00",
+    end: "2025-10-06T15:00:00+08:00"   
+  },  
+    {
+    boss: "phyalien",
+    weather: "physical",
+    start: "2025-10-06T15:00:00+08:00",
+    end: "2025-10-10T15:00:00+08:00"   
+  },    
+    {
+    boss: "igniteandrius",
+    weather: "ignite",
+    start: "2025-10-10T15:00:00+08:00",
+    end: "2025-10-13T15:00:00+08:00"   
+  },  
+    {
+    boss: "starrimestar",
+    weather: "starless",
+    start: "2025-10-13T15:00:00+08:00",
+    end: "2025-10-17T15:00:00+08:00"   
+  },     
 ]
 
 };
