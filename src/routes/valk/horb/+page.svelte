@@ -53,6 +53,7 @@ import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Heliadps from "$lib/components/lineup/heliadps.svelte";
+	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -251,68 +252,27 @@ function selectTabMobile(event) {
     
     </div>
   
-  
-  
-  <!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-66 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/horb.webp" alt="Durandal" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-25;"/> 
-   <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-violet-800/70 hover:bg-violet-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{fovlikes}</span>
-      </button>
-    </div>
-  </div>
-  
-  </div>
-  
-  
-  <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Herrscher of Rebirth
-    </h1>
-  <!-- Character Info Cards -->
-<div class="rounded-lg overflow-hidden shadow-md bg-slate-200 text-black text-xs w-full font-medium">
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Name</div>
-    <div class="px-3 py-1 flex-1 flex items-center">Seele Vollerei</div>
-  </div>
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">Release</div>
-    <div class="px-3 py-1 flex-1 flex items-center">v6.8 (3 Aug 2023)</div>
-  </div>
-  <div class="flex">
-    <div class="bg-violet-800 text-white w-28 px-4 py-1 flex items-center justify-center font-semibold">DLC</div>
-    <div class="px-3 py-1 flex-1 flex items-center">v8.5 (23 Oct 2025)</div>
-  </div>
-</div>
 
+<CharacterLayout
+  charName="horb"
+  initialLikes={likesData["horb"] || 0}
+  accent="bg-violet-800"
+  image="/images/valkfull/horb.webp"
+  alt="Herrscher of Rebirth"
+  title="Herrscher of Rebirth"
+  name="Seele Vollerei"
+  release="v6.8 (3 Aug 2023)"
+  dlc="v8.5 (23 Oct 2025)"
+>
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="psy" element="phy" ar="ws" bg="bg-violet-800" />
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['goi' , 'ws' , 'p1phy']}  bg="bg-violet-800"/>
-  </div>
+
+</CharacterLayout>
+
+
 
   
   </section>

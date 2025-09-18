@@ -233,7 +233,7 @@ async function increaseLike() {
   }
 
   #app {
-  height: 36.5rem;
+  height: 37rem;
   overflow: hidden;
   position: relative;
 }
