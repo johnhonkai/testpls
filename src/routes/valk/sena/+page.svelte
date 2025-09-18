@@ -691,29 +691,24 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
       <div class="flex justify-center gap-4 my-6">
+
+        
           <button
             on:click={() => setPlaystyle('1')}
             class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-           ONE EGO
-          </button>
-        
-          <button
-            on:click={() => setPlaystyle('2')}
-            class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
             AR CHARGING
           </button>
 
           <button
-          on:click={() => setPlaystyle('3')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          on:click={() => setPlaystyle('2')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
           STELLAR OUTBURST
         </button>
         </div>
       
-        {#if activePlaystyle === '1'}
+        {#if activePlaystyle === '3'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">One Ego Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           A playstyle centered around clearing a floor within one rotation of AR Charging and Stellar Outburst modes.
@@ -850,22 +845,22 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
-          AR CHARGING
+          <b>AR CHARGING</b>
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
           <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
           <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies).</li>
         </ol>
 
-        STELLAR OUTBURST
+        <b>STELLAR OUTBURST</b>
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Lightning Flash Anchor).</li>
-          <li>Weapon skill will flash. Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
-          <li>If weapon button doesn't flash: Evade > Basic ATK x2 > Weapon x2.</li>
+          <li>If weapon button is flashing: Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>If weapon button isn't flashing: Evade > Basic ATK x2 > Weapon x2.</li>
           <li>Use Ultimate whenever available..</li>
         </ol>
         
-        NOTE
+        <b>NOTE</b>
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>AR meter carries over from floor to floor. If the battle ends during Stellar Outburst, Stellar Outburst will also end early and you keep the remaining AR meter.</li>
           <li>Be careful not to activate Stellar Outburst after the battle is over. This will reset your AR meter to zero.</li>
@@ -876,7 +871,7 @@ function selectTabMobile(event) {
         </p>
         {/if}
 
-        {#if activePlaystyle === '2'}
+        {#if activePlaystyle === '1'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           A playstyle where Sena can keep consuming evasion charge to extend Thunderous Blazar state. Technically you can use this playstyle during Stellar Outburst, but there are better signets for Stellar Outburst.
@@ -907,10 +902,12 @@ function selectTabMobile(event) {
           </div>
         </div>
         <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+          <p class="text-sm sm:text-base text-left">          </p>
+                     <ul class="list-disc px-4 text-sm sm:text-base">
+ 
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+            </ul>
           </div>
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -922,10 +919,7 @@ function selectTabMobile(event) {
               <p class="text-lg font-semibold ">1 or 2</p>
             </div>
 
-            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
+
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -943,6 +937,16 @@ function selectTabMobile(event) {
               <p class="text-lg font-semibold">1 or 2</p>
             </div>
 
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
@@ -951,12 +955,14 @@ function selectTabMobile(event) {
           </div>
 
           <div class="p-2 mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left ">
+            <p class="text-sm sm:text-base text-left ">            </p>
+          <ul class="list-disc px-4 text-sm sm:text-base">
 
-                <li class="text-sm sm:text-base"> Senadina can use a lot of signets. </li>
-                <li class="text-sm sm:text-base"> Decimation 1: Your HP is very low, and bosses can one-shot you. Not recommended for new players, , but you can get Vicissitude 2 for survivability.</li>
+                <li class="text-sm sm:text-base"> <span class="text-teal-400">Vicissitude 2</span>: Recommended to get Vicissitude 2 before tank boss. Senadina doesn't have a lot of invincibility frames. </li>
+                <li class="text-sm sm:text-base"> <span class="text-sky-400">Setsuna</span>: Recommended to get the Setsuna signet that gives extra evasion charge so you have no evasion down time.</li>
+                <li class="text-sm sm:text-base"> <span class="text-rose-400">Decimation 1</span>: Very strong signet, but your HP will be very low, and bosses can one-shot you. Not recommended for new players, but getting Vicissitude 2 should help you survive.</li>
+          </ul>
 
-            </p>
             </div>
 
             <div class="divider  "></div>
@@ -1013,10 +1019,18 @@ function selectTabMobile(event) {
 
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
               <div class="flex flex-row rounded-sm">
+                  <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                  <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+              <p class="text-base sm:text-lg font-semibold">FINAL (Gold Build)</p>
+          </div>
+
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+              <div class="flex flex-row rounded-sm">
                   <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
-              <p class="text-base sm:text-lg font-semibold">FINAL</p>
+              <p class="text-base sm:text-lg font-semibold">FINAL (Decimation Build)</p>
           </div>
 
           </div>
@@ -1025,24 +1039,49 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
+          <b>When you have evasion charge:</b>
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
-          <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies)</li>
-          <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies). Repeat.</li>
+
+          <li>First evasion: Evade → Basic ATK x2 → Weapon → Basic ATK → Weapon x2 (Thunder in Clear Skies). </li>
+          <li>Subsequent evasions: Evade → Basic ATK → Weapon x2 (Thunder in Clear Skies).</li>
+          <li>If you don't know what to press, just follow the flashing buttons.</li>
+          <li>Note: If you have Setsuna 2, evasion skill can be triggered without Basic ATK, allowing you to skip some Basic ATK. Just see if your weapon skill flashes.</li>
+
+        </ol>
+
+          <b>When you don't have evasion charge:</b>
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>If Ult is available, use Ultimate. This will restore full evasion charges. Also, weapon skill will flash. Press Weapon → Press Weapon (Thunder in Clear Skies)</li>
+          <li>If Ult is not available, just spam Basic ATK to start the sequence in step 1.</li>
         </ol>
 
         <p class="mt-2 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
         </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/Up1Kb8sK2FY/"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+          </iframe>
+      </div>
+
         {/if}
 
-        {#if activePlaystyle === '3'}
+        {#if activePlaystyle === '2'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
-        <p class="text-sm sm:text-base text-center sm:text-left">
+        <p class="text-sm sm:text-base text-center sm:text-left">        </p>
+
+                                  <ol class="list-disc px-4 mb-6 text-sm sm:text-base">
+
           <li>A playstyle centered around buffing Domain Resonance damage.</li>
           <li>Sena has a weird issue compared to other Part 2 valks: SHE DOES NOT START THE FLOOR WITH FULL AR METER and NONE OF HER SIGNET GIVE AR METER AFTER STELLAR OUTBURST ENDS. Instead, AR meter carries over from floor to floor. This means you are forced to play regular Senadina while waiting for AR meter to fill up.</li>
-        </p>
-
+                                    </ol>
         <div class="divider  "></div>
 
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
@@ -1061,8 +1100,8 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Sudden Thunderbolt -> Increment</p>
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Initial Dawning (Extend Blazar duration) OR Effortlessness (More DMG) </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Sudden Thunderbolt ➔ Increment</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Initial Dawning (Extend Blazar) OR Effortlessness (More DMG) </p>
             </div>
           </div>
           
@@ -1109,10 +1148,12 @@ function selectTabMobile(event) {
           </div>
 
           <div class="p-2 mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left">
+            <p class="text-sm sm:text-base text-left">            </p>
+                        <ol class="list-disc px-4 mb-6 text-sm sm:text-base">
+
                 <li class="text-sm sm:text-base"> Senadina can use a lot of signets.</li>
                 <li class="text-sm sm:text-base"> Decimation 1: Your HP is very low, and bosses can one-shot you. Not recommended for new players, , but you can get Vicissitude 2 for survivability. </li>
-            </p>
+                        </ol>
             </div>
 
             <div class="divider  "></div>
@@ -1181,22 +1222,22 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
-          AR CHARGING
+          <b>AR CHARGING</b>
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>START: Evade > Basic ATK x2 > Weapon > Basic ATK > Weapon x2 (Thunder in Clear Skies) (If you don't know what to press, just follow the flashing buttons.)</li>
           <li>Use Ultimate. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
           <li>Evasion > Basic ATK x2 > Weapon x2 (Thunder in Clear Skies).</li>
         </ol>
 
-        STELLAR OUTBURST
+        <b>STELLAR OUTBURST</b>
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst. Weapon skill will flash, and you can shortcut to Press Weapon > Press Weapon (Lightning Flash Anchor).</li>
-          <li>Weapon skill will flash. Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
-          <li>If weapon button doesn't flash: Evade > Basic ATK x2 > Weapon x2.</li>
+          <li>If weapon button is flashing: Shortcut to Press Weapon > Press Weapon (Thunder in Clear Skies).</li>
+          <li>If weapon button isn't flashing: Evade > Basic ATK x2 > Weapon x2.</li>
           <li>Use Ultimate whenever available.</li>
         </ol>
         
-        NOTE
+        <b>NOTE</b>
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>AR meter carries over from floor to floor. If the battle ends during Stellar Outburst, Stellar Outburst will also end early and you keep the remaining AR meter.</li>
           <li>Be careful not to activate Stellar Outburst after the battle is over. This will reset your AR meter to zero.</li>

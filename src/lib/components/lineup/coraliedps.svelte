@@ -73,20 +73,27 @@
         <div class="py-3 px-4">
 
             <p class="text-sm sm:text-base mb-4">
-                BFD best teammates are PAWS and Vita.    
+                BFD best teammates are PAWS and Vita. 
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>PAWS</b><br/> - Provides strong buffs. The buffs she provides is better than having 2 Rite of Oblivion supports (for most cases).
                 <br/>
                 - Can quickly consume Stellar Drain through Ultimate.
 
-            </p>      
+            </p>  
+
 
             <p class="text-sm sm:text-base mb-4"><b>No PAWS?</b><br/> If you don't have PAWS, then you want two Rite of Oblivion characters as support. Her leader skill is strong, but requires all characters in the team to be Rite of Oblivion characters to activate / reach max buffs.
 
             </p>      
 
             <p class="text-sm sm:text-base mb-4"><b>Vita</b><br/> Provides Elemental Breach state and strong buffs.
+
+            </p>  
+
+            
+            <p class="text-sm sm:text-base mb-4"><b>Herrscher of Finality</b><br/> In some cases where the battle is short, HoFi support may be used over Vita for higher score, since you just need to use weapon skill at the start.
+
 
             </p>  
     </div>

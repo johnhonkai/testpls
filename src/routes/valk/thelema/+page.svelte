@@ -657,25 +657,27 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
       <div class="flex justify-center gap-4 my-6">
-          <button
+                  <button
             on:click={() => setPlaystyle('1')}
             class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            STELLAR OUTBURST
+            SHADOW CLONE BARRAGE
           </button>
-        
+
           <button
             on:click={() => setPlaystyle('2')}
             class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
           >
-            SHADOW CLONE BARRAGE
+            STELLAR OUTBURST
           </button>
+        
+
         </div>
       
-        {#if activePlaystyle === '1'}
+        {#if activePlaystyle === '2'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-            Mecha smashes all
+            Get Banquet then unleash Moment of Indulgence all over the enemies.
         </p>
 
         <div class="divider  "></div>
@@ -703,10 +705,12 @@ function selectTabMobile(event) {
           
         </div>
         <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
-              <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <p class="text-sm sm:text-base text-left"></p>
+                        <ul class="list-disc px-4 text-sm sm:text-base">
+
+              <li class="text-sm  sm:text-base"> ER Lite: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Waltz), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+          </ul>
           </div>
 
           <div class="divider  "></div>
@@ -742,10 +746,12 @@ function selectTabMobile(event) {
           </div>
 
           <div class="p-2 mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left">
+            <p class="text-sm sm:text-base text-left">            </p>
+                        <ul class="list-disc px-4 text-sm sm:text-base">
+
                 <li class="text-sm sm:text-base"> <b> Setsuna:</b> Moment of Indulgence triggers evasion skill.</li>
                   <li class="text-sm sm:text-base"> <b>Infinity:</b> Evasion skill summons a phantom that counts as a summoned entity.</li>
-            </p>
+                        </ul>
           </div>
 
             <div class="divider  "></div>
@@ -815,32 +821,44 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Use both supports. They become Phantoms during Stellar Outburst, and you can't trigger their normal active skills.</li>
+          <li>Use both supports before activating Stellar Outburst.</li>
           <li>Activate Stellar Outburst.</li>
           <li>Use Ultimate.</li>
           <li>Use support (Phantom).</li>
-          <li>Use Basic ATK full sequence / weapon skill until you get full Banquet. Then, use Moment of Indulgence (Press ATK or Weapon). Repeat step 5 until Stellar Outburst ends.</li>
+          <li>Use Basic ATK full sequence / tap weapon / hold weapon / combo atk until you get full Banquet. Then, use Moment of Indulgence (Press ATK or Weapon). Repeat step 5 until Stellar Outburst ends.</li>
         </ol>
 
           <p class="text-emerald-400">
           <b>TECHNICAL INFO</b></p>
-          <li>To gain Banquet, you can just use the normal rotation that you use in normal battles. Personally, I like to spam Basic ATK, and weapon skill sometimes in-between.</li>
-          <li>For a smoother Basic ATK flow, evade to cancel the Basic ATK final hit backswing (Basic ATK seq 1,2,3 > Evade > Basic ATK seq 1,2,3). Or, use weapon skill between Basic ATK sequences.</li>
+                    <ul class="list-disc px-4 text-sm sm:text-base">
+
+          <li>To gain Banquet, you can just use the normal rotation that you use in normal battles. </li>
+          <li>Personally, I like to spam Basic ATK spam. For a smoother Basic ATK flow, evade to cancel the Basic ATK final hit backswing (Basic ATK seq 1,2,3 > Evade > Basic ATK seq 1,2,3). Or, use weapon skill between Basic ATK sequences.</li>
           <li>Can use weapon skill at the start or after Indulgence to gather enemies, and to trigger buffs activated by weapon skill, like Helix and Stars signet.</li>
           <li>If you can't see Thelema's action on the screen (it is very messy), just look at the Banquet stack above HP bar to see if the attack already hits.</li>
-
+                    </ul>
 
         <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai (Soon)
+            Check out this showcase from Marisa Honkai 
         </p>
-
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/-QNl0YLQeVQ/"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+          </iframe>
+      </div>
 
         {/if}
 
-        {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR CHARGING PLAYSTYLE</h2> 
+        {#if activePlaystyle === '1'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Strong playstyle with lots of suspended animation and timestop.
+          Thelema becomes Naruto. Strong playstyle with lots of suspended animation and timestop. Much more simple to play than SO playsytle.
         </p>
 
         <div class="divider  "></div>
@@ -868,10 +886,12 @@ function selectTabMobile(event) {
           </div>
         </div>
         <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+          <p class="text-sm sm:text-base text-left"></p>
+                                    <ul class="list-disc px-4 text-sm sm:text-base">
+
               <li class="text-sm sm:text-base"> ER Lite: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: Feast is the enabler, and Goblet allows you to keep up the rotation. Get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+                                    </ul>
           </div>
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -879,24 +899,21 @@ function selectTabMobile(event) {
             <!-- First Signet with 'Start' text -->
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
-          
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                <p class="text-lg font-semibold ">1 or 2</p>
-              </div>
-              
+
               <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">2</p>
               </div>
-
-              <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500">
-                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+          
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <p class="text-lg font-semibold ">1</p>
               </div>
+              
+
 
               <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
                 <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -911,12 +928,14 @@ function selectTabMobile(event) {
           </div>
 
           <div class="p-2 mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left ">
+            <p class="text-sm sm:text-base text-left ">            </p>
 
-                <li class="text-sm sm:text-base"> Decimation 1: Not recommended for new players, since you can easily die.</li>
-                <li class="text-sm sm:text-base"> Deliverance 2: The additional Lightning DMG from Cosmos and Lovely Wishes count as Ult DMG, and can increase Deliverance 2 stack. It takes around 3 Basic ATK cycles to get max stack. </li>
+                    <ul class="list-disc px-4 text-sm sm:text-base">
 
-            </p>
+                <li class="text-sm sm:text-base"> <b>Vicissitude 2</b>: Recommended to get Vicissitude 2 before tank boss for survivability.</li>
+                <li class="text-sm sm:text-base"> <b>Setsuna 2</b>: Avoid getting Setsuna 2 since it can mess up your evasion charge consumption.</li>
+
+              </ul>
             </div>
 
             <div class="divider  "></div>
@@ -957,7 +976,7 @@ function selectTabMobile(event) {
             
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
                 <div class="flex flex-row rounded-sm">
-                <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">START (ER Lite)</p>
@@ -965,16 +984,24 @@ function selectTabMobile(event) {
 
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
                 <div class="flex flex-row rounded-sm">
-                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">START (Normal)</p>
             </div>
 
             <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
                 <div class="flex flex-row rounded-sm">
+                    <img src="/images/sigils/Forget-Me-Not.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
                     <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                 </div>
                 <p class="text-lg font-semibold">FINAL</p>
             </div>
@@ -986,12 +1013,31 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
 
           <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>To Be Updated</li>
+          <li>Use Ultimate</li>
+          <li>Spam Basic ATK to launch your Kagebunshin attack</li>
+          <li>Evade ➔ Spam Basic ATK to launch your Kagebunshin attack</li>
+          <li>Evade ➔ Spam Basic ATK to launch your Kagebunshin attack</li>
+          <li>Repeat</li>
+          <li>In cases where your Ult is still on cooldown, just get Banquet like in a normal battle, then spam Basic ATK to launch your Kagebunshin attack</li>
+
         </ol>
 
         <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-          Check out this showcase from Marisa Honkai (Soon)
+          Check out this showcase from Marisa Honkai
       </p>
+
+              <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/_YnTwjNlxqs/"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+          </iframe>
+      </div>
+
         {/if}
 
       {/if}

@@ -1,6 +1,6 @@
 
 <svelte:head>
-  <title>Hi ♪ Love Elf ♥</title> 
+  <title>Elysia - Hi ♪ Love Elf ♥</title> 
 
     <meta property="og:title" content="Elysia - Hi ♪ Love Elf ♥" />
     <meta property="og:description" content="Hi ♪ Love Elf ♥ Guides, Builds and Gameplay" />
@@ -316,7 +316,7 @@ async function increaseLike() {
         Release
       </div>
       <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        v8.5 (23 October 2025)
+        v8.5 (23 Oct 2025)
       </div>
     </div>
   </div>
@@ -1422,7 +1422,7 @@ async function increaseLike() {
   <!-- Video 1 with title and description -->
 
 
-  <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+  <div >
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf DPS</h2>
 
     <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
