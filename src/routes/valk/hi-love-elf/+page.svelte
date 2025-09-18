@@ -51,6 +51,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 	import Vitadps from "$lib/components/lineup/vitadps.svelte";
 	import Newelydps from "$lib/components/lineup/newelydps.svelte";
+	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -233,7 +234,7 @@ async function increaseLike() {
   }
 
   #app {
-  height: 36rem;
+  height: 36.5rem;
   overflow: hidden;
   position: relative;
 }
@@ -256,78 +257,21 @@ async function increaseLike() {
     </div>
 
 
-
-<!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-  <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/mol.png" alt="Messenger of Love" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-55;"/> 
-  <!-- Like Button: Bottom-right overlay -->
-  <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-pink-800/80 hover:bg-pink-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{durandallikes}</span>
-      </button>
-    </div>
-  </div>
-
-</div>
+<CharacterLayout
+  charName="mol"
+  initialLikes={likesData["mol"] || 0}
+  accent="bg-pink-800"
+  image="/images/valkfull/mol.png"
+  alt="Messenger of Love"
+  title="Hi ♪ Love Elf ♥"
+  name="Elysia"
+  release="v8.5 (23 Oct 2025)"
+>
+  <CharBio mode="dps" rank="s" type="sd" element="ice" ar="goi" bg="bg-pink-800" />
+  <CharBio mode="support" ar={['goi', 'wod', 'ws']} bg="bg-pink-800" />
+</CharacterLayout>
 
 
-
-<!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-8">
- 
-  <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Hi ♪ Love Elf ♥</h1>
-
-  <!-- Character Info Cards -->
-  <div class="space-y-2 w-[260px] md:w-[300px]">
-    <!-- Name Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-pink-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Name
-      </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Elysia
-      </div>
-    </div>
-
-    <!-- Release Date Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-pink-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs">
-        Release
-      </div>
-      <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        v8.5 (23 Oct 2025)
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="sd" element="ice" optelement="" ar="goi" bg="bg-pink-800" />
-
-  <!-- Support Section -->
-  <CharBio mode="support" ar={['goi' , 'wod' , 'ws']}  bg="bg-pink-800"/>
-</div>
 
 
 </section>
