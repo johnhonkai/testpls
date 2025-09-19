@@ -18,11 +18,15 @@
     let { data }: { data: PageData } = $props();
 
   const dps = [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
     { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
 
   ];
 
   const support = [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
+    { name: "Herrscher of Rebirth", image: "/images/valkportrait/Seele Herrscher of Rebirth.png" , type: "Psy" , element: "Physical" },  
+
     { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" , type: "Mech" , element: ["Fire" , "Ignite"] },
     { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
     { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
@@ -51,13 +55,14 @@
     ],
 
     Hitcount: [
-        { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
-      { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
+    { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
+    { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
 
     ],
 
     Freeze: [
-           
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" },  
+
     ],
 
     Paralyze: [
@@ -161,7 +166,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
+    v8.5
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -205,7 +210,7 @@ async function captureStats() {
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
   <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
+    v8.5
   </span>
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
@@ -241,7 +246,7 @@ async function captureStats() {
 
   
   <!-- DPS Section -->
-  <section class="flex-1">
+  <section class="flex-2">
     <h2 class="text-xl sm:text-2xl font-semibold  pb-2 cooltext">DPS</h2>
     <div class="flex flex-wrap gap-3">
       {#each dps as char}
@@ -273,7 +278,7 @@ async function captureStats() {
 
 
   <!-- Support Section -->
-  <section class="flex-4">
+  <section class="flex-5">
     <h2 class="text-xl sm:text-2xl font-semibold pb-2 cooltext">Support</h2>
     <div class="flex flex-wrap gap-3">
       {#each support as char}
