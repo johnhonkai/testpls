@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.5 Elysian Realm v2
+title: 8.5 Elysian Realm v2
 version: '8.5'
 sortOrder: '5'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"

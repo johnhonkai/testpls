@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Hi♪ Love Elf♥ Equipment Translation V4
+title: Hi Love Elf Equipment Translation V4
 version: '8.5'
 sortOrder: '3'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
