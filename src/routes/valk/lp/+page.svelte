@@ -54,6 +54,7 @@ import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import Coraliedps from '$lib/components/lineup/coraliedps.svelte';
 	import Psdps from '$lib/components/lineup/psdps.svelte';
+	import CharacterLayout from '$lib/components/valkpage/CharacterLayout.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -232,7 +233,7 @@ function selectTabMobile(event) {
 
 
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
     <div id="app">
@@ -253,78 +254,27 @@ function selectTabMobile(event) {
     <img src="/images/test.png" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
   </div>
 
-  <!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/vita.webp" alt="Lone Planetfarer" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-13;"/> 
-  
-  <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-teal-800/70 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{lplikes}</span>
-      </button>
-    </div>
-  </div>
-  </div>
-
-
-
-  <!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-    <!-- Battlesuit Name -->
-    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Lone Planetfarer</h1>
-
-  <!-- Character Info Cards -->
-  <div class="space-y-2 w-[260px] md:w-[300px]">
-    <!-- Name Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Name
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Vita
-      </div>
-    </div>
-
-    <!-- Release Date Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-emerald-900 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Release
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
-      v7.8 (17 Oct 2024)
-      </div>
-    </div>
-  </div>
-
+  <CharacterLayout
+  charName="lp"
+  initialLikes={likesData["lp"] || 0}
+  accent="bg-emerald-900"
+  image="/images/valkfull/vita.webp"
+  alt="Lone Planetfarer"
+  title="Lone Planetfarer"
+  name="Vita"
+  release="v7.8 (17 Oct 2024)"
+>
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo"  />
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['scoralie' , 'ws' , 'wod' ,'loa']} />
-  </div>
+</CharacterLayout>
+
+
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4 text-gray-200 sticky top-16 h-[calc(100vh-4rem)]">

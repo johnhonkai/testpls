@@ -48,9 +48,12 @@
 
 <div class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6">
   <!-- Left: Character Image -->
-  <div class="relative w-40 h-50 sm:w-60 sm:h-70 flex justify-center items-center mt-4 sm:mt-15">
-    <img src={image} alt={alt} class="max-h-full max-w-full sm:object-contain" />
-
+<div class="relative w-40 h-50 sm:w-70 sm:h-70 flex justify-center items-center mt-4 sm:mt-15 overflow-hidden">
+  <img
+    src={image}
+    alt={alt}
+    class="h-full w-auto object-cover"
+  />
     <!-- Like Button -->
     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
       <div class="tooltip tooltip-top" data-tip={hasLiked ? "You already liked this!" : "Click to like"}>
