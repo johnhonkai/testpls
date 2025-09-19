@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.5 Patch Note v3B
+title: v8.5 Patch Note v4
 version: '8.5'
 sortOrder: '1'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
@@ -19,6 +19,100 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 
 ### VIDEO OVERVIEW
 Video overview of all new content: https://youtu.be/RtBNoJVba1E
+
+---
+
+### V4
+
+#### Hi Love Elf 
+
+Bug Fixes
+- Fixed an issue where Dragon Coralie stigma 3pc effects that require RoOblivion is abnormally activated when Hi Love Elf is the leader 
+- Fixed an issue where Hi Love Elf can continue to deal dmg after cancelling Basic ATK SEQ 3 
+- Fixed an issue where sp regen doesnt take effect 
+- Optimized valk general and summary skill description 
+- Fixed an issue in WoD team where AR meter regen of a skill abnormally take effect 
+
+Leader skill 
+- Level 1 increased from 10% to 18% 
+- Max Level increased from 13/20% to 20/25% 
+- Level 1 increased TDM Taken increased from 4.5% to 5%
+
+Passive 
+- When Love Field Dome flourishes, deal additional 100% > 500% ATK of Ice DMG.
+- Added new effect: During SO, self gain Total DMG +10% vs typeless enemies (independent). During AR Charging: Teammates gain Total DMG +50% vs typeless enemies.
+
+Weapon Skill 
+- Max Level: During AR Charging, enemies take 20% > 15% more Ice DMG from self. During SO, enemies take 25% > 20% more Ice DMG from self.
+
+Astral Ring. When GoI is activated:
+- Ult finisher deal additional 800/1200% > 500/1500% 
+- OLD: When Love Field Dome is in Full Spring state, Basic ATK deals additional 150% ATK of Ice DMG, and gain Total DMG +60% (V3),
+- NEW: When Love Field Dome is in Full Spring state, Basic ATK gains 4 enhancement stack, each Basic ATK 1-4 hit consumes a stack. During the enhancement, Basic ATK 1-4 deal additional 200/200/1000/1100% ATK of Ice DMG, and gain Total DMG +60%, also restore 2 AR points.
+- AR 2: Level 1: Self Ice DMG +10/10/20% > 12/12/27%
+- AR 4: Fixed an issue where the TDM buff from 'For every World Star character in the team...' line doesnt activate. Also, changed the condition to the text below:
+- AR 4: Max Level: When World Star is activated, during AR Charging, team Total DMG +12%, during SO, team Total DMG +12%
+- AR 3: Adjusted skill description to be more accurate to the actual effect. Fire and Physical DMG +42%. Melee ATK gain Ice and Lightning DMG +42%, and Enemies take 15% more Total DMG from the leader's Ranged ATK
+- AR 3: Added new effect: When the valk has type advantage against an enemy, the enemy takes 9% more Total DMG from the valk.
+
+Basic ATK 
+- Basic SEQ 3: 80%x11 > 40%x11 
+- Added description: When Love Field Dome is present, valk is in Iron Body state during Basic SEQ 4.
+- QTE: Adjusted from "Within 7s after QTE, Basic ATK gain higher anti interrupt" to "When Love Field Dome is present, Basic ATK gain higher anti interrupt"
+
+Ult 
+- Added description: SP consumption to use Ult and to charge extra arrows is not affected by sp consumption reduction effects.
+
+
+#### HoRB with DLC 
+
+Bug Fix 
+- Fixed an issue for abnormal animation in Soul Shaper form during SO. 
+- Fixed an issue where AR is not recovered properly after ultimate evasion. 
+- Fixed an issue where Joint Weapon meter is abnormal in some cases.
+- Fixed an issue where SO can be activated during Joint Weapon. 
+- Fixed an issue where, when HoRB is the leader, using Combo ATK during SO will abnormally trigger Soul Shaper form buff.
+- Fixed leader skill that requires AR Charging state to not get activated. 
+- Fixed an issue where, when HoRB is the leader, when Sparkle use Ult on HoRB while she uses Joint Weapon, SO cannot be activated even after Joint Weapon ends.
+- Optimized performance for the new ult Cradle of Whispering Sea 
+- Optimized valk general and summary skill description 
+
+Astral Ring 
+- When Joint Weapon final slash hits a target, or upon Stellar Outburst activation, the next Combo ATK gain Physical DMG +50% > 80%.
+- During SO, the sp recovery is changed from 52 to 65 points.
+- As leader, when reso mark is triggered and deal dmg, added description "Counts as Ult DMG". Cradle ult cd from 6 > 7 seconds.
+- When GoI is activated: Added effect - Enemies in Withering Fissure take 5% more Elemental DMG.
+- AR 3: The part where "Passive Subskill 2 is forced to take effect" added a new description "Doesn't take effect during SO."
+- AR 3: Team Total DMG +0.5% > 0.3% x the extra sp consumed. Added a new description "Buff is removed when SO is activated."
+- AR 3: During SO, the first Joint Combo and Ult will restore 165 / 128 > 115 / 128 sp on hit
+- AR 2: QTE atk that pulls enemies to the ground and deal dmg gain Crit Rate +50%
+
+Leader: 
+- Enemies take 6% > 9% more Physical DMG from HoRB’s reso atk
+
+#### Weapon Adjustment 
+
+Hi Love Elf Weapon
+- Fixed an issue where sp regen effect may not take effect even when conditions are met 
+
+HoRB DLC 
+- Passive: Self Physical DMG +20% > Self Crit DMG +20%
+- Fixed an issue where "Resonance ATK gain Total DMG +60% against enemies with Withering Fissure" doesnt take effect for Bleed and Ignite DMG.
+
+#### Stigma Adjustment 
+
+Hi Love Elf 3 PC:
+- When GoI is activated: Self Ice DMG +10% > 15%. Added new effect: "As leader, enemies take 14% more Ice DMG from self"
+- When World Star is activated: Valks with [Heartblossom] gain Total DMG +20% > 16%. Added new  effect: "Enemies take 5% more Physical DMG from valks with [Heartblossom] and has Physical Breach state."
+- When World Star is activated: During SO, "valks with Heartblossom gain Elemental DMG +55%" changed to "25%, and weapon skill and Combo ATK gain Elemental DMG +30%"
+
+Aristophanes stigma 
+- TOP: Total DMG +12% > Crit DMG +10%. HoRB Equip Bonus: Total DMG +12% > Crit DMG +18%.
+- MID: Physical DMG +10% > 12%. HoRB Equip Bonus: Physical DMG +10% > 12%. Characters with [Blooming Flower] gain Physical DMG +6% > 10%
+- BOT: Removed the effect "Summoned units Physical DMG +10%". The phy and ele dmg taken now scales with stigma level.
+- 2PC:  When World Star is activated: Self Crit DMG +20% > 30%.
+- 3PC:  When World Star is activated: Enemies take 16% > 18% more Ele DMG. During SO, 24% > 32%.
+- 3PC:  When GoI is activated: Phy DMG +6% > 10%. During SO, Ele DMG taken +24% > 32%. Fixed an issue where some of the buffs do not apply to Bleed and Ignite DMG.
 
 ---
 

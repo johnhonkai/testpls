@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Hi♪ Love Elf♥ Translation v3B
+title: Hi♪ Love Elf♥ Translation v4
 version: '8.5'
 sortOrder: '2'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
@@ -28,14 +28,14 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 
 ### LEADER 
 Activates AR Grail of Infinitude. SO cost: 175. SO Duration: 30s, CD: 27s.
-- When there is 1 character with Symbiosis tag in the team: Hi Love ELf Ice DMG +10% (S) / 18% (S3) / 26% (SS3).
+- When there is 1 character with Symbiosis tag in the team: Hi Love ELf Ice DMG ~~+10% (S) / 18% (S3) / 26% (SS3) [v3]~~ **+18% (S) / 22% (S3) / 26% (SS3) [v4]**
 - When there are 2 characters with Symbiosis tag in the team: During SO, Hi Love Elf max sp +200.
-- When there are 3 characters with Symbiosis tag in the team: During SO, Hi Love Elf max sp +430, enemies take ~~6% (S) / 9% (S3) / 12% (SS3) [v2]~~~ **13% (S) / 16.5% (S3) / 20% (SS3)** more Ice DMG from Hi Love Elf (independent multiplier).
+- When there are 3 characters with Symbiosis tag in the team: During SO, Hi Love Elf max sp +430, enemies take ~~6% (S) / 9% (S3) / 12% (SS3) [v2]~~~ ~~13% (S) / 16.5% (S3) / 20% (SS3) [v3]~~ **20% (S) / 22.5% (S3) / 25% (SS3) [v4]** more Ice DMG from Hi Love Elf (independent multiplier).
 
 
 #### LEADER 1
 As leader:
-- Enemies take ~~6.4% (S) / 10% (SS) [v2]~~  **6.7% (S) / 10% (SS) [v3]** more total damage from Hi Love ELf. During AR Charging, additional +3.2% (S) / 5% (SS).
+- Enemies take ~~6.4% (S) / 10% (SS) [v2]~~  6.7% (S) / 10% (SS) [v3] more total damage from Hi Love ELf. During AR Charging, additional +3.2% (S) / 5% (SS).
 - During AR Charging: Each time you use weapon or Ult, restore 3 / 2.5 points of AR meter.
 - Ultimate from a team member with Symbiosis tag will inflict 9 points of freeze, cd 3s, cd for each teammate is calculated seperately.
 
@@ -49,12 +49,13 @@ Hi Love Elf is protected by AR Grail of Infinitude. When entering Stellar Outbur
 When GoInfinitude is activated:
 - During SO, team members share sp meter. Max sp is total of all team members' sp. Initial sp is 50% of max sp. The max sp that can be consumed by non-leader team member's Ult is equal to 100% of their max sp before SO is activated.
 - During SO, your max sp +200. When you are the leader, you gain Shimmering Trace equal to 100% of the sp consumed by yourself (not affected by sp reduction effect). When Trace reaches 1200, clear all Trace and trigger Facet of Infinitude. When the team has triggered Facet 2 times,
-Joint Weapon / Ult Finisher will be enhanced, deals additional 800% / 1200% ATK of Ice DMG. At the same time, when Hi Love Elf hits a SD enemy with any attack, a Stardust Deconstruction is triggered, drops 2 SD shards, can only trigger once per SO.
+Joint Weapon / Ult Finisher will be enhanced, deals additional ~~800% / 1200% (v3)~~ **500/1500% (v4)** ATK of Ice DMG. At the same time, when Hi Love Elf hits a SD enemy with any attack, a Stardust Deconstruction is triggered, drops 2 SD shards, can only trigger once per SO.
 - When SO ends, team no longer share sp, reset Trace points, and sp is restored to the value before SO is activated.
 - When Hi Love Elf is the leader:
     - When a teammate with Symbiosis tag uses Ult, Ely CD is reset and QTE is triggered.
     - When activating SO, Elysia activates Love Wish Dome form. In this form, Weapon Skill and Joint Weapon are changed to shoot towards the Love Field Dome. 
-    When Love Field Dome is in Full Spring state, ~~Basic ATK Total DMG +100% (v2)~~ **Basic ATK deals additional 150% ATK of Ice DMG, and gain Total DMG +60% (V3)**, and you can use Ultimate Finisher.
+    - ~~V3: When Love Field Dome is in Full Spring state, Basic ATK Total DMG +100% (v2) Basic ATK deals additional 150% ATK of Ice DMG, and gain Total DMG +60% (V3), and you can use Ultimate Finisher.~~
+    - **V4: When Love Field Dome is in Full Spring state, you can use Ult finisher. Also, Basic ATK gains 4 enhancement stack, each Basic ATK 1-4 hit consumes a stack. During the enhancement, Basic ATK 1-4 deal additional 200/200/1000/1100% ATK of Ice DMG, and gain Total DMG +60%, also restore 2 AR points.**
     - During SO, Ultimate will initially consume 200 sp to generate 1 arrow, dealing 400% ATK as Ice DMG.
     Based on the charge time, additional sp can be consumed to fire additional arrows (if Flower of Love is in Blooming state, timestop is triggered during charging).
     Can fire up to 6 extra arrows. Upon consuming 600 / 900 / 1200 / sp, she can generate +2 / +4 / +6 extra arrows respectively, each dealing 200% ATK as Ice DMG.
@@ -77,18 +78,20 @@ After SO ends, gain Stellar Drain. During AR Charging, when Ult hits a target, c
 
 #### AR 2
 As leader:
-During SO, when team triggers 1/2/3 Facet, self Ice DMG +16/16/28% (S) / +19/19/32% (S2) / +25/25/40% (SS1), lasts until SO ends. If the team has triggered 3 Facet during SO, and sp is less than 90 when SO ends, sp is restored to 90.
+During SO, when team triggers 1/2/3 Facet, self Ice DMG ~~V3: +16/16/28% (S) / +19/19/32% (S2) / +25/25/40% (SS1)~~ **V4: +17.2/17.2/32.2% (S) / +19.8/19.8/34.8% (S2) / +25/25/40% (SS1)** , lasts until SO ends. If the team has triggered 3 Facet during SO, and sp is less than 90 when SO ends, sp is restored to 90.
 
 #### AR 3
 When WoDestiny is activated:
 - ~~V2: During AR Charging: All arrows from Ult deal additional 200% ATK of Ice DMG.~~
-- **V3B: During AR Charging: Every time you cast weapon / Ult, restore 2 / 2 AR points. All arrows from Ult deal additional 300% ATK of Ice DMG, and arrow attacks gain Total DMG +70%.**
+- V3B: During AR Charging: Every time you cast weapon / Ult, restore 2 / 2 AR points. All arrows from Ult deal additional 300% ATK of Ice DMG, and arrow attacks gain Total DMG +70%.
 
-- **V3B: When Ely uses Ult or enter / exit SO, the leader gains these effects:**
-    - Melee atk gain Ele DMG +??% (S) / 42% (S1) 
-    - Fire and Physical DMG +??% (S) / 42% (S1) 
-    - Enemies take 15% more Total DMG from ranged atks
+- V3B: When Ely uses Ult or enter / exit SO, the leader gains these effects:
+    - Fire and Physical DMG +20% (S) / 42% (S1) 
+    - ~~V3B: Melee atk gain Ele DMG +??% (S) / 42% (S1)~~
+    - **V4: Melee ATK gain Ice and Lightning DMG +28% (S) / 42% (S1)**
+    - Enemies take 8% (S) > 15% (S1) more Total DMG from ranged atks from this valk
     - lasts for 30s, can be refreshed.    
+    - **V4: When the valk has type advantage against an enemy, the enemy takes 9% more Total DMG from the valk.**
 
 - ~~OUTDATED V3: When Ely uses Ult or enter / exit SO, WoD valks gain these effects:~~
     - Ele DMG ~~+20% (S) / 30% (S1) [v2]~~ +??% (S) / 42% (S1) [v3] , 
@@ -101,12 +104,13 @@ When WoDestiny is activated:
 When World Star is activated:
 - During AR Charging: All arrows from Ult deal additional 200% ATK of Ice DMG.
 - When entering SO, Ely activates Lovefield in High Spring state.
-- For every World Star character in the team, during AR Charging, Total DMG +3% (S) / 8% (S1), during SO, Total DMG +3% (S) / 8% (S1).
+- ~~V3: For every World Star character in the team, during AR Charging, Total DMG +3% (S) / 8% (S1), during SO, Total DMG +3% (S) / 8% (S1).~~
+- **V4: When World Star is activated, during AR Charging, team Total DMG +4% (S) / +12% (S1), during SO, team Total DMG +4% (S) / +12% (S1)**
 - SO cd -5s (cannot stack).
 - When entering SO, gain 6 QME, keep pressing atk button to launch resonance atk in the following order:
-    - 1: Weapon skill, deal 100%x5 + 100%x2, consume **2 (v2) > 3 (v3)** QME, trigger **2 (v2) > 3 (v3)** reso
+    - 1: Weapon skill, deal 100%x5 + 100%x2, consume 2 (v2) > 3 (v3) QME, trigger 2 (v2) > 3 (v3) reso
     - 2: Joint weapon, deal 400% + 100%x2, consume 2 QME, trigger 2 reso
-    - 3: Shoorts Ult (instantly at 7 arrows and doesn't consume sp) and activates Love Field Dome in Full Spring state, deal 1600% + 100%x2, consume **2 (v2) > 1 (v3)** QME, trigger **2 (v2) > 1 (v3)** reso, and then you can use Ult Finisher, deal 1000% ATK of Ice DMG.
+    - 3: Shoorts Ult (instantly at 7 arrows and doesn't consume sp) and activates Love Field Dome in Full Spring state, deal 1600% + 100%x2, consume 2 (v2) > 1 (v3) QME, trigger 2 (v2) > 1 (v3) reso, and then you can use Ult Finisher, deal 1000% ATK of Ice DMG.
 - Team recover 100 HP when a reso atk is triggered.
 - During SO: Using Ult Finisher, Weapon Skill, Joint Weapon, and Ult by consuming QME makes the attacks gain Ice DMG +100%, and Ele Breach +10%.
 
@@ -129,13 +133,13 @@ During AR Charging: If sp is below 150, sp regen efficiency +400%.
 
 When Hi Love Elf is in the team, SD enemies' critical index point becomes Special Critical Index. When detonated, trigger 1 Stardust Deconstruction, and all dropped SD shards are converted into Special SD shards: Eternal Wish Crystal (functions the same as regular shards but when consumed, Max HP DMG dealt to SD enemies are increased by 5%)
 
-When Hi Love Elf is the leader, all arrows from Ult deal additional **200% (v2) > 300% (v3)** ATK of Ice DMG, and triggering Everbloom Garden deals an additional **400% (v2) > 600% (v3)** ATK of Ice DMG.
+When Hi Love Elf is the leader, all arrows from Ult deal additional 200% (v2) > 300% (v3) ATK of Ice DMG, and triggering Everbloom Garden deals an additional 400% (v2) > 600% (v3) ATK of Ice DMG.
 
-During SO: Stellar Weapon Skill deals an additional 100% ATK of Ice DMG.
+During SO: Stellar Weapon Skill **and Joint Weapon skill (v4)** deal an additional 100% ATK of Ice DMG.
 
-Upon casting Joint Weapon skill or Love Field is flourished, deal additional **700% (v2) > 100% (v3)** ATK of Ice DMG.
+~~Upon casting Joint Weapon skill or Love Field is flourished, deal additional 700% (v2) > 100% (v3) ATK of Ice DMG.~~
 
-Ultimate Finisher deals an additional 500% ATK of Ice DMG.
+**When Love Field Dome flourishes (v4)** and Ultimate Finisher deal additional 500% ATK of Ice DMG.
 
 
 #### PASSIVE 1
@@ -148,7 +152,7 @@ Ultimate Finisher deals an additional 500% ATK of Ice DMG.
 When battle starts, if Hi Love Elf is the leader, initial sp +90, enemies take 10.8% (S) / 18% (SS2) more Ice DMG from herself. When not the leader, initial sp +100.
 
 #### PASSIVE 4
-(Toggle) **As leader, Hi Love Elf gain Total DMG +5% against typeless enemies (independent) (v3).** Gain Total DMG +20% against SD enemies. All team members gain SD Navigator state: Consuming SD remnant increases damage to SD enemy's Max HP by 30% (cannot stack).
+(Toggle) As leader, Hi Love Elf gain Total DMG +5% against typeless enemies (independent) (v3).  **During SO, self gain Total DMG +10% vs typeless enemies (independent). During AR Charging: Teammates gain Total DMG +50% vs typeless enemies. (v4)** Gain Total DMG +20% against SD enemies. All team members gain SD Navigator state: Consuming SD remnant increases damage to SD enemy's Max HP by 30% (cannot stack).
 
 #### PASSIVE 5
 [SS] If Hi Love Elf is the leader, during AR Charging: The first fully charged Ult can restore additional 5 AR meter (once per battle).
@@ -162,7 +166,7 @@ Evasion skill: Trigger 3s time fracture, CD 16s
 [S2] Non-ultimate evasion can trigger evasion skill 
 
 #### EVASION 2
-[SS] After triggering evasion skill, can connect to Basic SEQ 4, ~~when SEQ 4 hits~~ **when there are enemies on the field, when you cast Basic ATK SEQ 4 (v3)**, if sp is below 150, restore sp to 150, effect ends on exit.
+[SS] After triggering evasion skill, can connect to Basic SEQ 4, ~~when SEQ 4 hits~~ when there are enemies on the field, when you cast Basic ATK SEQ 4 (v3), if sp is below 150, restore sp to 150, effect ends on exit.
 
 ---
 
@@ -177,7 +181,7 @@ When AR is activated: Casting weapon also trigger Stardust Flicker (gather shard
 When entering via QTE during SO, or upon entering or exiting SO, refresh weapon cd.
 
 #### WEAPON 2
-[SSS] After casting weapon skill during AR Charging, enemies take 20% more Ice DMG from herself, lasts for 3s. During SO, after using Joint Weapon skill, enemies take 25% more Ice DMG from herself, lasts for 3s.
+[SSS] After casting weapon skill during AR Charging, enemies take ~~20% (v3)~~ **15% (v4)** more Ice DMG from herself, lasts for 3s. During SO, after using Joint Weapon skill, enemies take ~~25% (v3)~~ **20% (v4)** more Ice DMG from herself, lasts for 3s.
 
 ---
 
@@ -186,15 +190,17 @@ When entering via QTE during SO, or upon entering or exiting SO, refresh weapon 
 Four Basic ATK Sequence, same seq on both ground and air:
 - 1: 60%x4, 6sp
 - 2: 420%, 6sp 
-- 3: 80%x11, 9sp
-- 4: ~~800%~~ **700%**, 9sp, can trigger Stardust Flicker
+- 3: ~~80%x11~~ **40%x11**, 9sp
+- 4: ~~800%~~ 700%, 9sp, can trigger Stardust Flicker
+
+**V4: When Love Field Dome is present, valk is in Iron Body state during Basic SEQ 4.**
 
 During AR Charging: First Basic ATK after triggering Everbloom Garden will trigger 3s time fracture, ends upon entering SO or when Everbloom expires.
 
-When Everbloom exists, Basic SEQ 4 will trigger Everbloom Joint ATK, deal **1200% (v2) > 800% (v3)** ATK of Ice DMG, **during AR Charging, deal additional 400% ATK of Ice DMG (v3)**
+When Everbloom exists, Basic SEQ 4 will trigger Everbloom Joint ATK, deal 1200% (v2) > 800% (v3) ATK of Ice DMG, during AR Charging, deal additional 400% ATK of Ice DMG (v3)
 
 #### BASIC 1
-During Basic ATK, take 30% less Total DMG, and gain higher anti-interrupt. When Basic SEQ 4 hits a target, recover 50 sp, cd 10s. **Within 7s after QTE, Basic ATK gain higher anti-interrupt (v3)**
+During Basic ATK, take 30% less Total DMG, and gain higher anti-interrupt. When Basic SEQ 4 hits a target, recover 50 sp, cd 10s. ~~Within 7s after QTE, Basic ATK gain higher anti-interrupt (v3)~~ **When Love Field Dome is present, Basic ATK gain higher anti interrupt (v4)**
 
 #### BASIC 2
 When entering via QTE, Blessing of Love effect is triggered to restore sp:
@@ -222,8 +228,10 @@ During AR Charging: Weapon adds 18 points of freeze trauma.
 
 ### ULTIMATE 
 
-Tap or hold to use Ult. Initial sp cost: 100. CD: 2s. On hit, deals **200% (v2) > 300% (v3)** ATK of Ice DMG and adds 18 freeze. Charging ult can fire additional arrows, up to 4 extra arrows. Upon reaching 125/150 sp, 2/4 arrows are created, each deals 200% ATK of Ice DMG.
+Tap or hold to use Ult. Initial sp cost: 100. CD: 2s. On hit, deals 200% (v2) > 300% (v3) ATK of Ice DMG and adds 18 freeze. Charging ult can fire additional arrows, up to 4 extra arrows. Upon reaching 125/150 sp, 2/4 arrows are created, each deals 200% ATK of Ice DMG.
 If sp is insufficient, all arrows are fired prematurely. 
+
+**V4: SP consumption to use Ult and to charge extra arrows is not affected by sp consumption reduction effects.**
 
 During AR Charging: If Flower of Love is blooming, Ult triggers timestop when charging up. Then, firing at the Flower of Love triggers Everbloom Garden, lasts for 2/4/12 seconds when hit by 1/3/5 arrows.
 

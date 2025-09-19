@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.530Z"
-title: Hi♪ Love Elf♥ Equipment Translation V3B
+title: Hi♪ Love Elf♥ Equipment Translation V4
 version: '8.5'
 sortOrder: '3'
 image: "/images/valkportrait/Elysia Hi Love Elf.png"
@@ -32,7 +32,7 @@ image: "/images/valkportrait/Elysia Hi Love Elf.png"
 #### ACTIVE
 The weapon active’s DMG, CD and SP cost are based on wielder type. If wielder has Symbiosis tag, Ice DMG +30%. Hi Love Elf equip bonus:
 - As leader, during SO, initial sp +10%.
-- During AR Charging: ~~When weapon skill hits a target (v2)~~ **When there are enemies on the field, when you cast weapon skill,**, if sp is less than 150, restore to 150, cd 15s. CD is refreshed when SO ends.
+- During AR Charging: ~~When weapon skill hits a target (v2)~~ When there are enemies on the field, when you cast weapon skill,, if sp is less than 150, restore to 150, cd 15s. CD is refreshed when SO ends.
 
 #### PASSIVE 1
 Total DMG +15%. Hi Love Elf equip bonus:
@@ -79,22 +79,22 @@ Ice DMG +25%. Hi Love Elf equip bonus:
 - Enemies take 25% more Ice DMG from herself.
 - When AR is activated: Enemies take 12% more Ele DMG and Phy DMG from valks with [Heartblossom].
 - When WoDestiny is activated:
-  - Valks with [Heartblossom] gain Ele DMG +40%, Phy DMG **+20% (v2) > +15% (v3)**, Total DMG **+10% (v2) > +20% (v3)**, enemies take **5% more Physical DMG (v3)** and **35% (v2) > 40% (v3)** more Total DMG from characters with [Heartblossom].
+  - Valks with [Heartblossom] gain Ele DMG +40%, Phy DMG +20% (v2) > +15% (v3), Total DMG +10% (v2) > +20% (v3), enemies take 5% more Physical DMG (v3) and 35% (v2) > 40% (v3) more Total DMG from characters with [Heartblossom].
   - ~~During SO: Valks with [Heartblossom] gain Ele DMG +10%, Phy DMG +8%, Total DMG +5%, enemies take +15% more Total DMG from characters with [Heartblossom].~~(REMOVED IN V3)
 
 #### 3PC
-Ult, weapon skill gain Total DMG **+80% (v2) > +10% (v3)**. Hi Love Elf equip bonus:
+Ult, weapon skill gain Total DMG +80% (v2) > +10% (v3).  Hi Love Elf equip bonus:
 - When weapon or QTE hits, or upon activating SO, or when the battle starts when Ely is the leader, team gain [Heartblossom] for 25s, can be refreshed.
 - When GoInfinitude is activated:
-  - Hi Love Elf Ice DMG +10%, Total DMG **+10% (v2) > +40% (v3)**
+  - Hi Love Elf Ice DMG ~~+10% (V3)~~ **+15%(V4)**, Total DMG +10% (v2) > +40% (v3). **V4: As leader, enemies take 14% more Ice DMG from herself.**
   
   - ~~V2: Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +25%, Phy DMG +5%, Total DMG +30%. Enemies take 5% more Phy DMG, 5% more Ele DMG, 40% more Total DMG from valks with [Heartblossom] and Symbiosis tag.~~
 
-  - **V3: Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +25%, and enemies take 5% more Ele DMG from valks with [Heartblossom] and Symbiosis tag. When host is not the leader, valks with [Heartblossom] and Symbiosis tag gain Phy DMG +5%, Total DMG +30%, and enemies take 5% more Phy DMG, 40% more Total DMG from valks with [Heartblossom] and Symbiosis tag.**
+  - V3: Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +25%, and enemies take 5% more Ele DMG from valks with [Heartblossom] and Symbiosis tag. When host is not the leader, valks with [Heartblossom] and Symbiosis tag gain Phy DMG +5%, Total DMG +30%, and enemies take 5% more Phy DMG, 40% more Total DMG from valks with [Heartblossom] and Symbiosis tag.
 
   - During SO: Valks with [Heartblossom] and Symbiosis tag gain Ele DMG +10%, ~~Phy DMG +5%~~, Total DMG +5%. Enemies take 5% more Ele DMG ~~and 5% more Total DMG~~ from valks with [Heartblossom] and Symbiosis tag.
 
 - When World Star is activated:  
   - Self Ice DMG +20% and Total DMG +10%.
-  - Valks with [Heartblossom] gain Ele DMG +15%, Total DMG +20%, and enemies take 18% more Ele DMG and **12% (v2) > 7% (v3)** more Phy DMG from valks with [Heartblossom]
-  - During SO: Valks with [Heartblossom] gain Ele DMG +55%, and enemies take 25% more Total DMG from valks with [Heartblossom].
+  - Valks with [Heartblossom] gain Ele DMG +15%, Total DMG ~~+20% (v3)~~ **16% (v4)**, and enemies take 18% more Ele DMG and 12% (v2) > 7% (v3) more Phy DMG from valks with [Heartblossom], and **and take 5% more Physical DMG from valks with [Heartblossom] and has Physical Breach state. (V4)**
+  - During SO: Valks with [Heartblossom] gain Ele DMG ~~+55% (v3)~~ **+25% (v4)**, **weapon skill and Combo ATK gain Elemental DMG +30% (v4)**, and enemies take 25% more Total DMG from valks with [Heartblossom].
