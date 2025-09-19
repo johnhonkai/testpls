@@ -22,6 +22,17 @@ Video overview of all new content: https://youtu.be/RtBNoJVba1E
 
 ---
 
+### V4 Hotfix
+- Fixed an issue where HoRB leader skill doesnt work properly when equipped with DLC weapon 
+- Reverted abnormal unannounced change: Leader skill 2: Reso ATK TDM +10% > 9% (It's now 10% like before)
+- Implemented the change mentioned in v4 patch note: Leader skill 3: Enemies take 6% (v3) > 9% (v4) more Physical DMG from HoRB’s reso atk (independent multiplier).
+- Fixed an issue where, in some cases, Hi Love Elf can continue dealing dmg even after her Basic ATK has been anicancelled.
+- Overal Hi Love Elf skill description has been optimized. Only text change, actual effect remains the same.
+- Overal Hi Love Elf ER signet description has been optimized. Only text change, actual effect remains the same.
+- Adjusted Hi Love Elf trial character for shallow sequence
+
+---
+
 ### V4
 
 #### Hi Love Elf 

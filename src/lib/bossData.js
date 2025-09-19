@@ -2737,6 +2737,7 @@ export const teamData = {
       },
     ],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=hrPMC1UgndY', abyss: 'RedLotus 518D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=XqmJjwPJG4k', abyss: 'Nirvana 539D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=DLMAp9s4IVM', abyss: 'Nirvana 539D', uploader: 'schz' },
       { url: 'https://www.youtube.com/watch?v=H7qx5qk0-X0', abyss: 'Nirvana 539D', uploader: 'TockyTommy' },

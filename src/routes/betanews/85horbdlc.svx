@@ -131,7 +131,7 @@ When GoInfinitude is activated:
 When HoRB is the leader, activate AR World Star. SO cost: 150. SO Duration: 25s, CD: 25s.
 - When there is 1 character with Domain Resonance tag in the team: During AR Charging, Team Physical DMG +10%.
 - When there are 2 characters with Domain Resonance tag in the team: HoRB Resonance ATK Total DMG +10%, and Stellar Drain grants 5 extra AR.
-- When there are 3 characters with Domain Resonance tag in the team: Enemies take ~~10% (v2) > 6% (v3) > ~~ **9% (v4)** more Physical DMG from HoRB's reso atk (independent multiplier).
+- When there are 3 characters with Domain Resonance tag in the team: Enemies take ~~10% (v2) > 6% (v3) >~~ **9% (v4)** more Physical DMG from HoRB's reso atk (independent multiplier).
 
 ### NEW ASTRAL RING SKILL TREE 
 
