@@ -254,7 +254,7 @@ function selectTabMobile(event) {
   accent="bg-emerald-800"
   image="/images/valkfull/jd.webp"
   alt="JD"
-  title="Jovial Deception"
+  title="Jovial Deception: Shadowdimmer"
   name="Songque 'Maria'"
   release="v7.6 (25 July 2024)"
 >

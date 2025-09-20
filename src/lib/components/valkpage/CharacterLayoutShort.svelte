@@ -46,9 +46,15 @@
   }
 </script>
 
-<div class="flex flex-col sm:flex-row items-stretch sm:space-x-6">
+<!-- Title above everything -->
+<div class="flex flex-col mt-3 sm:mt-13">
+<h1 class="text-base sm:text-2xl text-white  italic font-russoone text-center">
+  {title}
+</h1>
+<div class="flex flex-col sm:flex-row items-stretch ">
+  
   <!-- Left: Character Image -->
-  <div class="relative w-40 sm:w-66 sm:h-56 flex justify-center mx-auto items-center mt-4 sm:mt-15 overflow-hidden sm:mr-4">
+  <div class="relative w-40 sm:w-66 h-50 flex justify-center mx-auto items-center  overflow-hidden sm:mr-4">
     <img
       src={image}
       alt={alt}
@@ -80,8 +86,7 @@
   </div>
 
   <!-- Right: Character Info -->
-  <div class="flex flex-col items-center text-center justify-start sm:mt-10 flex-1 ">
-    <h1 class="text-sm md:text-xl text-white sm:mt-4 mb-2 italic font-russoone">{title}</h1>
+  <div class="flex flex-col items-center text-center justify-start mt-3  flex-1 ">
 
     <!-- Info Cards -->
     <div class="rounded-lg overflow-hidden shadow-md w-[260px] md:w-[300px]">
@@ -141,4 +146,5 @@
 
     <slot /> <!-- Extra (CharBio etc.) -->
   </div>
+</div>
 </div>

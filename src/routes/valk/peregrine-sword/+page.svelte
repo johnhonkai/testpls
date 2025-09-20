@@ -363,10 +363,10 @@ async function increaseLike() {
   release="v8.2 (24 Apr 2025)"
 >
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="bio" element="phy" optelement="bleed" ar="loa" />
+  <CharBio mode="dps" rank="s" type="bio" element="phy" optelement="bleed" ar="loa" bg="bg-emerald-900"/>
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['goi','loa' ]} />
+  <CharBio mode="support" ar={['goi','loa' ]}  bg="bg-emerald-900"/>
 
 </CharacterLayoutShort>
 

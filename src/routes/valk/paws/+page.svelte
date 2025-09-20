@@ -242,7 +242,7 @@ async function increaseLike() {
   accent="bg-orange-800"
   image="/images/valkfull/new%20helia.webp"
   alt="paws"
-  title="Planar Armament"
+  title="Planar Armament: Warped Spacetime"
   name="Erdős Helia"
   release="v8.3 (26 June 2025)"
 >
