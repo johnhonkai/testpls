@@ -54,6 +54,7 @@ function closeLightbox() {
 
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import CharacterLayout from '$lib/components/valkpage/CharacterLayout.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -234,7 +235,7 @@ function selectTabMobile(event) {
 </style>
 
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
     <div id="app">
@@ -255,79 +256,27 @@ function selectTabMobile(event) {
   <img src="/images/bg/ava_simp.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
-<!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-66 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-  <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/teri_simp.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-12;"/> 
-
-  <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-purple-800/70 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{simplikes}</span>
-      </button>
-    </div>
-  </div>
-
-</div>
-
-
-
-<!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-  <!-- Battlesuit Name -->
-  <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Schicksal's Imperative</h1>
-
-  <!-- Character Info Cards -->
-  <div class="space-y-2 w-[260px] md:w-[300px]">
-    <!-- Name Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-purple-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Name
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Theresa Apocalypse
-      </div>
-    </div>
-
-    <!-- Release Date Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-purple-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Release
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
-      v7.7 (5 Sep 2024)
-      </div>
-    </div>
-  </div>
-
+<CharacterLayout
+  charName="simp"
+  initialLikes={likesData["simp"] || 0}
+  accent="bg-violet-800"
+  image="/images/valkfull/teri_simp.webp"
+  alt="Schicksal's Imperative"
+  title="Schicksal's Imperative"
+  name="Theresa Apocalypse"
+  release="v7.7 (5 Sep 2024)"
+>
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="s" type="qua" element="lightning" ar="ws"  bg="bg-purple-800"/>
+  <CharBio mode="dps" rank="s" type="qua" element="lightning" ar="ws"  bg="bg-violet-800"/>
 
   <!-- Support Section -->
-  <CharBio mode="support" ar={['wod' , 'ws' ,'p1lightning']} bg="bg-purple-800"/>
-  </div>
+  <CharBio mode="support" ar={['wod' , 'ws' ,'p1lightning']} bg="bg-violet-800"/>
+</CharacterLayout>
+
+
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -400,9 +349,9 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-2 sm:mb-0">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.4 (21 Aug 2025)
         </p>
         </div>
       <div>
@@ -410,12 +359,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong>               
+              <strong class="text-amber-400">DPS</strong> 
+              <br/>
+              Schicksal's Imperative (SIMP) is a Quantum DPS with multiple ways to apply quantum collapse.            
             </p>
               <ul class="list-disc ml-6 text-sm sm:text-base ">
-                <li>As a Quantum DPS, SIMP has multiple ways to apply quantum collapse.</li>
-                <li>As a Resonance DPS, Homu's domain resonance marks can be triggered 18 times. SIMP can also consumes teammate's marks.</li> 
-                <li>As a Part 1 DPS, SIMP can create a double dps team SIMP x Lunar Vow. It has been used against Paralyze Sushang and Starless Benares.</li>
+                <li>SIMP can also be used in double dps team with <a href="/valk/lv" class="link">Lunar Vow</a>. It has been used against Paralyze Sushang and Starless Benares.</li>
+                <li>Currently, SIMP is used very rarely as both DPS and support.</li>              
               </ul>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -428,8 +378,8 @@ function selectTabMobile(event) {
           <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">Part 1 Support</strong> 
         </p>
-        <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li>Lunar Vow Support: Gives Elemental Breach (replaces HoTr), huge paralyze trauma (replaces Eden) and faster rotation (just ult and sleep).</li>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">          
+          <li>Lunar Vow Support: SIMP provides Elemental Breach (replaces HoTr), huge paralyze trauma (replaces Eden) and faster rotation (just ult and sleep, sometimes combo atk).</li>
           <li>Other Part 1 Lightning Support: SIMP provides Total DMG buffs, Paralyze trauma and sp regen.</li> 
           <li>Other Support: Technically, since SIMP provides Total DMG, you can use her to support other elements that require Paralyze trauma or quantum collapse.</li>
         </ul>
@@ -439,14 +389,22 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-4 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
-                <br/> - Save until you can guarantee valk + fullgear,
-                <br/> - Then get the latest valk early in the patch.
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
             </p>
+                      <ul class="list-disc ml-6 text-sm sm:text-base ">
+              <li >Save until you can guarantee valk + fullgear.</li>
+              <li>Then get the latest valk early in the patch.</li>
+          </ul>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> SIMP topscores quite a number of bosses qua boss Valrahal, and resonance Opaque Shadow. With Lunar Vow double dps, SIMP also topscores Paralyze Sushang, and Starless Benares. However, it has been a while since SIMP is actually used outside Arena.
-          </p>
+              <strong class="text-amber-400">Competitive</strong> <br/> SIMP is not the best Part 2 valk to spend your crystal on.
+           </p>             
+              
+        <ul class="list-disc ml-6 text-sm sm:text-base ">          
+          <li>As DPS: SIMP top scores are vs Resonance Vita, Opaque Shadow and Starless Benares - all rarely appear now. For QUA Valralhal, SIMP is still good but loses to Sparkle DPS.</li>
+          <li>As Part 1 Support: Lunar Vow is the only Part 1 Lightning DPS left that wants SIMP - and she is rarely used as DPS anymore in Abyss mode.</li> 
+          <li>If you still want SIMP, it's better to wait for her to be in Ascension Supply where you can immediately get her at SS-rank.</li>
+        </ul>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
