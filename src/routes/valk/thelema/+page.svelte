@@ -52,6 +52,7 @@ function closeLightbox() {
 
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
+	import CharacterLayoutShort from '$lib/components/valkpage/CharacterLayoutShort.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -224,7 +225,7 @@ function selectTabMobile(event) {
   }
 
   #app {
-  height: 35.5rem;
+  height: 35rem;
   overflow: hidden;
   position: relative;
 }
@@ -250,79 +251,25 @@ function selectTabMobile(event) {
   <img src="/images/bg/ava_thelema.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
-<!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-60 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-  <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/thelema.webp" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-9;"/> 
-
-  <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-red-800 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{thelemalikes}</span>
-      </button>
-    </div>
-  </div>
-
-</div>
-
-
-
-<!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-  <!-- Battlesuit Name -->
-
-  <div>
-    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Mad Pleasure: Shadowbringer</h1>
-</div>
-   <!-- Character Info Cards -->
-  <div class="space-y-2 w-[260px] md:w-[300px]">
-    <!-- Name Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Name
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Thelema Nutrisco
-      </div>
-    </div>
-
-    <!-- Release Date Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Release
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
-      v7.4 (25 April 2024)
-      </div>
-    </div>
-  </div>
-
+<CharacterLayoutShort
+  charName="thelema"
+  initialLikes={likesData["thelema"] || 0}
+  accent="bg-red-800"
+  image="/images/valkfull/thelema.webp"
+  alt="thelema"
+  title="Mad Pleasure: Shadowbringer"
+  name="Thelema Nutrisco"
+  release="v7.4 (25 April 2024)"
+>
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="mech" element="ice" ar="wod"  bg="bg-red-800"/>
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['wod' , 'ws']} bg="bg-red-800"/>
 
-</div>
+</CharacterLayoutShort>
+
+
 
 </section>
 

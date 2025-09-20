@@ -48,7 +48,7 @@
 
 <div class="flex flex-col sm:flex-row items-stretch sm:space-x-6">
   <!-- Left: Character Image -->
-  <div class="relative w-40 sm:w-66 flex justify-center mx-auto items-center mt-4 sm:mt-15 overflow-hidden sm:mr-4">
+  <div class="relative w-40 sm:w-66 flex justify-center mx-auto items-center mt-4 sm:mt-13 overflow-hidden sm:mr-4">
     <img
       src={image}
       alt={alt}

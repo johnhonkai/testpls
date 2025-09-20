@@ -248,7 +248,7 @@ async function increaseLike() {
 
 
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
     <div id="app">
@@ -286,7 +286,7 @@ async function increaseLike() {
 
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >

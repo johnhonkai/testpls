@@ -44,6 +44,7 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
+	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -216,13 +217,13 @@ onMount(async () => {
   }
 
   #app {
-  height: 36.5rem;
+  height: 37rem;
   overflow: hidden;
   position: relative;
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-10 md:mt-0  pt-2	sm:pt-0">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
     <div id="app">
       <div id="star-container">
@@ -242,79 +243,28 @@ onMount(async () => {
   <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkbg/ava_coralie.webp" alt="Lone Planetfarer" class=" object-contain slide-in-pls" /> 
 </div>
 
-<!-- Left: Character Image -->
-<div class="relative w-auto h-48 sm:h-66 flex justify-center mt-4 sm:mt-15" id="valkpicbox">
-  <!-- Image for Larger Screens -->
-  <img src="/images/valkfull/Coralie.png" alt="Sparkle" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-6;"/> 
-
-  <!-- Like Button: Bottom-right overlay -->
-   <div class="absolute bottom-2 right-2 z-10">
-    <div
-      class="tooltip tooltip-left"
-      data-tip={hasLiked ? "You already liked this!" : "Click to like"}
-    >
-      <button
-        on:click={increaseLike}
-        disabled={hasLiked}
-        class="bg-red-800 hover:bg-teal-700 transition-colors rounded-full px-3 py-1 flex items-center gap-1 text-white text-sm shadow-md"
-      >
-        <!-- Heart Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09
-               3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-               6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-  
-        <!-- Like Count -->
-        <span class="font-semibold">{coralielikes}</span>
-      </button>
-    </div>
-  </div>
-
-</div>
-
-<!-- Right: Character Info (Centered) -->
-<div class="flex flex-col items-center text-center justify-start sm:mt-10">
-  <!-- Battlesuit Name -->
-
-  <div>
-    <h1 class="text-sm md:text-xl text-white mt-4 mb-2 italic font-russoone">Valkyrie Blastmetal</h1>
-</div>
-   <!-- Character Info Cards -->
-  <div class="space-y-2 w-[260px] md:w-[300px]">
-    <!-- Name Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Name
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-        Coralie 6626 Planck
-      </div>
-    </div>
-
-    <!-- Release Date Card -->
-    <div class="flex rounded-lg overflow-hidden shadow-md">
-      <div class="bg-red-800 text-white px-4 py-1 w-28 flex items-center justify-center font-semibold text-xs ">
-        Release
-      </div>
-      <div class="bg-slate-100 text-black px-3 py-1 flex-1 flex items-center text-xs  font-medium">
-       v7.3 (29 Feb 2024)
-      </div>
-    </div>
-  </div>
-
+<CharacterLayout
+  charName="coralie"
+  initialLikes={likesData["coralie"] || 0}
+  accent="bg-red-800"
+  image="/images/valkfull/Coralie.png"
+  alt="paws"
+  title="Valkyrie Blastmetal"
+  name="Coralie 6626 Planck"
+  release="v7.3 (29 Feb 2024)"
+>
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="a" type="psy" element="fire" ar="roo"  bg="bg-red-800"/>
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['scoralie' , 'lp' , 'ws' , 'all']} bg="bg-red-800"/>
-</div>
+
+</CharacterLayout>
+
+
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -1089,7 +1039,7 @@ onMount(async () => {
                 src="/images/ds.webp" />
             </div>
           </div>
-          <div class="chat-bubble chat-bubble-neutral text-base text-white py-5">
+          <div class="chat-bubble chat-bubble-neutral text-base text-zinc-300 py-5">
             Coralie is just a free-to-play alternative for a missing S-rank support. That Part 2 S-rank support is always better than Coralie (most of the time) as long as that S-rank has the matching Astral Ring attribute with the DPS.
           </div>
         </div>
@@ -1104,7 +1054,7 @@ onMount(async () => {
                 src="/images/meibald.webp" />
             </div>
           </div>
-          <div class="chat-bubble chat-bubble-primary text-base text-white"> But isn't Coralie the best support for Vita?</div>
+          <div class="chat-bubble chat-bubble-primary text-base text-white"> But isn't A-rank Coralie one of the best supports for Vita?</div>
         </div>
 
         <div class="chat chat-end">
@@ -1115,10 +1065,9 @@ onMount(async () => {
                 src="/images/ds.webp" />
             </div>
           </div>
-          <div class="chat-bubble chat-bubble-neutral text-base text-white py-5">
-            That is because Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, <span class="text-emerald-400">the only RoO valks beside Vita are Coralie and HoFi with Waxing Moon.</span>
-            <br/><br/>
-            When another S-rank Rite of Oblivion character is added to the game, then Coralie will no longer be the best support for Vita.
+          <div class="chat-bubble chat-bubble-neutral text-base text-zinc-300 py-5">
+            That is because Vita's leader skill grants powerful effects such as Elemental Breach and stronger Ultimate, but requires three members from AR Rite of Oblivion (RoO). Currently, <span class="text-emerald-400">the only RoO valks beside Vita are S-rank Coralie, A-rank Coralie and HoFi with Waxing Moon.</span>
+
           </div>
         </div>
       </div>
