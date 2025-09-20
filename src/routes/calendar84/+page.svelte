@@ -92,9 +92,9 @@
             title: "Returnee Supply",
             description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status (Note: I heard you need around 60 days now since 6 patches a year)</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
         },
-        "Topup": {
-            title: "Topup Event",
-            image: "https://i.imgur.com/7eZLlBw.png"
+       "Anni7Day": {
+            title: "CN 9th Anniversary Login Rewards",
+            image: "https://i.imgur.com/OlcuwHM.jpeg"
         },
         "OutfitRerun": {
             title: "Outfit Rerun Event",
@@ -459,7 +459,14 @@
                     <!-- Image positioned on the right side -->
 
                 </div>
-
+                <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Star-Tempering Clash</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/bpA0Gbv.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
             </div>
             <div class="relative grid grid-cols-10 gap-1 h-[55px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-rose-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
@@ -540,14 +547,11 @@
                      <span class="font-bold0">EVENT 8</span>
                 </div> 
                 
-                <div class="col-span-6"></div>
-                <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
+                <div class="col-span-8"></div>
+                <div on:click={() => openModal("Anni7Day")} class="col-span-1 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-rose-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Star-Tempering Clash</span>
-                    <!-- Image positioned on the right side -->
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="https://i.imgur.com/bpA0Gbv.png" alt="Event 1" class="w-full h-full object-cover " />
-                    </div>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">9th Anni<br/>7Day Login</span>
+
                 </div>
 
                 
@@ -732,7 +736,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Meteor_Guaymas_SSS.webp" date="Oct 17" weather="Resonance" bosspage="/boss?resoguaymas" />
                 <BossCard />
                 </div>
                      

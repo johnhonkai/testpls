@@ -223,6 +223,8 @@
           <li>Beta v2: 5 September </li>
           <li>Beta v3: 12 September </li>
           <li>Livestream: 20 September </li>
+          <li>Patch Day: 25 September </li>
+         
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
       </div>
