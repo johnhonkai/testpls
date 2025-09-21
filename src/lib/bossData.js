@@ -2738,6 +2738,8 @@ export const teamData = {
     ],
     videos: [
       { url: 'https://www.youtube.com/watch?v=hrPMC1UgndY', abyss: 'RedLotus 518D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=l_hfTvkHkI4', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://www.youtube.com/watch?v=uCKtgBjdj7g', abyss: 'Nirvana 551D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=XqmJjwPJG4k', abyss: 'Nirvana 539D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=DLMAp9s4IVM', abyss: 'Nirvana 539D', uploader: 'schz' },
       { url: 'https://www.youtube.com/watch?v=H7qx5qk0-X0', abyss: 'Nirvana 539D', uploader: 'TockyTommy' },
@@ -3487,6 +3489,44 @@ export const teamData = {
    resoguaymas: {
     
     teamDataSets: [
+            {
+        tabname: "v8.4",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 5??? D",
+        entries: [
+                    {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Theresa Schicksal's Imperative.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '1,2,5',
+            pct: '4%',
+            bottext: "Highest Score: SS 816, 6S (SSS Sena) 854, 9S 873"
+
+          },  
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+            rank: '3,4,6+',
+            pct: '87%',
+            bottext: "Highest Score: 6S 832, SSS 852, 9S 863"
+
+          },        
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+            rank: '59',
+            pct: '8%',
+            bottext: "Highest Score: 6S 822"
+
+          },             
+          {
+            type: 'lineup',
+            lineup: ["/images/valkportrait/kiana badum.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Songque Jovial Deception.png" , "images/valkportrait/elf_kiana.png"],
+            rank: '81',
+            pct: '1%',
+            bottext: "Highest Score: SS1 816"
+
+          },                         
+        ]
+      },
       {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad 550 D",
