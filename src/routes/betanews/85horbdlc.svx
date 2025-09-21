@@ -47,7 +47,7 @@ Herrscher of Rebirth equip bonus:
 #### PASSIVE 1
 ~~Self Physical DMG +30% (v2) > 20% (v3).~~ **Self Crit DMG +20%. (v4)** Herrscher of Rebirth equip bonus: 
 
-~~Team Physical DMG +10%,~~ Elemental DMG +30%, Resonance ATK gain Total DMG +60% against enemies with Withering Fissure.
+Team ~~Physical DMG +10%,~~ Elemental DMG +30%, Resonance ATK gain Total DMG +60% against enemies with Withering Fissure.
 
 #### PASSIVE 2
 Self Crit Rate +20% (v2) > 15% (v3). Herrscher of Rebirth equip bonus: 

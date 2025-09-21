@@ -261,13 +261,13 @@ When Ult with max arrows hits a SD enemy, detonate its critical index, can only 
 ### RANK UP 
 
 S1: 
-- WoD Support: Melee atk gain Ele DMG +??% (S) > 42% (S1) , Fire and Physical DMG +??% (S) > 42% (S1).
-- WStar Support: For every WS character in the team, during AR Charging, Total DMG +3% (S) > 8% (S1), during SO, Total DMG +3% (S) > 8% (S1).
+- WoD Support: Fire and Physical DMG +20% (S) > 42% (S1). Melee ATK gain Ice and Lightning DMG +28% (S) > 42% (S1). Enemies take 8% (S) > 15% (S1) more Total DMG from ranged atks from this valk. 
+- WStar Support: Team Total DMG +4% (S) > +12% (S1)
 
 S2: 
 - UNLOCK: Non-ultimate evasion can trigger evasion skill 
 - UNLOCK: When critical index is detonated, drop 2 Eternal Wish Crystal
-- During SO, when team triggers 1/2/3 Facet, self Ice DMG +16/16/28% (S) > +19/19/32% (S2)
+- During SO, when team triggers 1/2/3 Facet, self Ice DMG +17.2/17.2/32.2% (S) > +19.8/19.8/34.8% (S2) 
 
 S3:
 Leader Skill
@@ -278,7 +278,7 @@ SS:
 - Enemies take 6.7% (S) > 10% (SS) more total damage from Hi Love ELf. During AR Charging, additional +3.2% (S) > 5% (SS).
 
 SS1: 
-During SO, when team triggers 1/2/3 Facet, self Ice DMG +19/19/32% (S2) > +25/25/40% (SS1)
+During SO, when team triggers 1/2/3 Facet, self Ice DMG +19.8/19.8/34.8% (S2) > +25/25/40% (SS1)
 
 SS2: 
 Enemies take 10.8% (S) > 18% (SS2) more Ice DMG from herself.
@@ -287,6 +287,6 @@ SS3:
 Leader Skill
 
 SSS: 
-- UNLOCK: After casting weapon skill during AR Charging, enemies take 20% more Ice DMG from herself, lasts for 3s. During SO, after using Joint Weapon skill, enemies take 25% more Ice DMG from herself, lasts for 3s.
+- UNLOCK: After casting weapon skill during AR Charging, enemies take 15% more Ice DMG from herself, lasts for 3s. During SO, after using Joint Weapon skill, enemies take 20% more Ice DMG from herself, lasts for 3s.
 - During AR Charging: Upon casting weapon skill, main arrow deals additional 260% (S) > 400% (SSS) ATK of Ice DMG when the next Flower of Love blooms. Ends after exiting AR Charging.
 - During SO: After casting Joint Weapon, when the next Flower of Love blooms, deals additional 390% (S) > 600% (SSS) ATK of Ice DMG, ends when exiting SO.
