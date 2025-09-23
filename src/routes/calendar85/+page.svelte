@@ -239,7 +239,7 @@
                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div>  
                     <div class=" col-span-4"></div>                  
-                    <div on:click={() => openModal("Valk2")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">BFD</span>
@@ -321,7 +321,7 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10"></span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-31 h-full">
                             <img src="https://i.imgur.com/wqXgzZw.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>     
@@ -329,7 +329,7 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10"></span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-31 h-full">
                             <img src="https://i.imgur.com/I0zCv7C.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>     
@@ -364,7 +364,7 @@
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
   <span class="font-semibold">Winter Wishes</span>
-  <span class="font-light">9600 crystals</span>
+  <span class="font-normal">9600 crystals</span>
 </div>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-[47px]">
@@ -376,7 +376,7 @@
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
   <span class="font-semibold">Eternal Night</span>
-  <span class="font-light">??? crystals</span>
+  <span class="font-normal">??? crystals</span>
 </div>                        <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
                             <img src="https://i.imgur.com/92SkZUr.png" alt="HoRB" class="w-full h-full object-cover rounded-md" />
@@ -413,7 +413,7 @@
 
 </div>
 
-<div class="block sm:hidden mx-0 mt-2 text-center font-bold">EVENT</div>
+<div class=" mx-0 mt-4 text-center font-bold">EVENT</div>
 
 <div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
