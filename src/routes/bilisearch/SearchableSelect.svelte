@@ -109,7 +109,7 @@
         </span>
       {:else}
         <input
-          class="flex-grow min-w-[4ch] outline-none  text-sm py-1"
+          class="flex-grow min-w-[4ch] outline-none bg-transparent text-base sm:text-sm py-1"
           placeholder={placeholder}
           bind:value={query}
           on:focus={() => (isOpen = true)}

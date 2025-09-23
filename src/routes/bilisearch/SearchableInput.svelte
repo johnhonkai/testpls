@@ -57,7 +57,7 @@
     <input
       bind:this={inputEl}
       type="text"
-      class="flex-grow outline-none bg-transparent text-sm text-gray-100 placeholder-gray-400 py-1"
+      class="flex-grow outline-none bg-transparent text-base sm:text-sm text-gray-100 placeholder-gray-400 py-1"
       placeholder={placeholder}
       bind:value={inputValue}
       on:input={handleInput}

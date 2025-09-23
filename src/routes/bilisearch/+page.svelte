@@ -185,7 +185,7 @@ function selectValk(valk: string) {
   <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
     <div
       class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
-             max-h-[80vh] flex flex-col overflow-hidden"
+             h-[80vh] flex flex-col overflow-hidden"
     >
       <!-- Top-right close button -->
       <button
@@ -242,7 +242,7 @@ function selectValk(valk: string) {
 <div class="flex gap-4">
   {#each Array(4) as _, i}
     <div
-      class="w-12 h-12 sm:w-20 sm:h-20 rounded-lg overflow-hidden cursor-pointer border border-base-300 flex items-center justify-center bg-slate-600"
+      class="w-14 h-14 sm:w-20 sm:h-20 rounded-lg overflow-hidden cursor-pointer border border-base-300 flex items-center justify-center bg-slate-600"
       on:click={() => (showValkModal = true)}
     >
       {#if selectedValks[i]}
@@ -264,7 +264,7 @@ function selectValk(valk: string) {
   <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
     <div
       class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
-             max-h-[80vh] flex flex-col overflow-hidden"
+             h-[80vh] flex flex-col overflow-hidden"
     >
       <!-- Top-right close button -->
       <button
