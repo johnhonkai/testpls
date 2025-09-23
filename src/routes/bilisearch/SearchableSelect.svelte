@@ -75,7 +75,7 @@
     {#if multi}
       {#each value as val (val)}
         <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded flex items-center gap-1">
-          <span class="whitespace-nowrap">{val}</span>
+          <span class="max-w-[120px] sm:max-w-100 truncate sm:whitespace-nowrap">{val}</span>
           <button
             type="button"
             class="hover:text-black text-blue-600 bg-white ml-1 px-1 rounded cursor-pointer font-bold"
@@ -98,7 +98,7 @@
     {:else}
       {#if value}
         <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded flex items-center gap-1">
-          <span class="whitespace-nowrap">{value}</span>
+          <span class="max-w-[120px] sm:max-w-100 truncate sm:whitespace-nowrap">{value}</span>
           <button
             type="button"
             class="hover:text-black text-blue-600 bg-white ml-1 px-1 rounded cursor-pointer font-bold"
