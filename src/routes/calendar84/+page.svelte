@@ -741,7 +741,7 @@
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard image="/images/Bosses/MOBIUS.png" date="Oct 15"/>
+                        <BossCard image="/images/Bosses/MOBIUS.png" date="Oct 21"/>
                         <BossCard image="/images/BossesMA/False God Otto_SSS.webp"/>
                         <BossCard image="/images/BossesMA/Deathly Doom.webp"/>
                     </div>
