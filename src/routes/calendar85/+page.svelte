@@ -161,7 +161,7 @@
 
 <div class="flex justify-center items-end gap-5 -mt-3">
 
-    <VersionSelect currentVersion="8.4"></VersionSelect>
+    <VersionSelect currentVersion="8.5"></VersionSelect>
 
   <div role="tablist" class="tabs-border mt-4 space-x-2 ">
      <button
@@ -202,7 +202,7 @@
                 </div>
 
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
                     </div>                    
@@ -218,7 +218,7 @@
  
                 </div>
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY A</span>
@@ -233,7 +233,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>                         
                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
@@ -249,7 +249,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY B</span>
@@ -270,7 +270,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-22 gap-1  h-[55px] pe-1 overflow-x-clip ">
+                <div class="relative grid grid-cols-22 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold col-span-2 text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>                         
                         <span class="font-bold0">CARNIVAL BATTLESUIT</span>
@@ -288,7 +288,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-22 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-22 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold col-span-2 text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">CARNIVAL EQUIPMENT</span>
@@ -304,7 +304,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASTRAL OP SUPPLY</span>
@@ -354,7 +354,7 @@
 
                 </div>
 
-                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">OUTFIT SUPPLY</span>
@@ -362,7 +362,10 @@
                     <div></div>       
                     <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Winter Wishes<br/>9600 crystals</span>
+<div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
+  <span class="font-semibold">Winter Wishes</span>
+  <span class="font-light">9600 crystals</span>
+</div>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-[47px]">
                             <img src="https://i.imgur.com/ege6cGB.png" alt="Badum" class="w-full h-full object-cover rounded-md" />
@@ -371,8 +374,10 @@
                     
                     <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-5">Eternal Night<br/>???? crystals</span>
-                        <!-- Image positioned on the right side -->
+<div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
+  <span class="font-semibold">Eternal Night</span>
+  <span class="font-light">??? crystals</span>
+</div>                        <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
                             <img src="https://i.imgur.com/92SkZUr.png" alt="HoRB" class="w-full h-full object-cover rounded-md" />
                         </div>
@@ -382,7 +387,7 @@
                 
     
                 
-                                <div class="relative grid grid-cols-11 gap-1  h-[55px] pe-1 overflow-x-clip">
+                                <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">RETURNEE SUPPLY</span>
@@ -432,7 +437,7 @@
 
 
 
-            <div class="relative grid grid-cols-11 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                      <span class="font-bold0">EVENT 1</span>
                 </div> 
@@ -448,7 +453,7 @@
 
             </div>
 
-            <div class="relative grid grid-cols-11 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 2</span>
@@ -465,7 +470,7 @@
 
             </div>
 
-            <div class="relative grid grid-cols-11 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 3</span>
@@ -482,7 +487,7 @@
                 </div>
 
             </div>
-            <div class="relative grid grid-cols-11 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 4</span>
@@ -501,7 +506,7 @@
                 
             </div>
 
-            <div class="relative grid grid-cols-22 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold col-span-2 text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 5</span>
@@ -520,7 +525,7 @@
                 
             </div>
 
-            <div class="relative grid grid-cols-22 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold col-span-2 text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 6</span>
@@ -538,7 +543,7 @@
 
             </div>
                      
-            <div class="relative grid grid-cols-22 gap-1 h-[55px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold col-span-2  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 7</span>
