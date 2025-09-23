@@ -529,7 +529,7 @@
                 <div></div>
                 <div on:click={() => openModal("")} class="col-span-19 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Anniversary 7-Day Login</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Anniversary 7-Day Login: Free HoTr or HoH. Free 15x Battlesuit or Equipment Cards.</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/eYI50mn.png" alt="Event 1" class="w-full h-full object-cover " />
