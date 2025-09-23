@@ -160,7 +160,7 @@ function selectValk(valk: string) {
 
 <div class="w-full max-w-4xl mx-auto  mb-6 p-6  rounded-2xl  space-y-6 ">
 
-  <div class="flex flex-row gap-15 justify-center">
+  <div class="flex flex-col sm:flex-row gap-3 sm:gap-15 justify-center items-center">
 <!-- Boss Preview (click to open modal) -->
 <div class="flex items-center gap-4">
   <div
@@ -409,7 +409,7 @@ function selectValk(valk: string) {
 
 </div>
 
-<div class="flex max-w-3xl mx-auto justify-center gap-4 items-center mt-2 p-4 mb-20">
+<div class="flex flex-col sm:flex-row max-w-3xl mx-auto justify-center gap-4 items-center mt-2 p-4 mb-20">
 
   <div class="h-12 sm:h-16 flex-0.5">
     <img src="https://i.imgur.com/ykqy9RB.gif"
