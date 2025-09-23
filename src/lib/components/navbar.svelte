@@ -7,7 +7,7 @@ import { goto } from '$app/navigation';
 import { afterNavigate, beforeNavigate } from '$app/navigation';
 
 	import Fa from 'svelte-fa';
-  import { faStar , faWebAwesome , faChartSimple } from '@fortawesome/free-solid-svg-icons';
+  import { faStar , faWebAwesome , faChartSimple, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 beforeNavigate(() => {
   document.documentElement.classList.add('hover-disabled');
@@ -247,6 +247,27 @@ function handleClick(event, path) {
 						</div>
 
 						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">You will be redirected to Arustat</p>
+					  </div>
+											</a>
+
+											<a
+						href="/bilisearch"
+						data-sveltekit-preload-data="hover"
+					  >			
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800 cursor-pointer"
+					  >
+						<div class="font-semibold">
+							        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-emerald-500">
+          <Fa icon={faGlobe} />
+		  Bili2 Search
+        </span>  
+
+
+						</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Find Bili2 runs</p>
 					  </div>
 											</a>
 					</div>

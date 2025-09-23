@@ -662,7 +662,7 @@ goto(url.pathname + url.search, { replaceState: true });
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2">
                 <BossCard image="images/Bosses/Hephaestus SSS.webp" date="Nov 22" weather="Ranged" bosspage="/boss?rangedhepa"/>
-                <BossCard image="images/Bosses/Varaha.png" date="Nov 25" weather="Quantum" bosspage="/boss?quavalralhal"/>
+                <BossCard image="images/Bosses/Varaha.png" date="Nov 25" weather="Quantum" bosspage="/boss?quavalrahal"/>
                 </div>
                  
                 <div class="flex col-span-3 justify-center gap-1 ml-2">

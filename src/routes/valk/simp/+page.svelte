@@ -401,7 +401,7 @@ function selectTabMobile(event) {
            </p>             
               
         <ul class="list-disc ml-6 text-sm sm:text-base ">          
-          <li>As DPS: SIMP top scores are vs Resonance Vita, Opaque Shadow and Starless Benares - all rarely appear now. For QUA Valralhal, SIMP is still good but loses to Sparkle DPS.</li>
+          <li>As DPS: SIMP top scores are vs Resonance Vita, Opaque Shadow and Starless Benares - all rarely appear now. For QUA Valrahal, SIMP is still good but loses to Sparkle DPS.</li>
           <li>As Part 1 Support: Lunar Vow is the only Part 1 Lightning DPS left that wants SIMP - and she is rarely used as DPS anymore in Abyss mode.</li> 
           <li>If you still want SIMP, it's better to wait for her to be in Ascension Supply where you can immediately get her at SS-rank.</li>
         </ul>
@@ -1547,7 +1547,7 @@ function selectTabMobile(event) {
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
           <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">SIMP DPS</h2>
 
-          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">SIMP DPS vs Quantum Valralhal</p>
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">SIMP DPS vs Quantum Valrahal</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe

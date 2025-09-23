@@ -358,7 +358,6 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Behold! Fate-Defying Dragon (BFD) is the first IGNITE DPS for Part 2.</li>
-                <li>Reminder that Ignite DMG is not considered as Melee or Ranged DMG, and cannot crit.</li> 
                 <li>Excels in favorable match-ups, just decent everywhere else. Will take over Sirin's bosses.</li> 
                 <li>High rank BFD may be able to get Top 50 on other bosses like Fire Tank (Source: CN 8.4 Fire Tank).</li> 
 
@@ -784,10 +783,12 @@ Start saving from now. Or whale up bro.
         
       </div>
       <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
+        <p class="text-sm sm:text-base text-left"></p>
+                            <ul class="list-disc px-4 text-sm sm:text-base">
+
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
           <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Eternal Fire), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-      </p>
+                            </ul>
         </div>
   
         <div class="divider  "></div>
@@ -938,7 +939,7 @@ Start saving from now. Or whale up bro.
       {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Spam Ultimate (Dragon Torrent) and weapon skill.
+       Spam weapon skill and Ult.
       </p>
   
       <div class="divider  "></div>
@@ -966,10 +967,12 @@ Start saving from now. Or whale up bro.
         
       </div>
       <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
+        <p class="text-sm sm:text-base text-left">      </p>
+                    <ul class="list-disc px-4 text-sm sm:text-base">
+
           <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
           <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Searing Hunt), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-      </p>
+                    </ul>
         </div>
   
         <div class="divider  "></div>
@@ -1016,12 +1019,13 @@ Start saving from now. Or whale up bro.
   
         </div>
       <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
-          
+        <p class="text-sm sm:text-base text-left"></p>
+                              <ul class="list-disc px-4 text-sm sm:text-base">
+
           <li class="text-sm sm:text-base"> This playstyle utilizes all three skills: Ultimate, weapon and evasion (with Scorched Plains signet) - so a lot of signets can work. Just commit to 3 or 4 nexus for each run.</li>
           <li class="text-sm sm:text-base"> <b>Decimation 1:</b> Ver 8.4 has a special ER effect. When ER temperature is over 100°C, valk will quickly lose HP, down to 12% max HP. This makes Decimation 1 work on any valk. After v8.4, it's better to use Decimation 2, or other signets.</li>
-           
-        </p>
+                              </ul>
+
         </div>
 
           <div class="divider  "></div>

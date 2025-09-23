@@ -38,7 +38,7 @@ export const weatherList = {
     {id: 'imgflower', name: 'Husk: Existentialism'}
   ],
   quantum: [
-    {id: 'quavalralhal', name: 'Valralhal'}
+    {id: 'quavalrahal', name: 'valrahal'}
   ],
   ranged: [
     {id: 'rangedkalpas', name: 'Kalpas'},
@@ -468,9 +468,9 @@ export const bossData = {
       bosspic: "images/Bosses/Husk - Existentialism.webp", 
       weather: "IMG: IMG valk DMG +20%", 
   },
-  quavalralhal: {
-    name: 'Valralhal', 
-    mechanics: "P1: Has 9 layers of qua shields. There's a minigame at the start, collect the orbs and applies the same amount of qua collapse. P2: Has 5 layers of qua shield. During transition, jump/evade Valralhal's slam to spawn collapse orbs.", 
+  quavalrahal: {
+    name: 'Valrahal', 
+    mechanics: "P1: Has 9 layers of qua shields. There's a minigame at the start, collect the orbs and applies the same amount of qua collapse. P2: Has 5 layers of qua shield. During transition, jump/evade valrahal's slam to spawn collapse orbs.", 
     weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Varaha.png", 
@@ -1369,7 +1369,7 @@ export const teamData = {
       }
     ]},]
   },
-  quavalralhal: {
+  quavalrahal: {
     teamDataSets: [
       {
         tabname: "v8.4",
