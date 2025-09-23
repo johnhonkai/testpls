@@ -3862,6 +3862,10 @@ export const teamData = {
         ]
       }
     ],
+                   videos: [
+            { url: 'https://youtu.be/lMangl835ug', abyss: 'Nirvana 552 D', uploader: 'Moriso Honkai' },
+            { url: 'https://youtu.be/9YolrLlPkU8', abyss: 'S RS Nirvana 545 D', uploader: 'Haxxor' },
+            ]
   },  
 
 
