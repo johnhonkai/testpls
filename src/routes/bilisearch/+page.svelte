@@ -182,11 +182,22 @@ function selectValk(valk: string) {
 
 <!-- Boss Modal -->
 {#if showBossModal}
-  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
     <div
-      class="bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
-             h-[700px] flex flex-col"
+      class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
+             max-h-[80vh] flex flex-col overflow-hidden"
     >
+      <!-- Top-right close button -->
+      <button
+        class="absolute top-4 right-4 px-4 py-2 rounded bg-amber-600 hover:bg-amber-500 text-white font-bold cursor-pointer"
+        on:click={() => {
+          bossInputRef?.clear();
+          showBossModal = false;
+        }}
+      >
+        Close
+      </button>
+
       <h2 class="text-xl font-bold mb-4">Select Boss</h2>
 
       <!-- Search input -->
@@ -219,22 +230,11 @@ function selectValk(valk: string) {
           </div>
         {/each}
       </div>
-
-      <!-- Footer -->
-      <div class="mt-6 flex justify-end gap-2">
-        <button
-          class="px-4 py-2 rounded bg-amber-600 hover:bg-amber-500 text-black cursor-pointer"
-          on:click={() => {
-            bossInputRef?.clear();
-            showBossModal = false;
-          }}
-        >
-          Close
-        </button>
-      </div>
     </div>
   </div>
 {/if}
+
+
 
 
 
@@ -261,11 +261,22 @@ function selectValk(valk: string) {
 
 <!-- Valk Modal -->
 {#if showValkModal}
-  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
     <div
-      class="bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
-             h-[700px] flex flex-col"
+      class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
+             max-h-[80vh] flex flex-col overflow-hidden"
     >
+      <!-- Top-right close button -->
+      <button
+        class="absolute top-4 right-4 px-4 py-2 rounded bg-amber-600 hover:bg-amber-500 text-white cursor-pointer font-bold"
+        on:click={() => {
+          valkInputRef?.clear();
+          showValkModal = false;
+        }}
+      >
+        Close
+      </button>
+
       <h2 class="text-xl font-bold mb-4">Select Valkyries</h2>
 
       <!-- Alias-aware search input -->
@@ -298,22 +309,10 @@ function selectValk(valk: string) {
           </div>
         {/each}
       </div>
-
-      <!-- Footer -->
-      <div class="mt-6 flex justify-end gap-2">
-        <button
-          class="px-4 py-2 rounded bg-amber-600 hover:bg-amber-500 text-black cursor-pointer"
-          on:click={() => {
-            valkInputRef?.clear();
-            showValkModal = false;
-          }}
-        >
-          Close
-        </button>
-      </div>
     </div>
   </div>
 {/if}
+
 
 
 </div>
