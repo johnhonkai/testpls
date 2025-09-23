@@ -315,7 +315,7 @@ function handleClick(event, path) {
 						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
 					  >
 
-						<div class="font-semibold">2024 Awards</div>
+						<div class="font-semibold">HI3 Awards</div>
 
 						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Celebrate HI3</p>
 					  </div>
