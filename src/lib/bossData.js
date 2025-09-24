@@ -1819,6 +1819,17 @@ export const teamData = {
   bleedhos: {
     teamDataSets: [
       {
+        tabname: "v8.4 CN",
+        teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D. ",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/ps.png", "images/valkportrait/scoralie.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+          rank: '1+',
+          pct: '100%',
+        },
+      ]},         
+      {
         tabname: "v8.3 CN",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D. ",
       entries: [

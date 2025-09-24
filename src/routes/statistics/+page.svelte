@@ -21,7 +21,7 @@
 
   let viewMode: 'list' | 'tier' = 'list'; // default list view
 
-  let selectedVersion = '8.3';
+  let selectedVersion = '8.4';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
@@ -41,7 +41,7 @@ $: withImages = (usageByVersion[selectedVersion] ?? []).map(entry => {
 function convertRelativeTier(value: number, maxValue: number): 'S' | 'A' | 'B' {
   if (!maxValue) return 'B';
   const percent = (value / maxValue) * 100;
-  if (percent >= 50) return 'S';
+  if (percent >= 45) return 'S';
   if (percent >= 19) return 'A';
   return 'B';
 }
@@ -267,7 +267,7 @@ function toggleView() {
   <!-- View Toggle (always below on mobile, side-by-side on desktop) -->
   <button
     on:click={toggleView}
-    class="mt-3 sm:mt-0 px-4 py-2 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 h-10 cursor-pointer w-auto text-center"
+    class="mt-3 sm:mt-0 px-4 py-2 rounded-md bg-zinc-800 text-white hover:bg-gray-700 transition border border-gray-700 h-10 cursor-pointer w-27 text-center"
   >
     {viewMode === 'list' ? 'Tier View' : 'List View'}
   </button>
@@ -386,7 +386,7 @@ function toggleView() {
               alt={char.name} 
               class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover border-2 border-blue-400" 
             />
-            <span class="text-xs text-center mt-1">{char.dpsCount}</span>
+            <span class="text-xs sm:text-sm text-center mt-1">{char.dpsCount}</span>
           </a>
         {/each}
       </div>
@@ -418,7 +418,7 @@ function toggleView() {
               alt={char.name} 
               class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover border-2 border-rose-400" 
             />
-            <span class="text-xs text-center mt-1">{char.supCount}</span>
+            <span class="text-xs sm:text-sm text-center mt-1">{char.supCount}</span>
           </a>
         {/each}
       </div>
