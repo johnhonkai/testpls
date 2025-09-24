@@ -1,22 +1,24 @@
 export const usageByVersion = {
 
-    '8.4 First Half': [
-    { name: 'Behold! Fate-Defying Dragon', DPS: 304, SUP: 384 },
-    { name: 'Planar Armament: Warped Spacetime', DPS: 100, SUP: 399 },
-    { name: 'Lone Planetfarer', DPS: 100, SUP: 327 },
-    { name: 'Peregrine Sword', DPS: 100, SUP: 134 },
-    { name: 'Ba-dum! Fiery Wishing Star', DPS: 100 , SUP: 163 },
-    { name: 'Herrscher of Finality', DPS: 100, SUP: 26 },
-    { name: 'Herrscher of Truth', DPS: 0, SUP: 100 },
+    '8.4': [
+    { name: 'Behold! Fate-Defying Dragon', DPS: 403, SUP: 586 },
+    { name: 'Planar Armament: Warped Spacetime', DPS: 200, SUP: 498 },
+    { name: 'Lone Planetfarer', DPS: 101, SUP: 811 },
+    { name: 'Peregrine Sword', DPS: 202, SUP: 234 },
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 101 , SUP: 402 },
+    { name: 'Herrscher of Finality', DPS: 100, SUP: 37 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 200 },
     { name: 'Herrscher of Origin', DPS: 0, SUP: 100 },
     { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 75  },
-    { name: 'Lone Destruction: Shadowchaser', DPS: 96, SUP: 0 },
-    { name: 'Herrscher of Human: Ego', DPS: 0, SUP: 96 },    
-    { name: 'Deepspace Anchor: First Light', DPS: 0, SUP: 52 },
-    { name: 'Mad Pleasure: Shadowbringer', DPS: 0, SUP: 42 },
-    { name: 'Jovial Deception: Shadowdimmer', DPS: 0, SUP: 100 },
-    { name: 'Reign Solaris', DPS: 100, SUP: 0 },
-    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 0, SUP: 2 },   
+    { name: 'Lone Destruction: Shadowchaser', DPS: 96, SUP: 2 },
+    { name: 'Herrscher of Human: Ego', DPS: 100, SUP: 96 },    
+    { name: 'Deepspace Anchor: First Light', DPS: 99, SUP: 82 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 0, SUP: 191 },
+    { name: 'Jovial Deception: Shadowdimmer', DPS: 36, SUP: 165 },
+    { name: 'Reign Solaris', DPS: 164, SUP: 0 },
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 75, SUP: 117 },   
+    { name: "Schicksal's Imperative", DPS: 23, SUP: 4 },
+    { name: "Fenghuang of Vicissitude", DPS: 100, SUP: 0 },
 
     ],  
 
@@ -117,6 +119,6 @@ export const versionDates = {
   '8.1': "23 Jan - 27 Mar 2025",
   '8.2': "27 Mar - 29 May 2025",
   '8.3': "29 May - 24 July 2025",
-  '8.4 First Half': "24 July - 28 August 2025",
+  '8.4': "24 July - 25 September 2025",
 
 };
