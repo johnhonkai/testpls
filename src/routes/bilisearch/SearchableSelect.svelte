@@ -75,7 +75,7 @@
     {#if multi}
       {#each value as val (val)}
         <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded flex items-center gap-1">
-          <span class="max-w-[120px] sm:max-w-100 truncate sm:whitespace-nowrap">{val}</span>
+          <span class="max-w-[80vw] sm:max-w-100 truncate sm:whitespace-nowrap">{val}</span>
           <button
             type="button"
             class="hover:text-black text-blue-600 bg-white ml-1 px-1 rounded cursor-pointer font-bold"
@@ -88,7 +88,7 @@
 
       {#if !maxSelected || (value as string[])?.length < maxSelected}
         <input
-          class="flex-grow min-w-[4ch] outline-none text-sm py-1"
+          class="flex-grow min-w-[4ch] outline-none bg-transparent text-base sm:text-sm py-1"
           placeholder={placeholder}
           bind:value={query}
           on:focus={() => (isOpen = true)}
@@ -98,7 +98,7 @@
     {:else}
       {#if value}
         <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded flex items-center gap-1">
-          <span class="max-w-[120px] sm:max-w-100 truncate sm:whitespace-nowrap">{value}</span>
+          <span class="max-w-[80vw] sm:max-w-100 truncate sm:whitespace-nowrap">{value}</span>
           <button
             type="button"
             class="hover:text-black text-blue-600 bg-white ml-1 px-1 rounded cursor-pointer font-bold"
