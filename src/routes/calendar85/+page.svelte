@@ -123,7 +123,11 @@
         "Anni7Day": {
             title: "CN 9th Anniversary Login Rewards",
             image: "https://i.imgur.com/OlcuwHM.jpeg"
-        },            
+        },       
+        "TimeCapsule": {
+            title: "Time Capsule",
+            image: "https://i.imgur.com/ENrc9Io.jpeg"
+        },               
     };
 
 
@@ -363,7 +367,7 @@
                     <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
-  <span class="font-semibold">Winter Wishes</span>
+  <span class="font-semibold">Wintery Wishes</span>
   <span class="font-normal">9600 crystals</span>
 </div>
                         <!-- Image positioned on the right side -->
@@ -471,9 +475,26 @@
             </div>
 
             <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                <div class="flex font-bold col-span-1  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 3</span>
+                </div> 
+                <div on:click={() => openModal("TimeCapsule")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Time Capsule</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/1oduCEB.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 4</span>
                 </div> 
     
     
@@ -488,9 +509,9 @@
 
             </div>
             <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 4</span>
+                     <span class="font-bold0">EVENT 5</span>
                 </div> 
                 
                 
@@ -507,9 +528,9 @@
             </div>
 
             <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold col-span-2 text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                <div class="flex font-bold col-span-2 text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 5</span>
+                     <span class="font-bold0">EVENT 6</span>
                 </div> 
                 
                 <div></div>
@@ -526,9 +547,9 @@
             </div>
 
             <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold col-span-2 text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                <div class="flex font-bold col-span-2 text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 6</span>
+                     <span class="font-bold0">EVENT 7</span>
                 </div> 
                 
                 <div></div>
@@ -544,9 +565,9 @@
             </div>
                      
             <div class="relative grid grid-cols-22 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold col-span-2  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                <div class="flex font-bold col-span-2  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 7</span>
+                     <span class="font-bold0">EVENT 8</span>
                 </div> 
                 <div></div>
                 <div on:click={() => openModal("")} class="col-span-11 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
@@ -561,6 +582,46 @@
                 
             </div>
 
+
+
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold col-span-1  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 9</span>
+                </div> 
+                <div></div>
+                <div></div>
+                <div on:click={() => openModal("")} class="col-span-8 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 10: Reunited Under the Light of Faith</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/UWmrEF7.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold col-span-1  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 10</span>
+                </div> 
+                <div></div>
+                <div></div>
+                <div></div>                
+                <div on:click={() => openModal("")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Happy Arcade. Starts on Monday.</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
+                        <img src="https://i.imgur.com/OIYByjK.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                
+            </div>
 
     </div>
     </div>
@@ -781,7 +842,7 @@
 {#if showModal && selectedSupply}
     <div class="modal modal-open" on:click={closeModal}>
         <!-- Conditionally apply larger size when an image is present -->
-        <div class="modal-box max-w-4xl" on:click|stopPropagation>
+        <div class="modal-box max-w-4xl max-h-[90vh]" on:click|stopPropagation>
             <h2 class="font-bold text-lg mb-4">{selectedSupply.title}</h2>
             <div class="mb-4">
                 {@html selectedSupply.description}
