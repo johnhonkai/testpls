@@ -653,7 +653,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Hellmaru.webp" date="Oct 24" weather="Symphony" bosspage="/boss?symphellmaru" />
                 <BossCard />
                 </div>
                      
