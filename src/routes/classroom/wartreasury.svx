@@ -49,16 +49,6 @@ Unlocking and ranking them up also improves your Dorm Level EXP, and helps you f
 
 ## Other Materials
 
-### Wafer Stabilizer and Dataflow
-
-<div class="flex items-center justify-center text-orange-300 ">
-  <img src="https://i.imgur.com/vT96BcM.png" alt="Icon" class="h-[300px] w-auto rounded-lg" />
-</div>
-
-These are materials used for late-game ATK affix min-maxing. For new players, not worth buying these over unlocking S-rank characters for Elysian Realm first-clear crystals and dorm buffs.
-
----
-
 ### Ancient Willpower
 
 <div class="flex items-center justify-center text-orange-300 ">
@@ -66,3 +56,15 @@ These are materials used for late-game ATK affix min-maxing. For new players, no
 </div>
 
 As a new player, your Asterite income is very limited, it's better used to purchase A-rank character fragments like [Coralie](/valk/coralie) or [Pardofelis](/valk/pardo) first for Elysian Realm first-clear crystals and dorm buffs.
+
+When you have a more stable Asterite income, then go ahead and spend them on monthly Ancient Willpower and other stuff.
+
+---
+
+### Wafer Stabilizer and Dataflow
+
+<div class="flex items-center justify-center text-orange-300 ">
+  <img src="https://i.imgur.com/vT96BcM.png" alt="Icon" class="h-[300px] w-auto rounded-lg" />
+</div>
+
+These are materials used for late-game ATK affix min-maxing. For new players, not worth buying these over unlocking S-rank characters for Elysian Realm first-clear crystals and dorm buffs.
