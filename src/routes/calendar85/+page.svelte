@@ -74,7 +74,9 @@
     const supplies = {
         "Valk1": {
             title: "Battlesuit Supply A: Hi Love Elf",
-            description: '<li>Duration: 6 weeks</li><li>First ten pulls are free.</li><li>A-rank: Valkyrie Boltstorm (UP), Flame Sakitama, Umbral Rose, Valkyrie Gloria</li>',
+            description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 6 weeks</li><li>First ten pulls are free.</li><li>A-rank: Valkyrie Boltstorm (UP), Flame Sakitama, Umbral Rose, Valkyrie Gloria</li></ul>',
+            image: "https://i.imgur.com/JW2tJ4Y.jpeg"
+        
         },
         "Valk2": {
             title: "Battlesuit Supply B: Reign Solaris",
@@ -86,11 +88,17 @@
         },             
         "Equip": {
             title: "Equipment Supply",
-            description: '<li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li>',
+            description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li></ul>',
         },
+        "Horbdlc": {
+            title: "Equipment Supply",
+            description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Equipment Supply only has one featured weapon and stigma set.</li><li>Cost: 280 crystal or Equipment Supply Card, per pull.</li><li>Every 10 pulls guarantee either weapon or stigma.</li><li>Weapon guaranteed in 60 pulls (16,800 crystals) or less.</li></ul>',
+            image: "https://i.imgur.com/Kf1bHVC.jpeg"
+        
+        },        
         "Returnee": {
             title: "Returnee Supply",
-            description: "Condition for returnee status:<li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status (Note: I heard you need around 60 days now since 6 patches a year)</li><li>Returnee expansion and focus work the same as normal Expansion and Focus Supply, but the pity won't carry over to normal expansion and focus.</li><li>You get one free pull everyday (limited amount)</li>",
+            description: 'Condition for Returnee Supply:          <ul class="list-disc px-4 text-sm sm:text-base"><li>Captain Level ≥ 15, has no returnee record, and has been 15 days or more since last login</li><li>Captains Level ≥ 15, has a previous returnee record, and has been 45 days or more since login and last returnee status (Note: I heard you need around 60 days now since 6 patches a year)</li><li>I have been informed that currently the requirement is ~60 days, since patches are longer. I cannot confirm it myself.</li> </ul>',
         },
         "Spending": {
             title: "Major Spending Event",
@@ -107,7 +115,7 @@
         },  
         "OutfitBox": {
             title: "Outfit Box Supply",
-            description: '<li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li>',
+            description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li></ul>',
             image: "https://i.imgur.com/UOFxmct.jpeg"
         },          
         "NewADV": {
@@ -262,7 +270,7 @@
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY B</span>
                     </div>  
-                    <div on:click={() => openModal("Equip")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Horbdlc")} class="col-span-4 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10">Herrscher of Rebirth DLC</span>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
