@@ -1094,7 +1094,7 @@ Start saving from now. Or whale up bro.
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Falling_in_Past_Light.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
@@ -1469,7 +1469,7 @@ Start saving from now. Or whale up bro.
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/gYRI5gO67H8"
+          src="https://www.youtube.com/embed/9bM6aBJFOBw"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1481,14 +1481,14 @@ Start saving from now. Or whale up bro.
   <div class="bg-gray-800 mt-10 p-4 rounded-lg shadow-md">
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie Support</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various teams</p>
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Coralie supporting PAWS</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/rIObNjUv2eY"
+          src="https://www.youtube.com/embed/hH1DQUUifdg"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
