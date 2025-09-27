@@ -122,12 +122,16 @@
         },
         "Anni7Day": {
             title: "CN 9th Anniversary Login Rewards",
-            image: "https://i.imgur.com/OlcuwHM.jpeg"
+            image: "https://i.imgur.com/3X8i73G.jpeg"
         },       
         "TimeCapsule": {
             title: "Time Capsule",
             image: "https://i.imgur.com/ENrc9Io.jpeg"
-        },               
+        },     
+        "Artbook": {
+            title: "Art Collection Vol 4 Event",
+            image: "https://i.imgur.com/KsCHAeL.jpeg"
+        },                    
     };
 
 
@@ -463,7 +467,7 @@
                      <span class="font-bold0">EVENT 2</span>
                 </div> 
     
-                <div on:click={() => openModal("")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                <div on:click={() => openModal("Artbook")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Art Collection Vol 4 Event</span>
                     <!-- Image positioned on the right side -->

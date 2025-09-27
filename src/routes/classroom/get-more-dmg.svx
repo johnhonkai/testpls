@@ -49,7 +49,7 @@ In Honkai Impact, there are special weapons called Divine Keys / Stellar Keys. Y
 
 Divine Keys are Part 1 weapons, Stellar Keys are Part 2 weapons.
 - Gacha Divine Keys give global +10 ATK, each.
-- Gacha Stellar Keys give global +10 /15 / 20 ATK each, based on the synergy rank.
+- Gacha Stellar Keys give global +10 / 15 / 20 ATK each, based on the synergy rank.
 
 When these ATK stack up, they can give a bonus equal to having a second weapon on your valk!
 
