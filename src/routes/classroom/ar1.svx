@@ -12,7 +12,9 @@ update: 8.5
 All valkyries from version 7.3 onwards are called Part 2 valkyries. They use a new Astral Ring (AR) system. This completely changes the valk mechanics and teambuilding.
 
 ## Astral Ring Specializations
-A Part 2 valkyrie will have ONE Astral Ring Specialization. There are 12 different AR Specializations in total.
+A Part 2 valkyrie will have ONE Astral Ring Specialization. There are *12 different AR Specializations in total. 
+
+<span class="text-amber-400">UPDATE: The 12 Astral Ring was revealed during Part 2 stream, and is supposed to be based on regions of Mars in the story. However, Part 2 story has taken a weird development and skipped basically most of the Mars region. So, this 12 AR might be a false flag.</span>
 
 
 <div class="flex items-center justify-center text-orange-300 ">
