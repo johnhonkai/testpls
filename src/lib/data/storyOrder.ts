@@ -374,7 +374,23 @@ export const storyOrder = [
         type: 'event',
         version: '8.4',
         canon: 'alt-world',
-      },        
+      },      
+                  {
+        image: 'https://i.imgur.com/zNmplLp.png',
+        title: "With You! Youthful Dreams",
+        inGame: true,
+        type: 'event',
+        version: '8.5',
+        canon: 'alt-world',
+      },    
+      {
+        image: 'https://i.imgur.com/ZGdgOHH.png',
+        title: "P2 Ch 10: Reunited Under the Light of Faith",
+        youtubeLink: 'https://youtu.be/example2',
+        inGame: true,
+        type: 'main',
+        version: '8.5',
+      },       
 ];
   
 
