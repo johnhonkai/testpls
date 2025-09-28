@@ -133,7 +133,7 @@ function toggleView() {
 
   {#if !showSpoilerFree}
   <!-- Story Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
     {#each filteredStories as story}
       <div class="bg-base-300 rounded-xl shadow-md p-4 transition hover:ring-2 hover:ring-white/10">
         <!-- Image with Badge -->
@@ -211,19 +211,19 @@ Alt World
             class="inline-block"
             class:animate-scroll-to-end={shouldScroll}
           >
-            <h2 class="text-lg font-semibold text-white inline-block">
+            <h2 class="text-sm xl:text-lg font-semibold text-white inline-block">
               {story.title}
             </h2>
           </div>
         </div>
-                <p class="text-sm text-gray-400 mb-1">
+                <p class="text-xs lg:text-sm text-gray-400 mb-1">
           {story.inGame ? 'Available in-game' : 'Not available in-game'}
         </p>
 {#if story.link}
         <a
           href={story.link}
           target="_blank"
-          class="text-sm text-blue-400 hover:underline">
+          class="text-xs lg:text-sm text-blue-400 hover:underline">
 
     {#if story.type == 'manga'  || story.type == 'captainverse-manga'}
           Read online →
