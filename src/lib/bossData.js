@@ -2589,8 +2589,39 @@ export const teamData = {
   symphellmaru: {
     
     teamDataSets: [
+            {
+        tabname: "v8.5 CN",
+        teamInfoText: "Data is from v8.0 SEA Server Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/scoralie.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '1+',
+            pct: '96%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '38',
+            pct: '2%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '43',
+            pct: '1%',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png",  "/images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+            rank: '72',
+            pct: '1%',
+          },
+          
+        ]
+      },
       {
-        tabname: "v8.0 CN",
+        tabname: "v8.0 SEA",
         teamInfoText: "Data is from v8.0 SEA Server Top 100 Myriad 540 D",
         entries: [
           {
