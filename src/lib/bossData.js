@@ -117,6 +117,8 @@ export const weatherList = {
   ],
   dominance: [
     {id: 'aponia', name: 'Aponia'},
+    {id: 'domsk', name: 'Shadow Knight'},
+  
   ],
   extreme: [
     {id: 'extreme-parvati', name: 'Parvati'},
@@ -666,6 +668,14 @@ export const bossData = {
     bosspic: "images/Bosses/Flame-Chaser - Aponia_SSS.webp", 
     weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },
+  domsk:{
+    name: 'Shadow Knight', 
+      mechanics: 'Phase 1 has SD mobs. When you deal Elemental DMG to SK, she takes 1% more Physical DMG for 5s, max 10 stacks.', 
+      weakness: 'Ice / Fire / Lightning (M)', 
+      typeicon: "images/type/IconMECH.png", 
+      bosspic: "images/Bosses/Shadow Knight (SK).webp", 
+      weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+  },  
   aka: {
     name: 'Argent Knight: Artemis', 
     mechanics: 'Starts with a BIO mob. AKA takes less damage while she is attacking, effect is disabled during time fracture. AKA has huge ignite trauma. When AKA is ignited, enter weakened state for 18 seconds, where she takes increased fire damage and most armor effects are disabled.', 
