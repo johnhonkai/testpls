@@ -89,7 +89,7 @@ export const bossSchedule = {
     end: "2025-09-29T15:00:00+08:00"   
   }, 
    {
-    boss: "quavalralhal",
+    boss: "quavalrahal",
     weather: "quantum",
     start: "2025-09-29T15:00:00+08:00",
     end: "2025-10-03T15:00:00+08:00"   

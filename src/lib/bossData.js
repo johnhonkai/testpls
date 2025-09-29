@@ -38,7 +38,7 @@ export const weatherList = {
     {id: 'imgflower', name: 'Husk: Existentialism'}
   ],
   quantum: [
-    {id: 'quavalrahal', name: 'valrahal'}
+    {id: 'quavalrahal', name: 'Valrahal'}
   ],
   ranged: [
     {id: 'rangedkalpas', name: 'Kalpas'},
