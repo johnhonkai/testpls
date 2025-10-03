@@ -2581,6 +2581,11 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <!-- Entry -->
   <div class="space-y-6">
     <!-- Version -->
+    <div class="border-l-4 border-cyan-500 pl-4">
+      <h3 class="text-md font-semibold">4 Oct 2025 </h3>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Chenxue: Fixed the +200 sp skill from S-rank to SS-rank.</li>
+    </div>
     <div class="border-l-4 border-purple-500 pl-4">
       <h3 class="text-md font-semibold">6 Sep 2025 </h3>
       <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">

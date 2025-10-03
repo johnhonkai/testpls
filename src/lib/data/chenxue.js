@@ -95,7 +95,7 @@ export const valkbuffs = [
     },
 
     {
-        rank: "S",
+        rank: "SS",
         description: "When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.",
         available_by_default: "no",
         condition: { astralRing: "Grail of Infinitude"},
