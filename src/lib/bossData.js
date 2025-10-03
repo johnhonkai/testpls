@@ -122,6 +122,8 @@ export const weatherList = {
   ],
   extreme: [
     {id: 'extreme-parvati', name: 'Parvati'},
+    {id: 'paros', name: 'Paros'},
+
   ],  
   paralyze: [
     {id: 'para-assaka', name: 'Assaka'},
@@ -263,6 +265,14 @@ export const bossData = {
     bosspic: "images/Bosses/Parvati.webp", 
     weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
   },  
+  paros: {
+    name: 'Paros', 
+    mechanics: 'When freeze, paralyze, or stun trauma are filled, its shield will break and drop SD remnants, and the corresponding trauma is cleared. When transition phase ends, the shield will be reforged. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2. Bring SD valks to quickly deal with it.', 
+    weakness: '', 
+    typeicon: "images/type/IconSD.webp", 
+    bosspic: "images/Bosses/Paros.png", 
+    weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
+  },    
   obvhomu: {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 
@@ -3950,6 +3960,54 @@ export const teamData = {
       }
     ],
   },  
+
+  domsk: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1,3',
+            pct: '17%',
+          },       
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '2+',
+            pct: '74%',
+          },     
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '33',
+            pct: '3%',
+          },
+                    {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '34',
+            pct: '3%',
+          },     
+                    {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '58',
+            pct: '2%',
+          },   
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/elf_bunny.png" ],
+            rank: '92',
+            pct: '1%',
+          },                                                                        
+        ]
+      }
+    ],
+  },    
 }
 
 
