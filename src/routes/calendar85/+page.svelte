@@ -82,9 +82,15 @@
             title: "Battlesuit Supply B: Reign Solaris",
             description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Pledge (UP), Ritual Imayoh, Snowy Sniper, Wolf Dawn </li>',
         },    
-        "Valk3": {
-            title: "Battlesuit Supply A: PAWS",
-            description: '<li>Duration: 3 weeks</li><li>A-rank: Valkyrie Boltstorm (UP), Night Squire, Divine Prayer, Valkyrie Gloria </li>',
+        "Carnival": {
+            title: "Carnival Battlesuit Supply",
+            description: '- Carnival Battlesuit Supply has the same rates and rules as regular Battlesuit Supply. <br/> - You get free 2x Ten-Pull Carnival Battlesuit Card in 8.5. Can only be used in 8.5. <br/> - Guarantee is not shared with regular supplies.  <br/> - Guarantee is shared with other carnival supplies in the same patch. <br/> - Guarantee counter resets when the patch ends.',
+            image: "https://i.imgur.com/QCJQBIL.png"        
+        },            
+        "CarnivalEquip": {
+            title: "Carnival Equipment Supply",
+            description: '- Carnival Equipment Supply has the same rates and rules as regular Equipment Supply. <br/> - Guarantee is not shared with regular supplies.  <br/> - Guarantee is shared with other carnival supplies in the same patch. <br/> - Guarantee counter resets when the patch ends.',
+            image: "https://i.imgur.com/oGj8Rr3.jpeg"        
         },             
         "Equip": {
             title: "Equipment Supply",
@@ -108,10 +114,10 @@
             title: "Outfit Rerun Event",
             image: "https://i.imgur.com/anYIaO6.jpeg"
         },
-        "HoFiOutfit": {
-            title: "Selenic Ripples Outfit Supply",
-            description: '<li>Duration: 2 weeks</li><li>Max cost: 7680 crystal for outfit + other rewards</li><li>S-rank box: AE card or 10 stamps, SN card or 5 stamps, DA card or 5 stamps.</li>',
-            image: "https://i.imgur.com/QGpCGL3.jpeg"
+        "OutfitSupply": {
+            title: "Badum Wintery Wishes Outfit Supply",
+            description: '- Duration: 3 weeks<br/>- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: DA / HoFs / MPE card or 5 stamps.',
+            image: "https://i.imgur.com/M2lLRVy.jpeg"
         },  
         "OutfitBox": {
             title: "Outfit Box Supply",
@@ -139,7 +145,11 @@
         "Artbook": {
             title: "Art Collection Vol 4 Event",
             image: "https://i.imgur.com/KsCHAeL.jpeg"
-        },                    
+        },    
+        "Freehoh": {
+            title: "Free HoH / HoTr card or 5 stamps and 15 Supply Cards",
+            image: "https://i.imgur.com/rVvX1wc.jpeg"
+        },                         
     };
 
 
@@ -292,7 +302,7 @@
                         <span class="font-bold0">CARNIVAL BATTLESUIT</span>
                     </div>   
                     <div></div>            
-                    <div on:click={() => openModal("")} class=" col-span-7 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Carnival")} class=" col-span-7 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute top-2 left-2 flex items-center justify-center z-10 leading-4 text-left">Alternating supplies for Vita, PS,<br/> Badum and Sparkle Battlesuit</span>
@@ -310,7 +320,7 @@
                          <span class="font-bold0">CARNIVAL EQUIPMENT</span>
                     </div>   
                     <div></div>            
-                    <div on:click={() => openModal("Equip")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("CarnivalEquip")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute top-2 left-2 flex items-center justify-center z-10 leading-4 text-left">Alternating supplies for Vita, PS,<br/> Badum and Sparkle Equipment</span>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full">
@@ -376,7 +386,7 @@
                          <span class="font-bold0">OUTFIT SUPPLY</span>
                     </div>       
                     <div></div>       
-                    <div on:click={() => openModal("")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("OutfitSupply")} class="col-span-3 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
   <span class="font-semibold">Wintery Wishes</span>
@@ -565,7 +575,7 @@
                 </div> 
                 
                 <div></div>
-                <div on:click={() => openModal("")} class="col-span-19 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                <div on:click={() => openModal("Freehoh")} class="col-span-19 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Anniversary 7-Day Login: Free HoTr or HoH. Free 15x Battlesuit or Equipment Cards.</span>
                     <!-- Image positioned on the right side -->
