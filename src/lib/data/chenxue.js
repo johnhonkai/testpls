@@ -108,12 +108,7 @@ export const valkbuffs = [
         solightning: 6,
     },
 
-        {
-        rank: "SS",
-        description: "When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.",
-        available_by_default: "no",
-        condition: { astralRing: "Grail of Infinitude"},
-    },
+
 
     {
         rank: "S",
@@ -121,6 +116,14 @@ export const valkbuffs = [
         condition: { astralRing:"Grail of Infinitude"},
         description: "When AR Grail of Infinitude is activated: When activating or exiting SO, reduce the team’s switch cooldown by 8s and trigger team QTE. During SO: When a valk casts Ult for the first time, gain additional 300 Shimmering Trace and 120 sp.",
     },  
+
+            {
+        rank: "SS",
+        description: "When AR Grail of Infinitude is activated: Gain 200 sp when Stellar Outburst is activated.",
+        available_by_default: "no",
+        condition: { astralRing: "Grail of Infinitude"},
+    },
+    
         {
         rank: "SS",
         description: "For every team member with Symbiosis or Omniscient Star tag, enemies take 1.5% more Total DMG. ( Current Buff: TDM Taken +{value1}% )",

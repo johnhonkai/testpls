@@ -267,7 +267,7 @@ export const bossData = {
   },  
   paros: {
     name: 'Paros', 
-    mechanics: 'Paros has a freeze / paralyze / stun status trauma mark. When the corresponding trauma is filled, its shield will break and drop SD remnants, and the trauma mark is removed. When transition phase ends, the shield will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
+    mechanics: 'Paros has a freeze trauma mark. When the corresponding trauma is filled, its shield will break and drop SD remnants. When transition phase ends, the shield will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
     weakness: '', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Paros.png", 
@@ -4007,7 +4007,25 @@ export const teamData = {
         ]
       }
     ],
-  },    
+  },   
+  
+    paros: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '100%',
+          },                                                                         
+        ]
+      }
+    ],
+  }, 
 }
 
 
