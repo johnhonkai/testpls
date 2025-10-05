@@ -267,7 +267,7 @@ export const bossData = {
   },  
   paros: {
     name: 'Paros', 
-    mechanics: 'Paros has a freeze trauma mark. When the corresponding trauma is filled, its shield will break and drop SD remnants. When transition phase ends, the shield will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
+    mechanics: 'Paros has a freeze trauma mark. When the freeze trauma is filled, its shield will break and drop SD remnants. When transition phase ends, the shield will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
     weakness: '', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Paros.png", 
