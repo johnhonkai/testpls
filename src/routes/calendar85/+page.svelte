@@ -695,13 +695,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Paros.png" date="Oct 31" weather="Extreme" bosspage="/boss?paros" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Nov 3" weather="Stardust" bosspage="/boss?sa" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
+                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Nov 4" />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" />
+                <BossCard image="/images/Bosses/Herrscher of the Void.webp" />
                     </div>
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
@@ -711,7 +711,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Flame-Chaser - Vill-V.webp" date="Nov 7" weather="Bleed" bosspage="/boss?villv" />
                 <BossCard />
                 </div>
                      

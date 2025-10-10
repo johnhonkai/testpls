@@ -2717,8 +2717,42 @@ export const teamData = {
   sa: {
     
     teamDataSets: [
+            {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/kiana badum.png", "/images/valkportrait/Songque Jovial Deception.png", "/images/valkportrait/scoralie.png", "images/valkportrait/asop_teri.png"],
+            rank: '1+',
+            pct: '24%',
+            bottext: '6S 809, 9S 821',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_songque.png"],
+            rank: '5',
+            pct: '3%',
+            bottext: '8S 809',
+          },      
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/scoralie.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '10',
+            pct: '72%',
+            bottext: 'S2 792, SS 801, 6S 807',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '49',
+            pct: '1%',
+            bottext: '8S 789',
+          },        
+        ]
+      }, 
       {
-        tabname: "v8.4 CN",
+        tabname: "v8.4",
         teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2739,7 +2773,7 @@ export const teamData = {
         ]
       },       
       {
-        tabname: "v8.3 CN",
+        tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2758,7 +2792,7 @@ export const teamData = {
         ]
       },      
       {
-        tabname: "v8.2 CN",
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -2777,7 +2811,7 @@ export const teamData = {
         ]
       },
       {
-        tabname: "v8.1 CN",
+        tabname: "v8.1",
         teamInfoText: "Data is from v8.1 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
