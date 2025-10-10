@@ -3959,6 +3959,10 @@ export const teamData = {
         ]
       }
     ],
+                       videos: [
+            { url: 'https://youtu.be/RigNsoKShwc', abyss: 'Redlotus 521D', uploader: 'Marisa Honkai' },
+
+            ]
   },  
 
   domsk: {
