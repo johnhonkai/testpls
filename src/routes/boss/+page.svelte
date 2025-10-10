@@ -185,14 +185,17 @@
   <div class="mb-2 sm:mb-0"></div>
 
   <!-- Boss Details and Team Display -->
-  {#if selectedBoss}
+{#if selectedBoss}
+  {#key selectedBoss}
     <div id="boss-details">
       <BossDetails boss={bossData[selectedBoss]} />
     </div>
     <div id="team-display">
       <TeamDisplay bossData={teamData[selectedBoss]} />
     </div>
-  {/if}
+  {/key}
+{/if}
+
 </div>
 
 <style>

@@ -27,7 +27,6 @@
     <h2 class="text-lg sm:text-xl font-semibold text-left text-white cooltext">TOP TEAMS</h2>
 
       <!-- Tab Navigation (only if there are multiple datasets) -->
-  {#if bossData.teamDataSets.length > 1}
   <div class="flex space-x-4 mt-3 mb-4 ">
     {#each bossData.teamDataSets as teamData, index}
       <button
@@ -39,7 +38,7 @@
       </button>
     {/each}
   </div>
-{/if}
+
 
     <p class="text-left text-xs sm:text-sm text-gray-300 mb-4">
       {bossData.teamDataSets[activeIndex].teamInfoText}
