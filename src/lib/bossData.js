@@ -2081,7 +2081,26 @@ export const teamData = {
   villv: {
     teamDataSets: [
     {
-      tabname: "v7.9 CN",
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/ps.png", "images/valkportrait/scoralie.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/asop_teri.png"],
+        rank: '1+',
+        pct: '98%',
+        bottext: "Highest Score: S2 787, 6S 806, 9S 819"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/ps.png", "images/valkportrait/scoralie.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+        rank: '62',
+        pct: '2%',
+        bottext: "Highest Score: S2 781, 6S 782"
+      },      
+    ]},      
+    {
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
