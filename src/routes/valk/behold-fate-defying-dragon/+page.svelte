@@ -1459,7 +1459,7 @@ Start saving from now. Or whale up bro.
   <!-- Video 1 with title and description -->
 
 
-  <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+  <div class="">
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie DPS</h2>
 
     <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
@@ -1478,7 +1478,7 @@ Start saving from now. Or whale up bro.
   </div>
 </div>
 
-  <div class="bg-gray-800 mt-10 p-4 rounded-lg shadow-md">
+  <div class=" mt-10 ">
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Dragoon Coralie Support</h2>
 
     <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Coralie supporting PAWS</p>

@@ -384,7 +384,7 @@ export const storyOrder = [
         canon: 'alt-world',
       },    
       {
-        image: 'https://i.imgur.com/ZGdgOHH.png',
+        image: 'https://i.imgur.com/SxNHIbX.jpeg',
         title: "P2 Ch 10: Reunited Under the Light of Faith",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
