@@ -543,11 +543,12 @@ onMount(async () => {
           </div>
           
         </div>
-        <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+      <div class="mt-3 rounded-sm" >
+
+                            <ul class="list-disc px-4 text-sm sm:text-base">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Primer), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+                            </ul>
           </div>
 
           <div class="divider  "></div>
@@ -584,11 +585,11 @@ onMount(async () => {
 
           </div>
 
-          <div class="p-2 mt-3 rounded-sm" >
-            <p class="text-sm sm:text-base text-left">
+      <div class="mt-3 rounded-sm" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
                 <li class="text-sm sm:text-base"> <b>Helix 1 or 2? </b> Helix 1 only needs the nexus. Once you get the nexus, you can proceed to build other signets. Helix 2 wants more enhancement signets. Also, the time fracture triggered from Helix 2 explosion suspends the spawn animation of some enemies.</li>
                 <li class="text-sm sm:text-base"> <b>Decimation: </b> Nexus 1 is stronger but - [1] Requires you to spam Blood Rose hp reduction, and [2] If battle takes too long, you will recover too much HP. </li>
-            </p>
+                            </ul>
             </div>
 
             <div class="divider  "></div>
@@ -711,11 +712,11 @@ onMount(async () => {
             </div>
           </div>
         </div>
-        <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+      <div class="mt-3 rounded-sm" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: You want both Bolt and Readiness to make sure that Ult and Stellar Outburst are always up. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+                            </ul>
           </div>
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>

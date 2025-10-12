@@ -343,7 +343,7 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">OVERVIEW</h2>
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.2 (24 Apr 2025)
+          <strong>Updated For v8.5 (23 Oct 2025)
       </p>
       </div >
       <div class="mt-3">
@@ -351,7 +351,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/> When fully geared, Helia is a decent support for World Star team (Deepspace Anchor, Schicksal's Imperative and Sparkle), but loses to other S-rank supports due to slower rotation and lack of timestop and self damage.
+              <strong class="text-amber-400">World Star Support</strong> <br/> When fully geared, Helia is a decent support for World Star teams, but loses to other S-rank supports.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -365,12 +365,9 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FARM RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Not a priority, but you should farm Helia if you have a World Star DPS (Deepspace Anchor, Schicksal's Imperative, or Sparkle), and you're lacking the third support for that DPS.
+              <strong class="text-amber-400">New Players</strong> <br/> Not a priority, but you should farm Helia if you have a World Star DPS (Deepspace Anchor, Schicksal's Imperative, Sparkle, Herrscher of Rebirth), and you're lacking the third support for that DPS.
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> Helia is still usable, but loses to other S-rank supports due to slower rotation and lack of timestop and self damage. For characters like SIMP and Sparkle, they have 18 resonance trigger limit - It's better to pair them with a character with 6 mark trigger count (like Vita, Thelema, HoFi) instead of Helia.
-          </p>
 
 
           <div class="divider  "></div>
@@ -448,11 +445,12 @@ function selectTabMobile(event) {
               </div>
 
               <div class="p-2 mt-2 bg-linear-to-r from-cyan-950/75 to-cyan-900/75 rounded-sm" >
-              <p class="text-sm sm:text-base text-left">
+
+                            <ul class="list-disc px-4 text-sm sm:text-base">
                   <li class="text-sm sm:text-base"><b>Electrifying Arc:</b> Although Helia does not rely on Electrifying Arc to function, this weapon contributes around 20% of team dmg, which is big.</li>
                   <li class="text-sm sm:text-base"><b>Von Neumann: </b> All buffs. Some sp regen for Helia. </li>
                   <li class="text-sm sm:text-base"><b>Affix: </b> Full ATK.</li>
-              </p>
+                            </ul>
               </div>
 
 
@@ -539,11 +537,11 @@ function selectTabMobile(event) {
           </div>
           
         </div>
-        <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+      <div class="mt-3 rounded-sm" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: Helia is really strong with Electrifying Arc and after she gets all three signets. It is recommended to get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+                            </ul>
           </div>
 
           <div class="divider  "></div>
@@ -730,11 +728,11 @@ function selectTabMobile(event) {
             </div>
           </div>
         </div>
-        <div class="p-2 mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
+      <div class="mt-3 rounded-sm" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: Helia is really strong with Electrifying Arc and after she gets all three signets. It is recommended to get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
+                            </ul>
           </div>
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
