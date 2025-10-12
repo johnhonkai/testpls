@@ -3995,6 +3995,9 @@ export const teamData = {
     ],
                        videos: [
             { url: 'https://youtu.be/RigNsoKShwc', abyss: 'Redlotus 521D', uploader: 'Marisa Honkai' },
+            { url: 'https://youtu.be/MMhtdNJ5s4U', abyss: 'Nirvana 551D', uploader: 'Xintsu' },
+            { url: 'https://youtu.be/S_XAGLWUJYI', abyss: 'Nirvana 551D', uploader: 'OneMoreBox' },
+            { url: 'https://youtu.be/IiUBT4ea3Tg', abyss: 'Nirvana 551D', uploader: 'phylynxbelt' },
 
             ]
   },  
