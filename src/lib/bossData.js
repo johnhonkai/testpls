@@ -5,6 +5,7 @@ export const weatherList = {
     {id: 'lightningguaymas',name: 'Meteoroid: Guaymas'},
     {id: 'husk-hitcount',name: 'Husk (Hit ver)'},
     {id: 'lighttribunal',name: 'Cruising Tribunal'},
+    {id: 'lightandrius',name: 'Dominator of Wolves'},
 
   ],
   fire: [
@@ -23,7 +24,7 @@ export const weatherList = {
   ],
   typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
-    {id: 'typeandrius', name:'Andrius'}, 
+    {id: 'typeandrius', name:'Dominator of Wolves'}, 
     {id: 'typesprout', name:'Sprout of Wishing'}, 
     {id: 'typeparvati', name:'Parvati'}, 
 
@@ -241,6 +242,14 @@ export const bossData = {
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
+  lightandrius: {
+    name: 'Dominator of Wolves',
+    mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
+    weakness: 'Ice (Immune)',
+    typeicon: "images/type/IconBIO.png",
+    bosspic: "images/Bosses/Dominator of Wolves.webp",
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",
+  },  
   typesprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 
