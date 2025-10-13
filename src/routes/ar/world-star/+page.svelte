@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="World Star"/>
     <meta property="og:description" content="Info for characters in World Star teams." />
-    <meta property="og:image" content="https://i.imgur.com/pu6sT2z.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/olmOnxR.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/world-star" />
     <meta property="og:type" content="website" />
 
@@ -18,6 +18,8 @@
     let { data }: { data: PageData } = $props();
 
   const dps = [
+    { name: "Herrscher of Rebirth", image: "/images/valkportrait/Seele Herrscher of Rebirth.png" , type: "Psy" , element: "Physical" },
+
     { name: "Sparkle", image: "/images/valkportrait/sparkle.png" , type: "Qua" , element: "Fire" },
     { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" , type: "Qua" , element: "Lightning" },
     { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png", type: "Sd" , element: "Lightning" },
@@ -25,6 +27,10 @@
   ];
 
   const support = [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
+
+    { name: "Herrscher of Rebirth", image: "/images/valkportrait/Seele Herrscher of Rebirth.png" , type: "Psy" , element: "Physical" },
+
     { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
     { name: "Sparkle", image: "/images/valkportrait/sparkle.png" , type: "Qua" , element: "Fire" },
     { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png", type: "Mech" , element: "Lightning" },
@@ -70,6 +76,7 @@
     ],
 
     Freeze: [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png"},      
         {  name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
     ],
 
@@ -94,6 +101,12 @@
     ],
 
     Stardust: [
+
+       { name: "Hi Love Elf", 
+    image: "/images/valkportrait/Elysia Hi Love Elf.png",
+    details: "Can force trigger critical index, generate extra SD remnant and reduces SD enemy consolidated state duration." },  
+
+   
             { name: "Ba-dum!", 
             image: "/images/valkportrait/kiana badum.png",
             details: "Badum can immediately reduce 8% of SD enemy's Max HP." },
@@ -166,12 +179,11 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   World Star
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
-  </span>
+
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for World Star teams
+      Overview for World Star teams  <span class="badge badge-sm sm:badge-lg">
+    v8.5
 
 
     </p>
@@ -211,12 +223,11 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   World Star
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
-  </span>
+
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for World Star teams
+      Overview for World Star teams <span class="badge badge-sm sm:badge-lg">
+    v8.5
 
 
     </p>
@@ -241,7 +252,7 @@ async function captureStats() {
 </section>
 
 
-  <div class=" mx-auto space-y-12">
+  <div class=" mx-auto space-y-12 mb-20">
 
       <div class="divider"></div>
 

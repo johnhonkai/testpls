@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Astral Ring: Grail of Infinitude"/>
     <meta property="og:description" content="Info for characters in Grail of Infinitude teams." />
-    <meta property="og:image" content="https://i.imgur.com/nyectNk.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/RBIcgzJ.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/grail-of-infinitude" />
     <meta property="og:type" content="website" />
 
@@ -14,85 +14,97 @@
 
 <script lang="ts">
     import type { PageData } from '../grail-of-infinitude/$types';
+  import { types, elements, astralRings, valkyries } from '$lib/data/characterdata.js';
 
+const urlByName = new Map(valkyries.map(v => [v.name, v.url]));
+const imageByName = new Map(valkyries.map(v => [v.name, v.image]));
+
+function valkUrl(name: string) {
+  return urlByName.get(name) ?? '#';
+}
+
+function valkImage(name: string) {
+  return imageByName.get(name) ?? '#';
+}
     let { data }: { data: PageData } = $props();
 
   const dps = [
-    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
-    { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
+    { name: "Hi ♪ Love Elf ♥" , type: "Sd" , element: "Ice" },  
+    { name: "Planar Armament: Warped Spacetime" , type: "Bio" , element: "Lightning" },
 
   ];
 
   const support = [
-    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
-    { name: "Herrscher of Rebirth", image: "/images/valkportrait/Seele Herrscher of Rebirth.png" , type: "Psy" , element: "Physical" },  
-
-    { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" , type: "Mech" , element: ["Fire" , "Ignite"] },
-    { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
-    { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
-    { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" , type: "Sd" , element: "Fire" },
-    { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
-    { name: "Reign Solaris", image: "/images/valkportrait/dudu.png", type: "Img" , element: "Physical" },
+    { name: "Hi ♪ Love Elf ♥", type: "Sd" , element: "Ice" },  
+    { name: "Herrscher of Rebirth", type: "Psy" , element: "Physical" },  
+    { name: "Behold! Fate-Defying Dragon", type: "Mech" , element: ["Fire" , "Ignite"] },
+    { name: "Planar Armament: Warped Spacetime", type: "Bio" , element: "Lightning" },
+    { name: "Peregrine Sword", type: "Bio" , element: ["Physical" , "Bleed"] },
+    { name: "Ba-dum! Fiery Wishing Star", type: "Sd" , element: "Fire" },
+    { name: "Herrscher of Human: Ego", type: "Psy" , element: "Ice"},
+    { name: "Reign Solaris", type: "Img" , element: "Physical" },
 
 
   ];
 
   const utilities = {
     "Breach State": [
-        { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+        { name: "Behold! Fate-Defying Dragon"},
 
     ],
 
     "Trauma Boost": [
-            { name: "Fate-Defying Dragon!", 
-            image: "/images/valkportrait/scoralie.png" ,
+            { name: "Behold! Fate-Defying Dragon", 
            details: "Dragon Claw adds 12 (S) / 36 (SS2) points to status trauma inflicted by the leader. She also extends status trauma duration by 50%." },
     ],
 
 
         Shieldbreak: [
-            { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
+            { name: "Reign Solaris"},
     ],
 
     Hitcount: [
-    { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
-    { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
+    { name: "Peregrine Sword"},
+    { name: "Planar Armament: Warped Spacetime" },
 
     ],
 
     Freeze: [
-    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" },  
+    { name: "Hi ♪ Love Elf ♥" },  
 
     ],
 
     Paralyze: [
 
-      { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
+      { name: "Planar Armament: Warped Spacetime" },
     ],
 
     Ignite: [
-      { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+      { name: "Behold! Fate-Defying Dragon"},
 
     ],
 
     Bleed: [
-              { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
+              { name: "Peregrine Sword"},
 
     ],
 
     Stun: [
-      { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
+      { name: "Reign Solaris" },
     ],
 
 
     "Multi-Target DMG Share": [
 
-       { name: "Ba-dum!", image: "/images/valkportrait/kiana badum.png" },
+       { name: "Ba-dum! Fiery Wishing Star", image: "/images/valkportrait/kiana badum.png" },
     ],
 
     Stardust: [
-            { name: "Ba-dum!", 
-            image: "/images/valkportrait/kiana badum.png",
+
+    { name: "Hi ♪ Love Elf ♥", 
+    details: "Can force trigger critical index, generate extra SD remnant and reduces SD enemy consolidated state duration." },  
+
+            { name: "Ba-dum! Fiery Wishing Star", 
             details: "Badum can immediately reduce 8% of SD enemy's Max HP." },
            
 
@@ -102,8 +114,7 @@
     ],
 
     Bow: [
-            { name: "Herrscher of Human", 
-            image: "/images/valkportrait/Elysia Herrscher of Human Ego.png",
+            { name: "Herrscher of Human: Ego", 
            details: "As a bow user, HoH can hit an enemy's weak spot. This is only used for Tank boss. When its weak spot is hit, Tank gets a huge debuff." },
     ],
 
@@ -154,9 +165,9 @@ async function captureStats() {
   <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
   <img
-    src="/images/bg_goi.jpg"
+    src="https://i.imgur.com/Thidf4K.jpeg"
     alt="Header"
-    class="w-full h-full object-cover [object-position:50%_15%] opacity-45"
+    class="w-full h-full object-cover [object-position:50%_15%] opacity-60"
   />
 
 
@@ -165,12 +176,12 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.5
-  </span>
+
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Grail of Infinitude teams.
+      Overview for Grail of Infinitude teams   <span class="badge badge-sm sm:badge-lg">
+    v8.5
+  </span>
 
 
     </p>
@@ -181,7 +192,7 @@ async function captureStats() {
 
 </div>
 
-    <div class="flex justify-center mb-6 mt-20"  style="display:none">
+  <div class="flex justify-center mb-6 mt-20"   style="display:none">
     <button
       onclick={captureStats}
       class="px-4 py-2 rounded-md  font-medium transition cursor-pointer  text-xs sm:text-sm h-10 w-auto
@@ -198,9 +209,9 @@ async function captureStats() {
   <div class="relative w-full h-40 md:h-70 overflow-hidden "  id="toppart"  style="display:none">
 
   <img
-    src="/images/bg_goi.jpg"
+    src="https://i.imgur.com/Thidf4K.jpeg"
     alt="Header"
-    class="w-full h-full object-cover [object-position:50%_15%] opacity-45"
+    class="w-full h-full object-cover [object-position:50%_15%] opacity-60"
   />
 
 
@@ -209,12 +220,12 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Grail of Infinitude
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.5
-  </span>
+
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Overview for Grail of Infinitude teams.
+      Overview for Grail of Infinitude teams   <span class="badge badge-sm sm:badge-lg">
+    v8.5
+  </span>
 
 
     </p>
@@ -231,7 +242,7 @@ async function captureStats() {
   <p class="text-sm sm:text-base text-gray-300 leading-relaxed sm:leading-loose mt-2">
     <span class="block ">
       <strong class="text-white">Grail of Infinitude</strong> mechanics revolve around sp. During Stellar Outburst, max sp is increased and the team share one sp bar.
-      <br/>During Stellar Outburst, teammates with <span class="text-teal-400 font-medium">Symbiosis</span> tag can provide increased sp regen, Shining Trace points, and they won't consume sp when casting Ult.
+      <br/>During Stellar Outburst, teammates with <span class="text-teal-400 font-medium">Symbiosis</span> tag can provide increased sp regen and Shining Trace points. Their Ult cd are refreshed and won't consume sp.
     </span>
   </p>
 </section>
@@ -251,26 +262,31 @@ async function captureStats() {
     <div class="flex flex-wrap gap-3">
       {#each dps as char}
         <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+            <a
+    href={valkUrl(char.name)}
+    aria-label={`Open ${char.name} page`}
+  >
           {#if char.type}
             <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
               <img src={`/images/type/icon_${char.type.toLowerCase()}.webp`} alt={char.type} class="w-6 sm:w-full h-full object-cover" />
             </div>
           {/if}
-
           {#if char.element}
             {#each (Array.isArray(char.element) ? char.element : [char.element]) as el, i}
-              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style={`top: ${2.0 + i * 2}rem`}>
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style={`top: ${1.9 + i * 1.57}rem`}>
                 <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-6 sm:w-full h-full object-cover" />
               </div>
             {/each}
           {/if}
 
           <img
-            src={char.image}
+            src={valkImage(char.name)}
             alt={char.name}
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
+            </a>
         </div>
+
       {/each}
     </div>
   </section>
@@ -285,7 +301,10 @@ async function captureStats() {
 
 
         <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
-
+            <a
+    href={valkUrl(char.name)}
+    aria-label={`Open ${char.name} page`}
+  >
                             {#if char.type}
             <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
               <img src={`/images/type/icon_${char.type.toLowerCase()}.webp`} alt={char.type} class="w-6 sm:w-full h-full object-cover" />
@@ -294,17 +313,18 @@ async function captureStats() {
 
           {#if char.element}
             {#each (Array.isArray(char.element) ? char.element : [char.element]) as el, i}
-              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style={`top: ${2.0 + i * 2}rem`}>
+              <div class="absolute left-1 sm:left-0 sm:mx-1 w-7 z-10" style={`top: ${1.9 + i * 1.57}rem`}>
                 <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-6 sm:w-full h-full object-cover" />
               </div>
             {/each}
           {/if}
 
           <img
-            src={char.image}
+            src={valkImage(char.name)}
             alt={char.name}
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
+            </a>
         </div>
       {/each}
     </div>
@@ -346,9 +366,9 @@ async function captureStats() {
             <h3 class="text-sm sm:text-base font-medium text-gray-300 text-center">{label}</h3>
               <div class={`grid gap-2 justify-items-center ${chars.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
                 {#each chars as char}
-<div class="relative group p-1 hover:bg-gray-800 rounded transition cursor-pointer">
+<div class="relative group p-1 hover:bg-gray-800 rounded transition">
   <img
-    src={char.image}
+    src={valkImage(char.name)}
     alt={char.name}
     class="rounded w-12 sm:w-20 h-auto aspect-square object-cover"
   />

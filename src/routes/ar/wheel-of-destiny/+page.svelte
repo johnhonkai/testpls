@@ -27,6 +27,8 @@
   ];
 
   const support = [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
+
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
     { name: "Reign Solaris", image: "/images/valkportrait/dudu.png", type: "Img" , element: "Physical" },
     { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png", type: "Mech" , element: "Lightning" },
@@ -65,6 +67,7 @@
     ],
 
     Freeze: [
+    { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png"},      
             { name: "Mad Pleasure", image: "/images/valkportrait/Thelema Mad Pleasure.png" },
     ],
 
@@ -84,6 +87,11 @@
     Mobs: [],
 
     Stardust: [
+       { name: "Hi Love Elf", 
+    image: "/images/valkportrait/Elysia Hi Love Elf.png",
+    details: "Can force trigger critical index, generate extra SD remnant and reduces SD enemy consolidated state duration." },  
+
+
             { name: "Jovial Deception", 
             image: "/images/valkportrait/Songque Jovial Deception.png" ,  
             details: "JD Combo ATK can immediately trigger critical point of SD enemy." },
@@ -155,14 +163,13 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Wheel of Destiny
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
-  </span>
+
 </h1>
   
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Wheel of Destiny teams
-
+<span class="badge badge-sm sm:badge-lg">
+    v8.5
 
     </p>
   </div>
@@ -201,13 +208,12 @@ async function captureStats() {
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  pb-3 md:pb-0 md:pt-4 z-10">
 <h1 class="flex items-center gap-2 text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30">
   Wheel of Destiny
-  <span class="text-xs md:text-lg font-normal bg-white/10 border border-white/20 px-2 ml-1 sm:ml-2 py-0.5 rounded-full text-slate-200">
-    v8.4
-  </span>
+
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Wheel of Destiny teams
-
+<span class="badge badge-sm sm:badge-lg">
+    v8.5
 
     </p>
   </div>
@@ -227,7 +233,7 @@ async function captureStats() {
       <strong class="text-white">Wheel of Destiny</strong> team focuses on solo DPS. 
     </span>
     <span class="block">
-      Teammates with the <span class="text-indigo-400 font-medium">Harmonized Shadow Star</span> tag become shadow attacks during Stellar Outburst.
+      Teammates with the <span class="text-indigo-300 font-medium">Harmonized Shadow Star</span> tag become shadow attacks and grant Rondo state during Stellar Outburst.
     </span>
   </p>
 </section>
