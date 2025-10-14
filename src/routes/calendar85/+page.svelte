@@ -717,7 +717,7 @@
                      
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
                     <BossCard image="/images/Bosses/Pishacha.webp" date="Nov 11" />
-                    <BossCard image="/images/BossesMA/MHT-3B Nirvana_SSS.webp" />
+                    <BossCard image="/images/Bosses/MHT-3 Pax.webp" />
                     <BossCard image="/images/Bosses/Alien Guard.webp" />
                 </div>
     
@@ -854,6 +854,10 @@
 
             </div>   
         </div>
+
+
+  <p class="text-center text-xs sm:text-sm text-gray-400 mt-5">Week 3 Memorial Arena has SS MHT-3 Pax due to a mistake.</p>
+
     </div>
 </div>
 
