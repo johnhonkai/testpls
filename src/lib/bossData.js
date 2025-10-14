@@ -24,7 +24,7 @@ export const weatherList = {
   ],
   typecounter: [
     {id: 'typekasumi', name:'Kasumi'}, 
-    {id: 'typeandrius', name:'Dominator of Wolves'}, 
+    {id: 'typeandrius', name:'Andrius'}, 
     {id: 'typesprout', name:'Sprout of Wishing'}, 
     {id: 'typeparvati', name:'Parvati'}, 
 
@@ -63,7 +63,7 @@ export const weatherList = {
   starless: [
     {id: 'starbenares', name: 'Benares: Ice'},
     {id: 'starrimestar', name: 'Herrscher of Rimestar'},
-    {id: 'starandrius', name: 'Dominator of Wolves'},
+    {id: 'starandrius', name: 'Andrius'},
     {id: 'starbull', name: 'Husk: Mysticism'},
     {id: 'starsk', name: 'Shadow Knight'},
 
@@ -81,7 +81,7 @@ export const weatherList = {
     {id: 'ignitehov', name: 'Herrscher of the Void'},
     {id: 'aka', name: 'Argent Knight: Artemis'},
     {id: 'hoice', name: 'Herrscher of Ice'},
-    {id: 'igniteandrius', name: 'Dominator of Wolves'},
+    {id: 'igniteandrius', name: 'Andrius'},
 
   ],
   resonance: [
@@ -111,7 +111,7 @@ export const weatherList = {
   flux: [
     {id: 'momemperor', name: 'Mockery & Emperor'},
     {id: 'fluxhomu', name: 'Homu Performer'},
-    {id: 'fluxandrius', name: 'Dominator of Wolves'},
+    {id: 'fluxandrius', name: 'Andrius'},
     {id: 'fluxtank', name: 'MHT-3C Retaliator'},
     {id: 'lantern', name: 'Lantern'},
 
