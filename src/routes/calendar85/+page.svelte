@@ -717,7 +717,7 @@
                      
                 <div class="flex col-span-3 justify-center gap-1 ml-2">
                     <BossCard image="/images/Bosses/Pishacha.webp" date="Nov 11" />
-                    <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" />
+                    <BossCard image="/images/BossesMA/MHT-3B Nirvana_SSS.webp" />
                     <BossCard image="/images/Bosses/Alien Guard.webp" />
                 </div>
     
