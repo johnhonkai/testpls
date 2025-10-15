@@ -5,7 +5,7 @@ export const weatherList = {
     {id: 'lightningguaymas',name: 'Meteoroid: Guaymas'},
     {id: 'husk-hitcount',name: 'Husk (Hit ver)'},
     {id: 'lighttribunal',name: 'Cruising Tribunal'},
-    {id: 'lightandrius',name: 'Dominator of Wolves'},
+    {id: 'lightandrius',name: 'Andrius'},
 
   ],
   fire: [
