@@ -4095,6 +4095,42 @@ export const teamData = {
       }
     ],
   }, 
+
+      lightandrius: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Coralie Valkyrie Blastmetal.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1,3,4,10',
+            pct: '8%',
+            bottext: "Highest Score: 9S 807"
+
+          },          
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '2+',
+            pct: '91%',
+            bottext: "Highest Score: SS 778, 6S 800, SSS Vita S2 Sup 806"
+
+          },     
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '98',
+            pct: '1%',
+            bottext: "Highest Score: SS 757"
+
+          },                                                                                      
+        ]
+      }
+    ],
+  },
 }
 
 
