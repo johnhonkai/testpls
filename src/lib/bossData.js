@@ -1344,7 +1344,10 @@ export const teamData = {
     ]},
 
   ],
-    
+        videos: [
+      { url: 'https://www.youtube.com/watch?v=PW5-AZrcOag', abyss: 'Nirvana 552D', uploader: 'phylynxbelt' },
+
+    ] 
   },
   starandrius: {
     teamDataSets: [
