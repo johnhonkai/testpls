@@ -3652,11 +3652,8 @@ export const teamData = {
             bottext: "Highest Score: SS1 816"
 
           },  
-                       
-        ],
-                       videos: [
-      { url: 'https://youtu.be/HMRM3JHr-jk', abyss: 'Red Lotus 519 D', uploader: 'Marisa Honkai' },
-    ] 
+
+    ],                       
       },
       {
         tabname: "v8.3",
@@ -3681,6 +3678,9 @@ export const teamData = {
         ]
       }
     ],
+    videos: [
+      { url: 'https://youtu.be/HMRM3JHr-jk', abyss: 'Red Lotus 519 D', uploader: 'Marisa Honkai' },
+    ] 
   }, 
    'extreme-parvati': {
     
