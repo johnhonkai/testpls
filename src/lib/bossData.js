@@ -3573,7 +3573,7 @@ export const teamData = {
       { url: 'https://youtu.be/F_zhJ4fpfJE', abyss: 'Red Lotus 512 D', uploader: 'Marisa Honkai' },
       { url: 'https://youtu.be/h6lFKB_t5LI', abyss: 'Nirvana 548 D', uploader: 'phylynxbelt' },
       { url: 'https://youtu.be/vKbDDmwGyfY', abyss: 'Nirvana 541 D', uploader: 'Haxxor' },
-
+     ]
 
   },
 
