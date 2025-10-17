@@ -3574,7 +3574,7 @@ export const teamData = {
       { url: 'https://youtu.be/h6lFKB_t5LI', abyss: 'Nirvana 548 D', uploader: 'phylynxbelt' },
       { url: 'https://youtu.be/vKbDDmwGyfY', abyss: 'Nirvana 541 D', uploader: 'Haxxor' },
 
-    ] 
+
   },
 
   sampo: {
@@ -3652,11 +3652,11 @@ export const teamData = {
             bottext: "Highest Score: SS1 816"
 
           },  
-               videos: [
+                       
+        ],
+                       videos: [
       { url: 'https://youtu.be/HMRM3JHr-jk', abyss: 'Red Lotus 519 D', uploader: 'Marisa Honkai' },
-
-    ]                        
-        ]
+    ] 
       },
       {
         tabname: "v8.3",
