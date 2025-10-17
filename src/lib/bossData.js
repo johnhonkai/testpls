@@ -3651,7 +3651,11 @@ export const teamData = {
             pct: '1%',
             bottext: "Highest Score: SS1 816"
 
-          },                         
+          },  
+               videos: [
+      { url: 'https://youtu.be/HMRM3JHr-jk', abyss: 'Red Lotus 519 D', uploader: 'Marisa Honkai' },
+
+    ]                        
         ]
       },
       {
