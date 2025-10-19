@@ -22,7 +22,7 @@ const db = admin.firestore();
 
 async function fetchVoteSummary() {
     try {
-        const newVoteCollection = db.collection("newvote");
+        const newVoteCollection = db.collection("Vote2025");
         const snapshot = await newVoteCollection.get();
 
         if (snapshot.empty) {
@@ -48,9 +48,9 @@ async function fetchVoteSummary() {
         });
 
         // Save the vote summary to the local JSON file
-        const filePath = path.join(__dirname, "../lib/data/voteSummary.json");
+        const filePath = path.join(__dirname, "../lib/data/VoteSummary2025.json");
         await writeFile(filePath, JSON.stringify(voteSummary, null, 2));
-        console.log("voteSummary.json has been updated successfully!");
+        console.log("VoteSummary2025.json has been updated successfully!");
     } catch (error) {
         console.error("Error fetching vote summary:", error);
     }
