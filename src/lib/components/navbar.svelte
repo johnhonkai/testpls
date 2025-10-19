@@ -7,7 +7,7 @@ import { goto } from '$app/navigation';
 import { afterNavigate, beforeNavigate } from '$app/navigation';
 
 	import Fa from 'svelte-fa';
-  import { faStar , faWebAwesome , faChartSimple, faGlobe } from '@fortawesome/free-solid-svg-icons';
+  import { faStar , faWebAwesome , faChartSimple, faGlobe, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 beforeNavigate(() => {
   document.documentElement.classList.add('hover-disabled');
@@ -84,27 +84,34 @@ function handleClick(event, path) {
     </div>
 			  
 				<!-- Dropdown -->
-    <div
-      class="dropdown-menu absolute top-6 -right-50 w-[500px] bg-zinc-900 text-white shadow-xl rounded-lg
-      invisible opacity-0 group-hover:visible group-hover:opacity-100
-      transition-all duration-200 z-50"
-    >
-				  <div class="grid grid-cols-2 gap-4 p-4">
-					<!-- Left column -->
+				<div
+				  class="absolute top-5 -right-40 w-[250px] bg-zinc-900 text-white shadow-xl rounded-lg
+				  invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50"
+				>
+				  <div class="grid grid-cols-1 gap-4 p-4">
 
-					<a
-					href="/valk"
-					data-sveltekit-preload-data="hover"
-				  >
-					<div
-					class="bg-zinc-800 rounded-md p-4 h-full transition hover:bg-zinc-700 hover:shadow-md cursor-pointer"
-				  >
-					<div class="text-white font-semibold mb-1">Valkyrie Guide</div>
-					<p class="text-sm text-zinc-400">Learn more about your waifus here</p>
-				  </div>
-					</a>
-					<!-- Right column -->
 					<div class="flex flex-col gap-3">
+												<a
+						href="/valk"
+						data-sveltekit-preload-data="hover"
+					  >
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+
+						<div class="font-semibold">
+														        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-pink-400">
+          <Fa icon={faHeart} />
+		  Valkyrie Guide
+        </span>  
+
+
+						</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Learn about your waifus here</p>
+					  </div>
+					</a>
 						<a
 						href="/ar"
 						data-sveltekit-preload-data="hover"
@@ -123,7 +130,7 @@ function handleClick(event, path) {
 
 						</div>
 
-						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Overview of all AR teams.</p>
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Overview of all AR teams</p>
 					  </div>
 					</a>
 											<a
@@ -146,25 +153,7 @@ function handleClick(event, path) {
 						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Charater usage in a version</p>
 					  </div>
 											</a>
-											<a
-						
-						data-sveltekit-preload-data="hover"
-					  >
-					  <div
-						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
-					  >
-						<div class="font-semibold"> 
-							        <span 
-        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-teal-500">
-          <Fa icon={faWebAwesome} />
-		  Best Valkyries
-        </span>  
-							
-						</div>
-						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Coming Soon</p>
-					  </div>
 
-											</a>
 
 
 					</div>

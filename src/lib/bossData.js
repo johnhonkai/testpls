@@ -119,6 +119,7 @@ export const weatherList = {
   dominance: [
     {id: 'aponia', name: 'Aponia'},
     {id: 'domsk', name: 'Shadow Knight'},
+    {id: 'domtribunal', name: 'Cruising Tribunal'},
   
   ],
   extreme: [
@@ -275,8 +276,8 @@ export const bossData = {
     weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
   },  
   paros: {
-    name: 'Paros', 
-    mechanics: 'Paros has a freeze trauma mark. When the freeze trauma is filled, its shield will break and drop SD remnants. When transition phase ends, the shield will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
+    name: 'Meteoroid: Paros', 
+    mechanics: 'Paros has a freeze trauma mark. When freeze trauma is filled, its armor will shatter and drop SD remnants. When transition phase ends, the armor will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
     weakness: '', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Paros.png", 
@@ -695,6 +696,14 @@ export const bossData = {
       bosspic: "images/Bosses/Shadow Knight (SK).webp", 
       weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },  
+  domtribunal: {
+    name: 'Cruising Tribunal', 
+    mechanics: 'Transition phase: Destroy Justice Core to end phase early. Final phase: Gather mobs two times to destroy the boss.', 
+    weakness: 'Justice Core shield is immune to Elemental DMG.', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/tribunal.png", 
+      weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+  },   
   aka: {
     name: 'Argent Knight: Artemis', 
     mechanics: 'Starts with a BIO mob. AKA takes less damage while she is attacking, effect is disabled during time fracture. AKA has huge ignite trauma. When AKA is ignited, enter weakened state for 18 seconds, where she takes increased fire damage and most armor effects are disabled.', 
@@ -4138,6 +4147,40 @@ export const teamData = {
       }
     ],
   },
+
+        domtribunal: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1+',
+            pct: '90%',
+            bottext: "Highest Score: SS1 800, 6S 819, 9S 835"
+          }, 
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '44',
+            pct: '4%',
+            bottext: "Highest Score: S3 796, SS1 800, 9S 808"
+          }, 
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '50',
+            pct: '6%',
+            bottext: "Highest Score: 6S 807"
+          },                                                                                                                     
+        ]
+      }
+    ],
+  },
+
 }
 
 
