@@ -97,11 +97,6 @@
 
 
 
-html, body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 .custombg::before {
   background-image: url('/images/pls.svg'); /* Set the path to your image */
   background-size: cover;       /* Cover the entire container */
