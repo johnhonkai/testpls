@@ -145,7 +145,7 @@ const updateVoteCounts = (category) => {
             votes: counts[card.title] || 0,
         }));
     } else if (category === "Most Hype HI3-like HSR Character 2025") {
-        BestBoss = BestBoss.map((card) => ({
+        BestHSRRef = BestHSRRef.map((card) => ({
             ...card,
             votes: counts[card.title] || 0,
         }));
@@ -270,7 +270,7 @@ const confirmVote = async () => {
 
 
 const checkVotedStatus = async () => {
-  const categories = ["Best Valkyrie Design 2025", "Best Valkyrie Gameplay 2025", "Best Story Arc 2025", "Best Boss 2025"];
+  const categories = ["Best Valkyrie Design 2025", "Best Valkyrie Gameplay 2025", "Best Story Arc 2025", "Best Boss 2025","Most Hype HI3-like HSR Character 2025"];
   const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
   localStorage.setItem("voterId", voterId); // Save voterId in localStorage
 
