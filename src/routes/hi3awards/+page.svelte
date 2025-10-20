@@ -58,7 +58,7 @@
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6 mx-auto">
       {#each astralRings as ar}
         <a
-          href={`/ar/${ar.slug}`}
+          href={`/${ar.slug}`}
           class="group relative flex flex-col items-center rounded-2xl bg-zinc-900/80 hover:bg-zinc-800/90 transition p-4 shadow-md hover:shadow-lg"
         >
           <div class="w-36 h-20 sm:w-24 sm:h-24 mb-3 rounded-xl overflow-hidden bg-gray-800">
