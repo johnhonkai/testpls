@@ -734,11 +734,11 @@
                 <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" date="Nov 17" weather="Fire" bosspage="/boss?firekosma" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Paros.png" date="Nov 18" />
+                    <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" />
+                    <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp" />
+                </div>
     
 
             </div>  
