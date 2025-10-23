@@ -402,7 +402,7 @@
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
   <span class="font-semibold">Eternal Night</span>
-  <span class="font-normal">??? crystals</span>
+  <span class="font-normal"> 7680 crystals </span>
 </div>                        <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
                             <img src="https://i.imgur.com/92SkZUr.png" alt="HoRB" class="w-full h-full object-cover rounded-md" />
