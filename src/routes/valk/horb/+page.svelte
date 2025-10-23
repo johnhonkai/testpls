@@ -54,14 +54,22 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Heliadps from "$lib/components/lineup/heliadps.svelte";
 	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import Horbdlcdps from "$lib/components/lineup/horbdlcdps.svelte";
+	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
+	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
+	import Simpdps from "$lib/components/lineup/simpdps.svelte";
+	import Senadps from "$lib/components/lineup/senadps.svelte";
+	import Horbdps from "$lib/components/lineup/horbdps.svelte";
+	import Susannahdps from "$lib/components/lineup/susannahdps.svelte";
+	import Cedps from "$lib/components/lineup/cedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
     { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
   { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
- // { name: 'How to Play', short: 'howtoplay', icon: faBook },
+ { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
   { name: 'Rank Up', short: 'rank', icon: faStar },
@@ -137,6 +145,14 @@ function prevPage() {
 // Function to switch tabs
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
+}
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
 let isMobile = false;
@@ -350,8 +366,8 @@ function selectTabMobile(event) {
     {#if selectedTab === 'Overview'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
     <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-      <p class="text-sm sm:text-base">
-        <strong>Partially Updated For v8.5 (23 October 2025)
+      <p class="text-sm sm:text-base mb-4 sm:mb-0">
+        <strong>Updated For v8.5 (23 October 2025)
     </p>
     </div>
     <div>
@@ -359,30 +375,31 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/>Herrscher of Rebirth (HoRB) is a powerful Part 1 Physical DPS. She has a unique skill where she can use Ultimate again when she defeats an enemy with a non-Ultimate attack. 
+              <strong class="text-amber-400">Part 1: Physical DPS and Support</strong> 
           </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1 Physical Support</strong> <br/>HoRB is the backbone of Part 1 Physical teams, providing a wide range of buffs, including: <br/>
-              - 75% impair (DEF reduction) <br/>
-              - Increases team Crit Rate to 100% <br/>
-              - Crit DMG buff<br/>
-              - SP regen, faster rotation than HoS support, and more
-          </p>        
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Herrscher of Rebirth (HoRB) is a powerful Part 1 Physical DPS. She has a unique skill where she can use Ultimate again when she defeats an enemy with a non-Ultimate attack. </li>
+                <li>HoRB is the backbone support of Part 1 Physical teams, providing a wide range of buffs such as 75% impair (DEF reduction), 100% Crit Rate, Crit DMG buff and more.</li>
+          </ul>    
 
         <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">World Star DPS</strong> <br/>
-            HoRB is now brought back into the meta with the addition of her DLC, turning her into a World Star DPS. Her role also expands as a Part 2 support for the following teams:
+            HoRB is brought back into the meta with the addition of her Stellar Key DLC [Sea-Cleansing Floret], turning her into a World Star DPS. 
         </p>
-
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>As a DPS, she's just like other Part 2 valks: Good in optimal matchups, just decent everywhere else.  </li>
+                <li>It's expected for her bosses to only appear once or twice per patch, just like HoFinality.  </li>                
+                <li>HoRB role also expands as a Part 2 support for the following teams:</li>
+          </ul>    
 
       <p class="mt-4 text-sm sm:text-base">
         <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>
-        To Be Updated
+        In Abyss, HoRB does not provide any improvement on existing GoI teams. In Arena, HoRB has a lot of suspended animations, making her a good support for that mode.
       </p>
 
     <p class="mt-4 text-sm sm:text-base">
       <strong class="text-amber-400">World Star Support</strong> <br/>
-        To Be Updated
+        HoRB is a great World Star support. During AR Charging, she has near zero field time - she's basically like HoFi support but can still contribute damage and consume Stellar Drain.
     </p>
 
 
@@ -391,28 +408,47 @@ function selectTabMobile(event) {
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
 
         <p class="text-sm sm:text-base mt-4">
-          <strong class="text-amber-400">To Be Updated</strong> 
-          <br/>TBA
+          <strong class="text-amber-400">HoRB</strong> 
+          <br/>Currently there is no F2P way to get HoRB. She might be added to Battle Pass in a few versions. In 8.5, the only way to get HoRB is from 1680 b-chips pack, which is not cheap. 
         </p>
 
+        <p class="text-sm sm:text-base mt-4">
+          <strong class="text-amber-400">DLC Weapon</strong> 
+          <br/>In v8.5, I only recommended getting HoRB DLC Weapon:
+        </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>If you already have HoRB.  </li>
+                <li>After you get full gear Hi Love Elf. </li>
+                <li>BFD Coralie will return on Week 5-6. If you still don't have BFD and have enough crystal for her fullgear, then it's better to go BFD first than HoRB DLC. </li>
+
+          </ul>    
       
 
+
+        <p class="text-sm sm:text-base mt-4">
+          <strong class="text-amber-400">Old Equipment</strong> 
+          <br/>Do note that the old equipment is still used to support Part 1 teams, since the Stellar Key DLC locks HoRB in DPS form in Part 1 teams. But the only P1 Physical DPS teams that are still being used once every few months are Dreamweaver and HoSentience.
+        </p>
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Rebirth:</strong> Not available.</li>
-
-
+            <li ><strong>Herrscher of Rebirth:</strong> B-Chip Pack. HoRB will likely be added to Battle Pass in the near future.</li>
+              <li><strong>DLC Weapon:</strong> Equipment Supply</li>
+              <li><strong>DLC Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.5</li>
+              <li><strong>Old Equipment:</strong> Not available.</li>
         </ul>
         <div class="divider  "></div>
         <!-- Full Guide Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">STELLAR KEY GAMEPLAY</h2>
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
+        <p class="mt-2 text-sm sm:text-base pb-4">
+            Check out the full guide on YouTube:
+        </p>
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/GKAAdGBc918"
+                  src="https://www.youtube.com/embed/J5paWnhog48"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -427,12 +463,102 @@ function selectTabMobile(event) {
   {#if selectedTab === 'Lineup'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
-  <section class="max-w-(--breakpoint-lg) mx-auto ">
+<section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-4 
+            w-full max-w-4xl mx-auto">
+  <button
+    on:click={() => setLineup('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DPS
+  </button>
 
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> TO BE UPDATED </div>
 
 
+  <button
+    on:click={() => setLineup('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm leading-3 
+      ${activeLineup === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    GRAIL OF INFINITUDE
+  </button>
 
+  <button
+    on:click={() => setLineup('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    WORLD STAR
+  </button>
+
+  <button
+    on:click={() => setLineup('4')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '4' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    P1 PHYSICAL
+  </button>
+
+</div>
+
+      {#if activeLineup === '1'}
+      <Horbdlcdps></Horbdlcdps>
+
+      {/if}
+
+      {#if activeLineup === '2'}
+
+      <Hilovedps></Hilovedps>
+
+      <div class="divider"></div>
+
+      <Heliadps></Heliadps>   
+
+      {/if}
+
+      {#if activeLineup === '3'}
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
+       <Senadps></Senadps> 
+
+      {/if}
+
+      {#if activeLineup === '4'}
+      <Horbdps></Horbdps>
+
+      <div class="divider  "></div>
+
+      <P1physical></P1physical>
+
+      <div class="divider  "></div>
+
+      <Susannahdps></Susannahdps>
+
+      <div class="divider  "></div>
+
+      <Cedps></Cedps>
+
+
+      {/if}
 
 </section>
 
@@ -440,11 +566,68 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">EQUIPMENT</h2>
- 
+
+            <div>
+
+
+              <h2 class="text-xl font-semibold text-center  text-yellow-400 mt-4">BEST FOR PART 2</h2>
+
+              <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/50494840/2dacd8042bd4d81395db9116b2ab5374_7484074093435819987.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/fad3e7d000a2052086eea1708d818d04_8868426486462767089.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/7ba55bf106e05b3a42d40b27e04eb1aa_6525175215949766599.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/ade0b97ed5b28ef445cea9ac213c84c4_2181198158046883051.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white">Sea-Cleansing Floret: Reciprocity + Aristophanes</h4>
+              </div>
+
+              <div class="p-4 mt-4 bg-gradient-to-r from-orange-950/75 to-orange-900/75 rounded">
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Sea-Cleansing Floret: Reciprocity</b><br/> - You need this weapon to unlock Astral Ring for HoRB.<br/>
+                  - Major gameplay changes to HoRB. <br/>
+                  - HoRB stays in Soul Shaper form in Grail of Infinitude teams. HoRB stays in Life Binder form in other teams. <br/>
+                  - Huge self buffs and team buffs. 
+                </p>
+              
+                <p class="text-sm sm:text-base text-left mb-4">
+                  <b>Aristophanes </b><br/>  - Huge self buffs and team buffs. <br/> 
+                  - Grants HoRB tons of Crit Rate, Crit DMG and Shieldbreak.<br/> 
+                  - Forgeable in Foundry.
+                </p>
+  
+              
+                <p class="text-sm sm:text-base text-left">
+                  <b>Affix</b><br/> Full ATK.
+                </p>
+              </div>
+  
+
+
+      </div>
+
+      
+      <div class="divider  "></div>
+
+
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400 mt-4">BEST FOR DPS and GENERAL SUPPORT</h2>
+              <h2 class="text-xl font-semibold text-center  text-gray-400 mt-4">BEST FOR PART 1 DPS AND GENERAL SUPPORT</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
@@ -496,7 +679,7 @@ function selectTabMobile(event) {
       
       <div class="divider  "></div>
 
-      <h2 class="text-lg sm:text-xl font-semibold text-center  text-sky-400"> FOR BLEED TEAMS </h2>
+      <h2 class="text-lg sm:text-xl font-semibold text-center  text-gray-400"> BEST FOR PART 1 BLEED TEAMS </h2>
 
       <div class="flex flex-col justify-center items-center">
           
@@ -576,34 +759,600 @@ function selectTabMobile(event) {
      {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r  from-blue-700 to-blue-500 text-white rounded px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
-      <div class="flex justify-center gap-4 my-6">
-          <button
-            on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            LIFE BINDER
-          </button>
-        
-          <button
-            on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            DECAY ONLY
-          </button>
+<div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-3 
+            w-full max-w-4xl mx-auto">
+  <button
+    on:click={() => setPlaystyle('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DLC: Stellar Outburst
+  </button>
 
-          <button
-          on:click={() => setPlaystyle('3')}
-          class={`px-4 py-2 font-semibold rounded ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-          SOUL SHAPER
-        </button>
+  <button
+    on:click={() => setPlaystyle('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DLC: AR Charging
+  </button>
 
-        </div>
-      
+  <button
+    on:click={() => setPlaystyle('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DLC: Nuke Build
+  </button>
+
+
+
+  <button
+    on:click={() => setPlaystyle('4')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '4' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    Life Binder
+  </button>
+
+
+
+   <button
+    on:click={() => setPlaystyle('6')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '6' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    Soul Shaper
+  </button>
+  
+  <button
+    on:click={() => setPlaystyle('5')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '5' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    Decay Only
+  </button>
+
+</div>
         {#if activePlaystyle === '1'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">DPS FORM PLAYSTYLE</h2> 
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">DLC: Stellar Outburst Playstyle
+</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          DPS Form standard playstyle
+          This playstyle is only for HoRB with Stellar Key weapon.
+        </p>
+
+        <div class="divider  "></div>
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Decay </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Shared Destiny ➔ Rising Sun </p>
+             
+            </div>
+          </div>
+          
+        </div>
+        <div class="p-2 mt-3 rounded" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
+              <li class="text-sm sm:text-base"> <span class="text-teal-300">Decay</span> gives damage buff and reduces Stellar Outburst cooldown.  <span class="text-orange-300">Shared Destiny</span> makes your Ult stronger. <span class="text-red-300">Rising Sun</span> gives Resonance DMG +20%. </li>
+              <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Decay). You can get all three Ego signets by using Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+          
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+               <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
+              </div>   
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+
+        <div class="p-2 mt-3 rounded" >
+          <ul class="list-disc px-4 text-sm sm:text-base">
+            <li class="text-sm sm:text-base"> <span class="text-red-300">Decimation 1</span>: V8.5 ER has a load buff that constantly reduce your HP, this helps you maximize Decimation 1 buff and damage proc. After v8.5, if there is no ER effect that helps keep your HP low, then it's better to use Decimation 2, or other signets.</li>
+          </ul>
+        </div>
+
+            <div class="divider  "></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Activate Stellar Outburst.</li>
+          <li>Do full Basic ATK sequence, repeat two more times (total 3 times). You can stop early to finish the last wave / boss with Ultimate.</li>
+          <li>Use Ultimate.</li>
+          <li>Attack a bit until Stellar Outburst is ready again.</li>
+          <li>Repeat.</li>
+          <li>Optional: If you have initial sp signet, at the start, you can do evade ➔ ultimate for a lil extra damage.</li>
+        </ol>
+
+        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/H2uWWoAKpEY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        {/if}
+
+                {#if activePlaystyle === '2'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">DLC: Nuke Build
+</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          This playstyle is only for HoRB with Stellar Key weapon. This is a speedrun build. It is very rng-heavy, you will waste more time resetting for optimal signets than doing the actual run. Worth to try if you want to flex sub one minute run on your friends.
+        </p>
+
+        <div class="divider  "></div>
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Shared Destiny + Decay</p>
+            </div>
+          </div>
+          
+        </div>
+          <div class=" mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                Both Ego signets are very important. Shared Destiny makes your Ult stronger. Decay gives damage, and allows normal evasion to trigger evasion skill. In 8.5, evasion skill is also important to trigger the extra damage from load buff.
+                </p>
+            </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+          
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-sm sm:text-lg ">Initial SP</p>
+              </div>    
+
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+              
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+
+          <div class=" mt-3 rounded" >
+            <p class="text-sm sm:text-base text-left">
+                You want to get Gold signet initial sp as early as you can to immediately use Ult at the start.
+                </p>
+            </div>
+
+            <div class="divider  "></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="SA" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="BR" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Use Ultimate.</li>
+          <li>Weapon / Evade / Both. </li>
+          <li>If an enemy dies, Ult will refresh, use Ult. If this is a boss, then you can use Combo ATK or activate Stellar Outburst and attack normally. See which one is faster.</li>
+           <li>In 8.5, pick Setsuna-Infinity load buff - using weapon + evade + ult will deal damage.</li>
+       
+        </ol>
+
+        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/n28Aj7_cMZE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        {/if}
+
+        {#if activePlaystyle === '3'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">DLC: AR Charging Playstyle</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          This playstyle is only for HoRB with Stellar Key weapon. This is basically the same as regular Life Binder gameplay without the initial Soul Shaper form setup.
+        </p>
+
+        <div class="divider  "></div>
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded items-center w-fit  bg-gradient-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Soothingness ➔ Decay</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Shared Destiny ➔ Spirits</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="p-2 mt-3 rounded" >
+                            <ul class="list-disc px-4 text-sm sm:text-base">
+              <li class="text-sm sm:text-base">  <span class="text-orange-300">Shared Destiny</span> makes your Ult stronger. <span class="text-teal-300">Spirits</span> gives Physical DMG +20%.</li>                
+              <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+              <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Soothingness), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+                            </ul>
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+          
+            <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1 or 2</p>
+              </div>  
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+        <div class="p-2 mt-3 rounded" >
+          <ul class="list-disc px-4 text-sm sm:text-base">
+
+            <li class="text-sm sm:text-base"> <span class="text-red-300">Decimation 1</span>: V8.5 ER has a load buff that constantly reduce your HP, this helps you maximize Decimation 1 buff and damage proc. After v8.5, if there is no ER effect that helps keep your HP low, then it's better to use Decimation 2, or other signets.</li>
+          </ul>
+        </div>
+
+
+
+            <div class="divider  "></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Teri" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Himeko" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                  <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Teri" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Himeko" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Teri" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Himeko" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Forbidden_Seed.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/Boundless_Logos.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+            </div>
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+            <div class="flex flex-col items-center p-1 rounded relative border border-slate-500 ">
+                <div class="flex flex-row rounded">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+
+          <li>Weapon ➔ Joint Weapon (Spin).</li>
+          <li>Combo ATK ➔ Joint Combo.</li>
+          <li>Use Ultimate whenever available.</li>
+          <li>Repeat.</li>
+        </ol>
+
+        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/WeV1aGlQ56k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        {/if}
+        {#if activePlaystyle === '4'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Life Binder Form Playstyle</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          DPS form standard playstyle
         </p>
 
         <div class="divider  "></div>
@@ -631,11 +1380,11 @@ function selectTabMobile(event) {
           
         </div>
         <div class="p-2 mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
               <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
               <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Soothingness), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-          </p>
-          </div>
+          </ul>
+        </div>
 
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -768,8 +1517,8 @@ function selectTabMobile(event) {
             </iframe>
         </div>
         {/if}
-        {#if activePlaystyle === '2'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">DECAY ONLY BUILD</h2> 
+        {#if activePlaystyle === '5'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Life Binder: Decay Signet Only</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Speedrun build using only Decay Ego signet. This run abuses Decimation 1 nuke. HoRB has high HP, and Decimation 1 damage increases the more HP you're missing = Big Nuke. Recommended for full gear HoRB.
         </p>
@@ -932,8 +1681,8 @@ function selectTabMobile(event) {
         </div>
         {/if}
 
-        {#if activePlaystyle === '3'}
-        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">SOUL SHAPER PLAYSTYLE</h2> 
+        {#if activePlaystyle === '6'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Soul Shaper Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Support Form standard playstyle
                 </p>
@@ -964,10 +1713,11 @@ function selectTabMobile(event) {
 
 
         <div class="p-2 mt-3 rounded" >
-          <p class="text-sm sm:text-base text-left">
+                            <ul class="list-disc px-4 text-sm sm:text-base">
+
             <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
             <li class="text-sm sm:text-base"> Normal mode: Try to start with both Spirits and Rising Sun. Spirits enable the playstyle, and Rising Sun gives big damage, gathers enemies, and synergizes with signets: Recover and consume sp (Gold 1 and 2), recover HP (Decimation 2), and gives hitcount (Bodhi 1 and 2). You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
-        </p>
+                            </ul>
           </div>
           
         </div>
@@ -1132,7 +1882,7 @@ function selectTabMobile(event) {
           <!-- Support Upgrade Box -->
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
-            S2: Allows you to skip Combo ATK for sp to use Ultimate. Speeds up rotation and improves score.
+            S2: In Part 1 team, allows you to skip Combo ATK for sp to use Ultimate. Speeds up rotation and improves score.
 
           </div>
         </div>
@@ -1170,7 +1920,7 @@ function selectTabMobile(event) {
                   - Team Total DMG + 7% ➔ 17% for 16s
 
                 </td>
-                <td>Support<br/><b>Recommended!</b> You don't have to use Combo ATK for sp</td>
+                <td>Part 1 Support</td>
               </tr>
               <tr>
                 <td>S3</td>
@@ -1257,7 +2007,7 @@ function selectTabMobile(event) {
                 - Triggering time fracture for the first time restores 15 ➔ 30 sp extra sp for HoRB<br/>
                 - Team Total DMG + 7% ➔ 17% for 16s
               </p>
-              <p class="mt-2"><strong>Good for:</strong> Support. <b>Recommended!</b> You don't have to use Combo ATK for sp to use Ultimate.</p>
+              <p class="mt-2"><strong>Good for:</strong> Part 1 Support</p>
             </div>
           </div>
 
@@ -1354,14 +2104,14 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-4">
           <!-- Video 1 with title and description -->
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB Part 2 DPS and Support</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 4:27</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">DPS starts at 1:17, SUP starts at 3:27</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/xBoYcLBsnZ0"
+                  src="https://www.youtube.com/embed/J5paWnhog48"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1381,7 +2131,29 @@ function selectTabMobile(event) {
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB DPS</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB Part 2 DPS and Support</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Starts at 4:51. Will update in the future with live abyss runs</p>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+            loading="lazy" 
+
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/J5paWnhog48"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+
+    </div>
+      <div class=" gap-6 mt-5 mb-10">
+
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">HoRB Part 1 DPS</h2>
 
           <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoRB DPS with the new support Reign Solaris vs Starless Shadow Knight</p>
 
@@ -1400,7 +2172,6 @@ function selectTabMobile(event) {
       </div>
 
     </div>
-
   {/if}
   
   {#if selectedTab === 'Question'}
@@ -1457,48 +2228,44 @@ function selectTabMobile(event) {
 
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">SUPPORT BUFFS</h2>
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp"
-          alt="Buff 1"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%20(1).webp')}
-        />
-      </div>
 
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp"
-          alt="Buff 2"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/HoH%20Buff%202.webp')}
-        />
-      </div>
             
-      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4 mt-10">
-        <p class="mb-4 font-semibold">How to activate HoH support buffs:</p>
-        
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">AR Regen</p>
-            <p>- Weapon skill that triggers Ego Blossom will consume Stellar Drain. (When weapon button is flashing, casting weapon will trigger Ego Blossom).
-              <br/>
-              - In Law of Ascension team, QTE also restore AR.
-            </p>
-          </div>
+      <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
+        <h3 class="text-lg sm:text-xl font-bold text-center">
+          How to Activate HoRB Support Buffs (Part 2 Teams)
+        </h3>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
+          <p class="leading-relaxed">
+            Combo ATK or Joint Weapon consumes Stellar Drain.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Aristophanes Stigma Buff</h4>
+          <p class="leading-relaxed">
+            - Life Binder form: Any attack from HoRB will trigger an important stigma buff <span class="text-sky-200 italic">[xxx]</span> for 25s.
+            <br/>
+            - Soul Shaper form (Grail of Infinitude team): Casting Ultimate triggers an important stigma buff <span class="text-sky-200 italic">[xxx]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+          </p>
+        </div>
 
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">Solon Stigma</p>
-           <p>Casting weapon or Charged ATK triggers an important stigma buff [Ego's Devotion] for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
-          </div>
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Grail of Infinitude Buff</h4>
+          <p class="leading-relaxed">
+            - During AR Charging, casting Ult and consuming extra sp will activate a buff for 25s: Team Total DMG +0.3% x the extra sp consumed.
+            <br/>
+            - When Joint Combo hits a target or after casting Joint Weapon, Withering Fissure DEF reduction is increased to 55%, and enemies with Withering Gap take 10% more Physical DMG and 5% more Elemental DMG.
+          </p>
+        </div>        
 
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Passive</p>
-            <p>The rest of her buffs are activated passively.</p>
-          </div>
-
-
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
+          <p class="leading-relaxed">
+            The rest of her buffs are activated passively.
+          </p>
+        </div>
       </div>
 
       <!-- Lightbox Component -->

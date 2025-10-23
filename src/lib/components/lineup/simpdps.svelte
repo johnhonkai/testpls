@@ -5,13 +5,15 @@
     const mainCharacters = [
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
+        { name: 'HORB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', teampct: '98.7%', speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '98%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '98%', speed: '' },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '97%', speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '95%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '88%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '82%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '76%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '76%', speed: 'Slow' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  speed: '' },
 
 
     ];
@@ -24,7 +26,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'Sparkle'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -55,10 +57,7 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
         {/if}
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
-            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
+
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -78,15 +77,29 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base mb-4"><b>Sparkle</b> provides two more Qua collapse, extra TDM +8.5% (S) / 10% (SS2) buff for QUA teammates against QUA enemies. Her ult cd reduction also allows SIMP to use her Ult one more time during Stellar Outburst. For these reasons, Sparkle has become one of the best teammates against Qua enemies like Valralhal and Resonance Vita.</li>
-                <li class="text-sm sm:text-base mb-4"><b>Vita</b> provides Elemental Breach (Ele res reduction) and other strong buffs, gives a significant damage improvement.</li>
-                <li class="text-sm sm:text-base mb-4"><b>HoFi</b> triggers resonance marks very fast and provides good amount of buffs.</li>
-                <li class="text-sm sm:text-base mb-4"><b>Senadina</b>  also provides Breach, and when paired with Songque AstralOp, you gain +25 more initial AR. </li>
-                <li class="text-sm sm:text-base mb-4">The pairings used in Top 100 are Sparkle + Thelema, and Vita + HoFi (Data based on Resonance Vita). Other pairings are still very good for Red Lotus and Nirvana retention.</li>
-                <li class="text-sm sm:text-base mb-4">During Stellar Outburst, Homu becomes resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, Sparkle)</li>
-                <li class="text-sm sm:text-base">During Stellar Outburst, Homu mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
+
+            <p class="text-sm sm:text-base mb-4">
+                SIMP best teams are usually <br/>
+                - Thelema + Sparkle <br/>
+                - Vita + another support
             </p>
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Sparkle</b><br/> 
+                Provides two more Qua collapse, extra TDM +8.5% (S) / 10% (SS2) buff for QUA teammates against QUA enemies.
+            </p> 
+            <p class="text-sm sm:text-base mb-4">
+                <b>Fast Reso Trigger</b><br/> HoFI and Badum can trigger resonance marks very fast.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Herrscher of Rebirth</b><br/> During AR Charging, HoRB has near zero field time. She's basically HoFi but can contribute damage and can consume Stellar Drain in the back.
+            </p> 
+
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Songque AstralOp</b><br/> When using Songque AstralOp, if you have Sena support, gain initial AR +25.
+            </p> 
         </div>
     </details>
 </div>

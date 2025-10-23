@@ -5,13 +5,12 @@
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '99%', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '93%', speed: '' },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '93%', speed: 'Slow' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '91%', speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '94%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '90%', speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '85%', speed: '' },
 
     ];
 
@@ -24,15 +23,18 @@
 
     // Pass the index or name of the first character to the reusable component
     export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let secondCharName: string = 'Sena'; // default to 'Vita'
+
     export let maindps: boolean = false;
-    
+
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
-
-
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Sena' && char.name !== 'Vita'
+);
 
 </script>
 
@@ -50,10 +52,13 @@
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
 
-
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
         <!-- Plus Icon shown only if maindps is true -->
@@ -63,7 +68,7 @@
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -76,14 +81,16 @@
 
 
     <details class="group rounded-md my-2 overflow-hidden">
-        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 	 hover:transition-colors hover:duration-200">
+        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 hover:transition-colors hover:duration-200">
             Details
         </summary>
         <div class="py-3 px-4">
-        <p class="text-sm sm:text-base">
-            <li class="text-sm sm:text-base">Currently, there is no live abyss data for Thelema DPS with Vita support. Vita's percentage is purely based on simple dmg test.</li>
-        </p>
-                       
-        </div>
-    </details> 
+
+             <p class="text-sm sm:text-base mb-4">
+                Thelema's best teammates are Breach Provider (Vita / Sena) + Hi Love Elf. 
+                We don't have live Abyss data for Thelema in 8.5, but a lot of CN Beta players agreed that Hi Love Elf provides the biggest buff for Thelema right now.
+            </p>
+
+    </div>
+    </details>
 </div>

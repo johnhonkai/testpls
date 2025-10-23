@@ -7,11 +7,11 @@
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '98%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '94%', speed: '' },
+        { name: 'HLE', image: "/images/valkportrait/Elysia Hi Love Elf.png", teampct: '96%', speed: '' },
+
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '80%', speed: 'Slow' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '78%', speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '95%', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '94%', speed: '' },
 
     ];
 
@@ -74,29 +74,29 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base"> 
-                Jovial Deception lineup has a bit of complexity to it.
 
+            <p class="text-sm sm:text-base"> <b>Note</b><br/>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li class="text-sm sm:text-base">At S-rank, Lantern > Sena > Vita support. (Data based on SD Epernay).</li>
                 <li class="text-sm sm:text-base">At SS+ ranks, Vita > Lantern > Sena support. (Data based on SD Epernay).</li>
                 <li class="text-sm sm:text-base">Against Ranged Kalpas, Lantern is important to break hitcount phase, and becomes a double dps with JD.</li>
-                <li class="text-sm sm:text-base">Against SD enemies, Sena support also contributes dmg.</li>
+                <li class="text-sm sm:text-base">Against SD enemies, HiLoveElf or Sena support contributes dmg.</li>
                 <li class="text-sm sm:text-base">Thelema provides shieldbreak (common against Phy enemies), freeze (used against Ranged Kalpas), and can spam evasion AR regen.</li>  
-            
+          </ul>
                 
                 <br/>
-                <li class="text-sm sm:text-base"> <b>Crit Rate:</b> Serapeum AstralOp (S0-rank) ensures that all JD attacks will crit (technically it maxes at 30% Crit Rate but it's way more than enough). Without the Crit conversion from Serapeum, having two supports that provide Crit Rate such as Lantern, Sena, Vita or SIMP are more valuable. However, for most casual players, JD is still fine with only one support that provides Crit Rate, since most of JD's important attacks (Ult, Combo, Weapon) already have boosted Crit Rate.</li>            
+                <p class="text-sm sm:text-base"> <b>Crit Rate</b><br/>
+                     Serapeum AstralOp (S0-rank) ensures that all JD attacks will crit (technically it maxes at 30% Crit Rate but it's way more than enough). Without the Crit conversion from Serapeum, having two supports that provide Crit Rate such as Lantern, Sena, Vita or SIMP are more valuable. However, for most casual players, JD is still fine with only one support that provides Crit Rate, since most of JD's important attacks (Ult, Combo, Weapon) already have boosted Crit Rate.
+                </p>            
 
                 <br/>
-                <li class="text-sm sm:text-base"> <b>Elemental Breach State Conversion: </b>  JD has a unique passive: When JD is in Elemental Breach state, if Crit Rate &gt; 100%, gain Physical DMG +33%. If Crit Rate &lt; 100%, gain 22% Crit Rate and Total DMG +22%. So far, the only Part 2 supports that can provide Elemental Breach state are Senadina and Vita.
-                </li>
+                <p class="text-sm sm:text-base"> <b>Elemental Breach State Conversion </b> <br/>
+                      JD has a unique passive: When JD is in Elemental Breach state, if Crit Rate &gt; 100%, gain Physical DMG +33%. If Crit Rate &lt; 100%, gain 22% Crit Rate and Total DMG +22%. So far, the only Part 2 supports that can provide Elemental Breach state are Senadina and Vita.
+                </p>
                 
                 <br/>
-                <li class="text-sm sm:text-base"> <b>Fastest opener: </b>   With SS-rank Serapeum AstralOp, S2 Thelema + Lantern supports provide the fastest opener to get Stellar Outburst on first rotation. This only matters for Top 50 players.
-                         
-                </li>   
-
-            </p>
+                <p class="text-sm sm:text-base"> <b>Fastest opener </b> <br/>   With SS-rank Serapeum AstralOp, S2 Thelema + Lantern supports provide the fastest opener to get Stellar Outburst on first rotation. This only matters for Top 50 players.
+                </p>
         </div>
     </details>
 </div>

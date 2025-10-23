@@ -50,19 +50,29 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 	import Vitadps from "$lib/components/lineup/vitadps.svelte";
-	import Newelydps from "$lib/components/lineup/newelydps.svelte";
+	import Newelydps from "$lib/components/lineup/hilovedps.svelte";
 	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import Horbdps from "$lib/components/lineup/horbdps.svelte";
+	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
+	import Simpdps from "$lib/components/lineup/simpdps.svelte";
+	import Senadps from "$lib/components/lineup/senadps.svelte";
+	import Horbdlcdps from "$lib/components/lineup/horbdlcdps.svelte";
+	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
+	import Hohdps from "$lib/components/lineup/hohdps.svelte";
+	import Jddps from "$lib/components/lineup/jddps.svelte";
+	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
+	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
-//  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
-//  { name: 'Elysian Realm', short: 'er', icon: faFire },
-//  { name: 'Rank Up', short: 'rank', icon: faStar },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
@@ -137,6 +147,15 @@ function prevPage() {
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
 }
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
+}
+
 
 let isMobile = false;
 
@@ -356,11 +375,12 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">BETA</strong> 
+              <strong class="text-amber-400">Lovely Ice DPS </strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>To Be Added</li>
-
+                <li><span class="text-pink-300 italic">Hi ♪ captain ♥ It's me, the brand new Elysia~</span></li>
+                <li>Hi ♪ Love Elf ♥ (HLE) is an Ice DPS that can create domain expansion <span class="text-pink-300">Love's Expanse</span>, blooming all over the enemies and me.</li>
+                <li>Just like all Part 2 valks, HLE is great in her optimal match-ups, but just decent everywhere else.</li>
           </ul>        
           
             <p class="mt-4 text-sm sm:text-base">
@@ -369,18 +389,44 @@ async function increaseLike() {
             </p>   
 
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>To Be Added</li>
-
-
+                <li>Freeze trauma.</li>
+                <li>As a Stardust (SD) character, HLE has various counters against SD enemies: Can force trigger critical index, generate extra SD remnants, reduce the duration of consolidated form, and SD remnants deal 5% more dmg to Max HP.</li>
           </ul> 
 
+                      <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Grail of Infinitude Support</strong>
+              <br/>
+              So far, HLE does not provide any improvement on existing <a class="link" href="/valk/horb">Planar Armament</a> teams.
+            </p>   
+          
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support</strong>
+              <br/>
+              HLE is used by <a class="link" href="/valk/sena">Senadina</a> and <a class="link" href="/valk/horb">Herrscher of Rebirth</a> to counter SD enemies.
+            </p>   
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Wheel of Destiny Support</strong>
+              <br/>
+              Currently we lack live Abyss data. Based on beta, HLE might be one of the new best supports for <a class="link" href="/valk/thelema">Thelema</a> and <a class="link" href="/valk/hoh">Herrscher of Human</a>.
+            </p>   
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Cons</strong>
+              <br/>
+              Despite being an archer character, HLE cannot target enemy's weak spot (like MHT-3B tank). That means the other Elysia - <a class="link" href="/valk/hoh">Herrscher of Human</a> - will still be required to counter tank.
+            </p>   
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get New Elysia in v8.5.
+              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get New Elysia in v8.5. You should be able to get her with all the 8.5 freebies. 
             </p>
-            
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Longer Explanation</strong> <br/> Recommended to get HLE in v8.5 if you can guarantee valk + weapon, preferably within the first week of v8.5 to get the most value out of her DPS role, because her bosses will appear more frequently during the first 3-4 weeks. After that, she will be used as support more often.
+            </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -394,13 +440,13 @@ async function increaseLike() {
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
           <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out her gameplay
+            Check out the full guide on YouTube:
         </p>
   
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/eZZHr9euFbw"
+                  src="https://www.youtube.com/embed/hwDgn8J1dkc"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -417,22 +463,96 @@ async function increaseLike() {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-4 
+            w-full max-w-4xl mx-auto">
+  <button
+    on:click={() => setLineup('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DPS
+  </button>
 
 
 
+  <button
+    on:click={() => setLineup('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm leading-3 
+      ${activeLineup === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    GRAIL OF INFINITUDE
+  </button>
 
-      {#if currentPage === 1}
+  <button
+    on:click={() => setLineup('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    WHEEL OF DESTINY
+  </button>
 
-      <Newelydps></Newelydps>
-      
+    <button
+    on:click={() => setLineup('4')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '4' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    WORLD STAR
+  </button>
+</div>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Grail of Infinitude Support </div>
-
-      <Heliadps></Heliadps>
+      {#if activeLineup === '1'}
+      <Hilovedps></Hilovedps>
 
       {/if}
 
+      {#if activeLineup === '2'}
+      <Heliadps></Heliadps>      
+      {/if}
 
+      {#if activeLineup === '3'}
+      
+      <Hohdps></Hohdps>
+      
+      <div class="divider"></div>
+
+      <Jddps></Jddps>
+
+      <div class="divider"></div>
+
+      <Lanterndps></Lanterndps>
+
+      <div class="divider"></div>
+
+       <Thelemadps></Thelemadps>    
+      {/if}
+
+      {#if activeLineup === '4'}
+      
+      <Horbdlcdps></Horbdlcdps>
+      
+      <div class="divider"></div>
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
+       <Senadps></Senadps>     
+      {/if}
 </section>
 
   {/if}
@@ -450,23 +570,23 @@ async function increaseLike() {
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
           <div class="w-20 h-20 sm:w-28 sm:h-28">
-            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/07/07/50494840/6a401c362e7461e42bab35a5f693745f_4243039532604930517.png" alt="Rainbow" class="w-full h-full object-cover">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/50494840/7084c24f9a180d4134dfdbbcedb0e519_2837778973542954242.png" alt="Rainbow" class="w-full h-full object-cover">
         </div>
 
         <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/07/08/50494840/793f95fbd6c97934615e2c0b23025b3c_4633655109733764781.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/f69aef9d7978e0fc42e3c9dc4bbc789e_7109954917620704708.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/07/07/9917988/115c9a864ab7a762851b8258af7ed117_2095494118300504270.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/07/9809137/c967405c380d313b8a7e498226a24e5b_6708046003772475196.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/07/07/9917988/bf46067e70680f45889af692b161c378_8020445528245300141.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/0b0aa7d5f6017abd8010a02c1728c44a_3920350585847776207.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
         </div>  
-        <h4 class="text-base sm:text-base text-white"> Draconic Sky-Scorching Fury: Ultra! + Coralie stigma set</h4>
+        <h4 class="text-base sm:text-base text-white"> Pure Love's Whisper + Blissful Days set</h4>
         </div>
 
 
@@ -477,14 +597,14 @@ async function increaseLike() {
 
 
 
-      <div class="p-4 mt-4 bg-linear-to-r from-orange-950/75 to-orange-900/75 rounded-sm">
+      <div class="p-4 mt-4 bg-linear-to-r from-pink-950/75 to-pink-900/75 rounded-sm">
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Draconic Sky-Scorching Fury: Ultra!</b><br/> - Best weapon for BFD, huge self buffs and team buffs.
-          <br/>- Gives 45% more ignite trauma inflict rate.
+          <b>Pure Love's Whisper</b><br/> - Best weapon for HLE, huge self buffs and team buffs.
+          <br/>- Important utility during AR Charging: After casting weapon skill, gives enough sp to do full charge Ult.
         </p>
 
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Coralie stigma set</b><br/> - Huge buffs. Physical / Elemental Breach state is stronger when signature stigma is equipped.
+          <b>Blissful Days set</b><br/> - Huge buffs.
           <br/> - Forgeable in Foundry.
         </p>
 
@@ -499,7 +619,7 @@ async function increaseLike() {
       <div class="divider  "></div>
 
 <div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - BFD DPS</h2>
+  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HLE DPS</h2>
   <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
     <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
       <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
@@ -511,30 +631,35 @@ async function increaseLike() {
       </thead>
       <tbody class="divide-y divide-gray-700">
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn3</td>
-          <td class="p-3 text-right">36,443,072</td>
-          <td class="p-3 text-right text-teal-400">107.12%</td>
+          <td class="p-3">Pure Love's Whisper  Syn3</td>
+          <td class="p-3 text-right">50,019,712</td>
+          <td class="p-3 text-right text-teal-400">107.43%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn2</td>
-          <td class="p-3 text-right">35,137,216</td>
-          <td class="p-3 text-right text-teal-400">103.28%</td>
+          <td class="p-3">Pure Love's Whisper   Syn2</td>
+          <td class="p-3 text-right">48,280,960</td>
+          <td class="p-3 text-right text-teal-400">103.70%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn1 </td>
-          <td class="p-3 text-right">34,021,952</td>
+          <td class="p-3">Pure Love's Whisper   Syn1 </td>
+          <td class="p-3 text-right">46,557,184</td>
           <td class="p-3 text-right text-teal-400">100.00%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Blast Hammer Syn3</td>
-          <td class="p-3 text-right">21,996,416</td>
-          <td class="p-3 text-right text-amber-400">64.65%</td>
+          <td class="p-3">Domain of Ego</td>
+          <td class="p-3 text-right">34,213,056</td>
+          <td class="p-3 text-right text-amber-400">73.49%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Calm Baby Syn3</td>
-          <td class="p-3 text-right">21,211,840</td>
-          <td class="p-3 text-right text-amber-400">62.35%</td>
-        </tr>
+          <td class="p-3">Flawless Benediction Syn2</td>
+          <td class="p-3 text-right">34,163,968</td>
+          <td class="p-3 text-right text-amber-400">73.38%</td>
+        </tr>        
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Whisper of the Past</td>
+          <td class="p-3 text-right">32,684,032</td>
+          <td class="p-3 text-right text-amber-400">70.20%</td>
+        </tr>        
       </tbody>
     </table>
   </div>
@@ -543,7 +668,7 @@ async function increaseLike() {
        <div class="divider  "></div>
 
 <div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - PAWS Support</h2>
+  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HoRB Support</h2>
   <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
     <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
       <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
@@ -555,30 +680,35 @@ async function increaseLike() {
       </thead>
       <tbody class="divide-y divide-gray-700">
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn3</td>
-          <td class="p-3 text-right">42,224,768</td>
-          <td class="p-3 text-right text-teal-400">104.17%</td>
+          <td class="p-3">Pure Love's Whisper  Syn3</td>
+          <td class="p-3 text-right">46,633,344</td>
+          <td class="p-3 text-right text-teal-400">103.50%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn2</td>
-          <td class="p-3 text-right">41,446,784</td>
-          <td class="p-3 text-right text-teal-400">102.25%</td>
+          <td class="p-3">Pure Love's Whisper   Syn2</td>
+          <td class="p-3 text-right">45,853,376</td>
+          <td class="p-3 text-right text-teal-400">101.77%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Draconic Sky  Syn1 </td>
-          <td class="p-3 text-right">40,536,000</td>
+          <td class="p-3">Pure Love's Whisper   Syn1 </td>
+          <td class="p-3 text-right">45,055,104</td>
           <td class="p-3 text-right text-teal-400">100.00%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Blast Hammer Syn3</td>
-          <td class="p-3 text-right ">36,056,000</td>
-          <td class="p-3 text-right text-blue-400">88.95%</td>
+          <td class="p-3">Flawless Benediction Syn2</td>
+          <td class="p-3 text-right">40,988,160</td>
+          <td class="p-3 text-right text-blue-400">90.97%</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Calm Baby Syn3</td>
-          <td class="p-3 text-right">34,257,408</td>
-          <td class="p-3 text-right text-blue-400">84.51%</td>
-        </tr>
+          <td class="p-3">Domain of Ego</td>
+          <td class="p-3 text-right">39,931,392</td>
+          <td class="p-3 text-right text-blue-400">88.62%</td>
+        </tr>        
+        <tr class="hover:bg-gray-700/40">
+          <td class="p-3">Whisper of the Past</td>
+          <td class="p-3 text-right">39,696,832</td>
+          <td class="p-3 text-right text-blue-400">88.11%</td>
+        </tr>  
       </tbody>
     </table>
   </div>
@@ -587,52 +717,41 @@ async function increaseLike() {
 
       {#if selectedTab === 'Support Buffs'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">SUPPORT BUFFS</h2>
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/coralie%20buffs%201.webp"
-          alt="Buff 1"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/coralie%20buffs%201.webp')}
-        />
-      </div>
 
-      <div class="flex flex-wrap gap-4 mt-8">
-        <!-- Example image list for support buffs; add your own image sources -->
-        <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/coralie%20buffs%202.webp"
-          alt="Buff 2"
-          class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/coralie%20buffs%202.webp')}
-        />
-      </div>
+
+      <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
+        <h3 class="text-lg sm:text-xl font-bold text-center">
+          How to Activate HLE Support Buffs
+        </h3>
       
-      <div class="divider"></div>
-      <div class="my-5 text-sm sm:text-base text-slate-100 space-y-4">
-        <p class="mb-4 font-semibold">How to activate Behold! Fate Defying Dragon support buffs:</p>
-        
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Stellar Drain</p>
-            <p>Rampant Dragon Claws consumes Stellar Drain. 
-            </p>
-          </div>
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
+          <p class="leading-relaxed">
+            - Ultimate consume Stellar Drain. You want to do full charged Ult to get max AR (20).<br/>
+            - In WoDestiny teams, casting weapon / ult gives 2 AR.
+          </p>
+        </div>
+      
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">HLE Stigma Buff</h4>
+          <p class="leading-relaxed">
+            Weapon or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Heart's Splendor]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+          </p>
+        </div>
 
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">Dragon's Dominion (Breach State and Phy/Ele Taken Buff)</p>
-           <p>Casting Ult grants teammates Dragon's Dominion status for 25s. This is also activated / refreshed upon Stellar Outburst activation.</p>
-          </div>
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Wheel of Destiny Buff</h4>
+          <p class="leading-relaxed">
+            Ultimate triggers a buff for the leader for 30s. Grants Fire and Physical DMG +20% (S) / 42% (S1) , Melee ATK gain Ice and Lightning DMG +28% (S) / 42% (S1) and Enemies take 8% (S) / 15% (S1) more Total DMG from ranged atks from this valk. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+          </p>
+        </div>        
 
-          <div>
-            <p class="font-semibold text-orange-300 mt-6">Trauma Inflict</p>
-           <p>Rampant Dragon Claws adds 12 (S) / 36 (SS2) points to status trauma inflicted by the leader. </p>
-          </div>
-
-          <div>
-            <p class="font-semibold text-orange-300  mt-6">Passive</p>
-            <p>The rest of her buffs are activated passively.</p>
-          </div>
-
-
+        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
+          <p class="leading-relaxed">
+            The rest of her buffs are activated passively.
+          </p>
+        </div>
       </div>
 
       <!-- Lightbox Component -->
@@ -667,7 +786,7 @@ async function increaseLike() {
       {#if activePlaystyle === '1'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Castorice simulator. Stronger and easier playstyle.
+       Stronger playstyle.
       </p>
   
       <div class="divider  "></div>
@@ -688,16 +807,15 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Eternal Fire ➔ Draconic Flame </p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Revitalized World </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Glad News + Fragrant Gardens</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
           </div>
         </div>
         
       </div>
       <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
-          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Eternal Fire), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+      <p class="text-sm sm:text-base text-left">
+          HLE starts with two Ego signets, and regular signets gain +1 level.
       </p>
         </div>
   
@@ -709,30 +827,30 @@ async function increaseLike() {
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
-            
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>      
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Discipline (Aponia).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>    
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
             </div>
-            
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
@@ -740,7 +858,12 @@ async function increaseLike() {
   
         </div>
 
-  
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+            <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
+          </p>
+        </div>
+
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
   
@@ -778,40 +901,32 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
   
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
+
   
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+            <p class="text-base sm:text-lg font-semibold">START</p>
         </div>
   
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-          <div class="flex flex-row rounded-sm">
-            <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-          <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
-      </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
-  
   
   
         </div>
@@ -821,11 +936,14 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Activate Stellar Outburst.</li>
-          <li>Hold ATK until Dragon Breath ends.</li>
-          <li>Press ATK x2 ➔ Weapon.</li>
-          <li>Press Ult.</li>
-          <li>Repeat step 2-5.</li>
+          <li>Activate Stellar Outburst</li>
+          <li>Weapon x2</li>
+          <li>Do full Basic ATK</li>
+          <li>Weapon x2</li>
+          <li>Activate Ult finisher</li>
+          <li>ATK until Stellar Outburst is ready</li>
+          <li>Repeat</li>
+
         </ol>
   
           <p class="mt-8 text-sm sm:text-base pb-4 text-center">
@@ -835,7 +953,7 @@ async function increaseLike() {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/Z08YaRszlqE"
+                src="https://www.youtube.com/embed/SQhxa_tFglE"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -849,7 +967,7 @@ async function increaseLike() {
       {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Spam Ultimate (Dragon Torrent) and weapon skill.
+       Loop Weapon and Ultimate.
       </p>
   
       <div class="divider  "></div>
@@ -870,17 +988,18 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Searing Hunt ➔ Scorched Plains</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Revitalized World </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Blossoms + Bright Star </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
           </div>
         </div>
         
       </div>
       <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
-          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
-          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Searing Hunt), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+      <p class="text-sm sm:text-base text-left">
+          HLE starts with two Ego signets, and regular signets gain +1 level.
       </p>
+
+
         </div>
   
         <div class="divider  "></div>
@@ -891,33 +1010,28 @@ async function increaseLike() {
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1 or 2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
-            </div>
+            </div>    
+
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>    
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1 or 2</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -926,14 +1040,7 @@ async function increaseLike() {
             </div>
   
         </div>
-      <div class="mt-3 rounded-sm" >
-        <p class="text-sm sm:text-base text-left">
-          
-          <li class="text-sm sm:text-base"> This playstyle utilizes all three skills: Ultimate, weapon and evasion (with Scorched Plains signet) - so a lot of signets can work. Just commit to 3 or 4 nexus for each run.</li>
-          <li class="text-sm sm:text-base"> <b>Decimation 1:</b> Ver 8.4 has a special ER effect. When ER temperature is over 100°C, valk will quickly lose HP, down to 12% max HP. This makes Decimation 1 work on any valk. After v8.4, it's better to use Decimation 2, or other signets.</li>
-           
-        </p>
-        </div>
+
 
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -976,32 +1083,25 @@ async function increaseLike() {
   
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+            <p class="text-base sm:text-lg font-semibold">START</p>
         </div>
   
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-          <div class="flex flex-row rounded-sm">
-            <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-          <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
-      </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
@@ -1014,10 +1114,10 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Press Weapon once. This gathers enemies and activate any buffs triggered by weapon cast. </li>
-          <li>Use Ultimate. Hold Ult button until Ult ends. </li>
-          <li>Press Weapon ➔ Weapon follow up. Do this two more times (until full meter). </li>
-          <li>Repeat step 2-4. </li>
+          <li>Weapon </li>
+          <li>Use fully charged Ultimate </li>
+          <li>Basic ATK x2 </li>
+          <li>Repeat </li>
         </ol>
   
     
@@ -1028,7 +1128,7 @@ async function increaseLike() {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/N_cggCdd8XE"
+                src="https://www.youtube.com/embed/RxZIugMc8gM"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1058,9 +1158,8 @@ async function increaseLike() {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-blue-400">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-sm sm:text-base">
-              <li>S2: Time fracture might be good for Arena.</li>
-              <li>SS: Switch CD reduction improves rotation.</li>              
-              <li>SSS: Initial AR +25.</li>
+              <li>S2: Time fracture is good for Arena.</li>
+              <li>SS: Evasion can connect to Basic SEQ 4, improves dps sequence.</li>   
             </ul>
           </div>
       
@@ -1068,9 +1167,7 @@ async function increaseLike() {
           <div class="flex-1 p-2 bg-gray-800 rounded-lg shadow-md border border-yellow-400">
             <h3 class="text-lg font-semibold text-yellow-400 mb-2">Support Upgrade</h3>
             <ul class=" text-slate-100 text-sm sm:text-base">
-              <li>S1: DMG buff. </li>
-              <li>SS: Switch CD reduction improves rotation.</li>              
-              <li>SS2: Adds 24 more points to status trauma.</li>
+              <li>S1: DMG buff for World Star and WoD suport. </li>
             </ul>
           </div>
         </div>
@@ -1093,14 +1190,19 @@ async function increaseLike() {
       <tbody class="divide-y divide-gray-700">
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-blue-300">S1</td>
-          <td class="p-3">UNLOCK: Enemies take 12% more Elemental DMG, 10% more Physical DMG from characters with Dragon's Dominion.</td>
+          <td class="p-3 space-y-2">
+          <div>- WoD Support: Fire and Physical DMG +20% (S) ➔ 42% (S1). Melee ATK gain Ice and Lightning DMG +28% (S) ➔ 42% (S1). Enemies take 8% (S) ➔ 15% (S1) more Total DMG from ranged atks from the leader.</div>
+          <div>- World Star Support: Team Total DMG +4% (S) ➔ +12% (S1)</div>
+          </td>
           <td class="p-3 text-center">Support</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-blue-300">S2</td>
           <td class="p-3 space-y-2">
-            <div>- UNLOCK: When Dragon Breath ends, trigger 2s time fracture.</div>
-            <div>- As leader: When there are 2/3 Rite of Oblivion characters in the team, BFD gain Total DMG and Fire DMG +31%/54% (S) ➔ +35%/60% (S2).</div>
+            <div>- UNLOCK: Non-ultimate evasion can trigger evasion skill</div>
+            <div>- UNLOCK: When critical index is detonated, drop 2 Crystallized Wishes (SD remnant)</div>
+
+            <div>- During SO, when team triggers 1/2/3 Facet, self Ice DMG +17.2/17.2/32.2% (S) ➔ +19.8/19.8/34.8% (S2)</div>
 
           </td>
           <td class="p-3 text-center">DPS, Arena</td>
@@ -1109,48 +1211,51 @@ async function increaseLike() {
           <td class="p-3 text-center font-bold text-blue-300">S3</td>
           <td class="p-3 space-y-2">
             <div>Leader Skill:</div>
-            <div>- Team Total DMG +8% (S) ➔ 10% (S3).</div>
-            <div>- Team Physical and Elemental DMG +8% (S) ➔ 10% (S3).</div>
-            <div>- Enemies take 4% (S) ➔ 5% (S3) more Total DMG.</div>
+            <div>- Self Ice DMG +18% (S) ➔ 22% (S3).</div>
+            <div>- Enemies take 20% (S) ➔ 22.5% (S3) more Ice DMG from self.</div>
           </td>
           <td class="p-3 text-center">DPS</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-yellow-300">SS</td>
           <td class="p-3 space-y-2">
-            <div>- UNLOCK: Self Ignite DMG +8%.</div>
-            <div>- When AR is activated: When a teammate consumes Stellar Drain, your switch CD -1s (S) ➔ -8s (SS), and trigger your QTE.</div>
+            <div>- UNLOCK:  If Hi Love Elf is the leader, during AR Charging: The first fully charged Ult can restore additional 5 AR meter (once per battle).</div>
+            <div>- UNLOCK: After triggering evasion skill, can connect to Basic SEQ 4, when SEQ 4 hits, if sp is below 150, restore sp to 150, effect ends on exit.</div>
+            <div>- Enemies take 7% (S) ➔ 10% (SS) more Total DMG from Hi Love ELf. During AR Charging, additional +3.2% (S) ➔ 5% (SS).</div>
+          
           </td>
-          <td class="p-3 text-center">DPS, Support</td>
+          <td class="p-3 text-center">DPS</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-yellow-300">SS1</td>
           <td class="p-3">
-            BFD takes 10% (S) ➔ 30% (SS1) less Total DMG.
+            During SO, when team triggers 1/2/3 Facet, self Ice DMG +19.8/19.8/34.8% (S2) ➔ +25/25/40% (SS1)
           </td>
-          <td class="p-3 text-center">Wasting crystals</td>
+          <td class="p-3 text-center">DPS</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-yellow-300">SS2</td>
           <td class="p-3">
-            When Rampant Dragon Claw hits a target, if the target has a status trauma from the leader, and the trauma is not full, add 12 (S) ➔ 36 (SS2) points to the trauma.
+            Enemies take 19.2% (S) ➔ 24% (SS2) more Ice DMG from herself.
           </td>
-          <td class="p-3 text-center">DPS, Support</td>
+          <td class="p-3 text-center">DPS</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-yellow-300">SS3</td>
           <td class="p-3 space-y-2">
             <div>Leader Skill:</div>
-            <div>- Team Total DMG +10% (S3) ➔ 12% (SS3).</div>
-            <div>- Team Physical and Elemental DMG +10% (S3) ➔ 12% (SS3).</div>
-            <div>- Enemies take 5% (S3) ➔ 6% (SS3) more Total DMG.</div>
+            <div>- Self Ice DMG +22% (S) ➔ 26% (S3).</div>
+            <div>- Enemies take 22.5% (S) ➔ 25% (S3) more Ice DMG from self.</div>
           </td>
           <td class="p-3 text-center">DPS</td>
         </tr>
         <tr class="hover:bg-gray-700/40">
           <td class="p-3 text-center font-bold text-red-400">SSS</td>
-          <td class="p-3">
-            As the leader: Initial AR +25.
+          <td class="p-3 space-y-2">
+            <div>- UNLOCK: During AR Charging: After casting weapon skill, enemies take 15% more Ice DMG from self, lasts for 3s. During SO, after using Weapon Skill EX, enemies take 20% more Ice DMG from self, lasts for 3s.</div>
+            <div>- During AR Charging: After casting weapon skill, for the next Ult that fires at Love Blossom, the central arrow deals additional 260% (S) ➔ 400% (SSS) ATK of Ice DMG. </div>
+            <div>- During SO: After casting Weapon Skill EX, for the next Ult that fires at Love Blossom, deal additional 390% (S) ➔ 600% (SSS) ATK of Ice DMG, ends when exiting SO.</div>
+          
           </td>
           <td class="p-3 text-center">DPS</td>
         </tr>
@@ -1175,7 +1280,10 @@ async function increaseLike() {
               <span class="text-md">{openItem === 1 ? '-' : '+'}</span>
             </div>
             <div class="accordion-content {openItem === 1 ? 'open' : ''}">
-              <p>	UNLOCK: Enemies take 12% more Elemental DMG, 10% more Physical DMG from characters with Dragon's Dominion.	
+              <p>	- WoD Support: Fire and Physical DMG +20% (S) ➔ 42% (S1). Melee ATK gain Ice and Lightning DMG +28% (S) ➔ 42% (S1). Enemies take 8% (S) ➔ 15% (S1) more Total DMG from ranged atks from the leader.
+                <br/>
+                - World Star Support: Team Total DMG +4% (S) ➔ +12% (S1)
+
               </p>
               <p class="mt-2"><strong>Good for:</strong> Support</p>
             </div>
@@ -1188,9 +1296,11 @@ async function increaseLike() {
             </div>
             <div class="accordion-content {openItem === 2 ? 'open' : ''}">
               <p>		
-- UNLOCK: When Dragon Breath ends, trigger 2s time fracture. <br/>
-- As leader: When there are 2/3 Rite of Oblivion characters in the team, BFD gain Total DMG and Fire DMG +31%/54% (S) ➔ +35%/60% (S2).
-              </p>
+	
+- UNLOCK: Non-ultimate evasion can trigger evasion skill <br/>
+- UNLOCK: When critical index is detonated, drop 2 Crystallized Wishes (SD remnant) <br/>
+- During SO, when team triggers 1/2/3 Facet, self Ice DMG +17.2/17.2/32.2% (S) ➔ +19.8/19.8/34.8% (S2)
+</p>
               <p class="mt-2"><strong>Good for:</strong> DPS, Arena
 </p>
             </div>
@@ -1205,9 +1315,8 @@ async function increaseLike() {
           </div>
           <div class="accordion-content {openItem === 3 ? 'open' : ''}">
             <p>Leader Skill:<br/>
-              - Team Total DMG +8% (S) ➔ 10% (S3).<br/>
-              - Team Physical and Elemental DMG +8% (S) ➔ 10% (S3). <br/>
-              - Enemies take 4% (S) ➔ 5% (S3) more Total DMG.
+              - Self Ice DMG +18% (S) ➔ 22% (S3).<br/>
+              - Enemies take 20% (S) ➔ 22.5% (S3) more Ice DMG from self.
 
             </p>
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
@@ -1221,12 +1330,11 @@ async function increaseLike() {
           </div>
           <div class="accordion-content {openItem === 4 ? 'open' : ''}">
             <p>	
-- UNLOCK: Self Ignite DMG +8%.
-<br/>
-- When AR is activated: When a teammate consumes Stellar Drain, your switch CD -1s (S) ➔ -8s (SS), and trigger your QTE.
-
+- UNLOCK: If Hi Love Elf is the leader, during AR Charging: The first fully charged Ult can restore additional 5 AR meter (once per battle). <br/>
+- UNLOCK: After triggering evasion skill, can connect to Basic SEQ 4, when SEQ 4 hits, if sp is below 150, restore sp to 150, effect ends on exit. <br/>
+- Enemies take 7% (S) ➔ 10% (SS) more Total DMG from Hi Love ELf. During AR Charging, additional +3.2% (S) ➔ 5% (SS).
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Support
+            <p class="mt-2"><strong>Good for:</strong> DPS
 </p>
           </div>
         </div>
@@ -1237,8 +1345,8 @@ async function increaseLike() {
             <span class="text-md">{openItem === 5 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 5 ? 'open' : ''}">
-            <p>	BFD takes 10% (S) ➔ 30% (SS1) less Total DMG.</p>
-            <p class="mt-2"><strong>Good for:</strong> Wasting crystals
+            <p>	During SO, when team triggers 1/2/3 Facet, self Ice DMG +19.8/19.8/34.8% (S2) ➔ +25/25/40% (SS1)</p>
+            <p class="mt-2"><strong>Good for:</strong> DPS
 
             </p>
           </div>
@@ -1250,9 +1358,9 @@ async function increaseLike() {
             <span class="text-md">{openItem === 6 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 6 ? 'open' : ''}">
-            <p>When Rampant Dragon Claw hits a target, if the target has a status trauma from the leader, and the trauma is not full, add 12 (S) ➔ 36 (SS2) points to the trauma.
+            <p>	Enemies take 19.2% (S) ➔ 24% (SS2) more Ice DMG from herself.
             </p>
-            <p class="mt-2"><strong>Good for:</strong> DPS, Support
+            <p class="mt-2"><strong>Good for:</strong> DPS
 </p>
           </div>
         </div>
@@ -1264,11 +1372,9 @@ async function increaseLike() {
           </div>
           <div class="accordion-content {openItem === 7 ? 'open' : ''}">
             <p>	Leader Skill: <br/>
-              - Team Total DMG +10% (S3) ➔ 12% (SS3).
+              - Self Ice DMG +22% (S) ➔ 26% (S3).
 <br/>
-- Team Physical and Elemental DMG +10% (S3) ➔ 12% (SS3).
-<br/>
-- Enemies take 5% (S3) ➔ 6% (SS3) more Total DMG.
+- Enemies take 22.5% (S) ➔ 25% (S3) more Ice DMG from self.
 
             <p class="mt-2"><strong>Good for:</strong> DPS</p>
           </div>
@@ -1280,7 +1386,9 @@ async function increaseLike() {
             <span class="text-md">{openItem === 8 ? '-' : '+'}</span>
           </div>
           <div class="accordion-content {openItem === 8 ? 'open' : ''}">
-            <p>	As the leader: Initial AR +25.	 </p>
+            <p>	- UNLOCK: During AR Charging: After casting weapon skill, enemies take 15% more Ice DMG from self, lasts for 3s. During SO, after using Weapon Skill EX, enemies take 20% more Ice DMG from self, lasts for 3s. <br/>
+- During AR Charging: After casting weapon skill, for the next Ult that fires at Love Blossom, the central arrow deals additional 260% (S) ➔ 400% (SSS) ATK of Ice DMG. <br/>
+- During SO: After casting Weapon Skill EX, for the next Ult that fires at Love Blossom, deal additional 390% (S) ➔ 600% (SSS) ATK of Ice DMG, ends when exiting SO.	 </p>
             <p class="mt-2"><strong>Good for:</strong> DPS
             </p>
           </div>
@@ -1296,12 +1404,12 @@ async function increaseLike() {
       <div class=" gap-6 mt-4">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">BFD DPS Rotation (Premium Team)</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">HLE DPS and SUP Rotations</h2>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/eHCHwBteXeo"
+                src="https://www.youtube.com/embed/hwDgn8J1dkc"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1314,48 +1422,7 @@ async function increaseLike() {
 
     </div>
 
-          <div class=" gap-6 mt-10">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">BFD DPS Rotation (Cheaper Team)</h2>
-
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/D4RQSLIJeTc"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-                >
-            </iframe>
-        </div>
-      </div>
-
-    </div>
-
-          <div class=" gap-6 mt-10">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">GoInfinitude, LoAscension and Vita Support Sequence</h2>
-
-
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/zHBdvqyQ5bw"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-                >
-            </iframe>
-        </div>
-      </div>
-
-    </div>    
+   
   {/if}
   
   

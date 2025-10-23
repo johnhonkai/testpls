@@ -5,13 +5,12 @@
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '100%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '97%', speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '97%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '96%', speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '86%', speed: '' },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '86%', speed: 'Slow' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
 
     ];
 
@@ -24,13 +23,18 @@
 
     // Pass the index or name of the first character to the reusable component
     export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let secondCharName: string = 'Sena'; // default to 'Vita'
+
     export let maindps: boolean = false;
-    
+
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Sena' && char.name !== 'Vita'
+);
 
 
 </script>
@@ -46,11 +50,18 @@
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 
-        <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        
+ <!-- Conditional Plus Icon -->
+
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+
+
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
         <!-- Plus Icon shown only if maindps is true -->
@@ -60,7 +71,7 @@
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -78,12 +89,25 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm sm:text-base mb-4">At S-rank, Sena support scores higher than Vita. Although Vita provides more buff, the dmg increase is not big enough to beat the score with Sena's zero field time. (Data based on Type Counter Kasumi).</li>
-                <li class="text-sm sm:text-base mb-4">At higher ranks and weapon synergy, Sena and Vita scores are close. (Data based on Type Counter Kasumi).</li>
-                <li class="text-sm sm:text-base"><b>Thelema</b>'s abilities make her an indispensable support for Lantern. Shieldbreak is a game-changer against Kasumi. Evasion spam AR regen is used on multiple bosses: RPC, Tank, Mobius. 
-                Thelema herself also contributes damage.</li>
-            </p>
+
+        <p class="text-sm sm:text-base mb-4"><b>Vita vs Sena</b>
+            <br/> 
+            - At S-rank, Sena support scores higher than Vita. Although Vita provides more buff, the dmg increase is not big enough to beat the score with Sena's zero field time. (Data based on Type Counter Kasumi).
+            <br/>
+            - At higher ranks and weapon synergy, Sena and Vita scores are close. (Data based on Type Counter Kasumi).
+        </p>     
+
+        <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human for Tank</b>
+            <br/> 
+            Tank boss MHT-3B has appeared almost every patch. Herrscher of Human's ability to target weak spot is necessary to apply a huge debuff.
+        </p>  
+
+        <p class="text-sm sm:text-base mb-4"><b>Thelema</b>
+            <br/> 
+            Thelema's abilities makes her an indispensable support for Lantern. Shieldbreak is a game-changer against Kasumi. Evasion spam AR regen is used on multiple bosses: RPC, Tank, Mobius. 
+                Thelema herself also contributes damage.
+         </p> 
+
         </div>
     </details>
 </div>

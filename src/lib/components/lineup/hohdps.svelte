@@ -3,10 +3,11 @@
 
     // Define the data for main characters
     const mainCharacters = [
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '95%', speed: '' },
 
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '98%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '92%', speed: '' },
 
@@ -24,16 +25,23 @@
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '84%', speed: 'Slow' }
     ];
 
+
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Sena'; // default to 'Vita'
+    export let firstCharName: string = 'HLE'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
+
     export let maindps: boolean = false;
-    
+
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
-
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'HLE'
+);
 
 
 </script>
@@ -55,8 +63,16 @@
 
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+        {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}        
 
         <!-- Plus Icon shown only if maindps is true -->
         {#if !maindps}
@@ -65,7 +81,7 @@
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -83,22 +99,31 @@
         </summary>
         <div class="py-3 px-4">
 
-        <p class="text-sm sm:text-base mb-4"><b>Thelema</b><br/> - As DPS, HoH needs Thelema support.
-            <br/>
-            - Old HoH bosses require freeze and/or shieldbreak. These were provided by Kira and Sushang, but in WoDestiny team, only Thelema can provide these utilities.
-            <br/>
-            - Thelema also has a unique evasion spam strat to quickly regen AR meter, which can significantly improve score.
-            <br/>
-            - Thelema also contributes damage in ice weather.
-        </p>         
+     
         
-        <p class="text-sm sm:text-base mb-4"><b>Vita vs Sena</b><br/> - Vita provides strong buffs, Elemental Breach, and slightly more AR regen.
+        <p class="text-sm sm:text-base mb-4"><b>HLE vs Vita vs Sena</b><br/> 
+            - Currently, we don't have live Abyss data, but dmg test shows that HLE provides more dmg than Breach supports.
+            <br/>            
+            
+            - Vita provides strong buffs, Elemental Breach, and slightly more AR regen.
             <br/>
             - Sena provides buffs and Elemental Breach with zero field time.
             <br/>
             - At S-rank, Sena support scores higher than Vita. Although Vita provides stronger buff, the dmg increase is not big enough to beat the score with Sena's zero field time. 
 
         </p>     
+
+        <p class="text-sm sm:text-base mb-4"><b>Freeze</b><br/> HLE and Thelema can apply freeze trauma.
+        </p>    
+
+        <p class="text-sm sm:text-base mb-4"><b>Thelema</b><br/> - A lot of HoH runs usually have Thelema support.
+            <br/>
+            - Some old HoH bosses require shieldbreak. This was provided by Sushang, but in WoDestiny team, only Thelema can provide shieldbreak.
+            <br/>
+            - Thelema also has a unique evasion spam strat to quickly regen AR meter, which can significantly improve score.
+            <br/>
+            - In Arena, Thelema + HoH is a powerful pair with timestop.
+        </p>            
 
         <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> Serapeum provides the strongest dmg buff, as well as initial AR and post-SO AR regen.
 

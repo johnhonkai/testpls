@@ -1764,6 +1764,7 @@ export const teamData = {
   },
   firekosma: {
     teamDataSets: [
+ 
       {
         tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
@@ -2381,7 +2382,61 @@ export const teamData = {
   firetona: {
     teamDataSets: [
       {
-        tabname: "v8.1 CN",
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_songque.png"],
+          rank: '1-6',
+          pct: '26%',
+          bottext: "Highest score: 6S 843, 9S 857"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_songque.png"],
+          rank: '7+',
+          pct: '59%',
+          bottext: "Highest score: S2 808, S2 Sparkle + SS Vita 818, 6S 841, 9S 847"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_chenxue.png"],
+          rank: '23',
+          pct: '1%',
+          bottext: "Highest score: 9S 837"
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/kiana badum.png", "images/valkportrait/elf_kiana.png"],
+          rank: '47',
+          pct: '2%',
+          bottext: "Highest score: SS 811, 7S 820"
+        },      
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_chenxue.png"],
+          rank: '58',
+          pct: '2%',
+          bottext: "Highest score: S2 816"
+        },   
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/elf_kiana.png"],
+          rank: '60',
+          pct: '9%',
+          bottext: "Highest score: S 812, S2 813, 6S 816"
+        },  
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/kiana badum.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_songque.png"],
+          rank: '69',
+          pct: '1%',
+          bottext: "Highest score: 6S 814"
+        },                         
+      ]},      
+      {
+        tabname: "v8.1",
         teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
         {
@@ -2407,7 +2462,7 @@ export const teamData = {
         },
       ]},
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {

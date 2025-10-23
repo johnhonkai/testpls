@@ -4,14 +4,16 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '100%', speed: '' },       
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '100%', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '98%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '97%', speed: '' },
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '95%', speed: '' },
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '88%', speed: '' },
-        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '81%', speed: 'Slow' },
-        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '74%', speed: 'Slow' },
+        { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png', teampct: '100%', speed: '' },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '99%', speed: '' },       
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '98%', speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '95%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '93%', speed: '' },       
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '90%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '83%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '82%', speed: '' },
+        { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '79%', speed: 'Slow' },
+        { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '73%', speed: 'Slow' },
 
     ];
 
@@ -54,11 +56,6 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
         {/if}
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
-            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
-
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
             <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
@@ -77,18 +74,29 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base">
-                <li class="text-sm  sm:text-base mb-4">Sparkle DPS's strongest and fastest team is Vita + HoFi. (Data based on 7.9 Resonance Vita) , but in Red Lotus where enemies die faster, other supports like Senadina and Thelema are close, or maybe better. For Fire Kosma boss, Lantern support is used to counter hitcount shield.</li>
-
-                <li class="text-sm sm:text-base mb-4"><b>Vita</b> provides Elemental Breach (Ele res reduction) and other strong buffs, gives a significant damage improvement.</li>
-                <li class="text-sm sm:text-base mb-4"><b>HoFi</b> triggers resonance marks very fast and provides good amount of buffs.</li>
-                <li class="text-sm sm:text-base mb-4"><b>Lantern</b> provides good amount of buffs. Her high-hitcount attacks can counter Fire Kosma boss. Lantern + Vita / HoFi / Sena are in CN Top 100 (Data based on 7.9 Fire Kosma)</li>
-                <li class="text-sm sm:text-base mt-4"><b>Senadina</b>  also provides Breach, and when paired with Songque AstralOp, you gain +25 more initial AR. </li>
-                <li class="text-sm sm:text-base mt-4">During Stellar Outburst, Sparkle's resonance mark and can be triggered 18 times. Best paired with teammates that can trigger resonance 6 times (Vita, HoFi, Thelema, Lantern, SIMP)</li>
-                <li class="text-sm sm:text-base mt-4">During Stellar Outburst, Sparkle's resonance mark can consume teammate's resonance mark, dealing resonance dmg 3 times (Senadina, Helia)</li>
-
-
+            <p class="text-sm sm:text-base mb-4">
+                Sparkle best teammates are usually <a href='/valk/lp' class="link">Vita</a> + either HoRB, Badum, HoFi or even Lantern, depends on the boss.
             </p>
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Vita</b><br/> Provides elemental breach and strong buffs.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Fast Reso Trigger</b><br/> HoFI and Badum can trigger resonance marks very fast.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Herrscher of Rebirth</b><br/> During AR Charging, HoRB has near zero field time. She's basically HoFi but can contribute damage and can consume Stellar Drain in the back.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Lantern</b><br/> Used against Fire Kosma to counter high hitcount.
+            </p> 
+
+            <p class="text-sm sm:text-base mb-4">
+                <b>Songque AstralOp</b><br/> When using Songque AstralOp, if you have Sena support, gain initial AR +25.
+            </p> 
         </div>
     </details>
 </div>

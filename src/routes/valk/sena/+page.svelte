@@ -339,7 +339,7 @@ function selectTabMobile(event) {
 
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.2 (24 Apr 2025)
+          <strong>Updated For v8.5 (23 Oct 2025)
       </p>
       </div>
 
@@ -352,8 +352,9 @@ function selectTabMobile(event) {
               <br/>
               - Swarm bosses don't appear that frequently anymore.
               <br/>
-              - Low rank Sena can't compete with more recent DPSes. For example: Against Lightning Guaymas boss, she needs at least SS-rank to score higher than Ba-dum! Kiana.
+              - Low rank Sena can't compete with more recent DPSes.
               <br/>
+              - In a high investment team, high rank Sena can get good score on a few bosses like Lightning Guaymas and Stardust Sa. 
           </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">WoDestiny Support</strong> <br/> Great support. Provides Elemental Breach and strong buffs, with ZERO on-field time.
@@ -404,9 +405,9 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li class="mt-2" ><strong>Senadina:</strong> Battle Pass v8.2-8.4, Battlesuit Supply, Starter Supply</li>
-              <li class="mt-2"><strong>Senadina's Weapon:</strong> Battle Pass v8.2-8.4, Equipment Supply</li>
-              <li class="mt-2"><strong>Senadina's Stigma:</strong> Equipment Supply, Forgeable</li>
+              <li class="mt-2" ><strong>Senadina:</strong> Starter Supply</li>
+              <li class="mt-2"><strong>Senadina's Weapon:</strong> Starter Equipment Supply</li>
+              <li class="mt-2"><strong>Senadina's Stigma:</strong> Starter Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

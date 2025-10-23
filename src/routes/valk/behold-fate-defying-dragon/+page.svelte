@@ -349,17 +349,23 @@ async function increaseLike() {
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
 
+    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+      <p class="text-sm sm:text-base mb-4 sm:mb-0">
+        <strong>Updated For v8.5 (23 Oct 2025)
+    </p>
+    </div>
+
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
-          <p class="mt-4 text-sm sm:text-base">
+          <p class="mt-4 text-sm sm:text-base ">
               <strong class="text-amber-400">DPS</strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Behold! Fate-Defying Dragon (BFD) is the first IGNITE DPS for Part 2.</li>
-                <li>Excels in favorable match-ups, just decent everywhere else. Will take over Sirin's bosses.</li> 
-                <li>High rank BFD may be able to get Top 50 on other bosses like Fire Tank (Source: CN 8.4 Fire Tank).</li> 
+                <li>Behold! Fate-Defying Dragon (BFD) is the first Ignite DPS for Part 2.</li>
+                <li>Like most P2 valks, BFD excels in favorable match-ups, but just decent everywhere else. BFD take over Sirin's bosses. </li> 
+                <li> High rank BFD may be able to get Top 50 on other bosses like Fire Tank (Source: CN 8.4 Fire Tank).</li> 
 
           </ul>        
           
@@ -378,7 +384,7 @@ async function increaseLike() {
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Grail of Infinitude Support</strong>
               <br/>
-              BFD is the new best support for PAWS, and will probably be the best primary support for other GoI valks in the near future (at least for one year).   
+              BFD is the new best support for Planar Armament and New Elysia, and will probably be the best primary support for other GoI valks in the near future (at least for one year).   
 
             </p>          
 
@@ -388,9 +394,9 @@ async function increaseLike() {
 
             </p>        
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>BFD is the new best support for Badum and Peregrine Sword teams. BFD replaces Vita in these teams, providing stronger Phy / Ele Breach buff.  
+                <li>BFD is the new best support for Badum and Peregrine Sword teams. BFD replaces Vita in Badum team. BFD is paired with Vita in Peregrine Sword team.  
 </li>
-                <li>However, if Vita has higher rank than BFD (let's say S2 Syn2 Vita vs S0 Syn1 BFD), then Vita support will still provide stronger buff and might get a higher score.   </li> 
+                <li>If Vita has higher rank than BFD (let's say S2 Syn2 Vita vs S0 Syn1 BFD), then Vita support will still provide stronger buff and might get a higher score.   </li> 
 
           </ul> 
 
@@ -404,55 +410,26 @@ async function increaseLike() {
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New Players</strong> <br/> Recommended to get BFD in v8.4.
-            </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Existing Players</strong> 
-              <br/>
-              This will be a bit lengthy, but <span class="text-cyan-300">basically, yes, BFD is recommended.</span>
-
-              
-          </p>
-           <p class="mt-4 text-sm sm:text-base">
-              BFD is one of the better Part 2 valks to get for her support ability - Phy / Ele Breach. There are two other valks in Part 2 that give Breach (Vita and Sena) and they're both are still used as primary support until today. Vita, especially, has been used a lot more frequently than most valks as support.
-            </p>
-           <p class="mt-4 text-sm sm:text-base">
-              Recommended to get BFD in v8.4 if you can guarantee valk + weapon, preferably within the first week of v8.4 to get the most value out of her DPS role, because her bosses will appear more frequently during the first 3-4 weeks. After that, BFD will be used as support more often.
-            </p>
-           <p class="mt-4 text-sm sm:text-base">
-                          If you don't have enough crystals to guarantee valk + weapon, then just do the discounted ten-pull and save for the next S-rank in 2 months.
-            </p>
+          
 
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> 
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Although BFD is still good, you should still get Hi Love Elf first. Honestly, even with all the freebies, you probably won't have enough to get both Hi Love Elf and BFD if you are pure f2p.
+                <br/>Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear.
+                <br/> - Then get the latest valk early in the patch.
             </p>
 
+  
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              BFD is still new (one patch old), still relevant in the meta as DPS and as the best support for GoI, LoA and Vita teams.
+              So, I would say BFD is still good to pull if you're a heavy spender. Pull new Elysia first,
+               then you can consider getting BFD if your wallet is still loaded.
+               <br/>
+               For Badum team, higher rank Vita might still beat S0 BFD. Just keep that in mind.
 
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>              S1 has a good support buff. Also, get Synergy 2 weapon from spending event.
-              </li>
-              <li>              For LoA team (Badum, PS), higher rank Vita might still beat S0 BFD. Just keep that in mind.
-              </li>
-          </ul>
-
-                      <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Future Sight: New Elysia</strong> 
-              <br/>This section is pure speculation (for now):
-            </p>
-
-
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li>              V8.5 S-rank is 99% likely to be <span class="text-pink-300">New Elysia</span> - and very likely to have GoInfinitude based on [1] event emblem and [2] we only have one GoI valk right now.
-              </li>
-              <li>           If this is true - IF you want the best team for New Ely, you want to get BFD Coralie too.
-              </li>
-                            <li>           With the new '6 patches a year' schedule, a F2P can afford a valk every one patch (no weapon) / every two patches (fullgear). For f2p, you have to choose to get one valk with full gear - or get two valks without weapon and stick to Agony abyss (not recommended but tbh no sane person is happy getting only one valk every 4 months).
-</li>
-<li> 
-Start saving from now. Or whale up bro.
-              </li>
-          </ul>
+          </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -460,7 +437,7 @@ Start saving from now. Or whale up bro.
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.4</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

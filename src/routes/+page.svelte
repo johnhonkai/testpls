@@ -348,23 +348,23 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="/valk/behold-fate-defying-dragon" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="/valk/hi-love-elf" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/jd-ohD_6dOE/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/hwDgn8J1dkc/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
-          <p class="text-slate-300">Coralie - BFD</p>
+          <p class="text-slate-300">Elysia - Hi ♪ Love Elf ♥</p>
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=eZZHr9euFbw" id="news2" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="/valk/horb" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/eZZHr9euFbw/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/J5paWnhog48/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">v8.5 Elysia Gameplay!</h3>
-          <p class="text-slate-300">Hi ♪ Love Elf ♥ Gameplay</p>
+          <h3 class="text-lg font-semibold text-white mb-1">New Stellar Key</h3>
+          <p class="text-slate-300">Herrscher of Rebirth DLC</p>
         </div>
       </a>
   
