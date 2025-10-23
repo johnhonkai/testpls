@@ -308,8 +308,8 @@
 
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
-      { code: 'CCPLUH04', reward: '30 crystals' },
-      { code: 'ChillSummer', reward: '30 crystals' },
+      { code: 'US4RN92X15', reward: '30 crystals' },
+      { code: 'LOVEELF', reward: '30 crystals' },
 
     ] as entry}
       <div class="flex items-center justify-between gap-2">
