@@ -612,7 +612,7 @@ function selectTabMobile(event) {
   
               
                 <p class="text-sm sm:text-base text-left">
-                  <b>Affix</b><br/> Full ATK.
+                  <b>Affix</b><br/> Full ATK. But I see some pro players keep dupes for crit dmg affix. I'm not sure how useful will that be.
                 </p>
               </div>
   
