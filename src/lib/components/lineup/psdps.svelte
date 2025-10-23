@@ -91,7 +91,8 @@ let filteredMainCharacters = mainCharacters.filter(
             </p>
 
              <p class="text-sm sm:text-base mb-4"><b>BFD vs Vita</b><br/>
-                BFD is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.  
+                UPDATE: Recent PS bosses have seen BFD get used together with Vita. I dont know why, they just score higher. I wanna say that it's situational, but it has been used two times already, so...
+                
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>Planar Armament</b><br/> PAWS support is used against Lantern boss. Thanks to type advantage, PAWS can contribute significantly higher damage in this specific match-up.

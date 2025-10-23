@@ -423,11 +423,9 @@ async function increaseLike() {
   
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              BFD is still new (one patch old), still relevant in the meta as DPS and as the best support for GoI, LoA and Vita teams.
-              So, I would say BFD is still good to pull if you're a heavy spender. Pull new Elysia first,
+              BFD is still new (one patch old). She is the Breach support for GoI, LoA and Vita teams. Based on Vita who is also a Breach support, you can expect BFD to be used a lot more compared to other Part 2 valks.
+              So, I would say BFD is good to pull if you're a heavy spender. Pull new Elysia first,
                then you can consider getting BFD if your wallet is still loaded.
-               <br/>
-               For Badum team, higher rank Vita might still beat S0 BFD. Just keep that in mind.
 
           </p>
 
