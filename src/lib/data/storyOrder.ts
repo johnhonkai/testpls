@@ -1,7 +1,7 @@
 // src/lib/data/storyOrder.ts
 export const storyOrder = [
       {
-      image: 'https://i.imgur.com/qBo8X1K.png',
+      image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/p2firstlook.png',
       title: 'Honkai Impact Part 2 First Look',
       inGame: false,
       type: 'promo-video',
@@ -360,7 +360,7 @@ export const storyOrder = [
         canon: false,
       },   
       {
-        image: 'https://i.imgur.com/hNXwfWY.png',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/p2ch9ex.png',
         title: "P2 Ch 9-EX: Yet The Stars Still Sparkle",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
@@ -368,15 +368,23 @@ export const storyOrder = [
         version: '8.4',
       }, 
             {
-        image: 'https://i.imgur.com/sxcMKSs.png',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/summerfriendship.png',
         title: "Assemble! Summer Friendship Resort",
         inGame: true,
         type: 'event',
         version: '8.4',
         canon: 'alt-world',
-      },      
+      },    
+       {
+      image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/ely%20song.jpg',
+      title: 'Miss Elf Magical Invitation',
+      inGame: false,
+      type: 'promo-video',
+      version: '8.5',
+      link: 'https://www.bilibili.com/video/BV1SDpRzjEDu'
+    },         
                   {
-        image: 'https://i.imgur.com/zNmplLp.png',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/withyou.png',
         title: "With You! Youthful Dreams",
         inGame: true,
         type: 'event',
@@ -384,13 +392,21 @@ export const storyOrder = [
         canon: 'alt-world',
       },    
       {
-        image: 'https://i.imgur.com/SxNHIbX.jpeg',
+        image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/whack.jpg',
         title: "P2 Ch 10: Reunited Under the Light of Faith",
         youtubeLink: 'https://youtu.be/example2',
         inGame: true,
         type: 'main',
         version: '8.5',
-      },       
+      },     
+       {
+      image: 'https://img.youtube.com/vi/FtRQGDnLybQ/hqdefault.jpg',
+      title: 'Miss Elf Is Live-Streaming ♪',
+      inGame: false,
+      type: 'promo-video',
+      version: '8.5',
+      link: 'https://www.youtube.com/watch?v=FtRQGDnLybQ'
+    },          
 ];
   
 
