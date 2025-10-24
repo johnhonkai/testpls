@@ -409,7 +409,7 @@ function selectTabMobile(event) {
 
         <p class="text-sm sm:text-base mt-4">
           <strong class="text-amber-400">HoRB</strong> 
-          <br/>Currently there is no F2P way to get HoRB. She might be added to Battle Pass in a few versions. In 8.5, the only way to get HoRB is from 1680 b-chips pack, which is not cheap. 
+          <br/>Currently there is no F2P way to get HoRB. She might be added to free Battle Pass next year. In 8.5, the only way to get HoRB is from 1680 b-chips pack, which is not cheap. 
         </p>
 
         <p class="text-sm sm:text-base mt-4">
@@ -434,7 +434,7 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Rebirth:</strong> B-Chip Pack. HoRB will likely be added to Battle Pass in the near future.</li>
+            <li ><strong>Herrscher of Rebirth:</strong> B-Chip Pack. HoRB will likely be added to Battle Pass next year.</li>
               <li><strong>DLC Weapon:</strong> Equipment Supply</li>
               <li><strong>DLC Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.5</li>
               <li><strong>Old Equipment:</strong> Not available.</li>

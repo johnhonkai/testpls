@@ -50,27 +50,27 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 	];
 
   	let BestValkGameplay2025 = [
-		{ title: 'Reign Solaris (EN release)', description: '', image: 'https://i.imgur.com/j0TirSD.jpeg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_800_1217/resource/puzzle/2024/12/06/8af4a8bb4eed7f8acb65398d8324d549_3011193823025982132.mp4", votes: 0 },
-		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: 'https://i.imgur.com/mnn60TO.jpeg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_810_1239/resource/puzzle/2025/01/17/3a2764bf6b8182c6f7451551cebbdfbb_6526445854139983168.mp4', votes: 0 },
-		{ title: 'Herrscher of Human DLC', description: '', image: 'https://i.imgur.com/4ohLweW.jpeg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_810_1239/resource/puzzle/2025/01/16/4c267691b70c53a8180d5ef54ce8b0ce_1218956534081137429.mp4', votes: 0 },		
-    { title: 'Peregrine Sword', description: '', image: 'https://i.imgur.com/EPaetbw.jpeg', video: 'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_8200_1255/resource/puzzle/2025/03/22/424fb53e467a2802dbe1a4ed6382cde1_7353432943863447762.mp4', votes: 0 },
-		{ title: 'Planar Armament', description: '', image: 'https://i.imgur.com/AKINEsw.jpeg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_830_1269/resource/puzzle/2025/05/23/0e86b0f3ead54e2df215d1a5d73e3414_3046586644079159533.mp4", votes: 0 },
-		{ title: 'Behold! Fate-Defying Dragon', description: '', image: 'https://i.imgur.com/XWuGO2h.jpeg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_840_1288/resource/puzzle/2025/07/18/794825bd0a8eb6489686426aeb6fe190_1505945113103333527.mp4", votes: 0 },
-		{ title: 'Hi Love Elf', description: '', image: 'https://i.imgur.com/5AZzALh.jpeg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_850_1308/resource/puzzle/2025/09/19/5cc06b7fcad358b5bd7cbd62252a1076_8428162742011678380.mp4', votes: 0 },
-		{ title: 'Herrscher of Rebirth DLC', description: '', image: 'https://i.imgur.com/aEssRdQ.jpeg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_850_1308/resource/puzzle/2025/09/17/5bba6812a6dfcfeb674687171a337f8c_6932344177050499288.mp4', votes: 0 },
+		{ title: 'Reign Solaris (EN release)', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-rs.jpg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_800_1217/resource/puzzle/2024/12/06/8af4a8bb4eed7f8acb65398d8324d549_3011193823025982132.mp4", votes: 0 },
+		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-badum.jpg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_810_1239/resource/puzzle/2025/01/17/3a2764bf6b8182c6f7451551cebbdfbb_6526445854139983168.mp4', votes: 0 },
+		{ title: 'Herrscher of Human DLC', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-hoh.jpg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_810_1239/resource/puzzle/2025/01/16/4c267691b70c53a8180d5ef54ce8b0ce_1218956534081137429.mp4', votes: 0 },		
+    { title: 'Peregrine Sword', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-ps.jpg', video: 'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_8200_1255/resource/puzzle/2025/03/22/424fb53e467a2802dbe1a4ed6382cde1_7353432943863447762.mp4', votes: 0 },
+		{ title: 'Planar Armament', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-helia.jpg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_830_1269/resource/puzzle/2025/05/23/0e86b0f3ead54e2df215d1a5d73e3414_3046586644079159533.mp4", votes: 0 },
+		{ title: 'Behold! Fate-Defying Dragon', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-coralie.jpg', video:"https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_840_1288/resource/puzzle/2025/07/18/794825bd0a8eb6489686426aeb6fe190_1505945113103333527.mp4", votes: 0 },
+		{ title: 'Hi Love Elf', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-newely.jpg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_850_1308/resource/puzzle/2025/09/19/5cc06b7fcad358b5bd7cbd62252a1076_8428162742011678380.mp4', votes: 0 },
+		{ title: 'Herrscher of Rebirth DLC', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/vid-horb.jpg', video:'https://act-webstatic.mihoyo.com/puzzle/bh3/bh3_version_page_850_1308/resource/puzzle/2025/09/17/5bba6812a6dfcfeb674687171a337f8c_6932344177050499288.mp4', votes: 0 },
   ];
 
 	let BestStoryArc = [
-		{ title: "P2 Chapter 7-10", description: '', image: 'https://i.imgur.com/ahUhvsA.jpeg', votes: 0 },
-		{ title: "CN New Year Arc", description: '', image: 'https://i.imgur.com/cQ6FSvl.jpeg', votes: 0 },
-		{ title: "Messenger of Love Arc", description: '', image: 'https://i.imgur.com/FPrSOHF.jpeg', votes: 0 },
+		{ title: "P2 Chapter 7-10", description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/p2ch.jpg', votes: 0 },
+		{ title: "CN New Year Arc", description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/cny.jpg', votes: 0 },
+		{ title: "Messenger of Love Arc", description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/bustyverse.jpg', votes: 0 },
 	];
 
 	let BestBoss = [
-		{ title: 'Mega Godly Drum', description: '', image: 'https://i.imgur.com/hDJ72A1.png', votes: 0 },
-		{ title: 'Litost', description: '', image: 'https://i.imgur.com/i1YWvlN.png', votes: 0 },
-		{ title: 'SoaSH: SCoS', description: '', image: 'https://i.imgur.com/uLwyVyZ.png', votes: 0 },
-		{ title: 'New HoC', description: '', image: 'https://i.imgur.com/HvDEtcj.png', votes: 0 },
+		{ title: 'Mega Godly Drum', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/godlydrum.png', votes: 0 },
+		{ title: 'Litost', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/litost.png', votes: 0 },
+		{ title: 'SoaSH: SCoS', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/soash.png', votes: 0 },
+		{ title: 'New HoC', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/newhoc.png', votes: 0 },
 
 	];
 
@@ -88,8 +88,8 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 	];
 
   	let BestHSRRef = [
-		{ title: 'Kevin as Phainon', description: '', image: 'https://i.imgur.com/6Q1nVm5.png', votes: 0 },
-		{ title: 'Elysia as Cyrene', description: '', image: 'https://i.imgur.com/26n0OgE.png', votes: 0 },
+		{ title: 'Kevin as Phainon', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/kevinphainon.png', votes: 0 },
+		{ title: 'Elysia as Cyrene', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/elycyrene.png', votes: 0 },
 
 	];
 
