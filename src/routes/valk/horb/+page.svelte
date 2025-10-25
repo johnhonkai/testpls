@@ -399,7 +399,7 @@ function selectTabMobile(event) {
 
     <p class="mt-4 text-sm sm:text-base">
       <strong class="text-amber-400">World Star Support</strong> <br/>
-        HoRB is a great World Star support. During AR Charging, she has near zero field time - she's basically like HoFi support but can still contribute damage and consume Stellar Drain.
+        HoRB is a great World Star support. During AR Charging, she has near zero field time - she's basically like HoFi support but can still contribute damage and consume Stellar Drain in the backline.
     </p>
 
 

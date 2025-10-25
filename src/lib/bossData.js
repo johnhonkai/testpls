@@ -2773,6 +2773,8 @@ export const teamData = {
     ],
     videos: [
       { url: 'https://youtu.be/CIGX1jDkzxA', abyss: 'Redlotus 521D', uploader: 'Marisa Honkai' },
+      { url: 'https://youtu.be/JKvEgKB4n4c', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://youtu.be/MnD5gyrV9SE', abyss: 'Nirvana', uploader: 'Xintsu' },
       { url: 'https://youtu.be/YzAghCVowVk', abyss: 'Nirvana 540D , Redlotus 515D', uploader: 'Marisa Honkai' },
       { url: 'https://www.bilibili.com/video/BV1LmC5YJEz4/', abyss: 'S0 Thelema 740 vs Nirvana 541D', uploader: '春水草色向南深' },
 

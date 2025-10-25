@@ -238,7 +238,7 @@ async function increaseLike() {
 
 <CharacterLayout
   charName="paws"
-  initialLikes={likesData["ha"] || 0}
+  initialLikes={likesData["paws"] || 0}
   accent="bg-orange-800"
   image="/images/valkfull/new%20helia.webp"
   alt="paws"
