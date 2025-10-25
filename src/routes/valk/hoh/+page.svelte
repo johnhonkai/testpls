@@ -5,7 +5,7 @@
 
     <meta property="og:title" content="Elysia - Herrscher of Human: Ego" />
     <meta property="og:description" content="Herrscher of Human: Ego Guide, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/JzNsxXq.png" />
+    <meta property="og:image" content="https://i.imgur.com/mGaAOx9.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/hoh" />
     <meta property="og:type" content="website" />
 
