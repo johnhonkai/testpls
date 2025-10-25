@@ -371,7 +371,7 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. The reason is (1) Sena is old and (2) Starter supply has the same cost and rate as regular supply, and worst of all, but it lasts for 90 days, and the guarantee does not carry over like regular supplies.
+            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. The reason is (1) Sena is old and (2) Starter supply has the same cost and rate as regular supply, and worst of all, it lasts for 90 days, and the guarantee does not carry over like regular supplies.
             
         </p>
 
@@ -386,7 +386,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">Competitive Players</strong> 
 
               <br/> 
-              Currently, there's no way to get Sena. When she is available, you can consider getting her since she still has very niche uses.
+              Currently, there's no way to get Sena. When she is available, you can consider getting her since she still has her niche uses.
               <br/>
             </p>
 
