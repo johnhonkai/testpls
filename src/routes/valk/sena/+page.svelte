@@ -371,36 +371,31 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. If you can afford to spend, get Sena from Battle Pass instead.
+            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. The reason is (1) Sena is old and (2) Starter supply has the same cost and rate as regular supply, and worst of all, but it lasts for 90 days, and the guarantee does not carry over like regular supplies.
             
         </p>
 
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/>Currently, there's no way to get Sena, but if for some reason she returns in normal supply, it is not recommended to get Sena. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
                 <br/> - Save until you can guarantee valk + fullgear,
                 <br/> - Then get the latest valk early in the patch.
             </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Spending Players</strong> 
+              <strong class="text-amber-400">Competitive Players</strong> 
 
               <br/> 
-              Recommended to get Sena and her weapon from Battle Pass. She still has her niche as WoD support in the meta.
+              Currently, there's no way to get Sena. When she is available, you can consider getting her since she still has very niche uses.
               <br/>
             </p>
 
-
-          <p class="mt-2 text-sm sm:text-base">
-        </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">For Wheel of Destiny team: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. At SS+ ranks, Vita starts beating Sena's scores. In some cases, you can even use both Vita and Sena in the same team.</li>
-              <li class="mt-2">For World Star team: Vita is always better than Sena. Sena doesn't provide a lot of buff.</li>
+              <li class="mt-2">Wheel of Destiny Support: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. In v8.5, we have a new good WoD support Hi Love Elf. We are lacking live data to compare the two valks as primary support.</li>
+              <li class="mt-2">DPS: Sena is rarely used as DPS anymore, but a high investment Sena team can get good score on a few bosses like Lightning Guaymas and Stardust Sa.</li>
 
           </ul>
-          <p class="mt-2 text-sm sm:text-base">
-            Based on the reasons listed above, pulling Sena is not highly recommended anymore, but she's available in Battle Pass, so get her if you can afford it.
-        </p>
+
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
