@@ -1027,6 +1027,7 @@ export const weatherToChinese = {
   "Bleed / Blood Thorn Patch": ["流血"],
   Bloodlust: ["嗜战"],
   Counter: ["克制"],
+  "Dominance / Summon": ["统御"],
   "Resonance / Echoing": ["共鸣"],
   "Extreme Conditions": ["天衍"],
   Flux: ["流变"],
@@ -1039,6 +1040,7 @@ export const weatherToChinese = {
   Stellar: ["星环"],
   "Stellar Crown": ["星冕"],
   Symphony: ["交响"],
+
 };
 
 export function buildAliasMap(

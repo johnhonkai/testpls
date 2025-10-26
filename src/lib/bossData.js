@@ -302,7 +302,7 @@ export const bossData = {
   rangedkalpas:{
       name: 'Kalpas', 
       mechanics: 'Transition phase has high hitcount hp. Has huge freeze trauma, frenzy state is disabled when frozen.', 
-      weakness: 'None', 
+      weakness: 'Fire (M)', 
       typeicon: "images/type/IconBIO.png", 
       bosspic: "images/Bosses/Flame-Chaser - Kalpas.webp", 
       weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
@@ -1080,6 +1080,39 @@ export const teamData = {
   },
   rangedkalpas: {
     teamDataSets: [
+          {
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "images/valkportrait/ps.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '1+',        
+        pct: '97%',
+        bottext: ' Highest score: S2 718, SS 765, 6S 768, SSS 789, 9S 805', 
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/ps.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '49',        
+        pct: '1%',
+        bottext: ' Highest score: 8S 751', 
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '65',        
+        pct: '1%',
+        bottext: ' Highest score: 8S 729', 
+      },      
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+        rank: '95',        
+        pct: '1%',
+        bottext: ' Highest score: SSS 716', 
+      },        
+    ]},
     {
       tabname: "v7.7",
       teamInfoText: "Data is from v7.7 CN Server (PC) Top 100 Myriad ??? D.",
