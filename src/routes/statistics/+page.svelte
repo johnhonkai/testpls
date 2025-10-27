@@ -21,7 +21,7 @@
 
   let viewMode: 'list' | 'tier' = 'list'; // default list view
 
-  let selectedVersion = '8.4';
+  let selectedVersion = '8.5 First Half';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
@@ -366,14 +366,15 @@ function toggleView() {
 <div>
   <h2 class="text-xl font-bold text-blue-400 mb-3">DPS Usage V{selectedVersion}</h2>
   {#each ['S','A','B'] as tier}
-    <div class="flex rounded-lg overflow-hidden bg-blue-900/40 mb-6">
+    <div class="flex overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-blue-900/60 to-indigo-950/30 backdrop-blur-md mb-6">
       
       <!-- Left: Tier Letter -->
       <div 
         class="flex items-center justify-center 
                w-10 text-lg py-6        <!-- mobile -->
                sm:w-14 sm:text-2xl sm:py-12.5 <!-- desktop -->
-               bg-blue-800 text-white font-bold">
+               bg-gradient-to-b from-blue-700 to-indigo-800 shadow-inner
+                text-white font-bold">
         {tier}
       </div>
 
@@ -398,14 +399,15 @@ function toggleView() {
 <div>
   <h2 class="text-xl font-bold text-rose-400 mb-3">Support Usage V{selectedVersion}</h2>
   {#each ['S','A','B'] as tier}
-    <div class="flex rounded-lg overflow-hidden bg-rose-900/40 mb-6">
+    <div class="flex overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-rose-900/60 to-red-950/30 backdrop-blur-md mb-6">
       
       <!-- Left: Tier Letter -->
       <div 
         class="flex items-center justify-center 
                w-10 text-lg py-6
                sm:w-14 sm:text-2xl sm:py-12
-               bg-rose-800 text-white font-bold">
+               bg-gradient-to-b from-red-700 to-rose-800 shadow-inner
+               text-white font-bold">
         {tier}
       </div>
 

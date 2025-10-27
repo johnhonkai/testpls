@@ -686,7 +686,7 @@ export const bossData = {
     weakness: 'Fire / Ice / Lightning (H)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Flame-Chaser - Aponia_SSS.webp", 
-    weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+    weather: "Dominance: Summoned Unit DMG +30%. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },
   domsk:{
     name: 'Shadow Knight', 
@@ -694,7 +694,7 @@ export const bossData = {
       weakness: 'Ice / Fire / Lightning (M)', 
       typeicon: "images/type/IconMECH.png", 
       bosspic: "images/Bosses/Shadow Knight (SK).webp", 
-      weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+    weather: "Dominance: Summoned Unit DMG +30%. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },  
   domtribunal: {
     name: 'Cruising Tribunal', 
@@ -702,7 +702,7 @@ export const bossData = {
     weakness: 'Justice Core shield is immune to Elemental DMG.', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/tribunal.png", 
-      weather: "Dominance: Summoned entities deal 30% more DMG. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
+    weather: "Dominance: Summoned Unit DMG +30%. Valkyrie deals 20% more DMG when self-generated summoned entity is present on the field.", 
   },   
   aka: {
     name: 'Argent Knight: Artemis', 
@@ -3933,6 +3933,19 @@ export const teamData = {
      "ignite-benares": {
     
     teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '100%',
+
+          },                                     
+        ]
+      },      
       {
         tabname: "v8.4",
         teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad ??? D",
