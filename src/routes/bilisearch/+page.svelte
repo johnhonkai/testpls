@@ -164,8 +164,11 @@ function selectValk(valk: string) {
 <!-- Boss Preview (click to open modal) -->
 <div class="flex items-center gap-4">
   <div
-    class="w-20 h-12 sm:w-40 sm:h-20 rounded-lg overflow-hidden cursor-pointer border border-base-300 flex items-center justify-center bg-slate-600"
-    on:click={() => (showBossModal = true)}
+      class="relative w-28 h-16 sm:w-40 sm:h-20 rounded-xl overflow-hidden
+             border border-emerald-500/30 bg-gradient-to-br from-slate-800 via-teal-900 to-emerald-900
+             hover:border-emerald-400/50 hover:shadow-lg hover:shadow-emerald-700/20
+             cursor-pointer transition-all duration-300 flex items-center justify-center"    
+             on:click={() => (showBossModal = true)}
   >
     {#if selectedBoss}
       <img
@@ -182,10 +185,17 @@ function selectValk(valk: string) {
 
 <!-- Boss Modal -->
 {#if showBossModal}
-  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
+  <div
+    class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4"
+    on:click={() => {
+      bossInputRef?.clear();
+      showBossModal = false;
+    }}
+  >
     <div
       class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
              h-[80vh] flex flex-col overflow-hidden"
+      on:click|stopPropagation
     >
       <!-- Top-right close button -->
       <button
@@ -200,7 +210,6 @@ function selectValk(valk: string) {
 
       <h2 class="text-xl font-bold mb-4">Select Boss</h2>
 
-      <!-- Search input -->
       <SearchableInput
         bind:this={bossInputRef}
         label="Search Boss"
@@ -209,17 +218,17 @@ function selectValk(valk: string) {
         autoFocus={showBossModal}
       />
 
-      <!-- Grid -->
-      <div class="mt-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 flex-1 overflow-y-auto">
+      <div
+        class="mt-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 overflow-y-auto
+               max-h-[60vh] min-h-[180px]"
+      >
         {#each bossKeys.filter(b =>
           b.toLowerCase().includes(bossQuery.toLowerCase())
         ) as boss}
           <div
             class="relative cursor-pointer flex flex-col items-center p-2 rounded-lg border transition-all
-              {selectedBoss === boss
-                ? 'border-primary ring-2 ring-primary'
-                : 'border-base-300 hover:border-primary'}"
-            on:click={() => {
+              {selectedBoss === boss ? 'border-primary ring-2 ring-primary' : 'border-base-300 hover:border-primary'}"
+            on:pointerdown|preventDefault={() => {
               selectedBoss = boss;
               bossInputRef?.clear();
               showBossModal = false;
@@ -238,12 +247,16 @@ function selectValk(valk: string) {
 
 
 
+
 <!-- Valkyries (4 slots) -->
 <div class="flex gap-4">
   {#each Array(4) as _, i}
     <div
-      class="w-14 h-14 sm:w-20 sm:h-20 rounded-lg overflow-hidden cursor-pointer border border-base-300 flex items-center justify-center bg-slate-600"
-      on:click={() => (showValkModal = true)}
+        class="relative w-14 h-14 sm:w-20 sm:h-20 rounded-xl overflow-hidden
+               border border-emerald-500/30 bg-gradient-to-br from-slate-800 via-teal-900 to-emerald-900
+               hover:border-emerald-400/50 hover:shadow-lg hover:shadow-emerald-700/20
+               cursor-pointer transition-all duration-300 flex items-center justify-center"
+       on:click={() => (showValkModal = true)}
     >
       {#if selectedValks[i]}
         <img
@@ -261,10 +274,17 @@ function selectValk(valk: string) {
 
 <!-- Valk Modal -->
 {#if showValkModal}
-  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
+  <div class="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4"
+      on:click={() => {
+      valkInputRef?.clear();
+      showValkModal = false;
+    }}
+  
+  >
     <div
       class="relative bg-base-200 p-6 rounded-xl shadow-lg w-full max-w-4xl
              h-[80vh] flex flex-col overflow-hidden"
+      on:click|stopPropagation             
     >
       <!-- Top-right close button -->
       <button
@@ -289,24 +309,24 @@ function selectValk(valk: string) {
       />
 
       <!-- Grid -->
-      <div class="mt-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 flex-1 overflow-y-auto">
-        {#each Object.keys(valkToChinese).filter(v => {
+<div
+  class="mt-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 overflow-y-auto
+         max-h-[60vh] min-h-[180px]"
+>        {#each Object.keys(valkToChinese).filter(v => {
           const canonical = valkAliasMap[valkQuery.toLowerCase()];
           return !valkQuery || v.toLowerCase().includes(valkQuery.toLowerCase()) || v === canonical;
         }) as valk}
-          <div
-            class="relative cursor-pointer flex flex-col items-center p-2 rounded-lg border transition-all
-              {selectedValks.includes(valk)
-                ? 'border-primary ring-2 ring-primary'
-                : 'border-base-300 hover:border-primary'}"
-            on:click={() => {
-              selectValk(valk);
-              valkInputRef?.clear();
-            }}
-          >
-            <img src={getImage(valk, valkToChinese)} alt={valk} class="w-10 h-10 sm:w-20 sm:h-20 object-cover rounded-md" />
-            <span class="mt-2 text-xs text-center">{valk}</span>
-          </div>
+<div
+  class="relative cursor-pointer flex flex-col items-center p-2 rounded-lg border transition-all
+    {selectedValks.includes(valk) ? 'border-primary ring-2 ring-primary' : 'border-base-300 hover:border-primary'}"
+  on:pointerdown|preventDefault={() => {
+    selectValk(valk);
+    valkInputRef?.clear();
+  }}
+>
+  <img src={getImage(valk, valkToChinese)} alt={valk} class="w-10 h-10 sm:w-20 sm:h-20 object-cover rounded-md" />
+  <span class="mt-2 text-xs text-center">{valk}</span>
+</div>
         {/each}
       </div>
     </div>
@@ -391,10 +411,18 @@ function selectValk(valk: string) {
 
 
   <!-- Generated Link -->
-<div class="p-4 bg-base-200 rounded-lg shadow-inner">
-  <h2 class="text-lg font-bold mb-2">Generated Link</h2>
+<div class="p-6 rounded-xl shadow-lg
+  bg-gradient-to-br from-emerald-900 via-teal-800 to-emerald-700
+  border border-emerald-500/20
+  backdrop-blur-md
+  hover:shadow-emerald-700/30
+  transition-all duration-300 ease-out
+  text-gray-100">
+  
+  <h2 class="text-lg font-semibold mb-2 text-emerald-300">Generated Link</h2>
   {#if generatedLinks.length === 0}
-    <p class=" text-slate-400 italic">Your generated link will appear here...</p>
+  <p class="text-sm text-emerald-100/80">
+Your generated link will appear here...</p>
   {:else}
     <ul class="space-y-1">
       {#each generatedLinks as link}

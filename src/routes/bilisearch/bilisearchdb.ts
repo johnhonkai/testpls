@@ -461,7 +461,7 @@ export const valkToChinese = {
     image: "/images/valkportrait/Elysia Hi Love Elf.png"  
   },
 
-  "Behold! Fate-Defying Dragon (*FDD, Coralie)": {
+  "Behold! Fate-Defying Dragon (BFD, *FDD, Coralie)": {
     keywords: ["科"],
     image: "/images/valkportrait/scoralie.png"  
   },
