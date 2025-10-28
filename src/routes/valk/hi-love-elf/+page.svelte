@@ -861,6 +861,9 @@ async function increaseLike() {
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
             <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
+            <br/>
+            <span class="text-cyan-300">Infinity</span>: V8.5 ER stage effect summons Flamechaser chibis which count as summoned unit. After v8.5, Infinity is not an optimal signet.
+
           </p>
         </div>
 
