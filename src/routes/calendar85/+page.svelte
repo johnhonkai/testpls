@@ -753,11 +753,11 @@
                 <BossCard image="/images/Bosses/Benares.webp" date="Nov 24" weather="Ignite" bosspage="/boss?ignite-benares" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Litost.webp" date="Nov 25" />
+                    <BossCard image="/images/Bosses/MOBIUS.png" />
+                    <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" />
+                </div>
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->
