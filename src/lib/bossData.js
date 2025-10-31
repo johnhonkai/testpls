@@ -4289,7 +4289,7 @@ export const teamData = {
             lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_sera.png" ],
             rank: '50',
             pct: '6%',
-            bottext: "Highest Score: 6S 807"
+            bottext: "Highest Score: 6S 807 "
           },                                                                                                                     
         ]
       }
