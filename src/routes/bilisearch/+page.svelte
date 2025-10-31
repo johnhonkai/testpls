@@ -49,60 +49,65 @@ let bossQuery = "";
 $: generatedLinks = [];
 
 $: {
-    // nothing selected -> early set to empty
-    if (!(selectedBoss || selectedValks.length || selectedWeather || abyssGroups.length)) {
+  if (!(selectedBoss || selectedValks.length || selectedWeather || abyssGroups.length)) {
+    generatedLinks = [];
+  } else {
+    // --- Boss keywords ---
+    let bossKeywords: string[] = selectedBoss
+      ? bossToChinese[selectedBoss]?.keywords ?? []
+      : [];
+    if (bossSSS && bossKeywords.length) {
+      bossKeywords = bossKeywords.map(k => `${k} sss`);
+    }
+
+    // --- Valkyrie keywords ---
+    // Instead of merging all into one string, treat each valk as its own array of keywords.
+    let valkKeywordsArr: string[] = [];
+    if (selectedValks.length) {
+      // Get all keyword combinations across all selected valks
+      const valkKeywordSets = selectedValks.map(v => valkToChinese[v]?.keywords ?? []);
+      const valkCombos = valkKeywordSets.reduce(
+        (acc, curr) => acc.flatMap(a => curr.map(b => `${a} ${b}`)),
+        [""]
+      );
+      valkKeywordsArr = valkCombos.filter(Boolean);
+    }
+
+    // --- Weather keywords ---
+    const weatherKeywordsArr: string[] = selectedWeather
+      ? weatherToChinese[selectedWeather] ?? []
+      : [];
+
+    // --- Abyss group keywords ---
+    let abyssKeywordsArr: string[] = [];
+    if (abyssGroups.length) {
+      const perAbyss = abyssGroups.flatMap(g => abyssToChinese[g] ?? []);
+      if (perAbyss.length) abyssKeywordsArr = [perAbyss.join(" ")];
+    }
+
+    // --- Combine all ---
+    const all = [bossKeywords, valkKeywordsArr, weatherKeywordsArr, abyssKeywordsArr].filter(
+      arr => arr.length > 0
+    );
+
+    if (all.length === 0) {
       generatedLinks = [];
     } else {
-      // boss: alternatives (each boss alias stays as an alternative)
-      let bossKeywords: string[] = selectedBoss ? (bossToChinese[selectedBoss].keywords  ?? []) : [];
-
-      // append "sss" to each boss variant if checked
-      if (bossSSS && bossKeywords.length) {
-        bossKeywords = bossKeywords.map(k => `${k} sss`);
+      function cartesian(arrays: string[][]): string[][] {
+        return arrays.reduce(
+          (acc, curr) => acc.flatMap(a => curr.map(b => [...a, b])),
+          [[]] as string[][]
+        );
       }
 
-      // valks: combine ALL selected valks into ONE group string
-      let valkKeywordsArr: string[] = [];
-      if (selectedValks.length) {
-        const perValk = selectedValks
-          .map(v => (valkToChinese[v].keywords ?? []).join(" "))
-          .filter(Boolean);
-        if (perValk.length) {
-          valkKeywordsArr = [perValk.join(" ")]; // single element representing all valks
-        }
-      }
-
-      // weather: alternatives (some weathers may have multiple Chinese keywords)
-      const weatherKeywordsArr: string[] = selectedWeather ? (weatherToChinese[selectedWeather] ?? []) : [];
-
-      // abyss groups: combine selected abyss keywords into one group string (single element)
-      let abyssKeywordsArr: string[] = [];
-      if (abyssGroups.length) {
-        const perAbyss = abyssGroups.flatMap(g => abyssToChinese[g] ?? []);
-        if (perAbyss.length) abyssKeywordsArr = [perAbyss.join(" ")];
-      }
-
-      // build arrays to do Cartesian product on — include only non-empty arrays
-      const all = [bossKeywords, valkKeywordsArr, weatherKeywordsArr, abyssKeywordsArr].filter(arr => arr.length > 0);
-
-      if (all.length === 0) {
-        generatedLinks = [];
-      } else {
-        // Cartesian product
-        function cartesian(arrays: string[][]): string[][] {
-          return arrays.reduce(
-            (acc, curr) => acc.flatMap(a => curr.map(b => [...a, b])),
-            [[]] as string[][]
-          );
-        }
-
-        const combos = cartesian(all);
-
-        // join each combo by spaces to form the search keyword line; raw Chinese (no encode)
-        generatedLinks = combos.map(combo => `https://search.bilibili.com/all?keyword=${combo.join(" ")}`);
-      }
+      const combos = cartesian(all);
+      generatedLinks = combos.map(combo =>
+        `https://search.bilibili.com/all?keyword=${combo.join(" ")}`
+      );
     }
   }
+}
+
 
 let valkQuery = "";
 
