@@ -1,5 +1,11 @@
 
 export const bossToChinese = {
+
+    "Meteoroid: Paros": {
+    keywords:["帕罗斯"],
+    image: "/images/Bosses/Paros.png"         
+  },
+
   "Dominator of Wolves (Andrius, wolf)": {
     keywords:["奔狼的领主", "奔狼", "北风狼"],
     image: "/images/Bosses/Dominator of Wolves.webp"         
