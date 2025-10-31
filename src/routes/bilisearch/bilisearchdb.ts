@@ -538,7 +538,7 @@ export const valkToChinese = {
   },
 
   "Deepspace Anchor: First Light (*FL, *DAFL, Senadina)": {
-    keywords:     ["希", "希娜", "希娜迪雅"],
+    keywords:     ["希", "希娜", "希娜迪雅" , "深空定锚·曙光"],
     image: "/images/valkportrait/Senadina Deepspace Anchor.png"      
   },
 
