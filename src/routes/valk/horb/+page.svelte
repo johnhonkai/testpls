@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Seele - Herrscher of Rebirth" />
     <meta property="og:description" content="Herrscher of Rebirth Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/WZOpsMe.png" />
+    <meta property="og:image" content="https://i.imgur.com/Ixh2Nfs.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/horb" />
     <meta property="og:type" content="website" />
 
