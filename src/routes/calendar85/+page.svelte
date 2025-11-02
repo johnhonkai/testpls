@@ -766,7 +766,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Sampo.webp" date="Nov 28" weather="Melee" bosspage="/boss?sampo" />
                 <BossCard />
                 </div>
                      

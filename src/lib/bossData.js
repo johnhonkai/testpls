@@ -3680,6 +3680,36 @@ export const teamData = {
   sampo: {
     
     teamDataSets: [
+            {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '1+',
+            pct: '90%',
+            bottext: "Highest Score: S2 809, 6S 840, 9S 867"
+
+          },      
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/ps.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '21',
+            pct: '8%',
+            bottext: "Highest Score: 6S 829"
+
+          },               
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '49',
+            pct: '2%',
+            bottext: "Highest Score: 6S 813"
+
+          },                                
+        ]
+      },
       {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
@@ -4223,6 +4253,8 @@ export const teamData = {
             videos: [
       { url: 'https://www.youtube.com/watch?v=kNdj5Py_kSg', abyss: 'RedLotus 523D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=5OCCkTJcUk0', abyss: 'Nirvana 553D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=XrdE5Ze_18o', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://www.youtube.com/watch?v=qc92yrQ9Njo', abyss: 'Nirvana 549D', uploader: 'Haxxor' },
 
     ] 
   }, 
