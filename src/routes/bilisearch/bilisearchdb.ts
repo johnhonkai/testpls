@@ -391,7 +391,7 @@ export const bossToChinese = {
   },
 
   "Sa: Wheel of Transcendence": {
-    keywords:    ["娑"],
+    keywords:    ["娑" , "娑-轮转无我 "],
     image: "/images/Bosses/Sa_SSS.webp"         
 
   },

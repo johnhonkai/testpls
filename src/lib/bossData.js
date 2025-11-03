@@ -2964,7 +2964,8 @@ export const teamData = {
       },
     ],
     videos: [
-      { url: 'https://www.youtube.com/watch?v=hrPMC1UgndY', abyss: 'RedLotus 518D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=PJX4rAu6jYQ', abyss: 'RedLotus 524D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=hrPMC1UgndY', abyss: 'RedLotus 519D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=l_hfTvkHkI4', abyss: 'Nirvana', uploader: 'Ismaël' },
       { url: 'https://www.youtube.com/watch?v=uCKtgBjdj7g', abyss: 'Nirvana 551D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=XqmJjwPJG4k', abyss: 'Nirvana 539D', uploader: 'phylynxbelt' },
