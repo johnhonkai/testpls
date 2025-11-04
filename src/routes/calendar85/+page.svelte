@@ -767,14 +767,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Sampo.webp" date="Nov 28" weather="Melee" bosspage="/boss?sampo" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Raven.png" date="Dec 1" weather="Ice" bosspage="/boss?raven" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Sampo.webp" date="Dec 2" />
+                    <BossCard image="/images/Bosses/Twins.png" />
+                    <BossCard image="/images/Bosses/Assaka.webp" />
+                </div>
     
 
             </div> 

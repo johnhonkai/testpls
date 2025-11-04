@@ -93,32 +93,15 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 
 	];
 
+	let MostAnticipated = [
+		{ title: 'Agent Rita', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/agentrita.jpg', votes: 0 },
+		{ title: 'Timido', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Timido.webp', votes: 0 },
+		{ title: 'APHO Mei', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Raiden_Mei_29.webp', votes: 0 },
+		{ title: 'Seele', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Gwl4BnzbcAAsRM2.jpg', votes: 0 },
+  	{ title: 'Another Ely or FC', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hocely.jpg', votes: 0 },
+		{ title: 'Some Part 2 Char', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Youyun%20copy2.png', votes: 0 },
 
-
-const updateCardsWithVoteCounts = (category, voteCounts) => {
-    if (category === "Best Valkyrie Design 2025") {
-        BestValk2025 = BestValk2025.map((card) => ({
-            ...card,
-            votes: voteCounts[card.title] || 0,
-        }));
-    } else if (category === "Best Valkyrie Gameplay 2025") {
-        BestValkGameplay2025 = BestValkGameplay2025.map((card) => ({
-            ...card,
-            votes: voteCounts[card.title] || 0,
-        }));        
-    } else if (category === "Best Story Arc 2025") {
-        BestStoryArc = BestStoryArc.map((card) => ({
-            ...card,
-            votes: voteCounts[card.title] || 0,
-        }));
-    } else if (category === "Best Boss 2025") {
-        BestBoss = BestBoss.map((card) => ({
-            ...card,
-            votes: voteCounts[card.title] || 0,
-        }));
-    } 
-};
-
+	];
 
 
 const updateVoteCounts = (category) => {
@@ -149,6 +132,11 @@ const updateVoteCounts = (category) => {
             ...card,
             votes: counts[card.title] || 0,
         }));
+    } else if (category === "Most Anticipated Future Valk") {
+        MostAnticipated = MostAnticipated.map((card) => ({
+            ...card,
+            votes: counts[card.title] || 0,
+        }));
     } 
 };
 
@@ -159,6 +147,7 @@ onMount(() => {
   updateVoteCounts('Best Story Arc 2025');
   updateVoteCounts('Best Boss 2025');
   updateVoteCounts('Most Hype HI3-like HSR Character 2025');
+  updateVoteCounts('Most Anticipated Future Valk');
 
   const deadline = new Date('2025-12-11T16:00:00.000Z'); // 11 December 2024, 4 PM UTC
   const updateCountdown = () => {
@@ -176,7 +165,7 @@ onMount(() => {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    countdown = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds. (11 December 2024, 4 PM UTC)`;
+    countdown = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds. (12 December 2024, 12 AM UTC+8)`;
   };
 
   const interval = setInterval(updateCountdown, 1000);
@@ -270,7 +259,7 @@ const confirmVote = async () => {
 
 
 const checkVotedStatus = async () => {
-  const categories = ["Best Valkyrie Design 2025", "Best Valkyrie Gameplay 2025", "Best Story Arc 2025", "Best Boss 2025","Most Hype HI3-like HSR Character 2025"];
+  const categories = ["Best Valkyrie Design 2025", "Best Valkyrie Gameplay 2025", "Best Story Arc 2025", "Best Boss 2025","Most Hype HI3-like HSR Character 2025","Most Anticipated Future Valk"];
   const voterId = localStorage.getItem("voterId") || crypto.randomUUID();
   localStorage.setItem("voterId", voterId); // Save voterId in localStorage
 
@@ -551,13 +540,12 @@ const checkVotedStatus = async () => {
 		{/each}
 	</div>
 
-	<p class="text-center text-xl sm:text-2xl  font-semibold text-slate-100 mb-6 mt-30 font-russoone italic tracking-wider">MOST HYPE HI3-LIKE CHARACTER IN HSR 2025</p>
+	<p class="text-center text-xl sm:text-2xl  font-semibold text-slate-100 mb-6 mt-30 font-russoone italic tracking-wider">MOST ANTICIPATED FUTURE VALK</p>
 
-
-	<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 max-w-screen-xl w-full ">
-		{#each BestHSRRef as card (card.title)}
-    <div 
-  class="group rounded-2xl border border-white/20 bg-gradient-to-b from-slate-950 to-slate-600 shadow-sm overflow-hidden
+	<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-screen-lg w-full ">
+		{#each MostAnticipated as card (card.title)}
+<div 
+  class="group rounded-2xl border border-white/20 bg-gradient-to-b from-rose-950 to-rose-900 shadow-sm overflow-hidden
          transform transition-all duration-300 ease-in-out
          hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/20
          
@@ -567,7 +555,7 @@ const checkVotedStatus = async () => {
   <img 
     src={card.image} 
     alt={card.title} 
-    class="w-full h-40 sm:h-50 object-cover object-top 
+    class="w-full h-40 sm:h-70 object-cover object-top 
            transition-transform duration-500 ease-in-out 
            group-hover:scale-105"
   />
@@ -586,7 +574,7 @@ const checkVotedStatus = async () => {
           </div>
       <div class="flex justify-center">
       <button 
-        on:click={() => openVoteModal(card.title, "Most Hype HI3-like HSR Character 2025")}
+        on:click={() => openVoteModal(card.title, "Most Anticipated Future Valk")}
         class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
       >
         VOTE
@@ -595,10 +583,15 @@ const checkVotedStatus = async () => {
   </div>
 </div>
 
+
 		{/each}
+
+
 	</div>
 
-	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-30 font-russoone italic tracking-wider">TOP 3 DPS 2025</p>
+
+
+	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-20 font-russoone italic tracking-wider">TOP 3 DPS 2025</p>
 	<p class="text-center text-sm text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
 
 
