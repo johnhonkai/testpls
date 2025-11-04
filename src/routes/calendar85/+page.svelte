@@ -79,8 +79,12 @@
         
         },
         "Valk2": {
-            title: "Battlesuit Supply B: Reign Solaris",
-            description: '<li>Duration: 2 weeks</li><li>A-rank: Valkyrie Pledge (UP), Ritual Imayoh, Snowy Sniper, Wolf Dawn </li>',
+            title: "Battlesuit Supply B: BFD",
+            description: '- Duration: 2 weeks<br/>- A-rank: Valkyrie Blastmetal (UP), Phantom Iron, Snowy Sniper, Midnight Absinthe',
+        },         
+        "Valk3": {
+            title: "Battlesuit Supply A: Reign Solaris",
+            description: '- Duration: 4 weeks<br/>- A-rank: Blueberry Blitz (UP), Valkyrie Triumph, Valkyrie Pledge, Swallowtail Phantasm',
         },    
         "Carnival": {
             title: "Carnival Battlesuit Supply",
@@ -119,6 +123,11 @@
             description: '- Duration: 3 weeks<br/>- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: DA / HoFs / MPE card or 5 stamps.',
             image: "https://i.imgur.com/M2lLRVy.jpeg"
         },  
+        "OutfitSupply2": {
+            title: "HoRB Eternal Outfit Outfit Supply",
+            description: '- Duration: 2 weeks<br/>- Max cost: 7680 crystal for outfit + other rewards<br/>- S-rank box: MC / BK / Phoenix card or 5 stamps.',
+            image: "https://i.imgur.com/KWv3zIZ.jpeg"
+        },          
         "OutfitBox": {
             title: "Outfit Box Supply",
             description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li></ul>',
@@ -241,7 +250,15 @@
                             <img src="https://i.imgur.com/UMmAJMr.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
                     </div>    
- 
+                    <div on:click={() => openModal("Valk3")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-4 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
+                            <img src="https://i.imgur.com/kZvlJ79.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        </div>
+                    </div>   
                 </div>
 
                 <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -256,7 +273,12 @@
                             <img src="https://i.imgur.com/S37M0fG.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
                         </div>
                     </div>                   
+                    <div on:click={() => openModal("Equip")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-4 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris Equipment</span>
 
+                    </div>  
                 </div>
 
                 <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip ">
@@ -265,7 +287,7 @@
                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
                     </div>  
                     <div class=" col-span-4"></div>                  
-                    <div on:click={() => openModal("")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Valk2")} class=" col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">BFD</span>
@@ -398,7 +420,7 @@
                         </div>
                     </div>    
                     
-                    <div on:click={() => openModal("")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("OutfitSupply2")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
 <div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
   <span class="font-semibold">Eternal Night</span>
@@ -558,7 +580,7 @@
                 <div></div>
                 <div on:click={() => openModal("")} class="col-span-19 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Ely Cube Event</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Ellie In Wonderland</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/PB6TY09.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -635,7 +657,7 @@
                 <div></div>                
                 <div on:click={() => openModal("")} class="col-span-7 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Happy Arcade. Starts on Monday.</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Yippee Arcade. Starts on Monday.</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
                         <img src="https://i.imgur.com/OIYByjK.png" alt="Event 1" class="w-full h-full object-cover " />
@@ -644,7 +666,23 @@
 
                 
             </div>
+            <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold col-span-1  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 11</span>
+                </div> 
+                <div class="col-span-5"></div>
+                <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Autumn Outing</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-24 h-full">
+                        <img src="https://i.imgur.com/d3pMBv1.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
 
+                
+            </div>
     </div>
     </div>
 
