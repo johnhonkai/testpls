@@ -99,7 +99,7 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 		{ title: 'APHO Mei', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Raiden_Mei_29.webp', votes: 0 },
 		{ title: 'Seele', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Gwl4BnzbcAAsRM2.jpg', votes: 0 },
   	{ title: 'Another Ely or FC', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/hocely.jpg', votes: 0 },
-		{ title: 'Some Part 2 Char', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Youyun%20copy2.png', votes: 0 },
+		{ title: 'Some Part 2 Char', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/part2.jpg', votes: 0 },
 
 	];
 
