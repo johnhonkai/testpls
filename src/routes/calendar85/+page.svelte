@@ -123,6 +123,10 @@
             description: '- Duration: 3 weeks<br/>- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: DA / HoFs / MPE card or 5 stamps.',
             image: "https://i.imgur.com/M2lLRVy.jpeg"
         },  
+        "OutfitSupply3": {
+            title: "Peachy Spring Outfit Supply",
+            description: '- Duration: 2 weeks<br/>- Max cost: 7680 crystal for outfit + other rewards<br/>- S-rank box: AE / FR / CH card or stamps.',
+        },         
         "OutfitSupply2": {
             title: "HoRB Eternal Outfit Outfit Supply",
             description: '- Duration: 2 weeks<br/>- Max cost: 7680 crystal for outfit + other rewards<br/>- S-rank box: MC / BK / Phoenix card or 5 stamps.',
@@ -315,7 +319,11 @@
                         <span class="absolute inset-0 flex items-center justify-center z-10">BFD Equipment</span>
 
                     </div>
+                    <div on:click={() => openModal("Equip")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">HoH DLC Equipment</span>
 
+                    </div>
                 </div>
 
                 <div class="relative grid grid-cols-22 gap-1  h-[54px] pe-1 overflow-x-clip ">
@@ -430,6 +438,17 @@
                             <img src="https://i.imgur.com/92SkZUr.png" alt="HoRB" class="w-full h-full object-cover rounded-md" />
                         </div>
                     </div>  
+
+                    <div on:click={() => openModal("OutfitSupply3")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+<div class="absolute inset-0 flex flex-col items-center justify-center z-10 leading-5">
+  <span class="font-semibold">Peachy Spring</span>
+  <span class="font-normal"> 7680 crystals </span>
+</div>                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-[47px]">
+                            <img src="https://i.imgur.com/YUcIXJH.png" alt="HoRB" class="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </div>                      
                 </div>
 
                 
