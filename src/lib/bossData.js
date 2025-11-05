@@ -2574,8 +2574,34 @@ export const teamData = {
   },
   raven: {
     teamDataSets: [
+          {
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_sera.png"],
+        rank: '1+',
+        pct: '46%',
+        bottext: "Highest Score: 6S 761, 9S 794"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Senadina Deepspace Anchor.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_sera.png"],
+        rank: '3',
+        pct: '53%',
+        bottext: "Highest Score: 6S 754, 9S 788"
+      },
+      {
+        type: 'lineup',
+        lineup: [ "images/valkportrait/Elysia Hi Love Elf.png","images/valkportrait/scoralie.png","images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '75',
+        pct: '1%',
+        bottext: "Highest Score: 9S 729"
+      },      
+    ]},
     {
-      tabname: "v7.9 SEA",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 SEA Server Top 100 Myriad 541 D.",
     entries: [
       {
@@ -2965,6 +2991,10 @@ export const teamData = {
     ],
     videos: [
       { url: 'https://www.youtube.com/watch?v=PJX4rAu6jYQ', abyss: 'RedLotus 524D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=neS9K7TrjY0', abyss: 'Nirvana 554D', uploader: 'schz' },
+      { url: 'https://www.youtube.com/watch?v=YkKzbqCwIrg', abyss: 'Nirvana 550D', uploader: 'Haxxor' },
+      { url: 'https://www.youtube.com/watch?v=sQBQxiru93E', abyss: 'Nirvana 554D', uploader: 'phylynxbelt' },
+
       { url: 'https://www.youtube.com/watch?v=hrPMC1UgndY', abyss: 'RedLotus 519D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=l_hfTvkHkI4', abyss: 'Nirvana', uploader: 'Ismaël' },
       { url: 'https://www.youtube.com/watch?v=uCKtgBjdj7g', abyss: 'Nirvana 551D', uploader: 'phylynxbelt' },
