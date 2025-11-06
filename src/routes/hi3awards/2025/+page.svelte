@@ -87,6 +87,10 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 		{ title: 'Jovial Deception: Shadowdimmer', description: '', image: '/images/valkfull/jd.webp', votes: 1319 },
 	];
 
+  	let Animation = [
+		{ title: 'Miss Elf Magical Invitation', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/ely%20song.jpg' },
+	];
+
   	let BestHSRRef = [
 		{ title: 'Kevin as Phainon', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/kevinphainon.png', votes: 0 },
 		{ title: 'Elysia as Cyrene', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/elycyrene.png', votes: 0 },
@@ -344,7 +348,10 @@ const checkVotedStatus = async () => {
 </div>
 
 <div class="flex flex-col items-center px-4 py-6 mb-60 ">
-	<p class="text-center text-sm text-gray-400 mb-8">Voting ends in: {countdown}</p>
+	<p class="text-center  text-gray-400 mb-8">Voting ends in: {countdown}
+    <br/>
+    Votes are not updated in real-time. Votes will be hidden near the end of voting time.
+  </p>
 
 	
 	
@@ -496,7 +503,7 @@ const checkVotedStatus = async () => {
 	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-6 mt-30 font-russoone italic tracking-wider">BEST BOSS 2025</p>
 
 
-	<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 max-w-screen-xl w-full ">
+	<div class="grid grid-cols-2 gap-4 sm:gap-10 max-w-screen-lg w-full ">
 		{#each BestBoss as card (card.title)}
 <div 
   class="group rounded-2xl border border-white/20 bg-gradient-to-b from-orange-950 to-orange-900 shadow-sm overflow-hidden
@@ -588,10 +595,22 @@ const checkVotedStatus = async () => {
 
 	</div>
 
+	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-20 font-russoone italic tracking-wider">BEST ANIMATION</p>
+	<p class="text-center  text-gray-400 mb-8">Miss Elf Magical Invitation wins by default since there's no other animation. Watch it here <a class="link" href="https://www.bilibili.com/video/BV1SDpRzjEDu/">https://www.bilibili.com/video/BV1SDpRzjEDu/</a></p>
 
+
+	<div class="grid grid-cols-1  gap-6 max-w-screen-xl w-full">
+		{#each Animation as card (card.title)}
+			<CardWrapperVotingWide {card} bg="bg-rose-500">
+        <div slot="below" class="flex items-center justify-between mt-6 w-full">
+
+        </div>
+			</CardWrapperVotingWide>
+		{/each}
+	</div>
 
 	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-20 font-russoone italic tracking-wider">TOP 3 DPS 2025</p>
-	<p class="text-center text-sm text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
+	<p class="text-center  text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
 
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
@@ -608,7 +627,7 @@ const checkVotedStatus = async () => {
 	</div>
 
 	<p class="text-center text-xl sm:text-2xl  font-semibold text-slate-100 mb-1 mt-20  font-russoone italic tracking-wider">TOP 3 SUPPORT 2025</p>
-	<p class="text-center text-sm text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
+	<p class="text-center  text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
 
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
