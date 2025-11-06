@@ -371,13 +371,13 @@
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=GKAAdGBc918" id="news3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=dvicPhV1iRM" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/GKAAdGBc918/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/dvicPhV1iRM/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">HoRB DLC Gameplay</h3>
-          <p class="text-slate-300 text-md">Seele gets a Stellar Key Upgrade</p>
+          <h3 class="text-lg font-semibold text-white mb-1">New Rita Revealed</h3>
+          <p class="text-slate-300 text-md">S-rank IMG Lightning WoD</p>
         </div>
       </a>
   
@@ -415,7 +415,17 @@
           <p class="text-slate-300 text-sm">Check out Arustat site for HI3 teambuilder, Arena teams, gacha simulator, and more</p>
         </div>
       </a>
-  
+
+      <a href="/hi3awards/2025"  id="content3" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="/images/newstab/hi3award2025.gif" alt="Arustat Site" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-white mb-1">HI3 Awards 2025</h3>
+          <p class="text-slate-300 text-sm">Vote for your fav HI3 content</p>
+        </div>
+      </a>
+
     </div>
   </div>
   
