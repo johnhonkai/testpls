@@ -94,7 +94,6 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 	];
 
 	let MostAnticipated = [
-		{ title: 'Agent Rita', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/agentrita.jpg', votes: 0 },
 		{ title: 'Timido', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Timido.webp', votes: 0 },
 		{ title: 'APHO Mei', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Raiden_Mei_29.webp', votes: 0 },
 		{ title: 'Seele', description: '', image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Gwl4BnzbcAAsRM2.jpg', votes: 0 },
