@@ -377,11 +377,11 @@ export const storyOrder = [
       },    
        {
       image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/ely%20song.jpg',
-      title: 'Miss Elf Magical Invitation',
+      title: "Miss Elf's Magical Invitation",
       inGame: false,
       type: 'promo-video',
       version: '8.5',
-      link: 'https://www.bilibili.com/video/BV1SDpRzjEDu'
+      link: 'https://www.youtube.com/watch?v=kcZXMXSHbm4'
     },         
                   {
         image: 'https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/chapter/withyou.png',

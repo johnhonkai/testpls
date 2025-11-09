@@ -596,7 +596,7 @@ const checkVotedStatus = async () => {
 	</div>
 
 	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-20 font-russoone italic tracking-wider">BEST ANIMATION</p>
-	<p class="text-center  text-gray-400 mb-8">Miss Elf Magical Invitation wins by default since there's no other animation. Watch it here <a class="link" href="https://www.bilibili.com/video/BV1SDpRzjEDu/">https://www.bilibili.com/video/BV1SDpRzjEDu/</a></p>
+	<p class="text-center  text-gray-400 mb-8">Miss Elf Magical Invitation wins by default since there's no other animation. Watch it here <a class="link" href="https://www.youtube.com/watch?v=kcZXMXSHbm4">https://www.youtube.com/watch?v=kcZXMXSHbm4</a></p>
 
 
 	<div class="grid grid-cols-1  gap-6 max-w-screen-xl w-full">

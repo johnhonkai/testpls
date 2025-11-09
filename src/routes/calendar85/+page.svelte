@@ -518,6 +518,15 @@
                     </div>
                 </div>
 
+                <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Chibi Showdown Event</span>
+                    <!-- Image positioned on the right side -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
+                        <img src="https://i.imgur.com/86emqVF.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
             </div>
 
             <div class="relative grid grid-cols-11 gap-1 h-[54px] pe-1 overflow-x-clip">
@@ -842,7 +851,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Dec 5" weather="Physical" bosspage="/boss?deliverance" />
                 <BossCard />
                 </div>
                      

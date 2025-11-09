@@ -2167,6 +2167,7 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=xJVaikZ1tUk', abyss: 'Nirvana 555D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=9NB9rocr36Y', abyss: 'Nirvana 548D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/embed/cz6VOeE-slU', abyss: 'Nirvana 540D', uploader: 'Xintsu' },
       { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
@@ -2359,7 +2360,54 @@ export const teamData = {
   deliverance: {
     teamDataSets: [
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/sparkle.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+        rank: '1-3,9',
+        pct: '6%',
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/sparkle.png", "images/valkportrait/ps.png", "images/valkportrait/asop_teri.png"],
+        rank: '4',
+        pct: '41%',
+      },    
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/sparkle.png", "images/valkportrait/scoralie.png", "images/valkportrait/asop_teri.png"],
+        rank: '5+',
+        pct: '11%',
+      },   
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/ps.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+        rank: '19',
+        pct: '30%',
+      },       
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/scoralie.png", "images/valkportrait/ps.png", "images/valkportrait/asop_teri.png"],
+        rank: '25',
+        pct: '10%',
+      },    
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/scoralie.png", "images/valkportrait/kiana badum.png", "images/valkportrait/asop_teri.png"],
+        rank: '34',
+        pct: '1%',
+      },       
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png", "images/valkportrait/scoralie.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+        rank: '52',
+        pct: '1%',
+      },                  
+    ]},      
+    {
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
