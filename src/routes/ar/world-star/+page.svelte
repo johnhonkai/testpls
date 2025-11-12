@@ -332,13 +332,32 @@ async function captureStats() {
     <div class="flex flex-wrap gap-3">
 
         <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
-
-
           <img
             src="/images/valkportrait/asop_songque.png"
             class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
           />
         </div>
+
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src={"/images/element/icon_physical.webp"} class="w-6 sm:w-full h-full object-cover" />
+            </div>
+          <img
+            src="/images/valkportrait/asop_sera.png"
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+
+        <div class="relative group p-1 hover:bg-gray-800 rounded transition w-fit">
+            <div class="absolute top-1 left-1 sm:left-0 sm:mx-1 w-7 z-10">
+              <img src={"/images/element/icon_physical.webp"} class="w-6 sm:w-full h-full object-cover" />
+            </div>
+          <img
+            src="/images/valkportrait/asop_chenxue.png"
+            class="rounded w-20 sm:w-24 h-auto aspect-square object-cover"
+          />
+        </div>
+
     </div>
   </section>
 

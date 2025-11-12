@@ -852,14 +852,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Dec 5" weather="Physical" bosspage="/boss?deliverance" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Hephaestus SSS.webp" date="Dec 8" weather="Ranged" bosspage="/boss?rangedhepa" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Dec 9" />
+                    <BossCard image="/images/Bosses/duonigue.png" />
+                    <BossCard image="/images/Bosses/Hephaestus.webp" />
+                </div>
     
 
             </div>  

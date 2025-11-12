@@ -1433,6 +1433,25 @@ export const teamData = {
   rangedhepa: {
     teamDataSets: [
     {
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_sera.png"],
+        pct: '98%',
+        bottext: 'Highest score: 9S 834',
+
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Hi Love Elf.png",  "images/valkportrait/scoralie.png",  "images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/asop_chenxue.png"],
+        pct: '2%',
+        bottext: 'Highest score: 9S 834',
+
+      },
+    ]},      
+    {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
@@ -4372,6 +4391,10 @@ export const teamData = {
         ]
       }
     ],
+            videos: [
+      { url: 'https://www.youtube.com/watch?v=krWYIBux3vBQ', abyss: 'Nirvana 556D', uploader: 'phylynxbelt' },
+
+    ] 
   },
 
         domtribunal: {
