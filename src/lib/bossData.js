@@ -1440,6 +1440,7 @@ export const teamData = {
         type: 'lineup',
         lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_sera.png"],
         pct: '98%',
+        rank: '1+',
         bottext: 'Highest score: 9S 834',
 
       },
@@ -1447,7 +1448,8 @@ export const teamData = {
         type: 'lineup',
         lineup: ["images/valkportrait/Elysia Hi Love Elf.png",  "images/valkportrait/scoralie.png",  "images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/asop_chenxue.png"],
         pct: '2%',
-        bottext: 'Highest score: 9S 834',
+        rank: '46',
+        bottext: 'Highest score: 8S 815',
 
       },
     ]},      
