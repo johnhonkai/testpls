@@ -1,0 +1,101 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: v8.6 Patch Note v2
+version: '8.6'
+sortOrder: '1'
+image: "/images/valkportrait/Agent Rita.png"
+---
+
+
+### LINKS
+
+- [8.6 Patch Note](/betanews/86log)
+
+---
+
+### VIDEO OVERVIEW
+Video overview of all new content: 
+
+---
+
+### V2
+
+#### New S-rank Rita
+- S-rank IMG Lightning, uses scythe
+- AR Wheel of Destiny
+- Support AR Tags: WoD, LoA
+
+#### New Outfits
+- Vita [White Velvet]. Costs B-chips.
+- A-Helia outfit. Free from event.
+- CE Griseo outfit. From Knight BP.
+
+#### 8.6 Main Event - Shadow Agent: Mystery of the Banquet
+- There's multiplayer mode 
+
+#### P2 Chapter 11
+
+#### EX Abyss
+- Lightning weather boss Moruduo (IMG PIG)
+- WoD weather HoD Minion (IMG)
+- Lightning weather Husk Mysticism (IMG)
+- Lightning weather Husk Existentialism (IMG)
+
+#### Memorial Arena
+- Added SSS Moruduo (IMG PIG)
+
+#### Elysian Realm
+- Added New Rita
+- F17 load boss is HoD Minion
+- Updated stage effects
+
+#### Star-Tempered Battle
+- New stages
+
+#### Battle Pass
+- Main Shop: Lantern and her gears
+- Reserve Shop: Added Dreamweaver and her gears, Star of Eden Divine Key, Prometheus weapon and stigma
+- Knight BP gives CE Griseo outfit 
+
+#### Shop
+- Exchange Shop: Added Aponia's gears and Eden's gears.
+- Witch Corridor: Added Herrscher of Rebirth stamps (gold witch orbs)
+
+#### Supply
+- Dorm Supply: Added Herrscher of Human, Jade Knight, Herrscher of Truth, Herrscher of Finality, Dreamweaver, Vill-V
+
+#### Foundry
+- Added direct forge option for G4 Idol Transformation stigma set (Chrono Navi stigma)
+- Added New Rita stigma
+
+#### Topup Event
+Topup 100 usd to get up to 3 Thel stamps / 3 JD stamps and other rewards
+
+#### Free Lunar Vow
+In v8.6, do 4 of the 5 following tasks to get FREE LUNAR VOW
+- Log in
+- Participate in multiplayer mode of Agent Rita event
+- Clear P2 Chapter 11
+- Clear event Heroic Expedition: Game of Warriors
+- Get 50,000 points in Star-Tempered Battle event
+
+#### Battlesuit Changes
+- Thelema: Moment of Indulgence skill summary has been fixed. 
+- Hi Love Elf: Blessed by Purity and Beauty skill summary has been fixed.
+- Hi Love Elf: Optimized voice line trigger rate during Basic ATK.
+- Badum: Fixed arm animation when using outfit
+- Badum: Fixed rice cake model when using outfit 
+- Badum: Fixed Badum not showing expression in valk menu when using outfit
+
+#### Stigma Changes
+WoD valks and valks that can support WoD now have this added to stigma 3pc: Stigma buffs are activated when you enter AR Surplus state.
+
+#### ER Changes
+- HLE: Fixed an issue where you might get blocked when using weapon skill vs Kevin
+- SNymph: Fixed an issue where the red notification dot doesnt disappear if you dont unlock her in valk menu.
+
+#### System Changes
+- In valk menu, fixed an issue where HLE might be missing when selecting AR tag characters.
+- Weapon and stigma inventory limit increased from 1200 to 2000
+- ER: When you clear ER in previous week, you won't need to manually reselect difficulty this week. You can directly enter the highest difficulty when you click LITE button.
+- Some other minor bug fixes

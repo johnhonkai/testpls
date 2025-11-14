@@ -17,7 +17,7 @@
   export let data;
 
   // Set the default selected version
-  let selectedVersion = "8.5";
+  let selectedVersion = "8.6";
 
   // Filter posts by the selected version
   $: filteredPosts = selectedVersion === "All"
