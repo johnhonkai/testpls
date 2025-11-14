@@ -115,7 +115,7 @@ Evasion skill: Can be followed up with Basic SEQ 3. CD: 15s.
 During certain attacks, Rita can press weapon to use Replay ATK, counts as evasion. 
 - Basic SEQ 4: Replay Basic SEQ 4 and deal additional 100% ATK of Lightning DMG, restore 25 meter.
 - QTE: Replay QTE atk, deal additional 300% ATK of Lightning DMG, restore 25 meter.
-- Evasion: Teleport gracefully to the enemy's side, deal 6005 ATK of Lightning DMG.
+- Evasion: Teleport gracefully to the enemy's side, deal 600% ATK of Lightning DMG.
 - Combo ATK: After replaying Combo ATK, unleashes an even stronger version, deal 1800% ATK of Lightning DMG, trigger 3s time fracture.
 - During SO, Replay can be used after Ultimate, deal 100%x10 + 1000% + 100%x3 ATK of Lightning DMG. Ends SO, and refunds 40% of the remaining SO duration as AR meter. This atk has time stop.
 
