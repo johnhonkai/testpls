@@ -61,9 +61,6 @@ Video overview of all new content:
 - Exchange Shop: Added Aponia's gears and Eden's gears.
 - Witch Corridor: Added Herrscher of Rebirth stamps (gold witch orbs)
 
-#### Supply
-- Dorm Supply: Added Herrscher of Human, Jade Knight, Herrscher of Truth, Herrscher of Finality, Dreamweaver, Vill-V
-
 #### Foundry
 - Added direct forge option for G4 Idol Transformation stigma set (Chrono Navi stigma)
 - Added New Rita stigma
