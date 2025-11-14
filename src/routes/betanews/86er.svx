@@ -1,0 +1,69 @@
+---
+creationDate: "2025-01-10T03:44:52.521Z"
+title: 8.6 Elysian Realm v2
+version: '8.6'
+sortOrder: '5'
+image: "/images/valkportrait/Agent Rita.png"
+
+---
+
+### LINKS
+
+- [8.6 Patch Note](/betanews/86log)
+
+---
+
+### Stage Buffs
+- After entering a floor, a soul-ink painting will be generated. When valk is in the painting zone, the valk gain Total DMG +30%, followed by a dye explosion, tainting enemies with unlocked Star-signet paints. Enemies take 6% less Total DMG, after each floor, increased by 1.8%, up to 33% (independent)
+- Enemies take 30% less Total DMG (independent). When valk deals melee or weapon skill dmg, disable the effect for 10s, can be refreshed.
+- Every time valk deals Combo or Charged ATK DMG, nearby enemies are tainted with silver paint. These enemies drop 5 silver coin when you hit them, lasts for 8s, can be refreshed.
+- When AR is activated, valk Total DMG +30%
+- Helix and Reverie base signet level +2
+
+---
+
+### Load Buffs
+- 0: F17 boss is replaced with HoD Minion
+- 5: Valk max sp +30
+- 5: Valk Total DMG +15%. When you take dmg, the buff is disabled for 5s, can be refreshed.
+- 10: Upon triggering evasion skill, valk Phy and Ele DMG +15% for 8s, can be refreshed.
+- 10: During SO, valk Total DMG +20%
+- 15: Upon dealing Weapon or Combo ATK DMG, valk Total DMG +30% for 15s, can be refreshed.
+- 15: Valks with scythe, bow, rocket hammer and rapid-shot crossbow gain Phy Breach +45% and Ele Breach +20%
+
+---
+
+### Agent Rita
+
+#### Battlesuit Changes
+
+Valk adjustment
+- Activate AR WoDestiny
+- Starts the battle with full AR
+- QTE, QTE Replay, and Phantom attacks will pull surrounding enemies
+- Take 20% less Total DMG 
+- During SO, instantly gain +20 AR Overflow points 
+- Enemies take 60% more Lightning DMG from herself (independent)
+
+#### Signet 1
+During AR Charging, gain the following effects:
+- Starts the battle with full sp. 
+- After using Replay atk of any skill besides QTE, gain 4 trigger counter. The counters can be used to activate QTE or QTE replay by pressing weapon (QTE / QTE Replay each consumes 1 counter). QTE sp recovery is fixed to 25 points.
+- After using Combo ATK Replay, QTE deals additional 400% ATK of Lightning DMG, also, Combo ATK and QTE gain Total DMG +60%, lasts for 10s, can be refreshed.
+- QTE and QTE Replay count as Basic ATK.
+
+#### Signet 2
+During AR Charging: When you are in AR Surplus state, Combo ATK deals additional 1500% ATK of Lightning DMG. Upon casting QTE or QTE Replay, recover additional 25 sp.
+
+#### Signet 3
+During SO: 
+- Immediately consume 100 meter to unleash a powerful atk, deal 300% ATK of Lightning DMG (counts as Combo ATK).
+- Rondo duration is extended to 24s, during which you gain Total DMG +20%. After casting Phantom, pressing ATK or weapon will connect to Basic SEQ 4. Basic SEQ 4 Replay can be used infinitely, and can pull nearby enemies. When meter is full, Rita will auto-cast Judgement Dance, consume all meter and deal 300% ATK of Lightning DMG, counts as Combo ATK. Using Judgement Dance twice will reset Ult cd.
+- When SO ends, gain full AR meter, and SO CD is reset.
+
+#### Signet 4
+During SO, casting Phantom consumes 25% of current HP, and grants the following buff for 24s (can be refreshed):
+ Everytime Basic ATK SEQ 4 or its Replay hits a target, valk recover 150 HP, and Basic ATK gain Lightning DMG +40%.
+
+#### Signet 5
+When Combo ATK or QTE hits a target, the target takes 40% more Total DMG for 20s, can be refreshed.

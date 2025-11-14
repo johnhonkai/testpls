@@ -10,6 +10,7 @@ image: "/images/valkportrait/Agent Rita.png"
 ### LINKS
 
 - [8.6 Patch Note](/betanews/86log)
+- [8.6 ER](/betanews/86er)
 
 ---
 
