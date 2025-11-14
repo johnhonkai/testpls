@@ -33,7 +33,7 @@
     let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-pink-950 to-pink-900 shadow-lg shadow-base-100 overflow-hidden">
+<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-purple-950 to-purple-900 shadow-lg shadow-base-100 overflow-hidden">
     <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">窈窕谍影 DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
@@ -75,33 +75,6 @@
         </summary>
         <div class="py-3 px-4">
 
-             <p class="text-sm sm:text-base mb-4">
-                Hi Love Elf best teammates are usually <a href='/valk/behold-fate-defying-dragon' class="link">Behold! Fate-Defying Dragon (BFD)</a> + either <a href='/valk/paws' class="link">PAWS</a> or <a href='/valk/badum' class="link">Badum</a> or even <a href='/valk/hoh' class="link">HoH</a> (can be others) depending on the boss.
-            </p>
-
-            <p class="text-sm sm:text-base mb-4"><b>BFD</b><br/> - Provides elemental breach and strong buffs.
-                <br/>
-                - Increases the amount of freeze trauma and freeze duration inflicted by HLE.
-
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>PAWS</b><br/> Used in Symphony weather where three different elements are required to gain maximum damage buff.
-
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>Badum</b><br/> Used to counter SD enemies.
-
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>Herrscher of Rebirth</b><br/> HoRB provides a lot of suspended animations, so she can be a good support for Memorial Arena mode.
-
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>Chenxue</b><br/> Chenxue gives big dmg buff and speeds up your Stellar Outburst rotation by allowing the support to skip actions like Combo ATK or Weapon Skill - the supports just have to cast Ult.
-
-            </p> 
-
-            <p class="text-sm sm:text-base mb-4"><b>Missing a teammate with Symbiosis tag</b><br/> If you are missing a teammate with Symbiosis tag, you can use Rite of Oblivion characters: <a href='/valk/lp' class="link">Lone Planetfarer</a>, <a href='/valk/hofi' class="link">Herrscher of Finality</a> or <a href='/valk/hofi' class="link">Valkyrie Blastmetal.</a> Thanks to HLE's negative sp mechanic, you can do full rotation even without a third Symbiosis team member.</p>
 
     </div>
     </details>

@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: v8.6 Patch Note v2
+title: 8.6 Patch Note v2
 version: '8.6'
 sortOrder: '1'
 image: "/images/valkportrait/Agent Rita.png"
@@ -10,6 +10,8 @@ image: "/images/valkportrait/Agent Rita.png"
 ### LINKS
 
 - [8.6 Patch Note](/betanews/86log)
+- [Agent Rita](/betanews/86rita)
+- [Agent Rita Equipment](/betanews/86ritagear)
 - [8.6 ER](/betanews/86er)
 
 ---
@@ -32,6 +34,7 @@ Video overview of all new content:
 - CE Griseo outfit. From Knight BP.
 
 #### 8.6 Main Event - Shadow Agent: Mystery of the Banquet
+- Autochess event
 - There's multiplayer mode 
 
 #### P2 Chapter 11
@@ -41,6 +44,7 @@ Video overview of all new content:
 - WoD weather HoD Minion (IMG)
 - Lightning weather Husk Mysticism (IMG)
 - Lightning weather Husk Existentialism (IMG)
+- WoD weather Sushang (PSY)
 
 #### Memorial Arena
 - Added SSS Moruduo (IMG PIG)

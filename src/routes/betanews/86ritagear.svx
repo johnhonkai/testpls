@@ -1,0 +1,88 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Agent Rita Gear Translation V2
+version: '8.6'
+sortOrder: '3'
+image: "/images/valkportrait/Agent Rita.png"
+
+---
+
+### LINKS
+
+- [8.6 Patch Note](/betanews/86log)
+- [Agent Rita](/betanews/86rita)
+- [Agent Rita Equipment](/betanews/86ritagear)
+- [8.6 ER](/betanews/86er)
+
+---
+
+
+### WEAPON 
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/EimfrbZ.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Codename: Elite Mission </p>
+</div>
+</div>
+
+
+#### ACTIVE
+The weapon active’s DMG, CD and SP cost are based on wielder type. If wielder has WoDestiny trait, Lightning DMG +15%. Agent Rita equip bonus:
+- When Shadow Star ATK hits an IMG enemy, transfer 100% dmg from Shell to Seed (HP Loss DMG).
+- When QTE or QTE Replay hits a target, restore 25 meter.
+
+#### PASSIVE 1
+During AR Charging: Ult evasion restore additional 2 AR. Self Total DMG +15%. Agent Rita equip bonus: Self Lightning DMG +25%, Team Total DMG +15%, increased to 30% during AR Surplus state.
+
+#### PASSIVE 2
+Enemies take 12% more Lightning DMG from the wielder. Agent Rita equip bonus: Team Ele DMG +20% and Phy DMG +12%.
+
+#### SYNERGY
+Enemies take 2 / 4 / 6% more Total DMG from valks on the field (independent, cannot stack).
+
+Agent Rita equip bonus: Enemies take 2 / 4 / 6% more Lightning DMG from herself (independent).
+
+---
+
+### STIGMA 
+
+<div class="flex flex-col items-center justify-center text-orange-300 ">
+<div class="-mb-7">
+  <img src="https://i.imgur.com/7BgIS5w.png" alt="Icon" class="w-[500px] h-auto rounded-lg" />
+</div>
+<div>
+  <p class="text-center text-lg">Schicksal Agent set</p>
+</div>
+</div>
+
+#### TOP
+Lightning DMG +30%. Agent Rita equip bonus:
+- Valks with [Lady's Dignity] gain Total DMG +15%.
+
+#### MID
+Host takes 30% less Total DMG. Agent Rita equip bonus:
+- Valks with [Lady's Dignity] gain Ele DMG and Phy DMG +30%.
+
+#### BOT
+Total DMG +20%. Agent Rita equip bonus:
+- Enemies take 15% more Phy DMG and Ele DMG from valks with [Lady's Dignity].
+
+#### 2PC
+Lightning DMG +10%. Agent Rita equip bonus:
+- Enemies take 10% more Lightning DMG from self.
+- When AR is activated: Enemies take 12% more Total DMG from valks with [Lady's Dignity].
+- When WoDestiny is activated:
+  - Valks with [Heartblossom] gain Ele DMG +20%, Phy DMG +10%, Total DMG +15%. During AR Surplus state, enemies take 10% more Ele DMG, 10% more Phy DMG, 6% more Total DMG from valks with [Lady's Dignity].
+
+#### 3PC
+Agent Rita equip bonus:
+- When weapon skill or QTE hits an enemy, when host enters AR Surplus state or SO, or if the host is the leader, when battle starts, team gain [Lady's Dignity] for 25s, can be refreshed.
+- When WoD or LoA is activated, if host is not the leader: Valks with [Lady's Dignity] gain Ele DMG +25% and Crit DMG +15%. Enemies take 10% more Ele DMG, 10% more Phy DMG and 25% more Total DMG from valks with [Lady's Dignity].
+- When WoD is activated: 
+  - During AR Charging: Valks with [Lady's Dignity] gain Ele DMG +5%, Phy DMG +20%. Enemies take 30% more Ele DMG from valks with [Lady's Dignity].
+  - During SO: Valks with [Lady's Dignity] gain Ele DMG +5%, Phy DMG +20%. Enemies take 15% more Ele DMG and 15% more Total DMG from valks with [Lady's Dignity].
+- When LoA is activated:
+  - During AR Charging: Valks with [Lady's Dignity] gain Total DMG +10% and Crit DMG +20%. Enemies take 35% more Ele DMG and 35% more Phy DMG from valks with [Lady's Dignity].
+  - During SO: Valks with [Lady's Dignity] gain Total DMG +10% and Crit DMG +20%. Enemies take 40% more Ele DMG and 35% more Phy DMG from valks with [Lady's Dignity].

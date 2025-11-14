@@ -436,7 +436,7 @@ async function increaseLike() {
   
 <div class="grid gap-4 my-6 
             grid-cols-2 
-            md:grid-cols-4 
+            md:grid-cols-3 
             w-full max-w-4xl mx-auto">
   <button
     on:click={() => setLineup('1')}
@@ -467,18 +467,9 @@ async function increaseLike() {
         ? 'bg-blue-500 text-white' 
         : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
   >
-    TBA
+    LAW OF ASCENSION
   </button>
 
-    <button
-    on:click={() => setLineup('4')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activeLineup === '4' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    TBA
-  </button>
 </div>
 
       {#if activeLineup === '1'}
@@ -509,11 +500,19 @@ async function increaseLike() {
 
       {#if activeLineup === '3'}
  
+      <Psdps></Psdps>
+
+      <div class="divider"></div>
+
+      <Badumdps></Badumdps>
+
+      <div class="divider"></div>
+      
+      <Dududps></Dududps>
+
       {/if}
 
-      {#if activeLineup === '4'}
- 
-      {/if}
+
 </section>
 
   {/if}

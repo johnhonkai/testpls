@@ -10,6 +10,9 @@ image: "/images/valkportrait/Agent Rita.png"
 ### LINKS
 
 - [8.6 Patch Note](/betanews/86log)
+- [Agent Rita](/betanews/86rita)
+- [Agent Rita Equipment](/betanews/86ritagear)
+- [8.6 ER](/betanews/86er)
 
 ---
 
@@ -37,7 +40,6 @@ image: "/images/valkportrait/Agent Rita.png"
 
 #### Battlesuit Changes
 
-Valk adjustment
 - Activate AR WoDestiny
 - Starts the battle with full AR
 - QTE, QTE Replay, and Phantom attacks will pull surrounding enemies

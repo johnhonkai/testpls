@@ -1,0 +1,205 @@
+---
+creationDate: "2025-01-10T03:44:52.530Z"
+title: Agent Rita Translation v2
+version: '8.6'
+sortOrder: '2'
+image: "/images/valkportrait/Agent Rita.png"
+
+---
+
+### LINKS
+
+- [8.6 Patch Note](/betanews/86log)
+- [Agent Rita](/betanews/86rita)
+- [Agent Rita Equipment](/betanews/86ritagear)
+- [8.6 ER](/betanews/86er)
+
+---
+
+### INTRO
+- S-rank IMG Lightning, scythe user
+- AR WoDestiny
+- Support AR Tags: WoDestiny, LoAscension
+- Gameplay: https://www.youtube.com/watch?v=MtQC7b2M8Hk
+
+---
+
+### LEADER 
+Activates AR WoDestiny. SO cost: 140. SO Duration: 24s, CD: 23s.
+- When there is 1 character with Harmonized Shadow Star tag in the team: Team Shadow Star ATK gain Total DMG +18% (S) / 29% (S3) / 40% (SS3).
+- When there are 2 characters with Harmonized Shadow Star tag in the team: Members with the Harmonized Shadow Star trait share Stellar Drain's effects. During AR Charging, Lightning DMG +18% (S) / 29% (S3) / 40% (SS3).
+- When there are 3 characters with Harmonized Shadow Star tag in the team: During SO, enemies take 14% (S) / 18% (S3) / 22% (SS3) more Lightning DMG from herself (independent).
+
+
+#### LEADER 1
+As leader, self Lightning DMG +20% (S) / 32% (S1) / 40% (SS1), Total DMG +5% (S) / 8% (S1) / 10% (SS1), and enemies take 20% (S) / 23% (S1) / 25% (SS1) more Total DMG from herself.
+
+---
+
+### ASTRAL RING
+
+When entering Stellar Outburst, unleash Stellar Assault, deal 400% ATK of Lightning DMG. 
+
+When WoDestiny is activated, during SO:
+- Standby characters cannot be switched in and they're replaced by Phantoms to aid in battle.
+- Tapping her teammates' avatar summons a Phantom that launches a support attack, dealing 800% ATK of Lightning DMG (counts as Shadow Star Attack DMG). 
+This also causes the character to unleash Shadow Star Attack that deals 1000% ATK of Lightning DMG, during which she is invincible.
+After unleashing, the character gains 10s of Rondo in the Shadows and trigger 4s time fracture. Rondo in the Shadows is removed when Stellar Outburst ends.
+- During Rondo state, gain higher anti-interrupt, and Basic ATK will directly connect to Basic SEQ 3. During Basic SEQ 4, you can press weapon up to three times, each deals additional 1200% ATK of Lightning DMG.
+
+#### AR 1
+After SO ends, gain Stellar Drain. During AR Charging, when Combo ATK hits a target, consume SDrain to recover 10 AR.
+- When WoD / LoA is activated, gain 10 extra AR.
+- You gain a Stellar Drain when battle starts.
+
+#### AR 2
+When WoDestiny is activated:
+- Upon activating SO, restore 100 meter. During SO, self Lightning DMG and Total DMG +20%.
+- During AR Charging, Total DMG +20%.
+- If Rita is in Ele Breach state, Total DMG +11%.
+- During SO, enemies take 20% more Ele DMG and 20% more Phy DMG from WoD valks.
+- During SO, WoD valks can trigger Rita's Phantom, deal 1200% ATK of Adaptive DMG, according to the valk on the field. This is considered as Shadow Star ATK, and grants the valk 11s of Rondo state.
+
+#### AR 3
+When WoDestiny is activated:
+- During AR Charging, when AR Intensity is max, you can enter AR Surplus state, ends when SO is activated. During AR Surplus state, every AR point gained will convert to Overflow point, max 20 points, resets to zero when SO is activated.
+- When Agent Rita is the leader:
+    - During AR Surplus state, enemies take 10% more Total DMG, 10% more Ele DMG, and 8% more Phy DMG from the team.
+    - When Overflow = 10 and Rita is on the field, supports will be replaced with Phantom. Tap Phantom to summon Phantom attack, and Rita will also deal 1000% ATK of Lightning DMG. Gain Rondo state for 10s. Phantom trigger window ends when SO is activated.
+    - When Overflow = 10, team Total DMG +35% for 15s, ends when SO is activated.
+    - Upon SO activation, when Overflow = 10/20, during SO, enemies take 15/25% more Total DMG from the team, lasts until SO ends.
+    - Phantom support inflicts 9 paralyze points.
+- When Agent Rita is not the leader, upon entering AR Surplus state for the first time, team gains Starfall state.
+    - Starfall: During AR Surplus state, enemies take 4% more Total DMG, 5% more Ele DMG, and 4% more Phy DMG from the valk. Upon SO activation, if Overflow = 10/20, team Total DMG +10/25%, lasts until SO ends.
+
+#### AR 4
+When LoAscension is activated:
+- Upon SO activation, you can choose a valk with Stellar Shift trait to unleash Stellar Shift.
+- Stellar Shift: Deal 3600% ATK of Lightning DMG, and restore 100 meter.
+- When Stellar Shift is activated, valk enters Augmented state, lasts for 6s, ends on exit.
+- When Combo ATK hits an enemy, resets the leader's switch cd and trigger her QTE.
+- When QTE hits a target, restore 15 AR, and trigger leader's Heavenly Link attack. CD: 16s.
+- When Stellar Shift is activated, trigger leader's Heavenly Link attack twice. Heavenly Link triggered by Rita deals 440% ATK of Phy or 880% ATK of Ele DMG, based on the leader's element.
+
+---
+
+### PASSIVE
+Agent Rita has Charm meter, max 100 points. Meter is cleared on exit. At full meter, can use Combo ATK.
+
+
+#### PASSIVE 1
+When AR is activated, when a teammate consume Stellar Drain, Rita's switch cd is reduced by 1s, and trigger her QTE.
+
+#### PASSIVE 2
+IMG valks in the team gain Total DMG +6% against IMG enemies. This is increased to 10% when Rita is the leader.
+
+#### PASSIVE 3
+[SSS] Basic SEQ 4 Replay deals additional 300% ATK of Lightning DMG. Combo ATK Replay deals additional 1000% ATK of Lightning DMG.
+
+---
+
+### EVASION
+Evasion skill won't trigger during Ultimate Evasion. 
+Evasion skill: Can be followed up with Basic SEQ 3. CD: 15s.
+
+#### EVASION 1
+[Toggle] Evasion Replay can trigger evasion skill.
+
+#### EVASION 2
+[S2] When evasion skill is triggered, trigger 3s time fracture.
+
+---
+
+### WEAPON SKILL
+
+During certain attacks, Rita can press weapon to use Replay ATK, counts as evasion. 
+- Basic SEQ 4: Replay Basic SEQ 4 and deal additional 100% ATK of Lightning DMG, restore 25 meter.
+- QTE: Replay QTE atk, deal additional 300% ATK of Lightning DMG, restore 25 meter.
+- Evasion: Teleport gracefully to the enemy's side, deal 6005 ATK of Lightning DMG.
+- Combo ATK: After replaying Combo ATK, unleashes an even stronger version, deal 1800% ATK of Lightning DMG, trigger 3s time fracture.
+- During SO, Replay can be used after Ultimate, deal 100%x10 + 1000% + 100%x3 ATK of Lightning DMG. Ends SO, and refunds 40% of the remaining SO duration as AR meter. This atk has time stop.
+
+#### WEAPON 1
+When a Replay atk hits an IMG enemy, transfer 20% (S) / 25% (S2) / 30% (SS) dmg from Shell to Seed (HP Loss DMG), increased to 40% (S) / 50% (S2) / 60% (SS) if Rita is the leader. If Replay atk hits Seed and its HP is below 20%, instakill the current phase, and restore 50 meter.
+
+#### WEAPON 2
+Replay ATK inflicts paralyze trauma:
+- Basic: 4 points
+- QTE: 6 points 
+- Evasion: 3 points 
+- Combo: 12 points 
+
+---
+
+### BASIC ATK
+
+Four Basic ATK Sequence on the ground:
+- 1: 250% + 250%
+- 2: 400% + 400$
+- 3: 100%x5 + 300%
+- 4: 100%x6 + 400%, gain 25 meter
+
+During Basic ATK, gain higher anti-interrupt.
+
+Plunge ATK: Deal 500% ATK of Lightning DMG.
+
+#### BASIC 1
+QTE Trigger: When enemy is timeslowed, teammate use weapon or ult,  Rita deals 150%x2 + 300% ATK of Lightning DMG, recover 25 meter, trigger 2s time fracture.
+
+#### BASIC 2
+Rita takes 30% less Total DMG, and team gains Total DMG +5% (S) / 15% (S2).
+
+---
+
+### COMBO ATK
+At full meter, you can use Combo ATK, consume full meter and deal 1200% + 1000% ATK of Lighting DMG.
+
+#### COMBO ATK 1
+Combo ATK inflict 9 paralyze points.
+
+#### COMBO ATK 2
+Combo ATK restore 1200 HP.
+
+---
+
+### ULTIMATE 
+
+Ult deals 200%x6 + 800% ATK of Lightning DMG. Ult has time stop. SP Cost: 100, CD: 21.5s.
+
+#### ULT 1
+[SS] As leader, Ult gives two boost charges.
+- Ult and Replay Ult deal additional 800% (SS) / 1500% (SS2) ATK of Lightning DMG.
+- When QTE or Combo ATK hits an enemy, recover 10 (SS) / 15 (SS2) SP.
+
+---
+
+### RANK UP 
+
+S1: 
+As leader, self Lightning DMG +20% (S) / 32% (S1) , Total DMG +5% (S) / 8% (S1) , and enemies take 20% (S) / 23% (S1) more Total DMG from herself.
+
+S2: 
+- UNLOCK: When evasion skill is triggered, trigger 3s time fracture.
+- When a Replay atk hits an IMG enemy, transfer 20% (S) / 25% (S2) dmg from Shell to Seed (HP Loss DMG), increased to 40% (S) / 50% (S2) if Rita is the leader. If Replay atk hits Seed and its HP is below 20%, instakill the current phase, and restore 50 meter.
+- Team gains Total DMG +5% (S) / 15% (S2).
+
+
+S3:
+Leader Skill
+
+SS:
+- UNLOCK: As leader, Ult gives two boost charges.Ult and Replay Ult deal additional 800% ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 SP.
+- When a Replay atk hits an IMG enemy, transfer 25% (S2) / 30% (SS) dmg from Shell to Seed (HP Loss DMG), increased to 50% (S2) / 60% (SS) if Rita is the leader. If Replay atk hits Seed and its HP is below 20%, instakill the current phase, and restore 50 meter.
+
+
+SS1: 
+As leader, self Lightning DMG +20% (S) / 32% (S1) / 40% (SS1), Total DMG +5% (S) / 8% (S1) / 10% (SS1), and enemies take 20% (S) / 23% (S1) / 25% (SS1) more Total DMG from herself.
+
+SS2: 
+Ult and Replay Ult deal additional 800% (SS) / 1500% (SS2) ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 (SS) / 15 (SS2) SP.
+
+SS3:
+Leader Skill
+
+SSS: 
+UNLOCK: Basic SEQ 4 Replay deals additional 300% ATK of Lightning DMG. Combo ATK Replay deals additional 1000% ATK of Lightning DMG.
