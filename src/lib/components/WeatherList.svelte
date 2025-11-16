@@ -29,7 +29,8 @@
     flux: "Flux",
     dominance: "Dominance",
     extreme: "Extreme",
-    paralyze: "Paralyze"
+    paralyze: "Paralyze",
+    freeze: "Freeze"
     // Add other weather mappings as needed
   };
 

@@ -48,6 +48,9 @@ export const weatherList = {
   stun:[
     {id: 'stunfish', name: 'Flying Fish'}
   ],
+  freeze:[
+    {id: 'frzepernay', name: 'Meteroid: Epernay'},
+  ],
   stardust:[
     {id: 'sdepernay', name: 'Meteroid: Epernay'},
     {id: 'sdguaymas', name: 'Meteoroid: Guaymas'},
@@ -331,6 +334,14 @@ export const bossData = {
       bosspic: "images/Bosses/epernay.png", 
       weather: "Stardust: SD valk DMG +20%.", 
   },
+  frzepernay: {
+    name: 'Meteroid: Epernay', 
+      mechanics: 'Boss has breakable parts at certain points of the fight, breaking them reduces boss max HP. During transition, you can enter one of three false doors, each gives different effect: Generate 10 SD remnants, gain Total DMG +8% or gain sp pack.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconSD.webp", 
+      bosspic: "images/Bosses/epernay.png", 
+      weather: "Freeze: Enemies take 40% more dmg when frozen and within 4s after freeze ends.", 
+  },  
   sa: {
     name: 'Sa: Wheel of Transcendence', 
       mechanics: 'Boss has multiple critical index points.', 
@@ -4431,7 +4442,31 @@ export const teamData = {
       }
     ],
   },
-
+       frzepernay: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '99%',
+            bottext: "Highest Score: S2 830, SS 835, 6S 844, 9S 855"
+          }, 
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '37',
+            pct: '1%',
+            bottext: "Highest Score: 7S (SSS Ely) 835"
+          },                                                                                                                        
+        ]
+      }
+    ],
+  },
 }
 
 
