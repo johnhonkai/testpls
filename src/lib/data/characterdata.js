@@ -32,7 +32,7 @@
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
 
-  { name: '窈窕谍影', image: '/images/valkportrait/Agent Rita.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/agent-rita',  badge: 'Beta', verdebut: 8.6, id:60},  
+  { name: '窈窕谍影', image: '/images/valkportrait/Agent Rita.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/agent-rita',  badge: 'Beta', verdebut: 8.6, id:64},  
 
   { name: 'Hi ♪ Love Elf ♥', image: '/images/valkportrait/Elysia Hi Love Elf.png', type: 'SD', element: 'Ice', astralRing: ['Grail of Infinitude'] , url: '/valk/hi-love-elf',  badge: 'New', verdebut: 8.5, id:59},  
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['World Star' , 'Part 1'] , url: '/valk/horb', badge: 'Updated', verdebut: 6.8, verdlc: 8.5, id:17},
@@ -102,5 +102,9 @@
   { name: "Molotov Cherry", image: '/images/valkportrait/Rozaliya Molotov Cherry.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/molotov-cherry', verdebut: 3.1,  id:61},
   { name: "Blueberry Blitz", image: '/images/valkportrait/Liliya Blueberry Blitz.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/blueberry-blitz', verdebut: 3.1,  id:62},
   { name: "Drive Kometa", image: '/images/valkportrait/Drive Kometa.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/drive-kometa', verdebut: 3.1,  id:63},
+  { name: "Argent Knight: Artemis", image: '/images/valkportrait/Rita Argent Knight.png', type: 'Bio', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/argent-knight', verdebut: 2.9,  id:65},
+  { name: "Striker Fulminata", image: '/images/valkportrait/Mei Striker Fulminata.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/striker-fulminata', verdebut: 2.9,  id:67},  
+  { name: "Phantom Iron", image: '/images/valkportrait/Rita Phantom Iron.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/phantom-iron', verdebut: 2.8,  id:66},
+  { name: "Vermilion Knight: Eclipse", image: '/images/valkportrait/Himeko Vermilion Knight.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/vermilion-knight', verdebut: 2.7, id:68},
 
 ];

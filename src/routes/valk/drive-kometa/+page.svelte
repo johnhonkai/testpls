@@ -193,6 +193,26 @@ function selectTabMobile(event) {
   }
 }
   
+  type Lang = 'EN' | 'CN';
+  let currentLang: Lang = 'EN';
+
+  const langData: Record<Lang, { battlesuitName: string; infoLine: string }> = {
+    EN: {
+      battlesuitName: 'Drive Kometa',
+      infoLine: 'Bronya Zaychik | Release Date: v3.1 (23 May 2019)'
+    },
+    CN: {
+      battlesuitName: '彗星驱动',
+      infoLine: 'Bronya Zaychik | Release Date: v3.0 (14 Mar 2019)'
+    }
+  };
+
+  $: activeData = langData[currentLang];
+
+  function setLang(lang: Lang) {
+    currentLang = lang;
+  }  
+
 </script>
 
 
@@ -244,14 +264,50 @@ function selectTabMobile(event) {
   
   <!-- Right: Character Info (Centered) -->
   <div class="flex flex-col items-center text-center justify-start">
-    <!-- Battlesuit Name -->
-  
-    <div class="mt-4">
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Drive Kometa</h1>
-  </div>
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Bronya Zaychik | Release Date: v3.1 (23 May 2019)  </p>
 
+    <!-- Language Toggle -->
+    <div class="mt-2 mb-2 flex items-center justify-center w-full">
+      <div class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 border border-white/10 px-1 py-1 text-xs shadow-sm backdrop-blur-sm">
+
+        <button
+          type="button"
+          on:click={() => setLang('EN')}
+          class="px-3 py-1 rounded-full font-semibold transition-all"
+          class:bg-pink-500={currentLang === 'EN'}
+          class:text-white={currentLang === 'EN'}
+          class:bg-transparent={currentLang !== 'EN'}
+          class:text-slate-300={currentLang !== 'EN'}
+          class:hover:text-white={currentLang !== 'EN'}
+        >
+          EN
+        </button>
+
+        <button
+          type="button"
+          on:click={() => setLang('CN')}
+          class="px-3 py-1 rounded-full font-semibold transition-all"
+          class:bg-pink-500={currentLang === 'CN'}
+          class:text-white={currentLang === 'CN'}
+          class:bg-transparent={currentLang !== 'CN'}
+          class:text-slate-300={currentLang !== 'CN'}
+          class:hover:text-white={currentLang !== 'CN'}
+        >
+          CN
+        </button>
+      </div>
+    </div>
+
+    <!-- Battlesuit Name -->
+    <div class="mt-1">
+      <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">
+        {activeData.battlesuitName}
+      </h1>
+    </div>
+
+    <!-- Character Name and Release Date -->
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">
+      {activeData.infoLine}
+    </p>
   
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">

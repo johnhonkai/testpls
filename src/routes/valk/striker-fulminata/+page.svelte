@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Hawk of the Fog</title> 
-    <meta property="og:title" content="Hawk of the Fog" />
-    <meta property="og:description" content="Hawk of the Fog Guide, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/hotf" />
+    <title>Mei - Striker Fulminata</title> 
+    <meta property="og:title" content="Striker Fulminata" />
+    <meta property="og:description" content="Striker Fulminata Guide, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/MFm9LYH.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/striker-fulminata" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -49,11 +49,11 @@ function closeLightbox() {
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview' },
-  { name: 'Lineup', short: 'lineup' },
+  //{ name: 'Lineup', short: 'lineup' },
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
   // { name: 'Gameplay Examples', short: 'example' },
-  // { name: 'Elysian Realm', short: 'er' },
+  //{ name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
@@ -150,8 +150,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["hotf"] || 0; // Get initial likes from JSON
-  const charName = "hotf"; // Route name for this character
+  let fovlikes = likesData["striker"] || 0; // Get initial likes from JSON
+  const charName = "striker"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -193,6 +193,25 @@ function selectTabMobile(event) {
   }
 }
   
+  type Lang = 'EN' | 'CN';
+  let currentLang: Lang = 'EN';
+
+  const langData: Record<Lang, { battlesuitName: string; infoLine: string }> = {
+    EN: {
+      battlesuitName: 'Striker Fulminata',
+      infoLine: 'Raiden Mei | Release Date: v3.0 (18 Apr 2019)'
+    },
+    CN: {
+      battlesuitName: '破晓强袭',
+      infoLine: 'Raiden Mei | Release Date: v2.9 (25 Jan 2019)'
+    }
+  };
+
+  $: activeData = langData[currentLang];
+
+  function setLang(lang: Lang) {
+    currentLang = lang;
+  }  
 </script>
 
 
@@ -207,23 +226,29 @@ function selectTabMobile(event) {
 
 
 <div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_hofi.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 md:mt-0 pt-2 sm:pt-0">
+  <div class="absolute top-0 w-full h-[90vh] z-[-10] opacity-85" id="bgwavebox">
+    <img
+      src="/images/bg/wave_hofi.svg"
+      alt="Lone Planetfarer"
+      class="w-full h-full object-cover overflow-hidden"
+    />
   </div>
-  
-  
-  
+
   <!-- Left: Character Image -->
-  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/hotf.png" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-45;"/> 
-  
+  <div class="relative w-auto h-48 sm:h-60 md:h-72 flex justify-center" id="valkpicbox">
+    <img
+      src="/images/valkfull/Striker Fulminata.png"
+      alt="Drive Kometa"
+      class="h-full w-auto object-cover md:object-contain"
+      style="view-transition-name: valkyrie-image-45;"
+    />
+
     <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
       <button
         on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
+        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2 {hasLiked ? '' : 'hover:bg-blue-700'}"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -237,48 +262,90 @@ function selectTabMobile(event) {
         <span class="text-white font-semibold">{fovlikes}</span>
       </button>
     </div>
-  
   </div>
-  
-  
-  
+
   <!-- Right: Character Info (Centered) -->
   <div class="flex flex-col items-center text-center justify-start">
-    <!-- Battlesuit Name -->
-  
-    <div class="mt-4">
-    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Hawk of the Fog</h1>
-  </div>
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Fu Hua | Release Date: v3.5 (14 Nov 2019)  </p>
+    <!-- Language Toggle -->
+    <div class="mt-2 mb-2 flex items-center justify-center w-full">
+      <div class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 border border-white/10 px-1 py-1 text-xs shadow-sm backdrop-blur-sm">
 
-  
+        <button
+          type="button"
+          on:click={() => setLang('EN')}
+          class="px-3 py-1 rounded-full font-semibold transition-all"
+          class:bg-pink-500={currentLang === 'EN'}
+          class:text-white={currentLang === 'EN'}
+          class:bg-transparent={currentLang !== 'EN'}
+          class:text-slate-300={currentLang !== 'EN'}
+          class:hover:text-white={currentLang !== 'EN'}
+        >
+          EN
+        </button>
+
+        <button
+          type="button"
+          on:click={() => setLang('CN')}
+          class="px-3 py-1 rounded-full font-semibold transition-all"
+          class:bg-pink-500={currentLang === 'CN'}
+          class:text-white={currentLang === 'CN'}
+          class:bg-transparent={currentLang !== 'CN'}
+          class:text-slate-300={currentLang !== 'CN'}
+          class:hover:text-white={currentLang !== 'CN'}
+        >
+          CN
+        </button>
+      </div>
+    </div>
+
+    <!-- Battlesuit Name -->
+    <div class="mt-1">
+      <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">
+        {activeData.battlesuitName}
+      </h1>
+    </div>
+
+    <!-- Character Name and Release Date -->
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">
+      {activeData.infoLine}
+    </p>
+
     <!-- Common wrapper to ensure same width -->
     <div class="w-full max-w-sm mb-2">
       <!-- Container with 4 pictures (Centered) -->
       <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
+        <div
+          class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs"
+        >
           <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconPSI.png" alt="Mech" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-  
+          <img src="/images/type/IconBIO.png" alt="Mech" class="w-auto h-8 md:h-10" />
+          <img src="/images/element/Core_Physical.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
         </div>
       </div>
-      <div class="flex flex-col mt-4 items-center">
 
-        <div class="flex flex-col  w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs">
+      <div class="flex flex-col mt-4 items-center">
+        <div
+          class="flex flex-col w-[260px] md:w-[300px] flex-wrap justify-center outline outline-pink-500 outline-1 bg-pink-950/75 rounded-lg p-2 backdrop-blur-xs"
+        >
           <div class="flex flex-wrap justify-center">
-            <h2 class="text-sm md:text-base mb-2 text-slate-100">Augment form of Valkyrie Accipiter</h2>
-          </div >
+            <h2 class="text-sm md:text-base mb-2 text-slate-100">
+              Augment form of Valkyrie Bladestrike
+            </h2>
+          </div>
           <div class="flex flex-row gap-2 flex-wrap justify-center">
-            <img src="/images/valkportrait/Fu Hua Valkyrie Accipiter.png" alt="Support 1" class="w-auto h-14 md:h-20" />
-  
+            <img
+              src="/images/valkportrait/Mei Valkyrie Bladestrike.png"
+              alt="Support 1"
+              class="w-auto h-14 md:h-20"
+            />
           </div>
         </div>
       </div>
-    </div> <!-- End common wrapper -->
+    </div>
+    <!-- End common wrapper -->
   </div>
-  </section>
+</section>
+
   
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
@@ -347,32 +414,33 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Outdated Part 1 Lightning DPS</strong>
+          <strong class="text-amber-400">Outdated Part 1 Physical DPS</strong>
       </p>
 
-
-      <ul class="list-disc ml-6 text-sm sm:text-base mb-7">
-        <li class="mt-2">Hawk of the Fog (HotF) was one of the best characters in the game with the highest skill ceiling. With the right boss attack and pro-level control, you can spam evade and chain to a powerful attack to deal big damage and get carpal tunnel.</li>
-          <li class="mt-2">She was dominating both Abyss and Memorial Arena mode.</li>
+      <ul class="list-disc ml-6 text-sm sm:text-base">
+        <li class="mt-2">Striker Fulminata (SF) is a Burst Mode Physical DPS that can launch lightning blades, get close to the enemies and rapidly slash them.</li>
+        <li class="mt-2"> SF is the first character with Augment system.</li>
+        <li class="mt-2"> SF playstyle is very fun, but meta-wise, she was just a decent dps.</li>
 
       </ul>
 
 
 
+
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
-        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM RECOMMENDATION</h2>
-
-
-      <p class="mt-4 text-sm sm:text-base">
-        <strong class="text-amber-400 ">New Players on HotF augment materials</strong>
-        <br/>Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. <br/>
-        After that, unlock other A-ranks that are available in Elysian Realm for the first-clear crystal rewards. Then you can consider getting HotF augment materials.
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">FARM AND PULL RECOMMENDATION</h2>
+        <p class="mt-4 text-sm sm:text-base">
+          <strong class="text-amber-400 ">New Players</strong>
+          <br/>
+          You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
       </p>
 
+
+
       <p class="mt-6 text-sm sm:text-base">
-        <strong class="text-amber-400 ">Valkyrie Accipiter</strong>
-                <br/>You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
+        <strong class="text-amber-400 ">New Players on Striker Fulminata augment materials</strong>
+        <br/>Farm <a href="/valk/coralie" class="link ">Coralie Valkyrie Blastmetal</a>               first from Asterite Shop and Open World since she can fit in any Astral Ring team. 
       </p>
 
 
@@ -382,10 +450,9 @@ function selectTabMobile(event) {
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Hawk of the Fog Augment Materials:</strong> Open World, Asterite Shop.</li>
-            <li ><strong>Valkyrie Accipiter:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
-            <li ><strong>Nuada's Revenge:</strong> Exchange Shop, Battle Pass.</li>
-            <li ><strong>G4 Handel:</strong> Foundry, Battle Pass.</li>
+            <li ><strong>Valkyrie Bladestrike:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
+            <li ><strong>Striker Fulminata Augment Materials:</strong> Asterite Shop, Expedition, Adventure Task.</li>
+            <li ><strong>Seven Thunders:</strong> Battle Pass.</li>
 
         </ul>
 
@@ -401,7 +468,7 @@ function selectTabMobile(event) {
 
 
   
-    <P1lightningdps></P1lightningdps>
+    <P1physical></P1physical>
 
 
 </section>
@@ -414,42 +481,57 @@ function selectTabMobile(event) {
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST?</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/72350798/9f7411ca2e58f1a9d62d9b8731fcf66c_3449659270742724724.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Vita" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/06/01/50494840/d7f7f51abcaa2f144e36efae69cb8207_6709264798925209170.png" alt="Vita" class="w-full h-full object-cover">
               </div>
 
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/69197917c070e877ad922d21a3536325_2748643889039309262.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth T" class="w-full h-full object-cover">
-
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/26/73514954/a7a0b9f6e047a0697911f3fc53d6ee35_8607975379559325894.png" alt="Vita" class="w-full h-full object-cover">
               </div>
-
-
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/a6ecf711857945fdcbfb02ccace6075d_8482437261998817983.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth M" class="w-full h-full object-cover">
-
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/26/73514954/c85dd72ee95e8a4f67f107ae1cc4927a_1774453140149810599.png" alt="Vita" class="w-full h-full object-cover">
               </div>
-
-              
-              <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/b1c357b7a1d6d5e39fae925f7c90e724_8580284000724519020.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Cecilia Youth B" class="w-full h-full object-cover">
-            </div>
-          
-
+               <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/26/73514954/81d92e1c22df663252844ab02861dfe8_4861420625557795224.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Nuada's Revenge + Handel set</h4>
+              <h4 class="text-base sm:text-base text-white"> Seven Thunders + G3 Dirac set</h4>
               </div>
 
 
 
            </div>
 
+           <div class="divider"></div>
+      <div>
+
+
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">ORIGINAL</h2>
+
+              <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+                <div class="w-20 h-20 sm:w-28 sm:h-28">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/26/73514954/db50224d9c48bec6275c5336450a254a_5554570334523189037.png" alt="Vita" class="w-full h-full object-cover">
+              </div>
+
+
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> Dawn Breaker: Talwar </h4>
+              </div>
+
+
+
+           </div>        
       {/if}
 
 
