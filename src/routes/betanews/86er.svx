@@ -16,7 +16,7 @@ image: "/images/valkportrait/Agent Rita.png"
 
 ---
 
-### Stage Buffs
+### Stage Buff 1
 - After entering a floor, a soul-ink painting will be generated. When valk is in the painting zone, the valk gain Total DMG +30%, followed by a dye explosion, tainting enemies with unlocked Star-signet paints. Enemies take 6% less Total DMG, after each floor, increased by 1.8%, up to 33% (independent)
 - Enemies take 30% less Total DMG (independent). When valk deals melee or weapon skill dmg, disable the effect for 10s, can be refreshed.
 - Every time valk deals Combo or Charged ATK DMG, nearby enemies are tainted with silver paint. These enemies drop 5 silver coin when you hit them, lasts for 8s, can be refreshed.
@@ -25,14 +25,36 @@ image: "/images/valkportrait/Agent Rita.png"
 
 ---
 
-### Load Buffs
+### Stage Buff 2
+- After entering a floor, a soul-ink painting will be generated. When valk is in the painting zone, the valk gain Total DMG +30%, followed by a dye explosion, tainting enemies with unlocked Star-signet paints. Enemies take 6% less Total DMG, after each floor, increased by 1.8%, up to 33% (independent)
+- Enemies take 30% less Total DMG (independent). When valk deals melee or weapon skill dmg, disable the effect for 10s, can be refreshed.
+- Every time valk deals Combo or Charged ATK DMG, nearby enemies are tainted with black paint. These enemies take 30% more Total DMG for 8s, can be refreshed.
+- When valk deal Ult or Combo ATK DMG to an enemy, the enemy takes 25% more Phy and Ele DMG from the valk for 12s, can be refreshed.
+- Discipline and ??? base signet level +2
+
+---
+
+### Load Buff 1
 - 0: F17 boss is replaced with HoD Minion
 - 5: Valk max sp +30
-- 5: Valk Total DMG +15%. When you take dmg, the buff is disabled for 5s, can be refreshed.
-- 10: Upon triggering evasion skill, valk Phy and Ele DMG +15% for 8s, can be refreshed.
+- 5: Valk Total DMG +15%. When you take dmg, the buff is disabled for 5s, can be refreshed
+- 10: Upon triggering evasion skill, valk Phy and Ele DMG +15% for 8s, can be refreshed
 - 10: During SO, valk Total DMG +20%
-- 15: Upon dealing Weapon or Combo ATK DMG, valk Total DMG +30% for 15s, can be refreshed.
-- 15: Valks with scythe, bow, rocket hammer and rapid-shot crossbow gain Phy Breach +45% and Ele Breach +20%
+- 15: Upon dealing Weapon or Combo ATK DMG, valk Total DMG +30% for 15s, can be refreshed
+- 15: Valks with scythe, bow, rocket hammer and rapid-shot crossbow gain Phy Breach +40% and Ele Breach +20%
+
+---
+
+### Load Buff 2
+- 0: F17 boss is replaced with HoD Minion
+- 5: Valk max sp +30
+- 5: For each support with different type, valk Phy and Ele DMG +8%
+- 10: Upon casting weapon skill, valk Ele DMG +12% for 12s, can be refreshed
+- 10: Valk Total DMG +15%, when you take dmg, disable this effect for 5s, can be refreshed
+- 15: Upon dealing Crit DMG or Combo ATK DMG, valk Total DMG +30% for 15s, can be refreshed
+- 15: Valks with scythe, bow, rocket hammer and rapid-shot crossbow gain Phy Breach +40% and Ele Breach +20%
+
+
 
 ---
 
