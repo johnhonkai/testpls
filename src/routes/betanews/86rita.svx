@@ -180,7 +180,7 @@ As leader, self Lightning DMG +20% (S) / 32% (S1) , Total DMG +5% (S) / 8% (S1) 
 
 S2: 
 - UNLOCK: When evasion skill is triggered, trigger 3s time fracture.
-- When a Replay atk hits an IMG enemy, transfer 20% (S) / 25% (S2) dmg from Shell to Seed (HP Loss DMG), increased to 40% (S) / 50% (S2) if Rita is the leader. If Replay atk hits Seed and its HP is below 20%, instakill the current phase, and restore 50 meter.
+- When a Replay atk hits an IMG enemy, transfer 20% (S) / 25% (S2) dmg from Shell to Seed (HP Loss DMG), increased to 40% (S) / 50% (S2) if Rita is the leader. 
 - Team gains Total DMG +5% (S) / 15% (S2).
 
 
@@ -189,14 +189,14 @@ Leader Skill
 
 SS:
 - UNLOCK: As leader, Ult gives two boost charges.Ult and Replay Ult deal additional 800% ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 SP.
-- When a Replay atk hits an IMG enemy, transfer 25% (S2) / 30% (SS) dmg from Shell to Seed (HP Loss DMG), increased to 50% (S2) / 60% (SS) if Rita is the leader. If Replay atk hits Seed and its HP is below 20%, instakill the current phase, and restore 50 meter.
+- When a Replay atk hits an IMG enemy, transfer 25% (S2) / 30% (SS) dmg from Shell to Seed (HP Loss DMG), increased to 50% (S2) / 60% (SS) if Rita is the leader.
 
 
 SS1: 
 As leader, self Lightning DMG +20% (S) / 32% (S1) / 40% (SS1), Total DMG +5% (S) / 8% (S1) / 10% (SS1), and enemies take 20% (S) / 23% (S1) / 25% (SS1) more Total DMG from herself.
 
 SS2: 
-Ult and Replay Ult deal additional 800% (SS) / 1500% (SS2) ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 (SS) / 15 (SS2) SP.
+Ult Boost Charges: Ult and Replay Ult deal additional 800% (SS) / 1500% (SS2) ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 (SS) / 15 (SS2) SP.
 
 SS3:
 Leader Skill
