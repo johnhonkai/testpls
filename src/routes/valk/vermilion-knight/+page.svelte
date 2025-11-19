@@ -201,14 +201,14 @@ function selectTabMobile(event) {
       battlesuitName: 'Vermilion Knight: Eclipse',
       infoLine: 'Murata Himeko | Release Date: v2.8 (6 Mar 2019)',
       infoLine2: 'Divine Key DLC: v3.5 (14 Dec 2019) ',
-      infoLine3: 'PRI-ARM Upgrade: v4.2 (20 Aug 2020) ',
+      infoLine3: 'PRI-ARM Upgrade: v4.2 (15 Sep 2020) ',
 
     },
     CN: {
       battlesuitName: '真红骑士·月蚀',
       infoLine: 'Murata Himeko | Release Date: v2.7 (1 Nov 2018)',
       infoLine2: 'Divine Key DLC: v3.5 (17 Oct 2019) ',
-      infoLine3: 'PRI-ARM Upgrade: v4.2 (15 Sep 2020) ',
+      infoLine3: 'PRI-ARM Upgrade: v4.2 (20 Aug 2020) ',
 
     }
   };
