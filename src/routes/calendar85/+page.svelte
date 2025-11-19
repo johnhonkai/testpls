@@ -138,13 +138,13 @@
             image: "https://i.imgur.com/UOFxmct.jpeg"
         },          
         "NewADV": {
-            title: "Ascension Supply: Jovial Deception",
-            description: '<li>Duration: 3 weeks.</li><li>A-rank: Swallowtail Phantasm (UP), Sakuno Rondo, Valkyrie Ranger, Kriegmesser </li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banners.</li>',
+            title: "Ascension Supply: SIMP",
+            description: '<li>Duration: 2 weeks.</li><li>A-rank: Ritual Imayoh (UP), Night Squire, Yamabuki Armor, Swallowtail Phantasm </li><li>Cost: 280 crystal or one Ascension Supply Card per pull.</li><li>Every 10 pulls guarantee either A-rank or S-rank card.</li> <li>S-rank card guaranteed within 90 pulls.</li><li>Pull until 90 pulls to get 100 stamps, enough to rank up a valk to SS-rank.</li><li>Guarantee counter for each Ascension Supply banner is not carried over to other Ascension Supply banners.</li>',
 
         },
         "NewRebate": {
-            title: "Ascension Armament: Jovial Deception Equipment",
-            description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
+            title: "Ascension Armament",
+            description: '<li>Duration: 2 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
 
         },
         "Anni7Day": {
@@ -360,6 +360,8 @@
 
                 </div>
 
+
+
                 <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
@@ -452,7 +454,38 @@
                 </div>
 
                 
-    
+                    <div class="relative grid grid-cols-22 gap-1  h-[54px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold col-span-2 text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>                         
+                        <span class="font-bold0">ASCENSION SUPPLY</span>
+                    </div>   
+                    <div class=" col-span-16" ></div>            
+                    <div on:click={() => openModal("NewADV")} class=" col-span-4 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10">Schicksal's Imperative</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-full">
+                            <img src="https://i.imgur.com/kbwJOLG.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        </div>
+                    </div>    
+
+                </div>
+
+                                <div class="relative grid grid-cols-22 gap-1  h-[54px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold col-span-2 text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>                         
+                        <span class="font-bold0">ARMAMENT ASCENSION</span>
+                    </div>   
+                    <div class=" col-span-16" ></div>            
+                    <div on:click={() => openModal("NewRebate")} class=" col-span-4 will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                         <span class="absolute inset-0 flex items-center justify-center z-10">SIMP Equipment</span>
+
+                    </div>    
+
+                </div>
                 
                                 <div class="relative grid grid-cols-11 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
@@ -520,10 +553,18 @@
 
                 <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
                     <!-- Centered Text -->
-                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Chibi Showdown Event</span>
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Chibi Showdown</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
                         <img src="https://i.imgur.com/86emqVF.png" alt="Event 1" class="w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                <div on:click={() => openModal("")} class="col-span-2 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                    <!-- Centered Text -->
+                    <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Powered Duo</span>
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full">
+                        <img src="https://i.imgur.com/vqG0fOj.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
@@ -540,7 +581,7 @@
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Art Collection Vol 4 Event</span>
                     <!-- Image positioned on the right side -->
                     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-48 h-full">
-                        <img src="https://i.imgur.com/2EbbGhr.png" alt="Event 1" class="w-full h-full object-cover " />
+                        <img src="https://i.imgur.com/vqG0fOj.png" alt="Event 1" class="w-full h-full object-cover " />
                     </div>
                 </div>
 
