@@ -2595,6 +2595,8 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=Z3s9TsbdBJI', abyss: 'Nirvana 558D', uploader: 'phylynxbelt' },
+
       { url: 'https://www.youtube.com/watch?v=EZwGtPTtQsA', abyss: 'RedLotus 511D', uploader: 'Marisa Honkai' },
 
     ] 
@@ -4111,6 +4113,19 @@ export const teamData = {
     litost: {
     
     teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '100%',
+
+          },                                            
+        ]
+      },      
       {
         tabname: "v8.4",
         teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 551 D",
