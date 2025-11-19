@@ -167,7 +167,7 @@ Combo ATK restore 1200 HP.
 Ult deals 200%x6 + 800% ATK of Lightning DMG. Ult has time stop. SP Cost: 100, CD: 21.5s.
 
 #### ULT 1
-[SS] As leader, Ult gives two boost charges.
+[SS] As leader, Ult has two charges.
 - Ult and Replay Ult deal additional 800% (SS) / 1500% (SS2) ATK of Lightning DMG.
 - When QTE or Combo ATK hits an enemy, recover 10 (SS) / 15 (SS2) SP.
 
@@ -188,7 +188,7 @@ S3:
 Leader Skill
 
 SS:
-- UNLOCK: As leader, Ult gives two boost charges.Ult and Replay Ult deal additional 800% ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 SP.
+- UNLOCK: As leader, Ult has two charges. Ult and Replay Ult deal additional 800% ATK of Lightning DMG. When QTE or Combo ATK hits an enemy, recover 10 SP.
 - When a Replay atk hits an IMG enemy, transfer 25% (S2) / 30% (SS) dmg from Shell to Seed (HP Loss DMG), increased to 50% (S2) / 60% (SS) if Rita is the leader.
 
 
