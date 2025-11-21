@@ -51,7 +51,7 @@ After unleashing, the character gains **10s (v2) > 7s (v3)** of Rondo in the Sha
 #### AR 1
 After SO ends, gain Stellar Drain. During AR Charging, when Combo ATK hits a target, consume SDrain to recover 10 AR.
 - When WoD is activated, gain 10 extra AR.
-- When WoD is activated, gain 10 extra AR. **During AR Charging state, QTE Replay can trigger Stellar Drain. (v3)**
+- When LoA is activated, gain 10 extra AR. **During AR Charging state, QTE Replay can trigger Stellar Drain. (v3)**
 - You gain a Stellar Drain when battle starts.
 
 #### AR 2
