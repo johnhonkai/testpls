@@ -21,6 +21,36 @@ Video overview of all new content:
 
 ---
 
+### V3
+
+- Agent Rita and equipment: Adjusted skill mechanics and values. Please refer to her page for the changes.
+- Agent Rita: Optimized model performance.
+- Golden Diva: Fixed missing bridge interaction animations.
+- Pardo: Fixed abnormal display when wearing Macchiato outfit.
+- VQ: Fixed abnormal eye model when wearing Bear Team outfit.
+- HLE: Fixed missing headwear.
+- HLE: Fixed missing voice when getting hit.
+- HLE: Fixed descriptions of some skills. 
+- HLE: Fixed facial animation when using weapon skill during SO. 
+- HLE: Fixed an issue where HLE could abnormally cancel Basic SEQ 4 in certain cases. 
+- HLE: Fixed bridge interaction facial animations.
+- HLE: Fixed abnormal model during bridge interaction.
+- Part 2 OW: Fixed abnormal action shown when jumping.
+- Fixed an issue where Ult performance might be affected by background visual effects.
+- Elysia Elf: Fixed abnormal position when using Synergy ATK.
+
+ABYSS 
+- Adjusted stats of all the new bosses. 
+- Lightning Husk Existantialism: Fixed an issue where HoH ult might cause persistent white screen after using Ult.
+
+ARENA 
+- Adjusted stats for SSS Moruduo 
+
+SYSTEM 
+- Chapter 12: Fixed an issue where chars can fall off the map
+
+---
+
 ### V2
 
 #### New S-rank Rita
