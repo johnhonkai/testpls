@@ -1143,7 +1143,12 @@ export const teamData = {
         lineup: ["images/valkportrait/Elysia Herrscher of Human Ego.png", "images/valkportrait/Sushang Jade Knight.png", "images/valkportrait/Kira Sugary Starburst.png", "images/valkportrait/elf_ely.png"],
         pct: '1%',
       },
-    ]},]
+    ]},],
+          videos: [
+      { url: 'https://youtu.be/d_V21nHUcNU', abyss: 'Nirvana 552D', uploader: 'Haxxor' },
+      { url: 'https://youtu.be/2PZwMtYsPYM', abyss: 'Nirvana 556D', uploader: 'phylynxbelt' },
+
+    ] 
   },
   bloodsdmob: {
     teamDataSets: [

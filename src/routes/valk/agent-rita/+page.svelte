@@ -4,7 +4,7 @@
 
     <meta property="og:title" content="Rita - 窈窕谍影" />
     <meta property="og:description" content="窈窕谍影 Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/PcEAThD.png" />
+    <meta property="og:image" content="https://i.imgur.com/HsA50Ch.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/agent-rita" />
     <meta property="og:type" content="website" />
 
@@ -71,7 +71,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-//  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
 //  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
@@ -95,17 +95,7 @@ function handleClick(tabName) {
 function selectTab(tab) {
   selectedTab = tab;
 
-  // Get the short form for the selected tab
-  const shortTab = tabs.find(t => t.name === tab)?.short;
 
-  // Update the URL query parameter (or remove it for 'Overview')
-  if (shortTab && shortTab !== 'overview') {
-    const newUrl = `${window.location.pathname}?${shortTab}`;
-    goto(newUrl, { replaceState: true });
-  } else {
-    // Remove the query parameter for the 'Overview' tab
-    goto(window.location.pathname, { replaceState: true });
-  }
 }
 
 // onMount to check for URL parameters
@@ -434,43 +424,55 @@ async function increaseLike() {
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
   
-<div class="grid gap-4 my-6 
-            grid-cols-2 
-            md:grid-cols-3 
-            w-full max-w-4xl mx-auto">
-  <button
-    on:click={() => setLineup('1')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activeLineup === '1' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    DPS
-  </button>
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+      on:click={() => setLineup('1')}
+      class={`relative px-4 py-2 rounded-xl font-semibold transition-all
+               backdrop-blur-md border 
+               ${activeLineup === '1'
+                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
+                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
+               }`}
+    >
+      DPS
+    </button>
 
+    <!-- Tab -->
+    <button
+      on:click={() => setLineup('2')}
+      class={`relative px-4 py-3 rounded-xl font-semibold transition-all
+               backdrop-blur-md border 
+               ${activeLineup === '2'
+                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
+                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
+               }`}
+    >
+      <span class="block leading-tight text-sm md:text-base">
+        WHEEL OF DESTINY
+      </span>
+    </button>
 
+    <!-- Tab -->
+    <button
+      on:click={() => setLineup('3')}
+      class={`relative px-4 py-3 rounded-xl font-semibold transition-all
+               backdrop-blur-md border 
+               ${activeLineup === '3'
+                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
+                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
+               }`}
+    >
+      <span class="block leading-tight text-sm md:text-base">
+        LAW OF ASCENSION
+      </span>
+    </button>
 
-  <button
-    on:click={() => setLineup('2')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm leading-3 
-      ${activeLineup === '2' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    WHEEL OF DESTINY
-  </button>
-
-  <button
-    on:click={() => setLineup('3')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activeLineup === '3' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    LAW OF ASCENSION
-  </button>
-
+  </div>
 </div>
+
 
       {#if activeLineup === '1'}
       <Agentritadps></Agentritadps>
@@ -1397,16 +1399,16 @@ async function increaseLike() {
 
 
   <div >
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf DPS</h2>
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Rita DPS</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Beta showcase</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/q2IOUHYp3z8"
+          src="https://www.youtube.com/embed/38OEo0wCcJ4"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
