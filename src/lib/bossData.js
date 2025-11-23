@@ -1630,6 +1630,48 @@ export const teamData = {
   resovita: {
     teamDataSets: [
       {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png",  "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/asop_songque.png"],
+          rank: '1+',
+          pct: '66%',
+        },
+         {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png",  "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/asop_songque.png"],
+          rank: '4-6',
+          pct: '15%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png",  "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/elf_kiana.png"],
+          rank: '50',
+          pct: '1%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png",  "images/valkportrait/Thelema Mad Pleasure.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/elf_kiana.png"],
+          rank: '55',
+          pct: '8%',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png",  "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/asop_songque.png"],
+          rank: '56',
+          pct: '6%',
+        },
+                {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Theresa Schicksal's Imperative.png",  "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png","images/valkportrait/asop_chenxue.png"],
+          rank: '64',
+          pct: '4%',
+        },
+      ],
+    },        
+      {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server Top 100 Myriad ??? D.",
       entries: [
