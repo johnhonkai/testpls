@@ -1434,8 +1434,6 @@ async function increaseLike() {
 
  <div class=" gap-6 mt-5 mb-10">
   <!-- Video 1 with title and description -->
-
-
   <div >
     <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf DPS</h2>
 
@@ -1446,20 +1444,75 @@ async function increaseLike() {
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/q2IOUHYp3z8"
+          src="https://www.youtube.com/embed/CIGX1jDkzxA"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
       </iframe>
   </div>
+
+  
 </div>
 
 
 
 </div>
 
+<div class="divider"></div>
+ <div class=" gap-6 mt-5 mb-10">
+  <!-- Video 1 with title and description -->
+  <div >
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf Support</h2>
 
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">World Star Support</p>
+
+    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+      <iframe
+      loading="lazy" 
+
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/y8Df7XbdYTI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+  </div>
+
+  
+</div>
+
+
+
+</div>
+<div class="divider"></div>
+ <div class=" gap-6 mt-5 mb-10">
+  <!-- Video 1 with title and description -->
+  <div >
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf Support</h2>
+
+    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Law of Ascension Support</p>
+
+    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+      <iframe
+      loading="lazy" 
+
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/PJX4rAu6jYQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+  </div>
+
+  
+</div>
+
+
+
+</div>
   {/if}
   
   {#if selectedTab === 'Question'}

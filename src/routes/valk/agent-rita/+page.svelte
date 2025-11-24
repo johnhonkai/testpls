@@ -429,45 +429,29 @@ async function increaseLike() {
     
     <!-- Tab -->
     <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
       on:click={() => setLineup('1')}
-      class={`relative px-4 py-2 rounded-xl font-semibold transition-all
-               backdrop-blur-md border 
-               ${activeLineup === '1'
-                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
-                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
-               }`}
     >
       DPS
     </button>
 
     <!-- Tab -->
     <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
       on:click={() => setLineup('2')}
-      class={`relative px-4 py-3 rounded-xl font-semibold transition-all
-               backdrop-blur-md border 
-               ${activeLineup === '2'
-                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
-                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
-               }`}
     >
-      <span class="block leading-tight text-sm md:text-base">
-        WHEEL OF DESTINY
-      </span>
+      WHEEL OF DESTINY
     </button>
 
     <!-- Tab -->
     <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
       on:click={() => setLineup('3')}
-      class={`relative px-4 py-3 rounded-xl font-semibold transition-all
-               backdrop-blur-md border 
-               ${activeLineup === '3'
-                 ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/30'
-                 : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
-               }`}
     >
-      <span class="block leading-tight text-sm md:text-base">
-        LAW OF ASCENSION
-      </span>
+      LAW OF ASCENSION
     </button>
 
   </div>
