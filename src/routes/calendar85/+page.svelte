@@ -245,22 +245,22 @@
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
                     </div>                    
-                    <div on:click={() => openModal("Valk1")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Valk1")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Hi ♪ Love Elf ♥<br/>First ten pulls are free</span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
-                            <img src="https://i.imgur.com/UMmAJMr.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
+                            <img src="https://i.imgur.com/UMmAJMr.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
                     </div>    
-                    <div on:click={() => openModal("Valk3")} class=" will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-4 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Valk3")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-4 bg-white text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full">
-                            <img src="https://i.imgur.com/kZvlJ79.png" alt="Lone Planetfarer" class="w-full h-full object-cover" />
+                            <img src="https://i.imgur.com/kZvlJ79.png" alt="Lone Planetfarer" class="rounded-lg w-full h-full object-cover" />
                         </div>
                     </div>   
                 </div>
@@ -548,7 +548,7 @@
                      <span class="font-bold0">EVENT 1</span>
                 </div> 
     
-                <div on:click={() => openModal("Spending")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700">
+                <div on:click={() => openModal("Spending")} class="col-span-6 will-change-transform transform transition-transform hover:scale-105 ease-linear cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-left items-center justify-center border-2  border-pink-700 ">
                     <!-- Centered Text -->
                     <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Major Spending Event</span>
                     <!-- Image positioned on the right side -->
@@ -940,11 +940,11 @@
                 <BossCard image="/images/Bosses/Kevin Kaslana.webp" date="Dec 22" weather="Symphony" bosspage="/boss?kevin" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                        <BossCard   />
-                        <BossCard  />
-                        <BossCard    />
-                    </div>
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                    <BossCard image="/images/Bosses/Vita.png" date="Dec 23" />
+                    <BossCard image="/images/BossesMA/Herrscher of Domination Minion_SSS.webp" />
+                    <BossCard image="/images/Bosses/Hellmaru.webp" />
+                </div>
 
             </div>     
 
