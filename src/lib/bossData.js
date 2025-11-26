@@ -2870,14 +2870,14 @@ export const teamData = {
         lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_chenxue.png"],
         rank: '46',
         pct: '12%',
-        bottext: "Highest score: S9S 760"
+        bottext: "Highest score: 9S 760"
       },
       {
         type: 'lineup',
         lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
         rank: '49',
         pct: '1%',
-        bottext: "Highest score: S7S (SSS HLE) 760"
+        bottext: "Highest score: 7S (SSS HLE) 760"
       },      
     ]},
     {
