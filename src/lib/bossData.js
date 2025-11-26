@@ -2855,7 +2855,33 @@ export const teamData = {
   kevin: {
     teamDataSets: [
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.5",
+      teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/scoralie.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '1+',
+        pct: '87%',
+        bottext: "Highest score: S2 742, 6S 777, SSS 813, 9S 824"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Kiana Herrscher of Finality.png", "/images/valkportrait/Mei Herrscher of Origin.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '46',
+        pct: '12%',
+        bottext: "Highest score: S9S 760"
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '49',
+        pct: '1%',
+        bottext: "Highest score: S7S (SSS HLE) 760"
+      },      
+    ]},
+    {
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
