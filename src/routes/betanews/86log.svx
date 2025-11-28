@@ -1,6 +1,6 @@
 ---
 creationDate: "2025-01-10T03:44:52.521Z"
-title: 8.6 Patch Note v3
+title: 8.6 Patch Note v4
 version: '8.6'
 sortOrder: '1'
 image: "/images/valkportrait/Agent Rita.png"
@@ -18,6 +18,36 @@ image: "/images/valkportrait/Agent Rita.png"
 
 ### VIDEO OVERVIEW
 Video overview of all new content: https://youtu.be/0CWHdj7cLcc
+
+---
+
+### V4
+
+Agent Rita
+- WOD (Rita Leader): Upon SO activation, when Overflow = 10/20, during SO, enemies take **15/25% (V3) > 8/12% (V4)** more Total DMG from the team
+- LOA: Stellar Shift: Deal **1200% + 1500% (v3) > 800% + 1000% (V4)** ATK of Lightning DMG, and restore 100 meter.
+- Replay Ult: Deal ~~80%x10 + 1000% + 100%x3 (v3)~~ **60%x10 + 800% + 60%x3 (v4)** ATK of Lightning DMG. 
+- **NEW IN V4: During SO, every time Replay Combo ATK is used, Replay Ult deals additional 300% ATK of Lightning DMG, max 3 times. Stacks reset when SO ends.**
+- IMG valks in the team gain Total DMG **+6% (v3) > +12% (v4)** against IMG enemies. This is increased to **10% (v3) > 15% (v4)** when Rita is the leader.
+- Some bug fixes
+- Fixed pose in LoA team
+
+Rita Stigma
+- BOT: Total DMG **+20% (v3) > 15% (v4)**
+- 3PC: WoD: Enemies take **25% (v3) > 18% (v4)** more Fire DMG
+- 3PC: LoA: Total DMG **+10% (v3) > 15% (v4)** 
+
+EX Abyss
+- Fixed an issue where AR-related weather buffs might not work correctly for some characters.
+- Optimized performance of Moruduo boss 
+
+Arena
+- Optimized performance of Moruduo boss 
+
+Elysian Realm 
+- Agent Rita: Fixed an issue where Rondo duration extension might not take effect
+- Agent Rita: Fixed an issue where weapon button highlight wont flash correctly 
+- Agent Rita: Optimized text description 
 
 ---
 
