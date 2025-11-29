@@ -32,7 +32,7 @@
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
 
-  { name: '窈窕谍影', image: '/images/valkportrait/Agent Rita.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/agent-rita',  badge: 'Beta', verdebut: 8.6, id:64},  
+  { name: 'Miss Espionage', image: '/images/valkportrait/Agent Rita.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  badge: 'Beta', verdebut: 8.6, id:64},  
 
   { name: 'Hi ♪ Love Elf ♥', image: '/images/valkportrait/Elysia Hi Love Elf.png', type: 'SD', element: 'Ice', astralRing: ['Grail of Infinitude'] , url: '/valk/hi-love-elf',  badge: 'New', verdebut: 8.5, id:59},  
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['World Star' , 'Part 1'] , url: '/valk/horb', badge: 'Updated', verdebut: 6.8, verdlc: 8.5, id:17},

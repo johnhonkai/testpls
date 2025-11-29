@@ -1,11 +1,10 @@
-
 <svelte:head>
-  <title>Rita - 窈窕谍影</title> 
+  <title>Rita - Miss Espionage</title> 
 
-    <meta property="og:title" content="Rita - 窈窕谍影" />
-    <meta property="og:description" content="窈窕谍影 Guides, Builds and Gameplay" />
+    <meta property="og:title" content="Rita - Miss Espionage" />
+    <meta property="og:description" content="Miss Espionage Guides, Builds and Gameplay" />
     <meta property="og:image" content="https://i.imgur.com/HsA50Ch.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/agent-rita" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/miss-espionage" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -273,7 +272,7 @@ async function increaseLike() {
   accent="bg-violet-800"
   image="/images/valkfull/agent_rita.png"
   alt="Messenger of Love"
-  title="窈窕谍影"
+  title="Miss Espionage"
   name="Rita Rossweisse "
   release="v8.6 (1 Jan 2026)"
 >
