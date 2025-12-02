@@ -128,6 +128,7 @@ export const weatherList = {
   extreme: [
     {id: 'extreme-parvati', name: 'Parvati'},
     {id: 'paros', name: 'Paros'},
+    {id: 'exfish', name: 'Flying Fish'},
 
   ],  
   paralyze: [
@@ -286,6 +287,14 @@ export const bossData = {
     bosspic: "images/Bosses/Paros.png", 
     weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
   },    
+  exfish:{
+    name: 'Flying Fish: Patrol Force', 
+      mechanics: 'Upon being stunned or having its special attack blocked, the boss will drop a Luminous Pupil. When it detonates, the boss takes more dmg, max 4 stacks.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconPSI.png", 
+      bosspic: "images/Bosses/ff_fish.webp", 
+    weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
+  },  
   obvhomu: {
       name: 'Homu Emperor', 
       mechanics: 'After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.', 
@@ -3774,6 +3783,7 @@ export const teamData = {
   'bleed-tribunal': {
     
     teamDataSets: [
+ 
       {
         tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
@@ -4551,6 +4561,23 @@ export const teamData = {
             pct: '1%',
             bottext: "Highest Score: 7S (SSS Ely) 835"
           },                                                                                                                        
+        ]
+      }
+    ],
+  },
+         exfish: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "images/valkportrait/scoralie.png", "/images/valkportrait/dudu.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: '100%',
+          },                                                                                                                     
         ]
       }
     ],

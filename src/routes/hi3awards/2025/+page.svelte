@@ -75,16 +75,16 @@ import voteSummary from '$lib/data/VoteSummary2025.json'; // Adjust path as need
 	];
 
   	let BestDPS = [
-		{ title: 'Reign Solaris', description: '', image: '/images/valkfull/rs.webp', votes: 909 },
-		{ title: 'Peregrine Sword', description: '', image: '/images/valkfull/ps.png', votes: 902 },
-		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: '/images/valkfull/bw.webp', votes: 883 },
+		{ title: 'Reign Solaris', description: '', image: '/images/valkfull/rs.webp', votes: 1009 },
+		{ title: 'Peregrine Sword', description: '', image: '/images/valkfull/ps.png', votes: 1002 },
+		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: '/images/valkfull/bw.webp', votes: 907 },
 
 	];
 
   	let BestSUP = [
-		{ title: 'Lone Planetfarer', description: '', image: '/images/valkfull/vita.webp', votes: 3315 },
-		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: '/images/valkfull/bw.webp', votes: 2098 },
-		{ title: 'Jovial Deception: Shadowdimmer', description: '', image: '/images/valkfull/jd.webp', votes: 1319 },
+		{ title: 'Lone Planetfarer', description: '', image: '/images/valkfull/vita.webp', votes: 3983 },
+		{ title: 'Ba-dum! Fiery Wishing Star', description: '', image: '/images/valkfull/bw.webp', votes: 2621 },
+		{ title: 'Behold! Fate-Defying Dragon', description: '', image: '/images/valkfull/scoralie.png', votes: 1587 },
 	];
 
   	let Animation = [
@@ -610,7 +610,6 @@ const checkVotedStatus = async () => {
 	</div>
 
 	<p class="text-center text-xl sm:text-2xl font-semibold text-slate-100 mb-1 mt-20 font-russoone italic tracking-wider">TOP 3 DPS 2025</p>
-	<p class="text-center  text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
 
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
@@ -627,7 +626,6 @@ const checkVotedStatus = async () => {
 	</div>
 
 	<p class="text-center text-xl sm:text-2xl  font-semibold text-slate-100 mb-1 mt-20  font-russoone italic tracking-wider">TOP 3 SUPPORT 2025</p>
-	<p class="text-center  text-gray-400 mb-8">Number of times the characters are used in Top 100 Abyss in CN PC Server. This list will be updated with v8.5 count when I have the data.</p>
 
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
