@@ -289,10 +289,11 @@
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">OUTFIT</span>
-                    </div>       
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    </div>     
+                    <div></div>  
+                    <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Vita Outfit 1680 B-chips</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Vita Outfit First Week: 1680 Bchips, Normal Price: 1980 Bchips</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
                             <img src="https://i.imgur.com/Ow6PIGU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
