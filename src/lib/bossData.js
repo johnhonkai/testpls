@@ -3783,7 +3783,24 @@ export const teamData = {
   'bleed-tribunal': {
     
     teamDataSets: [
- 
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/Theresa Schicksal's Imperative.png", "/images/valkportrait/Griseo Cosmic Expression.png","images/valkportrait/elf_kiana.png"],
+            rank: '1+',
+            pct: '97%',
+          },
+                    {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/Bronya Herrscher of Truth.png", "/images/valkportrait/Griseo Cosmic Expression.png","images/valkportrait/elf_kiana.png"],
+            rank: '99',
+            pct: '3%',
+          },
+        ]
+      }, 
       {
         tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",

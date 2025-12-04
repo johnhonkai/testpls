@@ -21,7 +21,7 @@
 
   let viewMode: 'list' | 'tier' = 'list'; // default list view
 
-  let selectedVersion = '8.5 First Half';
+  let selectedVersion = '8.5';
   const versions = Object.keys(usageByVersion);
 
   $: versionDate = versionDates[selectedVersion] ?? 'Unknown';
@@ -275,7 +275,7 @@ function toggleView() {
 
 
 
-<div id="statsSection" class="max-w-7xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
+<div id="statsSection" class="max-w-6xl mx-auto px-4 pt-5 pb-10 mb-20 space-y-6 relative bg-base-100">
 
   <div class="flex flex-col justify-center">
         <h1 class="flex items-center gap-2 text-md sm:text-xl font-bold drop-shadow-md text-white  m-auto text-shadow-lg/30 text-center">

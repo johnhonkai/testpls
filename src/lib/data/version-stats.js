@@ -1,21 +1,27 @@
 export const usageByVersion = {
 
-    '8.5 First Half': [
-    { name: 'Hi ♪ Love Elf ♥', DPS: 368, SUP: 27 },
-    { name: 'Behold! Fate-Defying Dragon', DPS: 100, SUP: 591 },
-    { name: 'Planar Armament: Warped Spacetime', DPS: 0, SUP: 197 },
-    { name: 'Herrscher of Finality', DPS: 0, SUP: 190 },
-    { name: 'Ba-dum! Fiery Wishing Star', DPS: 24 , SUP: 293 },
-    { name: 'Lone Planetfarer', DPS: 102, SUP: 496 },
-    { name: 'Mad Pleasure: Shadowbringer', DPS: 1, SUP: 0 },
+    '8.5': [
+    { name: 'Hi ♪ Love Elf ♥', DPS: 559, SUP: 224 },
+    { name: 'Behold! Fate-Defying Dragon', DPS: 200, SUP: 1001 },
+    { name: 'Planar Armament: Warped Spacetime', DPS: 200, SUP: 386 },
+    { name: 'Herrscher of Finality', DPS: 12, SUP: 190 },
+    { name: 'Ba-dum! Fiery Wishing Star', DPS: 24 , SUP: 523 },
+    { name: 'Lone Planetfarer', DPS: 102, SUP: 668 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 100, SUP: 172 },
     { name: 'Lone Destruction: Shadowchaser', DPS: 0, SUP: 3 },
-    { name: 'Herrscher of Rebirth', DPS: 200, SUP: 71 },
+    { name: 'Herrscher of Rebirth', DPS: 200, SUP: 171 },
     { name: 'Jovial Deception: Shadowdimmer', DPS: 1, SUP: 24 },
-    { name: 'Deepspace Anchor: First Light', DPS: 3, SUP: 0 },
-    { name: 'Herrscher of Human: Ego', DPS: 1, SUP: 2 },    
-    { name: 'Peregrine Sword', DPS: 100, SUP: 98 },
+    { name: 'Deepspace Anchor: First Light', DPS: 3, SUP: 53 },
+    { name: 'Herrscher of Human: Ego', DPS: 99, SUP: 4 },    
+    { name: 'Peregrine Sword', DPS: 100, SUP: 190 },
     { name: 'Valkyrie Blastmetal', DPS: 0, SUP: 8  },
-    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 100, SUP: 0 },   
+    { name: 'Thousand-Faced Maestro: Cameo!', DPS: 116, SUP: 59 },   
+    { name: 'Reign Solaris', DPS: 100, SUP: 100 },
+    { name: "Schicksal's Imperative", DPS: 84, SUP: 97 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 15 },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 12 },
+    { name: 'Lunar Vow: Crimson Love', DPS: 100, SUP: 0 },
+    { name: 'Cosmic Expression', DPS: 0, SUP: 100 },
 
     ],
 
@@ -139,7 +145,7 @@ export const versionDates = {
   '8.1': "23 Jan - 27 Mar 2025",
   '8.2': "27 Mar - 29 May 2025",
   '8.3': "29 May - 24 July 2025",
-  '8.4': "24 July - 25 September 2025",
-  '8.5 First Half': "25 September - 31 October 2025",
+  '8.4': "24 July - 25 Sep 2025",
+  '8.5': "25 September - 4 Dec 2025",
 
 };
