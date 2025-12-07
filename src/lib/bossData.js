@@ -36,7 +36,9 @@ export const weatherList = {
     {id: 'bloodsdmob', name: 'SD-Mech Swarm'}
   ],
  imaginary: [
-    {id: 'imgflower', name: 'Husk: Existentialism'}
+    {id: 'imgflower', name: 'Husk: Existentialism'},
+    {id: 'imgbull', name: 'Husk: Mysticism '}
+
   ],
   quantum: [
     {id: 'quavalrahal', name: 'Valrahal'}
@@ -409,7 +411,7 @@ export const bossData = {
   },
   starbull:{
     name: 'Husk: Mysticism', 
-      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a number of balls, destroy them to start Phase 2. ', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls - destroy them to start Phase 2. Use aoe attack to quickly clear them before they spread out.', 
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
@@ -510,6 +512,14 @@ export const bossData = {
       bosspic: "images/Bosses/Husk - Existentialism.webp", 
       weather: "IMG: IMG valk DMG +20%", 
   },
+  imgbull:{
+    name: 'Husk: Mysticism', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls - destroy them to start Phase 2. Use aoe attack to quickly clear them before they spread out. ', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk Mysticism.webp", 
+      weather: "IMG: IMG valk DMG +20%", 
+  },  
   quavalrahal: {
     name: 'Valrahal', 
     mechanics: "P1: Has 9 layers of qua shields. There's a minigame at the start, collect the orbs and applies the same amount of qua collapse. P2: Has 5 layers of qua shield. During transition, jump/evade valrahal's slam to spawn collapse orbs.", 
@@ -4599,6 +4609,60 @@ export const teamData = {
       }
     ],
   },
+
+  imgbull: {
+    teamDataSets: [
+      {
+        tabname: "v8.6",
+        teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1+',
+            pct: '30%',
+            bottext: "Highest Score: 6S 826, 9S 843"
+          },                
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "/images/valkportrait/Bronya Herrscher of Truth.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '9,10',
+            pct: '65%',
+            bottext: "Highest Score: 9S 830"
+          },                
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '40',
+            pct: '2%',
+            bottext: "Highest Score: 9S 812"
+          },            
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '41',
+            pct: '1%',
+            bottext: "Highest Score: 8S (SSS Vita) 812"
+          },
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Kiana Herrscher of Finality.png", "images/valkportrait/Mei Herrscher of Origin.png", "/images/valkportrait/Bronya Herrscher of Truth.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '53',
+            pct: '1%',
+            bottext: "Highest Score: 9S 807"
+          },  
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '85',
+            pct: '1%',
+            bottext: "Highest Score: SS 801"
+          },           
+        ]
+      }
+    ],
+  },
+
 }
 
 
