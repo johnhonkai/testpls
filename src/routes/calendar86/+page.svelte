@@ -420,7 +420,7 @@
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
-                <div class="col-span-1 px-4 py-2 mr-3 ">v8.5 WEEK</div>
+                <div class="col-span-1 px-4 py-2 mr-3 ">v8.6 WEEK</div>
                 <div class="col-span-2 mr-4 px-4 py-2">EX ABYSS</div>
                 <div class="col-span-3 px-4 py-2">MEMORIAL ARENA</div>
             </div>
@@ -434,7 +434,7 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Husk Mysticism.webp" date="Jan 2" weather="Imaginary" bosspage="/boss?imgbull" />
-                <BossCard />
+                <BossCard image="/images/Bosses/epernay.png" date="Jan 5" weather="Ice" bosspage="/boss?iceepernay" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
