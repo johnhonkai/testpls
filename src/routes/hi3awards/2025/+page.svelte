@@ -347,11 +347,25 @@ const checkVotedStatus = async () => {
 
 </div>
 
-<div class="flex flex-col items-center px-4 py-6 mb-60 ">
-	<p class="text-center  text-gray-400 mb-8">Voting ends in: {countdown}
-    <br/>
-    Votes are not updated in real-time. Votes will be hidden near the end of voting time.
-  </p>
+<div class="flex flex-col gap-6 w-full max-w-5xl mx-auto">
+
+  <!-- Image Box 1 -->
+  <div class="w-full h-full rounded-xl overflow-hidden bg-gray-800/40 border border-white/10 flex items-center justify-center">
+    <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Awards%202025%201.png" 
+         alt="Image 1"
+         class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Image Box 2 -->
+  <div class="w-full h-full rounded-xl overflow-hidden bg-gray-800/40 border border-white/10 flex items-center justify-center">
+    <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/hi3award/Awards%202025%202.png" 
+         alt="Image 2"
+         class="w-full h-full object-cover" />
+  </div>
+
+</div>
+
+<div class="flex flex-col items-center px-4 py-6 mt-20 mb-60 ">
 
 	
 	
@@ -388,14 +402,7 @@ const checkVotedStatus = async () => {
         Votes: {card.votes}
       </div>
           </div>
-      <div class="flex justify-center">
-      <button 
-        on:click={() => openVoteModal(card.title, "Best Valkyrie Design 2025")}
-        class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
-      >
-        VOTE
-      </button>
-      </div>
+
   </div>
 </div>
 
@@ -441,14 +448,7 @@ const checkVotedStatus = async () => {
         Votes: {card.votes}
       </div>
           </div>
-      <div class="flex justify-center">
-      <button 
-        on:click={() => openVoteModal(card.title, "Best Valkyrie Gameplay 2025")}
-        class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
-      >
-        VOTE
-      </button>
-      </div>
+
   </div>
 </div>
 		{/each}
@@ -486,14 +486,7 @@ const checkVotedStatus = async () => {
         Votes: {card.votes}
       </div>
           </div>
-      <div class="flex justify-center">
-      <button 
-        on:click={() => openVoteModal(card.title, "Best Story Arc 2025")}
-        class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
-      >
-        VOTE
-      </button>
-      </div>
+
   </div>
 </div>
 
@@ -533,14 +526,7 @@ const checkVotedStatus = async () => {
         Votes: {card.votes}
       </div>
           </div>
-      <div class="flex justify-center">
-      <button 
-        on:click={() => openVoteModal(card.title, "Best Boss 2025")}
-        class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
-      >
-        VOTE
-      </button>
-      </div>
+
   </div>
 </div>
 		{/each}
@@ -578,14 +564,7 @@ const checkVotedStatus = async () => {
         Votes: {card.votes}
       </div>
           </div>
-      <div class="flex justify-center">
-      <button 
-        on:click={() => openVoteModal(card.title, "Most Anticipated Future Valk")}
-        class="btn btn-sm sm:btn-lg mt-3 sm:mt-2 px-4 py-2 rounded-xl bg-white text-black text-xs font-bold cursor-pointer "
-      >
-        VOTE
-      </button>
-      </div>
+
   </div>
 </div>
 
