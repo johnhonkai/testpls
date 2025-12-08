@@ -411,7 +411,7 @@ export const bossData = {
   },
   starbull:{
     name: 'Husk: Mysticism', 
-      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls - destroy them to start Phase 2. Use aoe attack to quickly clear them before they spread out.', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls. Use aoe atk to quickly clear them before they spread out.', 
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
@@ -514,7 +514,7 @@ export const bossData = {
   },
   imgbull:{
     name: 'Husk: Mysticism', 
-      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls - destroy them to start Phase 2. Use aoe attack to quickly clear them before they spread out. ', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls. Use aoe atk to quickly clear them before they spread out.', 
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Husk Mysticism.webp", 
@@ -4642,7 +4642,7 @@ export const teamData = {
             lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/asop_sera.png" ],
             rank: '41',
             pct: '1%',
-            bottext: "Highest Score: 8S (SSS Vita) 812"
+            bottext: "Highest Score: 8S (SSS Rita) 812"
           },
           {
             type: 'lineup',

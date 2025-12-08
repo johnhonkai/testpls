@@ -3,7 +3,7 @@ creationDate: "2025-01-10T03:44:52.530Z"
 title: Agent Rita Gear Translation v4
 version: '8.6'
 sortOrder: '3'
-image: "/images/valkportrait/Agent Rita.png"
+image: "/images/valkportrait/Miss Espionage.png"
 
 ---
 

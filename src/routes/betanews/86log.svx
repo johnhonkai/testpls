@@ -3,7 +3,7 @@ creationDate: "2025-01-10T03:44:52.521Z"
 title: 8.6 Patch Note v4
 version: '8.6'
 sortOrder: '1'
-image: "/images/valkportrait/Agent Rita.png"
+image: "/images/valkportrait/Miss Espionage.png"
 ---
 
 
