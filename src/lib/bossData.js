@@ -20,6 +20,7 @@ export const weatherList = {
     {id: 'raven', name: 'Raven'},
     {id: 'icehellmaru', name: 'Hellmaru'},
     {id: 'icehuodou', name: 'Huodou'},
+    {id: 'iceepernay', name: 'Meteroid: Epernay'},
 
   ],
   typecounter: [
@@ -49,9 +50,6 @@ export const weatherList = {
   ],
   stun:[
     {id: 'stunfish', name: 'Flying Fish'}
-  ],
-  freeze:[
-    {id: 'frzepernay', name: 'Meteroid: Epernay'},
   ],
   stardust:[
     {id: 'sdepernay', name: 'Meteroid: Epernay'},
@@ -345,13 +343,14 @@ export const bossData = {
       bosspic: "images/Bosses/epernay.png", 
       weather: "Stardust: SD valk DMG +20%.", 
   },
-  frzepernay: {
+  iceepernay: {
     name: 'Meteroid: Epernay', 
       mechanics: 'Boss has breakable parts at certain points of the fight, breaking them reduces boss max HP. During transition, you can enter one of three false doors, each gives different effect: Generate 10 SD remnants, gain Total DMG +8% or gain sp pack.', 
       weakness: 'None', 
       typeicon: "images/type/IconSD.webp", 
       bosspic: "images/Bosses/epernay.png", 
-      weather: "Freeze: Enemies take 40% more dmg when frozen and within 4s after freeze ends.", 
+      weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
+
   },  
   sa: {
     name: 'Sa: Wheel of Transcendence', 
@@ -4567,7 +4566,7 @@ export const teamData = {
       }
     ],
   },
-       frzepernay: {
+       iceepernay: {
     
     teamDataSets: [
       {
