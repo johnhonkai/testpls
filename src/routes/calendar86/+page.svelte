@@ -438,10 +438,10 @@
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />                
-                <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 6" />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp"/>
+                <BossCard image="/images/Bosses/Assaka.webp"/>                
+                </div>
     
 
             </div>
