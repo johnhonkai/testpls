@@ -95,7 +95,7 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2025-10-24'); // Start date Regional Servers
-      const cnStartDate = new Date('2025-12-12');       // Start date CN Servers
+      const cnStartDate = new Date('2025-12-5');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
@@ -214,16 +214,16 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.6 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.7 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: 6-7 November </li>
-          <li>Beta v1 (Private): 7 November </li>
-          <li>Dev Video: 13 November </li>
-          <li>Beta v2: 14 November </li>
-          <li>Beta v3: 21 November </li>
-          <li>Livestream: 29 November </li>
-          <li>Patch Day: 4 December </li>
+          <li>Valk Teaser & Reveal: 8-9 Jan </li>
+          <li>Beta v1 (Private): 9 Jan </li>
+          <li>Dev Video: 15 Jan </li>
+          <li>Beta v2: 16 Jan </li>
+          <li>Beta v3: 23 Jan </li>
+          <li>Livestream: 31 Jan </li>
+          <li>Patch Day: 5 Feb </li>
          
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
