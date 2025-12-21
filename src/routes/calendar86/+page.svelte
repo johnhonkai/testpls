@@ -453,15 +453,16 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 9" weather="IMG" bosspage="/boss?marut" />
+                <BossCard image="/images/Bosses/Shadow Knight (SK).webp" date="Jan 12" weather="Dominance" bosspage="/boss?domsk" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />                
-                <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Paros.png" date="Jan 6" />
+                <BossCard image="/images/Bosses/MOBIUS.png"/>
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp"/>                
+                </div>
+
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->

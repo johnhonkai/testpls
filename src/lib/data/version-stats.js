@@ -1,5 +1,17 @@
 export const usageByVersion = {
 
+    '8.6':[
+    { name: 'Miss Espionage', DPS: 34, SUP: 0 },
+    { name: 'Deepspace Anchor: First Light', DPS: 0, SUP: 31 },
+    { name: 'Mad Pleasure: Shadowbringer', DPS: 0, SUP: 31 },
+    { name: 'Herrscher of Finality', DPS: 66, SUP: 0 },
+    { name: 'Herrscher of Truth', DPS: 0, SUP: 66 },
+    { name: 'Herrscher of Origin', DPS: 0, SUP: 66 },
+    { name: 'Lone Planetfarer', DPS: 0, SUP: 3 },
+    { name: 'Hi ♪ Love Elf ♥', DPS: 0, SUP: 3 },
+
+    ],
+
     '8.5': [
     { name: 'Hi ♪ Love Elf ♥', DPS: 559, SUP: 224 },
     { name: 'Behold! Fate-Defying Dragon', DPS: 200, SUP: 1001 },
@@ -147,5 +159,6 @@ export const versionDates = {
   '8.3': "29 May - 24 July 2025",
   '8.4': "24 July - 25 Sep 2025",
   '8.5': "25 September - 4 Dec 2025",
+  '8.6': "5 Dec 2025 - ???",
 
 };

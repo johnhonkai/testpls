@@ -38,7 +38,8 @@ export const weatherList = {
   ],
  imaginary: [
     {id: 'imgflower', name: 'Husk: Existentialism'},
-    {id: 'imgbull', name: 'Husk: Mysticism '}
+    {id: 'imgbull', name: 'Husk: Mysticism '},
+    {id: 'marut', name: 'Marut'}
 
   ],
   quantum: [
@@ -519,6 +520,14 @@ export const bossData = {
       bosspic: "images/Bosses/Husk Mysticism.webp", 
       weather: "IMG: IMG valk DMG +20%", 
   },  
+  marut:{
+    name: 'Marut', 
+      mechanics: '', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Imgpig.webp", 
+      weather: "IMG: IMG valk DMG +20%", 
+  },    
   quavalrahal: {
     name: 'Valrahal', 
     mechanics: "P1: Has 9 layers of qua shields. There's a minigame at the start, collect the orbs and applies the same amount of qua collapse. P2: Has 5 layers of qua shield. During transition, jump/evade valrahal's slam to spawn collapse orbs.", 
@@ -4418,6 +4427,30 @@ export const teamData = {
   domsk: {
     
     teamDataSets: [
+            {
+        tabname: "v8.6",
+        teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+                    {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1+',
+            pct: '90%',
+          },  
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '29',
+            pct: '9%',
+          }, 
+                              {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '80',
+            pct: '1%',
+          }, 
+        ]
+        },
       {
         tabname: "v8.5",
         teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
@@ -4569,6 +4602,18 @@ export const teamData = {
        iceepernay: {
     
     teamDataSets: [
+            {
+        tabname: "v8.6",
+        teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '1+',
+            pct: 'n/a',
+          },                                                                                                                       
+        ]
+      },
       {
         tabname: "v8.5",
         teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
@@ -4661,7 +4706,24 @@ export const teamData = {
       }
     ],
   },
+         marut: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.5",
+        teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1+',
+            pct: 'n/a',
 
+          },                                                                                                                     
+        ]
+      }
+    ],
+  },
 }
 
 
