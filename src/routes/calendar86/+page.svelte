@@ -226,7 +226,7 @@
                 <!-- Calendar Header Row -->
                 <div class="grid grid-cols-10 gap-2 text-center font-semibold bg-pink-900 text-white p-2  text-sm ">
                     <div>Estimated date for Regional Servers</div>
-                    <div>WEEK 1<br/>Jan 1 - 9</div>
+                    <div>WEEK 1<br/>Dec 31 - Jan 9</div>
                     <div>WEEK 2<br/>Jan 9 - 16</div>
                     <div>WEEK 3<br/>Jan 16 - 23</div>
                     <div>WEEK 4<br/>Jan 23 - 30</div>

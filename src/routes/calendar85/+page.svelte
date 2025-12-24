@@ -236,7 +236,7 @@
                     <div>WEEK 7<br/>Dec 5 - 12</div>
                     <div>WEEK 8<br/>Dec 12 - 19</div>
                     <div>WEEK 9<br/>Dec 19 - 26</div>
-                    <div>WEEK 10<br/>Dec 26 - Jan 1</div>
+                    <div>WEEK 10<br/>Dec 26 - Dec 31</div>
 
                 </div>
 
