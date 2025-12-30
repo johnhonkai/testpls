@@ -241,10 +241,6 @@
     <li>F2P: {f2p.toLocaleString()}</li>
     <li>Monthly: {monthly.toLocaleString()}</li>
     <li>Monthly+BP: {bp.toLocaleString()}</li>
-    <li>10x Equipment Supply Cards</li>
-    <li>15x Battlesuit / Equipment Cards</li>
-    <li>2700 Login Day: 10x Battlesuit + 10x Equip Cards</li>
-    <li>2x Carnival Battlesuit 10 Pull Card</li>
 
   </ul>
 
