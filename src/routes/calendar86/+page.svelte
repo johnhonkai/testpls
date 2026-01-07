@@ -532,16 +532,17 @@
                 </div>
 
 
+
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Dominator of Wolves.webp" date="Jan 23" weather="Lightning" bosspage="/boss?lightandrius" />
+                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Jan 26" weather="Shadow" bosspage="/boss?shadowhod" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />                
-                <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 27" />
+                <BossCard image="/images/Bosses/Twins.png"/>
+                <BossCard image="/images/Bosses/Alien Guard.webp"/>                
+                </div>
     
 
             </div>  
@@ -553,15 +554,15 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Benares_SSS.webp" date="Jan 30" weather="Symphony" bosspage="/boss?rgbenares" />
+                <BossCard image="/images/Bosses/Husk Mysticism.webp" date="Feb 2" weather="Lightning" bosspage="/boss?lightbull" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />                
-                <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Feb 3" />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp"/>
+                <BossCard image="/images/Bosses/Herrscher of the Void.webp"/>                
+                </div>
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->

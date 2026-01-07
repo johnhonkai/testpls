@@ -6,6 +6,7 @@ export const weatherList = {
     {id: 'husk-hitcount',name: 'Husk (Hit ver)'},
     {id: 'lighttribunal',name: 'Cruising Tribunal'},
     {id: 'lightandrius',name: 'Andrius'},
+    {id: 'lightbull',name: 'Husk: Mysticism'},
 
   ],
   fire: [
@@ -106,10 +107,13 @@ export const weatherList = {
   ],
   shadow: [
     {id: 'shadowtank', name: 'MHT-3C Retaliator'},
+    {id: 'shadowhod', name: 'HoD: Minion'},
+
   ],
   symphony: [
     {id: 'symphellmaru', name: 'Hellmaru'},
     {id: 'kevin', name: 'Diabolic Kevin'},
+    {id: 'rgbenares', name: 'RGB Benares'},
 
   ],
   flux: [
@@ -214,7 +218,15 @@ export const bossData = {
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/tribunal.png", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG. ",	
-  },  
+  },
+  lightbull:{
+    name: 'Husk: Mysticism', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls. Use aoe atk to quickly clear them before they spread out.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk Mysticism.webp", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG. ",	
+  },    
   typekasumi: {
     name: 'Kasumi', 
     mechanics: 'Can choose fire or ice vulnerable shield.', 
@@ -643,6 +655,14 @@ export const bossData = {
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },
+  shadowhod: {
+    name: 'Herrscher of Dominance: Minion', 
+    mechanics: 'Starts with mobs.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconIMG.webp", 
+    bosspic: "images/Bosses/Herrscher of Domination Minion.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },  
   fluxtank: {
     name: 'MHT-3C Retaliator', 
     mechanics: '', 
@@ -677,6 +697,15 @@ export const bossData = {
     bosspic: "images/Bosses/Hellmaru.webp", 
     weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
   },
+  rgbenares: {
+    name: 'RGB Benares', 
+    mechanics: '', 
+    weakness: '', 
+    debuff: '', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Benares_SSS.webp", 
+    weather: "Symphony: Enemies take 20% more Elemental DMG. For every valkyrie with different element in the team, the effect increases to 30% / 50%.", 
+  },  
   kevin: {
     name: 'Diabolic Kevin', 
     mechanics: 'REPEL STATE: Kevin will record elemental dmg received until the gauge is filled, or until the timer ends. Then, he will take less dmg from the element with the highest recorded dmg, and takes more dmg from other elements. If the gauge falls below 50%, the dmg debuff is increased. RUIN DEBUFF: When Kevin is frozen, paralyzed, or stunned, Kevin quickly recovers from these states, but takes more damage for a certain duration, max 3 stacks.', 

@@ -39,7 +39,7 @@ function handleClick(event, path) {
     { name: 'Account Planner', href: '/planner', img: "" },
     { name: 'AstralOp', href: '/asop', img: "/images/navbar/astralop.webp" },
     { name: 'Boss', href: '/boss', img: "" },
-    { name: 'Timeline', href: '/calendar85', img: "" },
+    { name: 'Timeline', href: '/calendar86', img: "" },
     { name: 'Classroom', href: '/classroom', img: "" },
     { name: 'Beta News', href: '/betanews' , img: ""},
   ];
@@ -171,7 +171,7 @@ function handleClick(event, path) {
 
 			
 			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
-				<a href="/calendar85" class="nav-link custom-font" data-sveltekit-preload-data="hover">Timeline</a>
+				<a href="/calendar86" class="nav-link custom-font" data-sveltekit-preload-data="hover">Timeline</a>
 			</li>
 			
 <li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>
