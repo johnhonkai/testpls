@@ -274,7 +274,7 @@ async function increaseLike() {
   alt="Messenger of Love"
   title="Miss Espionage"
   name="Rita Rossweisse "
-  release="v8.6 (1 Jan 2026)"
+  release="v8.6 (31 Dec 2025)"
 >
   <CharBio mode="dps" rank="s" type="img" element="lightning" ar="wod" bg="bg-violet-800" />
   <CharBio mode="support" ar={['wod' , 'loa']} bg="bg-violet-800" />
