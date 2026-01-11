@@ -7,7 +7,7 @@ export const weatherList = {
     {id: 'lighttribunal',name: 'Cruising Tribunal'},
     {id: 'lightandrius',name: 'Andrius'},
     {id: 'lightbull',name: 'Husk: Mysticism'},
-
+    {id: 'marut', name: 'Marut'}
   ],
   fire: [
     {id: 'firemobius', name: 'Mobius'},
@@ -40,7 +40,7 @@ export const weatherList = {
  imaginary: [
     {id: 'imgflower', name: 'Husk: Existentialism'},
     {id: 'imgbull', name: 'Husk: Mysticism '},
-    {id: 'marut', name: 'Marut'}
+
 
   ],
   quantum: [
@@ -538,7 +538,7 @@ export const bossData = {
       weakness: 'None', 
       typeicon: "images/type/IconIMG.png", 
       bosspic: "images/Bosses/Imgpig.webp", 
-      weather: "IMG: IMG valk DMG +20%", 
+      weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.", 
   },    
   quavalrahal: {
     name: 'Valrahal', 
