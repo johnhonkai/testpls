@@ -317,9 +317,9 @@ export const bossData = {
       weather: "Stellar Crown: For every character in the team with Omniscient Star tag, team Total DMG +10%. When AR Rite of Oblivion is activated, team Total DMG +40%.", 
   },
   bloodsdmob: {
-    name: 'SD-Mech Swarm', 
+    name: 'SD Swarm', 
       mechanics: 'Enemies appear in waves. Stage is complete once you defeat 36 enemies.', 
-      typeicon: "images/type/IconSDMECH.png", 
+      typeicon: "images/type/IconSD.webp", 
       weakness: 'None', 
       bosspic: "images/Bosses/Swarm.webp", 
       weather: "Bloodthirsty: After defeating an enemy, Total DMG +20% for 15s, max 8 stacks, each stack duration is independent.", 
@@ -1272,8 +1272,8 @@ export const teamData = {
     ],
   
     videos: [
-      { url: 'https://www.youtube.com/embed/Sqbvxea8Tc4', abyss: 'RedLotus 499D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/nQZ3EhOOmqE', abyss: 'Nirvana 526D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=Sqbvxea8Tc4', abyss: 'RedLotus 499D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=nQZ3EhOOmqE', abyss: 'Nirvana 526D', uploader: 'phylynxbelt' },
     ], 
   },
   
@@ -1857,8 +1857,8 @@ export const teamData = {
 
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/_cfYygEWX10', abyss: 'RedLotus 482D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/k_f42gTOs-M', abyss: 'Nirvana 538D', uploader: 'iChronos' },
+      { url: 'https://www.youtube.com/watch?v=_cfYygEWX10', abyss: 'RedLotus 482D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=k_f42gTOs-M', abyss: 'Nirvana 538D', uploader: 'iChronos' },
 
     ] 
   },
@@ -1924,10 +1924,10 @@ export const teamData = {
       },
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/KSbbJGo_ly8', abyss: 'PAWS Nirvana 550D', uploader: 'phylynxbelt' },
-      { url: 'https://www.youtube.com/embed/oLXSKjKIiew', abyss: 'FoV Nirvana 550D', uploader: 'phylynxbelt' },
-      { url: 'https://www.youtube.com/embed/gStp5LF95Hg', abyss: 'RedLotus 501D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/aS_H4XU_td4', abyss: 'Nirvana 539D', uploader: 'Amadeus' },
+      { url: 'https://www.youtube.com/watch?v=KSbbJGo_ly8', abyss: 'PAWS Nirvana 550D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=oLXSKjKIiew', abyss: 'FoV Nirvana 550D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=gStp5LF95Hg', abyss: 'RedLotus 501D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=aS_H4XU_td4', abyss: 'Nirvana 539D', uploader: 'Amadeus' },
     ] 
   },
   firekosma: {
@@ -2022,8 +2022,8 @@ export const teamData = {
       },
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/JYRahGxcRz4', abyss: 'Nirvana 542 D', uploader: 'phylynxbelt' },
-      { url: 'https://www.youtube.com/embed/WE8jzAjPt9c', abyss: 'Nirvana 541 D', uploader: 'Kyoshiro' },
+      { url: 'https://www.youtube.com/watch?v=JYRahGxcRz4', abyss: 'Nirvana 542 D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=WE8jzAjPt9c', abyss: 'Nirvana 541 D', uploader: 'Kyoshiro' },
     ] 
   },
   bleedhos: {
@@ -2263,9 +2263,9 @@ export const teamData = {
       },
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/uB7S9gjTB-U', abyss: 'RedLotus 502D', uploader: 'Amadeus' },
-      { url: 'https://www.youtube.com/embed/noY1ADbFXHE', abyss: 'Nirvana 539D', uploader: 'Kyoshiro' },
+      { url: 'https://www.youtube.com/watch?v=wQScUHAtPBw', abyss: 'RedLotus 502D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=uB7S9gjTB-U', abyss: 'RedLotus 502D', uploader: 'Amadeus' },
+      { url: 'https://www.youtube.com/watch?v=noY1ADbFXHE', abyss: 'Nirvana 539D', uploader: 'Kyoshiro' },
     ] 
   },
   villv: {
@@ -2304,8 +2304,8 @@ export const teamData = {
     videos: [
       { url: 'https://www.youtube.com/watch?v=xJVaikZ1tUk', abyss: 'Nirvana 555D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=9NB9rocr36Y', abyss: 'Nirvana 548D', uploader: 'phylynxbelt' },
-      { url: 'https://www.youtube.com/embed/cz6VOeE-slU', abyss: 'Nirvana 540D', uploader: 'Xintsu' },
-      { url: 'https://www.youtube.com/embed/HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=cz6VOeE-slU', abyss: 'Nirvana 540D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=HrVzdSswa50', abyss: 'RedLotus 503D', uploader: 'Marisa Honkai' },
 
     ] 
   },
@@ -2434,8 +2434,8 @@ export const teamData = {
     ]},],
     videos: [
       { url: 'https://www.bilibili.com/video/BV1AfEvzvE7D/', abyss: 'RedLotus 517D', uploader: '我不是老酋长' },
-      { url: 'https://www.youtube.com/embed/fOtZH8BiZYg', abyss: 'Nirvana 542D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/Chr0ksydpL4', abyss: 'Nirvana 542D', uploader: 'iChronos' },
+      { url: 'https://www.youtube.com/watch?v=fOtZH8BiZYg', abyss: 'Nirvana 542D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=Chr0ksydpL4', abyss: 'Nirvana 542D', uploader: 'iChronos' },
     ] 
   },
   shadowtank: {
@@ -2488,8 +2488,8 @@ export const teamData = {
       },
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/BLjl8jH-3BE', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/embed/WNymoQCWvEM', abyss: 'Nirvana 539D', uploader: 'iChronos' },
+      { url: 'https://www.youtube.com/watch?v=BLjl8jH-3BE', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=WNymoQCWvEM', abyss: 'Nirvana 539D', uploader: 'iChronos' },
     ] 
   },
   deliverance: {
@@ -2877,7 +2877,7 @@ export const teamData = {
       },
     ]},],
     videos: [
-      { url: 'https://www.youtube.com/embed/RvNgM9cFmVE', abyss: 'Nirvana 541D', uploader: 'Marisa Honkai' },
+      { url: 'https://www.youtube.com/watch?v=RvNgM9cFmVE', abyss: 'Nirvana 541D', uploader: 'Marisa Honkai' },
 
     ] 
   },
