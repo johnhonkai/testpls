@@ -651,15 +651,15 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Feb 13" weather="Flux" bosspage="/boss?lantern" />
+                <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" date="Feb 16" weather="Fire" bosspage="/boss?firetona" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />                
-                <BossCard />
-                    </div>
+                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Feb 17" />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png"/>
+                <BossCard image="/images/Bosses/SampoSS.webp"/>                
+                </div>
     
 
             </div>  
@@ -671,10 +671,10 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Husk - Existentialism.webp" date="Feb 20" weather="Lightning" bosspage="/boss?lightflower" />
                 <BossCard />
                 </div>
-                     
+
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
                 <BossCard />
                 <BossCard />                

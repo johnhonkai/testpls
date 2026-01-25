@@ -7,7 +7,9 @@ export const weatherList = {
     {id: 'lighttribunal',name: 'Cruising Tribunal'},
     {id: 'lightandrius',name: 'Andrius'},
     {id: 'lightbull',name: 'Husk: Mysticism'},
-    {id: 'marut', name: 'Marut'}
+    {id: 'marut', name: 'Marut'},
+    {id: 'lightflower', name: 'Husk: Existentialism'},
+
   ],
   fire: [
     {id: 'firemobius', name: 'Mobius'},
@@ -203,6 +205,14 @@ export const bossData = {
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
+  lightflower: {
+      name: 'Husk: Existentialism', 
+      mechanics: 'Transition phase requires melee atk to parry balls. Parrying the final massive rock will make the boss take more dmg.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk - Existentialism.webp", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
+  },  
   'husk-hitcount': {
     name: 'Husk (Hitcount ver)', 
     mechanics: 'After around 1.5 HP bar, Husk will kneel, during this time, Husk takes more damage. Final phase has high hitcount HP.', 
