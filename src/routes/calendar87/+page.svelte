@@ -3,14 +3,14 @@
 <svelte:head>
     <title>v8.6 Calendar and Boss Schedule</title> 
     <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
-    <meta property="og:description" content="Version 8.6" />
+    <meta property="og:description" content="Version 8.7" />
     <meta property="og:image" content={data.ogImage} />
-    <meta property="og:url" content="https://marisaimpact.com/valk/calendar86" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/calendar87" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://marisaimpact.com/valk/calendar86" />
+    <link rel="canonical" href="https://marisaimpact.com/valk/calendar87" />
 </svelte:head>
 
 <script>
@@ -73,8 +73,8 @@
     // Sample data for supplies
     const supplies = {
         "Valk1": {
-            title: "Battlesuit Supply A: Hi Love Elf",
-            description: '<ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Swallowtail Phantasm (UP), Valkyrie Boltstorm, Umbral Rose, Midnight Absinthe </li></ul>',
+            title: "Battlesuit Supply A: Xentinel",
+            description: '<ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 6 weeks</li><li>First ten pulls are 50% off.</li><li>A-rank: Valkyrie Gloria (UP), Valkyrie Triumph, Divine Prayer, Swallowtail Phantasm </li></ul>',
         
         },
         "Valk2": {
@@ -87,13 +87,11 @@
         },    
         "Carnival": {
             title: "Carnival Battlesuit Supply",
-            description: '- Carnival Battlesuit Supply has the same rates and rules as regular Battlesuit Supply. <br/> - You get free 2x Ten-Pull Carnival Battlesuit Card in 8.5. Can only be used in 8.5. <br/> - Guarantee is not shared with regular supplies.  <br/> - Guarantee is shared with other carnival supplies in the same patch. <br/> - Guarantee counter resets when the patch ends.',
-            image: "https://i.imgur.com/QCJQBIL.png"        
+            description: '- Carnival Battlesuit Supply has the same rates and rules as regular Battlesuit Supply. <br/> - You get free 2x Ten-Pull Carnival Battlesuit Card in 8.7. Can only be used in 8.7. <br/> - Guarantee is not shared with regular supplies.  <br/> - Guarantee is shared with other carnival supplies in the same patch. <br/> - Guarantee counter resets when the patch ends.',
         },            
         "CarnivalEquip": {
             title: "Carnival Equipment Supply",
             description: '- Carnival Equipment Supply has the same rates and rules as regular Equipment Supply. <br/> - Guarantee is not shared with regular supplies.  <br/> - Guarantee is shared with other carnival supplies in the same patch. <br/> - Guarantee counter resets when the patch ends.',
-            image: "https://i.imgur.com/oGj8Rr3.jpeg"        
         },             
         "Equip": {
             title: "Equipment Supply",
@@ -199,7 +197,7 @@
 
 <div class="flex justify-center items-end gap-5 -mt-3">
 
-    <VersionSelect currentVersion="8.6"></VersionSelect>
+    <VersionSelect currentVersion="8.7"></VersionSelect>
 
   <div role="tablist" class="tabs-border mt-4 space-x-2 ">
      <button
@@ -222,45 +220,39 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mt-4 ">
         <!-- Supply and Events Calendar Layout -->
         <div class="overflow-x-auto ">
-            <div class="w-[1350px]  bg-linear-to-b from-pink-500 to-pink-100 ">
+            <div class="w-[1215px]  bg-linear-to-b from-pink-500 to-pink-100 ">
                 <!-- Calendar Header Row -->
-                <div class="grid grid-cols-10 gap-2 text-center font-semibold bg-pink-900 text-white p-2  text-sm ">
+                <div class="grid grid-cols-9 gap-2 text-center font-semibold bg-pink-900 text-white p-2  text-sm ">
                     <div>Estimated date for Regional Servers</div>
-                    <div>WEEK 1<br/>Dec 31 - Jan 9</div>
-                    <div>WEEK 2<br/>Jan 9 - 16</div>
-                    <div>WEEK 3<br/>Jan 16 - 23</div>
-                    <div>WEEK 4<br/>Jan 23 - 30</div>
-                    <div>WEEK 5<br/>Jan 30 - Feb 6</div>
-                    <div>WEEK 6<br/>Feb 6 - 13</div>
-                    <div>WEEK 7<br/>Feb 13 - 20</div>
-                    <div>WEEK 8<br/>Feb 20 - 27</div>
-                    <div>WEEK 9<br/>Feb 27 - Mar 5</div>
+                    <div>WEEK 1<br/>Mar 5 - 13</div>
+                    <div>WEEK 2<br/>Mar 13 - 20</div>
+                    <div>WEEK 3<br/>Mar 20 - 27</div>
+                    <div>WEEK 4<br/>Mar 27 - Apr 3</div>
+                    <div>WEEK 5<br/>Apr 3 - 10</div>
+                    <div>WEEK 6<br/>Apr 10 - 17</div>
+                    <div>WEEK 7<br/>Apr 17 - 24</div>
+                    <div>WEEK 8<br/>Apr 24 - 30</div>
 
                 </div>
 
 
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip ">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
                     </div>                    
                     <div on:click={() => openModal("Valk1")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Miss Espionage<br/>First ten pulls are 50% off</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Xentinel<br/>First ten pulls are 50% off</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
-                            <img src="https://i.imgur.com/ZRv8yx4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                            <img src="https://i.imgur.com/dVZrems.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
                     </div>    
-                    <div on:click={() => openModal("")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        
-                        <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Peregrine Sword</span>
 
-                    </div>  
                 </div>
 
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">EQUIPMENT SUPPLY A</span>
@@ -268,74 +260,152 @@
                     <div on:click={() => openModal("Equip")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Miss Espionage Equipment</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Xentinel Equipment</span>
 
                     </div>                
-                    <div on:click={() => openModal("Equip")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        
-                        <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Peregrine Sword Equipment</span>
 
-                    </div>  
                 </div>
 
-
-
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                         <span class="font-bold0">ASTRAL OP SUPPLY</span>
-                    </div>        
-
+                         <span class="font-bold0">BATTLESUIT SUPPLY B</span>
+                    </div>  
+                    <div class="col-span-3"></div>                  
                     <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Serapeum</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Hi Love Elf</span>
 
                     </div>    
 
                 </div>
 
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">EQUIPMENT SUPPLY B</span>
+                    </div>                    
+                    <div on:click={() => openModal("Equip")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Lunar Vow DLC</span>
+
+                    </div>                
+                    <div on:click={() => openModal("Equip")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Hi Love Elf Equipment</span>
+
+                    </div>   
+                </div>
+
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip ">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                         <span class="font-bold0">CARNIVAL BATTLESUIT</span>
+                    </div>  
+                    <div class="col-span-1"></div>                  
+                    <div on:click={() => openModal("Carnival")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute top-2 left-2 flex items-center justify-center z-10 leading-4 text-left">Alternating supplies for BFD, PAWS<br/> Badum and Vita Battlesuit</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
+                            <img src="https://i.imgur.com/FitRAzH.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>    
+
+                </div>
+
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">CARNIVAL EQUIPMENT</span>
+                    </div>   
+                     <div class="col-span-1"></div>                  
+                 
+                    <div on:click={() => openModal("CarnivalEquip")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute top-2 left-2 flex items-center justify-center z-10 leading-4 text-left">Alternating supplies for BFD, PAWS<br/> Badum and Vita Equipment</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
+                            <img src="https://i.imgur.com/W3Z5NB3.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>   
+                </div>                
+
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">ASTRAL OP SUPPLY</span>
+                    </div>        
+
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Chenxue</span>
+
+                    </div>    
+                    <div on:click={() => openModal("")} class="col-span-1 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Teri</span>
+
+                    </div>   
+                                        <div on:click={() => openModal("")} class="col-span-1 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sera</span>
+
+                    </div>
+                     <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Chenxue</span>
+
+                    </div>   
+                </div>
+
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">OUTFIT</span>
                     </div>     
                     <div></div>  
-                    <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Vita Outfit First Week: 1680 Bchips, Normal Price: 1980 Bchips</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Hi Love Elf Outfit<br/>9600 Crystals</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
-                            <img src="https://i.imgur.com/Ow6PIGU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                            <img src="https://i.imgur.com/iZuO0E4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
-                    </div>                      
+                    </div>    
+                    
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Badum Wintery Wishes</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-full ">
+                            <img src="https://i.imgur.com/mtSEhcz.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>  
+
                 </div>
 
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASCENSION SUPPLY</span>
                     </div>     
                     <div class="col-span-3"></div>  
-                    <div on:click={() => openModal("NewADV")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Lone Planetfarer</span>
-
-                    </div>                      
+                    
                 </div>
 
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ARMAMENT ASCENSION</span>
                     </div>     
-                    <div class="col-span-3"></div>  
-                    <div on:click={() => openModal("NewRebate")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Lone Planetfarer Equipment</span>
-
-                    </div>                      
                 </div>
                 
             </div>
@@ -352,157 +422,147 @@
 <div class="p-4 container-screen-2xl flex justify-center items-center mb-20 ">
     <!-- Supply and Events Calendar Layout -->
     <div class="overflow-x-auto ">
-            <div class="w-[1350px]  bg-linear-to-b from-pink-500 to-pink-100 ">
+            <div class="w-[1215px]  bg-linear-to-b from-pink-500 to-pink-100 ">
                 <!-- Calendar Header Row -->
-                <div class="grid grid-cols-10 gap-2 text-center font-semibold bg-pink-900 text-white p-2  text-sm ">
+                <div class="grid grid-cols-9 gap-2 text-center font-semibold bg-pink-900 text-white p-2  text-sm ">
                     <div>Estimated date for Regional Servers</div>
-                    <div>WEEK 1<br/>Dec 31 - 9</div>
-                    <div>WEEK 2<br/>Jan 9 - 16</div>
-                    <div>WEEK 3<br/>Jan 16 - 23</div>
-                    <div>WEEK 4<br/>Jan 23 - 30</div>
-                    <div>WEEK 5<br/>Jan 30 - Feb 6</div>
-                    <div>WEEK 6<br/>Feb 6 - 13</div>
-                    <div>WEEK 7<br/>Feb 13 - 20</div>
-                    <div>WEEK 8<br/>Feb 20 - 27</div>
-                    <div>WEEK 9<br/>Feb 27 - Mar 5</div>
+                    <div>WEEK 1<br/>Mar 5 - 13</div>
+                    <div>WEEK 2<br/>Mar 13 - 20</div>
+                    <div>WEEK 3<br/>Mar 20 - 27</div>
+                    <div>WEEK 4<br/>Mar 27 - Apr 3</div>
+                    <div>WEEK 5<br/>Apr 3 - 10</div>
+                    <div>WEEK 6<br/>Apr 10 - 17</div>
+                    <div>WEEK 7<br/>Apr 17 - 24</div>
+                    <div>WEEK 8<br/>Apr 24 - 30</div>
 
                 </div>
 
 
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                      <span class="font-bold0">EVENT 1</span>
                 </div> 
     
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Login Event. Free Miss Espionage stigma box.</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Major Spending Event</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/N5YQKN2.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/Tz7bNzS.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
 
 
             </div>
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 2</span>
                 </div> 
     
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free Lunar Vow</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 10 Equip Cards, 1 Xentinel stigma box and 1 Luna DLC stigma box</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/oShwLMy.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/M38gAfC.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
 
             </div>
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold col-span-1  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 3</span>
+                    
+                   <span class="font-bold0">EVENT 3</span>
                 </div> 
-
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+    
+                    <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Topup Event. Topup ~100 usd to get  up to 3 Thel or JD stamps and more</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 5 Battlesuit Cards and 1 Prism Stigma Upgrade Ticket</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/Qo7id7s.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/QFa184E.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
 
-                
+
             </div>
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 4</span>
                 </div> 
-    
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                     <div></div>
+   
+                    <div on:click={() => openModal("")} class="col-span-7 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Banquet of Intrigue</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">CNY Freebies: S-rank Selector (Up to HoTR), 5 Battlesuit Cards, frame, 288 crystals</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/YYwJBwM.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/LwaBZ7X.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
+
             </div>
 
-
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 5</span>
+                    
+                   <span class="font-bold0">EVENT 5</span>
                 </div> 
-                    <div></div>
                     <div></div>
                     <div on:click={() => openModal("")} class="col-span-7 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 11</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Spring Lobby</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/WK1EiUL.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/W1yFNBV.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
+
+
             </div>
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 6</span>
                 </div> 
-                    <div class="col-span-3"></div>
-                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+    
+                    <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Heroic Expedition</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Featured Event</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/lyNEKTK.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/8GZdkPg.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
+
             </div>
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold  text-zinc-700 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 7</span>
+                    
+                   <span class="font-bold0">EVENT 7</span>
                 </div> 
-                    <div class="col-span-4"></div>
-                    <div on:click={() => openModal("")} class="col-span-5 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+    
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">2026 New Year Emblem and Free 120 Crystal</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Time Capsule</span>
                         <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/3zY4Bzq.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="https://i.imgur.com/FWcD2cv.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
-            </div>
 
-            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
-                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                     <span class="font-bold0">EVENT 8</span>
-                </div> 
-                    <div class="col-span-5"></div>
-                    <div on:click={() => openModal("")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Schicksal Classroom</span>
-                        <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/st8gIno.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
-                        </div>
-                    </div>   
-            </div>
 
+            </div>
     </div>
     </div>
 
@@ -520,7 +580,7 @@
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
-                <div class="col-span-1 px-4 py-2 mr-3 ">v8.6 WEEK</div>
+                <div class="col-span-1 px-4 py-2 mr-3 ">v8.7 WEEK</div>
                 <div class="col-span-2 mr-4 px-4 py-2">EX ABYSS</div>
                 <div class="col-span-3 px-4 py-2">MEMORIAL ARENA</div>
             </div>
@@ -533,14 +593,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Husk Mysticism.webp" date="Jan 2" weather="IMG" bosspage="/boss?imgbull" />
-                <BossCard image="/images/Bosses/epernay.png" date="Jan 5" weather="Ice" bosspage="/boss?iceepernay" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 6" />
-                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp"/>
-                <BossCard image="/images/Bosses/Assaka.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
     
 
@@ -553,14 +613,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 9" weather="Lightning" bosspage="/boss?marut" />
-                <BossCard image="/images/Bosses/Shadow Knight (SK).webp" date="Jan 12" weather="Dominance" bosspage="/boss?domsk" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Paros.png" date="Jan 13" />
-                <BossCard image="/images/Bosses/MOBIUS.png"/>
-                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
 
             </div>
@@ -572,14 +632,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Raven.png" date="Jan 16" weather="Ice" bosspage="/boss?raven" />
-                <BossCard image="/images/Bosses/Paros.png" date="Jan 19" weather="Extreme" bosspage="/boss?paros" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Kevin Deliverance.webp" date="Jan 20" />
-                <BossCard image="/images/Bosses/Sampo.webp"/>
-                <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
     
 
@@ -593,14 +653,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Dominator of Wolves.webp" date="Jan 23" weather="Lightning" bosspage="/boss?lightandrius" />
-                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Jan 26" weather="Shadow" bosspage="/boss?shadowhod" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Imgpig.webp" date="Jan 27" />
-                <BossCard image="/images/Bosses/Twins.png"/>
-                <BossCard image="/images/Bosses/Alien Guard.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
     
 
@@ -613,14 +673,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Benares_SSS.webp" date="Jan 30" weather="Symphony" bosspage="/boss?rgbenares" />
-                <BossCard image="/images/Bosses/Husk Mysticism.webp" date="Feb 2" weather="Lightning" bosspage="/boss?lightbull" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Feb 3" />
-                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp"/>
-                <BossCard image="/images/Bosses/Herrscher of the Void.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
@@ -631,16 +691,15 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Herrscher of Ice.webp" date="Feb 6" weather="Ignite" bosspage="/boss?hoice" />
-                <BossCard image="/images/Bosses/Swarm.webp" date="Feb 9" weather="Blood" bosspage="/boss?bloodsdmob" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/BossesMA/Husk - Existentialism_SSS.webp" date="Feb 10" />
-                <BossCard image="/images/BossesMA/False God Otto_SSS.webp"/>
-                <BossCard image="/images/Bosses/Hellmaru.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
-    
 
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
@@ -651,14 +710,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Feb 13" weather="Flux" bosspage="/boss?lantern" />
-                <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" date="Feb 16" weather="Fire" bosspage="/boss?firetona" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" date="Feb 17" />
-                <BossCard image="/images/Bosses/Herrscher of Rimestar.png"/>
-                <BossCard image="/images/Bosses/SampoSS.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
     
 
@@ -669,38 +728,18 @@
                     8
                 </div>
 
-
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Husk - Existentialism.webp" date="Feb 20" weather="Lightning" bosspage="/boss?lightflower" />
-                <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" date="Feb 23" weather="Fire" bosspage="/boss?firetank" />
-                </div>
-
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Imgpig.webp" date="Feb 24" />
-                <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp"/>
-                <BossCard image="/images/Bosses/Shadow Knight (SK).webp"/>                
-                </div>
-
-            </div>       
-            
-            <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
-                <!-- Week Column -->
-                <div class="flex items-center justify-center font-bold text-lg rounded-l-lg p-2 text-black">
-                    9
-                </div>
-
-                <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Flame-Chaser - Aponia_SSS.webp" date="Feb 27" weather="Dominance" bosspage="/boss?aponia" />
-                <BossCard image="/images/Bosses/Sampo.webp" date="Mar 2" weather="Melee" bosspage="/boss?sampo" />
+                <BossCard />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Pishacha.webp" date="Mar 3" />
-                <BossCard image="/images/BossesMA/MHT-3B Nirvana_SSS.webp"/>
-                <BossCard image="/images/Bosses/Alien Guard.webp"/>                
+                <BossCard />
+                <BossCard />
+                <BossCard />             
                 </div>
 
-            </div>     
+            </div>    
         </div>
 
 
