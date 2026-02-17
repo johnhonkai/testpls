@@ -1,7 +1,7 @@
 
 
 <svelte:head>
-    <title>v8.6 Calendar and Boss Schedule</title> 
+    <title>v8.7 Calendar and Boss Schedule</title> 
     <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
     <meta property="og:description" content="Version 8.7" />
     <meta property="og:image" content={data.ogImage} />
@@ -593,14 +593,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Ricecake.webp" date="Mar 6" weather="Physical" bosspage="/boss?ricecake" />
+                <BossCard image="/images/Bosses/tribunal.png" date="Mar 9" weather="Bleed" bosspage="/boss?bleed-tribunal" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/Bosses/Ricecake.webp" date="Mar 10" />
+                <BossCard image="/images/BossesMA/Bright Knight Excelsis_SSS.webp"/>
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp"/>                
                 </div>
     
 
@@ -612,15 +612,16 @@
                 </div>
 
 
+
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Raven.png" date="Mar 13" weather="Extreme" bosspage="/boss?extreme-raven" />
+                <BossCard image="/images/Bosses/Benares.webp" date="Mar 16" weather="Ice" bosspage="/boss?benares" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/Bosses/Paros.png" date="Mar 17" />
+                <BossCard image="/images/Bosses/Husk Mysticism.webp"/>
+                <BossCard image="/images/Bosses/Herrscher of the Void.webp"/>                
                 </div>
 
             </div>

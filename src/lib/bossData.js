@@ -24,6 +24,7 @@ export const weatherList = {
     {id: 'icehellmaru', name: 'Hellmaru'},
     {id: 'icehuodou', name: 'Huodou'},
     {id: 'iceepernay', name: 'Meteroid: Epernay'},
+    {id: 'benares', name: 'Benares'},
 
   ],
   typecounter: [
@@ -105,6 +106,7 @@ export const weatherList = {
     {id: 'otto', name: 'Otto Apocalypse'},
     {id: 'deliverance', name: 'Bygone Deliverance'},
     {id: 'phyhod', name: 'Herrscher of Dominance'},
+    {id: 'ricecake', name: 'Rice Cake'},
 
   ],
   shadow: [
@@ -136,6 +138,7 @@ export const weatherList = {
     {id: 'extreme-parvati', name: 'Parvati'},
     {id: 'paros', name: 'Paros'},
     {id: 'exfish', name: 'Flying Fish'},
+    {id: 'extreme-raven', name: 'Raven'},
 
   ],  
   paralyze: [
@@ -301,7 +304,15 @@ export const bossData = {
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Parvati.webp", 
     weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
-  },  
+  }, 
+  'extreme-raven': {
+    name: 'Raven', 
+    mechanics: 'Starts with BIO mobs. Transition phase: Counter with melee attacks to gain Feather stack. At the end of the phase, if you have 6 stacks, counter Raven attack to gain sp and AR pack.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Raven.png", 
+    weather: "Extreme: For every character that has Symbiosis tag, Team Total DMG +10%. When Grail of Infinitude is activated, Team Total DMG +40%."
+  },   
   paros: {
     name: 'Meteoroid: Paros', 
     mechanics: 'Paros has a freeze trauma mark. When freeze trauma is filled, its armor will shatter and drop SD remnants. When transition phase ends, the armor will recover. Transition Phase: Deal dmg and gather the spear fractures to make Paros take more dmg in P2.', 
@@ -615,6 +626,14 @@ export const bossData = {
     bosspic: "images/Bosses/Alien Guard.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },
+  ricecake: {
+    name: 'Rice Cake', 
+    mechanics: ' ', 
+    weakness: 'None', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Ricecake.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },  
   phyhod: {
     name: 'Herrscher of Dominance: Minion', 
     mechanics: 'Starts with mobs.', 
@@ -631,6 +650,14 @@ export const bossData = {
     bosspic: "images/Bosses/Raven.png", 
     weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
   },
+  benares: {
+    name: 'Benares', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconNULL.webp", 
+    bosspic: "images/Bosses/Benares.webp", 
+    weather: "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.", 
+  },  
   icehellmaru: {
     name: 'Hellmaru', 
     mechanics: 'Has PSY mobs.', 
