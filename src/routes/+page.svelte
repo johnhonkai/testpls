@@ -95,13 +95,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2026-1-3'); // Start date Regional Servers
-      const cnStartDate = new Date('2025-12-6');       // Start date CN Servers
+      const cnStartDate = new Date('2026-2-6');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v8.6 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.6 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.7 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
@@ -121,12 +121,12 @@
   let difficulty = 'Agony 3';
 
   // Base values (Agony 3)
-  const baseF2P = 25055;
-  const baseMonthly = 31855;
-  const baseBP = 33855;
+  const baseF2P = 21945;
+  const baseMonthly = 26655;
+  const baseBP = 28655;
 
   // Adjusted values
-  $: bonus = difficulty === 'Red Lotus' ? 1440 : difficulty === 'Nirvana' ? 1800 : 0;
+  $: bonus = difficulty === 'Red Lotus' ? 1280 : difficulty === 'Nirvana' ? 1600 : 0;
   $: f2p = baseF2P + bonus;
   $: monthly = baseMonthly + bonus;
   $: bp = baseBP + bonus;
@@ -204,7 +204,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
-              <li>v8.7 update is on 5 February</li>
+              <li>v8.8 update is on 2 April</li>
             </ul>            
           </div>
         </div>
@@ -214,16 +214,16 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.7 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">8.8 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: 8-9 Jan </li>
-          <li>Beta v1 (Private): 9 Jan </li>
-          <li>Dev Video: 15 Jan </li>
-          <li>Beta v2: 16 Jan </li>
-          <li>Beta v3: 23 Jan </li>
-          <li>Livestream: 31 Jan </li>
-          <li>Patch Day: 5 Feb </li>
+          <li>Valk Teaser & Reveal: 5 Mar </li>
+          <li>Beta v1 (Private): 6 Mar </li>
+          <li>Dev Video: 12 Mar </li>
+          <li>Beta v2: 13 Mar </li>
+          <li>Beta v3: 20 Mar </li>
+          <li>Livestream: 28 Mar</li>
+          <li>Patch Day: 2 Apr </li>
          
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
@@ -233,7 +233,7 @@
 <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
   <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
     <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-    <h2 class="text-lg font-semibold text-white tracking-tight">8.6 CRYSTAL INCOME</h2>
+    <h2 class="text-lg font-semibold text-white tracking-tight">8.7 CRYSTAL INCOME</h2>
   </div>
 
 
@@ -241,6 +241,9 @@
     <li>F2P: {f2p.toLocaleString()}</li>
     <li>Monthly: {monthly.toLocaleString()}</li>
     <li>Monthly+BP: {bp.toLocaleString()}</li>
+    <li>Carnival 10-Pull Card x2</li>
+    <li>Battlesuit Card x10</li>
+    <li>Equipment Card x10</li>
 
   </ul>
 
@@ -281,7 +284,7 @@
 
     <!-- Always-visible info icon -->
     <a 
-      href="https://www.miyoushe.com/bh3/article/68717140"
+      href="https://www.miyoushe.com/bh3/article/72820002"
       target="_blank"
       class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
       data-tip="Go to source"
