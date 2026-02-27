@@ -32,6 +32,7 @@ export const weatherList = {
     {id: 'typeandrius', name:'Andrius'}, 
     {id: 'typesprout', name:'Sprout of Wishing'}, 
     {id: 'typeparvati', name:'Parvati'}, 
+    {id: 'typedjxy', name:'Dark Jixuanyuan'}, 
 
   ],
   oblivion: [
@@ -248,7 +249,14 @@ export const bossData = {
     bosspic: "images/Bosses/Yae Kasumi.webp", 
     weather: "Counter: Type counter effect is 20% stronger.",
   },
-
+  typedjxy: {
+    name: 'Dark Jixuanyuan', 
+    mechanics: '', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSIBIO.png", 
+    bosspic: "images/Bosses/Dark Jixuanyuan.webp", 
+    weather: "Counter: Type counter effect is 20% stronger.",
+  },
   typeandrius: {
     name: 'Dominator of Wolves',
     mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',

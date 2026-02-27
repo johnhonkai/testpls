@@ -156,9 +156,9 @@
             title: "Art Collection Vol 4 Event",
             image: "https://i.imgur.com/KsCHAeL.jpeg"
         },    
-        "Freehoh": {
-            title: "Free HoH / HoTr card or 5 stamps and 15 Supply Cards",
-            image: "https://i.imgur.com/rVvX1wc.jpeg"
+        "FreeBox": {
+            title: "Two Outfit Boxes",
+            image: "https://i.imgur.com/lhzwTo5.jpeg"
         },                         
     };
 
@@ -560,8 +560,34 @@
                             <img src="https://i.imgur.com/FWcD2cv.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
+                    <div></div>
+                    <div on:click={() => openModal("")} class="col-span-5 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 11-EX</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="https://i.imgur.com/b6BluWL.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
+            </div>
 
+                                    <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 7</span>
+                </div> 
+    
 
+                    <div class="col-span-3"></div>
+                    <div on:click={() => openModal("FreeBox")} class="col-span-5 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free Outfit Boxes</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="https://i.imgur.com/BsvWITy.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
             </div>
     </div>
     </div>
@@ -633,14 +659,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Mar 20" weather="Lightning" bosspage="/boss?lightningsprout" />
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" date="Mar 23" weather="Type" bosspage="/boss?typedjxy" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/Bosses/Sa_SSS.webp" date="Mar 24" />
+                <BossCard image="/images/Bosses/Hephaestus SSS.webp"/>
+                <BossCard image="/images/Bosses/Assaka.webp"/>                
                 </div>
     
 
@@ -654,7 +680,7 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Paros.png" date="Mar 27" weather="Extreme" bosspage="/boss?paros" />
                 <BossCard />
                 </div>
                      
