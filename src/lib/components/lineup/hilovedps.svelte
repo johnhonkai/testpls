@@ -5,11 +5,14 @@
     const mainCharacters = [
         { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%'},
         { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '100%'},
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '99%',   speed: '' },
+
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '98%' },
         { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '96%' },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '96%' },
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '92%'},
         { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: '88%'},
+        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '77%',speed: 'Fast'   },
 
     ];
 
