@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="World Star"/>
     <meta property="og:description" content="Info for characters in World Star teams." />
-    <meta property="og:image" content="https://i.imgur.com/olmOnxR.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/xlS8AVS.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/world-star" />
     <meta property="og:type" content="website" />
 
@@ -27,6 +27,8 @@
   ];
 
   const support = [
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+
     { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
 
     { name: "Herrscher of Rebirth", image: "/images/valkportrait/Seele Herrscher of Rebirth.png" , type: "Psy" , element: "Physical" },
@@ -67,6 +69,8 @@
     ],
 
         Shieldbreak: [
+          { name: "Xentinel", image: "/images/valkportrait/Mei Xentinel.png", }
+
     ],
 
     Hitcount: [
@@ -89,6 +93,10 @@
 
     Ignite: [
             { name: "Sparkle", image: "/images/valkportrait/sparkle.png", details: "When Sparkle cast her ult on an ally, that ally's Ult will apply 12 points of ignite."}
+    ],
+
+    Stun: [
+            { name: "Xentinel", image: "/images/valkportrait/Mei Xentinel.png", }
     ],
 
     Bleed: [
@@ -183,7 +191,7 @@ async function captureStats() {
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for World Star teams  <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
 
     </p>
@@ -227,7 +235,7 @@ async function captureStats() {
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for World Star teams <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
 
     </p>

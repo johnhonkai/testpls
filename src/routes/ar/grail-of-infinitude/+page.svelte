@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Astral Ring: Grail of Infinitude"/>
     <meta property="og:description" content="Info for characters in Grail of Infinitude teams." />
-    <meta property="og:image" content="https://i.imgur.com/RBIcgzJ.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/WNvRxDK.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/grail-of-infinitude" />
     <meta property="og:type" content="website" />
 
@@ -29,12 +29,18 @@ function valkImage(name: string) {
     let { data }: { data: PageData } = $props();
 
   const dps = [
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+    { name: "Lunar Vow: Crimson Love", image: "/images/valkportrait/Theresa Lunar Vow.png" , type: "Psy" , element: ["Lightning" , "Bleed"]  },  
+
     { name: "Hi ♪ Love Elf ♥" , type: "Sd" , element: "Ice" },  
     { name: "Planar Armament: Warped Spacetime" , type: "Bio" , element: "Lightning" },
 
   ];
 
   const support = [
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+    { name: "Lunar Vow: Crimson Love", image: "/images/valkportrait/Theresa Lunar Vow.png" , type: "Psy" , element: ["Lightning" , "Bleed"]  },  
+
     { name: "Hi ♪ Love Elf ♥", type: "Sd" , element: "Ice" },  
     { name: "Herrscher of Rebirth", type: "Psy" , element: "Physical" },  
     { name: "Behold! Fate-Defying Dragon", type: "Mech" , element: ["Fire" , "Ignite"] },
@@ -60,6 +66,8 @@ function valkImage(name: string) {
 
 
         Shieldbreak: [
+              { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+
             { name: "Reign Solaris"},
     ],
 
@@ -85,11 +93,15 @@ function valkImage(name: string) {
     ],
 
     Bleed: [
+              { name: "Lunar Vow: Crimson Love", image: "/images/valkportrait/Theresa Lunar Vow.png" , details: "Increases bleed stack by 9, and increases stack dmg." },  
+
               { name: "Peregrine Sword"},
 
     ],
 
     Stun: [
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+
       { name: "Reign Solaris" },
     ],
 
@@ -180,7 +192,7 @@ async function captureStats() {
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Grail of Infinitude teams   <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
   </span>
 
 
@@ -224,7 +236,7 @@ async function captureStats() {
 </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Grail of Infinitude teams   <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
   </span>
 
 

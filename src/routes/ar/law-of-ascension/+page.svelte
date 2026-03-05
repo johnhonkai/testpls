@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Law of Ascension characters"/>
     <meta property="og:description" content="Info for characters in Law of Ascension teams." />
-    <meta property="og:image" content="https://i.imgur.com/yYPRNSs.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/PPhQLuY.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/law-of-ascension" />
     <meta property="og:type" content="website" />
 
@@ -25,6 +25,10 @@
   ];
 
   const support = [
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , type: "Mech" , element: "Physical" },  
+    { name: "Lunar Vow: Crimson Love", image: "/images/valkportrait/Theresa Lunar Vow.png" , type: "Psy" , element: ["Lightning" , "Bleed"]  },  
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
+
     { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" , type: "Mech" , element: ["Fire" , "Ignite"] },    
     { name: "Planar Armament", image: "/images/valkportrait/paws.png" , type: "Bio" , element: "Lightning" },
     { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" , type: "Bio" , element: ["Physical" , "Bleed"] },
@@ -40,8 +44,11 @@
   const utilities = {
     "Breach State": [
       { name: "Fate-Defying Dragon!", image: "/images/valkportrait/scoralie.png" },
+    { name: "Xentinel · Dawnbearing Crescent", image: "/images/valkportrait/Mei Xentinel.png" , details: "Only for Kiana battlesuits" },  
 
         { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
+
+
     ],
 
     "Trauma Boost": [
@@ -51,6 +58,8 @@
     ],
         
         Shieldbreak: [
+                      { name: "Xentinel", image: "/images/valkportrait/Mei Xentinel.png" },
+
             { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
     ],
 
@@ -65,6 +74,7 @@
     ],
 
     Paralyze: [
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
 
       { name: "Planar Armament", image: "/images/valkportrait/paws.png" },
     ],
@@ -77,10 +87,13 @@
 
     Bleed: [
               { name: "Peregrine Sword", image: "/images/valkportrait/ps.png" },
+              { name: "Lunar Vow: Crimson Love", image: "/images/valkportrait/Theresa Lunar Vow.png" , details: "Increases bleed stack by 9, and increases stack dmg." },  
 
     ],
 
    Stun: [
+                { name: "Xentinel", image: "/images/valkportrait/Mei Xentinel.png", },
+
       { name: "Reign Solaris", image: "/images/valkportrait/dudu.png" },
     ],
 
@@ -174,7 +187,7 @@ async function captureStats() {
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Law of Ascension teams
 <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
 
 
@@ -219,7 +232,7 @@ async function captureStats() {
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
     Overview for Law of Ascension teams
 <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
     </p>
   </div>

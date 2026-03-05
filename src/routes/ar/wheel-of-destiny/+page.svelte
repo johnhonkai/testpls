@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Wheel of Destiny characters"/>
     <meta property="og:description" content="Info for characters in Wheel of Destiny teams." />
-    <meta property="og:image" content="https://i.imgur.com/lzFSeSF.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/wkc65Tm.jpeg" />
     <meta property="og:url" content="https://marisaimpact.com/ar/wheel-of-destiny" />
     <meta property="og:type" content="website" />
 
@@ -18,6 +18,8 @@
     let { data }: { data: PageData } = $props();
 
   const dps = [
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
+
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
     { name: "Jovial Deception", image: "/images/valkportrait/Songque Jovial Deception.png" , type: "SD" , element: "Physical" },
     { name: "Lone Destruction", image: "/images/valkportrait/Lantern Lone Destruction.png" , type: "Psy" , element: "Fire" },
@@ -27,6 +29,8 @@
   ];
 
   const support = [
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
+
     { name: "Hi Love Elf", image: "/images/valkportrait/Elysia Hi Love Elf.png" , type: "Sd" , element: "Ice" },  
 
     { name: "Herrscher of Human", image: "/images/valkportrait/Elysia Herrscher of Human Ego.png" , type: "Psy" , element: "Ice"},
@@ -40,6 +44,12 @@
   ];
 
   const utilities = {
+
+    "Stellar Surplus": [
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
+
+    ],
+
     "Breach State": [
         { name: "Lone Planetfarer", image: "/images/valkportrait/Vita Lone Planetfarer.png" },
         { name: "Deepspace Anchor", image: "/images/valkportrait/Senadina Deepspace Anchor.png"  },
@@ -72,6 +82,8 @@
     ],
 
     Paralyze: [
+    { name: "Miss Espionage", image: "/images/valkportrait/Miss Espionage.png" , type: "Img" , element: "Lightning"},
+
               {  name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png" },
 
     ],
@@ -169,7 +181,7 @@ async function captureStats() {
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Wheel of Destiny teams
 <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
     </p>
   </div>
@@ -213,7 +225,7 @@ async function captureStats() {
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
       Overview for Wheel of Destiny teams
 <span class="badge badge-sm sm:badge-lg">
-    v8.5
+    v8.7
 
     </p>
   </div>
