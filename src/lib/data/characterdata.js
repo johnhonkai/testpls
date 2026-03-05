@@ -31,7 +31,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xeentinel',  badge: 'New', verdebut: 8.7, id:65},  
+  { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel',  badge: 'New', verdebut: 8.7, id:65},  
   { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv', badge: 'Updated', verdebut: 7.0, verdlc: 8.7, id:52},
 
   { name: 'Miss Espionage', image: '/images/valkportrait/Miss Espionage.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  badge: 'Beta', verdebut: 8.6, id:64},  
