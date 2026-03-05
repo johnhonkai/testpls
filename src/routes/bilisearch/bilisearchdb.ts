@@ -413,6 +413,14 @@ export const bossToChinese = {
     image: "/images/Bosses/Litost.webp"         
 
   },
+
+
+  "Marut": {
+    keywords:     ["摩录多" , "虚数猪"],
+    image: "/images/Bosses/Imgpig.webp"         
+
+  },
+
 };
 
 export const valkToChinese = {
@@ -462,6 +470,16 @@ export const valkToChinese = {
     image: "/images/valkportrait/elf_dudu.png"     
   },
 
+    "Xentinel Dawnbearing Crescent (*XDB, Mei)": {
+    keywords: ["镇×偃月叩晓"],
+    image: "/images/valkportrait/Mei Xentinel.png"  
+  },
+
+     "Miss Espionage (*ME, Rita)": {
+    keywords: ["窈窕谍影"],
+    image: "/images/valkportrait/Miss Espionage.png"  
+  },
+   
   "Hi Love Elf (*HLE, Elysia)": {
     keywords: ["嗨♪爱愿妖精♥"],
     image: "/images/valkportrait/Elysia Hi Love Elf.png"  
@@ -949,7 +967,7 @@ export const valkToChinese = {
 
   "Dimension Breaker (*DB, Bronya)": {
     keywords:["次"],
-    image: "/images/valkportrait/Himeko Battle Storm.png"      
+    image: "/images/valkportrait/Bronya Dimension Breaker.png"      
   },
 
   "Lightning Empress (*LE, Mei)": {
@@ -994,7 +1012,7 @@ export const valkToChinese = {
 
   "Valkyrie Chariot (*VC, Bronya)": {
     keywords:["战"],
-    image: "/images/valkportrait/Mei Crimson Impulse.png"      
+    image: "/images/valkportrait/Bronya Valkyrie Chariot.png"      
   },
 
   "Crimson Impulse (*CI, Mei)": {

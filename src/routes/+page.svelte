@@ -94,13 +94,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2026-1-3'); // Start date Regional Servers
+      const regionalStartDate = new Date('2026-3-5'); // Start date Regional Servers
       const cnStartDate = new Date('2026-2-6');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.6 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.7 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.7 Week ${currentWeekCN}`;
   }
 
@@ -196,7 +196,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v8.7 update is on 5 March </li>
+              <li>v8.8 update is on 30 Apr </li>
             </ul>
           </div>
           <div>
@@ -346,33 +346,33 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="/valk/hi-love-elf" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="/valk/xentinel" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/hwDgn8J1dkc/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.imgur.com/ruFTmjv.jpeg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
-          <p class="text-slate-300">Elysia - Hi ♪ Love Elf ♥</p>
+          <p class="text-slate-300">Mei Xentinel</p>
         </div>
       </a>
   
       <a href="/valk/horb" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/J5paWnhog48/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/qWTrQAhiIP4/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Stellar Key</h3>
-          <p class="text-slate-300">Herrscher of Rebirth DLC</p>
+          <p class="text-slate-300">Lunar Vow DLC</p>
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=MtQC7b2M8Hk" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=4FYBtd15RH4" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/MtQC7b2M8Hk/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/4FYBtd15RH4/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">Agent Rita Gameplay</h3>
-          <p class="text-slate-300 text-md">S-rank IMG Lightning WoD</p>
+          <h3 class="text-lg font-semibold text-white mb-1">Yvonne Guide</h3>
+          <p class="text-slate-300 text-md">Caked Up Cryo</p>
         </div>
       </a>
   

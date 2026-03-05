@@ -3,17 +3,23 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '100%',  speed: '' },  
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%',   },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', utility: 'CD',  speed: '' },
+        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png',  teampct: '100%',  utility: '',  speed: '' },
 
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '98%',  speed: '' },
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '100%',  speed: '' },
+        
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '89%',   },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '89%', utility: 'CD',  speed: '' },
+        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '89%',   },
 
-        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '97%', },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '97%',   },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '87%',  speed: '' },
 
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '95%',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '92%',  speed: '' },
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '86%', },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '86%',   },
+
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '84%',  speed: '' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '82%',   speed: '' },
+
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '82%',  speed: '' },
 
     ];
 
@@ -27,7 +33,7 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Badum'; // default to 'Vita'
+    export let firstCharName: string = 'Rita'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -78,7 +84,7 @@
         </summary>
         <div class="py-3 px-4">
 
-                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris depend on the boss. The first support is usually Badum since she provides the biggest buff. For general use cases, Peregrine Sword, Jovial Deception, and Sparkle are all great options for second support.</p>
+                <p class="text-sm sm:text-base mb-4">The best supports for Reign Solaris are usually Miss Espionage and Badum, but may change depending on the boss. </p>
                 <p class="text-sm sm:text-base mb-4"><b>Sparkle</b><br/>
                     Provides Ult cd reduction and sp regen. More ult = more damage per rotation. Especially useful against IMG enemies so Reign Solaris can nuke the img core faster. Sparkle also has short on-field time.</p>
                 <p class="text-sm sm:text-base mb-4"><b>Jovial Deception</b><br/>

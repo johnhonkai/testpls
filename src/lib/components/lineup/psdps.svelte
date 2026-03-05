@@ -4,14 +4,20 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%',  speed: '' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  utility: 'Mobs',  speed: '' },
+
+         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png',  teampct: '100%',  utility: '',  speed: '' },
+       
+        { name: 'Luna', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '98%',  utility: 'Bleed',  speed: '' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '94%',   speed: '' },
+
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '92%',  utility: 'Mobs',  speed: '' },
 
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '96%',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '95%', utility: 'Shield',  speed: '' },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '94%',  speed: '' },    
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '94%', utility: 'SD',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '93%', utility: 'CD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '89%', utility: 'Bow',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '87%', utility: 'Shield',  speed: '' },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '86%',  speed: '' },    
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '86%', utility: 'SD',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '85%', utility: 'CD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '82%', utility: 'Bow',  speed: '' },
 
 
     ];
@@ -94,6 +100,10 @@ let filteredMainCharacters = mainCharacters.filter(
                 UPDATE: Recent PS bosses have seen BFD get used together with Vita. I dont know why, they just score higher. I wanna say that it's situational, but it has been used two times already, so...
                 
             </p>
+
+                        <p class="text-sm sm:text-base mb-4"><b>Lunar Vow</b><br/> 
+                Increases bleed stack by 9, and increases bleed stack dmg.
+            </p>    
 
             <p class="text-sm sm:text-base mb-4"><b>Planar Armament</b><br/> PAWS support is used against Lantern boss. Thanks to type advantage, PAWS can contribute significantly higher damage in this specific match-up.
 

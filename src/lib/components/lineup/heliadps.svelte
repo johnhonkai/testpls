@@ -4,12 +4,18 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%', },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '100%',  },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '99%', },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '96%'},
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '96%', },
-        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '95%', utility: 'Shield',},
-        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: '94%'},
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '100%',   speed: '' },
+
+
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png',  teampct: '89%',  },
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '88%', },
+        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '87%',speed: 'Fast'   },
+
+
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '86%'},
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '86%', },
+        { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '84%', utility: 'Shield',},
+        { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: '84%'},
 
     ];
 
@@ -76,7 +82,7 @@
         <div class="py-3 px-4">
 
              <p class="text-sm sm:text-base mb-4">
-                PAWS's best teammates are <a href='/valk/behold-fate-defying-dragon' class="link">Behold! Fate-Defying Dragon (BFD)</a> + either <a href='/valk/badum' class="link">Badum!</a> or <a href='/valk/peregrine-sword' class="link">Peregrine Sword (PS)</a>.
+                PAWS's best teammates are usually BFD + another support. Xentinel number is raw test data, and we are lacking live abyss data. So far, there's only one PAWS boss in 8.7 - Extreme Parvati, and PAWS top score is using Luna support.
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>BFD</b><br/> - Provides elemental breach and strong buffs.
@@ -85,6 +91,7 @@
 
             </p> 
 
+ 
             
             <p class="text-sm sm:text-base mb-4"><b>Chenxue</b><br/> Chenxue speeds up your Stellar Outburst rotation by allowing the support to skip actions like Combo ATK or Weapon Skill - the supports just have to cast Ult.
 

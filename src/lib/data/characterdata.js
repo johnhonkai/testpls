@@ -31,7 +31,8 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: '镇×偃月叩晓', image: '/images/valkportrait/Newmei.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/newmei',  badge: 'Beta', verdebut: 8.7, id:65},  
+  { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xeentinel',  badge: 'New', verdebut: 8.7, id:65},  
+  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv', badge: 'Updated', verdebut: 7.0, verdlc: 8.7, id:52},
 
   { name: 'Miss Espionage', image: '/images/valkportrait/Miss Espionage.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  badge: 'Beta', verdebut: 8.6, id:64},  
 
@@ -55,7 +56,6 @@
   { name: 'Valkyrie Blastmetal', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', type: 'Psy', element: 'Fire', astralRing: ['Rite of Oblivion'] , url: '/valk/coralie', verdebut: 7.3, id:6},
   { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/fov', verdebut: 7.2, id:5},
   { name: 'Cosmic Expression', image: '/images/valkportrait/Griseo Cosmic Expression.png', type: 'SD', element: ['Physical' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/ce', verdebut: 7.1, id:15},
-  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Part 1'] , url: '/valk/lv', verdebut: 7.0, id:52},
   { name: 'Miracle ☆ Magical Girl', image: '/images/valkportrait/Sirin Miracle Magical Girl.png', type: 'Mech', element: ['Fire' , 'Ignite'], astralRing: ['Part 1'] , url: '/valk/sirin', verdebut: 6.9, id:18},
   { name: 'Sugary Starburst', image: '/images/valkportrait/Kira Sugary Starburst.png', type: 'Mech', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kira', verdebut: 6.7, id:19},
   { name: 'Dreamweaver', image: '/images/valkportrait/Hare Dreamweaver.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/dreamweaver', verdebut: 6.6,  id:20},

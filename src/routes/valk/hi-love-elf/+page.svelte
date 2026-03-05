@@ -836,10 +836,6 @@ async function increaseLike() {
               <p class="text-lg font-semibold">1</p>
             </div>
 
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>    
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -861,8 +857,6 @@ async function increaseLike() {
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
             <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
-            <br/>
-            <span class="text-cyan-300">Infinity</span>: V8.5 ER stage effect summons Flamechaser chibis which count as summoned unit. After v8.5, Infinity is not an optimal signet.
 
           </p>
         </div>

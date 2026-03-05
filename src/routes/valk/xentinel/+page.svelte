@@ -1,10 +1,10 @@
 <svelte:head>
-  <title>New Mei</title> 
+  <title>Xentinel · Dawnbearing Crescent</title> 
 
-    <meta property="og:title" content="New Mei" />
-    <meta property="og:description" content="New Mei Guides, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/newmei" />
+    <meta property="og:title" content="Xentinel · Dawnbearing Crescent" />
+    <meta property="og:description" content="Xentinel · Dawnbearing Crescent Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/5ZRtMP1.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/xentinel" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -62,16 +62,18 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
+	import Xentineldps from "$lib/components/lineup/xentineldps.svelte";
+	import Lunadlcdps from "$lib/components/lineup/lunadlcdps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-//  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'How to Play', short: 'howtoplay', icon: faBook },
 //  { name: 'Gameplay', short: 'example', icon: faVideo },
-//  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
@@ -272,12 +274,12 @@ async function increaseLike() {
   accent="bg-violet-800"
   image="/images/valkfull/newmei.png"
   alt="Messenger of Love"
-  title="镇×偃月叩晓 "
+  title="Xentinel · Dawnbearing Crescent"
   name="Raiden Mei"
   release="v8.7 (5 Mar 2026)"
 >
   <CharBio mode="dps" rank="s" type="mech" element="phy" ar="goi" bg="bg-violet-800" />
-  <CharBio mode="support" ar={['goi']} bg="bg-violet-800" />
+  <CharBio mode="support" ar={['goi' , 'loa', 'ws' ]} bg="bg-violet-800" />
 </CharacterLayout>
 
 
@@ -365,19 +367,42 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> 
-              <br/>
-              To Be Updated
+              <strong class="text-amber-400">Powerful Physical DPS </strong> 
           </p>
-      
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Physical DPS that can instakill BIO mob and has high hieldbreak.</li>
+                <li>Just like all Part 2 valks, Xentinel is great in her optimal match-ups, but just decent everywhere else.</li>
+          </ul>        
+          
           
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Utilities</strong>
-              <br/>
-              To Be Updated
             </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>BIO Counter: Instakill BIO mob.</li>
+                <li>Stun trauma.</li>
+                <li>Shieldbreak assist(?): When teammate use Ult to a shielded enemy, Xentinel also deals dmg once.</li>
 
-            
+          </ul> 
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Grail of Infinitude Support </strong> 
+              <br/>
+              One of the best supports for Lunar Vow.
+          </p>          
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support </strong> 
+              <br/>
+              One of the new best supports for Badum. Xentinel can provide Breach state.
+          </p>          
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star Support </strong> 
+              <br/>
+              Does not seem to provide any improvement for existing lineup.
+          </p>  
+
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
@@ -415,7 +440,7 @@ async function increaseLike() {
   <section class="max-w-(--breakpoint-lg) mx-auto ">
   
 <div class="w-full max-w-4xl mx-auto my-6">
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
     
     <!-- Tab -->
     <button
@@ -432,7 +457,7 @@ async function increaseLike() {
                 {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
       on:click={() => setLineup('2')}
     >
-      WHEEL OF DESTINY
+      GRAIL OF INFINITUDE
     </button>
 
     <!-- Tab -->
@@ -444,12 +469,21 @@ async function increaseLike() {
       LAW OF ASCENSION
     </button>
 
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '4' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('4')}
+    >
+      WORLD STAR
+    </button>
+
   </div>
 </div>
 
 
       {#if activeLineup === '1'}
-      <Agentritadps></Agentritadps>
+      <Xentineldps></Xentineldps>
 
       {/if}
 
@@ -459,19 +493,16 @@ async function increaseLike() {
 
       {#if activeLineup === '2'}
       
-      <Hohdps></Hohdps>
+      <Lunadlcdps></Lunadlcdps>
       
       <div class="divider"></div>
 
-      <Jddps></Jddps>
+      <Hilovedps></Hilovedps>
 
       <div class="divider"></div>
 
-      <Lanterndps></Lanterndps>
+      <Heliadps></Heliadps>
 
-      <div class="divider"></div>
-
-       <Thelemadps></Thelemadps>    
       {/if}
 
       {#if activeLineup === '3'}
@@ -487,7 +518,19 @@ async function increaseLike() {
       <Dududps></Dududps>
 
       {/if}
+      {#if activeLineup === '4'}
 
+      <Horbdlcdps></Horbdlcdps>
+
+            <div class="divider"></div>
+      <Sparkledps></Sparkledps>
+
+            <div class="divider"></div>
+      <Simpdps></Simpdps>
+            <div class="divider"></div>
+
+      <Senadps></Senadps>
+      {/if}
 
 </section>
 
@@ -657,30 +700,37 @@ async function increaseLike() {
 
       <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
         <h3 class="text-lg sm:text-xl font-bold text-center">
-          How to Activate HLE Support Buffs
+          How to Activate Xentinel Support Buffs
         </h3>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
           <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
           <p class="leading-relaxed">
-            - Ultimate consume Stellar Drain. You want to do full charged Ult to get max AR (20).<br/>
-            - In WoDestiny teams, casting weapon / ult gives 2 AR.
+            Ultimate consume Stellar Drain.
           </p>
         </div>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">HLE Stigma Buff</h4>
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stigma Buff</h4>
           <p class="leading-relaxed">
-            Weapon or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Heart's Splendor]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+            Ultimate or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Qilin's Guard]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
           </p>
-        </div>
+        </div>       
 
-        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Wheel of Destiny Buff</h4>
+
+       <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Kiana Buff</h4>
           <p class="leading-relaxed">
-            Ultimate triggers a buff for the leader for 30s. Grants Fire and Physical DMG +20% (S) / 42% (S1) , Melee ATK gain Ice and Lightning DMG +28% (S) / 42% (S1) and Enemies take 8% (S) / 15% (S1) more Total DMG from ranged atks from this valk. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+           Kiana gains Ele/Phy Breach buff. If she already has Breach state buff, then this buff becomes Ele/Phy DMG buff.
           </p>
-        </div>        
+        </div>       
+
+       <div class="space-y-2 border-l-4 border-orange-300 pl-4">
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">BIO instakill counter</h4>
+          <p class="leading-relaxed">
+            BIO instakill counter starts at 2 stacks. During SO, gaining 1/2/3 Facet restores 1/2/3 instakill counter stacks. Max 2 stacks (S) / 3 stacks (SSS).
+          </p>
+        </div> 
 
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
           <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
@@ -700,210 +750,24 @@ async function increaseLike() {
       <div class="flex justify-center gap-4 my-6">
 
 
-
+        <button
+        on:click={() => setPlaystyle('1')}
+        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+      >
+        AR CHARGING
+      </button>    
 
         <button
-          on:click={() => setPlaystyle('1')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          on:click={() => setPlaystyle('2')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
         STELLAR OUTBURST
         </button>
 
-        <button
-        on:click={() => setPlaystyle('2')}
-        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-      >
-        AR CHARGING
-      </button>     
+ 
 
       </div>
-    
-
       {#if activePlaystyle === '1'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
-      <p class="text-sm sm:text-base text-center sm:text-left">
-       Stronger playstyle.
-      </p>
-  
-      <div class="divider  "></div>
-  
-      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-  
-      <div class="flex flex-col justify-center items-start ">
-  
-      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-  
-        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-        </div>
-          <!-- Left side image -->
-          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
-            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-          </div>
-          
-          <!-- Right side text sections -->
-          <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Glad News + Fragrant Gardens</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
-        </div>
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          <!-- First Signet with 'Start' text -->
-
-  
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>    
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-  
-        </div>
-
-        <div class="mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
-            <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
-            <br/>
-            <span class="text-cyan-300">Infinity</span>: V8.5 ER stage effect summons Flamechaser chibis which count as summoned unit. After v8.5, Infinity is not an optimal signet.
-
-          </p>
-        </div>
-
-          <div class="divider  "></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-          
-          
-        </div>
-  
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-
-  
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-  
-  
-        </div>
-  
-        
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
-  
-        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Activate Stellar Outburst</li>
-          <li>Weapon x2</li>
-          <li>Do full Basic ATK</li>
-          <li>Weapon x2</li>
-          <li>Activate Ult finisher</li>
-          <li>ATK until Stellar Outburst is ready</li>
-          <li>Repeat</li>
-
-        </ol>
-  
-          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/SQhxa_tFglE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-      {/if}
-
-  
-      {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
        Loop Weapon and Ultimate.
@@ -927,19 +791,20 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Blossoms + Bright Star </p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Overhanging Light ➔ Azure Qilin</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Twilight Vigil </p>
           </div>
         </div>
         
       </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
 
-
-        </div>
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Overhanging Light), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
   
         <div class="divider  "></div>
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -949,7 +814,7 @@ async function increaseLike() {
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
 
@@ -959,13 +824,185 @@ async function increaseLike() {
             </div>
 
              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>    
 
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+        </div>
+
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+  
+                <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+          
+          
+        </div>
+  
+  
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+  
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+        </div>
+  
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+  
+  
+        </div>
+  
+        
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+  
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Weapon ➔ ATK </li>
+          <li>Ult x2 </li>
+          <li>Repeat </li>
+        </ol>
+  
+    
+          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/rX8JSxdeIfo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+      {/if}
+    
+
+      {#if activePlaystyle === '2'}
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+       Has lots of timestop, but takes more real-life time to clear since you have to watch SO, ult, and finisher animations multiple times.
+      </p>
+  
+      <div class="divider  "></div>
+  
+      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+  
+      <div class="flex flex-col justify-center items-start ">
+  
+      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+  
+        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+        </div>
+          <!-- Left side image -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
+            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+          </div>
+          
+          <!-- Right side text sections -->
+          <div class="flex flex-col space-y-2 pr-2 z-10">
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Awaiting Nightfall ➔ Late Evening</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Twilight Vigil </p>
+          </div>
+        </div>
+        
+      </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
+
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Awaiting Nightfall), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
+  
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <!-- First Signet with 'Start' text -->
+
+  
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1 or 2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1 or 2</p>
+            </div>
+
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Setsuna (Sakura).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
             </div>    
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -988,7 +1025,7 @@ async function increaseLike() {
           
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START</p>
@@ -996,7 +1033,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -1004,7 +1041,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -1018,23 +1055,23 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
   
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
+
   
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
         </div>
   
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/It_Will_Be_Written.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
+            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
@@ -1053,13 +1090,14 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Weapon </li>
-          <li>Use fully charged Ultimate </li>
-          <li>Basic ATK x2 </li>
-          <li>Repeat </li>
+          <li>Activate Stellar Outburst</li>
+          <li>Ultimate</li>
+          <li>Combo ATK x3</li>
+          <li>Weapon</li>
+          <li>Repeat</li>
+
         </ol>
   
-    
           <p class="mt-8 text-sm sm:text-base pb-4 text-center">
             Check out this showcase from Marisa Honkai:
         </p>
@@ -1067,7 +1105,7 @@ async function increaseLike() {
         <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/RxZIugMc8gM"
+                src="https://www.youtube.com/embed/Rmj9LcZyJ7M"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1076,6 +1114,8 @@ async function increaseLike() {
             </iframe>
         </div>
       {/if}
+
+  
 
 
 
@@ -1343,12 +1383,12 @@ async function increaseLike() {
       <div class=" gap-6 mt-4">
         <!-- Video 1 with title and description -->
         <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">HLE DPS and SUP Rotations</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Xentinel DPS Sequence</h2>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/hwDgn8J1dkc"
+                src="https://www.youtube.com/embed/Kyy5yc6crQg"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1361,7 +1401,49 @@ async function increaseLike() {
 
     </div>
 
-   
+       <div class=" gap-6 mt-8">
+        <!-- Video 1 with title and description -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">BIO mob instakill</h2>
+          <p class="mt-2 text-sm sm:text-base pb-4">
+            Some stages have two BIO mobs made for Xentinel instakill.
+        </p>
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/tW3JjBzXPLk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
+        </div>
+      </div>
+
+    </div>  
+
+       <div class=" gap-6 mt-8">
+        <!-- Video 1 with title and description -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Xentinel Support</h2>
+
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/Ql33i0W_32U"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                >
+            </iframe>
+        </div>
+      </div>
+
+    </div>      
   {/if}
   
   

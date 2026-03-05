@@ -4,13 +4,19 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%',  speed: '' },
-        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '100%', utility: 'Hit', },
-        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '98%',  speed: '' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '99.9%',   speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '96%',  speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '97%', utility: 'Shield',  speed: '' },
-        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '93%', utility: 'CD',  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '93%', utility: 'SD',  speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '90%', utility: 'Bow',  speed: '' },
+
+        { name: 'Xentinel2', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '100%',   speed: '' },
+         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png',  teampct: '99%',  utility: '',  speed: '' },
+
+        { name: 'PS', image: '/images/valkportrait/ps.png',  teampct: '94%', utility: 'Hit', },
+        { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '92%',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%', utility: 'Shield',  speed: '' },
+        { name: 'Sparkle', image: '/images/valkportrait/sparkle.png',  teampct: '88%', utility: 'CD',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '88%', utility: 'SD',  speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '85%', utility: 'Bow',  speed: '' },
+        { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '78%'},
 
     ];
 
@@ -22,17 +28,19 @@
 
     // Pass the index or name of the first character to the reusable component
     export let firstCharName: string = 'BFD'; // default to 'Vita'
-    export let secondCharName: string = 'Vita'; // default to 'Vita'
+    export let secondCharName: string = 'Xentinel'; // default to 'Vita'
+    export let thirdCharName: string = 'Vita'; // default to 'Vita'
 
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
     let secondCharred = mainCharacters.find(char => char.name === secondCharName);
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'BFD' && char.name !== 'Vita'
+  char => char.name !== 'BFD' && char.name !== 'Vita' && char.name !== 'Xentinel'
 );
 </script>
 
@@ -61,6 +69,9 @@ let filteredMainCharacters = mainCharacters.filter(
             <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
+                {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}
         <!-- Plus Icon shown only if maindps is true -->
         {#if !maindps}
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -85,7 +96,7 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually BFD / Vita for Elemental Breach buff. The second support depends on the boss.</p>
+            <p class="text-sm sm:text-base mb-4">Badum's best lineup varies, depends on the boss. The first support is usually BFD / Xentinel / Vita for Elemental Breach buff. The second support depends on the boss.</p>
 
              <p class="text-sm sm:text-base mb-4"><b>BFD vs Vita</b><br/>
                 BFD is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.  
