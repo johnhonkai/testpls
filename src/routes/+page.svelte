@@ -357,7 +357,7 @@
         </div>
       </a>
   
-      <a href="/valk/horb" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="/valk/lv" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
           <img src="https://i.ytimg.com/vi/qWTrQAhiIP4/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
