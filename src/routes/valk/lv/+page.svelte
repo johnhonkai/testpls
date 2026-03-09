@@ -639,9 +639,9 @@ async function increaseLike() {
         </div>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">HLE Stigma Buff</h4>
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stigma Buff</h4>
           <p class="leading-relaxed">
-            Weapon or QTE triggers an important stigma buff for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+            Ult or QTE triggers an important stigma buff for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
           </p>
         </div>  
 
