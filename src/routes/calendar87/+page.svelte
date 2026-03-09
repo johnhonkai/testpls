@@ -681,15 +681,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Paros.png" date="Mar 27" weather="Extreme" bosspage="/boss?paros" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Parvati.webp" date="Mar 30" weather="Extreme" bosspage="/boss?extreme-parvati" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/Bosses/Ricecake.webp" date="Mar 31" />
+                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp"/>
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp"/>                
                 </div>
-    
 
             </div>  
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
@@ -700,15 +699,16 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard />
+                <BossCard image="/images/Bosses/MOBIUS2.png" date="Apr 3" weather="Bleed" bosspage="/boss?bleedmobius" />
+                <BossCard image="/images/Bosses/Swarm.webp" date="Apr 6" weather="Flux" bosspage="/boss?fluxmob" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/Bosses/epernay.png" date="Apr 7" />
+                <BossCard image="/images/Bosses/MOBIUS2.png"/>
+                <BossCard image="/images/Bosses/Kallen.webp"/>                
                 </div>
+
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->

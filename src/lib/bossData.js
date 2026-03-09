@@ -84,6 +84,8 @@ export const weatherList = {
     {id: 'bleedhusk', name: 'Nihilius Husk'},
     {id: 'bleed-tribunal', name: 'Cruising Tribunal'},
     {id: 'bleedhoc', name: 'Herrscher of Corruption'},
+    {id: 'bleedmobius', name: 'Mobius'},
+
   ],
   ignite: [
     {id: 'ignite-benares', name: 'Benares'},
@@ -127,6 +129,7 @@ export const weatherList = {
     {id: 'fluxandrius', name: 'Andrius'},
     {id: 'fluxtank', name: 'MHT-3C Retaliator'},
     {id: 'lantern', name: 'Lantern'},
+    {id: 'fluxmob', name: 'Swarm'},
 
   ],
   dominance: [
@@ -475,6 +478,14 @@ export const bossData = {
       weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
      
   },
+    bleedmobius: {
+    name: 'Mobius', 
+      mechanics: 'Green bar = shield. After green bar is destroyed, spawn a snake with hitcount hp. After snake is destroyed, get red bar. Red bar = take more damage. ', 
+      weakness: 'Lightning (L)', 
+      typeicon: "images/type/IconMECH.png", 
+      bosspic: "images/Bosses/MOBIUS2.png", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+  },
 
   bleedhusk: {
     name: 'Nihilius Husk', 
@@ -716,7 +727,14 @@ export const bossData = {
     bosspic: "images/Bosses/MHT-3B Nirvana.webp", 
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
-
+  fluxmob: {
+    name: 'Swarm', 
+      mechanics: 'Enemies appear in waves. Stage is complete once you defeat 36 enemies.', 
+      typeicon: "images/type/IconSD.webp", 
+      weakness: 'None', 
+      bosspic: "images/Bosses/Swarm.webp", 
+    weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
+  },
   firetank: {
     name: 'MHT-3C Retaliator', 
     mechanics: 'This is a different fire tank, no transition phase. Has a weakspot. Use an archer character to hit the weakspot to apply a powerful debuff. Weakspot and debuff are reset when Phase 2 starts.', 
