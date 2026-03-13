@@ -367,12 +367,12 @@
         </div>
       </a>
   
-      <a href="https://www.youtube.com/watch?v=4FYBtd15RH4" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=b9oTKNodPJM" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/4FYBtd15RH4/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/b9oTKNodPJM/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">Yvonne Guide</h3>
+          <h3 class="text-lg font-semibold text-white mb-1">Silverwing DLC</h3>
           <p class="text-slate-300 text-md">Caked Up Cryo</p>
         </div>
       </a>

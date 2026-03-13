@@ -1,13 +1,15 @@
+
 <svelte:head>
-  <title>Bronya - Silverwing N-EX</title> 
+  <title>Silverwing N-EX</title> 
 
     <meta property="og:title" content="Bronya - Silverwing N-EX" />
-    <meta property="og:description" content="Bronya - Silverwing N-EX Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/c5jvFfZ.png" />
+    <meta property="og:description" content="Silverwing N-EX Guide, Builds and Gameplay" />
+    <meta property="og:image" content="" />
     <meta property="og:url" content="https://marisaimpact.com/valk/silverwing" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
+
 
     <link rel="canonical"  />
 </svelte:head>
@@ -21,14 +23,16 @@ import { app } from "$lib/firebaseConfig";
 
 const db = getFirestore(app); // Ensure this is used for Firebase operations
 
-
-
-
-    import likesData from '$lib/data/likes.json'; // Import local JSON data
-
   import { goto } from '$app/navigation';
-  import Lightbox from "$lib/components/lightbox.svelte";
-	import Heliadps from "$lib/components/lineup/heliadps.svelte";
+  import likesData from '$lib/data/likes.json'; // Import local JSON data
+
+
+import Lightbox from '$lib/components/lightbox.svelte';
+	import Sirindps from "$lib/components/lineup/sirindps.svelte";
+	import P1physical from "$lib/components/lineup/p1physical.svelte";
+	import P1ice from "$lib/components/lineup/p1ice.svelte";
+	import Ice3support from "$lib/components/lineup/ice3support.svelte";
+	import P1lightningdps from "$lib/components/lineup/p1lightningdps.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -41,62 +45,35 @@ function closeLightbox() {
   showLightbox = false;
 }
 
-import Fa from 'svelte-fa';
-import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire} from '@fortawesome/free-solid-svg-icons';
-	import CharBio from '$lib/components/CharBio.svelte';
-	import Dududps from "$lib/components/lineup/dududps.svelte";
-	import Badumdps from "$lib/components/lineup/badumdps.svelte";
-	import Psdps from "$lib/components/lineup/psdps.svelte";
-	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
-	import Vitadps from "$lib/components/lineup/vitadps.svelte";
-	import Newelydps from "$lib/components/lineup/hilovedps.svelte";
-	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
-	import Horbdps from "$lib/components/lineup/horbdps.svelte";
-	import Sparkledps from "$lib/components/lineup/sparkledps.svelte";
-	import Simpdps from "$lib/components/lineup/simpdps.svelte";
-	import Senadps from "$lib/components/lineup/senadps.svelte";
-	import Horbdlcdps from "$lib/components/lineup/horbdlcdps.svelte";
-	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
-	import Hohdps from "$lib/components/lineup/hohdps.svelte";
-	import Jddps from "$lib/components/lineup/jddps.svelte";
-	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
-	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
-	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
-	import Swdlcdps from "$lib/components/lineup/swdlcdps.svelte";
-	import P1ice from "$lib/components/lineup/p1ice.svelte";
-
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
-  { name: 'Overview', short: 'overview', icon: faHome },
-  { name: 'Lineup', short: 'lineup', icon: faUsers },
-  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-  { name: 'Gameplay', short: 'example', icon: faVideo },
-  { name: 'Elysian Realm', short: 'er', icon: faFire },
-  { name: 'Rank Up', short: 'rank', icon: faStar },
-//  { name: 'Question', short: 'qna' , icon: faComments  },
- // { name: 'Overview Card', short: 'card' },
+  { name: 'Overview', short: 'overview' },
+  { name: 'Lineup', short: 'lineup' },
+  { name: 'Equipment', short: 'equipment' },
+  //{ name: 'How to Play', short: 'howtoplay' },
+  // { name: 'Gameplay Examples', short: 'example' },
+  { name: 'Elysian Realm', short: 'er' },
+  { name: 'Rank Up', short: 'rank' },
+  { name: 'Popular Question', short: 'qna' },
+  { name: 'Overview Card', short: 'card' },
   { name: 'Translation Error', short: 'translation' },
 ];  
-
-function handleClick(tabName) {
-    selectTab(tabName);
-    animateIcon(tabName);
-  }
-
-  let activeIcon = null;
-
-  function animateIcon(tabName) {
-    activeIcon = tabName;
-    setTimeout(() => (activeIcon = null), 300); // reset after animation
-  }
 
 // Function to select a tab and update the URL
 function selectTab(tab) {
   selectedTab = tab;
 
+  // Get the short form for the selected tab
+  const shortTab = tabs.find(t => t.name === tab)?.short;
 
+  // Update the URL query parameter (or remove it for 'Overview')
+  if (shortTab && shortTab !== 'overview') {
+    const newUrl = `${window.location.pathname}?${shortTab}`;
+    goto(newUrl, { replaceState: true });
+  } else {
+    // Remove the query parameter for the 'Overview' tab
+    goto(window.location.pathname, { replaceState: true });
+  }
 }
 
 // onMount to check for URL parameters
@@ -116,7 +93,7 @@ let itemsPerPage = 1; // Set the number of items you want to show per page
 let currentPage = 1;
 
 // Calculate total pages based on the number of items
-$: totalItems = 3; // Total categories or groups in the lineup section
+$: totalItems = 2; // Total categories or groups in the lineup section
 $: totalPages = Math.ceil(totalItems / itemsPerPage);
 
 // Function to change pages
@@ -139,15 +116,6 @@ function prevPage() {
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
 }
-
-// Track the active playstyle tab
-let activeLineup = '1';
-
-// Function to switch tabs
-function setLineup(lineup) {
-activeLineup = lineup;
-}
-
 
 let isMobile = false;
 
@@ -181,7 +149,7 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let durandallikes = likesData["sw"] || 0; // Get initial likes from JSON
+  let fovlikes = likesData["sw"] || 0; // Get initial likes from JSON
   const charName = "sw"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
@@ -189,25 +157,27 @@ function selectTabMobile(event) {
   // Generate or fetch the voterId on component mount
   onMount(async () => {
   voterId = localStorage.getItem("voterId") || crypto.randomUUID(); // Generate a voter ID if not present
-  localStorage.setItem("voterId", voterId); // Save voter ID in localStorage
+  localStorage.setItem("voterId", voterId); // Store voter ID locally
 
   // Check Firebase if the user has already liked this character
   const userHasLiked = await hasUserLiked(charName, voterId);
 
+
   if (userHasLiked) {
     hasLiked = true; // Update state to disable the button
+    
     localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
   }
 });
-// Handle Like Button Click
-async function increaseLike() {
+
+  async function increaseLike() {
   try {
     if (hasLiked) {
       console.log("User has already liked this character.");
       return;
     }
 
-    durandallikes++; // Increment the local counter for display purposes
+    fovlikes++;
 
     // Call likeWithVoterId to send the like to Firebase
     await likeWithVoterId(charName, voterId);
@@ -215,80 +185,90 @@ async function increaseLike() {
     // Update local state to prevent multiple likes
     hasLiked = true;
     localStorage.setItem(`liked_${charName}`, "true"); // Persist locally
+
     console.log(`Successfully liked "${charName}".`);
   } catch (error) {
-    
-    durandallikes--; // Revert the local counter in case of an error
     console.error("Error liking the character:", error);
   }
 }
+  
 </script>
 
 
+
 <style>
-  #star-container {
-    background: radial-gradient(rgb(var(--light-blue-rgb)), rgb(var(--dark-blue-rgb)));
-    height: 100%;  
-    overflow: hidden;
-    position: relative;
-  }
-
-  #star-gradient-overlay {
-    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-blue-rgb)));
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: 2;
-  }
-
-  #app {
-  height: 36rem;
-  overflow: hidden;
-  position: relative;
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 </style>
 
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0 ">
 
-  <div class="absolute   top-0 w-full h-[90vh] z-[-10]  " id="bgwavebox">    
-    <div id="app">
-      <div id="star-container">
-        <div id="star-pattern"></div>
-        <div id="star-gradient-overlay"></div>
-      </div>
-      <div id="stripe-container">
-        <div id="stripe-pattern"></div>
-      </div>
+<div class="sm:mt-14"></div>
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-2	sm:pt-0	">
+  <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
+    <img src="/images/bg/wave_kira.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+  </div>
+  
+  
+  
+  <!-- Left: Character Image -->
+  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
+    <!-- Image for Larger Screens -->
+    <img src="/images/valkfull/sw.webp" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-33;"/> 
+  
+    <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
+      <button
+        on:click={increaseLike}
+        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
+               {hasLiked ? '' : 'hover:bg-blue-700'}">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+        <span class="text-white font-semibold">{fovlikes}</span>
+      </button>
     </div>
   
-    
-    </div>
+  </div>
+  
+  
+  
+  <!-- Right: Character Info (Centered) -->
+  <div class="flex flex-col items-center text-center justify-start">
+    <!-- Battlesuit Name -->
+  
+    <div>
+    <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">Silverwing N-EX</h1>
+  </div>
+    <!-- Character Name and Release Date -->
+    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">Bronya | Release Date: v5.4 (13 Jan 2022)  </p>
+  
+    <!-- Common wrapper to ensure same width -->
+    <div class="w-full max-w-sm mb-2">
+      <!-- Container with 4 pictures (Centered) -->
+      <div class="flex flex-col items-center">
+        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-blue-500 outline-1 bg-blue-950/75 rounded-lg p-2 backdrop-blur-xs">
+          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
+          <img src="/images/type/IconBIO.png" alt="Mech" class="w-auto h-8 md:h-10" />
+          <img src="/images/element/Core_Ice_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
+  
+        </div>
+      </div>
 
-
-<CharacterLayout
-  charName="sw"
-  initialLikes={likesData["sw"] || 0}
-  accent="bg-blue-800"
-  image="/images/valkfull/sw.webp"
-  alt="Silverwing N-EX"
-  title="Silverwing N-EX"
-  name="Bronya Zaychik"
-  release="v5.4 (13 Jan 2022)"
-  dlc="v8.8 (30 Apr 2026)"
->
-  <CharBio mode="dps" rank="s" type="bio" element="ice" ar="ws" bg="bg-blue-800" />
-  <CharBio mode="support" ar={['ws' , 'loa']} bg="bg-blue-800" />
-</CharacterLayout>
-
-
-
-
-</section>
-
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
+  
+    </div> <!-- End common wrapper -->
+  </div>
+  </section>
+  
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >
@@ -296,25 +276,12 @@ async function increaseLike() {
     <ul class="space-y-2">
       {#each tabs as tab}
         <li>
-      <button
-      on:click={() => handleClick(tab.name)}
-      class="bg-zinc-800 relative w-full overflow-hidden text-left text-base px-4 py-2 rounded-3xl border-2 cursor-pointer shadow-md 
-             border-zinc-700 text-gray-300 transition-all duration-300 group flex items-center gap-2
-             before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r
-             before:from-sky-500 before:to-blue-500 before:transition-transform before:duration-300
-             before:scale-x-0 before:origin-left
-             hover:text-white hover:border-sky-600
-             {selectedTab === tab.name 
-               ? 'before:scale-x-100 text-white border-blue-400 shadow shadow-blue-500/30' 
-               : ''}">
-  
-      <!-- Icon with rotation animation -->
-      <span class="relative z-10 flex items-center gap-2 group-hover:drop-shadow-sm">
-        <Fa icon={tab.icon} class="transition-transform duration-400 group-active:rotate-45" />
-        {tab.name}
-      </span>
-  
-    </button>
+          <button
+            on:click={() => selectTab(tab.name)}
+            class="w-full text-left text-sm lg:text-base p-2 rounded-lg transition-colors duration-200 
+                   {selectedTab === tab.name ? 'bg-linear-to-r from-blue-500 to-sky-500 shadow-lg	 shadow-cyan-500/20 text-white' : 'bg-gray-700/0 hover:bg-linear-to-r from-orange-600 to-amber-500 '}">
+            {tab.name}
+          </button>
         </li>
       {/each}
     </ul>
@@ -360,169 +327,69 @@ async function increaseLike() {
   <!-- Tab Content -->
 
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
-      {#if selectedTab === 'Overview'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
+    {#if selectedTab === 'Overview'}
+    <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
 
-      <div>
-          <!-- Roles Section -->
-          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
-          
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1 Ice DPS</strong> 
-              <br/>
-              Silverwing N-EX (SW) is a ranged, high hitcount Ice DPS with aerial shooting playstyle.
-          </p>
-      
-          
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star DPS</strong>
-              <br/>
-              When Silveerwing equips the new Stellar Key, she unlocks Astral Ring: World Star. This brings SW DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
-            </p>   
-
-             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong>
-              <br/>
-                To be added
-            </p> 
-
-             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Law of Ascension Support</strong>
-              <br/>
-                To be added
-            </p> 
-
-          <div class="divider  "></div>
-          <!-- Pull Recommendation Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get DLC in v8.8.
-            </p>
-
-
-          <div class="divider  "></div>
-          <!-- How to Get Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
-          <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Battlesuit:</strong> War Treasury</li>
-              <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.8</li>
-          </ul>
-          <div class="divider  "></div>
-          <!-- Full Guide Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
-          <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out the full guide on YouTube
+    <div>
+        <!-- Roles Section -->
+        <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+        
+        <p class="mt-2 text-sm sm:text-base">
+            <strong class="text-amber-400">Part 1 Ice DPS</strong> <br/>
+            Silverwing N-EX (SW) is a ranged, high hitcount Ice DPS with aerial shooting playstyle.
         </p>
-  
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/b9oTKNodPJM"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
-  
-          <div class="mt-15 relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/UcGKtySgAh8"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
+
+        <div class="divider  "></div>
+        <!-- Pull Recommendation Section -->
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
+
+        <p class="text-sm sm:text-base mt-4 mb-4">
+          <strong class="text-amber-400">F2P Players</strong> <br/> Only use your crystal to pull Part 2 valkyries, since they use a new Astral Ring system. If SW and her weapon are available through other means, such as spending event or Battle Pass, you can consider getting them that way.
+      </p>
+
+        <p class="text-sm sm:text-base mt-4">
+            <strong class="text-amber-400">Competitive</strong> <br/> No top score.
+        </p>
+
+        <div class="divider  "></div>
+        <!-- How to Get Section -->
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">
+            <li ><strong>Silverwing:</strong> Dorm Supply.</li>
+            <li ><strong>Falcon Flare:</strong> Focused Supply.</li>
+            <li ><strong>G4 Bronya N-EX:</strong> Foundry.</li>
+            <li>Very old valkyrie, so besides Dorm Supply, expect her to only be available from events or ADV Supply.</li>
+
+        </ul>
+        <div class="divider  "></div>
+        <!-- Full Guide Section -->
+        <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
+        <p class="mt-2 text-sm sm:text-base pb-4">
+          Check out the full guide on YouTube: 
+      </p>
+
+      <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/UcGKtySgAh8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
       </div>
 
-  {/if}
-  
+    </div>
+{/if}
+
+
 
   {#if selectedTab === 'Lineup'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
-  
-<div class="w-full max-w-4xl mx-auto my-6">
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-    
-    <!-- Tab -->
-    <button
-        class="py-2 px-4  rounded btn
-                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
-      on:click={() => setLineup('1')}
-    >
-      DPS
-    </button>
 
-    <!-- Tab -->
-    <button
-        class="py-2 px-4  rounded btn
-                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
-      on:click={() => setLineup('2')}
-    >
-      WORLD STAR
-    </button>
-
-    <!-- Tab -->
-    <button
-        class="py-2 px-4  rounded btn
-                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
-      on:click={() => setLineup('3')}
-    >
-      LAW OF ASCENSION
-    </button>
-
-  </div>
-</div>
-
-
-      {#if activeLineup === '1'}
-      <Swdlcdps></Swdlcdps>
-
-      <div class="divider"></div>
-
-      <P1ice></P1ice>
-      
-      {/if}
-
-      {#if activeLineup === '3'}
- 
-      {/if}
-
-      {#if activeLineup === '2'}
-      
-      <Horbdlcdps></Horbdlcdps>
-
-            <div class="divider"></div>
-      <Sparkledps></Sparkledps>
-
-            <div class="divider"></div>
-      <Simpdps></Simpdps>
-            <div class="divider"></div>
-
-      <Senadps></Senadps>
-
-      {/if}
-
-      {#if activeLineup === '3'}
- 
-      <Psdps></Psdps>
-
-      <div class="divider"></div>
-
-      <Badumdps></Badumdps>
-
-      <div class="divider"></div>
-      
-      <Dududps></Dududps>
-
-      {/if}
-
+    <P1ice></P1ice>
 
 </section>
 
@@ -534,7 +401,7 @@ async function increaseLike() {
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST (PART 1)</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
@@ -595,109 +462,30 @@ async function increaseLike() {
 
       {/if}
 
-      {#if selectedTab === 'Support Buffs'}
-      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">SUPPORT BUFFS</h2>
-
-
-      <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
-        <h3 class="text-lg sm:text-xl font-bold text-center">
-          How to Activate HLE Support Buffs
-        </h3>
-      
-        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
-          <p class="leading-relaxed">
-            - Ultimate consume Stellar Drain. You want to do full charged Ult to get max AR (20).<br/>
-            - In WoDestiny teams, casting weapon / ult gives 2 AR.
-          </p>
-        </div>
-      
-        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">HLE Stigma Buff</h4>
-          <p class="leading-relaxed">
-            Weapon or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Heart's Splendor]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
-          </p>
-        </div>
-
-        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Wheel of Destiny Buff</h4>
-          <p class="leading-relaxed">
-            Ultimate triggers a buff for the leader for 30s. Grants Fire and Physical DMG +20% (S) / 42% (S1) , Melee ATK gain Ice and Lightning DMG +28% (S) / 42% (S1) and Enemies take 8% (S) / 15% (S1) more Total DMG from ranged atks from this valk. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
-          </p>
-        </div>        
-
-        <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Passive</h4>
-          <p class="leading-relaxed">
-            The rest of her buffs are activated passively.
-          </p>
-        </div>
-      </div>
-
-      <!-- Lightbox Component -->
-      <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
-      {/if}
 
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
-<div class="grid gap-4 my-6 
-            grid-cols-2 
-            md:grid-cols-4 
-            w-full max-w-4xl mx-auto">
+      <div class="flex justify-center gap-4 my-6">
+          <button
+            on:click={() => setPlaystyle('1')}
+            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          >
+          STANDARD
+          </button>
 
-              <button
-    on:click={() => setPlaystyle('1')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activePlaystyle === '1' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    DLC: AR Charging
-  </button>
+          <button
+          on:click={() => setPlaystyle('2')}
+          class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+          COMBO SPAM
+        </button>
 
-  <button
-    on:click={() => setPlaystyle('2')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activePlaystyle === '2' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    DLC: Stellar Outburst
-  </button>
-
-
-
-  <button
-    on:click={() => setPlaystyle('3')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activePlaystyle === '3' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    Standard
-  </button>
-
-  <button
-    on:click={() => setPlaystyle('4')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activePlaystyle === '4' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    Combo Spam
-  </button>
-</div>
-
+        </div>
+      
 
 
         {#if activePlaystyle === '1'}
-{/if}
-
-        {#if activePlaystyle === '2'}
-{/if}
-
-        {#if activePlaystyle === '3'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Standard Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Silverwing is not very strong in Elysian Realm, even when fully equipped. The biggest obstacle is F12 Mech Boss. Please play at a lower difficulty.
@@ -886,7 +674,7 @@ async function increaseLike() {
         </div>
         {/if}
 
-        {#if activePlaystyle === '4'}
+        {#if activePlaystyle === '2'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Combo ATK Spam Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
          Constantly consume SP to spam Combo ATK. Stronger and easier than standard playstyle.
@@ -1056,8 +844,6 @@ async function increaseLike() {
         {/if}
       {/if}
 
-
-
       {#if selectedTab === 'Rank Up'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">RANK UP</h2>
 
@@ -1147,95 +933,67 @@ async function increaseLike() {
 
       {/if}
 
+
       {#if selectedTab === 'How to Play'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">HOW TO PLAY</h2>
+  
       <div class=" gap-6 mt-4">
-        <!-- Video 1 with title and description -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow-md ">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">HLE DPS and SUP Rotations</h2>
+          <!-- Video 1 with title and description -->
+          <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">FoV DPS</h2>
+
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Around 4:27</p>
+
+            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/xBoYcLBsnZ0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
+        </div>
+
+      </div>
+
+  {/if}
+  
+  
+      {#if selectedTab === 'Gameplay Examples'}
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
+  
+      <div class=" gap-6 mt-5 mb-10">
+
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+          <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Herrscher of Human DPS</h2>
+
+          <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">HoH vs Hellmaru Red Lotus</p>
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
             <iframe
+            loading="lazy" 
+
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/hwDgn8J1dkc"
+                src="https://www.youtube.com/embed/a5o8kocAi1s"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-                >
+                allowfullscreen>
             </iframe>
         </div>
       </div>
 
     </div>
 
-   
-  {/if}
-  
-  
- {#if selectedTab === 'Gameplay'}
- <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">GAMEPLAY EXAMPLES</h2>
-
- <div class=" gap-6 mt-5 mb-10">
-  <!-- Video 1 with title and description -->
-
-
-  <div >
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">SW DLC DPS</h2>
-
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Beta gameplay</p>
-
-    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-      <iframe
-      loading="lazy" 
-
-          class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/b9oTKNodPJM"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-      </iframe>
-  </div>
-</div>
-
-
-
-</div>
-
 
   {/if}
   
-  {#if selectedTab === 'Question'}
+  {#if selectedTab === 'Popular Question'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">POPULAR QUESTION</h2>
 
-  <div class="my-6">
-    <div class="chat chat-start ">
-      <div class="chat-image avatar">
-        <div class="w-10 sm:w-12 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="/images/meibald.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble chat-bubble-primary text-base text-white">Why can BFD use PAWS support? I thought RoOblivion DPS needs RoOblivion supports?</div>
-    </div>
 
-    <div class="chat chat-end">
-      <div class="chat-image avatar">
-        <div class="w-10 sm:w-12 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="/images/ds.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble chat-bubble-neutral text-base text-zinc-300 py-5">
-      1. Reminder that the main leader skill of RoOblivion characters only require characters with Astral Ring. Only Vita and BFD have subskills that require RoOblivion characters.
-      <br/><br/>
-      2. PAWS can be BFD support because PAWS gives HUGE buffs for BFD when they are in the same team. The buff amount is greater than BFD would get from having 3 RoO valks. Also, PAWS can consume Stellar Drain faster than other RoO valks.</div>
-    </div>
-  </div>
   {/if}
 
   {#if selectedTab === 'Overview Card'}
@@ -1319,4 +1077,3 @@ async function increaseLike() {
 
 
 </div>
-

@@ -31,6 +31,9 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
+
+  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', badge: 'Beta', verdebut: 5.4, verdlc: 8.8, id:33},
+
   { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel',  badge: 'New', verdebut: 8.7, id:65},  
   { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv', badge: 'Updated', verdebut: 7.0, verdlc: 8.7, id:52},
 
@@ -73,7 +76,6 @@
   { name: 'Reverist Calico', image: '/images/valkportrait/Pardofelis Reverist Calico.png', type: 'Img', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/pardo',verdebut: 5.6, id:30},
   { name: 'Palatinus Equinox', image: '/images/valkportrait/Durandal Palatinus Equinox.png', type: 'Img', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/pe', verdebut: 5.5, id:31},
   { name: 'Spina Astera', image: '/images/valkportrait/Rita Spina Astera.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/spa', verdebut: 5.5,  id:32},
-  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/silverwing', verdebut: 5.4,  id:33},
   { name: "Sweet 'n' Spicy", image: '/images/valkportrait/Carole.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/carole', verdebut: 5.3,  id:34},
   { name: "Infinite Ouroboros", image: '/images/valkportrait/Mobius Infinite Ouroboros.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/mobius', verdebut: 5.2,  id:35},
   { name: "Midnight Absinthe", image: '/images/valkportrait/Raven Midnight Absinthe.png', type: 'Img', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/raven', verdebut: 5.2,  id:36},
