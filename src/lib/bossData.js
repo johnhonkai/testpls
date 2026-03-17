@@ -110,6 +110,7 @@ export const weatherList = {
     {id: 'deliverance', name: 'Bygone Deliverance'},
     {id: 'phyhod', name: 'Herrscher of Dominance'},
     {id: 'ricecake', name: 'Rice Cake'},
+    {id: 'jizo', name: 'Jizo Mitama'},
 
   ],
   shadow: [
@@ -653,6 +654,14 @@ export const bossData = {
     bosspic: "images/Bosses/Ricecake.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },  
+  jizo: {
+    name: 'Jizo Mitama', 
+    mechanics: ' ', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/JizoMitama.webp", 
+    weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
+  },   
   phyhod: {
     name: 'Herrscher of Dominance: Minion', 
     mechanics: 'Starts with mobs.', 
