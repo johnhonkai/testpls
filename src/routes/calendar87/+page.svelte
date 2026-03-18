@@ -409,18 +409,29 @@
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASCENSION SUPPLY</span>
-                    </div>     
-                    <div class="col-span-3"></div>  
-                    
+                    </div>   
+                    <div class="col-span-6"></div>  
+                    <div on:click={() => openModal("NewADV")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris</span>
+
+                    </div>                      
                 </div>
 
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ARMAMENT ASCENSION</span>
-                    </div>     
+                    </div>  
+                    
+                                                        <div class="col-span-6"></div>  
+                    <div on:click={() => openModal("NewRebate")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Reign Solaris Equipment</span>
+
+                    </div>   
                 </div>
-                
+
             </div>
         </div>
 
