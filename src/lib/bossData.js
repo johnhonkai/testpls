@@ -658,7 +658,7 @@ export const bossData = {
     name: 'Jizo Mitama', 
     mechanics: ' ', 
     weakness: 'None', 
-    typeicon: "images/type/IconPSI.png", 
+    typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/JizoMitama.webp", 
     weather: "Physical: Enemies take 50% more Physical DMG, and 50% less Lightning DMG.", 
   },   
