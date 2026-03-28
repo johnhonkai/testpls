@@ -281,7 +281,7 @@
 
     <!-- Always-visible info icon -->
     <a 
-      href="https://www.miyoushe.com/bh3/article/72820002"
+      href="https://www.miyoushe.com/bh3/article/74231339"
       target="_blank"
       class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
       data-tip="Go to source"
