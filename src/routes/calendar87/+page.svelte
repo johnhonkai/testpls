@@ -808,13 +808,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/MHT-3B Nirvana.webp" date="Apr 24" weather="Fire" bosspage="/boss?firetank" />
-                <BossCard />
+                <BossCard image="/images/Bosses/Alien Guard.webp" date="Apr 27" weather="Physical" bosspage="/boss?phyalien" />
                 </div>
                      
+                     
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />             
+                <BossCard image="/images/BossesMA/Husk - Nihilus_SSS.webp" date="Apr 28" />
+                <BossCard image="/images/BossesMA/Huodou_SSS.webp"/>
+                <BossCard image="/images/Bosses/Hellmaru.webp"/>                
                 </div>
 
             </div>    
