@@ -67,11 +67,11 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
-//  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
-//  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
@@ -365,26 +365,56 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> 
-              <br/>
-              To Be Updated
+              <strong class="text-amber-400">Lightning IMG DPS</strong> 
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Miss Espionage counters IMG enemies with her seed-transfer attacks and low-hp instakill.</li>
+                <li>Introduces a new mechanic: Stellar Surplus. Basically, Rita can activate a mini Stellar Outburst state during AR Charging.</li>
+                <li>Rita is great in her optimal match-ups, but just decent everywhere else.</li>
       
-          
+          </ul> 
+
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Utilities</strong>
+              <br/>              
+            </p>  
+
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Paralyze trauma.</li>
+                <li>IMG counter.</li>
+                <li>WoD: Stellar Surplus.</li>
+          </ul>            
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Wheel of Destiny Support</strong>
               <br/>
-              To Be Updated
+              
+            </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Buff-wise, Miss Espionage is best secondary support for all WoD teams. However, optimal team still depends on the boss.</li>
+                <li>Enables Stellar Surplus state for WoD teams - valks can gain Stellar Outburst-like state during AR Charging. Additionally, if you reach a certain amount of Surplus AR, Rita also grants dmg buff during Stellar Outburst.</li>
+          </ul>  
+            
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong>
+              <br/>
+              New best support for Reign Solaris. Great support for Peregrine Sword.
             </p>   
 
-            
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get New Rita in v8.6.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
+              Miss Espionage is still relevant in the recent meta as support and DPS, so I would say she's still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valks first, save for next patch valk, and then only consider getting Miss Espionage if your wallet is still loaded.
+          </p>
 
 
           <div class="divider  "></div>
@@ -393,7 +423,6 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.6</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -515,23 +544,23 @@ async function increaseLike() {
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
           <div class="w-20 h-20 sm:w-28 sm:h-28">
-            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/50494840/7084c24f9a180d4134dfdbbcedb0e519_2837778973542954242.png" alt="Rainbow" class="w-full h-full object-cover">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/11/18/50494840/e76997914e0a16354d11de3d92462ca4_6262773564151244243.png" alt="Rainbow" class="w-full h-full object-cover">
         </div>
 
         <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/f69aef9d7978e0fc42e3c9dc4bbc789e_7109954917620704708.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/11/28/4976467/6c8019d8faaa94f5dd5bed439610cf55_1554753569050005231.png" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/07/9809137/c967405c380d313b8a7e498226a24e5b_6708046003772475196.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/11/28/4976467/1be610752088dfbde026b378746ed9e3_4290852365616195329.png" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/09/06/9809137/0b0aa7d5f6017abd8010a02c1728c44a_3920350585847776207.png?x-oss-process=image/quality,q_75/resize,s_120" alt="Stigma" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/11/28/4976467/c8cd48c553588c303b3129ba83f35fb7_476918438311864761.png" alt="Stigma" class="w-full h-full object-cover">
       </div>
 
         </div>  
-        <h4 class="text-base sm:text-base text-white"> Pure Love's Whisper + Blissful Days set</h4>
+        <h4 class="text-base sm:text-base text-white"> Codename: Top Mission + Schicksal Agent set</h4>
         </div>
 
 
@@ -542,14 +571,15 @@ async function increaseLike() {
 
 
 
-      <div class="p-4 mt-4 bg-linear-to-r from-pink-950/75 to-pink-900/75 rounded-sm">
+      <div class="p-4 mt-4 bg-linear-to-r from-purple-950/75 to-purple-900/75 rounded-sm">
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Pure Love's Whisper</b><br/> - Best weapon for HLE, huge self buffs and team buffs.
-          <br/>- Important utility during AR Charging: After casting weapon skill, gives enough sp to do full charge Ult.
+          <b>Codename: Top Mission </b><br/> - Best weapon for Miss Espionage. Huge self buffs and team buffs.
+          <br/>- Enables Shadow Star ATK to transfer 100% dmg from IMG shell to seed.
+          <br/>- Utility: QTE restore 25 meter.
         </p>
 
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Blissful Days set</b><br/> - Huge buffs.
+          <b>Schicksal Agent set</b><br/> - Huge buffs.
           <br/> - Forgeable in Foundry.
         </p>
 
@@ -563,101 +593,7 @@ async function increaseLike() {
 
       <div class="divider  "></div>
 
-<div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HLE DPS</h2>
-  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
-    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
-      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
-        <tr>
-          <th class="p-3 font-semibold">Weapon</th>
-          <th class="p-3 font-semibold text-right">Total DMG</th>
-          <th class="p-3 font-semibold text-right">Percentage</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700">
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper  Syn3</td>
-          <td class="p-3 text-right">50,019,712</td>
-          <td class="p-3 text-right text-teal-400">107.43%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn2</td>
-          <td class="p-3 text-right">48,280,960</td>
-          <td class="p-3 text-right text-teal-400">103.70%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn1 </td>
-          <td class="p-3 text-right">46,557,184</td>
-          <td class="p-3 text-right text-teal-400">100.00%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Domain of Ego</td>
-          <td class="p-3 text-right">34,213,056</td>
-          <td class="p-3 text-right text-amber-400">73.49%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Flawless Benediction Syn2</td>
-          <td class="p-3 text-right">34,163,968</td>
-          <td class="p-3 text-right text-amber-400">73.38%</td>
-        </tr>        
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Whisper of the Past</td>
-          <td class="p-3 text-right">32,684,032</td>
-          <td class="p-3 text-right text-amber-400">70.20%</td>
-        </tr>        
-      </tbody>
-    </table>
-  </div>
-</div>
-
-       <div class="divider  "></div>
-
-<div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HoRB Support</h2>
-  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
-    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
-      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
-        <tr>
-          <th class="p-3 font-semibold">Weapon</th>
-          <th class="p-3 font-semibold text-right">Total DMG</th>
-          <th class="p-3 font-semibold text-right">Percentage</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700">
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper  Syn3</td>
-          <td class="p-3 text-right">46,633,344</td>
-          <td class="p-3 text-right text-teal-400">103.50%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn2</td>
-          <td class="p-3 text-right">45,853,376</td>
-          <td class="p-3 text-right text-teal-400">101.77%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn1 </td>
-          <td class="p-3 text-right">45,055,104</td>
-          <td class="p-3 text-right text-teal-400">100.00%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Flawless Benediction Syn2</td>
-          <td class="p-3 text-right">40,988,160</td>
-          <td class="p-3 text-right text-blue-400">90.97%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Domain of Ego</td>
-          <td class="p-3 text-right">39,931,392</td>
-          <td class="p-3 text-right text-blue-400">88.62%</td>
-        </tr>        
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Whisper of the Past</td>
-          <td class="p-3 text-right">39,696,832</td>
-          <td class="p-3 text-right text-blue-400">88.11%</td>
-        </tr>  
-      </tbody>
-    </table>
-  </div>
-</div>     
+   
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
@@ -666,28 +602,30 @@ async function increaseLike() {
 
       <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
         <h3 class="text-lg sm:text-xl font-bold text-center">
-          How to Activate HLE Support Buffs
+          How to Activate Miss Espionage Support Buffs
         </h3>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
           <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stellar Drain</h4>
           <p class="leading-relaxed">
-            - Ultimate consume Stellar Drain. You want to do full charged Ult to get max AR (20).<br/>
-            - In WoDestiny teams, casting weapon / ult gives 2 AR.
+            - QTE Replicate consumes Stellar Drain.<br/>
+            - Ultimate evasion restores 2 AR.
           </p>
         </div>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
-          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">HLE Stigma Buff</h4>
+          <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Stigma Buff</h4>
           <p class="leading-relaxed">
-            Weapon or QTE triggers an important stigma buff <span class="text-sky-200 italic">[Heart's Splendor]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+            Weapon or QTE triggers an important stigma buff <span class="text-sky-200 italic">[A Lady's Dignity]</span> for 25s. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst / Stellar Surplus</span> activation.
           </p>
         </div>
 
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
           <h4 class="font-semibold text-orange-300 text-base sm:text-lg">Wheel of Destiny Buff</h4>
           <p class="leading-relaxed">
-            Ultimate triggers a buff for the leader for 30s. Grants Fire and Physical DMG +20% (S) / 42% (S1) , Melee ATK gain Ice and Lightning DMG +28% (S) / 42% (S1) and Enemies take 8% (S) / 15% (S1) more Total DMG from ranged atks from this valk. Also activated/refreshed upon <span class="italic text-sky-200">Stellar Outburst </span> activation.
+            1. Entering Stellar Surplus grants: Enemies take 10% more Total DMG, 15% more Elemental DMG, and 14% more Physical DMG from the valk.
+            <br/>
+            2. When entering Stellar Outburst, if Surplus Intensity is greater than or equal to 10/20 points, all team members deal 10%/25% more Total DMG until Stellar Outburst ends.
           </p>
         </div>        
 
@@ -703,215 +641,22 @@ async function increaseLike() {
       <Lightbox show={showLightbox} image={selectedImage} onClose={closeLightbox} />
       {/if}
 
-      {#if selectedTab === 'Elysian Realm'}
+     {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
 
       <div class="flex justify-center gap-4 my-6">
 
 
-
-
         <button
-          on:click={() => setPlaystyle('1')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-        STELLAR OUTBURST
-        </button>
-
-        <button
-        on:click={() => setPlaystyle('2')}
-        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        on:click={() => setPlaystyle('1')}
+        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
       >
-        AR CHARGING
-      </button>     
+        STELLAR OUTBURST
+      </button>    
+
+ 
 
       </div>
-    
-
-      {#if activePlaystyle === '1'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
-      <p class="text-sm sm:text-base text-center sm:text-left">
-       Stronger playstyle.
-      </p>
-  
-      <div class="divider  "></div>
-  
-      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-  
-      <div class="flex flex-col justify-center items-start ">
-  
-      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-  
-        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-        </div>
-          <!-- Left side image -->
-          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
-            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-          </div>
-          
-          <!-- Right side text sections -->
-          <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Glad News + Fragrant Gardens</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
-        </div>
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          <!-- First Signet with 'Start' text -->
-
-  
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>    
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-  
-        </div>
-
-        <div class="mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
-            <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
-            <br/>
-            <span class="text-cyan-300">Infinity</span>: V8.5 ER stage effect summons Flamechaser chibis which count as summoned unit. After v8.5, Infinity is not an optimal signet.
-
-          </p>
-        </div>
-
-          <div class="divider  "></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-          
-          
-        </div>
-  
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-
-  
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-  
-  
-        </div>
-  
-        
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
-  
-        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Activate Stellar Outburst</li>
-          <li>Weapon x2</li>
-          <li>Do full Basic ATK</li>
-          <li>Weapon x2</li>
-          <li>Activate Ult finisher</li>
-          <li>ATK until Stellar Outburst is ready</li>
-          <li>Repeat</li>
-
-        </ol>
-  
-          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/SQhxa_tFglE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-      {/if}
-
-  
       {#if activePlaystyle === '2'}
       <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
@@ -936,19 +681,20 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Blossoms + Bright Star </p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Couture ➔ Rouge</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Perfection </p>
           </div>
         </div>
         
       </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
 
-
-        </div>
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Couture), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
   
         <div class="divider  "></div>
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -958,7 +704,7 @@ async function increaseLike() {
   
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold ">1</p>
             </div>
 
@@ -968,14 +714,181 @@ async function increaseLike() {
             </div>
 
              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>    
 
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
-            </div>    
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
+        </div>
+
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+  
+                <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Theresa Starlit Astrologos.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+          
+          
+        </div>
+  
+  
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+  
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
+        </div>
+  
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+  
+  
+        </div>
+  
+        
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+  
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Weapon ➔ ATK </li>
+          <li>Ult x2 </li>
+          <li>Repeat </li>
+        </ol>
+  
+    
+          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
+            Check out this showcase from Marisa Honkai:
+        </p>
+
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/rX8JSxdeIfo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+      {/if}
+    
+
+      {#if activePlaystyle === '1'}
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+       Spam weapon
+      </p>
+  
+      <div class="divider  "></div>
+  
+      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+  
+      <div class="flex flex-col justify-center items-start ">
+  
+      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+  
+        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+        </div>
+          <!-- Left side image -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
+            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+          </div>
+          
+          <!-- Right side text sections -->
+          <div class="flex flex-col space-y-2 pr-2 z-10">
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b>Sophistication ➔ Thunderstrike  </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Perfection </p>
+          </div>
+        </div>
+        
+      </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
+
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Sophistication), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
+  
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <!-- First Signet with 'Start' text -->
+
+  
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1 or 2</p>
+            </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
@@ -997,7 +910,7 @@ async function increaseLike() {
           
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START</p>
@@ -1005,7 +918,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -1013,7 +926,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -1027,29 +940,29 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
   
         <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
+
   
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
         </div>
   
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
+            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
         </div>
@@ -1062,29 +975,17 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Weapon </li>
-          <li>Use fully charged Ultimate </li>
-          <li>Basic ATK x2 </li>
-          <li>Repeat </li>
+          <li>Activate Stellar Outburst.</li>
+          <li>Press support valk icon. Spam weapon until full meter and you do that finisher attack, repeat this one more time.</li>
+          <li>Repeat step 2 for the other support.</li>
+          <li>Use ult finisher.</li>
+          <li>Repeat.</li>
+
         </ol>
   
-    
-          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/RxZIugMc8gM"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
       {/if}
+
+  
 
 
 

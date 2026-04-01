@@ -3,22 +3,24 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png',  speed: '' },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  speed: '' },
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png",  speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', speed: '' },
-        { name: 'Thel', image: '/images/valkportrait/Thelema Mad Pleasure.png', speed: '' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png',  teampct: '100%',  speed: 'Fast' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '99.7%',  speed: 'Fast' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: 'Slow' },
 
-        { name: 'RS', image: '/images/valkportrait/dudu.png', speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  teampct: '94.4%',  speed: '' },
+        { name: 'Thel', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '94.1%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '93%', speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '89.8%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '89.5%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png",  teampct: '87%', speed: '' },
+
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png' ,  teampct: '100%'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', },
+        { name: 'Sera', image: '/images/valkportrait/asop_youyun.png' ,  teampct: '100%'  },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png' ,  teampct: '92%'  },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '86%' , speed: 'Slow' },
 
     ];
 
@@ -34,7 +36,7 @@
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-purple-950 to-purple-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">窈窕谍影 DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Miss Espionage DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 
@@ -75,6 +77,9 @@
         </summary>
         <div class="py-3 px-4">
 
+            <p class="text-sm sm:text-base mb-4">Usually WoD teams prefer Vita over Sena for damage, but Imaginary bosses are squishy, so Rita prefers Sena (who just have to stay at the back) for higher score.</p>
+
+        
 
     </div>
     </details>

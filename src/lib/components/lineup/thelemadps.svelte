@@ -3,37 +3,43 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '100%', speed: '' },
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '95%', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '94%', speed: '' },
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '90%', speed: '' },
-        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '85%', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '99%', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '97%', speed: 'Fast' },
+        
+        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
+        { name: 'Sena2', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '85%' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '82%', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '82%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '81%', speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '78%', speed: '' },
+        { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '73%', speed: '' },
 
     ];
 
     const asopchar = [
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '99%',  },
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '94%', speed: 'Slow' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '87%', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
-    export let secondCharName: string = 'Sena'; // default to 'Vita'
+    export let firstCharName: string = 'HLE'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
     let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'Sena' && char.name !== 'Vita'
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'HLE'
 );
 
 </script>
@@ -61,6 +67,10 @@ let filteredMainCharacters = mainCharacters.filter(
             <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
 
+        {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}        
+
         <!-- Plus Icon shown only if maindps is true -->
         {#if !maindps}
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -86,10 +96,11 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
-             <p class="text-sm sm:text-base mb-4">
-                Thelema's best teammates are Breach Provider (Vita / Sena) + Hi Love Elf. 
-                We don't have live Abyss data for Thelema in 8.5, but a lot of CN Beta players agreed that Hi Love Elf provides the biggest buff for Thelema right now.
-            </p>
+        <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> 
+            - Serapeum provides the biggest dmg buff, as well as initial AR and post-SO AR regen.
+            <br/>
+            - Youyun gives more damage during Stellar Surplus state (requires Rita), but lower damage during Stellar Outburst.
+        </p>  
 
     </div>
     </details>

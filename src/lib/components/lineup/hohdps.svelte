@@ -7,19 +7,21 @@
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '95%', speed: '' },
 
-        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
-        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '95%', speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '92%', speed: '' },
+        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
+        { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '84%', speed: '' },
+        { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '80%', speed: '' },
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '77%', speed: '' },
 
-        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '91%',  speed: '' },
+        { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '76%',  speed: '' },
 
-        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '88%', speed: '' },
+        { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '74%', speed: '' },
 
 
     ];
 
     const asopchar = [
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '99%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '92%', speed: 'Slow' },
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '84%', speed: 'Slow' }
@@ -99,19 +101,7 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
-     
-        
-        <p class="text-sm sm:text-base mb-4"><b>HLE vs Vita vs Sena</b><br/> 
-            - Currently, we don't have live Abyss data, but dmg test shows that HLE provides more dmg than Breach supports.
-            <br/>            
-            
-            - Vita provides strong buffs, Elemental Breach, and slightly more AR regen.
-            <br/>
-            - Sena provides buffs and Elemental Breach with zero field time.
-            <br/>
-            - At S-rank, Sena support scores higher than Vita. Although Vita provides stronger buff, the dmg increase is not big enough to beat the score with Sena's zero field time. 
-
-        </p>     
+      
 
         <p class="text-sm sm:text-base mb-4"><b>Freeze</b><br/> HLE and Thelema can apply freeze trauma.
         </p>    
@@ -125,8 +115,10 @@ let filteredMainCharacters = mainCharacters.filter(
             - In Arena, Thelema + HoH is a powerful pair with timestop.
         </p>            
 
-        <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> Serapeum provides the strongest dmg buff, as well as initial AR and post-SO AR regen.
-
+        <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> 
+            - Serapeum provides the biggest dmg buff, as well as initial AR and post-SO AR regen.
+            <br/>
+            - Youyun gives more damage during Stellar Surplus state (requires Rita), but lower damage during Stellar Outburst.
         </p>     
 
         </div>
