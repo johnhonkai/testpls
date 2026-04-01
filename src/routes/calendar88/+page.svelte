@@ -417,7 +417,7 @@
     
                     <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free Senadina</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Free Senadina. Complete 4 out of 5 missions to get free Sena.</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
                             <img src="https://i.imgur.com/EATnpNy.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
@@ -434,7 +434,7 @@
    
                     <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Featured Event</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Project Sea Of Data</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
                             <img src="https://i.imgur.com/gYC0pDM.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
@@ -442,7 +442,57 @@
                     </div>   
 
             </div>
+            <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 5</span>
+                </div> 
+                    <div class="col-span-2"></div>
+                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">P2 Chapter 12</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/q1eeqbH.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
 
+
+            </div>
+
+                <div class="relative grid grid-cols-18 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="col-span-2 flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 6</span>
+                </div> 
+                    <div class="col-span-7"></div>
+    
+                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Starry Voyage: Strike Back!</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/0hMPg49.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
+
+            </div>
+
+                        <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 7</span>
+                </div> 
+    
+  
+                    <div class="col-span-6"></div>
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Powered Duo</span>
+                    </div>   
+            </div>
     </div>
     </div>
 
