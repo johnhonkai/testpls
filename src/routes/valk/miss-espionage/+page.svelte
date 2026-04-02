@@ -877,11 +877,11 @@ async function increaseLike() {
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
               <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
+              <p class="text-lg font-semibold">1 or 2</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
