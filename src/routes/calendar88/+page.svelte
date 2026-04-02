@@ -111,24 +111,11 @@
             title: "Major Spending Event",
             image: "https://i.imgur.com/R263Hoh.jpeg"
         },
-        "OutfitRerun": {
-            title: "Outfit Rerun Event",
-            image: "https://i.imgur.com/anYIaO6.jpeg"
-        },
         "OutfitSupply": {
             title: "Badum Wintery Wishes Outfit Supply",
             description: '- Duration: 3 weeks<br/>- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: DA / HoFs / MPE card or 5 stamps.',
             image: "https://i.imgur.com/M2lLRVy.jpeg"
-        },  
-        "OutfitSupply3": {
-            title: "Peachy Spring Outfit Supply",
-            description: '- Duration: 2 weeks<br/>- Max cost: 7680 crystal for outfit + other rewards<br/>- S-rank box: AE / FR / CH card or stamps.',
-        },         
-        "OutfitSupply2": {
-            title: "HoRB Eternal Outfit Outfit Supply",
-            description: '- Duration: 2 weeks<br/>- Max cost: 7680 crystal for outfit + other rewards<br/>- S-rank box: MC / BK / Phoenix card or 5 stamps.',
-            image: "https://i.imgur.com/KWv3zIZ.jpeg"
-        },          
+        },        
         "OutfitBox": {
             title: "Outfit Box Supply",
             description: '          <ul class="list-disc px-4 text-sm sm:text-base"><li>Duration: 2 weeks</li><li>Outfit Box: Choose one of the outfits</li><li>Max cost: 7680 crystal for outfit box + other rewards</li><li>S-rank box: HoS card or 10 stamps, Mobius card or 5 stamps, HoF card or 5 stamps.</li></ul>',
@@ -142,12 +129,7 @@
         "NewRebate": {
             title: "Ascension Armament",
             description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
-
-        },
-        "Anni7Day": {
-            title: "CN 9th Anniversary Login Rewards",
-            image: "https://i.imgur.com/3X8i73G.jpeg"
-        },       
+        },    
         "TimeCapsule": {
             title: "Time Capsule",
             image: "https://i.imgur.com/ENrc9Io.jpeg"
@@ -156,9 +138,9 @@
             title: "Art Collection Vol 4 Event",
             image: "https://i.imgur.com/KsCHAeL.jpeg"
         },    
-        "FreeBox": {
-            title: "Two Outfit Boxes",
-            image: "https://i.imgur.com/lhzwTo5.jpeg"
+        "Youyun": {
+            title: "Youyun",
+            image: "https://i.imgur.com/qmIBAKh.png"
         },                         
     };
 
@@ -297,7 +279,7 @@
                          <span class="font-bold0">ASTRAL OP SUPPLY</span>
                     </div>        
 
-                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("Youyun")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4 ">Youyun. Every 10 pulls give 2 Equip Cards, up to 12 max. Youyun will return in 8.9</span>
