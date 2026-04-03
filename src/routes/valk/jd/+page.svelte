@@ -49,6 +49,11 @@ import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayout from '$lib/components/valkpage/CharacterLayout.svelte';
 	import CharacterLayoutShort from '$lib/components/valkpage/CharacterLayoutShort.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import Psdps from '$lib/components/lineup/psdps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -62,7 +67,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Rank Up', short: 'rank', icon: faStar },
   { name: 'Question', short: 'qna' , icon: faComments  },
   //{ name: 'Overview Card', short: 'card' },
-  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+  //{ name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
 function handleClick(tabName) {
@@ -133,6 +138,14 @@ function prevPage() {
 // Function to switch tabs
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
+}
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
 let isMobile = false;
@@ -344,7 +357,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.8 (30 April 2026)
         </p>
         </div>
 
@@ -353,49 +366,53 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/>Jovial Deception (JD) is a ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. JD can also end Stellar Outburst early and refund AR meter, making her rotation more flexible.
+              <strong class="text-amber-400">DPS</strong> 
           </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">VS Badum DPS</strong> <br/> Badum seems to be better as DPS, but still wants JD support for her utility.
-          </p>
+
+          <ul class="list-disc ml-6 text-sm sm:text-base ">
+              <li>Jovial Deception (JD) is a ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. </li>
+              <li>Her bosses don't appear as frequently anymore. As a general dps, she loses to new characters who have better mechanics and rotations.  </li>
+
+          </ul>
+
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">WoDestiny Support</strong> <br/>Currently not the best support for any WoD team. Getting Stellar Drain is also slow.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Jovial Deception is one of the best supports for Reign Solaris. For Badum, JD support is used for SD bosses.
+            <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Jovial Deception is a great LoA support. Her sequence is a lot faster in LoA teams.
         </p>
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-                  <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">New Players</strong><br/> Do not pull JD from starter supply. 
-      </p>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
-                <br/> - Save until you can guarantee valk + fullgear,
-                <br/> - Then get the latest valk early in the patch.
+                <br/>Currently, there is no known way to get JD as F2P.
+
             </p>
+
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Battle Pass</strong><br/>             
+          </p>
+
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>You can get JD and her weapon from Battle Pass (Knight or Paladin tier).</li>
+                <li>Currently, the other S-ranks in BP are Lone Destruction and Schicksal Imperative. Take a look a their guide page before finalizing your decision. Personally, I would <span class="text-teal-300">save the crystallum and wait for Vita </span> to be added in 8.9 BP (25 June 2026). </li>    
+          </ul> 
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong><br/> JD is currently used more as LoA support than dps. 
           </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-            <li class="mt-2">The instant SD explosion is huge against SD bosses.</li>
-            <li class="mt-2">For Law of Ascension team, JD is currently one of the best supports for Reign Solaris. For Badum, JD support is used for SD bosses.</li>
-        </ul>
 
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>JD:</strong> Battlesuit Supply, Starter Supply</li>
-              <li><strong>JD's Weapon:</strong> Equipment Supply</li>
-              <li><strong>JD's Stigma:</strong> Equipment Supply, Forgeable</li>
-              <li>Battlesuit supply not available in v8.0. High chance of returning in v8.1 spending event. </li>
+              <li ><strong>JD:</strong> Battle Pass</li>
+              <li><strong>JD's Weapon:</strong> Battle Pass</li>
+              <li><strong>JD's Stigma:</strong> Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -418,68 +435,85 @@ function selectTabMobile(event) {
   {/if}
   
 
-  {#if selectedTab === 'Lineup'}
+{#if selectedTab === 'Lineup'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
 
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
+
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      LAW OF ASCENSION
+    </button>
+
   </div>
-
-    {#if currentPage === 1}
-
-      <JDDPS maindps={true}/>
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
-
-      <Hohdps firstCharName='JD' ></Hohdps>
-
-      <div class="divider  "></div>
-
-      <LanternDPS firstCharName='JD' />
+</div>
 
 
-      <div class="divider  "></div>
-
-      <ThelDPS firstCharName='JD'/>
+      {#if activeLineup === '1'}
+      <Jddps></Jddps>
 
       {/if}
 
-      {#if currentPage === 2}
+      {#if activeLineup === '2'}
+      
+      <Agentritadps></Agentritadps>
 
+      <div class="divider"></div>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Law of Ascension Support </div>
+      <Hohdps></Hohdps>
+      
+      <div class="divider"></div>
 
-      <Badumdps firstCharName='JD'></Badumdps>
+      <Lanterndps></Lanterndps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <Dududps firstCharName='JD'></Dududps>
+       <Thelemadps></Thelemadps>
 
       {/if}
 
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
+      {#if activeLineup === '3'}
+
+            <Psdps></Psdps>
+
+      <div class="divider"></div>
+
+      <Badumdps></Badumdps>
+
+      <div class="divider"></div>
+      
+      <Dududps></Dududps>
+
+      {/if}
 
 </section>
 
-  {/if}
+{/if}
 
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>

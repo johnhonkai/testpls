@@ -55,6 +55,14 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayout from '$lib/components/valkpage/CharacterLayout.svelte';
+	import Simpdps from '$lib/components/lineup/simpdps.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import Swdlcdps from '$lib/components/lineup/swdlcdps.svelte';
+	import Horbdlcdps from '$lib/components/lineup/horbdlcdps.svelte';
+	import Senadps from '$lib/components/lineup/senadps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -142,6 +150,15 @@ activePlaystyle = playstyle;
 }
 
 let isMobile = false;
+
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
+}
 
 // Check screen size to determine if the view is mobile
 onMount(() => {
@@ -351,7 +368,7 @@ function selectTabMobile(event) {
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-2 sm:mb-0">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.4 (21 Aug 2025)
+            <strong>Updated For v8.8 (30 April 2026)
         </p>
         </div>
       <div>
@@ -361,12 +378,8 @@ function selectTabMobile(event) {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">DPS</strong> 
               <br/>
-              Schicksal's Imperative (SIMP) is a Quantum DPS with multiple ways to apply quantum collapse.            
+              Schicksal's Imperative (SIMP) is a Quantum DPS with multiple ways to apply quantum collapse. Currently, SIMP is used very rarely as both DPS and support.            
             </p>
-              <ul class="list-disc ml-6 text-sm sm:text-base ">
-                <li>SIMP can also be used in double dps team with <a href="/valk/lv" class="link">Lunar Vow</a>. It has been used against Paralyze Sushang and Starless Benares.</li>
-                <li>Currently, SIMP is used very rarely as both DPS and support.</li>              
-              </ul>
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">World Star Support</strong> <br/>Not the best support for any team currently.
@@ -387,32 +400,37 @@ function selectTabMobile(event) {
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-4 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/>Currently, there is no known way to get SIMP as F2P.
+
             </p>
-                      <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li >Save until you can guarantee valk + fullgear.</li>
-              <li>Then get the latest valk early in the patch.</li>
-          </ul>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/> SIMP is not the best Part 2 valk to spend your crystal on.
-           </p>             
-              
+            <strong class="text-amber-400">Battle Pass</strong><br/>             
+          </p>
+
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>You can get SIMP and her weapon from Battle Pass (Knight or Paladin tier).</li>
+                <li>Currently, the other S-ranks in BP are Lone Destruction and Jovial Deception. Take a look a their guide page before finalizing your decision. Personally, I would <span class="text-teal-300">save the crystallum and wait for Vita </span> to be added in 8.9 BP (25 June 2026). </li>    
+          </ul>        
+
+                    <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Competitive</strong><br/>             
+          </p>
         <ul class="list-disc ml-6 text-sm sm:text-base ">          
           <li>As DPS: SIMP top scores are vs Resonance Vita, Opaque Shadow and Starless Benares - all rarely appear now. For QUA Valrahal, SIMP is still good but loses to Sparkle DPS.</li>
-          <li>As Part 1 Support: Lunar Vow is the only Part 1 Lightning DPS left that wants SIMP - and she is rarely used as DPS anymore in Abyss mode.</li> 
-          <li>If you still want SIMP, it's better to wait for her to be in Ascension Supply where you can immediately get her at SS-rank.</li>
+          <li>As Part 1 Support: Lunar Vow was the only Part 1 Lightning DPS left that wanted SIMP - and now she has Astral Ring.</li> 
         </ul>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>SIMP:</strong> Battlesuit Supply</li>
-              <li><strong>SIMP Weapon:</strong> Equipment Supply</li>
-              <li><strong>SIMP's Stigma:</strong> Equipment Supply, Forgeable.</li>
+              <li ><strong>SIMP:</strong> Battle Pass</li>
+              <li><strong>SIMP Weapon:</strong> Battle Pass</li>
+              <li><strong>SIMP's Stigma:</strong> Forgeable.</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -435,85 +453,118 @@ function selectTabMobile(event) {
   {/if}
   
 
-  {#if selectedTab === 'Lineup'}
+
+{#if selectedTab === 'Lineup'}
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
 
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
+
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      LAW OF ASCENSION
+    </button>
+
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '4' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('4')}
+    >
+      P1 LIGHTNING
+    </button>
+
   </div>
+</div>
 
 
-      {#if currentPage === 1}
-      <!-- Category 1: Vita DPS -->
+      {#if activeLineup === '1'}
+      <Simpdps></Simpdps>
 
-      <SimpDPS maindps={true}/>
+      {/if}
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
+      {#if activeLineup === '2'}
       
-      <SenaDPS firstCharName="Simp" />
+      <Agentritadps></Agentritadps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <Sparkledps firstCharName="Simp"></Sparkledps>
-      {/if}
+      <Hohdps></Hohdps>
 
-      {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
+      <div class="divider"></div>
 
-      <Hohdps firstCharName="Simp" ></Hohdps>
+      <Jddps></Jddps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <JDDPS firstCharName="Simp"  />
+      <Lanterndps></Lanterndps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <LanternDPS firstCharName="Simp"  />
-
-      <div class="divider  "></div>
-
-      <ThelDPS firstCharName="Simp"  />
+      <Thelemadps></Thelemadps>
 
       {/if}
 
-      {#if currentPage === 3}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Part 1 Lightning Support </div>
+      {#if activeLineup === '3'}
+
+
+      <Swdlcdps></Swdlcdps>
+
+      <div class="divider"></div>
+
+      <Horbdlcdps></Horbdlcdps>
+
+      <div class="divider"></div>
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Senadps></Senadps>
+
+      {/if}
+
+      {#if activeLineup === '4'}
 
       <Lvdpsdual></Lvdpsdual>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
       <Lvdpsnormal></Lvdpsnormal>
 
-      <div class="divider  "></div>
-
+      <div class="divider"></div>
+      
       <P1lightningdps></P1lightningdps>
 
       {/if}
 
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
 </section>
 
-  {/if}
-
+{/if}  
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
  

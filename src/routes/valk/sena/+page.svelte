@@ -49,6 +49,11 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayoutShort from '$lib/components/valkpage/CharacterLayoutShort.svelte';
+	import Senadps from '$lib/components/lineup/senadps.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Horbdlcdps from '$lib/components/lineup/horbdlcdps.svelte';
+	import Simpdps from '$lib/components/lineup/simpdps.svelte';
+	import Swdlcdps from '$lib/components/lineup/swdlcdps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -56,11 +61,11 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Lineup', short: 'lineup', icon: faUsers },
   { name: 'Equipment', short: 'equipment', icon: faBolt  },
   { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+ // { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
   { name: 'Rank Up', short: 'rank', icon: faStar },
-  { name: 'Question', short: 'qna' , icon: faComments  },
+ // { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
   { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
@@ -126,6 +131,14 @@ function nextPage() {
 
 function prevPage() {
   if (currentPage > 1) currentPage--;
+}
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
   // Track the active playstyle tab
@@ -339,7 +352,7 @@ function selectTabMobile(event) {
 
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.5 (23 Oct 2025)
+          <strong>Updated For v8.8 (30 April 2026)
       </p>
       </div>
 
@@ -348,19 +361,18 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/> An okay Lightning SD DPS. Excels against SD mobs thanks to dmg link mechanic. However, she has not been used as much as DPS, because:
-              <br/>
-              - Swarm bosses don't appear that frequently anymore.
-              <br/>
-              - Low rank Sena can't compete with more recent DPSes.
-              <br/>
-              - In a high investment team, high rank Sena can get good score on a few bosses like Lightning Guaymas and Stardust Sa. 
+              <strong class="text-amber-400">Lightning Mob DPS</strong> 
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>A Lightning SD DPS that excels against SD mobs thanks to dmg link mechanic. However, she has not been used as much as DPS, because swarm bosses don't appear that frequently anymore.</li>
+                <li>Sena also can't compete with more recent DPSes who have more new mechanics.</li>    
+          </ul> 
+
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/> 
+              One of the best WoD supports. Sena's advantage over other supports like Vita is she can provide Ele Breach and buffs with ZERO on-field time.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/> Great support. Provides Elemental Breach and strong buffs, with ZERO on-field time.
-          </p>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/> Sena is a lower tier support for Resonance teams. Sena generates a resonance mark that can be consumed by other DPS to trigger resonance dmg 3 times.
+              <strong class="text-amber-400">World Star Support</strong> <br/> Sena can't keep up with more recent supports. Sena generates a resonance mark that can be consumed by other DPS to trigger resonance dmg 3 times.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -371,38 +383,27 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">New Players</strong><br/> Do not pull Sena from starter supply. The reason is (1) Sena is old and (2) Starter supply has the same cost and rate as regular supply, and worst of all, it lasts for 90 days, and the guarantee does not carry over like regular supplies.
-            
+            <strong class="text-amber-400">Version 8.8</strong><br/>  
+            In 8.8, you can get Sena for free.
         </p>
 
-            <p class="mt-4 text-sm sm:text-base">
-                <strong class="text-amber-400">F2P Players</strong>
-                <br/>Currently, there's no way to get Sena, but if for some reason she returns in normal supply, it is not recommended to get Sena. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
-                <br/> - Save until you can guarantee valk + fullgear,
-                <br/> - Then get the latest valk early in the patch.
-            </p>
-
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive Players</strong> 
-
-              <br/> 
-              Currently, there's no way to get Sena. When she is available, you can consider getting her since she still has her niche uses.
-              <br/>
-            </p>
-
+            <strong class="text-amber-400">Reserve Works</strong><br/>  
+            
+        </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">Wheel of Destiny Support: At S-rank, Sena is slightly better than Vita thanks to her zero on-field time. In v8.5, we have a new good WoD support Hi Love Elf. We are lacking live data to compare the two valks as primary support.</li>
-              <li class="mt-2">DPS: Sena is rarely used as DPS anymore, but a high investment Sena team can get good score on a few bosses like Lightning Guaymas and Stardust Sa.</li>
-
-          </ul>
+                <li>You can get Sena and her weapon from Battle Pass Reserve Works.</li>
+                <li>You should get her if you can to expand your Part 2 team options. Competitively, Sena is still used in WoD teams.</li>    
+                <li>As f2p, getting both Sena+weapon  will take over a year. If you are a spender, you can speed this up by purchasing Knight / Paladin pass.</li>
+          </ul> 
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li class="mt-2" ><strong>Senadina:</strong> Starter Supply</li>
-              <li class="mt-2"><strong>Senadina's Weapon:</strong> Starter Equipment Supply</li>
-              <li class="mt-2"><strong>Senadina's Stigma:</strong> Starter Equipment Supply, Forgeable</li>
+              <li><strong>Battlesuit:</strong> Battle Pass Reserve Works, Free in 8.8</li>
+              <li><strong>Weapon:</strong> Battle Pass Reserve Works</li>
+              <li><strong>Stigma:</strong> Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -420,63 +421,88 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
 
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
 
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      WORLD STAR
+    </button>
+
   </div>
+</div>
 
-      {#if currentPage === 1}
-      <!-- Category 1: Vita DPS -->
 
-      <SenaDPS maindps={true} />
+      {#if activeLineup === '1'}
+      <Senadps></Senadps>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300  my-10"> World Star Support </div>
+      {/if}
+
+      {#if activeLineup === '2'}
       
-      <SimpDPS firstCharName="Sena" />
+      <Agentritadps></Agentritadps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <Sparkledps firstCharName="Sena"></Sparkledps>
+      <Hohdps></Hohdps>
+      
+      <div class="divider"></div>
+
+      <Jddps></Jddps>
+
+      <div class="divider"></div>
+
+      <Lanterndps></Lanterndps>
+
+      <div class="divider"></div>
+
+       <Thelemadps></Thelemadps>    
 
       {/if}
 
-      {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
+      {#if activeLineup === '3'}
 
-      <Hohdps firstCharName='Sena'></Hohdps>
+      <Swdlcdps></Swdlcdps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-<Jddps firstCharName='Sena'></Jddps>
+      <Horbdlcdps></Horbdlcdps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-<Lanterndps firstCharName='Sena'></Lanterndps>
+      <Sparkledps></Sparkledps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-<Thelemadps firstCharName='Sena'></Thelemadps>
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
       {/if}
 
-
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
 </section>
 
   {/if}

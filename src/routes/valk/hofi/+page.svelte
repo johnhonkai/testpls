@@ -49,6 +49,9 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import Swdlcdps from "$lib/components/lineup/swdlcdps.svelte";
+	import Horbdlcdps from "$lib/components/lineup/horbdlcdps.svelte";
+	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -136,6 +139,14 @@ activePlaystyle = playstyle;
 }
 
 let isMobile = false;
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
+}
 
 // Check screen size to determine if the view is mobile
 onMount(() => {
@@ -435,49 +446,87 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
-    {#if currentPage === 1}
-    <Hofidps />
+  
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
 
-    <div class="divider  "></div>
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WORLD STAR
+    </button>
 
-    <Hoodps />
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      OTHERS
+    </button>
 
-    <div class="divider  "></div>
-
-
-    <Vitadps />
-    {/if}
-
-    {#if currentPage === 2}
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300"> World Star Support </div>
-
-    <Sparkledps firstCharName="Kiana"/>
-
-    <div class="divider  "></div>
-
-    <Simpdps firstCharName="Kiana"/>
-
-    <div class="divider  "></div>
-
-    <Senadps firstCharName="Kiana"/>
-
-    {/if}
-
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
   </div>
+</div>
+
+
+      {#if activeLineup === '1'}
+      <Hofidps></Hofidps>
+
+      {/if}
+
+      {#if activeLineup === '2'}
+  
+
+      <Swdlcdps></Swdlcdps>
+
+      <div class="divider"></div>
+
+      <Horbdlcdps></Horbdlcdps>
+
+      <div class="divider"></div>
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
+      <Senadps></Senadps>
+
+      {/if}
+
+      {#if activeLineup === '3'}
+
+      <Coraliedps></Coraliedps>
+      
+
+      <div class="divider"></div>
+
+     <Vitadps></Vitadps>
+
+      <div class="divider"></div>
+      
+      <Hoodps></Hoodps>
+
+      {/if}
 
 </section>
 
-  {/if}
-
+{/if}
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
  

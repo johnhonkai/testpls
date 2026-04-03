@@ -4,20 +4,20 @@ category: 'Getting Started'
 sortOrder: 4
 customSlug: "gacha"
 ogimage: https://i.imgur.com/yfWEnUv.jpeg
-update: 8.5
+update: 8.8
 
 ---
 
 ## Part 2 Supplies
-In Part 2, the gacha has been simplified. All Part 2 content are available from these gacha:
+In Part 2, the gacha has been simplified. All recent Part 2 content are available from these gacha :
 - Battlesuit Supply
 - Equipment Supply
 - AstralOp Supply
 
-Note for characters: Only recent S-rank characters are available from these supplies (at max 7 patches old). Older characters will be available through other means:
-- When characters are at least 8 patches old, they will enter a special supply called Ascension Supply (see below).
-- They might also be available in Battle Pass and spending event.
-- There is still a chance that older characters will rerun in regular supplies, but so far, they don't.
+S-rank characters that are over 7 patches old will be available through other means:
+- First, they will enter Ascension Supply (see below).
+- Then, they will be available in Battle Pass and spending event.
+- Finally, they will be permanently available in Battle Pass Reserve Shop.
 
 ---
 
@@ -107,7 +107,7 @@ A special version of Equipment Supply, where you can get up to 18 Equipment Supp
 
 ## Pull Valk + Weapon
 
-In Honkai Impact, weapon is very important. Most of the time, signature weapon has a very important utility that completes the valkyrie. There's no good farmable alternative for weapon like in Star Rail or Genshin Impact.
+In Honkai Impact, weapon is very important. Weapon contributes ~50% of damage as dps and support. Also, most of the time, signature weapon has a very important utility that completes the valkyrie. There's no good farmable alternative for weapon like in Star Rail or Genshin Impact.
 
 Imagine if Imbibitor Lunae only has maximum 1 Lotus stack by default, and only gets 3 max Lotus stack if he has signature Light Cone.
 

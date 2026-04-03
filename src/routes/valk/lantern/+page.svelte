@@ -49,6 +49,13 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayoutShort from '$lib/components/valkpage/CharacterLayoutShort.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Swdlcdps from '$lib/components/lineup/swdlcdps.svelte';
+	import Simpdps from '$lib/components/lineup/simpdps.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import Horbdlcdps from '$lib/components/lineup/horbdlcdps.svelte';
+	import Senadps from '$lib/components/lineup/senadps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -62,7 +69,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Rank Up', short: 'rank', icon: faStar },
   { name: 'Question', short: 'qna' , icon: faComments  },
   //{ name: 'Overview Card', short: 'card' },
-  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+  // { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
 function handleClick(tabName) {
@@ -135,6 +142,13 @@ function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
 }
 
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
+}
 let isMobile = false;
 
 // Check screen size to determine if the view is mobile
@@ -347,7 +361,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.8 (30 April 2026)
         </p>
         </div>
 
@@ -362,7 +376,7 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">World Star Support</strong> <br/>Not the best support, but Lantern is used against Fire Kosma to break his high hitcount hp fast.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/>One of the best supports for Jovial Deception and Mad Pleasure. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Not the best WoD support anymore but still used in some cases. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
           </p>
 
           <div class="divider  "></div>
@@ -370,28 +384,33 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
-                <br/> - Save until you can guarantee valk + fullgear,
-                <br/> - Then get the latest valk early in the patch.
+                <br/>Currently, there is no known way to get Lantern as F2P.
+
             </p>
 
+          <p class="mt-4 text-sm sm:text-base">
+            <strong class="text-amber-400">Battle Pass</strong><br/>             
+          </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>You can get Lantern and her weapon from Battle Pass (Knight or Paladin tier).</li>
+                <li>Currently, the other S-ranks in BP are Jovial Deception and Schicksal Imperative. Take a look a their guide page before finalizing your decision. Personally, I would <span class="text-teal-300">save the crystallum and wait for Vita </span> to be added in 8.9 BP (25 June 2026). </li>    
+          </ul> 
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Competitive</strong><br/>
               Lantern has not been used as much recently.
           </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-            <li class="mt-2">As DPS, she still has top scores (RPC, Tank). For Stellar RPC, HoFi DPS also gets a good score comparable to Lantern.</li>
-            <li class="mt-2">Still the best support for Thelema and Jovial Deception.</li>
-        </ul>
-
+          <ul class="list-disc ml-6 text-sm sm:text-base ">
+              <li>As DPS, she still has top scores (Fire Tank).</li>
+              <li>Still used sometimes in Thelema and Jovial Deception teams, but even these DPS are rarely used anymore.</li>
+          </ul>
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Lantern:</strong> Battlesuit Supply</li>
-              <li><strong>Lantern's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Lantern's Stigma:</strong> Equipment Supply, Forgeable</li>
+              <li ><strong>Lantern:</strong> Battle Pass </li>
+              <li><strong>Lantern's Weapon:</strong> Battle Pass </li>
+              <li><strong>Lantern's Stigma:</strong> Forgeable </li>
 
           </ul>
           <div class="divider  "></div>
@@ -419,68 +438,86 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
-  </div>
-    {#if currentPage === 1}
-
-    <LanternDPS maindps={true} />
-
-    <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
-
-      <Hohdps firstCharName="Lantern" ></Hohdps>
-
-      <div class="divider  "></div>
-
-    <JDDPS firstCharName="Lantern" />
-
-    <div class="divider  "></div>
-
-    <ThelDPS firstCharName="Lantern" />
-
-    {/if}
-
-
-      {#if currentPage === 2}
-
-
-
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> World Star Support </div>
-      
-<Sparkledps  firstCharName='Lantern' ></Sparkledps>
-
-      <div class="divider  "></div>
-
-      <SimpDPS firstCharName='Lantern' />
-
-      <div class="divider  "></div>
-
-      <SenaDPS firstCharName='Lantern' />
-
-
-
   
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
+
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
+
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      WORLD STAR
+    </button>
+
+  </div>
+</div>
+
+
+      {#if activeLineup === '1'}
+      <LanternDPS></LanternDPS>
+
       {/if}
 
+      {#if activeLineup === '2'}
+      
+      <Agentritadps></Agentritadps>
 
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
+      <div class="divider"></div>
+
+      <Hohdps></Hohdps>
+      
+      <div class="divider"></div>
+
+      <Jddps></Jddps>
+
+      <div class="divider"></div>
+
+       <Thelemadps></Thelemadps>  
+
+      {/if}
+
+      {#if activeLineup === '3'}
+
+      <Swdlcdps></Swdlcdps>
+
+      <div class="divider"></div>
+
+      <Horbdlcdps></Horbdlcdps>
+
+      <div class="divider"></div>
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
+      <Senadps></Senadps>
+
+      {/if}
+
 </section>
 
   {/if}

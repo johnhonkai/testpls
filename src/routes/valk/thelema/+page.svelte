@@ -53,6 +53,14 @@ function closeLightbox() {
 import Fa from 'svelte-fa';
 import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments  ,faStar , faFire , faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 	import CharacterLayoutShort from '$lib/components/valkpage/CharacterLayoutShort.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
+	import Swdlcdps from '$lib/components/lineup/swdlcdps.svelte';
+	import Horbdlcdps from '$lib/components/lineup/horbdlcdps.svelte';
+	import Simpdps from '$lib/components/lineup/simpdps.svelte';
+	import Senadps from '$lib/components/lineup/senadps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -64,9 +72,9 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   { name: 'Gameplay', short: 'example', icon: faVideo },
   { name: 'Elysian Realm', short: 'er', icon: faFire },
   { name: 'Rank Up', short: 'rank', icon: faStar },
-  { name: 'Question', short: 'qna' , icon: faComments  },
+  //{ name: 'Question', short: 'qna' , icon: faComments  },
   //{ name: 'Overview Card', short: 'card' },
-  { name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
+  //{ name: 'TL Error', short: 'translation', icon: faTriangleExclamation  },
 ];  
 
 function handleClick(tabName) {
@@ -128,6 +136,14 @@ function nextPage() {
 
 function prevPage() {
   if (currentPage > 1) currentPage--;
+}
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
   // Track the active playstyle tab
@@ -348,7 +364,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.2 (24 Apr 2025)
+            <strong>Updated For v8.8 (30 April 2026)
         </p>
         </div>
 
@@ -360,12 +376,15 @@ function selectTabMobile(event) {
               <strong class="text-amber-400">DPS</strong> <br/> Powerful Ice DPS with shieldbreak and huge freeze trauma.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Wheel of Destiny Support</strong> <br/> - One of the best supports for all current WoD DPS. Provide strong buffs with important utilities: Shieldbreak, freeze trauma, AR regen and timestop.
-              <br/>
-              - Very important for Herrscher of Human DLC since her old bosses required shieldbreak and/or freeze. These utilities were provided by Sushang and Kira, but in WoD team, only Thelema can provide  these utilities.
+              <strong class="text-amber-400">Wheel of Destiny Support</strong>
           </p>
+
+                    <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Not the strongest support anymore but still provides a few unique utilities: Shieldbreak, freeze trauma, AR regen and timestop.</li>
+                <li>In Herrscher of Human team, her old bosses required shieldbreak and/or freeze. These utilities were provided by Sushang and Kira, but in WoD team, only Thelema and HLE can provide these utilities.</li>    
+          </ul> 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Currently, Resonance teams seem to do better with Vita + HoFi / Badum combo.
+              <strong class="text-amber-400">World Star Support</strong> <br/>Good support, but not used in top teams anymore.
           </p>
 
           <p class="mt-4 text-sm sm:text-base">
@@ -384,7 +403,7 @@ function selectTabMobile(event) {
 
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>Thelema is still used in WoD teams, and she's very important for HoH team.
+              <strong class="text-amber-400">Competitive</strong> <br/>Thelema is still used in WoD teams sometimes.
           </p>
 
 
@@ -394,9 +413,9 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Thelema:</strong> Battlesuit Supply</li>
-              <li><strong>Thelema's Weapon:</strong> Equipment Supply</li>
-              <li><strong>Thelema's Stigma:</strong> Equipment Supply, Forgeable</li>
+              <li ><strong>Thelema:</strong> Unknown</li>
+              <li><strong>Thelema's Weapon:</strong> Unknown</li>
+              <li><strong>Thelema's Stigma:</strong> Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->
@@ -423,73 +442,89 @@ function selectTabMobile(event) {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      DPS
+    </button>
 
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
 
-    <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-      {#each Array(totalPages).fill(0) as _, index}
-          <button
-              on:click={() => goToPage(index + 1)}
-              class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-          >
-              {index + 1}
-          </button>
-      {/each}
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      WORLD STAR
+    </button>
+
   </div>
-
-      {#if currentPage === 1}
-
-      <ThelDPS maindps={true}/>
-
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Wheel of Destiny Support </div>
-
-      <Hohdps firstCharName="Thelema"></Hohdps>
-
-      <div class="divider  "></div>
+</div>
 
 
-      <JDDPS firstCharName="Thelema" />
-
-      <div class="divider  "></div>
-
-      <LanternDPS firstCharName="Thelema"/>
-
-
-
-
+      {#if activeLineup === '1'}
+      <Thelemadps></Thelemadps>
 
       {/if}
 
-      {#if currentPage === 2}
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> World Star Support </div>
+      {#if activeLineup === '2'}
       
-      <Sparkledps firstCharName="Thelema" ></Sparkledps>
+      <Agentritadps></Agentritadps>
+
+      <div class="divider"></div>
+
+      <Hohdps></Hohdps>
       
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <SimpDPS firstCharName="Thelema"/>
+      <Jddps></Jddps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>
 
-      <SenaDPS firstCharName="Thelema" />
+      <Lanterndps></Lanterndps>
 
       {/if}
 
+      {#if activeLineup === '3'}
 
+      <Swdlcdps></Swdlcdps>
 
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
+      <div class="divider"></div>
+
+      <Horbdlcdps></Horbdlcdps>
+
+      <div class="divider"></div>
+
+      <Sparkledps></Sparkledps>
+
+      <div class="divider"></div>
+
+      <Simpdps></Simpdps>
+
+      <div class="divider"></div>
+
+      <Senadps></Senadps>
+
+      {/if}
+
 </section>
 
   {/if}
-
       {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
  

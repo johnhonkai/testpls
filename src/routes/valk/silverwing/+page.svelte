@@ -377,7 +377,7 @@ async function increaseLike() {
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">World Star DPS</strong>
               <br/>
-              When Silveerwing equips the new Stellar Key, she unlocks Astral Ring: World Star. This brings SW DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
+              When Silverwing equips the new Stellar Key, she unlocks Astral Ring: World Star. This brings SW DPS back into meta with an improved gameplay, and her role also expands into a support for the following teams:
             </p>   
 
              <p class="mt-4 text-sm sm:text-base">
