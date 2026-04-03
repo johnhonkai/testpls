@@ -1,7 +1,7 @@
 
 
 <svelte:head>
-    <title>v8.7 Calendar and Boss Schedule</title> 
+    <title>v8.8 Calendar and Boss Schedule</title> 
     <meta property="og:title" content="HI3 Calendar and Boss Schedule"/>
     <meta property="og:description" content="Version 8.8" />
     <meta property="og:image" content={data.ogImage} />
@@ -492,7 +492,7 @@
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
-                <div class="col-span-1 px-4 py-2 mr-3 ">v8.7 WEEK</div>
+                <div class="col-span-1 px-4 py-2 mr-3 ">v8.8 WEEK</div>
                 <div class="col-span-2 mr-4 px-4 py-2">EX ABYSS</div>
                 <div class="col-span-3 px-4 py-2">MEMORIAL ARENA</div>
             </div>
@@ -505,7 +505,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Corruption.webp" date="May 1" weather="Resonance" bosspage="/boss?resohoc" />
                 <BossCard  />
                 </div>
                      

@@ -97,7 +97,8 @@ export const weatherList = {
   ],
   resonance: [
     {id: 'resovita', name: "Vita - Sea's Depths"},
-    {id: 'resoguaymas', name: "Meteoroid: Guaymas"}
+    {id: 'resoguaymas', name: "Meteoroid: Guaymas"},
+    {id: 'resohoc', name: "Herrscher of Corruption"},
   
   ],
   melee: [
@@ -611,7 +612,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Vita.png", 
-    weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.", 
+    weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
   },
   resoguaymas: {
     name: 'Meteoroid: Guaymas', 
@@ -619,9 +620,16 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconSD.webp", 
     bosspic: "images/Bosses/Meteor_Guaymas.webp", 
-    weather: "Echoing: For every character in the team with Domain Resonance attribute, team Total DMG +10%. When AR World Star is activated, team Total DMG +30%.", 
+    weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
   },
-
+  resohoc: {
+    name: "Herrscher of Corruption", 
+    mechanics: "Takes more dmg when ignited, bleeding, paralyzed, stunned, or frozen. Transition phase has high hitcount hp.", 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Herrscher of Corruption.webp", 
+    weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
+  },
   meleehoc: {
     name: 'Herrscher of Corruption', 
     mechanics: 'Transition phase has high hitcount hp', 
@@ -4860,6 +4868,31 @@ export const teamData = {
       }
     ],
   },
+  resohoc: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Bronya Silverwing N-EX.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Seele Herrscher of Rebirth.png", "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },   
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Bronya Silverwing N-EX.png", "images/valkportrait/scoralie.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                   
+        ]
+      }
+    ],
+  },  
 }
 
 
