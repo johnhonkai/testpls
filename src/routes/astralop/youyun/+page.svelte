@@ -368,7 +368,7 @@ async function increaseLike() {
               <strong class="text-amber-400">World Star Support (To Be Updated)</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>The new best AstralOp for World Star teams.</li>
+                <li>Youyun is the new best Astral Op for World Star teams.</li>
                 <li>Youyun is really broken for DPS characters that utilize Stellar Surplus mechanic. The numbers are just massive in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>
@@ -379,7 +379,7 @@ async function increaseLike() {
               <strong class="text-amber-400">Wheel of Destiny Support </strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>The best AstralOp for WoD DPS characters that utilize the Stellar Surplus mechanic. Currently, only Miss Espionage has Stellar Surplus.</li>
+                <li>Youyun is the best Astral Op for WoD DPS characters that utilize Stellar Surplus mechanic. Currently, only Miss Espionage has Stellar Surplus.</li>
                 <li>For non-Surplus DPS, Youyun is still very good, but Serapeum is better.</li>
                 <li>Provides initial ar, SO cd reduction, and recover ar during SO.</li>
 
