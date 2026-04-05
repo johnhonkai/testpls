@@ -22,6 +22,10 @@ export const initialar = [
 
 ];
 
+export const surplusar = [
+   
+];
+
 
 export const postsoar = [
 
@@ -58,6 +62,8 @@ export const postsoar = [
 
 export const extraregen = [
 
+
+
 ];
 
 export const specialbuff = [
@@ -69,10 +75,10 @@ export const specialbuff = [
     },
 
     {
-        rank: "S",
-        description: "HP Loss DMG inflicted by the leader is increased by 6%.",
-        available_by_default: "no",
-        condition: { astralRing: "Law of Ascension"},
+    rank: "S",
+    description: "HP Loss DMG inflicted by the leader is increased by 6%.",
+    available_by_default: "no",
+    condition: { astralRing: "Law of Ascension"},
     },
     
 ];

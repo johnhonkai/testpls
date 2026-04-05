@@ -31,8 +31,8 @@
   });
 
 
-  let initialar, initialartext, postsoar, valkbuffs, asopbuffs , specialbuff; // Declare data placeholders
-  let compareinitialar, compareinitialartext, comparesoar, comparevalkbuffs, compareasopbuffs , comparespecialbuff; // Declare data placeholders
+  let initialar, initialartext, surplusar, postsoar, valkbuffs, asopbuffs , specialbuff; // Declare data placeholders
+  let compareinitialar, compareinitialartext, comparesurplusar, comparesoar, comparevalkbuffs, compareasopbuffs , comparespecialbuff; // Declare data placeholders
 
   let slots;
 
@@ -51,6 +51,7 @@
   let showModal = false;
 
   let initialAR = 0;
+  let surplusAR = 0;
   let postSOAR = 0;
   let processedValkBuffs = [];
   let processedAsopBuffs = [];
@@ -59,6 +60,7 @@
   let initialARtext = "";
 
   let compareInitialAR = 0;
+  let compareSurplusAR = 0;
   let comparePostSOAR = 0;
   let compareProcessedValkBuffs = [];
   let compareProcessedAsopBuffs = [];
@@ -85,10 +87,10 @@ $: if (slots.astralOp) {
 async function loadAstralOpData(astralOpName, type) {
     const data = await import(`$lib/data/${astralOpName.toLowerCase()}.js`);
     if (type === 'main') {
-      ({ initialar, initialartext, postsoar, valkbuffs, asopbuffs, extraregen , specialbuff } = data);
+      ({ initialar, initialartext, surplusar, postsoar, valkbuffs, asopbuffs, extraregen , specialbuff } = data);
       updateValues();
     } else if (type === 'compare') {
-  ({ initialar: compareinitialar, initialartext : compareinitialartext , postsoar: comparesoar, valkbuffs: comparevalkbuffs, asopbuffs: compareasopbuffs, extraregen: compareextraregen , specialbuff: comparespecialbuff } = data);
+  ({ initialar: compareinitialar, initialartext : compareinitialartext , surplusar: comparesurplusar, postsoar: comparesoar, valkbuffs: comparevalkbuffs, asopbuffs: compareasopbuffs, extraregen: compareextraregen , specialbuff: comparespecialbuff } = data);
   updateCompareValues();
 }
 
@@ -144,6 +146,7 @@ async function loadAstralOpData(astralOpName, type) {
     function updateValues() {
     initialAR = calculateInitialAr(initialar, selectedRank);
     postSOAR = calculatePostSoAr(postsoar, selectedRank);
+    surplusAR = calculateSurplusAR(surplusar, selectedRank);
     processedValkBuffs = calculateBuffs(valkbuffs, selectedRank);
     processedAsopBuffs = calculateBuffs(asopbuffs, selectedRank);
     cumulativeBuffs = calculateCumulativeValues([...valkbuffs, ...asopbuffs], selectedRank);
@@ -153,6 +156,7 @@ async function loadAstralOpData(astralOpName, type) {
   function updateCompareValues() {
     compareInitialAR = calculateInitialAr(compareinitialar, compareSelectedRank);
     comparePostSOAR = calculatePostSoAr(comparesoar, compareSelectedRank);
+    compareSurplusAR = calculateSurplusAR(comparesurplusar, selectedRank);
     compareProcessedValkBuffs = calculateBuffs(comparevalkbuffs, compareSelectedRank);
     compareProcessedAsopBuffs = calculateBuffs(compareasopbuffs, compareSelectedRank);
     compareCumulativeBuffs = calculateCumulativeValues([...comparevalkbuffs, ...compareasopbuffs], compareSelectedRank);
@@ -162,6 +166,27 @@ async function loadAstralOpData(astralOpName, type) {
   
   // Calculate total AR for Initial AR based on conditions
   function calculateInitialAr(data, rank) {
+
+    
+  return data.reduce((total, entry) => {
+    // Exclude AR entries that exceed the selected rank
+    if (rankOrder[entry.rank] > rankOrder[rank]) return total;
+
+
+const count = entry.condition 
+    ? countCharactersWithCondition(entry.condition, entry.activation)
+    : entry.condition_or
+        ? countCharactersWithOrCondition(entry.condition_or, entry.activation)
+        : 1;
+
+
+
+    const applicableCount = entry.maxStack ? Math.min(count, entry.maxStack) : count;
+    return total + entry.ar * applicableCount;
+  }, 0);
+}
+
+  function calculateSurplusAR(data, rank) {
 
     
   return data.reduce((total, entry) => {
@@ -203,9 +228,16 @@ function countCharactersWithOrCondition(condition_or, activation) {
   let count = 0;
 
   // Activation check (same as your existing logic)
-  const isActivated = activation?.astralRing
-    ? slots.leader?.astralRing === activation.astralRing
-    : true;
+const isActivated =
+  (activation?.astralRing === undefined ||
+    slots.leader?.astralRing === activation.astralRing) &&
+
+  (activation?.surplus === undefined ||
+    slots.leader?.surplus === activation.surplus) &&
+
+  (activation?.endsoearly === undefined ||
+    slots.leader?.endsoearly === activation.endsoearly)     
+    ;
 
   console.log("Leader AstralRing:", slots.leader?.astralRing);
   console.log("Activation AstralRing:", activation?.astralRing);
@@ -256,15 +288,113 @@ function countCharactersWithOrCondition(condition_or, activation) {
 
 
 
+
+
+
+
+
+
+function getTeam(slots) {
+  return Object.values(slots).filter(Boolean);
+}
+
+function matchCondition(character, condition) {
+  if (!condition) return true;
+
+  return Object.entries(condition).every(([key, value]) => {
+    if (key === "tag") {
+      return character?.artag?.includes(value);
+    }
+
+    return character?.[key] === value;
+  });
+}
+
+function matchConditionOr(character, condition_or) {
+  if (!condition_or) return true;
+
+  return Object.entries(condition_or).some(([key, values]) => {
+    if (key === "tag") {
+      return values.some(tag => character?.artag?.includes(tag));
+    }
+
+    return values.includes(character?.[key]);
+  });
+}
+
+function checkActivation(activation, slots) {
+  if (!activation) return true;
+
+  const leader = slots.leader;
+  if (!leader) return false;
+
+  return Object.entries(activation).every(([key, value]) => {
+    return leader?.[key] === value;
+  });
+}
+
+function checkCondition(condition, slots) {
+  if (!condition) return true;
+
+  const team = getTeam(slots);
+
+  return team.filter(char => matchCondition(char, condition)).length;
+}
+
+function checkConditionOr(condition_or, slots) {
+  if (!condition_or) return true;
+
+  const team = getTeam(slots);
+
+  return team.some(char => matchConditionOr(char, condition_or));
+}
+
+function evaluateBuff(buff, slots) {
+  const isActivated = checkActivation(buff.activation, slots);
+  if (!isActivated) return { active: false, stacks: 0 };
+
+  const conditionCount = checkCondition(buff.condition, slots);
+  const hasOrMatch = checkConditionOr(buff.condition_or, slots);
+
+  if (!hasOrMatch) return { active: false, stacks: 0 };
+
+  const stacks = buff.maxStack
+    ? Math.min(conditionCount || 1, buff.maxStack)
+    : 1;
+
+  return {
+    active: true,
+    stacks
+  };
+}
+
+
+
+
+
+
+
+
+
+
+
+
   // Function to count characters with a specific condition
   function countCharactersWithCondition(condition, activation) {
   let count = 0;
 
   // Check if the activation condition exists and is met
-  const isActivated = activation?.astralRing
-    ? slots.leader?.astralRing === activation.astralRing
-    : true; // If no activation condition, default to true
+const isActivated =
+  (activation?.astralRing === undefined ||
+    slots.leader?.astralRing === activation.astralRing) &&
 
+  (activation?.surplus === undefined ||
+    slots.leader?.surplus === activation.surplus) &&
+
+  (activation?.endsoearly === undefined ||
+    slots.leader?.endsoearly === activation.endsoearly)     
+    ;
+    
   // Log to debug activation logic
   console.log("Leader AstralRing:", slots.leader?.astralRing);
   console.log("Activation AstralRing:", activation?.astralRing);
@@ -273,8 +403,8 @@ function countCharactersWithOrCondition(condition_or, activation) {
 
   // Proceed with condition checks only if activation is satisfied
   if (isActivated) {
-    // Check the 'astralRing' condition for the 'leader' slot
     if (condition.astralRing) {
+
       const leader = slots.leader;
       const leaderMatch = leader && leader.astralRing === condition.astralRing;
       if (leaderMatch) count += 1;
@@ -389,6 +519,7 @@ function calculateBuffs(buffs, rank) {
       acphy: 0,
       sophy: 0,
       condphy: 0,
+      ultphy: 0,
 
       phytaken: 0,
       acphytaken: 0,
@@ -405,6 +536,8 @@ function calculateBuffs(buffs, rank) {
       soele: 0,
 
       condele: 0,
+      ultele: 0,
+
       eletaken: 0,
       aceletaken: 0,
       soeletaken: 0,
@@ -424,6 +557,7 @@ function calculateBuffs(buffs, rank) {
       qtetdmtaken: 0,
       condtdmtaken: 0,
       ulttdmtaken: 0,
+      surplustdmtaken: 0,
 
       lightning: 0,
       aclightning: 0,
@@ -493,6 +627,11 @@ cumulativeValues.sotdmtaken += buff.sotdmtaken || 0;
 cumulativeValues.qtetdmtaken += buff.qtetdmtaken || 0;
 cumulativeValues.shadowtdmtaken += buff.shadowtdmtaken || 0;
 cumulativeValues.ulttdmtaken += buff.ulttdmtaken || 0;
+cumulativeValues.surplustdmtaken += buff.surplustdmtaken || 0;
+
+
+cumulativeValues.ultphy += buff.ultphy || 0;
+cumulativeValues.ultele += buff.ultele || 0;
 
 cumulativeValues.lightning += buff.lightning || 0;
 cumulativeValues.aclightning += buff.aclightning || 0;
@@ -757,6 +896,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <div class="mt-6 p-4 bg-gray-800 rounded-lg text-white">
     <h3 class="text-lg font-semibold text-cyan-400">AR Recovery</h3>
     <p>Initial AR = {initialAR} {initialARtext} </p> 
+
+    {#if slots.leader.surplus == true}
+
+    <p>AR regen during Surplus = {surplusAR}</p>
+
+    {/if}
     <p>AR after Stellar Outburst = {postSOAR}</p>
     {#if extraregen && extraregen.length > 0}
         <div>
@@ -795,7 +940,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultphy > 0  }
           - x{ 
             parseFloat( 
 
@@ -803,7 +948,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
               (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-              (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy) / 100)) *
+              (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy + cumulativeBuffs.ultphy)  / 100)) *
               (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100))
               ).toFixed(3)
             )
@@ -813,7 +958,38 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
           {/if}
         </div>
+{#if slots.leader.surplus == true}
 
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm ) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy) / 100)) *
+              (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100)) *
+              (1+((cumulativeBuffs.resotdm) / 100))
+              ).toFixed(3)
+            )
+            }
+           
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ultphy > 0  || cumulativeBuffs.ulttdmtaken > 0 }
+- x{ 
+  parseFloat( 
+  (
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm ) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.surplustdmtaken + cumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy + cumulativeBuffs.ultphy) / 100)) *
+    (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+        {/if}
+        </div>
+ {/if}
         <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
@@ -828,13 +1004,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultphy > 0 }
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-    (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy) / 100)) *
+    (1+((cumulativeBuffs.phy + cumulativeBuffs.sophy + cumulativeBuffs.ultphy) / 100)) *
     (1+((cumulativeBuffs.phytaken + cumulativeBuffs.sophytaken) / 100))
     ).toFixed(3)
   )
@@ -842,6 +1018,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
 {/if}
         </div>
+
+
         {#if slots.leader.astralRing == "World Star"}
 
         <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
@@ -968,13 +1146,14 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele > 0 }
+
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-            (1+((cumulativeBuffs.lightning + cumulativeBuffs.aclightning + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+            (1+((cumulativeBuffs.lightning + cumulativeBuffs.aclightning + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
             (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.aclightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
     ).toFixed(3)
   )
@@ -985,6 +1164,39 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 {/if}
 
         </div>
+
+ {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm ) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((cumulativeBuffs.lightning + cumulativeBuffs.aclightning  + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+              (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.aclightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ultele > 0  || cumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm ) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.surplustdmtaken + cumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((cumulativeBuffs.lightning + cumulativeBuffs.aclightning + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
+    (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.aclightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+        {/if}
+</div>
+{/if}
+
+
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
@@ -999,13 +1211,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele > 0}
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-          (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+          (1+((cumulativeBuffs.lightning + cumulativeBuffs.solightning + cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.ultele) / 100)) *
           (1+((cumulativeBuffs.lightningtaken + cumulativeBuffs.solightningtaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
   )
@@ -1128,19 +1340,51 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             ).toFixed(3)
           )
           }
-          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+          {#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele > 0}
           - x{ 
             parseFloat( 
             (
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
               (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-            (1+((cumulativeBuffs.ice + cumulativeBuffs.acice + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+            (1+((cumulativeBuffs.ice + cumulativeBuffs.acice + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
             (1+((cumulativeBuffs.icetaken + cumulativeBuffs.acicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
               ).toFixed(3)
             )
           }
           {/if}
         </div>
+
+        {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm ) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((cumulativeBuffs.ice + cumulativeBuffs.acice  + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+              (1+((cumulativeBuffs.icetaken + cumulativeBuffs.acicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ultele > 0  || cumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm ) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.surplustdmtaken + cumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((cumulativeBuffs.ice + cumulativeBuffs.acice + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
+    (1+((cumulativeBuffs.icetaken + cumulativeBuffs.acicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
+
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
@@ -1155,19 +1399,21 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele > 0}
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-          (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+          (1+((cumulativeBuffs.ice + cumulativeBuffs.soice + cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.ultele) / 100)) *
           (1+((cumulativeBuffs.icetaken + cumulativeBuffs.soicetaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
     ).toFixed(3)
   )
 }
 {/if}
         </div>
+
+
 
         {#if slots.leader.astralRing == "World Star"}
 
@@ -1283,19 +1529,51 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           )
           }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele}
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-            (1+((cumulativeBuffs.fire + cumulativeBuffs.acfire + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+            (1+((cumulativeBuffs.fire + cumulativeBuffs.acfire + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
             (1+((cumulativeBuffs.firetaken + cumulativeBuffs.acfiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
             ).toFixed(3)
   )
 }
 {/if}
         </div>
+
+        {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm ) / 100)) *
+              (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((cumulativeBuffs.fire + cumulativeBuffs.acfire  + cumulativeBuffs.ele + cumulativeBuffs.acele) / 100)) *
+              (1+((cumulativeBuffs.firetaken + cumulativeBuffs.acfiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ultele > 0  || cumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm + cumulativeBuffs.condtdm ) / 100)) *
+    (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.surplustdmtaken + cumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((cumulativeBuffs.fire + cumulativeBuffs.acfire + cumulativeBuffs.ele + cumulativeBuffs.acele + cumulativeBuffs.ultele) / 100)) *
+    (1+((cumulativeBuffs.firetaken + cumulativeBuffs.acfiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
+
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
           
@@ -1310,13 +1588,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         )
         }
 
-{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 }
+{#if cumulativeBuffs.condtdm > 0 || cumulativeBuffs.condtdmtaken > 0 || cumulativeBuffs.ulttdmtaken > 0 || cumulativeBuffs.ultele > 0}
 - x{ 
   parseFloat( 
   (
     (1+((cumulativeBuffs.tdm + cumulativeBuffs.sotdm + cumulativeBuffs.condtdm) / 100)) *
     (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.sotdmtaken + cumulativeBuffs.condtdmtaken + cumulativeBuffs.ulttdmtaken) / 100)) *
-          (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele) / 100)) *
+          (1+((cumulativeBuffs.fire + cumulativeBuffs.sofire + cumulativeBuffs.ele + cumulativeBuffs.soele + cumulativeBuffs.ultele) / 100)) *
           (1+((cumulativeBuffs.firetaken + cumulativeBuffs.sofiretaken + cumulativeBuffs.eletaken + cumulativeBuffs.soeletaken) / 100))
           ).toFixed(3)
   )
@@ -1438,9 +1716,32 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     <div class="text-sm">
     <ul class="space-y-2 text-gray-200 mt-2">
 
-      {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.condtdm > 0  }
+      {#if slots.leader.surplus == true }
         <li>
-          Total DMG +{cumulativeBuffs.tdm}%{#if cumulativeBuffs.condtdm > 0} - {cumulativeBuffs.tdm + cumulativeBuffs.condtdm}%{/if}</li>
+          Surplus TDM Taken +{cumulativeBuffs.surplustdmtaken }%
+        </li>
+      {/if}
+        
+
+
+
+      {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.actdm > 0 || cumulativeBuffs.sotdm > 0 || cumulativeBuffs.condtdm > 0  }
+        <li>
+          Total DMG +{cumulativeBuffs.tdm + cumulativeBuffs.actdm }%{#if cumulativeBuffs.condtdm > 0} - {cumulativeBuffs.tdm + cumulativeBuffs.condtdm}%{/if}
+        
+        {#if cumulativeBuffs.actdmtaken !== cumulativeBuffs.sotdmtaken} 
+        
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
+        
+        / +{cumulativeBuffs.tdm + cumulativeBuffs.sotdm}% 
+
+        <span class="bg-sky-800 rounded-sm px-2">SO</span>
+
+        {/if}
+
+
+
+        </li>
       {/if}
 
       {#if cumulativeBuffs.resotdm > 0 }
@@ -1678,6 +1979,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <div class="mt-6 p-4 bg-cyan-950/50 rounded-lg text-white">
     <h3 class="text-lg font-semibold text-cyan-400">AR Recovery</h3>
     <p>Initial AR = {compareInitialAR} {initialARtext}</p>
+
+    {#if slots.leader.surplus == true}
+
+    <p>AR regen during Surplus = {compareSurplusAR}</p>
+
+    {/if}
+
     <p>AR after Stellar Outburst = {comparePostSOAR}</p>
     {#if compareextraregen && compareextraregen.length > 0}
     <div>
@@ -1729,6 +2037,39 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
           {/if}
         </div>
+
+{#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat( 
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm ) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
+              (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100)) *
+              (1+((compareCumulativeBuffs.resotdm) / 100))
+              ).toFixed(3)
+            )
+            }
+           
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ultphy > 0  || compareCumulativeBuffs.ulttdmtaken > 0 }
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm ) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.surplustdmtaken + compareCumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy + compareCumulativeBuffs.ultphy) / 100)) *
+    (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+        {/if}
+        </div>
+ {/if} 
 
         <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
@@ -1900,6 +2241,38 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 {/if}
 
         </div>
+
+ {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm ) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning  + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+              (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ultele > 0  || compareCumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm ) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.surplustdmtaken + compareCumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((compareCumulativeBuffs.lightning + compareCumulativeBuffs.aclightning + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele + compareCumulativeBuffs.ultele) / 100)) *
+    (1+((compareCumulativeBuffs.lightningtaken + compareCumulativeBuffs.aclightningtaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+        {/if}
+</div>
+{/if}
+
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
@@ -2056,6 +2429,38 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
           }
           {/if}
         </div>
+
+        {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm ) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice  + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+              (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ultele > 0  || compareCumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm ) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.surplustdmtaken + compareCumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((compareCumulativeBuffs.ice + compareCumulativeBuffs.acice + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele + compareCumulativeBuffs.ultele) / 100)) *
+    (1+((compareCumulativeBuffs.icetaken + compareCumulativeBuffs.acicetaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if}
+
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
 
@@ -2211,6 +2616,38 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 }
 {/if}
         </div>
+
+        {#if slots.leader.surplus == true}
+
+        <div class="bg-slate-800 text-white mt-1 mb-2 px-3 py-1 rounded-sm">
+          <span class="bg-emerald-800 rounded-sm px-2 text-bold  mr-1">Surplus</span>
+
+          x{ 
+            parseFloat(            
+            (
+              (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm ) / 100)) *
+              (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.surplustdmtaken) / 100)) *
+              (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire  + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele) / 100)) *
+              (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100)) 
+              ).toFixed(3)
+            )
+            }
+{#if compareCumulativeBuffs.condtdm > 0 || compareCumulativeBuffs.condtdmtaken > 0 || compareCumulativeBuffs.ultele > 0  || compareCumulativeBuffs.ulttdmtaken > 0}
+- x{ 
+  parseFloat( 
+  (
+    (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm + compareCumulativeBuffs.condtdm ) / 100)) *
+    (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.condtdmtaken + compareCumulativeBuffs.surplustdmtaken + compareCumulativeBuffs.ulttdmtaken ) / 100)) *
+    (1+((compareCumulativeBuffs.fire + compareCumulativeBuffs.acfire + compareCumulativeBuffs.ele + compareCumulativeBuffs.acele + compareCumulativeBuffs.ultele) / 100)) *
+    (1+((compareCumulativeBuffs.firetaken + compareCumulativeBuffs.acfiretaken + compareCumulativeBuffs.eletaken + compareCumulativeBuffs.aceletaken) / 100))
+    ).toFixed(3)
+  )
+}
+
+{/if}
+        </div>
+        {/if} 
+        
         <div class="bg-slate-800 text-white mt-1 mb-2 py-1 px-3 rounded-sm">
           <span class="bg-sky-800 rounded-sm px-2 text-bold  mr-1">SO</span>
           
@@ -2350,12 +2787,34 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
             Buff Breakdown
           </summary>
           <div class="text-sm">
+          
         <ul class="space-y-2 text-gray-200 mt-2">
-  
-          {#if compareCumulativeBuffs.tdm > 0 || compareCumulativeBuffs.condtdm > 0}
-            <li>
-              Total DMG +{compareCumulativeBuffs.tdm}%{#if compareCumulativeBuffs.condtdm > 0} - {compareCumulativeBuffs.tdm + compareCumulativeBuffs.condtdm}%{/if}</li>
-          {/if}
+
+        {#if slots.leader.surplus == true }
+        <li>
+          Surplus TDM Taken +{compareCumulativeBuffs.surplustdmtaken }%
+        </li>
+      {/if}
+
+
+      {#if compareCumulativeBuffs.tdm > 0 || compareCumulativeBuffs.actdm > 0 || compareCumulativeBuffs.sotdm > 0 || compareCumulativeBuffs.condtdm > 0  }
+        <li>
+          Total DMG +{compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm }%{#if compareCumulativeBuffs.condtdm > 0} - {compareCumulativeBuffs.tdm + compareCumulativeBuffs.condtdm}%{/if}
+        
+        {#if compareCumulativeBuffs.actdmtaken !== compareCumulativeBuffs.sotdmtaken} 
+        
+         <span class="bg-emerald-800 rounded-sm px-2">AC</span> 
+        
+        / +{compareCumulativeBuffs.tdm + compareCumulativeBuffs.sotdm}% 
+
+        <span class="bg-sky-800 rounded-sm px-2">SO</span>
+
+        {/if}
+
+
+
+        </li>
+      {/if}
           
           {#if compareCumulativeBuffs.resotdm > 0 }
           <li>Resonance ATK Total DMG +{compareCumulativeBuffs.resotdm}%</li>

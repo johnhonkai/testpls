@@ -11,6 +11,7 @@
   export let name: string;
   export let release: string;
   export let dlc: string | null = null; // ✅ optional DLC date
+  export let valk: boolean = true; // ✅ optional DLC date
 
   let likes = initialLikes || 0;
   let hasLiked = false;
@@ -81,8 +82,14 @@
 
   <!-- Right: Character Info -->
   <div class="flex flex-col items-center text-center justify-start mt-2 sm:mt-10 flex-1 ">
+    {#if valk == true}
     <h1 class="text-lg md:text-xl text-white sm:mt-4 mb-2 italic font-russoone">{title}</h1>
 
+
+    {:else}
+    <h1 class="text-lg md:text-xl text-white sm:mt-10 mb-2 italic font-russoone">{title}</h1>
+
+    {/if}
     <!-- Info Cards -->
     <div class="rounded-lg overflow-hidden shadow-md w-[260px] md:w-[300px]">
       {#if dlc}

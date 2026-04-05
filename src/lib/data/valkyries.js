@@ -1,11 +1,63 @@
 export const valkyries = [
 
+    { name: 'Silverwing', 
+        image: '/images/valkportrait/Bronya Silverwing N-EX.png', 
+        type: 'BIO', 
+        element: 'Ice', 
+        astralRing: 'World Star' , 
+        artag: ['World Star', 'Domain Resonance' , 'Heavenly Shift'  ] , 
+        url: '/valk/silverwing',
+        surplus: true,
+        endsoearly: true,
+        cost: 200,
+        
+    }, 
+
+    { name: 'Xentinel', 
+        image: '/images/valkportrait/Mei Xentinel.png', 
+        type: 'Mech', 
+        element: 'Physical', 
+        astralRing: 'Grail of Infinitude' , 
+        artag: ['Grail of Infinitude', 'Symbiosis' , 'Heavenly Shift' , 'Domain Resonance' ] , 
+        url: '/valk/me',
+        surplus: false,
+        endsoearly: true,
+        cost: 200,      
+    }, 
+
+    { name: 'Lunar Vow', 
+        image: '/images/valkportrait/Theresa Lunar Vow.png',
+        type: 'Psy', 
+        astralRing:'Grail of Infinitude', 
+        artag: ['Grail of Infinitude', 'Symbiosis' , 'Heavenly Shift'  ] , 
+        element: 'Lightning' , 
+        url: '/valk/lv',
+        surplus: false,
+        endsoearly: true,   
+    },
+
+    { name: 'Miss Espionage', 
+        image: '/images/valkportrait/Miss Espionage.png', 
+        type: 'IMG', 
+        element: 'Lightning', 
+        astralRing: 'Wheel of Destiny' , 
+        artag: ['Wheel of Destiny', 'Harmonized Shadow Star' , 'Heavenly Shift'  ] , 
+        url: '/valk/me',
+        surplus: true,
+        endsoearly: true,
+        cost: 200,
+        
+    }, 
+
+    
     { name: 'Hi Love Elf', 
         image: '/images/valkportrait/Elysia%20Hi%20Love%20Elf.png', 
         type: 'SD', 
         element: 'Ice', 
         astralRing:'Grail of Infinitude', 
         artag: ['Grail of Infinitude', 'Symbiosis' , 'Harmonized Shadow Star', 'Domain Resonance'] , 
+        surplus: false,
+        endsoearly: true,
         url: '/valk/hi-love-elf',
         cost: 200,
         
@@ -19,7 +71,8 @@ export const valkyries = [
         artag: ['World Star', 'Symbiosis' , 'Domain Resonance'] , 
         url: '/valk/horb',
         cost: 200,
-        
+        surplus: false,
+        endsoearly: true,        
     },  
 
     { name: 'Dragoon Coralie', 
@@ -30,8 +83,9 @@ export const valkyries = [
         artag: ['Rite of Oblivion','Omniscient Star', 'Symbiosis' , 'Heavenly Shift' , ] , 
         url: '/valk/scoralie',
         cost: 200,
-        initial_ar: "+ 25 (S) + 25 (SSS)"
-        
+        initial_ar: "+ 25 (S) + 25 (SSS)",
+        surplus: false,
+        endsoearly: true,        
     },   
 
     { name: 'Planar Armament', 
@@ -42,6 +96,8 @@ export const valkyries = [
         artag: ['Grail of Infinitude', 'Symbiosis' , 'Heavenly Shift'] , 
         url: '/valk/paws',
         cost: 200,
+        surplus: false,
+        endsoearly: true,        
     },   
     
 
@@ -53,6 +109,8 @@ export const valkyries = [
         artag: ['Law of Ascension', 'Heavenly Shift' , 'Symbiosis' ] , 
         url: '/valk/ps',
         cost: 200,
+        surplus: false,
+        endsoearly: true,        
     },   
     
     { name: 'Ba-dum! Fiery Wishing Star', 
@@ -63,6 +121,8 @@ export const valkyries = [
         artag: ['Law of Ascension', 'Heavenly Shift' , 'Domain Resonance' , 'Symbiosis' ] , 
         url: '/valk/badum',
         cost: 200,
+        surplus: false,
+        endsoearly: true,        
     },
 
     { name: 'Herrscher of Human: Ego', 
@@ -73,6 +133,8 @@ export const valkyries = [
         artag: ['Wheel of Destiny', 'Heavenly Shift' , 'Harmonized Shadow Star' , 'Symbiosis' ] , 
         url: '/valk/hoh',
         cost: 200,
+        surplus: false,
+        endsoearly: true,        
     },
 
     { name: 'Reign Solaris', 
@@ -83,6 +145,8 @@ export const valkyries = [
         artag: ['Law of Ascension', 'Heavenly Shift' , 'Harmonized Shadow Star' , 'Symbiosis' ] , 
         url: '/valk/durandal',
         cost: 200,
+        surplus: false,
+        endsoearly: true,        
     },
 
 
@@ -94,23 +158,29 @@ export const valkyries = [
         artag: ['World Star', 'Domain Resonance' , 'Heavenly Shift'] , 
         url: '/valk/sparkle',
         cost: 150,
+        surplus: false,
+        endsoearly: false,        
     },
 
     { name: 'Lone Planetfarer', image: '/images/valkportrait/Vita Lone Planetfarer.png', type: 'Mech', element: 'Lightning', astralRing: 'Rite of Oblivion' , 
-        artag: [ 'Rite of Oblivion' , 'Omniscient Star', 'Domain Resonance' , 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/lp', cost: 150 },
-
-
-    { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: 'World Star' , artag: [ 'World Star' ,'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/simp', cost: 150 },
-
-    { name: 'Jovial Deception: Shadowdimmer', image: '/images/valkportrait/Songque Jovial Deception.png', type: 'SD', element: 'Physical', astralRing: 'Wheel of Destiny' , artag: [  'Wheel of Destiny' , 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/jd', cost: 145},
+        artag: [ 'Rite of Oblivion' , 'Omniscient Star', 'Domain Resonance' , 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/lp', cost: 150,
+        surplus: false,
+        endsoearly: false,    
     
-    { name: 'Lone Destruction: Shadowchaser', image: '/images/valkportrait/Lantern Lone Destruction.png', type: 'Psy', element: 'Fire', astralRing: 'Wheel of Destiny', artag: [ 'Wheel of Destiny','Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/lantern', cost: 140},
-    { name: 'Mad Pleasure: Shadowbringer', image: '/images/valkportrait/Thelema Mad Pleasure.png', type: 'Mech', element: 'Ice', astralRing: 'Wheel of Destiny', artag: [ 'Wheel of Destiny', 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/thelema', cost: 140 },
-    { name: 'Deepspace Anchor: First Light', image: '/images/valkportrait/Senadina Deepspace Anchor.png', type: 'SD', element: 'Lightning', astralRing: 'World Star', artag: [ 'World Star','Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/sena', cost: 150},
-    { name: 'Valkyrie Boltstorm', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', type: 'Mech', element: 'Lightning', astralRing: 'World Star', artag: ['World Star', 'Domain Resonance' ] , url: '/valk/helia', cost: 150},
-    { name: 'Valkyrie Blastmetal', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Rite of Oblivion','Domain Resonance', 'Omniscient Star' ] , url: '/valk/coralie', cost: 150},
-    { name: 'Lunar Vow', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: 'Lightning' , url: '/valk/lv'},
-    { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing:  'Rite of Oblivion', artag: [ 'Rite of Oblivion','Domain Resonance', 'Omniscient Star'] , url: '/valk/hofi', cost: 150 },
-    { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', url: '/valk/hoo'} ,
-    { name: 'Herrscher of Truth', image: '/images/valkportrait/Bronya Herrscher of Truth.png', type: 'Img', element: 'Ice' , url: '/valk/hotr' } ,
+    },
+
+
+    { name: "Schicksal's Imperative", image: "/images/valkportrait/Theresa Schicksal's Imperative.png", type: 'Qua', element: 'Lightning', astralRing: 'World Star' , artag: [ 'World Star' ,'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/simp', endsoearly: false, surplus: false, cost: 150 },
+
+    { name: 'Jovial Deception: Shadowdimmer', image: '/images/valkportrait/Songque Jovial Deception.png', type: 'SD', element: 'Physical', astralRing: 'Wheel of Destiny' , artag: [  'Wheel of Destiny' , 'Harmonized Shadow Star', 'Heavenly Shift'] , url: '/valk/jd', endsoearly: false, surplus: false, cost: 145},
+    
+    { name: 'Lone Destruction: Shadowchaser', image: '/images/valkportrait/Lantern Lone Destruction.png', type: 'Psy', element: 'Fire', astralRing: 'Wheel of Destiny', artag: [ 'Wheel of Destiny','Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/lantern', endsoearly: false, surplus: false,cost: 140},
+    { name: 'Mad Pleasure: Shadowbringer', image: '/images/valkportrait/Thelema Mad Pleasure.png', type: 'Mech', element: 'Ice', astralRing: 'Wheel of Destiny', artag: [ 'Wheel of Destiny', 'Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/thelema', endsoearly: false, surplus: false, cost: 140 },
+    { name: 'Deepspace Anchor: First Light', image: '/images/valkportrait/Senadina Deepspace Anchor.png', type: 'SD', element: 'Lightning', astralRing: 'World Star', artag: [ 'World Star','Domain Resonance' , 'Harmonized Shadow Star'] , url: '/valk/sena', endsoearly: false, surplus: false, cost: 150},
+    { name: 'Valkyrie Boltstorm', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', type: 'Mech', element: 'Lightning', astralRing: 'World Star', artag: ['World Star', 'Domain Resonance' ] , url: '/valk/helia', endsoearly: false, surplus: false, cost: 150},
+    { name: 'Valkyrie Blastmetal', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', type: 'Psy', element: 'Fire', astralRing: 'Rite of Oblivion', artag: [ 'Rite of Oblivion','Domain Resonance', 'Omniscient Star' ] , url: '/valk/coralie', endsoearly: false, surplus: false, cost: 150},
+
+    { name: 'Herrscher of Finality', image: '/images/valkportrait/Kiana Herrscher of Finality.png', type: 'Img', element: 'Fire', astralRing:  'Rite of Oblivion', artag: [ 'Rite of Oblivion','Domain Resonance', 'Omniscient Star'] , url: '/valk/hofi', endsoearly: false, surplus: false, cost: 150 },
+    { name: 'Herrscher of Origin', image: '/images/valkportrait/Mei Herrscher of Origin.png', type: 'Img', element: 'Lightning', endsoearly: false, surplus: false, url: '/valk/hoo'} ,
+    { name: 'Herrscher of Truth', image: '/images/valkportrait/Bronya Herrscher of Truth.png', type: 'Img', element: 'Ice' , endsoearly: false, surplus: false, url: '/valk/hotr' } ,
        ];

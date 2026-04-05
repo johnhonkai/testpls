@@ -1,5 +1,8 @@
 
 export const astralop = [
+
+    { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', type: "asop"},
+
     { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png', type: "asop"},
 
     { name: 'Theresa', image: '/images/valkportrait/asop_teri.png', type: "asop"},

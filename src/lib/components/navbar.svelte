@@ -33,16 +33,7 @@ function handleClick(event, path) {
   let isNavbarVisible = true;
   let lastScrollY = 0;
 
-  let navLinks = [
-    { name: 'Home', href: '/', img: "" },
-    { name: 'Valkyrie', href: '/valk' , img: ""},
-    { name: 'Account Planner', href: '/planner', img: "" },
-    { name: 'AstralOp', href: '/asop', img: "/images/navbar/astralop.webp" },
-    { name: 'Boss', href: '/boss', img: "" },
-    { name: 'Timeline', href: '/calendar87', img: "" },
-    { name: 'Classroom', href: '/classroom', img: "" },
-    { name: 'Beta News', href: '/betanews' , img: ""},
-  ];
+
 
   function toggleMenu() {
     isOpen = !isOpen;
@@ -74,7 +65,8 @@ function handleClick(event, path) {
 				<a href="/" class="nav-link custom-font" data-sveltekit-preload-data="hover">Home</a>
 			</li>
 <li aria-current={$page.url.pathname.startsWith('/valk') ? 'page' : $page.url.pathname.startsWith('/ar') ? 'page' : undefined}>
-  <div class="relative group mt-3.5 -mr-1">
+  
+	<div class="relative group mt-3.5 -mr-1">
 				<!-- Button -->
     <div
       class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
@@ -164,9 +156,73 @@ function handleClick(event, path) {
 
 
 
-      <li aria-current={$page.url.pathname === '/asop' ? 'page' : undefined}>
-				<a href="/asop" class="nav-link custom-font" data-sveltekit-preload-data="hover">AstralOp</a>
+<li aria-current={$page.url.pathname.startsWith('/astralop') ? 'page' : $page.url.pathname.startsWith('/asop') ? 'page' : undefined}>
+  
+  <div class="relative group mt-3.5 -mr-1">
+				<!-- Button -->
+    <div
+      class="nav-link custom-font text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer"
+      on:click={(e) => handleClick(e, '/astralop')}
+    >
+      ASTRALOP▾
+    </div>
+			  
+				<!-- Dropdown -->
+				<div
+				  class="absolute top-5 -right-40 w-[250px] bg-zinc-900 text-white shadow-xl rounded-lg
+				  invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50"
+				>
+				  <div class="grid grid-cols-1 gap-4 p-4">
+
+					<div class="flex flex-col gap-3">
+												<a
+						href="/astralop"
+						data-sveltekit-preload-data="hover"
+					  >
+					  <div
+						class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer"
+					  >
+
+						<div class="font-semibold">
+														        <span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-pink-400">
+          <Fa icon={faHeart} />
+		  AstralOp Guide
+        </span>  
+
+
+						</div>
+
+						<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Learn about AstralOp</p>
+					  </div>
+					</a>
+		
+		<a
+		href="/asop"
+		data-sveltekit-preload-data="hover"
+		>
+		<div class="p-2 rounded-md transition hover:bg-zinc-800  cursor-pointer">
+
+		<div class="font-semibold">		
+		<span 
+        class="relative z-10 flex items-center gap-2 cursor-pointer text-center text-amber-400">
+          <Fa icon={faStar} />
+		  Asop Calculator
+        </span>  
+		</div>
+		<p class="text-sm text-zinc-400 group-hover:text-zinc-300">Calculate buffs in various teams</p>
+		</div>
+		</a>
+											
+
+
+
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</li>
+
 
 
 			

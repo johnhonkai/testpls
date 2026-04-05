@@ -14,7 +14,9 @@ export const initialar = [
 
 
 ];
-
+export const surplusar = [
+   
+];
 
 export const postsoar = [
  
