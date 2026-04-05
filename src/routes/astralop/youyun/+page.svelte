@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Youyun" />
     <meta property="og:description" content="Youyun Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/njVB2ah.png" />
+    <meta property="og:image" content="https://i.imgur.com/fZa0crZ.png" />
     <meta property="og:url" content="https://marisaimpact.com/astralop/youyun" />
     <meta property="og:type" content="website" />
 
