@@ -369,7 +369,7 @@ async function increaseLike() {
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>The new best AstralOp for World Star teams.</li>
-                <li>Significantly stronger for DPS characters that utilize Stellar Surplus mechanic. Currently, only Silverwing DLC has Stellar Surplus.</li>
+                <li>Youyun is really broken for DPS characters that utilize Stellar Surplus mechanic. The numbers are just massive in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>
 
@@ -405,7 +405,7 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>S-rank is enough for Red Lotus. </li>
-                <li>SS-rank is the optimal rank. SS gives 90 initial sp, allowing valks to get Stellar Surplus very fast. SS also unlocks early SO end for valks like Sparkle and SIMP.</li>
+                <li>SS-rank is the optimal rank. SS gives 90 initial sp, allowing valks to get Stellar Surplus very fast. SS also enables valks like Sparkle and SIMP to end Stellar Outburst early.</li>
                 <li>SSS-rank gives more ar regen and makes enemies take more dmg during Surplus state.</li>
 
 
