@@ -369,6 +369,7 @@ async function increaseLike() {
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Youyun is the new best Astral Op for World Star teams.</li>
+                <li>Youyun can trigger additional Resonance DMG.</li>
                 <li>Youyun is really broken for DPS that utilize Stellar Surplus mechanic. The numbers are big in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>
@@ -380,7 +381,7 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Youyun is the best Astral Op for WoD DPS that utilize Stellar Surplus mechanic. Currently, only Miss Espionage has Stellar Surplus.</li>
-                <li>For non-Surplus DPS, Youyun is still very good, but <a class="link" href="/astralop/serapeum">Serapeum</a> is better.</li>
+                <li>For non-Surplus DPS, Youyun is still very good, but <a class="link" href="/astralop/serapeum">Serapeum</a> is better. Youyun gives more dmg during AC, but less dmg during SO. Youyun also gives less initial AR and post-so AR.</li>
                 <li>Provides initial ar, SO cd reduction, and recover ar during SO.</li>
 
           </ul>   
