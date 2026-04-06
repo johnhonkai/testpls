@@ -269,10 +269,16 @@ async function increaseLike() {
   accent="bg-orange-800"
   image="/images/valkfull/asop_songque.png"
   alt="Songque"
-  title="Songque"
-  release="v7.3 (29 Feb 2024)"
-  name="Songque"
   valk="false"
+
+  titleEN="Songque"
+  titleCN="松雀"
+
+  nameEN="Songque 'Maria'"
+  nameCN="松雀·玛丽娅"
+
+  releaseEN="v7.3 (29 Feb 2024)"
+  releaseCN="v7.3 (1 Feb 2024)"  
 >
   <CharBio mode="support" ar={[ 'ws' ]} bg="bg-orange-800" />
 </CharacterLayout>

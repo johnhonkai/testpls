@@ -263,10 +263,19 @@ function selectTabMobile(event) {
   accent="bg-pink-800"
   image="/images/valkfull/hoh.webp"
   alt="Herrscher of Human: Ego"
-  title="Herrscher of Human: Ego"
-  name="Elysia"
-  release="v6.0 (15 Sep 2022)"
-  dlc="v8.1 (20 Feb 2025)"
+
+  titleEN="Herrscher of Human: Ego"
+  titleCN="真我·人之律者"
+
+  nameEN="Elysia"
+  nameCN="爱莉希雅"
+
+  releaseEN="v6.0 (15 Sep 2022)"
+  releaseCN="v6.0 (18 Aug 2022)"  
+
+  dlcEN="v8.1 (20 Feb 2025)"
+  dlcCN="v8.1 (23 Jan 2025)"  
+       
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="psy" element="ice" ar="wod" bg="bg-pink-800" />

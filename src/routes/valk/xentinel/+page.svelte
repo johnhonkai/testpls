@@ -245,7 +245,7 @@ async function increaseLike() {
   }
 
   #app {
-  height: 36rem;
+  height: 37rem;
   overflow: hidden;
   position: relative;
 }
@@ -273,10 +273,16 @@ async function increaseLike() {
   initialLikes={likesData["newmei"] || 0}
   accent="bg-violet-800"
   image="/images/valkfull/newmei.png"
-  alt="Messenger of Love"
-  title="Xentinel · Dawnbearing Crescent"
-  name="Raiden Mei"
-  release="v8.7 (5 Mar 2026)"
+  alt="Xentinel"
+
+  titleEN="Xentinel · Dawnbearing Crescent"
+  titleCN="镇×偃月叩晓"
+
+  nameEN="Raiden Mei"
+  nameCN="雷电芽衣"
+
+  releaseEN="v8.7 (5 Mar 2026)"
+  releaseCN="v8.7 (5 Feb 2026)"
 >
   <CharBio mode="dps" rank="s" type="mech" element="phy" ar="goi" bg="bg-violet-800" />
   <CharBio mode="support" ar={['goi' , 'loa', 'ws' ]} bg="bg-violet-800" />

@@ -254,9 +254,16 @@ function selectTabMobile(event) {
   accent="bg-red-800"
   image="/images/valkfull/Helia.webp"
   alt="Valkyrie Boltstorm"
-  title="Valkyrie Boltstorm"
-  name="Erdős Helia"
-  release="v7.3 (29 Feb 2024)"
+
+  titleEN="Valkyrie Boltstorm"
+  titleCN="女武神·巡矢"
+
+  nameEN="Erdős Helia"
+  nameCN="埃尔德什·赫丽娅"
+
+  releaseEN="v7.3 (29 Feb 2024)"
+  releaseCN="v7.3 (1 Feb 2024)"  
+
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="a" type="mech" element="lightning" ar="ws"  bg="bg-red-800"/>

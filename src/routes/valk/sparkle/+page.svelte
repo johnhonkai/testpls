@@ -255,11 +255,17 @@ function selectTabMobile(event) {
   charName="sparkle"
   initialLikes={likesData["sparkle"] || 0}
   accent="bg-rose-800"
-  image="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/valkfull/sparkle.webp"
+  image="/images/valkfull/sparkle.webp"
   alt="Thousand-Faced Maestro: Cameo!"
-  title="Thousand-Faced Maestro: Cameo!"
-  name="Sparkle"
-  release="v7.9 (28 Nov 2024)"
+
+  titleEN="Thousand-Faced Maestro: Cameo!"
+  titleCN="诡戏千役「友情出演！」"
+
+  nameEN="Sparkle"
+  nameCN="花火"
+
+  releaseEN="v7.9 (28 Nov 2024)"
+  releaseCN="v7.9 (31 Oct 2024)"    
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="qua" element="fire" ar="ws" bg="bg-rose-800" />

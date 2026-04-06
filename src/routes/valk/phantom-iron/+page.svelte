@@ -20,6 +20,9 @@ import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import he
 import { getFirestore } from "firebase/firestore";
 import { app } from "$lib/firebaseConfig";
 
+import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+import CharBio from "$lib/components/CharBio.svelte";
+
 const db = getFirestore(app); // Ensure this is used for Firebase operations
 
   import { goto } from '$app/navigation';
@@ -224,105 +227,39 @@ function selectTabMobile(event) {
 </style>
 
 
-<div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-4 md:mt-0  pt-2	sm:pt-0">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
     <img src="/images/bg/wave_jd.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
-  
-  
-  
-  <!-- Left: Character Image -->
-  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/Phantom Iron.png" alt="Rita" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-51;"/> 
-  
-    <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-      <button
-        on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-        <span class="text-white font-semibold">{fovlikes}</span>
-      </button>
-    </div>
-  
-  </div>
-  
-  
-  
-  <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start">
-     <!-- Language Toggle -->
-    <div class="mt-2 mb-2 flex items-center justify-center w-full">
-      <div class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 border border-white/10 px-1 py-1 text-xs shadow-sm backdrop-blur-sm">
-
-        <button
-          type="button"
-          on:click={() => setLang('EN')}
-          class="px-3 py-1 rounded-full font-semibold transition-all"
-          class:bg-pink-500={currentLang === 'EN'}
-          class:text-white={currentLang === 'EN'}
-          class:bg-transparent={currentLang !== 'EN'}
-          class:text-slate-300={currentLang !== 'EN'}
-          class:hover:text-white={currentLang !== 'EN'}
-        >
-          EN
-        </button>
-
-        <button
-          type="button"
-          on:click={() => setLang('CN')}
-          class="px-3 py-1 rounded-full font-semibold transition-all"
-          class:bg-pink-500={currentLang === 'CN'}
-          class:text-white={currentLang === 'CN'}
-          class:bg-transparent={currentLang !== 'CN'}
-          class:text-slate-300={currentLang !== 'CN'}
-          class:hover:text-white={currentLang !== 'CN'}
-        >
-          CN
-        </button>
-      </div>
-    </div>
-
-    <!-- Battlesuit Name -->
-    <div class="mt-1">
-      <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">
-        {activeData.battlesuitName}
-      </h1>
-    </div>
-
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 my-2">
-      {activeData.infoLine}
-    </p>
-  
-    <!-- Common wrapper to ensure same width -->
-    <div class="w-full max-w-sm mb-2">
-      <!-- Container with 4 pictures (Centered) -->
-      <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-green-500 outline-1 bg-green-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <img src="/images/ranks/Valkyrie_A.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconMECH.png" alt="BIO" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Lightning_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-  
-        </div>
 
 
-      </div>
 
-    </div> <!-- End common wrapper -->
-  </div>
-  </section>
+<CharacterLayout
+  charName="pi"
+  initialLikes={likesData["pi"] || 0}
+  accent="bg-green-800"
+  image="/images/valkfull/Phantom%20Iron.png"
+  alt="Phantom Iron"
+  valk="false"
+
+  titleEN="Phantom Iron"
+  titleCN="猎袭装·影铁"
+
+  nameEN="Rita Rossweisse"
+  nameCN="丽塔·洛丝薇瑟"
+
+  releaseEN="v3.0 (18 Apr 2019)"
+  releaseCN="v2.8 (6 Dec 2018)"  
+ 
+>
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="a" type="mech" element="lightning"  bg="bg-green-800"/>
+
+
+</CharacterLayout>
+
+
+</section>
   
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 

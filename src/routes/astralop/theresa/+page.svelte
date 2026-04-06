@@ -268,10 +268,16 @@ async function increaseLike() {
   accent="bg-teal-800"
   image="/images/valkfull/asop_theresa.png"
   alt="Theresa"
-  title="Theresa"
-  release="v8.1 (20 Feb 2025)"
-  name="Theresa Apocalypse"
   valk="false"
+
+  titleEN="Schicksal's Imperative"
+  titleCN="天命难逃"
+
+  nameEN="Theresa Apocalypse"
+  nameCN="德丽莎·阿波卡利斯"
+
+  releaseEN="v8.1 (20 Feb 2025)"
+  releaseCN="v8.1 (23 Jan 2024)"     
 >
   <CharBio mode="support" ar={['loa' , 'roo' ]} bg="bg-teal-800" />
 </CharacterLayout>

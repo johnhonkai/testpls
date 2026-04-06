@@ -267,9 +267,15 @@ function selectTabMobile(event) {
   accent="bg-emerald-800"
   image="/images/valkfull/jd.webp"
   alt="JD"
-  title="Jovial Deception: Shadowdimmer"
-  name="Songque 'Maria'"
-  release="v7.6 (25 July 2024)"
+
+  titleEN="Jovial Deception: Shadowdimmer"
+  titleCN="瞒天乐游·曙影"
+
+  nameEN="Songque 'Maria'"
+  nameCN="松雀·玛丽娅"
+
+  releaseEN="v7.6 (25 July 2024)"
+  releaseCN="v7.6 (27 June 2024)"       
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="sd" element="phy" ar="wod"  bg="bg-emerald-800"/>

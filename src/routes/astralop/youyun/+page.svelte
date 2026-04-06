@@ -268,11 +268,19 @@ async function increaseLike() {
   initialLikes={likesData["youyun"] || 0}
   accent="bg-pink-800"
   image="/images/valkfull/youyun.png"
-  alt="Messenger of Love"
-  title="Youyun"
-  release="v8.8 (30 April 2026)"
-  name="Bailu Youyun"
+  alt="Youyun"
+
   valk="false"
+
+  titleEN="Youyun"
+  titleCN="游云"
+
+  nameEN="Bailu Youyun"
+  nameCN="白鹿游云"
+
+  releaseEN="v8.8 (30 Apr 2026)"
+  releaseCN="v8.8 (2 Apr 2026)"  
+
 >
   <CharBio mode="support" ar={['ws' , 'wod' ]} bg="bg-pink-800" />
 </CharacterLayout>

@@ -263,9 +263,15 @@ function selectTabMobile(event) {
   accent="bg-orange-800"
   image="/images/valkfull/Senadina.webp"
   alt="sena"
-  title="Deepspace Anchor: First Light"
-  name="Senadina"
-  release="v7.3 (29 Feb 2024)"
+
+  titleEN="Deepspace Anchor: First Light"
+  titleCN="深空定锚·曙光"
+
+  nameEN="Senadina"
+  nameCN="希娜狄雅"
+
+  releaseEN="v7.3 (29 Feb 2024)"
+  releaseCN="v7.3 (1 Feb 2024)"      
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="sd" element="lightning" ar="ws" bg="bg-orange-800" />

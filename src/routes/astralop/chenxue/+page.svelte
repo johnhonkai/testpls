@@ -267,11 +267,17 @@ async function increaseLike() {
   initialLikes={likesData["chenxue"] || 0}
   accent="bg-red-800"
   image="/images/valkfull/chenxue.png"
-  alt="Messenger of Love"
-  title="Chenxue"
-  release="v8.4 (21 Aug 2025)"
-  name="Luo Chenxue"
+  alt="Chenxue"
   valk="false"
+
+  titleEN="Chenxue"
+  titleCN="晨雪"
+
+  nameEN="Luo Chenxue"
+  nameCN="洛晨雪"
+
+  releaseEN="v8.4 (21 Aug 2025)"
+  releaseCN="v8.4 (24 Jul 2025)"    
 >
   <CharBio mode="support" ar={['goi' , 'roo' ]} bg="bg-red-800" />
 </CharacterLayout>

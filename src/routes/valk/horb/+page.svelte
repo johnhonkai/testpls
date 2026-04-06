@@ -275,10 +275,19 @@ function selectTabMobile(event) {
   accent="bg-violet-800"
   image="/images/valkfull/horb.webp"
   alt="Herrscher of Rebirth"
-  title="Herrscher of Rebirth"
-  name="Seele Vollerei"
-  release="v6.8 (3 Aug 2023)"
-  dlc="v8.5 (23 Oct 2025)"
+
+  titleEN="Herrscher of Rebirth"
+  titleCN="死生之律者"
+
+  nameEN="Seele Vollerei"
+  nameCN="希儿·芙乐艾"
+
+  releaseEN="v6.8 (3 Aug 2023)"
+  releaseCN="v6.8 (6 Jul 2023)"
+
+  dlcEN="v8.5 (23 Oct 2025)"
+  dlcCN="v8.5 (25 Sep 2025)"
+
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="psy" element="phy" ar="ws" bg="bg-violet-800" />

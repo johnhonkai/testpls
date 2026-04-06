@@ -274,10 +274,20 @@ async function increaseLike() {
   accent="bg-blue-800"
   image="/images/valkfull/sw.webp"
   alt="Silverwing N-EX"
-  title="Silverwing N-EX"
-  name="Bronya Zaychik"
-  release="v5.4 (13 Jan 2022)"
-  dlc="v8.8 (30 Apr 2026)"
+
+  titleEN="Silverwing N-EX"
+  titleCN="次生银翼"
+
+  nameEN="Bronya Zaychik"
+  nameCN="布洛妮娅·扎伊切克"
+
+  releaseEN="v5.4 (13 Jan 2022)"
+  releaseCN="v5.4 (16 Dec 2021)"
+
+
+  dlcEN="v8.8 (30 Apr 2026)"
+  dlcCN="v8.8 (2 Apr 2026)"
+
 >
   <CharBio mode="dps" rank="s" type="bio" element="ice" ar="ws" bg="bg-blue-800" />
   <CharBio mode="support" ar={['ws' , 'loa']} bg="bg-blue-800" />

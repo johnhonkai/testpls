@@ -24,6 +24,7 @@ const db = getFirestore(app); // Ensure this is used for Firebase operations
 
   import { goto } from '$app/navigation';
   import likesData from '$lib/data/likes.json'; // Import local JSON data
+	import CharBio from "$lib/components/CharBio.svelte";
 
 
 import Lightbox from '$lib/components/lightbox.svelte';
@@ -34,6 +35,8 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import P1lightningdps from "$lib/components/lineup/p1lightningdps.svelte";
 	import P1fire from "$lib/components/lineup/p1fire.svelte";
 	import Horbdps from "$lib/components/lineup/horbdps.svelte";
+	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import CharacterLayoutShort from "$lib/components/valkpage/CharacterLayoutShort.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -232,113 +235,42 @@ function selectTabMobile(event) {
 </style>
 
 
-<div class="sm:mt-14"></div>
-<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0  md:mt-0  pt-4	sm:pt-0	">
+<section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-4 md:mt-0  pt-2	sm:pt-0">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
     <img src="/images/bg/wave_lv.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
-  
-  
-  
-  <!-- Left: Character Image -->
-  <div class="relative  w-auto h-48 sm:h-60 md:h-72 flex justify-center " id="valkpicbox">
-    <!-- Image for Larger Screens -->
-    <img src="/images/valkfull/Vermilion Knight.png" alt="Sirin" class="h-full w-auto object-cover md:object-contain  " style ="view-transition-name: valkyrie-image-51;"/> 
-  
-    <div class="absolute bottom-0 left-0 like-container flex items-center gap-2 mt-4">
-      <button
-        on:click={increaseLike}
-        class="bg-gray-800 text-white px-4 py-2 rounded transition-all flex items-center gap-2
-               {hasLiked ? '' : 'hover:bg-blue-700'}">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-          />
-        </svg>
-        <span class="text-white font-semibold">{fovlikes}</span>
-      </button>
-    </div>
-  
-  </div>
-  
-  
-  
-  <!-- Right: Character Info (Centered) -->
-  <div class="flex flex-col items-center text-center justify-start">
-     <!-- Language Toggle -->
-    <div class="mt-2 mb-2 flex items-center justify-center w-full">
-      <div class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 border border-white/10 px-1 py-1 text-xs shadow-sm backdrop-blur-sm">
-
-        <button
-          type="button"
-          on:click={() => setLang('EN')}
-          class="px-3 py-1 rounded-full font-semibold transition-all"
-          class:bg-pink-500={currentLang === 'EN'}
-          class:text-white={currentLang === 'EN'}
-          class:bg-transparent={currentLang !== 'EN'}
-          class:text-slate-300={currentLang !== 'EN'}
-          class:hover:text-white={currentLang !== 'EN'}
-        >
-          EN
-        </button>
-
-        <button
-          type="button"
-          on:click={() => setLang('CN')}
-          class="px-3 py-1 rounded-full font-semibold transition-all"
-          class:bg-pink-500={currentLang === 'CN'}
-          class:text-white={currentLang === 'CN'}
-          class:bg-transparent={currentLang !== 'CN'}
-          class:text-slate-300={currentLang !== 'CN'}
-          class:hover:text-white={currentLang !== 'CN'}
-        >
-          CN
-        </button>
-      </div>
-    </div>
-
-    <!-- Battlesuit Name -->
-    <div class="mt-1">
-      <h1 class="text-xl md:text-2xl text-slate-100 font-bold text-center leading-4 mb-4 sm:mb-0">
-        {activeData.battlesuitName}
-      </h1>
-    </div>
-
-    <!-- Character Name and Release Date -->
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-2">
-      {activeData.infoLine}
-    </p>
-      
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-1">   
-      {activeData.infoLine2}
-    </p>
-
-    <p class="text-base md:text-md text-center md:block hidden text-slate-300 mt-1 mb-4">   
-      {activeData.infoLine3}
-    </p>
-
-    <!-- Common wrapper to ensure same width -->
-    <div class="w-full max-w-sm mb-2">
-      <!-- Container with 4 pictures (Centered) -->
-      <div class="flex flex-col items-center">
-        <div class="flex w-[260px] md:w-[300px] gap-2 flex-wrap justify-center outline outline-red-500 outline-1 bg-red-950/75 rounded-lg p-2 backdrop-blur-xs">
-          <img src="/images/ranks/Valkyrie_S.webp" alt="S-rank" class="w-auto h-8 md:h-10" />
-          <img src="/images/type/IconMECH.png" alt="BIO" class="w-auto h-8 md:h-10" />
-          <img src="/images/element/Core_Fire_DMG.png" alt="Icon 3" class="w-auto h-8 md:h-10" />
-  
-        </div>
 
 
-      </div>
 
-    </div> <!-- End common wrapper -->
-  </div>
-  </section>
+<CharacterLayout
+  charName="vk"
+  initialLikes={likesData["vk"] || 0}
+  accent="bg-red-800"
+  image="/images/valkfull/Vermilion%20Knight.png"
+  alt="Vermilion Knight: Eclipse"
+  valk="false"
+
+  titleEN="Vermilion Knight: Eclipse"
+  titleCN="真红骑士·月蚀"
+
+  nameEN="Murata Himeko"
+  nameCN="无量塔姬子"
+
+  releaseEN="v2.8 (6 Mar 2019)"
+  releaseCN="v2.7 (1 Nov 2018)"  
+
+  dlcEN="v3.5 (14 Dec 2019)"
+  dlcCN="v3.5 (17 Oct 2019)"  
+>
+  <!-- Tags / Type Row -->
+  <CharBio mode="dps" rank="s" type="mech" element="fire"  bg="bg-red-800"/>
+
+
+</CharacterLayout>
+
+
+</section>
+
   
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
@@ -416,6 +348,8 @@ function selectTabMobile(event) {
           <li> Vermilion Knight: Eclipse (VK) was a powerful Fire DPS. </li>
           <li> VK was used in old Abyss mode and against Herrscher of the Void boss in Memorial Arena. </li>
           <li> In 2019, VK acquired a new signature weapon Might of An-Utu - adding a powerful nuke in her playstyle, but with a big drawback: after she uses it, she becomes very weak. In 2020, An-Utu got a PRI-ARM upgrade Shuhadaku of Uriel, which brought VK back to the meta for a while. </li>
+          <li> VK is also used as support as a Blood Dance holder. Blood Dance was a Greatsword weapon that applies a elemental debuff very quickly.</li>
+        
         </ul>
 
 

@@ -271,9 +271,15 @@ function selectTabMobile(event) {
   accent="bg-red-800/80"
   image="/images/valkfull/lantern.webp"
   alt="lantern"
-  title="Lone Destruction: Shadowchaser"
-  name="Tsavorae 'Lantern'"
-  release="v7.5 (6 June 2024)"
+
+  titleEN="Lone Destruction: Shadowchaser"
+  titleCN="破弃孤光·逐影"
+
+  nameEN="Tsavorae 'Lantern'"
+  nameCN="莎芙莱·「灯」"
+
+  releaseEN="v7.5 (6 June 2024)"
+  releaseCN="v7.5 (29 May 2024)"      
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="psy" element="fire" ar="wod"  bg="bg-red-800/80"/>

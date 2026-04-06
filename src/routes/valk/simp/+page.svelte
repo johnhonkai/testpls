@@ -279,9 +279,15 @@ function selectTabMobile(event) {
   accent="bg-violet-800"
   image="/images/valkfull/teri_simp.webp"
   alt="Schicksal's Imperative"
-  title="Schicksal's Imperative"
-  name="Theresa Apocalypse"
-  release="v7.7 (5 Sep 2024)"
+
+  titleEN="Schicksal's Imperative"
+  titleCN="天命难逃"
+
+  nameEN="Theresa Apocalypse"
+  nameCN="德丽莎·阿波卡利斯"
+
+  releaseEN="v7.7 (5 Sep 2024)"
+  releaseCN="v7.7 (8 Aug 2024)"     
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="qua" element="lightning" ar="ws"  bg="bg-violet-800"/>

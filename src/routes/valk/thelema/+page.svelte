@@ -273,9 +273,15 @@ function selectTabMobile(event) {
   accent="bg-red-800"
   image="/images/valkfull/thelema.webp"
   alt="thelema"
-  title="Mad Pleasure: Shadowbringer"
-  name="Thelema Nutrisco"
-  release="v7.4 (25 April 2024)"
+
+  titleEN="Mad Pleasure: Shadowbringer"
+  titleCN="享乐狂宴•邀影"
+
+  nameEN="Thelema Nutrisco"
+  nameCN="瑟莉姆·努特里斯科"
+
+  releaseEN="v7.4 (25 Apr 2024)"
+  releaseCN="v7.4 (28 Mar 2024)"      
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="mech" element="ice" ar="wod"  bg="bg-red-800"/>

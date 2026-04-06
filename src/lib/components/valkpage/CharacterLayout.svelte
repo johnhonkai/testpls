@@ -2,16 +2,39 @@
   import { onMount } from "svelte";
   import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes";
 
+let currentLang: 'EN' | 'CN' = 'EN';
+
+function setLang(lang: 'EN' | 'CN') {
+  currentLang = lang;
+}
+
+
   export let charName: string;
   export let initialLikes: number;
   export let accent: string;
   export let image: string;
   export let alt: string;
-  export let title: string;
-  export let name: string;
-  export let release: string;
-  export let dlc: string | null = null; // ✅ optional DLC date
+
+  export let titleEN: string;
+  export let titleCN: string;
+
+export let nameEN: string;
+export let nameCN: string;
+
+export let releaseEN: string;
+export let releaseCN: string;
+
+export let dlcEN: string | null = null;
+export let dlcCN: string | null = null;
+
   export let valk: boolean = true; // ✅ optional DLC date
+
+$: displayTitle = currentLang === 'EN' ? titleEN : titleCN;
+$: displayName = currentLang === 'EN' ? nameEN : nameCN;
+$: displayRelease = currentLang === 'EN' ? releaseEN : releaseCN;
+$: displayDLC = currentLang === 'EN' ? dlcEN : dlcCN;
+
+
 
   let likes = initialLikes || 0;
   let hasLiked = false;
@@ -80,19 +103,24 @@
     </div>
   </div>
 
+
+
   <!-- Right: Character Info -->
   <div class="flex flex-col items-center text-center justify-start mt-2 sm:mt-10 flex-1 ">
-    {#if valk == true}
-    <h1 class="text-lg md:text-xl text-white sm:mt-4 mb-2 italic font-russoone">{title}</h1>
 
+
+    {#if valk == true}
+
+    <h1 class="text-lg md:text-xl text-white sm:mt-4 mb-2 italic font-russoone">{displayTitle}</h1>
 
     {:else}
-    <h1 class="text-lg md:text-xl text-white sm:mt-10 mb-2 italic font-russoone">{title}</h1>
+    <h1 class="text-lg md:text-xl text-white sm:mt-10 mb-2 italic font-russoone">{displayTitle}</h1>
 
     {/if}
     <!-- Info Cards -->
+<div class="relative rounded-lg  shadow-md w-[260px] md:w-[300px]">    
     <div class="rounded-lg overflow-hidden shadow-md w-[260px] md:w-[300px]">
-      {#if dlc}
+      {#if dlcEN || dlcCN}
         <!-- Compact layout when DLC is present -->
         <div class="flex flex-col">
           <!-- Name -->
@@ -101,7 +129,7 @@
               Name
             </div>
             <div class="bg-slate-200 text-black px-3 py-1 flex-1 text-xs font-medium flex items-center">
-              {name}
+              {displayName}
             </div>
           </div>
 
@@ -111,7 +139,7 @@
               Release
             </div>
             <div class="bg-slate-200 text-black px-3 py-1 flex-1 text-xs font-medium flex items-center">
-              {release}
+              {displayRelease}
             </div>
           </div>
 
@@ -121,7 +149,7 @@
               DLC
             </div>
             <div class="bg-slate-200 text-black px-3 py-1 flex-1 text-xs font-medium flex items-center">
-              {dlc}
+              {displayDLC}
             </div>
           </div>
         </div>
@@ -132,7 +160,7 @@
             Name
           </div>
           <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-            {name}
+            {displayName}
           </div>
         </div>
         <div class="flex rounded-lg overflow-hidden shadow-md mt-2">
@@ -140,12 +168,25 @@
             Release
           </div>
           <div class="bg-slate-200 text-black px-3 py-1 flex-1 flex items-center text-xs font-medium">
-            {release}
+            {displayRelease}
           </div>
         </div>
       {/if}
     </div>
 
+<div class="absolute right-[-12px] top-1/2 -translate-y-1/2">
+  <button
+    on:click={() => currentLang = currentLang === 'EN' ? 'CN' : 'EN'}
+    class="w-8 h-8 rounded-full bg-slate-800 border border-white/10 
+           flex items-center justify-center text-xs font-bold text-white
+           shadow-md backdrop-blur-md
+           hover:scale-110 active:scale-95 transition-all"
+  >
+    {currentLang}
+  </button>
+</div>
+
+</div> 
     <slot /> <!-- Extra (CharBio etc.) -->
   </div>
 </div>

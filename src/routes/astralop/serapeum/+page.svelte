@@ -269,10 +269,16 @@ async function increaseLike() {
   accent="bg-blue-800"
   image="/images/valkfull/asop_sera.png"
   alt="Serapeum"
-  title="Serapeum"
-  release="v7.6 (25 July 2024)"
-  name="Serapeum"
   valk="false"
+
+  titleEN="Serapeum"
+  titleCN="瑟拉珮姆"
+
+  nameEN="Serapeum"
+  nameCN="瑟拉珮姆"
+
+  releaseEN="v7.6 (25 July 2024)"
+  releaseCN="v7.6 (27 June 2024)"  
 >
   <CharBio mode="support" ar={[ 'wod' ]} bg="bg-blue-800" />
 </CharacterLayout>

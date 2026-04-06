@@ -282,9 +282,15 @@ async function increaseLike() {
   accent="bg-pink-800"
   image="/images/valkfull/mol.png"
   alt="Messenger of Love"
-  title="Hi ♪ Love Elf ♥"
-  name="Elysia"
-  release="v8.5 (23 Oct 2025)"
+
+  titleEN="Hi ♪ Love Elf ♥"
+  titleCN="嗨♪爱愿妖精♥"
+
+  nameEN="Elysia"
+  nameCN="爱莉希雅"
+
+  releaseEN="v8.5 (23 Oct 2025)"
+  releaseCN="v8.5 (25 Sep 2025)"
 >
   <CharBio mode="dps" rank="s" type="sd" element="ice" ar="goi" bg="bg-pink-800" />
   <CharBio mode="support" ar={['goi', 'wod', 'ws']} bg="bg-pink-800" />

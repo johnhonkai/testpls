@@ -263,9 +263,15 @@ async function increaseLike() {
   accent="bg-red-800"
   image="/images/valkfull/scoralie.png"
   alt="S Coralie"
-  title="Behold! Fate-Defying Dragon"
-  name="Coralie 6626 Planck"
-  release="v8.4 (21 Aug 2025)"
+
+  titleEN="Behold! Fate-Defying Dragon"
+  titleCN="逆命魔龙·降临！"
+
+  nameEN="Coralie 6626 Planck"
+  nameCN="科拉莉·6626·普朗克"
+
+  releaseEN="v8.4 (21 Aug 2025)"
+  releaseCN="v8.4 (24 Jul 2025)"  
 >
   <CharBio mode="dps" rank="s" type="mech" element="fire" optelement="ignite" ar="roo" bg="bg-red-800" />
   <CharBio mode="support" ar={['goi', 'loa', 'lp', 'all']} bg="bg-red-800" />

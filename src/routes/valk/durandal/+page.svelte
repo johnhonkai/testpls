@@ -256,9 +256,16 @@ async function increaseLike() {
   accent="bg-teal-800"
   image="/images/valkfull/rs.webp"
   alt="Reign Solaris"
-  title="Reign Solaris"
-  name="Bianka 'Durandal' Ataegina"
-  release="v8.0 (9 Jan 2025)"
+
+  titleEN="Reign Solaris"
+  titleCN="天光驰彻"
+
+  nameEN="Bianka 'Durandal' Ataegina"
+  nameCN="比安卡·幽兰黛尔·阿塔吉娜"
+
+  releaseEN="v8.0 (9 Jan 2025)"
+  releaseCN="v8.0 (12 Dec 2024)"  
+
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="img" element="phy" ar="loa" bg="bg-teal-800" />

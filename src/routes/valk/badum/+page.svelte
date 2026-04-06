@@ -274,6 +274,16 @@ async function increaseLike() {
   title="Ba-dum! Fiery Wishing Star"
   name="Kiana Kaslana"
   release="v8.1 (20 Feb 2025)"
+
+  titleEN="Ba-dum! Fiery Wishing Star"
+  titleCN="咚！炽愿吉星"
+
+  nameEN="Kiana Kaslana"
+  nameCN="琪亚娜·卡斯兰娜"
+
+  releaseEN="v8.1 (20 Feb 2025)"
+  releaseCN="v8.1 (23 Jan 2025)"    
+
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="sd" element="fire" ar="loa" bg="bg-red-800" />

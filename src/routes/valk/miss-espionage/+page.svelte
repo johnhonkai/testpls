@@ -271,10 +271,17 @@ async function increaseLike() {
   initialLikes={likesData["agentrita"] || 0}
   accent="bg-violet-800"
   image="/images/valkfull/agent_rita.png"
-  alt="Messenger of Love"
-  title="Miss Espionage"
-  name="Rita Rossweisse "
-  release="v8.6 (31 Dec 2025)"
+  alt="Miss Espionage"
+
+  titleEN="Miss Espionage"
+  titleCN="窈窕谍影"
+
+  nameEN="Rita Rossweisse"
+  nameCN="丽塔·洛丝薇瑟"
+
+  releaseEN="v8.6 (31 Dec 2025)"
+  releaseCN="v8.6 (4 Dec 2025)"
+
 >
   <CharBio mode="dps" rank="s" type="img" element="lightning" ar="wod" bg="bg-violet-800" />
   <CharBio mode="support" ar={['wod' , 'loa']} bg="bg-violet-800" />
@@ -975,8 +982,9 @@ async function increaseLike() {
         <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Use both supports.</li>
           <li>Activate Stellar Outburst.</li>
-          <li>Press support valk icon. Spam weapon until full meter and you do that finisher attack, repeat this one more time.</li>
+          <li>Press support valk. Spam weapon until full meter and you do that finisher attack, repeat this one more time.</li>
           <li>Repeat step 2 for the other support.</li>
           <li>Use ult finisher.</li>
           <li>Repeat.</li>

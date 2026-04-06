@@ -266,10 +266,18 @@ function selectTabMobile(event) {
   accent="bg-fuchsia-800"
   image="/images/valkfull/kiana_hofi.webp"
   alt="Herrscher of Finality"
-  title="Herrscher of Finality"
-  name="Kiana Kaslana"
-  release="v6.4 (16 Feb 2023)"
-  dlc="v7.8 (17 Oct 2024)"
+
+  titleEN="Herrscher of Finality"
+  titleCN="终焉之律者"
+
+  nameEN="Kiana Kaslana"
+  nameCN="琪亚娜·卡斯兰娜"
+
+  releaseEN="v6.4 (16 Feb 2023)"
+  releaseCN="v6.4 (19 Jan 2023)"   
+
+  dlcEN="v7.8 (17 Oct 2024)"
+  dlcCN="v7.8 (19 Sep 2024)"   
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="img" element="fire" ar="roo" bg="bg-fuchsia-800" />

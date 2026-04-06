@@ -243,7 +243,7 @@ async function increaseLike() {
 }
 
 #app {
-  height: 35rem;
+  height: 37rem;
   overflow: hidden;
   position: relative;
 }
@@ -352,15 +352,22 @@ async function increaseLike() {
     
       </div>
 
-<CharacterLayoutShort
+<CharacterLayout
   charName="ps"
   initialLikes={likesData["ps"] || 0}
   accent="bg-emerald-900"
   image="/images/valkfull/ps.png"
   alt="PS"
-  title="Peregrine Sword"
-  name="Li Sushang"
-  release="v8.2 (24 Apr 2025)"
+
+  titleEN="Peregrine Sword"
+  titleCN="一客逍游"
+
+  nameEN="Li Sushang"
+  nameCN="李素裳"
+
+  releaseEN="v8.2 (24 Apr 2025)"
+  releaseCN="v8.2 (27 Mar 2025)"    
+
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="bio" element="phy" optelement="bleed" ar="loa" bg="bg-emerald-900"/>
@@ -368,7 +375,7 @@ async function increaseLike() {
   <!-- Support Section -->
   <CharBio mode="support" ar={['goi','loa' ]}  bg="bg-emerald-900"/>
 
-</CharacterLayoutShort>
+</CharacterLayout>
 
 
 

@@ -274,10 +274,18 @@ async function increaseLike() {
   accent="bg-red-800"
   image="/images/valkfull/lunar_vow.png"
   alt="Lunar Vow: Crimson Love"
-  title="Lunar Vow: Crimson Love"
-  name="Theresa"
-  release="v7.0 (26 Oct 2023)"
-  dlc="v8.7 (5 Mar 2026)"
+
+  titleEN="Lunar Vow: Crimson Love"
+  titleCN="月下誓约•予爱以心"
+
+  nameEN="Theresa - Luna"
+  nameCN="德丽莎 - 月下"
+
+  releaseEN="v7.0 (26 Oct 2023)"
+  releaseCN="v7.0 (28 Sep 2023)"
+
+  dlcEN="v8.7 (5 Mar 2026)"
+  dlcCN="v8.7 (5 Feb 2026)"
 >
   <CharBio mode="dps" rank="s" type="psy" element="lightning" optelement="bleed" ar="goi" bg="bg-red-800" />
   <CharBio mode="support" ar={['goi' , 'loa' , 'p1lightning']} bg="bg-red-800" />

@@ -260,9 +260,15 @@ function selectTabMobile(event) {
   accent="bg-emerald-900"
   image="/images/valkfull/vita.webp"
   alt="Lone Planetfarer"
-  title="Lone Planetfarer"
-  name="Vita"
-  release="v7.8 (17 Oct 2024)"
+
+  titleEN="Lone Planetfarer"
+  titleCN="孑遗千星"
+
+  nameEN="Vita"
+  nameCN="薇塔"
+
+  releaseEN="v7.8 (17 Oct 2024)"
+  releaseCN="v7.8 (19 Sep 2024)"   
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo"  />

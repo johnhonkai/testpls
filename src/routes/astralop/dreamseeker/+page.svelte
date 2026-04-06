@@ -269,10 +269,17 @@ async function increaseLike() {
   accent="bg-zinc-800"
   image="/images/valkfull/asop_dreamseeker.png"
   alt="Dreamseeker"
-  title="Dreamseeker"
-  release="v7.3 (29 Feb 2024)"
-  name="Entropy"
+
   valk="false"
+
+  titleEN="Dreamseeker"
+  titleCN="寻梦者"
+
+  nameEN="Entropy"
+  nameCN="熵"
+
+  releaseEN="v7.3 (29 Feb 2024)"
+  releaseCN="v7.3 (1 Feb 2024)"    
 >
   <CharBio mode="support" ar={[ 'all' ]} bg="bg-zinc-800" />
 </CharacterLayout>

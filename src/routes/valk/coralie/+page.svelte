@@ -248,10 +248,16 @@ onMount(async () => {
   initialLikes={likesData["coralie"] || 0}
   accent="bg-red-800"
   image="/images/valkfull/Coralie.png"
-  alt="paws"
-  title="Valkyrie Blastmetal"
-  name="Coralie 6626 Planck"
-  release="v7.3 (29 Feb 2024)"
+  alt="Valkyrie Blastmetal"
+
+  titleEN="Valkyrie Blastmetal"
+  titleCN="女武神·重机"
+
+  nameEN="Coralie 6626 Planck"
+  nameCN="科拉莉·6626·普朗克"
+
+  releaseEN="v7.3 (29 Feb 2024)"
+  releaseCN="v7.3 (1 Feb 2024)"     
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="a" type="psy" element="fire" ar="roo"  bg="bg-red-800"/>
