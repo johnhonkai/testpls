@@ -377,7 +377,7 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Other AR </strong> 
               <br/>
-              Songque has unrestricted Ele buff.
+              Songque has unrestricted Ele buff. Post-SO AR regen only require characters with Domain Resonance trait.
           </p>
  
 
@@ -465,7 +465,7 @@ async function increaseLike() {
                 <li class="mb-2">In Astral Ring Charging state, landing an attack sends all team members into Intensity Recovery state for 1s, which restores 1 Astral Ring Intensity per 0.5s. Start a battle with 50 more Astral Ring Intensity, which applies once every 10 min in Part 2's Open World and shares a CD with other AstralOps. Once created, the magic circle will inflict Shadow Plague on all enemies until Stellar Outburst state ends. Shadow-Plagued enemies take 30% more Elemental DMG.</li>
                 <li class="mb-2">[Team-triggered] When Deepspace Anchor: First Light is on the team, initial Astral Ring Intensity increases by 25. </li>
                 <li class="mb-2"><strong class="text-amber-400">[SS]</strong> [Team-triggered] When Stellar Outburst ends, if the team has 1/2/3 member(s) with the Domain Resonance trait, restores Astral Ring Intensity by 10/20/30. CD: 40s.</li>
-                <li class="mb-2"><strong class="text-amber-400">[SSS]</strong> During Stellar Outburst, all team members deal 20% more Total DMG with Resonance and all enemies take 5% more Lightning DMG.</li>
+                <li class="mb-2"><strong class="text-amber-400">[SSS]</strong> During Stellar Outburst, all team members' Resonance ATK deal 20% more Total DMG and all enemies take 5% more Lightning DMG.</li>
           </ul> 
 
           <div class="divider  "></div>

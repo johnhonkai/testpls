@@ -271,7 +271,7 @@ async function increaseLike() {
   alt="Dreamseeker"
   title="Dreamseeker"
   release="v7.3 (29 Feb 2024)"
-  name="Dreamseeker"
+  name="Entropy"
   valk="false"
 >
   <CharBio mode="support" ar={[ 'all' ]} bg="bg-zinc-800" />
@@ -382,7 +382,7 @@ async function increaseLike() {
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Spenders</strong> <br/>  
-              Ignore everything I wrote above. DS sucks balls. Get the new Astral Ops.
+              Ignore everything I wrote above. DS sucks. Get the new Astral Ops.
           </p>
 
           <div class="divider  "></div>
@@ -460,7 +460,6 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li class="mb-2">All team members deal 12% more Total DMG and AstralOp deals 20% more Total DMG.</li>
                 <li class="mb-2">During Stellar Outburst, the team recovers 40 HP every second.</li>
-                <li class="mb-2"><strong class="text-amber-400">[SS]</strong> [Team-triggered] For each team member with the Symbiosis or Omniscient Star trait, enemies take 1.5% more Total DMG.</li>
                 <li class="mb-2"><strong class="text-amber-400">[SSS]</strong> Typeless enemies take 5% more Total DMG from the character.</li>
           </ul> 
 
