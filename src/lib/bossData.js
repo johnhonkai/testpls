@@ -2012,7 +2012,23 @@ export const teamData = {
   },
   firekosma: {
     teamDataSets: [
- 
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_youyun.png"],
+          rank: '-',
+          pct: '-',
+        },
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_youyun.png"],
+          rank: '-',
+          pct: '-',
+        },        
+      ]}, 
       {
         tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
