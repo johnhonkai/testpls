@@ -110,7 +110,7 @@ export const postsoar = [
 
     {
         rank: "SS",
-        description: "When any Team Members emptied their Quantum Mech Energy V3: and Domain Resonance Mark is present on the field, then when the next Team Member triggers a Resonance Skill for the first time, Youyun will fire one Artillery Shot: restoring 3.0 Astral Ring Intensity",
+        description: "When any Team Members emptied their Quantum Mech Energy and Domain Resonance Mark is present on the field, then when the next Team Member triggers a Resonance Skill for the first time, Youyun will fire one Artillery Shot: restoring 3.0 Astral Ring Intensity",
 
         condition: { astralRing: "World Star"},
         ar: 6,

@@ -1722,7 +1722,11 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         </li>
       {/if}
         
-
+      {#if (cumulativeBuffs.ultphy > 0) && (cumulativeBuffs.ultele > 0)  }
+        <li>
+          Ultimate Phy and Ele DMG +{ cumulativeBuffs.ultele }%
+        </li>
+      {/if}
 
 
       {#if cumulativeBuffs.tdm > 0 || cumulativeBuffs.actdm > 0 || cumulativeBuffs.sotdm > 0 || cumulativeBuffs.condtdm > 0  }
@@ -2796,6 +2800,11 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
         </li>
       {/if}
 
+      {#if (compareCumulativeBuffs.ultphy > 0) && (compareCumulativeBuffs.ultele > 0)  }
+        <li>
+          Ultimate Phy and Ele DMG + { compareCuumulativeBuffs.ultele }%
+        </li>
+      {/if}
 
       {#if compareCumulativeBuffs.tdm > 0 || compareCumulativeBuffs.actdm > 0 || compareCumulativeBuffs.sotdm > 0 || compareCumulativeBuffs.condtdm > 0  }
         <li>
