@@ -62,6 +62,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
+	import CharacterLayoutShort from "$lib/components/valkpage/CharacterLayoutShort.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -243,7 +244,7 @@ async function increaseLike() {
   }
 
   #app {
-  height: 36rem;
+  height: 35rem;
   overflow: hidden;
   position: relative;
 }
@@ -266,7 +267,7 @@ async function increaseLike() {
     </div>
 
 
-<CharacterLayout
+<CharacterLayoutShort
   charName="agentrita"
   initialLikes={likesData["agentrita"] || 0}
   accent="bg-violet-800"
@@ -285,14 +286,14 @@ async function increaseLike() {
 >
   <CharBio mode="dps" rank="s" type="img" element="lightning" ar="wod" bg="bg-violet-800" />
   <CharBio mode="support" ar={['wod' , 'loa']} bg="bg-violet-800" />
-</CharacterLayout>
+</CharacterLayoutShort>
 
 
 
 
 </section>
 
-<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-8"> 
+<div class="flex max-w-(--breakpoint-xl) justify-center mx-auto sm:mt-10"> 
 
 
   <aside class="w-full sm:max-w-[10rem] md:max-w-[12rem] hidden sm:block p-4  text-gray-200 sticky top-16 h-[calc(100vh-4rem)] " >

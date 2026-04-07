@@ -150,22 +150,38 @@
 
 </script>
 
+<div class="relative w-full h-40 md:h-70 overflow-hidden "  id="bannerpic">
 
-
-<div class="max-w-5xl mx-auto p-4 pb-0 rounded-lg  text-center mb-5">
-
-    <h2 class="text-2xl font-semibold mb-2 text-red-400 ">Supply and Event Timeline</h2>
-    <p class="text-xs sm:text-sm">
-        The data is based on CN server. Schedule might be different for SEA / KR / GLB servers.
-    </p>
-</div>
+    <img
+      src="https://i.imgur.com/0jPW5D8.jpeg"
+      alt="Header"
+      class="w-full h-full object-cover  opacity-35"
+      />
   
+  
+   
+    <!-- Text overlay -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 pb-3 md:pb-0 md:pt-6 z-10">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md font-russoone italic tracking-wider text-shadow-lg/30 ">
+        Supply and Boss Timeline
+      </h1>
+      <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
+        Based on CN server. Schedule might be different for Regional servers.
+
+      </p>
+    </div>
+    
+  
+    <!-- Blur overlay at bottom -->
+    <div class="absolute bottom-0 left-0 w-full h-15 bg-gradient-to-t from-base-100 to-transparent z-0"></div>
+  
+  </div>
 
 <div class="flex justify-center items-end gap-5">
 
     <VersionSelect currentVersion="8.1"></VersionSelect>
 
-  <div role="tablist" class="tabs-border mt-4 space-x-2 ">
+  <div role="tablist" class="tabs-border mt-1 space-x-2 ">
      <button
         role="tab" class="tab {activeTab === 'Supply' ? 'tab-active ' : ''}"
         on:click={() => switchTab("Supply")}

@@ -99,6 +99,7 @@ export const weatherList = {
     {id: 'resovita', name: "Vita - Sea's Depths"},
     {id: 'resoguaymas', name: "Meteoroid: Guaymas"},
     {id: 'resohoc', name: "Herrscher of Corruption"},
+    {id: 'resowhale', name: "Opaque Shadow"},
   
   ],
   melee: [
@@ -179,6 +180,84 @@ export const weatherEffect = {
   stun: "Unbalanced: Enemies take 40% more DMG when stunned and within 4s after the stun ends.",
   ignite: "Ignite: Ignited enemies take 40% more DMG, Ignite DMG +45%",
 
+}
+
+export const mabossData =  {
+
+  varaha:{
+    name: 'Varaha', 
+    bosspic: "images/Bosses/Varaha.png", 
+  },
+
+  akasss:{
+    name: 'Argent Knight: Artemis (SSS)', 
+    bosspic: "images/BossesMA/Argent Knight Artemis_SSS.webp", 
+  },  
+
+  akass:{
+    name: 'Argent Knight: Artemis', 
+    bosspic: "images/BossesMA/Argent Knight Artemis.webp", 
+  },
+
+  sk:{
+    name: 'SK', 
+    bosspic: "images/BossesMA/Shadow Knight (SK).webp", 
+  },
+  
+  epernay:{
+    name: 'Epernay', 
+    bosspic: "images/Bosses/epernay.png", 
+  },
+
+  hodsss:{
+    name: 'HoD SSS', 
+    bosspic: "images/BossesMA/Herrscher of Domination Minion_SSS.webp", 
+  }, 
+  
+  alienguard:{
+    name: 'Alien Guard', 
+    bosspic: "images/Bosses/Alien Guard.webp", 
+  },
+  
+  heimdalsss:{
+    name: 'Heimdal SSS', 
+    bosspic: "images/BossesMA/Aesir Heimdall_SSS.webp", 
+  },
+  
+  duonigue:{
+    name: 'Duonigue', 
+    bosspic: "images/BossesMA/duonigue.png", 
+  },  
+
+  assaka:{
+    name: 'Assaka', 
+    bosspic: "images/BossesMA/Assaka.webp", 
+  }, 
+
+  benaressss:{
+    name: 'Benares SSS', 
+    bosspic: "images/BossesMA/Benares_SSS.webp", 
+  },  
+  
+  huskbull:{
+    name: 'Husk Bull', 
+    bosspic: "images/BossesMA/Husk Mysticism_SSS.webp", 
+  },
+
+  hellmaru:{
+    name: 'Hellmaru', 
+    bosspic: "images/BossesMA/Hellmaru.webp", 
+  }, 
+
+  twins:{
+    name: 'Twins', 
+    bosspic: "images/BossesMA/Wardens_of_tower.webp", 
+  },  
+  
+  doom:{
+    name: 'Doom', 
+    bosspic: "images/BossesMA/Deathly Doom.webp", 
+  },  
 }
 
 export const bossData = {
@@ -630,6 +709,14 @@ export const bossData = {
     bosspic: "images/Bosses/Herrscher of Corruption.webp", 
     weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
   },
+  resowhale: {
+    name: "Opaque Shadow", 
+    mechanics: "", 
+    weakness: 'None', 
+    typeicon: "images/type/IconQUA.png", 
+    bosspic: "images/Bosses/Opaque Shadow.webp", 
+    weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
+  },  
   meleehoc: {
     name: 'Herrscher of Corruption', 
     mechanics: 'Transition phase has high hitcount hp', 

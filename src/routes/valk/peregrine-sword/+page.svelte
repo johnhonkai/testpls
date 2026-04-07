@@ -242,11 +242,7 @@ async function increaseLike() {
   }
 }
 
-#app {
-  height: 37rem;
-  overflow: hidden;
-  position: relative;
-}
+
 
 #star-container {
   background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));
@@ -334,6 +330,11 @@ async function increaseLike() {
   animation: pan 360s linear infinite;
 }
 
+#app {
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+}
 </style>
 
 
@@ -352,7 +353,7 @@ async function increaseLike() {
     
       </div>
 
-<CharacterLayout
+<CharacterLayoutShort
   charName="ps"
   initialLikes={likesData["ps"] || 0}
   accent="bg-emerald-900"
@@ -375,7 +376,7 @@ async function increaseLike() {
   <!-- Support Section -->
   <CharBio mode="support" ar={['goi','loa' ]}  bg="bg-emerald-900"/>
 
-</CharacterLayout>
+</CharacterLayoutShort>
 
 
 
