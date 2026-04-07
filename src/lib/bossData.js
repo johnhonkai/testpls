@@ -2114,7 +2114,13 @@ export const teamData = {
           lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_youyun.png"],
           rank: '-',
           pct: '-',
-        },        
+        },  
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/sparkle.png", "images/valkportrait/Mei Xentinel.png", "images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/asop_youyun.png"],
+          rank: '-',
+          pct: '-',
+        },                  
       ]}, 
       {
         tabname: "v8.2",
