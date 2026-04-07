@@ -2802,7 +2802,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
       {#if (compareCumulativeBuffs.ultphy > 0) && (compareCumulativeBuffs.ultele > 0)  }
         <li>
-          Ultimate Phy and Ele DMG + { compareCuumulativeBuffs.ultele }%
+          Ultimate Phy and Ele DMG + { compareCumulativeBuffs.ultele }%
         </li>
       {/if}
 
