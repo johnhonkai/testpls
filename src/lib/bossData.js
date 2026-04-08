@@ -2303,6 +2303,24 @@ export const teamData = {
   phyalien: {
     teamDataSets: [
       {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Miss Espionage.png", "images/valkportrait/asop_sera.png"],
+          rank: '-',
+          pct: '-',
+        },
+
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Songque Jovial Deception.png", "images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/asop_sera.png"],
+          rank: '-',
+          pct: '-',
+        },        
+      ]},       
+      {
         tabname: "v8.4",
         teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 550 D.",
       entries: [
@@ -2381,6 +2399,7 @@ export const teamData = {
       },
     ]},],    
     videos: [
+      { url: 'https://www.bilibili.com/video/BV1jq9EBEEqe', abyss: 'JD+Rita Nirvana', uploader: '星梦不凹猫' },
       { url: 'https://www.youtube.com/watch?v=7ADji7fSAgY', abyss: 'RedLotus 511D', uploader: 'Marisa Honkai' },
       { url: 'https://www.youtube.com/watch?v=Ij1mHFVdCqA', abyss: 'Nirvana 545D', uploader: 'chronos002' },
       { url: 'https://youtu.be/DN5kC9QMP9c', abyss: 'Nirvana 545D', uploader: 'TockyTommy' },
@@ -2684,6 +2703,31 @@ export const teamData = {
   deliverance: {
     teamDataSets: [
     {
+      tabname: "v8.8",
+      teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png",  "images/valkportrait/Miss Espionage.png", "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+        rank: '-',
+        pct: '-',
+      },           
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/dudu.png","images/valkportrait/kiana badum.png",  "images/valkportrait/sparkle.png", "images/valkportrait/asop_teri.png"],
+        rank: '-',
+        pct: '-',
+      },  
+      
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Xentinel.png", "images/valkportrait/kiana badum.png", "images/valkportrait/scoralie.png", "images/valkportrait/asop_chenxue.png"],
+        rank:'RL',
+        pct: '-',
+      },
+    ],
+  },      
+    {
       tabname: "v8.5",
       teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
@@ -2751,8 +2795,8 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.bilibili.com/video/BV1d8QoBSEmU//', abyss: 'S-RS Nirvana 569D', uploader: '小林白理' },
       { url: 'https://www.youtube.com/watch?v=F7h6SF1QJXQ', abyss: 'Nirvana 539D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.bilibili.com/video/BV146ktYBEPN/', abyss: 'S0 Reign Solaris vs Nirvana 541D', uploader: 'Saber' },
 
     ] 
   },
@@ -3877,7 +3921,25 @@ export const teamData = {
     
     teamDataSets: [
         {
-        tabname: "v8.4 CN",
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Miss Espionage.png","images/valkportrait/asop_sera.png"],
+            rank: '1',
+            pct: '-',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Lantern Lone Destruction.png",  "/images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Senadina Deepspace Anchor.png","images/valkportrait/asop_sera.png"],
+            rank: '-',
+            pct: '-',
+          },
+        ]
+      },        
+        {
+        tabname: "v8.4",
         teamInfoText: "Data is from v8.4 CN Server (PC) Top 100 Myriad 555 D",
         entries: [
           {
@@ -3914,7 +3976,7 @@ export const teamData = {
         ]
       },       
         {
-        tabname: "v8.3 CN",
+        tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -3939,7 +4001,7 @@ export const teamData = {
         ]
       },    
       {
-        tabname: "v8.2 CN",
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
@@ -3967,7 +4029,7 @@ export const teamData = {
       }
     ],
         videos: [
-      { url: 'https://www.bilibili.com/video/BV1WWYCzaEfE/', abyss: 'SS Coralie Nirvana 555D', uploader: '浅忆_浮生如梦' },
+      { url: 'https://www.bilibili.com/video/BV129X9B8E7M', abyss: 'Lantern+Rita Nirvana', uploader: 'xiaofeng枫枫日记' },
       { url: 'https://youtu.be/DxRxzz5yDT4', abyss: 'SS Coralie Nirvana 553D', uploader: 'phylynxbelt' },
       { url: 'https://youtu.be/1yRba78Rx6w', abyss: 'Nirvana 553D', uploader: 'Kyoshiro' },
       { url: 'https://youtu.be/_kcaYoteh5g', abyss: 'S Coralie Nirvana 553D', uploader: 'Petrixica' },
@@ -4043,6 +4105,24 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/ps.png", "/images/valkportrait/Mei Xentinel.png","images/valkportrait/asop_chenxue.png"],
+            rank: '-',
+            pct: '-',
+          },
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/ps.png", "/images/valkportrait/kiana badum.png","images/valkportrait/asop_chenxue.png"],
+            rank: '-',
+            pct: '-',
+          },          
+        ]
+      },       
+      {
         tabname: "v8.5",
         teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -4081,6 +4161,11 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://www.youtube.com/watch?v=YvWQ1Au_vqA', abyss: 'Nirvana 553D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=1C37kKxJ6_U', abyss: 'Nirvana 553D', uploader: 'Tawcs' },
+
+    ]     
   },
 
     'husk-hitcount': {
@@ -4288,6 +4373,19 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: ["images/valkportrait/paws.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/Theresa Lunar Vow.png", "images/valkportrait/asop_chenxue.png"],
+            rank: '-',
+            pct: '-',
+
+          },                                                      
+        ]
+      },      
+      {
         tabname: "v8.3",
         teamInfoText: "Data is from v8.3 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -4316,6 +4414,8 @@ export const teamData = {
       }
     ],
          videos: [
+      { url: 'https://youtu.be/DvlY9Bj2LLA', abyss: 'Nirvana 559 D', uploader: 'Xintsu' },   
+      { url: 'https://youtu.be/mTp6Q7gpqsw', abyss: 'Nirvana 559 D', uploader: 'phylynxbelt' },         
       { url: 'https://youtu.be/Wgz2zgn2pzQ', abyss: 'Nirvana 549 D', uploader: 'Kyoshiro' },
       { url: 'https://youtu.be/BZPQmN0jX7U', abyss: 'Nirvana 549 D', uploader: 'Adit Rama' },
       { url: 'https://youtu.be/w6okcdU14WM', abyss: 'Nirvana 549 D', uploader: 'chronos002' },
@@ -4669,6 +4769,30 @@ export const teamData = {
     
     teamDataSets: [
             {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+                    {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '-',
+            pct: '-',
+          },  
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '-',
+            pct: '-',
+          }, 
+                              {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Seele Herrscher of Rebirth.png", "images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          }, 
+        ]
+        },      
+            {
         tabname: "v8.6",
         teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -4747,6 +4871,18 @@ export const teamData = {
     
     teamDataSets: [
             {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                         
+        ]
+      },      
+            {
         tabname: "v8.6",
         teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -4773,7 +4909,9 @@ export const teamData = {
     ],
             videos: [
       { url: 'https://www.youtube.com/watch?v=kNdj5Py_kSg', abyss: 'RedLotus 523D', uploader: 'Marisa Honkai' },
-      { url: 'https://www.youtube.com/watch?v=5OCCkTJcUk0', abyss: 'Nirvana 553D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=1l-hZ_bSPYE', abyss: 'RedLotus 525D', uploader: 'Ignite' },
+      { url: 'https://www.youtube.com/watch?v=jcorOhrUeng', abyss: 'Nirvana 558D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=38bYAbkHHu4', abyss: 'Nirvana 558D', uploader: 'Xintsu' },
       { url: 'https://www.youtube.com/watch?v=XrdE5Ze_18o', abyss: 'Nirvana', uploader: 'Ismaël' },
       { url: 'https://www.youtube.com/watch?v=qc92yrQ9Njo', abyss: 'Nirvana 549D', uploader: 'Haxxor' },
 
@@ -4963,19 +5101,36 @@ export const teamData = {
     
     teamDataSets: [
       {
-        tabname: "v8.5",
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '1+',
+            pct: '-',
+
+          },                                                                                                                     
+        ]
+      },      
+      {
+        tabname: "v8.6",
         teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
             type: 'lineup',
             lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
             rank: '1+',
-            pct: 'n/a',
+            pct: '-',
 
           },                                                                                                                     
         ]
       }
     ],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=kIQ8ldNzLIs', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://www.youtube.com/watch?v=2yHfCoqi68A', abyss: 'Nirvana 558D', uploader: 'phylynxbelt' },
+    ]     
   },
   resohoc: {
     
@@ -5002,6 +5157,191 @@ export const teamData = {
       }
     ],
   },  
+  ricecake: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Mei Xentinel.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                     
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.youtube.com/watch?v=V7a6j74ExuQ', abyss: 'Red Lotus', uploader: 'Ignite' },
+      { url: 'https://www.youtube.com/watch?v=9NlFC0i9O_c', abyss: 'Nirvana 552D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=9a0hm891wJw', abyss: 'Nirvana 552D', uploader: 'JoséLPK' },
+      { url: 'https://www.youtube.com/watch?v=rqmz1kqX2wc', abyss: 'Nirvana', uploader: 'Ismaël' },
+      { url: 'https://www.youtube.com/watch?v=_RzYuuJikUw', abyss: 'Nirvana 552D', uploader: 'chronos002' },
+      { url: 'https://www.youtube.com/watch?v=hin-IN0QELc', abyss: 'Nirvana 552D', uploader: 'Tawcs' },
+      { url: 'https://www.youtube.com/watch?v=RHo9QEXHyOc', abyss: 'Nirvana 546D', uploader: 'Professeur Honkai' },
+
+    ] 
+  },  
+  "extreme-raven": {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Mei Xentinel.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                     
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.youtube.com/watch?v=0HkUI6lTD7w', abyss: 'Nirvana 554D', uploader: 'Xintsu' },
+    ] 
+  },    
+  benares: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },       
+          {
+            type: 'lineup',
+            lineup: [ "images/valkportrait/Elysia Herrscher of Human Ego.png", "/images/valkportrait/Thelema Mad Pleasure.png", "/images/valkportrait/Miss Espionage.png", "/images/valkportrait/asop_sera.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                         
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.youtube.com/watch?v=NlIfNEa6rLg', abyss: 'Nirvana 555D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=IIu1GarBSi8', abyss: 'Nirvana 555D', uploader: 'phylynxbelt' },
+      { url: 'https://www.youtube.com/watch?v=YPTWO0CHF3M', abyss: 'Nirvana 555D', uploader: 'Tawcs' },
+      { url: 'https://www.youtube.com/watch?v=MXu6tMn6bdw', abyss: 'Nirvana 549D', uploader: 'Haxxor' },
+
+    ] 
+  }, 
+  typedjxy: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Mei Xentinel.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                             
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.youtube.com/watch?v=M5Dkq7pfj5Y', abyss: 'Red Lotus 524D', uploader: 'Ignite' },
+      { url: 'https://www.youtube.com/watch?v=vw4XRwg-B3I', abyss: 'Nirvana 557D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=F3X5kpRDKQc', abyss: 'Nirvana 551D', uploader: 'Haxxor' },
+      { url: 'https://www.youtube.com/watch?v=4hdHJ-i-86w', abyss: 'Nirvana 557D', uploader: 'phylynxbelt' },
+
+    ] 
+  }, 
+  bleedmobius: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Theresa Lunar Vow.png", "/images/valkportrait/scoralie.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },         
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Theresa Lunar Vow.png", "/images/valkportrait/scoralie.png",  "images/valkportrait/ps.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                   
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.youtube.com/watch?v=_2iTHwu4EyA', abyss: 'Red Lotus 536D', uploader: 'cdeyng_plays' },
+      { url: 'https://www.youtube.com/watch?v=82ab0NE7ouU', abyss: 'Nirvana 560D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=6KfBsOFPvLo', abyss: 'Nirvana 560D', uploader: 'phylynxbelt' },
+    ] 
+  },   
+  fluxmob: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/kiana badum.png",  "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '-',
+            pct: '-',
+
+          },       
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/kiana badum.png",  "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_teri.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                            
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.bilibili.com/video/BV1sDP9zXEhv', abyss: '559D', uploader: '淡墨lik' },
+    ] 
+  },   
+  jizo: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "images/valkportrait/Mei Xentinel.png", "/images/valkportrait/kiana badum.png",  "/images/valkportrait/scoralie.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                               
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.bilibili.com/video/BV1ciw7z6EuK', abyss: '561D', uploader: 'Kamxym' },
+    ] 
+  },   
 }
 
 

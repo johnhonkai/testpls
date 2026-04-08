@@ -264,7 +264,7 @@ async function increaseLike() {
 
 
 <CharacterLayout
-  charName="newmei"
+  charName="sera"
   initialLikes={likesData["sera"] || 0}
   accent="bg-blue-800"
   image="/images/valkfull/asop_sera.png"
