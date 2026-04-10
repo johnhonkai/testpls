@@ -5031,6 +5031,18 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "images/valkportrait/Mei Xentinel.png", "/images/valkportrait/dudu.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                                                                     
+        ]
+      },      
+      {
         tabname: "v8.5",
         teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D",
         entries: [

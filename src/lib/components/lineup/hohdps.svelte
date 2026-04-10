@@ -33,7 +33,6 @@
     export let secondCharName: string = 'Vita'; // default to 'Vita'
     export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
-    export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
@@ -76,10 +75,9 @@ let filteredMainCharacters = mainCharacters.filter(
             <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
         {/if}        
 
-        <!-- Plus Icon shown only if maindps is true -->
-        {#if !maindps}
+
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
-        {/if}
+
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
