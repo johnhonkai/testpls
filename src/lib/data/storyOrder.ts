@@ -599,6 +599,7 @@ export const storyP1= [
       image: 'https://i.imgur.com/TTtyRyR.png',
       title: 'Sweet Memories',
       inGame: false,
+      inGameExtra: "Available in-game for CN server",
       type: 'captainverse',
       version: '2.4-2.5',
        
@@ -607,6 +608,7 @@ export const storyP1= [
       image: 'https://i.imgur.com/2PEKtAR.png',
       title: 'Sanguine Nights',
       inGame: false,
+      inGameExtra: "Available in-game for CN server",
       type: 'captainverse',
       version: '2.5',
     },         

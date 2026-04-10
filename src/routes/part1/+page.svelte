@@ -217,7 +217,22 @@ function toggleView() {
           </div>
         </div>
                 <p class="text-sm text-gray-400 mb-1">
-          {story.inGame ? 'Available in-game' : 'Not available in-game'}
+
+          {#if story.inGame == true }
+            Available in-game
+
+          {:else}  
+
+            {#if story.inGameExtra}
+                    {story.inGameExtra}
+            {:else}  
+                    Not available in-game
+            {/if}
+
+
+          {/if}
+
+
         </p>
 {#if story.link}
         <a

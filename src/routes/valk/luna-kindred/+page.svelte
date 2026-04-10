@@ -1,10 +1,10 @@
 
 <svelte:head>
-    <title>Rita - Phantom Iron</title> 
-    <meta property="og:title" content="Rita - Phantom Iron" />
-    <meta property="og:description" content="Phantom Iron Guide, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/F1GF5EN.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/phantom-iron" />
+    <title>Luna Kindred</title> 
+    <meta property="og:title" content="Luna Kindred" />
+    <meta property="og:description" content="Luna Kindred Guide, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/V1mUA9t.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/luna-kindred" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -20,13 +20,11 @@ import { hasUserLiked, likeWithVoterId } from "$lib/firebaseLikes"; // Import he
 import { getFirestore } from "firebase/firestore";
 import { app } from "$lib/firebaseConfig";
 
-import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
-import CharBio from "$lib/components/CharBio.svelte";
-
 const db = getFirestore(app); // Ensure this is used for Firebase operations
 
   import { goto } from '$app/navigation';
   import likesData from '$lib/data/likes.json'; // Import local JSON data
+	import CharBio from "$lib/components/CharBio.svelte";
 
 
 import Lightbox from '$lib/components/lightbox.svelte';
@@ -37,6 +35,8 @@ import Lightbox from '$lib/components/lightbox.svelte';
 	import P1lightningdps from "$lib/components/lineup/p1lightningdps.svelte";
 	import P1fire from "$lib/components/lineup/p1fire.svelte";
 	import Horbdps from "$lib/components/lineup/horbdps.svelte";
+	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import CharacterLayoutShort from "$lib/components/valkpage/CharacterLayoutShort.svelte";
 let showLightbox = false;
 let selectedImage = '';
 
@@ -56,7 +56,7 @@ function closeLightbox() {
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
    { name: 'Gameplay Examples', short: 'example' },
-  //{ name: 'Elysian Realm', short: 'er' },
+  // { name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
@@ -153,8 +153,8 @@ function toggleTabs() {
 function selectTabMobile(event) {
       selectedTab = event.target.value;
   }
-  let fovlikes = likesData["pi"] || 0; // Get initial likes from JSON
-  const charName = "pi"; // Route name for this character
+  let fovlikes = likesData["vk"] || 0; // Get initial likes from JSON
+  const charName = "vk"; // Route name for this character
   let hasLiked = false; // Track if the user has liked
   let voterId = ""; // User's unique voter ID
 
@@ -195,25 +195,8 @@ function selectTabMobile(event) {
     console.error("Error liking the character:", error);
   }
 }
- type Lang = 'EN' | 'CN';
-  let currentLang: Lang = 'EN';
 
-  const langData: Record<Lang, { battlesuitName: string; infoLine: string }> = {
-    EN: {
-      battlesuitName: 'Phantom Iron',
-      infoLine: 'Rita | Release Date: v3.0 (18 Apr 2019)'
-    },
-    CN: {
-      battlesuitName: '猎袭装·影铁',
-      infoLine: 'Rita | Release Date: v2.8 (6 Dec 2018)'
-    }
-  };
 
-  $: activeData = langData[currentLang];
-
-  function setLang(lang: Lang) {
-    currentLang = lang;
-  }   
 </script>
 
 
@@ -229,37 +212,38 @@ function selectTabMobile(event) {
 
 <section class="relative mx-auto flex flex-row items-center justify-center px-4 md:p-2 gap-3 md:pb-0 sm:mb-4 md:mt-0  pt-2	sm:pt-0">
   <div class="absolute   top-0 w-full h-[90vh] z-[-10] opacity-85 " id="bgwavebox">    
-    <img src="/images/bg/wave_jd.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
+    <img src="/images/bg/wave_thelema.svg" alt="Lone Planetfarer" class="w-full h-full object-cover overflow-hidden" /> 
   </div>
 
 
 
 <CharacterLayout
-  charName="pi"
-  initialLikes={likesData["pi"] || 0}
-  accent="bg-green-800"
-  image="/images/valkfull/Phantom%20Iron.png"
-  alt="Phantom Iron"
+  charName="Luna Kindred"
+  initialLikes={likesData["Luna Kindred"] || 0}
+  accent="bg-red-800"
+  image="/images/valkfull/Luna Kindred.png"
+  alt="Luna Kindred"
   valk="false"
 
-  titleEN="Phantom Iron"
-  titleCN="猎袭装·影铁"
+  titleEN="Luna Kindred"
+  titleCN="月下初拥"
 
-  nameEN="Rita Rossweisse"
-  nameCN="丽塔·洛丝薇瑟"
+  nameEN="Theresa - Luna"
+  nameCN="德丽莎 - 月下"
 
-  releaseEN="v3.0 (18 Apr 2019)"
-  releaseCN="v2.8 (6 Dec 2018)"  
- 
+  releaseEN="v2.6 (12 Dec 2018)"
+  releaseCN="v2.4 (21 June 2018)"  
+
 >
   <!-- Tags / Type Row -->
-  <CharBio mode="dps" rank="a" type="mech" element="lightning"  bg="bg-green-800"/>
+  <CharBio mode="dps" rank="a" type="bio" element="phy"  bg="bg-red-800"/>
 
 
 </CharacterLayout>
 
 
 </section>
+
   
 <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto "> 
 
@@ -328,14 +312,15 @@ function selectTabMobile(event) {
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
         
         <p class="mt-4 text-sm sm:text-base">
-          <strong class="text-amber-400">Outdated Part 1 Lightning Support</strong>
+          <strong class="text-amber-400">Small but Strong DPS</strong>
           <br/>
           
           
       </p>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li> Phantom Iron (PI) is a support that can summon Carbon-based Hunter to deal damage and apply buffs.</li>
-          <li> PI was nothing exceptional. She was used to buff Judah (Valkyrie Pledge) in Memorial Arena, but it was very situational.</li>
+          <li> Luna Kindred was a decent DPS. </li>
+          <li> Marks the first valk from captainverse. </li>
+
         </ul>
 
 
@@ -345,8 +330,8 @@ function selectTabMobile(event) {
         <p class="mt-4 text-sm sm:text-base">
           <strong class="text-amber-400 ">New Players</strong>
           <br/>
-You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
-
+          You can get P1 A-rank fragments from Dorm Supply and other various shops. They are all outdated, just farm whatever valk that you like first.
+          Luna Kindred is available in Elysian Realm - she can give first-clear crystal reward.
  
       </p>
 
@@ -355,8 +340,9 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li ><strong>Phantom Iron:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
-          <li ><strong>Genome Reaper:</strong> Exchange Shop, Battle Pass.</li>
+          <li ><strong>Luna Kindred:</strong> Open World, Expedition, Dorm Supply, Dorm Shop, Elysian Shop.</li>
+          <li ><strong>Hekate's Sombre:</strong> Exchange Shop, Battle Pass.</li>
+
 
         </ul>
 
@@ -370,7 +356,7 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
 
-    <P1lightningdps></P1lightningdps>
+    <P1physical></P1physical>
 
 </section>
 
@@ -382,39 +368,40 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
       <div>
 
 
-              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST? I DONT EVEN KNOW</h2>
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
 
               <div class="flex flex-col justify-center items-center">
                   
               <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
                 <div class="w-20 h-20 sm:w-28 sm:h-28">
-                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/07/91006211/505704b14ad937cd8b8edccfd50bab8e_6587036921307500795.png" alt="Path to Acheron" class="w-full h-full object-cover">
+                  <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/11/24/9917988/519f8ed24e9042f1b487728032a44e8a_8044254317476608920.png" alt="Path to Acheron" class="w-full h-full object-cover">
               </div>
 
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/91006211/f2e785b423273338556e66771a543a69_7669730458863198203.png" alt="Cecilia Youth T" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/25/76361817/cb701147b58fa90ce2d1c697a71db069_984152816387507870.png" alt="Cecilia Youth T" class="w-full h-full object-cover">
 
               </div>
 
 
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/91006211/678232c05c978cdfc8f6c8020ba7e27f_3842381532991664452.png" alt="Cecilia Youth M" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/25/76361817/421f0e3c83f15f60a082c06a829fd993_2142299996919224251.png" alt="Cecilia Youth M" class="w-full h-full object-cover">
 
               </div>
 
               
               <div class="w-20 h-20 sm:w-28 sm:h-28">
-                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/09/16/91006211/73531d5b12f1133e5f5f926f1cf14b0b_8841305209300930395.png" alt="Cecilia Youth B" class="w-full h-full object-cover">
+                <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2021/10/29/77124895/3dcaf1a1544a0976ba1615f7da892de3_5632216121245093883.png" alt="Cecilia Youth B" class="w-full h-full object-cover">
             </div>
 
               </div>  
-              <h4 class="text-base sm:text-base text-white"> Genome Reaper + G3 Turgenev </h4>
+              <h4 class="text-base sm:text-base text-white"> Hekate Sombre + Kafka / Mich / whatever physical</h4>
               </div>
 
            </div>
 
+ 
       {/if}
 
 
@@ -423,7 +410,7 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
 
       <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-0 md:mb-2 text-center sm:text-left text-amber-400">Warning: Old Valk</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-        This is a very old A-rank valkyrie with weak ER signets. Please play at a lower difficulty.
+        This is a very old S-rank valkyrie with weak ER signets. Please play at a lower difficulty.
       </p>
       <div class="divider  "></div>
 
@@ -444,7 +431,7 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Battle Song </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Fiery Mind ➔ Burning Flow </p>
               <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Gambit</p>
 
             </div>
@@ -719,7 +706,7 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
       <div class=" gap-6 mt-5 mb-10">
 
         <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Old Abyss</h2>
+          <h2 class="text-xl  font-semibold mb-4 text-left text-slate-100 cooltext">Elysian Realm</h2>
 
 
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
@@ -727,7 +714,7 @@ You can get P1 A-rank fragments from Dorm Supply and other various shops. They a
             loading="lazy" 
 
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/cBbbJvB1tFQ"
+                src="https://www.youtube.com/embed/yLjCeAkTAfY"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

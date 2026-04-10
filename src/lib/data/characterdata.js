@@ -108,6 +108,11 @@
   { name: "Argent Knight: Artemis", image: '/images/valkportrait/Rita Argent Knight.png', type: 'Bio', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/argent-knight', verdebut: 2.9,  id:65},
   { name: "Striker Fulminata", image: '/images/valkportrait/Mei Striker Fulminata.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/striker-fulminata', verdebut: 2.9,  id:67},  
   { name: "Phantom Iron", image: '/images/valkportrait/Rita Phantom Iron.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/phantom-iron', verdebut: 2.8,  id:66},
-  { name: "Vermilion Knight: Eclipse", image: '/images/valkportrait/Himeko Vermilion Knight.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/vermilion-knight', verdebut: 2.7, id:68},
+  { name: "Vermilion Knight: Eclipse", image: '/images/valkportrait/Himeko Vermilion Knight.png', type: 'Mech', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/vermilion-knight', verdebut: 2.7, verdlc: 3.5, id:68},
+  { name: "Umbral Rose", image: '/images/valkportrait/Rita Umbral Rose.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/umbral-rose', verdebut: 2.7, id:69},
+  { name: "Sündenjäger", image: '/images/valkportrait/Kallen Sundenjager.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/sundenjager', verdebut: 2.6, id:70},
+  { name: "Herrscher of the Void", image: '/images/valkportrait/Kiana Herrscher of the Void.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/hov', verdebut: 2.5, id:71},
+  { name: "Kriegsmesser", image: '/images/valkportrait/Himeko Kriegsmesser.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kriegsmesser', verdebut: 2.5, id:72},
+  { name: "Luna Kindred", image: '/images/valkportrait/Theresa Luna Kindred.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/luna-kindred', verdebut: 2.4, id:72},
 
 ];

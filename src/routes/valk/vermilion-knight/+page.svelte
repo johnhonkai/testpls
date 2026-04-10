@@ -56,7 +56,7 @@ function closeLightbox() {
   { name: 'Equipment', short: 'equipment' },
   //{ name: 'How to Play', short: 'howtoplay' },
   // { name: 'Gameplay Examples', short: 'example' },
-  //{ name: 'Elysian Realm', short: 'er' },
+  // { name: 'Elysian Realm', short: 'er' },
   //{ name: 'Rank Up', short: 'rank' },
   //{ name: 'Popular Question', short: 'qna' },
   //{ name: 'Overview Card', short: 'card' },
@@ -471,7 +471,7 @@ function selectTabMobile(event) {
 
       <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-0 md:mb-2 text-center sm:text-left text-amber-400">Warning: Old Valk</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-        This is a very old A-rank valkyrie with weak ER signets. Please play at a lower difficulty.
+        This is a very old S-rank valkyrie with weak ER signets. Please play at a lower difficulty.
       </p>
       <div class="divider  "></div>
 
@@ -492,7 +492,7 @@ function selectTabMobile(event) {
             
             <!-- Right side text sections -->
             <div class="flex flex-col space-y-2 pr-2 z-10">
-              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Battle Song </p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Fiery Mind ➔ Burning Flow </p>
               <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Gambit</p>
 
             </div>
