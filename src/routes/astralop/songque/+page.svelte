@@ -374,9 +374,10 @@ async function increaseLike() {
               <strong class="text-amber-400">World Star Support</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Second best astral op for World Star characters. Less effective for Physical valks since Songque lacks Phy buffs.</li>
+                <li>Second best astral op for elemental World Star characters.</li>
+                <li>Not effective for Physical valks since Songque only has Elemental buffs.</li>
                 <li>Best astral op for World Star characters now is <a class="link" href="/astralop/youyun">Youyun</a>.</li>
-                <li>Provides gather, initial ar, bonus sp during SO, recover ar during SO.</li>
+                <li>Songque provides gather, initial ar, bonus sp during SO, recover ar during SO.</li>
                 <li>Can apply paralyze trauma. Has been used a few times against bosses such as Diabolic Kevin.</li>
 
           </ul> 
