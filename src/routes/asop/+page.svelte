@@ -969,8 +969,7 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               (1+((cumulativeBuffs.tdm + cumulativeBuffs.actdm ) / 100)) *
               (1+((cumulativeBuffs.tdmtaken + cumulativeBuffs.actdmtaken + cumulativeBuffs.surplustdmtaken) / 100)) *
               (1+((cumulativeBuffs.phy + cumulativeBuffs.acphy) / 100)) *
-              (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100)) *
-              (1+((cumulativeBuffs.resotdm) / 100))
+              (1+((cumulativeBuffs.phytaken + cumulativeBuffs.acphytaken) / 100)) 
               ).toFixed(3)
             )
             }
@@ -2053,9 +2052,8 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
               (1+((compareCumulativeBuffs.tdm + compareCumulativeBuffs.actdm ) / 100)) *
               (1+((compareCumulativeBuffs.tdmtaken + compareCumulativeBuffs.actdmtaken + compareCumulativeBuffs.surplustdmtaken) / 100)) *
               (1+((compareCumulativeBuffs.phy + compareCumulativeBuffs.acphy) / 100)) *
-              (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100)) *
-              (1+((compareCumulativeBuffs.resotdm) / 100))
-              ).toFixed(3)
+              (1+((compareCumulativeBuffs.phytaken + compareCumulativeBuffs.acphytaken) / 100)) 
+            ).toFixed(3)
             )
             }
            
