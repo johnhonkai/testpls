@@ -60,7 +60,7 @@
       setTimeout(() => {
         console.warn('Timeout reached, proceeding to show page');
         resolve();
-      }, 10000); // Adjust timeout as needed (10 seconds here)
+      }, 2000); // Adjust timeout as needed (10 seconds here)
     });
 
     // Wait for all images to load or timeout
