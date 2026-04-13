@@ -524,14 +524,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/ff_fish.webp" date="May 8" weather="Extreme" bosspage="/boss?exfish" />
+                <BossCard image="/images/Bosses/Husk - Nihilus_SSS.webp" date="May 11" weather="Ice" bosspage="/boss?icehusk" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />                
+                <BossCard image="/images/Bosses/Ricecake.webp" date="May 12" />
+                <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" />
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" />
                 </div>
 
             </div>

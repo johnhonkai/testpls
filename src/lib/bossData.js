@@ -25,6 +25,7 @@ export const weatherList = {
     {id: 'icehuodou', name: 'Huodou'},
     {id: 'iceepernay', name: 'Meteroid: Epernay'},
     {id: 'benares', name: 'Benares'},
+    {id: 'icehusk', name: 'Husk: Nihilius'},
 
   ],
   typecounter: [
@@ -478,6 +479,15 @@ export const bossData = {
       weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
 
   },  
+  icehusk: {
+    name: 'Husk: Nihilius', 
+      mechanics: 'Has HP Loss DMG check.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconPSI.png", 
+      bosspic: "images/Bosses/Husk - Nihilus_SSS.webp", 
+      weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
+
+  },   
   sa: {
     name: 'Sa: Wheel of Transcendence', 
       mechanics: 'Boss has multiple critical index points.', 
@@ -5030,16 +5040,29 @@ export const teamData = {
          exfish: {
     
     teamDataSets: [
+      
       {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
             type: 'lineup',
-            lineup: [ "/images/valkportrait/paws.png", "images/valkportrait/Mei Xentinel.png", "/images/valkportrait/dudu.png", "/images/valkportrait/asop_chenxue.png" ],
+            lineup: [ "/images/valkportrait/paws.png", "/images/valkportrait/dudu.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
             rank: '-',
             pct: '-',
-          },                                                                                                                     
+          },   
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "/images/valkportrait/dudu.png", "images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "/images/valkportrait/dudu.png",  "images/valkportrait/scoralie.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                                                                                       
         ]
       },      
       {
@@ -5354,6 +5377,27 @@ export const teamData = {
       { url: 'https://www.bilibili.com/video/BV1ciw7z6EuK', abyss: '561D', uploader: 'Kamxym' },
     ] 
   },   
+  icehusk: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.8",
+        teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "images/valkportrait/Bronya Silverwing N-EX.png", "/images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/Vita Lone Planetfarer.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                               
+        ]
+      }
+    ],
+                videos: [
+      { url: 'https://www.bilibili.com/video/BV1GKQbBYE64', abyss: '548D', uploader: '新阳ou' },
+    ] 
+  },    
 }
 
 
