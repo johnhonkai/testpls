@@ -306,6 +306,7 @@
     {#each [
       { code: 'C1BPF75Q1K', reward: '30 crystals' },
       { code: 'WARMGIFT', reward: '120 crystals' },
+      { code: 'CheersCaptain', reward: '100 crystals' },
 
     ] as entry}
       <div class="flex items-center justify-between gap-2">
