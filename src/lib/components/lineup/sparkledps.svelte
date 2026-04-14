@@ -18,10 +18,11 @@
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '100%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '98%', speed: 'Slow' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '92%', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '90%', speed: 'Slow' }
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '100%', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '92%', speed: 'Slow' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '87%', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '85%', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component

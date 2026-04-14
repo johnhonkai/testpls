@@ -17,10 +17,11 @@
     ];
 
     const asopchar = [
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '100%', speed: '' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '93%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '95%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '88%', speed: 'Slow' }
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '100%', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '88%', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '88%', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '83%', speed: 'Slow' }
     ];
 
     export let firstCharName: string = 'Vita'; // default to 'Vita'

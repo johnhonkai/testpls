@@ -373,11 +373,11 @@ async function increaseLike() {
           
           
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support (To Be Updated)</strong>
+              <strong class="text-amber-400">World Star Support</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Youyun is the new best Astral Op for World Star teams.</li>
-                <li>Youyun can trigger additional Resonance DMG.</li>
+                <li>Youyun can trigger Resonance 1-3 more times.</li>
                 <li>Youyun is really broken for DPS that utilize Stellar Surplus mechanic. The numbers are big in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>

@@ -3048,6 +3048,12 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <div class="space-y-6">
     <!-- Version -->
 
+    <div class="border-l-4 border-cyan-500 pl-4">
+      <h3 class="text-md font-semibold">15 Apr 2026 </h3>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Youyun: Fixed ar regen during Surplus. Added line about extra reso trigger in buff list.</li>
+    </div>
+
     <div class="border-l-4 border-purple-500 pl-4">
       <h3 class="text-md font-semibold">5 Apr 2026 </h3>
       <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">

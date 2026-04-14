@@ -64,6 +64,14 @@ export const surplusar = [
 
         ar: 5,
     },    
+
+    {
+        rank: "SSS",
+        description: "During Surplus, trigger reso, Youyun will fire one Artillery Shot: restoring 3.0 Astral Ring Intensity",
+
+        condition: { astralRing: "World Star"},
+        ar: 3,
+    },    
 ];
 
 export const postsoar = [
@@ -109,7 +117,7 @@ export const postsoar = [
     },
 
     {
-        rank: "SS",
+        rank: "S",
         description: "When any Team Members emptied their Quantum Mech Energy and Domain Resonance Mark is present on the field, then when the next Team Member triggers a Resonance Skill for the first time, Youyun will fire one Artillery Shot: restoring 3.0 Astral Ring Intensity",
 
         condition: { astralRing: "World Star"},
@@ -157,8 +165,18 @@ export const extraregen = [
 ];
 
 export const specialbuff = [
-
-    
+    {
+    rank: "S",
+    description: "S: During SO, triggers Resonance 1-2 more times.",
+    available_by_default: "no",
+    condition: { astralRing: "World Star"},
+    },
+    {
+    rank: "SSS",
+    description: "SSS: During Surplus, triggers Resonance 1 more time.",
+    available_by_default: "no",
+    condition: { astralRing: "World Star"},
+    },    
 ];
 
 
@@ -293,7 +311,7 @@ export const valkbuffs = [
 export const asopbuffs = [
      {
         rank: "S",
-        description: "When World Star is active: Deals 2000.0% ATK of Lightning DMG, restoring 3.0 Astral Ring Intensity and triggering 1 Resonance Skill without consuming any Domain Resonance Mark.",
+        description: "When World Star is active: When valk empties QME, then when next valk switches in and trigger reso dmg, Youyun deals 2000.0% ATK of Lightning DMG, restoring 3.0 Astral Ring Intensity and triggering 1 Resonance Skill without consuming any Domain Resonance Mark. (triggers up to two times per SO).",
         available_by_default: "no",
         condition: { astralRing: "World Star" },
     },     
