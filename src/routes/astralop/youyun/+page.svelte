@@ -378,7 +378,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Youyun is the new best Astral Op for World Star teams.</li>
                 <li>Youyun can trigger Resonance 1-3 more times.</li>
-                <li>Youyun is really broken for DPS that utilize Stellar Surplus mechanic. The numbers are big in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
+                <li>Youyun is really broken for DPS that utilize Stellar Surplus mechanic  - the buff is huge in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>
 
@@ -406,8 +406,15 @@ async function increaseLike() {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P</strong> <br/> Dreamseeker / Songque is enough.
+              <strong class="text-amber-400">F2P</strong> 
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Dreamseeker / Songque is enough. </li>
+                <li>In 8.8, there's no new valk - getting Silverwing DLC + Youyon asop is a good combo deal if you can afford it. Additionally, 8.9 valk is Seele, which is 99% gonna be World Star too.</li>
+
+
+
+          </ul>           
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Spenders</strong> <br/>  
