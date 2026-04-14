@@ -482,7 +482,7 @@ export const bossData = {
   icehusk: {
     name: 'Husk: Nihilius', 
       mechanics: 'Has HP Loss DMG check.', 
-      weakness: 'None', 
+      weakness: 'Phy (H)', 
       typeicon: "images/type/IconPSI.png", 
       bosspic: "images/Bosses/Husk - Nihilus_SSS.webp", 
       weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
