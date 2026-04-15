@@ -270,8 +270,8 @@ async function increaseLike() {
   alt="Theresa"
   valk="false"
 
-  titleEN="Schicksal's Imperative"
-  titleCN="天命难逃"
+  titleEN="Theresa"
+  titleCN="德丽莎"
 
   nameEN="Theresa Apocalypse"
   nameCN="德丽莎·阿波卡利斯"

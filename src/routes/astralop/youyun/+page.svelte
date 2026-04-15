@@ -380,6 +380,7 @@ async function increaseLike() {
                 <li>Youyun can trigger Resonance 1-3 more times.</li>
                 <li>Youyun is really broken for DPS that utilize Stellar Surplus mechanic  - the buff is huge in Surplus state. Currently, only Silverwing DLC has Stellar Surplus.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Youyun now enables these characters to end SO early when they cast Ult.</li>
+                <li>For Physical valks, Youyun provides Crit Rate and Crit DMG.</li>                
                 <li>Provides initial ar, surplus max limit +50%, SO cd reduction, and recover ar during SO.</li>
 
           </ul> 
@@ -390,6 +391,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Youyun is the best Astral Op for WoD DPS that utilize Stellar Surplus mechanic. Currently, only Miss Espionage has Stellar Surplus.</li>
                 <li>For non-Surplus DPS, Youyun is still very good, but <a class="link" href="/astralop/serapeum">Serapeum</a> is better. Youyun gives more dmg during AC, but less dmg during SO. Youyun also gives less initial AR and post-so AR.</li>
+                <li>For Physical valks, Youyun is significantly worse than Sera since Youyon provides no Crit buffs and much lower Physical buffs. Even lower for non-surplus Physical valks.</li>
                 <li>Provides initial ar, SO cd reduction, and recover ar during SO.</li>
 
           </ul>   

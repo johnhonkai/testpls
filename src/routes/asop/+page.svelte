@@ -102,6 +102,11 @@ async function loadAstralOpData(astralOpName, type) {
   $: comparefilteredBuffs = (comparespecialbuff || [])
   .filter(buff => buff?.condition?.astralRing && slots?.leader?.astralRing && buff.condition.astralRing === slots.leader.astralRing);
 
+  $: filteredExtraRegen = (extraregen || [])
+  .filter(buff => buff?.condition?.astralRing && slots?.leader?.astralRing && buff.condition.astralRing === slots.leader.astralRing);
+
+  $: comparefilteredExtraRegen = (compareextraregen || [])
+  .filter(buff => buff?.condition?.astralRing && slots?.leader?.astralRing && buff.condition.astralRing === slots.leader.astralRing);
 
 
   // Open modal for slot selection
@@ -903,16 +908,18 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
 
     {/if}
     <p>AR after Stellar Outburst = {postSOAR}</p>
-    {#if extraregen && extraregen.length > 0}
+    {#if filteredExtraRegen.length > 0}
         <div>
 
             <ul>
-                {#each extraregen as regen}
+                {#each filteredExtraRegen as regen}
                     <li>{regen.description}</li>
                 {/each}
             </ul>
         </div>
     {/if}
+
+    
   </div>
 
 
@@ -1990,11 +1997,11 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
     {/if}
 
     <p>AR after Stellar Outburst = {comparePostSOAR}</p>
-    {#if compareextraregen && compareextraregen.length > 0}
+    {#if comparefilteredExtraRegen.length > 0}
     <div>
 
         <ul>
-            {#each compareextraregen as regen}
+            {#each comparefilteredExtraRegen as regen}
                 <li>{regen.description}</li>
             {/each}
         </ul>

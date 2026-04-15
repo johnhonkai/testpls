@@ -5390,7 +5390,14 @@ export const teamData = {
             rank: '-',
             pct: '-',
 
-          },                                                                                                                                               
+          },  
+          {
+            type: 'lineup',
+            lineup: [  "images/valkportrait/Bronya Silverwing N-EX.png", "/images/valkportrait/Sushang Jade Knight.png",  "/images/valkportrait/Kira Sugary Starburst.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                        
         ]
       }
     ],
