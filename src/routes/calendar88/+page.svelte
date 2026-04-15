@@ -269,6 +269,12 @@
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">PAWS Equipment</span>
 
                     </div>     
+                    <div on:click={() => openModal("Equip")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">HoRB DLC</span>
+
+                    </div>                       
                 </div>
 
           
