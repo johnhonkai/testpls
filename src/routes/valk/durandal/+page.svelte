@@ -548,25 +548,25 @@ async function increaseLike() {
 
 
       <div class="flex items-center justify-center text-orange-300 ">
-      <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/dmg%20test%20rs%20dps%20neutral.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+      <img src="https://i.imgur.com/LvBaCKX.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
     </div>
 
     <div class="divider  "></div>
 
     <div class="flex items-center justify-center text-orange-300 ">
-      <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/dmg%20test%20rs%20dps%20img.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+      <img src="https://i.imgur.com/sylMHEY.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
     </div>
 
     <div class="divider  "></div>
 
     <div class="flex items-center justify-center text-orange-300 ">
-      <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/dmg%20test%20p1.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+      <img src="https://i.imgur.com/4zvsdG8.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
     </div>
 
     <div class="divider  "></div>
 
     <div class="flex items-center justify-center text-orange-300 ">
-      <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/dmg%20test%20wod%20support.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+      <img src="hhttps://i.imgur.com/E3APUR8.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
     </div>
 
       {/if}
@@ -576,20 +576,20 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%201%20(1).webp"
+          src="https://i.imgur.com/cDyxZ2n.png"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%201%20(1).webp')}
+          on:click={() => openLightbox('https://i.imgur.com/cDyxZ2n.png')}
         />
       </div>
 
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%202%20(1).webp"
+          src="https://i.imgur.com/qgNMkPA.png"
           alt="Buff 2"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/RS%20Buff%202%20(1).webp')}
+          on:click={() => openLightbox('https://i.imgur.com/qgNMkPA.png')}
         />
       </div>
       
