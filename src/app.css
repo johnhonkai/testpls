@@ -43,7 +43,7 @@
 
 @font-face {
     font-family: 'wf';
-    src: url('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/font/WFMedium.ttf') format('truetype');
+    src: url('/fonts/WFMedium.ttf') format('truetype');
     font-style: normal;
 
 
