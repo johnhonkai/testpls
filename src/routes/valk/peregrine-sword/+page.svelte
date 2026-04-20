@@ -588,19 +588,19 @@ async function increaseLike() {
         <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
 
           <div class="w-20 h-20 sm:w-28 sm:h-28">
-            <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/1.png" alt="Jadeite Sleeves" class="w-full h-full object-cover">
+            <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/15/4976467/8ec6127a6d4363462a001191b6d4cc35_5988409667345484193.png" alt="Jadeite Sleeves" class="w-full h-full object-cover">
         </div>
 
         <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/2.png" alt="Newfound Joys" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/15/4976467/0baf38c937ac92a238b9526dbce45437_380003578617844786.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/3.png" alt="Newfound Joys" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/15/4976467/9235e966b346ec0806897a73e0deb58c_3589809534972583500.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
       <div class="w-20 h-20 sm:w-28 sm:h-28">
-          <img src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/equipment/ps/4.png" alt="Newfound Joys" class="w-full h-full object-cover">
+          <img src="https://act-upload.mihoyo.com/bh3-wiki/2025/03/15/4976467/ced58aa0b298cb83be62a620ff7cd33d_5607901579798011471.png" alt="Newfound Joys" class="w-full h-full object-cover">
       </div>
 
         </div>  
@@ -641,10 +641,10 @@ async function increaseLike() {
       <div class="flex flex-wrap gap-4 mt-8">
         <!-- Example image list for support buffs; add your own image sources -->
         <img
-          src="https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PS%20Buff22.webp"
+          src="https://i.imgur.com/nmMxr5U.png"
           alt="Buff 1"
           class=" object-cover cursor-pointer"
-          on:click={() => openLightbox('https://ldbndupsaerjtcndwoqq.supabase.co/storage/v1/object/public/guidepics/PS%20Buff22.webp')}
+          on:click={() => openLightbox('https://i.imgur.com/nmMxr5U.png')}
         />
       </div>
       

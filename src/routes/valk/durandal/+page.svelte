@@ -566,7 +566,7 @@ async function increaseLike() {
     <div class="divider  "></div>
 
     <div class="flex items-center justify-center text-orange-300 ">
-      <img src="hhttps://i.imgur.com/E3APUR8.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
+      <img src="https://i.imgur.com/E3APUR8.png" alt="Icon" class="w-[1000px] h-auto rounded-lg" />
     </div>
 
       {/if}
