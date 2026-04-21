@@ -34,6 +34,7 @@ export const weatherList = {
     {id: 'typesprout', name:'Sprout of Wishing'}, 
     {id: 'typeparvati', name:'Parvati'}, 
     {id: 'typedjxy', name:'Dark Jixuanyuan'}, 
+    {id: 'typehuodou', name:'Huodou'}, 
 
   ],
   oblivion: [
@@ -350,6 +351,15 @@ export const bossData = {
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Counter: Type counter effect is 20% stronger."
   },
+  typehuodou: {
+    name: 'Huodou',
+    mechanics: '',
+    weakness: 'None',
+    debuff: "Ice (M)", 
+    typeicon: "images/type/IconBIO.png",
+    bosspic: "images/Bosses/Huodou.webp",
+    weather: "Counter: Type counter effect is 20% stronger."
+  },  
   igniteandrius: {
     name: 'Dominator of Wolves',
     mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has an elemental shield.',

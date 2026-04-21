@@ -114,5 +114,14 @@
   { name: "Herrscher of the Void", image: '/images/valkportrait/Kiana Herrscher of the Void.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/hov', verdebut: 2.5, id:71},
   { name: "Kriegsmesser", image: '/images/valkportrait/Himeko Kriegsmesser.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/kriegsmesser', verdebut: 2.5, id:72},
   { name: "Luna Kindred", image: '/images/valkportrait/Theresa Luna Kindred.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/luna-kindred', verdebut: 2.4, id:72},
+  { name: "Sixth Serenade", image: '/images/valkportrait/Kallen Sixth Serenade.png', type: 'Psy', element: 'Ice', astralRing: ['Part 1'] , url: '/valk/sixth-serenade', verdebut: 2.3, id:73},
+  { name: "Night Squire", image: '/images/valkportrait/Fu Hua Night Squire.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/night-squire', verdebut: 2.3, id:73},
+  { name: "Phoenix", image: '/images/valkportrait/Fu Hua Phoenix.png', type: 'Psy', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/phoenix', verdebut: 2.2, id:72},
+  { name: "Shadow Knight", image: '/images/valkportrait/Fu Hua Shadow Knight.png', type: 'Mech', element: 'Lightning', astralRing: ['Part 1'] , url: '/valk/shadow-knight', verdebut: 2.1, id:71},
+  { name: "Valkyrie Accipiter", image: '/images/valkportrait/Fu Hua Valkyrie Accipiter.png', type: 'Psy', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/valkyrie-accipiter', verdebut: 2.0, id:70},
+  { name: "Ritual Imayoh", image: '/images/valkportrait/Kallen Ritual Imayoh.png', type: 'Mech', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/ritual-imayoh', verdebut: 1.9, id:69},
+  { name: "Celestial Hymn", image: '/images/valkportrait/Theresa Celestial Hymn.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/celestial-hymn', verdebut: 1.8, id:68},
+  { name: "Flame Sakitama", image: '/images/valkportrait/Sakura Flame Sakitama.png', type: 'Bio', element: 'Fire', astralRing: ['Part 1'] , url: '/valk/flame-sakitama', verdebut: 1.8, id:67},
+  { name: "Black Nucleus", image: '/images/valkportrait/Bronya Black Nucleus.png', type: 'Bio', element: 'Physical', astralRing: ['Part 1'] , url: '/valk/black-nucleus', verdebut: 1.7, id:66},
 
 ];

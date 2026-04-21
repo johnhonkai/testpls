@@ -546,16 +546,15 @@
                 <div class="flex items-center justify-center font-bold text-lg rounded-l-lg p-2 text-black">
                     3
                 </div>
-
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Huodou.webp" date="May 15" weather="Type" bosspage="/boss?typehuodou" />
+                <BossCard image="/images/Bosses/tribunal.png" date="May 18" weather="Dominance" bosspage="/boss?domtribunal" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />                
+                <BossCard image="/images/Bosses/Imgpig.webp" date="May 19" />
+                <BossCard image="/images/BossesMA/Bright Knight Excelsis_SSS.webp" />
+                <BossCard image="/images/Bosses/Hellmaru.webp" />
                 </div>
 
             </div>
