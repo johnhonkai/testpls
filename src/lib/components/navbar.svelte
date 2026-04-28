@@ -227,7 +227,7 @@ function handleClick(event, path) {
 
 			
 			<li aria-current={$page.url.pathname.startsWith('/calendar') ? 'page' : undefined}>
-				<a href="/calendar87" class="nav-link custom-font" data-sveltekit-preload-data="hover">Timeline</a>
+				<a href="/calendar88" class="nav-link custom-font" data-sveltekit-preload-data="hover">Timeline</a>
 			</li>
 			
 <li aria-current={$page.url.pathname.startsWith('/boss') ? 'page' : undefined}>

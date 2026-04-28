@@ -128,7 +128,7 @@ onMount(() => {
 					<li><a href="/asop">AsOp Calculator</a></li>
 
 					<li><a href="/statistics">Statistics</a></li>
-					<li><a href="/calendar87">Timeline</a></li>
+					<li><a href="/calendar88">Timeline</a></li>
 
 					<li><a href="/boss">Boss</a></li>
 					<li><a href="/bilisearch">Bili2 Search</a></li>

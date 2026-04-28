@@ -310,13 +310,20 @@
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASCENSION SUPPLY</span>
                     </div>     
-                    <div on:click={() => openModal("NewADV")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+              <div on:click={() => openModal("NewADV")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sparkle</span>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
                             <img src="https://i.imgur.com/hVR5DCi.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
-                    </div>                      
+                    </div>        
+                              <div on:click={() => openModal("NewADV")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Badum</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
+                            <img src="https://i.imgur.com/qUpalxV.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                           
                 </div>
 
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -329,6 +336,11 @@
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Sparkle Equipment</span>
 
                     </div>   
+                    <div on:click={() => openModal("NewRebate")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Badum Equipment</span>
+
+                    </div>                    
                 </div>
 
             </div>
@@ -565,14 +577,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="May 22" weather="Shadow" bosspage="/boss?shadowhod" />
+                <BossCard image="/images/Bosses/epernay.png" date="May 25" weather="Ice" bosspage="/boss?iceepernay" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />                
+                <BossCard image="/images/Bosses/Flame-Chaser - Kalpas.webp" date="May 26" />
+                <BossCard image="/images/Bosses/Pishacha.webp" />
+                <BossCard image="/images/Bosses/Lantern_SS.webp" />
                 </div>
 
             </div>  
