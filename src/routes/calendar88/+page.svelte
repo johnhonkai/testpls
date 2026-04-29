@@ -128,7 +128,7 @@
         },
         "NewRebate": {
             title: "Ascension Armament",
-            description: '<li>Duration: 3 weeks.</li><li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
+            description: '<li>Cost: 280 crystal or one Equipment Supply Card per pull.</li><li>Every 10 pulls gives 3 Equipment Supply Cards, max 18 Equipment cards can be obtained (at 60 pulls).</li> <li>Every 10 pulls guarantee either weapon or stigma. Weapon is guaranteed in 60 pulls or less.</li><li>Guarantee counter for each Armament Ascension banner is not carried over to other Armament Ascension banners.</li>',
         },    
         "TimeCapsule": {
             title: "Time Capsule",
@@ -274,7 +274,13 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">HoRB DLC</span>
 
-                    </div>                       
+                    </div>     
+                    <div on:click={() => openModal("Equip")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">HoH DLC</span>
+
+                    </div>                                         
                 </div>
 
           
@@ -300,8 +306,15 @@
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">OUTFIT</span>
                     </div>     
-                    <div></div>  
-
+                    <div class="col-span-4"></div>  
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-left left-2 z-10 leading-4 ">Outfit Box <br/> 9600 crystal</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-36 h-full ">
+                            <img src="https://i.imgur.com/VX77NF7.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>   
 
                 </div>
 
