@@ -318,9 +318,9 @@ function selectTabMobile(event) {
           
       </p>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li> Sixth Serenade (6S) was a powerful Ice DPS that excels against mobs.</li>
-          <li> 6S was made for old abyss. She had high resistance to the constant bleed dmg.</li>
-          <li> She received a PRI-ARM which briefly brought her back to the meta.</li>
+          <li> Sixth Serenade (6S) was a powerful Ice DPS that excelled against mobs.</li>
+          <li> 6S was made for old abyss ; she has high resistance to withstand the constant bleed dmg.</li>
+          <li> 6S received a PRI-ARM which briefly brought her back to the meta.</li>
 
         </ul>
 
