@@ -3,14 +3,18 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  speed: '' },
-        { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png',  speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', speed: '' },
-        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', speed: '' },       
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  speed: '' },
-        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png',   speed: '' },
+
+        { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png', teampct: '#1', speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '#1', speed: 'Fast' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#1',  speed: 'Slow' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
+
+        { name: 'Badum', image: '/images/valkportrait/kiana badum.png', speed: '' },   
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", speed: '' },
+
+        { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png',   speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png',  speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', },
@@ -20,14 +24,16 @@
 
     const asopchar = [
 
-        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png',  },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png',  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', },
+        { name: 'YouyunSS', image: '/images/valkportrait/asop_youyun_ss.png', teampct: '#1', speed: 'Fast'},
+        { name: 'YouyunS', image: '/images/valkportrait/asop_youyun_s.png', teampct: '#2', speed: 'Slow'},
+
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', speed: 'Poor'  },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', speed: 'Damn' },
 
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    export let firstCharName: string = 'HoRB'; // default to 'Vita'
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
@@ -78,7 +84,17 @@
             Details
         </summary>
         <div class="py-3 px-4">
+             <p class="text-sm sm:text-base mb-4">
+                So far, SW best team members are either HoRB, Vita or HLE. In cases like Herrscher of Corruption boss where SW does not trigger teammates' Resonance, even BFD Coralie can be used over Vita.
+            </p>
 
+            <p class="text-sm sm:text-base mb-4"><b>SS-rank Youyun</b><br/> Youyun is a massive buff for Silverwing (plus she herself deals big dmg and triggers extra Resonance). At SS-rank, Youyun gives enough initial AR to let you instantly get Surplus at the start of battle.
+
+            </p>  
+
+            <p class="text-sm sm:text-base mb-4"><b>Without SS-rank Youyun</b><br/> Unfortunately you don't have enough initial AR and Stellar Drain to quickly activate Surplus. Use Vita support, since she gives the most AR regen.
+
+            </p>  
     </div>
     </details>
 </div>

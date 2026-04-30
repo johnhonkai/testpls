@@ -4,6 +4,7 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+        { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png', teampct: 'TBA', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png',teampct: '100%', speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '96%', speed: '' },       
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '95.7%', speed: '' },
@@ -14,6 +15,7 @@
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '75%', speed: '' },
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '72%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '62%', speed: 'Slow' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
 
     ];
 

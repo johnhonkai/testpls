@@ -32,10 +32,10 @@
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
 
-  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', badge: 'Beta', verdebut: 5.4, verdlc: 8.8, id:33},
+  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', badge: 'Updated', verdebut: 5.4, verdlc: 8.8, id:33},
 
-  { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel',  badge: 'New', verdebut: 8.7, id:65},  
-  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv', badge: 'Updated', verdebut: 7.0, verdlc: 8.7, id:52},
+  { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel', verdebut: 8.7, id:65},  
+  { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv',  verdebut: 7.0, verdlc: 8.7, id:52},
 
   { name: 'Miss Espionage', image: '/images/valkportrait/Miss Espionage.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  verdebut: 8.6, id:64},  
 
