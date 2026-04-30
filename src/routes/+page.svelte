@@ -343,13 +343,13 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="/valk/xentinel" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=fqRcOZwpbRI" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.imgur.com/ruFTmjv.jpeg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/fqRcOZwpbRI/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
-          <p class="text-slate-300">Mei Xentinel</p>
+          <p class="text-slate-300">New Seele</p>
         </div>
       </a>
   

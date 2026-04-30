@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Elysia - Hi ♪ Love Elf ♥</title> 
+  <title>Seele</title> 
 
-    <meta property="og:title" content="Elysia - Hi ♪ Love Elf ♥" />
-    <meta property="og:description" content="Hi ♪ Love Elf ♥ Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/qNSWji2.png" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/messenger-of-love" />
+    <meta property="og:title" content="Seele" />
+    <meta property="og:description" content="Seele Guides, Builds and Gameplay" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -66,13 +66,13 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-  { name: 'Lineup', short: 'lineup', icon: faUsers },
-  { name: 'Equipment', short: 'equipment', icon: faBolt  },
-  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
-  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-  { name: 'Gameplay', short: 'example', icon: faVideo },
-  { name: 'Elysian Realm', short: 'er', icon: faFire },
-  { name: 'Rank Up', short: 'rank', icon: faStar },
+//  { name: 'Lineup', short: 'lineup', icon: faUsers },
+//  { name: 'Equipment', short: 'equipment', icon: faBolt  },
+//  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
+//  { name: 'How to Play', short: 'howtoplay', icon: faBook },
+//  { name: 'Gameplay', short: 'example', icon: faVideo },
+//  { name: 'Elysian Realm', short: 'er', icon: faFire },
+//  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
  // { name: 'Translation Error', short: 'translation' },
@@ -235,14 +235,14 @@ async function increaseLike() {
 
 <style>
   #star-container {
-    background: radial-gradient(rgb(var(--light-pink-rgb)), rgb(var(--dark-pink-rgb)));
+    background: radial-gradient(rgb(var(--light-blue-rgb)), rgb(var(--dark-blue-rgb)));
     height: 100%;  
     overflow: hidden;
     position: relative;
   }
 
   #star-gradient-overlay {
-    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-pink-rgb)));
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-blue-rgb)));
     position: absolute;
     left: 0px;
     top: 0px;
@@ -277,17 +277,25 @@ async function increaseLike() {
 
 
 <CharacterLayout
-  charName="mol"
-  initialLikes={likesData["mol"] || 0}
-  accent="bg-pink-800"
-  image="/images/valkfull/mol.png"
-  alt="Messenger of Love"
-  title="Hi ♪ Love Elf ♥"
-  name="Elysia"
-  release="v8.9 (25 June 2025)"
+  charName="89seele"
+  initialLikes={likesData["89seele"] || 0}
+  accent="bg-blue-800"
+  image="/images/valkfull/89Seele.png"
+  alt="89seele"
+
+  titleEN="死生之律者"
+  titleCN="死生之律者"
+
+  nameEN="Seele Vollerei"
+  nameCN="希儿·芙乐艾"
+
+  releaseEN="v8.9 (25 Jun 2026)"
+  releaseCN="v8.9 (28 May 2026)"
+
+
 >
-  <CharBio mode="dps" rank="s" type="sd" element="ice" ar="goi" bg="bg-pink-800" />
-  <CharBio mode="support" ar={['goi', 'wod', 'ws']} bg="bg-pink-800" />
+  <CharBio mode="dps" rank="s" type="sd" element="lightning" ar="ws" bg="bg-blue-800" />
+  <CharBio mode="support" ar={['ws']} bg="bg-blue-800" />
 </CharacterLayout>
 
 
@@ -375,58 +383,23 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Lovely Ice DPS </strong> 
-          </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li><span class="text-pink-300 italic">Hi ♪ captain ♥ It's me, the brand new Elysia~</span></li>
-                <li>Hi ♪ Love Elf ♥ (HLE) is an Ice DPS that can create domain expansion <span class="text-pink-300">Love's Expanse</span>, blooming all over the enemies and me.</li>
-                <li>Just like all Part 2 valks, HLE is great in her optimal match-ups, but just decent everywhere else.</li>
-          </ul>        
+              <strong class="text-amber-400">To Be Added </strong> 
+          </p> 
           
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Utilities</strong>
 
             </p>   
 
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Freeze trauma.</li>
-                <li>As a Stardust (SD) character, HLE has various counters against SD enemies: Can force trigger critical index, generate extra SD remnants, reduce the duration of consolidated form, and SD remnants deal 5% more dmg to Max HP.</li>
-          </ul> 
-
-                      <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Grail of Infinitude Support</strong>
-              <br/>
-              So far, HLE does not provide any improvement on existing <a class="link" href="/valk/horb">Planar Armament</a> teams.
-            </p>   
-          
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong>
-              <br/>
-              HLE is used by <a class="link" href="/valk/sena">Senadina</a> and <a class="link" href="/valk/horb">Herrscher of Rebirth</a> to counter SD enemies.
-            </p>   
-
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Wheel of Destiny Support</strong>
-              <br/>
-              Currently we lack live Abyss data. Based on beta, HLE might be one of the new best supports for <a class="link" href="/valk/thelema">Thelema</a> and <a class="link" href="/valk/hoh">Herrscher of Human</a>.
-            </p>   
-
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Cons</strong>
-              <br/>
-              Despite being an archer character, HLE cannot target enemy's weak spot (like MHT-3B tank). That means the other Elysia - <a class="link" href="/valk/hoh">Herrscher of Human</a> - will still be required to counter tank.
-            </p>   
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get New Elysia in v8.5. You should be able to get her with all the 8.5 freebies. 
+              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get Silverwing DLC and Youyoun in v8.8 to prepare for New Seele if you plan to get New Seele in v8.9. 
             </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Longer Explanation</strong> <br/> Recommended to get HLE in v8.5 if you can guarantee valk + weapon, preferably within the first week of v8.5 to get the most value out of her DPS role, because her bosses will appear more frequently during the first 3-4 weeks. After that, she will be used as support more often.
-            </p>
+
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -434,25 +407,9 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.5</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.9</li>
           </ul>
-          <div class="divider  "></div>
-          <!-- Full Guide Section -->
-          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
-          <p class="mt-2 text-sm sm:text-base pb-4">
-            Check out the full guide on YouTube:
-        </p>
-  
-          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-              <iframe
-                  class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/hwDgn8J1dkc"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-          </div>
+
 
       </div>
 

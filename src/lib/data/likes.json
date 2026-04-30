@@ -1,4 +1,5 @@
 {
+  "89seele": 1,
   "Black Nucleus": 2,
   "Flame Sakitama": 1,
   "Kriegsmesser": 4,
@@ -35,7 +36,7 @@
   "hoh": 832,
   "hoo": 119,
   "hor": 42,
-  "horb": 497,
+  "horb": 498,
   "hos": 167,
   "hot": 95,
   "hotf": 9,
@@ -50,6 +51,7 @@
   "mol": 1527,
   "mpe": 178,
   "newmei": 769,
+  "newseele": 1,
   "nyx": 69,
   "pardo": 48,
   "paws": 602,
@@ -74,7 +76,7 @@
   "sparkle": 526,
   "striker": 23,
   "sushang": 28,
-  "sw": 167,
+  "sw": 173,
   "thelema": 350,
   "theresa": 3,
   "tp": 9,
@@ -84,5 +86,5 @@
   "void-drifter": 16,
   "vq": 48,
   "vv": 52,
-  "youyun": 34
+  "youyun": 35
 }

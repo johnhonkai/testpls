@@ -31,6 +31,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
+  { name: '愈生佑翎', image: '/images/valkportrait/89Seele.png', type: 'SD', element: 'Lightning', astralRing: ['World Star'] , url: '/valk/89seele', badge: 'Beta', verdebut: 8.9, verdlc: 8.8, id:75},
 
   { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', badge: 'Updated', verdebut: 5.4, verdlc: 8.8, id:33},
 
