@@ -318,7 +318,7 @@ function selectTabMobile(event) {
           
       </p>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li> Flame Sakitama (FS) was a powerful Fire DPS that has some skill-cap with her timed attack. Pretty popular and stylish valk back then.</li>
+          <li> Flame Sakitama (FS) was a powerful Fire DPS that has some skill-check with her timed attack. Pretty popular and stylish valk back then.</li>
           <li> FS received a PRI-ARM update which briefly brought her back into meta.</li>
           <li> Ruinous Sakura PRI-ARM enabled FS to be an elemental / ignite support. It was used a few times on bosses like Herrscher of Rimestar and in Memorial Arena.</li>
 
