@@ -406,7 +406,7 @@ async function increaseLike() {
         <ul class="list-disc ml-6 text-sm sm:text-base ">
           <li> New best support for Herrscher of Rebirth. </li>
           <li> Also very likely to be the best support for v8.9 Seele. </li>
-          <li> Grants buffs when the team activates Stellar Outburst after gaining Surplus state.</li>
+          <li> Enables the team to gain Stellar Surplus state. Grants buffs when the team activates Stellar Outburst after gaining Surplus state.</li>
 
         </ul>
 
