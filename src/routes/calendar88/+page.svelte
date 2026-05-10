@@ -500,6 +500,42 @@
                 </div> 
     
   
+                    <div class="col-span-4"></div>
+                    <div on:click={() => openModal("")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">8-Day Login: Free 5 Equip Cards</span>
+                                                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/7mFTRYU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
+            </div>
+
+                        <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 8</span>
+                </div> 
+    
+  
+                    <div class="col-span-5"></div>
+                    <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Schicksal Classroom</span>
+                                                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/OCeVaAJ.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
+            </div>
+
+                        <div class="relative grid grid-cols-9 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 9</span>
+                </div> 
+    
+  
                     <div class="col-span-6"></div>
                     <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
@@ -608,16 +644,15 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Varaha.png" date="May 29" weather="Lightning" bosspage="/boss?lightvaraha" />
+                <BossCard image="/images/Bosses/Hephaestus SSS.webp" date="Jun 1" weather="Ranged" bosspage="/boss?rangedhepa" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />                
+                <BossCard image="/images/Bosses/Paros.png" date="Jun 2" />
+                <BossCard image="/images/Bosses/duonigue.png" />
+                <BossCard image="/images/Bosses/Kallen.webp" />
                 </div>
-
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
                 <!-- Week Column -->
@@ -626,8 +661,8 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Swarm.webp" date="Jun 5" weather="Flux" bosspage="/boss?fluxmob" />
+                <BossCard />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">

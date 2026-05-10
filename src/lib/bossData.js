@@ -9,6 +9,7 @@ export const weatherList = {
     {id: 'lightbull',name: 'Husk: Mysticism'},
     {id: 'marut', name: 'Marut'},
     {id: 'lightflower', name: 'Husk: Existentialism'},
+    {id: 'lightvaraha', name: 'Valrahal'},
 
   ],
   fire: [
@@ -688,6 +689,14 @@ export const bossData = {
     typeicon: "images/type/IconQUA.png", 
     bosspic: "images/Bosses/Varaha.png", 
     weather: "QUA: QUA valk DMG +20%", 
+  },
+    lightvaraha: {
+    name: 'Valrahal', 
+    mechanics: "P1: Has 9 layers of qua shields. There's a minigame at the start, collect the orbs and applies the same amount of qua collapse. P2: Has 5 layers of qua shield. During transition, jump/evade valrahal's slam to spawn collapse orbs.", 
+    weakness: 'None', 
+    typeicon: "images/type/IconQUA.png", 
+    bosspic: "images/Bosses/Varaha.png", 
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.", 
   },
   ignitehov: {
     name: 'Herrscher of the Void', 
