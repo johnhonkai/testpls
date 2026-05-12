@@ -411,6 +411,23 @@ async function increaseLike() {
               <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.9</li>
           </ul>
 
+          <div class="divider  "></div>
+          <!-- Full Guide Section -->
+          <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">GAMEPLAY</h2>
+          <p class="mt-2 text-sm sm:text-base pb-4">
+            Check out the gameplay:
+        </p>
+  
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/86IQDETStiY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
 
       </div>
 

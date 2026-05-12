@@ -94,13 +94,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2026-3-5'); // Start date Regional Servers
+      const regionalStartDate = new Date('2026-5-1'); // Start date Regional Servers
       const cnStartDate = new Date('2026-4-4');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.7 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v8.8 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v8.8 Week ${currentWeekCN}`;
   }
 
@@ -196,7 +196,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v8.8 update is on 30 Apr </li>
+              <li>v8.9 update is on 25 Jun</li>
             </ul>
           </div>
           <div>
@@ -344,9 +344,9 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=fqRcOZwpbRI" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=86IQDETStiY" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/fqRcOZwpbRI/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/86IQDETStiY/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
