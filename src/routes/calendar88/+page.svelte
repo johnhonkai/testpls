@@ -227,9 +227,7 @@
                         
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">BFD</span>
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
-                            <img src="https://i.imgur.com/3zaazZT.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
-                        </div>
+
                     </div>   
                 </div>
 
