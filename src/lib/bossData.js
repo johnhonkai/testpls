@@ -10,6 +10,7 @@ export const weatherList = {
     {id: 'marut', name: 'Marut'},
     {id: 'lightflower', name: 'Husk: Existentialism'},
     {id: 'lightvaraha', name: 'Valrahal'},
+    {id: 'lightrpc', name: 'RPC-6626'},
 
   ],
   fire: [
@@ -279,7 +280,15 @@ export const bossData = {
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Li Sushang.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
-  },    
+  }, 
+  lightrpc: {
+    name: 'RPC-6626', 
+    mechanics: 'First wave has 3 Mech mobs. Transition phase has 30 hitcount hp.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/RPC-6626.webp", 
+    weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
+  },     
   lightningsprout: {
     name: 'Sprout of Wishing', 
     mechanics: 'Phase 2 has lightning-vulnerable shield.', 

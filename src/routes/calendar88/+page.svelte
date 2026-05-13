@@ -221,8 +221,16 @@
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip ">
                     <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                          <span class="font-bold0">BATTLESUIT SUPPLY A</span>
-                    </div>                    
-
+                    </div>      
+                    <div class="col-span-6"></div>              
+                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">BFD</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
+                            <img src="https://i.imgur.com/3zaazZT.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>   
                 </div>
 
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -239,6 +247,12 @@
                             <img src="https://i.imgur.com/bKHSNcT.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
                     </div>    
+                    <div on:click={() => openModal("Equip")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-2 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">BFD Equipment</span>
+
+                    </div>                       
                 </div>
 
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip ">
@@ -662,13 +676,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Swarm.webp" date="Jun 5" weather="Flux" bosspage="/boss?fluxmob" />
-                <BossCard />
+                <BossCard image="/images/Bosses/RPC-6626.webp" date="Jun 8" weather="Lightning" bosspage="/boss?lightrpc" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard />
-                <BossCard />
-                <BossCard />                
+                <BossCard image="/images/Bosses/Vita.png" date="Jun 9" />
+                <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" />
+                <BossCard image="/images/Bosses/Hephaestus.webp" />
                 </div>
 
             </div> 
