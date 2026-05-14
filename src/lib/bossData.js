@@ -287,7 +287,7 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconMECH.png", 
     bosspic: "images/Bosses/RPC-6626.webp", 
-    weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
+    weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },     
   lightningsprout: {
     name: 'Sprout of Wishing', 
