@@ -63,7 +63,8 @@
 
   // Filter the valkyries based on the selected filters
   $: filteredValkyries = valkyries.filter(valk => {
-    const typeMatch = selectedType === 'All' || valk.type === selectedType;
+    const valkTypes = Array.isArray(valk.type) ? valk.type : [valk.type];
+    const typeMatch = selectedType === 'All' || valkTypes.includes(selectedType);
     const elementMatch = selectedElement === 'All' || valk.element.includes(selectedElement);
     const astralRingMatch = selectedAstralRing === 'All' || valk.astralRing.includes(selectedAstralRing);
     return typeMatch && elementMatch && astralRingMatch;
@@ -259,19 +260,47 @@ onMount(() => {
           </span>
         {/if}
 
-        {#if valkyrie.type}
-          <div class="absolute top-1 left-0 sm:mx-1 w-7 sm:w-8 z-10">
-            <img src={`/images/type/icon_${valkyrie.type.toLowerCase()}.webp`} alt={valkyrie.type} class="w-full h-full object-cover" />
-          </div>
-        {/if}
+{#if valkyrie.type}
+  {#each (Array.isArray(valkyrie.type) ? valkyrie.type : [valkyrie.type]) as type, i}
+    <div
+      class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10"
+      style={`top: ${0.25 + (i * 2)}rem`}
+    >
+      <img
+        src={`/images/type/icon_${type.toLowerCase()}.webp`}
+        alt={type}
+        class="w-full h-full object-cover"
+      />
+    </div>
+  {/each}
+{/if}
 
-        {#if valkyrie.element}
-          {#each (Array.isArray(valkyrie.element) ? valkyrie.element : [valkyrie.element]) as el, i}
-            <div class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10" style={`top: ${2.2 + (i * 2)}rem`}>
-              <img src={`/images/element/icon_${el.toLowerCase()}.webp`} alt={el} class="w-full h-full object-cover" />
-            </div>
-          {/each}
-        {/if}
+{#if valkyrie.element}
+  {@const typeCount =
+    Array.isArray(valkyrie.type)
+      ? valkyrie.type.length
+      : valkyrie.type
+        ? 1
+        : 0
+  }
+
+  {#each (Array.isArray(valkyrie.element)
+    ? valkyrie.element
+    : [valkyrie.element]) as el, i}
+
+    <div
+      class="absolute left-0 sm:mx-1 w-7 sm:w-8 z-10"
+      style={`top: ${0.25 + ((typeCount + i) * 2)}rem`}
+    >
+      <img
+        src={`/images/element/icon_${el.toLowerCase()}.webp`}
+        alt={el}
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  {/each}
+{/if}
 
 {#if loadedImages[valkyrie.name]}
   <img 

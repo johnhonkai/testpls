@@ -3,6 +3,7 @@
     export let mode: 'dps' | 'support'; // replaces `type`
     export let rank: string | null = null;
     export let type: string | null = null; // character type: bio, mech, etc.
+    export let type2: string | null = null; // character type: bio, mech, etc.
     export let element: string | null = null;
     export let optelement: string | null = null;
     export let ar: string | string[] = [];
@@ -65,7 +66,13 @@
           <img src={imgMap[type].src} alt={type} class="h-8 " />
         </div>
       {/if}
-  
+
+      {#if type2 && imgMap[type2]}
+        <div class="lg:tooltip" data-tip={imgMap[type2].tip}>
+          <img src={imgMap[type2].src} alt={type} class="h-8 " />
+        </div>
+      {/if}  
+
       {#if element && imgMap[element]}
         <div class="lg:tooltip" data-tip={imgMap[element].tip}>
           <img src={imgMap[element].src} alt={element} class="h-8 " />
