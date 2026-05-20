@@ -417,8 +417,19 @@ async function increaseLike() {
           <p class="mt-2 text-sm sm:text-base pb-4">
             Check out the gameplay:
         </p>
-  
+
           <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/ukyy9f3ow9o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
+
+          <div class="mt-10 relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
                   class="absolute top-0 left-0 w-full h-full"
                   src="https://www.youtube.com/embed/86IQDETStiY"
