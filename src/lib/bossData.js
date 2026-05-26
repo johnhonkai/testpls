@@ -104,7 +104,7 @@ export const weatherList = {
     {id: 'resoguaymas', name: "Meteoroid: Guaymas"},
     {id: 'resohoc', name: "Herrscher of Corruption"},
     {id: 'resowhale', name: "Opaque Shadow"},
-    {id: 'resosa', name: "Sa: Wheel of Transcendence"},
+    {id: 'resosa', name: "Sa"},
 
   ],
   melee: [
