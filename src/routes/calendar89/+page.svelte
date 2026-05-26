@@ -447,7 +447,7 @@
                         <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Summer Fashion Returning Outfits</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/gYC0pDM.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/v6D0Lzx.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
 
