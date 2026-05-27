@@ -1,11 +1,11 @@
 
 <svelte:head>
-  <title>Seele</title> 
+  <title>Seele Wings of Panacea</title> 
 
-    <meta property="og:title" content="Seele" />
-    <meta property="og:description" content="Seele Guides, Builds and Gameplay" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="https://marisaimpact.com/valk/" />
+    <meta property="og:title" content="Seele Wings of Panacea" />
+    <meta property="og:description" content="Seele Wings of Panacea Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/LtjUz03.png" />
+    <meta property="og:url" content="https://marisaimpact.com/valk/wings-of-panacea" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -280,10 +280,10 @@ async function increaseLike() {
   charName="89seele"
   initialLikes={likesData["89seele"] || 0}
   accent="bg-blue-800"
-  image="/images/valkfull/89Seele.png"
+  image="/images/valkfull/Seele Wings of Panacea.png"
   alt="89seele"
 
-  titleEN="死生之律者"
+  titleEN="Wings of Panacea"
   titleCN="死生之律者"
 
   nameEN="Seele Vollerei"

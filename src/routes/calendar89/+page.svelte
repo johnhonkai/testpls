@@ -225,7 +225,7 @@
                     <div on:click={() => openModal("")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">New Seele</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Wings of Panacea<br/>First ten pulls are 50% off</span>
                     <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-full ">
                             <img src="https://i.imgur.com/3iaYMwX.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
@@ -241,7 +241,7 @@
                     <div on:click={() => openModal("Equip")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-6 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">New Seele Equipment</span>
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Wings of Panacea Equipment</span>
   
                     </div>                        
                 </div>

@@ -121,9 +121,9 @@
   let difficulty = 'Agony 3';
 
   // Base values (Agony 3)
-  const baseF2P = 18920;
-  const baseMonthly = 24080;
-  const baseBP = 26080;
+  const baseF2P = 19875;
+  const baseMonthly = 25035;
+  const baseBP = 27035;
 
   // Adjusted values
   $: bonus = difficulty === 'Red Lotus' ? 1280 : difficulty === 'Nirvana' ? 1600 : 0;
@@ -214,16 +214,16 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">8.9 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">9.0 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: 30 Apr </li>
-          <li>Beta v1 (Private): 1 May</li>
-          <li>Dev Video: 7 May</li>
-          <li>Beta v2: 8 May </li>
-          <li>Beta v3: 15 May </li>
-          <li>Livestream: 23 May</li>
-          <li>Patch Day: 28 May </li>
+          <li>Valk Teaser & Reveal: 25 June</li>
+          <li>Beta v1 (Private): 26 June</li>
+          <li>Dev Video: 2 July</li>
+          <li>Beta v2: 3 July </li>
+          <li>Beta v3: 10 July </li>
+          <li>Livestream: 18 July</li>
+          <li>Patch Day: 23 July </li>
          
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
@@ -281,7 +281,7 @@
 
     <!-- Always-visible info icon -->
     <a 
-      href="https://www.miyoushe.com/bh3/article/74231339"
+      href="https://www.miyoushe.com/bh3/article/75553564"
       target="_blank"
       class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
       data-tip="Go to source"
