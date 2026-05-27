@@ -233,7 +233,7 @@
 <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
   <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
     <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-    <h2 class="text-lg font-semibold text-white tracking-tight">8.8 CRYSTAL INCOME</h2>
+    <h2 class="text-lg font-semibold text-white tracking-tight">8.9 CRYSTAL INCOME</h2>
   </div>
 
 
