@@ -95,13 +95,13 @@
 
   function updatePatchTime() {
       const regionalStartDate = new Date('2026-5-1'); // Start date Regional Servers
-      const cnStartDate = new Date('2026-4-4');       // Start date CN Servers
+      const cnStartDate = new Date('2026-5-30');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
       regionalServerInfo = `Current: v8.8 Week ${currentWeekRegional}`;
-      cnServerInfo = `Current: v8.8 Week ${currentWeekCN}`;
+      cnServerInfo = `Current: v8.9 Week ${currentWeekCN}`;
   }
 
   function calculateWeek(startDate: Date): number {
