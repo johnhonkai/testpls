@@ -483,16 +483,16 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Paros.png" date="Jun 26" weather="Lightning" bosspage="/boss?lightparos" />
+                <BossCard image="/images/Bosses/Husk - Nihilus (Hitcount).webp" date="Jun 29" weather="Type" bosspage="/boss?typehusk" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Alien Guard.webp" date="Jun 30" />
+                <BossCard image="/images/Bosses/Ricecake.webp" />
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" />
                 </div>
-    
+
 
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
@@ -502,14 +502,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Parvati.webp" date="Jul 3" weather="Extreme" bosspage="/boss?extreme-parvati" />
+                <BossCard image="/images/Bosses/Vita.png" date="Jul 6" weather="Lightning" bosspage="/boss?lightvita" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Imgpig.webp" date="Jul 7" />
+                <BossCard image="/images/Bosses/Twins.png" />
+                <BossCard image="/images/Bosses/Assaka.webp" />
                 </div>
 
             </div>
