@@ -86,7 +86,7 @@
         </summary>
         <div class="py-3 px-4">
              <p class="text-sm sm:text-base mb-4">
-                So far, WoP best team members are usually Silverwing DLC + another support like HoRB, Sparkle or even HLE.
+                So far, WoP best team members are usually Silverwing DLC + another support like HLE, HoRB, Vita or even Sparkle for quantum collapse.
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>SS-rank Youyun</b><br/> Youyun is a massive buff for WoP (plus she herself deals big dmg and triggers extra Resonance). At SS-rank, Youyun gives enough initial AR to let you instantly get Surplus at the start of battle.
@@ -97,7 +97,7 @@
 
             </p>  
 
-            <p class="text-sm sm:text-base mb-4"><b>Vita</b><br/> Vita's extra ar regen from her punch won't work when WoP is in the team.
+            <p class="text-sm sm:text-base mb-4"><b>Vita</b><br/> Vita's extra ar regen from her punch won't work when WoP is in the team. WoP has her own extra AR regen. You just can't stack them.
 
             </p>              
     </div>

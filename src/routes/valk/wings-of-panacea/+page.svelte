@@ -72,7 +72,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
   { name: 'Gameplay', short: 'example', icon: faVideo },
-//  { name: 'Elysian Realm', short: 'er', icon: faFire },
+  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
  // { name: 'Overview Card', short: 'card' },
@@ -654,29 +654,27 @@ async function increaseLike() {
       <div class="flex justify-center gap-4 my-6">
 
 
-
+        <button
+        on:click={() => setPlaystyle('1')}
+        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+      >
+        AR CHARGING
+      </button>    
 
         <button
-          on:click={() => setPlaystyle('1')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+          on:click={() => setPlaystyle('2')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
         >
         STELLAR OUTBURST
         </button>
 
-        <button
-        on:click={() => setPlaystyle('2')}
-        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-      >
-        AR CHARGING
-      </button>     
+ 
 
       </div>
-    
-
       {#if activePlaystyle === '1'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
       <p class="text-sm sm:text-base text-center sm:text-left">
-       Stronger playstyle.
+       Hold ATK
       </p>
   
       <div class="divider  "></div>
@@ -697,17 +695,174 @@ async function increaseLike() {
           
           <!-- Right side text sections -->
           <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Glad News + Fragrant Gardens</p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Pure Wish</p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Quiet Caress </p>
           </div>
         </div>
         
       </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
+
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <!-- First Signet with 'Start' text -->
+
+  
+
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+
+              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+ 
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>   
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">2</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">2</p>
+            </div>
+
+
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+  
         </div>
+
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+  
+                <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">MID</p>
+        </div>
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+          
+          
+        </div>
+  
+  
+  
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+  
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+          
+
+  
+  
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+            </div>
+            <p class="text-base sm:text-lg font-semibold">START</p>
+        </div>
+
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>  
+
+        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+            <div class="flex flex-row rounded-sm">
+              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              </div>
+            <p class="text-base sm:text-lg font-semibold">FINAL</p>
+        </div>
+  
+  
+        </div>
+  
+        
+        <div class="divider  "></div>
+        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+  
+        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Hold ATK </li>
+        </ol>
+  
+
+      {/if}
+    
+
+      {#if activePlaystyle === '2'}
+      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+      <p class="text-sm sm:text-base text-center sm:text-left">
+       As usual, takes more real-life time to clear since you have to watch SO and ult animations multiple times. There is another variation where you stay in Stellar Outburst longer (Earnest Warmth signet instead of Refreshing Spirit).
+      </p>
+  
+      <div class="divider  "></div>
+  
+      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+  
+      <div class="flex flex-col justify-center items-start ">
+  
+      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+  
+        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+        </div>
+          <!-- Left side image -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
+            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+          </div>
+          
+          <!-- Right side text sections -->
+          <div class="flex flex-col space-y-2 pr-2 z-10">
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Heartfelt Words ➔ Refreshing Spirit </p>
+            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Quiet Caress </p>
+          </div>
+        </div>
+        
+      </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+          <ul class="list-disc px-4 text-sm sm:text-base">
+
+          <li class="text-sm sm:text-base"> ER Lite mode: Equip Because of You sigil and get all three Ego signets on Floor 7.</li>
+          <li class="text-sm sm:text-base"> Normal mode: You can complete the run with just one Ego signet (Heartfelt Words), but having both Ego signets is a big improvement. You can get both Ego signets at the start by using Thorny Crown sigil, OR by resetting Floor 1 until you get another Ego portal, OR use Because of You support sigil and get the other two Ego signets on Floor 7.</li>
+          </ul>
+          </div>
+  
   
         <div class="divider  "></div>
         <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
@@ -718,23 +873,27 @@ async function increaseLike() {
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
               <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">1</p>
             </div>
 
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>
+
+             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold">1</p>
+            </div>    
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
               <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <p class="text-lg font-semibold">2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
             </div>
 
             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
@@ -744,12 +903,6 @@ async function increaseLike() {
   
         </div>
 
-        <div class="mt-3 rounded-sm" >
-          <p class="text-sm sm:text-base text-left">
-            <span class="text-sky-300">Deliverance</span>: Upgrading Love's Expanse counts as casting Ultimate.
-
-          </p>
-        </div>
 
           <div class="divider  "></div>
           <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
@@ -758,7 +911,7 @@ async function increaseLike() {
           
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">START</p>
@@ -766,7 +919,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">MID</p>
@@ -774,7 +927,7 @@ async function increaseLike() {
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
             <p class="text-base sm:text-lg font-semibold">FINAL</p>
@@ -793,18 +946,18 @@ async function increaseLike() {
           <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
               <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Because_of_You.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
+            <p class="text-base sm:text-lg font-semibold">START (ER Lite)</p>
         </div>
   
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
             <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
               <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
             </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
+            <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
         </div>
   
         <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
@@ -824,210 +977,21 @@ async function increaseLike() {
   
         <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
           <li>Activate Stellar Outburst</li>
-          <li>Weapon x2</li>
-          <li>Do full Basic ATK</li>
-          <li>Weapon x2</li>
-          <li>Activate Ult finisher</li>
-          <li>ATK until Stellar Outburst is ready</li>
+          <li>Full ATK sequence</li>
+          <li>Ultimate</li>
           <li>Repeat</li>
 
         </ol>
   
-          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/SQhxa_tFglE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+  
       {/if}
 
   
-      {#if activePlaystyle === '2'}
-      <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
-      <p class="text-sm sm:text-base text-center sm:text-left">
-       Loop Weapon and Ultimate.
-      </p>
-  
-      <div class="divider  "></div>
-  
-      <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
-  
-      <div class="flex flex-col justify-center items-start ">
-  
-      <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
-  
-        <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
-          <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
-        </div>
-          <!-- Left side image -->
-          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
-            <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
-          </div>
-          
-          <!-- Right side text sections -->
-          <div class="flex flex-col space-y-2 pr-2 z-10">
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Blossoms + Bright Star </p>
-            <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Golden Arrow </p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="mt-3 rounded-sm" >
-      <p class="text-sm sm:text-base text-left">
-          HLE starts with two Ego signets, and regular signets gain +1 level.
-      </p>
-
-
-        </div>
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          <!-- First Signet with 'Start' text -->
-
-  
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
-              <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold ">1</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Deliverance (Kevin).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Infinity (Mobius).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>    
-
-             <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>    
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">2</p>
-            </div>
-
-            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-              <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <p class="text-lg font-semibold">1</p>
-            </div>
-  
-        </div>
-
-
-          <div class="divider  "></div>
-          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-          
-          
-        </div>
-  
-  
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
-  
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
-          
-  
-          <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Gold_Goblet.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">START</p>
-        </div>
-  
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Burden.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-            </div>
-            <p class="text-base sm:text-lg font-semibold">MID</p>
-        </div>
-  
-        <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
-            <div class="flex flex-row rounded-sm">
-              <img src="/images/sigils/Key_to_the_Deep.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              <img src="/images/sigils/Dreamful_Gold.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
-              </div>
-            <p class="text-base sm:text-lg font-semibold">FINAL</p>
-        </div>
-  
-  
-        </div>
-  
-        
-        <div class="divider  "></div>
-        <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
-  
-        <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
-          <li>Weapon </li>
-          <li>Use fully charged Ultimate </li>
-          <li>Basic ATK x2 </li>
-          <li>Repeat </li>
-        </ol>
-  
-    
-          <p class="mt-8 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
-
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/RxZIugMc8gM"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-      {/if}
 
 
 
       {/if}
+
 
 
       {#if selectedTab === 'Rank Up'}
