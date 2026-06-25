@@ -57,20 +57,21 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Simpdps from "$lib/components/lineup/simpdps.svelte";
 	import Senadps from "$lib/components/lineup/senadps.svelte";
 	import Horbdlcdps from "$lib/components/lineup/horbdlcdps.svelte";
-	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
+	import wopdps from "$lib/components/lineup/wopdps.svelte";
 	import Hohdps from "$lib/components/lineup/hohdps.svelte";
 	import Jddps from "$lib/components/lineup/jddps.svelte";
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
+	import Wopdps from "$lib/components/lineup/wopdps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-//  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-//  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
 //  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
@@ -384,20 +385,47 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">To Be Added </strong> 
+              <strong class="text-amber-400">DPS </strong> 
           </p> 
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Wings of Panacea (WoP) is the first dual type valkyrie.</li>
+                <li>Although WoP isn't exactly a Quantum type, she can apply Quantum collapse and has huge buffs against QUA enemies.</li> 
+                <li>She is a Stellar Surplus DPS. During Surplus state, she can perform Resonance attacks.</li> 
+
+          </ul>     
+          
           
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Utilities</strong>
-
+              <strong class="text-amber-400">WoD and World Star Support</strong>
             </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>WoP provides Breach, huge buffs and higher AR regen. WoP is basically a better version of <a href="/valk/lp" class="link">Vita Lone Planetfarer</a>.</li>
+                <li>Note: Fire World Star characters do not get Breach (For now, only Sparkle.)</li> 
+                <li>Surplus Buff: If you trigger Surplus, the team gains bigger buff during the next Stellar Outburst.</li> 
+          </ul>  
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong>
+              <br/>
+              No live data.
+            </p>   
+
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Utilities</strong>
+            </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Quantum Collapse: Can trigger 2 Qua collapse at once with signature equipment.</li>
+                <li>Stardust Trigger: Can detonate 2 SD points at once.</li> 
+          </ul>  
+
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get Silverwing DLC and Youyoun in v8.8 to prepare for New Seele if you plan to get New Seele in v8.9. 
+              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get Wings of Panacea in v8.9. 
             </p>
 
 
@@ -466,39 +494,10 @@ async function increaseLike() {
 
 
 
-  <button
-    on:click={() => setLineup('2')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm leading-3 
-      ${activeLineup === '2' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    GRAIL OF INFINITUDE
-  </button>
-
-  <button
-    on:click={() => setLineup('3')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activeLineup === '3' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    WHEEL OF DESTINY
-  </button>
-
-    <button
-    on:click={() => setLineup('4')}
-    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
-      ${activeLineup === '4' 
-        ? 'bg-blue-500 text-white' 
-        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-  >
-    WORLD STAR
-  </button>
 </div>
 
       {#if activeLineup === '1'}
-      <Hilovedps></Hilovedps>
+      <Wopdps></Wopdps>
 
       {/if}
 
@@ -572,7 +571,7 @@ async function increaseLike() {
       </div>
 
         </div>  
-        <h4 class="text-base sm:text-base text-white"> Pure Love's Whisper + Blissful Days set</h4>
+        <h4 class="text-base sm:text-base text-white"> Dawn-Caressed Bloom + Ever-Healing Flower set</h4>
         </div>
 
 
@@ -585,12 +584,12 @@ async function increaseLike() {
 
       <div class="p-4 mt-4 bg-linear-to-r from-pink-950/75 to-pink-900/75 rounded-sm">
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Pure Love's Whisper</b><br/> - Best weapon for HLE, huge self buffs and team buffs.
-          <br/>- Important utility during AR Charging: After casting weapon skill, gives enough sp to do full charge Ult.
+          <b>Dawn-Caressed Bloom</b><br/> - Best weapon for WOP, huge self buffs and team buffs.
+          
         </p>
 
         <p class="text-sm sm:text-base text-left mb-4">
-          <b>Blissful Days set</b><br/> - Huge buffs.
+          <b>Ever-Healing Flower set</b><br/> - Huge buffs.
           <br/> - Forgeable in Foundry.
         </p>
 
@@ -603,102 +602,7 @@ async function increaseLike() {
       </div>
 
       <div class="divider  "></div>
-
-<div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HLE DPS</h2>
-  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
-    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
-      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
-        <tr>
-          <th class="p-3 font-semibold">Weapon</th>
-          <th class="p-3 font-semibold text-right">Total DMG</th>
-          <th class="p-3 font-semibold text-right">Percentage</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700">
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper  Syn3</td>
-          <td class="p-3 text-right">50,019,712</td>
-          <td class="p-3 text-right text-teal-400">107.43%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn2</td>
-          <td class="p-3 text-right">48,280,960</td>
-          <td class="p-3 text-right text-teal-400">103.70%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn1 </td>
-          <td class="p-3 text-right">46,557,184</td>
-          <td class="p-3 text-right text-teal-400">100.00%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Domain of Ego</td>
-          <td class="p-3 text-right">34,213,056</td>
-          <td class="p-3 text-right text-amber-400">73.49%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Flawless Benediction Syn2</td>
-          <td class="p-3 text-right">34,163,968</td>
-          <td class="p-3 text-right text-amber-400">73.38%</td>
-        </tr>        
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Whisper of the Past</td>
-          <td class="p-3 text-right">32,684,032</td>
-          <td class="p-3 text-right text-amber-400">70.20%</td>
-        </tr>        
-      </tbody>
-    </table>
-  </div>
-</div>
-
-       <div class="divider  "></div>
-
-<div class="text-slate-100">
-  <h2 class="text-xl font-semibold mb-4 cooltext">Weapon DMG Test - HoRB Support</h2>
-  <div class="overflow-x-auto rounded-xl shadow-md border border-white/10">
-    <table class="min-w-full table-auto bg-gradient-to-b from-gray-900 to-gray-800 text-sm sm:text-base text-left">
-      <thead class="bg-gray-700 text-slate-200 uppercase text-xs tracking-wider">
-        <tr>
-          <th class="p-3 font-semibold">Weapon</th>
-          <th class="p-3 font-semibold text-right">Total DMG</th>
-          <th class="p-3 font-semibold text-right">Percentage</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700">
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper  Syn3</td>
-          <td class="p-3 text-right">46,633,344</td>
-          <td class="p-3 text-right text-teal-400">103.50%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn2</td>
-          <td class="p-3 text-right">45,853,376</td>
-          <td class="p-3 text-right text-teal-400">101.77%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Pure Love's Whisper   Syn1 </td>
-          <td class="p-3 text-right">45,055,104</td>
-          <td class="p-3 text-right text-teal-400">100.00%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Flawless Benediction Syn2</td>
-          <td class="p-3 text-right">40,988,160</td>
-          <td class="p-3 text-right text-blue-400">90.97%</td>
-        </tr>
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Domain of Ego</td>
-          <td class="p-3 text-right">39,931,392</td>
-          <td class="p-3 text-right text-blue-400">88.62%</td>
-        </tr>        
-        <tr class="hover:bg-gray-700/40">
-          <td class="p-3">Whisper of the Past</td>
-          <td class="p-3 text-right">39,696,832</td>
-          <td class="p-3 text-right text-blue-400">88.11%</td>
-        </tr>  
-      </tbody>
-    </table>
-  </div>
-</div>     
+   
       {/if}
 
       {#if selectedTab === 'Support Buffs'}
@@ -707,7 +611,7 @@ async function increaseLike() {
 
       <div class="my-6  py-5 rounded-xl text-slate-100 space-y-6 text-sm sm:text-base">
         <h3 class="text-lg sm:text-xl font-bold text-center">
-          How to Activate HLE Support Buffs
+          How to Activate WOP Support Buffs
         </h3>
       
         <div class="space-y-2 border-l-4 border-orange-300 pl-4">
@@ -1415,16 +1319,15 @@ async function increaseLike() {
  <div class=" gap-6 mt-5 mb-10">
   <!-- Video 1 with title and description -->
   <div >
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf DPS</h2>
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">VS QUA Enemies</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">With various support combinations</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/CIGX1jDkzxA"
+          src="https://www.youtube.com/embed/ukyy9f3ow9o"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1443,16 +1346,15 @@ async function increaseLike() {
  <div class=" gap-6 mt-5 mb-10">
   <!-- Video 1 with title and description -->
   <div >
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf Support</h2>
+    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Stardust DPS</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">World Star Support</p>
 
     <div class="relative overflow-hidden" style="padding-top: 56.25%;">
       <iframe
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/y8Df7XbdYTI"
+          src="https://www.youtube.com/embed/86IQDETStiY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1466,33 +1368,7 @@ async function increaseLike() {
 
 
 </div>
-<div class="divider"></div>
- <div class=" gap-6 mt-5 mb-10">
-  <!-- Video 1 with title and description -->
-  <div >
-    <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Hi Love Elf Support</h2>
 
-    <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Law of Ascension Support</p>
-
-    <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-      <iframe
-      loading="lazy" 
-
-          class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/PJX4rAu6jYQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-      </iframe>
-  </div>
-
-  
-</div>
-
-
-
-</div>
   {/if}
   
   {#if selectedTab === 'Question'}
