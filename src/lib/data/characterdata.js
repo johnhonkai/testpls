@@ -31,9 +31,9 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: 'Wings of Panacea', image: '/images/valkportrait/Seele Wings of Panacea.png', type: ['SD' , 'Qua'], element: 'Lightning', astralRing: ['World Star'] , url: '/valk/wings-of-panacea', badge: 'Beta', verdebut: 8.9, verdlc: 8.8, id:75},
+  { name: 'Wings of Panacea', image: '/images/valkportrait/Seele Wings of Panacea.png', type: ['SD' , 'Qua'], element: 'Lightning', astralRing: ['World Star'] , url: '/valk/wings-of-panacea', badge: 'New', verdebut: 8.9, verdlc: 8.8, id:75},
 
-  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', badge: 'Updated', verdebut: 5.4, verdlc: 8.8, id:33},
+  { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', verdebut: 5.4, verdlc: 8.8, id:33},
 
   { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel', verdebut: 8.7, id:65},  
   { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv',  verdebut: 7.0, verdlc: 8.7, id:52},
