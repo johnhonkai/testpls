@@ -302,7 +302,13 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">HLE Equipment</span>
 
-                    </div>                                         
+                    </div>           
+                    <div on:click={() => openModal("Equip")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Silverwing DLC</span>
+
+                    </div>                                                     
                 </div>
 
           
@@ -356,7 +362,15 @@
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASCENSION SUPPLY</span>
                     </div>     
-                         
+                    <div class="col-span-6"></div>     
+                    <div on:click={() => openModal("NewADV")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Peregrine Sword</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
+                            <img src="https://i.imgur.com/KrCSk3Q.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                      
                 </div>
 
                 <div class="relative grid grid-cols-9 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -364,7 +378,13 @@
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ARMAMENT ASCENSION</span>
                     </div>  
-                  
+                    <div class="col-span-6"></div>     
+                    <div on:click={() => openModal("NewRebate")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Peregrine Sword Equipment</span>
+
+                    </div>  
                 </div>
 
             </div>
