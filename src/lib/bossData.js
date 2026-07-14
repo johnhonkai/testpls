@@ -108,6 +108,7 @@ export const weatherList = {
     {id: 'resohoc', name: "Herrscher of Corruption"},
     {id: 'resowhale', name: "Opaque Shadow"},
     {id: 'resosa', name: "Sa"},
+    {id: 'resocouatl', name: "Couatl Revenant"},
 
   ],
   melee: [
@@ -552,6 +553,14 @@ export const bossData = {
       bosspic: "images/BossesMA/Sa_SSS.webp", 
       weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
   },  
+  resocouatl: {
+    name: 'Couatl Revenant', 
+      mechanics: 'Has 4 qua shields', 
+      weakness: 'None', 
+      typeicon: "images/type/IconQUA.png", 
+      bosspic: "images/Bosses/Couatl Revenant.webp", 
+      weather: "Echoing: For every valk with Domain Resonance trait, team Total DMG +15% (max 30%). When AR World Star is activated, team Total DMG +40%.", 
+  },    
   sdalien: {
     name: 'Alien Guard', 
     mechanics: 'Starts with Creeper with Bleed trauma. Alien Guard does not have transition phase like the other versions.', 
