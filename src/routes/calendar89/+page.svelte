@@ -707,14 +707,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Pishacha.webp" date="Aug 14" weather="Bleed" bosspage="/boss?pishacha" />
+                <BossCard image="/images/Bosses/Ultra Tonatiuh.webp" date="Aug 17" weather="Fire" bosspage="/boss?firetona" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/epernay.png" date="Aug 18" />
+                <BossCard image="/images/Bosses/Ricecake.webp" />
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" />
                 </div>
 
             </div>    
