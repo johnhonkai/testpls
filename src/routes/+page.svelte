@@ -344,33 +344,33 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=86IQDETStiY" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=vaA-gq0O7k8" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/86IQDETStiY/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">New Battlesuit</h3>
-          <p class="text-slate-300">New Seele</p>
-        </div>
-      </a>
-  
-      <a href="/valk/lv" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
-        <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/qWTrQAhiIP4/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/vaA-gq0O7k8/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-semibold text-white mb-1">New Stellar Key</h3>
-          <p class="text-slate-300">Lunar Vow DLC</p>
+          <p class="text-slate-300">Fu Hua DLC</p>
         </div>
       </a>
   
-      <a href="/valk/silverwing" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://youtu.be/7Ns8kJt8kMA" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/b9oTKNodPJM/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/7Ns8kJt8kMA/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">New Stellar Key</h3>
-          <p class="text-slate-300 text-md">Caked Up Cryo</p>
+          <h3 class="text-lg font-semibold text-white mb-1">New AstralOp</h3>
+          <p class="text-slate-300">Senadina</p>
+        </div>
+      </a>
+  
+      <a href="https://youtu.be/QZ-vhOnp7hg" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ytimg.com/vi/QZ-vhOnp7hg/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-white mb-1">Bella Appears in Capverse!</h3>
+          <p class="text-slate-300 text-md">Uwogh Bella</p>
         </div>
       </a>
   
@@ -389,12 +389,12 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=0CWHdj7cLcc" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://youtu.be/FYDRqpYp2Rs" id="content1" target="_blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/0CWHdj7cLcc/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/FYDRqpYp2Rs/hqdefault.jpg" alt="Latest Video" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">Latest Video From Earth</h3>
+          <h3 class="text-lg font-semibold text-white mb-1">Captain and Seele Sitting On A Tree</h3>
           <p class="text-slate-300 text-sm">Check out Marisa Honkai's channel</p>
         </div>
       </a>
