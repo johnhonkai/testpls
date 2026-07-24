@@ -204,7 +204,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{cnServerInfo}</li>
-              <li>v9.0 update is on 24 Sep</li>
+              <li>v9.1 update is on 24 Sep</li>
             </ul>            
           </div>
         </div>
