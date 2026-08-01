@@ -456,7 +456,7 @@
             
             <!-- Header Row -->
             <div class="grid grid-cols-6 gap-1 text-center font-semibold bg-gray-800 text-white p-2 rounded-t-lg">
-                <div class="col-span-1 px-4 py-2 mr-3 ">v8.9 WEEK</div>
+                <div class="col-span-1 px-4 py-2 mr-3 ">v9.0 WEEK</div>
                 <div class="col-span-2 mr-4 px-4 py-2">EX ABYSS</div>
                 <div class="col-span-3 px-4 py-2">MEMORIAL ARENA</div>
             </div>
@@ -469,14 +469,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard/>
+                <BossCard image="/images/Bosses/Parvati.webp" date="Aug 21" weather="Shadow" bosspage="/boss?shadow-parvati" />
+                <BossCard image="/images/Bosses/Herrscher of the Void.webp" date="Aug 24" weather="Ice" bosspage="/boss?firehov" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Aug 25" />
+                <BossCard image="/images/Bosses/Lantern_Tsavorae_SSS.webp" />
+                <BossCard image="/images/BossesMA/Deathly Doom.webp" />
                 </div>
 
 
@@ -488,7 +488,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Aug 28" weather="Fire" bosspage="/boss?firerimestar" />
                 <BossCard/>
                 </div>
                      

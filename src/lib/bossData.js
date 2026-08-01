@@ -21,6 +21,8 @@ export const weatherList = {
     {id: 'firetona', name: 'Tonatiuh'},
     {id: 'firetank', name: 'MHT-3C Retaliator'},
     {id: 'litost', name: 'Litost'},
+    {id: 'firehov', name: 'Herrscher of the Void'},
+    {id: 'firerimestar', name: 'Herrscher of the Rimestar'},
 
   ],
   ice: [
@@ -127,6 +129,7 @@ export const weatherList = {
   shadow: [
     {id: 'shadowtank', name: 'MHT-3C Retaliator'},
     {id: 'shadowhod', name: 'HoD: Minion'},
+    {id: 'shadow-parvati', name: 'Parvati'},
 
   ],
   symphony: [
@@ -277,6 +280,22 @@ export const bossData = {
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Assaka.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
+  },  
+    firehov: {
+    name: 'Herrscher of the Void', 
+    mechanics: 'Has tanky elemental shield', 
+    weakness: 'Phy (L), Lightning (Immune)', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Herrscher of the Void.webp", 
+    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },
+  firerimestar:{
+    name: 'Herrscher of the Rimestar', 
+      mechanics: 'When AR is not activated, Total DMG +20%. Transition phase: Use melee atk to knock the two lanterns. After that, deal as much dmg as you can to the ice star to start phase 2 and gain dmg buff, max 8 stacks.', 
+      weakness: 'Ice (Immune), Lightning (S)', 
+      typeicon: "images/type/IconPSI.png", 
+      bosspic: "images/Bosses/Herrscher of Rimestar.png", 
+    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },  
   sushang: {
     name: 'Sushang', 
@@ -904,6 +923,14 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconIMG.webp", 
     bosspic: "images/Bosses/Herrscher of Domination Minion.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },  
+  'shadow-parvati': {
+    name: 'Parvati', 
+    mechanics: '', 
+    weakness: 'Ice (Immune) , Physical (L)', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Parvati.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },  
   fluxtank: {
