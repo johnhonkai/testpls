@@ -376,11 +376,8 @@
     
                     <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 120 crystals, 1 FoV DLC stigma box, and mats</span>
-                        <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/K7BHwQ3.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
-                        </div>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Topup Event: Topup ~100usd to get up to 3x Sparkle / Reign Solaris stamps</span>
+
                     </div>   
 
 
@@ -392,12 +389,12 @@
                      <span class="font-bold0">EVENT 2</span>
                 </div> 
     
-                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 300 crystals (cont from v8.9)</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 120 crystals, 1 FoV DLC stigma box, and mats</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/MWL3IyU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/K7BHwQ3.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
 
@@ -409,16 +406,14 @@
                     
                    <span class="font-bold0">EVENT 3</span>
                 </div> 
-    
-                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Captain’s Wishing Tree Secrets</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 300 crystals (cont from v8.9)</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="https://i.imgur.com/WNfOCix.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                            <img src="https://i.imgur.com/MWL3IyU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
-
 
             </div>
             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
@@ -426,8 +421,22 @@
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                      <span class="font-bold0">EVENT 4</span>
                 </div> 
-                       <div></div>
-
+                    <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Captain’s Wishing Tree Secrets</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/WNfOCix.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>     
+            </div>
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 5</span>
+                </div> 
+                    <div></div>
                     <div on:click={() => openModal("")} class="col-span-8 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">8-Day Login: 5 Equip Cards</span>
@@ -436,8 +445,9 @@
                             <img src="https://i.imgur.com/CEXLmaT.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
-            </div>
-                      
+
+
+            </div>                     
         
     </div>
     </div>
@@ -489,13 +499,13 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Aug 28" weather="Fire" bosspage="/boss?firerimestar" />
-                <BossCard/>
+                <BossCard image="/images/Bosses/epernay.png" date="Aug 31" weather="Shadow" bosspage="/boss?shadow-epernay" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Alien Guard.webp" date="Sep 1" />
+                <BossCard image="/images/Bosses/Vita.png" />
+                <BossCard image="/images/Bosses/Hellmaru.webp" />
                 </div>
 
 

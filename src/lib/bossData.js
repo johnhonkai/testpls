@@ -130,6 +130,7 @@ export const weatherList = {
     {id: 'shadowtank', name: 'MHT-3C Retaliator'},
     {id: 'shadowhod', name: 'HoD: Minion'},
     {id: 'shadow-parvati', name: 'Parvati'},
+    {id: 'shadow-epernay', name: 'Meteroid: Epernay'},
 
   ],
   symphony: [
@@ -931,6 +932,14 @@ export const bossData = {
     weakness: 'Ice (Immune) , Physical (L)', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Parvati.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },  
+  'shadow-epernay': {
+    name: 'Meteroid: Epernay', 
+      mechanics: 'Boss has breakable parts at certain points of the fight, breaking them reduces boss max HP. During transition, you can enter one of three false doors, each gives different effect: Generate 10 SD remnants, gain Total DMG +8% or gain sp pack.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconSD.webp", 
+      bosspic: "images/Bosses/epernay.png", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },  
   fluxtank: {

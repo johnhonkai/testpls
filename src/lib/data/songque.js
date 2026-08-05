@@ -34,8 +34,28 @@ export const extraregen = [
     {
         rank: "S",
         description: "When weapon skill hits, gain 2 AR. (CD:15s, separate cd for each character)",
+        condition: { astralRing: "World Star" },        
     },
-    
+    {
+        rank: "S",
+        description: "When weapon skill hits, gain 2 AR. (CD:15s, separate cd for each character)",
+        condition: { astralRing: "Wheel of Destiny" },        
+    }, 
+    {
+        rank: "S",
+        description: "When weapon skill hits, gain 2 AR. (CD:15s, separate cd for each character)",
+        condition: { astralRing: "Law of Ascension" },        
+    },     
+    {
+        rank: "S",
+        description: "When weapon skill hits, gain 2 AR. (CD:15s, separate cd for each character)",
+        condition: { astralRing: "Grail of Infinitude" },        
+    },     
+    {
+        rank: "S",
+        description: "When weapon skill hits, gain 2 AR. (CD:15s, separate cd for each character)",
+        condition: { astralRing: "Rite of Oblivion" },        
+    },            
 ];
 
 
