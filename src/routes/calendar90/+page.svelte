@@ -112,9 +112,8 @@
             image: "https://i.imgur.com/R263Hoh.jpeg"
         },
         "OutfitSupply": {
-            title: "Badum Wintery Wishes Outfit Supply",
-            description: '- Duration: 3 weeks<br/>- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: DA / HoFs / MPE card or 5 stamps.',
-            image: "https://i.imgur.com/M2lLRVy.jpeg"
+            title: "Outfit Supply",
+            description: '- Max cost: 9600 crystal for outfit + other rewards<br/>- S-rank box: HoT / Mobius / MPE card or stamps.',
         },        
         "OutfitBox": {
             title: "Outfit Box Supply",
@@ -298,10 +297,10 @@
                          <span class="font-bold0">OUTFIT</span>
                     </div>     
                     <div></div>  
-                    <div on:click={() => openModal("")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                    <div on:click={() => openModal("OutfitSupply")} class="col-span-2 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         
                         <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Crane of Taixuan<br/> 9600(?) crystal</span>
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Crane of Taixuan<br/> 9600 crystal</span>
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
                             <img src="https://i.imgur.com/UlqjpdY.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
@@ -377,7 +376,10 @@
                     <div on:click={() => openModal("")} class="col-span-9 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Topup Event: Topup ~100usd to get up to 3x Sparkle / Reign Solaris stamps</span>
-
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/wBb9Ifv.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
                     </div>   
 
 
@@ -448,7 +450,22 @@
 
 
             </div>                     
-        
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 6</span>
+                </div> 
+                <div></div>
+                <div></div>
+                    <div on:click={() => openModal("")} class="col-span-7 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Part 2 Final Chapter</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/HVYWoVx.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>     
+            </div>       
     </div>
     </div>
 
