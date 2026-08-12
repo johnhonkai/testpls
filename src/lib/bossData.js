@@ -280,7 +280,7 @@ export const bossData = {
     mechanics: '', 
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
-    bosspic: "images/Bosses/Assaka.webp", 
+    bosspic: "images/Bosses/Saha Assaka.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
   },  
     firehov: {
@@ -936,11 +936,11 @@ export const bossData = {
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },  
   "shadow-assaka": {
-    name: 'Assaka', 
+    name: 'Saha Assaka', 
     mechanics: 'Wave 1: SD mobs.', 
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
-    bosspic: "images/Bosses/Assaka.webp", 
+    bosspic: "images/Bosses/Saha Assaka.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },    
   'shadow-epernay': {
