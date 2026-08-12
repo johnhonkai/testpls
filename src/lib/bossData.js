@@ -131,6 +131,7 @@ export const weatherList = {
     {id: 'shadowhod', name: 'HoD: Minion'},
     {id: 'shadow-parvati', name: 'Parvati'},
     {id: 'shadow-epernay', name: 'Meteroid: Epernay'},
+    {id: 'shadow-assaka', name: 'Assaka'},
 
   ],
   symphony: [
@@ -934,6 +935,14 @@ export const bossData = {
     bosspic: "images/Bosses/Parvati.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },  
+  "shadow-assaka": {
+    name: 'Assaka', 
+    mechanics: 'Wave 1: SD mobs.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Assaka.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },    
   'shadow-epernay': {
     name: 'Meteroid: Epernay', 
       mechanics: 'Boss has breakable parts at certain points of the fight, breaking them reduces boss max HP. During transition, you can enter one of three false doors, each gives different effect: Generate 10 SD remnants, gain Total DMG +8% or gain sp pack.', 
@@ -1995,6 +2004,23 @@ export const teamData = {
   },
   ignitehov: {
     teamDataSets: [
+      {
+      tabname: "v8.9",
+      teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/scoralie.png","images/valkportrait/Vita Lone Planetfarer.png", "images/valkportrait/paws.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '-',
+        pct: '-',  
+      },
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Mei Xentinel.png","images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "images/valkportrait/asop_chenxue.png"],
+        rank: '-',
+        pct: '-',  
+      },
+    ]},      
     {
       tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
@@ -2004,7 +2030,12 @@ export const teamData = {
         lineup: ["images/valkportrait/Sirin Miracle Magical Girl.png", "images/valkportrait/sparkle.png", "images/valkportrait/Bronya Herrscher of Truth.png", "images/valkportrait/elf_kiana.png"],
         pct: '100%',
       }
-    ]},]
+    ]},
+  
+  ],
+              videos: [
+      { url: 'https://www.youtube.com/watch?v=3559Ff7i-Qc', abyss: 'Nirvana 577D', uploader: 'Sheepless Ram' },
+    ] 
   },
   resovita: {
     teamDataSets: [
@@ -2049,6 +2080,7 @@ export const teamData = {
           pct: '4%',
         },
       ],
+
     },        
       {
         tabname: "v8.3",
@@ -2437,8 +2469,21 @@ export const teamData = {
   },
   pishacha: {
     teamDataSets: [
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/ps.png", "images/valkportrait/scoralie.png",  "/images/valkportrait/Theresa Lunar Vow.png",  "/images/valkportrait/asop_teri.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      },      
     {
-      tabname: "v7.9 CN",
+      tabname: "v7.9",
       teamInfoText: "Data is from v7.9 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
@@ -2454,7 +2499,10 @@ export const teamData = {
         pct: '2%',
         bottext: "Highest Score: 766"
       },
-    ]},]
+    ]},],
+            videos: [
+      { url: 'https://www.bilibili.com/video/BV1fQKA6dE5h/', abyss: 'Red Lotus 543D', uploader: '残月冷峰' },
+    ] 
   },
   phyalien: {
     teamDataSets: [
@@ -2986,6 +3034,33 @@ export const teamData = {
   },
   firetona: {
     teamDataSets: [
+            {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/sparkle.png", "images/valkportrait/Seele Wings of Panacea.png",  "/images/valkportrait/kiana badum.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },   
+          {
+            type: 'lineup',
+            lineup: [  "images/valkportrait/Seele Wings of Panacea.png", "/images/valkportrait/Bronya Silverwing N-EX.png", "images/valkportrait/Seele Herrscher of Rebirth.png",    "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },   
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/sparkle.png", "images/valkportrait/Seele Wings of Panacea.png",  "/images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                                          
+        ]
+      },
       {
         tabname: "v8.5",
         teamInfoText: "Data is from v8.5 CN Server (PC) Top 100 Myriad ??? D.",
@@ -3160,6 +3235,18 @@ export const teamData = {
   },
   raven: {
     teamDataSets: [
+      {
+      tabname: "v8.9",
+      teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Thelema Mad Pleasure.png","images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Miss Espionage.png", "images/valkportrait/asop_youyun.png"],
+        rank: '-',
+        pct: '-',  
+      },
+
+    ]},
                 {
       tabname: "v8.6",
       teamInfoText: "Data is from v8.6 CN Server (PC) Top 100 Myriad ??? D.",
@@ -3286,7 +3373,31 @@ export const teamData = {
   lightningguaymas: {
     teamDataSets: [
       {
-        tabname: "v8.2 CN",
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Seele Wings of Panacea.png",  "images/valkportrait/Bronya Silverwing N-EX.png", "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_youyun.png"],
+          rank: '-',
+          pct: '-',
+        },
+        
+      ]},      
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["images/valkportrait/Seele Wings of Panacea.png",  "images/valkportrait/Bronya Silverwing N-EX.png", "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/asop_youyun.png"],
+          rank: '-',
+          pct: '-',
+        },
+        
+      ]},      
+      {
+        tabname: "v8.2",
         teamInfoText: "Data is from v8.2 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
         {
@@ -3306,7 +3417,7 @@ export const teamData = {
         
       ]},
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad ??? D.",
     entries: [
       {
@@ -3326,6 +3437,9 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=iCBvPK8Y0_w', abyss: 'Nirvana 586D', uploader: 'Xintsu' },
+      { url: 'https://www.youtube.com/watch?v=CylswUrzp9E', abyss: 'Nirvana 581D', uploader: 'Sheepless Ram' },
+
       { url: 'https://www.youtube.com/watch?v=78zc190jesE', abyss: 'S0 Badum Nirvana 543D', uploader: 'Kyoshiro' },
       { url: 'https://www.youtube.com/watch?v=xDsJnLlM9FQ', abyss: 'Senadina Nirvana 543D', uploader: 'phylynxbelt' },
       { url: 'https://www.youtube.com/watch?v=bSpVV_Fg5K0', abyss: 'SS Badum Nirvana 543D', uploader: 'chronos002' },
@@ -5065,6 +5179,18 @@ export const teamData = {
     
     teamDataSets: [
             {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                         
+        ]
+      },        
+            {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -5320,12 +5446,25 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Seele Wings of Panacea.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                     
+        ]
+      },        
+      {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
           {
             type: 'lineup',
-            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_sera.png" ],
+            lineup: [ "/images/valkportrait/Miss Espionage.png", "images/valkportrait/Senadina Deepspace Anchor.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_youyun.png" ],
             rank: '1+',
             pct: '-',
 
@@ -5355,6 +5494,19 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Bronya Silverwing N-EX.png", "images/valkportrait/Seele Wings of Panacea.png", "/images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                  
+        ]
+      },      
+      {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -5375,10 +5527,26 @@ export const teamData = {
         ]
       }
     ],
+        videos: [
+      { url: 'https://www.youtube.com/watch?v=FfOZ5hIPrds', abyss: 'Nirvana 580D', uploader: 'Sheepless Ram' },
+    ]    
   },  
   ricecake: {
     
     teamDataSets: [
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Mei Xentinel.png", "images/valkportrait/kiana badum.png", "/images/valkportrait/Elysia Hi Love Elf.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                     
+        ]
+      },      
       {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
@@ -5394,6 +5562,7 @@ export const teamData = {
       }
     ],
                 videos: [
+      { url: 'https://www.youtube.com/watch?v=Vwa7GoyqgAQ', abyss: 'Nirvana 579D', uploader: 'Sheepless Ram' },
       { url: 'https://www.youtube.com/watch?v=V7a6j74ExuQ', abyss: 'Red Lotus', uploader: 'Ignite' },
       { url: 'https://www.youtube.com/watch?v=9NlFC0i9O_c', abyss: 'Nirvana 552D', uploader: 'Xintsu' },
       { url: 'https://www.youtube.com/watch?v=9a0hm891wJw', abyss: 'Nirvana 552D', uploader: 'JoséLPK' },
@@ -5485,6 +5654,26 @@ export const teamData = {
   bleedmobius: {
     
     teamDataSets: [
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Theresa Lunar Vow.png", "/images/valkportrait/scoralie.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },      
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Theresa Lunar Vow.png", "/images/valkportrait/kiana badum.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                               
+        ]
+      },      
       {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
@@ -5658,6 +5847,30 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/kiana badum.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+          },  
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/kiana badum.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+          },      
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Senadina Deepspace Anchor.png",  "/images/valkportrait/Elysia Hi Love Elf.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                                                                                                                                
+        ]
+      },      
+      {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -5669,8 +5882,9 @@ export const teamData = {
 
           },                                                                                                                                                              
         ]
-      }
+      },
     ],
+    
   },    
   lightvaraha: {
     
@@ -5773,7 +5987,147 @@ export const teamData = {
     videos: [
       { url: 'https://www.bilibili.com/video/BV1f6Eu6rEej', abyss: 'Red Lotus 541D', uploader: '幽_Yui' },
     ] 
+  },     
+  lightvita: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.youtube.com/watch?v=846oA2dhXQw', abyss: 'Nirvana 575D', uploader: 'Haxxor' },
+    ] 
   },      
+  resocouatl: {
+    
+    teamDataSets: [
+      {
+        tabname: "v8.9",
+        teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/sparkle.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV133N16cE1C', abyss: 'Red Lotus 545D', uploader: '小浅本浅Kira' },
+    ] 
+  },   
+  "shadow-parvati": {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1Wagv6eEef', abyss: 'Red Lotus 545D', uploader: '白练进化草履虫' },
+    ] 
+  },     
+  firehov: {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Miss Espionage.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },        
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Fu Hua Fenghuang of Vicissitude.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          }, 
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Miss Espionage.png",    "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                                     
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1kS3B6kEZ3/', abyss: 'Red Lotus 536D', uploader: '仙云缈' },
+    ] 
+  },   
+  firerimestar: {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1Fgud67Ext', abyss: 'Red Lotus 545D', uploader: '怂憨天使布狼牙' },
+    ] 
+  },    
+  'shadow-epernay': {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Songque Jovial Deception.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1fRuA6vEda/', abyss: 'Nirvana 582D', uploader: '初阳升耀' },
+    ] 
+  },     
 }
 
 

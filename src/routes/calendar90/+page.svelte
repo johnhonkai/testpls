@@ -320,7 +320,15 @@
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
                             <img src="https://i.imgur.com/aYKdgJk.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
-                    </div>                      
+                    </div>    
+                    <div on:click={() => openModal("NewADV")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Lone Destruction</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
+                            <img src="https://i.imgur.com/uv7AkXU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                                       
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -334,6 +342,12 @@
                         <span class="absolute inset-0 flex items-center justify-center leading-4 ">Mad Pleasure Equipment</span>
 
                     </div>  
+                    <div on:click={() => openModal("NewRebate")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Lone Destruction Equipment</span>
+
+                    </div>                      
                 </div>
 
             </div>
@@ -459,13 +473,31 @@
                 <div></div>
                     <div on:click={() => openModal("")} class="col-span-7 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
-                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Part 2 Final Chapter</span>
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Part 2 Finale</span>
                         <!-- Image positioned on the right side -->
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
                             <img src="https://i.imgur.com/HVYWoVx.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>     
-            </div>       
+            </div>   
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 7</span>
+                </div> 
+                    <div class="col-span-3"></div>
+                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Flying to Oxia Invitation Contest</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="https://i.imgur.com/PTwcycr.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
+
+
+            </div>                  
     </div>
     </div>
 
@@ -532,15 +564,16 @@
                 <div class="flex items-center justify-center font-bold text-lg rounded-l-lg p-2 text-black">
                     3
                 </div>
+
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard/>
+                <BossCard image="/images/Bosses/Meteor_Guaymas.webp" date="Sep 4" weather="Lightning" bosspage="/boss?lightningguaymas" />
+                <BossCard image="/images/Bosses/Saha Assaka.webp" date="Sep 7" weather="Shadow" bosspage="/boss?shadow-assaka" />
                 </div>
-                     
+
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Flame-Chaser - Kalpas.webp" date="Sep 8" />
+                <BossCard image="/images/BossesMA/Huodou_SSS.webp" />
+                <BossCard image="/images/Bosses/Lantern_SS.webp" />
                 </div>
 
 
