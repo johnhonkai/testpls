@@ -293,7 +293,7 @@ export const bossData = {
   },
   firerimestar:{
     name: 'Herrscher of the Rimestar', 
-      mechanics: 'When AR is not activated, Total DMG +20%. Transition phase: Use melee atk to knock the two lanterns. After that, deal as much dmg as you can to the ice star to start phase 2 and gain dmg buff, max 8 stacks.', 
+      mechanics: '', 
       weakness: 'Ice (Immune), Lightning (S)', 
       typeicon: "images/type/IconPSI.png", 
       bosspic: "images/Bosses/Herrscher of Rimestar.png", 
@@ -6104,7 +6104,7 @@ export const teamData = {
       }
     ],
                     videos: [
-      { url: 'https://www.bilibili.com/video/BV1Fgud67Ext', abyss: 'Red Lotus 545D', uploader: '怂憨天使布狼牙' },
+      { url: 'https://www.bilibili.com/video/BV1YQGw6bEXW/', abyss: 'Red Lotus 542D', uploader: '怂憨天使布狼牙' },
     ] 
   },    
   'shadow-epernay': {
