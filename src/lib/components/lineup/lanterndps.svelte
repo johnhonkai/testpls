@@ -3,9 +3,9 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '100%' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%', speed: 'Slow' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '91%', speed: 'Fast' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3', speed: 'Fast' },
 
         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
         { name: 'HLE2', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '77%', speed: '' },
@@ -14,19 +14,22 @@
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '75%', speed: 'Bow' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '74%', speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '70%', speed: '' },
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '96%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '95%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '89%', speed: 'Slow' }
+        { name: 'Sena', image: '/images/valkportrait/asop_senadina.png', teampct: '#1', speed: '' },
+
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#2', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#3',  },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#4', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '#5', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-     export let firstCharName: string = 'HLE'; 
+     export let firstCharName: string = 'WoP'; 
     export let secondCharName: string = 'Vita'; 
     export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
@@ -39,7 +42,7 @@
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'HLE'
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
 );
 
 
@@ -98,11 +101,6 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
-        <p class="text-sm sm:text-base mb-4"><b>Vita vs HLE vs Sena</b>
-            <br/> 
-            Vita / HLE gives more damage but Sena's advantage is zero field time.
-        </p>     
-
         <p class="text-sm sm:text-base mb-4"><b>Herrscher of Human for Tank</b>
             <br/> 
             Tank boss has a weak spot that can be targeted by bow weapon skill. Herrscher of Human is the only support that can do this. Hitting the weak spot will apply a huge debuff.
@@ -115,11 +113,6 @@ let filteredMainCharacters = mainCharacters.filter(
                 Thelema herself also contributes damage.
          </p> 
 
-                 <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> 
-            - Serapeum provides the biggest dmg buff, as well as initial AR and post-SO AR regen.
-            <br/>
-            - Youyun gives more damage during Stellar Surplus state (requires Rita), but lower damage during Stellar Outburst.
-        </p>   
 
         </div>
     </details>

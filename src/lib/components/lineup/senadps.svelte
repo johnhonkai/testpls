@@ -2,7 +2,8 @@
     import Charred from '$lib/components/charpctred.svelte';
 
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
         { name: 'HORB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', teampct: '100%', speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '97%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '97%', speed: '' },
@@ -10,6 +11,7 @@
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '93%', speed: '' },
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '91%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '87%', speed: '' },
+        { name: 'Silverwing', image: '/images/valkportrait/Bronya Silverwing N-EX.png', teampct: '', speed: '' },
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '', speed: '' },
         { name: 'ACoralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '', speed: 'Slow' },
@@ -17,42 +19,62 @@
     ];
 
     const asopchar = [
-        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '100%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '94%', speed: '' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '88%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '88%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '83%', speed: 'Slow' }
+        { name: 'Senadina', image: '/images/valkportrait/asop_senadina.png', teampct: '#1', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#2', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#3', speed: '' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#4', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '#5', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
     ];
 
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+    // Pass the index or name of the first character to the reusable component
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'WoP' && char.name !== 'Vita' 
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-orange-950 to-orange-900 shadow-lg shadow-base-100 overflow-hidden">
     <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100">Deepspace Anchor DPS</h3>
 
-    <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
+     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
+
+        <!-- Leader Image -->
         <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="Sena" class="w-full h-full object-cover">
+            <img src="/images/valkportrait/Senadina Deepspace Anchor.png" alt="badum" class="w-full h-full object-cover">
             <span class="sm:badge-md badge badge-sm absolute top-0.5 left-0.5 text-white px-1 rounded-sm z-10 text-center">Leader</span>
         </div>
 
-        <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        <!-- Conditional Plus Icon -->
 
-        <!-- Display first character -->
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+
+
+        <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
         {/if}
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
-            <Charred name={char.name} image={char.image} teampct={char.teampct} speed={char.speed} />
+            <Charred name={char.name} image={char.image} utility={char.utility} teampct={char.teampct} speed={char.speed} />
         {/each}
 
         <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -71,8 +93,8 @@
 
             <p class="text-sm sm:text-base mb-4">
                 Best team options for Sena <br/>
-                - Vita + another support <br/>
-                - Mono SD team Badum + Hi Love Elf
+                - Standard team: Breach Support (WoP / Vita) + another support <br/>
+                - Mono SD team: WoP + Badum / Hi Love Elf
             </p>
 
             <p class="text-sm sm:text-base mb-4">

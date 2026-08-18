@@ -367,7 +367,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.8 (30 April 2026)
+            <strong>Updated For v9.0 (20 August 2026)
         </p>
         </div>
 
@@ -376,13 +376,18 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES </h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Gunslinger Fire DPS</strong> <br/>Switches between three firearms to attack. Has hight hitcount. No ignite.
+              <strong class="text-amber-400">Gunslinger Fire DPS</strong> <br/>
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Switches between three firearms to attack. Has hight hitcount. No ignite.</li>
+                <li>Lantern has her optimal match-ups, but underwhelming everywhere else.</li>
+          </ul>   
+
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">World Star Support</strong> <br/>Not the best support, but Lantern is used against Fire Kosma to break his high hitcount hp fast.
           </p>
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Not the best WoD support anymore but still used in some cases. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
+              <strong class="text-amber-400">WoDestiny Support</strong> <br/>Not the best WoD support anymore. As Jovial Deception support, Lantern provides 30% Crit Rate and 30-35% Crit DMG. Lantern herself also contributes dmg against bosses such as Ranged Kalpas.
           </p>
 
           <div class="divider  "></div>
@@ -390,32 +395,22 @@ function selectTabMobile(event) {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Currently, there is no known way to get Lantern as F2P.
-
+                <br/>Not recommended, Lantern is bad. Additionally, due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Battle Pass</strong><br/>             
-          </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>You can get Lantern and her weapon from Battle Pass (Knight or Paladin tier).</li>
-                <li>Currently, the other S-ranks in BP are Jovial Deception and Schicksal Imperative. Take a look a their guide page before finalizing your decision. Personally, I would <span class="text-teal-300">save the crystallum and wait for Vita </span> to be added in 8.9 BP (25 June 2026). </li>    
-          </ul> 
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong><br/>
-              Lantern has not been used as much recently.
+              <strong class="text-amber-400">Competitive</strong> <br/>Lantern's bosses still appear once in a while.
           </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li>As DPS, she still has top scores (Fire Tank).</li>
-              <li>Still used sometimes in Thelema and Jovial Deception teams, but even these DPS are rarely used anymore.</li>
-          </ul>
+
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Lantern:</strong> Battle Pass </li>
-              <li><strong>Lantern's Weapon:</strong> Battle Pass </li>
+              <li ><strong>Lantern:</strong> Supply </li>
+              <li><strong>Lantern's Weapon:</strong> Supply </li>
               <li><strong>Lantern's Stigma:</strong> Forgeable </li>
 
           </ul>

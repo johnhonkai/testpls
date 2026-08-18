@@ -3,8 +3,9 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: 'Slow' },
-        { name: 'HLE', image: "/images/valkportrait/Elysia Hi Love Elf.png", teampct: '98%' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3', speed: 'Fast' },
 
 
         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
@@ -21,27 +22,31 @@
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '79%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '72%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png', teampct: '81%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '76%', speed: 'Slow' }
+        { name: 'Sena', image: '/images/valkportrait/asop_senadina.png', teampct: '#1', speed: '' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#2', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#3', speed: '' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#4', speed: '' },
+        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png', teampct: '#5', speed: 'Slow' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
     ];
 
     // Pass the index or name of the first character to the reusable component
-     export let firstCharName: string = 'Vita'; 
-    export let secondCharName: string = 'HLE'; 
+     export let firstCharName: string = 'WoP'; 
+    export let secondCharName: string = 'Vita'; 
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
     let secondCharred = mainCharacters.find(char => char.name === secondCharName);
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'Vita' && char.name !== 'HLE'
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
 );
+
 
 </script>
 
@@ -67,6 +72,9 @@ let filteredMainCharacters = mainCharacters.filter(
             <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
         {/if}
     
+        {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}           
         <!-- Plus Icon shown only if maindps is true -->
         {#if !maindps}
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
@@ -93,6 +101,12 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
+            <p class="text-sm sm:text-base mb-4">
+                <b>Best team options</b> <br/>
+                - Standard team: Breach Support (WoP / Vita / Sena) + another support <br/>
+                - Mono SD team: WoP + Hi Love Elf
+            </p>
+
             <p class="text-sm sm:text-base"> <b>Note</b><br/>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li class="text-sm sm:text-base">Against Ranged Kalpas, Lantern is important to break hitcount phase, and becomes a double dps with JD.</li>
@@ -102,7 +116,7 @@ let filteredMainCharacters = mainCharacters.filter(
                 
                 <br/>
                 <p class="text-sm sm:text-base"> <b>Crit Rate</b><br/>
-                     Serapeum AstralOp (S0-rank) ensures that all JD attacks will crit (technically it maxes at 30% Crit Rate but it's way more than enough). Without the Crit conversion from Serapeum, having two supports that provide Crit Rate such as Lantern, Sena, Vita or SIMP are more valuable. However, for most casual players, JD is still fine with only one support that provides Crit Rate, since most of JD's important attacks (Ult, Combo, Weapon) already have boosted Crit Rate.
+                     Youyun and Serapeum AstralOp (S0-rank) ensures that all JD attacks will crit (technically it maxes at 30% Crit Rate but it's way more than enough). Without the Crit conversion from Serapeum, having two supports that provide Crit Rate such as Lantern, Sena, Vita or SIMP are more valuable. However, for most casual players, JD is still fine with only one support that provides Crit Rate, since most of JD's important attacks (Ult, Combo, Weapon) already have boosted Crit Rate.
 
                     </p>            
 

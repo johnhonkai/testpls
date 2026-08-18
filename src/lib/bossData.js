@@ -6127,7 +6127,55 @@ export const teamData = {
                     videos: [
       { url: 'https://www.bilibili.com/video/BV1fRuA6vEda/', abyss: 'Nirvana 582D', uploader: '初阳升耀' },
     ] 
-  },     
+  },    
+  lightbull: {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+    
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Miss Espionage.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+          },  
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Miss Espionage.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Thelema Mad Pleasure.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                                                                                                                                       
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1q8gP6vExh/', abyss: 'Redlotus 546D', uploader: '怂憨天使布狼牙' },
+    ] 
+  },  
+  'shadow-assaka': {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV1GzuR6qEQs/', abyss: 'Red Lotus 540D', uploader: '炙-雪' },
+    ] 
+  },        
 }
 
 

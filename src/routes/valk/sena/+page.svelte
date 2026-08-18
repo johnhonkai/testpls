@@ -358,7 +358,7 @@ function selectTabMobile(event) {
 
       <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
         <p class="text-sm sm:text-base">
-          <strong>Updated For v8.8 (30 April 2026)
+          <strong>Updated For v9.0 (20 August 2026)
       </p>
       </div>
 
@@ -367,15 +367,13 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Lightning Mob DPS</strong> 
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>A Lightning SD DPS that excels against SD mobs thanks to dmg link mechanic. However, she has not been used as much as DPS, because swarm bosses don't appear that frequently anymore.</li>
-                <li>Sena also can't compete with more recent DPSes who have more new mechanics.</li>    
-          </ul> 
+              <strong class="text-amber-400">Outdated Lightning Mob DPS</strong> 
+              <br/>
+              A Lightning SD DPS that excels against SD mobs thanks to dmg link mechanic. <a href="/valk/wings-of-panacea" class="link">Wings of Panacea</a> has powercreeped Sena even on her niche swarm boss.
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">WoDestiny Support</strong> <br/> 
-              One of the best WoD supports. Sena's advantage over other supports like Vita is she can provide Ele Breach and buffs with ZERO on-field time.
+              Sena is outdated now, powercreeped by <a href="/valk/wings-of-panacea" class="link">Wings of Panacea</a>. Sena was one of the better WoD supports. As a Breach support, Sena's advantage over Vita is she could provide buffs with ZERO on-field time.
           </p>
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">World Star Support</strong> <br/> Sena can't keep up with more recent supports. Sena generates a resonance mark that can be consumed by other DPS to trigger resonance dmg 3 times.
@@ -388,26 +386,22 @@ function selectTabMobile(event) {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Version 8.8</strong><br/>  
-            In 8.8, you can get Sena for free.
-        </p>
+
 
           <p class="mt-4 text-sm sm:text-base">
             <strong class="text-amber-400">Reserve Works</strong><br/>  
             
         </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>You can get Sena and her weapon from Battle Pass Reserve Works.</li>
-                <li>You should get her if you can to expand your Part 2 team options. Competitively, Sena is still used in WoD teams.</li>    
-                <li>As f2p, getting both Sena+weapon  will take over a year. If you are a spender, you can speed this up by purchasing Knight / Paladin pass.</li>
+                <li>Not recommended. Sena is outdated as both DPS and supports.</li>    
+                <li>If you still want her: As f2p, getting both Sena + weapon will take over a year. If you are a spender, you can speed this up by purchasing Knight / Paladin pass.</li>
           </ul> 
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li><strong>Battlesuit:</strong> Battle Pass Reserve Works, Free in 8.8</li>
+              <li><strong>Battlesuit:</strong> Battle Pass Reserve Works</li>
               <li><strong>Weapon:</strong> Battle Pass Reserve Works</li>
               <li><strong>Stigma:</strong> Forgeable</li>
           </ul>

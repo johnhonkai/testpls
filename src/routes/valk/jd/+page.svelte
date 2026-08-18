@@ -363,7 +363,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.8 (30 April 2026)
+            <strong>Updated For v9.0 (20 August 2026)
         </p>
         </div>
 
@@ -376,8 +376,8 @@ function selectTabMobile(event) {
           </p>
 
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li>Jovial Deception (JD) is a ranged SD Physical DPS with a unique ability to instantly trigger an SD enemy's stardust explosion. </li>
-              <li>Her bosses don't appear as frequently anymore. As a general dps, she loses to new characters who have better mechanics and rotations.  </li>
+              <li>Jovial Deception (JD) is a ranged SD Physical DPS that can instantly trigger an SD enemy's stardust explosion. </li>
+              <li>JD has her optimal match-ups, but underwhelming everywhere else. </li>
 
           </ul>
 
@@ -394,23 +394,15 @@ function selectTabMobile(event) {
 
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Currently, there is no known way to get JD as F2P.
-
+                <br/>Not recommended, JD is bad. Additionally, due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Battle Pass</strong><br/>             
-          </p>
-
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>You can get JD and her weapon from Battle Pass (Knight or Paladin tier).</li>
-                <li>Currently, the other S-ranks in BP are Lone Destruction and Schicksal Imperative. Take a look a their guide page before finalizing your decision. Personally, I would <span class="text-teal-300">save the crystallum and wait for Vita </span> to be added in 8.9 BP (25 June 2026). </li>    
-          </ul> 
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong><br/> JD is currently used more as LoA support than dps. 
+              <strong class="text-amber-400">Competitive</strong> <br/>JD's bosses still appear once in a while, and still used as LoA support sometimes.
           </p>
-
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -420,6 +412,7 @@ function selectTabMobile(event) {
               <li><strong>JD's Weapon:</strong> Battle Pass</li>
               <li><strong>JD's Stigma:</strong> Forgeable</li>
           </ul>
+
           <div class="divider  "></div>
           <!-- Full Guide Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>

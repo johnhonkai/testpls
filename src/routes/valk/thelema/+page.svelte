@@ -370,7 +370,7 @@ function selectTabMobile(event) {
       
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.8 (30 April 2026)
+          <strong>Updated For v9.0 (20 August 2026)
         </p>
         </div>
 
@@ -379,14 +379,20 @@ function selectTabMobile(event) {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">DPS</strong> <br/> Powerful Ice DPS with shieldbreak and huge freeze trauma.
+              <strong class="text-amber-400">DPS</strong> <br/>  
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Ice DPS with shieldbreak and huge freeze trauma.</li>
+                <li>Just like all Part 2 valks, Thelema is great in her optimal match-ups, but just decent everywhere else.</li>
+          </ul>   
+
+
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Wheel of Destiny Support</strong>
           </p>
 
                     <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Not the strongest support anymore but still provides a few unique utilities: Shieldbreak, freeze trauma, AR regen and timestop.</li>
+                <li>Not the best support anymore but still provides a few unique utilities: Shieldbreak, freeze trauma, AR regen and timestop.</li>
                 <li>In Herrscher of Human team, her old bosses required shieldbreak and/or freeze. These utilities were provided by Sushang and Kira, but in WoD team, only Thelema and HLE can provide these utilities.</li>    
           </ul> 
           <p class="mt-4 text-sm sm:text-base">
@@ -409,7 +415,7 @@ function selectTabMobile(event) {
 
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive</strong> <br/>Thelema is still used in WoD teams sometimes.
+              <strong class="text-amber-400">Competitive</strong> <br/>Thelema's bosses still appear once in a while.
           </p>
 
 
@@ -419,8 +425,8 @@ function selectTabMobile(event) {
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Thelema:</strong> Unknown</li>
-              <li><strong>Thelema's Weapon:</strong> Unknown</li>
+              <li ><strong>Thelema:</strong> Supply</li>
+              <li><strong>Thelema's Weapon:</strong> Supply</li>
               <li><strong>Thelema's Stigma:</strong> Forgeable</li>
           </ul>
           <div class="divider  "></div>
