@@ -55,6 +55,17 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Coraliedps from '$lib/components/lineup/coraliedps.svelte';
 	import Psdps from '$lib/components/lineup/psdps.svelte';
 	import CharacterLayout from '$lib/components/valkpage/CharacterLayout.svelte';
+	import Vitadps from '$lib/components/lineup/vitadps.svelte';
+	import Fovdlcdps from '$lib/components/lineup/fovdlcdps.svelte';
+	import Agentritadps from '$lib/components/lineup/agentritadps.svelte';
+	import Jddps from '$lib/components/lineup/jddps.svelte';
+	import Lanterndps from '$lib/components/lineup/lanterndps.svelte';
+	import Thelemadps from '$lib/components/lineup/thelemadps.svelte';
+	import Wopdps from '$lib/components/lineup/wopdps.svelte';
+	import Swdlcdps from '$lib/components/lineup/swdlcdps.svelte';
+	import Horbdlcdps from '$lib/components/lineup/horbdlcdps.svelte';
+	import Simpdps from '$lib/components/lineup/simpdps.svelte';
+	import Senadps from '$lib/components/lineup/senadps.svelte';
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -213,6 +224,14 @@ function selectTabMobile(event) {
     console.error("Error liking the character:", error);
   }
 }
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
+}
 </script>
 
 <style>
@@ -352,28 +371,39 @@ function selectTabMobile(event) {
     <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
         {#if selectedTab === 'Overview'}
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto mb-4">
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-            <strong>Updated For v8.4 (21 Aug 2025)
+          <strong>Updated For v9.0 (20 August 2026)
         </p>
         </div>
         <div>
             <!-- Roles Section -->
-            <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
+          <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
             
-            <p class="mt-6 text-sm sm:text-base">
-                <strong class="text-amber-400">DPS</strong> <br/> Good DPS, but only performs exceptionally well in favorable matchups. Currently, her full potential is being held back by A-Coralie / HoFi support.
+          <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">DPS</strong> <br/> Summons giant mech and fires orbital lasers.
             </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base ">
+              <li>Just like all Part 2 valks, Vita is good in her optimal match-ups, but just decent everywhere else.</li>
+              <li>Currently, her full potential is being held back by A-Coralie / HoFi support.</li>
 
-            <p class="mt-6 text-sm sm:text-base">
-                <strong class="text-amber-400">WS, WoD, LoA Supports</strong> <br/> Vita is a good support for World Star, WoDestiny, and LoAscension teams. Vita provides Ele/Phy Breach, buffs, and slightly higher AR regen. 
+          </ul>
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">World Star and WoDestiny Support</strong> <br/> Vita was one of the best WS and WoD supports, but has been powercreeped by <a href="/valk/wings-of-panacea" class="link">Wings of Panacea.</a> Vita provides Ele/Phy Breach, buffs, and AR regen. 
 
             </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li class="mt-2">For <span class="text-teal-300">World Star</span> teams: Vita is one of the best supports.   </li>
-                <li class="mt-2">For <span class="text-violet-300">WoD</span> teams: Vita only starts beating Sena support at SS+ rank. At S0-rank, Sena beats Vita support.</li> 
-                <li class="mt-2">For <span class="text-amber-300">LoA</span> teams: <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> is the better LoA support now. But if Vita has higher rank (eg S2 Syn2 Vita vs S0 Syn1 BFD), then Vita still provides stronger buff and might score higher. Vita is great for Badum and Peregrine Sword teams. Vita loses to other supports for Reign Solaris.</li> 
+                <li class="mt-2">For <span class="text-violet-300">WoD</span> teams: Before WoP, Vita support is contested with Sena. Sena support requires zero on-field time - in cases where you can kill boss fast, Sena might be better than Vita.</li> 
           </ul>     
+
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Law of Ascension Support</strong> <br/> <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a> is the better LoA support now. 
+
+            </p>
+
+
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Behold! Fate-Defying Dragon Support</strong> 
@@ -381,7 +411,7 @@ function selectTabMobile(event) {
               Vita is the best support for <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a>.
             </p>
 
-            <p class="mt-6 text-sm sm:text-base">
+            <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">Last Resort Support Option For Other AR </strong> <br/> 
                 As a RoOblivion character, Vita can technically support other AR teams, but she is as terrible as A-rank Coralie.
                 Vita still provides Breach and buffs, but at a reduced effectiveness. She also lacks the proper AR attribute that will be required to activate the AR's special mechanic and buffs.
@@ -389,28 +419,33 @@ function selectTabMobile(event) {
             <div class="divider  "></div>
             <!-- Pull Recommendation Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
+
+
+
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">F2P Players</strong>
-                <br/>Not recommended. Due to how meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (f2p can get a valk fullgear every one or two patches), it’s better to 
+                <br/>Not recommended. Her support roles have been powercreeped. Additionally, due to how Part 2 meta works (all valks are kinda balanced now and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">Save until you can guarantee valk + fullgear, </li>
-              <li class="mt-2">Then get the latest valk early in the patch.</li>
-          </ul>
 
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Battle Pass</strong>
+                <br/>Yeah, Vita is one of the better valks to get in BP. You should get her + weapon if you can afford it.
+            </p>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              Vita is still useful but her value has been reduced since she cannot support Grail of Infinitude teams, and New Coralie has taken over as Breach provider in Law of Ascension teams. Even if you are REALLY LOADED, you should pull the more recent valks first (BFD, PAWS), save for next patch valk, and then only consider getting Vita if your wallet is still loaded.
+              <strong class="text-amber-400">Competitive</strong> <br/>Vita's bosses still appear once in a while.
           </p>
+
 
             <div class="divider  "></div>
             <!-- How to Get Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
             <ul class="list-disc ml-6 text-sm sm:text-base ">
-                <li class="mt-2"><strong>Vita:</strong> Battlesuit Supply</li>
-                <li class="mt-2"><strong>Vita's Weapon:</strong> Equipment Supply</li>
-                <li class="mt-2"><strong>Vita's Stigma:</strong> Equipment Supply, Forgeable</li>
+                <li class="mt-2"><strong>Vita:</strong> Battle Pass, Supply</li>
+                <li class="mt-2"><strong>Vita's Weapon:</strong> Battle Pass, Supply</li>
+                <li class="mt-2"><strong>Vita's Stigma:</strong> Forgeable</li>
             </ul>
             <div class="divider  "></div>
             <!-- Full Guide Section -->
@@ -437,89 +472,95 @@ function selectTabMobile(event) {
     {#if selectedTab === 'Lineup'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
-    <section class="max-w-(--breakpoint-lg) mx-auto ">
+<div class="w-full max-w-4xl mx-auto my-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('1')}
+    >
+      RITE OF OBLIVION
+    </button>
 
-      <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-        {#each Array(totalPages).fill(0) as _, index}
-            <button
-                on:click={() => goToPage(index + 1)}
-                class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-            >
-                {index + 1}
-            </button>
-        {/each}
-    </div>
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('2')}
+    >
+      WHEEL OF DESTINY
+    </button>
 
+    <!-- Tab -->
+    <button
+        class="py-2 px-4  rounded btn
+                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
+      on:click={() => setLineup('3')}
+    >
+      WORLD STAR
+    </button>
 
-        {#if currentPage === 1}
-        <!-- Category 1: Vita DPS -->
+  </div>
+</div>
 
-        <VitaDPS  />
+      {#if activeLineup === '1'}
+      <Vitadps></Vitadps>
+      <div class="divider"></div>
 
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Behold! Fate-Defying Dragon Support </div>
+      <Coraliedps></Coraliedps>
+      {/if}
 
-        <Coraliedps></Coraliedps>
+      {#if activeLineup === '2'}
+      <Fovdlcdps></Fovdlcdps>
 
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> World Star Support </div>
-        <Sparkledps  firstCharName="Vita"></Sparkledps>
+      <div class="divider"></div>
 
-        <div class="divider  "></div>
+            <Agentritadps></Agentritadps>
 
-        <SimpDPS  firstCharName="Vita" />
+      <div class="divider"></div>
 
-        <div class="divider  "></div>
+      <Hohdps></Hohdps>
 
-        <SenaDPS  firstCharName="Vita" />
-        {/if}
+      <div class="divider"></div>
+      
+      <Jddps></Jddps>
 
-        {#if currentPage === 2}
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Wheel of Destiny Support </div>
+      <div class="divider"></div>
 
-        <Hohdps  firstCharName="Vita"></Hohdps>
+      <Lanterndps></Lanterndps>
 
-        <div class="divider  "></div>
+      <div class="divider"></div>
 
-        <JDDPS  firstCharName="Vita" />
+       <Thelemadps></Thelemadps>
 
-        <div class="divider  "></div>
+      {/if}
 
-        <LanternDPS  firstCharName="Vita" />
+      {#if activeLineup === '3'}
+      <Wopdps></Wopdps>
 
+      <div class="divider"></div>
 
-        <div class="divider  "></div>
+      <Swdlcdps></Swdlcdps>
 
-        <ThelDPS  firstCharName="Vita" />
+      <div class="divider"></div>
 
-        {/if}
+      <Horbdlcdps></Horbdlcdps>
 
-        {#if currentPage === 3}
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-8"> Law of Ascension Support </div>
+      <div class="divider"></div>
 
-        <Psdps></Psdps>
-        
-        <div class="divider  "></div>
+      <Sparkledps></Sparkledps>
 
-        <Badumdps ></Badumdps>
+      <div class="divider"></div>
 
-        <div class="divider  "></div>
+      <Simpdps></Simpdps>
 
-        <Dududps />
+      <div class="divider"></div>
 
+      <Senadps></Senadps>
 
-
-        {/if}
-
-        <div class="flex justify-center mt-8 flex-wrap gap-2 sm:static">
-          {#each Array(totalPages).fill(0) as _, index}
-              <button
-                  on:click={() => goToPage(index + 1)}
-                  class={`btn ${currentPage === index + 1 ? 'btn-active' : ''}`}
-              >
-                  {index + 1}
-              </button>
-          {/each}
-      </div>
-</section>
+      {/if}
 
     {/if}
 
@@ -695,7 +736,6 @@ function selectTabMobile(event) {
                 </div>
             
               <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
-                  <div class="badge badge-accent z-10 absolute top-2 font-semibold">7.8</div>
                   <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
                   <p class="text-lg font-semibold ">2</p>
                 </div>
@@ -724,7 +764,6 @@ function selectTabMobile(event) {
   
             <div class="p-2 mt-3 rounded-sm" >
               <p class="text-sm sm:text-base text-left">
-                  <li class="text-sm sm:text-base"> Start with Vicissitude: 7.8 Phase 1 has Vic +2, getting Vic 2 early on gives more dmg than Gold 1.</li>
                   <li class="text-sm sm:text-base"> Discipline 2: Take the Elemental Breach enhancement </li>
               </p>
               </div>

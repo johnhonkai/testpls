@@ -3,8 +3,11 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
-        { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png', teampct: 'TBA', speed: '' },
+
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+
+        { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png', teampct: '100%', speed: '' },
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png',teampct: '100%', speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '96%', speed: '' },       
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '95.7%', speed: '' },
@@ -28,15 +31,20 @@
 
     ];
 
-    // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+ // Pass the index or name of the first character to the reusable component
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Vita' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-fuchsia-950 to-fuchsia-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -60,6 +68,15 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
 
 
         <!-- Main Characters Loop (excluding the first character) -->
@@ -81,9 +98,13 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">
-                Herrscher of Rebirth best teammates are Vita Lone Planetfarer + either Herrscher of Finality (HoFi), Badum, or Hi Love Elf (or whatever the boss requires).
-            </p>
+
+            <p class="text-sm sm:text-base mb-4"><b>Standard team usually consists of:</b>
+                <br/> - Breach support: WoP or Vita
+                <br/>
+                - Another support.  Silverwing, Herrscher of Finality, Badum, or Hi Love Elf (or whatever the boss requires).
+            </p>  
+
 
             <p class="text-sm sm:text-base mb-4"><b>SD Enemy</b><br/> - Dominance Shadow Knight boss has Stardust mobs, so Badum or Hi Love Elf support is preferred. 
                 <br/>

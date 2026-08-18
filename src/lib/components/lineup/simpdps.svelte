@@ -3,6 +3,9 @@
 
     // Define the data for main characters
     const mainCharacters = [
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+
         { name: 'Sparkle', image: '/images/valkportrait/sparkle.png', teampct: '100%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '100%', speed: '' },
         { name: 'HORB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', teampct: '98.7%', speed: '' },
@@ -12,6 +15,10 @@
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '95%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '88%', speed: '' },
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '82%', speed: '' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
+        { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png'},
+
+
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '76%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '76%', speed: 'Slow' },
 
@@ -26,15 +33,21 @@
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '83%', speed: 'Slow' }
     ];
 
-    // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Sparkle'; // default to 'Vita'
+ // Pass the index or name of the first character to the reusable component
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Vita' && char.name !== 'WoP'
+);
+
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-purple-950 to-purple-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -55,9 +68,18 @@
 
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
 
 
         <!-- Main Characters Loop (excluding the first character) -->
@@ -79,16 +101,12 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">
-                SIMP best teams are usually <br/>
-                - Thelema + Sparkle <br/>
-                - Vita + another support
-            </p>
+            <p class="text-sm sm:text-base mb-4"><b>Team options</b>
+                <br/> - Standard Team: Breach support (WoP or Vita) + Another support.
+                <br/> - Mono Quantum: WoP + Sparkle
 
-            <p class="text-sm sm:text-base mb-4">
-                <b>Sparkle</b><br/> 
-                Provides two more Qua collapse, extra TDM +8.5% (S) / 10% (SS2) buff for QUA teammates against QUA enemies.
-            </p> 
+            </p>  
+
             <p class="text-sm sm:text-base mb-4">
                 <b>Fast Reso Trigger</b><br/> HoFI and Badum can trigger resonance marks very fast.
             </p> 
@@ -98,9 +116,6 @@
             </p> 
 
 
-            <p class="text-sm sm:text-base mb-4">
-                <b>Songque AstralOp</b><br/> When using Songque AstralOp, if you have Sena support, gain initial AR +25.
-            </p> 
         </div>
     </details>
 </div>

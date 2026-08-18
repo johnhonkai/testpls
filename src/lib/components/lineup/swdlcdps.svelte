@@ -3,10 +3,11 @@
 
     // Define the data for main characters
     const mainCharacters = [
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
 
         { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png', teampct: '#1', speed: '' },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '#1', speed: 'Fast' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#1',  speed: 'Slow' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '#2' },
         { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
 
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png', speed: '' },   
@@ -27,20 +28,25 @@
         { name: 'YouyunSS', image: '/images/valkportrait/asop_youyun_ss.png', teampct: '#1', speed: 'Fast'},
         { name: 'YouyunS', image: '/images/valkportrait/asop_youyun_s.png', teampct: '#2', speed: 'Slow'},
 
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', speed: 'Poor'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', speed: 'Damn' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#3', },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#4', },
 
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'HoRB'; // default to 'Vita'
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Vita' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-blue-950 to-blue-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -64,7 +70,15 @@
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
 
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -85,7 +99,7 @@
         </summary>
         <div class="py-3 px-4">
              <p class="text-sm sm:text-base mb-4">
-                So far, SW best team members are either HoRB, Vita or HLE. In cases like Herrscher of Corruption boss where SW does not trigger teammates' Resonance, even BFD Coralie can be used over Vita.
+                SW best team members are usually WoP + HoRB. WoP gives Breach, HoRB gives big buffs. If you don't have WoP, then Vita is a good Breach option.
             </p>
 
             <p class="text-sm sm:text-base mb-4"><b>SS-rank Youyun</b><br/> Youyun is a massive buff for Silverwing (plus she herself deals big dmg and triggers extra Resonance). At SS-rank, Youyun gives enough initial AR to let you instantly get Surplus at the start of battle.

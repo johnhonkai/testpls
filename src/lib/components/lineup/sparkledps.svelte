@@ -3,7 +3,9 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '100%', speed: '' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+
         { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png', teampct: '100%', speed: '' },
         { name: 'Badum', image: '/images/valkportrait/kiana badum.png', teampct: '99%', speed: '' },       
         { name: 'Kiana', image: '/images/valkportrait/Kiana Herrscher of Finality.png', teampct: '98%', speed: '' },
@@ -12,6 +14,10 @@
         { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '90%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '83%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '82%', speed: '' },
+        { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
+        { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png'},
+
+
         { name: 'Coralie', image: '/images/valkportrait/Coralie Valkyrie Blastmetal.png', teampct: '79%', speed: 'Slow' },
         { name: 'Helia', image: '/images/valkportrait/Helia Valkyrie Boltstorm.png', teampct: '73%', speed: 'Slow' },
 
@@ -25,15 +31,20 @@
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '85%', speed: 'Slow' }
     ];
 
-    // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'Vita'; // default to 'Vita'
+ // Pass the index or name of the first character to the reusable component
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Vita' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-red-950 to-red-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -54,8 +65,19 @@
 
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
-            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} speed={firstCharred.speed} />
+            <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
+
 
         <!-- Main Characters Loop (excluding the first character) -->
         {#each filteredMainCharacters as char}
@@ -75,13 +97,15 @@
             Details
         </summary>
         <div class="py-3 px-4">
-            <p class="text-sm sm:text-base mb-4">
-                Sparkle best teammates are usually <a href='/valk/lp' class="link">Vita</a> + either HoRB, Badum, HoFi or even Lantern, depends on the boss.
-            </p>
 
-            <p class="text-sm sm:text-base mb-4">
-                <b>Vita</b><br/> Provides elemental breach and strong buffs.
-            </p> 
+
+            <p class="text-sm sm:text-base mb-4"><b>Standard team usually consists of:</b>
+                <br/> - Breach support: WoP or Vita
+                <br/>
+                - Another support. HoRB, Badum, HoFi or even Lantern, depends on the boss.
+            </p>  
+
+
 
             <p class="text-sm sm:text-base mb-4">
                 <b>Fast Reso Trigger</b><br/> HoFI and Badum can trigger resonance marks very fast.
@@ -95,9 +119,6 @@
                 <b>Lantern</b><br/> Used against Fire Kosma to counter high hitcount.
             </p> 
 
-            <p class="text-sm sm:text-base mb-4">
-                <b>Songque AstralOp</b><br/> When using Songque AstralOp, if you have Sena support, gain initial AR +25.
-            </p> 
         </div>
     </details>
 </div>

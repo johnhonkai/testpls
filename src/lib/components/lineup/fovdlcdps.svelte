@@ -43,8 +43,8 @@
     let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
 </script>
 
-<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-purple-950 to-purple-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Fenghuang of Vicissitud DPS</h3>
+<div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-red-950 to-red-900 shadow-lg shadow-base-100 overflow-hidden">
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Fenghuang of Vicissitude DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 

@@ -17,7 +17,7 @@
 
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '74%', speed: '' },
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '74%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '73%', speed: '' },
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
     ];
 

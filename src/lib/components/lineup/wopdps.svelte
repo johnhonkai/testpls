@@ -5,7 +5,7 @@
     const mainCharacters = [
 
         { name: 'SW', image: '/images/valkportrait/Bronya Silverwing N-EX.png', teampct: '#1', speed: '' },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '', speed: '' },
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '#1', speed: '' },
         { name: 'HoRB', image: '/images/valkportrait/Seele%20Herrscher%20of%20Rebirth.png', teampct: '', speed: '' },
         { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '',  speed: '' },
         { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png', },
@@ -28,8 +28,8 @@
         { name: 'YouyunSS', image: '/images/valkportrait/asop_youyun_ss.png', teampct: '#1', speed: 'Fast'},
         { name: 'Youyun', image: '/images/valkportrait/asop_youyun_s.png', teampct: '#2', speed: 'Slow'},
 
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', speed: '#3'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', speed: '#4' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#3', },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#4', },
 
     ];
 

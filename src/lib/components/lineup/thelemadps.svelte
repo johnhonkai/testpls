@@ -10,7 +10,6 @@
         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
         { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '100%', speed: '' },
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
-        { name: 'Sena2', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '85%' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '82%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '82%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '81%', speed: '' },
