@@ -379,7 +379,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Senadina is the new best Astral Op for all Wheel of Destiny teams.</li>
                 <li>For characters that do not have a skill that ends SO early, SS-rank Senadina now enables these characters to end SO early when they cast Ult.</li>
-                <li>For Physical valks, Senadina provides Crit Rate and Crit DMG.</li>                
+                <li>For Physical valks, Senadina provides Crit DMG to Crit Rate conversion. She also forces 100% Crit Rate if the valk still doesn't get 100% CRate after conversion.</li>                
                 <li>Provides initial ar, surplus max limit +100%, SO cd reduction, and recover ar during SO.</li>
                 <li>More abilities will be unlocked in the future.</li>
 
