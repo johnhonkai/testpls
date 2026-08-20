@@ -552,7 +552,7 @@
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/Alien Guard.webp" date="Sep 1" />
+                <BossCard image="/images/Bosses/Alien Guard_SSS.webp" date="Sep 1" />
                 <BossCard image="/images/Bosses/Vita.png" />
                 <BossCard image="/images/Bosses/Hellmaru.webp" />
                 </div>
