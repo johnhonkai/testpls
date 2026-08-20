@@ -32,8 +32,8 @@
  // Valkyrie character data with type, element, and astral ring properties
    export const astralop = [
 
+  { name: 'Senadina', image: '/images/valkportrait/asop_senadina.png', astralRing: ['Wheel of Destiny' , 'Rite of Oblivion' ] , url: '/astralop/senadina', badge: 'WoD', verdebut: 9.0, id:6},
   { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', astralRing: ['World Star' , 'Wheel of Destiny'] , url: '/astralop/youyun', badge: 'WoD', verdebut: 8.8, id:1},
-
   { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png', astralRing: ['Grail of Infinitude' , 'Rite of Oblivion'] , url: '/astralop/chenxue', verdebut: 8.4, id:2},
   { name: 'Theresa', image: '/images/valkportrait/asop_teri.png', astralRing: ['Law of Ascension' , 'Rite of Oblivion'] , url: '/astralop/theresa', verdebut: 8.1, id:3},
   { name: 'Serapeum', image: '/images/valkportrait/asop_sera.png', astralRing: ['Wheel of Destiny'] , url: '/astralop/serapeum', verdebut: 7.6, id:4},

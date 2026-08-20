@@ -63,6 +63,8 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Lanterndps from "$lib/components/lineup/lanterndps.svelte";
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Wopdps from "$lib/components/lineup/wopdps.svelte";
+	import Fovdlcdps from "$lib/components/lineup/fovdlcdps.svelte";
+	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -506,7 +508,14 @@ async function increaseLike() {
       {/if}
 
       {#if activeLineup === '3'}
-      
+      <Fovdlcdps></Fovdlcdps>
+
+      <div class="divider"></div>
+
+      <Agentritadps></Agentritadps>
+
+      <div class="divider"></div>
+
       <Hohdps></Hohdps>
       
       <div class="divider"></div>

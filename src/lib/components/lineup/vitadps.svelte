@@ -12,13 +12,14 @@
     ];
 
     const asopchar = [
-        { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png', teampct: '100%' },
 
-        { name: 'Teri', image: '/images/valkportrait/asop_teri.png', teampct: '97%' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '96%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '95%', speed: 'Slow' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '89%', speed: 'Slow' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '88%', speed: 'Slow' }
+        { name: 'Senadina', image: '/images/valkportrait/asop_senadina.png' ,  teampct: '#1',  },
+        { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png' ,  teampct: '#2',  },
+        { name: 'Theresa', image: '/images/valkportrait/asop_teri.png',  teampct: '#3'  },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png' ,  teampct: '#4' , },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '#5' , },        
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '#6'   },
+
     ];
 
     // Pass the index or name of the first character to the reusable component

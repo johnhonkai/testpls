@@ -1,10 +1,10 @@
 <svelte:head>
-  <title>Chenxue</title> 
+  <title>Senadina</title> 
 
-    <meta property="og:title" content="Chenxue" />
-    <meta property="og:description" content="Chenxue Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/njVB2ah.png" />
-    <meta property="og:url" content="https://marisaimpact.com/astralop/chenxue" />
+    <meta property="og:title" content="Senadina" />
+    <meta property="og:description" content="Senadina Guides, Builds and Gameplay" />
+    <meta property="og:image" content="https://i.imgur.com/fZa0crZ.png" />
+    <meta property="og:url" content="https://marisaimpact.com/astralop/senadina" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -65,11 +65,13 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Xentineldps from "$lib/components/lineup/xentineldps.svelte";
 	import Lunadlcdps from "$lib/components/lineup/lunadlcdps.svelte";
 	import Hofidps from "$lib/components/lineup/hofidps.svelte";
+	import Swdlcdps from "$lib/components/lineup/swdlcdps.svelte";
+	import Fovdlcdps from "$lib/components/lineup/fovdlcdps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-  { name: 'Skills', short: 'support', icon: faCircleUser },
+ // { name: 'Skills', short: 'support', icon: faCircleUser },
   { name: 'Lineup', short: 'lineup', icon: faUsers },
  // { name: 'Translation Error', short: 'translation' },
 ];  
@@ -221,14 +223,14 @@ async function increaseLike() {
 
 <style>
   #star-container {
-    background: radial-gradient(rgb(var(--light-red-rgb)), rgb(var(--dark-red-rgb)));
+    background: radial-gradient(rgb(var(--light-orange-rgb)), rgb(var(--dark-orange-rgb)));
     height: 100%;  
     overflow: hidden;
     position: relative;
   }
 
   #star-gradient-overlay {
-    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-red-rgb)));
+    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-orange-rgb)));
     position: absolute;
     left: 0px;
     top: 0px;
@@ -263,23 +265,25 @@ async function increaseLike() {
 
 
 <CharacterLayout
-  charName="chenxue"
-  initialLikes={likesData["chenxue"] || 0}
-  accent="bg-red-800"
-  image="/images/valkfull/chenxue.png"
-  alt="Chenxue"
+  charName="senadina"
+  initialLikes={likesData["senaasop"] || 0}
+  accent="bg-orange-800"
+  image="/images/valkfull/asop_senadina.png"
+  alt="Senadina"
+
   valk="false"
 
-  titleEN="Chenxue"
-  titleCN="晨雪"
+  titleEN="Senadina"
+  titleCN="希娜狄雅"
 
-  nameEN="Luo Chenxue"
-  nameCN="洛晨雪"
+  nameEN="Senadina"
+  nameCN="希娜狄雅"
 
-  releaseEN="v8.4 (21 Aug 2025)"
-  releaseCN="v8.4 (24 Jul 2025)"    
+  releaseEN="v9.0 (20 Aug 2026)"
+  releaseCN="v9.0 (23 Jul 2026)"  
+
 >
-  <CharBio mode="support" ar={['goi' , 'roo' ]} bg="bg-red-800" />
+  <CharBio mode="support" ar={['wod' , 'roo' ]} bg="bg-orange-800" />
 </CharacterLayout>
 
 
@@ -361,11 +365,7 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-          <p class="text-sm sm:text-base">
-          <strong>Updated For v9.0 (20 August 2026)
-        </p>
-        </div>
+
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -374,45 +374,58 @@ async function increaseLike() {
           
           
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Grail of Infinitude Support</strong>
+              <strong class="text-amber-400">Wheel of Destiny Support</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>The best astral op for Grail of Infinitude teams.</li>
-                <li>Speeds up rotation: During SO, teammates just need to use Ult (instead of Ult + combo/weapon) to gain enough Shimmering Trace for max Facet stack. </li>
-                <li>Provides initial ar, bonus sp during SO, SO cd reduction, and recover ar during SO.</li>
-                <li>SSS-rank increases enemies' dmg taken from Ult attacks.</li>
+                <li>Senadina is the new best Astral Op for all Wheel of Destiny teams.</li>
+                <li>For characters that do not have a skill that ends SO early, SS-rank Senadina now enables these characters to end SO early when they cast Ult.</li>
+                <li>For Physical valks, Senadina provides Crit Rate and Crit DMG.</li>                
+                <li>Provides initial ar, surplus max limit +100%, SO cd reduction, and recover ar during SO.</li>
+                <li>More abilities will be unlocked in the future.</li>
+
           </ul> 
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Rite of Oblivion Support </strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>The second best astral op for Rite of Oblivion teams. Current best RoO asop is <a class="link" href="/astralop/senadina">Senadina</a>. </li>
-                 <li>However, Chenxue's initial AR is still a bit higher than Sena (83 vs 77).</li>
-                <li>Provides initial ar, SO cd reduction, and recover ar after SO ends.</li>
+                <li>Senadina is the new best Astral Op for Rite of Oblivion teams.</li>
+                <li>However, initial AR is a little lower compared to Chenxue (77 vs 83).</li>
+
           </ul>   
 
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Other Astral Ring</strong>
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Other AR</strong> 
               <br/>
-              Chenxue has unrestricted Physical and Elemental DMG buffs, so Chenxue can be used by any team as a transitional option. If valks have the matching AR tags, Chenxue can also provide initial AR.
-            </p>  
+              Senadina gives zero buffs. She is worse than Dreamseeker. (There is one buff but still worse than DS: When the enemy is Frozen, Paralyzed, or Ignited, the corresponding Ice, Lightning, or Fire DMG taken by that enemy increases by 10% / 10% / 10% respectively)
+          </p>
+
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">F2P</strong> <br/> Dreamseeker is enough.
+              <strong class="text-amber-400">F2P</strong> 
           </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Dreamseeker / Songque is enough. </li>
+                <li>In 9.0, there's no new valk - getting FoV DLC + Senadina asop is a good combo deal if you can afford it. Additionally, 9.1 is Dreamseeker, which is 99% gonna be Wheel of Destiny too.</li>
+
+
+
+          </ul>           
 
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Spenders</strong> <br/>  
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>S-rank is enough for Red Lotus. </li>
-                <li>SS-rank gives ar regen during SO, and reduces SO cd - useful in Nirvana where you need multiple rotations.</li>
-                <li>SSS-rank further reduces SO cd, and increases enemies' dmg taken from Ult atacks.</li>
+                <li>SS-rank is the optimal rank. SS gives more initial sp, allowing valks to get Stellar Surplus very fast. SS also enables valks like JD and Thelema to end Stellar Outburst early.</li>
+                <li>SSS-rank gives more ar regen and makes enemies take more dmg during Surplus state.</li>
+
+
+
           </ul> 
 
           <div class="divider  "></div>
@@ -442,7 +455,7 @@ async function increaseLike() {
                 {activeLineup === '1' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
       on:click={() => setLineup('1')}
     >
-      GRAIL OF INFINITUDE
+      WHEEL OF DESTINY
     </button>
 
     <!-- Tab -->
@@ -460,19 +473,28 @@ async function increaseLike() {
 
 
       {#if activeLineup === '1'}
-      <Xentineldps></Xentineldps>
+
+      <Fovdlcdps></Fovdlcdps>
 
       <div class="divider"></div>
 
-      <Lunadlcdps></Lunadlcdps>
+      <Agentritadps></Agentritadps>
+
+       <div class="divider"></div>
+     
+      <Hohdps></Hohdps>
       
       <div class="divider"></div>
 
-      <Hilovedps></Hilovedps>
+      <Jddps></Jddps>
 
       <div class="divider"></div>
 
-      <Heliadps></Heliadps>
+      <Lanterndps></Lanterndps>
+
+      <div class="divider"></div>
+
+       <Thelemadps></Thelemadps>  
       {/if}
 
 
@@ -484,11 +506,10 @@ async function increaseLike() {
       <div class="divider"></div>
 
       <Vitadps></Vitadps>
-      
-      <div class="divider"></div>
-    
-      <Hofidps></Hofidps>
 
+      <div class="divider"></div>
+
+      <Hofidps></Hofidps>
       {/if}
 
 

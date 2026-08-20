@@ -3054,6 +3054,13 @@ $: rankLabelscompare = slots.compareAstralOp?.type === "elf"
   <!-- Entry -->
   <div class="space-y-6">
     <!-- Version -->
+    <div class="border-l-4 border-purple-500 pl-4">
+      <h3 class="text-md font-semibold">20 Aug 2026 </h3>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 text-sm sm:text-base">
+        <li>Added FoV and WoP.</li>
+        <li>Added Senadina astral op. The numbers are not completely accurate since there are new clauses like "if surplus is less than 10" and I am not coding that.</li>
+      </ul>
+    </div>
 
     <div class="border-l-4 border-cyan-500 pl-4">
       <h3 class="text-md font-semibold">15 Apr 2026 </h3>

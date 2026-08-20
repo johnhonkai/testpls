@@ -8,10 +8,15 @@
     ];
 
     const asopchar = [
-        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png', teampct: '100%', speed: '' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '98%', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '94%', speed: '' },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '93%', speed: '' }
+
+        { name: 'Senadina', image: '/images/valkportrait/asop_senadina.png' ,  teampct: '#1',  },
+        { name: 'Chenxue', image: '/images/valkportrait/asop_chenxue.png' ,  teampct: '#2',  },
+        { name: 'Theresa', image: '/images/valkportrait/asop_teri.png',  teampct: '#3'  },
+        { name: 'Kiana', image: '/images/valkportrait/elf_kiana.png' ,  teampct: '#4' , },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png' ,  teampct: '#5' , },        
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png',  teampct: '#6'   },
+
+
     ];
 
 </script>

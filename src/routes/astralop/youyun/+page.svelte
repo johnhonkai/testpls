@@ -364,7 +364,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -389,9 +393,9 @@ async function increaseLike() {
               <strong class="text-amber-400">Wheel of Destiny Support </strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Youyun is the best Astral Op for WoD DPS that utilize Stellar Surplus mechanic. Currently, only Miss Espionage has Stellar Surplus.</li>
-                <li>For non-Surplus DPS, Youyun is still very good, but <a class="link" href="/astralop/serapeum">Serapeum</a> is better. Youyun gives more dmg during AC, but less dmg during SO. Youyun also gives less initial AR and post-so AR.</li>
-                <li>For Physical valks, Youyun is significantly worse than Sera since Youyon provides no Crit buffs and much lower Physical buffs. Even lower for non-surplus Physical valks.</li>
+                <li>Youyun is the second best Astral Op for WoD DPS that utilize Stellar Surplus mechanic. The best WoD asop is <a class="link" href="/astralop/senadina">Senadina</a>. </li>
+                <li>For non-Surplus DPS, <a class="link" href="/astralop/serapeum">Serapeum</a> is still better than Youyun. Youyun gives more dmg during AC, but less dmg during SO. Youyun also gives less initial AR and post-so AR.</li>
+                <li>For Physical valks, Youyun is significantly worse than Sera since Youyun provides no Crit buffs and much lower Physical buffs. Even lower for non-surplus Physical valks.</li>
                 <li>Provides initial ar, SO cd reduction, and recover ar during SO.</li>
 
           </ul>   

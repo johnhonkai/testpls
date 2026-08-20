@@ -1,5 +1,31 @@
 export const valkyries = [
 
+    { name: 'Fenghuang of Vicissitude', 
+        image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', 
+        type: 'BIO', 
+        element: 'Fire', 
+        astralRing: 'Wheel of Destiny' , 
+        artag: ['Wheel of Destiny', 'Heavenly Shift' , 'Harmonized Shadow Star'  ] , 
+        url: '/valk/fov',
+        surplus: true,
+        endsoearly: true,
+        cost: 200,
+        
+    }, 
+
+    { name: 'Wings of Panacea', 
+        image: '/images/valkportrait/Seele Wings of Panacea.png', 
+        type: 'SD', 
+        element: 'Lightning', 
+        astralRing: 'World Star' , 
+        artag: ['World Star', 'Domain Resonance' , 'Heavenly Shift' , 'Harmonized Shadow Star'  ] , 
+        url: '/valk/wings-of-panacea',
+        surplus: true,
+        endsoearly: true,
+        cost: 200,
+        
+    }, 
+
     { name: 'Silverwing', 
         image: '/images/valkportrait/Bronya Silverwing N-EX.png', 
         type: 'BIO', 
