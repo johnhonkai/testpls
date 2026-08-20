@@ -416,7 +416,6 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Dreamseeker / Songque is enough. </li>
-                <li>In 8.8, there's no new valk - getting Silverwing DLC + Youyon asop is a good combo deal if you can afford it. Additionally, 8.9 valk is Seele, which is 99% gonna be World Star too.</li>
 
 
 
