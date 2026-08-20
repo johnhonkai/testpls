@@ -744,37 +744,55 @@ async function increaseLike() {
 
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
-      <div class="flex justify-center gap-4 my-6">
+      
+
+      <div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-4 
+            w-full max-w-4xl mx-auto">
+
+              <button
+    on:click={() => setPlaystyle('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DLC: AR Charging
+  </button>
+
+  <button
+    on:click={() => setPlaystyle('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DLC: Stellar Outburst
+  </button>
 
 
-        <button
-        on:click={() => setPlaystyle('1')}
-        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-      >
-        AR CHARGING
-      </button>    
 
-        <button
-          on:click={() => setPlaystyle('2')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-        STELLAR OUTBURST
-        </button>
+  <button
+    on:click={() => setPlaystyle('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    Basic ATK
+  </button>
 
-        <button
-          on:click={() => setPlaystyle('3')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-        BASIC ATK
-        </button> 
-
-        <button
-          on:click={() => setPlaystyle('4')}
-          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '4' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-        >
-        COMBO ATK
-        </button>
-      </div>
+  <button
+    on:click={() => setPlaystyle('4')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activePlaystyle === '4' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    Combo ATK
+  </button>
+</div>
 
 
         {#if activePlaystyle === '1'}
@@ -809,7 +827,7 @@ async function increaseLike() {
         </div>
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
-              FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
+              FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage, you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
           </p>
           </div>
 
@@ -958,7 +976,7 @@ async function increaseLike() {
         </div>
         <div class="mt-3 rounded-sm" >
           <p class="text-sm sm:text-base text-left">
-            FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
+              FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage, you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
 
           </p>
           </div>
