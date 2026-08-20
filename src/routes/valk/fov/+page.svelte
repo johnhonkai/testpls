@@ -4,7 +4,7 @@
 
     <meta property="og:title" content="Fu Hua Fenghuang of Vicissitude" />
     <meta property="og:description" content="Fenghuang of Vicissitude Guides, Builds and Gameplay" />
-    <meta property="og:image" content="https://i.imgur.com/LtjUz03.png" />
+    <meta property="og:image" content="https://i.imgur.com/Ruf8B1Z.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/fov" />
     <meta property="og:type" content="website" />
 
