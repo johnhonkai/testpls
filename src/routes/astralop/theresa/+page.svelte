@@ -361,7 +361,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -385,7 +389,7 @@ async function increaseLike() {
               <strong class="text-amber-400">Rite of Oblivion Support </strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Second best astral op for Rite of Oblivion teams after Chenxue.</li>
+                <li>Third best astral op for Rite of Oblivion teams after Senadina and Chenxue.</li>
                 <li>Provides initial ar, SO cd reduction, and recover ar after SO ends.</li>
                 <li>SSS-rank increases enemies' dmg taken from all attacks.</li>
           </ul>   
