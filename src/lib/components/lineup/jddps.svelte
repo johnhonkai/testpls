@@ -26,7 +26,7 @@
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#2', speed: '' },
         { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#3', speed: '' },
         { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#4', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_bunny.png', teampct: '#5', speed: 'Slow' },
+        { name: 'Bunny', image: '/images/valkportrait/elf_bunny.png', teampct: '#5', speed: 'Slow' },
         { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
     ];
 

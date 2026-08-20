@@ -13,6 +13,7 @@
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '92%'},
         { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: '88%'},
         { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '77%',speed: 'Fast'   },
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
     ];
 

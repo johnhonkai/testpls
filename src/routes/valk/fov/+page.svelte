@@ -64,6 +64,11 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Wopdps from "$lib/components/lineup/wopdps.svelte";
 	import Fovdlcdps from "$lib/components/lineup/fovdlcdps.svelte";
+	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
+	import Fovdps from "$lib/components/lineup/fovdps.svelte";
+	import Xentineldps from "$lib/components/lineup/xentineldps.svelte";
+	import Lunadlcdps from "$lib/components/lineup/lunadlcdps.svelte";
+	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -415,7 +420,7 @@ async function increaseLike() {
               
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>No live data.</li>
+                <li>FoV does not seem to replace existing WoD lineups. For Ice HoV boss, some Thelema DPS teams use FoV support.</li>
                 <li>If the leader is an Ice-type, FoV grants extra Ranged Ice DMG buff (For HoH).</li>
                 <li>Enables the team to gain Stellar Surplus state. Grants buffs when the team activates Stellar Outburst after gaining Surplus state.</li> 
           </ul>  
@@ -441,16 +446,19 @@ async function increaseLike() {
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">If you have FoV</strong> <br/> Recommended to get FoV DLC and Sena astral op together in 9.0.
+              <strong class="text-amber-400">If you have FoV</strong> <br/> If you already have FoV, it is recommended to get FoV DLC and Sena astral op together in 9.0.
             </p>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">FoV from Battle Pass</strong> <br/> If you can afford it, you can get FoV from BP, if you plan to get the DLC for her.
+            </p>
 
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
           <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
+              <li ><strong>Battlesuit:</strong> Battle Pass</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
               <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 9.0</li>
           </ul>
@@ -486,7 +494,7 @@ async function increaseLike() {
   
 <div class="grid gap-4 my-6 
             grid-cols-2 
-            md:grid-cols-4 
+            md:grid-cols-3 
             w-full max-w-4xl mx-auto">
   <button
     on:click={() => setLineup('1')}
@@ -498,25 +506,47 @@ async function increaseLike() {
     DPS
   </button>
 
+  <button
+    on:click={() => setLineup('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    WHEEL OF DESTINY
+  </button>
 
+  <button
+    on:click={() => setLineup('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    GRAIL OF INFINITUDE
+  </button>
 
 </div>
 
       {#if activeLineup === '1'}
       <Fovdlcdps></Fovdlcdps>
 
+      <div class="divider"></div>
+
+      <Fovdps></Fovdps>
+
       {/if}
 
       {#if activeLineup === '2'}
-      <Heliadps></Heliadps>      
-      {/if}
 
-      {#if activeLineup === '3'}
-      
-      <Hohdps></Hohdps>
-      
+      <Agentritadps></Agentritadps>
+
       <div class="divider"></div>
 
+      <Hohdps></Hohdps>
+
+      <div class="divider"></div>
+      
       <Jddps></Jddps>
 
       <div class="divider"></div>
@@ -525,32 +555,87 @@ async function increaseLike() {
 
       <div class="divider"></div>
 
-       <Thelemadps></Thelemadps>    
+       <Thelemadps></Thelemadps>      
+
+
       {/if}
 
-      {#if activeLineup === '4'}
+      {#if activeLineup === '3'}
+
+      <Xentineldps></Xentineldps>
+
+      <div class="divider"></div>
+
+      <Lunadlcdps></Lunadlcdps>
+
+      <div class="divider"></div>
       
-      <Horbdlcdps></Horbdlcdps>
-      
-      <div class="divider"></div>
-
-      <Sparkledps></Sparkledps>
+      <Hilovedps></Hilovedps>
 
       <div class="divider"></div>
 
-      <Simpdps></Simpdps>
+      <Heliadps></Heliadps>
 
-      <div class="divider"></div>
-
-       <Senadps></Senadps>     
       {/if}
+
+  
 </section>
 
   {/if}
 
      {#if selectedTab === 'Equipment'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">EQUIPMENT</h2>
- 
+
+      <div>
+
+
+              <h2 class="text-xl font-semibold text-center  text-yellow-400">BEST</h2>
+
+              <div class="flex flex-col justify-center items-center">
+                  
+              <div class="flex flex-wrap my-2 rounded-lg overflow-hidden w-fit gap-1">
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2026/07/21/4976467/7491f863007120b321b58b4e7bf0472f_8748703037216921394.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2026/07/21/4976467/f198fba42ca42f5ccee46d439920e728_985353415538887076.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2026/07/21/4976467/21b4ed56a1f9dc360b4500a1a4558ca6_6346725327459965817.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="w-20 h-20 sm:w-28 sm:h-28">
+                      <img src="https://act-upload.mihoyo.com/bh3-wiki/2026/07/21/4976467/218e0f66c20ca3c35fc67930d56d9dfa_1016681030366110262.png" alt="Vita" class="w-full h-full object-cover">
+                  </div>
+
+              </div>  
+              <h4 class="text-base sm:text-base text-white"> Vermillion Liuli + Weeping Philosopher Set</h4>
+              </div>
+
+
+
+           </div>
+
+            <div class="p-4 mt-4 bg-linear-to-r from-rose-950/75 to-rose-900/75 rounded-sm">
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>Vermillion Liuli</b><br/> A must-have to activate Astral Ring.
+              </p>
+            
+              <p class="text-sm sm:text-base text-left mb-4">
+                <b>Weeping Philosopher Set</b>
+                <br/> - Big buffs for self and teammate.
+                <br/>- Forgeable in Foundry.
+              </p>
+
+              <p class="text-sm sm:text-base text-left">
+                <b>Affix:</b> Full ATK.
+              </p>
+            </div>
+      <div class="divider"></div>
+            
       <div>
 
 
@@ -655,24 +740,340 @@ async function increaseLike() {
 
       {#if selectedTab === 'Elysian Realm'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">ELYSIAN REALM</h2>
-
       <div class="flex justify-center gap-4 my-6">
-          <button
-            on:click={() => setPlaystyle('1')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            BASIC ATK
-          </button>
-        
-          <button
-            on:click={() => setPlaystyle('2')}
-            class={`px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
-          >
-            COMBO ATK
-          </button>
-        </div>
-      
+
+
+        <button
+        on:click={() => setPlaystyle('1')}
+        class={ ` btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '1' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+      >
+        AR CHARGING
+      </button>    
+
+        <button
+          on:click={() => setPlaystyle('2')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '2' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+        STELLAR OUTBURST
+        </button>
+
+        <button
+          on:click={() => setPlaystyle('3')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '3' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+        BASIC ATK
+        </button> 
+
+        <button
+          on:click={() => setPlaystyle('4')}
+          class={`btn px-4 py-2 font-semibold rounded-sm ${activePlaystyle === '4' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-linear-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+        >
+        COMBO ATK
+        </button>
+      </div>
+
+
         {#if activePlaystyle === '1'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          Press A (during AR Charging)
+        </p>
+
+        <div class="divider  "></div>
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Attainment + Arcane Traces</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b> Observation</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+              FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
+          </p>
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+              <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 4" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+              </div>
+
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+              <img src="/images/signets/Signets of Bodhi (Su).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+              <p class="text-lg font-semibold ">1</p>
+              </div>
+          
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+            <div class="p-2 mt-3 rounded-sm" >
+              <p class="text-sm sm:text-base text-left">
+                  <li class="text-sm sm:text-base"> Using Shadow Star ATK counts as casting weapon skill, so you can use Helix and Stars signet (doesn't have to be a set). </li>
+              </p>
+              </div>
+
+            <div class="divider  "></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Fu Hua Azure Empyrea.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">HOW TO PLAY</h2>
+
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Press support to use Shadow Star ATK</li>
+          <li>Spam Basic ATK</li>
+          <li>Use Ult to finish off a wave</li>
+          <li>If you have [Observation] Ego signet, you can use Ult at the start to make Basic and Combo ATK deal bonus 20% DMG (HP Loss DMG).</li>
+        </ol>
+
+
+        {/if}
+
+        {#if activePlaystyle === '2'}
+        <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Stellar Outburst Playstyle</h2> 
+        <p class="text-sm sm:text-base text-center sm:text-left">
+          Hold A (during Stellar Outburst)
+
+        </p>
+
+        <div class="divider  "></div>
+
+
+        <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">EGO SIGNETS</h2>
+
+        <div class="flex flex-col justify-center items-start ">
+
+        <div class="flex shadow-md relative space-x-4 p-2 rounded-sm items-center w-fit  bg-linear-to-r from-purple-500/75 to-cyan-500/0 overflow-hidden">
+
+          <div class="absolute z-0 w-auto h-full top-0 left-0 opacity-50 mix-blend-overlay ">
+            <img src="/images/signets/egogrid.svg" class="w-full h-auto" alt="egogrid">
+          </div>
+            <!-- Left side image -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 z-10">
+              <img src="/images/signets/Exclusive.png" alt="Ego" class="w-full h-full object-cover rounded-md">
+            </div>
+            
+            <!-- Right side text sections -->
+            <div class="flex flex-col space-y-2 pr-2 z-10">
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Start:</b> Vermillion Fire + Unbroken Rampant</p>
+              <p class="text-sm sm:text-lg text-slate-100"> <b>Optional:</b>  Observation</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 rounded-sm" >
+          <p class="text-sm sm:text-base text-left">
+            FoV starts with two Ego signets. This is enough to clear a run, but if you do need more damage (for example, you are using FoV without signature gear, or you just want to try to improve your time), you can try resetting ER Lite / Floor 1 (Normal mode) until you get another Ego portal for Observation signet.
+
+          </p>
+          </div>
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">GENERAL SIGNETS</h2>
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <!-- First Signet with 'Start' text -->
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <div class="badge badge-accent z-10 absolute top-2 font-semibold">START</div>
+                <img src="/images/signets/Signets of Decimation (Kalpas).png" alt="Signet 5" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+          
+            <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Vicissitude (Hua).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">2</p>
+              </div>            
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Gold (Eden).png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold ">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Helix (Vill-V).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Stars (Griseo).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1 or 2</p>
+              </div>
+
+              <div class="flex flex-col items-center  p-1 rounded-sm relative border border-slate-500">
+                <img src="/images/signets/Signets of Reverie (Pardofelis).png" alt="Signet 6" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <p class="text-lg font-semibold">1</p>
+              </div>
+
+          </div>
+            <div class="p-2 mt-3 rounded-sm" >
+              <p class="text-sm sm:text-base text-left">
+                  <li class="text-sm sm:text-base"> Using Shadow Star ATK counts as casting weapon skill, so you can use Helix and Stars signet (doesn't have to be a set). </li>
+              </p>
+              </div>
+
+            <div class="divider  "></div>
+            <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SUPPORTS</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-lg font-semibold">START</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Thelema Mad Pleasure.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-lg font-semibold">MID</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                <img src="/images/valkportrait/Pardofelis Reverist Calico.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                <img src="/images/valkportrait/Himeko Blood Rose.png" alt="Signet 3" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-lg font-semibold">FINAL</p>
+            </div>
+            
+          </div>
+
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4 text-left text-white cooltext">SIGIL</h2>
+
+          <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+            
+
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                    <img src="/images/sigils/Mad_Kings_Mask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">START (Normal)</p>
+            </div>
+
+            <div class="flex flex-col items-center p-1 rounded-sm relative border border-slate-500 ">
+                <div class="flex flex-row rounded-sm">
+                    <img src="/images/sigils/Tin_Flask.webp" alt="Goblet" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                    <img src="/images/sigils/An_Old_Pals_Legacy.webp" alt="Because of You" class="w-16 h-16 sm:w-20 sm:h-20 object-cover">
+                </div>
+                <p class="text-base sm:text-lg font-semibold">FINAL</p>
+            </div>
+
+          </div>
+
+          
+          <div class="divider  "></div>
+          <h2 class="text-xl font-semibold mb-4  text-left text-white cooltext">HOW TO PLAY</h2>
+
+          <ol class="list-decimal px-4 mb-6 text-sm sm:text-base">
+          <li>Use supports for buffs.</li>
+          <li>Activate Stellar Outburst.</li>
+          <li>Use support (Shadow Star ATK) > hold ATK > press ATK (Enhanced Combo ATK). Repeat two more times.</li>
+          <li>Use Ultimate.</li>
+          <li>Repeat step 1-4.</li>
+
+        </ol>
+
+
+        {/if}
+
+
+        {#if activePlaystyle === '3'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Basic ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
           Press A
@@ -824,10 +1225,10 @@ async function increaseLike() {
         </div>
         {/if}
 
-        {#if activePlaystyle === '2'}
+        {#if activePlaystyle === '4'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Combo ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Hold A button
+          Hold A
 
         </p>
 
@@ -962,21 +1363,7 @@ async function increaseLike() {
 
         </ol>
 
-        <p class="mt-2 text-sm sm:text-base pb-4 text-center">
-            Check out this showcase from Marisa Honkai:
-        </p>
 
-        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
         {/if}
 
       {/if}
@@ -999,7 +1386,7 @@ async function increaseLike() {
             <h3 class="text-lg font-semibold text-blue-400 mb-2">DPS Upgrade</h3>
             <ul class=" text-slate-100 text-base">
               <li>S1:  Elemental Breach +13.8% ➔ +18%</li>
-              <li>SS: Big improvement to FoV's rotation and damage</li>
+              <li>SS: Improves Part 1 FoV's rotation and damage</li>
             </ul>
           </div>
 
@@ -1053,7 +1440,7 @@ async function increaseLike() {
                   2. UNLOCK: Parry ATK gain Fire DMG +25%. Switching stances resets evasion CD (has 10s CD).
                 </td>
                 <td>DPS<br/>
-                  Changes your rotation for Part 1 DPS
+                  Improves Part 1 rotation
 
               </tr>
               <tr>

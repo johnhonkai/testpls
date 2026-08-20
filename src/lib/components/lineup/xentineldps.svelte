@@ -17,6 +17,7 @@
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png',  teampct: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: ''},
         { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: ''},
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
     ];
 

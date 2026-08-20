@@ -3,9 +3,13 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png',  teampct: '100%',  speed: 'Fast' },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '99.7%',  speed: 'Fast' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '100%',  speed: 'Slow' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3', speed: 'Fast' },
+
+
+
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '100%',  speed: 'Fast' },
 
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  teampct: '94.4%',  speed: '' },
         { name: 'Thel', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '94.1%', speed: '' },
@@ -13,26 +17,33 @@
         { name: 'HoH', image: '/images/valkportrait/Elysia Herrscher of Human Ego.png', teampct: '89.8%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '89.5%', speed: '' },
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png",  teampct: '87%', speed: '' },
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_youyun.png' ,  teampct: '100%'  },
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png' ,  teampct: '92%'  },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '86%' , speed: 'Slow' },
-
+        { name: 'Sena', image: '/images/valkportrait/asop_senadina.png', teampct: '#1', speed: '' },
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#2', speed: '' },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#3', speed: '' },
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
     ];
 
-    // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'BFD'; // default to 'Vita'
+     export let firstCharName: string = 'WoP'; 
+    export let secondCharName: string = 'Vita'; 
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-purple-950 to-purple-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -54,6 +65,18 @@
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
+        {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+    
+        {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}           
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
         {/if}
 
 

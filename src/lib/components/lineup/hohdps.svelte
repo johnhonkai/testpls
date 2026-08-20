@@ -3,11 +3,15 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '97%', speed: '' },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '95%', speed: '' },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3', speed: 'Fast' },
 
-        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '100%', speed: '' },
+
+
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '100%', speed: '' },
+
+        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '98%', speed: '' },
         { name: 'Thelema', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '84%', speed: '' },
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', teampct: '80%', speed: '' },
         { name: 'Lantern', image: '/images/valkportrait/Lantern Lone Destruction.png', teampct: '77%', speed: '' },
@@ -15,33 +19,39 @@
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '76%',  speed: '' },
 
         { name: 'Simp', image: "/images/valkportrait/Theresa Schicksal's Imperative.png", teampct: '74%', speed: '' },
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
 
     ];
 
     const asopchar = [
-        { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '100%', speed: '' },
-        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '99%', speed: '' },
-        { name: 'Kiana', image: '/images/valkportrait/elf_ely.png', teampct: '92%', speed: 'Slow' },
-        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '90%', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '84%', speed: 'Slow' }
+        { name: 'Sena', image: '/images/valkportrait/asop_senadina.png' ,  teampct: '#1'  },
+        { name: 'Sera', image: '/images/valkportrait/asop_sera.png' ,  teampct: '#2'  },
+
+        { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png' ,  teampct: '#3'  },
+        { name: 'Ely', image: '/images/valkportrait/elf_ely.png', teampct: '#4', speed: 'Slow' },
+        { name: 'Songque', image: '/images/valkportrait/asop_songque.png', teampct: '#5', speed: 'Slow' },
+
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6' , speed: 'Slow' },
+
     ];
 
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'HLE'; // default to 'Vita'
-    export let secondCharName: string = 'Vita'; // default to 'Vita'
+     export let firstCharName: string = 'WoP'; 
+    export let secondCharName: string = 'Vita'; 
     export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
+    export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
-    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);
     let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'HLE'
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
 );
 
 
@@ -99,25 +109,16 @@ let filteredMainCharacters = mainCharacters.filter(
         </summary>
         <div class="py-3 px-4">
 
-      
+         <p class="text-sm sm:text-base mb-4"><b>A standard team usually consists of</b><br/> 
+            - Breach Support (WoP, Vita, Sena)
+            <br/>
+            - Plus another support, usually either HLE or Rita, or whatever the boss requires.
+        </p>  
+             
 
         <p class="text-sm sm:text-base mb-4"><b>Freeze</b><br/> HLE and Thelema can apply freeze trauma.
         </p>    
 
-        <p class="text-sm sm:text-base mb-4"><b>Thelema</b><br/> - A lot of HoH runs usually have Thelema support.
-            <br/>
-            - Some old HoH bosses require shieldbreak. This was provided by Sushang, but in WoDestiny team, only Thelema can provide shieldbreak.
-            <br/>
-            - Thelema also has a unique evasion spam strat to quickly regen AR meter, which can significantly improve score.
-            <br/>
-            - In Arena, Thelema + HoH is a powerful pair with timestop.
-        </p>            
-
-        <p class="text-sm sm:text-base mb-4"><b>AstralOp</b><br/> 
-            - Serapeum provides the biggest dmg buff, as well as initial AR and post-SO AR regen.
-            <br/>
-            - Youyun gives more damage during Stellar Surplus state (requires Rita), but lower damage during Stellar Outburst.
-        </p>     
 
         </div>
     </details> 

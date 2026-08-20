@@ -4,16 +4,12 @@
     // Define the data for main characters
     const mainCharacters = [
 
-       
-        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1',  },
+        { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png', teampct: '#1', speed: '' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3', speed: 'Fast' },
+        
         { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '#1', },
-
-        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png',  teampct: '',  },
-        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png',  teampct: '',  },
-
-
         { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png',  teampct: '',   },
-
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png',  teampct: '',  speed: '' },
         { name: 'Thel', image: '/images/valkportrait/Thelema Mad Pleasure.png', teampct: '', speed: '' },
         { name: 'RS', image: '/images/valkportrait/dudu.png', teampct: '', speed: '' },
@@ -33,18 +29,25 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'BFD'; // default to 'Vita'
+    export let firstCharName: string = 'WoP'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; // default to 'Vita'
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
+    let thirdCharred = mainCharacters.find(char => char.name === thirdCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-red-950 to-red-900 shadow-lg shadow-base-100 overflow-hidden">
-    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Fenghuang of Vicissitude DPS</h3>
+    <h3 class="text-xl font-semibold mb-2 text-center text-zinc-900 bg-slate-100 font-s">Fenghuang of Vicissitude DLC DPS</h3>
 
     <div class="flex flex-wrap px-2 pt-2 gap-2 gap-y-6 mb-4 justify-center">
 
@@ -63,6 +66,20 @@
         {#if firstCharred}
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
+
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+        {#if thirdCharred}
+            <Charred name={thirdCharred.name} image={thirdCharred.image} teampct={thirdCharred.teampct} utility={thirdCharred.utility} speed={thirdCharred.speed} />
+        {/if}        
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
+
 
 
 
@@ -85,15 +102,12 @@
         </summary>
         <div class="py-3 px-4">
 
-            <p class="text-sm sm:text-base mb-4">
-                - Wings of Panacea is the best WoD support - provides Breach, ar regen, and more.
-                <br/>
 
-                - Hi Love Elf is the best team member since FoV has a passive where she gets independent dmg boost when an Ice teammate is present. Other options include HoH and Thelema.
-
-
-            </p>
-
+        <p class="text-sm sm:text-base mb-4"><b>A standard team usually consists of</b><br/> 
+            - Breach Support (WoP, Vita, Sena)
+            <br/>
+            - Plus another support, preferably an Ice valk since FoV gains extra damage if a team member is an Ice valk (HLE, HoH, Thelema)
+        </p>  
         
 
     </div>
