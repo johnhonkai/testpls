@@ -306,6 +306,7 @@
 
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
+      { code: 'TOSENADINA', reward: '100 crystals' },
       { code: 'KNV9GRXGPN', reward: '30 crystals' },
 
     ] as entry}
