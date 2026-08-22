@@ -94,13 +94,13 @@
   });
 
   function updatePatchTime() {
-      const regionalStartDate = new Date('2026-6-26'); // Start date Regional Servers
+      const regionalStartDate = new Date('2026-8-22'); // Start date Regional Servers
       const cnStartDate = new Date('2026-7-25');       // Start date CN Servers
 
       const currentWeekRegional = calculateWeek(regionalStartDate);
       const currentWeekCN = calculateWeek(cnStartDate);
 
-      regionalServerInfo = `Current: v8.9 Week ${currentWeekRegional}`;
+      regionalServerInfo = `Current: v9.0 Week ${currentWeekRegional}`;
       cnServerInfo = `Current: v9.0 Week ${currentWeekCN}`;
   }
 
@@ -196,7 +196,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v9.0 update is on 20 Aug</li>
+              <li>v9.1 update is on 22 Oct</li>
             </ul>
           </div>
           <div>
