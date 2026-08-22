@@ -219,7 +219,7 @@ function selectTabMobile(event) {
 
 <CharacterLayout
   charName="Ritual Imayoh"
-  initialLikes={likesData["Ritual Imayohr"] || 0}
+  initialLikes={likesData["Ritual Imayoh"] || 0}
   accent="bg-blue-800"
   image="/images/valkfull/Ritual Imayoh.png"
   alt="Ritual Imayoh"
