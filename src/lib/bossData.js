@@ -6048,6 +6048,7 @@ export const teamData = {
       }
     ],
                     videos: [
+      { url: 'https://www.youtube.com/watch?v=b4pkBfqrfPs', abyss: 'Nirvana 580D', uploader: 'chronos002' },
       { url: 'https://www.bilibili.com/video/BV1Wagv6eEef', abyss: 'Red Lotus 545D', uploader: '白练进化草履虫' },
     ] 
   },     
