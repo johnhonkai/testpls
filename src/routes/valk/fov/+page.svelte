@@ -798,7 +798,7 @@ async function increaseLike() {
         {#if activePlaystyle === '1'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">AR Charging Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Press A (during AR Charging)
+          Press A (during AR Charging). Stronger, faster build.
         </p>
 
         <div class="divider  "></div>
@@ -1098,7 +1098,7 @@ async function increaseLike() {
         {#if activePlaystyle === '3'}
         <h2 class="text-xl md:text-2xl font-semibold mb-0 md:mb-2 text-center sm:text-left text-blue-400">Basic ATK Playstyle</h2> 
         <p class="text-sm sm:text-base text-center sm:text-left">
-          Press A
+          Press A. Stronger, faster build.
         </p>
 
         <div class="divider  "></div>
