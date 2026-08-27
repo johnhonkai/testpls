@@ -31,6 +31,8 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
+  { name: '时序之律者', image: '/images/valkportrait/Herrscher of Time.png', type: 'IMG', element: 'Fire', astralRing: 'Wheel of Destiny' , url: '/valk/herrscher-of-time', badge: 'Beta', verdebut: 9.1, id:5},
+
   { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Wheel of Destiny' , 'Part 1'] , url: '/valk/fov', badge: 'Updated', verdebut: 7.2, verdlc: 9.0, id:5},
   { name: 'Wings of Panacea', image: '/images/valkportrait/Seele Wings of Panacea.png', type: ['SD' , 'Qua'], element: 'Lightning', astralRing: ['World Star'] , url: '/valk/wings-of-panacea', verdebut: 8.9, verdlc: 8.8, id:75},
 
