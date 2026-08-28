@@ -368,11 +368,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-        <p class="text-sm sm:text-base">
-          <strong>Updated For v8.4 (21 August 2025)
-      </p>
-      </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -397,37 +397,47 @@ async function increaseLike() {
     
           </p>
 
+          <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/> 
+
+          </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Best support for Xentinel. HLE always use Badum support against SD enemies.</li>
+                <li>Great support for other GoI teams.  </li>
+          </ul>    
+
+
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">World Star Support</strong> <br/>Can trigger Domain Resonance very fast. Best support for Sparkle and Senadina.
+              <strong class="text-amber-400">World Star Support</strong> <br/>
     
           </p>
-
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Great support. Can trigger Domain Resonance very fast.</li>
+                <li>WoP DPS always use Badum or HLE against SD enemies.</li>
+          </ul>   
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Law of Ascension Support</strong> <br/>One of the best supports for Peregrine Sword and Reign Solaris.
+              <strong class="text-amber-400">Law of Ascension Support</strong> <br/>Good support for PS and RS, but has been used less now that better supports for them have appeared over time.
   
           </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>One of the best supports for PAWS.    
-          </p>
 
           <div class="divider"></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">New / F2P Players</strong> <br/> Not recommended. Due to how Part 2 meta works, it is better to pull the newest S-rank in the patch.
-            </p>
-            
+
             <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Competitive / Spending Players</strong> <br/> 
-              Badum has a pretty good value. Whether you can get her, is up to your wallet. Still, prioritize getting new valks first before even considering getting Badum.
+                <strong class="text-amber-400">Paid Players</strong><br/>
+                For some reason, Badum is still relevant as support. If you can afford it, Badum is okay to get, but not the highest priority over newer valks. 
             </p>
-            <ul class="list-disc ml-6 text-sm sm:text-base">
-              <li class="mt-2">As DPS, Badum has some top scores: SD Guaymas, SD Sa, Flux Homu, and Flux Andrius.</li>
-              <li class="mt-2">As support, Badum is the best support for a lot of valks: PAWS, Peregrine Sword, Reign Solaris, Sparkle, Senadina.</li>
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
 
 
-          </ul>
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>

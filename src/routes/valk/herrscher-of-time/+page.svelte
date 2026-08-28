@@ -396,6 +396,8 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 9.1</li>
+
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

@@ -372,7 +372,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -392,7 +396,6 @@ async function increaseLike() {
         <ul class="list-disc ml-6 text-sm sm:text-base ">
           <li> SW gains a new attack - Mirage Impact - this attack depletes Scatter Barrier, BUT, the DLC gives you more ways to gain barrier, so basically - you can use Mirage Impact quite frequently when played correctly.  </li>
           <li> SW utilizes <span class="text-teal-400">Stellar Surplus</span> mechanic. She can perform Resonance ATK during Surplus.</li>
-          <li> <span class="text-pink-400">Youyun</span> astralop has huge Surplus buffs, provide initial AR, and triggers extra Resonance, so you want both SW and Youyun. For spenders, SS-rank Youyun allows Silverwing to get Surplus state almost instantly at the start of battle. </li>
           <li> SW role also expands into a support for the following teams:</li>
 
         </ul>
@@ -404,8 +407,7 @@ async function increaseLike() {
 
             </p> 
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li> New best support for Herrscher of Rebirth. </li>
-          <li> Also very likely to be the best support for v8.9 Seele. </li>
+          <li> New best support for <a href="/valk/wings-of-panacea" class="link">Wings of Panacea</a> and <a href="/valk/horb" class="link">Herrscher of Rebirth</a>.</li>
           <li> Enables the team to gain Stellar Surplus state. Grants buffs when the team activates Stellar Outburst after gaining Surplus state.</li>
 
         </ul>
@@ -414,8 +416,8 @@ async function increaseLike() {
               <strong class="text-amber-400">Law of Ascension Support</strong>                
             </p> 
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-          <li> No live data </li>
-          <li> SW provides Breach and 24% Ele DMG in a team with Kiana and Mei (Badum DPS)</li>
+          <li> SW provides Breach and 24% Ele DMG in a team with Kiana and Mei (Badum DPS).</li>
+          <li> Doesn't replace other existing LoA teams.</li>
 
         </ul>
 
@@ -423,8 +425,20 @@ async function increaseLike() {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get Silverwing DLC and Youyun together in v8.8.
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Paid Players</strong><br/>
+            </p>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">
+          <li> SW is used more as a support now. You can consider getting the DLC for HoRB, WoP, and Badum DPS, but it is not a priority.  </li>
+          <li> For SW DPS, <span class="text-pink-400">Youyun</span> astralop has huge Surplus buffs, provide initial AR, and triggers extra Resonance, so SW + Youyun = GOOD. For even bigger spenders, SS-rank Youyun allows Silverwing to get Surplus state almost instantly at the start of battle. </li>
+
+        </ul>
+
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
             </p>
 
 
@@ -434,7 +448,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> War Treasury</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.8</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

@@ -367,7 +367,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -377,10 +381,27 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Miss Espionage counters IMG enemies with her seed-transfer attacks and low-hp instakill.</li>
-                <li>Introduces a new mechanic: Stellar Surplus. Basically, Rita can activate a mini Stellar Outburst state during AR Charging.</li>
-                <li>Rita is great in her optimal match-ups, but just decent everywhere else.</li>
-      
+                <li>She is a Stellar Surplus DPS. During Surplus state, she can use Shadow Star attack.</li>
+                <li>Just like all Part 2 valks, ME is great in her optimal match-ups, but just decent everywhere else.</li>
+
           </ul> 
+
+  
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Wheel of Destiny Support</strong>
+              <br/>
+              
+            </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Miss Espionage was one of the better supports for WoD. However, new DPS wants Wings of Panacea + a dedicated support, so ME usage has decreased. She's still fine as secondary option.</li>
+                <li>Surplus Buff: If you trigger Surplus, the team gains bigger buff during the next Stellar Outburst.</li>
+          </ul>  
+            
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Law of Ascension Support</strong>
+              <br/>
+              Best support for Reign Solaris.
+            </p>   
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Utilities</strong>
@@ -390,24 +411,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Paralyze trauma.</li>
                 <li>IMG counter.</li>
-                <li>WoD: Stellar Surplus.</li>
-          </ul>            
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Wheel of Destiny Support</strong>
-              <br/>
-              
-            </p>   
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Buff-wise, Miss Espionage is best secondary support for all WoD teams. However, optimal team still depends on the boss.</li>
-                <li>Enables Stellar Surplus state for WoD teams - valks can gain Stellar Outburst-like state during AR Charging. Additionally, if you reach a certain amount of Surplus AR, Rita also grants dmg buff during Stellar Outburst.</li>
-          </ul>  
-            
-            <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Law of Ascension Support</strong>
-              <br/>
-              New best support for Reign Solaris. Great support for Peregrine Sword.
-            </p>   
-
+          </ul>          
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
@@ -419,11 +423,6 @@ async function increaseLike() {
                 <br/> - Then get the latest valk early in the patch.
             </p>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              Miss Espionage is still relevant in the recent meta as support and DPS, so I would say she's still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valks first, save for next patch valk, and then only consider getting Miss Espionage if your wallet is still loaded.
-          </p>
-
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -431,6 +430,8 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable</li>
+
           </ul>
           <div class="divider  "></div>
           <!-- Full Guide Section -->

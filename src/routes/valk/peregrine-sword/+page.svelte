@@ -456,11 +456,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-      <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-        <p class="text-sm sm:text-base">
-          <strong>Updated For v8.4 (21 August 2025)
-      </p>
-      </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -469,9 +469,9 @@ async function increaseLike() {
               <strong class="text-amber-400">DPS</strong> 
             </p>
               <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>The first BIO DPS and first BLEED DPS for Part 2.</li>
+                <li>First Part 2 Bleed DPS. Has high hitcount. As leader, all her attacks generate 3x hitcount.</li>
                 <li>Reminder that Bleed DMG is not considered as Melee or Ranged DMG, and cannot crit.</li>
-                <li>Has high hitcount. As leader, all her attacks generate 3x hitcount.</li>
+                <li>Just like all Part 2 valks, PS is great in her optimal match-ups, but just decent everywhere else.</li>
             </ul>
 
             <p class="mt-4 text-sm sm:text-base">
@@ -489,13 +489,13 @@ async function increaseLike() {
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong>
               <br/>
-              For LoA teams, Peregrine Sword is one of the best supports for Badum and Reign Solaris. RS is also used in situations where hitcount/bleed is required (eg. Arena Husk).
+              PS does not provide any improvement for existing LoA teams, but she is also used in situations where hitcount/bleed is required (eg. Arena Husk).
             </p>    
 
           
 
           <p class="mt-4 text-sm sm:text-base">
-            <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>One of the best supports for <a href="/valk/paws" class="link ">PAWS</a>.
+            <strong class="text-amber-400">Grail of Infinitude Support</strong> <br/>Great support for <a href="/valk/paws" class="link ">PAWS</a>, but is used less frequent now.
         </p>
 
           <div class="divider  "></div>
@@ -507,11 +507,6 @@ async function increaseLike() {
                 <br/> - Save until you can guarantee valk + fullgear,
                 <br/> - Then get the latest valk early in the patch.
             </p>
-
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              PS is still relevant in the recent meta as support and DPS, so I would say she's still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valks first (BFD, PAWS), save for next patch valk, and then only consider getting PS if your wallet is still loaded.
-          </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->

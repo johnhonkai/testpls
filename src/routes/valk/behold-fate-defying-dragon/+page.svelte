@@ -51,6 +51,9 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 	import Vitadps from "$lib/components/lineup/vitadps.svelte";
 	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import Lunadlcdps from "$lib/components/lineup/lunadlcdps.svelte";
+	import Xentineldps from "$lib/components/lineup/xentineldps.svelte";
+	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -135,6 +138,14 @@ function prevPage() {
 // Function to switch tabs
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
+}
+
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
 let isMobile = false;
@@ -354,12 +365,12 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
-    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-      <p class="text-sm sm:text-base mb-4 sm:mb-0">
-        <strong>Updated For v8.5 (23 Oct 2025)
-    </p>
-    </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
+        
 
       <div>
           <!-- Roles Section -->
@@ -371,7 +382,6 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Behold! Fate-Defying Dragon (BFD) is the first Ignite DPS for Part 2.</li>
                 <li>Like most P2 valks, BFD excels in favorable match-ups, but just decent everywhere else. BFD take over Sirin's bosses. </li> 
-                <li> High rank BFD may be able to get Top 50 on other bosses like Fire Tank (Source: CN 8.4 Fire Tank).</li> 
 
           </ul>        
           
@@ -390,21 +400,16 @@ async function increaseLike() {
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Grail of Infinitude Support</strong>
               <br/>
-              BFD is the new best support for Planar Armament and New Elysia, and will probably be the best primary support for other GoI valks in the near future (at least for one year).   
+              BFD is the best primary support for GoI teams. She provides Breach and strong buffs.
 
             </p>          
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong>
               <br/>
+              BFD is the best primary support for LoA teams. She provides Breach and strong buffs.
 
             </p>        
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>BFD is the new best support for Badum and Peregrine Sword teams. BFD replaces Vita in Badum team. BFD is paired with Vita in Peregrine Sword team.  
-</li>
-                <li>If Vita has higher rank than BFD (let's say S2 Syn2 Vita vs S0 Syn1 BFD), then Vita support will still provide stronger buff and might get a higher score.   </li> 
-
-          </ul> 
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Vita Support</strong>
@@ -419,21 +424,18 @@ async function increaseLike() {
           
 
             <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Paid Players</strong><br/>
+                BFD is still relevant as support. You can consider getting her BFD you can.
+            </p>
+
+            <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">New / F2P Players</strong>
-                <br/>Although BFD is still good, you should still get Hi Love Elf first. Honestly, even with all the freebies, you probably won't have enough to get both Hi Love Elf and BFD if you are pure f2p.
-                <br/>Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/>You can consider getting BFD since she's still relevant as support. HOWEVER, due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
                 <br/> - Save until you can guarantee valk + fullgear.
                 <br/> - Then get the latest valk early in the patch.
             </p>
 
   
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              BFD is still new (one patch old). She is the Breach support for GoI, LoA and Vita teams. Based on Vita who is also a Breach support, you can expect BFD to be used a lot more compared to other Part 2 valks.
-              So, I would say BFD is good to pull if you're a heavy spender. Pull new Elysia first,
-               then you can consider getting BFD if your wallet is still loaded.
-
-          </p>
 
           <div class="divider  "></div>
           <!-- How to Get Section -->
@@ -470,37 +472,82 @@ async function increaseLike() {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-3 
+            w-full max-w-4xl mx-auto">
+  <button
+    on:click={() => setLineup('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    RITE OF OBLIVION
+  </button>
 
+  <button
+    on:click={() => setLineup('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    GRAIL OF INFINITUDE
+  </button>
 
+  <button
+    on:click={() => setLineup('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    LAW OF ASCENSION
+  </button>
 
+</div>
 
-      {#if currentPage === 1}
+      {#if activeLineup === '1'}
+      <Coraliedps></Coraliedps>
 
-      <Coraliedps maindps={true}></Coraliedps>
-
-        <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Vita Support </div>
+      <div class="divider"></div>
 
       <Vitadps></Vitadps>
+      {/if}
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Grail of Infinitude Support </div>
+      {#if activeLineup === '2'}
 
-      <Heliadps></Heliadps>
+      <Xentineldps></Xentineldps>
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
+      <div class="divider"></div>  
+      
+      <Lunadlcdps></Lunadlcdps>
 
-      <Psdps></Psdps>
+      <div class="divider"></div>  
 
-      <div class="divider"></div>
+      <Hilovedps></Hilovedps>
 
-      <Badumdps></Badumdps>
+      <div class="divider"></div>  
 
-      <div class="divider"></div>
-
-      <Dududps></Dududps>
+      <Heliadps></Heliadps>  
 
 
       {/if}
 
+      {#if activeLineup === '3'}
+      <Psdps></Psdps> 
+
+      <div class="divider"></div>  
+
+      <Badumdps></Badumdps>
+
+      <div class="divider"></div>  
+
+      <Dududps></Dududps>
+
+      {/if}
 
 </section>
 

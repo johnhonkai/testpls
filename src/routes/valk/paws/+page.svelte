@@ -50,6 +50,9 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Psdps from "$lib/components/lineup/psdps.svelte";
 	import Coraliedps from "$lib/components/lineup/coraliedps.svelte";
 	import CharacterLayout from "$lib/components/valkpage/CharacterLayout.svelte";
+	import Xentineldps from "$lib/components/lineup/xentineldps.svelte";
+	import Lunadlcdps from "$lib/components/lineup/lunadlcdps.svelte";
+	import Hilovedps from "$lib/components/lineup/hilovedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
@@ -134,6 +137,13 @@ function prevPage() {
 // Function to switch tabs
 function setPlaystyle(playstyle) {
 activePlaystyle = playstyle;
+}
+// Track the active playstyle tab
+let activeLineup = '1';
+
+// Function to switch tabs
+function setLineup(lineup) {
+activeLineup = lineup;
 }
 
 let isMobile = false;
@@ -338,11 +348,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-      <p class="text-sm sm:text-base">
-        <strong>Updated For v8.4 (21 August 2025)
-    </p>
-    </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -350,12 +360,19 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">DPS</strong> 
               <br/>
-              Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS with the new Astral Ring Grail of Infinitude (GoI). GoI playstyle uses Ultimate more often and consume significantly more sp.
+              
             </p>
+
+
+                      <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Planar Armament: Warped Spacetime (PAWS) is a powerful BIO Lightning DPS.</li>
+                <li>Like most P2 valks, PAWS excels in favorable match-ups, but just decent everywhere else. </li> 
+
+          </ul>   
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Utility: Paralyze</strong> 
+              <strong class="text-amber-400">Utility</strong> 
               <br/>
-              PAWS Ultimate can inflict paralyze trauma. When Helia is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
+              Paralyze: PAWS Ultimate can inflict paralyze trauma. When PAWS is the leader, teammates with Symbiosis tag can also inflict huge Paralyze trauma when they cast Ultimate.
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
@@ -368,13 +385,13 @@ async function increaseLike() {
           <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong> 
               <br/>
-              PAWS does not provide any improvement for Badum and Reign Solaris lineups. For Peregrine Sword, PAWS support is used against Lantern boss. Also, LoA DPS doesn't have any boss that requires Paralyze trauma.
+              PAWS does not provide any improvement for existing LoA teams.
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Grail of Infinitude Support</strong> 
               <br/>
-              PAWS will be a support for future Grail of Infinitude characters.
+              PAWS does not provide any improvement for existing GoI teams.
             </p>
 
 
@@ -389,12 +406,6 @@ async function increaseLike() {
                 <br/> - Save until you can guarantee valk + fullgear.
                 <br/> - Then get the latest valk early in the patch.
             </p>
-
-  
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Whales / Competitive</strong><br/> 
-              PAWS is still new (one patch old), still relevant in the meta as support and DPS - especially as BFD support - so I would say PAWS is still good to pull IF YOU'RE A HEAVY SPENDER. You should pull the more recent valk first (BFD), save for next patch valk, and then only consider getting PAWS if your wallet is still loaded.
-          </p>
           <div class="divider  "></div>
           <!-- How to Get Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
@@ -430,34 +441,89 @@ async function increaseLike() {
   <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-2 text-center">LINEUP</h2>
 
   <section class="max-w-(--breakpoint-lg) mx-auto ">
+  
+<div class="grid gap-4 my-6 
+            grid-cols-2 
+            md:grid-cols-4
+            w-full max-w-4xl mx-auto">
+  <button
+    on:click={() => setLineup('1')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '1' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    DPS
+  </button>
+  <button
+    on:click={() => setLineup('2')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '2' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    BFD CORALIE
+  </button>
+  <button
+    on:click={() => setLineup('3')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '3' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    GRAIL OF INFINITUDE
+  </button>
 
+  <button
+    on:click={() => setLineup('4')}
+    class={`btn w-full px-4 py-2 font-semibold rounded-sm 
+      ${activeLineup === '4' 
+        ? 'bg-blue-500 text-white' 
+        : 'bg-gray-300 text-gray-700 hover:bg-gradient-to-r from-orange-600 to-amber-500 hover:text-white'}`}
+  >
+    LAW OF ASCENSION
+  </button>
 
+</div>
 
+      {#if activeLineup === '1'}
+      <Heliadps></Heliadps>
 
-      {#if currentPage === 1}
-      <!-- Category 1: Vita DPS -->
+      {/if}
 
-      <Heliadps maindps={true} ></Heliadps>
+      {#if activeLineup === '2'}
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> BFD Support </div>
+      <Coraliedps></Coraliedps>
+      {/if}
 
-      <Coraliedps ></Coraliedps>
+      {#if activeLineup === '3'}
 
-      <div class="divider divider-accent text-xl custom-font tracking-wider text-teal-300 mt-16"> Law of Ascension Support </div>
+      <Xentineldps></Xentineldps>
+
+      <div class="divider"></div>  
       
-      <Psdps></Psdps>
+      <Lunadlcdps></Lunadlcdps>
 
-      <div class="divider  "></div>
+      <div class="divider"></div>  
 
-      <Badumdps></Badumdps>
+      <Hilovedps></Hilovedps>
 
-      <div class="divider  "></div>
-
-      <Dududps maindps={true}></Dududps>
 
 
       {/if}
 
+      {#if activeLineup === '4'}
+      <Psdps></Psdps> 
+
+      <div class="divider"></div>  
+
+      <Badumdps></Badumdps>
+
+      <div class="divider"></div>  
+
+      <Dududps></Dududps>
+
+      {/if}
 
 </section>
 

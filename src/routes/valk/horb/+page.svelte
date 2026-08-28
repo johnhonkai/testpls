@@ -374,17 +374,18 @@ function selectTabMobile(event) {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
     {#if selectedTab === 'Overview'}
     <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4  text-center">OVERVIEW</h2>
-    <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
-      <p class="text-sm sm:text-base mb-4 sm:mb-0">
-        <strong>Updated For v8.5 (23 October 2025)
-    </p>
-    </div>
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
+
     <div>
         <!-- Roles Section -->
         <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
 
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Part 1: Physical DPS and Support</strong> 
+              <strong class="text-amber-400">Part 1 Physical DPS and Support</strong> 
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>Herrscher of Rebirth (HoRB) is a powerful Part 1 Physical DPS. She has a unique skill where she can use Ultimate again when she defeats an enemy with a non-Ultimate attack. </li>
@@ -396,9 +397,19 @@ function selectTabMobile(event) {
             HoRB is brought back into the meta with the addition of her Stellar Key DLC [Sea-Cleansing Floret], turning her into a World Star DPS. 
         </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>As a DPS, she's just like other Part 2 valks: Good in optimal matchups, just decent everywhere else.  </li>
-                <li>It's expected for her bosses to only appear once or twice per patch, just like HoFinality.  </li>                
+                <li>As a DPS, she's just like other Part 2 valks: Good in optimal matchups, just decent everywhere else.  </li>          
                 <li>HoRB role also expands as a Part 2 support for the following teams:</li>
+          </ul>    
+
+
+
+    <p class="mt-4 text-sm sm:text-base">
+      <strong class="text-amber-400">World Star Support</strong> <br/>
+        
+    </p>
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>One of the best supports for Silverwing N-EX.</li>          
+                <li>HoRB is a great World Star support. During AR Charging, she has near zero field time - she's basically like HoFi support but can still contribute damage and consume Stellar Drain in the backline.</li>
           </ul>    
 
       <p class="mt-4 text-sm sm:text-base">
@@ -406,47 +417,29 @@ function selectTabMobile(event) {
         In Abyss, HoRB does not provide any improvement on existing GoI teams. In Arena, HoRB has a lot of suspended animations, making her a good support for that mode.
       </p>
 
-    <p class="mt-4 text-sm sm:text-base">
-      <strong class="text-amber-400">World Star Support</strong> <br/>
-        HoRB is a great World Star support. During AR Charging, she has near zero field time - she's basically like HoFi support but can still contribute damage and consume Stellar Drain in the backline.
-    </p>
-
-
         <div class="divider  "></div>
         <!-- Pull Recommendation Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext ">PULL RECOMMENDATION</h2>
 
         <p class="text-sm sm:text-base mt-4">
           <strong class="text-amber-400">HoRB</strong> 
-          <br/>Currently there is no F2P way to get HoRB. She might be added to free Battle Pass next year. In 8.5, the only way to get HoRB is from 1680 b-chips pack, which is not cheap. 
+          <br/>Battle Pass
         </p>
 
-        <p class="text-sm sm:text-base mt-4">
-          <strong class="text-amber-400">DLC Weapon</strong> 
-          <br/>In v8.5, I only recommended getting HoRB DLC Weapon:
-        </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>If you already have HoRB.  </li>
-                <li>After you get full gear Hi Love Elf. </li>
-                <li>BFD Coralie will return on Week 5-6. If you still don't have BFD and have enough crystal for her fullgear, then it's better to go BFD first than HoRB DLC. </li>
-
-          </ul>    
-      
-
-
-        <p class="text-sm sm:text-base mt-4">
-          <strong class="text-amber-400">Old Equipment</strong> 
-          <br/>Do note that the old equipment is still used to support Part 1 teams, since the Stellar Key DLC locks HoRB in DPS form in Part 1 teams. But the only P1 Physical DPS teams that are still being used once every few months are Dreamweaver and HoSentience.
-        </p>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>Not recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
 
         <div class="divider  "></div>
         <!-- How to Get Section -->
         <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">HOW TO GET</h2>
         <ul class="list-disc ml-6 text-sm sm:text-base ">
-            <li ><strong>Herrscher of Rebirth:</strong> B-Chip Pack. HoRB will likely be added to Battle Pass next year.</li>
+            <li ><strong>Herrscher of Rebirth:</strong> Battle Pass</li>
               <li><strong>DLC Weapon:</strong> Equipment Supply</li>
-              <li><strong>DLC Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.5</li>
-              <li><strong>Old Equipment:</strong> Not available.</li>
+              <li><strong>DLC Stigma:</strong> Equipment Supply, Forgeable</li>
         </ul>
         <div class="divider  "></div>
         <!-- Full Guide Section -->

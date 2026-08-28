@@ -381,7 +381,11 @@ async function increaseLike() {
   <div class="p-4 sm:p-4 bg-base-100 rounded-lg">
       {#if selectedTab === 'Overview'}
       <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
-
+        <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
+          <p class="text-sm sm:text-base">
+          <strong>Updated For v9.0 (20 August 2026)
+        </p>
+        </div>
       <div>
           <!-- Roles Section -->
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
@@ -401,6 +405,7 @@ async function increaseLike() {
               <strong class="text-amber-400">WoD and World Star Support</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>WoP is currently the best support for WoD and World Star teams.</li>
                 <li>WoP provides Breach, huge buffs and higher AR regen. WoP is basically a better version of <a href="/valk/lp" class="link">Vita Lone Planetfarer</a>.</li>
                 <li>Note: Fire World Star characters do not get Breach (For now, only Sparkle.)</li> 
                 <li>Surplus Buff: If you trigger Surplus, the team gains bigger buff during the next Stellar Outburst.</li> 
@@ -409,7 +414,7 @@ async function increaseLike() {
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Law of Ascension Support</strong>
               <br/>
-              No live data.
+              Does not replace existing LoA teams.
             </p>   
 
 
@@ -426,9 +431,22 @@ async function increaseLike() {
           <!-- Pull Recommendation Section -->
           <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">PULL RECOMMENDATION</h2>
 
-          <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">Everyone</strong> <br/> Recommended to get Wings of Panacea in v8.9. 
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">Paid Players</strong><br/>
+
             </p>
+        <ul class="list-disc ml-6 text-sm sm:text-base ">
+          <li> WoP is still relevant, especially as support. You should try to get her if you can afford it, but not the highest priority over newer valks.   </li>
+          <li> For WoP DPS, <span class="text-pink-400">Youyun</span> astralop has huge Surplus buffs, provide initial AR, and triggers extra Resonance, so WoP + Youyun = GOOD. For even bigger spenders, SS-rank Youyun allows WoP to get Surplus state almost instantly at the start of battle. </li>
+
+        </ul>
+            <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">New / F2P Players</strong>
+                <br/>You can consider getting WoP since she's still relevant, especially as support. HOWEVER, due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/> - Save until you can guarantee valk + fullgear,
+                <br/> - Then get the latest valk early in the patch.
+            </p>
+
 
 
 
@@ -438,7 +456,7 @@ async function increaseLike() {
           <ul class="list-disc ml-6 text-sm sm:text-base ">
               <li ><strong>Battlesuit:</strong> Battlesuit Supply</li>
               <li><strong>Weapon:</strong> Equipment Supply</li>
-              <li><strong>Stigma:</strong> Equipment Supply, Forgeable, Free stigma box in 8.9</li>
+              <li><strong>Stigma:</strong> Equipment Supply, Forgeable</li>
           </ul>
 
           <div class="divider  "></div>
