@@ -23,6 +23,7 @@ export const weatherList = {
     {id: 'litost', name: 'Litost'},
     {id: 'firehov', name: 'Herrscher of the Void'},
     {id: 'firerimestar', name: 'Herrscher of the Rimestar'},
+    {id: 'firesampo', name: 'Sampo'},
 
   ],
   ice: [
@@ -291,6 +292,14 @@ export const bossData = {
     bosspic: "images/Bosses/Herrscher of the Void.webp", 
     weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
+  firesampo: {
+    name: 'Masked Fool Sampo', 
+    mechanics: "Sampo takes more Melee DMG. Transition phase: Sampo's hat has high HP and huge ignite trauma, fill the trauma to instantly destroy it.", 
+    weakness: 'None', 
+    typeicon: "images/type/IconPSI.png", 
+    bosspic: "images/Bosses/Sampo.webp", 
+    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },   
   firerimestar:{
     name: 'Herrscher of the Rimestar', 
       mechanics: '', 
@@ -1275,6 +1284,17 @@ export const teamData = {
 
   firemobius:{
     teamDataSets: [
+    {
+      tabname: "v9.0",
+      teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ???D.",
+    entries: [
+      {
+        type: 'lineup',
+        lineup: ["images/valkportrait/Lantern Lone Destruction.png", "images/valkportrait/Miss Espionage.png",  "images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/asop_senadina.png"],
+        rank: '-',   
+        pct: '-',     
+      }
+    ]},      
     {
       tabname: "v7.8",
       teamInfoText: "Data is from v7.7 SEA Server Top 100 Myriad 528 D.",
@@ -3219,8 +3239,21 @@ export const teamData = {
 
   aka: {
     teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/scoralie.png",  "/images/valkportrait/paws.png", "images/valkportrait/Vita Lone Planetfarer.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      },      
     {
-      tabname: "v8.0 CN",
+      tabname: "v8.0",
       teamInfoText: "Data is from v8.0 CN Server (PC) Top 100 Myriad 534 D.",
     entries: [
       {
@@ -5178,6 +5211,24 @@ export const teamData = {
     paros: {
     
     teamDataSets: [
+            {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/Fu Hua Fenghuang of Vicissitude.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },     
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/Elysia Hi Love Elf.png", "images/valkportrait/scoralie.png", "/images/valkportrait/kiana badum.png", "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                              
+        ]
+      },      
             {
         tabname: "v8.9",
         teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",

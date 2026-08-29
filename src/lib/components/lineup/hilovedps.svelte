@@ -3,7 +3,9 @@
 
     // Define the data for main characters
     const mainCharacters = [
-        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '100%'},
+        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '#1', speed: '' },       
+        { name: 'BFD', image: '/images/valkportrait/scoralie.png',  teampct: '#2'},
+
         { name: 'PAWS', image: '/images/valkportrait/paws.png',  teampct: '100%'},
         { name: 'Xentinel', image: '/images/valkportrait/Mei Xentinel.png',  teampct: '99%',   speed: '' },
 
@@ -13,7 +15,6 @@
         { name: 'RS', image: '/images/valkportrait/dudu.png',  teampct: '92%'},
         { name: 'HoRB', image: '/images/valkportrait/Seele Herrscher of Rebirth.png',  teampct: '88%'},
         { name: 'LV', image: '/images/valkportrait/Theresa Lunar Vow.png',  teampct: '77%',speed: 'Fast'   },
-        { name: 'FoV', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', teampct: '', speed: '' },
 
     ];
 
@@ -26,14 +27,19 @@
     ];
 
     // Pass the index or name of the first character to the reusable component
-    export let firstCharName: string = 'BFD'; // default to 'Vita'
+    export let firstCharName: string = 'FoV'; // default to 'Vita'
+    export let secondCharName: string = 'BFD'; // default to 'Vita'
+
     export let maindps: boolean = false;
 
     // Find the character with the matching name and use it as firstCharred
     let firstCharred = mainCharacters.find(char => char.name === firstCharName);
+    let secondCharred = mainCharacters.find(char => char.name === secondCharName);;
 
     // Remove firstCharred from mainCharacters to avoid repetition
-    let filteredMainCharacters = mainCharacters.filter(char => char.name !== firstCharName);
+let filteredMainCharacters = mainCharacters.filter(
+  char => char.name !== 'BFD' && char.name !== 'FoV' && char.name !== 'WoP'
+);
 </script>
 
 <div class="mb-8 mt-8 border rounded-lg bg-linear-to-b from-pink-950 to-pink-900 shadow-lg shadow-base-100 overflow-hidden">
@@ -52,11 +58,20 @@
             <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
 
 
+
         <!-- First Charred component (can be swapped) -->
         {#if firstCharred}
             <Charred name={firstCharred.name} image={firstCharred.image} teampct={firstCharred.teampct} utility={firstCharred.utility} speed={firstCharred.speed} />
         {/if}
 
+        {#if secondCharred}
+            <Charred name={secondCharred.name} image={secondCharred.image} teampct={secondCharred.teampct} utility={secondCharred.utility} speed={secondCharred.speed} />
+        {/if}
+
+        <!-- Plus Icon shown only if maindps is true -->
+        {#if !maindps}
+            <img src="/images/valkportrait/Plus.png" alt="Plus Icon" class="w-[20px] object-contain">
+        {/if}
 
 
         <!-- Main Characters Loop (excluding the first character) -->
@@ -78,9 +93,13 @@
         </summary>
         <div class="py-3 px-4">
 
-             <p class="text-sm sm:text-base mb-4">
-                Hi Love Elf best teammates are usually <a href='/valk/behold-fate-defying-dragon' class="link">Behold! Fate-Defying Dragon (BFD)</a> + either <a href='/valk/paws' class="link">PAWS</a> or <a href='/valk/badum' class="link">Badum</a> or even <a href='/valk/hoh' class="link">HoH</a> (can be others) depending on the boss.
-            </p>
+        <p class="text-sm sm:text-base mb-4"><b>A standard team usually consists of</b><br/> 
+            - BFD for Breach, or FoV for big buff.
+            <br/>
+            - Plus another support, usually Badum if the enemy is SD type.
+        </p>  
+
+
 
             <p class="text-sm sm:text-base mb-4"><b>BFD</b><br/> - Provides elemental breach and strong buffs.
                 <br/>

@@ -497,7 +497,24 @@
                     </div>   
 
 
-            </div>                  
+            </div>
+            
+           <div class="relative grid grid-cols-20 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="col-span-2 flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 8</span>
+                </div> 
+                <div class="col-span-9"></div>
+                    <div on:click={() => openModal("")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Cabbage Farm</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="/images/events/90/event8.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>     
+            </div> 
+
     </div>
     </div>
 
@@ -604,14 +621,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard/>
+                <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp" date="Sep 18" weather="Ignite" bosspage="/boss?aka" />
+                <BossCard image="/images/Bosses/Paros.png" date="Sep 21" weather="Extreme" bosspage="/boss?paros" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Vita.png" date="Sep 22" />
+                <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" />
+                <BossCard image="/images/Bosses/Hephaestus.webp" />
                 </div>
 
             </div> 
@@ -622,7 +639,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Sampo.webp" date="Sep 25" weather="Fire" bosspage="/boss?firesampo" />
                 <BossCard/>
                 </div>
                      

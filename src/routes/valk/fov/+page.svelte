@@ -424,8 +424,8 @@ async function increaseLike() {
               
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>FoV does not seem to replace existing WoD lineups. For Ice HoV boss, some Thelema DPS teams use FoV support.</li>
-                <li>If the leader is an Ice-type, FoV grants extra Ranged Ice DMG buff (For HoH).</li>
+                <li>FoV gives higher Ice DMG buff. Additionally, if the leader is an Ice-type, FoV grants extra Ranged Ice DMG buff (For HoH).</li>
+                <li>For Ice HoV boss, some Thelema DPS teams use FoV support.</li>
                 <li>Enables the team to gain Stellar Surplus state. Grants buffs when the team activates Stellar Outburst after gaining Surplus state.</li> 
           </ul>  
 
@@ -433,8 +433,9 @@ async function increaseLike() {
               <strong class="text-amber-400">Grail of Infinitude Support</strong>
             </p> 
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>No live data.</li>
-                <li>If the leader is an Ice-type, FoV grants extra Ranged Ice DMG buff (For HLE).</li>
+                <li>FoV gives higher Ice DMG buff. Additionally, if the leader is an Ice-type, FoV grants extra Ranged Ice DMG buff (For HLE).</li>
+                <li>Hi Love Elf seems to use FoV as primary support now instead of BFD.</li>
+
           </ul>
 
 
