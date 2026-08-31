@@ -31,7 +31,7 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: '时序之律者', image: '/images/valkportrait/Herrscher of Time.png', type: 'IMG', element: 'Fire', astralRing: 'Wheel of Destiny' , url: '/valk/herrscher-of-time', badge: 'Beta', verdebut: 9.1, id:5},
+  { name: '时序之律者', image: '/images/valkportrait/Herrscher of Time.png', type: 'Img', element: 'Fire', astralRing: 'Wheel of Destiny' , url: '/valk/herrscher-of-time', badge: 'Beta', verdebut: 9.1, id:5},
 
   { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Wheel of Destiny' , 'Part 1'] , url: '/valk/fov', badge: 'Updated', verdebut: 7.2, verdlc: 9.0, id:5},
   { name: 'Wings of Panacea', image: '/images/valkportrait/Seele Wings of Panacea.png', type: ['SD' , 'Qua'], element: 'Lightning', astralRing: ['World Star'] , url: '/valk/wings-of-panacea', verdebut: 8.9, verdlc: 8.8, id:75},
@@ -41,7 +41,7 @@
   { name: 'Xentinel · Dawnbearing Crescent', image: '/images/valkportrait/Mei Xentinel.png', type: 'Mech', element: 'Physical', astralRing: ['Grail of Infinitude'] , url: '/valk/xentinel', verdebut: 8.7, id:65},  
   { name: 'Lunar Vow: Crimson Love', image: '/images/valkportrait/Theresa Lunar Vow.png', type: 'Psy', element: ['Lightning' , 'Bleed'], astralRing: ['Grail of Infinitude' , 'Part 1'] , url: '/valk/lv',  verdebut: 7.0, verdlc: 8.7, id:52},
 
-  { name: 'Miss Espionage', image: '/images/valkportrait/Miss Espionage.png', type: 'IMG', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  verdebut: 8.6, id:64},  
+  { name: 'Miss Espionage', image: '/images/valkportrait/Miss Espionage.png', type: 'Img', element: 'Lightning', astralRing: ['Wheel of Destiny'] , url: '/valk/miss-espionage',  verdebut: 8.6, id:64},  
 
   { name: 'Hi ♪ Love Elf ♥', image: '/images/valkportrait/Elysia Hi Love Elf.png', type: 'SD', element: 'Ice', astralRing: ['Grail of Infinitude'] , url: '/valk/hi-love-elf',  verdebut: 8.5, id:59},  
   { name: 'Herrscher of Rebirth', image: '/images/valkportrait/Seele Herrscher of Rebirth.png', type: 'Psy', element: 'Physical', astralRing: ['World Star' , 'Part 1'] , url: '/valk/horb',  verdebut: 6.8, verdlc: 8.5, id:17},
