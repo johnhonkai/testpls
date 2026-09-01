@@ -6231,6 +6231,27 @@ export const teamData = {
                     videos: [
       { url: 'https://www.bilibili.com/video/BV1GzuR6qEQs/', abyss: 'Red Lotus 540D', uploader: '炙-雪' },
     ] 
+  },    
+  firesampo: {
+    
+    teamDataSets: [
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [  "/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png",  "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Elysia Hi Love Elf.png",    "/images/valkportrait/asop_senadina.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                      
+        ]
+      }
+    ],
+                    videos: [
+      { url: 'https://www.bilibili.com/video/BV118tA64E8q', abyss: 'Red Lotus 545D', uploader: '憨憨索拉卡' },
+    ] 
   },        
 }
 
