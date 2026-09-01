@@ -238,7 +238,12 @@
                             <img src="https://i.imgur.com/q3fGvFR.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>  
                     </div>       
-                                      
+                     <div on:click={() => openModal("Equip")} class="rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5 col-span-3 bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center z-10 leading-4">Herrscher of Human DLC</span>
+
+                    </div>                                        
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip ">
@@ -430,7 +435,14 @@
                             <img src="https://i.imgur.com/MWL3IyU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
                         </div>
                     </div>   
-
+                    <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">7-Day Login: 2 Equip Card</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="/images/events/90/event10.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
             </div>
             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
                 <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
@@ -514,7 +526,24 @@
                         </div>
                     </div>     
             </div> 
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 9</span>
+                </div> 
+                    <div class="col-span-6"></div>
+                    <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Star-Tempering Clash</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="/images/events/90/event9.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>   
 
+
+            </div>
     </div>
     </div>
 
@@ -546,7 +575,7 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Parvati.webp" date="Aug 21" weather="Shadow" bosspage="/boss?shadow-parvati" />
-                <BossCard image="/images/Bosses/Herrscher of the Void.webp" date="Aug 24" weather="Ice" bosspage="/boss?firehov" />
+                <BossCard image="/images/Bosses/Herrscher of the Void.webp" date="Aug 24" weather="Ice" bosspage="/boss?icehov" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
@@ -640,15 +669,14 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Sampo.webp" date="Sep 25" weather="Fire" bosspage="/boss?firesampo" />
-                <BossCard/>
+                <BossCard image="/images/Bosses/Vita.png" date="Sep 28" weather="Lightning" bosspage="/boss?lightvita" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Sampo.webp" date="Sep 29" />
+                <BossCard image="/images/Bosses/Varaha.png" />
+                <BossCard image="/images/Bosses/Argent Knight Artemis (AKA).webp" />
                 </div>
-
 
             </div> 
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >

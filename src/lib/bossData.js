@@ -21,7 +21,6 @@ export const weatherList = {
     {id: 'firetona', name: 'Tonatiuh'},
     {id: 'firetank', name: 'MHT-3C Retaliator'},
     {id: 'litost', name: 'Litost'},
-    {id: 'firehov', name: 'Herrscher of the Void'},
     {id: 'firerimestar', name: 'Herrscher of the Rimestar'},
     {id: 'firesampo', name: 'Sampo'},
 
@@ -33,6 +32,7 @@ export const weatherList = {
     {id: 'iceepernay', name: 'Meteroid: Epernay'},
     {id: 'benares', name: 'Benares'},
     {id: 'icehusk', name: 'Husk: Nihilius'},
+    {id: 'icehov', name: 'Herrscher of the Void'},
 
   ],
   typecounter: [
@@ -284,14 +284,7 @@ export const bossData = {
     bosspic: "images/Bosses/Saha Assaka.webp", 
     weather: "Paralyze: Enemies take 40% more DMG when paralyzed and within 4s after the paralyze ends.",	
   },  
-    firehov: {
-    name: 'Herrscher of the Void', 
-    mechanics: 'Has tanky elemental shield', 
-    weakness: 'Phy (L), Lightning (Immune)', 
-    typeicon: "images/type/IconBIO.png", 
-    bosspic: "images/Bosses/Herrscher of the Void.webp", 
-    weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
-  },
+
   firesampo: {
     name: 'Masked Fool Sampo', 
     mechanics: "Sampo takes more Melee DMG. Transition phase: Sampo's hat has high HP and huge ignite trauma, fill the trauma to instantly destroy it.", 
@@ -567,6 +560,14 @@ export const bossData = {
       weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
 
   },   
+    icehov: {
+    name: 'Herrscher of the Void', 
+    mechanics: 'Has tanky elemental shield', 
+    weakness: 'Phy (L), Lightning (Immune)', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Herrscher of the Void.webp", 
+    weather:  "Ice: Enemies take 50% more Ice DMG, and 50% less Fire DMG.",
+  },  
   sa: {
     name: 'Sa: Wheel of Transcendence', 
       mechanics: 'Boss has multiple critical index points.', 
@@ -6099,11 +6100,12 @@ export const teamData = {
       }
     ],
                     videos: [
+      { url: 'https://youtu.be/9TVVd2gCUxg', abyss: 'Nirvana 568D', uploader: 'Sheepless Ram' },
       { url: 'https://www.youtube.com/watch?v=b4pkBfqrfPs', abyss: 'Nirvana 580D', uploader: 'chronos002' },
       { url: 'https://www.bilibili.com/video/BV1Wagv6eEef', abyss: 'Red Lotus 545D', uploader: '白练进化草履虫' },
     ] 
   },     
-  firehov: {
+  icehov: {
     
     teamDataSets: [
       {
@@ -6135,7 +6137,8 @@ export const teamData = {
       }
     ],
                     videos: [
-      { url: 'https://www.bilibili.com/video/BV1kS3B6kEZ3/', abyss: 'Red Lotus 536D', uploader: '仙云缈' },
+      { url: 'https://youtu.be/9TVVd2gCUxg', abyss: 'Nirvana 568D', uploader: 'Sheepless Ram' },
+      { url: 'https://www.bilibili.com/video/BV1kS3B6kEZ3/', abyss: 'RedLotus 536D', uploader: '仙云缈' },
     ] 
   },   
   firerimestar: {
@@ -6156,7 +6159,8 @@ export const teamData = {
       }
     ],
                     videos: [
-      { url: 'https://www.bilibili.com/video/BV1YQGw6bEXW/', abyss: 'Red Lotus 542D', uploader: '怂憨天使布狼牙' },
+      { url: 'https://youtu.be/f05Q3soycIc', abyss: 'Nirvana 569D', uploader: 'Sheepless Ram' },
+      { url: 'https://www.bilibili.com/video/BV1YQGw6bEXW/', abyss: 'RedLotus 542D', uploader: '怂憨天使布狼牙' },
     ] 
   },    
   'shadow-epernay': {
