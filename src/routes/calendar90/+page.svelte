@@ -333,7 +333,15 @@
                         <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
                             <img src="https://i.imgur.com/uv7AkXU.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
                         </div>
-                    </div>                                       
+                    </div>   
+                    <div on:click={() => openModal("NewADV")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">PAWS</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-15 h-full ">
+                            <img src="/images/events/90/adv3.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                                                          
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
@@ -352,9 +360,16 @@
                         <!-- Centered Text -->
                         <span class="absolute inset-0 flex items-center justify-center leading-4 ">Lone Destruction Equipment</span>
 
-                    </div>                      
+                    </div>       
+                    <div on:click={() => openModal("NewRebate")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">PAWS Equipment</span>
+
+                    </div>                                     
                 </div>
 
+                
             </div>
         </div>
 
