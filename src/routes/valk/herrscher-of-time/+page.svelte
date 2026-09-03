@@ -285,7 +285,7 @@ async function increaseLike() {
 
 >
   <CharBio mode="dps" rank="s" type="img" element="fire" ar="wod" bg="bg-violet-800" />
-  <CharBio mode="support" ar={['wod']} bg="bg-violet-800" />
+  <CharBio mode="support" ar={['all2']} bg="bg-violet-800" />
 </CharacterLayoutShort>
 
 
