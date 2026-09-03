@@ -272,9 +272,9 @@ async function increaseLike() {
   initialLikes={likesData["herrscheroftime"] || 0}
   accent="bg-violet-800"
   image="/images/valkfull/herrscher of time.png"
-  alt="Miss Espionage"
+  alt="herrscheroftime"
 
-  titleEN="时序之律者"
+  titleEN="Herrscher of Time"
   titleCN="时序之律者"
 
   nameEN="Dreamseeker"
