@@ -346,33 +346,33 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=kALTqm9sJrY" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=6a82RYlXAKA" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/kALTqm9sJrY/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/6a82RYlXAKA/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">New S-rank for Version 9.1</h3>
-          <p class="text-slate-300">Herrscher of Time</p>
+          <h3 class="text-lg font-semibold text-white mb-1">Herrscher of Time Gameplay</h3>
+          <p class="text-slate-300">Dual type again</p>
         </div>
       </a>
   
-      <a href="https://youtu.be/wgXRVfJrf4w" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://youtu.be/-ky99iBljjw" id="news2" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/wgXRVfJrf4w/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/-ky99iBljjw/hqdefault.jpg" alt="8.3 News" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">More CODM x HI3 Collab Info</h3>
-          <p class="text-slate-300 text-md">Free Rita Skin and Mythical Weapon!
+          <h3 class="text-lg font-semibold text-white mb-1">CODM x HI3 Trailer 4</h3>
+          <p class="text-slate-300 text-md">Kiana with akimbo
         </div>
       </a>
   
-      <a href="https://youtu.be/-ky99iBljjw" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://youtu.be/Zk6XKgNOM8E" id="news3" target="blank" class="group block rounded-2xl bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/-ky99iBljjw/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/Zk6XKgNOM8E/hqdefault.jpg" alt="Astral Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">CODM x HI3 Collab Trailer</h3>
-          <p class="text-slate-300 text-md">Kiana with akimbo</p>
+          <h3 class="text-lg font-semibold text-white mb-1">HI3 10th Anni Rewards and Events</h3>
+          <p class="text-slate-300 text-md">10 Years of Honkek</p>
         </div>
       </a>
   
