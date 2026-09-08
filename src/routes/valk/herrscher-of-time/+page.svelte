@@ -406,7 +406,16 @@ async function increaseLike() {
             Check out the full guide on YouTube: (SOON)
         </p>
   
-
+          <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+              <iframe
+                  class="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/6a82RYlXAKA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+          </div>
 
       </div>
 

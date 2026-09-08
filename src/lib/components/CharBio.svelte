@@ -38,7 +38,7 @@
       roo: { src: '/images/artype/ar roo.png', tip: 'Every Rite of Oblivion DPS has her own playstyle.' },
       goi: { src: '/images/artype/ar grail.png', tip: 'Grail of Infinitude playstyle revolves around consuming SP.' },
       all: { src: '/images/artype/AR All.png', tip: 'Can be a below average, last resort support option for other AR.' },
-      all2: { src: '/images/artype/AR All.png', tip: 'Dreamseeker has all AR tags.' },
+      all2: { src: '/images/artype/AR All.png', tip: 'HoTime has all AR support tags. For RoO DPS, she gives Breach.' },
       lp: { src: '/images/artype/ar_lp.png', tip: 'Can support Lone Planetfarer' },
       scoralie: { src: '/images/artype/scoralie.png', tip: 'Can support Behold! Fate-Defying Dragon' },
 

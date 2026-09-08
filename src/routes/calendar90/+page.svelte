@@ -702,16 +702,15 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard/>
-                </div>
-                     
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/ff_fish.webp" date="Oct 2" weather="Extreme" bosspage="/boss?exfish" />
+                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Oct 5" weather="Physical" bosspage="/boss?phyhod" />
                 </div>
 
+                    <div class="flex col-span-3 justify-center gap-1 ml-2">
+                <BossCard image="/images/Bosses/Imgpig.webp" date="Oct 6" />
+                <BossCard image="/images/Bosses/MOBIUS.png" />
+                <BossCard image="/images/Bosses/Kallen.webp" />
+                </div>
 
             </div>  
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >

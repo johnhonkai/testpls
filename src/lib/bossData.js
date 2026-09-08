@@ -3471,6 +3471,8 @@ export const teamData = {
       
     ]},],
     videos: [
+      { url: 'https://www.youtube.com/watch?v=tKngu25mTlI', abyss: 'Nirvana ', uploader: 'schz' },
+
       { url: 'https://www.youtube.com/watch?v=iCBvPK8Y0_w', abyss: 'Nirvana 586D', uploader: 'Xintsu' },
       { url: 'https://www.youtube.com/watch?v=CylswUrzp9E', abyss: 'Nirvana 581D', uploader: 'Sheepless Ram' },
 
@@ -5402,7 +5404,24 @@ export const teamData = {
          exfish: {
     
     teamDataSets: [
-      
+      {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "/images/valkportrait/dudu.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },   
+          {
+            type: 'lineup',
+            lineup: [ "/images/valkportrait/paws.png", "/images/valkportrait/scoralie.png", "images/valkportrait/Mei Xentinel.png",  "/images/valkportrait/asop_chenxue.png" ],
+            rank: '-',
+            pct: '-',
+          },                                                                                                                                       
+        ]
+      },         
       {
         tabname: "v8.8",
         teamInfoText: "Data is from v8.8 CN Server (PC) Top 100 Myriad ??? D",
@@ -6044,6 +6063,26 @@ export const teamData = {
     
     teamDataSets: [
       {
+        tabname: "v9.0",
+        teamInfoText: "Data is from v9.0 CN Server (PC) Top 100 Myriad ??? D",
+        entries: [
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/Thelema Mad Pleasure.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },       
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                            
+        ]
+      },      
+      {
         tabname: "v8.9",
         teamInfoText: "Data is from v8.9 CN Server (PC) Top 100 Myriad ??? D",
         entries: [
@@ -6053,7 +6092,14 @@ export const teamData = {
             rank: '-',
             pct: '-',
 
-          },                                                                                                                                                                      
+          },     
+          {
+            type: 'lineup',
+            lineup: [   "/images/valkportrait/Seele Wings of Panacea.png", "images/valkportrait/Bronya Silverwing N-EX.png",  "/images/valkportrait/Seele Herrscher of Rebirth.png",  "/images/valkportrait/asop_youyun.png" ],
+            rank: '-',
+            pct: '-',
+
+          },                                                                                                                                                                                
         ]
       }
     ],
@@ -6181,6 +6227,8 @@ export const teamData = {
       }
     ],
                     videos: [
+      { url: 'https://youtu.be/6tXWkiQ_5V0', abyss: 'Nirvana', uploader: 'sch' },
+
       { url: 'https://www.bilibili.com/video/BV1fRuA6vEda/', abyss: 'Nirvana 582D', uploader: '初阳升耀' },
     ] 
   },    
