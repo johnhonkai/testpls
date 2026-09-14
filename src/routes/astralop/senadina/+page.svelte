@@ -421,7 +421,7 @@ async function increaseLike() {
           </p>
           <ul class="list-disc ml-6 text-sm sm:text-base">
                 <li>S-rank is enough for Red Lotus. </li>
-                <li>SS-rank is the optimal rank. SS gives more initial sp, allowing valks to get Stellar Surplus very fast. SS also enables valks like JD and Thelema to end Stellar Outburst early.</li>
+                <li>SS-rank is the optimal rank. SS gives more initial sp, allowing valks to get Stellar Surplus very fast. SS also enables Thelema and Lantern to end Stellar Outburst early.</li>
                 <li>SSS-rank gives more ar regen and makes enemies take more dmg during Surplus state.</li>
 
 
