@@ -720,15 +720,16 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Flame-Chaser - Kalpas.webp" date="Oct 9" weather="Ranged" bosspage="/boss?rangedkalpas" />
+                <BossCard image="/images/Bosses/Flame-Chaser - Kosma.webp" date="Oct 12" weather="Fire" bosspage="/boss?firekosma" />
                 </div>
-                     
+
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Oct 13" />
+                <BossCard image="/images/Bosses/Ricecake.webp" />
+                <BossCard image="/images/Bosses/Assaka.webp" />
                 </div>
+
 
             </div>    
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
