@@ -579,7 +579,22 @@
                         <!-- Image positioned on the right side -->
 
                     </div>     
-            </div>               
+            </div>     
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold">EVENT 11</span>
+                </div> 
+                    <div class="col-span-8"></div>
+                    <div on:click={() => openModal("")} class=" rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Thelema / Lantern / JD Selector</span>
+
+                    </div>   
+
+
+            </div>                      
     </div>
     </div>
 
