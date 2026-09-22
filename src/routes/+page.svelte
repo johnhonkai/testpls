@@ -121,9 +121,9 @@
   let difficulty = 'Agony 3';
 
   // Base values (Agony 3)
-  const baseF2P = 20825;
-  const baseMonthly = 27205;
-  const baseBP = 29205;
+  const baseF2P = 23010;
+  const baseMonthly = 29390;
+  const baseBP = 31390;
 
   // Adjusted values
   $: bonus = difficulty === 'Red Lotus' ? 1440 : difficulty === 'Nirvana' ? 1800 : 0;
@@ -233,7 +233,7 @@
 <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
   <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
     <img src="/images/crystal.png" alt="Crystal Icon" class="w-6 h-6" />
-    <h2 class="text-lg font-semibold text-white tracking-tight">9.0 CRYSTAL INCOME</h2>
+    <h2 class="text-lg font-semibold text-white tracking-tight">9.1 CRYSTAL INCOME</h2>
   </div>
 
 
@@ -241,8 +241,8 @@
     <li>F2P: {f2p.toLocaleString()}</li>
     <li>Monthly: {monthly.toLocaleString()}</li>
     <li>Monthly+BP: {bp.toLocaleString()}</li>
-    <li>5 Equip Cards</li>
-    <li>12 Equip Cards from Sena supply rebate</li>
+    <li>25 Battlesuit/Equip Cards</li>
+    <li>2 Carnival 10-Pull Cards</li>
 
   </ul>
 
@@ -283,7 +283,7 @@
 
     <!-- Always-visible info icon -->
     <a 
-      href="https://www.miyoushe.com/bh3/article/76786340"
+      href="https://www.miyoushe.com/bh3/article/78268890"
       target="_blank"
       class="text-white text-xs hover:text-blue-300 transition pl-1 tooltip"
       data-tip="Go to source"
