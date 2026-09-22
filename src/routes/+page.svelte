@@ -214,16 +214,16 @@
       <div class="rounded-2xl border border-white/20 bg-gradient-to-b from-cyan-950 to-cyan-900 shadow-sm p-4">
         <div class="flex items-center gap-2 border-b border-white/10 pb-2 mb-3">
           <img src="/images/crystal.png" alt="Info Date Icon" class="w-6 h-6" />
-          <h2 class="text-lg font-semibold text-white tracking-tight">9.1 INFO DATE</h2>
+          <h2 class="text-lg font-semibold text-white tracking-tight">9.2 INFO DATE</h2>
         </div>
         <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
-          <li>Valk Teaser & Reveal: 27 Aug</li>
-          <li>Beta v1 (Private): 28 Aug</li>
-          <li>Dev Video: 3 Sep</li>
-          <li>Beta v2: 4 Sep </li>
-          <li>Beta v3: 11 Sep </li>
-          <li>Livestream: 19 Sep</li>
-          <li>Patch Day: 24 Sep </li>
+          <li>Valk Teaser & Reveal: 29 Oct</li>
+          <li>Beta v1 (Private): 30 Oct</li>
+          <li>Dev Video: 5 Nov</li>
+          <li>Beta v2: 6 Nov </li>
+          <li>Beta v3: 13 Nov</li>
+          <li>Livestream: 21 Nov</li>
+          <li>Patch Day: 26 Nov </li>
          
         </ul>
         <p class="text-xs text-slate-400 mt-3">Note: Estimated Date</p>
