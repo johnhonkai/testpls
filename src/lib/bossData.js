@@ -23,6 +23,7 @@ export const weatherList = {
     {id: 'litost', name: 'Litost'},
     {id: 'firerimestar', name: 'Herrscher of the Rimestar'},
     {id: 'firesampo', name: 'Sampo'},
+    {id: 'firebull', name: 'Husk: Mysticism '},
 
   ],
   ice: [
@@ -735,6 +736,14 @@ export const bossData = {
       bosspic: "images/Bosses/Flame-Chaser - Kosma.webp", 
       weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
   },
+    firebull:{
+    name: 'Husk: Mysticism', 
+      mechanics: 'Transition phase: Bait the bull to hit pillar 5 times to gain sp, you can also evade the bull when he is sprinting to gain AR or sp. After that, he summons a cluster of balls. Use aoe atk to quickly clear them before they spread out.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk Mysticism.webp", 
+      weather: "Fire: Enemies take 50% more Fire DMG, and 50% less Ice DMG.", 
+  },   
   litost: {
     name: 'Litost', 
       mechanics: "All phases have ignite trauma check.", 
