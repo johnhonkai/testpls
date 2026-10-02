@@ -714,7 +714,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Ricecake.webp" date="Oct 30" weather="Physical" bosspage="/boss?ricecake" />
                 <BossCard  />
                 </div>
                      
