@@ -700,7 +700,7 @@
                 </div>
 
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard image="/images/Bosses/megahusk.png" date="Oct 27" />
+                <BossCard image="/images/Bosses/Husk Pluralism.webp" date="Oct 27" />
                 <BossCard image="/images/Bosses/duonigue.png" />
                 <BossCard image="/images/Bosses/Alien Guard.webp" />
                 </div>
