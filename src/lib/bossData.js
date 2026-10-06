@@ -134,6 +134,7 @@ export const weatherList = {
     {id: 'shadow-parvati', name: 'Parvati'},
     {id: 'shadow-epernay', name: 'Meteroid: Epernay'},
     {id: 'shadow-assaka', name: 'Assaka'},
+    {id: 'shadow-kasumi', name: 'Kasumi'},
 
   ],
   symphony: [
@@ -960,6 +961,14 @@ export const bossData = {
     weakness: 'None', 
     typeicon: "images/type/IconPSI.png", 
     bosspic: "images/Bosses/Saha Assaka.webp", 
+    weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
+  },  
+  "shadow-kasumi": {
+    name: 'Kasumi', 
+    mechanics: 'Can choose fire or ice vulnerable shield. This version has more mech mobs at the start.', 
+    weakness: 'None', 
+    typeicon: "images/type/IconMECH.png", 
+    bosspic: "images/Bosses/Yae Kasumi.webp", 
     weather: "Shadow: All characters on the field gain Total DMG +15%. When Shadow Star ATK hits, all characters on the field gain additional Total DMG +50% for 15s, can be refreshed.", 
   },    
   'shadow-epernay': {

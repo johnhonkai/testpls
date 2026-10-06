@@ -10,7 +10,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://marisaimpact.com/valk/calendar90" />
+    <link rel="canonical" href="https://marisaimpact.com/valk/calendar91" />
 </svelte:head>
 
 <script>
@@ -715,14 +715,15 @@
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
                 <BossCard image="/images/Bosses/Ricecake.webp" date="Oct 30" weather="Physical" bosspage="/boss?ricecake" />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Yae Kasumi.webp" date="Nov 2" weather="Shadow" bosspage="/boss?shadow-kasumi" />
                 </div>
                      
                     <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <BossCard image="/images/Bosses/epernay.png" date="Nov 3" />
+                <BossCard image="/images/Bosses/False God Otto.webp" />
+                <BossCard image="/images/Bosses/Shadow Knight (SK).webp" />
                 </div>
+
 
             </div>
             <div class="grid grid-cols-6 gap-1 items-center bg-slate-100 text pt-1 pb-1 pe-2 " >
