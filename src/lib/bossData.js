@@ -63,7 +63,9 @@ export const weatherList = {
   ],
   ranged: [
     {id: 'rangedkalpas', name: 'Kalpas'},
-    {id: 'rangedhepa', name: 'Hephaestus'}
+    {id: 'rangedhepa', name: 'Hephaestus'},
+    {id: 'rangedflower', name: 'Husk: Existentialism'}
+
   ],
   stun:[
     {id: 'stunfish', name: 'Flying Fish'}
@@ -528,6 +530,14 @@ export const bossData = {
     bosspic: "images/Bosses/Hephaestus SSS.webp", 
     weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
   },
+    rangedflower: {
+      name: 'Husk: Existentialism', 
+      mechanics: 'Transition phase requires melee atk to parry balls. Parrying the final massive rock will make the boss take more dmg.', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/Husk - Existentialism.webp", 
+    weather: "Sniper: Enemies take 50% more DMG from Ranged ATK, and 50% less DMG from Melee ATK", 
+  },  
   stunfish:{
     name: 'Flying Fish: Patrol Force', 
       mechanics: 'Upon being stunned or having its special attack blocked, the boss will drop a Luminous Pupil. When it detonates, the boss takes more dmg, max 4 stacks.', 
