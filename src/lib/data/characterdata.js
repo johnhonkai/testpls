@@ -31,9 +31,9 @@
 
  // Valkyrie character data with type, element, and astral ring properties
    export const valkyries = [
-  { name: 'Herrscher of Time', image: '/images/valkportrait/Herrscher of Time.png', type: ['Img' , 'Psy'], element: 'Fire', astralRing: 'Wheel of Destiny' , url: '/valk/herrscher-of-time', badge: 'Beta', verdebut: 9.1, id:5},
+  { name: 'Herrscher of Time', image: '/images/valkportrait/Herrscher of Time.png', type: ['Img' , 'Psy'], element: 'Fire', astralRing: 'Wheel of Destiny' , url: '/valk/herrscher-of-time', badge: 'New', verdebut: 9.1, id:5},
 
-  { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Wheel of Destiny' , 'Part 1'] , url: '/valk/fov', badge: 'Updated', verdebut: 7.2, verdlc: 9.0, id:5},
+  { name: 'Fenghuang of Vicissitude', image: '/images/valkportrait/Fu Hua Fenghuang of Vicissitude.png', type: 'Bio', element: 'Fire', astralRing: ['Wheel of Destiny' , 'Part 1'] , url: '/valk/fov', verdebut: 7.2, verdlc: 9.0, id:5},
   { name: 'Wings of Panacea', image: '/images/valkportrait/Seele Wings of Panacea.png', type: ['SD' , 'Qua'], element: 'Lightning', astralRing: ['World Star'] , url: '/valk/wings-of-panacea', verdebut: 8.9, verdlc: 8.8, id:75},
 
   { name: 'Silverwing N-EX', image: '/images/valkportrait/Bronya Silverwing N-EX.png', type: 'Bio', element: 'Ice', astralRing: ['World Star' , 'Part 1'] , url: '/valk/silverwing', verdebut: 5.4, verdlc: 8.8, id:33},

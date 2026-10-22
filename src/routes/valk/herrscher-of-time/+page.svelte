@@ -3,7 +3,7 @@
 
     <meta property="og:title" content="Herrscher of Time" />
     <meta property="og:description" content="Herrscher of Time Guides, Builds and Gameplay" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.imgur.com/3PZcZsE.png" />
     <meta property="og:url" content="https://marisaimpact.com/valk/herrscher-of-time" />
     <meta property="og:type" content="website" />
 
@@ -71,7 +71,7 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
-//  { name: 'Gameplay', short: 'example', icon: faVideo },
+  { name: 'Gameplay', short: 'example', icon: faVideo },
 //  { name: 'Elysian Realm', short: 'er', icon: faFire },
 //  { name: 'Rank Up', short: 'rank', icon: faStar },
 //  { name: 'Question', short: 'qna' , icon: faComments  },
@@ -284,7 +284,7 @@ async function increaseLike() {
   releaseCN="v9.1 (24 Sep 2026)"
 
 >
-  <CharBio mode="dps" rank="s" type="img" element="fire" ar="wod" bg="bg-violet-800" />
+  <CharBio mode="dps" rank="s" type="img" type2="psy" element="fire" ar="wod" bg="bg-violet-800" />
   <CharBio mode="support" ar={['all2']} bg="bg-violet-800" />
 </CharacterLayoutShort>
 
@@ -373,9 +373,27 @@ async function increaseLike() {
           <h2 class="text-xl  font-semibold mb-2 text-left cooltext text-slate-100">ROLES</h2>
           
           <p class="mt-4 text-sm sm:text-base">
-              <strong class="text-amber-400">TO BE UPDATED</strong> 
-          </p>
+              <strong class="text-amber-400">DPS </strong> 
+          </p> 
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Herrscher of Time is a powerful IMG DPS, who also has strong buffs against MECH enemies.</li>
+                <li>Has shieldbreak vs MECH enemies.</li>
 
+          </ul>    
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">World Star, WoD, LoA, GoI Support</strong>
+            </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>HoTime can support all existing AR teams, however does not replace all current top lineups. But still very good.</li>
+          </ul>  
+
+            <p class="mt-4 text-sm sm:text-base">
+              <strong class="text-amber-400">Rite of Oblivion Support</strong>
+            </p>   
+          <ul class="list-disc ml-6 text-sm sm:text-base">
+                <li>Provides Breach. She is now the the best support for Vita and PAWS team.</li>
+          </ul>  
 
           <div class="divider  "></div>
           <!-- Pull Recommendation Section -->
@@ -383,7 +401,7 @@ async function increaseLike() {
 
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">New / F2P Players</strong>
-                <br/>Recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche) and how patches are longer (Monthly players can afford S-rank fullgear every patch, f2p can get S-rank fullgear every one or two patches), it’s better to 
+                <br/>Recommended. Due to how Part 2 meta works (all valks are kinda balanced on release and have their own niche), there are only 6 patches a year and there are only 3 new characters a year, it’s better to 
                 <br/> - Save until you can guarantee valk + fullgear,
                 <br/> - Then get the latest valk early in the patch.
             </p>
@@ -1268,7 +1286,7 @@ async function increaseLike() {
       loading="lazy" 
 
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/38OEo0wCcJ4"
+          src="https://www.youtube.com/embed/fZ6oCdQs1sM"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
