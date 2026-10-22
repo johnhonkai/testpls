@@ -306,8 +306,7 @@
 
   <div class="text-sm text-slate-300 space-y-4">
     {#each [
-      { code: 'TOSENADINA', reward: '100 crystals' },
-      { code: 'KNV9GRXGPN', reward: '30 crystals' },
+      { code: '5N2XTMXSQS', reward: '30 crystals' },
 
     ] as entry}
       <div class="flex items-center justify-between gap-2">
