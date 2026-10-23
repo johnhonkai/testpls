@@ -63,11 +63,12 @@ import { faCircleUser , faUsers , faBook , faVideo , faHome , faBolt ,faComments
 	import Thelemadps from "$lib/components/lineup/thelemadps.svelte";
 	import Agentritadps from "$lib/components/lineup/agentritadps.svelte";
 	import CharacterLayoutShort from "$lib/components/valkpage/CharacterLayoutShort.svelte";
+	import Hotimedps from "$lib/components/lineup/hotimedps.svelte";
 
   let selectedTab = 'Overview'; // Default tab
   const tabs = [
   { name: 'Overview', short: 'overview', icon: faHome },
-//  { name: 'Lineup', short: 'lineup', icon: faUsers },
+  { name: 'Lineup', short: 'lineup', icon: faUsers },
 //  { name: 'Equipment', short: 'equipment', icon: faBolt  },
 //  { name: 'Support Buffs', short: 'support', icon: faCircleUser },
 //  { name: 'How to Play', short: 'howtoplay', icon: faBook },
@@ -392,7 +393,7 @@ async function increaseLike() {
               <strong class="text-amber-400">Rite of Oblivion Support</strong>
             </p>   
           <ul class="list-disc ml-6 text-sm sm:text-base">
-                <li>Provides Breach. She is now the the best support for Vita and PAWS team.</li>
+                <li>Provides Breach. She is now the the best support for Vita and Coralie team.</li>
           </ul>  
 
           <div class="divider  "></div>
@@ -457,30 +458,13 @@ async function increaseLike() {
       DPS
     </button>
 
-    <!-- Tab -->
-    <button
-        class="py-2 px-4  rounded btn
-                {activeLineup === '2' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
-      on:click={() => setLineup('2')}
-    >
-      WHEEL OF DESTINY
-    </button>
-
-    <!-- Tab -->
-    <button
-        class="py-2 px-4  rounded btn
-                {activeLineup === '3' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}"
-      on:click={() => setLineup('3')}
-    >
-      LAW OF ASCENSION
-    </button>
 
   </div>
 </div>
 
 
       {#if activeLineup === '1'}
-      <Agentritadps></Agentritadps>
+      <Hotimedps></Hotimedps>
 
       {/if}
 
