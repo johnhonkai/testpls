@@ -196,7 +196,7 @@
 
             <ul class="list-disc pl-5 text-sm text-slate-300 ">
               <li>{regionalServerInfo}</li>
-              <li>v9.2 update is on 24 Dec</li>
+              <li>v9.2 update is on 24 Dec </li>
             </ul>
           </div>
           <div>
