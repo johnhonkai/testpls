@@ -4,11 +4,12 @@
     // Define the data for main characters
     const mainCharacters = [
         { name: 'WoP', image: '/images/valkportrait/Seele Wings of Panacea.png',  teampct: '#1' },
-        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png', teampct: '#1', },
-        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png', teampct: '#1',  speed: 'IMG' },
+        { name: 'Vita', image: '/images/valkportrait/Vita Lone Planetfarer.png', teampct: '#2', speed: 'Slow' },
+        { name: 'Sena', image: '/images/valkportrait/Senadina Deepspace Anchor.png', teampct: '#3'},
 
 
-
+        { name: 'HLE', image: '/images/valkportrait/Elysia Hi Love Elf.png',  teampct: '#1', },
+        { name: 'Rita', image: '/images/valkportrait/Miss Espionage.png',  teampct: '#1',  speed: 'IMG' },
 
         { name: 'JD', image: '/images/valkportrait/Songque Jovial Deception.png', speed: '' },
         { name: 'Thel', image: '/images/valkportrait/Thelema Mad Pleasure.png',  speed: '' },
@@ -25,12 +26,12 @@
         { name: 'Sena', image: '/images/valkportrait/asop_senadina.png', teampct: '#1', speed: '' },
         { name: 'Youyun', image: '/images/valkportrait/asop_youyun.png', teampct: '#2', speed: '' },
         { name: 'Sera', image: '/images/valkportrait/asop_sera.png', teampct: '#3', speed: '' },
-        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#6', speed: 'Slow' }
+        { name: 'DS', image: '/images/valkportrait/asop_ds.png', teampct: '#4', speed: 'Slow' }
     ];
 
      export let firstCharName: string = 'WoP'; 
-    export let secondCharName: string = 'HLE'; 
-    export let thirdCharName: string = 'Rita'; // default to 'Vita'
+    export let secondCharName: string = 'Vita'; 
+    export let thirdCharName: string = 'Sena'; // default to 'Vita'
 
     export let maindps: boolean = false;
 
@@ -41,7 +42,7 @@
 
     // Remove firstCharred from mainCharacters to avoid repetition
 let filteredMainCharacters = mainCharacters.filter(
-  char => char.name !== 'HLE' && char.name !== 'Rita' && char.name !== 'WoP'
+  char => char.name !== 'Sena' && char.name !== 'Vita' && char.name !== 'WoP'
 );
 </script>
 
@@ -94,4 +95,19 @@ let filteredMainCharacters = mainCharacters.filter(
     </div>
 
 
+
+     <details class="group rounded-md my-2 overflow-hidden">
+        <summary class="text-base sm:text-md font-medium text-center p-1 sm:p-2 cursor-pointer hover:bg-linear-to-r from-sky-500/0 to-sky-500/0 via-slate-900 hover:transition-colors hover:duration-200">
+            Details
+        </summary>
+        <div class="py-3 px-4">
+
+        <p class="text-sm sm:text-base mb-4"><b>A standard team usually consists of</b><br/> 
+            - Breach Support (WoP, Vita, Sena)
+            <br/>
+            - Plus another support, preferably HLE or Miss Espionage<br/>
+            - HoTime has extra buff if a Senadina battlesuit or astralop is in the team
+        </p>  
+        </div>
+    </details>       
 </div>
