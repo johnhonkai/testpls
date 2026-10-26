@@ -5,7 +5,7 @@ export async function load({ url }) {
 
     // Return dynamic OG image based on the query parameter
     const ogImage = isBoss
-        ? 'https://i.imgur.com/WLXxl0m.png'
+        ? 'https://i.imgur.com/vhvXTYi.png'
         : 'https://i.imgur.com/RER5X9o.jpeg';
 
     return {
