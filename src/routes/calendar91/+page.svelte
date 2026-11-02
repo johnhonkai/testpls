@@ -791,14 +791,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Dark Jixuanyuan.webp" date="Nov 27" weather="Type" bosspage="/boss?typedjxy" />
+                <BossCard image="/images/Bosses/False God Otto.webp" date="Nov 30" weather="IMG" bosspage="/boss?fgo" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Dec 1" />
+                <BossCard image="/images/Bosses/Pishacha.webp" />
+                <BossCard image="/images/Bosses/Hellmaru.webp" />
                 </div>
 
             </div> 

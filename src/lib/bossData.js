@@ -54,7 +54,8 @@ export const weatherList = {
   ],
  imaginary: [
     {id: 'imgflower', name: 'Husk: Existentialism'},
-    {id: 'imgbull', name: 'Husk: Mysticism '},
+    {id: 'imgbull', name: 'Husk: Mysticism'},
+    {id: 'fgo', name: 'False God Otto'},
 
 
   ],
@@ -779,6 +780,14 @@ export const bossData = {
       bosspic: "images/Bosses/Husk Mysticism.webp", 
       weather: "IMG: IMG valk DMG +20%", 
   },  
+    fgo:{
+    name: 'False God Otto', 
+      mechanics: '', 
+      weakness: 'None', 
+      typeicon: "images/type/IconIMG.png", 
+      bosspic: "images/Bosses/False God Otto.webp", 
+      weather: "IMG: IMG valk DMG +20%", 
+  }, 
   marut:{
     name: 'Marut', 
       mechanics: '', 
