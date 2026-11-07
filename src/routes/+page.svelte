@@ -160,7 +160,7 @@
       Honkai Impact Guide
     </h1>
     <p class="text-sm sm:text-lg text-slate-200 drop-shadow-sm">
-      Powered by Mars Super Computer, written in Ajita++
+      Powered by Rhodes Island, written in Closure++
     </p>
   </div>
   
@@ -346,13 +346,13 @@
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
-      <a href="https://www.youtube.com/watch?v=6a82RYlXAKA" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
+      <a href="https://www.youtube.com/watch?v=-eHoxxxNTDA" id="news1" class="group block rounded-2xl  bg-zinc-800 border border-zinc-600/50 hover:border-zinc-400 transition-colors duration-200 overflow-hidden">
         <div class="overflow-hidden h-48">
-          <img src="https://i.ytimg.com/vi/6a82RYlXAKA/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src="https://i.ytimg.com/vi/-eHoxxxNTDA/hqdefault.jpg" alt="New Battlesuit" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-white mb-1">Herrscher of Time Gameplay</h3>
-          <p class="text-slate-300">Dual type again</p>
+          <h3 class="text-lg font-semibold text-white mb-1">Vita DLC and AstralOp</h3>
+          <p class="text-slate-300">Crack both</p>
         </div>
       </a>
   

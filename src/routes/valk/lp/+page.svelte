@@ -288,12 +288,17 @@ activeLineup = lineup;
 
   releaseEN="v7.8 (17 Oct 2024)"
   releaseCN="v7.8 (19 Sep 2024)"   
+
+  dlcEN="v9.2 (24 Dec 2024)"
+  dlcCN="v9.2 (26 Nov 2024)"   
 >
   <!-- Tags / Type Row -->
   <CharBio mode="dps" rank="s" type="mech" element="lightning" ar="roo"  />
 
   <!-- Support Section -->
   <CharBio mode="support" ar={['scoralie' , 'ws' , 'wod' ,'loa']} />
+
+
 </CharacterLayout>
 
 
@@ -373,7 +378,7 @@ activeLineup = lineup;
         <h2 class="text-2xl sm:text-3xl font-semibold bg-linear-to-r  from-blue-700 to-blue-500 text-white rounded-sm px-2 mb-4 text-center">OVERVIEW</h2>
         <div class="flex max-w-(--breakpoint-xl) justify-center mx-auto ">
           <p class="text-sm sm:text-base">
-          <strong>Updated For v9.0 (20 August 2026)
+          <strong>Partially updated For v9.2 (24 Dec 2026)
         </p>
         </div>
         <div>
@@ -383,11 +388,10 @@ activeLineup = lineup;
           <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">DPS</strong> <br/> Summons giant mech and fires orbital lasers.
             </p>
-          <ul class="list-disc ml-6 text-sm sm:text-base ">
-              <li>Just like all Part 2 valks, Vita is good in her optimal match-ups, but just decent everywhere else.</li>
-              <li>Currently, her full potential is being held back by A-Coralie / HoFi support.</li>
 
-          </ul>
+          <p class="mt-4 text-sm sm:text-base">
+                <strong class="text-amber-400">DLC</strong> <br/> With DLC weapon, Vita gains super shieldbreak utility. Against shielded enemies, Vita can deal a new type of shieldbreak damage. This utility also applies when Vita is used as a support.
+            </p>
 
             <p class="mt-4 text-sm sm:text-base">
                 <strong class="text-amber-400">World Star and WoDestiny Support</strong> <br/> Vita was one of the best WS and WoD supports, but has been powercreeped by <a href="/valk/wings-of-panacea" class="link">Wings of Panacea.</a> Vita provides Ele/Phy Breach, buffs, and AR regen. 
@@ -408,7 +412,7 @@ activeLineup = lineup;
             <p class="mt-4 text-sm sm:text-base">
               <strong class="text-amber-400">Behold! Fate-Defying Dragon Support</strong> 
               <br/>
-              Vita is the best support for <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a>.
+              Vita is one of the supports for <a href='/valk/scoralie' class="link">Behold! Fate-Defying Dragon (BFD)</a>.
             </p>
 
             <p class="mt-4 text-sm sm:text-base">
@@ -450,7 +454,21 @@ activeLineup = lineup;
             <div class="divider  "></div>
             <!-- Full Guide Section -->
             <h2 class="text-xl font-semibold mb-2 text-left text-slate-100 cooltext">FULL GUIDE</h2>
-            <p class="mt-2 text-sm sm:text-base pb-4">
+
+            
+            <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    loading="lazy" 
+                    src="https://www.youtube.com/embed/-eHoxxxNTDA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="mt-10 text-sm sm:text-base pb-4">
                 Check out the full guide on YouTube: 
             </p>
 
@@ -1355,16 +1373,16 @@ activeLineup = lineup;
 
         
           <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DPS</h2>
+            <h2 class="text-xl  font-semibold mb-2 text-left text-slate-100 cooltext">Vita DLC</h2>
 
-            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DPS vs Sprout of Wishing boss</p>
+            <p class="text-gray-200 mt-2 mb-4 text-sm sm:text-base">Vita DLC Gameplay</p>
 
             <div class="relative overflow-hidden" style="padding-top: 56.25%;">
               <iframe
               loading="lazy" 
 
                   class="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/RMhi643_rTI"
+                  src="https://www.youtube.com/embed/-eHoxxxNTDA"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
