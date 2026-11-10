@@ -842,14 +842,14 @@
 
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" date="Dec 4" weather="Fire" bosspage="/boss?firerimestar" />
+                <BossCard image="/images/Bosses/epernay.png" date="Dec 7" weather="Ice" bosspage="/boss?iceepernay" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                <BossCard image="/images/Bosses/Alien Guard_SSS.webp" date="Dec 8" />
+                <BossCard image="/images/BossesMA/Huodou_SSS.webp" />
+                <BossCard image="/images/Bosses/Lantern_SS.webp" />
                 </div>
 
             </div>  
