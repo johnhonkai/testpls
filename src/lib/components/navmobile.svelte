@@ -239,9 +239,7 @@ onMount(() => {
 										<a href="https://ko-fi.com/marisahonkai" target="_blank" class="btn btn-square btn-outline">
 											<i class="fas fa-mug-hot text-xl"></i> <!-- Font Awesome Ko-fi -->
 										</a>
-										<a href="https://paypal.me/marisahonkai" target="_blank" class="btn btn-square btn-outline">
-											<i class="fab fa-paypal text-xl"></i> <!-- Font Awesome PayPal -->
-										</a>
+
 									</div>
 									<p class="text-gray-400 text-sm mt-2">Join YouTube membership, or donate</p>
 								</div>
