@@ -878,14 +878,14 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
-                <BossCard  />
+                <BossCard image="/images/Bosses/Herrscher of Domination Minion.webp" date="Dec 18" weather="Shadow" bosspage="/boss?shadowhod" />
+                <BossCard image="/images/Bosses/Husk - Nihilus_SSS.webp" date="Dec 21" weather="Ice" bosspage="/boss?icehusk" />
                 </div>
                      
-                    <div class="flex col-span-3 justify-center gap-1 ml-2">
-                <BossCard  />
-                <BossCard  />
-                <BossCard  />
+                <div class="flex col-span-3 justify-center gap-1 ml-2">
+                <BossCard image="/images/Bosses/Husk Pluralism.webp" date="Dec 22" />
+                <BossCard image="/images/Bosses/Herrscher of Rimestar.png" />
+                <BossCard image="/images/Bosses/HOMU Emperor.webp" />
                 </div>
 
             </div>                
