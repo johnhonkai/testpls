@@ -30,7 +30,9 @@
     dominance: "Dominance",
     extreme: "Extreme",
     paralyze: "Paralyze",
-    freeze: "Freeze"
+    freeze: "Freeze",
+    fortified: "Fortified",
+    
     // Add other weather mappings as needed
   };
 

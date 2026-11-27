@@ -91,6 +91,11 @@ export const weatherList = {
     {id: 'starsk', name: 'Shadow Knight'},
 
   ],
+
+  fortified: [
+    {id: 'shieldsprout', name: 'Sprout of Wishing'},
+  ],
+
   bleed: [
     {id: 'bleedhos', name: 'Herrscher of Sentience'},
     {id: 'pishacha', name: 'Pishacha'},
@@ -338,6 +343,14 @@ export const bossData = {
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
     weather: "Lightning: Enemies take 50% more Lightning DMG, and 50% less Physical DMG.",	
   },
+  shieldsprout: {
+    name: 'Sprout of Wishing', 
+    mechanics: 'Phase 2 has lightning-vulnerable shield.', 
+    weakness: 'Ice (L)', 
+    typeicon: "images/type/IconBIO.png", 
+    bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
+    weather: "Fortified: Enemy takes 45% more Crush DMG and Rupture DMG and gain Shield protection; while an enemy's shield is broken, it takes 40% more damage.",	
+  },  
   lightningguaymas: {
     name: 'Meteoroid: Guaymas', 
     mechanics: '', 
@@ -427,6 +440,7 @@ export const bossData = {
     bosspic: "images/Bosses/Dominator of Wolves.webp",
     weather: "Flux: For every character in the team with Heavenly Shift tag, Team Total DMG +10%. When AR Law of Ascension is activated, Team Total DMG +40%.", 
   },
+
   lightandrius: {
     name: 'Dominator of Wolves',
     mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',

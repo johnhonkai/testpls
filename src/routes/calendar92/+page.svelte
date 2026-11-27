@@ -524,7 +524,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 25" weather="Fortified" bosspage="/boss?shieldsprout" />
                 <BossCard />
                 </div>
 
