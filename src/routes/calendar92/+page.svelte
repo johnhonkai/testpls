@@ -470,10 +470,7 @@
                     <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
                         <!-- Centered Text -->
                         <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Auction Event</span>
-                        <!-- Image positioned on the right side -->
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
-                            <img src="/images/events/92/event4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
-                        </div>
+
                     </div>         
             </div>
 
@@ -481,7 +478,7 @@
                 <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
                     <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                     
-                   <span class="font-bold0">EVENT 5</span>
+                   <span class="font-bold0">EVENT 7</span>
 
                 </div> 
                     <div class="col-span-5"></div>
@@ -524,7 +521,7 @@
                 </div>
 
                 <div class="flex col-span-2 justify-center gap-1 mr-2" >
-                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 25" weather="Fortified" bosspage="/boss?shieldsprout" />
+                <BossCard image="/images/Bosses/Sprout_of_Wishing_SSS.webp" date="Dec 25" weather="Shield" bosspage="/boss?shieldsprout" />
                 <BossCard />
                 </div>
 

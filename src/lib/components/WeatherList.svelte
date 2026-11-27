@@ -31,7 +31,7 @@
     extreme: "Extreme",
     paralyze: "Paralyze",
     freeze: "Freeze",
-    fortified: "Fortified",
+    shield: "Shield",
     
     // Add other weather mappings as needed
   };

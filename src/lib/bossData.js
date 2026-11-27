@@ -92,7 +92,7 @@ export const weatherList = {
 
   ],
 
-  fortified: [
+  shield: [
     {id: 'shieldsprout', name: 'Sprout of Wishing'},
   ],
 
@@ -349,7 +349,7 @@ export const bossData = {
     weakness: 'Ice (L)', 
     typeicon: "images/type/IconBIO.png", 
     bosspic: "images/Bosses/Sprout_of_Wishing_SSS.webp", 
-    weather: "Fortified: Enemy takes 45% more Crush DMG and Rupture DMG and gain Shield protection; while an enemy's shield is broken, it takes 40% more damage.",	
+    weather: "Fortified: Enemies take 45% more Crush DMG and Rupture DMG. Enemies are shielded but they take 40% more damage when their shields are broken.",	
   },  
   lightningguaymas: {
     name: 'Meteoroid: Guaymas', 
