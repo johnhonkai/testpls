@@ -291,24 +291,10 @@
                     </div>                        
                 </div>
 
+
+
                 <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
                     <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
-                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
-                         <span class="font-bold0">OUTFIT</span>
-                    </div>     
-                    <div on:click={() => openModal("")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
-                        
-                        <!-- Centered Text -->
-                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Eldritch Vantage<br/> 9600(?) crystal</span>
-                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
-                            <img src="/images/events/92/4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
-                        </div>
-                    </div>                                        
-
-                </div>
-
-                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
-                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ASCENSION SUPPLY</span>
                     </div> 
@@ -323,7 +309,7 @@
                 </div>
 
                 <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
-                    <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
                         <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
                          <span class="font-bold0">ARMAMENT ASCENSION</span>
                     </div>  
@@ -331,7 +317,39 @@
                                     
                 </div>
 
-                
+                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">OUTFIT 1</span>
+                    </div>     
+                    <div></div>
+                    <div on:click={() => openModal("")} class="col-span-3 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">Eldritch Vantage<br/> 9600(?) crystal</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="/images/events/92/4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                                        
+
+                </div>     
+
+                <div class="relative grid grid-cols-10 gap-1  h-[54px] pe-1 overflow-x-clip">
+                    <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                        <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                         <span class="font-bold0">OUTFIT 2</span>
+                    </div>    
+                    <div></div>                     
+                    <div on:click={() => openModal("")} class="col-span-5 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        
+                        <!-- Centered Text -->
+                        <span class="absolute inset-0 flex items-center justify-center leading-4 ">White Velveteer<br/> 1980 B-chips</span>
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 h-full ">
+                            <img src="/images/events/92/6.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                    </div>                                        
+
+                </div>                 
             </div>
         </div>
 
@@ -425,7 +443,53 @@
                         </div>
                     </div>         
             </div>
-             
+
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 5</span>
+
+                </div> 
+                <div></div>
+                <div></div>
+                    <div on:click={() => openModal("")} class="col-span-7 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">New Chapter</span>
+                    </div>    
+            </div>  
+
+            <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-pink-600 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                     <span class="font-bold0">EVENT 6</span>
+                </div>                 
+                
+                    <div class="col-span-3"></div>
+
+                    <div on:click={() => openModal("")} class="col-span-6 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">Auction Event</span>
+                        <!-- Image positioned on the right side -->
+                        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-40 h-full ">
+                            <img src="/images/events/92/event4.png" alt="Lone Planetfarer" class="w-full h-full object-cover rounded" />
+                        </div>
+                    </div>         
+            </div>
+
+             <div class="relative grid grid-cols-10 gap-1 h-[54px] pe-1 overflow-x-clip">
+                <div class="flex font-bold  text-zinc-800 bg-white border-b-[2px] border-slate-300 items-center justify-center text-center leading-4">                   
+                    <span class="absolute w-[30px] h-[4px] bg-pink-600 inline-block top-[-3px] left-0"></span>
+                    
+                   <span class="font-bold0">EVENT 5</span>
+
+                </div> 
+                    <div class="col-span-5"></div>
+                    <div on:click={() => openModal("")} class="col-span-4 rounded-lg will-change-transform transform transition-transform hover:scale-105 cursor-pointer relative my-0.5  bg-gray-100 text-black font-semibold text-center items-center justify-center border-2 border-pink-700">
+                        <!-- Centered Text -->
+                        <span class="absolute px-2.5 leading-4 inset-0 flex items-center justify-left">New Chapter</span>
+                    </div>    
+            </div>  
 
     </div>
 
